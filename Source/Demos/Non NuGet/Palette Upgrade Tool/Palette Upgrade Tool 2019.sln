@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29521.150
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palette Upgrade Tool 2019", "Palette Upgrade Tool\Palette Upgrade Tool 2019.csproj", "{4C49A026-DC2A-4AD8-B214-03169FF8B0BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponentFactory.Krypton.Toolkit 2019", "..\Krypton Components\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2019.csproj", "{4C254E60-54AB-44BB-BE82-CE631BF30541}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C49A026-DC2A-4AD8-B214-03169FF8B0BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C49A026-DC2A-4AD8-B214-03169FF8B0BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C49A026-DC2A-4AD8-B214-03169FF8B0BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C49A026-DC2A-4AD8-B214-03169FF8B0BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C254E60-54AB-44BB-BE82-CE631BF30541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C254E60-54AB-44BB-BE82-CE631BF30541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C254E60-54AB-44BB-BE82-CE631BF30541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C254E60-54AB-44BB-BE82-CE631BF30541}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A46A210-04A1-451F-9A86-6B6A8D76F8B9}
+	EndGlobalSection
+EndGlobal
