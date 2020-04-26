@@ -29,7 +29,7 @@
     <Content Include="Resources\ReadingPane.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Krypton.Toolkit" Version="5.500.2002.1" />
+    <PackageReference Include="Krypton.Toolkit" Version="5.500.2003" />
   </ItemGroup>
   <PropertyGroup>
       <OutputPath>..\..\..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
