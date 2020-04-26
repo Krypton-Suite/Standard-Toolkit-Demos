@@ -103,6 +103,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <OutputPath>..\..\..\Binaries\Krypton Toolkit Examples\$(Configuration)\</OutputPath>
+    <OutputPath>..\..\..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
   </PropertyGroup>
 </Project>

@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFrameworks>net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net35;net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;netcoreapp3.1;netcoreapp5.0</TargetFrameworks>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>WinExe</OutputType>
     <RootNamespace>KryptonTreeViewExamples</RootNamespace>
@@ -18,6 +18,6 @@
     <ProjectReference Include="..\..\Krypton Components\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2019.csproj" />
   </ItemGroup>
   <PropertyGroup>
-    <OutputPath>..\..\..\Binaries\Krypton Toolkit Examples\$(Configuration)\</OutputPath>
+    <OutputPath>..\..\..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
   </PropertyGroup>
 </Project>
