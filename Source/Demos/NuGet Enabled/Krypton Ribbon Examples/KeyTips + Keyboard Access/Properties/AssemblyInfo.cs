@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, PO Box 1504, 
 //  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
 // 
-//  Version 5.500.0.0 	www.ComponentFactory.com
+//  Version 5.550.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -17,9 +17,9 @@ using System.Security.Permissions;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyVersion("5.500.0.0")]
-[assembly: AssemblyFileVersion("5.500.0.0")]
-[assembly: AssemblyInformationalVersion("5.500.0.0")]
+[assembly: AssemblyVersion("5.550.0")]
+[assembly: AssemblyFileVersion("5.550.0")]
+[assembly: AssemblyInformationalVersion("5.550.0")]
 [assembly: AssemblyCopyright("© Component Factory Pty Ltd, 2006 - 2016. All rights reserved.")]
 [assembly: AssemblyProduct("KeyTips + Keyboard Access")]
 [assembly: AssemblyDefaultAlias("KeyTipsAndKeyboardAccess.dll")]

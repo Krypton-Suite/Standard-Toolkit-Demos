@@ -6,7 +6,7 @@
 //  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
 // 
 //  Created by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2018 - 2020. All rights reserved. (https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Core)
-//  Version 5.500.0.0  www.ComponentFactory.com
+//  Version 5.550.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using ComponentFactory.Krypton.Toolkit;
