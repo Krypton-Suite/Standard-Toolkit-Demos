@@ -27,9 +27,9 @@
     <Content Include="Krypton.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Krypton.Navigator" Version="5.500.2003" />
-    <PackageReference Include="Krypton.Ribbon" Version="5.500.2003" />
-    <PackageReference Include="Krypton.Toolkit" Version="5.500.2003" />
+    <PackageReference Include="Krypton.Navigator" Version="5.500.2006" />
+    <PackageReference Include="Krypton.Ribbon" Version="5.500.2006" />
+    <PackageReference Include="Krypton.Toolkit" Version="5.500.2006" />
   </ItemGroup>
   <PropertyGroup>
     <OutputPath>..\..\..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
