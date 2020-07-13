@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29521.150
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palette Designer 2019", "Palette Designer 2019.csproj", "{A9435693-714C-47AB-BF4F-115AF7D568CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9435693-714C-47AB-BF4F-115AF7D568CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9435693-714C-47AB-BF4F-115AF7D568CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9435693-714C-47AB-BF4F-115AF7D568CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9435693-714C-47AB-BF4F-115AF7D568CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5355B5EE-25F1-495C-8FA8-42C27CF222C0}
+	EndGlobalSection
+EndGlobal

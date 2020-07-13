@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29814.53
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonTreeView Examples 2019", "KryptonTreeView Examples\KryptonTreeView Examples 2019.csproj", "{5DED2953-C91F-476A-BDBA-B2928E21CB88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SystemThemedForms 2019", "SystemThemedForms\SystemThemedForms 2019.csproj", "{F8CD227A-419A-4D38-A33E-41E41DD5FCFE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test Clip Base 2019", "Test Clip Base\Test Clip Base 2019.csproj", "{995BC9E0-B947-4906-B725-282F91EE3251}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test MessageBox Clipping 2019", "Test MessageBox Clipping\Test MessageBox Clipping 2019.csproj", "{6F979A5D-0578-4076-B8D0-378BAE0D3089}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test Text Clipping 2019", "Test Text Clipping\Test Text Clipping 2019.csproj", "{50E23306-9D44-4577-A846-4CDEAD8FA8B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DED2953-C91F-476A-BDBA-B2928E21CB88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DED2953-C91F-476A-BDBA-B2928E21CB88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DED2953-C91F-476A-BDBA-B2928E21CB88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DED2953-C91F-476A-BDBA-B2928E21CB88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8CD227A-419A-4D38-A33E-41E41DD5FCFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8CD227A-419A-4D38-A33E-41E41DD5FCFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8CD227A-419A-4D38-A33E-41E41DD5FCFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8CD227A-419A-4D38-A33E-41E41DD5FCFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{995BC9E0-B947-4906-B725-282F91EE3251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{995BC9E0-B947-4906-B725-282F91EE3251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{995BC9E0-B947-4906-B725-282F91EE3251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{995BC9E0-B947-4906-B725-282F91EE3251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F979A5D-0578-4076-B8D0-378BAE0D3089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F979A5D-0578-4076-B8D0-378BAE0D3089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F979A5D-0578-4076-B8D0-378BAE0D3089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F979A5D-0578-4076-B8D0-378BAE0D3089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50E23306-9D44-4577-A846-4CDEAD8FA8B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E23306-9D44-4577-A846-4CDEAD8FA8B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E23306-9D44-4577-A846-4CDEAD8FA8B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E23306-9D44-4577-A846-4CDEAD8FA8B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E65EBE95-7C0F-42D8-A1CF-BB2C7851A62A}
+	EndGlobalSection
+EndGlobal
