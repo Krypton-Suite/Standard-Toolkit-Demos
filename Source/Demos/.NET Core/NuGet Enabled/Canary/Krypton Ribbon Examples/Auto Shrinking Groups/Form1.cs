@@ -10,7 +10,7 @@
 
 using System;
 
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
 namespace AutoShrinkingGroups
 {

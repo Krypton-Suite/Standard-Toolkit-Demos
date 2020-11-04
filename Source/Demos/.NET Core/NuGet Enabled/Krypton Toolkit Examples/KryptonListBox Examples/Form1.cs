@@ -10,7 +10,7 @@
 
 using System;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
 namespace KryptonListBoxExamples
 {

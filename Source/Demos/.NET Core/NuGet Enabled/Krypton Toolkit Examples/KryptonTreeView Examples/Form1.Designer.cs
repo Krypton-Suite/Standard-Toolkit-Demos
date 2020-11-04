@@ -33,40 +33,40 @@
             this.buttonClose = new System.Windows.Forms.Button();
             this.groupBox = new System.Windows.Forms.GroupBox();
             this.propertyGrid = new System.Windows.Forms.PropertyGrid();
-            this.kryptonTreeView = new ComponentFactory.Krypton.Toolkit.KryptonTreeView();
+            this.kryptonTreeView = new Krypton.Toolkit.KryptonTreeView();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
-            this.kryptonContextMenu1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenu();
-            this.kryptonContextMenuHeading1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuHeading();
-            this.kryptonContextMenuMonthCalendar1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuMonthCalendar();
-            this.kryptonContextMenuItems1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItems();
-            this.kryptonContextMenuItem1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItem();
-            this.kryptonContextMenuItems2 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItems();
-            this.kryptonContextMenuHeading2 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuHeading();
-            this.kryptonContextMenuCheckBox1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox();
-            this.kryptonContextMenuCheckButton1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckButton();
-            this.kryptonContextMenuRadioButton1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuRadioButton();
-            this.kryptonContextMenuLinkLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuLinkLabel();
-            this.kryptonContextMenuColorColumns1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuColorColumns();
-            this.kryptonContextMenuImageSelect1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuImageSelect();
-            this.kryptonContextMenuSeparator1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuSeparator();
+            this.kryptonContextMenu1 = new Krypton.Toolkit.KryptonContextMenu();
+            this.kryptonContextMenuHeading1 = new Krypton.Toolkit.KryptonContextMenuHeading();
+            this.kryptonContextMenuMonthCalendar1 = new Krypton.Toolkit.KryptonContextMenuMonthCalendar();
+            this.kryptonContextMenuItems1 = new Krypton.Toolkit.KryptonContextMenuItems();
+            this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
+            this.kryptonContextMenuItems2 = new Krypton.Toolkit.KryptonContextMenuItems();
+            this.kryptonContextMenuHeading2 = new Krypton.Toolkit.KryptonContextMenuHeading();
+            this.kryptonContextMenuCheckBox1 = new Krypton.Toolkit.KryptonContextMenuCheckBox();
+            this.kryptonContextMenuCheckButton1 = new Krypton.Toolkit.KryptonContextMenuCheckButton();
+            this.kryptonContextMenuRadioButton1 = new Krypton.Toolkit.KryptonContextMenuRadioButton();
+            this.kryptonContextMenuLinkLabel1 = new Krypton.Toolkit.KryptonContextMenuLinkLabel();
+            this.kryptonContextMenuColorColumns1 = new Krypton.Toolkit.KryptonContextMenuColorColumns();
+            this.kryptonContextMenuImageSelect1 = new Krypton.Toolkit.KryptonContextMenuImageSelect();
+            this.kryptonContextMenuSeparator1 = new Krypton.Toolkit.KryptonContextMenuSeparator();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripComboBoxA = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkSystem = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
-            this.checkSparkle = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
-            this.check2010Blue = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
-            this.check2007Blue = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
-            this.buttonAppend = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.buttonInsert = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.buttonClear = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.buttonRemove = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonManager1 = new ComponentFactory.Krypton.Toolkit.KryptonManager(this.components);
-            this.kryptonCheckSet = new ComponentFactory.Krypton.Toolkit.KryptonCheckSet(this.components);
-            this.kryptonContextMenuItem2 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItem();
-            this.btnToggleNodeCheckBox = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.checkSystem = new Krypton.Toolkit.KryptonCheckButton();
+            this.checkSparkle = new Krypton.Toolkit.KryptonCheckButton();
+            this.check2010Blue = new Krypton.Toolkit.KryptonCheckButton();
+            this.check2007Blue = new Krypton.Toolkit.KryptonCheckButton();
+            this.buttonAppend = new Krypton.Toolkit.KryptonButton();
+            this.buttonInsert = new Krypton.Toolkit.KryptonButton();
+            this.buttonClear = new Krypton.Toolkit.KryptonButton();
+            this.buttonRemove = new Krypton.Toolkit.KryptonButton();
+            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonCheckSet = new Krypton.Toolkit.KryptonCheckSet(this.components);
+            this.kryptonContextMenuItem2 = new Krypton.Toolkit.KryptonContextMenuItem();
+            this.btnToggleNodeCheckBox = new Krypton.Toolkit.KryptonButton();
             this.groupBox.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -136,7 +136,7 @@
             // 
             // kryptonContextMenu1
             // 
-            this.kryptonContextMenu1.Items.AddRange(new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonContextMenu1.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuHeading1,
             this.kryptonContextMenuMonthCalendar1,
             this.kryptonContextMenuItems1,
@@ -154,12 +154,12 @@
             // 
             // kryptonContextMenuItems1
             // 
-            this.kryptonContextMenuItems1.Items.AddRange(new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonContextMenuItems1.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
             // 
             // kryptonContextMenuItem1
             // 
-            this.kryptonContextMenuItem1.Items.AddRange(new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonContextMenuItem1.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItems2,
             this.kryptonContextMenuHeading2});
             this.kryptonContextMenuItem1.Text = "Menu Item";
@@ -373,40 +373,40 @@
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.GroupBox groupBox;
         private System.Windows.Forms.PropertyGrid propertyGrid;
-        private ComponentFactory.Krypton.Toolkit.KryptonTreeView kryptonTreeView;
+        private Krypton.Toolkit.KryptonTreeView kryptonTreeView;
         private System.Windows.Forms.GroupBox groupBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton checkSystem;
-        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton checkSparkle;
-        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton check2010Blue;
-        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton check2007Blue;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton buttonAppend;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton buttonInsert;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton buttonClear;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton buttonRemove;
-        private ComponentFactory.Krypton.Toolkit.KryptonManager kryptonManager1;
-        private ComponentFactory.Krypton.Toolkit.KryptonCheckSet kryptonCheckSet;
+        private Krypton.Toolkit.KryptonCheckButton checkSystem;
+        private Krypton.Toolkit.KryptonCheckButton checkSparkle;
+        private Krypton.Toolkit.KryptonCheckButton check2010Blue;
+        private Krypton.Toolkit.KryptonCheckButton check2007Blue;
+        private Krypton.Toolkit.KryptonButton buttonAppend;
+        private Krypton.Toolkit.KryptonButton buttonInsert;
+        private Krypton.Toolkit.KryptonButton buttonClear;
+        private Krypton.Toolkit.KryptonButton buttonRemove;
+        private Krypton.Toolkit.KryptonManager kryptonManager1;
+        private Krypton.Toolkit.KryptonCheckSet kryptonCheckSet;
         private System.Windows.Forms.ImageList imageList;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenu kryptonContextMenu1;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuHeading kryptonContextMenuHeading1;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuItems kryptonContextMenuItems1;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem1;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox kryptonContextMenuCheckBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckButton kryptonContextMenuCheckButton1;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuRadioButton kryptonContextMenuRadioButton1;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuLinkLabel kryptonContextMenuLinkLabel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuColorColumns kryptonContextMenuColorColumns1;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuImageSelect kryptonContextMenuImageSelect1;
+        private Krypton.Toolkit.KryptonContextMenu kryptonContextMenu1;
+        private Krypton.Toolkit.KryptonContextMenuHeading kryptonContextMenuHeading1;
+        private Krypton.Toolkit.KryptonContextMenuItems kryptonContextMenuItems1;
+        private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem1;
+        private Krypton.Toolkit.KryptonContextMenuCheckBox kryptonContextMenuCheckBox1;
+        private Krypton.Toolkit.KryptonContextMenuCheckButton kryptonContextMenuCheckButton1;
+        private Krypton.Toolkit.KryptonContextMenuRadioButton kryptonContextMenuRadioButton1;
+        private Krypton.Toolkit.KryptonContextMenuLinkLabel kryptonContextMenuLinkLabel1;
+        private Krypton.Toolkit.KryptonContextMenuColorColumns kryptonContextMenuColorColumns1;
+        private Krypton.Toolkit.KryptonContextMenuImageSelect kryptonContextMenuImageSelect1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBoxA;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuSeparator kryptonContextMenuSeparator1;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuItems kryptonContextMenuItems2;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuHeading kryptonContextMenuHeading2;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem2;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuMonthCalendar kryptonContextMenuMonthCalendar1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnToggleNodeCheckBox;
+        private Krypton.Toolkit.KryptonContextMenuSeparator kryptonContextMenuSeparator1;
+        private Krypton.Toolkit.KryptonContextMenuItems kryptonContextMenuItems2;
+        private Krypton.Toolkit.KryptonContextMenuHeading kryptonContextMenuHeading2;
+        private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem2;
+        private Krypton.Toolkit.KryptonContextMenuMonthCalendar kryptonContextMenuMonthCalendar1;
+        private Krypton.Toolkit.KryptonButton btnToggleNodeCheckBox;
     }
 }
 

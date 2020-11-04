@@ -1,4 +1,4 @@
-﻿using ComponentFactory.Krypton.Toolkit;
+﻿using Krypton.Toolkit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,19 +24,19 @@ namespace PaletteUpgradeTool.UI
 
         private void InitializeComponent()
         {
-            this.kpnlTop = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.kpnlTop = new Krypton.Toolkit.KryptonPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kbtnClose = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonRichTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
-            this.krtbOutputFile = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
-            this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.klblInformation = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kbtnUpgrade = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kbtnExport = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
+            this.kbtnClose = new Krypton.Toolkit.KryptonButton();
+            this.kryptonRichTextBox1 = new Krypton.Toolkit.KryptonRichTextBox();
+            this.krtbOutputFile = new Krypton.Toolkit.KryptonRichTextBox();
+            this.kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
+            this.klblInformation = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
+            this.kbtnUpgrade = new Krypton.Toolkit.KryptonButton();
+            this.kbtnExport = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.kpnlTop)).BeginInit();
             this.kpnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,7 +51,7 @@ namespace PaletteUpgradeTool.UI
             this.kpnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.kpnlTop.Location = new System.Drawing.Point(0, 0);
             this.kpnlTop.Name = "kpnlTop";
-            this.kpnlTop.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ControlCustom1;
+            this.kpnlTop.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlCustom1;
             this.kpnlTop.Size = new System.Drawing.Size(777, 91);
             this.kpnlTop.TabIndex = 2;
             // 
@@ -73,8 +73,8 @@ namespace PaletteUpgradeTool.UI
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(177, 26);
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel1.StateCommon.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel1.StateCommon.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonLabel1.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel1.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel1.TabIndex = 1;
             this.kryptonLabel1.Values.Text = "Palette Upgrade Tool";
             // 
@@ -101,8 +101,8 @@ namespace PaletteUpgradeTool.UI
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(80, 24);
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel2.StateCommon.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel2.StateCommon.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonLabel2.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel2.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel2.TabIndex = 2;
             this.kryptonLabel2.Values.Text = "Input File";
             // 
@@ -139,8 +139,8 @@ namespace PaletteUpgradeTool.UI
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.Size = new System.Drawing.Size(93, 24);
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel3.StateCommon.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel3.StateCommon.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonLabel3.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel3.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel3.TabIndex = 6;
             this.kryptonLabel3.Values.Text = "Output File";
             // 
@@ -150,8 +150,8 @@ namespace PaletteUpgradeTool.UI
             this.klblInformation.Name = "klblInformation";
             this.klblInformation.Size = new System.Drawing.Size(195, 24);
             this.klblInformation.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.klblInformation.StateCommon.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.klblInformation.StateCommon.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.klblInformation.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.klblInformation.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.klblInformation.TabIndex = 8;
             this.klblInformation.Values.Text = "This will be informative...";
             // 

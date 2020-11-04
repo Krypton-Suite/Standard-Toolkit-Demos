@@ -4,7 +4,7 @@ using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
 using KryptonToolkitHub.Classes;
 using KryptonToolkitHub.Enumerations;
@@ -49,12 +49,12 @@ namespace KryptonToolkitHub.UX
 
         private void kbtnProjectHomepage_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Core0");
+            Process.Start("https://github.com/Krypton-Suite/Standard-Toolkit0");
         }
 
         private void kbtnReportABug_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Core0/issues");
+            Process.Start("https://github.com/Krypton-Suite/Standard-Toolkit0/issues");
         }
 
         private void tsslCurrentStatus_MouseEnter(object sender, EventArgs e)

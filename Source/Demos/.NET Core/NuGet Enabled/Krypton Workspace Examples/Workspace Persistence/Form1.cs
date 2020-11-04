@@ -11,9 +11,9 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Toolkit;
-using ComponentFactory.Krypton.Workspace;
+using Krypton.Navigator;
+using Krypton.Toolkit;
+using Krypton.Workspace;
 
 namespace WorkspacePersistence
 {

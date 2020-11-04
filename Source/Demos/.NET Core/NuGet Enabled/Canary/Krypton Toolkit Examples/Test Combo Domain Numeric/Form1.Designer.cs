@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonGroupBox3 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.kryptonDomainUpDown4 = new ComponentFactory.Krypton.Toolkit.KryptonDomainUpDown();
-            this.kryptonDomainUpDown3 = new ComponentFactory.Krypton.Toolkit.KryptonDomainUpDown();
-            this.kryptonDomainUpDown2 = new ComponentFactory.Krypton.Toolkit.KryptonDomainUpDown();
-            this.kryptonDomainUpDown1 = new ComponentFactory.Krypton.Toolkit.KryptonDomainUpDown();
-            this.kryptonGroupBox2 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.kryptonNumericUpDown4 = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
-            this.kryptonNumericUpDown3 = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
-            this.kryptonNumericUpDown2 = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
-            this.kryptonNumericUpDown1 = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
-            this.kryptonGroupBox1 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.kryptonComboBoxA2 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.kryptonComboBox2 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.kryptonComboBoxA1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.kryptonComboBox1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.buttonSpecAny1 = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
+            this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonGroupBox3 = new Krypton.Toolkit.KryptonGroupBox();
+            this.kryptonDomainUpDown4 = new Krypton.Toolkit.KryptonDomainUpDown();
+            this.kryptonDomainUpDown3 = new Krypton.Toolkit.KryptonDomainUpDown();
+            this.kryptonDomainUpDown2 = new Krypton.Toolkit.KryptonDomainUpDown();
+            this.kryptonDomainUpDown1 = new Krypton.Toolkit.KryptonDomainUpDown();
+            this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
+            this.kryptonNumericUpDown4 = new Krypton.Toolkit.KryptonNumericUpDown();
+            this.kryptonNumericUpDown3 = new Krypton.Toolkit.KryptonNumericUpDown();
+            this.kryptonNumericUpDown2 = new Krypton.Toolkit.KryptonNumericUpDown();
+            this.kryptonNumericUpDown1 = new Krypton.Toolkit.KryptonNumericUpDown();
+            this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
+            this.kryptonComboBoxA2 = new Krypton.Toolkit.KryptonComboBox();
+            this.kryptonComboBox2 = new Krypton.Toolkit.KryptonComboBox();
+            this.kryptonComboBoxA1 = new Krypton.Toolkit.KryptonComboBox();
+            this.kryptonComboBox1 = new Krypton.Toolkit.KryptonComboBox();
+            this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox3)).BeginInit();
@@ -97,7 +97,7 @@
             this.kryptonDomainUpDown4.Name = "kryptonDomainUpDown4";
             this.kryptonDomainUpDown4.Size = new System.Drawing.Size(299, 26);
             this.kryptonDomainUpDown4.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonDomainUpDown4.StateCommon.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.kryptonDomainUpDown4.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonDomainUpDown4.TabIndex = 3;
             this.kryptonDomainUpDown4.Text = "kryptonDomainUpDown4";
             // 
@@ -108,7 +108,7 @@
             this.kryptonDomainUpDown3.Size = new System.Drawing.Size(299, 26);
             this.kryptonDomainUpDown3.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonDomainUpDown3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.kryptonDomainUpDown3.StateCommon.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonDomainUpDown3.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonDomainUpDown3.TabIndex = 2;
             this.kryptonDomainUpDown3.Text = "kryptonDomainUpDown3";
             // 
@@ -119,7 +119,7 @@
             this.kryptonDomainUpDown2.Name = "kryptonDomainUpDown2";
             this.kryptonDomainUpDown2.Size = new System.Drawing.Size(299, 26);
             this.kryptonDomainUpDown2.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonDomainUpDown2.StateCommon.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.kryptonDomainUpDown2.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonDomainUpDown2.TabIndex = 1;
             this.kryptonDomainUpDown2.Text = "kryptonDomainUpDown2";
             // 
@@ -129,7 +129,7 @@
             this.kryptonDomainUpDown1.Name = "kryptonDomainUpDown1";
             this.kryptonDomainUpDown1.Size = new System.Drawing.Size(299, 26);
             this.kryptonDomainUpDown1.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonDomainUpDown1.StateCommon.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.kryptonDomainUpDown1.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonDomainUpDown1.TabIndex = 0;
             this.kryptonDomainUpDown1.Text = "kryptonDomainUpDown1";
             // 
@@ -155,7 +155,7 @@
             this.kryptonNumericUpDown4.Name = "kryptonNumericUpDown4";
             this.kryptonNumericUpDown4.Size = new System.Drawing.Size(120, 26);
             this.kryptonNumericUpDown4.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonNumericUpDown4.StateCommon.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.kryptonNumericUpDown4.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonNumericUpDown4.TabIndex = 3;
             // 
             // kryptonNumericUpDown3
@@ -166,7 +166,7 @@
             this.kryptonNumericUpDown3.Size = new System.Drawing.Size(120, 26);
             this.kryptonNumericUpDown3.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonNumericUpDown3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.kryptonNumericUpDown3.StateCommon.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonNumericUpDown3.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonNumericUpDown3.TabIndex = 2;
             // 
             // kryptonNumericUpDown2
@@ -177,7 +177,7 @@
             this.kryptonNumericUpDown2.Name = "kryptonNumericUpDown2";
             this.kryptonNumericUpDown2.Size = new System.Drawing.Size(120, 26);
             this.kryptonNumericUpDown2.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonNumericUpDown2.StateCommon.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.kryptonNumericUpDown2.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonNumericUpDown2.TabIndex = 1;
             // 
             // kryptonNumericUpDown1
@@ -187,7 +187,7 @@
             this.kryptonNumericUpDown1.Name = "kryptonNumericUpDown1";
             this.kryptonNumericUpDown1.Size = new System.Drawing.Size(120, 26);
             this.kryptonNumericUpDown1.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonNumericUpDown1.StateCommon.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.kryptonNumericUpDown1.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonNumericUpDown1.TabIndex = 0;
             // 
             // kryptonGroupBox1
@@ -215,7 +215,7 @@
             this.kryptonComboBoxA2.Name = "kryptonComboBoxA2";
             this.kryptonComboBoxA2.Size = new System.Drawing.Size(295, 28);
             this.kryptonComboBoxA2.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Tahoma", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonComboBoxA2.StateCommon.ComboBox.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.kryptonComboBoxA2.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonComboBoxA2.TabIndex = 9;
             this.kryptonComboBoxA2.Text = "Drop List Center";
             // 
@@ -227,7 +227,7 @@
             this.kryptonComboBox2.Name = "kryptonComboBox2";
             this.kryptonComboBox2.Size = new System.Drawing.Size(288, 25);
             this.kryptonComboBox2.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonComboBox2.StateCommon.ComboBox.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.kryptonComboBox2.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonComboBox2.TabIndex = 12;
             this.kryptonComboBox2.Text = "Drop Down Disable Center";
             // 
@@ -242,7 +242,7 @@
             this.kryptonComboBoxA1.Size = new System.Drawing.Size(295, 25);
             this.kryptonComboBoxA1.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonComboBoxA1.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.kryptonComboBoxA1.StateCommon.ComboBox.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonComboBoxA1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonComboBoxA1.TabIndex = 8;
             this.kryptonComboBoxA1.Text = "Drop List Pad Left";
             // 
@@ -253,15 +253,15 @@
             this.kryptonComboBox1.Name = "kryptonComboBox1";
             this.kryptonComboBox1.Size = new System.Drawing.Size(300, 25);
             this.kryptonComboBox1.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonComboBox1.StateCommon.ComboBox.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.kryptonComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonComboBox1.TabIndex = 11;
             this.kryptonComboBox1.Text = "Drop Down Center";
             // 
             // buttonSpecAny1
             // 
-            this.buttonSpecAny1.Edge = ComponentFactory.Krypton.Toolkit.PaletteRelativeEdgeAlign.Near;
-            this.buttonSpecAny1.Style = ComponentFactory.Krypton.Toolkit.PaletteButtonStyle.ButtonSpec;
-            this.buttonSpecAny1.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.Close;
+            this.buttonSpecAny1.Edge = Krypton.Toolkit.PaletteRelativeEdgeAlign.Near;
+            this.buttonSpecAny1.Style = Krypton.Toolkit.PaletteButtonStyle.ButtonSpec;
+            this.buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
             this.buttonSpecAny1.UniqueName = "f85d10d4ccf24cfa9f20383b42450995";
             // 
             // Form1
@@ -296,24 +296,24 @@
 
         #endregion
 
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
-        //private ComponentFactory.Krypton.Toolkit.KryptonComboBoxA kryptonComboBoxA;
-        private ComponentFactory.Krypton.Toolkit.ButtonSpecAny buttonSpecAny1;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBoxA1;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBoxA2;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown kryptonNumericUpDown4;
-        private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown kryptonNumericUpDown3;
-        private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown kryptonNumericUpDown2;
-        private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown kryptonNumericUpDown1;
-        private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox3;
-        private ComponentFactory.Krypton.Toolkit.KryptonDomainUpDown kryptonDomainUpDown4;
-        private ComponentFactory.Krypton.Toolkit.KryptonDomainUpDown kryptonDomainUpDown3;
-        private ComponentFactory.Krypton.Toolkit.KryptonDomainUpDown kryptonDomainUpDown2;
-        private ComponentFactory.Krypton.Toolkit.KryptonDomainUpDown kryptonDomainUpDown1;
+        private Krypton.Toolkit.KryptonPanel kryptonPanel1;
+        //private Krypton.Toolkit.KryptonComboBoxA kryptonComboBoxA;
+        private Krypton.Toolkit.ButtonSpecAny buttonSpecAny1;
+        private Krypton.Toolkit.KryptonComboBox kryptonComboBoxA1;
+        private Krypton.Toolkit.KryptonComboBox kryptonComboBoxA2;
+        private Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
+        private Krypton.Toolkit.KryptonComboBox kryptonComboBox2;
+        private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox2;
+        private Krypton.Toolkit.KryptonNumericUpDown kryptonNumericUpDown4;
+        private Krypton.Toolkit.KryptonNumericUpDown kryptonNumericUpDown3;
+        private Krypton.Toolkit.KryptonNumericUpDown kryptonNumericUpDown2;
+        private Krypton.Toolkit.KryptonNumericUpDown kryptonNumericUpDown1;
+        private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
+        private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox3;
+        private Krypton.Toolkit.KryptonDomainUpDown kryptonDomainUpDown4;
+        private Krypton.Toolkit.KryptonDomainUpDown kryptonDomainUpDown3;
+        private Krypton.Toolkit.KryptonDomainUpDown kryptonDomainUpDown2;
+        private Krypton.Toolkit.KryptonDomainUpDown kryptonDomainUpDown1;
     }
 }
 

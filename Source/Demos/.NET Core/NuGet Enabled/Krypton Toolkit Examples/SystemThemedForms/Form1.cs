@@ -1,14 +1,14 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
 //  © Component Factory Pty Ltd, 2006-2020, All rights reserved.
-//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2020. All rights reserved. (https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Core)
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2020. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
 //  Version 5.550.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
 using System.Drawing;
 
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
 namespace SystemThemedForms
 {
@@ -34,17 +34,17 @@ namespace SystemThemedForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
         }
     }
 }

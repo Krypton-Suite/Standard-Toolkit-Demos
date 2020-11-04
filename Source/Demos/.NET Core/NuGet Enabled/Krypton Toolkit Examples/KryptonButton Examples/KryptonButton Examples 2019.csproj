@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFrameworks>net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;netcoreapp3.1;net5.0</TargetFrameworks>
+    <TargetFrameworks>net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;netcoreapp3.1;net5.0-windows</TargetFrameworks>
     <OutputType>WinExe</OutputType>
     <RootNamespace>KryptonButtonExamples</RootNamespace>
     <AssemblyName>Krypton Button Examples</AssemblyName>
@@ -27,7 +27,7 @@
     <Content Include="Krypton.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Krypton.Toolkit" Version="5.500.2003" />
+    <PackageReference Include="Krypton.Toolkit" Version="5.550.2011" />
   </ItemGroup>
   <PropertyGroup>
       <OutputPath>..\..\..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>

@@ -12,7 +12,7 @@ namespace KryptonExplorer.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,12 +26,24 @@ namespace KryptonExplorer.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Office 2010 - Blue")]
-        public global::ComponentFactory.Krypton.Toolkit.PaletteModeManager Theme {
+        public global::Krypton.Toolkit.PaletteModeManager Theme {
             get {
-                return ((global::ComponentFactory.Krypton.Toolkit.PaletteModeManager)(this["Theme"]));
+                return ((global::Krypton.Toolkit.PaletteModeManager)(this["Theme"]));
             }
             set {
                 this["Theme"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ThemeFileLocation {
+            get {
+                return ((string)(this["ThemeFileLocation"]));
+            }
+            set {
+                this["ThemeFileLocation"] = value;
             }
         }
     }
