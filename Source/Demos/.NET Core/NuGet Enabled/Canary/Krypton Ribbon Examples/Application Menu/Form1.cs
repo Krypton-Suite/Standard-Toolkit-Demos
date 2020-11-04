@@ -12,7 +12,7 @@ using System;
 using System.ComponentModel;
 using System.Drawing;
 
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
 namespace ApplicationMenu
 {

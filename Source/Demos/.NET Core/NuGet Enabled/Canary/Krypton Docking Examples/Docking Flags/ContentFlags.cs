@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, PO Box 1504, 
 //  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2020. All rights reserved. (https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Core)
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2020. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
 //  Version 5.550.0  www.ComponentFactory.com
 //
 // *****************************************************************************
@@ -13,7 +13,7 @@
 using System;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Navigator;
+using Krypton.Navigator;
 
 namespace DockingFlags
 {

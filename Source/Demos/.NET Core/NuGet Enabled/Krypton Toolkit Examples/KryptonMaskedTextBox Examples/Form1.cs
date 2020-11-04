@@ -13,7 +13,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.ComponentModel;
 using System.Globalization;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
 namespace KryptonMaskedTextBoxExamples
 {

@@ -26,9 +26,9 @@ namespace KryptonExplorer.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Office 2010 - Blue")]
-        public global::ComponentFactory.Krypton.Toolkit.PaletteModeManager Theme {
+        public global::Krypton.Toolkit.PaletteModeManager Theme {
             get {
-                return ((global::ComponentFactory.Krypton.Toolkit.PaletteModeManager)(this["Theme"]));
+                return ((global::Krypton.Toolkit.PaletteModeManager)(this["Theme"]));
             }
             set {
                 this["Theme"] = value;

@@ -8,7 +8,7 @@
 //  Version 5.550.0 	www.ComponentFactory.com
 // *****************************************************************************
 
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 using System;
 
 namespace KryptonPaletteExamples

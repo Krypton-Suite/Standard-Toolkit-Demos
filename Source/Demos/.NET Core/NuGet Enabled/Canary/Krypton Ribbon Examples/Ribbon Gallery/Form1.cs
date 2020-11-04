@@ -11,8 +11,8 @@
 using System;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Ribbon;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Ribbon;
+using Krypton.Toolkit;
 
 namespace RibbonGallery
 {

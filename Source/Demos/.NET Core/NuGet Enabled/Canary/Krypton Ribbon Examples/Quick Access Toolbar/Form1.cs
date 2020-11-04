@@ -11,8 +11,8 @@
 using System;
 using System.Drawing;
 
-using ComponentFactory.Krypton.Ribbon;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Ribbon;
+using Krypton.Toolkit;
 
 namespace QuickAccessToolbar
 {

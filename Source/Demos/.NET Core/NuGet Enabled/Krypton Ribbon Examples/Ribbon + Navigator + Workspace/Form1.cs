@@ -10,9 +10,9 @@
 
 using System;
 
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Toolkit;
-using ComponentFactory.Krypton.Workspace;
+using Krypton.Navigator;
+using Krypton.Toolkit;
+using Krypton.Workspace;
 
 namespace RibbonAndNavigatorAndWorkspace
 {

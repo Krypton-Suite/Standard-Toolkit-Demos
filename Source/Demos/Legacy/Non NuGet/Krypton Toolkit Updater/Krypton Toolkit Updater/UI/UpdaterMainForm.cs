@@ -68,7 +68,7 @@ namespace KryptonToolkitUpdater.UI
 
         private void kbtnCheckForUpdates_Click(object sender, EventArgs e)
         {
-            CheckForUpdates("https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Core0/blob/master/Updates/update.xml");
+            CheckForUpdates("https://github.com/Krypton-Suite/Standard-Toolkit0/blob/master/Updates/update.xml");
         }
 
         private void kbtnOptions_Click(object sender, EventArgs e)
