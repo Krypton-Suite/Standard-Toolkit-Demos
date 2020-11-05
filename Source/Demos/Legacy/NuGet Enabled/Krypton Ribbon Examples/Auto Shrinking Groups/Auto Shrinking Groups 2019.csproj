@@ -35,6 +35,6 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
-    <OutputPath>..\..\..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+    <OutputPath>..\..\..\..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
   </PropertyGroup>
 </Project>

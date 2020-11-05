@@ -43,6 +43,6 @@
         <ProjectReference Include="..\..\Krypton Components\ComponentFactory.Krypton.Ribbon\ComponentFactory.Krypton.Ribbon 2019.csproj" />
     </ItemGroup>
   <PropertyGroup>
-    <OutputPath>..\..\..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+    <OutputPath>..\..\..\..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
   </PropertyGroup>
 </Project>

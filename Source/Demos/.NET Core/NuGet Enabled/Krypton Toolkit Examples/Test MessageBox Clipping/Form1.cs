@@ -157,7 +157,9 @@ namespace TestMessageBoxClipping
                 {
                     if (howDeep > 50)
                     {
+#if !NET35
                         throw new InsufficientExecutionStackException();
+#endif
                     }
 
                     InfiniteLoopIt(++howDeep);
@@ -178,7 +180,9 @@ namespace TestMessageBoxClipping
         {
             try
             {
-                throw new InsufficientExecutionStackException();
+#if !NET35
+                        throw new InsufficientExecutionStackException();
+#endif
             }
             catch (Exception ex)
             {
@@ -191,7 +195,9 @@ namespace TestMessageBoxClipping
         {
             try
             {
-                throw new InsufficientExecutionStackException();
+#if !NET35
+                        throw new InsufficientExecutionStackException();
+#endif
             }
             catch (Exception ex)
             {
@@ -204,7 +210,9 @@ namespace TestMessageBoxClipping
         {
             try
             {
-                throw new InsufficientExecutionStackException();
+#if !NET35
+                        throw new InsufficientExecutionStackException();
+#endif
             }
             catch (Exception ex)
             {
@@ -217,7 +225,9 @@ namespace TestMessageBoxClipping
         {
             try
             {
-                throw new InsufficientExecutionStackException();
+#if !NET35
+                        throw new InsufficientExecutionStackException();
+#endif
             }
             catch (Exception ex)
             {
