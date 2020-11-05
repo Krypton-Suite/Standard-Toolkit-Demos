@@ -3,6 +3,7 @@ using KryptonExplorer.Properties;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using System;
 using System.IO;
+using System.Windows.Forms;
 
 namespace KryptonExplorer
 {
@@ -139,6 +140,8 @@ namespace KryptonExplorer
             ofd.Title = "Browse for theme files:";
 
             ofd.IsFolderPicker = true;
+
+            ofd.InitialDirectory = Application.StartupPath;
 
             if (ofd.ShowDialog() == CommonFileDialogResult.Ok)
             {
