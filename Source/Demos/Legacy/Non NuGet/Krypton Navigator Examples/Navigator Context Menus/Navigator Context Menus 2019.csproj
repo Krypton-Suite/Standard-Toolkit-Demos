@@ -32,6 +32,6 @@
     <Content Include="Krypton.ico" />
   </ItemGroup>
   <PropertyGroup>
-    <OutputPath>..\..\..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+    <OutputPath>..\..\..\..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
   </PropertyGroup>
 </Project>

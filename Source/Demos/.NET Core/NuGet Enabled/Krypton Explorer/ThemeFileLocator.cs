@@ -1,4 +1,5 @@
 ﻿using Krypton.Toolkit;
+using KryptonExplorer.Properties;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using System;
 using System.IO;
@@ -7,6 +8,7 @@ namespace KryptonExplorer
 {
     public class ThemeFileLocator : KryptonForm
     {
+        #region Design Code
         private KryptonButton kbtnOk;
         private System.Windows.Forms.Panel panel1;
         private KryptonPanel kryptonPanel2;
@@ -21,9 +23,9 @@ namespace KryptonExplorer
             this.kbtnOk = new Krypton.Toolkit.KryptonButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
-            this.ktxtPath = new Krypton.Toolkit.KryptonTextBox();
             this.kbtnBrowsePath = new Krypton.Toolkit.KryptonButton();
+            this.ktxtPath = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
@@ -69,13 +71,14 @@ namespace KryptonExplorer
             this.kryptonPanel2.Size = new System.Drawing.Size(620, 66);
             this.kryptonPanel2.TabIndex = 2;
             // 
-            // kryptonLabel1
+            // kbtnBrowsePath
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(12, 24);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(131, 20);
-            this.kryptonLabel1.TabIndex = 3;
-            this.kryptonLabel1.Values.Text = "Theme Directory Path:";
+            this.kbtnBrowsePath.Location = new System.Drawing.Point(575, 24);
+            this.kbtnBrowsePath.Name = "kbtnBrowsePath";
+            this.kbtnBrowsePath.Size = new System.Drawing.Size(33, 25);
+            this.kbtnBrowsePath.TabIndex = 3;
+            this.kbtnBrowsePath.Values.Text = ".&..";
+            this.kbtnBrowsePath.Click += new System.EventHandler(this.kbtnBrowsePath_Click);
             // 
             // ktxtPath
             // 
@@ -86,14 +89,13 @@ namespace KryptonExplorer
             this.ktxtPath.Size = new System.Drawing.Size(420, 23);
             this.ktxtPath.TabIndex = 4;
             // 
-            // kbtnBrowsePath
+            // kryptonLabel1
             // 
-            this.kbtnBrowsePath.Location = new System.Drawing.Point(575, 24);
-            this.kbtnBrowsePath.Name = "kbtnBrowsePath";
-            this.kbtnBrowsePath.Size = new System.Drawing.Size(33, 25);
-            this.kbtnBrowsePath.TabIndex = 3;
-            this.kbtnBrowsePath.Values.Text = ".&..";
-            this.kbtnBrowsePath.Click += new System.EventHandler(this.kbtnBrowsePath_Click);
+            this.kryptonLabel1.Location = new System.Drawing.Point(12, 24);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(131, 20);
+            this.kryptonLabel1.TabIndex = 3;
+            this.kryptonLabel1.Values.Text = "Theme Directory Path:";
             // 
             // ThemeFileLocator
             // 
@@ -108,6 +110,7 @@ namespace KryptonExplorer
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Browse for Theme Files";
             this.Load += new System.EventHandler(this.ThemeFileLocator_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
@@ -116,6 +119,12 @@ namespace KryptonExplorer
             this.kryptonPanel2.PerformLayout();
             this.ResumeLayout(false);
 
+        }
+        #endregion
+
+        public ThemeFileLocator()
+        {
+            InitializeComponent();
         }
 
         private void ThemeFileLocator_Load(object sender, EventArgs e)
@@ -133,13 +142,28 @@ namespace KryptonExplorer
 
             if (ofd.ShowDialog() == CommonFileDialogResult.Ok)
             {
-                kbtnBrowsePath.Text = Path.GetFullPath(ofd.FileName);
+                ktxtPath.Text = Path.GetFullPath(ofd.FileName);
             }
+            
+            TopMost = true;
         }
 
         private void kbtnOk_Click(object sender, EventArgs e)
         {
+            Settings mySettings = new Settings();
 
+            if (string.IsNullOrEmpty(ktxtPath.Text))
+            {
+                mySettings.ThemeFileLocation = string.Empty;
+            }
+            else
+            {
+                mySettings.ThemeFileLocation = ktxtPath.Text;
+            }
+
+            mySettings.Save();
+
+            Hide();
         }
     }
 }

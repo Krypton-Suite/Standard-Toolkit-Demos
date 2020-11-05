@@ -9,15 +9,13 @@
 //  Version 4.7.0.0  www.ComponentFactory.com
 // *************************************************************************
 
+using Krypton.Toolkit;
+using KryptonExplorer.Properties;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
-
-using Krypton.Toolkit;
-
-using KryptonExplorer.Properties;
 
 namespace KryptonExplorer
 {
@@ -933,6 +931,31 @@ namespace KryptonExplorer
         private void KbtnKryptonDemoApplicationPackage_Click(object sender, EventArgs e)
         {
             //Process.Start("https://www.nuget.org/packages/KryptonToolkitSuite5472Demos/");
+        }
+
+        private void kbtnOpenThemeLocation_Click(object sender, EventArgs e)
+        {
+            Settings mySettings = new Settings();
+
+            if (mySettings.ThemeFileLocation == string.Empty)
+            {
+                ThemeFileLocator themeFileLocator = new ThemeFileLocator();
+
+                themeFileLocator.Show();
+            }
+            else
+            {
+                Process.Start(mySettings.ThemeFileLocation);
+            }
+        }
+
+        private void kbtnResetKryptonThemeLocation_Click(object sender, EventArgs e)
+        {
+            Settings mySettings = new Settings();
+
+            mySettings.ThemeFileLocation = string.Empty;
+
+            mySettings.Save();
         }
     }
 }

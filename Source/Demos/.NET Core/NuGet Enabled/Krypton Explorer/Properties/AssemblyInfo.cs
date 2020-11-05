@@ -17,7 +17,7 @@ using System.Security;
 
 [assembly: AssemblyVersion("5.550.2011")]
 [assembly: AssemblyFileVersion("5.550.2011")]
-[assembly: AssemblyInformationalVersion("17.550.7000.1")]
+[assembly: AssemblyInformationalVersion("17.550.7100.1")]
 [assembly: AssemblyCopyright("© Component Factory Pty Ltd, 2006 - 2016. All rights reserved.")]
 [assembly: AssemblyProduct("Krypton Explorer")]
 [assembly: AssemblyDefaultAlias("KryptonExplorer.dll")]

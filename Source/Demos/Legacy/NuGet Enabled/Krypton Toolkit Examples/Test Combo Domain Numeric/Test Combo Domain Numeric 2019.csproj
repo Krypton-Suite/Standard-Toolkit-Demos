@@ -7,6 +7,6 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
     <PropertyGroup>
-        <OutputPath>..\..\..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+        <OutputPath>..\..\..\..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
     </PropertyGroup>
 </Project>
