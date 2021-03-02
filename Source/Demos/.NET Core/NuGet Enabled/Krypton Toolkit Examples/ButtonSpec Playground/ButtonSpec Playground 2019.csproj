@@ -30,6 +30,6 @@
     <Content Include="Krypton.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Krypton.Toolkit" Version="5.550.2011" />
+    <PackageReference Include="Krypton.Toolkit" Version="5.550.2103" />
   </ItemGroup>
 </Project>

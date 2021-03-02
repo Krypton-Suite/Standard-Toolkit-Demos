@@ -28,10 +28,10 @@
     <Content Include="Krypton.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Krypton.Navigator" Version="5.550.2011" />
-    <PackageReference Include="Krypton.Ribbon" Version="5.550.2011" />
-    <PackageReference Include="Krypton.Toolkit" Version="5.550.2011" />
-    <PackageReference Include="Krypton.Workspace" Version="5.550.2011" />
+    <PackageReference Include="Krypton.Navigator" Version="5.550.2103" />
+    <PackageReference Include="Krypton.Ribbon" Version="5.550.2103" />
+    <PackageReference Include="Krypton.Toolkit" Version="5.550.2103" />
+    <PackageReference Include="Krypton.Workspace" Version="5.550.2103" />
   </ItemGroup>
   <PropertyGroup>
     <OutputPath>..\..\..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>

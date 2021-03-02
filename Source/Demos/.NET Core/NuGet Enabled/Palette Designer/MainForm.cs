@@ -133,6 +133,8 @@ namespace PaletteDesigner
                 // Define the initial title bar string
                 UpdateTitlebar();
             }
+
+            _recentlyUsedDocumentsManager.AddRecentFile(filename);
         }
 
         private void Save()
@@ -151,6 +153,8 @@ namespace PaletteDesigner
 
                 // Define the initial title bar string
                 UpdateTitlebar();
+
+                _recentlyUsedDocumentsManager.AddRecentFile(_filename);
             }
             else
             {
@@ -180,6 +184,8 @@ namespace PaletteDesigner
                 // Define the initial title bar string
                 UpdateTitlebar();
             }
+
+            _recentlyUsedDocumentsManager.AddRecentFile(filename);
         }
 
         private void Exit()

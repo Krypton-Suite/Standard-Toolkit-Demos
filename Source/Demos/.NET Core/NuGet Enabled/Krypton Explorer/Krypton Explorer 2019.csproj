@@ -17,18 +17,20 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationVersion>5.550.2103.0</ApplicationVersion>
+    <FileVersion>5.550.2103.0</FileVersion>
+    <Version>5.550.2103.0</Version>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Krypton.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Krypton.Navigator" Version="5.550.2011" />
-    <PackageReference Include="Krypton.Toolkit" Version="5.550.2011" />
+    <PackageReference Include="Krypton.Navigator" Version="5.550.2103" />
+    <PackageReference Include="Krypton.Toolkit" Version="5.550.2103" />
     <PackageReference Include="WindowsAPICodePack" Version="1.1.1" />
   </ItemGroup>
   <ItemGroup>

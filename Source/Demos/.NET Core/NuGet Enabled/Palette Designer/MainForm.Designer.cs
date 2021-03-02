@@ -38,6 +38,8 @@ namespace PaletteDesigner
             this.menuSave = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSep2 = new System.Windows.Forms.ToolStripSeparator();
+            this.recentPalettesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recentPalettesToolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.menuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.kryptonNavigatorTop = new Krypton.Navigator.KryptonNavigator();
             this.pageTopButtonSpecs = new Krypton.Navigator.KryptonPage();
@@ -398,8 +400,6 @@ namespace PaletteDesigner
             this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
             this.kryptonCheckSetLabels = new Krypton.Toolkit.KryptonCheckSet(this.components);
             this.kryptonCheckSet1 = new Krypton.Toolkit.KryptonCheckSet(this.components);
-            this.recentPalettesToolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.recentPalettesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigatorTop)).BeginInit();
             this.kryptonNavigatorTop.SuspendLayout();
@@ -708,7 +708,7 @@ namespace PaletteDesigner
             this.menuNew.Image = ((System.Drawing.Image)(resources.GetObject("menuNew.Image")));
             this.menuNew.Name = "menuNew";
             this.menuNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.menuNew.Size = new System.Drawing.Size(155, 22);
+            this.menuNew.Size = new System.Drawing.Size(180, 22);
             this.menuNew.Text = "New";
             this.menuNew.Click += new System.EventHandler(this.menuNew_Click);
             // 
@@ -717,40 +717,51 @@ namespace PaletteDesigner
             this.menuOpen.Image = ((System.Drawing.Image)(resources.GetObject("menuOpen.Image")));
             this.menuOpen.Name = "menuOpen";
             this.menuOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.menuOpen.Size = new System.Drawing.Size(155, 22);
+            this.menuOpen.Size = new System.Drawing.Size(180, 22);
             this.menuOpen.Text = "Open...";
             this.menuOpen.Click += new System.EventHandler(this.menuOpen_Click);
             // 
             // menuSep1
             // 
             this.menuSep1.Name = "menuSep1";
-            this.menuSep1.Size = new System.Drawing.Size(152, 6);
+            this.menuSep1.Size = new System.Drawing.Size(177, 6);
             // 
             // menuSave
             // 
             this.menuSave.Image = ((System.Drawing.Image)(resources.GetObject("menuSave.Image")));
             this.menuSave.Name = "menuSave";
             this.menuSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.menuSave.Size = new System.Drawing.Size(155, 22);
+            this.menuSave.Size = new System.Drawing.Size(180, 22);
             this.menuSave.Text = "Save";
             this.menuSave.Click += new System.EventHandler(this.menuSave_Click);
             // 
             // menuSaveAs
             // 
             this.menuSaveAs.Name = "menuSaveAs";
-            this.menuSaveAs.Size = new System.Drawing.Size(155, 22);
+            this.menuSaveAs.Size = new System.Drawing.Size(180, 22);
             this.menuSaveAs.Text = "Save As...";
             this.menuSaveAs.Click += new System.EventHandler(this.menuSaveAs_Click);
             // 
             // menuSep2
             // 
             this.menuSep2.Name = "menuSep2";
-            this.menuSep2.Size = new System.Drawing.Size(152, 6);
+            this.menuSep2.Size = new System.Drawing.Size(177, 6);
+            // 
+            // recentPalettesToolStripMenuItem
+            // 
+            this.recentPalettesToolStripMenuItem.Name = "recentPalettesToolStripMenuItem";
+            this.recentPalettesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.recentPalettesToolStripMenuItem.Text = "Recent &Palettes";
+            // 
+            // recentPalettesToolStripSeparator
+            // 
+            this.recentPalettesToolStripSeparator.Name = "recentPalettesToolStripSeparator";
+            this.recentPalettesToolStripSeparator.Size = new System.Drawing.Size(177, 6);
             // 
             // menuExit
             // 
             this.menuExit.Name = "menuExit";
-            this.menuExit.Size = new System.Drawing.Size(155, 22);
+            this.menuExit.Size = new System.Drawing.Size(180, 22);
             this.menuExit.Text = "Exit";
             this.menuExit.Click += new System.EventHandler(this.menuExit_Click);
             // 
@@ -792,7 +803,7 @@ namespace PaletteDesigner
             this.pageTopTabs,
             this.pageTopTrackBar});
             this.kryptonNavigatorTop.SelectedIndex = 0;
-            this.kryptonNavigatorTop.Size = new System.Drawing.Size(834, 53);
+            this.kryptonNavigatorTop.Size = new System.Drawing.Size(834, 51);
             this.kryptonNavigatorTop.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(5, 5, 5, 0);
             this.kryptonNavigatorTop.StateCommon.CheckButton.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonNavigatorTop.StateCommon.CheckButton.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Near;
@@ -1062,10 +1073,10 @@ namespace PaletteDesigner
             // 
             this.kryptonPanelMainFill.Controls.Add(this.kryptonSplitContainerMain);
             this.kryptonPanelMainFill.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanelMainFill.Location = new System.Drawing.Point(0, 77);
+            this.kryptonPanelMainFill.Location = new System.Drawing.Point(0, 75);
             this.kryptonPanelMainFill.Name = "kryptonPanelMainFill";
             this.kryptonPanelMainFill.Padding = new System.Windows.Forms.Padding(5);
-            this.kryptonPanelMainFill.Size = new System.Drawing.Size(834, 597);
+            this.kryptonPanelMainFill.Size = new System.Drawing.Size(834, 599);
             this.kryptonPanelMainFill.TabIndex = 2;
             // 
             // kryptonSplitContainerMain
@@ -1084,7 +1095,7 @@ namespace PaletteDesigner
             // 
             this.kryptonSplitContainerMain.Panel2.Controls.Add(this.kryptonHeaderGroupProperties);
             this.kryptonSplitContainerMain.Panel2MinSize = 200;
-            this.kryptonSplitContainerMain.Size = new System.Drawing.Size(824, 587);
+            this.kryptonSplitContainerMain.Size = new System.Drawing.Size(824, 589);
             this.kryptonSplitContainerMain.SplitterDistance = 464;
             this.kryptonSplitContainerMain.TabIndex = 0;
             // 
@@ -1129,7 +1140,7 @@ namespace PaletteDesigner
             this.pageDesignTabs,
             this.pageDesignTrackBar});
             this.kryptonNavigatorDesign.SelectedIndex = 10;
-            this.kryptonNavigatorDesign.Size = new System.Drawing.Size(464, 587);
+            this.kryptonNavigatorDesign.Size = new System.Drawing.Size(464, 589);
             this.kryptonNavigatorDesign.TabIndex = 2;
             this.kryptonNavigatorDesign.Text = "kryptonNavigator1";
             this.kryptonNavigatorDesign.SelectedPageChanged += new System.EventHandler(this.kryptonNavigatorDesign_SelectedPageChanged);
@@ -1865,7 +1876,7 @@ namespace PaletteDesigner
             // borderDesignButtons
             // 
             this.borderDesignButtons.Dock = System.Windows.Forms.DockStyle.Left;
-            this.borderDesignButtons.Location = new System.Drawing.Point(94, 0);
+            this.borderDesignButtons.Location = new System.Drawing.Point(92, 0);
             this.borderDesignButtons.Name = "borderDesignButtons";
             this.borderDesignButtons.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.HeaderPrimary;
             this.borderDesignButtons.Size = new System.Drawing.Size(1, 534);
@@ -1918,7 +1929,7 @@ namespace PaletteDesigner
             this.pageButtonsCustom3});
             this.kryptonNavigatorDesignButtons.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonNavigatorDesignButtons.SelectedIndex = 0;
-            this.kryptonNavigatorDesignButtons.Size = new System.Drawing.Size(94, 534);
+            this.kryptonNavigatorDesignButtons.Size = new System.Drawing.Size(92, 534);
             this.kryptonNavigatorDesignButtons.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(5);
             this.kryptonNavigatorDesignButtons.TabIndex = 0;
             this.kryptonNavigatorDesignButtons.Text = "kryptonNavigator1";
@@ -2488,8 +2499,8 @@ namespace PaletteDesigner
             // 
             // labelControlsNormal
             // 
-            this.labelControlsNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.labelControlsNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControlsNormal.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.labelControlsNormal.Location = new System.Drawing.Point(283, 30);
@@ -2503,8 +2514,8 @@ namespace PaletteDesigner
             // 
             // labelControlsDisabled
             // 
-            this.labelControlsDisabled.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.labelControlsDisabled.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControlsDisabled.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.labelControlsDisabled.Location = new System.Drawing.Point(119, 30);
@@ -2533,7 +2544,7 @@ namespace PaletteDesigner
             // borderDesignControls
             // 
             this.borderDesignControls.Dock = System.Windows.Forms.DockStyle.Left;
-            this.borderDesignControls.Location = new System.Drawing.Point(75, 0);
+            this.borderDesignControls.Location = new System.Drawing.Point(73, 0);
             this.borderDesignControls.Name = "borderDesignControls";
             this.borderDesignControls.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.HeaderPrimary;
             this.borderDesignControls.Size = new System.Drawing.Size(1, 524);
@@ -2573,7 +2584,7 @@ namespace PaletteDesigner
             this.pageControlsCustom1});
             this.kryptonNavigatorDesignControls.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonNavigatorDesignControls.SelectedIndex = 0;
-            this.kryptonNavigatorDesignControls.Size = new System.Drawing.Size(75, 524);
+            this.kryptonNavigatorDesignControls.Size = new System.Drawing.Size(73, 524);
             this.kryptonNavigatorDesignControls.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(5);
             this.kryptonNavigatorDesignControls.TabIndex = 0;
             this.kryptonNavigatorDesignControls.Text = "kryptonNavigator1";
@@ -2748,8 +2759,8 @@ namespace PaletteDesigner
             // 
             // labelGridDisabled
             // 
-            this.labelGridDisabled.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.labelGridDisabled.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelGridDisabled.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.labelGridDisabled.Location = new System.Drawing.Point(100, 220);
@@ -2763,8 +2774,8 @@ namespace PaletteDesigner
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.kryptonLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonLabel2.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.kryptonLabel2.Location = new System.Drawing.Point(999, 401);
@@ -2778,8 +2789,8 @@ namespace PaletteDesigner
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.kryptonLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.kryptonLabel1.Location = new System.Drawing.Point(100, 25);
@@ -2857,7 +2868,7 @@ namespace PaletteDesigner
             this.kryptonGridCustom1});
             this.kryptonNavigatorDesignGrids.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonNavigatorDesignGrids.SelectedIndex = 0;
-            this.kryptonNavigatorDesignGrids.Size = new System.Drawing.Size(73, 524);
+            this.kryptonNavigatorDesignGrids.Size = new System.Drawing.Size(71, 524);
             this.kryptonNavigatorDesignGrids.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(5);
             this.kryptonNavigatorDesignGrids.TabIndex = 1;
             this.kryptonNavigatorDesignGrids.Text = "kryptonNavigator1";
@@ -3017,7 +3028,7 @@ namespace PaletteDesigner
             // borderDesignHeaders
             // 
             this.borderDesignHeaders.Dock = System.Windows.Forms.DockStyle.Left;
-            this.borderDesignHeaders.Location = new System.Drawing.Point(93, 0);
+            this.borderDesignHeaders.Location = new System.Drawing.Point(91, 0);
             this.borderDesignHeaders.Name = "borderDesignHeaders";
             this.borderDesignHeaders.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.HeaderPrimary;
             this.borderDesignHeaders.Size = new System.Drawing.Size(1, 524);
@@ -3059,7 +3070,7 @@ namespace PaletteDesigner
             this.pageHeadersCustom2});
             this.kryptonNavigatorDesignHeaders.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonNavigatorDesignHeaders.SelectedIndex = 7;
-            this.kryptonNavigatorDesignHeaders.Size = new System.Drawing.Size(93, 524);
+            this.kryptonNavigatorDesignHeaders.Size = new System.Drawing.Size(91, 524);
             this.kryptonNavigatorDesignHeaders.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(5);
             this.kryptonNavigatorDesignHeaders.TabIndex = 0;
             this.kryptonNavigatorDesignHeaders.Text = "kryptonNavigator1";
@@ -3269,7 +3280,9 @@ namespace PaletteDesigner
             // 
             // comboBoxActive
             // 
+            this.comboBoxActive.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBoxActive.DropDownWidth = 121;
+            this.comboBoxActive.IntegralHeight = false;
             this.comboBoxActive.Items.AddRange(new object[] {
             "Active",
             "Active",
@@ -3280,12 +3293,15 @@ namespace PaletteDesigner
             this.comboBoxActive.Location = new System.Drawing.Point(219, 223);
             this.comboBoxActive.Name = "comboBoxActive";
             this.comboBoxActive.Size = new System.Drawing.Size(88, 21);
+            this.comboBoxActive.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.comboBoxActive.TabIndex = 7;
             this.comboBoxActive.Text = "Active";
             // 
             // comboBoxNormal
             // 
+            this.comboBoxNormal.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBoxNormal.DropDownWidth = 121;
+            this.comboBoxNormal.IntegralHeight = false;
             this.comboBoxNormal.Items.AddRange(new object[] {
             "Normal",
             "Normal",
@@ -3296,16 +3312,20 @@ namespace PaletteDesigner
             this.comboBoxNormal.Location = new System.Drawing.Point(219, 144);
             this.comboBoxNormal.Name = "comboBoxNormal";
             this.comboBoxNormal.Size = new System.Drawing.Size(88, 21);
+            this.comboBoxNormal.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.comboBoxNormal.TabIndex = 6;
             this.comboBoxNormal.Text = "Normal";
             // 
             // comboBoxDisabled
             // 
+            this.comboBoxDisabled.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBoxDisabled.DropDownWidth = 121;
             this.comboBoxDisabled.Enabled = false;
+            this.comboBoxDisabled.IntegralHeight = false;
             this.comboBoxDisabled.Location = new System.Drawing.Point(219, 66);
             this.comboBoxDisabled.Name = "comboBoxDisabled";
             this.comboBoxDisabled.Size = new System.Drawing.Size(88, 21);
+            this.comboBoxDisabled.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.comboBoxDisabled.TabIndex = 5;
             this.comboBoxDisabled.Text = "Disabled";
             // 
@@ -3365,7 +3385,7 @@ namespace PaletteDesigner
             this.kryptonPage6});
             this.kryptonNavigatorDesignInputControls.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonNavigatorDesignInputControls.SelectedIndex = 0;
-            this.kryptonNavigatorDesignInputControls.Size = new System.Drawing.Size(82, 524);
+            this.kryptonNavigatorDesignInputControls.Size = new System.Drawing.Size(80, 524);
             this.kryptonNavigatorDesignInputControls.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(5);
             this.kryptonNavigatorDesignInputControls.TabIndex = 1;
             this.kryptonNavigatorDesignInputControls.Text = "kryptonNavigator1";
@@ -3434,8 +3454,8 @@ namespace PaletteDesigner
             // 
             // kryptonLabel6
             // 
-            this.kryptonLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.kryptonLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonLabel6.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.kryptonLabel6.Location = new System.Drawing.Point(24, 21);
@@ -3449,8 +3469,8 @@ namespace PaletteDesigner
             // 
             // kryptonLabel7
             // 
-            this.kryptonLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.kryptonLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonLabel7.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.kryptonLabel7.Location = new System.Drawing.Point(24, 268);
@@ -3505,7 +3525,7 @@ namespace PaletteDesigner
             this.pageDesignLabels.LastVisibleSet = true;
             this.pageDesignLabels.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageDesignLabels.Name = "pageDesignLabels";
-            this.pageDesignLabels.Size = new System.Drawing.Size(462, 534);
+            this.pageDesignLabels.Size = new System.Drawing.Size(462, 536);
             this.pageDesignLabels.Text = "Design Labels";
             this.pageDesignLabels.TextDescription = "Normal is appropriate for standard control labelling. ";
             this.pageDesignLabels.TextTitle = "Normal";
@@ -3658,10 +3678,10 @@ namespace PaletteDesigner
             // borderDesignLabels
             // 
             this.borderDesignLabels.Dock = System.Windows.Forms.DockStyle.Left;
-            this.borderDesignLabels.Location = new System.Drawing.Point(113, 0);
+            this.borderDesignLabels.Location = new System.Drawing.Point(111, 0);
             this.borderDesignLabels.Name = "borderDesignLabels";
             this.borderDesignLabels.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.HeaderPrimary;
-            this.borderDesignLabels.Size = new System.Drawing.Size(1, 534);
+            this.borderDesignLabels.Size = new System.Drawing.Size(1, 536);
             this.borderDesignLabels.TabIndex = 2;
             // 
             // kryptonNavigatorDesignLabels
@@ -3707,7 +3727,7 @@ namespace PaletteDesigner
             this.pageLabelsCustom3});
             this.kryptonNavigatorDesignLabels.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonNavigatorDesignLabels.SelectedIndex = 0;
-            this.kryptonNavigatorDesignLabels.Size = new System.Drawing.Size(113, 534);
+            this.kryptonNavigatorDesignLabels.Size = new System.Drawing.Size(111, 536);
             this.kryptonNavigatorDesignLabels.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(5);
             this.kryptonNavigatorDesignLabels.TabIndex = 0;
             this.kryptonNavigatorDesignLabels.Text = "kryptonNavigator1";
@@ -3942,7 +3962,7 @@ namespace PaletteDesigner
             // borderDesignNavigator
             // 
             this.borderDesignNavigator.Dock = System.Windows.Forms.DockStyle.Left;
-            this.borderDesignNavigator.Location = new System.Drawing.Point(84, 0);
+            this.borderDesignNavigator.Location = new System.Drawing.Point(82, 0);
             this.borderDesignNavigator.Name = "borderDesignNavigator";
             this.borderDesignNavigator.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.HeaderPrimary;
             this.borderDesignNavigator.Size = new System.Drawing.Size(1, 524);
@@ -3979,7 +3999,7 @@ namespace PaletteDesigner
             this.pageNavigatorBarCheckButtonGroupOnly});
             this.kryptonNavigatorDesignNavigator.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonNavigatorDesignNavigator.SelectedIndex = 0;
-            this.kryptonNavigatorDesignNavigator.Size = new System.Drawing.Size(84, 524);
+            this.kryptonNavigatorDesignNavigator.Size = new System.Drawing.Size(82, 524);
             this.kryptonNavigatorDesignNavigator.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(5);
             this.kryptonNavigatorDesignNavigator.TabIndex = 1;
             this.kryptonNavigatorDesignNavigator.Text = "kryptonNavigator2";
@@ -4145,8 +4165,8 @@ namespace PaletteDesigner
             // 
             // labelPanelsNormal
             // 
-            this.labelPanelsNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.labelPanelsNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelPanelsNormal.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.labelPanelsNormal.Location = new System.Drawing.Point(311, 30);
@@ -4160,8 +4180,8 @@ namespace PaletteDesigner
             // 
             // labelPanelsDisabled
             // 
-            this.labelPanelsDisabled.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.labelPanelsDisabled.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelPanelsDisabled.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.labelPanelsDisabled.Location = new System.Drawing.Point(147, 30);
@@ -4176,7 +4196,7 @@ namespace PaletteDesigner
             // borderDesignPanels
             // 
             this.borderDesignPanels.Dock = System.Windows.Forms.DockStyle.Left;
-            this.borderDesignPanels.Location = new System.Drawing.Point(105, 0);
+            this.borderDesignPanels.Location = new System.Drawing.Point(103, 0);
             this.borderDesignPanels.Name = "borderDesignPanels";
             this.borderDesignPanels.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.HeaderPrimary;
             this.borderDesignPanels.Size = new System.Drawing.Size(1, 534);
@@ -4214,7 +4234,7 @@ namespace PaletteDesigner
             this.pagePanelsCustom1});
             this.kryptonNavigatorDesignPanels.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonNavigatorDesignPanels.SelectedIndex = 0;
-            this.kryptonNavigatorDesignPanels.Size = new System.Drawing.Size(105, 534);
+            this.kryptonNavigatorDesignPanels.Size = new System.Drawing.Size(103, 534);
             this.kryptonNavigatorDesignPanels.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(5);
             this.kryptonNavigatorDesignPanels.TabIndex = 0;
             this.kryptonNavigatorDesignPanels.Text = "kryptonNavigator1";
@@ -4497,8 +4517,8 @@ namespace PaletteDesigner
             // 
             // labelSeparatorsLive
             // 
-            this.labelSeparatorsLive.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.labelSeparatorsLive.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSeparatorsLive.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.labelSeparatorsLive.Location = new System.Drawing.Point(209, 300);
@@ -4580,8 +4600,8 @@ namespace PaletteDesigner
             // 
             // labelSeparatorsPressed
             // 
-            this.labelSeparatorsPressed.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.labelSeparatorsPressed.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSeparatorsPressed.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.labelSeparatorsPressed.Location = new System.Drawing.Point(295, 162);
@@ -4595,8 +4615,8 @@ namespace PaletteDesigner
             // 
             // labelSeparatorsTracking
             // 
-            this.labelSeparatorsTracking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.labelSeparatorsTracking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSeparatorsTracking.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.labelSeparatorsTracking.Location = new System.Drawing.Point(130, 162);
@@ -4679,8 +4699,8 @@ namespace PaletteDesigner
             // 
             // labelSeparatorsNormal
             // 
-            this.labelSeparatorsNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.labelSeparatorsNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSeparatorsNormal.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.labelSeparatorsNormal.Location = new System.Drawing.Point(298, 30);
@@ -4694,8 +4714,8 @@ namespace PaletteDesigner
             // 
             // labelSeparatorsDisabled
             // 
-            this.labelSeparatorsDisabled.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.labelSeparatorsDisabled.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSeparatorsDisabled.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.labelSeparatorsDisabled.Location = new System.Drawing.Point(129, 30);
@@ -4710,7 +4730,7 @@ namespace PaletteDesigner
             // borderDesignSeparators
             // 
             this.borderDesignSeparators.Dock = System.Windows.Forms.DockStyle.Left;
-            this.borderDesignSeparators.Location = new System.Drawing.Point(91, 0);
+            this.borderDesignSeparators.Location = new System.Drawing.Point(89, 0);
             this.borderDesignSeparators.Name = "borderDesignSeparators";
             this.borderDesignSeparators.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.HeaderPrimary;
             this.borderDesignSeparators.Size = new System.Drawing.Size(1, 500);
@@ -4748,7 +4768,7 @@ namespace PaletteDesigner
             this.pageSeparatorCustom1});
             this.kryptonNavigatorDesignSeparators.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonNavigatorDesignSeparators.SelectedIndex = 0;
-            this.kryptonNavigatorDesignSeparators.Size = new System.Drawing.Size(91, 500);
+            this.kryptonNavigatorDesignSeparators.Size = new System.Drawing.Size(89, 500);
             this.kryptonNavigatorDesignSeparators.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(5);
             this.kryptonNavigatorDesignSeparators.TabIndex = 0;
             this.kryptonNavigatorDesignSeparators.Text = "kryptonNavigator1";
@@ -4907,7 +4927,7 @@ namespace PaletteDesigner
             // borderDesignTabs
             // 
             this.borderDesignTabs.Dock = System.Windows.Forms.DockStyle.Left;
-            this.borderDesignTabs.Location = new System.Drawing.Point(118, 0);
+            this.borderDesignTabs.Location = new System.Drawing.Point(116, 0);
             this.borderDesignTabs.Name = "borderDesignTabs";
             this.borderDesignTabs.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.HeaderPrimary;
             this.borderDesignTabs.Size = new System.Drawing.Size(1, 524);
@@ -4952,7 +4972,7 @@ namespace PaletteDesigner
             this.pageTabCustom3});
             this.kryptonNavigatorDesignTabs.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonNavigatorDesignTabs.SelectedIndex = 0;
-            this.kryptonNavigatorDesignTabs.Size = new System.Drawing.Size(118, 524);
+            this.kryptonNavigatorDesignTabs.Size = new System.Drawing.Size(116, 524);
             this.kryptonNavigatorDesignTabs.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(5);
             this.kryptonNavigatorDesignTabs.TabIndex = 0;
             this.kryptonNavigatorDesignTabs.Text = "kryptonNavigator1";
@@ -5255,18 +5275,22 @@ namespace PaletteDesigner
             // kryptonHeaderGroupProperties.Panel
             // 
             this.kryptonHeaderGroupProperties.Panel.Controls.Add(this.kpgPaletteProperties);
-            this.kryptonHeaderGroupProperties.Size = new System.Drawing.Size(355, 587);
+            this.kryptonHeaderGroupProperties.Size = new System.Drawing.Size(355, 589);
             this.kryptonHeaderGroupProperties.TabIndex = 0;
             this.kryptonHeaderGroupProperties.ValuesPrimary.Heading = "Properties";
             this.kryptonHeaderGroupProperties.ValuesPrimary.Image = null;
             // 
             // kpgPaletteProperties
             // 
+            this.kpgPaletteProperties.CategoryForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.kpgPaletteProperties.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kpgPaletteProperties.HelpBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(113)))));
+            this.kpgPaletteProperties.HelpForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.kpgPaletteProperties.HelpVisible = false;
+            this.kpgPaletteProperties.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.kpgPaletteProperties.Location = new System.Drawing.Point(0, 0);
             this.kpgPaletteProperties.Name = "kpgPaletteProperties";
-            this.kpgPaletteProperties.Size = new System.Drawing.Size(353, 555);
+            this.kpgPaletteProperties.Size = new System.Drawing.Size(353, 557);
             this.kpgPaletteProperties.TabIndex = 0;
             this.kpgPaletteProperties.ToolbarVisible = false;
             // 
@@ -5367,17 +5391,6 @@ namespace PaletteDesigner
             this.kryptonCheckSetLabels.CheckButtons.Add(this.labelsControlToolTip);
             this.kryptonCheckSetLabels.CheckedButton = this.labelsPanelClient;
             this.kryptonCheckSetLabels.CheckedButtonChanged += new System.EventHandler(this.kryptonCheckSetLabels_CheckedButtonChanged);
-            //
-            // recentPalettesToolStripSeparator
-            //
-            this.recentPalettesToolStripSeparator.Name = "recentPalettesToolStripSeparator";
-            this.recentPalettesToolStripSeparator.Size = new System.Drawing.Size(177, 22);
-            //
-            // recentPalettesToolStripMenuItem
-            //
-            this.recentPalettesToolStripMenuItem.Name = "recentPalettesToolStripMenuItem";
-            this.recentPalettesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.recentPalettesToolStripMenuItem.Text = "Recent &Palettes";
             // 
             // MainForm
             // 
@@ -5392,7 +5405,6 @@ namespace PaletteDesigner
             this.MainMenuStrip = this.mainMenuStrip;
             this.MinimumSize = new System.Drawing.Size(410, 375);
             this.Name = "MainForm";
-            this.ShowIcon = false;
             this.Text = "Palette Designer";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.mainMenuStrip.ResumeLayout(false);
