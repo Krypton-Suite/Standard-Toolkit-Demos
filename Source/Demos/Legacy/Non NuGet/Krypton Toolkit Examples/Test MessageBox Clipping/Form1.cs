@@ -8,7 +8,7 @@
 using System;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
 namespace TestMessageBoxClipping
 {
@@ -223,6 +223,18 @@ namespace TestMessageBoxClipping
             {
                 MessageBox.Show(ex.StackTrace, "ex.Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 KryptonMessageBox.Show(ex.StackTrace, "ex.Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+
+        private void ChkUseBlurring_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkUseBlurring.Checked)
+            {
+                BlurValues.EnableBlur = true;
+            }
+            else
+            {
+                ResetBlurValues();
             }
         }
     }
