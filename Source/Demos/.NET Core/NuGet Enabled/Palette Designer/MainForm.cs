@@ -14,6 +14,7 @@
 using Krypton.Navigator;
 using Krypton.Toolkit;
 using PaletteDesigner.Classes;
+using PaletteDesigner.Properties;
 using System;
 using System.IO;
 using System.Windows.Forms;
@@ -30,6 +31,7 @@ namespace PaletteDesigner
         private FormChromeTMS _chromeTMS;
         private FormChromeRibbon _chromeRibbon;
         private MostRecentlyUsedDocumentsManager _recentlyUsedDocumentsManager;
+        private Settings _settings = new Settings();
         #endregion
 
         #region Identity
@@ -41,6 +43,8 @@ namespace PaletteDesigner
             InitializeComponent();
 
             _recentlyUsedDocumentsManager = new MostRecentlyUsedDocumentsManager(recentPalettesToolStripMenuItem, "Krypton Palette Designer", MyOwnRecentPaletteFileGotClicked_Handler, MyOwnRecentPaletteFilesGotCleared_Handler);
+
+            kryptonManager.GlobalPaletteMode = _settings.Theme;
         }
         #endregion
 
@@ -1016,6 +1020,58 @@ namespace PaletteDesigner
         {
             // Mark a changed file with a star
             Text = "Palette Designer - " + _filename + (_dirty ? "*" : string.Empty);
+        }
+        #endregion
+
+        #region Methods
+        /// <summary>Switches the theme.</summary>
+        /// <param name="mode">The mode.</param>
+        /// <param name="customThemeFilePath">The custom theme file path.</param>
+        private void SwitchTheme(PaletteModeManager mode, string customThemeFilePath = null)
+        {
+            switch (mode)
+            {
+                case PaletteModeManager.ProfessionalSystem:
+                    break;
+                case PaletteModeManager.ProfessionalOffice2003:
+                    break;
+                case PaletteModeManager.Office2007Blue:
+                    break;
+                case PaletteModeManager.Office2007Silver:
+                    break;
+                case PaletteModeManager.Office2007White:
+                    break;
+                case PaletteModeManager.Office2007Black:
+                    break;
+                case PaletteModeManager.Office2010Blue:
+                    break;
+                case PaletteModeManager.Office2010Silver:
+                    break;
+                case PaletteModeManager.Office2010White:
+                    break;
+                case PaletteModeManager.Office2010Black:
+                    break;
+                case PaletteModeManager.Office2013:
+                    break;
+                case PaletteModeManager.Office2013White:
+                    break;
+                case PaletteModeManager.Office365Black:
+                    break;
+                case PaletteModeManager.Office365Blue:
+                    break;
+                case PaletteModeManager.Office365Silver:
+                    break;
+                case PaletteModeManager.Office365White:
+                    break;
+                case PaletteModeManager.SparkleBlue:
+                    break;
+                case PaletteModeManager.SparkleOrange:
+                    break;
+                case PaletteModeManager.SparklePurple:
+                    break;
+                case PaletteModeManager.Custom:
+                    break;
+            }
         }
         #endregion
     }

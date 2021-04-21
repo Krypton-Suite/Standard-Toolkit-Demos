@@ -18,8 +18,8 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security;
 
-[assembly: AssemblyVersion("5.550.2103.0")]
-[assembly: AssemblyFileVersion("5.550.2103.0")]
+[assembly: AssemblyVersion("5.550.2106.0")]
+[assembly: AssemblyFileVersion("5.550.2106.0")]
 [assembly: AssemblyInformationalVersion("4.5.11.0")]
 [assembly: AssemblyCopyright("© Component Factory Pty Ltd, 2006 - 2016. All rights reserved.")]
 [assembly: AssemblyProduct("Palette Designer")]
