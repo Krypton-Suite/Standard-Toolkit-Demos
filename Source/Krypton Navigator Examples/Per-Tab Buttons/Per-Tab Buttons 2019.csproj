@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PerTabButtons</RootNamespace>
+    <AssemblyName>Per Tab Buttons</AssemblyName>
+    <ApplicationIcon>Krypton.ico</ApplicationIcon>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <AssemblyVersion>19.3.5003.9</AssemblyVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+    <ItemGroup>
+    <ProjectReference Include="..\..\Krypton Components\ComponentFactory.Krypton.Navigator\ComponentFactory.Krypton.Navigator 2019.csproj" />
+        <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
+    </ItemGroup>
+  <ItemGroup>
+    <Content Include="Krypton.ico" />
+  </ItemGroup>
+  <PropertyGroup>
+          <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+</Project>

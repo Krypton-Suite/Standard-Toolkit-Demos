@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AutoShrinkingGroups</RootNamespace>
+    <AssemblyName>Auto Shrinking Groups</AssemblyName>
+    <ApplicationIcon>Krypton.ico</ApplicationIcon>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Krypton.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+    <ItemGroup>
+    <ProjectReference Include="..\..\Krypton Components\ComponentFactory.Krypton.Ribbon\ComponentFactory.Krypton.Ribbon 2019.csproj" />
+        <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
+    </ItemGroup>
+  <PropertyGroup>
+          <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+</Project>

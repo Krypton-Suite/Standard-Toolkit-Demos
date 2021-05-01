@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KryptonTaskDialogExamples</RootNamespace>
+    <AssemblyName>Krypton TaskDialog Examples</AssemblyName>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Krypton.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Krypton.ico" />
+  </ItemGroup>
+  <ItemGroup>
+        <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+        <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+</Project>
