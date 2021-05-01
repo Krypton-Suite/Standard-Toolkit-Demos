@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MultiControlDocking</RootNamespace>
+    <AssemblyName>Multi Control Docking</AssemblyName>
+    <ApplicationIcon>Krypton.ico</ApplicationIcon>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <AssemblyVersion>19.3.603.9</AssemblyVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="ContentInput.cs">
+  <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Krypton.ico" />
+  </ItemGroup>
+    <ItemGroup>
+    <ProjectReference Include="..\..\Krypton Components\ComponentFactory.Krypton.Docking\ComponentFactory.Krypton.Docking 2019.csproj" />
+    </ItemGroup>
+  <PropertyGroup>
+          <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+</Project>

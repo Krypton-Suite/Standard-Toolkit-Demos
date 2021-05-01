@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KryptonExplorer</RootNamespace>
+    <AssemblyName>Krypton Explorer</AssemblyName>
+    <ApplicationIcon>Krypton.ico</ApplicationIcon>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Krypton.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Krypton Components\ComponentFactory.Krypton.Navigator\ComponentFactory.Krypton.Navigator 2019.csproj" />
+    <ProjectReference Include="..\Krypton Components\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2019.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+  <OutputPath>..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+</Project>
