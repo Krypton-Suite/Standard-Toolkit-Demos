@@ -17,10 +17,11 @@ There are 2 sets of solutions in these projects:
 ## [Krypton Explorer](Source/Krypton%20Explorer/README.md)
 This project allows the launching of the compiled examples directly
 
-## [Toolkit Hub](Source/Krypton%20Toolkit%20Hub/README.md)
+## Following need sorting:
+### [Toolkit Hub](Source/Krypton%20Toolkit%20Hub/README.md)
 
-## [Toolkit Updater](Source/Krypton%20Toolkit%Updater/README.md)
+### [Toolkit Updater](Source/Krypton%20Toolkit%Updater/README.md)
 
-## [Palette Designer](Source/Palette%20Designer/README.md)
+### [Palette Designer](Source/Palette%20Designer/README.md)
 
-## [Palette Upgrade Tool](Source/Palette%20Upgrade%20Tool/README.md)
+### [Palette Upgrade Tool](Source/Palette%20Upgrade%20Tool/README.md)

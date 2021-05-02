@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Krypton.Toolkit.PopupPositionValues popupPositionValues1 = new Krypton.Toolkit.PopupPositionValues();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kryptonRibbon = new Krypton.Ribbon.KryptonRibbon();
             this.ribbonAppButtonExit = new Krypton.Toolkit.KryptonContextMenuItem();
@@ -115,9 +114,6 @@
             this.kryptonRibbon.SelectedTab = this.kryptonRibbonTab1;
             this.kryptonRibbon.Size = new System.Drawing.Size(764, 115);
             this.kryptonRibbon.TabIndex = 0;
-            popupPositionValues1.PlacementRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            popupPositionValues1.PlacementTarget = null;
-            this.kryptonRibbon.ToolTipValues.ToolTipPosition = popupPositionValues1;
             // 
             // ribbonAppButtonExit
             // 

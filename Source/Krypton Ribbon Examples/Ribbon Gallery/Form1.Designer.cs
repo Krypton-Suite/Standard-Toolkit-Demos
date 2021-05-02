@@ -201,7 +201,7 @@ namespace RibbonGallery
             this.galleryCustom.ImageLarge = ((System.Drawing.Image)(resources.GetObject("galleryCustom.ImageLarge")));
             this.galleryCustom.ImageList = this.imageList1;
             this.galleryCustom.KeyTip = "Z";
-            this.galleryCustom.GalleryDropMenu += new System.EventHandler<.Ribbon.GalleryDropMenuEventArgs>(this.galleryCustom_GalleryDropMenu);
+            this.galleryCustom.GalleryDropMenu += new System.EventHandler<Krypton.Ribbon.GalleryDropMenuEventArgs>(this.galleryCustom_GalleryDropMenu);
             // 
             // kryptonGalleryRange1
             // 

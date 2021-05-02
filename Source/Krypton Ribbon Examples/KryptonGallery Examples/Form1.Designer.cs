@@ -72,7 +72,7 @@ namespace KryptonGalleryExamples
             this.kryptonGallery1.PreferredItemSize = new System.Drawing.Size(4, 1);
             this.kryptonGallery1.Size = new System.Drawing.Size(174, 46);
             this.kryptonGallery1.TabIndex = 4;
-            this.kryptonGallery1.GalleryDropMenu += new System.EventHandler<.Ribbon.GalleryDropMenuEventArgs>(this.kryptonGallery1_GalleryDropMenu);
+            this.kryptonGallery1.GalleryDropMenu += new System.EventHandler<Krypton.Ribbon.GalleryDropMenuEventArgs>(this.kryptonGallery1_GalleryDropMenu);
             // 
             // kryptonGalleryRange1
             // 
