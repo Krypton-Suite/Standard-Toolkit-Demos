@@ -5,7 +5,9 @@
 //  proprietary information of Component Factory Pty Ltd, PO Box 1504, 
 //  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
 // 
-//  Version 5.500.5000.0 	www.ComponentFactory.com
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2021. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  Version 4.7.0.0  www.ComponentFactory.com
+
 // *****************************************************************************
 
 using System;
@@ -36,4 +38,4 @@ using System.Runtime.InteropServices;
 [assembly: Dependency("System.Drawing", LoadHint.Always)]
 [assembly: Dependency("System.Windows.Forms", LoadHint.Always)]
 [assembly: Dependency("Krypton.Toolkit", LoadHint.Always)]
-[assembly: Dependency(".Navigator", LoadHint.Always)]
+[assembly: Dependency("Krypton.Navigator", LoadHint.Always)]

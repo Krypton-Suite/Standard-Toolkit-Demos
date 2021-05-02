@@ -15,7 +15,7 @@ using System.Drawing;
 using System.Windows.Forms;
 
 using .Docking;
-using Krypton.Navigator;
+using KryptonKrypton.Navigator;
 using .Ribbon;
 using Krypton.Toolkit;
 using .Workspace;
@@ -249,7 +249,7 @@ namespace DockingCustomized
 
         private void UpdateCell(KryptonWorkspaceCell cell)
         {
-            cell.NavigatorMode = _mode;
+            cellKrypton.NavigatorMode = _mode;
         }
 
         private Color RandomColor()

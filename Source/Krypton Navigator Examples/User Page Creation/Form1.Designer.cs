@@ -57,8 +57,8 @@ namespace UserPageCreation
             this.kryptonNavigator1.TabIndex = 0;
             this.kryptonNavigator1.Text = "kryptonNavigator1";
             this.kryptonNavigator1.SelectedPageChanged += new System.EventHandler(this.kryptonNavigator1_SelectedPageChanged);
-            this.kryptonNavigator1.ContextAction += new System.EventHandler<.Navigator.ContextActionEventArgs>(this.kryptonNavigator1_ContextAction);
-            this.kryptonNavigator1.CloseAction += new System.EventHandler<.Navigator.CloseActionEventArgs>(this.kryptonNavigator1_CloseAction);
+            this.kryptonNavigator1.ContextAction += new System.EventHandler<Krypton.Navigator.ContextActionEventArgs>(this.kryptonNavigator1_ContextAction);
+            this.kryptonNavigator1.CloseAction += new System.EventHandler<Krypton.Navigator.CloseActionEventArgs>(this.kryptonNavigator1_CloseAction);
             // 
             // kryptonAddPage
             // 

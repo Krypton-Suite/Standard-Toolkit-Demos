@@ -34,4 +34,4 @@ using System.Security;
 [assembly: Dependency("System.Drawing", LoadHint.Always)]
 [assembly: Dependency("System.Windows.Forms", LoadHint.Always)]
 [assembly: Dependency("Krypton.Toolkit", LoadHint.Always)]
-[assembly: Dependency(".Navigator", LoadHint.Always)]
+[assembly: Dependency("Krypton.Navigator", LoadHint.Always)]

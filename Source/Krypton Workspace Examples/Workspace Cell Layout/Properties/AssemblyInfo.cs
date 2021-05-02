@@ -37,6 +37,6 @@ using System.Runtime.InteropServices;
 [assembly: Dependency("System.Drawing", LoadHint.Always)]
 [assembly: Dependency("System.Windows.Forms", LoadHint.Always)]
 [assembly: Dependency("Krypton.Toolkit", LoadHint.Always)]
-[assembly: Dependency(".Navigator", LoadHint.Always)]
-[assembly: Dependency(".Workspace", LoadHint.Always)]
+[assembly: Dependency("Krypton.Navigator", LoadHint.Always)]
+[assembly: Dependency("Krypton.Workspace", LoadHint.Always)]
 

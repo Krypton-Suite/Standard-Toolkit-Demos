@@ -111,7 +111,7 @@ namespace NavigatorContextMenus
             this.kryptonNavigator1.Size = new System.Drawing.Size(302, 146);
             this.kryptonNavigator1.TabIndex = 0;
             this.kryptonNavigator1.Text = "kryptonNavigator1";
-            this.kryptonNavigator1.ShowContextMenu += new System.EventHandler<.Navigator.ShowContextMenuArgs>(this.kryptonNavigator1_ShowContextMenu);
+            this.kryptonNavigator1.ShowContextMenu += new System.EventHandler<Krypton.Navigator.ShowContextMenuArgs>(this.kryptonNavigator1_ShowContextMenu);
             // 
             // page1
             // 
