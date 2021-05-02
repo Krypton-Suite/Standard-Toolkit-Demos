@@ -18,7 +18,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Krypton.Toolkit;
 using Krypton.Navigator;
-using .Workspace;
+using Krypton.Workspace;
 
 namespace AdvancedPageDragAndDrop
 {

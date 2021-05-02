@@ -12,7 +12,7 @@
 using System;
 using System.Windows.Forms;
 
-using .Ribbon;
+using Krypton.Ribbon;
 using Krypton.Toolkit;
 
 namespace RibbonGallery

@@ -37,7 +37,7 @@
             System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Rome", 4, 4);
             System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Berlin", 5, 5);
             System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Vienna", 6, 6);
-            this.kryptonWorkspace = new .Workspace.KryptonWorkspace();
+            this.kryptonWorkspace = new Krypton.Workspace.KryptonWorkspace();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.dragTreeView = new AdvancedPageDragAndDrop.PageDragTreeView();
             this.labelTitle = new System.Windows.Forms.Label();
@@ -70,7 +70,7 @@
             this.kryptonWorkspace.Size = new System.Drawing.Size(333, 250);
             this.kryptonWorkspace.TabIndex = 2;
             this.kryptonWorkspace.TabStop = true;
-            this.kryptonWorkspace.WorkspaceCellAdding += new System.EventHandler<.Workspace.WorkspaceCellEventArgs>(this.workspaceCellAdding);
+            this.kryptonWorkspace.WorkspaceCellAdding += new System.EventHandler<Krypton.Workspace.WorkspaceCellEventArgs>(this.workspaceCellAdding);
             // 
             // imageList
             // 
@@ -287,7 +287,7 @@
         #endregion
 
         private PageDragTreeView dragTreeView;
-        private .Workspace.KryptonWorkspace kryptonWorkspace;
+        private Krypton.Workspace.KryptonWorkspace kryptonWorkspace;
         private Krypton.Navigator.KryptonNavigator kryptonNavigator;
         private System.Windows.Forms.ImageList imageList;
         private System.Windows.Forms.Label labelTitle;

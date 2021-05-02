@@ -30,56 +30,56 @@ namespace RibbonControls
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.kryptonRibbon = new .Ribbon.KryptonRibbon();
+            this.kryptonRibbon = new Krypton.Ribbon.KryptonRibbon();
             this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
-            this.ribbonTab = new .Ribbon.KryptonRibbonTab();
-            this.kryptonRibbonGroup8 = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupLines2 = new .Ribbon.KryptonRibbonGroupLines();
-            this.kryptonRibbonGroupTrackBar1 = new .Ribbon.KryptonRibbonGroupTrackBar();
-            this.kryptonRibbonGroupTrackBar2 = new .Ribbon.KryptonRibbonGroupTrackBar();
-            this.kryptonRibbonGroup1 = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple2 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.textBox1 = new .Ribbon.KryptonRibbonGroupTextBox();
-            this.textBox2 = new .Ribbon.KryptonRibbonGroupTextBox();
-            this.textBox3 = new .Ribbon.KryptonRibbonGroupTextBox();
+            this.ribbonTab = new Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup8 = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupLines2 = new Krypton.Ribbon.KryptonRibbonGroupLines();
+            this.kryptonRibbonGroupTrackBar1 = new Krypton.Ribbon.KryptonRibbonGroupTrackBar();
+            this.kryptonRibbonGroupTrackBar2 = new Krypton.Ribbon.KryptonRibbonGroupTrackBar();
+            this.kryptonRibbonGroup1 = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple2 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.textBox1 = new Krypton.Ribbon.KryptonRibbonGroupTextBox();
+            this.textBox2 = new Krypton.Ribbon.KryptonRibbonGroupTextBox();
+            this.textBox3 = new Krypton.Ribbon.KryptonRibbonGroupTextBox();
             this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
-            this.kryptonRibbonGroupTriple1 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.kryptonRibbonGroup5 = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple6 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.maskedTextBox1 = new .Ribbon.KryptonRibbonGroupMaskedTextBox();
-            this.maskedTextBox2 = new .Ribbon.KryptonRibbonGroupMaskedTextBox();
-            this.maskedTextBox3 = new .Ribbon.KryptonRibbonGroupMaskedTextBox();
+            this.kryptonRibbonGroupTriple1 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroup5 = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple6 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.maskedTextBox1 = new Krypton.Ribbon.KryptonRibbonGroupMaskedTextBox();
+            this.maskedTextBox2 = new Krypton.Ribbon.KryptonRibbonGroupMaskedTextBox();
+            this.maskedTextBox3 = new Krypton.Ribbon.KryptonRibbonGroupMaskedTextBox();
             this.buttonSpecAny3 = new Krypton.Toolkit.ButtonSpecAny();
-            this.kryptonRibbonGroup7 = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple7 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.dateTimePicker1 = new .Ribbon.KryptonRibbonGroupDateTimePicker();
-            this.dateTimePicker2 = new .Ribbon.KryptonRibbonGroupDateTimePicker();
-            this.dateTimePicker3 = new .Ribbon.KryptonRibbonGroupDateTimePicker();
+            this.kryptonRibbonGroup7 = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple7 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.dateTimePicker1 = new Krypton.Ribbon.KryptonRibbonGroupDateTimePicker();
+            this.dateTimePicker2 = new Krypton.Ribbon.KryptonRibbonGroupDateTimePicker();
+            this.dateTimePicker3 = new Krypton.Ribbon.KryptonRibbonGroupDateTimePicker();
             this.buttonSpecAny5 = new Krypton.Toolkit.ButtonSpecAny();
-            this.kryptonRibbonGroup4 = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple4 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.comboBox1 = new .Ribbon.KryptonRibbonGroupComboBox();
-            this.comboBox2 = new .Ribbon.KryptonRibbonGroupComboBox();
-            this.comboBox3 = new .Ribbon.KryptonRibbonGroupComboBox();
+            this.kryptonRibbonGroup4 = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple4 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.comboBox1 = new Krypton.Ribbon.KryptonRibbonGroupComboBox();
+            this.comboBox2 = new Krypton.Ribbon.KryptonRibbonGroupComboBox();
+            this.comboBox3 = new Krypton.Ribbon.KryptonRibbonGroupComboBox();
             this.buttonSpecAny2 = new Krypton.Toolkit.ButtonSpecAny();
-            this.kryptonRibbonGroup6 = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupLines1 = new .Ribbon.KryptonRibbonGroupLines();
-            this.numericUpDown1 = new .Ribbon.KryptonRibbonGroupNumericUpDown();
-            this.numericUpDown2 = new .Ribbon.KryptonRibbonGroupNumericUpDown();
+            this.kryptonRibbonGroup6 = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupLines1 = new Krypton.Ribbon.KryptonRibbonGroupLines();
+            this.numericUpDown1 = new Krypton.Ribbon.KryptonRibbonGroupNumericUpDown();
+            this.numericUpDown2 = new Krypton.Ribbon.KryptonRibbonGroupNumericUpDown();
             this.buttonSpecAny4 = new Krypton.Toolkit.ButtonSpecAny();
-            this.kryptonRibbonGroup2 = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple3 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.richTextBox1 = new .Ribbon.KryptonRibbonGroupRichTextBox();
-            this.kryptonRibbonGroup3 = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple5 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.custom9 = new .Ribbon.KryptonRibbonGroupCustomControl();
-            this.custom10 = new .Ribbon.KryptonRibbonGroupCustomControl();
-            this.custom11 = new .Ribbon.KryptonRibbonGroupCustomControl();
-            this.kryptonRibbonGroup9 = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple8 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.kryptonRibbonGroupButton1 = new .Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupCheckBox1 = new .Ribbon.KryptonRibbonGroupCheckBox();
-            this.kryptonRibbonGroupButton2 = new .Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup2 = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple3 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.richTextBox1 = new Krypton.Ribbon.KryptonRibbonGroupRichTextBox();
+            this.kryptonRibbonGroup3 = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple5 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.custom9 = new Krypton.Ribbon.KryptonRibbonGroupCustomControl();
+            this.custom10 = new Krypton.Ribbon.KryptonRibbonGroupCustomControl();
+            this.custom11 = new Krypton.Ribbon.KryptonRibbonGroupCustomControl();
+            this.kryptonRibbonGroup9 = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple8 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton1 = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupCheckBox1 = new Krypton.Ribbon.KryptonRibbonGroupCheckBox();
+            this.kryptonRibbonGroupButton2 = new Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonPanel = new Krypton.Toolkit.KryptonPanel();
             this.kryptonHeaderGroup = new Krypton.Toolkit.KryptonHeaderGroup();
             this.rbOffice2010Blue = new Krypton.Toolkit.KryptonRadioButton();
@@ -109,7 +109,7 @@ namespace RibbonControls
             this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
             this.kryptonRibbon.RibbonAppButton.AppButtonShowRecentDocs = false;
-            this.kryptonRibbon.RibbonTabs.AddRange(new .Ribbon.KryptonRibbonTab[] {
+            this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.ribbonTab});
             this.kryptonRibbon.SelectedTab = this.ribbonTab;
             this.kryptonRibbon.Size = new System.Drawing.Size(1115, 115);
@@ -123,7 +123,7 @@ namespace RibbonControls
             // 
             // ribbonTab
             // 
-            this.ribbonTab.Groups.AddRange(new .Ribbon.KryptonRibbonGroup[] {
+            this.ribbonTab.Groups.AddRange(new Krypton.Ribbon.KryptonRibbonGroup[] {
             this.kryptonRibbonGroup8,
             this.kryptonRibbonGroup1,
             this.kryptonRibbonGroup5,
@@ -138,13 +138,13 @@ namespace RibbonControls
             // kryptonRibbonGroup8
             // 
             this.kryptonRibbonGroup8.DialogBoxLauncher = false;
-            this.kryptonRibbonGroup8.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroup8.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupLines2});
             this.kryptonRibbonGroup8.TextLine1 = "TrackBar";
             // 
             // kryptonRibbonGroupLines2
             // 
-            this.kryptonRibbonGroupLines2.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupLines2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupTrackBar1,
             this.kryptonRibbonGroupTrackBar2});
             // 
@@ -163,19 +163,19 @@ namespace RibbonControls
             // kryptonRibbonGroup1
             // 
             this.kryptonRibbonGroup1.DialogBoxLauncher = false;
-            this.kryptonRibbonGroup1.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroup1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple2,
             this.kryptonRibbonGroupTriple1});
             this.kryptonRibbonGroup1.TextLine1 = "TextBox";
             // 
             // kryptonRibbonGroupTriple2
             // 
-            this.kryptonRibbonGroupTriple2.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.textBox1,
             this.textBox2,
             this.textBox3});
-            this.kryptonRibbonGroupTriple2.MaximumSize = .Ribbon.GroupItemSize.Medium;
-            this.kryptonRibbonGroupTriple2.MinimumSize = .Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple2.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple2.MinimumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // textBox1
             // 
@@ -202,23 +202,23 @@ namespace RibbonControls
             // 
             // kryptonRibbonGroupTriple1
             // 
-            this.kryptonRibbonGroupTriple1.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple1.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // kryptonRibbonGroup5
             // 
             this.kryptonRibbonGroup5.DialogBoxLauncher = false;
-            this.kryptonRibbonGroup5.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroup5.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple6});
             this.kryptonRibbonGroup5.TextLine1 = "MaskedTextBox";
             // 
             // kryptonRibbonGroupTriple6
             // 
-            this.kryptonRibbonGroupTriple6.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple6.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.maskedTextBox1,
             this.maskedTextBox2,
             this.maskedTextBox3});
-            this.kryptonRibbonGroupTriple6.MaximumSize = .Ribbon.GroupItemSize.Medium;
-            this.kryptonRibbonGroupTriple6.MinimumSize = .Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple6.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple6.MinimumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // maskedTextBox1
             // 
@@ -249,17 +249,17 @@ namespace RibbonControls
             // kryptonRibbonGroup7
             // 
             this.kryptonRibbonGroup7.DialogBoxLauncher = false;
-            this.kryptonRibbonGroup7.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroup7.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple7});
             this.kryptonRibbonGroup7.TextLine1 = "DateTimePicker";
             // 
             // kryptonRibbonGroupTriple7
             // 
-            this.kryptonRibbonGroupTriple7.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple7.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.dateTimePicker1,
             this.dateTimePicker2,
             this.dateTimePicker3});
-            this.kryptonRibbonGroupTriple7.MaximumSize = .Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple7.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // dateTimePicker1
             // 
@@ -297,18 +297,18 @@ namespace RibbonControls
             // kryptonRibbonGroup4
             // 
             this.kryptonRibbonGroup4.DialogBoxLauncher = false;
-            this.kryptonRibbonGroup4.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroup4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple4});
             this.kryptonRibbonGroup4.TextLine1 = "ComboBox";
             // 
             // kryptonRibbonGroupTriple4
             // 
-            this.kryptonRibbonGroupTriple4.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.comboBox1,
             this.comboBox2,
             this.comboBox3});
-            this.kryptonRibbonGroupTriple4.MaximumSize = .Ribbon.GroupItemSize.Medium;
-            this.kryptonRibbonGroupTriple4.MinimumSize = .Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple4.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple4.MinimumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // comboBox1
             // 
@@ -369,13 +369,13 @@ namespace RibbonControls
             // kryptonRibbonGroup6
             // 
             this.kryptonRibbonGroup6.DialogBoxLauncher = false;
-            this.kryptonRibbonGroup6.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroup6.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupLines1});
             this.kryptonRibbonGroup6.TextLine1 = "NumericUpDown";
             // 
             // kryptonRibbonGroupLines1
             // 
-            this.kryptonRibbonGroupLines1.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupLines1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.numericUpDown1,
             this.numericUpDown2});
             // 
@@ -430,15 +430,15 @@ namespace RibbonControls
             // kryptonRibbonGroup2
             // 
             this.kryptonRibbonGroup2.DialogBoxLauncher = false;
-            this.kryptonRibbonGroup2.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroup2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple3});
             this.kryptonRibbonGroup2.TextLine1 = "RichTextBox";
             // 
             // kryptonRibbonGroupTriple3
             // 
-            this.kryptonRibbonGroupTriple3.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.richTextBox1});
-            this.kryptonRibbonGroupTriple3.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple3.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // richTextBox1
             // 
@@ -451,19 +451,19 @@ namespace RibbonControls
             // kryptonRibbonGroup3
             // 
             this.kryptonRibbonGroup3.DialogBoxLauncher = false;
-            this.kryptonRibbonGroup3.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroup3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple5});
             this.kryptonRibbonGroup3.TextLine1 = "Custom";
             this.kryptonRibbonGroup3.TextLine2 = "Controls";
             // 
             // kryptonRibbonGroupTriple5
             // 
-            this.kryptonRibbonGroupTriple5.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple5.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.custom9,
             this.custom10,
             this.custom11});
-            this.kryptonRibbonGroupTriple5.MaximumSize = .Ribbon.GroupItemSize.Medium;
-            this.kryptonRibbonGroupTriple5.MinimumSize = .Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple5.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple5.MinimumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // custom9
             // 
@@ -482,20 +482,20 @@ namespace RibbonControls
             // 
             // kryptonRibbonGroup9
             // 
-            this.kryptonRibbonGroup9.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroup9.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple8});
             this.kryptonRibbonGroup9.TextLine1 = "Misc";
             // 
             // kryptonRibbonGroupTriple8
             // 
-            this.kryptonRibbonGroupTriple8.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple8.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton1,
             this.kryptonRibbonGroupCheckBox1,
             this.kryptonRibbonGroupButton2});
             // 
             // kryptonRibbonGroupButton1
             // 
-            this.kryptonRibbonGroupButton1.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.kryptonRibbonGroupButton1.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.kryptonRibbonGroupButton1.TextLine1 = "Check";
             this.kryptonRibbonGroupButton1.TextLine2 = "Button";
             // 
@@ -662,16 +662,16 @@ namespace RibbonControls
 
         #endregion
 
-        private .Ribbon.KryptonRibbon kryptonRibbon;
+        private Krypton.Ribbon.KryptonRibbon kryptonRibbon;
         private Krypton.Toolkit.KryptonPanel kryptonPanel;
-        private .Ribbon.KryptonRibbonTab ribbonTab;
-        private .Ribbon.KryptonRibbonGroup kryptonRibbonGroup1;
-        private .Ribbon.KryptonRibbonGroup kryptonRibbonGroup2;
-        private .Ribbon.KryptonRibbonGroup kryptonRibbonGroup3;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple5;
-        private .Ribbon.KryptonRibbonGroupCustomControl custom9;
-        private .Ribbon.KryptonRibbonGroupCustomControl custom10;
-        private .Ribbon.KryptonRibbonGroupCustomControl custom11;
+        private Krypton.Ribbon.KryptonRibbonTab ribbonTab;
+        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup1;
+        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup2;
+        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup3;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple5;
+        private Krypton.Ribbon.KryptonRibbonGroupCustomControl custom9;
+        private Krypton.Ribbon.KryptonRibbonGroupCustomControl custom10;
+        private Krypton.Ribbon.KryptonRibbonGroupCustomControl custom11;
         private Krypton.Toolkit.KryptonRadioButton rbSystem;
         private Krypton.Toolkit.KryptonRadioButton rbOffice2003;
         private Krypton.Toolkit.KryptonRadioButton rbOffice2007Black;
@@ -679,51 +679,51 @@ namespace RibbonControls
         private Krypton.Toolkit.KryptonRadioButton rbOffice2007Blue;
         private Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup;
         private Krypton.Toolkit.KryptonManager kryptonManager;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple2;
-        private .Ribbon.KryptonRibbonGroupTextBox textBox1;
-        private .Ribbon.KryptonRibbonGroupTextBox textBox2;
-        private .Ribbon.KryptonRibbonGroupTextBox textBox3;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple2;
+        private Krypton.Ribbon.KryptonRibbonGroupTextBox textBox1;
+        private Krypton.Ribbon.KryptonRibbonGroupTextBox textBox2;
+        private Krypton.Ribbon.KryptonRibbonGroupTextBox textBox3;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny1;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple1;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple3;
-        private .Ribbon.KryptonRibbonGroupRichTextBox richTextBox1;
-        private .Ribbon.KryptonRibbonGroup kryptonRibbonGroup4;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple4;
-        private .Ribbon.KryptonRibbonGroupComboBox comboBox1;
-        private .Ribbon.KryptonRibbonGroupComboBox comboBox2;
-        private .Ribbon.KryptonRibbonGroupComboBox comboBox3;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple1;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple3;
+        private Krypton.Ribbon.KryptonRibbonGroupRichTextBox richTextBox1;
+        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup4;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple4;
+        private Krypton.Ribbon.KryptonRibbonGroupComboBox comboBox1;
+        private Krypton.Ribbon.KryptonRibbonGroupComboBox comboBox2;
+        private Krypton.Ribbon.KryptonRibbonGroupComboBox comboBox3;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny2;
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem1;
-        private .Ribbon.KryptonRibbonGroup kryptonRibbonGroup5;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple6;
-        private .Ribbon.KryptonRibbonGroupMaskedTextBox maskedTextBox1;
-        private .Ribbon.KryptonRibbonGroupMaskedTextBox maskedTextBox2;
-        private .Ribbon.KryptonRibbonGroupMaskedTextBox maskedTextBox3;
+        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup5;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple6;
+        private Krypton.Ribbon.KryptonRibbonGroupMaskedTextBox maskedTextBox1;
+        private Krypton.Ribbon.KryptonRibbonGroupMaskedTextBox maskedTextBox2;
+        private Krypton.Ribbon.KryptonRibbonGroupMaskedTextBox maskedTextBox3;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny3;
         private Krypton.Toolkit.KryptonRadioButton rbSparkle;
-        private .Ribbon.KryptonRibbonGroup kryptonRibbonGroup6;
-        private .Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines1;
-        private .Ribbon.KryptonRibbonGroupNumericUpDown numericUpDown1;
-        private .Ribbon.KryptonRibbonGroupNumericUpDown numericUpDown2;
+        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup6;
+        private Krypton.Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines1;
+        private Krypton.Ribbon.KryptonRibbonGroupNumericUpDown numericUpDown1;
+        private Krypton.Ribbon.KryptonRibbonGroupNumericUpDown numericUpDown2;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny4;
-        private .Ribbon.KryptonRibbonGroup kryptonRibbonGroup7;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple7;
-        private .Ribbon.KryptonRibbonGroupDateTimePicker dateTimePicker1;
-        private .Ribbon.KryptonRibbonGroupDateTimePicker dateTimePicker2;
-        private .Ribbon.KryptonRibbonGroupDateTimePicker dateTimePicker3;
+        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup7;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple7;
+        private Krypton.Ribbon.KryptonRibbonGroupDateTimePicker dateTimePicker1;
+        private Krypton.Ribbon.KryptonRibbonGroupDateTimePicker dateTimePicker2;
+        private Krypton.Ribbon.KryptonRibbonGroupDateTimePicker dateTimePicker3;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny5;
         private Krypton.Toolkit.KryptonRadioButton rbOffice2010Blue;
         private Krypton.Toolkit.KryptonRadioButton rbOffice2010Silver;
         private Krypton.Toolkit.KryptonRadioButton rbOffice2010Black;
-        private .Ribbon.KryptonRibbonGroup kryptonRibbonGroup8;
-        private .Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines2;
-        private .Ribbon.KryptonRibbonGroupTrackBar kryptonRibbonGroupTrackBar1;
-        private .Ribbon.KryptonRibbonGroupTrackBar kryptonRibbonGroupTrackBar2;
-        private .Ribbon.KryptonRibbonGroup kryptonRibbonGroup9;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple8;
-        private .Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton1;
-        private .Ribbon.KryptonRibbonGroupCheckBox kryptonRibbonGroupCheckBox1;
-        private .Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton2;
+        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup8;
+        private Krypton.Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines2;
+        private Krypton.Ribbon.KryptonRibbonGroupTrackBar kryptonRibbonGroupTrackBar1;
+        private Krypton.Ribbon.KryptonRibbonGroupTrackBar kryptonRibbonGroupTrackBar2;
+        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup9;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple8;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton1;
+        private Krypton.Ribbon.KryptonRibbonGroupCheckBox kryptonRibbonGroupCheckBox1;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton2;
     }
 }
 

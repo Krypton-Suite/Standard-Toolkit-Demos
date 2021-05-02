@@ -14,11 +14,11 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-using .Docking;
-using KryptonKrypton.Navigator;
-using .Ribbon;
+using Krypton.Docking;
+using Krypton.Navigator;
+using Krypton.Ribbon;
 using Krypton.Toolkit;
-using .Workspace;
+using Krypton.Workspace;
 
 namespace DockingCustomized
 {
@@ -249,7 +249,7 @@ namespace DockingCustomized
 
         private void UpdateCell(KryptonWorkspaceCell cell)
         {
-            cellKrypton.NavigatorMode = _mode;
+            cell.NavigatorMode = _mode;
         }
 
         private Color RandomColor()

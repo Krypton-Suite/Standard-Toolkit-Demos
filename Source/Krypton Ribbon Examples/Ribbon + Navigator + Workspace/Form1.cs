@@ -13,7 +13,7 @@ using System;
 
 using Krypton.Navigator;
 using Krypton.Toolkit;
-using .Workspace;
+using Krypton.Workspace;
 
 namespace RibbonAndNavigatorAndWorkspace
 {

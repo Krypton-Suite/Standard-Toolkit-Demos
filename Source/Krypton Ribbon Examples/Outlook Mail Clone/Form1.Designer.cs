@@ -202,14 +202,14 @@ namespace OutlookMailClone
             this.selectAllToolStripMenuItem = new Krypton.Toolkit.KryptonContextMenuItem();
             this.selectObjectsToolStripMenuItem = new Krypton.Toolkit.KryptonContextMenuItem();
             this.selectTextWithSimilarFormattingToolStripMenuItem = new Krypton.Toolkit.KryptonContextMenuItem();
-            this.kryptonRibbon = new .Ribbon.KryptonRibbon();
+            this.kryptonRibbon = new Krypton.Ribbon.KryptonRibbon();
             this.buttonSpecHelp = new Krypton.Toolkit.ButtonSpecAny();
-            this.qatSave = new .Ribbon.KryptonRibbonQATButton();
-            this.qatUndo = new .Ribbon.KryptonRibbonQATButton();
-            this.qatRedo = new .Ribbon.KryptonRibbonQATButton();
-            this.qatQuickPrint = new .Ribbon.KryptonRibbonQATButton();
-            this.qatForward = new .Ribbon.KryptonRibbonQATButton();
-            this.qatDelete = new .Ribbon.KryptonRibbonQATButton();
+            this.qatSave = new Krypton.Ribbon.KryptonRibbonQATButton();
+            this.qatUndo = new Krypton.Ribbon.KryptonRibbonQATButton();
+            this.qatRedo = new Krypton.Ribbon.KryptonRibbonQATButton();
+            this.qatQuickPrint = new Krypton.Ribbon.KryptonRibbonQATButton();
+            this.qatForward = new Krypton.Ribbon.KryptonRibbonQATButton();
+            this.qatDelete = new Krypton.Ribbon.KryptonRibbonQATButton();
             this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonContextMenuItem2 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonContextMenuSeparator11 = new Krypton.Toolkit.KryptonContextMenuSeparator();
@@ -235,204 +235,204 @@ namespace OutlookMailClone
             this.kryptonContextMenuSeparator12 = new Krypton.Toolkit.KryptonContextMenuSeparator();
             this.kryptonContextMenuItem8 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonContextMenuItem9 = new Krypton.Toolkit.KryptonContextMenuItem();
-            this.kryptonRibbonRecentDoc1 = new .Ribbon.KryptonRibbonRecentDoc();
-            this.kryptonRibbonRecentDoc2 = new .Ribbon.KryptonRibbonRecentDoc();
-            this.kryptonRibbonRecentDoc3 = new .Ribbon.KryptonRibbonRecentDoc();
-            this.kryptonRibbonRecentDoc4 = new .Ribbon.KryptonRibbonRecentDoc();
-            this.kryptonRibbonRecentDoc5 = new .Ribbon.KryptonRibbonRecentDoc();
-            this.kryptonRibbonRecentDoc6 = new .Ribbon.KryptonRibbonRecentDoc();
-            this.kryptonRibbonRecentDoc7 = new .Ribbon.KryptonRibbonRecentDoc();
-            this.kryptonRibbonRecentDoc8 = new .Ribbon.KryptonRibbonRecentDoc();
-            this.buttonSpecAppMenu1 = new .Ribbon.ButtonSpecAppMenu();
-            this.tabMessage = new .Ribbon.KryptonRibbonTab();
-            this.groupClipboard = new .Ribbon.KryptonRibbonGroup();
-            this.clipboard1 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.clipboardPaste = new .Ribbon.KryptonRibbonGroupButton();
-            this.clipboard2 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.clipboardCut = new .Ribbon.KryptonRibbonGroupButton();
-            this.clipboardCopy = new .Ribbon.KryptonRibbonGroupButton();
-            this.clipboardFormatPainter = new .Ribbon.KryptonRibbonGroupButton();
-            this.groupBasicText = new .Ribbon.KryptonRibbonGroup();
-            this.basicTextLines = new .Ribbon.KryptonRibbonGroupLines();
-            this.basicTextFont = new .Ribbon.KryptonRibbonGroupCluster();
-            this.basicTextFontLarger = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.basicTextFontSmaller = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.basicTextBullet = new .Ribbon.KryptonRibbonGroupCluster();
-            this.basicTextBulletPoints = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.basicTextBulletNumbers = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.basicTextRubout = new .Ribbon.KryptonRibbonGroupCluster();
-            this.basicTextRuboutButton = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.basicTextStyle = new .Ribbon.KryptonRibbonGroupCluster();
-            this.basicTextStyleBold = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.basicTextStyleItalic = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.basicTextStyleUnderline = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.basicTextColors = new .Ribbon.KryptonRibbonGroupCluster();
-            this.basicTextColorBack = new .Ribbon.KryptonRibbonGroupClusterColorButton();
-            this.basicTextColorText = new .Ribbon.KryptonRibbonGroupClusterColorButton();
-            this.basicTextAlignment = new .Ribbon.KryptonRibbonGroupCluster();
-            this.basicTextAlignLeft = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.basicTextAlignCenter = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.basicTextAlignRight = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.basicTextTab = new .Ribbon.KryptonRibbonGroupCluster();
-            this.basicTextTabLeft = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.basicTextTabRight = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.groupNames = new .Ribbon.KryptonRibbonGroup();
-            this.namesGroup = new .Ribbon.KryptonRibbonGroupTriple();
-            this.namesAddressBook = new .Ribbon.KryptonRibbonGroupButton();
-            this.namesCheckNames = new .Ribbon.KryptonRibbonGroupButton();
-            this.groupMessageInclude = new .Ribbon.KryptonRibbonGroup();
-            this.includeTriple1 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.includeAttachFile = new .Ribbon.KryptonRibbonGroupButton();
-            this.includeAttachItem = new .Ribbon.KryptonRibbonGroupButton();
-            this.includeSignature = new .Ribbon.KryptonRibbonGroupButton();
-            this.includeTriple2 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.groupOptions = new .Ribbon.KryptonRibbonGroup();
-            this.optionsTripleFollowup = new .Ribbon.KryptonRibbonGroupTriple();
-            this.optionsFollowUp = new .Ribbon.KryptonRibbonGroupButton();
-            this.optionsHighImportance = new .Ribbon.KryptonRibbonGroupButton();
-            this.optionsLowImportance = new .Ribbon.KryptonRibbonGroupButton();
-            this.groupZoom = new .Ribbon.KryptonRibbonGroup();
-            this.proofingTriple = new .Ribbon.KryptonRibbonGroupTriple();
-            this.zoomMessageZoom = new .Ribbon.KryptonRibbonGroupButton();
-            this.tabInsert = new .Ribbon.KryptonRibbonTab();
-            this.groupInsertInclude = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple4 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.includeInsertAttachFile = new .Ribbon.KryptonRibbonGroupButton();
-            this.includeInsertAttachItem = new .Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupTriple5 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.includeInsertBusinessCard = new .Ribbon.KryptonRibbonGroupButton();
-            this.includeInsertCalendar = new .Ribbon.KryptonRibbonGroupButton();
-            this.includeInsertSignature = new .Ribbon.KryptonRibbonGroupButton();
-            this.groupTables = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple3 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.tablesTable = new .Ribbon.KryptonRibbonGroupButton();
-            this.groupInsertIllustrations = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple6 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.illustrationsPicture = new .Ribbon.KryptonRibbonGroupButton();
-            this.illustrationsClipArt = new .Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupTriple7 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.illustrationsShapes = new .Ribbon.KryptonRibbonGroupButton();
-            this.illustrationsSmartArt = new .Ribbon.KryptonRibbonGroupButton();
-            this.illustrationsChart = new .Ribbon.KryptonRibbonGroupButton();
-            this.groupLinks = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple2 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.linksHyperlink = new .Ribbon.KryptonRibbonGroupButton();
-            this.linksBookmark = new .Ribbon.KryptonRibbonGroupButton();
-            this.groupText = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple8 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.textTextBox = new .Ribbon.KryptonRibbonGroupButton();
-            this.textQuickParts = new .Ribbon.KryptonRibbonGroupButton();
-            this.textWordArt = new .Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupTriple9 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.textDropCap = new .Ribbon.KryptonRibbonGroupButton();
-            this.textDateAndTime = new .Ribbon.KryptonRibbonGroupButton();
-            this.textObject = new .Ribbon.KryptonRibbonGroupButton();
-            this.groupSymbols = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple1 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.symbolsEquation = new .Ribbon.KryptonRibbonGroupButton();
-            this.symbolSymbol = new .Ribbon.KryptonRibbonGroupButton();
-            this.symbolHorizontalLine = new .Ribbon.KryptonRibbonGroupButton();
-            this.tabOptions = new .Ribbon.KryptonRibbonTab();
-            this.groupOptionsThemes = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple10 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.themesTheme = new .Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupTriple11 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.themesColors = new .Ribbon.KryptonRibbonGroupButton();
-            this.themesFonts = new .Ribbon.KryptonRibbonGroupButton();
-            this.themesEffects = new .Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupSeparator1 = new .Ribbon.KryptonRibbonGroupSeparator();
-            this.kryptonRibbonGroupTriple12 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.themesPageColor = new .Ribbon.KryptonRibbonGroupButton();
-            this.groupFields = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple13 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.fieldsShowBcc = new .Ribbon.KryptonRibbonGroupButton();
-            this.fieldsShowFrom = new .Ribbon.KryptonRibbonGroupButton();
-            this.groupFormat = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple14 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.formatPlainText = new .Ribbon.KryptonRibbonGroupButton();
-            this.formatHTML = new .Ribbon.KryptonRibbonGroupButton();
-            this.formatRichText = new .Ribbon.KryptonRibbonGroupButton();
-            this.groupTracking = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple15 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.trackingUseVotingButtons = new .Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupLines3 = new .Ribbon.KryptonRibbonGroupLines();
-            this.kryptonRibbonGroupCheckBox1 = new .Ribbon.KryptonRibbonGroupCheckBox();
-            this.kryptonRibbonGroupCheckBox2 = new .Ribbon.KryptonRibbonGroupCheckBox();
-            this.groupMoreOptions = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple16 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.moreOptionsSaveSentItem = new .Ribbon.KryptonRibbonGroupButton();
-            this.moreOptionsDelayDelivery = new .Ribbon.KryptonRibbonGroupButton();
-            this.moreOptionsDirectRepliesTo = new .Ribbon.KryptonRibbonGroupButton();
-            this.tabFormatText = new .Ribbon.KryptonRibbonTab();
-            this.groupFormatClipboard = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple17 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.formatClipboardPaste = new .Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupTriple18 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.formatClipboardCut = new .Ribbon.KryptonRibbonGroupButton();
-            this.formatClipboardCopy = new .Ribbon.KryptonRibbonGroupButton();
-            this.formatClipboardFormatPainter = new .Ribbon.KryptonRibbonGroupButton();
-            this.groupFormatFont = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupLines1 = new .Ribbon.KryptonRibbonGroupLines();
-            this.kryptonRibbonGroupCluster1 = new .Ribbon.KryptonRibbonGroupCluster();
-            this.fontGrowFont = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.fontShrinkFont = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.kryptonRibbonGroupCluster2 = new .Ribbon.KryptonRibbonGroupCluster();
-            this.fontTextClear = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.kryptonRibbonGroupCluster4 = new .Ribbon.KryptonRibbonGroupCluster();
-            this.fontTextBackColor = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.textFontColor = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.kryptonRibbonGroupCluster3 = new .Ribbon.KryptonRibbonGroupCluster();
-            this.fontBold = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.fontItalic = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.fontUnderline = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.fontStrikethrough = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.fontSubscript = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.fontSuperscript = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.fontChangeCase = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.groupFormatParagraph = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupLines2 = new .Ribbon.KryptonRibbonGroupLines();
-            this.kryptonRibbonGroupCluster5 = new .Ribbon.KryptonRibbonGroupCluster();
-            this.fontBullets = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.fontNumbers = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.fontMultilevel = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.kryptonRibbonGroupCluster6 = new .Ribbon.KryptonRibbonGroupCluster();
-            this.fontDecreaseIndent = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.fontIncreaseIndent = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.kryptonRibbonGroupCluster7 = new .Ribbon.KryptonRibbonGroupCluster();
-            this.fontSort = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.kryptonRibbonGroupCluster8 = new .Ribbon.KryptonRibbonGroupCluster();
-            this.fontMarkers = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.kryptonRibbonGroupCluster9 = new .Ribbon.KryptonRibbonGroupCluster();
-            this.fontJustifyLeft = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.fontJustifyCenter = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.fontJustifyRight = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.fontJustify = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.kryptonRibbonGroupCluster10 = new .Ribbon.KryptonRibbonGroupCluster();
-            this.fontSpacing = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.kryptonRibbonGroupCluster11 = new .Ribbon.KryptonRibbonGroupCluster();
-            this.fontShading = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.fontBottomBorder = new .Ribbon.KryptonRibbonGroupClusterButton();
-            this.groupFormatStyles = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple19 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.stylesChangeStyles = new .Ribbon.KryptonRibbonGroupButton();
-            this.groupFormatZoom = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple20 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.zoomZoom = new .Ribbon.KryptonRibbonGroupButton();
-            this.groupFormatEditing = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple21 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.kryptonRibbonGroupButton4 = new .Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupButton5 = new .Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupButton6 = new .Ribbon.KryptonRibbonGroupButton();
-            this.tabDeveloper = new .Ribbon.KryptonRibbonTab();
-            this.developerCode = new .Ribbon.KryptonRibbonGroup();
-            this.developerCodeTriple = new .Ribbon.KryptonRibbonGroupTriple();
-            this.developerCodeVB = new .Ribbon.KryptonRibbonGroupButton();
-            this.developerCodeMacros = new .Ribbon.KryptonRibbonGroupButton();
-            this.developerForm = new .Ribbon.KryptonRibbonGroup();
-            this.developerFormTriple = new .Ribbon.KryptonRibbonGroupTriple();
-            this.developerFormDesignThis = new .Ribbon.KryptonRibbonGroupButton();
-            this.developerFormDesignA = new .Ribbon.KryptonRibbonGroupButton();
-            this.developerFormPublish = new .Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonRecentDoc1 = new Krypton.Ribbon.KryptonRibbonRecentDoc();
+            this.kryptonRibbonRecentDoc2 = new Krypton.Ribbon.KryptonRibbonRecentDoc();
+            this.kryptonRibbonRecentDoc3 = new Krypton.Ribbon.KryptonRibbonRecentDoc();
+            this.kryptonRibbonRecentDoc4 = new Krypton.Ribbon.KryptonRibbonRecentDoc();
+            this.kryptonRibbonRecentDoc5 = new Krypton.Ribbon.KryptonRibbonRecentDoc();
+            this.kryptonRibbonRecentDoc6 = new Krypton.Ribbon.KryptonRibbonRecentDoc();
+            this.kryptonRibbonRecentDoc7 = new Krypton.Ribbon.KryptonRibbonRecentDoc();
+            this.kryptonRibbonRecentDoc8 = new Krypton.Ribbon.KryptonRibbonRecentDoc();
+            this.buttonSpecAppMenu1 = new Krypton.Ribbon.ButtonSpecAppMenu();
+            this.tabMessage = new Krypton.Ribbon.KryptonRibbonTab();
+            this.groupClipboard = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.clipboard1 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.clipboardPaste = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.clipboard2 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.clipboardCut = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.clipboardCopy = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.clipboardFormatPainter = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.groupBasicText = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.basicTextLines = new Krypton.Ribbon.KryptonRibbonGroupLines();
+            this.basicTextFont = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.basicTextFontLarger = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.basicTextFontSmaller = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.basicTextBullet = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.basicTextBulletPoints = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.basicTextBulletNumbers = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.basicTextRubout = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.basicTextRuboutButton = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.basicTextStyle = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.basicTextStyleBold = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.basicTextStyleItalic = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.basicTextStyleUnderline = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.basicTextColors = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.basicTextColorBack = new Krypton.Ribbon.KryptonRibbonGroupClusterColorButton();
+            this.basicTextColorText = new Krypton.Ribbon.KryptonRibbonGroupClusterColorButton();
+            this.basicTextAlignment = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.basicTextAlignLeft = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.basicTextAlignCenter = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.basicTextAlignRight = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.basicTextTab = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.basicTextTabLeft = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.basicTextTabRight = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.groupNames = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.namesGroup = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.namesAddressBook = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.namesCheckNames = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.groupMessageInclude = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.includeTriple1 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.includeAttachFile = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.includeAttachItem = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.includeSignature = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.includeTriple2 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.groupOptions = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.optionsTripleFollowup = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.optionsFollowUp = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.optionsHighImportance = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.optionsLowImportance = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.groupZoom = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.proofingTriple = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.zoomMessageZoom = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.tabInsert = new Krypton.Ribbon.KryptonRibbonTab();
+            this.groupInsertInclude = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple4 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.includeInsertAttachFile = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.includeInsertAttachItem = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple5 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.includeInsertBusinessCard = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.includeInsertCalendar = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.includeInsertSignature = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.groupTables = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple3 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.tablesTable = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.groupInsertIllustrations = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple6 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.illustrationsPicture = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.illustrationsClipArt = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple7 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.illustrationsShapes = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.illustrationsSmartArt = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.illustrationsChart = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.groupLinks = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple2 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.linksHyperlink = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.linksBookmark = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.groupText = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple8 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.textTextBox = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.textQuickParts = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.textWordArt = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple9 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.textDropCap = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.textDateAndTime = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.textObject = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.groupSymbols = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple1 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.symbolsEquation = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.symbolSymbol = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.symbolHorizontalLine = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.tabOptions = new Krypton.Ribbon.KryptonRibbonTab();
+            this.groupOptionsThemes = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple10 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.themesTheme = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple11 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.themesColors = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.themesFonts = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.themesEffects = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupSeparator1 = new Krypton.Ribbon.KryptonRibbonGroupSeparator();
+            this.kryptonRibbonGroupTriple12 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.themesPageColor = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.groupFields = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple13 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.fieldsShowBcc = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.fieldsShowFrom = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.groupFormat = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple14 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.formatPlainText = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.formatHTML = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.formatRichText = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.groupTracking = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple15 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.trackingUseVotingButtons = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupLines3 = new Krypton.Ribbon.KryptonRibbonGroupLines();
+            this.kryptonRibbonGroupCheckBox1 = new Krypton.Ribbon.KryptonRibbonGroupCheckBox();
+            this.kryptonRibbonGroupCheckBox2 = new Krypton.Ribbon.KryptonRibbonGroupCheckBox();
+            this.groupMoreOptions = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple16 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.moreOptionsSaveSentItem = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.moreOptionsDelayDelivery = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.moreOptionsDirectRepliesTo = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.tabFormatText = new Krypton.Ribbon.KryptonRibbonTab();
+            this.groupFormatClipboard = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple17 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.formatClipboardPaste = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple18 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.formatClipboardCut = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.formatClipboardCopy = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.formatClipboardFormatPainter = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.groupFormatFont = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupLines1 = new Krypton.Ribbon.KryptonRibbonGroupLines();
+            this.kryptonRibbonGroupCluster1 = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.fontGrowFont = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.fontShrinkFont = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.kryptonRibbonGroupCluster2 = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.fontTextClear = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.kryptonRibbonGroupCluster4 = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.fontTextBackColor = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.textFontColor = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.kryptonRibbonGroupCluster3 = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.fontBold = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.fontItalic = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.fontUnderline = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.fontStrikethrough = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.fontSubscript = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.fontSuperscript = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.fontChangeCase = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.groupFormatParagraph = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupLines2 = new Krypton.Ribbon.KryptonRibbonGroupLines();
+            this.kryptonRibbonGroupCluster5 = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.fontBullets = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.fontNumbers = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.fontMultilevel = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.kryptonRibbonGroupCluster6 = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.fontDecreaseIndent = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.fontIncreaseIndent = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.kryptonRibbonGroupCluster7 = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.fontSort = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.kryptonRibbonGroupCluster8 = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.fontMarkers = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.kryptonRibbonGroupCluster9 = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.fontJustifyLeft = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.fontJustifyCenter = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.fontJustifyRight = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.fontJustify = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.kryptonRibbonGroupCluster10 = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.fontSpacing = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.kryptonRibbonGroupCluster11 = new Krypton.Ribbon.KryptonRibbonGroupCluster();
+            this.fontShading = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.fontBottomBorder = new Krypton.Ribbon.KryptonRibbonGroupClusterButton();
+            this.groupFormatStyles = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple19 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.stylesChangeStyles = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.groupFormatZoom = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple20 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.zoomZoom = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.groupFormatEditing = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple21 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton4 = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupButton5 = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupButton6 = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.tabDeveloper = new Krypton.Ribbon.KryptonRibbonTab();
+            this.developerCode = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.developerCodeTriple = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.developerCodeVB = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.developerCodeMacros = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.developerForm = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.developerFormTriple = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.developerFormDesignThis = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.developerFormDesignA = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.developerFormPublish = new Krypton.Ribbon.KryptonRibbonGroupButton();
             this.todayToolStripMenuItem = new Krypton.Toolkit.KryptonContextMenuItem();
             this.tomorrowToolStripMenuItem = new Krypton.Toolkit.KryptonContextMenuItem();
             this.thisWeekToolStripMenuItem = new Krypton.Toolkit.KryptonContextMenuItem();
@@ -1334,7 +1334,7 @@ namespace OutlookMailClone
             this.kryptonContextMenuItem8,
             this.kryptonContextMenuItem9});
             this.kryptonRibbon.RibbonAppButton.AppButtonMinRecentSize = new System.Drawing.Size(300, 250);
-            this.kryptonRibbon.RibbonAppButton.AppButtonRecentDocs.AddRange(new .Ribbon.KryptonRibbonRecentDoc[] {
+            this.kryptonRibbon.RibbonAppButton.AppButtonRecentDocs.AddRange(new Krypton.Ribbon.KryptonRibbonRecentDoc[] {
             this.kryptonRibbonRecentDoc1,
             this.kryptonRibbonRecentDoc2,
             this.kryptonRibbonRecentDoc3,
@@ -1343,10 +1343,10 @@ namespace OutlookMailClone
             this.kryptonRibbonRecentDoc6,
             this.kryptonRibbonRecentDoc7,
             this.kryptonRibbonRecentDoc8});
-            this.kryptonRibbon.RibbonAppButton.AppButtonSpecs.AddRange(new .Ribbon.ButtonSpecAppMenu[] {
+            this.kryptonRibbon.RibbonAppButton.AppButtonSpecs.AddRange(new Krypton.Ribbon.ButtonSpecAppMenu[] {
             this.buttonSpecAppMenu1});
             this.kryptonRibbon.RibbonStrings.RecentDocuments = "Create New Outlook Item";
-            this.kryptonRibbon.RibbonTabs.AddRange(new .Ribbon.KryptonRibbonTab[] {
+            this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabMessage,
             this.tabInsert,
             this.tabOptions,
@@ -1563,7 +1563,7 @@ namespace OutlookMailClone
             // 
             // tabMessage
             // 
-            this.tabMessage.Groups.AddRange(new .Ribbon.KryptonRibbonGroup[] {
+            this.tabMessage.Groups.AddRange(new Krypton.Ribbon.KryptonRibbonGroup[] {
             this.groupClipboard,
             this.groupBasicText,
             this.groupNames,
@@ -1577,7 +1577,7 @@ namespace OutlookMailClone
             // 
             this.groupClipboard.AllowCollapsed = false;
             this.groupClipboard.Image = ((System.Drawing.Image)(resources.GetObject("groupClipboard.Image")));
-            this.groupClipboard.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupClipboard.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.clipboard1,
             this.clipboard2});
             this.groupClipboard.KeyTipDialogLauncher = "FO";
@@ -1585,13 +1585,13 @@ namespace OutlookMailClone
             // 
             // clipboard1
             // 
-            this.clipboard1.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.clipboard1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.clipboardPaste});
-            this.clipboard1.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.clipboard1.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // clipboardPaste
             // 
-            this.clipboardPaste.ButtonType = .Ribbon.GroupButtonType.Split;
+            this.clipboardPaste.ButtonType = Krypton.Ribbon.GroupButtonType.Split;
             this.clipboardPaste.ImageLarge = global::OutlookMailClone.Properties.Resources.ClipboardPaste;
             this.clipboardPaste.ImageSmall = ((System.Drawing.Image)(resources.GetObject("clipboardPaste.ImageSmall")));
             this.clipboardPaste.KeyTip = "V";
@@ -1600,11 +1600,11 @@ namespace OutlookMailClone
             // 
             // clipboard2
             // 
-            this.clipboard2.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.clipboard2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.clipboardCut,
             this.clipboardCopy,
             this.clipboardFormatPainter});
-            this.clipboard2.MaximumSize = .Ribbon.GroupItemSize.Medium;
+            this.clipboard2.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // clipboardCut
             // 
@@ -1631,7 +1631,7 @@ namespace OutlookMailClone
             // groupBasicText
             // 
             this.groupBasicText.Image = global::OutlookMailClone.Properties.Resources.TextColor;
-            this.groupBasicText.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupBasicText.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.basicTextLines});
             this.groupBasicText.KeyTipDialogLauncher = "FN";
             this.groupBasicText.KeyTipGroup = "ZB";
@@ -1640,7 +1640,7 @@ namespace OutlookMailClone
             // 
             // basicTextLines
             // 
-            this.basicTextLines.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.basicTextLines.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.basicTextFont,
             this.basicTextBullet,
             this.basicTextRubout,
@@ -1651,7 +1651,7 @@ namespace OutlookMailClone
             // 
             // basicTextFont
             // 
-            this.basicTextFont.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.basicTextFont.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.basicTextFontLarger,
             this.basicTextFontSmaller});
             // 
@@ -1667,7 +1667,7 @@ namespace OutlookMailClone
             // 
             // basicTextBullet
             // 
-            this.basicTextBullet.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.basicTextBullet.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.basicTextBulletPoints,
             this.basicTextBulletNumbers});
             // 
@@ -1683,7 +1683,7 @@ namespace OutlookMailClone
             // 
             // basicTextRubout
             // 
-            this.basicTextRubout.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.basicTextRubout.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.basicTextRuboutButton});
             // 
             // basicTextRuboutButton
@@ -1693,32 +1693,32 @@ namespace OutlookMailClone
             // 
             // basicTextStyle
             // 
-            this.basicTextStyle.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.basicTextStyle.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.basicTextStyleBold,
             this.basicTextStyleItalic,
             this.basicTextStyleUnderline});
             // 
             // basicTextStyleBold
             // 
-            this.basicTextStyleBold.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.basicTextStyleBold.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.basicTextStyleBold.ImageSmall = global::OutlookMailClone.Properties.Resources.TextBold;
             this.basicTextStyleBold.KeyTip = "1";
             // 
             // basicTextStyleItalic
             // 
-            this.basicTextStyleItalic.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.basicTextStyleItalic.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.basicTextStyleItalic.ImageSmall = global::OutlookMailClone.Properties.Resources.TextItalics;
             this.basicTextStyleItalic.KeyTip = "2";
             // 
             // basicTextStyleUnderline
             // 
-            this.basicTextStyleUnderline.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.basicTextStyleUnderline.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.basicTextStyleUnderline.ImageSmall = global::OutlookMailClone.Properties.Resources.TextUnderline;
             this.basicTextStyleUnderline.KeyTip = "3";
             // 
             // basicTextColors
             // 
-            this.basicTextColors.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.basicTextColors.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.basicTextColorBack,
             this.basicTextColorText});
             // 
@@ -1742,7 +1742,7 @@ namespace OutlookMailClone
             // 
             // basicTextAlignment
             // 
-            this.basicTextAlignment.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.basicTextAlignment.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.basicTextAlignLeft,
             this.basicTextAlignCenter,
             this.basicTextAlignRight});
@@ -1764,7 +1764,7 @@ namespace OutlookMailClone
             // 
             // basicTextTab
             // 
-            this.basicTextTab.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.basicTextTab.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.basicTextTabLeft,
             this.basicTextTabRight});
             // 
@@ -1782,17 +1782,17 @@ namespace OutlookMailClone
             // 
             this.groupNames.DialogBoxLauncher = false;
             this.groupNames.Image = global::OutlookMailClone.Properties.Resources.NamesGroup;
-            this.groupNames.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupNames.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.namesGroup});
             this.groupNames.KeyTipGroup = "ZN";
             this.groupNames.TextLine1 = "Names";
             // 
             // namesGroup
             // 
-            this.namesGroup.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.namesGroup.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.namesAddressBook,
             this.namesCheckNames});
-            this.namesGroup.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.namesGroup.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // namesAddressBook
             // 
@@ -1813,7 +1813,7 @@ namespace OutlookMailClone
             // groupMessageInclude
             // 
             this.groupMessageInclude.Image = ((System.Drawing.Image)(resources.GetObject("groupMessageInclude.Image")));
-            this.groupMessageInclude.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupMessageInclude.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.includeTriple1,
             this.includeTriple2});
             this.groupMessageInclude.KeyTipDialogLauncher = "AP";
@@ -1822,7 +1822,7 @@ namespace OutlookMailClone
             // 
             // includeTriple1
             // 
-            this.includeTriple1.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.includeTriple1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.includeAttachFile,
             this.includeAttachItem,
             this.includeSignature});
@@ -1845,7 +1845,7 @@ namespace OutlookMailClone
             // 
             // includeSignature
             // 
-            this.includeSignature.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.includeSignature.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.includeSignature.ImageLarge = global::OutlookMailClone.Properties.Resources.IncludeSignature;
             this.includeSignature.ImageSmall = global::OutlookMailClone.Properties.Resources.IncludeSignatureSmall;
             this.includeSignature.KeyTip = "G";
@@ -1855,7 +1855,7 @@ namespace OutlookMailClone
             // groupOptions
             // 
             this.groupOptions.Image = global::OutlookMailClone.Properties.Resources.OptionsFollowUpSmall;
-            this.groupOptions.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupOptions.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.optionsTripleFollowup});
             this.groupOptions.KeyTipDialogLauncher = "OP";
             this.groupOptions.KeyTipGroup = "ZO";
@@ -1863,16 +1863,16 @@ namespace OutlookMailClone
             // 
             // optionsTripleFollowup
             // 
-            this.optionsTripleFollowup.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.optionsTripleFollowup.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.optionsFollowUp,
             this.optionsHighImportance,
             this.optionsLowImportance});
-            this.optionsTripleFollowup.MaximumSize = .Ribbon.GroupItemSize.Medium;
-            this.optionsTripleFollowup.MinimumSize = .Ribbon.GroupItemSize.Medium;
+            this.optionsTripleFollowup.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
+            this.optionsTripleFollowup.MinimumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // optionsFollowUp
             // 
-            this.optionsFollowUp.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.optionsFollowUp.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.optionsFollowUp.ImageLarge = global::OutlookMailClone.Properties.Resources.OptionsFollowUp;
             this.optionsFollowUp.ImageSmall = global::OutlookMailClone.Properties.Resources.FollowUp1;
             this.optionsFollowUp.KeyTip = "W";
@@ -1901,16 +1901,16 @@ namespace OutlookMailClone
             this.groupZoom.AllowCollapsed = false;
             this.groupZoom.DialogBoxLauncher = false;
             this.groupZoom.Image = ((System.Drawing.Image)(resources.GetObject("groupZoom.Image")));
-            this.groupZoom.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupZoom.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.proofingTriple});
             this.groupZoom.KeyTipGroup = "Q";
             this.groupZoom.TextLine1 = "Zoom";
             // 
             // proofingTriple
             // 
-            this.proofingTriple.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.proofingTriple.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.zoomMessageZoom});
-            this.proofingTriple.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.proofingTriple.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // zoomMessageZoom
             // 
@@ -1921,7 +1921,7 @@ namespace OutlookMailClone
             // 
             // tabInsert
             // 
-            this.tabInsert.Groups.AddRange(new .Ribbon.KryptonRibbonGroup[] {
+            this.tabInsert.Groups.AddRange(new Krypton.Ribbon.KryptonRibbonGroup[] {
             this.groupInsertInclude,
             this.groupTables,
             this.groupInsertIllustrations,
@@ -1935,7 +1935,7 @@ namespace OutlookMailClone
             // 
             this.groupInsertInclude.AllowCollapsed = false;
             this.groupInsertInclude.Image = ((System.Drawing.Image)(resources.GetObject("groupInsertInclude.Image")));
-            this.groupInsertInclude.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupInsertInclude.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple4,
             this.kryptonRibbonGroupTriple5});
             this.groupInsertInclude.KeyTipDialogLauncher = "AP";
@@ -1943,7 +1943,7 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple4
             // 
-            this.kryptonRibbonGroupTriple4.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.includeInsertAttachFile,
             this.includeInsertAttachItem});
             // 
@@ -1965,14 +1965,14 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple5
             // 
-            this.kryptonRibbonGroupTriple5.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple5.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.includeInsertBusinessCard,
             this.includeInsertCalendar,
             this.includeInsertSignature});
             // 
             // includeInsertBusinessCard
             // 
-            this.includeInsertBusinessCard.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.includeInsertBusinessCard.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.includeInsertBusinessCard.ImageLarge = global::OutlookMailClone.Properties.Resources.IncludeBusinessCard;
             this.includeInsertBusinessCard.ImageSmall = global::OutlookMailClone.Properties.Resources.IncludeBusinessCardSmall;
             this.includeInsertBusinessCard.KeyTip = "AA";
@@ -1989,7 +1989,7 @@ namespace OutlookMailClone
             // 
             // includeInsertSignature
             // 
-            this.includeInsertSignature.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.includeInsertSignature.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.includeInsertSignature.ImageLarge = global::OutlookMailClone.Properties.Resources.IncludeSignature;
             this.includeInsertSignature.ImageSmall = global::OutlookMailClone.Properties.Resources.IncludeSignatureSmall;
             this.includeInsertSignature.KeyTip = "G";
@@ -2001,19 +2001,19 @@ namespace OutlookMailClone
             this.groupTables.AllowCollapsed = false;
             this.groupTables.DialogBoxLauncher = false;
             this.groupTables.Image = ((System.Drawing.Image)(resources.GetObject("groupTables.Image")));
-            this.groupTables.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupTables.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple3});
             this.groupTables.TextLine1 = "Tables";
             // 
             // kryptonRibbonGroupTriple3
             // 
-            this.kryptonRibbonGroupTriple3.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.tablesTable});
-            this.kryptonRibbonGroupTriple3.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple3.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // tablesTable
             // 
-            this.tablesTable.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.tablesTable.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.tablesTable.ImageLarge = global::OutlookMailClone.Properties.Resources.TablesLarge;
             this.tablesTable.ImageSmall = ((System.Drawing.Image)(resources.GetObject("tablesTable.ImageSmall")));
             this.tablesTable.KryptonContextMenu = this.cmsTable;
@@ -2024,17 +2024,17 @@ namespace OutlookMailClone
             this.groupInsertIllustrations.AllowCollapsed = false;
             this.groupInsertIllustrations.DialogBoxLauncher = false;
             this.groupInsertIllustrations.Image = ((System.Drawing.Image)(resources.GetObject("groupInsertIllustrations.Image")));
-            this.groupInsertIllustrations.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupInsertIllustrations.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple6,
             this.kryptonRibbonGroupTriple7});
             this.groupInsertIllustrations.TextLine1 = "Illustrations";
             // 
             // kryptonRibbonGroupTriple6
             // 
-            this.kryptonRibbonGroupTriple6.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple6.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.illustrationsPicture,
             this.illustrationsClipArt});
-            this.kryptonRibbonGroupTriple6.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple6.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // illustrationsPicture
             // 
@@ -2053,14 +2053,14 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple7
             // 
-            this.kryptonRibbonGroupTriple7.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple7.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.illustrationsShapes,
             this.illustrationsSmartArt,
             this.illustrationsChart});
             // 
             // illustrationsShapes
             // 
-            this.illustrationsShapes.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.illustrationsShapes.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.illustrationsShapes.ImageLarge = global::OutlookMailClone.Properties.Resources.ShapesLarge;
             this.illustrationsShapes.ImageSmall = global::OutlookMailClone.Properties.Resources.ShapesSmall;
             this.illustrationsShapes.KeyTip = "SH";
@@ -2085,17 +2085,17 @@ namespace OutlookMailClone
             // 
             this.groupLinks.DialogBoxLauncher = false;
             this.groupLinks.Image = global::OutlookMailClone.Properties.Resources.HyperlinkSmall;
-            this.groupLinks.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupLinks.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple2});
             this.groupLinks.KeyTipGroup = "ZL";
             this.groupLinks.TextLine1 = "Links";
             // 
             // kryptonRibbonGroupTriple2
             // 
-            this.kryptonRibbonGroupTriple2.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.linksHyperlink,
             this.linksBookmark});
-            this.kryptonRibbonGroupTriple2.MinimumSize = .Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple2.MinimumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // linksHyperlink
             // 
@@ -2115,7 +2115,7 @@ namespace OutlookMailClone
             // 
             this.groupText.DialogBoxLauncher = false;
             this.groupText.Image = global::OutlookMailClone.Properties.Resources.WordArtSmall;
-            this.groupText.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupText.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple8,
             this.kryptonRibbonGroupTriple9});
             this.groupText.KeyTipGroup = "ZT";
@@ -2123,15 +2123,15 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple8
             // 
-            this.kryptonRibbonGroupTriple8.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple8.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.textTextBox,
             this.textQuickParts,
             this.textWordArt});
-            this.kryptonRibbonGroupTriple8.MinimumSize = .Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple8.MinimumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // textTextBox
             // 
-            this.textTextBox.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.textTextBox.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.textTextBox.ImageLarge = global::OutlookMailClone.Properties.Resources.TextBoxLarge;
             this.textTextBox.ImageSmall = global::OutlookMailClone.Properties.Resources.TextBoxSmall;
             this.textTextBox.KeyTip = "X";
@@ -2141,7 +2141,7 @@ namespace OutlookMailClone
             // 
             // textQuickParts
             // 
-            this.textQuickParts.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.textQuickParts.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.textQuickParts.ImageLarge = global::OutlookMailClone.Properties.Resources.QuickPartsLarge;
             this.textQuickParts.ImageSmall = global::OutlookMailClone.Properties.Resources.QuickPartsSmall;
             this.textQuickParts.KeyTip = "Q";
@@ -2158,15 +2158,15 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple9
             // 
-            this.kryptonRibbonGroupTriple9.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple9.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.textDropCap,
             this.textDateAndTime,
             this.textObject});
-            this.kryptonRibbonGroupTriple9.MaximumSize = .Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple9.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // textDropCap
             // 
-            this.textDropCap.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.textDropCap.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.textDropCap.ImageLarge = ((System.Drawing.Image)(resources.GetObject("textDropCap.ImageLarge")));
             this.textDropCap.ImageSmall = global::OutlookMailClone.Properties.Resources.DropCapSmall;
             this.textDropCap.KeyTip = "RC";
@@ -2193,22 +2193,22 @@ namespace OutlookMailClone
             // 
             this.groupSymbols.DialogBoxLauncher = false;
             this.groupSymbols.Image = global::OutlookMailClone.Properties.Resources.EquationSmall;
-            this.groupSymbols.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupSymbols.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple1});
             this.groupSymbols.KeyTipGroup = "ZS";
             this.groupSymbols.TextLine1 = "Symbols";
             // 
             // kryptonRibbonGroupTriple1
             // 
-            this.kryptonRibbonGroupTriple1.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.symbolsEquation,
             this.symbolSymbol,
             this.symbolHorizontalLine});
-            this.kryptonRibbonGroupTriple1.MinimumSize = .Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple1.MinimumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // symbolsEquation
             // 
-            this.symbolsEquation.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.symbolsEquation.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.symbolsEquation.ImageLarge = global::OutlookMailClone.Properties.Resources.EquationLarge;
             this.symbolsEquation.ImageSmall = global::OutlookMailClone.Properties.Resources.EquationSmall;
             this.symbolsEquation.KeyTip = "E";
@@ -2217,7 +2217,7 @@ namespace OutlookMailClone
             // 
             // symbolSymbol
             // 
-            this.symbolSymbol.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.symbolSymbol.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.symbolSymbol.ImageLarge = global::OutlookMailClone.Properties.Resources.SymbolLarge;
             this.symbolSymbol.ImageSmall = global::OutlookMailClone.Properties.Resources.SymbolSmall;
             this.symbolSymbol.KeyTip = "U";
@@ -2234,7 +2234,7 @@ namespace OutlookMailClone
             // 
             // tabOptions
             // 
-            this.tabOptions.Groups.AddRange(new .Ribbon.KryptonRibbonGroup[] {
+            this.tabOptions.Groups.AddRange(new Krypton.Ribbon.KryptonRibbonGroup[] {
             this.groupOptionsThemes,
             this.groupFields,
             this.groupFormat,
@@ -2247,7 +2247,7 @@ namespace OutlookMailClone
             // 
             this.groupOptionsThemes.DialogBoxLauncher = false;
             this.groupOptionsThemes.Image = global::OutlookMailClone.Properties.Resources.ThemesSmall;
-            this.groupOptionsThemes.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupOptionsThemes.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple10,
             this.kryptonRibbonGroupTriple11,
             this.kryptonRibbonGroupSeparator1,
@@ -2257,13 +2257,13 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple10
             // 
-            this.kryptonRibbonGroupTriple10.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple10.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.themesTheme});
-            this.kryptonRibbonGroupTriple10.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple10.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // themesTheme
             // 
-            this.themesTheme.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.themesTheme.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.themesTheme.ImageLarge = global::OutlookMailClone.Properties.Resources.ThemesLarge;
             this.themesTheme.ImageSmall = ((System.Drawing.Image)(resources.GetObject("themesTheme.ImageSmall")));
             this.themesTheme.KeyTip = "TH";
@@ -2272,11 +2272,11 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple11
             // 
-            this.kryptonRibbonGroupTriple11.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple11.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.themesColors,
             this.themesFonts,
             this.themesEffects});
-            this.kryptonRibbonGroupTriple11.MaximumSize = .Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple11.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // themesColors
             // 
@@ -2301,13 +2301,13 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple12
             // 
-            this.kryptonRibbonGroupTriple12.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple12.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.themesPageColor});
-            this.kryptonRibbonGroupTriple12.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple12.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // themesPageColor
             // 
-            this.themesPageColor.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.themesPageColor.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.themesPageColor.ImageLarge = global::OutlookMailClone.Properties.Resources.PageColorLarge;
             this.themesPageColor.ImageSmall = ((System.Drawing.Image)(resources.GetObject("themesPageColor.ImageSmall")));
             this.themesPageColor.KeyTip = "PC";
@@ -2319,28 +2319,28 @@ namespace OutlookMailClone
             // 
             this.groupFields.DialogBoxLauncher = false;
             this.groupFields.Image = global::OutlookMailClone.Properties.Resources.FieldsSmall;
-            this.groupFields.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupFields.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple13});
             this.groupFields.KeyTipGroup = "ZF";
             this.groupFields.TextLine1 = "Fields";
             // 
             // kryptonRibbonGroupTriple13
             // 
-            this.kryptonRibbonGroupTriple13.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple13.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.fieldsShowBcc,
             this.fieldsShowFrom});
-            this.kryptonRibbonGroupTriple13.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple13.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // fieldsShowBcc
             // 
-            this.fieldsShowBcc.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.fieldsShowBcc.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.fieldsShowBcc.ImageLarge = global::OutlookMailClone.Properties.Resources.ShowBccLarge;
             this.fieldsShowBcc.ImageSmall = null;
             this.fieldsShowBcc.TextLine1 = "Bcc";
             // 
             // fieldsShowFrom
             // 
-            this.fieldsShowFrom.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.fieldsShowFrom.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.fieldsShowFrom.ImageLarge = global::OutlookMailClone.Properties.Resources.ShowFromLarge;
             this.fieldsShowFrom.ImageSmall = ((System.Drawing.Image)(resources.GetObject("fieldsShowFrom.ImageSmall")));
             this.fieldsShowFrom.KeyTip = "F";
@@ -2351,22 +2351,22 @@ namespace OutlookMailClone
             this.groupFormat.AllowCollapsed = false;
             this.groupFormat.DialogBoxLauncher = false;
             this.groupFormat.Image = ((System.Drawing.Image)(resources.GetObject("groupFormat.Image")));
-            this.groupFormat.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupFormat.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple14});
             this.groupFormat.TextLine1 = "Format";
             // 
             // kryptonRibbonGroupTriple14
             // 
-            this.kryptonRibbonGroupTriple14.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple14.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.formatPlainText,
             this.formatHTML,
             this.formatRichText});
-            this.kryptonRibbonGroupTriple14.MaximumSize = .Ribbon.GroupItemSize.Medium;
-            this.kryptonRibbonGroupTriple14.MinimumSize = .Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple14.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple14.MinimumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // formatPlainText
             // 
-            this.formatPlainText.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.formatPlainText.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.formatPlainText.ImageLarge = ((System.Drawing.Image)(resources.GetObject("formatPlainText.ImageLarge")));
             this.formatPlainText.ImageSmall = global::OutlookMailClone.Properties.Resources.PlainTextSmall;
             this.formatPlainText.KeyTip = "L";
@@ -2375,7 +2375,7 @@ namespace OutlookMailClone
             // 
             // formatHTML
             // 
-            this.formatHTML.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.formatHTML.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.formatHTML.Checked = true;
             this.formatHTML.ImageLarge = ((System.Drawing.Image)(resources.GetObject("formatHTML.ImageLarge")));
             this.formatHTML.ImageSmall = global::OutlookMailClone.Properties.Resources.HTMLSmall;
@@ -2384,7 +2384,7 @@ namespace OutlookMailClone
             // 
             // formatRichText
             // 
-            this.formatRichText.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.formatRichText.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.formatRichText.ImageLarge = ((System.Drawing.Image)(resources.GetObject("formatRichText.ImageLarge")));
             this.formatRichText.ImageSmall = global::OutlookMailClone.Properties.Resources.RichTextSmall;
             this.formatRichText.KeyTip = "R";
@@ -2394,7 +2394,7 @@ namespace OutlookMailClone
             // groupTracking
             // 
             this.groupTracking.Image = global::OutlookMailClone.Properties.Resources.TrackingSmall;
-            this.groupTracking.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupTracking.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple15,
             this.kryptonRibbonGroupLines3});
             this.groupTracking.KeyTipDialogLauncher = "OP";
@@ -2403,13 +2403,13 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple15
             // 
-            this.kryptonRibbonGroupTriple15.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple15.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.trackingUseVotingButtons});
-            this.kryptonRibbonGroupTriple15.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple15.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // trackingUseVotingButtons
             // 
-            this.trackingUseVotingButtons.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.trackingUseVotingButtons.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.trackingUseVotingButtons.ImageLarge = global::OutlookMailClone.Properties.Resources.UseVotingButtonsLarge;
             this.trackingUseVotingButtons.ImageSmall = null;
             this.trackingUseVotingButtons.KeyTip = "V";
@@ -2419,10 +2419,10 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupLines3
             // 
-            this.kryptonRibbonGroupLines3.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupLines3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupCheckBox1,
             this.kryptonRibbonGroupCheckBox2});
-            this.kryptonRibbonGroupLines3.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupLines3.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // kryptonRibbonGroupCheckBox1
             // 
@@ -2435,7 +2435,7 @@ namespace OutlookMailClone
             // groupMoreOptions
             // 
             this.groupMoreOptions.Image = global::OutlookMailClone.Properties.Resources.MoreOptionsSmall;
-            this.groupMoreOptions.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupMoreOptions.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple16});
             this.groupMoreOptions.KeyTipDialogLauncher = "OP";
             this.groupMoreOptions.KeyTipGroup = "ZP";
@@ -2444,15 +2444,15 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple16
             // 
-            this.kryptonRibbonGroupTriple16.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple16.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.moreOptionsSaveSentItem,
             this.moreOptionsDelayDelivery,
             this.moreOptionsDirectRepliesTo});
-            this.kryptonRibbonGroupTriple16.MinimumSize = .Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple16.MinimumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // moreOptionsSaveSentItem
             // 
-            this.moreOptionsSaveSentItem.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.moreOptionsSaveSentItem.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.moreOptionsSaveSentItem.ImageLarge = global::OutlookMailClone.Properties.Resources.SaveSentItemLarge;
             this.moreOptionsSaveSentItem.ImageSmall = global::OutlookMailClone.Properties.Resources.MoreOptionsSmall;
             this.moreOptionsSaveSentItem.KeyTip = "S";
@@ -2462,7 +2462,7 @@ namespace OutlookMailClone
             // 
             // moreOptionsDelayDelivery
             // 
-            this.moreOptionsDelayDelivery.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.moreOptionsDelayDelivery.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.moreOptionsDelayDelivery.ImageLarge = global::OutlookMailClone.Properties.Resources.DelayDeliveryLarge;
             this.moreOptionsDelayDelivery.ImageSmall = global::OutlookMailClone.Properties.Resources.DelayDeliverySmall;
             this.moreOptionsDelayDelivery.KeyTip = "D";
@@ -2471,7 +2471,7 @@ namespace OutlookMailClone
             // 
             // moreOptionsDirectRepliesTo
             // 
-            this.moreOptionsDirectRepliesTo.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.moreOptionsDirectRepliesTo.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.moreOptionsDirectRepliesTo.ImageLarge = global::OutlookMailClone.Properties.Resources.DirectRepliesToLarge;
             this.moreOptionsDirectRepliesTo.ImageSmall = global::OutlookMailClone.Properties.Resources.DrawingCanvasSmall;
             this.moreOptionsDirectRepliesTo.KeyTip = "I";
@@ -2480,7 +2480,7 @@ namespace OutlookMailClone
             // 
             // tabFormatText
             // 
-            this.tabFormatText.Groups.AddRange(new .Ribbon.KryptonRibbonGroup[] {
+            this.tabFormatText.Groups.AddRange(new Krypton.Ribbon.KryptonRibbonGroup[] {
             this.groupFormatClipboard,
             this.groupFormatFont,
             this.groupFormatParagraph,
@@ -2494,7 +2494,7 @@ namespace OutlookMailClone
             // 
             this.groupFormatClipboard.AllowCollapsed = false;
             this.groupFormatClipboard.Image = global::OutlookMailClone.Properties.Resources.ClipboardPasteSmall;
-            this.groupFormatClipboard.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupFormatClipboard.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple17,
             this.kryptonRibbonGroupTriple18});
             this.groupFormatClipboard.KeyTipDialogLauncher = "FO";
@@ -2502,13 +2502,13 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple17
             // 
-            this.kryptonRibbonGroupTriple17.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple17.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.formatClipboardPaste});
-            this.kryptonRibbonGroupTriple17.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple17.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // formatClipboardPaste
             // 
-            this.formatClipboardPaste.ButtonType = .Ribbon.GroupButtonType.Split;
+            this.formatClipboardPaste.ButtonType = Krypton.Ribbon.GroupButtonType.Split;
             this.formatClipboardPaste.ImageLarge = global::OutlookMailClone.Properties.Resources.ClipboardPaste;
             this.formatClipboardPaste.ImageSmall = ((System.Drawing.Image)(resources.GetObject("formatClipboardPaste.ImageSmall")));
             this.formatClipboardPaste.KeyTip = "V";
@@ -2517,11 +2517,11 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple18
             // 
-            this.kryptonRibbonGroupTriple18.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple18.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.formatClipboardCut,
             this.formatClipboardCopy,
             this.formatClipboardFormatPainter});
-            this.kryptonRibbonGroupTriple18.MaximumSize = .Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple18.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // formatClipboardCut
             // 
@@ -2548,7 +2548,7 @@ namespace OutlookMailClone
             // groupFormatFont
             // 
             this.groupFormatFont.Image = global::OutlookMailClone.Properties.Resources.TextColor;
-            this.groupFormatFont.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupFormatFont.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupLines1});
             this.groupFormatFont.KeyTipDialogLauncher = "FN";
             this.groupFormatFont.KeyTipGroup = "ZF";
@@ -2556,7 +2556,7 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupLines1
             // 
-            this.kryptonRibbonGroupLines1.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupLines1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupCluster1,
             this.kryptonRibbonGroupCluster2,
             this.kryptonRibbonGroupCluster4,
@@ -2564,7 +2564,7 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupCluster1
             // 
-            this.kryptonRibbonGroupCluster1.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupCluster1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.fontGrowFont,
             this.fontShrinkFont});
             // 
@@ -2580,7 +2580,7 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupCluster2
             // 
-            this.kryptonRibbonGroupCluster2.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupCluster2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.fontTextClear});
             // 
             // fontTextClear
@@ -2590,7 +2590,7 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupCluster4
             // 
-            this.kryptonRibbonGroupCluster4.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupCluster4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.fontTextBackColor,
             this.textFontColor});
             // 
@@ -2606,7 +2606,7 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupCluster3
             // 
-            this.kryptonRibbonGroupCluster3.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupCluster3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.fontBold,
             this.fontItalic,
             this.fontUnderline,
@@ -2647,7 +2647,7 @@ namespace OutlookMailClone
             // 
             // fontChangeCase
             // 
-            this.fontChangeCase.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.fontChangeCase.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.fontChangeCase.ImageSmall = global::OutlookMailClone.Properties.Resources.TextChangeCase;
             this.fontChangeCase.KeyTip = "7";
             this.fontChangeCase.KryptonContextMenu = this.cmsChangeCase;
@@ -2655,7 +2655,7 @@ namespace OutlookMailClone
             // groupFormatParagraph
             // 
             this.groupFormatParagraph.Image = global::OutlookMailClone.Properties.Resources.TextAlignCenter;
-            this.groupFormatParagraph.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupFormatParagraph.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupLines2});
             this.groupFormatParagraph.KeyTipDialogLauncher = "PG";
             this.groupFormatParagraph.KeyTipGroup = "ZP";
@@ -2663,7 +2663,7 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupLines2
             // 
-            this.kryptonRibbonGroupLines2.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupLines2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupCluster5,
             this.kryptonRibbonGroupCluster6,
             this.kryptonRibbonGroupCluster7,
@@ -2674,7 +2674,7 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupCluster5
             // 
-            this.kryptonRibbonGroupCluster5.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupCluster5.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.fontBullets,
             this.fontNumbers,
             this.fontMultilevel});
@@ -2696,7 +2696,7 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupCluster6
             // 
-            this.kryptonRibbonGroupCluster6.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupCluster6.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.fontDecreaseIndent,
             this.fontIncreaseIndent});
             // 
@@ -2712,7 +2712,7 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupCluster7
             // 
-            this.kryptonRibbonGroupCluster7.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupCluster7.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.fontSort});
             // 
             // fontSort
@@ -2722,7 +2722,7 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupCluster8
             // 
-            this.kryptonRibbonGroupCluster8.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupCluster8.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.fontMarkers});
             // 
             // fontMarkers
@@ -2732,7 +2732,7 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupCluster9
             // 
-            this.kryptonRibbonGroupCluster9.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupCluster9.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.fontJustifyLeft,
             this.fontJustifyCenter,
             this.fontJustifyRight,
@@ -2760,19 +2760,19 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupCluster10
             // 
-            this.kryptonRibbonGroupCluster10.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupCluster10.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.fontSpacing});
             // 
             // fontSpacing
             // 
-            this.fontSpacing.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.fontSpacing.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.fontSpacing.ImageSmall = global::OutlookMailClone.Properties.Resources.LineSpacing;
             this.fontSpacing.KeyTip = "K";
             this.fontSpacing.KryptonContextMenu = this.cmsSpacing;
             // 
             // kryptonRibbonGroupCluster11
             // 
-            this.kryptonRibbonGroupCluster11.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupCluster11.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.fontShading,
             this.fontBottomBorder});
             // 
@@ -2783,7 +2783,7 @@ namespace OutlookMailClone
             // 
             // fontBottomBorder
             // 
-            this.fontBottomBorder.ButtonType = .Ribbon.GroupButtonType.Split;
+            this.fontBottomBorder.ButtonType = Krypton.Ribbon.GroupButtonType.Split;
             this.fontBottomBorder.ImageSmall = global::OutlookMailClone.Properties.Resources.BottomBorder;
             this.fontBottomBorder.KryptonContextMenu = this.cmsBottomBorder;
             // 
@@ -2791,20 +2791,20 @@ namespace OutlookMailClone
             // 
             this.groupFormatStyles.AllowCollapsed = false;
             this.groupFormatStyles.Image = ((System.Drawing.Image)(resources.GetObject("groupFormatStyles.Image")));
-            this.groupFormatStyles.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupFormatStyles.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple19});
             this.groupFormatStyles.KeyTipDialogLauncher = "FY";
             this.groupFormatStyles.TextLine1 = "Styles";
             // 
             // kryptonRibbonGroupTriple19
             // 
-            this.kryptonRibbonGroupTriple19.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple19.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.stylesChangeStyles});
-            this.kryptonRibbonGroupTriple19.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple19.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // stylesChangeStyles
             // 
-            this.stylesChangeStyles.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.stylesChangeStyles.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.stylesChangeStyles.ImageLarge = global::OutlookMailClone.Properties.Resources.ChangeStyles;
             this.stylesChangeStyles.ImageSmall = ((System.Drawing.Image)(resources.GetObject("stylesChangeStyles.ImageSmall")));
             this.stylesChangeStyles.KeyTip = "G";
@@ -2817,15 +2817,15 @@ namespace OutlookMailClone
             this.groupFormatZoom.AllowCollapsed = false;
             this.groupFormatZoom.DialogBoxLauncher = false;
             this.groupFormatZoom.Image = ((System.Drawing.Image)(resources.GetObject("groupFormatZoom.Image")));
-            this.groupFormatZoom.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupFormatZoom.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple20});
             this.groupFormatZoom.TextLine1 = "Zoom";
             // 
             // kryptonRibbonGroupTriple20
             // 
-            this.kryptonRibbonGroupTriple20.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple20.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.zoomZoom});
-            this.kryptonRibbonGroupTriple20.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple20.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // zoomZoom
             // 
@@ -2838,23 +2838,23 @@ namespace OutlookMailClone
             // 
             this.groupFormatEditing.DialogBoxLauncher = false;
             this.groupFormatEditing.Image = global::OutlookMailClone.Properties.Resources.FindSmall;
-            this.groupFormatEditing.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.groupFormatEditing.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple21});
             this.groupFormatEditing.KeyTipGroup = "ZN";
             this.groupFormatEditing.TextLine1 = "Editing";
             // 
             // kryptonRibbonGroupTriple21
             // 
-            this.kryptonRibbonGroupTriple21.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple21.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton4,
             this.kryptonRibbonGroupButton5,
             this.kryptonRibbonGroupButton6});
-            this.kryptonRibbonGroupTriple21.MaximumSize = .Ribbon.GroupItemSize.Medium;
-            this.kryptonRibbonGroupTriple21.MinimumSize = .Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple21.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple21.MinimumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // kryptonRibbonGroupButton4
             // 
-            this.kryptonRibbonGroupButton4.ButtonType = .Ribbon.GroupButtonType.Split;
+            this.kryptonRibbonGroupButton4.ButtonType = Krypton.Ribbon.GroupButtonType.Split;
             this.kryptonRibbonGroupButton4.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton4.ImageLarge")));
             this.kryptonRibbonGroupButton4.ImageSmall = global::OutlookMailClone.Properties.Resources.FindSmall;
             this.kryptonRibbonGroupButton4.KeyTip = "FD";
@@ -2870,7 +2870,7 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupButton6
             // 
-            this.kryptonRibbonGroupButton6.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.kryptonRibbonGroupButton6.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.kryptonRibbonGroupButton6.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton6.ImageLarge")));
             this.kryptonRibbonGroupButton6.ImageSmall = global::OutlookMailClone.Properties.Resources.SelectSmall;
             this.kryptonRibbonGroupButton6.KeyTip = "SL";
@@ -2879,7 +2879,7 @@ namespace OutlookMailClone
             // 
             // tabDeveloper
             // 
-            this.tabDeveloper.Groups.AddRange(new .Ribbon.KryptonRibbonGroup[] {
+            this.tabDeveloper.Groups.AddRange(new Krypton.Ribbon.KryptonRibbonGroup[] {
             this.developerCode,
             this.developerForm});
             this.tabDeveloper.KeyTip = "L";
@@ -2890,16 +2890,16 @@ namespace OutlookMailClone
             this.developerCode.AllowCollapsed = false;
             this.developerCode.DialogBoxLauncher = false;
             this.developerCode.Image = ((System.Drawing.Image)(resources.GetObject("developerCode.Image")));
-            this.developerCode.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.developerCode.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.developerCodeTriple});
             this.developerCode.TextLine1 = "Code";
             // 
             // developerCodeTriple
             // 
-            this.developerCodeTriple.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.developerCodeTriple.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.developerCodeVB,
             this.developerCodeMacros});
-            this.developerCodeTriple.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.developerCodeTriple.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // developerCodeVB
             // 
@@ -2921,17 +2921,17 @@ namespace OutlookMailClone
             this.developerForm.AllowCollapsed = false;
             this.developerForm.DialogBoxLauncher = false;
             this.developerForm.Image = ((System.Drawing.Image)(resources.GetObject("developerForm.Image")));
-            this.developerForm.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.developerForm.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.developerFormTriple});
             this.developerForm.TextLine1 = "Form";
             // 
             // developerFormTriple
             // 
-            this.developerFormTriple.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.developerFormTriple.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.developerFormDesignThis,
             this.developerFormDesignA,
             this.developerFormPublish});
-            this.developerFormTriple.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.developerFormTriple.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // developerFormDesignThis
             // 
@@ -2951,7 +2951,7 @@ namespace OutlookMailClone
             // 
             // developerFormPublish
             // 
-            this.developerFormPublish.ButtonType = .Ribbon.GroupButtonType.DropDown;
+            this.developerFormPublish.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.developerFormPublish.ImageLarge = global::OutlookMailClone.Properties.Resources.FormPublish;
             this.developerFormPublish.ImageSmall = ((System.Drawing.Image)(resources.GetObject("developerFormPublish.ImageSmall")));
             this.developerFormPublish.KryptonContextMenu = this.cmsFormPublish;
@@ -3022,66 +3022,66 @@ namespace OutlookMailClone
 
         #endregion
 
-        private .Ribbon.KryptonRibbon kryptonRibbon;
-        private .Ribbon.KryptonRibbonTab tabMessage;
+        private Krypton.Ribbon.KryptonRibbon kryptonRibbon;
+        private Krypton.Ribbon.KryptonRibbonTab tabMessage;
         private Krypton.Toolkit.KryptonPanel panelFill;
-        private .Ribbon.KryptonRibbonGroup groupClipboard;
-        private .Ribbon.KryptonRibbonGroup groupBasicText;
-        private .Ribbon.KryptonRibbonGroup groupNames;
-        private .Ribbon.KryptonRibbonGroup groupMessageInclude;
-        private .Ribbon.KryptonRibbonGroup groupOptions;
-        private .Ribbon.KryptonRibbonGroup groupZoom;
-        private .Ribbon.KryptonRibbonTab tabInsert;
-        private .Ribbon.KryptonRibbonTab tabOptions;
-        private .Ribbon.KryptonRibbonTab tabFormatText;
-        private .Ribbon.KryptonRibbonTab tabDeveloper;
+        private Krypton.Ribbon.KryptonRibbonGroup groupClipboard;
+        private Krypton.Ribbon.KryptonRibbonGroup groupBasicText;
+        private Krypton.Ribbon.KryptonRibbonGroup groupNames;
+        private Krypton.Ribbon.KryptonRibbonGroup groupMessageInclude;
+        private Krypton.Ribbon.KryptonRibbonGroup groupOptions;
+        private Krypton.Ribbon.KryptonRibbonGroup groupZoom;
+        private Krypton.Ribbon.KryptonRibbonTab tabInsert;
+        private Krypton.Ribbon.KryptonRibbonTab tabOptions;
+        private Krypton.Ribbon.KryptonRibbonTab tabFormatText;
+        private Krypton.Ribbon.KryptonRibbonTab tabDeveloper;
         private System.Windows.Forms.TableLayoutPanel tableLayout;
         private Krypton.Toolkit.KryptonRichTextBox richTextBoxSubject;
         private Krypton.Toolkit.KryptonRichTextBox richTextBoxCc;
         private Krypton.Toolkit.KryptonRichTextBox richTextBoxTo;
-        private .Ribbon.KryptonRibbonGroupTriple clipboard1;
-        private .Ribbon.KryptonRibbonGroupButton clipboardPaste;
-        private .Ribbon.KryptonRibbonGroupTriple clipboard2;
-        private .Ribbon.KryptonRibbonGroupButton clipboardCut;
-        private .Ribbon.KryptonRibbonGroupButton clipboardCopy;
-        private .Ribbon.KryptonRibbonGroupButton clipboardFormatPainter;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple clipboard1;
+        private Krypton.Ribbon.KryptonRibbonGroupButton clipboardPaste;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple clipboard2;
+        private Krypton.Ribbon.KryptonRibbonGroupButton clipboardCut;
+        private Krypton.Ribbon.KryptonRibbonGroupButton clipboardCopy;
+        private Krypton.Ribbon.KryptonRibbonGroupButton clipboardFormatPainter;
         private Krypton.Toolkit.KryptonContextMenu cmsPaste;
         private Krypton.Toolkit.KryptonContextMenuItem pasteToolStripMenuItem;
         private Krypton.Toolkit.KryptonContextMenuItem pasteSpecialToolStripMenuItem;
-        private .Ribbon.KryptonRibbonGroupLines basicTextLines;
-        private .Ribbon.KryptonRibbonGroupCluster basicTextFont;
-        private .Ribbon.KryptonRibbonGroupClusterButton basicTextFontLarger;
-        private .Ribbon.KryptonRibbonGroupClusterButton basicTextFontSmaller;
-        private .Ribbon.KryptonRibbonGroupCluster basicTextBullet;
-        private .Ribbon.KryptonRibbonGroupClusterButton basicTextBulletPoints;
-        private .Ribbon.KryptonRibbonGroupClusterButton basicTextBulletNumbers;
-        private .Ribbon.KryptonRibbonGroupCluster basicTextRubout;
-        private .Ribbon.KryptonRibbonGroupClusterButton basicTextRuboutButton;
-        private .Ribbon.KryptonRibbonGroupCluster basicTextStyle;
-        private .Ribbon.KryptonRibbonGroupClusterButton basicTextStyleBold;
-        private .Ribbon.KryptonRibbonGroupClusterButton basicTextStyleItalic;
-        private .Ribbon.KryptonRibbonGroupClusterButton basicTextStyleUnderline;
-        private .Ribbon.KryptonRibbonGroupCluster basicTextColors;
-        private .Ribbon.KryptonRibbonGroupClusterColorButton basicTextColorBack;
-        private .Ribbon.KryptonRibbonGroupClusterColorButton basicTextColorText;
-        private .Ribbon.KryptonRibbonGroupCluster basicTextAlignment;
-        private .Ribbon.KryptonRibbonGroupClusterButton basicTextAlignLeft;
-        private .Ribbon.KryptonRibbonGroupClusterButton basicTextAlignCenter;
-        private .Ribbon.KryptonRibbonGroupClusterButton basicTextAlignRight;
-        private .Ribbon.KryptonRibbonGroupCluster basicTextTab;
-        private .Ribbon.KryptonRibbonGroupClusterButton basicTextTabLeft;
-        private .Ribbon.KryptonRibbonGroupClusterButton basicTextTabRight;
-        private .Ribbon.KryptonRibbonGroupTriple namesGroup;
-        private .Ribbon.KryptonRibbonGroupButton namesAddressBook;
-        private .Ribbon.KryptonRibbonGroupButton namesCheckNames;
-        private .Ribbon.KryptonRibbonGroupTriple includeTriple1;
-        private .Ribbon.KryptonRibbonGroupButton includeAttachFile;
-        private .Ribbon.KryptonRibbonGroupButton includeAttachItem;
-        private .Ribbon.KryptonRibbonGroupTriple includeTriple2;
-        private .Ribbon.KryptonRibbonGroupTriple optionsTripleFollowup;
-        private .Ribbon.KryptonRibbonGroupButton optionsFollowUp;
-        private .Ribbon.KryptonRibbonGroupTriple proofingTriple;
-        private .Ribbon.KryptonRibbonGroupButton zoomMessageZoom;
+        private Krypton.Ribbon.KryptonRibbonGroupLines basicTextLines;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster basicTextFont;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton basicTextFontLarger;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton basicTextFontSmaller;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster basicTextBullet;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton basicTextBulletPoints;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton basicTextBulletNumbers;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster basicTextRubout;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton basicTextRuboutButton;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster basicTextStyle;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton basicTextStyleBold;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton basicTextStyleItalic;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton basicTextStyleUnderline;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster basicTextColors;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterColorButton basicTextColorBack;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterColorButton basicTextColorText;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster basicTextAlignment;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton basicTextAlignLeft;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton basicTextAlignCenter;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton basicTextAlignRight;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster basicTextTab;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton basicTextTabLeft;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton basicTextTabRight;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple namesGroup;
+        private Krypton.Ribbon.KryptonRibbonGroupButton namesAddressBook;
+        private Krypton.Ribbon.KryptonRibbonGroupButton namesCheckNames;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple includeTriple1;
+        private Krypton.Ribbon.KryptonRibbonGroupButton includeAttachFile;
+        private Krypton.Ribbon.KryptonRibbonGroupButton includeAttachItem;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple includeTriple2;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple optionsTripleFollowup;
+        private Krypton.Ribbon.KryptonRibbonGroupButton optionsFollowUp;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple proofingTriple;
+        private Krypton.Ribbon.KryptonRibbonGroupButton zoomMessageZoom;
         private Krypton.Toolkit.KryptonContextMenu cmsBusinessCards;
         private Krypton.Toolkit.KryptonContextMenuItem otherBusinessCardsToolStripMenuItem;
         private Krypton.Toolkit.KryptonContextMenu cmsSignatures;
@@ -3122,61 +3122,61 @@ namespace OutlookMailClone
         private Krypton.Toolkit.KryptonContextMenuItem deleteToolStripMenuItem;
         private Krypton.Toolkit.KryptonContextMenuSeparator toolStripMenuItem5;
         private Krypton.Toolkit.KryptonContextMenuItem exitToolStripMenuItem;
-        private .Ribbon.KryptonRibbonQATButton qatSave;
-        private .Ribbon.KryptonRibbonQATButton qatUndo;
-        private .Ribbon.KryptonRibbonQATButton qatRedo;
-        private .Ribbon.KryptonRibbonQATButton qatQuickPrint;
-        private .Ribbon.KryptonRibbonQATButton qatForward;
-        private .Ribbon.KryptonRibbonQATButton qatDelete;
-        private .Ribbon.KryptonRibbonGroup developerCode;
-        private .Ribbon.KryptonRibbonGroupTriple developerCodeTriple;
-        private .Ribbon.KryptonRibbonGroupButton developerCodeVB;
-        private .Ribbon.KryptonRibbonGroupButton developerCodeMacros;
-        private .Ribbon.KryptonRibbonGroup developerForm;
-        private .Ribbon.KryptonRibbonGroupTriple developerFormTriple;
-        private .Ribbon.KryptonRibbonGroupButton developerFormDesignThis;
-        private .Ribbon.KryptonRibbonGroupButton developerFormDesignA;
-        private .Ribbon.KryptonRibbonGroupButton developerFormPublish;
+        private Krypton.Ribbon.KryptonRibbonQATButton qatSave;
+        private Krypton.Ribbon.KryptonRibbonQATButton qatUndo;
+        private Krypton.Ribbon.KryptonRibbonQATButton qatRedo;
+        private Krypton.Ribbon.KryptonRibbonQATButton qatQuickPrint;
+        private Krypton.Ribbon.KryptonRibbonQATButton qatForward;
+        private Krypton.Ribbon.KryptonRibbonQATButton qatDelete;
+        private Krypton.Ribbon.KryptonRibbonGroup developerCode;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple developerCodeTriple;
+        private Krypton.Ribbon.KryptonRibbonGroupButton developerCodeVB;
+        private Krypton.Ribbon.KryptonRibbonGroupButton developerCodeMacros;
+        private Krypton.Ribbon.KryptonRibbonGroup developerForm;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple developerFormTriple;
+        private Krypton.Ribbon.KryptonRibbonGroupButton developerFormDesignThis;
+        private Krypton.Ribbon.KryptonRibbonGroupButton developerFormDesignA;
+        private Krypton.Ribbon.KryptonRibbonGroupButton developerFormPublish;
         private Krypton.Toolkit.KryptonContextMenu cmsFormPublish;
         private Krypton.Toolkit.KryptonContextMenuItem publishFormToolStripMenuItem;
         private Krypton.Toolkit.KryptonContextMenuItem publishFormAsToolStripMenuItem;
-        private .Ribbon.KryptonRibbonGroup groupInsertInclude;
-        private .Ribbon.KryptonRibbonGroup groupTables;
-        private .Ribbon.KryptonRibbonGroup groupInsertIllustrations;
-        private .Ribbon.KryptonRibbonGroup groupLinks;
-        private .Ribbon.KryptonRibbonGroup groupText;
-        private .Ribbon.KryptonRibbonGroup groupSymbols;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple4;
-        private .Ribbon.KryptonRibbonGroupButton includeInsertAttachFile;
-        private .Ribbon.KryptonRibbonGroupButton includeInsertAttachItem;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple5;
-        private .Ribbon.KryptonRibbonGroupButton includeInsertBusinessCard;
-        private .Ribbon.KryptonRibbonGroupButton includeInsertCalendar;
-        private .Ribbon.KryptonRibbonGroupButton includeInsertSignature;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple3;
-        private .Ribbon.KryptonRibbonGroupButton tablesTable;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple6;
-        private .Ribbon.KryptonRibbonGroupButton illustrationsPicture;
-        private .Ribbon.KryptonRibbonGroupButton illustrationsClipArt;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple7;
-        private .Ribbon.KryptonRibbonGroupButton illustrationsShapes;
-        private .Ribbon.KryptonRibbonGroupButton illustrationsSmartArt;
-        private .Ribbon.KryptonRibbonGroupButton illustrationsChart;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple2;
-        private .Ribbon.KryptonRibbonGroupButton linksHyperlink;
-        private .Ribbon.KryptonRibbonGroupButton linksBookmark;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple8;
-        private .Ribbon.KryptonRibbonGroupButton textTextBox;
-        private .Ribbon.KryptonRibbonGroupButton textQuickParts;
-        private .Ribbon.KryptonRibbonGroupButton textWordArt;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple9;
-        private .Ribbon.KryptonRibbonGroupButton textDropCap;
-        private .Ribbon.KryptonRibbonGroupButton textDateAndTime;
-        private .Ribbon.KryptonRibbonGroupButton textObject;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple1;
-        private .Ribbon.KryptonRibbonGroupButton symbolsEquation;
-        private .Ribbon.KryptonRibbonGroupButton symbolSymbol;
-        private .Ribbon.KryptonRibbonGroupButton symbolHorizontalLine;
+        private Krypton.Ribbon.KryptonRibbonGroup groupInsertInclude;
+        private Krypton.Ribbon.KryptonRibbonGroup groupTables;
+        private Krypton.Ribbon.KryptonRibbonGroup groupInsertIllustrations;
+        private Krypton.Ribbon.KryptonRibbonGroup groupLinks;
+        private Krypton.Ribbon.KryptonRibbonGroup groupText;
+        private Krypton.Ribbon.KryptonRibbonGroup groupSymbols;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple4;
+        private Krypton.Ribbon.KryptonRibbonGroupButton includeInsertAttachFile;
+        private Krypton.Ribbon.KryptonRibbonGroupButton includeInsertAttachItem;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple5;
+        private Krypton.Ribbon.KryptonRibbonGroupButton includeInsertBusinessCard;
+        private Krypton.Ribbon.KryptonRibbonGroupButton includeInsertCalendar;
+        private Krypton.Ribbon.KryptonRibbonGroupButton includeInsertSignature;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple3;
+        private Krypton.Ribbon.KryptonRibbonGroupButton tablesTable;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple6;
+        private Krypton.Ribbon.KryptonRibbonGroupButton illustrationsPicture;
+        private Krypton.Ribbon.KryptonRibbonGroupButton illustrationsClipArt;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple7;
+        private Krypton.Ribbon.KryptonRibbonGroupButton illustrationsShapes;
+        private Krypton.Ribbon.KryptonRibbonGroupButton illustrationsSmartArt;
+        private Krypton.Ribbon.KryptonRibbonGroupButton illustrationsChart;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple2;
+        private Krypton.Ribbon.KryptonRibbonGroupButton linksHyperlink;
+        private Krypton.Ribbon.KryptonRibbonGroupButton linksBookmark;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple8;
+        private Krypton.Ribbon.KryptonRibbonGroupButton textTextBox;
+        private Krypton.Ribbon.KryptonRibbonGroupButton textQuickParts;
+        private Krypton.Ribbon.KryptonRibbonGroupButton textWordArt;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple9;
+        private Krypton.Ribbon.KryptonRibbonGroupButton textDropCap;
+        private Krypton.Ribbon.KryptonRibbonGroupButton textDateAndTime;
+        private Krypton.Ribbon.KryptonRibbonGroupButton textObject;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple1;
+        private Krypton.Ribbon.KryptonRibbonGroupButton symbolsEquation;
+        private Krypton.Ribbon.KryptonRibbonGroupButton symbolSymbol;
+        private Krypton.Ribbon.KryptonRibbonGroupButton symbolHorizontalLine;
         private Krypton.Toolkit.KryptonContextMenu cmsTable;
         private Krypton.Toolkit.KryptonContextMenuItem insertTableToolStripMenuItem;
         private Krypton.Toolkit.KryptonContextMenuItem drawTableToolStripMenuItem;
@@ -3198,33 +3198,33 @@ namespace OutlookMailClone
         private Krypton.Toolkit.KryptonContextMenu cmsShapes;
         private Krypton.Toolkit.KryptonContextMenuItem newDrawingCanvasToolStripMenuItem;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecHelp;
-        private .Ribbon.KryptonRibbonGroup groupOptionsThemes;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple10;
-        private .Ribbon.KryptonRibbonGroupButton themesTheme;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple11;
-        private .Ribbon.KryptonRibbonGroupButton themesColors;
-        private .Ribbon.KryptonRibbonGroupButton themesFonts;
-        private .Ribbon.KryptonRibbonGroupButton themesEffects;
-        private .Ribbon.KryptonRibbonGroupSeparator kryptonRibbonGroupSeparator1;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple12;
-        private .Ribbon.KryptonRibbonGroupButton themesPageColor;
-        private .Ribbon.KryptonRibbonGroup groupFields;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple13;
-        private .Ribbon.KryptonRibbonGroupButton fieldsShowBcc;
-        private .Ribbon.KryptonRibbonGroupButton fieldsShowFrom;
-        private .Ribbon.KryptonRibbonGroup groupFormat;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple14;
-        private .Ribbon.KryptonRibbonGroupButton formatPlainText;
-        private .Ribbon.KryptonRibbonGroupButton formatHTML;
-        private .Ribbon.KryptonRibbonGroupButton formatRichText;
-        private .Ribbon.KryptonRibbonGroup groupTracking;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple15;
-        private .Ribbon.KryptonRibbonGroupButton trackingUseVotingButtons;
-        private .Ribbon.KryptonRibbonGroup groupMoreOptions;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple16;
-        private .Ribbon.KryptonRibbonGroupButton moreOptionsSaveSentItem;
-        private .Ribbon.KryptonRibbonGroupButton moreOptionsDelayDelivery;
-        private .Ribbon.KryptonRibbonGroupButton moreOptionsDirectRepliesTo;
+        private Krypton.Ribbon.KryptonRibbonGroup groupOptionsThemes;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple10;
+        private Krypton.Ribbon.KryptonRibbonGroupButton themesTheme;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple11;
+        private Krypton.Ribbon.KryptonRibbonGroupButton themesColors;
+        private Krypton.Ribbon.KryptonRibbonGroupButton themesFonts;
+        private Krypton.Ribbon.KryptonRibbonGroupButton themesEffects;
+        private Krypton.Ribbon.KryptonRibbonGroupSeparator kryptonRibbonGroupSeparator1;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple12;
+        private Krypton.Ribbon.KryptonRibbonGroupButton themesPageColor;
+        private Krypton.Ribbon.KryptonRibbonGroup groupFields;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple13;
+        private Krypton.Ribbon.KryptonRibbonGroupButton fieldsShowBcc;
+        private Krypton.Ribbon.KryptonRibbonGroupButton fieldsShowFrom;
+        private Krypton.Ribbon.KryptonRibbonGroup groupFormat;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple14;
+        private Krypton.Ribbon.KryptonRibbonGroupButton formatPlainText;
+        private Krypton.Ribbon.KryptonRibbonGroupButton formatHTML;
+        private Krypton.Ribbon.KryptonRibbonGroupButton formatRichText;
+        private Krypton.Ribbon.KryptonRibbonGroup groupTracking;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple15;
+        private Krypton.Ribbon.KryptonRibbonGroupButton trackingUseVotingButtons;
+        private Krypton.Ribbon.KryptonRibbonGroup groupMoreOptions;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple16;
+        private Krypton.Ribbon.KryptonRibbonGroupButton moreOptionsSaveSentItem;
+        private Krypton.Ribbon.KryptonRibbonGroupButton moreOptionsDelayDelivery;
+        private Krypton.Ribbon.KryptonRibbonGroupButton moreOptionsDirectRepliesTo;
         private Krypton.Toolkit.KryptonContextMenu cmsThemes;
         private Krypton.Toolkit.KryptonContextMenuItem resetToThemeFromTemplateToolStripMenuItem;
         private Krypton.Toolkit.KryptonContextMenuItem moreThemesOnMicrosoftOfficeToolStripMenuItem;
@@ -3246,65 +3246,65 @@ namespace OutlookMailClone
         private Krypton.Toolkit.KryptonContextMenuSeparator toolStripMenuItem8;
         private Krypton.Toolkit.KryptonContextMenuItem useDefaultFolderToolStripMenuItem;
         private Krypton.Toolkit.KryptonContextMenuItem dotNotSaveToolStripMenuItem;
-        private .Ribbon.KryptonRibbonGroup groupFormatClipboard;
-        private .Ribbon.KryptonRibbonGroup groupFormatFont;
-        private .Ribbon.KryptonRibbonGroup groupFormatParagraph;
-        private .Ribbon.KryptonRibbonGroup groupFormatStyles;
-        private .Ribbon.KryptonRibbonGroup groupFormatZoom;
-        private .Ribbon.KryptonRibbonGroup groupFormatEditing;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple17;
-        private .Ribbon.KryptonRibbonGroupButton formatClipboardPaste;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple18;
-        private .Ribbon.KryptonRibbonGroupButton formatClipboardCut;
-        private .Ribbon.KryptonRibbonGroupButton formatClipboardCopy;
-        private .Ribbon.KryptonRibbonGroupButton formatClipboardFormatPainter;
-        private .Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines1;
-        private .Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster1;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontGrowFont;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontShrinkFont;
-        private .Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster2;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontTextClear;
-        private .Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster3;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontBold;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontItalic;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontUnderline;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontStrikethrough;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontSubscript;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontSuperscript;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontChangeCase;
-        private .Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster4;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontTextBackColor;
-        private .Ribbon.KryptonRibbonGroupClusterButton textFontColor;
-        private .Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines2;
-        private .Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster5;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontBullets;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontNumbers;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontMultilevel;
-        private .Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster6;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontDecreaseIndent;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontIncreaseIndent;
-        private .Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster7;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontSort;
-        private .Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster8;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontMarkers;
-        private .Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster9;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontJustifyLeft;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontJustifyCenter;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontJustifyRight;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontJustify;
-        private .Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster10;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontSpacing;
-        private .Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster11;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontShading;
-        private .Ribbon.KryptonRibbonGroupClusterButton fontBottomBorder;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple19;
-        private .Ribbon.KryptonRibbonGroupButton stylesChangeStyles;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple20;
-        private .Ribbon.KryptonRibbonGroupButton zoomZoom;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple21;
-        private .Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton4;
-        private .Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton5;
-        private .Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton6;
+        private Krypton.Ribbon.KryptonRibbonGroup groupFormatClipboard;
+        private Krypton.Ribbon.KryptonRibbonGroup groupFormatFont;
+        private Krypton.Ribbon.KryptonRibbonGroup groupFormatParagraph;
+        private Krypton.Ribbon.KryptonRibbonGroup groupFormatStyles;
+        private Krypton.Ribbon.KryptonRibbonGroup groupFormatZoom;
+        private Krypton.Ribbon.KryptonRibbonGroup groupFormatEditing;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple17;
+        private Krypton.Ribbon.KryptonRibbonGroupButton formatClipboardPaste;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple18;
+        private Krypton.Ribbon.KryptonRibbonGroupButton formatClipboardCut;
+        private Krypton.Ribbon.KryptonRibbonGroupButton formatClipboardCopy;
+        private Krypton.Ribbon.KryptonRibbonGroupButton formatClipboardFormatPainter;
+        private Krypton.Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines1;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster1;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontGrowFont;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontShrinkFont;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster2;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontTextClear;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster3;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontBold;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontItalic;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontUnderline;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontStrikethrough;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontSubscript;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontSuperscript;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontChangeCase;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster4;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontTextBackColor;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton textFontColor;
+        private Krypton.Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines2;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster5;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontBullets;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontNumbers;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontMultilevel;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster6;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontDecreaseIndent;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontIncreaseIndent;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster7;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontSort;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster8;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontMarkers;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster9;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontJustifyLeft;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontJustifyCenter;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontJustifyRight;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontJustify;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster10;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontSpacing;
+        private Krypton.Ribbon.KryptonRibbonGroupCluster kryptonRibbonGroupCluster11;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontShading;
+        private Krypton.Ribbon.KryptonRibbonGroupClusterButton fontBottomBorder;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple19;
+        private Krypton.Ribbon.KryptonRibbonGroupButton stylesChangeStyles;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple20;
+        private Krypton.Ribbon.KryptonRibbonGroupButton zoomZoom;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple21;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton4;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton5;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton6;
         private Krypton.Toolkit.KryptonContextMenu cmsChangeCase;
         private Krypton.Toolkit.KryptonContextMenuItem sentenceCaseToolStripMenuItem;
         private Krypton.Toolkit.KryptonContextMenuItem lowercaseToolStripMenuItem;
@@ -3382,9 +3382,9 @@ namespace OutlookMailClone
         private Krypton.Toolkit.KryptonContextMenuSeparator kryptonContextMenuSeparator1;
         private Krypton.Toolkit.KryptonContextMenuSeparator kryptonContextMenuSeparator3;
         private Krypton.Toolkit.KryptonContextMenuSeparator kryptonContextMenuSeparator4;
-        private .Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines3;
-        private .Ribbon.KryptonRibbonGroupCheckBox kryptonRibbonGroupCheckBox1;
-        private .Ribbon.KryptonRibbonGroupCheckBox kryptonRibbonGroupCheckBox2;
+        private Krypton.Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines3;
+        private Krypton.Ribbon.KryptonRibbonGroupCheckBox kryptonRibbonGroupCheckBox1;
+        private Krypton.Ribbon.KryptonRibbonGroupCheckBox kryptonRibbonGroupCheckBox2;
         private Krypton.Toolkit.KryptonContextMenuSeparator kryptonContextMenuSeparator6;
         private Krypton.Toolkit.KryptonContextMenuSeparator kryptonContextMenuSeparator7;
         private Krypton.Toolkit.KryptonContextMenuSeparator kryptonContextMenuSeparator8;
@@ -3403,15 +3403,15 @@ namespace OutlookMailClone
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem8;
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem9;
         private Krypton.Toolkit.KryptonContextMenuSeparator kryptonContextMenuSeparator13;
-        private .Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc1;
-        private .Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc2;
-        private .Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc3;
-        private .Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc4;
-        private .Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc5;
-        private .Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc6;
-        private .Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc7;
-        private .Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc8;
-        private .Ribbon.ButtonSpecAppMenu buttonSpecAppMenu1;
+        private Krypton.Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc1;
+        private Krypton.Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc2;
+        private Krypton.Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc3;
+        private Krypton.Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc4;
+        private Krypton.Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc5;
+        private Krypton.Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc6;
+        private Krypton.Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc7;
+        private Krypton.Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc8;
+        private Krypton.Ribbon.ButtonSpecAppMenu buttonSpecAppMenu1;
         private Krypton.Toolkit.KryptonContextMenuItems kryptonContextMenuItems1;
         private Krypton.Toolkit.KryptonContextMenuHeading kryptonContextMenuHeading1;
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem10;
@@ -3427,12 +3427,12 @@ namespace OutlookMailClone
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem15;
         private Krypton.Toolkit.KryptonManager kryptonManager1;
         private Krypton.Toolkit.KryptonRichTextBox richTextBoxMessage;
-        private .Ribbon.KryptonRibbonGroupButton includeSignature;
+        private Krypton.Ribbon.KryptonRibbonGroupButton includeSignature;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private Krypton.Toolkit.KryptonButton kryptonButton2;
         private Krypton.Toolkit.KryptonButton kryptonButton1;
-        private .Ribbon.KryptonRibbonGroupButton optionsHighImportance;
-        private .Ribbon.KryptonRibbonGroupButton optionsLowImportance;
+        private Krypton.Ribbon.KryptonRibbonGroupButton optionsHighImportance;
+        private Krypton.Ribbon.KryptonRibbonGroupButton optionsLowImportance;
 
     }
 }

@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kryptonNavigator1 = new Krypton.Navigator.KryptonNavigator();
             this.kryptonNavigator2 = new Krypton.Navigator.KryptonNavigator();
-            this.kryptonWorkspace2 = new .Workspace.KryptonWorkspace();
+            this.kryptonWorkspace2 = new Krypton.Workspace.KryptonWorkspace();
             this.labelTitle = new System.Windows.Forms.Label();
             this.groupBoxDragFeedback = new System.Windows.Forms.GroupBox();
             this.radioRounded = new System.Windows.Forms.RadioButton();
@@ -40,7 +40,7 @@
             this.radioBlock = new System.Windows.Forms.RadioButton();
             this.buttonClose = new System.Windows.Forms.Button();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
-            this.kryptonWorkspace1 = new .Workspace.KryptonWorkspace();
+            this.kryptonWorkspace1 = new Krypton.Workspace.KryptonWorkspace();
             this.labelNavigators = new System.Windows.Forms.Label();
             this.labelWorkspaces = new System.Windows.Forms.Label();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
@@ -96,7 +96,7 @@
             this.kryptonWorkspace2.Size = new System.Drawing.Size(329, 271);
             this.kryptonWorkspace2.TabIndex = 6;
             this.kryptonWorkspace2.TabStop = true;
-            this.kryptonWorkspace2.WorkspaceCellAdding += new System.EventHandler<.Workspace.WorkspaceCellEventArgs>(this.kryptonWorkspace2_WorkspaceCellAdding);
+            this.kryptonWorkspace2.WorkspaceCellAdding += new System.EventHandler<Krypton.Workspace.WorkspaceCellEventArgs>(this.kryptonWorkspace2_WorkspaceCellAdding);
             // 
             // labelTitle
             // 
@@ -195,7 +195,7 @@
             this.kryptonWorkspace1.Size = new System.Drawing.Size(313, 271);
             this.kryptonWorkspace1.TabIndex = 5;
             this.kryptonWorkspace1.TabStop = true;
-            this.kryptonWorkspace1.WorkspaceCellAdding += new System.EventHandler<.Workspace.WorkspaceCellEventArgs>(this.kryptonWorkspace1_WorkspaceCellAdding);
+            this.kryptonWorkspace1.WorkspaceCellAdding += new System.EventHandler<Krypton.Workspace.WorkspaceCellEventArgs>(this.kryptonWorkspace1_WorkspaceCellAdding);
             // 
             // labelNavigators
             // 
@@ -256,7 +256,7 @@
 
         private Krypton.Navigator.KryptonNavigator kryptonNavigator1;
         private Krypton.Navigator.KryptonNavigator kryptonNavigator2;
-        private .Workspace.KryptonWorkspace kryptonWorkspace2;
+        private Krypton.Workspace.KryptonWorkspace kryptonWorkspace2;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.GroupBox groupBoxDragFeedback;
         private System.Windows.Forms.RadioButton radioRounded;
@@ -264,7 +264,7 @@
         private System.Windows.Forms.RadioButton radioBlock;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.ImageList imageList;
-        private .Workspace.KryptonWorkspace kryptonWorkspace1;
+        private Krypton.Workspace.KryptonWorkspace kryptonWorkspace1;
         private System.Windows.Forms.Label labelNavigators;
         private System.Windows.Forms.Label labelWorkspaces;
         private Krypton.Toolkit.KryptonManager kryptonManager1;

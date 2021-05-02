@@ -31,19 +31,19 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.buttonClose = new System.Windows.Forms.Button();
-            this.kryptonWorkspace = new .Workspace.KryptonWorkspace();
-            this.kryptonWorkspaceCell1 = new .Workspace.KryptonWorkspaceCell();
+            this.kryptonWorkspace = new Krypton.Workspace.KryptonWorkspace();
+            this.kryptonWorkspaceCell1 = new Krypton.Workspace.KryptonWorkspaceCell();
             this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.kryptonWorkspaceSequence1 = new .Workspace.KryptonWorkspaceSequence();
-            this.kryptonWorkspaceCell2 = new .Workspace.KryptonWorkspaceCell();
+            this.kryptonWorkspaceSequence1 = new Krypton.Workspace.KryptonWorkspaceSequence();
+            this.kryptonWorkspaceCell2 = new Krypton.Workspace.KryptonWorkspaceCell();
             this.kryptonPage3 = new Krypton.Navigator.KryptonPage();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.kryptonPage4 = new Krypton.Navigator.KryptonPage();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.kryptonWorkspaceCell3 = new .Workspace.KryptonWorkspaceCell();
+            this.kryptonWorkspaceCell3 = new Krypton.Workspace.KryptonWorkspaceCell();
             this.kryptonPage5 = new Krypton.Navigator.KryptonPage();
             this.richTextBox6 = new System.Windows.Forms.RichTextBox();
             this.kryptonPage6 = new Krypton.Navigator.KryptonPage();
@@ -100,8 +100,8 @@
             this.kryptonWorkspace.Size = new System.Drawing.Size(610, 456);
             this.kryptonWorkspace.TabIndex = 0;
             this.kryptonWorkspace.TabStop = true;
-            this.kryptonWorkspace.ActiveCellChanged += new System.EventHandler<.Workspace.ActiveCellChangedEventArgs>(this.kryptonWorkspace_ActiveCellChanged);
-            this.kryptonWorkspace.WorkspaceCellAdding += new System.EventHandler<.Workspace.WorkspaceCellEventArgs>(this.kryptonWorkspace_WorkspaceCellAdding);
+            this.kryptonWorkspace.ActiveCellChanged += new System.EventHandler<Krypton.Workspace.ActiveCellChangedEventArgs>(this.kryptonWorkspace_ActiveCellChanged);
+            this.kryptonWorkspace.WorkspaceCellAdding += new System.EventHandler<Krypton.Workspace.WorkspaceCellEventArgs>(this.kryptonWorkspace_WorkspaceCellAdding);
             // 
             // kryptonWorkspaceCell1
             // 
@@ -342,15 +342,15 @@
         #endregion
 
         private System.Windows.Forms.Button buttonClose;
-        private .Workspace.KryptonWorkspace kryptonWorkspace;
-        private .Workspace.KryptonWorkspaceCell kryptonWorkspaceCell1;
+        private Krypton.Workspace.KryptonWorkspace kryptonWorkspace;
+        private Krypton.Workspace.KryptonWorkspaceCell kryptonWorkspaceCell1;
         private Krypton.Navigator.KryptonPage kryptonPage1;
         private Krypton.Navigator.KryptonPage kryptonPage2;
-        private .Workspace.KryptonWorkspaceSequence kryptonWorkspaceSequence1;
-        private .Workspace.KryptonWorkspaceCell kryptonWorkspaceCell2;
+        private Krypton.Workspace.KryptonWorkspaceSequence kryptonWorkspaceSequence1;
+        private Krypton.Workspace.KryptonWorkspaceCell kryptonWorkspaceCell2;
         private Krypton.Navigator.KryptonPage kryptonPage3;
         private Krypton.Navigator.KryptonPage kryptonPage4;
-        private .Workspace.KryptonWorkspaceCell kryptonWorkspaceCell3;
+        private Krypton.Workspace.KryptonWorkspaceCell kryptonWorkspaceCell3;
         private Krypton.Navigator.KryptonPage kryptonPage5;
         private Krypton.Navigator.KryptonPage kryptonPage6;
         private System.Windows.Forms.RichTextBox richTextBox1;

@@ -15,10 +15,10 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-using .Docking;
+using Krypton.Docking;
 using Krypton.Navigator;
 using Krypton.Toolkit;
-using .Workspace;
+using Krypton.Workspace;
 
 namespace StandardDocking
 {
