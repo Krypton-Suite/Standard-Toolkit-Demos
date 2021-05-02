@@ -19,7 +19,7 @@ using System.Collections.Generic;
 using Microsoft.Win32;
 using Krypton.Toolkit;
 using Krypton.Navigator;
-using .Workspace;
+using Krypton.Workspace;
 
 namespace CellMaximizeAndRestore
 {

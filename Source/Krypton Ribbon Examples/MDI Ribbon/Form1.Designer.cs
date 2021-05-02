@@ -30,22 +30,22 @@ namespace MDIRibbon
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.ribbon = new .Ribbon.KryptonRibbon();
+            this.ribbon = new Krypton.Ribbon.KryptonRibbon();
             this.buttonSpecHelp = new Krypton.Toolkit.ButtonSpecAny();
             this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
-            this.tabHome = new .Ribbon.KryptonRibbonTab();
-            this.kryptonRibbonGroup2 = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple2 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.buttonNewWindow = new .Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupSeparator1 = new .Ribbon.KryptonRibbonGroupSeparator();
-            this.kryptonRibbonGroupTriple3 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.buttonCloseWindow = new .Ribbon.KryptonRibbonGroupButton();
-            this.buttonCloseAllWindows = new .Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroup1 = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple4 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.buttonCascade = new .Ribbon.KryptonRibbonGroupButton();
-            this.buttonTileHorizontal = new .Ribbon.KryptonRibbonGroupButton();
-            this.buttonTileVertical = new .Ribbon.KryptonRibbonGroupButton();
+            this.tabHome = new Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup2 = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple2 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.buttonNewWindow = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupSeparator1 = new Krypton.Ribbon.KryptonRibbonGroupSeparator();
+            this.kryptonRibbonGroupTriple3 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.buttonCloseWindow = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.buttonCloseAllWindows = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup1 = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple4 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.buttonCascade = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.buttonTileHorizontal = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.buttonTileVertical = new Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.SuspendLayout();
@@ -57,11 +57,11 @@ namespace MDIRibbon
             this.buttonSpecHelp});
             this.ribbon.InDesignHelperMode = true;
             this.ribbon.Name = "ribbon";
-            this.ribbon.QATLocation = .Ribbon.QATLocation.Hidden;
+            this.ribbon.QATLocation = Krypton.Ribbon.QATLocation.Hidden;
             this.ribbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
             this.ribbon.RibbonAppButton.AppButtonShowRecentDocs = false;
-            this.ribbon.RibbonTabs.AddRange(new .Ribbon.KryptonRibbonTab[] {
+            this.ribbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome});
             this.ribbon.SelectedContext = null;
             this.ribbon.SelectedTab = this.tabHome;
@@ -83,7 +83,7 @@ namespace MDIRibbon
             // 
             // tabHome
             // 
-            this.tabHome.Groups.AddRange(new .Ribbon.KryptonRibbonGroup[] {
+            this.tabHome.Groups.AddRange(new Krypton.Ribbon.KryptonRibbonGroup[] {
             this.kryptonRibbonGroup2,
             this.kryptonRibbonGroup1});
             this.tabHome.KeyTip = "H";
@@ -93,7 +93,7 @@ namespace MDIRibbon
             // 
             this.kryptonRibbonGroup2.DialogBoxLauncher = false;
             this.kryptonRibbonGroup2.Image = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroup2.Image")));
-            this.kryptonRibbonGroup2.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroup2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple2,
             this.kryptonRibbonGroupSeparator1,
             this.kryptonRibbonGroupTriple3});
@@ -102,7 +102,7 @@ namespace MDIRibbon
             // 
             // kryptonRibbonGroupTriple2
             // 
-            this.kryptonRibbonGroupTriple2.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonNewWindow});
             // 
             // buttonNewWindow
@@ -116,7 +116,7 @@ namespace MDIRibbon
             // 
             // kryptonRibbonGroupTriple3
             // 
-            this.kryptonRibbonGroupTriple3.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonCloseWindow,
             this.buttonCloseAllWindows});
             // 
@@ -142,14 +142,14 @@ namespace MDIRibbon
             // 
             this.kryptonRibbonGroup1.DialogBoxLauncher = false;
             this.kryptonRibbonGroup1.Image = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroup1.Image")));
-            this.kryptonRibbonGroup1.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroup1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple4});
             this.kryptonRibbonGroup1.KeyTipGroup = "A";
             this.kryptonRibbonGroup1.TextLine1 = "Arrange";
             // 
             // kryptonRibbonGroupTriple4
             // 
-            this.kryptonRibbonGroupTriple4.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonCascade,
             this.buttonTileHorizontal,
             this.buttonTileVertical});
@@ -204,20 +204,20 @@ namespace MDIRibbon
 
         #endregion
 
-        private .Ribbon.KryptonRibbon ribbon;
-        private .Ribbon.KryptonRibbonTab tabHome;
-        private .Ribbon.KryptonRibbonGroup kryptonRibbonGroup2;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple2;
-        private .Ribbon.KryptonRibbonGroupButton buttonNewWindow;
-        private .Ribbon.KryptonRibbonGroupSeparator kryptonRibbonGroupSeparator1;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple3;
-        private .Ribbon.KryptonRibbonGroupButton buttonCloseWindow;
-        private .Ribbon.KryptonRibbonGroupButton buttonCloseAllWindows;
-        private .Ribbon.KryptonRibbonGroup kryptonRibbonGroup1;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple4;
-        private .Ribbon.KryptonRibbonGroupButton buttonCascade;
-        private .Ribbon.KryptonRibbonGroupButton buttonTileHorizontal;
-        private .Ribbon.KryptonRibbonGroupButton buttonTileVertical;
+        private Krypton.Ribbon.KryptonRibbon ribbon;
+        private Krypton.Ribbon.KryptonRibbonTab tabHome;
+        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup2;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple2;
+        private Krypton.Ribbon.KryptonRibbonGroupButton buttonNewWindow;
+        private Krypton.Ribbon.KryptonRibbonGroupSeparator kryptonRibbonGroupSeparator1;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple3;
+        private Krypton.Ribbon.KryptonRibbonGroupButton buttonCloseWindow;
+        private Krypton.Ribbon.KryptonRibbonGroupButton buttonCloseAllWindows;
+        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup1;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple4;
+        private Krypton.Ribbon.KryptonRibbonGroupButton buttonCascade;
+        private Krypton.Ribbon.KryptonRibbonGroupButton buttonTileHorizontal;
+        private Krypton.Ribbon.KryptonRibbonGroupButton buttonTileVertical;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecHelp;
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem1;
         private Krypton.Toolkit.KryptonManager kryptonManager1;

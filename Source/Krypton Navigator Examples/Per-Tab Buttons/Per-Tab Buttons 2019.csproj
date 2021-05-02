@@ -22,8 +22,8 @@
         </When>
         <Otherwise>
             <ItemGroup>
-                <ProjectReference Include="..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
-                <ProjectReference Include="..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Navigator\Krypton.Navigator 2019.csproj" />
+                <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
+                <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Navigator\Krypton.Navigator 2019.csproj" />
             </ItemGroup>
         </Otherwise>
     </Choose>

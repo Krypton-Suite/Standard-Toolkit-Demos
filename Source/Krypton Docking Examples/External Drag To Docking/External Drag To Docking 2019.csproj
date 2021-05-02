@@ -1,37 +1,33 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-  <PropertyGroup>
-    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>ExternalDragToDocking</RootNamespace>
-    <AssemblyName>External Drag to Docking</AssemblyName>
-    <ApplicationIcon>Krypton.ico</ApplicationIcon>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <AssemblyVersion>19.3.603.9</AssemblyVersion>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <UseWindowsForms>true</UseWindowsForms>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
-  <ItemGroup>
-    <Compile Update="ContentDocument.cs">
-  <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="ContentInput.cs">
-  <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="ContentPropertyGrid.cs">
-  <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="ContentTreeView.cs">
-  <SubType>UserControl</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Krypton.ico" />
-  </ItemGroup>
+    <PropertyGroup>
+        <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
+        <OutputType>WinExe</OutputType>
+        <RootNamespace>ExternalDragToDocking</RootNamespace>
+        <AssemblyName>External Drag to Docking</AssemblyName>
+        <ApplicationIcon>Krypton.ico</ApplicationIcon>
+        <UseApplicationTrust>false</UseApplicationTrust>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <UseWindowsForms>true</UseWindowsForms>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+    </PropertyGroup>
     <ItemGroup>
-    <ProjectReference Include="..\..\Krypton Components\ComponentFactory.Krypton.Docking\ComponentFactory.Krypton.Docking 2019.csproj" />
+        <Content Include="Krypton.ico" />
     </ItemGroup>
-  <PropertyGroup>
-          <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
-  </PropertyGroup>
+    <Choose>
+        <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
+            <ItemGroup>
+                <PackageReference Include="Krypton.Toolkit.Canary.Lite" Version="6.0.2106" />
+                <PackageReference Include="Krypton.Docking.Canary.Lite" Version="6.0.2106" />
+            </ItemGroup>
+        </When>
+        <Otherwise>
+            <ItemGroup>
+                <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
+                <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Docking\Krypton.Docking 2019.csproj" />
+            </ItemGroup>
+        </Otherwise>
+    </Choose>
+    <PropertyGroup>
+        <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+    </PropertyGroup>
 </Project>

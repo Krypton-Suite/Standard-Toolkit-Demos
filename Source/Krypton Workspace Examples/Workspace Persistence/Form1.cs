@@ -14,7 +14,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using Krypton.Navigator;
 using Krypton.Toolkit;
-using .Workspace;
+using Krypton.Workspace;
 
 namespace WorkspacePersistence
 {

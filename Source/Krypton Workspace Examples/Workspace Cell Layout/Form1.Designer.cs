@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.kryptonWorkspace = new .Workspace.KryptonWorkspace();
+            this.kryptonWorkspace = new Krypton.Workspace.KryptonWorkspace();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -71,7 +71,7 @@
             this.kryptonWorkspace.Size = new System.Drawing.Size(497, 463);
             this.kryptonWorkspace.TabIndex = 5;
             this.kryptonWorkspace.TabStop = true;
-            this.kryptonWorkspace.WorkspaceCellAdding += new System.EventHandler<.Workspace.WorkspaceCellEventArgs>(this.kryptonWorkspace_WorkspaceCellAdding);
+            this.kryptonWorkspace.WorkspaceCellAdding += new System.EventHandler<Krypton.Workspace.WorkspaceCellEventArgs>(this.kryptonWorkspace_WorkspaceCellAdding);
             // 
             // groupBox1
             // 
@@ -306,7 +306,7 @@
 
         #endregion
 
-        private .Workspace.KryptonWorkspace kryptonWorkspace;
+        private Krypton.Workspace.KryptonWorkspace kryptonWorkspace;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonAddPage;

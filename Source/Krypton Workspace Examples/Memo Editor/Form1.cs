@@ -18,9 +18,9 @@ using System.ComponentModel;
 using System.Collections.Generic;
 using Microsoft.Win32;
 using Krypton.Toolkit;
-using .Ribbon;
+using Krypton.Ribbon;
 using Krypton.Navigator;
-using .Workspace;
+using Krypton.Workspace;
 
 namespace MemoEditor
 {

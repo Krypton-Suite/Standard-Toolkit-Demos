@@ -30,39 +30,39 @@ namespace ApplicationMenu
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.kryptonRibbon1 = new .Ribbon.KryptonRibbon();
+            this.kryptonRibbon1 = new Krypton.Ribbon.KryptonRibbon();
             this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonContextMenuItem2 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonContextMenuItem3 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonContextMenuItem4 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonContextMenuSeparator1 = new Krypton.Toolkit.KryptonContextMenuSeparator();
             this.kryptonContextMenuItem5 = new Krypton.Toolkit.KryptonContextMenuItem();
-            this.kryptonRibbonRecentDoc1 = new .Ribbon.KryptonRibbonRecentDoc();
-            this.kryptonRibbonRecentDoc2 = new .Ribbon.KryptonRibbonRecentDoc();
-            this.kryptonRibbonRecentDoc3 = new .Ribbon.KryptonRibbonRecentDoc();
-            this.kryptonRibbonRecentDoc4 = new .Ribbon.KryptonRibbonRecentDoc();
-            this.buttonSpecAppMenu1 = new .Ribbon.ButtonSpecAppMenu();
-            this.buttonSpecAppMenu2 = new .Ribbon.ButtonSpecAppMenu();
-            this.kryptonRibbonTab1 = new .Ribbon.KryptonRibbonTab();
-            this.kryptonRibbonGroup1 = new .Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple4 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.button2010Blue = new .Ribbon.KryptonRibbonGroupButton();
-            this.button2010Silver = new .Ribbon.KryptonRibbonGroupButton();
-            this.button2010Black = new .Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupSeparator3 = new .Ribbon.KryptonRibbonGroupSeparator();
-            this.kryptonRibbonGroupTriple1 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.buttonBlue = new .Ribbon.KryptonRibbonGroupButton();
-            this.buttonSilver = new .Ribbon.KryptonRibbonGroupButton();
-            this.buttonBlack = new .Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupSeparator1 = new .Ribbon.KryptonRibbonGroupSeparator();
-            this.kryptonRibbonGroupTriple3 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.buttonSparkleBlue = new .Ribbon.KryptonRibbonGroupButton();
-            this.buttonSparkleOrange = new .Ribbon.KryptonRibbonGroupButton();
-            this.buttonSparklePurple = new .Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupSeparator2 = new .Ribbon.KryptonRibbonGroupSeparator();
-            this.kryptonRibbonGroupTriple2 = new .Ribbon.KryptonRibbonGroupTriple();
-            this.button2003 = new .Ribbon.KryptonRibbonGroupButton();
-            this.buttonSystem = new .Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonRecentDoc1 = new Krypton.Ribbon.KryptonRibbonRecentDoc();
+            this.kryptonRibbonRecentDoc2 = new Krypton.Ribbon.KryptonRibbonRecentDoc();
+            this.kryptonRibbonRecentDoc3 = new Krypton.Ribbon.KryptonRibbonRecentDoc();
+            this.kryptonRibbonRecentDoc4 = new Krypton.Ribbon.KryptonRibbonRecentDoc();
+            this.buttonSpecAppMenu1 = new Krypton.Ribbon.ButtonSpecAppMenu();
+            this.buttonSpecAppMenu2 = new Krypton.Ribbon.ButtonSpecAppMenu();
+            this.kryptonRibbonTab1 = new Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup1 = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple4 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.button2010Blue = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.button2010Silver = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.button2010Black = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupSeparator3 = new Krypton.Ribbon.KryptonRibbonGroupSeparator();
+            this.kryptonRibbonGroupTriple1 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.buttonBlue = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.buttonSilver = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.buttonBlack = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupSeparator1 = new Krypton.Ribbon.KryptonRibbonGroupSeparator();
+            this.kryptonRibbonGroupTriple3 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.buttonSparkleBlue = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.buttonSparkleOrange = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.buttonSparklePurple = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupSeparator2 = new Krypton.Ribbon.KryptonRibbonGroupSeparator();
+            this.kryptonRibbonGroupTriple2 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.button2003 = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.buttonSystem = new Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup1 = new Krypton.Toolkit.KryptonGroup();
@@ -96,15 +96,15 @@ namespace ApplicationMenu
             this.kryptonContextMenuSeparator1,
             this.kryptonContextMenuItem5});
             this.kryptonRibbon1.RibbonAppButton.AppButtonMinRecentSize = new System.Drawing.Size(150, 150);
-            this.kryptonRibbon1.RibbonAppButton.AppButtonRecentDocs.AddRange(new .Ribbon.KryptonRibbonRecentDoc[] {
+            this.kryptonRibbon1.RibbonAppButton.AppButtonRecentDocs.AddRange(new Krypton.Ribbon.KryptonRibbonRecentDoc[] {
             this.kryptonRibbonRecentDoc1,
             this.kryptonRibbonRecentDoc2,
             this.kryptonRibbonRecentDoc3,
             this.kryptonRibbonRecentDoc4});
-            this.kryptonRibbon1.RibbonAppButton.AppButtonSpecs.AddRange(new .Ribbon.ButtonSpecAppMenu[] {
+            this.kryptonRibbon1.RibbonAppButton.AppButtonSpecs.AddRange(new Krypton.Ribbon.ButtonSpecAppMenu[] {
             this.buttonSpecAppMenu1,
             this.buttonSpecAppMenu2});
-            this.kryptonRibbon1.RibbonTabs.AddRange(new .Ribbon.KryptonRibbonTab[] {
+            this.kryptonRibbon1.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.kryptonRibbonTab1});
             this.kryptonRibbon1.SelectedContext = null;
             this.kryptonRibbon1.SelectedTab = this.kryptonRibbonTab1;
@@ -167,13 +167,13 @@ namespace ApplicationMenu
             // 
             // kryptonRibbonTab1
             // 
-            this.kryptonRibbonTab1.Groups.AddRange(new .Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonTab1.Groups.AddRange(new Krypton.Ribbon.KryptonRibbonGroup[] {
             this.kryptonRibbonGroup1});
             // 
             // kryptonRibbonGroup1
             // 
             this.kryptonRibbonGroup1.AllowCollapsed = false;
-            this.kryptonRibbonGroup1.Items.AddRange(new .Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroup1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple4,
             this.kryptonRibbonGroupSeparator3,
             this.kryptonRibbonGroupTriple1,
@@ -185,14 +185,14 @@ namespace ApplicationMenu
             // 
             // kryptonRibbonGroupTriple4
             // 
-            this.kryptonRibbonGroupTriple4.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.button2010Blue,
             this.button2010Silver,
             this.button2010Black});
             // 
             // button2010Blue
             // 
-            this.button2010Blue.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.button2010Blue.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.button2010Blue.Checked = true;
             this.button2010Blue.ImageLarge = ((System.Drawing.Image)(resources.GetObject("button2010Blue.ImageLarge")));
             this.button2010Blue.ImageSmall = ((System.Drawing.Image)(resources.GetObject("button2010Blue.ImageSmall")));
@@ -202,7 +202,7 @@ namespace ApplicationMenu
             // 
             // button2010Silver
             // 
-            this.button2010Silver.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.button2010Silver.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.button2010Silver.ImageLarge = ((System.Drawing.Image)(resources.GetObject("button2010Silver.ImageLarge")));
             this.button2010Silver.ImageSmall = ((System.Drawing.Image)(resources.GetObject("button2010Silver.ImageSmall")));
             this.button2010Silver.TextLine1 = "2010";
@@ -211,7 +211,7 @@ namespace ApplicationMenu
             // 
             // button2010Black
             // 
-            this.button2010Black.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.button2010Black.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.button2010Black.ImageLarge = ((System.Drawing.Image)(resources.GetObject("button2010Black.ImageLarge")));
             this.button2010Black.ImageSmall = ((System.Drawing.Image)(resources.GetObject("button2010Black.ImageSmall")));
             this.button2010Black.TextLine1 = "2010";
@@ -220,15 +220,15 @@ namespace ApplicationMenu
             // 
             // kryptonRibbonGroupTriple1
             // 
-            this.kryptonRibbonGroupTriple1.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonBlue,
             this.buttonSilver,
             this.buttonBlack});
-            this.kryptonRibbonGroupTriple1.MinimumSize = .Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple1.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // buttonBlue
             // 
-            this.buttonBlue.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.buttonBlue.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.buttonBlue.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonBlue.ImageLarge")));
             this.buttonBlue.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonBlue.ImageSmall")));
             this.buttonBlue.TextLine1 = "2007";
@@ -237,7 +237,7 @@ namespace ApplicationMenu
             // 
             // buttonSilver
             // 
-            this.buttonSilver.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.buttonSilver.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.buttonSilver.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonSilver.ImageLarge")));
             this.buttonSilver.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSilver.ImageSmall")));
             this.buttonSilver.KeyTip = "S";
@@ -247,7 +247,7 @@ namespace ApplicationMenu
             // 
             // buttonBlack
             // 
-            this.buttonBlack.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.buttonBlack.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.buttonBlack.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonBlack.ImageLarge")));
             this.buttonBlack.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonBlack.ImageSmall")));
             this.buttonBlack.KeyTip = "L";
@@ -257,14 +257,14 @@ namespace ApplicationMenu
             // 
             // kryptonRibbonGroupTriple3
             // 
-            this.kryptonRibbonGroupTriple3.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonSparkleBlue,
             this.buttonSparkleOrange,
             this.buttonSparklePurple});
             // 
             // buttonSparkleBlue
             // 
-            this.buttonSparkleBlue.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.buttonSparkleBlue.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.buttonSparkleBlue.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonSparkleBlue.ImageLarge")));
             this.buttonSparkleBlue.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSparkleBlue.ImageSmall")));
             this.buttonSparkleBlue.KeyTip = "E";
@@ -274,7 +274,7 @@ namespace ApplicationMenu
             // 
             // buttonSparkleOrange
             // 
-            this.buttonSparkleOrange.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.buttonSparkleOrange.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.buttonSparkleOrange.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonSparkleOrange.ImageLarge")));
             this.buttonSparkleOrange.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSparkleOrange.ImageSmall")));
             this.buttonSparkleOrange.KeyTip = "O";
@@ -284,7 +284,7 @@ namespace ApplicationMenu
             // 
             // buttonSparklePurple
             // 
-            this.buttonSparklePurple.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.buttonSparklePurple.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.buttonSparklePurple.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonSparklePurple.ImageLarge")));
             this.buttonSparklePurple.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSparklePurple.ImageSmall")));
             this.buttonSparklePurple.KeyTip = "P";
@@ -294,13 +294,13 @@ namespace ApplicationMenu
             // 
             // kryptonRibbonGroupTriple2
             // 
-            this.kryptonRibbonGroupTriple2.Items.AddRange(new .Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.button2003,
             this.buttonSystem});
             // 
             // button2003
             // 
-            this.button2003.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.button2003.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.button2003.ImageLarge = ((System.Drawing.Image)(resources.GetObject("button2003.ImageLarge")));
             this.button2003.ImageSmall = ((System.Drawing.Image)(resources.GetObject("button2003.ImageSmall")));
             this.button2003.KeyTip = "3";
@@ -309,7 +309,7 @@ namespace ApplicationMenu
             // 
             // buttonSystem
             // 
-            this.buttonSystem.ButtonType = .Ribbon.GroupButtonType.Check;
+            this.buttonSystem.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.buttonSystem.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonSystem.ImageLarge")));
             this.buttonSystem.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSystem.ImageSmall")));
             this.buttonSystem.KeyTip = "S";
@@ -454,7 +454,7 @@ namespace ApplicationMenu
 
         #endregion
 
-        private .Ribbon.KryptonRibbon kryptonRibbon1;
+        private Krypton.Ribbon.KryptonRibbon kryptonRibbon1;
         private Krypton.Toolkit.KryptonManager kryptonManager1;
         private Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private Krypton.Toolkit.KryptonCheckBox checkBoxShowRecentDocs;
@@ -464,41 +464,41 @@ namespace ApplicationMenu
         private Krypton.Toolkit.KryptonTextBox textBoxDocsTitle;
         private Krypton.Toolkit.KryptonTextBox textBoxMinHeight;
         private Krypton.Toolkit.KryptonLabel kryptonLabel3;
-        private .Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc1;
-        private .Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc2;
-        private .Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc3;
-        private .Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc4;
+        private Krypton.Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc1;
+        private Krypton.Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc2;
+        private Krypton.Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc3;
+        private Krypton.Ribbon.KryptonRibbonRecentDoc kryptonRibbonRecentDoc4;
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem1;
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem2;
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem3;
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem4;
         private Krypton.Toolkit.KryptonContextMenuSeparator kryptonContextMenuSeparator1;
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem5;
-        private .Ribbon.ButtonSpecAppMenu buttonSpecAppMenu1;
-        private .Ribbon.ButtonSpecAppMenu buttonSpecAppMenu2;
-        private .Ribbon.KryptonRibbonTab kryptonRibbonTab1;
-        private .Ribbon.KryptonRibbonGroup kryptonRibbonGroup1;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple1;
-        private .Ribbon.KryptonRibbonGroupButton buttonBlue;
-        private .Ribbon.KryptonRibbonGroupButton buttonSilver;
-        private .Ribbon.KryptonRibbonGroupButton buttonBlack;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple2;
-        private .Ribbon.KryptonRibbonGroupButton button2003;
-        private .Ribbon.KryptonRibbonGroupButton buttonSystem;
+        private Krypton.Ribbon.ButtonSpecAppMenu buttonSpecAppMenu1;
+        private Krypton.Ribbon.ButtonSpecAppMenu buttonSpecAppMenu2;
+        private Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab1;
+        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup1;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple1;
+        private Krypton.Ribbon.KryptonRibbonGroupButton buttonBlue;
+        private Krypton.Ribbon.KryptonRibbonGroupButton buttonSilver;
+        private Krypton.Ribbon.KryptonRibbonGroupButton buttonBlack;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple2;
+        private Krypton.Ribbon.KryptonRibbonGroupButton button2003;
+        private Krypton.Ribbon.KryptonRibbonGroupButton buttonSystem;
         private Krypton.Toolkit.KryptonGroup kryptonGroup1;
         private Krypton.Toolkit.KryptonLabel kryptonLabel5;
         private Krypton.Toolkit.KryptonLabel kryptonLabel4;
-        private .Ribbon.KryptonRibbonGroupSeparator kryptonRibbonGroupSeparator1;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple3;
-        private .Ribbon.KryptonRibbonGroupButton buttonSparkleBlue;
-        private .Ribbon.KryptonRibbonGroupButton buttonSparkleOrange;
-        private .Ribbon.KryptonRibbonGroupButton buttonSparklePurple;
-        private .Ribbon.KryptonRibbonGroupSeparator kryptonRibbonGroupSeparator2;
-        private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple4;
-        private .Ribbon.KryptonRibbonGroupButton button2010Blue;
-        private .Ribbon.KryptonRibbonGroupButton button2010Silver;
-        private .Ribbon.KryptonRibbonGroupButton button2010Black;
-        private .Ribbon.KryptonRibbonGroupSeparator kryptonRibbonGroupSeparator3;
+        private Krypton.Ribbon.KryptonRibbonGroupSeparator kryptonRibbonGroupSeparator1;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple3;
+        private Krypton.Ribbon.KryptonRibbonGroupButton buttonSparkleBlue;
+        private Krypton.Ribbon.KryptonRibbonGroupButton buttonSparkleOrange;
+        private Krypton.Ribbon.KryptonRibbonGroupButton buttonSparklePurple;
+        private Krypton.Ribbon.KryptonRibbonGroupSeparator kryptonRibbonGroupSeparator2;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple4;
+        private Krypton.Ribbon.KryptonRibbonGroupButton button2010Blue;
+        private Krypton.Ribbon.KryptonRibbonGroupButton button2010Silver;
+        private Krypton.Ribbon.KryptonRibbonGroupButton button2010Black;
+        private Krypton.Ribbon.KryptonRibbonGroupSeparator kryptonRibbonGroupSeparator3;
     }
 }
 

@@ -12,7 +12,7 @@
 using System;
 using System.Drawing;
 
-using .Ribbon;
+using Krypton.Ribbon;
 using Krypton.Toolkit;
 
 namespace QuickAccessToolbar
