@@ -30,11 +30,11 @@ namespace OrientationPlusAlignment
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.kryptonNavigator1 = new .Navigator.KryptonNavigator();
-            this.kryptonPage1 = new .Navigator.KryptonPage();
-            this.kryptonPage2 = new .Navigator.KryptonPage();
-            this.kryptonPage3 = new .Navigator.KryptonPage();
-            this.kryptonPage4 = new .Navigator.KryptonPage();
+            this.kryptonNavigator1 = new Krypton.Navigator.KryptonNavigator();
+            this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage3 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage4 = new Krypton.Navigator.KryptonPage();
             this.groupBoxBarOrientation = new System.Windows.Forms.GroupBox();
             this.radioOrientationRight = new System.Windows.Forms.RadioButton();
             this.radioOrientationLeft = new System.Windows.Forms.RadioButton();
@@ -100,11 +100,11 @@ namespace OrientationPlusAlignment
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonNavigator1.Bar.TabBorderStyle = Krypton.Toolkit.TabBorderStyle.RoundedEqualMedium;
-            this.kryptonNavigator1.Button.ButtonDisplayLogic = .Navigator.ButtonDisplayLogic.None;
-            this.kryptonNavigator1.Button.CloseButtonDisplay = .Navigator.ButtonDisplay.Hide;
+            this.kryptonNavigator1.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
+            this.kryptonNavigator1.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonNavigator1.Location = new System.Drawing.Point(166, 18);
             this.kryptonNavigator1.Name = "kryptonNavigator1";
-            this.kryptonNavigator1.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonNavigator1.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2,
             this.kryptonPage3,
@@ -777,8 +777,8 @@ namespace OrientationPlusAlignment
 
         #endregion
 
-        private .Navigator.KryptonNavigator kryptonNavigator1;
-        private .Navigator.KryptonPage kryptonPage1;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigator1;
+        private Krypton.Navigator.KryptonPage kryptonPage1;
         private System.Windows.Forms.GroupBox groupBoxBarOrientation;
         private System.Windows.Forms.RadioButton radioOrientationRight;
         private System.Windows.Forms.RadioButton radioOrientationLeft;
@@ -805,9 +805,9 @@ namespace OrientationPlusAlignment
         private System.Windows.Forms.Label labelMinItemSize;
         private System.Windows.Forms.NumericUpDown numericUpDownMinItemSizeX;
         private System.Windows.Forms.Button buttonClose;
-        private .Navigator.KryptonPage kryptonPage2;
-        private .Navigator.KryptonPage kryptonPage3;
-        private .Navigator.KryptonPage kryptonPage4;
+        private Krypton.Navigator.KryptonPage kryptonPage2;
+        private Krypton.Navigator.KryptonPage kryptonPage3;
+        private Krypton.Navigator.KryptonPage kryptonPage4;
         private System.Windows.Forms.NumericUpDown numericUpDownBarMinHeight;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelMaxSizeComma;

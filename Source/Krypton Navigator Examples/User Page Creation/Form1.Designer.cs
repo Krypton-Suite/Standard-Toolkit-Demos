@@ -29,8 +29,8 @@ namespace UserPageCreation
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.kryptonNavigator1 = new .Navigator.KryptonNavigator();
-            this.kryptonAddPage = new .Navigator.KryptonPage();
+            this.kryptonNavigator1 = new Krypton.Navigator.KryptonNavigator();
+            this.kryptonAddPage = new Krypton.Navigator.KryptonPage();
             this.groupBoxDescription = new System.Windows.Forms.GroupBox();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.buttonClose = new System.Windows.Forms.Button();
@@ -47,10 +47,10 @@ namespace UserPageCreation
             this.kryptonNavigator1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonNavigator1.Button.CloseButtonDisplay = .Navigator.ButtonDisplay.ShowDisabled;
+            this.kryptonNavigator1.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.ShowDisabled;
             this.kryptonNavigator1.Location = new System.Drawing.Point(12, 172);
             this.kryptonNavigator1.Name = "kryptonNavigator1";
-            this.kryptonNavigator1.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonNavigator1.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonAddPage});
             this.kryptonNavigator1.SelectedIndex = 0;
             this.kryptonNavigator1.Size = new System.Drawing.Size(430, 97);
@@ -144,8 +144,8 @@ namespace UserPageCreation
 
         #endregion
 
-        private .Navigator.KryptonNavigator kryptonNavigator1;
-        private .Navigator.KryptonPage kryptonAddPage;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigator1;
+        private Krypton.Navigator.KryptonPage kryptonAddPage;
         private System.Windows.Forms.GroupBox groupBoxDescription;
         private System.Windows.Forms.TextBox textBoxDescription;
         private System.Windows.Forms.Button buttonClose;

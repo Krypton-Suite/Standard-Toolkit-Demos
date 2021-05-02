@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.kpnlBackdrop = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonNavigator1 = new .Navigator.KryptonNavigator();
-            this.kryptonPage1 = new .Navigator.KryptonPage();
-            this.kryptonPage2 = new .Navigator.KryptonPage();
+            this.kryptonNavigator1 = new Krypton.Navigator.KryptonNavigator();
+            this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
             this.kbtnCancel = new Krypton.Toolkit.KryptonButton();
             this.kMan = new Krypton.Toolkit.KryptonManager(this.components);
             this.klblFileName = new Krypton.Toolkit.KryptonLabel();
@@ -71,7 +71,7 @@
             // 
             this.kryptonNavigator1.Location = new System.Drawing.Point(12, 12);
             this.kryptonNavigator1.Name = "kryptonNavigator1";
-            this.kryptonNavigator1.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonNavigator1.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2});
             this.kryptonNavigator1.SelectedIndex = 1;
@@ -267,9 +267,9 @@
         private Krypton.Toolkit.KryptonPanel kpnlBackdrop;
         private Krypton.Toolkit.KryptonManager kMan;
         private Krypton.Toolkit.KryptonButton kbtnCancel;
-        private .Navigator.KryptonNavigator kryptonNavigator1;
-        private .Navigator.KryptonPage kryptonPage1;
-        private .Navigator.KryptonPage kryptonPage2;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigator1;
+        private Krypton.Navigator.KryptonPage kryptonPage1;
+        private Krypton.Navigator.KryptonPage kryptonPage2;
         private Krypton.Toolkit.KryptonLabel klblFileVersion;
         private Krypton.Toolkit.KryptonLabel klblImageType;
         private Krypton.Toolkit.KryptonLabel klblUpdateType;

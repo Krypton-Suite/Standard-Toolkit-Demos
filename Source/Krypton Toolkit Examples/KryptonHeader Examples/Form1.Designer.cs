@@ -126,14 +126,14 @@ namespace KryptonHeaderExamples
             // buttonSpecUp
             // 
             this.buttonSpecUp.Checked = Krypton.Toolkit.ButtonCheckState.Checked;
-            this.buttonSpecUp.Image = ((System.Drawing.Image)(resources.GetObject("buttonSpecUp.Image")));
+            //this.buttonSpecUp.Image = ((System.Drawing.Image)(resources.GetObject("buttonSpecUp.Image")));
             this.buttonSpecUp.ToolTipTitle = "Sort in Descending Order";
             this.buttonSpecUp.UniqueName = "406C13856FEF4CA3406C13856FEF4CA3";
             // 
             // buttonSpecDown
             // 
             this.buttonSpecDown.Checked = Krypton.Toolkit.ButtonCheckState.Unchecked;
-            this.buttonSpecDown.Image = ((System.Drawing.Image)(resources.GetObject("buttonSpecDown.Image")));
+            //this.buttonSpecDown.Image = ((System.Drawing.Image)(resources.GetObject("buttonSpecDown.Image")));
             this.buttonSpecDown.ToolTipTitle = "Sort in Ascending Order";
             this.buttonSpecDown.UniqueName = "BE9A34366DE6465CBE9A34366DE6465C";
             // 
@@ -162,7 +162,7 @@ namespace KryptonHeaderExamples
             this.office4.TabIndex = 3;
             this.office4.Values.Description = "";
             this.office4.Values.Heading = "Secondary";
-            this.office4.Values.Image = ((System.Drawing.Image)(resources.GetObject("office4.Values.Image")));
+            //this.office4.Values.Image = ((System.Drawing.Image)(resources.GetObject("office4.Values.Image")));
             this.office4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
             // 
             // office2
@@ -202,7 +202,7 @@ namespace KryptonHeaderExamples
             this.office3.TabIndex = 2;
             this.office3.Values.Description = "";
             this.office3.Values.Heading = "Primary";
-            this.office3.Values.Image = ((System.Drawing.Image)(resources.GetObject("office3.Values.Image")));
+            //this.office3.Values.Image = ((System.Drawing.Image)(resources.GetObject("office3.Values.Image")));
             this.office3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
             // 
             // groupBox2
@@ -263,7 +263,7 @@ namespace KryptonHeaderExamples
             this.blue4.TabIndex = 3;
             this.blue4.Values.Description = "";
             this.blue4.Values.Heading = "Secondary";
-            this.blue4.Values.Image = ((System.Drawing.Image)(resources.GetObject("blue4.Values.Image")));
+            //this.blue4.Values.Image = ((System.Drawing.Image)(resources.GetObject("blue4.Values.Image")));
             this.blue4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
             // 
             // blue2
@@ -303,7 +303,7 @@ namespace KryptonHeaderExamples
             this.blue3.TabIndex = 2;
             this.blue3.Values.Description = "";
             this.blue3.Values.Heading = "Primary";
-            this.blue3.Values.Image = ((System.Drawing.Image)(resources.GetObject("blue3.Values.Image")));
+            //this.blue3.Values.Image = ((System.Drawing.Image)(resources.GetObject("blue3.Values.Image")));
             this.blue3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
             // 
             // groupBox3
@@ -337,7 +337,7 @@ namespace KryptonHeaderExamples
             this.custom3.TabIndex = 2;
             this.custom3.Values.Description = "";
             this.custom3.Values.Heading = "Primary";
-            this.custom3.Values.Image = ((System.Drawing.Image)(resources.GetObject("custom3.Values.Image")));
+            //this.custom3.Values.Image = ((System.Drawing.Image)(resources.GetObject("custom3.Values.Image")));
             this.custom3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
             // 
             // custom1
@@ -358,7 +358,7 @@ namespace KryptonHeaderExamples
             this.custom1.TabIndex = 0;
             this.custom1.Values.Description = "";
             this.custom1.Values.Heading = "Image Effect";
-            this.custom1.Values.Image = ((System.Drawing.Image)(resources.GetObject("custom1.Values.Image")));
+            //this.custom1.Values.Image = ((System.Drawing.Image)(resources.GetObject("custom1.Values.Image")));
             this.custom1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
             // 
             // custom2
@@ -385,7 +385,7 @@ namespace KryptonHeaderExamples
             this.custom2.TabIndex = 1;
             this.custom2.Values.Description = "";
             this.custom2.Values.Heading = "Calendar";
-            this.custom2.Values.Image = ((System.Drawing.Image)(resources.GetObject("custom2.Values.Image")));
+            //this.custom2.Values.Image = ((System.Drawing.Image)(resources.GetObject("custom2.Values.Image")));
             this.custom2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
             // 
             // Form1
@@ -400,7 +400,7 @@ namespace KryptonHeaderExamples
             this.Controls.Add(this.groupBox4);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";

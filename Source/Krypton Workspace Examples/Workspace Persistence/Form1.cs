@@ -12,7 +12,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using .Navigator;
+using Krypton.Navigator;
 using Krypton.Toolkit;
 using .Workspace;
 

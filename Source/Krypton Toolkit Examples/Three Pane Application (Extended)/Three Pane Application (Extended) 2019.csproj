@@ -15,9 +15,18 @@
     <Content Include="Resources\PaneOrientation.png" />
     <Content Include="Resources\ReadingPane.png" />
   </ItemGroup>
-  <ItemGroup>
-        <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
-  </ItemGroup>
+    <Choose>
+        <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
+            <ItemGroup>
+                <PackageReference Include="Krypton.Toolkit.Canary.Lite" Version="6.0.2106" />
+            </ItemGroup>
+        </When>
+        <Otherwise>
+            <ItemGroup>
+                <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
+            </ItemGroup>
+        </Otherwise>
+    </Choose>
   <PropertyGroup>
         <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
   </PropertyGroup>

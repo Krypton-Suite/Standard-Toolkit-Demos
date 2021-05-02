@@ -89,9 +89,9 @@ namespace OutlookMockup
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.kryptonPanelMain = new Krypton.Toolkit.KryptonPanel();
             this.kryptonSplitContainerMain = new Krypton.Toolkit.KryptonSplitContainer();
-            this.kryptonNavigatorMain = new .Navigator.KryptonNavigator();
-            this.buttonSpecExpandCollapse = new .Navigator.ButtonSpecNavigator();
-            this.kryptonPageMail = new .Navigator.KryptonPage();
+            this.kryptonNavigatorMain = new Krypton.Navigator.KryptonNavigator();
+            this.buttonSpecExpandCollapse = new Krypton.Navigator.ButtonSpecNavigator();
+            this.kryptonPageMail = new Krypton.Navigator.KryptonPage();
             this.treeViewMailFolders = new System.Windows.Forms.TreeView();
             this.imageListSmall = new System.Windows.Forms.ImageList(this.components);
             this.panelFoldersSep = new System.Windows.Forms.Panel();
@@ -99,23 +99,23 @@ namespace OutlookMockup
             this.treeViewMailFavs = new System.Windows.Forms.TreeView();
             this.panelFavoriteSep = new System.Windows.Forms.Panel();
             this.kryptonHeaderFavorites = new Krypton.Toolkit.KryptonHeader();
-            this.kryptonPageCalendar = new .Navigator.KryptonPage();
+            this.kryptonPageCalendar = new Krypton.Navigator.KryptonPage();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.kryptonPageNotes = new .Navigator.KryptonPage();
+            this.kryptonPageNotes = new Krypton.Navigator.KryptonPage();
             this.radioFriends = new Krypton.Toolkit.KryptonRadioButton();
             this.radioFamily = new Krypton.Toolkit.KryptonRadioButton();
             this.radioProject = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonSplitContainerDetails = new Krypton.Toolkit.KryptonSplitContainer();
-            this.kryptonNavigatorDetails = new .Navigator.KryptonNavigator();
-            this.kryptonPageMailDetails = new .Navigator.KryptonPage();
+            this.kryptonNavigatorDetails = new Krypton.Navigator.KryptonNavigator();
+            this.kryptonPageMailDetails = new Krypton.Navigator.KryptonPage();
             this.kryptonDataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
             this.dgName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgReceived = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kryptonPageCalendarDetails = new .Navigator.KryptonPage();
+            this.kryptonPageCalendarDetails = new Krypton.Navigator.KryptonPage();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.kryptonPageNotesDetails = new .Navigator.KryptonPage();
+            this.kryptonPageNotesDetails = new Krypton.Navigator.KryptonPage();
             this.listViewNotes = new System.Windows.Forms.ListView();
             this.imageListLarge = new System.Windows.Forms.ImageList(this.components);
             this.kryptonButtonGroup = new Krypton.Toolkit.KryptonGroup();
@@ -613,16 +613,16 @@ namespace OutlookMockup
             // 
             // kryptonNavigatorMain
             // 
-            this.kryptonNavigatorMain.Button.ButtonDisplayLogic = .Navigator.ButtonDisplayLogic.None;
-            this.kryptonNavigatorMain.Button.ButtonSpecs.AddRange(new .Navigator.ButtonSpecNavigator[] {
+            this.kryptonNavigatorMain.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
+            this.kryptonNavigatorMain.Button.ButtonSpecs.AddRange(new Krypton.Navigator.ButtonSpecNavigator[] {
             this.buttonSpecExpandCollapse});
-            this.kryptonNavigatorMain.Button.CloseButtonDisplay = .Navigator.ButtonDisplay.Hide;
+            this.kryptonNavigatorMain.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonNavigatorMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonNavigatorMain.Header.HeaderValuesPrimary.MapImage = .Navigator.MapKryptonPageImage.None;
+            this.kryptonNavigatorMain.Header.HeaderValuesPrimary.MapImage = Krypton.Navigator.MapKryptonPageImage.None;
             this.kryptonNavigatorMain.Location = new System.Drawing.Point(0, 0);
             this.kryptonNavigatorMain.Name = "kryptonNavigatorMain";
-            this.kryptonNavigatorMain.NavigatorMode = .Navigator.NavigatorMode.OutlookFull;
-            this.kryptonNavigatorMain.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonNavigatorMain.NavigatorMode = Krypton.Navigator.NavigatorMode.OutlookFull;
+            this.kryptonNavigatorMain.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPageMail,
             this.kryptonPageCalendar,
             this.kryptonPageNotes});
@@ -636,7 +636,7 @@ namespace OutlookMockup
             // buttonSpecExpandCollapse
             // 
             this.buttonSpecExpandCollapse.Type = Krypton.Toolkit.PaletteButtonSpecStyle.ArrowLeft;
-            this.buttonSpecExpandCollapse.TypeRestricted = .Navigator.PaletteNavButtonSpecStyle.ArrowLeft;
+            this.buttonSpecExpandCollapse.TypeRestricted = Krypton.Navigator.PaletteNavButtonSpecStyle.ArrowLeft;
             this.buttonSpecExpandCollapse.UniqueName = "1B343938A2284A991B343938A2284A99";
             this.buttonSpecExpandCollapse.Click += new System.EventHandler(this.buttonSpecExpandCollapse_Click);
             // 
@@ -876,14 +876,14 @@ namespace OutlookMockup
             // 
             // kryptonNavigatorDetails
             // 
-            this.kryptonNavigatorDetails.Button.ButtonDisplayLogic = .Navigator.ButtonDisplayLogic.None;
-            this.kryptonNavigatorDetails.Button.CloseButtonDisplay = .Navigator.ButtonDisplay.Hide;
+            this.kryptonNavigatorDetails.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
+            this.kryptonNavigatorDetails.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonNavigatorDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonNavigatorDetails.Header.HeaderVisibleSecondary = false;
             this.kryptonNavigatorDetails.Location = new System.Drawing.Point(0, 0);
             this.kryptonNavigatorDetails.Name = "kryptonNavigatorDetails";
-            this.kryptonNavigatorDetails.NavigatorMode = .Navigator.NavigatorMode.HeaderGroup;
-            this.kryptonNavigatorDetails.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonNavigatorDetails.NavigatorMode = Krypton.Navigator.NavigatorMode.HeaderGroup;
+            this.kryptonNavigatorDetails.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPageMailDetails,
             this.kryptonPageCalendarDetails,
             this.kryptonPageNotesDetails});
@@ -1501,17 +1501,17 @@ namespace OutlookMockup
         private Krypton.Toolkit.KryptonGroup kryptonButtonGroup;
         private Krypton.Toolkit.KryptonManager kryptonManager;
         private Krypton.Toolkit.KryptonGroup kryptonGroupInner;
-        private .Navigator.KryptonNavigator kryptonNavigatorMain;
-        private .Navigator.KryptonPage kryptonPageMail;
-        private .Navigator.KryptonPage kryptonPageCalendar;
-        private .Navigator.KryptonPage kryptonPageNotes;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigatorMain;
+        private Krypton.Navigator.KryptonPage kryptonPageMail;
+        private Krypton.Navigator.KryptonPage kryptonPageCalendar;
+        private Krypton.Navigator.KryptonPage kryptonPageNotes;
         private System.Windows.Forms.TreeView treeViewMailFolders;
         private System.Windows.Forms.ImageList imageListSmall;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private .Navigator.KryptonNavigator kryptonNavigatorDetails;
-        private .Navigator.KryptonPage kryptonPageMailDetails;
-        private .Navigator.KryptonPage kryptonPageCalendarDetails;
-        private .Navigator.KryptonPage kryptonPageNotesDetails;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigatorDetails;
+        private Krypton.Navigator.KryptonPage kryptonPageMailDetails;
+        private Krypton.Navigator.KryptonPage kryptonPageCalendarDetails;
+        private Krypton.Navigator.KryptonPage kryptonPageNotesDetails;
         private System.Windows.Forms.ListView listViewNotes;
         private System.Windows.Forms.ImageList imageListLarge;
         private System.Windows.Forms.TreeView treeViewMailFavs;
@@ -1520,7 +1520,7 @@ namespace OutlookMockup
         private System.Windows.Forms.Panel panelFoldersSep;
         private System.Windows.Forms.Panel panelFavoriteSep;
         private System.Windows.Forms.TextBox textBox1;
-        private .Navigator.ButtonSpecNavigator buttonSpecExpandCollapse;
+        private Krypton.Navigator.ButtonSpecNavigator buttonSpecExpandCollapse;
         private Krypton.Toolkit.KryptonRadioButton radioSystem;
         private Krypton.Toolkit.KryptonRadioButton radioOffice2003;
         private Krypton.Toolkit.KryptonRadioButton radioOffice2007Black;

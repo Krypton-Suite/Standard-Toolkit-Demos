@@ -36,8 +36,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdaterOptionsForm));
             this.kMan = new Krypton.Toolkit.KryptonManager(this.components);
             this.kpnlBackground = new Krypton.Toolkit.KryptonPanel();
-            this.knavOptions = new .Navigator.KryptonNavigator();
-            this.kryptonPage1 = new .Navigator.KryptonPage();
+            this.knavOptions = new Krypton.Navigator.KryptonNavigator();
+            this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
             this.kryptonGroupBox3 = new Krypton.Toolkit.KryptonGroupBox();
             this.kchkUseGarbageCollection = new Krypton.Toolkit.KryptonCheckBox();
             this.kchkAlwaysShowTrayNotificationIcon = new Krypton.Toolkit.KryptonCheckBox();
@@ -54,7 +54,7 @@
             this.kbtnCheckNow = new Krypton.Toolkit.KryptonButton();
             this.klblCurrentStatus = new Krypton.Toolkit.KryptonLabel();
             this.kchkCheckInternetConnection = new Krypton.Toolkit.KryptonCheckBox();
-            this.kryptonPage2 = new .Navigator.KryptonPage();
+            this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
             this.kryptonGroupBox7 = new Krypton.Toolkit.KryptonGroupBox();
             this.kchkUseProfessionalThemePalette = new Krypton.Toolkit.KryptonCheckBox();
             this.kradUseSystemTheme = new Krypton.Toolkit.KryptonRadioButton();
@@ -73,7 +73,7 @@
             this.kradUseOffice2010SilverTheme = new Krypton.Toolkit.KryptonRadioButton();
             this.kradUseOffice2010BlueTheme = new Krypton.Toolkit.KryptonRadioButton();
             this.kradUseOffice2010BlackTheme = new Krypton.Toolkit.KryptonRadioButton();
-            this.kryptonPage3 = new .Navigator.KryptonPage();
+            this.kryptonPage3 = new Krypton.Navigator.KryptonPage();
             this.kryptonGroupBox9 = new Krypton.Toolkit.KryptonGroupBox();
             this.kllCurrentTheme = new Krypton.Toolkit.KryptonLinkLabel();
             this.klblCurrentThemeFile = new Krypton.Toolkit.KryptonLabel();
@@ -156,7 +156,7 @@
             // 
             this.knavOptions.Location = new System.Drawing.Point(12, 12);
             this.knavOptions.Name = "knavOptions";
-            this.knavOptions.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.knavOptions.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2,
             this.kryptonPage3});
@@ -873,9 +873,9 @@
 
         private Krypton.Toolkit.KryptonManager kMan;
         private Krypton.Toolkit.KryptonPanel kpnlBackground;
-        private .Navigator.KryptonNavigator knavOptions;
-        private .Navigator.KryptonPage kryptonPage1;
-        private .Navigator.KryptonPage kryptonPage2;
+        private Krypton.Navigator.KryptonNavigator knavOptions;
+        private Krypton.Navigator.KryptonPage kryptonPage1;
+        private Krypton.Navigator.KryptonPage kryptonPage2;
         private Krypton.Toolkit.KryptonButton kbtnReset;
         private Krypton.Toolkit.KryptonButton kbtnOk;
         private Krypton.Toolkit.KryptonButton kbtnCancel;
@@ -910,7 +910,7 @@
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox6;
         private Krypton.Toolkit.KryptonRadioButton kradUseOffice2013WhiteTheme;
         private Krypton.Toolkit.KryptonRadioButton kradUseOffice2013SilverTheme;
-        private .Navigator.KryptonPage kryptonPage3;
+        private Krypton.Navigator.KryptonPage kryptonPage3;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox8;
         private Krypton.Toolkit.KryptonRadioButton kradUseSparklePurpleTheme;
         private Krypton.Toolkit.KryptonRadioButton kradUseSparkleOrangeTheme;

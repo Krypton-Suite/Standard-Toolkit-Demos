@@ -11,7 +11,7 @@
 
 using System;
 
-using .Navigator;
+using Krypton.Navigator;
 using Krypton.Toolkit;
 using .Workspace;
 

@@ -15,7 +15,7 @@ using System.Drawing;
 using System.Windows.Forms;
 
 using .Docking;
-using .Navigator;
+using Krypton.Navigator;
 
 namespace ExternalDragToDocking
 {

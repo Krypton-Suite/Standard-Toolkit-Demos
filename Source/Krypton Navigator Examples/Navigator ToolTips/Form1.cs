@@ -15,7 +15,7 @@ using System.Windows.Forms;
 using System.ComponentModel;
 using System.Collections.Generic;
 using System.Diagnostics;
-using .Navigator;
+using Krypton.Navigator;
 using Krypton.Toolkit;
 
 namespace NavigatorToolTips

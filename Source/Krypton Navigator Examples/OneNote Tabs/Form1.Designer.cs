@@ -29,7 +29,7 @@ namespace OneNoteTabs
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.kryptonNavigator1 = new .Navigator.KryptonNavigator();
+            this.kryptonNavigator1 = new Krypton.Navigator.KryptonNavigator();
             this.buttonClose = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonRemove = new System.Windows.Forms.Button();
@@ -127,7 +127,7 @@ namespace OneNoteTabs
 
         #endregion
 
-        private .Navigator.KryptonNavigator kryptonNavigator1;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigator1;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonRemove;

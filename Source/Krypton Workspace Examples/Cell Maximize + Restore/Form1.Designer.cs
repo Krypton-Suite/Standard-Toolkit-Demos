@@ -33,20 +33,20 @@
             this.buttonClose = new System.Windows.Forms.Button();
             this.kryptonWorkspace = new .Workspace.KryptonWorkspace();
             this.kryptonWorkspaceCell1 = new .Workspace.KryptonWorkspaceCell();
-            this.kryptonPage1 = new .Navigator.KryptonPage();
+            this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.kryptonPage2 = new .Navigator.KryptonPage();
+            this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.kryptonWorkspaceSequence1 = new .Workspace.KryptonWorkspaceSequence();
             this.kryptonWorkspaceCell2 = new .Workspace.KryptonWorkspaceCell();
-            this.kryptonPage3 = new .Navigator.KryptonPage();
+            this.kryptonPage3 = new Krypton.Navigator.KryptonPage();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.kryptonPage4 = new .Navigator.KryptonPage();
+            this.kryptonPage4 = new Krypton.Navigator.KryptonPage();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.kryptonWorkspaceCell3 = new .Workspace.KryptonWorkspaceCell();
-            this.kryptonPage5 = new .Navigator.KryptonPage();
+            this.kryptonPage5 = new Krypton.Navigator.KryptonPage();
             this.richTextBox6 = new System.Windows.Forms.RichTextBox();
-            this.kryptonPage6 = new .Navigator.KryptonPage();
+            this.kryptonPage6 = new Krypton.Navigator.KryptonPage();
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
@@ -108,7 +108,7 @@
             this.kryptonWorkspaceCell1.AllowPageDrag = true;
             this.kryptonWorkspaceCell1.AllowTabFocus = false;
             this.kryptonWorkspaceCell1.Name = "kryptonWorkspaceCell1";
-            this.kryptonWorkspaceCell1.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonWorkspaceCell1.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2});
             this.kryptonWorkspaceCell1.SelectedIndex = 1;
@@ -177,7 +177,7 @@
             this.kryptonWorkspaceCell2.AllowPageDrag = true;
             this.kryptonWorkspaceCell2.AllowTabFocus = false;
             this.kryptonWorkspaceCell2.Name = "kryptonWorkspaceCell2";
-            this.kryptonWorkspaceCell2.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonWorkspaceCell2.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage3,
             this.kryptonPage4});
             this.kryptonWorkspaceCell2.SelectedIndex = 1;
@@ -238,7 +238,7 @@
             this.kryptonWorkspaceCell3.AllowPageDrag = true;
             this.kryptonWorkspaceCell3.AllowTabFocus = false;
             this.kryptonWorkspaceCell3.Name = "kryptonWorkspaceCell3";
-            this.kryptonWorkspaceCell3.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonWorkspaceCell3.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage5,
             this.kryptonPage6});
             this.kryptonWorkspaceCell3.SelectedIndex = 0;
@@ -344,15 +344,15 @@
         private System.Windows.Forms.Button buttonClose;
         private .Workspace.KryptonWorkspace kryptonWorkspace;
         private .Workspace.KryptonWorkspaceCell kryptonWorkspaceCell1;
-        private .Navigator.KryptonPage kryptonPage1;
-        private .Navigator.KryptonPage kryptonPage2;
+        private Krypton.Navigator.KryptonPage kryptonPage1;
+        private Krypton.Navigator.KryptonPage kryptonPage2;
         private .Workspace.KryptonWorkspaceSequence kryptonWorkspaceSequence1;
         private .Workspace.KryptonWorkspaceCell kryptonWorkspaceCell2;
-        private .Navigator.KryptonPage kryptonPage3;
-        private .Navigator.KryptonPage kryptonPage4;
+        private Krypton.Navigator.KryptonPage kryptonPage3;
+        private Krypton.Navigator.KryptonPage kryptonPage4;
         private .Workspace.KryptonWorkspaceCell kryptonWorkspaceCell3;
-        private .Navigator.KryptonPage kryptonPage5;
-        private .Navigator.KryptonPage kryptonPage6;
+        private Krypton.Navigator.KryptonPage kryptonPage5;
+        private Krypton.Navigator.KryptonPage kryptonPage6;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox4;

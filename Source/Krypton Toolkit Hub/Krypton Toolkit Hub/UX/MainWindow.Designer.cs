@@ -32,10 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.kmanToolkitHub = new Krypton.Toolkit.KryptonManager(this.components);
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonNavigator = new .Navigator.KryptonNavigator();
-            this.kryptonPageToolkit = new .Navigator.KryptonPage();
-            this.kryptonNavigatorToolkit = new .Navigator.KryptonNavigator();
-            this.kryptonPage1 = new .Navigator.KryptonPage();
+            this.kryptonNavigator = new Krypton.Navigator.KryptonNavigator();
+            this.kryptonPageToolkit = new Krypton.Navigator.KryptonPage();
+            this.kryptonNavigatorToolkit = new Krypton.Navigator.KryptonNavigator();
+            this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
             this.linkKryptonInputBox = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonTaskDialog = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonMessageBox = new Krypton.Toolkit.KryptonLinkLabel();
@@ -75,7 +75,7 @@
             this.linkKryptonSplitContainer = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonButton = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonLabel = new Krypton.Toolkit.KryptonLinkLabel();
-            this.kryptonPage2 = new .Navigator.KryptonPage();
+            this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
             this.linkInputForm = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkMDIApplication = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkThreePaneApplicationBasic = new Krypton.Toolkit.KryptonLinkLabel();
@@ -87,14 +87,14 @@
             this.linkExpandingHeaderGroupsDockStyle = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkChildControlStack = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkExpandingHeaderStack = new Krypton.Toolkit.KryptonLinkLabel();
-            this.kryptonPage3 = new .Navigator.KryptonPage();
+            this.kryptonPage3 = new Krypton.Navigator.KryptonPage();
             this.linkTreeView = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkSystemThemedForms = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkTestClipBase = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkTestMessageBoxClipping = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkTestTextClipping = new Krypton.Toolkit.KryptonLinkLabel();
             this.labeToolkitPage = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonPageDocking = new .Navigator.KryptonPage();
+            this.kryptonPageDocking = new Krypton.Navigator.KryptonPage();
             this.linkExternalDragToDocking = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkNavigatorAndFloatingWindows = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkDockingCustomized = new Krypton.Toolkit.KryptonLinkLabel();
@@ -105,7 +105,7 @@
             this.kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonPageWorkspace = new .Navigator.KryptonPage();
+            this.kryptonPageWorkspace = new Krypton.Navigator.KryptonPage();
             this.linkCellMaximiseAndRestore = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkWorkspacePersistence = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkWorkspaceMemoEditor = new Krypton.Toolkit.KryptonLinkLabel();
@@ -117,7 +117,7 @@
             this.labelWorkspaceUsageExamples = new Krypton.Toolkit.KryptonLabel();
             this.labelWorkspaceFeatureExamples = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonPageNavigator = new .Navigator.KryptonPage();
+            this.kryptonPageNavigator = new Krypton.Navigator.KryptonPage();
             this.LinkNavigatorAndFloatingWindows2 = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkNavigatorPerTabButtons = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkAdvancedNavigatorDragDrop = new Krypton.Toolkit.KryptonLinkLabel();
@@ -140,7 +140,7 @@
             this.linkNavigatorModes = new Krypton.Toolkit.KryptonLinkLabel();
             this.labelNavigatorFeatureExamples = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonPageRibbon = new .Navigator.KryptonPage();
+            this.kryptonPageRibbon = new Krypton.Navigator.KryptonPage();
             this.linkRibbonMemoEditor = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonGallery = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkRibbonGallery = new Krypton.Toolkit.KryptonLinkLabel();
@@ -157,12 +157,12 @@
             this.labelRibbonUsageExamples = new Krypton.Toolkit.KryptonLabel();
             this.labelRibbonFeatureExamples = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel7 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonPageApplicatons = new .Navigator.KryptonPage();
+            this.kryptonPageApplicatons = new Krypton.Navigator.KryptonPage();
             this.linkPaletteUpgradeTool = new Krypton.Toolkit.KryptonLinkLabel();
             this.labelApplications = new Krypton.Toolkit.KryptonLabel();
             this.linkPaletteDesigner = new Krypton.Toolkit.KryptonLinkLabel();
             this.kryptonLabel8 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonPage4 = new .Navigator.KryptonPage();
+            this.kryptonPage4 = new Krypton.Navigator.KryptonPage();
             this.kbtnTechnicalSystemInformation = new Krypton.Toolkit.KryptonButton();
             this.klblKryptonWorkspaceVersion = new Krypton.Toolkit.KryptonLabel();
             this.klblKryptonToolkitVersion = new Krypton.Toolkit.KryptonLabel();
@@ -229,21 +229,21 @@
             // 
             // kryptonNavigator
             // 
-            this.kryptonNavigator.Bar.BarMapExtraText = .Navigator.MapKryptonPageText.Title;
-            this.kryptonNavigator.Bar.BarMapText = .Navigator.MapKryptonPageText.Text;
+            this.kryptonNavigator.Bar.BarMapExtraText = Krypton.Navigator.MapKryptonPageText.Title;
+            this.kryptonNavigator.Bar.BarMapText = Krypton.Navigator.MapKryptonPageText.Text;
             this.kryptonNavigator.Bar.CheckButtonStyle = Krypton.Toolkit.ButtonStyle.LowProfile;
             this.kryptonNavigator.Bar.ItemAlignment = Krypton.Toolkit.RelativePositionAlign.Center;
             this.kryptonNavigator.Bar.ItemOrientation = Krypton.Toolkit.ButtonOrientation.FixedTop;
             this.kryptonNavigator.Bar.TabBorderStyle = Krypton.Toolkit.TabBorderStyle.OneNote;
-            this.kryptonNavigator.Button.ButtonDisplayLogic = .Navigator.ButtonDisplayLogic.None;
-            this.kryptonNavigator.Button.CloseButtonDisplay = .Navigator.ButtonDisplay.Hide;
+            this.kryptonNavigator.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
+            this.kryptonNavigator.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonNavigator.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonNavigator.Location = new System.Drawing.Point(0, 114);
             this.kryptonNavigator.Name = "kryptonNavigator";
-            this.kryptonNavigator.NavigatorMode = .Navigator.NavigatorMode.BarCheckButtonGroupOutside;
+            this.kryptonNavigator.NavigatorMode = Krypton.Navigator.NavigatorMode.BarCheckButtonGroupOutside;
             this.kryptonNavigator.Padding = new System.Windows.Forms.Padding(5);
             this.kryptonNavigator.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
-            this.kryptonNavigator.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonNavigator.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPageToolkit,
             this.kryptonPageDocking,
             this.kryptonPageWorkspace,
@@ -286,13 +286,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonNavigatorToolkit.Bar.ItemAlignment = Krypton.Toolkit.RelativePositionAlign.Center;
-            this.kryptonNavigatorToolkit.Button.ButtonDisplayLogic = .Navigator.ButtonDisplayLogic.None;
-            this.kryptonNavigatorToolkit.Button.CloseButtonDisplay = .Navigator.ButtonDisplay.Hide;
+            this.kryptonNavigatorToolkit.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
+            this.kryptonNavigatorToolkit.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonNavigatorToolkit.Location = new System.Drawing.Point(11, 48);
             this.kryptonNavigatorToolkit.Name = "kryptonNavigatorToolkit";
-            this.kryptonNavigatorToolkit.NavigatorMode = .Navigator.NavigatorMode.BarCheckButtonGroupOutside;
+            this.kryptonNavigatorToolkit.NavigatorMode = Krypton.Navigator.NavigatorMode.BarCheckButtonGroupOutside;
             this.kryptonNavigatorToolkit.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
-            this.kryptonNavigatorToolkit.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonNavigatorToolkit.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2,
             this.kryptonPage3});
@@ -2191,10 +2191,10 @@
 
         private Krypton.Toolkit.KryptonManager kmanToolkitHub;
         private Krypton.Toolkit.KryptonPanel kryptonPanel1;
-        private .Navigator.KryptonNavigator kryptonNavigator;
-        private .Navigator.KryptonPage kryptonPageToolkit;
-        private .Navigator.KryptonNavigator kryptonNavigatorToolkit;
-        private .Navigator.KryptonPage kryptonPage1;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigator;
+        private Krypton.Navigator.KryptonPage kryptonPageToolkit;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigatorToolkit;
+        private Krypton.Navigator.KryptonPage kryptonPage1;
         private Krypton.Toolkit.KryptonLinkLabel linkKryptonTreeView;
         private Krypton.Toolkit.KryptonLinkLabel linkKryptonMonthCalendar;
         private Krypton.Toolkit.KryptonLinkLabel linkKryptonDateTimePicker;
@@ -2221,14 +2221,14 @@
         private Krypton.Toolkit.KryptonLinkLabel linkKryptonSplitContainer;
         private Krypton.Toolkit.KryptonLinkLabel linkKryptonButton;
         private Krypton.Toolkit.KryptonLinkLabel linkKryptonLabel;
-        private .Navigator.KryptonPage kryptonPage2;
-        private .Navigator.KryptonPage kryptonPage3;
+        private Krypton.Navigator.KryptonPage kryptonPage2;
+        private Krypton.Navigator.KryptonPage kryptonPage3;
         private Krypton.Toolkit.KryptonLabel labeToolkitPage;
-        private .Navigator.KryptonPage kryptonPageDocking;
-        private .Navigator.KryptonPage kryptonPageWorkspace;
-        private .Navigator.KryptonPage kryptonPageNavigator;
-        private .Navigator.KryptonPage kryptonPageRibbon;
-        private .Navigator.KryptonPage kryptonPageApplicatons;
+        private Krypton.Navigator.KryptonPage kryptonPageDocking;
+        private Krypton.Navigator.KryptonPage kryptonPageWorkspace;
+        private Krypton.Navigator.KryptonPage kryptonPageNavigator;
+        private Krypton.Navigator.KryptonPage kryptonPageRibbon;
+        private Krypton.Navigator.KryptonPage kryptonPageApplicatons;
         private Krypton.Toolkit.KryptonPanel kryptonPanel3;
         private Krypton.Toolkit.KryptonPanel kryptonPanel2;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
@@ -2278,7 +2278,7 @@
         private Krypton.Toolkit.KryptonLabel labelWorkspaceUsageExamples;
         private Krypton.Toolkit.KryptonLabel labelWorkspaceFeatureExamples;
         private Krypton.Toolkit.KryptonLabel kryptonLabel5;
-        private .Navigator.KryptonPage kryptonPage4;
+        private Krypton.Navigator.KryptonPage kryptonPage4;
         private Krypton.Toolkit.KryptonLabel kryptonLabel6;
         private Krypton.Toolkit.KryptonLabel kryptonLabel7;
         private Krypton.Toolkit.KryptonLabel kryptonLabel8;
