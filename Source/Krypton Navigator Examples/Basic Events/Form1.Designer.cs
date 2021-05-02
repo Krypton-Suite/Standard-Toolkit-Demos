@@ -95,14 +95,14 @@ namespace BasicEvents
             this.kryptonNavigator1.TabIndex = 0;
             this.kryptonNavigator1.Text = "kryptonNavigator1";
             this.kryptonNavigator1.SelectedPageChanged += new System.EventHandler(this.kryptonNavigator1_SelectedPageChanged);
-            this.kryptonNavigator1.Selecting += new System.EventHandler<.Navigator.KryptonPageCancelEventArgs>(this.kryptonNavigator1_Selecting);
-            this.kryptonNavigator1.Selected += new System.EventHandler<.Navigator.KryptonPageEventArgs>(this.kryptonNavigator1_Selected);
-            this.kryptonNavigator1.Deselecting += new System.EventHandler<.Navigator.KryptonPageCancelEventArgs>(this.kryptonNavigator1_Deselecting);
-            this.kryptonNavigator1.Deselected += new System.EventHandler<.Navigator.KryptonPageEventArgs>(this.kryptonNavigator1_Deselected);
-            this.kryptonNavigator1.PreviousAction += new System.EventHandler<.Navigator.DirectionActionEventArgs>(this.kryptonNavigator1_PreviousAction);
-            this.kryptonNavigator1.NextAction += new System.EventHandler<.Navigator.DirectionActionEventArgs>(this.kryptonNavigator1_NextAction);
-            this.kryptonNavigator1.ContextAction += new System.EventHandler<.Navigator.ContextActionEventArgs>(this.kryptonNavigator1_ContextAction);
-            this.kryptonNavigator1.CloseAction += new System.EventHandler<.Navigator.CloseActionEventArgs>(this.kryptonNavigator1_CloseAction);
+            this.kryptonNavigator1.Selecting += new System.EventHandler<Krypton.Navigator.KryptonPageCancelEventArgs>(this.kryptonNavigator1_Selecting);
+            this.kryptonNavigator1.Selected += new System.EventHandler<Krypton.Navigator.KryptonPageEventArgs>(this.kryptonNavigator1_Selected);
+            this.kryptonNavigator1.Deselecting += new System.EventHandler<Krypton.Navigator.KryptonPageCancelEventArgs>(this.kryptonNavigator1_Deselecting);
+            this.kryptonNavigator1.Deselected += new System.EventHandler<Krypton.Navigator.KryptonPageEventArgs>(this.kryptonNavigator1_Deselected);
+            this.kryptonNavigator1.PreviousAction += new System.EventHandler<Krypton.Navigator.DirectionActionEventArgs>(this.kryptonNavigator1_PreviousAction);
+            this.kryptonNavigator1.NextAction += new System.EventHandler<Krypton.Navigator.DirectionActionEventArgs>(this.kryptonNavigator1_NextAction);
+            this.kryptonNavigator1.ContextAction += new System.EventHandler<Krypton.Navigator.ContextActionEventArgs>(this.kryptonNavigator1_ContextAction);
+            this.kryptonNavigator1.CloseAction += new System.EventHandler<Krypton.Navigator.CloseActionEventArgs>(this.kryptonNavigator1_CloseAction);
             // 
             // kryptonPage1
             // 

@@ -33,9 +33,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Navigator Context Menus 201
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Per-Tab Buttons 2019", "Per-Tab Buttons\Per-Tab Buttons 2019.csproj", "{82003863-6059-49A4-AC05-3A4A5328049A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponentFactory.Krypton.Toolkit 2019", "..\Krypton Components\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2019.csproj", "{9DD7D000-BA91-4639-BF26-8F6FE8DFD7FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton.Toolkit 2019", "..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj", "{3A5EDC25-43EB-415F-89C7-DC885015E9CC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponentFactory.Krypton.Navigator 2019", "..\Krypton Components\ComponentFactory.Krypton.Navigator\ComponentFactory.Krypton.Navigator 2019.csproj", "{108D7DF9-B803-4984-9CE9-B3340254643C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton.Navigator 2019", "..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Navigator\Krypton.Navigator 2019.csproj", "{8A7F6F77-A26E-4FE4-9EC6-DBB6C8DAAD12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D395B1A6-68BB-43F3-A2AF-AACAA36BA922}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,14 +108,14 @@ Global
 		{82003863-6059-49A4-AC05-3A4A5328049A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82003863-6059-49A4-AC05-3A4A5328049A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82003863-6059-49A4-AC05-3A4A5328049A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9DD7D000-BA91-4639-BF26-8F6FE8DFD7FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9DD7D000-BA91-4639-BF26-8F6FE8DFD7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9DD7D000-BA91-4639-BF26-8F6FE8DFD7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9DD7D000-BA91-4639-BF26-8F6FE8DFD7FC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{108D7DF9-B803-4984-9CE9-B3340254643C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{108D7DF9-B803-4984-9CE9-B3340254643C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{108D7DF9-B803-4984-9CE9-B3340254643C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{108D7DF9-B803-4984-9CE9-B3340254643C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A5EDC25-43EB-415F-89C7-DC885015E9CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A5EDC25-43EB-415F-89C7-DC885015E9CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A5EDC25-43EB-415F-89C7-DC885015E9CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A5EDC25-43EB-415F-89C7-DC885015E9CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A7F6F77-A26E-4FE4-9EC6-DBB6C8DAAD12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A7F6F77-A26E-4FE4-9EC6-DBB6C8DAAD12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A7F6F77-A26E-4FE4-9EC6-DBB6C8DAAD12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A7F6F77-A26E-4FE4-9EC6-DBB6C8DAAD12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
