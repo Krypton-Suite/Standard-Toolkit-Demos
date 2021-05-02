@@ -11,7 +11,7 @@
 using System;
 using System.Windows.Forms;
 
-using .Navigator;
+using Krypton.Navigator;
 using Krypton.Toolkit;
 
 namespace BasicEvents

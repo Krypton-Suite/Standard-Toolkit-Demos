@@ -19,7 +19,7 @@ using System.Collections.Generic;
 using Microsoft.Win32;
 using Krypton.Toolkit;
 using .Ribbon;
-using .Navigator;
+using Krypton.Navigator;
 using .Workspace;
 
 namespace MemoEditor

@@ -39,11 +39,11 @@ namespace NavigatorToolTips
             this.labelMapExtraText = new System.Windows.Forms.Label();
             this.labelMapText = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
-            this.kryptonNavigator = new .Navigator.KryptonNavigator();
-            this.kryptonPage1 = new .Navigator.KryptonPage();
-            this.kryptonPage2 = new .Navigator.KryptonPage();
-            this.kryptonPage3 = new .Navigator.KryptonPage();
-            this.kryptonPage4 = new .Navigator.KryptonPage();
+            this.kryptonNavigator = new Krypton.Navigator.KryptonNavigator();
+            this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage3 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage4 = new Krypton.Navigator.KryptonPage();
             this.buttonClose = new System.Windows.Forms.Button();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager();
             this.groupBoxTooltipProperties.SuspendLayout();
@@ -168,7 +168,7 @@ namespace NavigatorToolTips
             this.kryptonNavigator.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonNavigator.Location = new System.Drawing.Point(0, 0);
             this.kryptonNavigator.Name = "kryptonNavigator";
-            this.kryptonNavigator.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonNavigator.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2,
             this.kryptonPage3,
@@ -299,11 +299,11 @@ namespace NavigatorToolTips
         #endregion
 
         private System.Windows.Forms.Panel panel;
-        private .Navigator.KryptonNavigator kryptonNavigator;
-        private .Navigator.KryptonPage kryptonPage1;
-        private .Navigator.KryptonPage kryptonPage2;
-        private .Navigator.KryptonPage kryptonPage3;
-        private .Navigator.KryptonPage kryptonPage4;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigator;
+        private Krypton.Navigator.KryptonPage kryptonPage1;
+        private Krypton.Navigator.KryptonPage kryptonPage2;
+        private Krypton.Navigator.KryptonPage kryptonPage3;
+        private Krypton.Navigator.KryptonPage kryptonPage4;
         private System.Windows.Forms.GroupBox groupBoxTooltipProperties;
         private System.Windows.Forms.Label labelMapText;
         private System.Windows.Forms.Label labelMapExtraText;

@@ -49,7 +49,7 @@
             this.labelWorkspaces = new System.Windows.Forms.Label();
             this.buttonClose = new System.Windows.Forms.Button();
             this.labelNavigators = new System.Windows.Forms.Label();
-            this.kryptonNavigator = new .Navigator.KryptonNavigator();
+            this.kryptonNavigator = new Krypton.Navigator.KryptonNavigator();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspace)).BeginInit();
             this.groupBoxDragFeedback.SuspendLayout();
@@ -244,8 +244,8 @@
             // 
             this.kryptonNavigator.AllowPageDrag = true;
             this.kryptonNavigator.AllowTabFocus = false;
-            this.kryptonNavigator.Button.CloseButtonDisplay = .Navigator.ButtonDisplay.Hide;
-            this.kryptonNavigator.Button.ContextButtonDisplay = .Navigator.ButtonDisplay.Hide;
+            this.kryptonNavigator.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
+            this.kryptonNavigator.Button.ContextButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonNavigator.Location = new System.Drawing.Point(165, 74);
             this.kryptonNavigator.Name = "kryptonNavigator";
             this.kryptonNavigator.Size = new System.Drawing.Size(285, 250);
@@ -288,7 +288,7 @@
 
         private PageDragTreeView dragTreeView;
         private .Workspace.KryptonWorkspace kryptonWorkspace;
-        private .Navigator.KryptonNavigator kryptonNavigator;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigator;
         private System.Windows.Forms.ImageList imageList;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Label labelTreeView;

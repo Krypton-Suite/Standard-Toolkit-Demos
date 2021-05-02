@@ -36,11 +36,11 @@
             this.radioModeRibbonTabs = new System.Windows.Forms.RadioButton();
             this.radioModesCheckButton = new System.Windows.Forms.RadioButton();
             this.radioModeTabs = new System.Windows.Forms.RadioButton();
-            this.kryptonNavigator = new .Navigator.KryptonNavigator();
-            this.kryptonPage1 = new .Navigator.KryptonPage();
-            this.kryptonPage2 = new .Navigator.KryptonPage();
-            this.kryptonPage3 = new .Navigator.KryptonPage();
-            this.kryptonPage4 = new .Navigator.KryptonPage();
+            this.kryptonNavigator = new Krypton.Navigator.KryptonNavigator();
+            this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage3 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage4 = new Krypton.Navigator.KryptonPage();
             this.kryptonContextMenu = new Krypton.Toolkit.KryptonContextMenu();
             this.kryptonContextMenuItems1 = new Krypton.Toolkit.KryptonContextMenuItems();
             this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
@@ -145,11 +145,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonNavigator.Bar.ItemMaximumSize = new System.Drawing.Size(2000, 200);
-            this.kryptonNavigator.Button.ButtonDisplayLogic = .Navigator.ButtonDisplayLogic.NextPrevious;
-            this.kryptonNavigator.Button.CloseButtonDisplay = .Navigator.ButtonDisplay.Hide;
+            this.kryptonNavigator.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.NextPrevious;
+            this.kryptonNavigator.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonNavigator.Location = new System.Drawing.Point(176, 21);
             this.kryptonNavigator.Name = "kryptonNavigator";
-            this.kryptonNavigator.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonNavigator.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2,
             this.kryptonPage3,
@@ -360,11 +360,11 @@
         private System.Windows.Forms.RadioButton radioModeRibbonTabs;
         private System.Windows.Forms.RadioButton radioModesCheckButton;
         private System.Windows.Forms.RadioButton radioModeTabs;
-        private .Navigator.KryptonNavigator kryptonNavigator;
-        private .Navigator.KryptonPage kryptonPage1;
-        private .Navigator.KryptonPage kryptonPage2;
-        private .Navigator.KryptonPage kryptonPage3;
-        private .Navigator.KryptonPage kryptonPage4;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigator;
+        private Krypton.Navigator.KryptonPage kryptonPage1;
+        private Krypton.Navigator.KryptonPage kryptonPage2;
+        private Krypton.Navigator.KryptonPage kryptonPage3;
+        private Krypton.Navigator.KryptonPage kryptonPage4;
         private System.Windows.Forms.RadioButton radioModesOutlook;
         private System.Windows.Forms.RadioButton radioModesStack;
         private System.Windows.Forms.Button buttonClose;

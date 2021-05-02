@@ -50,20 +50,20 @@ namespace NavigatorModes
             this.radioBarCheckButtonGroupOnly = new System.Windows.Forms.RadioButton();
             this.radioBarCheckButtonGroupInside = new System.Windows.Forms.RadioButton();
             this.radioBarCheckButtonGroupOutside = new System.Windows.Forms.RadioButton();
-            this.kryptonNavigator1 = new .Navigator.KryptonNavigator();
-            this.kryptonPage1 = new .Navigator.KryptonPage();
+            this.kryptonNavigator1 = new Krypton.Navigator.KryptonNavigator();
+            this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonPage1 = new System.Windows.Forms.Button();
-            this.kryptonPage2 = new .Navigator.KryptonPage();
+            this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labelPage2 = new System.Windows.Forms.Label();
-            this.kryptonPage3 = new .Navigator.KryptonPage();
+            this.kryptonPage3 = new Krypton.Navigator.KryptonPage();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBoxPage3 = new System.Windows.Forms.ComboBox();
-            this.kryptonPage4 = new .Navigator.KryptonPage();
+            this.kryptonPage4 = new Krypton.Navigator.KryptonPage();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBoxPage4 = new System.Windows.Forms.TextBox();
             this.buttonClose = new System.Windows.Forms.Button();
@@ -345,17 +345,17 @@ namespace NavigatorModes
             // kryptonNavigator1
             // 
             this.kryptonNavigator1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.kryptonNavigator1.Button.CloseButtonDisplay = .Navigator.ButtonDisplay.Hide;
+            this.kryptonNavigator1.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonNavigator1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonNavigator1.Header.HeaderValuesPrimary.MapImage = .Navigator.MapKryptonPageImage.MediumSmall;
+            this.kryptonNavigator1.Header.HeaderValuesPrimary.MapImage = Krypton.Navigator.MapKryptonPageImage.MediumSmall;
             this.kryptonNavigator1.Location = new System.Drawing.Point(0, 0);
             this.kryptonNavigator1.Name = "kryptonNavigator1";
-            this.kryptonNavigator1.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonNavigator1.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2,
             this.kryptonPage3,
             this.kryptonPage4});
-            this.kryptonNavigator1.PopupPages.AllowPopupPages = .Navigator.PopupPageAllow.OnlyCompatibleModes;
+            this.kryptonNavigator1.PopupPages.AllowPopupPages = Krypton.Navigator.PopupPageAllow.OnlyCompatibleModes;
             this.kryptonNavigator1.SelectedIndex = 0;
             this.kryptonNavigator1.Size = new System.Drawing.Size(329, 265);
             this.kryptonNavigator1.Stack.StackAlignment = Krypton.Toolkit.RelativePositionAlign.Far;
@@ -638,9 +638,9 @@ namespace NavigatorModes
 
         #endregion
 
-        private .Navigator.KryptonNavigator kryptonNavigator1;
-        private .Navigator.KryptonPage kryptonPage1;
-        private .Navigator.KryptonPage kryptonPage2;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigator1;
+        private Krypton.Navigator.KryptonPage kryptonPage1;
+        private Krypton.Navigator.KryptonPage kryptonPage2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioPanel;
         private System.Windows.Forms.RadioButton radioGroup;
@@ -650,8 +650,8 @@ namespace NavigatorModes
         private System.Windows.Forms.RadioButton radioBarCheckButtonGroupInside;
         private System.Windows.Forms.RadioButton radioBarCheckButtonGroupOutside;
         private System.Windows.Forms.Button buttonClose;
-        private .Navigator.KryptonPage kryptonPage3;
-        private .Navigator.KryptonPage kryptonPage4;
+        private Krypton.Navigator.KryptonPage kryptonPage3;
+        private Krypton.Navigator.KryptonPage kryptonPage4;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RichTextBox textBoxDescription;
         private System.Windows.Forms.Button buttonPage1;

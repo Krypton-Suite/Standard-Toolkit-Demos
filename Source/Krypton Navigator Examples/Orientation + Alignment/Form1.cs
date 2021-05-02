@@ -16,7 +16,7 @@ using System.ComponentModel;
 using System.Collections.Generic;
 using System.Diagnostics;
 using Krypton.Toolkit;
-using .Navigator;
+using Krypton.Navigator;
 
 namespace OrientationPlusAlignment
 {

@@ -14,7 +14,7 @@ using System;
 using System.Windows.Forms;
 
 using .Docking;
-using .Navigator;
+using Krypton.Navigator;
 using Krypton.Toolkit;
 
 namespace NavigatorAndFloatingWindows

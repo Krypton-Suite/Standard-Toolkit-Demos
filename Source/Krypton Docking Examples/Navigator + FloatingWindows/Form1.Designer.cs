@@ -53,7 +53,7 @@
             // 
             // kryptonDockableNavigator
             // 
-            this.kryptonDockableNavigator.Button.CloseButtonDisplay = .Navigator.ButtonDisplay.Hide;
+            this.kryptonDockableNavigator.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonDockableNavigator.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonDockableNavigator.Location = new System.Drawing.Point(3, 3);
             this.kryptonDockableNavigator.Name = "kryptonDockableNavigator";

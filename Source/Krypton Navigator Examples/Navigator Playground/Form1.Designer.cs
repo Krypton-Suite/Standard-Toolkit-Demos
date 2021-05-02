@@ -29,9 +29,9 @@ namespace NavigatorPlayground
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.kryptonNavigator1 = new .Navigator.KryptonNavigator();
-            this.kryptonPage1 = new .Navigator.KryptonPage();
-            this.kryptonPage2 = new .Navigator.KryptonPage();
+            this.kryptonNavigator1 = new Krypton.Navigator.KryptonNavigator();
+            this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
             this.groupBoxProperties = new System.Windows.Forms.GroupBox();
             this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             this.buttonClose = new System.Windows.Forms.Button();
@@ -56,7 +56,7 @@ namespace NavigatorPlayground
             | System.Windows.Forms.AnchorStyles.Left)));
             this.kryptonNavigator1.Location = new System.Drawing.Point(18, 31);
             this.kryptonNavigator1.Name = "kryptonNavigator1";
-            this.kryptonNavigator1.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonNavigator1.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2});
             this.kryptonNavigator1.SelectedIndex = 0;
@@ -231,9 +231,9 @@ namespace NavigatorPlayground
 
         #endregion
 
-        private .Navigator.KryptonNavigator kryptonNavigator1;
-        private .Navigator.KryptonPage kryptonPage1;
-        private .Navigator.KryptonPage kryptonPage2;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigator1;
+        private Krypton.Navigator.KryptonPage kryptonPage1;
+        private Krypton.Navigator.KryptonPage kryptonPage2;
         private System.Windows.Forms.GroupBox groupBoxProperties;
         private System.Windows.Forms.PropertyGrid propertyGrid1;
         private System.Windows.Forms.Button buttonClose;

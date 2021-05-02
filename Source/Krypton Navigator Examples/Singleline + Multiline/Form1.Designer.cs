@@ -55,13 +55,13 @@ namespace SinglelinePlusMultiline
             this.radioShrinkline = new System.Windows.Forms.RadioButton();
             this.radioSingleline = new System.Windows.Forms.RadioButton();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.kryptonNavigator1 = new .Navigator.KryptonNavigator();
-            this.kryptonPage1 = new .Navigator.KryptonPage();
-            this.kryptonPage2 = new .Navigator.KryptonPage();
-            this.kryptonPage3 = new .Navigator.KryptonPage();
-            this.kryptonPage4 = new .Navigator.KryptonPage();
-            this.kryptonPage5 = new .Navigator.KryptonPage();
-            this.kryptonPage6 = new .Navigator.KryptonPage();
+            this.kryptonNavigator1 = new Krypton.Navigator.KryptonNavigator();
+            this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage3 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage4 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage5 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage6 = new Krypton.Navigator.KryptonPage();
             this.buttonAddPage = new System.Windows.Forms.Button();
             this.buttonClearAllPages = new System.Windows.Forms.Button();
             this.groupBoxPages = new System.Windows.Forms.GroupBox();
@@ -401,11 +401,11 @@ namespace SinglelinePlusMultiline
             this.kryptonNavigator1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonNavigator1.Bar.BarMultiline = .Navigator.BarMultiline.Multiline;
+            this.kryptonNavigator1.Bar.BarMultiline = Krypton.Navigator.BarMultiline.Multiline;
             this.kryptonNavigator1.Bar.TabBorderStyle = Krypton.Toolkit.TabBorderStyle.RoundedEqualMedium;
             this.kryptonNavigator1.Location = new System.Drawing.Point(176, 19);
             this.kryptonNavigator1.Name = "kryptonNavigator1";
-            this.kryptonNavigator1.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonNavigator1.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2,
             this.kryptonPage3,
@@ -625,13 +625,13 @@ namespace SinglelinePlusMultiline
         private System.Windows.Forms.RadioButton radioShrinkline;
         private System.Windows.Forms.RadioButton radioSingleline;
         private System.Windows.Forms.Button buttonClose;
-        private .Navigator.KryptonNavigator kryptonNavigator1;
-        private .Navigator.KryptonPage kryptonPage1;
-        private .Navigator.KryptonPage kryptonPage2;
-        private .Navigator.KryptonPage kryptonPage3;
-        private .Navigator.KryptonPage kryptonPage4;
-        private .Navigator.KryptonPage kryptonPage5;
-        private .Navigator.KryptonPage kryptonPage6;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigator1;
+        private Krypton.Navigator.KryptonPage kryptonPage1;
+        private Krypton.Navigator.KryptonPage kryptonPage2;
+        private Krypton.Navigator.KryptonPage kryptonPage3;
+        private Krypton.Navigator.KryptonPage kryptonPage4;
+        private Krypton.Navigator.KryptonPage kryptonPage5;
+        private Krypton.Navigator.KryptonPage kryptonPage6;
         private System.Windows.Forms.Button buttonAddPage;
         private System.Windows.Forms.Button buttonClearAllPages;
         private System.Windows.Forms.RadioButton radioModeRibbonTabs;

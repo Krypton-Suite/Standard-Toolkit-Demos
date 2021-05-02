@@ -35,7 +35,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.panelFill = new Krypton.Toolkit.KryptonPanel();
             this.kryptonWorkspace = new .Workspace.KryptonWorkspace();
             this.kryptonWorkspaceCell1 = new .Workspace.KryptonWorkspaceCell();
-            this.kryptonPage1 = new .Navigator.KryptonPage();
+            this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLinkLabel1 = new Krypton.Toolkit.KryptonLinkLabel();
             this.kryptonCheckBox2 = new Krypton.Toolkit.KryptonCheckBox();
@@ -43,21 +43,21 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRadioButton3 = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton2 = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton1 = new Krypton.Toolkit.KryptonRadioButton();
-            this.kryptonPage3 = new .Navigator.KryptonPage();
-            this.kryptonPage2 = new .Navigator.KryptonPage();
-            this.kryptonPage7 = new .Navigator.KryptonPage();
+            this.kryptonPage3 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage7 = new Krypton.Navigator.KryptonPage();
             this.kryptonWorkspaceSequence1 = new .Workspace.KryptonWorkspaceSequence();
             this.kryptonWorkspaceCell3 = new .Workspace.KryptonWorkspaceCell();
-            this.kryptonPage4 = new .Navigator.KryptonPage();
-            this.kryptonPage5 = new .Navigator.KryptonPage();
-            this.kryptonPage10 = new .Navigator.KryptonPage();
+            this.kryptonPage4 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage5 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage10 = new Krypton.Navigator.KryptonPage();
             this.kryptonWorkspaceCell4 = new .Workspace.KryptonWorkspaceCell();
-            this.kryptonPage6 = new .Navigator.KryptonPage();
-            this.kryptonPage11 = new .Navigator.KryptonPage();
+            this.kryptonPage6 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage11 = new Krypton.Navigator.KryptonPage();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
-            this.navigatorOutlook = new .Navigator.KryptonNavigator();
-            this.buttonSpecExpandCollapse = new .Navigator.ButtonSpecNavigator();
-            this.pageGlobalPalettes = new .Navigator.KryptonPage();
+            this.navigatorOutlook = new Krypton.Navigator.KryptonNavigator();
+            this.buttonSpecExpandCollapse = new Krypton.Navigator.ButtonSpecNavigator();
+            this.pageGlobalPalettes = new Krypton.Navigator.KryptonPage();
             this.radioOffice2010Black = new Krypton.Toolkit.KryptonRadioButton();
             this.radioSparklePurple = new Krypton.Toolkit.KryptonRadioButton();
             this.radioOffice2010Blue = new Krypton.Toolkit.KryptonRadioButton();
@@ -68,7 +68,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.radioOffice2007Black = new Krypton.Toolkit.KryptonRadioButton();
             this.radioOffice2007Silver = new Krypton.Toolkit.KryptonRadioButton();
             this.radioOffice2007Blue = new Krypton.Toolkit.KryptonRadioButton();
-            this.kryptonDisplayMode = new .Navigator.KryptonPage();
+            this.kryptonDisplayMode = new Krypton.Navigator.KryptonPage();
             this.buttonRibbonTabs = new Krypton.Toolkit.KryptonCheckButton();
             this.buttonStack = new Krypton.Toolkit.KryptonCheckButton();
             this.buttonHeaderBar = new Krypton.Toolkit.KryptonCheckButton();
@@ -128,7 +128,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton15 = new .Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroupButton16 = new .Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroupButton17 = new .Ribbon.KryptonRibbonGroupButton();
-            this.kryptonPage8 = new .Navigator.KryptonPage();
+            this.kryptonPage8 = new Krypton.Navigator.KryptonPage();
             this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLinkLabel2 = new Krypton.Toolkit.KryptonLinkLabel();
             this.kryptonRadioButton4 = new Krypton.Toolkit.KryptonRadioButton();
@@ -137,7 +137,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonCheckBox4 = new Krypton.Toolkit.KryptonCheckBox();
             this.kryptonCheckBox5 = new Krypton.Toolkit.KryptonCheckBox();
             this.kryptonCheckBox6 = new Krypton.Toolkit.KryptonCheckBox();
-            this.kryptonPage9 = new .Navigator.KryptonPage();
+            this.kryptonPage9 = new Krypton.Navigator.KryptonPage();
             ((System.ComponentModel.ISupportInitialize)(this.panelFill)).BeginInit();
             this.panelFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspace)).BeginInit();
@@ -221,10 +221,10 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             this.kryptonWorkspaceCell1.AllowPageDrag = true;
             this.kryptonWorkspaceCell1.AllowTabFocus = false;
-            this.kryptonWorkspaceCell1.Button.CloseButtonDisplay = .Navigator.ButtonDisplay.Hide;
-            this.kryptonWorkspaceCell1.Button.ContextButtonDisplay = .Navigator.ButtonDisplay.Hide;
+            this.kryptonWorkspaceCell1.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
+            this.kryptonWorkspaceCell1.Button.ContextButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonWorkspaceCell1.Name = "kryptonWorkspaceCell1";
-            this.kryptonWorkspaceCell1.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonWorkspaceCell1.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage3,
             this.kryptonPage2,
@@ -363,10 +363,10 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             this.kryptonWorkspaceCell3.AllowPageDrag = true;
             this.kryptonWorkspaceCell3.AllowTabFocus = false;
-            this.kryptonWorkspaceCell3.Button.CloseButtonDisplay = .Navigator.ButtonDisplay.Hide;
-            this.kryptonWorkspaceCell3.Button.ContextButtonDisplay = .Navigator.ButtonDisplay.Hide;
+            this.kryptonWorkspaceCell3.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
+            this.kryptonWorkspaceCell3.Button.ContextButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonWorkspaceCell3.Name = "kryptonWorkspaceCell3";
-            this.kryptonWorkspaceCell3.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonWorkspaceCell3.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage4,
             this.kryptonPage5,
             this.kryptonPage10});
@@ -419,10 +419,10 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             this.kryptonWorkspaceCell4.AllowPageDrag = true;
             this.kryptonWorkspaceCell4.AllowTabFocus = false;
-            this.kryptonWorkspaceCell4.Button.CloseButtonDisplay = .Navigator.ButtonDisplay.Hide;
-            this.kryptonWorkspaceCell4.Button.ContextButtonDisplay = .Navigator.ButtonDisplay.Hide;
+            this.kryptonWorkspaceCell4.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
+            this.kryptonWorkspaceCell4.Button.ContextButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonWorkspaceCell4.Name = "kryptonWorkspaceCell4";
-            this.kryptonWorkspaceCell4.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonWorkspaceCell4.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage6,
             this.kryptonPage11});
             this.kryptonWorkspaceCell4.SelectedIndex = 0;
@@ -468,16 +468,16 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             this.navigatorOutlook.AutoSize = true;
             this.navigatorOutlook.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.navigatorOutlook.Button.ButtonDisplayLogic = .Navigator.ButtonDisplayLogic.None;
-            this.navigatorOutlook.Button.ButtonSpecs.AddRange(new .Navigator.ButtonSpecNavigator[] {
+            this.navigatorOutlook.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
+            this.navigatorOutlook.Button.ButtonSpecs.AddRange(new Krypton.Navigator.ButtonSpecNavigator[] {
             this.buttonSpecExpandCollapse});
-            this.navigatorOutlook.Button.CloseButtonDisplay = .Navigator.ButtonDisplay.Hide;
+            this.navigatorOutlook.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.navigatorOutlook.Dock = System.Windows.Forms.DockStyle.Left;
-            this.navigatorOutlook.Header.HeaderValuesPrimary.MapImage = .Navigator.MapKryptonPageImage.None;
+            this.navigatorOutlook.Header.HeaderValuesPrimary.MapImage = Krypton.Navigator.MapKryptonPageImage.None;
             this.navigatorOutlook.Location = new System.Drawing.Point(7, 7);
             this.navigatorOutlook.Name = "navigatorOutlook";
-            this.navigatorOutlook.NavigatorMode = .Navigator.NavigatorMode.OutlookFull;
-            this.navigatorOutlook.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.navigatorOutlook.NavigatorMode = Krypton.Navigator.NavigatorMode.OutlookFull;
+            this.navigatorOutlook.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.pageGlobalPalettes,
             this.kryptonDisplayMode});
             this.navigatorOutlook.SelectedIndex = 0;
@@ -488,7 +488,7 @@ namespace RibbonAndNavigatorAndWorkspace
             // buttonSpecExpandCollapse
             // 
             this.buttonSpecExpandCollapse.Type = Krypton.Toolkit.PaletteButtonSpecStyle.ArrowLeft;
-            this.buttonSpecExpandCollapse.TypeRestricted = .Navigator.PaletteNavButtonSpecStyle.ArrowLeft;
+            this.buttonSpecExpandCollapse.TypeRestricted = Krypton.Navigator.PaletteNavButtonSpecStyle.ArrowLeft;
             this.buttonSpecExpandCollapse.UniqueName = "22C3A3B1DC494B5F22C3A3B1DC494B5F";
             this.buttonSpecExpandCollapse.Click += new System.EventHandler(this.buttonSpecExpandCollapse_Click);
             // 
@@ -1227,9 +1227,9 @@ namespace RibbonAndNavigatorAndWorkspace
         private Krypton.Toolkit.KryptonManager kryptonManager;
         private .Ribbon.KryptonRibbon kryptonRibbon;
         private Krypton.Toolkit.KryptonPanel panelFill;
-        private .Navigator.KryptonNavigator navigatorOutlook;
-        private .Navigator.KryptonPage pageGlobalPalettes;
-        private .Navigator.KryptonPage kryptonDisplayMode;
+        private Krypton.Navigator.KryptonNavigator navigatorOutlook;
+        private Krypton.Navigator.KryptonPage pageGlobalPalettes;
+        private Krypton.Navigator.KryptonPage kryptonDisplayMode;
         private .Ribbon.KryptonRibbonTab kryptonRibbonTab1;
         private .Ribbon.KryptonRibbonGroup kryptonRibbonGroup1;
         private .Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple1;
@@ -1288,7 +1288,7 @@ namespace RibbonAndNavigatorAndWorkspace
         private .Ribbon.KryptonRibbonQATButton qatPanama;
         private .Ribbon.KryptonRibbonQATButton qatQatar;
         private Krypton.Toolkit.KryptonCheckButton buttonRibbonTabs;
-        private .Navigator.ButtonSpecNavigator buttonSpecExpandCollapse;
+        private Krypton.Navigator.ButtonSpecNavigator buttonSpecExpandCollapse;
         private Krypton.Toolkit.KryptonRadioButton radioOffice2007Blue;
         private Krypton.Toolkit.KryptonRadioButton radioSystem;
         private Krypton.Toolkit.KryptonRadioButton radioOffice2003;
@@ -1299,7 +1299,7 @@ namespace RibbonAndNavigatorAndWorkspace
         private Krypton.Toolkit.KryptonRadioButton radioSparklePurple;
         private Krypton.Toolkit.KryptonRadioButton radioSparkleOrange;
         private .Workspace.KryptonWorkspace kryptonWorkspace;
-        private .Navigator.KryptonPage kryptonPage8;
+        private Krypton.Navigator.KryptonPage kryptonPage8;
         private Krypton.Toolkit.KryptonLabel kryptonLabel2;
         private Krypton.Toolkit.KryptonLinkLabel kryptonLinkLabel2;
         private Krypton.Toolkit.KryptonRadioButton kryptonRadioButton4;
@@ -1308,20 +1308,20 @@ namespace RibbonAndNavigatorAndWorkspace
         private Krypton.Toolkit.KryptonCheckBox kryptonCheckBox4;
         private Krypton.Toolkit.KryptonCheckBox kryptonCheckBox5;
         private Krypton.Toolkit.KryptonCheckBox kryptonCheckBox6;
-        private .Navigator.KryptonPage kryptonPage9;
+        private Krypton.Navigator.KryptonPage kryptonPage9;
         private .Workspace.KryptonWorkspaceCell kryptonWorkspaceCell1;
-        private .Navigator.KryptonPage kryptonPage1;
-        private .Navigator.KryptonPage kryptonPage3;
+        private Krypton.Navigator.KryptonPage kryptonPage1;
+        private Krypton.Navigator.KryptonPage kryptonPage3;
         private .Workspace.KryptonWorkspaceSequence kryptonWorkspaceSequence1;
         private .Workspace.KryptonWorkspaceCell kryptonWorkspaceCell3;
-        private .Navigator.KryptonPage kryptonPage4;
-        private .Navigator.KryptonPage kryptonPage5;
+        private Krypton.Navigator.KryptonPage kryptonPage4;
+        private Krypton.Navigator.KryptonPage kryptonPage5;
         private .Workspace.KryptonWorkspaceCell kryptonWorkspaceCell4;
-        private .Navigator.KryptonPage kryptonPage6;
-        private .Navigator.KryptonPage kryptonPage2;
-        private .Navigator.KryptonPage kryptonPage7;
-        private .Navigator.KryptonPage kryptonPage10;
-        private .Navigator.KryptonPage kryptonPage11;
+        private Krypton.Navigator.KryptonPage kryptonPage6;
+        private Krypton.Navigator.KryptonPage kryptonPage2;
+        private Krypton.Navigator.KryptonPage kryptonPage7;
+        private Krypton.Navigator.KryptonPage kryptonPage10;
+        private Krypton.Navigator.KryptonPage kryptonPage11;
         private Krypton.Toolkit.KryptonCheckBox kryptonCheckBox2;
         private Krypton.Toolkit.KryptonCheckBox kryptonCheckBox1;
         private Krypton.Toolkit.KryptonRadioButton kryptonRadioButton3;

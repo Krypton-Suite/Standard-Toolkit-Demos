@@ -17,7 +17,7 @@ using System.ComponentModel;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Krypton.Toolkit;
-using .Navigator;
+using Krypton.Navigator;
 using .Workspace;
 
 namespace WorkspaceCellLayout

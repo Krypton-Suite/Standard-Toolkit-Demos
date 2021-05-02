@@ -15,7 +15,7 @@ using System.Windows.Forms;
 using System.ComponentModel;
 using System.Collections.Generic;
 using Krypton.Toolkit;
-using .Navigator;
+using Krypton.Navigator;
 
 namespace OutlookMockup
 {

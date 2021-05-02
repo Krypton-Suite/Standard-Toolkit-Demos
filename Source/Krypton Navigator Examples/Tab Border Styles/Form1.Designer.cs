@@ -51,13 +51,13 @@ namespace TabBorderStyles
             this.radioSEL = new System.Windows.Forms.RadioButton();
             this.radioSEM = new System.Windows.Forms.RadioButton();
             this.radioSES = new System.Windows.Forms.RadioButton();
-            this.kryptonNavigator = new .Navigator.KryptonNavigator();
-            this.kryptonPage1 = new .Navigator.KryptonPage();
-            this.kryptonPage2 = new .Navigator.KryptonPage();
-            this.kryptonPage3 = new .Navigator.KryptonPage();
-            this.kryptonPage4 = new .Navigator.KryptonPage();
-            this.kryptonPage5 = new .Navigator.KryptonPage();
-            this.kryptonPage6 = new .Navigator.KryptonPage();
+            this.kryptonNavigator = new Krypton.Navigator.KryptonNavigator();
+            this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage3 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage4 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage5 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage6 = new Krypton.Navigator.KryptonPage();
             this.buttonClose = new System.Windows.Forms.Button();
             this.groupBoxTabStyles = new System.Windows.Forms.GroupBox();
             this.radioOneNote = new System.Windows.Forms.RadioButton();
@@ -366,11 +366,11 @@ namespace TabBorderStyles
             this.kryptonNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonNavigator.Button.ButtonDisplayLogic = .Navigator.ButtonDisplayLogic.None;
-            this.kryptonNavigator.Button.CloseButtonDisplay = .Navigator.ButtonDisplay.Hide;
+            this.kryptonNavigator.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
+            this.kryptonNavigator.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonNavigator.Location = new System.Drawing.Point(12, 271);
             this.kryptonNavigator.Name = "kryptonNavigator";
-            this.kryptonNavigator.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonNavigator.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2,
             this.kryptonPage3,
@@ -585,9 +585,9 @@ namespace TabBorderStyles
         #endregion
 
         private System.Windows.Forms.GroupBox groupBoxTabBorderStyles;
-        private .Navigator.KryptonNavigator kryptonNavigator;
-        private .Navigator.KryptonPage kryptonPage1;
-        private .Navigator.KryptonPage kryptonPage2;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigator;
+        private Krypton.Navigator.KryptonPage kryptonPage1;
+        private Krypton.Navigator.KryptonPage kryptonPage2;
         private System.Windows.Forms.RadioButton radioROL;
         private System.Windows.Forms.RadioButton radioROM;
         private System.Windows.Forms.RadioButton radioROS;
@@ -610,10 +610,10 @@ namespace TabBorderStyles
         private System.Windows.Forms.RadioButton radioSEF;
         private System.Windows.Forms.RadioButton radioSEN;
         private System.Windows.Forms.Button buttonClose;
-        private .Navigator.KryptonPage kryptonPage3;
-        private .Navigator.KryptonPage kryptonPage4;
-        private .Navigator.KryptonPage kryptonPage5;
-        private .Navigator.KryptonPage kryptonPage6;
+        private Krypton.Navigator.KryptonPage kryptonPage3;
+        private Krypton.Navigator.KryptonPage kryptonPage4;
+        private Krypton.Navigator.KryptonPage kryptonPage5;
+        private Krypton.Navigator.KryptonPage kryptonPage6;
         private System.Windows.Forms.GroupBox groupBoxTabStyles;
         private System.Windows.Forms.RadioButton radioLP;
         private System.Windows.Forms.RadioButton radioSP;

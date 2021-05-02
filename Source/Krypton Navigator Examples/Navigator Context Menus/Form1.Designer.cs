@@ -30,8 +30,8 @@ namespace NavigatorContextMenus
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.kryptonNavigator1 = new .Navigator.KryptonNavigator();
-            this.page1 = new .Navigator.KryptonPage();
+            this.kryptonNavigator1 = new Krypton.Navigator.KryptonNavigator();
+            this.page1 = new Krypton.Navigator.KryptonPage();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.kcmDollar = new Krypton.Toolkit.KryptonContextMenu();
             this.kcmHeadingDollar = new Krypton.Toolkit.KryptonContextMenuHeading();
@@ -39,7 +39,7 @@ namespace NavigatorContextMenus
             this.kcmDollar1 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kcmDollar2 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kcmDollar3 = new Krypton.Toolkit.KryptonContextMenuItem();
-            this.page2 = new .Navigator.KryptonPage();
+            this.page2 = new Krypton.Navigator.KryptonPage();
             this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
             this.kcmEuro = new Krypton.Toolkit.KryptonContextMenu();
             this.kcmHeadingEuro = new Krypton.Toolkit.KryptonContextMenuHeading();
@@ -50,7 +50,7 @@ namespace NavigatorContextMenus
             this.kcmEuro3 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kcmEuro4 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kcmEuro5 = new Krypton.Toolkit.KryptonContextMenuItem();
-            this.page3 = new .Navigator.KryptonPage();
+            this.page3 = new Krypton.Navigator.KryptonPage();
             this.kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
             this.kcmYen = new Krypton.Toolkit.KryptonContextMenu();
             this.kcmHeadingYen = new Krypton.Toolkit.KryptonContextMenuHeading();
@@ -62,7 +62,7 @@ namespace NavigatorContextMenus
             this.kcmItemsYenMore = new Krypton.Toolkit.KryptonContextMenuItems();
             this.kcmYen3 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kcmYen4 = new Krypton.Toolkit.KryptonContextMenuItem();
-            this.page4 = new .Navigator.KryptonPage();
+            this.page4 = new Krypton.Navigator.KryptonPage();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
             this.kcmPound = new Krypton.Toolkit.KryptonContextMenu();
             this.kcmHeadingPound = new Krypton.Toolkit.KryptonContextMenuHeading();
@@ -98,11 +98,11 @@ namespace NavigatorContextMenus
             // 
             // kryptonNavigator1
             // 
-            this.kryptonNavigator1.Button.ButtonDisplayLogic = .Navigator.ButtonDisplayLogic.None;
-            this.kryptonNavigator1.Button.CloseButtonDisplay = .Navigator.ButtonDisplay.Hide;
+            this.kryptonNavigator1.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
+            this.kryptonNavigator1.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonNavigator1.Location = new System.Drawing.Point(12, 12);
             this.kryptonNavigator1.Name = "kryptonNavigator1";
-            this.kryptonNavigator1.Pages.AddRange(new .Navigator.KryptonPage[] {
+            this.kryptonNavigator1.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.page1,
             this.page2,
             this.page3,
@@ -490,11 +490,11 @@ namespace NavigatorContextMenus
 
         #endregion
 
-        private .Navigator.KryptonNavigator kryptonNavigator1;
-        private .Navigator.KryptonPage page1;
-        private .Navigator.KryptonPage page2;
-        private .Navigator.KryptonPage page3;
-        private .Navigator.KryptonPage page4;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigator1;
+        private Krypton.Navigator.KryptonPage page1;
+        private Krypton.Navigator.KryptonPage page2;
+        private Krypton.Navigator.KryptonPage page3;
+        private Krypton.Navigator.KryptonPage page4;
         private Krypton.Toolkit.KryptonContextMenu kcmDollar;
         private Krypton.Toolkit.KryptonContextMenuHeading kcmHeadingDollar;
         private Krypton.Toolkit.KryptonContextMenuItems kcmItemsDollar;
