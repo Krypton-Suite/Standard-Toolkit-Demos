@@ -6,13 +6,13 @@
 //  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2021. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  Version 5.550.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonTextBoxExamples
@@ -68,11 +68,12 @@ namespace KryptonTextBoxExamples
         {
             Close();
         }
+
     }
 
     public class KryptonTextBoxProxy
     {
-        private KryptonTextBox _textBox;
+        private readonly KryptonTextBox _textBox;
 
         public KryptonTextBoxProxy(KryptonTextBox textBox)
         {
@@ -83,179 +84,168 @@ namespace KryptonTextBoxExamples
         [Description("Text for display inside the control.")]
         public string Text
         {
-            get { return _textBox.Text; }
-            set { _textBox.Text = value; }
+            get => _textBox.Text;
+            set => _textBox.Text = value;
         }
 
         [Category("Visuals")]
         [Description("Determines if the control is always active or only when the mouse is over the control or has focus.")]
         public bool AlwaysActive
         {
-            get { return _textBox.AlwaysActive; }
-            set { _textBox.AlwaysActive = value; }
+            get => _textBox.AlwaysActive;
+            set => _textBox.AlwaysActive = value;
         }
+
+        [Category("Visuals")]
+        [Description("Set a watermark/prompt message for the user.")]
+        public PaletteCueHintText CueHint => _textBox.CueHint;
 
         [Category("Appearance")]
         [Description("Indicates, for multiline edit controls, which scroll bars will be shown for this control.")]
         public ScrollBars ScrollBars
         {
-            get { return _textBox.ScrollBars; }
-            set { _textBox.ScrollBars = value; }
+            get => _textBox.ScrollBars;
+            set => _textBox.ScrollBars = value;
         }
 
         [Category("Appearance")]
         [Description("Indicates how the text should be aligned for edit controls.")]
         public HorizontalAlignment TextAlign
         {
-            get { return _textBox.TextAlign; }
-            set { _textBox.TextAlign = value; }
+            get => _textBox.TextAlign;
+            set => _textBox.TextAlign = value;
         }
 
         [Category("Behavior")]
         [Description("Indicates if lines are automatically word-wrapped for multiline edit controls.")]
         public bool WordWrap
         {
-            get { return _textBox.WordWrap; }
-            set { _textBox.WordWrap = value; }
+            get => _textBox.WordWrap;
+            set => _textBox.WordWrap = value;
         }
 
         [Category("Behavior")]
         [Description("Control whether the text in the control can span more than one line.")]
         public bool Multiline
         {
-            get { return _textBox.Multiline; }
-            set { _textBox.Multiline = value; }
+            get => _textBox.Multiline;
+            set => _textBox.Multiline = value;
         }
 
         [Category("Behavior")]
         [Description("Indicates if return characters are accepted as input for multiline edit controls.")]
         public bool AcceptsReturn
         {
-            get { return _textBox.AcceptsReturn; }
-            set { _textBox.AcceptsReturn = value; }
+            get => _textBox.AcceptsReturn;
+            set => _textBox.AcceptsReturn = value;
         }
 
         [Category("Behavior")]
         [Description("Indicates if tab characters are accepted as input for multiline edit controls.")]
         public bool AcceptsTab
         {
-            get { return _textBox.AcceptsTab; }
-            set { _textBox.AcceptsTab = value; }
+            get => _textBox.AcceptsTab;
+            set => _textBox.AcceptsTab = value;
         }
 
         [Category("Behavior")]
         [Description("Indicates if all the characters should be left alone or converted to uppercase or lowercase.")]
         public CharacterCasing CharacterCasing
         {
-            get { return _textBox.CharacterCasing; }
-            set { _textBox.CharacterCasing = value; }
+            get => _textBox.CharacterCasing;
+            set => _textBox.CharacterCasing = value;
         }
 
         [Category("Behavior")]
         [Description("Indicates that the selection should be hidden when the edit control loses focus.")]
         public bool HideSelection
         {
-            get { return _textBox.HideSelection; }
-            set { _textBox.HideSelection = value; }
+            get => _textBox.HideSelection;
+            set => _textBox.HideSelection = value;
         }
 
         [Category("Behavior")]
         [Description("Specifies the maximum number of characters that can be entered into the edit control.")]
         public int MaxLength
         {
-            get { return _textBox.MaxLength; }
-            set { _textBox.MaxLength = value; }
+            get => _textBox.MaxLength;
+            set => _textBox.MaxLength = value;
         }
 
         [Category("Behavior")]
         [Description("Controls whether the text in the edit control can be changed or not.")]
         public bool ReadOnly
         {
-            get { return _textBox.ReadOnly; }
-            set { _textBox.ReadOnly = value; }
+            get => _textBox.ReadOnly;
+            set => _textBox.ReadOnly = value;
         }
 
         [Category("Behavior")]
         [Description("Indicates the character to display for password input for single-line edit controls.")]
         public char PasswordChar
         {
-            get { return _textBox.PasswordChar; }
-            set { _textBox.PasswordChar = value; }
+            get => _textBox.PasswordChar;
+            set => _textBox.PasswordChar = value;
         }
 
         [Category("Behavior")]
         [Description("Indicates if the text in the edit control should appear as the default password character.")]
         public bool UseSystemPasswordChar
         {
-            get { return _textBox.UseSystemPasswordChar; }
-            set { _textBox.UseSystemPasswordChar = value; }
+            get => _textBox.UseSystemPasswordChar;
+            set => _textBox.UseSystemPasswordChar = value;
         }
 
         [Category("Visuals")]
         [Description("Input control style.")]
         public InputControlStyle InputControlStyle
         {
-            get { return _textBox.InputControlStyle; }
-            set { _textBox.InputControlStyle = value; }
+            get => _textBox.InputControlStyle;
+            set => _textBox.InputControlStyle = value;
         }
 
         [Category("Visuals")]
         [Description("Should tooltips be displayed for button specs.")]
         public bool AllowButtonSpecToolTips
         {
-            get { return _textBox.AllowButtonSpecToolTips; }
-            set { _textBox.AllowButtonSpecToolTips = value; }
+            get => _textBox.AllowButtonSpecToolTips;
+            set => _textBox.AllowButtonSpecToolTips = value;
         }
 
         [Category("Visuals")]
         [Description("Collection of button specifications.")]
-        public KryptonTextBox.TextBoxButtonSpecCollection ButtonSpecs
-        {
-            get { return _textBox.ButtonSpecs; }
-        }
+        public KryptonTextBox.TextBoxButtonSpecCollection ButtonSpecs => _textBox.ButtonSpecs;
 
         [Category("Visuals")]
         [Description("Overrides for defining common textbox appearance that other states can override.")]
-        public PaletteInputControlTripleRedirect StateCommon
-        {
-            get { return _textBox.StateCommon; }
-        }
+        public PaletteInputControlTripleRedirect StateCommon => _textBox.StateCommon;
 
         [Category("Visuals")]
         [Description("Overrides for defining disabled textbox appearance.")]
-        public PaletteInputControlTripleStates StateDisabled
-        {
-            get { return _textBox.StateDisabled; }
-        }
+        public PaletteInputControlTripleStates StateDisabled => _textBox.StateDisabled;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal textbox appearance.")]
-        public PaletteInputControlTripleStates StateNormal
-        {
-            get { return _textBox.StateNormal; }
-        }
+        public PaletteInputControlTripleStates StateNormal => _textBox.StateNormal;
 
         [Category("Visuals")]
         [Description("Overrides for defining active textbox appearance.")]
-        public PaletteInputControlTripleStates StateActive
-        {
-            get { return _textBox.StateActive; }
-        }
+        public PaletteInputControlTripleStates StateActive => _textBox.StateActive;
 
         [Category("Layout")]
         [Description("The size of the control is pixels.")]
         public Size Size
         {
-            get { return _textBox.Size; }
-            set { _textBox.Size = value; }
+            get => _textBox.Size;
+            set => _textBox.Size = value;
         }
 
         [Category("Layout")]
         [Description("The location of the control in pixels.")]
         public Point Location
         {
-            get { return _textBox.Location; }
-            set { _textBox.Location = value; }
+            get => _textBox.Location;
+            set => _textBox.Location = value;
         }
     }
 }

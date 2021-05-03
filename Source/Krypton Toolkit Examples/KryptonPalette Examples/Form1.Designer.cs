@@ -29,19 +29,7 @@ namespace KryptonPaletteExamples
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Krypton.Toolkit.PopupPositionValues popupPositionValues1 = new Krypton.Toolkit.PopupPositionValues();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Krypton.Toolkit.PopupPositionValues popupPositionValues2 = new Krypton.Toolkit.PopupPositionValues();
-            Krypton.Toolkit.PopupPositionValues popupPositionValues3 = new Krypton.Toolkit.PopupPositionValues();
-            Krypton.Toolkit.PopupPositionValues popupPositionValues4 = new Krypton.Toolkit.PopupPositionValues();
-            Krypton.Toolkit.PopupPositionValues popupPositionValues5 = new Krypton.Toolkit.PopupPositionValues();
-            Krypton.Toolkit.PopupPositionValues popupPositionValues6 = new Krypton.Toolkit.PopupPositionValues();
-            Krypton.Toolkit.PopupPositionValues popupPositionValues7 = new Krypton.Toolkit.PopupPositionValues();
-            Krypton.Toolkit.PopupPositionValues popupPositionValues12 = new Krypton.Toolkit.PopupPositionValues();
-            Krypton.Toolkit.PopupPositionValues popupPositionValues8 = new Krypton.Toolkit.PopupPositionValues();
-            Krypton.Toolkit.PopupPositionValues popupPositionValues11 = new Krypton.Toolkit.PopupPositionValues();
-            Krypton.Toolkit.PopupPositionValues popupPositionValues9 = new Krypton.Toolkit.PopupPositionValues();
-            Krypton.Toolkit.PopupPositionValues popupPositionValues10 = new Krypton.Toolkit.PopupPositionValues();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.propertyGrid = new System.Windows.Forms.PropertyGrid();
             this.buttonClose = new System.Windows.Forms.Button();
@@ -215,9 +203,6 @@ namespace KryptonPaletteExamples
             this.kryptonCheckButton1.Name = "kryptonCheckButton1";
             this.kryptonCheckButton1.Size = new System.Drawing.Size(70, 27);
             this.kryptonCheckButton1.TabIndex = 8;
-            popupPositionValues1.PlacementRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            popupPositionValues1.PlacementTarget = null;
-            this.kryptonCheckButton1.ToolTipValues.ToolTipPosition = popupPositionValues1;
             this.kryptonCheckButton1.Text = "Checked";
             // 
             // kryptonPanel1
@@ -571,9 +556,6 @@ namespace KryptonPaletteExamples
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(133, 20);
             this.kryptonLabel2.TabIndex = 6;
-            popupPositionValues2.PlacementRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            popupPositionValues2.PlacementTarget = null;
-            this.kryptonLabel2.ToolTipValues.ToolTipPosition = popupPositionValues2;
             this.kryptonLabel2.Text = "kryptonLabel (Normal)";
             // 
             // kryptonLabel1
@@ -583,9 +565,6 @@ namespace KryptonPaletteExamples
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(185, 29);
             this.kryptonLabel1.TabIndex = 5;
-            popupPositionValues3.PlacementRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            popupPositionValues3.PlacementTarget = null;
-            this.kryptonLabel1.ToolTipValues.ToolTipPosition = popupPositionValues3;
             this.kryptonLabel1.Text = "kryptonLabel (Title)";
             // 
             // kryptonButton2
@@ -595,9 +574,6 @@ namespace KryptonPaletteExamples
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.Size = new System.Drawing.Size(70, 27);
             this.kryptonButton2.TabIndex = 4;
-            popupPositionValues4.PlacementRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            popupPositionValues4.PlacementTarget = null;
-            this.kryptonButton2.ToolTipValues.ToolTipPosition = popupPositionValues4;
             this.kryptonButton2.Text = "Cancel";
             // 
             // kryptonButton1
@@ -607,9 +583,6 @@ namespace KryptonPaletteExamples
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.Size = new System.Drawing.Size(70, 27);
             this.kryptonButton1.TabIndex = 3;
-            popupPositionValues5.PlacementRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            popupPositionValues5.PlacementTarget = null;
-            this.kryptonButton1.ToolTipValues.ToolTipPosition = popupPositionValues5;
             this.kryptonButton1.Text = "OK";
             // 
             // kryptonHeader2
@@ -619,9 +592,6 @@ namespace KryptonPaletteExamples
             this.kryptonHeader2.Name = "kryptonHeader2";
             this.kryptonHeader2.Size = new System.Drawing.Size(152, 22);
             this.kryptonHeader2.TabIndex = 2;
-            popupPositionValues6.PlacementRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            popupPositionValues6.PlacementTarget = null;
-            this.kryptonHeader2.ToolTipValues.ToolTipPosition = popupPositionValues6;
             this.kryptonHeader2.Values.Heading = "Secondary";
             // 
             // kryptonHeader1
@@ -630,9 +600,6 @@ namespace KryptonPaletteExamples
             this.kryptonHeader1.Name = "kryptonHeader1";
             this.kryptonHeader1.Size = new System.Drawing.Size(177, 31);
             this.kryptonHeader1.TabIndex = 1;
-            popupPositionValues7.PlacementRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            popupPositionValues7.PlacementTarget = null;
-            this.kryptonHeader1.ToolTipValues.ToolTipPosition = popupPositionValues7;
             this.kryptonHeader1.Values.Heading = "Primary";
             // 
             // kryptonSplitContainer1
@@ -651,9 +618,6 @@ namespace KryptonPaletteExamples
             this.kryptonSplitContainer1.Size = new System.Drawing.Size(231, 167);
             this.kryptonSplitContainer1.SplitterDistance = 90;
             this.kryptonSplitContainer1.TabIndex = 0;
-            popupPositionValues12.PlacementRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            popupPositionValues12.PlacementTarget = null;
-            this.kryptonSplitContainer1.ToolTipValues.ToolTipPosition = popupPositionValues12;
             // 
             // kryptonHeaderGroup1
             // 
@@ -662,9 +626,6 @@ namespace KryptonPaletteExamples
             this.kryptonHeaderGroup1.Name = "kryptonHeaderGroup1";
             this.kryptonHeaderGroup1.Size = new System.Drawing.Size(90, 167);
             this.kryptonHeaderGroup1.TabIndex = 0;
-            popupPositionValues8.PlacementRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            popupPositionValues8.PlacementTarget = null;
-            this.kryptonHeaderGroup1.ToolTipValues.ToolTipPosition = popupPositionValues8;
             this.kryptonHeaderGroup1.ValuesPrimary.Heading = "Example";
             this.kryptonHeaderGroup1.ValuesPrimary.Image = null;
             // 
@@ -686,9 +647,6 @@ namespace KryptonPaletteExamples
             this.kryptonSplitContainer2.Size = new System.Drawing.Size(136, 167);
             this.kryptonSplitContainer2.SplitterDistance = 98;
             this.kryptonSplitContainer2.TabIndex = 0;
-            popupPositionValues11.PlacementRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            popupPositionValues11.PlacementTarget = null;
-            this.kryptonSplitContainer2.ToolTipValues.ToolTipPosition = popupPositionValues11;
             // 
             // kryptonHeaderGroup2
             // 
@@ -699,9 +657,6 @@ namespace KryptonPaletteExamples
             this.kryptonHeaderGroup2.Size = new System.Drawing.Size(136, 98);
             this.kryptonHeaderGroup2.StateNormal.HeaderPrimary.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.kryptonHeaderGroup2.TabIndex = 0;
-            popupPositionValues9.PlacementRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            popupPositionValues9.PlacementTarget = null;
-            this.kryptonHeaderGroup2.ToolTipValues.ToolTipPosition = popupPositionValues9;
             this.kryptonHeaderGroup2.ValuesPrimary.Heading = "Calendar";
             this.kryptonHeaderGroup2.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("kryptonHeaderGroup2.ValuesPrimary.Image")));
             // 
@@ -714,9 +669,6 @@ namespace KryptonPaletteExamples
             this.kryptonGroup1.Name = "kryptonGroup1";
             this.kryptonGroup1.Size = new System.Drawing.Size(136, 64);
             this.kryptonGroup1.TabIndex = 0;
-            popupPositionValues10.PlacementRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            popupPositionValues10.PlacementTarget = null;
-            this.kryptonGroup1.ToolTipValues.ToolTipPosition = popupPositionValues10;
             // 
             // groupBox2
             // 
