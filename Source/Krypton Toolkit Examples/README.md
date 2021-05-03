@@ -51,6 +51,14 @@ There are 2 set of solutions in these projects:
 ## [KryptonSplitContainer Examples](KryptonSplitContainer%20Examples/example.png)
 ## [KryptonTaskDialog Examples](KryptonTaskDialog%20Examples/example.png)
 ## [KryptonTextBox Examples](KryptonTextBox%20Examples/example.png)
+Now with Custom Cue / Hint Test
+- Font
+- Colour
+- Alignment
+- Padding  
+
+And works with Multi-Line TextBoxs
+
 ## [KryptonTrackBar Examples](KryptonTrackBar%20Examples/example.png)
 ## [KryptonTreeView Examples](KryptonTreeView%20Examples/example.png)
 ## [KryptonWrapLabel Examples](KryptonWrapLabel%20Examples/example.png)
