@@ -30,10 +30,10 @@ namespace KryptonGalleryExamples
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.kryptonGallery1 = new .Ribbon.KryptonGallery();
-            this.kryptonGalleryRange1 = new .Ribbon.KryptonGalleryRange();
-            this.kryptonGalleryRange2 = new .Ribbon.KryptonGalleryRange();
-            this.kryptonGalleryRange3 = new .Ribbon.KryptonGalleryRange();
+            this.kryptonGallery1 = new Krypton.Ribbon.KryptonGallery();
+            this.kryptonGalleryRange1 = new Krypton.Ribbon.KryptonGalleryRange();
+            this.kryptonGalleryRange2 = new Krypton.Ribbon.KryptonGalleryRange();
+            this.kryptonGalleryRange3 = new Krypton.Ribbon.KryptonGalleryRange();
             this.imageListMedium = new System.Windows.Forms.ImageList(this.components);
             this.imageListSmall = new System.Windows.Forms.ImageList(this.components);
             this.imageListLarge = new System.Windows.Forms.ImageList(this.components);
@@ -62,7 +62,7 @@ namespace KryptonGalleryExamples
             // 
             this.kryptonGallery1.AutoSize = true;
             this.kryptonGallery1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.kryptonGallery1.DropButtonRanges.AddRange(new .Ribbon.KryptonGalleryRange[] {
+            this.kryptonGallery1.DropButtonRanges.AddRange(new Krypton.Ribbon.KryptonGalleryRange[] {
             this.kryptonGalleryRange1,
             this.kryptonGalleryRange2,
             this.kryptonGalleryRange3});
@@ -72,7 +72,7 @@ namespace KryptonGalleryExamples
             this.kryptonGallery1.PreferredItemSize = new System.Drawing.Size(4, 1);
             this.kryptonGallery1.Size = new System.Drawing.Size(174, 46);
             this.kryptonGallery1.TabIndex = 4;
-            this.kryptonGallery1.GalleryDropMenu += new System.EventHandler<.Ribbon.GalleryDropMenuEventArgs>(this.kryptonGallery1_GalleryDropMenu);
+            this.kryptonGallery1.GalleryDropMenu += new System.EventHandler<Krypton.Ribbon.GalleryDropMenuEventArgs>(this.kryptonGallery1_GalleryDropMenu);
             // 
             // kryptonGalleryRange1
             // 
@@ -359,7 +359,7 @@ namespace KryptonGalleryExamples
 
         #endregion
 
-        private .Ribbon.KryptonGallery kryptonGallery1;
+        private Krypton.Ribbon.KryptonGallery kryptonGallery1;
         private System.Windows.Forms.ImageList imageListSmall;
         private System.Windows.Forms.ImageList imageListMedium;
         private System.Windows.Forms.ImageList imageListLarge;
@@ -372,9 +372,9 @@ namespace KryptonGalleryExamples
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numericWidth;
-        private .Ribbon.KryptonGalleryRange kryptonGalleryRange1;
-        private .Ribbon.KryptonGalleryRange kryptonGalleryRange2;
-        private .Ribbon.KryptonGalleryRange kryptonGalleryRange3;
+        private Krypton.Ribbon.KryptonGalleryRange kryptonGalleryRange1;
+        private Krypton.Ribbon.KryptonGalleryRange kryptonGalleryRange2;
+        private Krypton.Ribbon.KryptonGalleryRange kryptonGalleryRange3;
         private System.Windows.Forms.GroupBox groupBoxSections;
         private System.Windows.Forms.CheckBox checkBoxAddCustomItems;
         private System.Windows.Forms.CheckBox checkBoxGroupImages;

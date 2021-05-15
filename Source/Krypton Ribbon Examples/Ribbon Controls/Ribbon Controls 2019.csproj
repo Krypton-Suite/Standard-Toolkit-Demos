@@ -13,11 +13,43 @@
   <ItemGroup>
     <Content Include="Krypton.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Krypton Components\ComponentFactory.Krypton.Ribbon\ComponentFactory.Krypton.Ribbon 2019.csproj" />
-        <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
-  </ItemGroup>
-  <PropertyGroup>
+    <Choose>
+        <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
+            <ItemGroup>
+                <PackageReference Include="Krypton.Toolkit.Canary.Lite" Version="6.0.2106" />
+                <PackageReference Include="Krypton.Ribbon.Canary.Lite" Version="6.0.2106" />
+            </ItemGroup>
+        </When>
+        <Otherwise>
+            <ItemGroup>
+                <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
+                <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Ribbon\Krypton.Ribbon 2019.csproj" />
+            </ItemGroup>
+        </Otherwise>
+    </Choose>
+    <ItemGroup>
+        <!--Do the steps in https://github.com/Krypton-Suite/Standard-Toolkit/issues/92#issuecomment-841670257-->
+        <Reference Include="System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Condition="$(TargetFramework.StartsWith('net4'))">
+            <SpecificVersion>True</SpecificVersion>
+            <Version>4.0.0.0</Version>
+            <TreatAsUsed>False</TreatAsUsed>
+        </Reference>
+        <Reference Include="System.Design, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Condition="$(TargetFramework.StartsWith('net5'))">
+            <SpecificVersion>True</SpecificVersion>
+            <Version>5.0.0.0</Version>
+            <TreatAsUsed>False</TreatAsUsed>
+        </Reference>
+        <Reference Include="System.Design, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Condition="$(TargetFramework.StartsWith('net6'))">
+            <SpecificVersion>True</SpecificVersion>
+            <Version>6.0.0.0</Version>
+            <TreatAsUsed>False</TreatAsUsed>
+        </Reference>
+        <Reference Include="System.Design" Condition="'$(TargetFramework)' == 'net35'" />
+        <!--TODO: Need to specify version here-->
+    </ItemGroup>
+
+
+    <PropertyGroup>
           <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
   </PropertyGroup>
 </Project>

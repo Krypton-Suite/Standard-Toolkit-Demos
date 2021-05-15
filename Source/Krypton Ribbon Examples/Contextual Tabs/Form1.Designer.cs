@@ -30,14 +30,14 @@ namespace ContextualTabs
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.kryptonRibbon = new .Ribbon.KryptonRibbon();
+            this.kryptonRibbon = new Krypton.Ribbon.KryptonRibbon();
             this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
-            this.contextDefRed = new .Ribbon.KryptonRibbonContext();
-            this.contextDefGreen = new .Ribbon.KryptonRibbonContext();
-            this.tabHome = new .Ribbon.KryptonRibbonTab();
-            this.contextRed = new .Ribbon.KryptonRibbonTab();
-            this.contextGreen1 = new .Ribbon.KryptonRibbonTab();
-            this.contextGreen2 = new .Ribbon.KryptonRibbonTab();
+            this.contextDefRed = new Krypton.Ribbon.KryptonRibbonContext();
+            this.contextDefGreen = new Krypton.Ribbon.KryptonRibbonContext();
+            this.tabHome = new Krypton.Ribbon.KryptonRibbonTab();
+            this.contextRed = new Krypton.Ribbon.KryptonRibbonTab();
+            this.contextGreen1 = new Krypton.Ribbon.KryptonRibbonTab();
+            this.contextGreen2 = new Krypton.Ribbon.KryptonRibbonTab();
             this.labelOffice2007Styles = new Krypton.Toolkit.KryptonPanel();
             this.groupOffice2007Styles = new Krypton.Toolkit.KryptonGroup();
             this.radioOffice2010Black = new Krypton.Toolkit.KryptonRadioButton();
@@ -95,10 +95,10 @@ namespace ContextualTabs
             this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
             this.kryptonRibbon.RibbonAppButton.AppButtonShowRecentDocs = false;
-            this.kryptonRibbon.RibbonContexts.AddRange(new .Ribbon.KryptonRibbonContext[] {
+            this.kryptonRibbon.RibbonContexts.AddRange(new Krypton.Ribbon.KryptonRibbonContext[] {
             this.contextDefRed,
             this.contextDefGreen});
-            this.kryptonRibbon.RibbonTabs.AddRange(new .Ribbon.KryptonRibbonTab[] {
+            this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome,
             this.contextRed,
             this.contextGreen1,
@@ -513,12 +513,12 @@ namespace ContextualTabs
         private Krypton.Toolkit.KryptonTextBox textBoxSelectedContexts;
         private Krypton.Toolkit.KryptonTextBox textBoxContextTitle;
         private Krypton.Toolkit.KryptonTextBox textBoxContextName;
-        private .Ribbon.KryptonRibbon kryptonRibbon;
-        private .Ribbon.KryptonRibbonContext contextDefRed;
-        private .Ribbon.KryptonRibbonContext contextDefGreen;
-        private .Ribbon.KryptonRibbonTab tabHome;
-        private .Ribbon.KryptonRibbonTab contextRed;
-        private .Ribbon.KryptonRibbonTab contextGreen1;
+        private Krypton.Ribbon.KryptonRibbon kryptonRibbon;
+        private Krypton.Ribbon.KryptonRibbonContext contextDefRed;
+        private Krypton.Ribbon.KryptonRibbonContext contextDefGreen;
+        private Krypton.Ribbon.KryptonRibbonTab tabHome;
+        private Krypton.Ribbon.KryptonRibbonTab contextRed;
+        private Krypton.Ribbon.KryptonRibbonTab contextGreen1;
         private Krypton.Toolkit.KryptonPanel labelOffice2007Styles;
         private Krypton.Toolkit.KryptonLabel labelSelectedContexts;
         private Krypton.Toolkit.KryptonButton buttonSelectedApply;
@@ -532,7 +532,7 @@ namespace ContextualTabs
         private Krypton.Toolkit.KryptonPanel panelContextColor;
         private Krypton.Toolkit.KryptonButton buttonEditColor;
         private Krypton.Toolkit.KryptonButton buttonAddContext;
-        private .Ribbon.KryptonRibbonTab contextGreen2;
+        private Krypton.Ribbon.KryptonRibbonTab contextGreen2;
         private Krypton.Toolkit.KryptonGroup groupOffice2007Styles;
         private Krypton.Toolkit.KryptonLabel kryptonLabel2;
         private Krypton.Toolkit.KryptonManager kryptonManager;

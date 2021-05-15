@@ -27,13 +27,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonGallery Examples 201
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ribbon + Navigator + Workspace 2019", "Ribbon + Navigator + Workspace\Ribbon + Navigator + Workspace 2019.csproj", "{C248462A-97B9-4551-971C-008B19CBF221}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponentFactory.Krypton.Ribbon 2019", "..\Krypton Components\ComponentFactory.Krypton.Ribbon\ComponentFactory.Krypton.Ribbon 2019.csproj", "{E90FC375-453D-4FE4-9822-CE1DB85B6553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton.Toolkit 2019", "..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj", "{B039764F-7E61-4D4C-BC0E-0C6EBA0FA547}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponentFactory.Krypton.Toolkit 2019", "..\Krypton Components\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2019.csproj", "{96ECAECC-54F8-4AA5-8591-B443C2D9565F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton.Ribbon 2019", "..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Ribbon\Krypton.Ribbon 2019.csproj", "{BCA03023-B951-499B-A862-BC74B554042C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponentFactory.Krypton.Navigator 2019", "..\Krypton Components\ComponentFactory.Krypton.Navigator\ComponentFactory.Krypton.Navigator 2019.csproj", "{923BF38B-A38D-4683-809F-8D8ADCCC2F4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton.Workspace 2019", "..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Workspace\Krypton.Workspace 2019.csproj", "{E3EB8337-0FA6-4051-8C30-929F772FFC73}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponentFactory.Krypton.Workspace 2019", "..\Krypton Components\ComponentFactory.Krypton.Workspace\ComponentFactory.Krypton.Workspace 2019.csproj", "{49D79103-BBF8-4859-8209-3D1C81E6DABD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton.Navigator 2019", "..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Navigator\Krypton.Navigator 2019.csproj", "{42125CCB-84E3-43D0-A173-46A4A805E5AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,22 +89,22 @@ Global
 		{C248462A-97B9-4551-971C-008B19CBF221}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C248462A-97B9-4551-971C-008B19CBF221}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C248462A-97B9-4551-971C-008B19CBF221}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E90FC375-453D-4FE4-9822-CE1DB85B6553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E90FC375-453D-4FE4-9822-CE1DB85B6553}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E90FC375-453D-4FE4-9822-CE1DB85B6553}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E90FC375-453D-4FE4-9822-CE1DB85B6553}.Release|Any CPU.Build.0 = Release|Any CPU
-		{96ECAECC-54F8-4AA5-8591-B443C2D9565F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96ECAECC-54F8-4AA5-8591-B443C2D9565F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96ECAECC-54F8-4AA5-8591-B443C2D9565F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96ECAECC-54F8-4AA5-8591-B443C2D9565F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{923BF38B-A38D-4683-809F-8D8ADCCC2F4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{923BF38B-A38D-4683-809F-8D8ADCCC2F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{923BF38B-A38D-4683-809F-8D8ADCCC2F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{923BF38B-A38D-4683-809F-8D8ADCCC2F4E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{49D79103-BBF8-4859-8209-3D1C81E6DABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{49D79103-BBF8-4859-8209-3D1C81E6DABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{49D79103-BBF8-4859-8209-3D1C81E6DABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{49D79103-BBF8-4859-8209-3D1C81E6DABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B039764F-7E61-4D4C-BC0E-0C6EBA0FA547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B039764F-7E61-4D4C-BC0E-0C6EBA0FA547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B039764F-7E61-4D4C-BC0E-0C6EBA0FA547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B039764F-7E61-4D4C-BC0E-0C6EBA0FA547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCA03023-B951-499B-A862-BC74B554042C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA03023-B951-499B-A862-BC74B554042C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA03023-B951-499B-A862-BC74B554042C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA03023-B951-499B-A862-BC74B554042C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3EB8337-0FA6-4051-8C30-929F772FFC73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3EB8337-0FA6-4051-8C30-929F772FFC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3EB8337-0FA6-4051-8C30-929F772FFC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3EB8337-0FA6-4051-8C30-929F772FFC73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42125CCB-84E3-43D0-A173-46A4A805E5AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42125CCB-84E3-43D0-A173-46A4A805E5AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42125CCB-84E3-43D0-A173-46A4A805E5AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42125CCB-84E3-43D0-A173-46A4A805E5AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

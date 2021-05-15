@@ -30,9 +30,9 @@ namespace QuickAccessToolbar
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.kryptonRibbon = new .Ribbon.KryptonRibbon();
+            this.kryptonRibbon = new Krypton.Ribbon.KryptonRibbon();
             this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
-            this.tabHome = new .Ribbon.KryptonRibbonTab();
+            this.tabHome = new Krypton.Ribbon.KryptonRibbonTab();
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
             this.panelFill = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup2 = new Krypton.Toolkit.KryptonGroup();
@@ -82,7 +82,7 @@ namespace QuickAccessToolbar
             this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
             this.kryptonRibbon.RibbonAppButton.AppButtonShowRecentDocs = false;
-            this.kryptonRibbon.RibbonTabs.AddRange(new .Ribbon.KryptonRibbonTab[] {
+            this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome});
             this.kryptonRibbon.SelectedTab = this.tabHome;
             this.kryptonRibbon.Size = new System.Drawing.Size(375, 115);
@@ -341,8 +341,8 @@ namespace QuickAccessToolbar
 
         #endregion
 
-        private .Ribbon.KryptonRibbon kryptonRibbon;
-        private .Ribbon.KryptonRibbonTab tabHome;
+        private Krypton.Ribbon.KryptonRibbon kryptonRibbon;
+        private Krypton.Ribbon.KryptonRibbonTab tabHome;
         private Krypton.Toolkit.KryptonManager kryptonManager;
         private Krypton.Toolkit.KryptonPanel panelFill;
         private Krypton.Toolkit.KryptonCheckSet checkSetQATPosition;
