@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.buttonClearPages = new System.Windows.Forms.Button();
             this.buttonAddPage = new System.Windows.Forms.Button();
-            this.kryptonWorkspace = new .Workspace.KryptonWorkspace();
+            this.kryptonWorkspace = new Krypton.Workspace.KryptonWorkspace();
             this.buttonClose = new System.Windows.Forms.Button();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -86,10 +86,10 @@
             this.kryptonWorkspace.Size = new System.Drawing.Size(464, 404);
             this.kryptonWorkspace.TabIndex = 4;
             this.kryptonWorkspace.TabStop = true;
-            this.kryptonWorkspace.PagesUnmatched += new System.EventHandler<.Workspace.PagesUnmatchedEventArgs>(this.kryptonWorkspace_PagesUnmatched);
-            this.kryptonWorkspace.PageSaving += new System.EventHandler<.Workspace.PageSavingEventArgs>(this.kryptonWorkspace_PageSaving);
-            this.kryptonWorkspace.PageLoading += new System.EventHandler<.Workspace.PageLoadingEventArgs>(this.kryptonWorkspace_PageLoading);
-            this.kryptonWorkspace.RecreateLoadingPage += new System.EventHandler<.Workspace.RecreateLoadingPageEventArgs>(this.kryptonWorkspace_RecreateLoadingPage);
+            this.kryptonWorkspace.PagesUnmatched += new System.EventHandler<Krypton.Workspace.PagesUnmatchedEventArgs>(this.kryptonWorkspace_PagesUnmatched);
+            this.kryptonWorkspace.PageSaving += new System.EventHandler<Krypton.Workspace.PageSavingEventArgs>(this.kryptonWorkspace_PageSaving);
+            this.kryptonWorkspace.PageLoading += new System.EventHandler<Krypton.Workspace.PageLoadingEventArgs>(this.kryptonWorkspace_PageLoading);
+            this.kryptonWorkspace.RecreateLoadingPage += new System.EventHandler<Krypton.Workspace.RecreateLoadingPageEventArgs>(this.kryptonWorkspace_RecreateLoadingPage);
             // 
             // buttonClose
             // 
@@ -246,7 +246,7 @@
 
         private System.Windows.Forms.Button buttonClearPages;
         private System.Windows.Forms.Button buttonAddPage;
-        private .Workspace.KryptonWorkspace kryptonWorkspace;
+        private Krypton.Workspace.KryptonWorkspace kryptonWorkspace;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.ImageList imageList;
         private System.Windows.Forms.GroupBox groupBox1;

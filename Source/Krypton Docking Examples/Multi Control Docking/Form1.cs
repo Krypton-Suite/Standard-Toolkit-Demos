@@ -13,7 +13,7 @@
 using System;
 using System.Windows.Forms;
 
-using .Docking;
+using Krypton.Docking;
 using Krypton.Navigator;
 
 namespace MultiControlDocking

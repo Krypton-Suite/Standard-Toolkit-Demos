@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.kryptonDockingManager = new .Docking.KryptonDockingManager();
+            this.kryptonDockingManager = new Krypton.Docking.KryptonDockingManager();
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
             this.kryptonPanel = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonDockableNavigator = new .Docking.KryptonDockableNavigator();
+            this.kryptonDockableNavigator = new Krypton.Docking.KryptonDockableNavigator();
             this.imageListSmall = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.kryptonPanel.SuspendLayout();
@@ -88,10 +88,10 @@
 
         #endregion
 
-        private .Docking.KryptonDockingManager kryptonDockingManager;
+        private Krypton.Docking.KryptonDockingManager kryptonDockingManager;
         private Krypton.Toolkit.KryptonManager kryptonManager;
         private Krypton.Toolkit.KryptonPanel kryptonPanel;
-        private .Docking.KryptonDockableNavigator kryptonDockableNavigator;
+        private Krypton.Docking.KryptonDockableNavigator kryptonDockableNavigator;
         private System.Windows.Forms.ImageList imageListSmall;
     }
 }
