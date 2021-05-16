@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net45;net5.0-windows</TargetFrameworks>
+        <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
         <!--<TargetFramework>net5.0-windows</TargetFramework>-->
         <OutputType>WinExe</OutputType>
         <RootNamespace>ApplicationMenu</RootNamespace>
@@ -15,7 +15,7 @@
         <Content Include="Krypton.ico" />
     </ItemGroup>
     <Choose>
-        <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
+        <When Condition="$(SolutionName.Endswith('Nuget'))">
             <ItemGroup>
                 <PackageReference Include="Krypton.Toolkit.Canary.Lite" Version="6.0.2106" />
                 <PackageReference Include="Krypton.Ribbon.Canary.Lite" Version="6.0.2106" />

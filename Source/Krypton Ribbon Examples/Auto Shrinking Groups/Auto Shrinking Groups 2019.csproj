@@ -17,7 +17,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
     <Choose>
-        <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
+        <When Condition="$(SolutionName.Endswith('Nuget'))">
             <ItemGroup>
                 <PackageReference Include="Krypton.Toolkit.Canary.Lite" Version="6.0.2106" />
                 <PackageReference Include="Krypton.Ribbon.Canary.Lite" Version="6.0.2106" />

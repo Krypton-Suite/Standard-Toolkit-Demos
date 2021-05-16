@@ -33,7 +33,7 @@
     </ItemGroup>
 
     <Choose>
-        <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
+        <When Condition="$(SolutionName.Endswith('Nuget'))">
             <ItemGroup>
                 <PackageReference Include="Krypton.Toolkit.Canary.Lite" Version="6.0.2106" />
             </ItemGroup>
