@@ -24,6 +24,8 @@ namespace KryptonInputBoxExamples
         public Form1()
         {
             InitializeComponent();
+
+            _cueTypeface = new Font("Microsoft Sans Serif", 8f);
         }
 
         private void kbtnCueTypeface_Click(object sender, EventArgs e)
