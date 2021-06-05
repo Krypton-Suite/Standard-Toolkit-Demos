@@ -40,9 +40,7 @@ namespace KryptonInputBoxExamples
 
         private void kbtnShow_Click(object sender, EventArgs e)
         {
-            KryptonInputBox inputBox = new KryptonInputBox(ktxtPromptText.Text, ktxtCaptionText.Text, ktxtDefaultResponseText.Text, kcbCueTextColour.SelectedColor, _cueTypeface, ktxtCueText.Text);
-
-            inputBox.Show();
+            KryptonInputBox.Show(ktxtPromptText.Text, ktxtCaptionText.Text, ktxtDefaultResponseText.Text, ktxtCueText.Text, kcbCueTextColour.SelectedColor, _cueTypeface, kchkUsePasswordOption.Checked);
         }
     }
 }

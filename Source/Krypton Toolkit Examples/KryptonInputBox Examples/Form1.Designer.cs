@@ -44,6 +44,7 @@ namespace KryptonInputBoxExamples
             this.kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            this.kchkUsePasswordOption = new Krypton.Toolkit.KryptonCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
@@ -55,9 +56,8 @@ namespace KryptonInputBoxExamples
             this.kryptonPanel1.Controls.Add(this.kbtnShow);
             this.kryptonPanel1.Controls.Add(this.kryptonBorderEdge1);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, 174);
+            this.kryptonPanel1.Location = new System.Drawing.Point(0, 192);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonPanel1.Size = new System.Drawing.Size(490, 50);
             this.kryptonPanel1.TabIndex = 1;
             // 
@@ -72,7 +72,6 @@ namespace KryptonInputBoxExamples
             // 
             // kryptonBorderEdge1
             // 
-            this.kryptonBorderEdge1.BorderStyle = Krypton.Toolkit.PaletteBorderStyle.HeaderPrimary;
             this.kryptonBorderEdge1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonBorderEdge1.Location = new System.Drawing.Point(0, 0);
             this.kryptonBorderEdge1.Name = "kryptonBorderEdge1";
@@ -81,6 +80,7 @@ namespace KryptonInputBoxExamples
             // 
             // kryptonPanel2
             // 
+            this.kryptonPanel2.Controls.Add(this.kchkUsePasswordOption);
             this.kryptonPanel2.Controls.Add(this.kbtnCueTypeface);
             this.kryptonPanel2.Controls.Add(this.kcbCueTextColour);
             this.kryptonPanel2.Controls.Add(this.ktxtCueText);
@@ -94,7 +94,7 @@ namespace KryptonInputBoxExamples
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(490, 174);
+            this.kryptonPanel2.Size = new System.Drawing.Size(490, 192);
             this.kryptonPanel2.TabIndex = 2;
             // 
             // kbtnCueTypeface
@@ -149,7 +149,6 @@ namespace KryptonInputBoxExamples
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.LabelStyle = Krypton.Toolkit.LabelStyle.BoldControl;
             this.kryptonLabel4.Location = new System.Drawing.Point(63, 100);
             this.kryptonLabel4.Name = "kryptonLabel4";
             this.kryptonLabel4.Size = new System.Drawing.Size(65, 20);
@@ -158,7 +157,6 @@ namespace KryptonInputBoxExamples
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.LabelStyle = Krypton.Toolkit.LabelStyle.BoldControl;
             this.kryptonLabel3.Location = new System.Drawing.Point(13, 71);
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.Size = new System.Drawing.Size(115, 20);
@@ -167,7 +165,6 @@ namespace KryptonInputBoxExamples
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.LabelStyle = Krypton.Toolkit.LabelStyle.BoldControl;
             this.kryptonLabel2.Location = new System.Drawing.Point(69, 42);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(59, 20);
@@ -176,18 +173,25 @@ namespace KryptonInputBoxExamples
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.BoldControl;
             this.kryptonLabel1.Location = new System.Drawing.Point(70, 13);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(58, 20);
             this.kryptonLabel1.TabIndex = 0;
             this.kryptonLabel1.Values.Text = "Prompt:";
             // 
+            // kchkUsePasswordOption
+            // 
+            this.kchkUsePasswordOption.Location = new System.Drawing.Point(144, 162);
+            this.kchkUsePasswordOption.Name = "kchkUsePasswordOption";
+            this.kchkUsePasswordOption.Size = new System.Drawing.Size(140, 20);
+            this.kchkUsePasswordOption.TabIndex = 10;
+            this.kchkUsePasswordOption.Values.Text = "Use &Password Option";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 224);
+            this.ClientSize = new System.Drawing.Size(490, 242);
             this.Controls.Add(this.kryptonPanel2);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -222,5 +226,6 @@ namespace KryptonInputBoxExamples
         private Krypton.Toolkit.KryptonLabel kryptonLabel3;
         private Krypton.Toolkit.KryptonLabel kryptonLabel2;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private Krypton.Toolkit.KryptonCheckBox kchkUsePasswordOption;
     }
 }
