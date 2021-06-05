@@ -10,21 +10,37 @@
 // *****************************************************************************
 
 using System;
+using System.Drawing;
 using System.Windows.Forms;
+
 using Krypton.Toolkit;
 
 namespace KryptonInputBoxExamples
 {
-    public partial class Form1 : Form
+    public partial class Form1 : KryptonForm
     {
+        private Font _cueTypeface;
+
         public Form1()
         {
             InitializeComponent();
+
+            _cueTypeface = new Font("Microsoft Sans Serif", 8f);
         }
 
-        private void buttonShow_Click(object sender, EventArgs e)
+        private void kbtnCueTypeface_Click(object sender, EventArgs e)
         {
-            KryptonInputBox.Show(this, textBoxPrompt.Text, textBoxCaption.Text, textBoxDefaultResponse.Text);
+            FontDialog cueTypeface = new FontDialog();
+
+            if (cueTypeface.ShowDialog() == DialogResult.OK)
+            {
+                _cueTypeface = cueTypeface.Font;
+            }
+        }
+
+        private void kbtnShow_Click(object sender, EventArgs e)
+        {
+            KryptonInputBox.Show(ktxtPromptText.Text, ktxtCaptionText.Text, ktxtDefaultResponseText.Text, ktxtCueText.Text, kcbCueTextColour.SelectedColor, _cueTypeface, kchkUsePasswordOption.Checked);
         }
     }
 }
