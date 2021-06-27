@@ -39,6 +39,10 @@ There are 2 set of solutions in these projects:
 ## [KryptonLabel Examples](KryptonInputBox%20Examples/example.png)
 ## [KryptonLinkLabel Examples](KryptonLinkLabel%20Examples/example.png)
 ## [KryptonListBox Examples](KryptonListBox%20Examples/example.png)
+## [KryptonListView Examples](KryptonListView%20Examples/example.png)
+- If you want a standard List then use `ListBox` or `CheckedListBox`
+- If you want a Details view then use a `DataGrid`
+- This implements LargIcons / Small Icons / Tiles with and without checkboxes as allowed
 ## [KryptonMaskedTextBox Examples](KryptonMaskedTextBox%20Examples/example.png)
 ## [KryptonMessageBox Examples](KryptonMessageBox%20Examples/example.png)
 ## [KryptonMonthCalendar Examples](KryptonMonthCalendar%20Examples/example.png)

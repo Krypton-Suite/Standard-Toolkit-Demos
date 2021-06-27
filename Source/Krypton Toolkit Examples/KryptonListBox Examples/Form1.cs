@@ -42,10 +42,12 @@ namespace KryptonListBoxExamples
 
         private object CreateNewItem()
         {
-            KryptonListItem item = new KryptonListItem();
-            item.ShortText = "Item " + (_next++).ToString();
-            item.LongText = "(" + _rand.Next(Int32.MaxValue).ToString() + ")";
-            item.Image = imageList.Images[_rand.Next(imageList.Images.Count - 1)];
+            KryptonListItem item = new KryptonListItem
+            {
+                ShortText = $"Item {(_next++)}",
+                LongText = $"({_rand.Next(Int32.MaxValue)})",
+                Image = imageList.Images[_rand.Next(imageList.Images.Count - 1)]
+            };
             return item;
         }
 
