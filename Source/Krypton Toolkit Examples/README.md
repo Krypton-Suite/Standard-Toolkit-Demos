@@ -57,6 +57,7 @@ There are 2 set of solutions in these projects:
 ## [KryptonTextBox Examples](KryptonTextBox%20Examples/example.png)
 ## [KryptonTrackBar Examples](KryptonTrackBar%20Examples/example.png)
 ## [KryptonTreeView Examples](KryptonTreeView%20Examples/example.png)
+## [KryptonWebBrowser Examples](KryptonWebBrowser%20Example/example.png)
 ## [KryptonWrapLabel Examples](KryptonWrapLabel%20Examples/example.png)
 ## [MDI Application](MDI%20Application/example.png)
 ## [SystemThemedForms](SystemThemedForms/example.png)

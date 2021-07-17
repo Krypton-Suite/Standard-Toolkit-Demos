@@ -87,9 +87,8 @@ namespace RibbonToolTips
             this.kryptonRibbon1.RibbonAppButton.AppButtonToolTipTitle = "Office Button";
             this.kryptonRibbon1.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome});
-            this.kryptonRibbon1.SelectedContext = null;
             this.kryptonRibbon1.SelectedTab = this.tabHome;
-            this.kryptonRibbon1.Size = new System.Drawing.Size(408, 115);
+            this.kryptonRibbon1.Size = new System.Drawing.Size(786, 135);
             this.kryptonRibbon1.TabIndex = 0;
             // 
             // qatSave
@@ -155,22 +154,23 @@ namespace RibbonToolTips
             // cmsPaste
             // 
             this.cmsPaste.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.cmsPaste.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsPaste.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pasteToolStripMenuItem,
             this.pasteSpecialToolStripMenuItem});
             this.cmsPaste.Name = "cmsPaste";
-            this.cmsPaste.Size = new System.Drawing.Size(141, 48);
+            this.cmsPaste.Size = new System.Drawing.Size(157, 52);
             // 
             // pasteToolStripMenuItem
             // 
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
             this.pasteToolStripMenuItem.Text = "Paste";
             // 
             // pasteSpecialToolStripMenuItem
             // 
             this.pasteSpecialToolStripMenuItem.Name = "pasteSpecialToolStripMenuItem";
-            this.pasteSpecialToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.pasteSpecialToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
             this.pasteSpecialToolStripMenuItem.Text = "Paste Special";
             // 
             // kryptonRibbonGroupTriple2
@@ -276,15 +276,16 @@ namespace RibbonToolTips
             // cmsBusinessCards
             // 
             this.cmsBusinessCards.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.cmsBusinessCards.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsBusinessCards.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.otherBusinessCardsToolStripMenuItem});
             this.cmsBusinessCards.Name = "cmsBusinessCards";
-            this.cmsBusinessCards.Size = new System.Drawing.Size(194, 26);
+            this.cmsBusinessCards.Size = new System.Drawing.Size(219, 28);
             // 
             // otherBusinessCardsToolStripMenuItem
             // 
             this.otherBusinessCardsToolStripMenuItem.Name = "otherBusinessCardsToolStripMenuItem";
-            this.otherBusinessCardsToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.otherBusinessCardsToolStripMenuItem.Size = new System.Drawing.Size(218, 24);
             this.otherBusinessCardsToolStripMenuItem.Text = "Other Business Cards...";
             // 
             // kryptonRibbonGroupButton8
@@ -312,31 +313,34 @@ namespace RibbonToolTips
             // cmsSignatures
             // 
             this.cmsSignatures.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.cmsSignatures.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsSignatures.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.signaturesToolStripMenuItem});
             this.cmsSignatures.Name = "cmsSignatures";
-            this.cmsSignatures.Size = new System.Drawing.Size(139, 26);
+            this.cmsSignatures.Size = new System.Drawing.Size(152, 28);
             // 
             // signaturesToolStripMenuItem
             // 
             this.signaturesToolStripMenuItem.Name = "signaturesToolStripMenuItem";
-            this.signaturesToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.signaturesToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
             this.signaturesToolStripMenuItem.Text = "Signatures...";
             // 
             // kryptonPanel
             // 
             this.kryptonPanel.Controls.Add(this.kryptonLabel);
             this.kryptonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel.Location = new System.Drawing.Point(0, 115);
+            this.kryptonPanel.Location = new System.Drawing.Point(0, 135);
+            this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel.Name = "kryptonPanel";
-            this.kryptonPanel.Size = new System.Drawing.Size(408, 179);
+            this.kryptonPanel.Size = new System.Drawing.Size(786, 227);
             this.kryptonPanel.TabIndex = 1;
             // 
             // kryptonLabel
             // 
-            this.kryptonLabel.Location = new System.Drawing.Point(12, 14);
+            this.kryptonLabel.Location = new System.Drawing.Point(16, 17);
+            this.kryptonLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel.Name = "kryptonLabel";
-            this.kryptonLabel.Size = new System.Drawing.Size(390, 132);
+            this.kryptonLabel.Size = new System.Drawing.Size(486, 164);
             this.kryptonLabel.TabIndex = 0;
             this.kryptonLabel.Values.Text = resources.GetString("kryptonLabel.Values.Text");
             // 
@@ -346,12 +350,13 @@ namespace RibbonToolTips
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(408, 294);
+            this.ClientSize = new System.Drawing.Size(786, 362);
             this.Controls.Add(this.kryptonPanel);
             this.Controls.Add(this.kryptonRibbon1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Ribbon ToolTips";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).EndInit();

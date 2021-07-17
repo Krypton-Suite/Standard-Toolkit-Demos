@@ -10,7 +10,6 @@
 // *****************************************************************************
 
 using System;
-using System.Security;
 using System.Resources;
 using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -26,11 +25,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCompany("Component Factory")]
 [assembly: AssemblyDescription("KryptonRichTextBox Examples")]
 [assembly: AssemblyConfiguration("Production")]
-[assembly: NeutralResourcesLanguage("en-US")]
+[assembly: NeutralResourcesLanguage("en")]
 [assembly: StringFreezing]
 [assembly: ComVisible(false)]
 [assembly: CLSCompliant(true)]
-[assembly: AllowPartiallyTrustedCallers()]
 [assembly: Dependency("System", LoadHint.Always)]
 [assembly: Dependency("System.Drawing", LoadHint.Always)]
 [assembly: Dependency("System.Windows.Forms", LoadHint.Always)]
