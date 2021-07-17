@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>WinExe</OutputType>
     <RootNamespace>KryptonTreeViewExamples</RootNamespace>
     <AssemblyName>Krypton TreeView Examples</AssemblyName>
@@ -24,6 +23,13 @@
         <Otherwise>
             <ItemGroup>
                 <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
+            </ItemGroup>
+            <ItemGroup>
+            <Reference Include="System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Condition="$(TargetFramework.StartsWith('net4'))">
+                <SpecificVersion>True</SpecificVersion>
+                <Version>4.0.0.0</Version>
+                <TreatAsUsed>True</TreatAsUsed>
+            </Reference>
             </ItemGroup>
         </Otherwise>
     </Choose>

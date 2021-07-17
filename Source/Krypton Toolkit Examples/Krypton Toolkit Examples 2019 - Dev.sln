@@ -115,6 +115,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test MessageBox Clipping 20
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test Text Clipping 2019", "Test Text Clipping\Test Text Clipping 2019.csproj", "{0AAC58AA-1697-4AB9-878F-63EA1187A9CB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonWebBrowser Example", "KryptonWebBrowser Example\KryptonWebBrowser Example.csproj", "{4F8B9315-2C38-4573-9423-0A1BE40D89C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A29D55C7-11C8-4FBE-8F12-B5CF2C62702F}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonListView Examples 2019", "KryptonListView Examples 2019\KryptonListView Examples 2019.csproj", "{E49C593A-EDD6-4969-9374-808CBA09BE3F}"
 EndProject
 Global
@@ -347,6 +354,10 @@ Global
 		{0AAC58AA-1697-4AB9-878F-63EA1187A9CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AAC58AA-1697-4AB9-878F-63EA1187A9CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AAC58AA-1697-4AB9-878F-63EA1187A9CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F8B9315-2C38-4573-9423-0A1BE40D89C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F8B9315-2C38-4573-9423-0A1BE40D89C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F8B9315-2C38-4573-9423-0A1BE40D89C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F8B9315-2C38-4573-9423-0A1BE40D89C7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E49C593A-EDD6-4969-9374-808CBA09BE3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E49C593A-EDD6-4969-9374-808CBA09BE3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E49C593A-EDD6-4969-9374-808CBA09BE3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
