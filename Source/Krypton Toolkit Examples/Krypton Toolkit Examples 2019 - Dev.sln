@@ -119,10 +119,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonWebBrowser Example",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A29D55C7-11C8-4FBE-8F12-B5CF2C62702F}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonListView Examples 2019", "KryptonListView Examples 2019\KryptonListView Examples 2019.csproj", "{E49C593A-EDD6-4969-9374-808CBA09BE3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonListView Examples 2019", "KryptonListView Examples 2019\KryptonListView Examples 2019.csproj", "{E49C593A-EDD6-4969-9374-808CBA09BE3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

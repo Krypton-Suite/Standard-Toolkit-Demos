@@ -507,7 +507,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.pageGlobalPalettes.Controls.Add(this.radioOffice2007Silver);
             this.pageGlobalPalettes.Controls.Add(this.radioOffice2007Blue);
             this.pageGlobalPalettes.Flags = 65534;
-            this.pageGlobalPalettes.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageGlobalPalettes.ImageSmall")));
+            this.pageGlobalPalettes.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageGlobalPalettes.ImageSmall")));
             this.pageGlobalPalettes.LastVisibleSet = true;
             this.pageGlobalPalettes.MinimumSize = new System.Drawing.Size(145, 50);
             this.pageGlobalPalettes.Name = "pageGlobalPalettes";
@@ -620,7 +620,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonDisplayMode.Controls.Add(this.buttonCheckButtons);
             this.kryptonDisplayMode.Controls.Add(this.buttonTabs);
             this.kryptonDisplayMode.Flags = 65534;
-            this.kryptonDisplayMode.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonDisplayMode.ImageSmall")));
+            this.kryptonDisplayMode.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonDisplayMode.ImageSmall")));
             this.kryptonDisplayMode.LastVisibleSet = true;
             this.kryptonDisplayMode.MinimumSize = new System.Drawing.Size(145, 50);
             this.kryptonDisplayMode.Name = "kryptonDisplayMode";

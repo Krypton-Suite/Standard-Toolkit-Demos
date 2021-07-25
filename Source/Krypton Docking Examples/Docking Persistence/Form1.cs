@@ -11,6 +11,7 @@
 // *****************************************************************************
 
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 using Krypton.Docking;
@@ -61,7 +62,7 @@ namespace DockingPersistence
                 TextDescription = name + _count.ToString()
             };
             p.UniqueName = p.Text;
-            p.ImageSmall = imageListSmall.Images[image];
+            p.ImageSmall = (Bitmap)imageListSmall.Images[image];
 
             // Add the control for display inside the page
             content.Dock = DockStyle.Fill;

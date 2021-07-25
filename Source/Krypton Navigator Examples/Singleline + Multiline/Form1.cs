@@ -274,7 +274,7 @@ namespace SinglelinePlusMultiline
         {
             KryptonPage newPage = new KryptonPage();
             newPage.Text = "Page " + _newPage.ToString();
-            newPage.ImageSmall = imageList1.Images[_newPage++ % imageList1.Images.Count];
+            newPage.ImageSmall = (Bitmap)imageList1.Images[_newPage++ % imageList1.Images.Count];
             kryptonNavigator1.Pages.Add(newPage);
         }
 

@@ -11,6 +11,7 @@
 // *****************************************************************************
 
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 using Krypton.Docking;
@@ -38,7 +39,7 @@ namespace DockingFlags
             p.TextTitle = p.Text;
             p.TextDescription = p.Text;
             p.UniqueName = p.Text;
-            p.ImageSmall = imageListSmall.Images[0];
+            p.ImageSmall = (Bitmap)imageListSmall.Images[0];
 
             // Add the control for display inside the page
             ContentDocument contentDoc = new ContentDocument
@@ -61,7 +62,7 @@ namespace DockingFlags
             p.TextTitle = p.Text;
             p.TextDescription = p.Text;
             p.UniqueName = p.Text;
-            p.ImageSmall = imageListSmall.Images[1];
+            p.ImageSmall = (Bitmap)imageListSmall.Images[1];
 
             // Add the control for display inside the page
             ContentFlags contentFlags = new ContentFlags(p)

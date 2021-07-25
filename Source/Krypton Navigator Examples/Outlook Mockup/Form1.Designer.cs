@@ -258,7 +258,7 @@ namespace OutlookMockup
             // 
             // newToolStripMenuItem
             // 
-            this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
+            this.newToolStripMenuItem.Image = ((System.Drawing.Bitmap)(resources.GetObject("newToolStripMenuItem.Image")));
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
@@ -267,7 +267,7 @@ namespace OutlookMockup
             // 
             // openToolStripMenuItem
             // 
-            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
+            this.openToolStripMenuItem.Image = ((System.Drawing.Bitmap)(resources.GetObject("openToolStripMenuItem.Image")));
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
@@ -281,7 +281,7 @@ namespace OutlookMockup
             // 
             // saveToolStripMenuItem
             // 
-            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
+            this.saveToolStripMenuItem.Image = ((System.Drawing.Bitmap)(resources.GetObject("saveToolStripMenuItem.Image")));
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
@@ -301,7 +301,7 @@ namespace OutlookMockup
             // 
             // printToolStripMenuItem
             // 
-            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
+            this.printToolStripMenuItem.Image = ((System.Drawing.Bitmap)(resources.GetObject("printToolStripMenuItem.Image")));
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
@@ -310,7 +310,7 @@ namespace OutlookMockup
             // 
             // printPreviewToolStripMenuItem
             // 
-            this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
+            this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Bitmap)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
             this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
@@ -363,7 +363,7 @@ namespace OutlookMockup
             // 
             // cutToolStripMenuItem
             // 
-            this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
+            this.cutToolStripMenuItem.Image = ((System.Drawing.Bitmap)(resources.GetObject("cutToolStripMenuItem.Image")));
             this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
@@ -372,7 +372,7 @@ namespace OutlookMockup
             // 
             // copyToolStripMenuItem
             // 
-            this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
+            this.copyToolStripMenuItem.Image = ((System.Drawing.Bitmap)(resources.GetObject("copyToolStripMenuItem.Image")));
             this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
@@ -381,7 +381,7 @@ namespace OutlookMockup
             // 
             // pasteToolStripMenuItem
             // 
-            this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
+            this.pasteToolStripMenuItem.Image = ((System.Drawing.Bitmap)(resources.GetObject("pasteToolStripMenuItem.Image")));
             this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
@@ -485,7 +485,7 @@ namespace OutlookMockup
             // newToolStripButton
             // 
             this.newToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.newToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripButton.Image")));
+            this.newToolStripButton.Image = ((System.Drawing.Bitmap)(resources.GetObject("newToolStripButton.Image")));
             this.newToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripButton.Name = "newToolStripButton";
             this.newToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -494,7 +494,7 @@ namespace OutlookMockup
             // openToolStripButton
             // 
             this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
+            this.openToolStripButton.Image = ((System.Drawing.Bitmap)(resources.GetObject("openToolStripButton.Image")));
             this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripButton.Name = "openToolStripButton";
             this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -503,7 +503,7 @@ namespace OutlookMockup
             // saveToolStripButton
             // 
             this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
+            this.saveToolStripButton.Image = ((System.Drawing.Bitmap)(resources.GetObject("saveToolStripButton.Image")));
             this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripButton.Name = "saveToolStripButton";
             this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -512,7 +512,7 @@ namespace OutlookMockup
             // printToolStripButton
             // 
             this.printToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.printToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripButton.Image")));
+            this.printToolStripButton.Image = ((System.Drawing.Bitmap)(resources.GetObject("printToolStripButton.Image")));
             this.printToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripButton.Name = "printToolStripButton";
             this.printToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -526,7 +526,7 @@ namespace OutlookMockup
             // cutToolStripButton
             // 
             this.cutToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cutToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripButton.Image")));
+            this.cutToolStripButton.Image = ((System.Drawing.Bitmap)(resources.GetObject("cutToolStripButton.Image")));
             this.cutToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripButton.Name = "cutToolStripButton";
             this.cutToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -535,7 +535,7 @@ namespace OutlookMockup
             // copyToolStripButton
             // 
             this.copyToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.copyToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripButton.Image")));
+            this.copyToolStripButton.Image = ((System.Drawing.Bitmap)(resources.GetObject("copyToolStripButton.Image")));
             this.copyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripButton.Name = "copyToolStripButton";
             this.copyToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -544,7 +544,7 @@ namespace OutlookMockup
             // pasteToolStripButton
             // 
             this.pasteToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.pasteToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripButton.Image")));
+            this.pasteToolStripButton.Image = ((System.Drawing.Bitmap)(resources.GetObject("pasteToolStripButton.Image")));
             this.pasteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripButton.Name = "pasteToolStripButton";
             this.pasteToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -558,7 +558,7 @@ namespace OutlookMockup
             // helpToolStripButton
             // 
             this.helpToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.helpToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripButton.Image")));
+            this.helpToolStripButton.Image = ((System.Drawing.Bitmap)(resources.GetObject("helpToolStripButton.Image")));
             this.helpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.helpToolStripButton.Name = "helpToolStripButton";
             this.helpToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -650,9 +650,9 @@ namespace OutlookMockup
             this.kryptonPageMail.Controls.Add(this.panelFavoriteSep);
             this.kryptonPageMail.Controls.Add(this.kryptonHeaderFavorites);
             this.kryptonPageMail.Flags = 65534;
-            this.kryptonPageMail.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPageMail.ImageLarge")));
-            this.kryptonPageMail.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPageMail.ImageMedium")));
-            this.kryptonPageMail.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPageMail.ImageSmall")));
+            this.kryptonPageMail.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPageMail.ImageLarge")));
+            this.kryptonPageMail.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPageMail.ImageMedium")));
+            this.kryptonPageMail.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPageMail.ImageSmall")));
             this.kryptonPageMail.LastVisibleSet = true;
             this.kryptonPageMail.MinimumSize = new System.Drawing.Size(180, 230);
             this.kryptonPageMail.Name = "kryptonPageMail";
@@ -786,9 +786,9 @@ namespace OutlookMockup
             this.kryptonPageCalendar.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPageCalendar.Controls.Add(this.monthCalendar1);
             this.kryptonPageCalendar.Flags = 65534;
-            this.kryptonPageCalendar.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPageCalendar.ImageLarge")));
-            this.kryptonPageCalendar.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPageCalendar.ImageMedium")));
-            this.kryptonPageCalendar.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPageCalendar.ImageSmall")));
+            this.kryptonPageCalendar.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPageCalendar.ImageLarge")));
+            this.kryptonPageCalendar.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPageCalendar.ImageMedium")));
+            this.kryptonPageCalendar.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPageCalendar.ImageSmall")));
             this.kryptonPageCalendar.LastVisibleSet = true;
             this.kryptonPageCalendar.MinimumSize = new System.Drawing.Size(190, 155);
             this.kryptonPageCalendar.Name = "kryptonPageCalendar";
@@ -814,9 +814,9 @@ namespace OutlookMockup
             this.kryptonPageNotes.Controls.Add(this.radioFamily);
             this.kryptonPageNotes.Controls.Add(this.radioProject);
             this.kryptonPageNotes.Flags = 65534;
-            this.kryptonPageNotes.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPageNotes.ImageLarge")));
-            this.kryptonPageNotes.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPageNotes.ImageMedium")));
-            this.kryptonPageNotes.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPageNotes.ImageSmall")));
+            this.kryptonPageNotes.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPageNotes.ImageLarge")));
+            this.kryptonPageNotes.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPageNotes.ImageMedium")));
+            this.kryptonPageNotes.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPageNotes.ImageSmall")));
             this.kryptonPageNotes.LastVisibleSet = true;
             this.kryptonPageNotes.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageNotes.Name = "kryptonPageNotes";
@@ -898,8 +898,8 @@ namespace OutlookMockup
             this.kryptonPageMailDetails.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPageMailDetails.Controls.Add(this.kryptonDataGridView1);
             this.kryptonPageMailDetails.Flags = 65534;
-            this.kryptonPageMailDetails.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPageMailDetails.ImageLarge")));
-            this.kryptonPageMailDetails.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPageMailDetails.ImageMedium")));
+            this.kryptonPageMailDetails.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPageMailDetails.ImageLarge")));
+            this.kryptonPageMailDetails.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPageMailDetails.ImageMedium")));
             this.kryptonPageMailDetails.LastVisibleSet = true;
             this.kryptonPageMailDetails.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageMailDetails.Name = "kryptonPageMailDetails";
@@ -978,8 +978,8 @@ namespace OutlookMockup
             this.kryptonPageCalendarDetails.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPageCalendarDetails.Controls.Add(this.textBox1);
             this.kryptonPageCalendarDetails.Flags = 65534;
-            this.kryptonPageCalendarDetails.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPageCalendarDetails.ImageLarge")));
-            this.kryptonPageCalendarDetails.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPageCalendarDetails.ImageMedium")));
+            this.kryptonPageCalendarDetails.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPageCalendarDetails.ImageLarge")));
+            this.kryptonPageCalendarDetails.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPageCalendarDetails.ImageMedium")));
             this.kryptonPageCalendarDetails.LastVisibleSet = true;
             this.kryptonPageCalendarDetails.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageCalendarDetails.Name = "kryptonPageCalendarDetails";
@@ -1008,8 +1008,8 @@ namespace OutlookMockup
             this.kryptonPageNotesDetails.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPageNotesDetails.Controls.Add(this.listViewNotes);
             this.kryptonPageNotesDetails.Flags = 65534;
-            this.kryptonPageNotesDetails.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPageNotesDetails.ImageLarge")));
-            this.kryptonPageNotesDetails.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPageNotesDetails.ImageMedium")));
+            this.kryptonPageNotesDetails.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPageNotesDetails.ImageLarge")));
+            this.kryptonPageNotesDetails.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPageNotesDetails.ImageMedium")));
             this.kryptonPageNotesDetails.LastVisibleSet = true;
             this.kryptonPageNotesDetails.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageNotesDetails.Name = "kryptonPageNotesDetails";

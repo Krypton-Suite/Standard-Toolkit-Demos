@@ -102,7 +102,7 @@ namespace AdvancedPageDragAndDrop
             page.Text = title;
             page.TextTitle = title + " Title";
             page.TextDescription = title + " Description";
-            page.ImageSmall = imageList.Images[imageIndex];
+            page.ImageSmall = (Bitmap)imageList.Images[imageIndex];
             page.Tag = imageIndex.ToString();
 
             // Create a rich text box with some sample text inside
