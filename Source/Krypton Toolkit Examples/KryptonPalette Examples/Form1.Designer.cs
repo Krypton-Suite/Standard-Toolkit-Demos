@@ -1078,6 +1078,7 @@ namespace KryptonPaletteExamples
             // 
             // kryptonPaletteOffice2010Blue
             // 
+            this.kryptonPaletteOffice2010Blue.BasePaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             // 
             // kryptonPaletteOffice2010Silver
             // 
