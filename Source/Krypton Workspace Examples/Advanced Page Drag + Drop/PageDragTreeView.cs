@@ -254,7 +254,7 @@ namespace AdvancedPageDragAndDrop
                 _dragPage.Text = _dragNode.Text;
                 _dragPage.TextTitle = _dragNode.Text + " Title";
                 _dragPage.TextDescription = _dragNode.Text + " Description";
-                _dragPage.ImageSmall = ImageList.Images[int.Parse((string)_dragNode.Tag)];
+                _dragPage.ImageSmall = (Bitmap)ImageList.Images[int.Parse((string)_dragNode.Tag)];
                 _dragPage.Tag = _dragNode.Tag;
 
                 // Create a rich text box with some sample text inside

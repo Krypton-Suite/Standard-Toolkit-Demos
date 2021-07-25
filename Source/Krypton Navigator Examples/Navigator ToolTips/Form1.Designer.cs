@@ -184,9 +184,9 @@ namespace NavigatorToolTips
             // 
             this.kryptonPage1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage1.Flags = 65534;
-            this.kryptonPage1.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPage1.ImageLarge")));
-            this.kryptonPage1.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPage1.ImageMedium")));
-            this.kryptonPage1.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPage1.ImageSmall")));
+            this.kryptonPage1.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage1.ImageLarge")));
+            this.kryptonPage1.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage1.ImageMedium")));
+            this.kryptonPage1.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage1.ImageSmall")));
             this.kryptonPage1.LastVisibleSet = true;
             this.kryptonPage1.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage1.Name = "kryptonPage1";
@@ -195,7 +195,7 @@ namespace NavigatorToolTips
             this.kryptonPage1.TextDescription = "Description of page 1";
             this.kryptonPage1.TextTitle = "Page Title 1";
             this.kryptonPage1.ToolTipBody = "This is a long description of \r\npage 1 which covers several\r\nlines of text.";
-            this.kryptonPage1.ToolTipImage = ((System.Drawing.Image)(resources.GetObject("kryptonPage1.ToolTipImage")));
+            this.kryptonPage1.ToolTipImage = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage1.ToolTipImage")));
             this.kryptonPage1.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonPage1.ToolTipTitle = "Page 1 SuperTip";
             this.kryptonPage1.UniqueName = "A2A9C435C1E1424FA2A9C435C1E1424F";
@@ -204,9 +204,9 @@ namespace NavigatorToolTips
             // 
             this.kryptonPage2.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage2.Flags = 65534;
-            this.kryptonPage2.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPage2.ImageLarge")));
-            this.kryptonPage2.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPage2.ImageMedium")));
-            this.kryptonPage2.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPage2.ImageSmall")));
+            this.kryptonPage2.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage2.ImageLarge")));
+            this.kryptonPage2.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage2.ImageMedium")));
+            this.kryptonPage2.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage2.ImageSmall")));
             this.kryptonPage2.LastVisibleSet = true;
             this.kryptonPage2.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage2.Name = "kryptonPage2";
@@ -215,7 +215,7 @@ namespace NavigatorToolTips
             this.kryptonPage2.TextDescription = "A description of page 2";
             this.kryptonPage2.TextTitle = "Page Title 2";
             this.kryptonPage2.ToolTipBody = "Information about the second page\r\nalso covers more than a single line\r\nof text.";
-            this.kryptonPage2.ToolTipImage = ((System.Drawing.Image)(resources.GetObject("kryptonPage2.ToolTipImage")));
+            this.kryptonPage2.ToolTipImage = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage2.ToolTipImage")));
             this.kryptonPage2.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonPage2.ToolTipTitle = "Page 2 SuperTip";
             this.kryptonPage2.UniqueName = "9A45A535BEE6487F9A45A535BEE6487F";
@@ -224,9 +224,9 @@ namespace NavigatorToolTips
             // 
             this.kryptonPage3.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage3.Flags = 65534;
-            this.kryptonPage3.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPage3.ImageLarge")));
-            this.kryptonPage3.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPage3.ImageMedium")));
-            this.kryptonPage3.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPage3.ImageSmall")));
+            this.kryptonPage3.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage3.ImageLarge")));
+            this.kryptonPage3.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage3.ImageMedium")));
+            this.kryptonPage3.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage3.ImageSmall")));
             this.kryptonPage3.LastVisibleSet = true;
             this.kryptonPage3.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage3.Name = "kryptonPage3";
@@ -241,9 +241,9 @@ namespace NavigatorToolTips
             // 
             this.kryptonPage4.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage4.Flags = 65534;
-            this.kryptonPage4.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPage4.ImageLarge")));
-            this.kryptonPage4.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPage4.ImageMedium")));
-            this.kryptonPage4.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPage4.ImageSmall")));
+            this.kryptonPage4.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage4.ImageLarge")));
+            this.kryptonPage4.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage4.ImageMedium")));
+            this.kryptonPage4.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage4.ImageSmall")));
             this.kryptonPage4.LastVisibleSet = true;
             this.kryptonPage4.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage4.Name = "kryptonPage4";

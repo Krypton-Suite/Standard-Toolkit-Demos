@@ -11,6 +11,7 @@
 // *****************************************************************************
 
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 using Krypton.Docking;
@@ -40,7 +41,7 @@ namespace MultiControlDocking
                 Text = name + _count.ToString(),
                 TextTitle = name + _count.ToString(),
                 TextDescription = name + _count.ToString(),
-                ImageSmall = imageListSmall.Images[image]
+                ImageSmall = (Bitmap)imageListSmall.Images[image]
             };
 
             // Add the control for display inside the page

@@ -4,10 +4,11 @@
 //  The software and associated documentation supplied hereunder are the 
 //  proprietary information of Crownwood Software Ltd, Bracknell, 
 //  Berkshire, England and are supplied subject to licence terms.
+//  Version 4.5.0.0  www.ComponentFactory.com
+//  BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
 // 
-// BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
-//  Created by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2018 - 2020. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  Version 5.550.0  www.ComponentFactory.com
+//  Created by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2021. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
+// 
 // *****************************************************************************
 
 
@@ -16,7 +17,6 @@ using System.Reflection;
 using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using System.Security;
 
 [assembly: AssemblyVersion("5.500.6011.0")]
 [assembly: AssemblyFileVersion("5.500.6011.0")]
@@ -32,7 +32,6 @@ using System.Security;
 [assembly: StringFreezing]
 [assembly: ComVisible(false)]
 [assembly: CLSCompliant(true)]
-[assembly: AllowPartiallyTrustedCallers()]
 [assembly: Dependency("System", LoadHint.Always)]
 [assembly: Dependency("System.Drawing", LoadHint.Always)]
 [assembly: Dependency("System.Windows.Forms", LoadHint.Always)]

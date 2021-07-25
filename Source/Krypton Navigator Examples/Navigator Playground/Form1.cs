@@ -52,7 +52,7 @@ namespace NavigatorPlayground
             newPage.Text = "Page " + _count.ToString();
             newPage.TextTitle = "Page " + _count.ToString() + " Title";
             newPage.TextDescription = "Page " + _count.ToString() + " Description";
-            newPage.ImageSmall = imageList1.Images[_count % imageList1.Images.Count];
+            newPage.ImageSmall = (Bitmap)imageList1.Images[_count % imageList1.Images.Count];
             _count++;
 
             // Append to end of the pages collection

@@ -154,7 +154,7 @@ namespace WorkspacePersistence
             page.Text = "P" + pageNumber;
             page.TextTitle = "P" + pageNumber + " Title";
             page.TextDescription = "P" + pageNumber + " Description";
-            page.ImageSmall = imageList.Images[_count % imageList.Images.Count];
+            page.ImageSmall = (Bitmap)imageList.Images[_count % imageList.Images.Count];
             page.MinimumSize = new Size(200, 250);
 
             // Create a rich text box with some sample text inside

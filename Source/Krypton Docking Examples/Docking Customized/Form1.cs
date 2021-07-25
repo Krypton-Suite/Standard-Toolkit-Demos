@@ -65,7 +65,7 @@ namespace DockingCustomized
                 Text = name + _count.ToString(),
                 TextTitle = name + _count.ToString(),
                 TextDescription = name + _count.ToString(),
-                ImageSmall = imageListSmall.Images[image]
+                ImageSmall = (Bitmap)imageListSmall.Images[image]
             };
 
             // Add the control for display inside the page

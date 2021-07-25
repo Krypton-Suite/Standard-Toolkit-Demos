@@ -3,9 +3,6 @@
 //  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2021 - 2021. All rights reserved.
 // *****************************************************************************
 
-using System.Runtime;
-using System.Windows.Forms;
-
 using Krypton.Toolkit;
 
 namespace KryptonWebBrowser_Example
