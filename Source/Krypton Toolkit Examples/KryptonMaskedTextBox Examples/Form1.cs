@@ -10,15 +10,16 @@
 // *****************************************************************************
 
 using System;
-using System.Drawing;
-using System.Windows.Forms;
 using System.ComponentModel;
+using System.Drawing;
 using System.Globalization;
+using System.Windows.Forms;
+
 using Krypton.Toolkit;
 
 namespace KryptonMaskedTextBoxExamples
 {
-    public partial class Form1 : Form
+    public partial class Form1 : KryptonForm
     {
         public Form1()
         {
@@ -245,7 +246,7 @@ namespace KryptonMaskedTextBoxExamples
             get { return _maskedTextBox.ShortcutsEnabled; }
             set { _maskedTextBox.ShortcutsEnabled = value; }
         }
-        
+
         [Category("Behavior")]
         [Description("Indicates the character to display for password input for single-line edit controls.")]
         public char PasswordChar

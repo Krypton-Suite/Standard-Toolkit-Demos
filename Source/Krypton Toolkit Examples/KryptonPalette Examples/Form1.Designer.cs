@@ -875,7 +875,6 @@ namespace KryptonPaletteExamples
             // kryptonPaletteOffice2003
             // 
             this.kryptonPaletteOffice2003.BasePaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
-            this.kryptonPaletteOffice2003.CustomisedKryptonPaletteFilePath = null;
             // 
             // kryptonManager
             // 
@@ -884,7 +883,6 @@ namespace KryptonPaletteExamples
             // kryptonPaletteOffice2007Blue
             // 
             this.kryptonPaletteOffice2007Blue.BasePaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.kryptonPaletteOffice2007Blue.CustomisedKryptonPaletteFilePath = null;
             // 
             // kryptonPaletteCustom
             // 
@@ -960,7 +958,6 @@ namespace KryptonPaletteExamples
             this.kryptonPaletteCustom.ControlStyles.ControlCommon.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonPaletteCustom.CustomisedKryptonPaletteFilePath = null;
             this.kryptonPaletteCustom.HeaderGroup.StateCommon.OverlayHeaders = Krypton.Toolkit.InheritBool.False;
             this.kryptonPaletteCustom.HeaderGroup.StateCommon.PrimaryHeaderPadding = new System.Windows.Forms.Padding(3);
             this.kryptonPaletteCustom.HeaderGroup.StateCommon.SecondaryHeaderPadding = new System.Windows.Forms.Padding(3);
@@ -1058,46 +1055,38 @@ namespace KryptonPaletteExamples
             // kryptonPaletteSystem
             // 
             this.kryptonPaletteSystem.BasePaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonPaletteSystem.CustomisedKryptonPaletteFilePath = null;
             // 
             // kryptonPaletteOffice2007Silver
             // 
             this.kryptonPaletteOffice2007Silver.BasePaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
-            this.kryptonPaletteOffice2007Silver.CustomisedKryptonPaletteFilePath = null;
             // 
             // kryptonPaletteOffice2007Black
             // 
             this.kryptonPaletteOffice2007Black.BasePaletteMode = Krypton.Toolkit.PaletteMode.Office2007Black;
-            this.kryptonPaletteOffice2007Black.CustomisedKryptonPaletteFilePath = null;
             // 
             // kryptonPaletteSparkleBlue
             // 
             this.kryptonPaletteSparkleBlue.BasePaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
-            this.kryptonPaletteSparkleBlue.CustomisedKryptonPaletteFilePath = null;
             // 
             // kryptonPaletteSparklePurple
             // 
             this.kryptonPaletteSparklePurple.BasePaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
-            this.kryptonPaletteSparklePurple.CustomisedKryptonPaletteFilePath = null;
             // 
             // kryptonPaletteSparkleOrange
             // 
             this.kryptonPaletteSparkleOrange.BasePaletteMode = Krypton.Toolkit.PaletteMode.SparkleOrange;
-            this.kryptonPaletteSparkleOrange.CustomisedKryptonPaletteFilePath = null;
             // 
             // kryptonPaletteOffice2010Blue
             // 
-            this.kryptonPaletteOffice2010Blue.CustomisedKryptonPaletteFilePath = null;
+            this.kryptonPaletteOffice2010Blue.BasePaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             // 
             // kryptonPaletteOffice2010Silver
             // 
             this.kryptonPaletteOffice2010Silver.BasePaletteMode = Krypton.Toolkit.PaletteMode.Office2010Silver;
-            this.kryptonPaletteOffice2010Silver.CustomisedKryptonPaletteFilePath = null;
             // 
             // kryptonPaletteOffice2010Black
             // 
             this.kryptonPaletteOffice2010Black.BasePaletteMode = Krypton.Toolkit.PaletteMode.Office2010Black;
-            this.kryptonPaletteOffice2010Black.CustomisedKryptonPaletteFilePath = null;
             // 
             // btnImportCustomPalette
             // 
