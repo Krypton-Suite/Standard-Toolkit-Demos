@@ -6,8 +6,9 @@
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>fb130ee8-3629-4d44-a7c4-fbcb55c59d8d</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>WixInstaller</OutputName>
+    <OutputName>Samples.v6.0.2108.Net48</OutputName>
     <OutputType>Package</OutputType>
+    <Name>WixInstaller.net48</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
@@ -28,7 +29,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="BasePath48.wxs" />
-    <None Include="BasePath50.wxs" />
     <Compile Include="CheckFor.Net.wxs" />
     <Compile Include="KryptonToolkitDemos.wxs" />
     <Compile Include="Product.wxs" />

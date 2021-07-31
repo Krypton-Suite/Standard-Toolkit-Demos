@@ -3,12 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31507.150
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "WixInstaller", "WixInstaller\WixInstaller.wixproj", "{FB130EE8-3629-4D44-A7C4-FBCB55C59D8D}"
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "WixInstaller.net48", "WixInstaller.net48\WixInstaller.net48.wixproj", "{FB130EE8-3629-4D44-A7C4-FBCB55C59D8D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C3079C96-78BB-4281-8946-956A6D34CDF3}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "WixInstaller.net50", "WixInstaller.net50\WixInstaller.net50.wixproj", "{52644353-9421-4C9A-8333-6BCC36B7587B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{FB130EE8-3629-4D44-A7C4-FBCB55C59D8D}.Debug|x86.Build.0 = Debug|x86
 		{FB130EE8-3629-4D44-A7C4-FBCB55C59D8D}.Release|x86.ActiveCfg = Release|x86
 		{FB130EE8-3629-4D44-A7C4-FBCB55C59D8D}.Release|x86.Build.0 = Release|x86
+		{52644353-9421-4C9A-8333-6BCC36B7587B}.Debug|x86.ActiveCfg = Debug|x86
+		{52644353-9421-4C9A-8333-6BCC36B7587B}.Debug|x86.Build.0 = Debug|x86
+		{52644353-9421-4C9A-8333-6BCC36B7587B}.Release|x86.ActiveCfg = Release|x86
+		{52644353-9421-4C9A-8333-6BCC36B7587B}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

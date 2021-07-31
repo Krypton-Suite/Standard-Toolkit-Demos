@@ -351,3 +351,5 @@ MigrationBackup/
 *.ini
 /Source/WixInstaller/WixInstaller/BasePath50.wxs
 /Source/WixInstaller/WixInstaller/BasePath48.wxs
+/Source/WixInstaller/WixInstaller.net50/BasePath50.wxs
+/Source/WixInstaller/WixInstaller.net48/BasePath48.wxs

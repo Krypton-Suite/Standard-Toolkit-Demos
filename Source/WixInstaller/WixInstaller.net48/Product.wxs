@@ -5,7 +5,7 @@
 
     <?define Version = "6.0.2108.0" ?> <!--"!(bind.FileVersion.Krypton.Toolkit.dll)" -->
 
-    <?define ProductName = "Krypton Toolkit Demo Apps"?>
+    <?define ProductName = "Krypton Toolkit Demo Net48 Apps"?>
 
     <Product
         Version="$(var.Version)"
@@ -76,7 +76,6 @@
         <Feature Id="ProductFeature" Title="KryptonToolkitDemos_Setup" Level="1">
             <ComponentGroupRef Id="KryptonToolkitDemos" />
             <ComponentGroupRef Id="BasePath48" />
-            <!--<ComponentGroupRef Id="BasePath50" />-->
             <ComponentRef Id='ProgramMenuDir2'/>
         </Feature>
 
