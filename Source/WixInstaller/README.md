@@ -4,5 +4,5 @@
 ## Requirements
 - wix 3.13 (Or greater installed)
 - wix visx integration installed
-- All Toolkit Demos built in release
+- All Toolkit Demos solution built in `Release`
 - A bit of time ;-)
