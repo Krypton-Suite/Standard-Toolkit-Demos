@@ -1,6 +1,8 @@
 # Standard-Toolkit-Demos
-There are 2 set of solutions in these projects:
-- Dev
-  - Direct linkage to the Toolkit projects and will build all TFM's in those
-- Nuget
-  - will use Nuget to pull in the `Canary.Lite` release to allow immediate usage of the example codebase.
+## Krypton Toolkit Hub 2019
+- co locate with the Standard-Tookit
+- Relies on project references directly to the code base
+
+Demonstrates how to use the Different Controls by calling their Example application:
+
+![Example](./Krypton%20Toolkit%20Hub/Example.png)

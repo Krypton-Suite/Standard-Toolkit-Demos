@@ -264,8 +264,6 @@
             this.kryptonPageToolkit.Controls.Add(this.kryptonNavigatorToolkit);
             this.kryptonPageToolkit.Controls.Add(this.labeToolkitPage);
             this.kryptonPageToolkit.Flags = 62;
-            this.kryptonPageToolkit.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPageToolkit.ImageLarge")));
-            this.kryptonPageToolkit.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPageToolkit.ImageMedium")));
             this.kryptonPageToolkit.LastVisibleSet = true;
             this.kryptonPageToolkit.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageToolkit.Name = "kryptonPageToolkit";
@@ -1287,8 +1285,6 @@
             this.kryptonPageNavigator.Controls.Add(this.labelNavigatorFeatureExamples);
             this.kryptonPageNavigator.Controls.Add(this.labelNavigatorPage);
             this.kryptonPageNavigator.Flags = 62;
-            this.kryptonPageNavigator.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPageNavigator.ImageLarge")));
-            this.kryptonPageNavigator.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPageNavigator.ImageMedium")));
             this.kryptonPageNavigator.LastVisibleSet = true;
             this.kryptonPageNavigator.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageNavigator.Name = "kryptonPageNavigator";
@@ -1721,8 +1717,6 @@
             this.kryptonPageApplicatons.Controls.Add(this.labelApplications);
             this.kryptonPageApplicatons.Controls.Add(this.linkPaletteDesigner);
             this.kryptonPageApplicatons.Flags = 62;
-            this.kryptonPageApplicatons.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPageApplicatons.ImageLarge")));
-            this.kryptonPageApplicatons.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPageApplicatons.ImageMedium")));
             this.kryptonPageApplicatons.LastVisibleSet = true;
             this.kryptonPageApplicatons.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageApplicatons.Name = "kryptonPageApplicatons";

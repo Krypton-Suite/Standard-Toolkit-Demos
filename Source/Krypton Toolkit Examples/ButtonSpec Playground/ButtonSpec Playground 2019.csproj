@@ -12,6 +12,7 @@
   </PropertyGroup>
   <PropertyGroup>
           <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Krypton.ico" />

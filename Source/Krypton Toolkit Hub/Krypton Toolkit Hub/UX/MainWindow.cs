@@ -1,4 +1,12 @@
-﻿using System;
+﻿#region BSD License
+/*
+ *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  
+ */
+#endregion
+
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
@@ -13,11 +21,6 @@ namespace KryptonToolkitHub.UX
 {
     public partial class MainWindow : KryptonForm
     {
-        #region Variables
-        private IOOperations _io = new IOOperations();
-        private Version _currentVersion = Assembly.GetExecutingAssembly().GetName().Version, _kryptonDocking = null, _kryptonNavigator = null, _kryptonRibbon = null, _kryptonToolkit = null, _kryptonWorkspace = null;
-        #endregion
-
         public MainWindow()
         {
             InitializeComponent();
@@ -25,7 +28,7 @@ namespace KryptonToolkitHub.UX
 
         private void MainWindow_Load(object sender, EventArgs e)
         {
-            TextExtra = $"(Beta Build: { _currentVersion.Build.ToString() })";
+            TextExtra = $"(Beta Build: {_currentVersion.Build.ToString()})";
 
             klblKryptonToolkitHubVersion.Text = $"Krypton Toolkit Hub Version: {_currentVersion}";
 
@@ -62,9 +65,23 @@ namespace KryptonToolkitHub.UX
             tsslCurrentStatus.ToolTipText = tsslCurrentStatus.Text;
         }
 
+        #region Variables
+
+        private readonly IOOperations _io = new();
+        private readonly Version _currentVersion = Assembly.GetExecutingAssembly().GetName().Version;
+
+        private Version _kryptonDocking,
+            _kryptonNavigator = null,
+            _kryptonRibbon = null,
+            _kryptonToolkit = null,
+            _kryptonWorkspace = null;
+
+        #endregion
+
         #region Link Event Handlers
 
         #region Krypton Components
+
         private void linkKryptonButton_LinkClicked(object sender, EventArgs e)
         {
             LaunchManager.LaunchComponentExample(ComponentToolkitExamples.KRYPTONBUTTON, tsslCurrentStatus);
@@ -259,6 +276,7 @@ namespace KryptonToolkitHub.UX
         {
             LaunchManager.LaunchComponentExample(ComponentToolkitExamples.KRYPTONFORM, tsslCurrentStatus);
         }
+
         #endregion
 
         #endregion

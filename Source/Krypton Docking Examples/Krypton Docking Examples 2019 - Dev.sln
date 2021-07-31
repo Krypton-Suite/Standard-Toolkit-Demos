@@ -29,6 +29,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton.Navigator 2019", "..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Navigator\Krypton.Navigator 2019.csproj", "{ACEA756E-B3A3-4DB4-8D69-94BAA681C0F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton.Workspace 2019", "..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Workspace\Krypton.Workspace 2019.csproj", "{86D517A9-4519-4334-B5D0-F06642B894AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{6FCFCF42-C136-41AD-9E1A-2D04AB095A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FCFCF42-C136-41AD-9E1A-2D04AB095A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FCFCF42-C136-41AD-9E1A-2D04AB095A43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACEA756E-B3A3-4DB4-8D69-94BAA681C0F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACEA756E-B3A3-4DB4-8D69-94BAA681C0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACEA756E-B3A3-4DB4-8D69-94BAA681C0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACEA756E-B3A3-4DB4-8D69-94BAA681C0F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86D517A9-4519-4334-B5D0-F06642B894AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D517A9-4519-4334-B5D0-F06642B894AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86D517A9-4519-4334-B5D0-F06642B894AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86D517A9-4519-4334-B5D0-F06642B894AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

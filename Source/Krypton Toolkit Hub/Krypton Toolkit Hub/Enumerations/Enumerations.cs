@@ -1,29 +1,42 @@
-﻿namespace KryptonToolkitHub.Enumerations
+﻿#region BSD License
+/*
+ *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  
+ */
+#endregion
+
+namespace KryptonToolkitHub.Enumerations
 {
     public enum ComponentToolkitExamples
     {
         /// <summary>
-        /// The krypton button example.
+        ///     The krypton button example.
         /// </summary>
         KRYPTONBUTTON,
+
         /// <summary>
-        /// The krypton check button example.
+        ///     The krypton check button example.
         /// </summary>
         KRYPTONCHECKBUTTON,
+
         /// <summary>
-        /// The krypton drop button example.
+        ///     The krypton drop button example.
         /// </summary>
         KRYPTONDROPBUTTON,
+
         /// <summary>
-        /// The krypton colour button example.
+        ///     The krypton colour button example.
         /// </summary>
         KRYPTONCOLOURBUTTON,
+
         /// <summary>
-        /// The krypton check set example.
+        ///     The krypton check set example.
         /// </summary>
         KRYPTONCHECKSET,
+
         /// <summary>
-        /// The krypton check box example.
+        ///     The krypton check box example.
         /// </summary>
         KRYPTONCHECKBOX,
         KRYPTONRADIOBUTTON,

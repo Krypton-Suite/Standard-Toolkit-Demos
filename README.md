@@ -14,12 +14,16 @@ There are 2 sets of solutions in these projects:
 # [Ribbon Examples](Source/Krypton%20Ribbon%20Examples/README.md)
 
 # Misc Solutions
+## [Toolkit Hub](Source/Krypton%20Toolkit%20Hub/README.md)
+Preferred method of launching the Toolkit examples
+
 ## [Krypton Explorer](Source/Krypton%20Explorer/README.md)
-This project allows the launching of the compiled examples directly
+This is the old project, that allows the launching of the compiled examples.
+
+## [Wix Installer](Source/WixInstaller/README.md)
+- After building the release version of everything then, run this to create the `msi` installer file.
 
 ## Following need sorting:
-### [Toolkit Hub](Source/Krypton%20Toolkit%20Hub/README.md)
-
 ### [Toolkit Updater](Source/Krypton%20Toolkit%Updater/README.md)
 
 ### [Palette Designer](Source/Palette%20Designer/README.md)

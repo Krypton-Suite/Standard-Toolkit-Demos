@@ -1,23 +1,25 @@
-﻿using Krypton.Toolkit;
-using KryptonToolkitHub.Classes;
+﻿#region BSD License
+/*
+ *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  
+ */
+#endregion
+
 using System;
 using System.Drawing;
 using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
 
+using Krypton.Toolkit;
+
+using KryptonToolkitHub.Classes;
+
 namespace KryptonToolkitHub.UX
 {
     public partial class SplashWindow : KryptonForm
     {
-        #region Variables
-        private SettingsManager _settingsManager = new SettingsManager();
-        private IOOperations _io = new IOOperations();
-        public FadeEffects _fadeEffects = new FadeEffects();
-        private Version _applicationVersion = Assembly.GetExecutingAssembly().GetName().Version;
-        private string _fileDatabasePath = Directory.GetParent(Application.ExecutablePath).ToString() + @"\\Files", _fileName = @"\\File List.kfdb";
-        #endregion
-
         public SplashWindow()
         {
             InitializeComponent();
@@ -26,27 +28,17 @@ namespace KryptonToolkitHub.UX
         private void SplashWindow_Load(object sender, EventArgs e)
         {
             _fadeEffects.FadeInWindow(this);
-
-            if (_settingsManager.GetBetaVersion())
-            {
-                _io.ReturnApplicationExecutablePath();
-            }
-
-            if (_settingsManager.GetBetaVersion())
-            {
-                klblTitle.Values.ExtraText = $"Beta (Build: { _applicationVersion.Build.ToString() })";
-            }
-            else
-            {
-                klblTitle.Values.ExtraText = string.Empty;
-
-                klblTitle.Location = new Point(278, 166);
-            }
+#if DEBUG
+            klblTitle.Values.ExtraText = $"Debug (Build: {_applicationVersion.Build})";
+            tmrSplash.Enabled = false;
+            _io.DisplayApplicationExecutablePath();
+            tmrSplash.Enabled = true;
+#endif
         }
 
         private void tmrSplash_Tick(object sender, EventArgs e)
         {
-            pbProgress.Increment(1);
+            pbProgress.Increment(20);
 
             //if (TaskbarManager.IsPlatformSupported)
             //{
@@ -73,7 +65,8 @@ namespace KryptonToolkitHub.UX
             }
             else if (pbProgress.Value == pbProgress.Maximum)
             {
-                MainWindow mainWindow = new MainWindow();
+                MainWindow mainWindow = new();
+                mainWindow.Closed += (o, args) => Close();
 
                 _fadeEffects.FadeOutWindow(this, mainWindow);
 
@@ -85,5 +78,16 @@ namespace KryptonToolkitHub.UX
         {
             Hide();
         }
+
+        #region Variables
+
+        private readonly IOOperations _io = new();
+        public FadeEffects _fadeEffects = new();
+        private readonly Version _applicationVersion = Assembly.GetExecutingAssembly().GetName().Version;
+
+        private string _fileDatabasePath = Directory.GetParent(Application.ExecutablePath) + @"\\Files",
+            _fileName = @"\\File List.kfdb";
+
+        #endregion
     }
 }

@@ -1,5 +1,12 @@
-﻿using System.Reflection;
-using System.Runtime.CompilerServices;
+﻿#region BSD License
+/*
+ *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  
+ */
+#endregion
+
+using System.Reflection;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
@@ -10,7 +17,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Krypton Toolkit Hub")]
-[assembly: AssemblyCopyright("Copyright © Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV)  2020")]
+[assembly: AssemblyCopyright("Copyright © Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +39,6 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("18.472.4110.0")]
-[assembly: AssemblyFileVersion("18.472.4110.0")]
+[assembly: AssemblyVersion("6.0.2108.0")]
+[assembly: AssemblyFileVersion("6.0.2108.0")]
+
