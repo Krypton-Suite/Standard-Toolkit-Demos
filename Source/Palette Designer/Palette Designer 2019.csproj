@@ -28,6 +28,7 @@
         <ProjectReference Include="..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
     </ItemGroup>
     <PropertyGroup>
-        <OutputPath>..\..\Bin\$(Configuration)\</OutputPath>
+        <OutputPath>..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
     </PropertyGroup>
 </Project>
