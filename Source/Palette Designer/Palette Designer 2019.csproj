@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
@@ -22,11 +22,13 @@
         <Content Include="Resources\TopT.png" />
         <Content Include="Resources\TopTMS.png" />
     </ItemGroup>
+
     <ItemGroup>
         <ProjectReference Include="..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Navigator\Krypton.Navigator 2019.csproj" />
         <ProjectReference Include="..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Ribbon\Krypton.Ribbon 2019.csproj" />
         <ProjectReference Include="..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
     </ItemGroup>
+
     <PropertyGroup>
         <OutputPath>..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
         <ApplicationManifest>app.manifest</ApplicationManifest>

@@ -313,14 +313,7 @@ namespace PaletteDesigner
             dataGridViewNormal.Palette = _palette;
             monthCalendarEnabled.Palette = _palette;
             monthCalendarDisabled.Palette = _palette;
-            kryptonTrackBar1.Palette = _palette;
-            kryptonTrackBar2.Palette = _palette;
-            kryptonTrackBar3.Palette = _palette;
-            kryptonTrackBar4.Palette = _palette;
-            kryptonTrackBar5.Palette = _palette;
-            kryptonTrackBar6.Palette = _palette;
-            kryptonTrackBar7.Palette = _palette;
-            kryptonTrackBar8.Palette = _palette;
+            trackBar1.ApplyPalette(_palette);
             UpdateChromeTMS();
         }
 
@@ -445,15 +438,6 @@ namespace PaletteDesigner
             separator1Tracking.SetFixedState(PaletteState.Normal, PaletteState.Tracking);
             separator1Pressed.SetFixedState(PaletteState.Normal, PaletteState.Pressed);
 
-            // TrackBar fixed states
-            kryptonTrackBar1.SetFixedState(PaletteState.Normal);
-            kryptonTrackBar5.SetFixedState(PaletteState.Normal);
-            kryptonTrackBar2.SetFixedState(PaletteState.Tracking);
-            kryptonTrackBar6.SetFixedState(PaletteState.Tracking);
-            kryptonTrackBar3.SetFixedState(PaletteState.Pressed);
-            kryptonTrackBar7.SetFixedState(PaletteState.Pressed);
-            kryptonTrackBar4.SetFixedState(PaletteState.Disabled);
-            kryptonTrackBar8.SetFixedState(PaletteState.Disabled);
 
             // Remove the context menu from the design navigator, we only show this
             // during design time to make it easier to switch around pages for updating
