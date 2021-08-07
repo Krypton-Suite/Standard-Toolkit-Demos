@@ -18,5 +18,10 @@ namespace Test_Clip_Base
         {
 
         }
+
+        private void KryptonButton1_Click(object sender, System.EventArgs e)
+        {
+            kryptonButton1.Text = @"Changed";
+        }
     }
 }
