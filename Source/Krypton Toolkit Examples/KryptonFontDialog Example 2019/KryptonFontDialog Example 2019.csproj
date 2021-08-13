@@ -2,17 +2,10 @@
     <PropertyGroup>
         <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
-        <RootNamespace>KryptonTaskDialogExamples</RootNamespace>
-        <AssemblyName>Krypton TaskDialog Examples</AssemblyName>
-        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <RootNamespace>KryptonFontDialog</RootNamespace>
+        <AssemblyName>KryptonFontDialog Example</AssemblyName>
         <UseWindowsForms>true</UseWindowsForms>
     </PropertyGroup>
-    <PropertyGroup>
-        <ApplicationIcon>Krypton.ico</ApplicationIcon>
-    </PropertyGroup>
-    <ItemGroup>
-        <Content Include="Krypton.ico" />
-    </ItemGroup>
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>

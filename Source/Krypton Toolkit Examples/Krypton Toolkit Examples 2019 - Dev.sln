@@ -125,6 +125,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonListView Examples 2019", "KryptonListView Examples 2019\KryptonListView Examples 2019.csproj", "{E49C593A-EDD6-4969-9374-808CBA09BE3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonFontDialog Example 2019", "KryptonFontDialog Example 2019\KryptonFontDialog Example 2019.csproj", "{3D1DD546-0616-4931-8355-BDCC641A4E48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -363,6 +365,10 @@ Global
 		{E49C593A-EDD6-4969-9374-808CBA09BE3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E49C593A-EDD6-4969-9374-808CBA09BE3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E49C593A-EDD6-4969-9374-808CBA09BE3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D1DD546-0616-4931-8355-BDCC641A4E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D1DD546-0616-4931-8355-BDCC641A4E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D1DD546-0616-4931-8355-BDCC641A4E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D1DD546-0616-4931-8355-BDCC641A4E48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
