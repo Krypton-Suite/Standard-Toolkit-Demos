@@ -23,6 +23,7 @@ There are 2 set of solutions in these projects:
 ## [KryptonCheckedListBox Examples](KryptonCheckedListBox%20Examples/example.png)
 ## [KryptonCheckSet Examples](KryptonCheckSet%20Examples/example.png)
 ## [KryptonColorButton Examples](KryptonColorButton%20Examples/example.png)
+## [KryptonColorDialog Example](KryptonColorDialog%20Example/example.png)
 ## [KryptonComboBox Examples](KryptonComboBox%20Examples/example.png)
 ## [KryptonCommand Examples](KryptonCommand%20Examples/example.png)
 ## [KryptonContextMenu Examples](KryptonContextMenu%20Examples/example.png)

@@ -49,7 +49,7 @@ namespace KryptonFontDialog_Example_2019
 
         private void ButtonShowFontDialog_Click(object sender, EventArgs e)
         {
-            var kfd = new KryptonFontDialog {
+            var kfd = new Krypton.Toolkit.KryptonFontDialog {
                 ShowColor = chkShowColour.Checked,
                 ShowHelp = chkShowHelp.Checked,
                 AllowScriptChange = chkAllowScriptChange.Checked,
