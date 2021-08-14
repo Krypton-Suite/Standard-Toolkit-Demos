@@ -42,26 +42,18 @@ namespace KryptonFontDialog_Example_2019
             KryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
         }
 
-        private void FolderBrowserDialog1_HelpRequest(object sender, EventArgs e)
-        {
-
-        }
-
         private void ButtonShowFontDialog_Click(object sender, EventArgs e)
         {
-            var kfd = new KryptonFontDialog {
-                ShowColor = chkShowColour.Checked,
+            var kfd = new KryptonColorDialog {
+                AllowFullOpen = chkAllowFullOpen.Checked,
                 ShowHelp = chkShowHelp.Checked,
-                AllowScriptChange = chkAllowScriptChange.Checked,
-                AllowSimulations = chkAllowSimulations.Checked,
-                AllowVectorFonts = chkAllowVectorFonts.Checked,
-                ShowApply = chkShowApply.Checked,
-                ShowEffects = chkShowEffects.Checked
-
+                AnyColor = chkAnyColor.Checked,
+                FullOpen = chkFullOPen.Checked,
+                SolidColorOnly = chkSolidColorOnly.Checked,
             };
             if (kfd.ShowDialog(this) == DialogResult.OK)
             {
-                KryptonMessageBox.Show(this, kfd.Font.ToString(), @"Font chosen is");
+                KryptonMessageBox.Show(this, kfd.Color.ToString(), @"Color chosen is");
             }
         }
     }
