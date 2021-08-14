@@ -52,6 +52,7 @@
             this.checkBoxClose = new System.Windows.Forms.CheckBox();
             this.checkBoxRetry = new System.Windows.Forms.CheckBox();
             this.groupBoxBasic = new System.Windows.Forms.GroupBox();
+            this.buttonFill = new System.Windows.Forms.Button();
             this.comboBoxIcon = new System.Windows.Forms.ComboBox();
             this.labelIcon = new System.Windows.Forms.Label();
             this.groupBoxFooter = new System.Windows.Forms.GroupBox();
@@ -75,7 +76,6 @@
             this.paletteProfessional = new System.Windows.Forms.RadioButton();
             this.palette2007Blue = new System.Windows.Forms.RadioButton();
             this.palette2010Blue = new System.Windows.Forms.RadioButton();
-            this.buttonFill = new System.Windows.Forms.Button();
             this.groupBoxBasic.SuspendLayout();
             this.groupBoxFooter.SuspendLayout();
             this.groupBoxCheckBox.SuspendLayout();
@@ -86,27 +86,27 @@
             // labelCaption
             // 
             this.labelCaption.AutoSize = true;
-            this.labelCaption.Location = new System.Drawing.Point(36, 39);
+            this.labelCaption.Location = new System.Drawing.Point(23, 39);
             this.labelCaption.Name = "labelCaption";
-            this.labelCaption.Size = new System.Drawing.Size(68, 13);
+            this.labelCaption.Size = new System.Drawing.Size(86, 17);
             this.labelCaption.TabIndex = 0;
             this.labelCaption.Text = "Window Title";
             // 
             // labelMainInstructions
             // 
             this.labelMainInstructions.AutoSize = true;
-            this.labelMainInstructions.Location = new System.Drawing.Point(18, 68);
+            this.labelMainInstructions.Location = new System.Drawing.Point(-2, 68);
             this.labelMainInstructions.Name = "labelMainInstructions";
-            this.labelMainInstructions.Size = new System.Drawing.Size(89, 13);
+            this.labelMainInstructions.Size = new System.Drawing.Size(111, 17);
             this.labelMainInstructions.TabIndex = 1;
             this.labelMainInstructions.Text = "Main Instructions";
             // 
             // labelContent
             // 
             this.labelContent.AutoSize = true;
-            this.labelContent.Location = new System.Drawing.Point(61, 94);
+            this.labelContent.Location = new System.Drawing.Point(51, 94);
             this.labelContent.Name = "labelContent";
-            this.labelContent.Size = new System.Drawing.Size(46, 13);
+            this.labelContent.Size = new System.Drawing.Size(58, 17);
             this.labelContent.TabIndex = 2;
             this.labelContent.Text = "Content";
             // 
@@ -114,7 +114,7 @@
             // 
             this.textBoxCaption.Location = new System.Drawing.Point(111, 36);
             this.textBoxCaption.Name = "textBoxCaption";
-            this.textBoxCaption.Size = new System.Drawing.Size(214, 21);
+            this.textBoxCaption.Size = new System.Drawing.Size(214, 24);
             this.textBoxCaption.TabIndex = 3;
             this.textBoxCaption.Text = "Window Title";
             // 
@@ -122,7 +122,7 @@
             // 
             this.textBoxMainInstructions.Location = new System.Drawing.Point(111, 65);
             this.textBoxMainInstructions.Name = "textBoxMainInstructions";
-            this.textBoxMainInstructions.Size = new System.Drawing.Size(214, 21);
+            this.textBoxMainInstructions.Size = new System.Drawing.Size(214, 24);
             this.textBoxMainInstructions.TabIndex = 4;
             this.textBoxMainInstructions.Text = "Main Instructions";
             // 
@@ -137,7 +137,7 @@
             // 
             // buttonShowTaskDialog
             // 
-            this.buttonShowTaskDialog.Location = new System.Drawing.Point(377, 341);
+            this.buttonShowTaskDialog.Location = new System.Drawing.Point(396, 341);
             this.buttonShowTaskDialog.Name = "buttonShowTaskDialog";
             this.buttonShowTaskDialog.Size = new System.Drawing.Size(254, 59);
             this.buttonShowTaskDialog.TabIndex = 6;
@@ -152,15 +152,20 @@
             this.kryptonTaskDialogCommand4,
             this.kryptonTaskDialogCommand5,
             this.kryptonTaskDialogCommand6});
+            this.kryptonTaskDialog.CommonButtons = Krypton.Toolkit.TaskDialogButtons.OK;
             this.kryptonTaskDialog.Content = null;
+            this.kryptonTaskDialog.DefaultButton = Krypton.Toolkit.TaskDialogButtons.None;
             this.kryptonTaskDialog.DefaultRadioButton = null;
             this.kryptonTaskDialog.FooterHyperlink = null;
+            this.kryptonTaskDialog.FooterIcon = System.Windows.Forms.MessageBoxIcon.None;
             this.kryptonTaskDialog.FooterText = null;
+            this.kryptonTaskDialog.Icon = System.Windows.Forms.MessageBoxIcon.None;
             this.kryptonTaskDialog.MainInstruction = null;
             this.kryptonTaskDialog.RadioButtons.AddRange(new Krypton.Toolkit.KryptonTaskDialogCommand[] {
             this.kryptonTaskDialogCommand1,
             this.kryptonTaskDialogCommand2,
             this.kryptonTaskDialogCommand3});
+            this.kryptonTaskDialog.TextExtra = "Ctrl+C to copy";
             this.kryptonTaskDialog.WindowTitle = null;
             // 
             // kryptonTaskDialogCommand4
@@ -196,6 +201,10 @@
             this.kryptonTaskDialogCommand3.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.kryptonTaskDialogCommand3.Text = "Third option";
             // 
+            // kryptonManager
+            // 
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2010Blue;
+            // 
             // checkBoxOK
             // 
             this.checkBoxOK.AutoSize = true;
@@ -203,7 +212,7 @@
             this.checkBoxOK.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxOK.Location = new System.Drawing.Point(115, 201);
             this.checkBoxOK.Name = "checkBoxOK";
-            this.checkBoxOK.Size = new System.Drawing.Size(40, 17);
+            this.checkBoxOK.Size = new System.Drawing.Size(48, 21);
             this.checkBoxOK.TabIndex = 7;
             this.checkBoxOK.Text = "OK";
             this.checkBoxOK.UseVisualStyleBackColor = true;
@@ -213,7 +222,7 @@
             this.checkBoxYes.AutoSize = true;
             this.checkBoxYes.Location = new System.Drawing.Point(115, 224);
             this.checkBoxYes.Name = "checkBoxYes";
-            this.checkBoxYes.Size = new System.Drawing.Size(43, 17);
+            this.checkBoxYes.Size = new System.Drawing.Size(51, 21);
             this.checkBoxYes.TabIndex = 8;
             this.checkBoxYes.Text = "Yes";
             this.checkBoxYes.UseVisualStyleBackColor = true;
@@ -223,7 +232,7 @@
             this.checkBoxNo.AutoSize = true;
             this.checkBoxNo.Location = new System.Drawing.Point(187, 224);
             this.checkBoxNo.Name = "checkBoxNo";
-            this.checkBoxNo.Size = new System.Drawing.Size(39, 17);
+            this.checkBoxNo.Size = new System.Drawing.Size(47, 21);
             this.checkBoxNo.TabIndex = 9;
             this.checkBoxNo.Text = "No";
             this.checkBoxNo.UseVisualStyleBackColor = true;
@@ -235,7 +244,7 @@
             this.checkBoxCancel.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxCancel.Location = new System.Drawing.Point(187, 201);
             this.checkBoxCancel.Name = "checkBoxCancel";
-            this.checkBoxCancel.Size = new System.Drawing.Size(58, 17);
+            this.checkBoxCancel.Size = new System.Drawing.Size(70, 21);
             this.checkBoxCancel.TabIndex = 10;
             this.checkBoxCancel.Text = "Cancel";
             this.checkBoxCancel.UseVisualStyleBackColor = true;
@@ -245,7 +254,7 @@
             this.checkBoxClose.AutoSize = true;
             this.checkBoxClose.Location = new System.Drawing.Point(269, 201);
             this.checkBoxClose.Name = "checkBoxClose";
-            this.checkBoxClose.Size = new System.Drawing.Size(52, 17);
+            this.checkBoxClose.Size = new System.Drawing.Size(62, 21);
             this.checkBoxClose.TabIndex = 11;
             this.checkBoxClose.Text = "Close";
             this.checkBoxClose.UseVisualStyleBackColor = true;
@@ -255,7 +264,7 @@
             this.checkBoxRetry.AutoSize = true;
             this.checkBoxRetry.Location = new System.Drawing.Point(270, 224);
             this.checkBoxRetry.Name = "checkBoxRetry";
-            this.checkBoxRetry.Size = new System.Drawing.Size(53, 17);
+            this.checkBoxRetry.Size = new System.Drawing.Size(64, 21);
             this.checkBoxRetry.TabIndex = 12;
             this.checkBoxRetry.Text = "Retry";
             this.checkBoxRetry.UseVisualStyleBackColor = true;
@@ -284,6 +293,16 @@
             this.groupBoxBasic.TabStop = false;
             this.groupBoxBasic.Text = "Basic Settings";
             // 
+            // buttonFill
+            // 
+            this.buttonFill.Location = new System.Drawing.Point(64, 136);
+            this.buttonFill.Name = "buttonFill";
+            this.buttonFill.Size = new System.Drawing.Size(40, 23);
+            this.buttonFill.TabIndex = 15;
+            this.buttonFill.Text = "Fill";
+            this.buttonFill.UseVisualStyleBackColor = true;
+            this.buttonFill.Click += new System.EventHandler(this.buttonFill_Click);
+            // 
             // comboBoxIcon
             // 
             this.comboBoxIcon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -296,7 +315,7 @@
             "Information"});
             this.comboBoxIcon.Location = new System.Drawing.Point(111, 165);
             this.comboBoxIcon.Name = "comboBoxIcon";
-            this.comboBoxIcon.Size = new System.Drawing.Size(214, 21);
+            this.comboBoxIcon.Size = new System.Drawing.Size(214, 25);
             this.comboBoxIcon.TabIndex = 14;
             // 
             // labelIcon
@@ -304,7 +323,7 @@
             this.labelIcon.AutoSize = true;
             this.labelIcon.Location = new System.Drawing.Point(77, 168);
             this.labelIcon.Name = "labelIcon";
-            this.labelIcon.Size = new System.Drawing.Size(28, 13);
+            this.labelIcon.Size = new System.Drawing.Size(35, 17);
             this.labelIcon.TabIndex = 13;
             this.labelIcon.Text = "Icon";
             // 
@@ -335,33 +354,33 @@
             "Information"});
             this.comboBoxFooterIcon.Location = new System.Drawing.Point(113, 84);
             this.comboBoxFooterIcon.Name = "comboBoxFooterIcon";
-            this.comboBoxFooterIcon.Size = new System.Drawing.Size(214, 21);
+            this.comboBoxFooterIcon.Size = new System.Drawing.Size(214, 25);
             this.comboBoxFooterIcon.TabIndex = 10;
             // 
             // labelFooterIcon
             // 
             this.labelFooterIcon.AutoSize = true;
-            this.labelFooterIcon.Location = new System.Drawing.Point(74, 87);
+            this.labelFooterIcon.Location = new System.Drawing.Point(70, 87);
             this.labelFooterIcon.Name = "labelFooterIcon";
-            this.labelFooterIcon.Size = new System.Drawing.Size(31, 13);
+            this.labelFooterIcon.Size = new System.Drawing.Size(39, 17);
             this.labelFooterIcon.TabIndex = 9;
             this.labelFooterIcon.Text = " Icon";
             // 
             // labelFooterText
             // 
             this.labelFooterText.AutoSize = true;
-            this.labelFooterText.Location = new System.Drawing.Point(77, 29);
+            this.labelFooterText.Location = new System.Drawing.Point(73, 29);
             this.labelFooterText.Name = "labelFooterText";
-            this.labelFooterText.Size = new System.Drawing.Size(29, 13);
+            this.labelFooterText.Size = new System.Drawing.Size(36, 17);
             this.labelFooterText.TabIndex = 5;
             this.labelFooterText.Text = "Text";
             // 
             // labelFooterHyperlink
             // 
             this.labelFooterHyperlink.AutoSize = true;
-            this.labelFooterHyperlink.Location = new System.Drawing.Point(54, 58);
+            this.labelFooterHyperlink.Location = new System.Drawing.Point(45, 58);
             this.labelFooterHyperlink.Name = "labelFooterHyperlink";
-            this.labelFooterHyperlink.Size = new System.Drawing.Size(51, 13);
+            this.labelFooterHyperlink.Size = new System.Drawing.Size(64, 17);
             this.labelFooterHyperlink.TabIndex = 6;
             this.labelFooterHyperlink.Text = "Hyperlink";
             // 
@@ -369,7 +388,7 @@
             // 
             this.textBoxFooterText.Location = new System.Drawing.Point(113, 26);
             this.textBoxFooterText.Name = "textBoxFooterText";
-            this.textBoxFooterText.Size = new System.Drawing.Size(214, 21);
+            this.textBoxFooterText.Size = new System.Drawing.Size(214, 24);
             this.textBoxFooterText.TabIndex = 7;
             this.textBoxFooterText.Text = "Footer Text";
             // 
@@ -377,7 +396,7 @@
             // 
             this.textBoxFooterHyperlink.Location = new System.Drawing.Point(113, 55);
             this.textBoxFooterHyperlink.Name = "textBoxFooterHyperlink";
-            this.textBoxFooterHyperlink.Size = new System.Drawing.Size(214, 21);
+            this.textBoxFooterHyperlink.Size = new System.Drawing.Size(214, 24);
             this.textBoxFooterHyperlink.TabIndex = 8;
             this.textBoxFooterHyperlink.Text = "Hyperlink";
             // 
@@ -388,7 +407,7 @@
             this.groupBoxCheckBox.Controls.Add(this.textBoxCheckBoxText);
             this.groupBoxCheckBox.Location = new System.Drawing.Point(364, 12);
             this.groupBoxCheckBox.Name = "groupBoxCheckBox";
-            this.groupBoxCheckBox.Size = new System.Drawing.Size(276, 88);
+            this.groupBoxCheckBox.Size = new System.Drawing.Size(322, 88);
             this.groupBoxCheckBox.TabIndex = 15;
             this.groupBoxCheckBox.TabStop = false;
             this.groupBoxCheckBox.Text = "CheckBox Settings";
@@ -396,9 +415,9 @@
             // checkBoxInitialState
             // 
             this.checkBoxInitialState.AutoSize = true;
-            this.checkBoxInitialState.Location = new System.Drawing.Point(54, 59);
+            this.checkBoxInitialState.Location = new System.Drawing.Point(68, 59);
             this.checkBoxInitialState.Name = "checkBoxInitialState";
-            this.checkBoxInitialState.Size = new System.Drawing.Size(81, 17);
+            this.checkBoxInitialState.Size = new System.Drawing.Size(96, 21);
             this.checkBoxInitialState.TabIndex = 10;
             this.checkBoxInitialState.Text = "Initial State";
             this.checkBoxInitialState.UseVisualStyleBackColor = true;
@@ -408,15 +427,15 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(19, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.Size = new System.Drawing.Size(36, 17);
             this.label1.TabIndex = 8;
             this.label1.Text = "Text";
             // 
             // textBoxCheckBoxText
             // 
-            this.textBoxCheckBoxText.Location = new System.Drawing.Point(54, 32);
+            this.textBoxCheckBoxText.Location = new System.Drawing.Point(68, 32);
             this.textBoxCheckBoxText.Name = "textBoxCheckBoxText";
-            this.textBoxCheckBoxText.Size = new System.Drawing.Size(200, 21);
+            this.textBoxCheckBoxText.Size = new System.Drawing.Size(200, 24);
             this.textBoxCheckBoxText.TabIndex = 9;
             this.textBoxCheckBoxText.Text = "CheckBox Text";
             // 
@@ -426,7 +445,7 @@
             this.groupBox1.Controls.Add(this.checkBoxRadioButtons);
             this.groupBox1.Location = new System.Drawing.Point(364, 107);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(276, 91);
+            this.groupBox1.Size = new System.Drawing.Size(322, 91);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Extra Settings";
@@ -438,7 +457,7 @@
             this.checkBoxCommandButtons.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxCommandButtons.Location = new System.Drawing.Point(22, 54);
             this.checkBoxCommandButtons.Name = "checkBoxCommandButtons";
-            this.checkBoxCommandButtons.Size = new System.Drawing.Size(185, 17);
+            this.checkBoxCommandButtons.Size = new System.Drawing.Size(240, 21);
             this.checkBoxCommandButtons.TabIndex = 12;
             this.checkBoxCommandButtons.Text = "Show Example Command Buttons";
             this.checkBoxCommandButtons.UseVisualStyleBackColor = true;
@@ -450,7 +469,7 @@
             this.checkBoxRadioButtons.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxRadioButtons.Location = new System.Drawing.Point(22, 31);
             this.checkBoxRadioButtons.Name = "checkBoxRadioButtons";
-            this.checkBoxRadioButtons.Size = new System.Drawing.Size(165, 17);
+            this.checkBoxRadioButtons.Size = new System.Drawing.Size(210, 21);
             this.checkBoxRadioButtons.TabIndex = 11;
             this.checkBoxRadioButtons.Text = "Show Example Radio Buttons";
             this.checkBoxRadioButtons.UseVisualStyleBackColor = true;
@@ -465,7 +484,7 @@
             this.groupBoxPalette.Controls.Add(this.palette2010Blue);
             this.groupBoxPalette.Location = new System.Drawing.Point(364, 205);
             this.groupBoxPalette.Name = "groupBoxPalette";
-            this.groupBoxPalette.Size = new System.Drawing.Size(276, 118);
+            this.groupBoxPalette.Size = new System.Drawing.Size(322, 118);
             this.groupBoxPalette.TabIndex = 17;
             this.groupBoxPalette.TabStop = false;
             this.groupBoxPalette.Text = "Palette";
@@ -473,9 +492,9 @@
             // paletteSparkleOrange
             // 
             this.paletteSparkleOrange.AutoSize = true;
-            this.paletteSparkleOrange.Location = new System.Drawing.Point(157, 54);
+            this.paletteSparkleOrange.Location = new System.Drawing.Point(171, 54);
             this.paletteSparkleOrange.Name = "paletteSparkleOrange";
-            this.paletteSparkleOrange.Size = new System.Drawing.Size(106, 17);
+            this.paletteSparkleOrange.Size = new System.Drawing.Size(131, 21);
             this.paletteSparkleOrange.TabIndex = 5;
             this.paletteSparkleOrange.Text = "Sparkle - Orange";
             this.paletteSparkleOrange.UseVisualStyleBackColor = true;
@@ -486,7 +505,7 @@
             this.palette2010Black.AutoSize = true;
             this.palette2010Black.Location = new System.Drawing.Point(22, 77);
             this.palette2010Black.Name = "palette2010Black";
-            this.palette2010Black.Size = new System.Drawing.Size(115, 17);
+            this.palette2010Black.Size = new System.Drawing.Size(143, 21);
             this.palette2010Black.TabIndex = 4;
             this.palette2010Black.Text = "Office 2010 - Black";
             this.palette2010Black.UseVisualStyleBackColor = true;
@@ -497,7 +516,7 @@
             this.palette2010Silver.AutoSize = true;
             this.palette2010Silver.Location = new System.Drawing.Point(22, 54);
             this.palette2010Silver.Name = "palette2010Silver";
-            this.palette2010Silver.Size = new System.Drawing.Size(117, 17);
+            this.palette2010Silver.Size = new System.Drawing.Size(144, 21);
             this.palette2010Silver.TabIndex = 3;
             this.palette2010Silver.Text = "Office 2010 - Silver";
             this.palette2010Silver.UseVisualStyleBackColor = true;
@@ -506,9 +525,9 @@
             // paletteProfessional
             // 
             this.paletteProfessional.AutoSize = true;
-            this.paletteProfessional.Location = new System.Drawing.Point(157, 77);
+            this.paletteProfessional.Location = new System.Drawing.Point(171, 77);
             this.paletteProfessional.Name = "paletteProfessional";
-            this.paletteProfessional.Size = new System.Drawing.Size(83, 17);
+            this.paletteProfessional.Size = new System.Drawing.Size(100, 21);
             this.paletteProfessional.TabIndex = 2;
             this.paletteProfessional.Text = "Professional";
             this.paletteProfessional.UseVisualStyleBackColor = true;
@@ -517,9 +536,9 @@
             // palette2007Blue
             // 
             this.palette2007Blue.AutoSize = true;
-            this.palette2007Blue.Location = new System.Drawing.Point(157, 31);
+            this.palette2007Blue.Location = new System.Drawing.Point(171, 31);
             this.palette2007Blue.Name = "palette2007Blue";
-            this.palette2007Blue.Size = new System.Drawing.Size(111, 17);
+            this.palette2007Blue.Size = new System.Drawing.Size(137, 21);
             this.palette2007Blue.TabIndex = 1;
             this.palette2007Blue.Text = "Office 2007 - Blue";
             this.palette2007Blue.UseVisualStyleBackColor = true;
@@ -531,28 +550,18 @@
             this.palette2010Blue.Checked = true;
             this.palette2010Blue.Location = new System.Drawing.Point(22, 31);
             this.palette2010Blue.Name = "palette2010Blue";
-            this.palette2010Blue.Size = new System.Drawing.Size(111, 17);
+            this.palette2010Blue.Size = new System.Drawing.Size(137, 21);
             this.palette2010Blue.TabIndex = 0;
             this.palette2010Blue.TabStop = true;
             this.palette2010Blue.Text = "Office 2010 - Blue";
             this.palette2010Blue.UseVisualStyleBackColor = true;
             this.palette2010Blue.CheckedChanged += new System.EventHandler(this.palette2010Blue_CheckedChanged);
-            //
-            // buttonFill
-            //
-            this.buttonFill.Location = new System.Drawing.Point(64, 136);
-            this.buttonFill.Name = "buttonFill";
-            this.buttonFill.Size = new System.Drawing.Size(40, 23);
-            this.buttonFill.TabIndex = 15;
-            this.buttonFill.Text = "Fill";
-            this.buttonFill.UseVisualStyleBackColor = true;
-            this.buttonFill.Click += new System.EventHandler(this.buttonFill_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(652, 412);
+            this.ClientSize = new System.Drawing.Size(704, 416);
             this.Controls.Add(this.groupBoxPalette);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxCheckBox);

@@ -21,7 +21,7 @@ csharp_new_line_before_open_brace = accessors, methods, control_blocks, types, p
 #Formatting - organize using options
 
 #do not place System.* using directives before other using directives
-dotnet_sort_system_directives_first = false
+dotnet_sort_system_directives_first = true
 
 #Formatting - spacing options
 
@@ -57,13 +57,13 @@ csharp_prefer_braces = true:suggestion
 #Style - expression bodied member options
 
 #prefer block bodies for accessors
-csharp_style_expression_bodied_accessors = false:suggestion
+csharp_style_expression_bodied_accessors = true:suggestion
 #prefer block bodies for constructors
-csharp_style_expression_bodied_constructors = false:suggestion
+csharp_style_expression_bodied_constructors = true:suggestion
 #prefer block bodies for methods
-csharp_style_expression_bodied_methods = false:suggestion
+csharp_style_expression_bodied_methods = true:suggestion
 #prefer block bodies for properties
-csharp_style_expression_bodied_properties = false:suggestion
+csharp_style_expression_bodied_properties = true:suggestion
 
 #Style - expression level options
 

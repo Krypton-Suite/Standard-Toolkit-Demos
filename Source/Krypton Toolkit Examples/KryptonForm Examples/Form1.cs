@@ -30,67 +30,33 @@ namespace KryptonFormExamples
             // Recalc the non client size to reflect new border style
             RecalcNonClient();
 
-            switch (kryptonCheckSetPalettes.CheckedIndex)
-            {
-                case 0:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
-                    break;
-                case 1:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Black;
-                    break;
-                case 2:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
-                    break;
-                case 3:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
-                    break;
-                case 4:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalOffice2003;
-                    break;
-                case 5:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
-                    break;
-                case 6:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
-                    break;
-                case 7:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
-                    break;
-                case 8:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
-                    break;
-                case 9:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
-                    break;
-            }
+            kryptonManager.GlobalPaletteMode = kryptonCheckSetPalettes.CheckedIndex switch {
+                0 => PaletteModeManager.ProfessionalSystem,
+                1 => PaletteModeManager.Office2007Black,
+                2 => PaletteModeManager.Office2007Silver,
+                3 => PaletteModeManager.Office2007Blue,
+                4 => PaletteModeManager.ProfessionalOffice2003,
+                5 => PaletteModeManager.SparkleBlue,
+                6 => PaletteModeManager.SparkleOrange,
+                7 => PaletteModeManager.Office2010Black,
+                8 => PaletteModeManager.Office2010Silver,
+                9 => PaletteModeManager.Office2010Blue,
+                _ => kryptonManager.GlobalPaletteMode
+            };
         }
 
         private void kryptonCheckSetStyles_CheckedButtonChanged(object sender, EventArgs e)
         {
-            switch (kryptonCheckSetStyles.CheckedIndex)
-            {
-                case 0:
-                    FormBorderStyle = FormBorderStyle.Sizable;
-                    break;
-                case 1:
-                    FormBorderStyle = FormBorderStyle.FixedToolWindow;
-                    break;
-                case 2:
-                    FormBorderStyle = FormBorderStyle.SizableToolWindow;
-                    break;
-                case 3:
-                    FormBorderStyle = FormBorderStyle.FixedDialog;
-                    break;
-                case 4:
-                    FormBorderStyle = FormBorderStyle.Fixed3D;
-                    break;
-                case 5:
-                    FormBorderStyle = FormBorderStyle.FixedSingle;
-                    break;
-                case 6:
-                    FormBorderStyle = FormBorderStyle.None;
-                    break;
-            }
+            FormBorderStyle = kryptonCheckSetStyles.CheckedIndex switch {
+                0 => FormBorderStyle.Sizable,
+                1 => FormBorderStyle.FixedToolWindow,
+                2 => FormBorderStyle.SizableToolWindow,
+                3 => FormBorderStyle.FixedDialog,
+                4 => FormBorderStyle.Fixed3D,
+                5 => FormBorderStyle.FixedSingle,
+                6 => FormBorderStyle.None,
+                _ => FormBorderStyle
+            };
 
             // Recalc the non client size to reflect new border style
             RecalcNonClient();
@@ -249,5 +215,6 @@ namespace KryptonFormExamples
             get { return _form.ShowIcon; }
             set { _form.ShowIcon = value; }
         }
+
     }
 }
