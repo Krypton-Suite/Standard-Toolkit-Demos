@@ -1,7 +1,7 @@
-﻿using Krypton.Toolkit;
-using Krypton.Toolkit.Controls_Toolkit;
+﻿using System;
+using System.Windows.Forms;
 
-using System;
+using Krypton.Toolkit;
 
 namespace KryptonFontDialog_Example_2019
 {
@@ -49,8 +49,7 @@ namespace KryptonFontDialog_Example_2019
 
         private void ButtonShowFontDialog_Click(object sender, EventArgs e)
         {
-            var kfd = new KryptonFontDialog 
-            {
+            var kfd = new Krypton.Toolkit.KryptonFontDialog {
                 ShowColor = chkShowColour.Checked,
                 ShowHelp = chkShowHelp.Checked,
                 AllowScriptChange = chkAllowScriptChange.Checked,
@@ -58,9 +57,12 @@ namespace KryptonFontDialog_Example_2019
                 AllowVectorFonts = chkAllowVectorFonts.Checked,
                 ShowApply = chkShowApply.Checked,
                 ShowEffects = chkShowEffects.Checked
-                
+
             };
-            kfd.ShowDialog(this);
+            if (kfd.ShowDialog(this) == DialogResult.OK)
+            {
+                KryptonMessageBox.Show(this, kfd.Font.ToString(), @"Font chosen is");
+            }
         }
     }
 }
