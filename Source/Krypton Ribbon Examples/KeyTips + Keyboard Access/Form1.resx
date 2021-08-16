@@ -1,64 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -142,7 +82,7 @@ to move back a level.</value>
   <data name="qatUSA.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACu0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACu0lE
         QVQ4T8WT20/SYRiAf/9B69y6SLto63y+6aIsvStr6zQnlVl2vKi1FhmZZK51cB1oJh4ofwRYWUFArZzO
         almppIYkAiIgCEiAWrbW5dPX4X/o3Z69N9/zve/7HaT/H7X3nrDvlAat3kzRmdvUGi0oirXUmKzsV+sw
         FOUjF+1CLlQgF+Qh796JrNiOnL8V/c4tSPuUGrq8Sc7Vd+PwplCbXDh8Y5Q39tM+MM7XWJhkdJhkLEpK
@@ -160,7 +100,7 @@ to move back a level.</value>
   <data name="qatCanada.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACoElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACoElE
         QVQ4T8WTWUhUYRTHh0yKNFsZK6imGqEoCGmnJNKiIipbiLCFSSTQLNuoQCSixYUsy3JBHa0ZyeihBeqt
         oh4KH8rK9HZnrvfONOOszqLTtFDw687Fhx5698Cfw/ng/+Oc73yfbuSjomCfu7HkMHVH8mk4e5w2i5W2
         trb/6o7VSv3BPdzasIq67OVcXrbIrWs+UYjbWofSch3XIwuRoRjhcJhoNKrlfxWNf8dRUYpk2o7TtI0a
@@ -178,7 +118,7 @@ to move back a level.</value>
   <data name="qatGermany.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACoElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACoElE
         QVQ4T8WTSU+TURSGvw0oCi6cKBHFWgZxAhSJUoUFRhMScWjaQm1pbflqB2gLFggBDYPEERKDMS5VQDFx
         4cqoiSYqKBRLKUhpJeralVuj0Mdrowt/ASd5cnNy3/c95y6utPzlcDiw2+3IsozVak1gNpupra3FZDIl
         qKmpwWAwJE6dToder0er1aLRaJBsNhu9vb10dXXR2dlJR0dHgra2NlpbW2lpacHv99PU1ERjYyM+nw+P
@@ -196,7 +136,7 @@ to move back a level.</value>
   <data name="qatEngland.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACUUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACUUlE
         QVQ4T8WT20sUYRjGh24SXcgOd90YXVWEmv0XXdg/kBBFRlB3URGGdNFiuFIr5R5wQTfXFXPFMKLogJJi
         RHQVtrO2jHuydXf2NO6hXd1f3zeZ6F/gBw8M887zPO/zvt8o+38GBwdjY2NjeL1eRkdHd+D1+XDcuMxQ
         9yXzeXdNQnLsdntM8fv9lMtlDMMgn8+bKBQKFEplNHc/2pAVo1zZqUnIbyVnZGQERSrlcjnS6TSpVGoH
@@ -213,7 +153,7 @@ to move back a level.</value>
   <data name="qatJapan.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACQklE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACQklE
         QVQ4T8WTS28SURiGz8J7XGhM7EatuNJEVy5cufEP2E3TqPESE7VqZKtbfgE7woL7vZBSS8IfMFUCrRW1
         ZWg0CDLcBijDDNcKvJ7vIAt/Qb/kzSQz5zzf+12GHX6YzWbZ4/HA5XIJud1uIXpH8nq9Qj6fD36/H4FA
         QGhlZQUWi0Vm9FHTNDSbTezv70NVVbRaLajtNtp6B1qnC73TQYer2+2i1+uh3+9jPB4jGAyCUZZ6vY5q
@@ -229,7 +169,7 @@ to move back a level.</value>
   <data name="qatFrance.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACo0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACo0lE
         QVQ4T8WTSU9TURiG70IEiyARTKMMoVWRlQs3xsSVRoyRIMQoREEkyCBYgZZCABlEZIhES7GIoKQjaEp0
         4cKFuKCKujANlNsW6EToJC23Awo7fT29EBN/ASd5l8/zfuc7OdTOn4LKDlepSIJi4WMUi56gsE6Cpu5n
         UCkVkMvlUCgUUKg1GBHXQJabhaHc8xjOycLznLPoOXPKRd0SSyHRLqD/NU1ixMMJE959XcZ6OIRgMMgm
@@ -247,7 +187,7 @@ to move back a level.</value>
   <data name="qatItaly.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACqklE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACqklE
         QVQ4T8WT2UuUURxAv4dsM0vSMlIrJ3pJCSHwoUSkerCdSiuwNNBs1Nxzt6nMJsuMasLMZXI0ExEiCirR
         RDEQBHML0Ulrdp3FaZJeejrd+Yr+hX5wHs+5vwv3Sv9/UlWJlrzaS2TfTeGyIP1OEpWaMlp1bbS0tMjo
         nrfTWJrPk/gjgsM8TThIw8k4quNiLFJubRptYxqah2tpHK6hfljNh5k3LHmWcLvdeDwePD9/YnvVwbeS
@@ -265,7 +205,7 @@ to move back a level.</value>
   <data name="qatAustralia.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAC0klE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAC0klE
         QVQ4T8WT+U/SAQDFv/9FW625DitNQ+227LKVc+ta/VKtQ1PSYWVqKqJC3gegkQcipUZEohUzD7KllZoH
         pNgsQjTFoLLVWv3aD59Y63/obZ9f33vb2xP+v1TiU968Mh1iaR21CgUlBUripPVUFpSTJL1JgkzLhZwG
         4nO1xMsaOJen53yuH3kTx1NVXiG9SIezf4DOJ5O4rE952TfJkHUYm3UQ9WOPn/m/VHYuoOzxUd7to7Tn
@@ -284,7 +224,7 @@ to move back a level.</value>
   <data name="qatBelgium.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACrUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACrUlE
         QVQ4T8WT20vTcRiHx6+LtHRHTyvE0o0OFuXMVk7atC1nW601Z9oOiSFGu+gquogQTTQvSoqOdLioiKIu
         g4KyXJlJYNRQEytNEilIl6bWRfT03db/0Aufy+f5vO/FK/v/Y7PZxh0OB+Xl5VitVsyWrYQCZm61bOZ6
         k5EbzYXcbF3Phb3rOGVcS8em1ZwuWsEZg56mVdnjMqfTSSgUoqGhgbq6OnyBfVw9UcPPbjczYSezYTtz
@@ -302,7 +242,7 @@ to move back a level.</value>
   <data name="qatBahamas.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACzUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACzUlE
         QVQ4T8XT20uTARjH8ZdX6KKLCCq6iSC7qC7KlQiFNzJDRAuNzPI0N6fOplYEJdphKJlampvLA+qm2YlM
         tAy7iIpQOmjNs86paeo8n11WK/LbW/Y/+MBz9/w+N8/zCGtfPkHB9qMFdwnILSXgVgnHck0cN5RyQm/i
         ZJ6ZEEMZ4cYyFHnlqIx3UN+uIFaa1xY+QJVhtAsB/v6cLzRzoW+Wi9YJkrsmuNw9gc46SZptivSeWW7Y
@@ -321,7 +261,7 @@ to move back a level.</value>
   <data name="qatIndia.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACq0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACq0lE
         QVQ4T8WOa0vTYRiH/98gIgjDJDuXZoGQpaa2sdSyspNkYeWyNNM8dZBEK4ysoN6VUSaKUzc3N11OswXp
         myjwhRRF4qGcmzt42Gp4SpdXjwZ9BW+4eJ4Xv+v+3dLSj+nxDZoeFND0MB99WS76e7k0luWgu5uNrvQy
         2tJMGm6noxGoiy9QX5JGXZGS2qJU1EVnkQxCwnwXTHfg1S1ovikoBP110F1jXpfHH00e8/U5+FSXmVNd
@@ -339,7 +279,7 @@ to move back a level.</value>
   <data name="qatSouthAfrica.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACyElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACyElE
         QVQ4T8WTyU5TAQBFX0xcSRQFpM6SOC2MRCPgbG2tDA0tTYWiQAuFto/2tViR2mhB0ECoYBT6BIeIOIEa
         RFAgBjUqOIvGhZHJKbHxN45P4z94k7s896yu8P9jPZIXdTYWIp8OI+cbiBTk0JqfTaslC9mcSSRnDxGj
         lrN6DXLWDuTMbbTpttKu3UTDluSocPiUjfaxMOffhvn4eoAf4RDTNV6mQhJTQZEvASfT/mKmvUV8ce/n
@@ -358,7 +298,7 @@ to move back a level.</value>
   <data name="qatPakistan.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACp0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACp0lE
         QVQ4T8WT2UtUYRiHz98QFChuaVqaWbnr1BjpjJ1xwyYN8qLSaVzKLpLEzCWMSALp1tzGVEpcynGZxdRM
         qLC5kiCICHWccZbUrC6iIJ7OOdbf4Acv39Xzvs/7+/iE3T+tra2ujo4O2tvbkW9TlwnxVho59Sp0DWmI
         t9PQNSaT3ZDEmcZEtE0JZDdL1RKPuibGJXR1deHxeFhbW8PtdrPh3aJ6Us91SxHVVj3XbIVU2fOpnM6n
@@ -376,7 +316,7 @@ to move back a level.</value>
   <data name="qatChina.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACfUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACfUlE
         QVQ4T8WT7UtTYRjGD+rmnC9FlCeS3DkzTcvIfKn5wtS56dTNuamlQ00NLSgpKkL70BIqpM4204oK+kdM
         0mm+rJ1ztjObVkgQ7D/oYx+u7tkSgr77wMX59Luv67me+zD7fzwdlri/tx3erhZ4Oy3w2hvga6uHYK2B
         YKmGYKqEUF8Ooe4shOpSCOdLIFQVwX+uAA9K8uLMXJ8N255xRCdGodwZgnKrH1uTg1DGuhG54kDkcjsi
@@ -393,7 +333,7 @@ to move back a level.</value>
   <data name="qatKenya.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACvUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACvUlE
         QVQ4T8WT20uTARjGPyrpQigqOkyneciwzDwMJC0tZp6XrXnaWrI+dWq1OVvzG5tTVzNFyoKic2pWGtmR
         zkgHuwg1DI8F0U2mRqeL/oNf2+imv6AXfvDA+z4Pz80r/P/R6XSz5eXlGAwGSktL0ev1frRaLcXFxRQW
         FvrRaDSo1Wry8/P9qFQqlErlrFBWVkZ7ezutra00Nzfj8Xhoamqivr4eh8OBJEnYbDasVisWiwWz2YzJ
@@ -411,7 +351,7 @@ to move back a level.</value>
   <data name="qatArgentina.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACW0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACW0lE
         QVQ4T8XT6U4TURjG8bkOb8B7Mn7TK1CjxAUDUZCyFLqwFLDTirRlqdKxVIpQQMCFCKYtIBQL0k6n7dAd
         EeTD39MCxsQL4CS/zMx75n3Om0xGuvzV5xylR3ZjtbvoFiz/8QjuGqtgto8IoiaLq3McyWIfZm7niNmt
         CqGtMjPC9Ll3QnDrUKic2a76KRwSip/S2udEMg28JLhZJhDJ1Uz+lcdfFc2L+wKT0QtFJteLBGPH1Ld1
@@ -428,7 +368,7 @@ to move back a level.</value>
   <data name="qatBrazil.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACxElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACxElE
         QVQ4T8WT3UuTcRTHn66CCqKIXnzJl4ze5srKdObclumcc3PTmZaZWayymWlpKms9W0k5oosI6ip7pezF
         LNPt2fZMlxKUl11EN0WEINFNRBBdffpp/Q8d+F5+zvme7+FI/79cHZbpAwEn+wIV1MkW9shluORSoRKc
         sknIgF3WC+3EKuuwBvIo8+diCWzH0KGZlhp7qwgmOumNtxJQPfjUY3hVNz1qE2fUA3So9ZxS62iL19Aa
@@ -444,45 +384,10 @@ to move back a level.</value>
         TkSuQmCC
 </value>
   </data>
-  <data name="kryptonContextMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
   <data name="groupEdit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACiUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACiUlE
         QVQ4T5WSW0iTYRjHd91tdFEEliJFdRF4FXRVRAcz0ZLmQjxhO2i2zdS1DiB5kVZkMk2U1BJpoWWYIiqi
         bdY23L65gzvpyi2XS6dOnTM19m/vx6fTLKEH/lcv/9/veeBl/TnxKZy4qJhDlfFJ7EBGDj945NjxyjMX
         LsUxz38fkeBiZi43QXc2kY1HFc/R2d0Hl8cLo3UUbR3duMLJwvlkDpLPRekST+9OY2qRKb3HXvOMq+F1
@@ -500,7 +405,7 @@ to move back a level.</value>
   <data name="buttonCut.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAFi0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAFi0lE
         QVRYR72WeVBTVxTGnwtSQTBsKaKICooQNxQIi5CwJgYNhCVsAeJLgiZgIEARqkF2sJJGRRQpkQoIiKB2
         QNQKMkWgoBa07T/ttG7TqXZsnenYUWvLO73YO9OxyxTGhN/Mm5f5znffPe/ec88LMR1SJRkOeeqCO3vU
         6iYszSxSuZxT/2EzFBUXP8TSzJJCpnJqanWg0WonpFIpDcszR6JYwtFWH4cPdDpQqVQeWJ454pMlQVXa
@@ -530,7 +435,7 @@ to move back a level.</value>
   <data name="buttonCut.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACL0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACL0lE
         QVQ4T2PABkJDQ9my84reZuTkX4hLTo+BChMPQAY0tnX+v3P37l+gAVehwrhBfErGLiBeDuWCDGCua277
         f+Xq1X9AA55AhXGD+samTydPn/vrFpSwNCYmhhsoxFhWXf/37IUL/4EGX4aowgPCImO9quubPp2/eOV/
         d//kTwb2oa6FZVV/Dh4+TJwBIOAVEKAJdO69i5ev/l+6cs2/3KLyfxs3b/6fmJpxCqqEMLBwcxPy9g/e
@@ -546,7 +451,7 @@ to move back a level.</value>
   <data name="buttonCopy.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAFtElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAFtElE
         QVRYR81XaU8bZxDOt37tv+hP6W+oFKlSpf6A9kPVNmmlKEmbNI0xYBuvvb6SgmiSkqaQy01MbLDNffuA
         QE5f2AEf2MbnPp1Z78IWCLHdLx3p0bsL1vs878y8M7Nn2rXLP/86pzcMNPV9pmaPjAEZ/K7j9/5D8O8u
         XtFVPjv7+fA3V658rGzx36zfYKmCTCI0FTTopU4PVVortFYaQKnWwj69P/ZO49zFX6IX9OZPlG26N32f
@@ -577,7 +482,7 @@ to move back a level.</value>
   <data name="buttonCopy.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAB2ElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAB2ElE
         QVQ4T5WTXU/acBTG+7H2FfYR9inmLnSGi5kZdUsWE6PJ4oXZDF74Ep24KWAMigtTQaSQQhEYy3gRhgpW
         KJa2wOP/tF1CYhv1JM/d8/zO6fmfcnY1PvkBdnrz1lUcGZt4Ydmci8ya3oPKpGhdtNUuWoqOTOEfxqam
         2673H19aVvsigN41ARRu3um4kTVU6zIKtVuMf5rVXo++e2XZOW7hqxuDmpn7jG9b2/Dv7aMutdBk3Qlw
@@ -592,7 +497,7 @@ to move back a level.</value>
   <data name="buttonPaste.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAICElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAICElE
         QVRYR7WWeVRU5xnG/aP1JE0aY9Ombf7p8ndPm3O6eNqYpBJjFDGKCCjKOBoWhdqSiKKsAyOggEpAQbHK
         IsvIIlUEV0BZhm32YfaVTcAFEIZFB+/T986A4ojRY5vvnN/57hy43/O8z3vv990Frzr++NdPfv/hnz+q
         cl/nMxoeFT/KCQy95LWJ8+HMn/9/YymX++ZqD58Vf1jyiftGboC7D2e7+xerPbf86SO3sfQTebjRJEZ1
@@ -633,7 +538,7 @@ to move back a level.</value>
   <data name="buttonPaste.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACiUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACiUlE
         QVQ4T5WSW0iTYRjHd91tdFEEliJFdRF4FXRVRAcz0ZLmQjxhO2i2zdS1DiB5kVZkMk2U1BJpoWWYIiqi
         bdY23L65gzvpyi2XS6dOnTM19m/vx6fTLKEH/lcv/9/veeBl/TnxKZy4qJhDlfFJ7EBGDj945NjxyjMX
         LsUxz38fkeBiZi43QXc2kY1HFc/R2d0Hl8cLo3UUbR3duMLJwvlkDpLPRekST+9OY2qRKb3HXvOMq+F1
@@ -651,7 +556,7 @@ to move back a level.</value>
   <data name="groupBugs.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAC2UlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAC2UlE
         QVQ4T62Sa0iTURzG3w9zpb46b1O3uaVNm4rbMi+be93SDbdpaRPTpWCky4VuonhhqZnY6GIWomaJovQl
         ELIoKxCDKEwNIwr6aGIqEvkphGnz9vQuh5J9rB/84TnnPM/hf/4c4r+h1+sdJpPpkktbLBaBfwj3Je+Q
         0BEQFOygt8bq6+v4rjOz2XwxOzvb6dL74QqFwpnq6qp7z0ZGNufm5qDKykNcghwLC4sYGhraKCgoaNHp
@@ -670,7 +575,7 @@ to move back a level.</value>
   <data name="buttonBugGreen.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAJMUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAJMUlE
         QVRYR+2XfVRT9xnHI8qLQAIJCZCQN0gCIbwEgSSQBDC8JbxJIERFwvtLBV+AYQUUo0AjoEIFQVEZvnfa
         dquuW+u67rhuWttaXzrndL7M2h7PnNupO9a2p6fKd78b0p7jprZ69s/O2eec77nn/u69z/f3e+69z3Mv
         7X+dWS7992hqasqoqqoaqK6uHqytrbWSIbfpI9NwpRIdP0y2SyiW3RCESh5wQwQPWAHsGwwGY5ePj0+y
@@ -716,7 +621,7 @@ to move back a level.</value>
   <data name="buttonBugGreen.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAC3UlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAC3UlE
         QVQ4T62SXUhTYRjHT2qateOcnnmO7kPX3HQ6XZvO2ebcdNXOSmXi/FwaulrUysyy9SHYx0UYhvRlgRB1
         U0JRUBRkFARq0ceFdiHRReBNRFAkWE2zf2fukGSX9YMHnvd9/7+Xh5eX+G+wLDvj8/m6w30gEJCL6LSH
         knTlTBKVMsNtDXd17ZeFz/x+/8HKyspQuF9KmlKpfNvRsefi3Tt3foxPTKB0Yw20BcUYHR3D0NDQXF1d
@@ -735,7 +640,7 @@ to move back a level.</value>
   <data name="buttonBugRed.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAIpklE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAIpklE
         QVRYR+1XeVCU9xn+3BU8OOQQ5RQQFhBBRZdzQUCuBUVYYJUbEZYEUkQGKxALFOgKqIC3ggwgSBGtiVjt
         pF6xdTSpMQbjWDwTNWPa2E6SxiOTqfL0+ZZtprZqotN/OtN3eOf37e/7vvd53vP3Ifyvy1i9/vekqKgo
         YtmyZU25ubnNeXl5am5JRu+Mio2ri8J+uqxrmpPstoOzyxMbO4cnFpaTb5uamnYZGRkF6h/7XpYvXy7P
@@ -779,7 +684,7 @@ to move back a level.</value>
   <data name="buttonBugRed.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACy0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACy0lE
         QVQ4T62Sa0iTYRTHn5Huxtycbk63ttSZc25u6WbZ5nQ1w3lDzTbNzNtg5KUSy1YYmClIWYldsDD8EAgL
         SdH6VBRFlKAUEQRJHyQLIggSwcq8/HvGXpLsY/3gD+d5z/kfzvOeh/w3nE7nosfjOR2Im5qaVGKZ/IFi
         i3oxQhK1SD/db2s7rgzkvF7vyaKioqVAvBG5Wq1+19JydODuxMTK7OwssvLLoDdlYG7uA/x+/7Lb7e7I
@@ -798,7 +703,7 @@ to move back a level.</value>
   <data name="buttonBugYellow.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAJGElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAJGElE
         QVRYR+1XeVDTZxqmKKAcgQDhCIEEEkJQIYAhgQRIMBCCgJxRQQ45QhUPUDwQBATKpRDFonhQQS2r1h5q
         d93WTnfbzth2dVu1rutZV7fV9Vi1q6vWrfLs+wtpZ+xWW539Z2f2mXkmk++X3/u8x/e+3xer/3WMtvC/
         h4qKCu3MmTM7i4uLu0tLSw20ZD3yZATeIqGKFxA44CcIvOjrL3zk7eP7yNXN/SKLxRpwcHCItvzsB5SU
@@ -844,7 +749,7 @@ to move back a level.</value>
   <data name="buttonBugYellow.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAC2UlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAC2UlE
         QVQ4T62Sa0iTURzG3w9zpb46b1O3uaVNm4rbMi+be93SDbdpaRPTpWCky4VuonhhqZnY6GIWomaJovQl
         ELIoKxCDKEwNIwr6aGIqEvkphGnz9vQuh5J9rB/84TnnPM/hf/4c4r+h1+sdJpPpkktbLBaBfwj3Je+Q
         0BEQFOygt8bq6+v4rjOz2XwxOzvb6dL74QqFwpnq6qp7z0ZGNufm5qDKykNcghwLC4sYGhraKCgoaNHp
@@ -863,7 +768,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupClusterButton1.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAADE0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAADE0lE
         QVQ4T6WSW2yLYRjHvzQzZl2qh6/9Du1nXTvdZv26TrH1IFmnXS3LNqG6gzmsLOhGzVntZIiNRAwZIwtx
         djFs3BARkSEWEQQXrhwT3Cxbhg39+2qNERcu/JIned48z+9Nnvd9iH9B0dRZmVb6nDaohhTJ8seRc7T0
         Jx6PZ8jv92+L5IFAgJOQqpByqjysWJrwbV57wTvGrhqUnhdt19WyTzmzOiy0sZHe32F0Ot2LYHBNe093
@@ -883,7 +788,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupClusterButton2.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAADJUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAADJUlE
         QVQ4T62Ta0ySURjHX7e+mBJUJNOSSrxUK5bVWqU4lktQsyRBmkWLkZRJmVSSl0lO8xKZZbUuLOe6bLTK
         CmvdPtXWcmYzK0vBMFBLcOYtKrzw732VuWV97L8927Nznt/znPPfOcR/k1AodCoUijwqz8jIYDNYAU/n
         zuc4ZzH9nOTSE7VaHUjtKZXKIwkJCS4qn6oADodjJuHztUbjaHt7O6LikrB05RrYbB0wGAwjycnJWoFA
@@ -903,7 +808,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupClusterButton3.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAADB0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAADB0lE
         QVQ4T62QXUiTYRTH34uRaKtpmqbpTNeaiQ4tKdPNptY2bWvTfemaos1t6SpzlbPM1OzDioi0KFuNiIIF
         FfQdBkWBfSjZhQbRLkZGRaFp0ipz89/75kuR3XTRDx4453nO73CeQ/w3pFKp12g07qDi6upqdnBE1J25
         sRzvrLBwL3nVabPZYqg3s9lcJ5fLx6h4KlEcDsdNysevXb3q83g8yMpXIWlxOgYGXsPlco1rtdpGiUQy
@@ -923,7 +828,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupClusterButton4.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAC1klE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAC1klE
         QVQ4T62RW0iTYRzGv4sIdtCtNA9T5w4uD63VVETdJsvVNi1N0WnZQXJrNudhzXKZog3DahlqFoqipBaM
         MAlLiLoKKcWirrqIguHMpLoJYZqae/p2QMtuuuiBh+//vt/ze3h5X+K/Sa1Wu7RabaNnrqmpYTNDWc8i
         ovmu7cEhLnLrqdlsjvL80+v1F3JycpY982ax+Hz+BxLufjQ29tPhcCAjuwDCpFQ4nbOw2+2rRUVFzSqV
@@ -942,7 +847,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupClusterButton5.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAC7ElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAC7ElE
         QVQ4T62QbUiTURiGX7BN59a2mjq33NTmmpOcaaXVnIyibUq2lbqBVBTTWU6yzWiVla0X82OVX0SlNKgI
         FCJQCyr7UQzLLCqi/qRm2Rfan4jMnLq7d/lSVNSvLjjwnHPu6zkfxH/DYDCMW63WA8G6vLxcyheKexbE
         ysbnR0SNU0s3nE6nJLhns9n25ubmTgbr3xHLZLIBSj7V3dU1PTw8jKycPCxeugIjI6/R3t4+ZTabq/R6
@@ -961,7 +866,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupClusterButton6.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAC2klE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAC2klE
         QVQ4T62Ta0iTURzGX2+r2dum25xzc3O6RB27GNOc27ySbkrKzNxSKihzoFsUpCw1iZSsyBShiyRJ5ZeR
         QbTo5rKblyCoL33oQ4ikhAR+SMHA1J7O+25E2Ye+9MDh/M85z+95z//AS/032Wy25fr6+pNM7Xa7FbHx
         0oAsSbUsEImXydZoS0uznDlzuVwnKioqVph6o6QqlerjsWNHr973+9dmZmaQX14NjcGI2dk5+Hy+VYfD
@@ -980,7 +885,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupClusterButton7.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAC5UlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAC5UlE
         QVQ4T62SW0jTURzH96CCNnV52ZzTlc3r0n/eUsvNvG5T29SmzpbLtnnbzbUpaFqZCaaFWmoYRtlLZAQR
         Xl66gYEZRlg9BGJgrQtdXkqY5vXbf5s9pI/1gQM/zu98foff7xzKf0MkElnVavVJW2w0Gtk0hv8D1g6O
         1cuHbiW37pvN5kBbrrKyskEsFi/Z4s34czicWVLuHxkeXp2bm0NKjhSRcUmwWD5gaGhopbi4uFkoFM6T
@@ -999,7 +904,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupClusterButton8.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAC20lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAC20lE
         QVQ4T62RXUjTURiH/xfdqNPN/JhON81pflAjS8uc09Vwmx+z2Zyr2ZcupzZNmcb8iMymzaViukxRLKKk
         IWllmZKQipShRVddWUiKFwlBCNPU9NffOcrZRTf94MD7nPM+B857iP8WsVhsUalUlzfqwsJCFo3OGPLx
         Y1t2untayK2XWq2WuXGmVqtLJRLJ8ka9PQw2mz1Fyq3P+vp+Tk9PIzZRhj0HojAzMwuz2byanp5eKRKJ
@@ -1018,7 +923,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupClusterButton9.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAADCklE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAADCklE
         QVQ4T62SbUiTURiGX/rCr7WZbrbpljl1U9esFbXcZsvp5mbmZNOVlVnTaU222KJVK7+GZmmIH2NjkkQk
         SUGR5R+DIioKQ4J+BFEgTSQKggqWTZt3W74U1Y/+dMGB5zznvg6Hcw7x3yguLg4YjcZTkdpqtXJoSaw7
         yWu4gVWJjEC4NW6z2diRNZPJdLy0tDQYqf+ExeVyX4Vlz63R0W9TU1PI1+gg2CiG3z+NkZGR+crKymaV
@@ -1038,7 +943,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupClusterButton10.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAC40lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAC40lE
         QVQ4T62QW0iTYRzGx+hG3dxnU6dTlzmX55GVeZjT6WpTyVI8LEaFtZzaptNPbeV0Oi3PImp2ErVSQ4oO
         WEEYHaUMI8JLsTAVL/IqomVq+vStDUWDrnrgx/vwvv/n4c9L+29KSEgwq1SqcovX6XQ8gsN94rGNb97q
         7GqmroZJkvSyvKnV6jPJycmLFr9ZXD6fP0mFLz0YGvo1NTWFmKQ0BO+OwMzMLAYHB5czMzMr5XL5N2qW
@@ -1057,7 +962,7 @@ to move back a level.</value>
   <data name="groupsData.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAADUklE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAADUklE
         QVQ4T02T20/SYRjHf/NfaW111UVd11VurVo31txqZQdLrSDsAAICooj++AGK4oHEzJUgh5YKBXLQkRGi
         4iqVmIfhIZFSHIo1Sfn2amz0bO/evRffZ9/P83xf6qBElZV5SqbxvFLdoGVUDT4ZrV6lG1q25cqmtEzZ
         nK5Ta7fFcuWqRK7wVYhrtKVc3nmKkuQdig9K09Tc73B5sLD4HSvr21hJ/MbS+g6iP1NYiG9hbi2JSCyJ
@@ -1078,7 +983,7 @@ to move back a level.</value>
   <data name="buttonDataCopy.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAKHUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAKHUlE
         QVRYR+2X2VPb1xXHyVs77R/QmT5kxi9Npk3STMeZpONOO26Szthtk8aJV2LMJsQqQCBAiEWsAiEh0MZm
         tIDMvu9gMItBgNlXsRohwAgIO3jXt+enqLXTpyR96kzvzB3ujMS9557v53zvkdP/5FAqlWdS02SeaRKZ
         MilV2pIslk1IFdnrGVm3t1V52j2ZOm87Ta5ejxNJJqMTUlui4lOVAmGyZ3SS9Ixjix831Gr1r2WZyq7S
@@ -1128,7 +1033,7 @@ to move back a level.</value>
   <data name="buttonDataCopy.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAADZ0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAADZ0lE
         QVQ4T22S30+TVxzG3z/DmyXbzbIf2TKWLJlxiduutiWbog5TqkB/QENKoSD0B7R9X2hL+9KWYhopKAKu
         FI0IG78GRIZioaijLZgWhbp2QNvxq1p1JSPC++yAvdHtSc7dec75PM/3S/2fGlj2kNVmp3W03qPSMAlF
         DZ1W6ep2qqrpdIWKTlQotR65iqHziisPZSyvy3Gh+Q/ffAgr608R/usZluJPsLC6f5IIrWxhdjEO99AE
@@ -1149,7 +1054,7 @@ to move back a level.</value>
   <data name="buttonDataEdit.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAKJUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAKJUlE
         QVRYR81WeUzb5xm22j8q7b+FpK2apN2yEnXNNi3qofxR9VKbteuaptq6bs2kpGlCCjlIwn1jbDABG3MY
         jLEBA8YGYq5AMCThxhgS4gMDBsJlLttc5iZNQp69P9fZ1EXp2KRJe6VPIJB+z/O93/M878v6vyylUrld
         nJX1ebpEGi0SiwuFaeImsSynL1tRZM9TXp7NV6lX8pTqleyCklmpvMieJsm1JAgzmhIEIgVPmB7NSxJ9
@@ -1199,7 +1104,7 @@ to move back a level.</value>
   <data name="buttonDataEdit.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAADfUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAADfUlE
         QVQ4T0WT60/bdRTGf1niKxP/gBmj2XQRL8sSF9/4whiji85ljqCSzATDgtlgXAoOWMd6AUpHW+5lBQdz
         IJfKRQa0UAalpIGuMChx3GxgWC5SunEJULbAoB9/1CY8b775vvg8Oec55wgHUigUR7Ta4rO6wsLSvPwi
         uyq3YElbeHtLnVeyq8rT794qKN2Sq/OW5GqtXSrPLr2SlnZWpI4E4QMV6/Vtlm4rs3P/sriyxeLaC+ZX
@@ -1221,7 +1126,7 @@ to move back a level.</value>
   <data name="buttonDataView.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAKO0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAKO0lE
         QVRYR81WeVDTdxZvp7PtbKe20051252pM+u6nXaoWqq1VSnWuq2247rtVt11dVvrgeUQnIKiHEIggHIF
         MCQEEgxXOORUCaAgNwG5AkECCIEAgSQcASFAEfjs+/02dqe7sOs/O7OfmTcwHHmf73vv897nqf9LyGSy
         V4WxsV9Fi+J8+UJhCu+qsEwojm+XJKfpE2TXRxJTM6cSZJlTkqSMkThpmv6q6Jo6mCcoCw7jJwfxon2D
@@ -1271,7 +1176,7 @@ to move back a level.</value>
   <data name="buttonDataView.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAADk0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAADk0lE
         QVQ4T01TW0zaZxwlffHZZNnLsodlcXvYJcvqkj10S+wW04pm2XoZrXFaHFVs1dI6UbygFooIKFagzrZU
         u15WlbYiKiiIYZQiKl6KMOZlqCiyAopgnVQ5+2tN2Hn58uXLOfmd8zsfaQ9VVVWHBILrZKFYLBXVNxq4
         /IYVgVgW4omaIlyRJFLbIA2xeaIVNk9gYLE5UjqTSSZYh/bJe7gukSjVAzrMLyzD7QvBHdjCom8Trpdh
@@ -1293,7 +1198,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroup1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACfklE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACfklE
         QVQ4T42Qa0hTYRyHj3mO7ExM88MKCclNJzhY6rzsqDveMDUV1+aSdCrKqbwutUKxNlOEckYLE0WxMIUI
         MVOsSCVN0CQt9ENXu1FkahQkZJaYvyROLEnMB17+X57n9+El1sMrcI9QptrbEp1RMKczGL8H6bIfBmrS
         9xHE2S28sjHy0OjWQpMZ3b1D6L5zH+19o+DKquEfl3ScVzZGFbcfhgoL8k+eQURCMvS5JSitboT2cAl4
@@ -1310,7 +1215,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton1.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAHY0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAHY0lE
         QVRYR9WX+VdTZx7GUxKUJCDqQKtEUQkSkC2sskNASEDWJJQQdhQIyObCJriCqAgNYuvCYZFCOYwK1KVC
         i3XDEVcsKi0iqAeo2mpdsM60OvLMC94/AGr6w3zOec+9P9zn+a73noQ2FazsXQwtHD2+sBb43xOIo995
         SuPeOft/2r9UJCm3FwUbUo/9PRhZ2Cw1W+r++2ZlJTpv3set+09wpW8EX5+/gbzSagiksX/aewcV2y7h
@@ -1348,7 +1253,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton1.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACfklE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACfklE
         QVQ4T42Qa0hTYRyHj3mO7ExM88MKCclNJzhY6rzsqDveMDUV1+aSdCrKqbwutUKxNlOEckYLE0WxMIUI
         MVOsSCVN0CQt9ENXu1FkahQkZJaYvyROLEnMB17+X57n9+El1sMrcI9QptrbEp1RMKczGL8H6bIfBmrS
         9xHE2S28sjHy0OjWQpMZ3b1D6L5zH+19o+DKquEfl3ScVzZGFbcfhgoL8k+eQURCMvS5JSitboT2cAl4
@@ -1365,7 +1270,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton3.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAH1ElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAH1ElE
         QVRYR62XeVCTZx7HGXfXcdtdp9vWetUubdd7lGoB18rqUqmLjFvLJachCeEIECJyiXhhAEE3eCAbETCI
         JOEwIYSYBMIRENAGQU4PJAoUUUEQ3KqAmu8+pO//HvCZ+c7zzOT9fX/f9/c+bzIxexO07T8s9XL6/ri/
         u82t3b7fv+LQbF+7b11rsF237MymtX9bQV02vfj4+Myi0+nbvV3sU7n+Li8LM3horsjGjZpcdFRfQH1x
@@ -1405,7 +1310,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton3.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACtElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACtElE
         QVQ4T33QaUjTYQDH8VEGJfmugkKtIFE0KI9e6RQND3IuMq/pPLZc23SHuhM1arbMY4pnhwWhU9Qyr2lt
         09TyKA+GJg4jzewwTTQvCg37NfAPUh6fN/8X/+/v4eEh/Y9Oj3SICvZWRVKcF+j+Loi+6DxHdjqRYfq1
         d6PYhVwuj6fRwsGMCkJnTQ60ZUqUZ3EgivEFxdVWTWTb8/DwMFMoFGsjIyPIzlaBFxOI23wK7itZyJUG
@@ -1423,7 +1328,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton2.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAITUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAITUlE
         QVRYR6WWe0yb1xnGuRpsA75jG9v4ysVgfANjxzeMwdj4gsEYiA0YSMLCLQlNFkKaLquStQprm3XZWDdl
         aqOla6QuW0OiNFnatcttobm0qdawbtMqLZWqahepU5apajY/O3a+v/bHQuAnveLzJ85znvO+7znny/lf
         ampqKvR6/acKlWp75vdcFbt0ulY8OV0tOb2ttuLOuFq8klQKz/fJ+Dv7FWxu5n+am5uNVqu1N/O8brRa
@@ -1465,7 +1370,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton2.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACoUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACoUlE
         QVQ4T42R3UtTYRzH1WrbOW5tzjPb3NzcPHtxx23u5bix42ab09ib000ty1OsxF4UzMKLIiIiiCAokOim
         qy4KJCiobiSRkDQTIQyDCP0XSroyy28LD8gkpQ88/G4+nx8Pz1Oyg37G5Vo6QWvartprvt5s0K9doNUr
         KR2Voy0Wn8VmeyF4u+N0e/CwmcF8JoDZpA8TfhrDTjOcHi8sVusVQdudSyyD6d4oFk4m8LYngmd8Bzp6
@@ -1483,7 +1388,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton4.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAHyUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAHyUlE
         QVRYR82XeVCTdxrHo93udKa7M9V2u9tZdXerHVtHbWV3qNYTghwVhYgRuQLRQAiQkIRwJsFwJpBgCLcc
         ISUYFANRBORQkNIoiHIIIiqHWnXo1qOrVXcV891f6fs/KuzMfmaeeTOZfL+/5/09z+9589Jmgu+7ao2I
         taY8gWt/I1O44WV2rJNNKXR4KAn8siHSx24H9bP/CfOSIt1S8pMZUz014bjdKcX3nQm4dSYW461inKsM
@@ -1523,7 +1428,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton4.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACqElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACqElE
         QVQ4T4XRW0jTYRzGceumIG/MuyASKlJJzZp5JFxuTTcVUfMwS3HTuU2d07mt3Ml5yG3ahpZMtCkecpoW
         aa5SYzWy2UFMEQVLyigyEssOYob2FPQHMVt9rr/P7714nf6UXxi1rTCV1KTOIi1osv3XynOCv+Ql+3bl
         Mw86E8k/bSkXRpif9Ejw4Wkl3g2rMTMgxLUqOvISvexE41iNOmVXvYqBlRkTlmfa8XGiDpM3+LDVRaGM
@@ -1541,7 +1446,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton6.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAH90lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAH90lE
         QVRYR72XezSV6R7HX91Lx5QRknQT28jOJanGRsx2v0S2tUmkYzFLTVJnc5zBGRUyNGZGFm0ihFMbGxkc
         lOJwSFo0kZUuOiFDjS6mXPf3PO/bO7PW+WswrfNZ61nvu9Z+n+/v9/ye3+/3PJuaCSKRSDHsPTdEoaHD
         5DkdHh7+7vjx413+/v5nDx48qMt++uFJTU31jIuL+7mmpgZPnjzBs2fP8PTpUzx+/Bi3b99GVlYWgoKC
@@ -1582,7 +1487,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton6.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAC3klE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAC3klE
         QVQ4T3XSfSzUcQDH8R8rbo01p4erxnB3kZGYrCMnroWuLA+tc0eZdLksFodVHsOd6eYxra0mVxpby8Ml
         3MoaKqcmKyXdljDahe7y0D9x9+nkt9lFr+333+f9+32374/4V1VV1TaxWHxdIpFoc3Nz9SKRaJLP5ydy
         uVxLcvJ/d+/dY9fU1PwaGxuDTqeDRqPBwMAAsrKyEB4ZKSNn6ythMHwqIyKmfxsM0Ov1WFxchFarhaqv
@@ -1601,7 +1506,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton5.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAHJklE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAHJklE
         QVRYR+2W+1OTVx6HsR3tTrEd645VLss1gtsICSGEEECQS0CEGCAQSDCAXEJiuAYhcocaiNx0BbdClYtc
         K67iDbkVsKCydaXCOgKCioVdwbHMil3d7qz57PvD+wdw68z+sM/M9z3zzpzPc86c951zjs7/+Z+HJhB8
         WCwWSUrEIQO1EtHPtTxfbTnX82m2s3N5gRd7O9nt16FULjEqk4jvDigT8fp0Gd4VH8PrlEQsHAxDn68v
@@ -1638,7 +1543,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton5.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACRElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACRElE
         QVQ4T7XSX0hTARTH8cEioljXURP7g3cJeufmVm67Tkq9mUVzFxu5jJXZNnQGaXNt6Eo0LU1tTSK2QYYp
         RlDZKhdKlBjUg/og/aN60aKQnEVKjqLCP798uG+2+dTn9Xw5L+fw/gsTQeScIIj3l+TyuTMKRbhGrb7M
         jZZ3lM8/0CCMmR1UyPHJZELY58Pz+nrUaDTXuCQySxxPdHIl/1vP+hj0JiXiq9mMmbo6/PD7cZ1l57gs
@@ -1654,7 +1559,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton7.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAHUklE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAHUklE
         QVRYR7WWV1BbVx7Gnd2ZnX3ZzD5kMskuD+tJZnYdx/asHXsJCWCH4AIOmDpUm15Mtei9yFQJAxISIAGi
         GazQjZHooljGCElUFUQ1phgS44XQ1mP07XX2vi825Ddz3873ne/8z/+ce44dBCaTeYJGo5WmpqauJiUl
         af38/F7a2dlV2NjYfE4O+e2gUqlepaVle0tLS9jc3IRMJkNzczPS0tJgZWW1YWJiYkAOPXpiY2Odi4tL
@@ -1692,7 +1597,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton7.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAChUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAChUlE
         QVQ4T4XOW0zSUQDHcX1xZVuPvfWWK3U5H3QpmF1M01iwJED+hRfSvCQodtFs2spMAwUpL6WSISYIpbJI
         5sCwByvnGta8oUIllpZrzuWalvnLrfPihPXZztP5/s6OjycURfkxmSyZWJy3KJEUrLPZ7EEGgxFCrv+P
         y+MZHY4xYH0Fdvsw5HI5WCzWHI1G20ES75KS+JHtWgO+u/vwabQD086P0Om0yMnJwcZP9pPMOz4nRjU+
@@ -1710,7 +1615,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton8.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAHqElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAHqElE
         QVRYR82WaVCUVxaGHSNRZ5RgTcBBzBQiAxohTCkdQNlkE9kU2RtpGm2EbiCirN3SihCakQbZTJBmRwUU
         g2HfISAoRnYRZRF1gAAaNVgiItLv3Iau/JmqKQz8mKfq1Pd11T3vPd85556+K/4X7IgVK4OO6TkQKw/3
         NXoeE2AkjGObCnknzX8J8jC84n/EUEu8dPnhBlFlwwIcGq9foAv7Kv0x2sDBcEMwntYH4FHlcTRk0hDt
@@ -1749,7 +1654,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton8.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAClklE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAClklE
         QVQ4T4XQa0iTARTGcf3khchpBA0JEdQ2FfHS1M2a2zuXuizXvGuagxqOaS9qGYJa6to0L6TLe6hhKwfW
         ukrhtULNLCUpxYzITKJSs5gSJD4t9oKYrn5fzpf/gcOx+JuKJHadkbLuqUnO95o8IUqyhV+zkv0rwkSu
         VlRinjJHtONiXvSHN70FWBgtxdxAAaYfZECrDEF6NENHZeZVFcQzdGWxWJluwcpbLebHNBjXy9BXFwGl
@@ -1767,7 +1672,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton9.ImageLarge" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAAHO0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAHO0lE
         QVRYR9VXaVBb1xUWEggkxGrEJiQkEIsAWQ8EaEMLAoMR+2LANovZ98WsBhtIWIoSEseMXRpP44k7DnbD
         2HGW1uO0bqeZeCa2p5m0Y3ey1HWWTidp/jT9kU6TdPT16Em/OyPgT7+ZOyO99853vnvPueeey/lfsFqt
         wfVHjo5V1Tfeq6pv+q7AVvTBwZzcHyenp8/GSeQ9IpEk1vvp/qPAZtHVNR37rL2rH/qCIijTNTAWlsJs
@@ -1805,7 +1710,7 @@ to move back a level.</value>
   <data name="kryptonRibbonGroupButton9.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACrElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACrElE
         QVQ4T4WS30tTYRzGzzZ/jB235jbn3GbadNvZdD+O++XmcqmbDnVupiYOWoqZiIQRKZGiEWSIwQyRJCGv
         Iv8AiYiuwrqKUOoipYuiLopugpTIbE+vekAmVh/48r7wPs/3PHAe6jCsvU4aDDcuRGLtX6vrGrYtrPO1
         LC8/QZ6E+4r/YGFdDwwmKxTKQvgCIZTbXMgSisHnizo4ydFU+RplNfUNeofnZGru3iJm5++jd2AIBpMN
@@ -1818,6 +1723,41 @@ to move back a level.</value>
         kZevhstTiQKNDoFgC+LnBhBtP0vuUVJtHylTwQZnO4A+ppiUSPNTZRY3csQSFBYzUKpKYWX98AeaSKWd
         MJV7oNYaQecoNjnbYTL7xGLFD1IYUDwafIGEpNHBTJLp9HZoi8wQ0XkQi2VbnOFINGTBKFn2jKKyPpPZ
         onjZu/OL4glTGRmijexsunZfSlF/AB2F/rJzvYadAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="kryptonContextMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
 </value>
   </data>
   <metadata name="checkSetPalette.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

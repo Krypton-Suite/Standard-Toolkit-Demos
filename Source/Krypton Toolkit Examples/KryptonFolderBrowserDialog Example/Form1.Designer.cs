@@ -1,5 +1,5 @@
 ﻿
-namespace KryptonFontDialog_Example_2019
+namespace FolderBrowserDialog_Example
 {
     partial class Form1
     {
@@ -36,16 +36,16 @@ namespace KryptonFontDialog_Example_2019
             this.paletteProfessional = new Krypton.Toolkit.KryptonRadioButton();
             this.palette2007Blue = new Krypton.Toolkit.KryptonRadioButton();
             this.palette2010Blue = new Krypton.Toolkit.KryptonRadioButton();
-            this.buttonShowFontDialog = new Krypton.Toolkit.KryptonButton();
+            this.buttonShowFolderBrowserDialog = new Krypton.Toolkit.KryptonButton();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
-            this.chkShowEffects = new Krypton.Toolkit.KryptonCheckBox();
-            this.chkShowApply = new Krypton.Toolkit.KryptonCheckBox();
-            this.chkAllowVectorFonts = new Krypton.Toolkit.KryptonCheckBox();
-            this.chkAllowSimulations = new Krypton.Toolkit.KryptonCheckBox();
-            this.chkAllowScriptChange = new Krypton.Toolkit.KryptonCheckBox();
-            this.chkShowColour = new Krypton.Toolkit.KryptonCheckBox();
-            this.chkShowHelp = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkUseOldStyle = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkUseDescriptionForTitle = new Krypton.Toolkit.KryptonCheckBox();
+            this.txtRootFolder = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
+            this.txtDescription = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            this.chkShowNewFolderBut = new Krypton.Toolkit.KryptonCheckBox();
             this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
             this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonNumericUpDown1 = new Krypton.Toolkit.KryptonNumericUpDown();
@@ -163,28 +163,28 @@ namespace KryptonFontDialog_Example_2019
             this.palette2010Blue.Values.Text = "Office 2010 - Blue";
             this.palette2010Blue.CheckedChanged += new System.EventHandler(this.Palette2010Blue_CheckedChanged);
             // 
-            // buttonShowFontDialog
+            // buttonShowFolderBrowserDialog
             // 
-            this.buttonShowFontDialog.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.buttonShowFontDialog.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonShowFontDialog.Location = new System.Drawing.Point(264, 323);
-            this.buttonShowFontDialog.Name = "buttonShowFontDialog";
-            this.buttonShowFontDialog.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonShowFontDialog.Size = new System.Drawing.Size(307, 59);
-            this.buttonShowFontDialog.TabIndex = 19;
-            this.buttonShowFontDialog.Values.Text = "Show FontDialog";
-            this.buttonShowFontDialog.Click += new System.EventHandler(this.ButtonShowFontDialog_Click);
+            this.buttonShowFolderBrowserDialog.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.buttonShowFolderBrowserDialog.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.buttonShowFolderBrowserDialog.Location = new System.Drawing.Point(412, 323);
+            this.buttonShowFolderBrowserDialog.Name = "buttonShowFolderBrowserDialog";
+            this.buttonShowFolderBrowserDialog.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.buttonShowFolderBrowserDialog.Size = new System.Drawing.Size(307, 59);
+            this.buttonShowFolderBrowserDialog.TabIndex = 19;
+            this.buttonShowFolderBrowserDialog.Values.Text = "Show FolderBrowserDialog";
+            this.buttonShowFolderBrowserDialog.Click += new System.EventHandler(this.ButtonShowFontDialog_Click);
             // 
             // kryptonPanel1
             // 
             this.kryptonPanel1.Controls.Add(this.kryptonGroupBox2);
             this.kryptonPanel1.Controls.Add(this.kryptonGroupBox1);
             this.kryptonPanel1.Controls.Add(this.groupBoxPalette);
-            this.kryptonPanel1.Controls.Add(this.buttonShowFontDialog);
+            this.kryptonPanel1.Controls.Add(this.buttonShowFolderBrowserDialog);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(594, 410);
+            this.kryptonPanel1.Size = new System.Drawing.Size(771, 410);
             this.kryptonPanel1.TabIndex = 20;
             // 
             // kryptonGroupBox2
@@ -197,95 +197,99 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonGroupBox2.Panel
             // 
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowEffects);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowApply);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowVectorFonts);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowSimulations);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowScriptChange);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowColour);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowHelp);
-            this.kryptonGroupBox2.Size = new System.Drawing.Size(199, 289);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkUseOldStyle);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkUseDescriptionForTitle);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.txtRootFolder);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel2);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.txtDescription);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel1);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowNewFolderBut);
+            this.kryptonGroupBox2.Size = new System.Drawing.Size(387, 289);
             this.kryptonGroupBox2.TabIndex = 21;
             this.kryptonGroupBox2.Values.Heading = "Options:";
             // 
-            // chkShowEffects
+            // chkUseOldStyle
             // 
-            this.chkShowEffects.Checked = true;
-            this.chkShowEffects.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.chkShowEffects.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkShowEffects.Location = new System.Drawing.Point(4, 180);
-            this.chkShowEffects.Name = "chkShowEffects";
-            this.chkShowEffects.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.chkShowEffects.Size = new System.Drawing.Size(110, 24);
-            this.chkShowEffects.TabIndex = 6;
-            this.chkShowEffects.Values.Text = "Show Effects";
+            this.chkUseOldStyle.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
+            this.chkUseOldStyle.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.chkUseOldStyle.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.chkUseOldStyle.Location = new System.Drawing.Point(5, 60);
+            this.chkUseOldStyle.Name = "chkUseOldStyle";
+            this.chkUseOldStyle.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.chkUseOldStyle.Size = new System.Drawing.Size(186, 24);
+            this.chkUseOldStyle.TabIndex = 6;
+            this.chkUseOldStyle.Values.Text = "Use \"Old Style\" Browser";
             // 
-            // chkShowApply
+            // chkUseDescriptionForTitle
             // 
-            this.chkShowApply.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.chkShowApply.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.chkShowApply.Location = new System.Drawing.Point(4, 150);
-            this.chkShowApply.Name = "chkShowApply";
-            this.chkShowApply.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.chkShowApply.Size = new System.Drawing.Size(105, 24);
-            this.chkShowApply.TabIndex = 5;
-            this.chkShowApply.Values.Text = "Show Apply";
+            this.chkUseDescriptionForTitle.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
+            this.chkUseDescriptionForTitle.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.chkUseDescriptionForTitle.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.chkUseDescriptionForTitle.Location = new System.Drawing.Point(5, 30);
+            this.chkUseDescriptionForTitle.Name = "chkUseDescriptionForTitle";
+            this.chkUseDescriptionForTitle.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.chkUseDescriptionForTitle.Size = new System.Drawing.Size(191, 24);
+            this.chkUseDescriptionForTitle.TabIndex = 5;
+            this.chkUseDescriptionForTitle.Values.Text = "Use Description For Title";
             // 
-            // chkAllowVectorFonts
+            // txtRootFolder
             // 
-            this.chkAllowVectorFonts.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.chkAllowVectorFonts.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.chkAllowVectorFonts.Location = new System.Drawing.Point(4, 120);
-            this.chkAllowVectorFonts.Name = "chkAllowVectorFonts";
-            this.chkAllowVectorFonts.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.chkAllowVectorFonts.Size = new System.Drawing.Size(152, 24);
-            this.chkAllowVectorFonts.TabIndex = 4;
-            this.chkAllowVectorFonts.Values.Text = "Allow Vector Fonts";
+            this.txtRootFolder.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtRootFolder.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtRootFolder.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtRootFolder.CueHint.CueHintText = "Environment.SpecialFolder.Desktop";
+            this.txtRootFolder.CueHint.Padding = new System.Windows.Forms.Padding(-2, 0, 0, 0);
+            this.txtRootFolder.Enabled = false;
+            this.txtRootFolder.Location = new System.Drawing.Point(5, 211);
+            this.txtRootFolder.MaxLength = 255;
+            this.txtRootFolder.Name = "txtRootFolder";
+            this.txtRootFolder.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtRootFolder.Size = new System.Drawing.Size(364, 27);
+            this.txtRootFolder.TabIndex = 4;
+            this.txtRootFolder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // chkAllowSimulations
+            // kryptonLabel2
             // 
-            this.chkAllowSimulations.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.chkAllowSimulations.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.chkAllowSimulations.Location = new System.Drawing.Point(4, 90);
-            this.chkAllowSimulations.Name = "chkAllowSimulations";
-            this.chkAllowSimulations.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.chkAllowSimulations.Size = new System.Drawing.Size(145, 24);
-            this.chkAllowSimulations.TabIndex = 3;
-            this.chkAllowSimulations.Values.Text = "Allow Simulations";
+            this.kryptonLabel2.Location = new System.Drawing.Point(5, 180);
+            this.kryptonLabel2.Name = "kryptonLabel2";
+            this.kryptonLabel2.Size = new System.Drawing.Size(95, 24);
+            this.kryptonLabel2.TabIndex = 3;
+            this.kryptonLabel2.Values.Text = "Root Folder:";
             // 
-            // chkAllowScriptChange
+            // txtDescription
             // 
-            this.chkAllowScriptChange.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.chkAllowScriptChange.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.chkAllowScriptChange.Location = new System.Drawing.Point(3, 60);
-            this.chkAllowScriptChange.Name = "chkAllowScriptChange";
-            this.chkAllowScriptChange.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.chkAllowScriptChange.Size = new System.Drawing.Size(161, 24);
-            this.chkAllowScriptChange.TabIndex = 2;
-            this.chkAllowScriptChange.Values.Text = "Allow Script Change";
+            this.txtDescription.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtDescription.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtDescription.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtDescription.Location = new System.Drawing.Point(6, 141);
+            this.txtDescription.MaxLength = 255;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtDescription.Size = new System.Drawing.Size(363, 27);
+            this.txtDescription.TabIndex = 2;
+            this.txtDescription.Text = "My Folder Browser:";
+            this.txtDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // chkShowColour
+            // kryptonLabel1
             // 
-            this.chkShowColour.Checked = true;
-            this.chkShowColour.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.chkShowColour.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkShowColour.Location = new System.Drawing.Point(4, 30);
-            this.chkShowColour.Name = "chkShowColour";
-            this.chkShowColour.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.chkShowColour.Size = new System.Drawing.Size(111, 24);
-            this.chkShowColour.TabIndex = 1;
-            this.chkShowColour.Values.Text = "Show Colour";
+            this.kryptonLabel1.Location = new System.Drawing.Point(6, 110);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(89, 24);
+            this.kryptonLabel1.TabIndex = 1;
+            this.kryptonLabel1.Values.Text = "Description";
             // 
-            // chkShowHelp
+            // chkShowNewFolderBut
             // 
-            this.chkShowHelp.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.chkShowHelp.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.chkShowHelp.Location = new System.Drawing.Point(4, 0);
-            this.chkShowHelp.Name = "chkShowHelp";
-            this.chkShowHelp.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.chkShowHelp.Size = new System.Drawing.Size(98, 24);
-            this.chkShowHelp.TabIndex = 0;
-            this.chkShowHelp.Values.Text = "Show Help";
+            this.chkShowNewFolderBut.Checked = true;
+            this.chkShowNewFolderBut.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
+            this.chkShowNewFolderBut.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkShowNewFolderBut.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.chkShowNewFolderBut.Location = new System.Drawing.Point(4, 0);
+            this.chkShowNewFolderBut.Name = "chkShowNewFolderBut";
+            this.chkShowNewFolderBut.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.chkShowNewFolderBut.Size = new System.Drawing.Size(372, 24);
+            this.chkShowNewFolderBut.TabIndex = 0;
+            this.chkShowNewFolderBut.Values.Text = "Show New Folder Button (Only applicable to \"Old\")";
             // 
             // kryptonGroupBox1
             // 
@@ -406,7 +410,7 @@ namespace KryptonFontDialog_Example_2019
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 410);
+            this.ClientSize = new System.Drawing.Size(771, 410);
             this.Controls.Add(this.kryptonPanel1);
             this.Name = "Form1";
             this.Text = "KryptonFontDialog Example";
@@ -441,7 +445,7 @@ namespace KryptonFontDialog_Example_2019
         private Krypton.Toolkit.KryptonRadioButton paletteProfessional;
         private Krypton.Toolkit.KryptonRadioButton palette2007Blue;
         private Krypton.Toolkit.KryptonRadioButton palette2010Blue;
-        private Krypton.Toolkit.KryptonButton buttonShowFontDialog;
+        private Krypton.Toolkit.KryptonButton buttonShowFolderBrowserDialog;
         private Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
         private Krypton.Toolkit.KryptonNumericUpDown kryptonNumericUpDown1;
@@ -451,13 +455,13 @@ namespace KryptonFontDialog_Example_2019
         private Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox2;
-        private Krypton.Toolkit.KryptonCheckBox chkShowHelp;
-        private Krypton.Toolkit.KryptonCheckBox chkShowColour;
-        private Krypton.Toolkit.KryptonCheckBox chkShowEffects;
-        private Krypton.Toolkit.KryptonCheckBox chkShowApply;
-        private Krypton.Toolkit.KryptonCheckBox chkAllowVectorFonts;
-        private Krypton.Toolkit.KryptonCheckBox chkAllowSimulations;
-        private Krypton.Toolkit.KryptonCheckBox chkAllowScriptChange;
+        private Krypton.Toolkit.KryptonCheckBox chkShowNewFolderBut;
+        private Krypton.Toolkit.KryptonTextBox txtRootFolder;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel2;
+        private Krypton.Toolkit.KryptonTextBox txtDescription;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private Krypton.Toolkit.KryptonCheckBox chkUseDescriptionForTitle;
+        private Krypton.Toolkit.KryptonCheckBox chkUseOldStyle;
     }
 }
 

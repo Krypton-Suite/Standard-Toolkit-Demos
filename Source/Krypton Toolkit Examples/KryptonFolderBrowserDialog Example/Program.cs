@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace KryptonFontDialog_Example_2019
+namespace FolderBrowserDialog_Example
 {
     static class Program
     {
