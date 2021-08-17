@@ -1,7 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
-        <OutputType>WinExe</OutputType>
+        <!--<TargetFrameworks>net48;net5.0-windows</TargetFrameworks>-->
+		<TargetFrameworks>net5.0-windows</TargetFrameworks>
+		<OutputType>WinExe</OutputType>
         <RootNamespace>KeyTipsAndKeyboardAccess</RootNamespace>
         <AssemblyName>Key Tips and Keyboard Access</AssemblyName>
         <ApplicationIcon>Krypton.ico</ApplicationIcon>
@@ -29,5 +30,6 @@
     </Choose>
     <PropertyGroup>
         <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
     </PropertyGroup>
 </Project>

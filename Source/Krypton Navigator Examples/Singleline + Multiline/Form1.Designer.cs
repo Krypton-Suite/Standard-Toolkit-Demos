@@ -425,7 +425,7 @@ namespace SinglelinePlusMultiline
             // 
             this.kryptonPage1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage1.Flags = 65534;
-            this.kryptonPage1.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPage1.ImageSmall")));
+            this.kryptonPage1.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage1.ImageSmall")));
             this.kryptonPage1.LastVisibleSet = true;
             this.kryptonPage1.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage1.Name = "kryptonPage1";
@@ -440,7 +440,7 @@ namespace SinglelinePlusMultiline
             // 
             this.kryptonPage2.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage2.Flags = 65534;
-            this.kryptonPage2.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPage2.ImageSmall")));
+            this.kryptonPage2.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage2.ImageSmall")));
             this.kryptonPage2.LastVisibleSet = true;
             this.kryptonPage2.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage2.Name = "kryptonPage2";
@@ -455,7 +455,7 @@ namespace SinglelinePlusMultiline
             // 
             this.kryptonPage3.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage3.Flags = 65534;
-            this.kryptonPage3.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPage3.ImageSmall")));
+            this.kryptonPage3.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage3.ImageSmall")));
             this.kryptonPage3.LastVisibleSet = true;
             this.kryptonPage3.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage3.Name = "kryptonPage3";
@@ -470,7 +470,7 @@ namespace SinglelinePlusMultiline
             // 
             this.kryptonPage4.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage4.Flags = 65534;
-            this.kryptonPage4.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPage4.ImageSmall")));
+            this.kryptonPage4.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage4.ImageSmall")));
             this.kryptonPage4.LastVisibleSet = true;
             this.kryptonPage4.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage4.Name = "kryptonPage4";
@@ -485,7 +485,7 @@ namespace SinglelinePlusMultiline
             // 
             this.kryptonPage5.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage5.Flags = 65534;
-            this.kryptonPage5.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPage5.ImageSmall")));
+            this.kryptonPage5.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage5.ImageSmall")));
             this.kryptonPage5.LastVisibleSet = true;
             this.kryptonPage5.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage5.Name = "kryptonPage5";
@@ -500,7 +500,7 @@ namespace SinglelinePlusMultiline
             // 
             this.kryptonPage6.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage6.Flags = 65534;
-            this.kryptonPage6.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPage6.ImageSmall")));
+            this.kryptonPage6.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage6.ImageSmall")));
             this.kryptonPage6.LastVisibleSet = true;
             this.kryptonPage6.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage6.Name = "kryptonPage6";

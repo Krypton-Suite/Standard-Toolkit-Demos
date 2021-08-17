@@ -1,4 +1,11 @@
-﻿using Krypton.Toolkit;
+﻿#region BSD License
+/*
+ *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  
+ */
+#endregion
+
 using System;
 using System.Collections;
 using System.Collections.Specialized;
@@ -6,67 +13,64 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
+using Krypton.Toolkit;
+
 namespace KryptonToolkitHub.Classes
 {
     public class IOOperations
     {
-        #region Variables
-        private ArrayList _fileArrayList = new ArrayList(), _trueInstalledFileArrayList = new ArrayList();
+        #region Constructors
 
-        private string[] _installedFileList, _trueInstalledFileList;
+        #endregion
+
+        #region Variables
+
+        private ArrayList _trueInstalledFileArrayList = new ArrayList();
 
         private StringCollection _installedFileListCollection, _trueInstalledFileListCollection;
 
-        private FileInfo _fileInfo;
         #endregion
 
         #region Properties
+
         /// <summary>
-        /// Gets or sets the file array list.
+        ///     Gets or sets the file array list.
         /// </summary>
         /// <value>
-        /// The file array list.
+        ///     The file array list.
         /// </value>
-        public ArrayList FileArrayList { get { return _fileArrayList; } set { _fileArrayList = value; } }
+        public ArrayList FileArrayList { get; set; } = new ArrayList();
 
         /// <summary>
-        /// Gets or sets the installed file list.
+        ///     Gets or sets the installed file list.
         /// </summary>
         /// <value>
-        /// The installed file list.
+        ///     The installed file list.
         /// </value>
-        public string[] InstalledFileList { get { return _installedFileList; } set { _installedFileList = value; } }
+        public string[] InstalledFileList { get; set; }
 
         /// <summary>
-        /// Gets or sets the true installed file list.
+        ///     Gets or sets the true installed file list.
         /// </summary>
         /// <value>
-        /// The true installed file list.
+        ///     The true installed file list.
         /// </value>
-        public string[] TrueInstalledFileList { get { return _trueInstalledFileList; } set { _trueInstalledFileList = value; } }
+        public string[] TrueInstalledFileList { get; set; }
 
         /// <summary>
-        /// Gets or sets the file information.
+        ///     Gets or sets the file information.
         /// </summary>
         /// <value>
-        /// The file information.
+        ///     The file information.
         /// </value>
-        public FileInfo FileInformation { get { return _fileInfo; } set { _fileInfo = value; } }
-        #endregion
+        public FileInfo FileInformation { get; set; }
 
-        #region Constructors
-        /// <summary>
-        /// Initialises a new instance of the <see cref="IOOperations"/> class.
-        /// </summary>
-        public IOOperations()
-        {
-
-        }
         #endregion
 
         #region Getters and Setters
+
         /// <summary>
-        /// Sets the FileArrayLis0t to the value of values.
+        ///     Sets the FileArrayLis0t to the value of values.
         /// </summary>
         /// <param name="values">The value of values.</param>
         public void SetFileArrayList(ArrayList values)
@@ -75,7 +79,7 @@ namespace KryptonToolkitHub.Classes
         }
 
         /// <summary>
-        /// Gets the FileArrayList value.
+        ///     Gets the FileArrayList value.
         /// </summary>
         /// <returns>The value of values.</returns>
         public ArrayList GetFileArrayList()
@@ -84,7 +88,7 @@ namespace KryptonToolkitHub.Classes
         }
 
         /// <summary>
-        /// Sets the InstalledFileList to the value of values.
+        ///     Sets the InstalledFileList to the value of values.
         /// </summary>
         /// <param name="values">The value of values.</param>
         public void SetInstalledFileList(string[] values)
@@ -93,7 +97,7 @@ namespace KryptonToolkitHub.Classes
         }
 
         /// <summary>
-        /// Gets the InstalledFileList value.
+        ///     Gets the InstalledFileList value.
         /// </summary>
         /// <returns>The value of values.</returns>
         public string[] GetInstalledFileList()
@@ -102,7 +106,7 @@ namespace KryptonToolkitHub.Classes
         }
 
         /// <summary>
-        /// Sets the TrueInstalledFileList to the value of values.
+        ///     Sets the TrueInstalledFileList to the value of values.
         /// </summary>
         /// <param name="values">The value of values.</param>
         public void SetTrueInstalledFileList(string[] values)
@@ -111,7 +115,7 @@ namespace KryptonToolkitHub.Classes
         }
 
         /// <summary>
-        /// Gets the TrueInstalledFileList value.
+        ///     Gets the TrueInstalledFileList value.
         /// </summary>
         /// <returns>The value of values.</returns>
         public string[] GetTrueInstalledFileList()
@@ -120,7 +124,7 @@ namespace KryptonToolkitHub.Classes
         }
 
         /// <summary>
-        /// Sets the FileInformation to the value of file.
+        ///     Sets the FileInformation to the value of file.
         /// </summary>
         /// <param name="file">The value of file.</param>
         public void SetFileInformation(FileInfo file)
@@ -129,18 +133,20 @@ namespace KryptonToolkitHub.Classes
         }
 
         /// <summary>
-        /// Gets the FileInformation value.
+        ///     Gets the FileInformation value.
         /// </summary>
         /// <returns>The value of file.</returns>
         public FileInfo GetFileInformation()
         {
             return FileInformation;
         }
+
         #endregion
 
         #region Methods
+
         /// <summary>
-        /// Creates the file list.
+        ///     Creates the file list.
         /// </summary>
         /// <param name="installDirectory">The install directory.</param>
         /// <param name="outputFile">The output file.</param>
@@ -148,15 +154,14 @@ namespace KryptonToolkitHub.Classes
         {
             try
             {
-                foreach (string files in Directory.GetFiles(installDirectory))
+                foreach (var files in Directory.GetFiles(installDirectory))
                 {
                     _installedFileListCollection = new StringCollection();
 
                     _installedFileListCollection.Add(files);
                 }
 
-                foreach (string file in _installedFileListCollection)
-                {
+                foreach (var file in _installedFileListCollection)
                     if (File.Exists(outputFile))
                     {
                         StreamWriter writer = new StreamWriter(outputFile);
@@ -169,16 +174,16 @@ namespace KryptonToolkitHub.Classes
 
                         writer.Dispose();
                     }
-                }
             }
             catch (Exception e)
             {
-                KryptonMessageBox.Show($"An error has occurred: { e.Message }", "Unexpected Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                KryptonMessageBox.Show($"An error has occurred: {e.Message}", "Unexpected Error", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
 
         /// <summary>
-        /// Propagates the installed file list.
+        ///     Propagates the installed file list.
         /// </summary>
         /// <param name="fileDatabaseList">The file database list.</param>
         public void PropagateInstalledFileList(string fileDatabaseList)
@@ -189,26 +194,27 @@ namespace KryptonToolkitHub.Classes
                 {
                     StreamReader reader = new StreamReader(fileDatabaseList);
 
-                    string contents = reader.ReadToEnd();
+                    var contents = reader.ReadToEnd();
 
                     _installedFileListCollection.Add(contents);
                 }
             }
             catch (Exception exc)
             {
-                KryptonMessageBox.Show($"An error has occurred: { exc.Message }", "Unexpected Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                KryptonMessageBox.Show($"An error has occurred: {exc.Message}", "Unexpected Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         /// <summary>
-        /// Parses the file list.
+        ///     Parses the file list.
         /// </summary>
         /// <param name="installDirectory">The install directory.</param>
         /// <param name="inputFileDatabaseList">The input file database list.</param>
         /// <returns></returns>
         public bool ParseFileList(string installDirectory, string inputFileDatabaseList)
         {
-            bool flag = false;
+            var flag = false;
 
             try
             {
@@ -219,13 +225,9 @@ namespace KryptonToolkitHub.Classes
                     _installedFileListCollection.Add(reader.ReadToEnd());
                 }
 
-                foreach (string file in Directory.GetFiles(installDirectory))
-                {
-                    _trueInstalledFileListCollection.Add(file);
-                }
+                foreach (var file in Directory.GetFiles(installDirectory)) _trueInstalledFileListCollection.Add(file);
 
-                foreach (string item in _trueInstalledFileListCollection)
-                {
+                foreach (var item in _trueInstalledFileListCollection)
                     if (_installedFileListCollection.Contains(item))
                     {
                         flag = true;
@@ -234,13 +236,15 @@ namespace KryptonToolkitHub.Classes
                     {
                         flag = false;
 
-                        KryptonMessageBox.Show($"Error, you are missing:\n { item }\nYou may need to reinstall this application.", "File Errors", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        KryptonMessageBox.Show(
+                            $"Error, you are missing:\n {item}\nYou may need to reinstall this application.",
+                            "File Errors", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                }
             }
             catch (Exception exc)
             {
-                KryptonMessageBox.Show($"An error has occurred: { exc.Message }", "Unexpected Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                KryptonMessageBox.Show($"An error has occurred: {exc.Message}", "Unexpected Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return false;
             }
@@ -249,7 +253,7 @@ namespace KryptonToolkitHub.Classes
         }
 
         /// <summary>
-        /// Gets the file information on.
+        ///     Gets the file information on.
         /// </summary>
         /// <param name="file">The file.</param>
         /// <returns></returns>
@@ -259,60 +263,48 @@ namespace KryptonToolkitHub.Classes
         }
 
         /// <summary>
-        /// Does the file exist.
+        ///     Does the file exist.
         /// </summary>
         /// <param name="filePath">The file path.</param>
         /// <returns></returns>
         public bool DoesFileExist(string filePath)
         {
             if (File.Exists(filePath))
-            {
                 return true;
-            }
-            else
-            {
-                return false;
-            }
+            return false;
         }
 
         /// <summary>
-        /// Does the directory exist.
+        ///     Does the directory exist.
         /// </summary>
         /// <param name="directoryPath">The directory path.</param>
         /// <returns></returns>
         public bool DoesDirectoryExist(string directoryPath)
         {
             if (Directory.Exists(directoryPath))
-            {
                 return true;
-            }
-            else
-            {
-                return false;
-            }
+            return false;
         }
 
         /// <summary>
-        /// Creates the file.
+        ///     Creates the file.
         /// </summary>
         /// <param name="filePath">The file path.</param>
         public void CreateFile(string filePath)
         {
             try
             {
-                if (!DoesFileExist(filePath))
-                {
-                    File.Create(filePath);
-                }
+                if (!DoesFileExist(filePath)) File.Create(filePath);
             }
             catch (Exception exc)
             {
-                KryptonMessageBox.Show($"An error has occurred: { exc.Message }", "Catastrophic File Creation Failure", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                KryptonMessageBox.Show($"An error has occurred: {exc.Message}", "Catastrophic File Creation Failure",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         /// <summary>
-        /// Creates the directory.
+        ///     Creates the directory.
         /// </summary>
         /// <param name="directoryPath">The directory path.</param>
         /// <param name="useVerbose">if set to <c>true</c> [use verbose].</param>
@@ -324,25 +316,22 @@ namespace KryptonToolkitHub.Classes
                 {
                     if (!DoesDirectoryExist(directoryPath))
                     {
-
                     }
                 }
                 else
                 {
-                    if (!DoesDirectoryExist(directoryPath))
-                    {
-                        Directory.CreateDirectory(directoryPath);
-                    }
+                    if (!DoesDirectoryExist(directoryPath)) Directory.CreateDirectory(directoryPath);
                 }
             }
             catch (Exception exc)
             {
-                KryptonMessageBox.Show($"An error has occurred: { exc.Message }", "Catastrophic Directory Creation Failure", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                KryptonMessageBox.Show($"An error has occurred: {exc.Message}",
+                    "Catastrophic Directory Creation Failure", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         /// <summary>
-        /// Gets the file version.
+        ///     Gets the file version.
         /// </summary>
         /// <param name="fileName">Name of the file.</param>
         /// <returns></returns>
@@ -350,7 +339,7 @@ namespace KryptonToolkitHub.Classes
         {
             Version tempVersion;
 
-            string fileVersion = FileVersionInfo.GetVersionInfo(fileName).ToString();
+            var fileVersion = FileVersionInfo.GetVersionInfo(fileName).ToString();
 
             tempVersion = Version.Parse(fileVersion);
 
@@ -358,15 +347,17 @@ namespace KryptonToolkitHub.Classes
         }
 
         /// <summary>
-        /// Returns the application executable path.
+        ///     Displays the application executable path.
         /// </summary>
-        public void ReturnApplicationExecutablePath()
+        public void DisplayApplicationExecutablePath()
         {
-            KryptonMessageBox.Show($"Application is located in: '{ Application.ExecutablePath }'", $"Debug Information - { DateTime.Today.ToLongDateString() }", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            KryptonMessageBox.Show($"Application is located in: '{GetApplicationExecutablePath()}'",
+                $"Debug Information - {DateTime.Today.ToLongDateString()}", MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
 
         /// <summary>
-        /// Gets the application executable path.
+        ///     Gets the application executable path.
         /// </summary>
         /// <returns></returns>
         public string GetApplicationExecutablePath()
@@ -375,13 +366,14 @@ namespace KryptonToolkitHub.Classes
         }
 
         /// <summary>
-        /// Gets the application process executable path.
+        ///     Gets the application process executable path.
         /// </summary>
         /// <returns></returns>
         public static string GetApplicationProcessExecutablePath()
         {
             return Application.ExecutablePath;
         }
+
         #endregion
     }
 }

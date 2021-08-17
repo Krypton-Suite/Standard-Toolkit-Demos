@@ -1,33 +1,43 @@
-﻿using KryptonToolkitHub.Enumerations;
+﻿#region BSD License
+/*
+ *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  
+ */
+#endregion
+
 using System.IO;
 using System.Windows.Forms;
+
+using KryptonToolkitHub.Enumerations;
 
 namespace KryptonToolkitHub.Classes
 {
     public class LaunchManager
     {
         #region Variables
+
         private IOOperations _io = new IOOperations();
+
         #endregion
 
         #region Constructor
-        public LaunchManager()
-        {
 
-        }
         #endregion
 
         #region Methods
 
         #region Component Examples
+
         /// <summary>
-        /// Launches the specified component example.
+        ///     Launches the specified component example.
         /// </summary>
         /// <param name="componentExample">The component example.</param>
         /// <param name="statusLabel">The status label.</param>
         /// <param name="statusText">The status text.</param>
         /// <param name="useFullPath">if set to <c>true</c> [use full path].</param>
-        public static void LaunchComponentExample(ComponentToolkitExamples componentExample, ToolStripLabel statusLabel = null, bool useFullPath = false)
+        public static void LaunchComponentExample(ComponentToolkitExamples componentExample,
+            ToolStripLabel statusLabel = null, bool useFullPath = false)
         {
             string statusText = null;
 
@@ -309,21 +319,22 @@ namespace KryptonToolkitHub.Classes
                 case ComponentToolkitExamples.READY:
                     UpdateStatus(statusLabel, "Ready", useFullPath);
                     break;
-                default:
-                    break;
             }
         }
+
         #endregion
 
         #region Application Toolkit Examples
+
         /// <summary>
-        /// Launches the application toolkit example.
+        ///     Launches the application toolkit example.
         /// </summary>
         /// <param name="applicationExample">The application example.</param>
         /// <param name="statusLabel">The status label.</param>
         /// <param name="statusText">The status text.</param>
         /// <param name="useFullPath">if set to <c>true</c> [use full path].</param>
-        public static void LaunchApplicationToolkitExample(ApplicationToolkitExamples applicationExample, ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
+        public static void LaunchApplicationToolkitExample(ApplicationToolkitExamples applicationExample,
+            ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
         {
             switch (applicationExample)
             {
@@ -407,21 +418,22 @@ namespace KryptonToolkitHub.Classes
                 case ApplicationToolkitExamples.READY:
                     UpdateStatus(statusLabel, "Ready", useFullPath);
                     break;
-                default:
-                    break;
             }
         }
+
         #endregion
 
         #region Test Application Toolkit Examples
+
         /// <summary>
-        /// Launches the test application toolkit example.
+        ///     Launches the test application toolkit example.
         /// </summary>
         /// <param name="applicationToolkitExample">The application toolkit example.</param>
         /// <param name="statusLabel">The status label.</param>
         /// <param name="statusText">The status text.</param>
         /// <param name="useFullPath">if set to <c>true</c> [use full path].</param>
-        public static void LaunchTestApplicationToolkitExample(TestApplicationToolkitExamples applicationToolkitExample, ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
+        public static void LaunchTestApplicationToolkitExample(TestApplicationToolkitExamples applicationToolkitExample,
+            ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
         {
             switch (applicationToolkitExample)
             {
@@ -463,21 +475,22 @@ namespace KryptonToolkitHub.Classes
                 case TestApplicationToolkitExamples.READY:
                     UpdateStatus(statusLabel, "Ready", useFullPath);
                     break;
-                default:
-                    break;
             }
         }
+
         #endregion
 
         #region Docking Feature Examples
+
         /// <summary>
-        /// Launches the docking feature examples.
+        ///     Launches the docking feature examples.
         /// </summary>
         /// <param name="dockingFeatureExample">The docking feature example.</param>
         /// <param name="statusLabel">The status label.</param>
         /// <param name="statusText">The status text.</param>
         /// <param name="useFullPath">if set to <c>true</c> [use full path].</param>
-        public static void LaunchDockingFeatureExample(DockingFeatureExamples dockingFeatureExample, ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
+        public static void LaunchDockingFeatureExample(DockingFeatureExamples dockingFeatureExample,
+            ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
         {
             switch (dockingFeatureExample)
             {
@@ -519,21 +532,22 @@ namespace KryptonToolkitHub.Classes
                 case DockingFeatureExamples.READY:
                     UpdateStatus(statusLabel, "Ready", useFullPath);
                     break;
-                default:
-                    break;
             }
         }
+
         #endregion
 
         #region Docking Usage Examples
+
         /// <summary>
-        /// Launches the docking usage examples.
+        ///     Launches the docking usage examples.
         /// </summary>
         /// <param name="dockingUsageExample">The docking usage example.</param>
         /// <param name="statusLabel">The status label.</param>
         /// <param name="statusText">The status text.</param>
         /// <param name="useFullPath">if set to <c>true</c> [use full path].</param>
-        public static void LaunchDockingUsageExample(DockingUsageExamples dockingUsageExample, ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
+        public static void LaunchDockingUsageExample(DockingUsageExamples dockingUsageExample,
+            ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
         {
             switch (dockingUsageExample)
             {
@@ -554,21 +568,22 @@ namespace KryptonToolkitHub.Classes
                 case DockingUsageExamples.READY:
                     UpdateStatus(statusLabel, "Ready", useFullPath);
                     break;
-                default:
-                    break;
             }
         }
+
         #endregion
 
         #region Workspace Feature Examples
+
         /// <summary>
-        /// Launches the workspace feature examples.
+        ///     Launches the workspace feature examples.
         /// </summary>
         /// <param name="workspaceFeatureExample">The workspace feature example.</param>
         /// <param name="statusLabel">The status label.</param>
         /// <param name="statusText">The status text.</param>
         /// <param name="useFullPath">if set to <c>true</c> [use full path].</param>
-        public static void LaunchWorkspaceFeatureExample(WorkspaceFeatureExamples workspaceFeatureExample, ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
+        public static void LaunchWorkspaceFeatureExample(WorkspaceFeatureExamples workspaceFeatureExample,
+            ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
         {
             switch (workspaceFeatureExample)
             {
@@ -617,21 +632,22 @@ namespace KryptonToolkitHub.Classes
                 case WorkspaceFeatureExamples.READY:
                     UpdateStatus(statusLabel, "Ready", useFullPath);
                     break;
-                default:
-                    break;
             }
         }
+
         #endregion
 
         #region Workspace Usage Examples
+
         /// <summary>
-        /// Launches the workspace usage example.
+        ///     Launches the workspace usage example.
         /// </summary>
         /// <param name="workspaceUsageExample">The workspace usage example.</param>
         /// <param name="statusLabel">The status label.</param>
         /// <param name="statusText">The status text.</param>
         /// <param name="useFullPath">if set to <c>true</c> [use full path].</param>
-        public static void LaunchWorkspaceUsageExample(WorkspaceUsageExamples workspaceUsageExample, ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
+        public static void LaunchWorkspaceUsageExample(WorkspaceUsageExamples workspaceUsageExample,
+            ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
         {
             switch (workspaceUsageExample)
             {
@@ -652,21 +668,22 @@ namespace KryptonToolkitHub.Classes
                 case WorkspaceUsageExamples.READY:
                     UpdateStatus(statusLabel, "Ready", useFullPath);
                     break;
-                default:
-                    break;
             }
         }
+
         #endregion
 
         #region Navigator Feature Examples
+
         /// <summary>
-        /// Launches the navigator feature example.
+        ///     Launches the navigator feature example.
         /// </summary>
         /// <param name="navigatorFeatureExample">The navigator feature example.</param>
         /// <param name="statusLabel">The status label.</param>
         /// <param name="statusText">The status text.</param>
         /// <param name="useFullPath">if set to <c>true</c> [use full path].</param>
-        public static void LaunchNavigatorFeatureExample(NavigatorFeatureExamples navigatorFeatureExample, ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
+        public static void LaunchNavigatorFeatureExample(NavigatorFeatureExamples navigatorFeatureExample,
+            ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
         {
             switch (navigatorFeatureExample)
             {
@@ -764,21 +781,22 @@ namespace KryptonToolkitHub.Classes
                 case NavigatorFeatureExamples.READY:
                     UpdateStatus(statusLabel, "Ready", useFullPath);
                     break;
-                default:
-                    break;
             }
         }
+
         #endregion
 
         #region Navigator Usage Examples
+
         /// <summary>
-        /// Launches the navigator usage example.
+        ///     Launches the navigator usage example.
         /// </summary>
         /// <param name="navigatorUsageExample">The navigator usage example.</param>
         /// <param name="statusLabel">The status label.</param>
         /// <param name="statusText">The status text.</param>
         /// <param name="useFullPath">if set to <c>true</c> [use full path].</param>
-        public static void LaunchNavigatorUsageExample(NavigatorUsageExamples navigatorUsageExample, ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
+        public static void LaunchNavigatorUsageExample(NavigatorUsageExamples navigatorUsageExample,
+            ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
         {
             switch (navigatorUsageExample)
             {
@@ -827,21 +845,22 @@ namespace KryptonToolkitHub.Classes
                 case NavigatorUsageExamples.READY:
                     UpdateStatus(statusLabel, "Ready", useFullPath);
                     break;
-                default:
-                    break;
             }
         }
+
         #endregion
 
         #region Ribbon Feature Examples
+
         /// <summary>
-        /// Launches the ribbon feature example.
+        ///     Launches the ribbon feature example.
         /// </summary>
         /// <param name="ribbonFeatureExample">The ribbon feature example.</param>
         /// <param name="statusLabel">The status label.</param>
         /// <param name="statusText">The status text.</param>
         /// <param name="useFullPath">if set to <c>true</c> [use full path].</param>
-        public static void LaunchRibbonFeatureExample(RibbonFeatureExamples ribbonFeatureExample, ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
+        public static void LaunchRibbonFeatureExample(RibbonFeatureExamples ribbonFeatureExample,
+            ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
         {
             switch (ribbonFeatureExample)
             {
@@ -911,21 +930,22 @@ namespace KryptonToolkitHub.Classes
                 case RibbonFeatureExamples.READY:
                     UpdateStatus(statusLabel, "Ready", useFullPath);
                     break;
-                default:
-                    break;
             }
         }
+
         #endregion
 
         #region Ribbon Usage Examples
+
         /// <summary>
-        /// Launches the ribbon usage example.
+        ///     Launches the ribbon usage example.
         /// </summary>
         /// <param name="ribbonUsageExample">The ribbon usage example.</param>
         /// <param name="statusLabel">The status label.</param>
         /// <param name="statusText">The status text.</param>
         /// <param name="useFullPath">if set to <c>true</c> [use full path].</param>
-        public static void LaunchRibbonUsageExample(RibbonUsageExamples ribbonUsageExample, ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
+        public static void LaunchRibbonUsageExample(RibbonUsageExamples ribbonUsageExample,
+            ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
         {
             switch (ribbonUsageExample)
             {
@@ -960,21 +980,22 @@ namespace KryptonToolkitHub.Classes
                 case RibbonUsageExamples.READY:
                     UpdateStatus(statusLabel, "Ready", useFullPath);
                     break;
-                default:
-                    break;
             }
         }
+
         #endregion
 
         #region Krypton Applications
+
         /// <summary>
-        /// Launches the krypton application.
+        ///     Launches the krypton application.
         /// </summary>
         /// <param name="kryptonApplication">The krypton application.</param>
         /// <param name="statusLabel">The status label.</param>
         /// <param name="statusText">The status text.</param>
         /// <param name="useFullPath">if set to <c>true</c> [use full path].</param>
-        public static void LaunchKryptonApplication(KryptonApplications kryptonApplication, ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
+        public static void LaunchKryptonApplication(KryptonApplications kryptonApplication,
+            ToolStripLabel statusLabel = null, string statusText = null, bool useFullPath = false)
         {
             switch (kryptonApplication)
             {
@@ -995,15 +1016,15 @@ namespace KryptonToolkitHub.Classes
                 case KryptonApplications.READY:
                     UpdateStatus(statusLabel, "Ready", useFullPath);
                     break;
-                default:
-                    break;
             }
         }
+
         #endregion
 
         #region Status Update
+
         /// <summary>
-        /// Updates the status.
+        ///     Updates the status.
         /// </summary>
         /// <param name="statusLabel">The status label.</param>
         /// <param name="processName">Name of the process.</param>
@@ -1011,18 +1032,13 @@ namespace KryptonToolkitHub.Classes
         private static void UpdateStatus(ToolStripLabel statusLabel, string processName, bool useFullPath = false)
         {
             if (useFullPath)
-            {
-                statusLabel.Text = $"Attempting to launch: '{ Path.GetFullPath(processName) }'";
-            }
+                statusLabel.Text = $"Attempting to launch: '{Path.GetFullPath(processName)}'";
             else if (processName == "Ready" || processName == "ready" || processName == "READY")
-            {
                 statusLabel.Text = "Ready";
-            }
             else
-            {
-                statusLabel.Text = $"Attempting to launch: '{ processName }'";
-            }
+                statusLabel.Text = $"Attempting to launch: '{processName}'";
         }
+
         #endregion
 
         #endregion

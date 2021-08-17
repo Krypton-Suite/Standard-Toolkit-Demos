@@ -118,7 +118,7 @@ namespace NavigatorContextMenus
             this.page1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.page1.Controls.Add(this.kryptonLabel1);
             this.page1.Flags = 65534;
-            this.page1.ImageSmall = ((System.Drawing.Image)(resources.GetObject("page1.ImageSmall")));
+            this.page1.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("page1.ImageSmall")));
             this.page1.KryptonContextMenu = this.kcmDollar;
             this.page1.LastVisibleSet = true;
             this.page1.MinimumSize = new System.Drawing.Size(50, 50);
@@ -156,17 +156,17 @@ namespace NavigatorContextMenus
             // 
             // kcmDollar1
             // 
-            this.kcmDollar1.Image = ((System.Drawing.Image)(resources.GetObject("kcmDollar1.Image")));
+            this.kcmDollar1.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmDollar1.Image")));
             this.kcmDollar1.Text = "Dollar 1";
             // 
             // kcmDollar2
             // 
-            this.kcmDollar2.Image = ((System.Drawing.Image)(resources.GetObject("kcmDollar2.Image")));
+            this.kcmDollar2.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmDollar2.Image")));
             this.kcmDollar2.Text = "Dollar 2";
             // 
             // kcmDollar3
             // 
-            this.kcmDollar3.Image = ((System.Drawing.Image)(resources.GetObject("kcmDollar3.Image")));
+            this.kcmDollar3.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmDollar3.Image")));
             this.kcmDollar3.Text = "Dollar 3";
             // 
             // page2
@@ -174,7 +174,7 @@ namespace NavigatorContextMenus
             this.page2.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.page2.Controls.Add(this.kryptonLabel2);
             this.page2.Flags = 65534;
-            this.page2.ImageSmall = ((System.Drawing.Image)(resources.GetObject("page2.ImageSmall")));
+            this.page2.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("page2.ImageSmall")));
             this.page2.KryptonContextMenu = this.kcmEuro;
             this.page2.LastVisibleSet = true;
             this.page2.MinimumSize = new System.Drawing.Size(50, 50);
@@ -215,27 +215,27 @@ namespace NavigatorContextMenus
             // 
             // kcmEuro1
             // 
-            this.kcmEuro1.Image = ((System.Drawing.Image)(resources.GetObject("kcmEuro1.Image")));
+            this.kcmEuro1.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmEuro1.Image")));
             this.kcmEuro1.Text = "Euro 1";
             // 
             // kcmEuro2
             // 
-            this.kcmEuro2.Image = ((System.Drawing.Image)(resources.GetObject("kcmEuro2.Image")));
+            this.kcmEuro2.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmEuro2.Image")));
             this.kcmEuro2.Text = "Euro 2";
             // 
             // kcmEuro3
             // 
-            this.kcmEuro3.Image = ((System.Drawing.Image)(resources.GetObject("kcmEuro3.Image")));
+            this.kcmEuro3.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmEuro3.Image")));
             this.kcmEuro3.Text = "Euro 3";
             // 
             // kcmEuro4
             // 
-            this.kcmEuro4.Image = ((System.Drawing.Image)(resources.GetObject("kcmEuro4.Image")));
+            this.kcmEuro4.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmEuro4.Image")));
             this.kcmEuro4.Text = "Euro 4";
             // 
             // kcmEuro5
             // 
-            this.kcmEuro5.Image = ((System.Drawing.Image)(resources.GetObject("kcmEuro5.Image")));
+            this.kcmEuro5.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmEuro5.Image")));
             this.kcmEuro5.Text = "Euro 5";
             // 
             // page3
@@ -243,7 +243,7 @@ namespace NavigatorContextMenus
             this.page3.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.page3.Controls.Add(this.kryptonLabel3);
             this.page3.Flags = 65534;
-            this.page3.ImageSmall = ((System.Drawing.Image)(resources.GetObject("page3.ImageSmall")));
+            this.page3.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("page3.ImageSmall")));
             this.page3.KryptonContextMenu = this.kcmYen;
             this.page3.LastVisibleSet = true;
             this.page3.MinimumSize = new System.Drawing.Size(50, 50);
@@ -283,12 +283,12 @@ namespace NavigatorContextMenus
             // 
             // kcmYen1
             // 
-            this.kcmYen1.Image = ((System.Drawing.Image)(resources.GetObject("kcmYen1.Image")));
+            this.kcmYen1.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmYen1.Image")));
             this.kcmYen1.Text = "Yen 1";
             // 
             // kcmYen2
             // 
-            this.kcmYen2.Image = ((System.Drawing.Image)(resources.GetObject("kcmYen2.Image")));
+            this.kcmYen2.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmYen2.Image")));
             this.kcmYen2.Text = "Yen 2";
             // 
             // kcmHeadingYenMore
@@ -304,12 +304,12 @@ namespace NavigatorContextMenus
             // 
             // kcmYen3
             // 
-            this.kcmYen3.Image = ((System.Drawing.Image)(resources.GetObject("kcmYen3.Image")));
+            this.kcmYen3.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmYen3.Image")));
             this.kcmYen3.Text = "Yen 3";
             // 
             // kcmYen4
             // 
-            this.kcmYen4.Image = ((System.Drawing.Image)(resources.GetObject("kcmYen4.Image")));
+            this.kcmYen4.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmYen4.Image")));
             this.kcmYen4.Text = "Yen 4";
             // 
             // page4
@@ -317,7 +317,7 @@ namespace NavigatorContextMenus
             this.page4.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.page4.Controls.Add(this.kryptonLabel4);
             this.page4.Flags = 65534;
-            this.page4.ImageSmall = ((System.Drawing.Image)(resources.GetObject("page4.ImageSmall")));
+            this.page4.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("page4.ImageSmall")));
             this.page4.KryptonContextMenu = this.kcmPound;
             this.page4.LastVisibleSet = true;
             this.page4.MinimumSize = new System.Drawing.Size(50, 50);
@@ -359,17 +359,17 @@ namespace NavigatorContextMenus
             // 
             // kcmPound1
             // 
-            this.kcmPound1.Image = ((System.Drawing.Image)(resources.GetObject("kcmPound1.Image")));
+            this.kcmPound1.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmPound1.Image")));
             this.kcmPound1.Text = "Pound 1";
             // 
             // kcmPound2
             // 
-            this.kcmPound2.Image = ((System.Drawing.Image)(resources.GetObject("kcmPound2.Image")));
+            this.kcmPound2.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmPound2.Image")));
             this.kcmPound2.Text = "Pound 2";
             // 
             // kcmPound3
             // 
-            this.kcmPound3.Image = ((System.Drawing.Image)(resources.GetObject("kcmPound3.Image")));
+            this.kcmPound3.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmPound3.Image")));
             this.kcmPound3.Text = "Pound 3";
             // 
             // kcmSeparatorPound
@@ -378,17 +378,17 @@ namespace NavigatorContextMenus
             // 
             // kcmPound4
             // 
-            this.kcmPound4.Image = ((System.Drawing.Image)(resources.GetObject("kcmPound4.Image")));
+            this.kcmPound4.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmPound4.Image")));
             this.kcmPound4.Text = "Pound 4";
             // 
             // kcmPound5
             // 
-            this.kcmPound5.Image = ((System.Drawing.Image)(resources.GetObject("kcmPound5.Image")));
+            this.kcmPound5.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmPound5.Image")));
             this.kcmPound5.Text = "Pound 5";
             // 
             // kcmPound6
             // 
-            this.kcmPound6.Image = ((System.Drawing.Image)(resources.GetObject("kcmPound6.Image")));
+            this.kcmPound6.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmPound6.Image")));
             this.kcmPound6.Text = "Pound 6";
             // 
             // kcmNavigator
@@ -412,25 +412,25 @@ namespace NavigatorContextMenus
             // 
             // kcmFirst
             // 
-            this.kcmFirst.Image = ((System.Drawing.Image)(resources.GetObject("kcmFirst.Image")));
+            this.kcmFirst.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmFirst.Image")));
             this.kcmFirst.Text = "Move To First";
             this.kcmFirst.Click += new System.EventHandler(this.kcmFirst_Click);
             // 
             // kcmPrevious
             // 
-            this.kcmPrevious.Image = ((System.Drawing.Image)(resources.GetObject("kcmPrevious.Image")));
+            this.kcmPrevious.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmPrevious.Image")));
             this.kcmPrevious.Text = "Move Previous";
             this.kcmPrevious.Click += new System.EventHandler(this.kcmPrevious_Click);
             // 
             // kcmNext
             // 
-            this.kcmNext.Image = ((System.Drawing.Image)(resources.GetObject("kcmNext.Image")));
+            this.kcmNext.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmNext.Image")));
             this.kcmNext.Text = "Move Next";
             this.kcmNext.Click += new System.EventHandler(this.kcmNext_Click);
             // 
             // kcmLast
             // 
-            this.kcmLast.Image = ((System.Drawing.Image)(resources.GetObject("kcmLast.Image")));
+            this.kcmLast.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmLast.Image")));
             this.kcmLast.Text = "Move To Last";
             this.kcmLast.Click += new System.EventHandler(this.kcmLast_Click);
             // 

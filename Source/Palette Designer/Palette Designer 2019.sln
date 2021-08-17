@@ -5,11 +5,16 @@ VisualStudioVersion = 16.0.29521.150
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palette Designer 2019", "Palette Designer 2019.csproj", "{A9435693-714C-47AB-BF4F-115AF7D568CC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponentFactory.Krypton.Toolkit 2019", "..\Krypton Components\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2019.csproj", "{44DC3E11-8F0A-48DA-9AE5-0B4199EB6973}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton.Toolkit 2019", "..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj", "{DA4441B7-7153-4E08-87DF-D1F3E9EA13FB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponentFactory.Krypton.Ribbon 2019", "..\Krypton Components\ComponentFactory.Krypton.Ribbon\ComponentFactory.Krypton.Ribbon 2019.csproj", "{0441172A-7045-4393-8C92-9F17CAE05C11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton.Ribbon 2019", "..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Ribbon\Krypton.Ribbon 2019.csproj", "{EC4DD172-AC16-4E2D-9192-0E2DED5CF729}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponentFactory.Krypton.Navigator 2019", "..\Krypton Components\ComponentFactory.Krypton.Navigator\ComponentFactory.Krypton.Navigator 2019.csproj", "{F9354508-0954-4C2B-8D49-BFCFE14F31A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton.Navigator 2019", "..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Navigator\Krypton.Navigator 2019.csproj", "{8809B61B-4B24-4E9A-9044-8FE222C5A7DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D6EA0EB0-9DB1-43DC-BCB5-4017C3935CC3}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +26,18 @@ Global
 		{A9435693-714C-47AB-BF4F-115AF7D568CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9435693-714C-47AB-BF4F-115AF7D568CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9435693-714C-47AB-BF4F-115AF7D568CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{44DC3E11-8F0A-48DA-9AE5-0B4199EB6973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44DC3E11-8F0A-48DA-9AE5-0B4199EB6973}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44DC3E11-8F0A-48DA-9AE5-0B4199EB6973}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44DC3E11-8F0A-48DA-9AE5-0B4199EB6973}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0441172A-7045-4393-8C92-9F17CAE05C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0441172A-7045-4393-8C92-9F17CAE05C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0441172A-7045-4393-8C92-9F17CAE05C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0441172A-7045-4393-8C92-9F17CAE05C11}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F9354508-0954-4C2B-8D49-BFCFE14F31A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F9354508-0954-4C2B-8D49-BFCFE14F31A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F9354508-0954-4C2B-8D49-BFCFE14F31A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F9354508-0954-4C2B-8D49-BFCFE14F31A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA4441B7-7153-4E08-87DF-D1F3E9EA13FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4441B7-7153-4E08-87DF-D1F3E9EA13FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4441B7-7153-4E08-87DF-D1F3E9EA13FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4441B7-7153-4E08-87DF-D1F3E9EA13FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC4DD172-AC16-4E2D-9192-0E2DED5CF729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4DD172-AC16-4E2D-9192-0E2DED5CF729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4DD172-AC16-4E2D-9192-0E2DED5CF729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4DD172-AC16-4E2D-9192-0E2DED5CF729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8809B61B-4B24-4E9A-9044-8FE222C5A7DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8809B61B-4B24-4E9A-9044-8FE222C5A7DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8809B61B-4B24-4E9A-9044-8FE222C5A7DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8809B61B-4B24-4E9A-9044-8FE222C5A7DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -73,7 +73,6 @@
             this.klblTitle.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.klblTitle.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.klblTitle.TabIndex = 4;
-            this.klblTitle.Values.ExtraText = "Beta (Build: {0})";
             this.klblTitle.Values.Text = "Krypton Toolkit Hub";
             // 
             // pictureBox1

@@ -1,34 +1,40 @@
-﻿using Krypton.Toolkit;
+﻿#region BSD License
+/*
+ *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  
+ */
+#endregion
+
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
+
+using Krypton.Toolkit;
 
 namespace KryptonToolkitHub.Classes
 {
     public class ProcessManager
     {
         #region Variables
-        private static string _procesFilePath = string.Empty;
-        #endregion
 
-        #region Properties
-        public static string ProcessFilePath { get { return _procesFilePath; } set { _procesFilePath = value; } }
         #endregion
 
         #region Constructor
-        /// <summary>
-        /// Initialises a new instance of the <see cref="ProcessManager"/> class.
-        /// </summary>
-        public ProcessManager()
-        {
 
-        }
         #endregion
 
-        #region Methods       
+        #region Properties
+
+        public static string ProcessFilePath { get; set; } = string.Empty;
+
+        #endregion
+
+        #region Methods
+
         /// <summary>
-        /// Launches the process.
+        ///     Launches the process.
         /// </summary>
         /// <param name="processName">Name of the process.</param>
         /// <param name="useFullPath">if set to <c>true</c> [use full path].</param>
@@ -45,44 +51,39 @@ namespace KryptonToolkitHub.Classes
             }
             catch (Exception exc)
             {
-                KryptonMessageBox.Show($"An error has occurred: { exc.Message }", "Unexpected Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                KryptonMessageBox.Show($"An error has occurred: {exc.Message}", "Unexpected Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         #endregion
 
-        #region Setters & Getters        
+        #region Setters & Getters
+
         /// <summary>
-        /// Sets the process file path.
+        ///     Sets the process file path.
         /// </summary>
         /// <param name="value">The value.</param>
         /// <param name="useFullPath">if set to <c>true</c> [use full path].</param>
         public static void SetProcessFilePath(string value, bool useFullPath = false)
         {
             if (useFullPath)
-            {
                 ProcessFilePath = Path.GetFullPath(value);
-            }
             else
-            {
                 ProcessFilePath = Path.GetFileName(value);
-            }
         }
 
         /// <summary>
-        /// Gets the process file path.
+        ///     Gets the process file path.
         /// </summary>
         /// <returns></returns>
         public static string GetProcessFilePath()
         {
             if (ProcessFilePath != string.Empty)
-            {
                 return ProcessFilePath;
-            }
-            else
-            {
-                return "NULL STRING";
-            }
+            return "NULL STRING";
         }
+
         #endregion
     }
 }

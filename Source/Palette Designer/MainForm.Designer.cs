@@ -701,7 +701,7 @@ namespace PaletteDesigner
             // 
             // menuNew
             // 
-            this.menuNew.Image = ((System.Drawing.Image)(resources.GetObject("menuNew.Image")));
+            this.menuNew.Image = ((System.Drawing.Bitmap)(resources.GetObject("menuNew.Image")));
             this.menuNew.Name = "menuNew";
             this.menuNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.menuNew.Size = new System.Drawing.Size(155, 22);
@@ -710,7 +710,7 @@ namespace PaletteDesigner
             // 
             // menuOpen
             // 
-            this.menuOpen.Image = ((System.Drawing.Image)(resources.GetObject("menuOpen.Image")));
+            this.menuOpen.Image = ((System.Drawing.Bitmap)(resources.GetObject("menuOpen.Image")));
             this.menuOpen.Name = "menuOpen";
             this.menuOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.menuOpen.Size = new System.Drawing.Size(155, 22);
@@ -724,7 +724,7 @@ namespace PaletteDesigner
             // 
             // menuSave
             // 
-            this.menuSave.Image = ((System.Drawing.Image)(resources.GetObject("menuSave.Image")));
+            this.menuSave.Image = ((System.Drawing.Bitmap)(resources.GetObject("menuSave.Image")));
             this.menuSave.Name = "menuSave";
             this.menuSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.menuSave.Size = new System.Drawing.Size(155, 22);
@@ -802,8 +802,8 @@ namespace PaletteDesigner
             // 
             this.pageTopButtonSpecs.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTopButtonSpecs.Flags = 65535;
-            this.pageTopButtonSpecs.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTopButtonSpecs.ImageLarge")));
-            this.pageTopButtonSpecs.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTopButtonSpecs.ImageMedium")));
+            this.pageTopButtonSpecs.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTopButtonSpecs.ImageLarge")));
+            this.pageTopButtonSpecs.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTopButtonSpecs.ImageMedium")));
             this.pageTopButtonSpecs.ImageSmall = global::PaletteDesigner.Properties.Resources.TopBS;
             this.pageTopButtonSpecs.LastVisibleSet = true;
             this.pageTopButtonSpecs.MinimumSize = new System.Drawing.Size(50, 50);
@@ -817,9 +817,9 @@ namespace PaletteDesigner
             // 
             this.pageTopButtons.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTopButtons.Flags = 65535;
-            this.pageTopButtons.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTopButtons.ImageLarge")));
-            this.pageTopButtons.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTopButtons.ImageMedium")));
-            this.pageTopButtons.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageTopButtons.ImageSmall")));
+            this.pageTopButtons.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTopButtons.ImageLarge")));
+            this.pageTopButtons.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTopButtons.ImageMedium")));
+            this.pageTopButtons.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageTopButtons.ImageSmall")));
             this.pageTopButtons.LastVisibleSet = true;
             this.pageTopButtons.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTopButtons.Name = "pageTopButtons";
@@ -845,9 +845,9 @@ namespace PaletteDesigner
             // 
             this.pageTopChromeTMS.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTopChromeTMS.Flags = 65535;
-            this.pageTopChromeTMS.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTopChromeTMS.ImageLarge")));
-            this.pageTopChromeTMS.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTopChromeTMS.ImageMedium")));
-            this.pageTopChromeTMS.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageTopChromeTMS.ImageSmall")));
+            this.pageTopChromeTMS.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTopChromeTMS.ImageLarge")));
+            this.pageTopChromeTMS.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTopChromeTMS.ImageMedium")));
+            this.pageTopChromeTMS.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageTopChromeTMS.ImageSmall")));
             this.pageTopChromeTMS.LastVisibleSet = true;
             this.pageTopChromeTMS.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTopChromeTMS.Name = "pageTopChromeTMS";
@@ -860,9 +860,9 @@ namespace PaletteDesigner
             // 
             this.pageTopControls.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTopControls.Flags = 65535;
-            this.pageTopControls.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTopControls.ImageLarge")));
-            this.pageTopControls.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTopControls.ImageMedium")));
-            this.pageTopControls.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageTopControls.ImageSmall")));
+            this.pageTopControls.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTopControls.ImageLarge")));
+            this.pageTopControls.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTopControls.ImageMedium")));
+            this.pageTopControls.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageTopControls.ImageSmall")));
             this.pageTopControls.LastVisibleSet = true;
             this.pageTopControls.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTopControls.Name = "pageTopControls";
@@ -888,9 +888,9 @@ namespace PaletteDesigner
             // 
             this.pageTopHeaderGroup.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTopHeaderGroup.Flags = 65535;
-            this.pageTopHeaderGroup.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTopHeaderGroup.ImageLarge")));
-            this.pageTopHeaderGroup.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTopHeaderGroup.ImageMedium")));
-            this.pageTopHeaderGroup.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageTopHeaderGroup.ImageSmall")));
+            this.pageTopHeaderGroup.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTopHeaderGroup.ImageLarge")));
+            this.pageTopHeaderGroup.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTopHeaderGroup.ImageMedium")));
+            this.pageTopHeaderGroup.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageTopHeaderGroup.ImageSmall")));
             this.pageTopHeaderGroup.LastVisibleSet = true;
             this.pageTopHeaderGroup.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTopHeaderGroup.Name = "pageTopHeaderGroup";
@@ -903,9 +903,9 @@ namespace PaletteDesigner
             // 
             this.pageTopHeaders.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTopHeaders.Flags = 65535;
-            this.pageTopHeaders.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTopHeaders.ImageLarge")));
-            this.pageTopHeaders.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTopHeaders.ImageMedium")));
-            this.pageTopHeaders.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageTopHeaders.ImageSmall")));
+            this.pageTopHeaders.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTopHeaders.ImageLarge")));
+            this.pageTopHeaders.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTopHeaders.ImageMedium")));
+            this.pageTopHeaders.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageTopHeaders.ImageSmall")));
             this.pageTopHeaders.LastVisibleSet = true;
             this.pageTopHeaders.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTopHeaders.Name = "pageTopHeaders";
@@ -918,7 +918,7 @@ namespace PaletteDesigner
             // 
             this.pageTopInputControls.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTopInputControls.Flags = 65535;
-            this.pageTopInputControls.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageTopInputControls.ImageSmall")));
+            this.pageTopInputControls.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageTopInputControls.ImageSmall")));
             this.pageTopInputControls.LastVisibleSet = true;
             this.pageTopInputControls.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTopInputControls.Name = "pageTopInputControls";
@@ -944,9 +944,9 @@ namespace PaletteDesigner
             // 
             this.pageTopLabels.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTopLabels.Flags = 65535;
-            this.pageTopLabels.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTopLabels.ImageLarge")));
-            this.pageTopLabels.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTopLabels.ImageMedium")));
-            this.pageTopLabels.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageTopLabels.ImageSmall")));
+            this.pageTopLabels.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTopLabels.ImageLarge")));
+            this.pageTopLabels.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTopLabels.ImageMedium")));
+            this.pageTopLabels.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageTopLabels.ImageSmall")));
             this.pageTopLabels.LastVisibleSet = true;
             this.pageTopLabels.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTopLabels.Name = "pageTopLabels";
@@ -959,9 +959,9 @@ namespace PaletteDesigner
             // 
             this.pageTopNavigator.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTopNavigator.Flags = 65535;
-            this.pageTopNavigator.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTopNavigator.ImageLarge")));
-            this.pageTopNavigator.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTopNavigator.ImageMedium")));
-            this.pageTopNavigator.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageTopNavigator.ImageSmall")));
+            this.pageTopNavigator.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTopNavigator.ImageLarge")));
+            this.pageTopNavigator.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTopNavigator.ImageMedium")));
+            this.pageTopNavigator.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageTopNavigator.ImageSmall")));
             this.pageTopNavigator.LastVisibleSet = true;
             this.pageTopNavigator.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTopNavigator.Name = "pageTopNavigator";
@@ -974,9 +974,9 @@ namespace PaletteDesigner
             // 
             this.pageTopPanels.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTopPanels.Flags = 65535;
-            this.pageTopPanels.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTopPanels.ImageLarge")));
-            this.pageTopPanels.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTopPanels.ImageMedium")));
-            this.pageTopPanels.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageTopPanels.ImageSmall")));
+            this.pageTopPanels.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTopPanels.ImageLarge")));
+            this.pageTopPanels.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTopPanels.ImageMedium")));
+            this.pageTopPanels.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageTopPanels.ImageSmall")));
             this.pageTopPanels.LastVisibleSet = true;
             this.pageTopPanels.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTopPanels.Name = "pageTopPanels";
@@ -1015,9 +1015,9 @@ namespace PaletteDesigner
             // 
             this.pageTopSeparators.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTopSeparators.Flags = 65535;
-            this.pageTopSeparators.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTopSeparators.ImageLarge")));
-            this.pageTopSeparators.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTopSeparators.ImageMedium")));
-            this.pageTopSeparators.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageTopSeparators.ImageSmall")));
+            this.pageTopSeparators.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTopSeparators.ImageLarge")));
+            this.pageTopSeparators.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTopSeparators.ImageMedium")));
+            this.pageTopSeparators.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageTopSeparators.ImageSmall")));
             this.pageTopSeparators.LastVisibleSet = true;
             this.pageTopSeparators.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTopSeparators.Name = "pageTopSeparators";
@@ -1030,9 +1030,9 @@ namespace PaletteDesigner
             // 
             this.pageTopTabs.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTopTabs.Flags = 65535;
-            this.pageTopTabs.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTopTabs.ImageLarge")));
-            this.pageTopTabs.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTopTabs.ImageMedium")));
-            this.pageTopTabs.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageTopTabs.ImageSmall")));
+            this.pageTopTabs.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTopTabs.ImageLarge")));
+            this.pageTopTabs.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTopTabs.ImageMedium")));
+            this.pageTopTabs.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageTopTabs.ImageSmall")));
             this.pageTopTabs.LastVisibleSet = true;
             this.pageTopTabs.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTopTabs.Name = "pageTopTabs";
@@ -1144,8 +1144,8 @@ namespace PaletteDesigner
             this.pageDesignButtonSpecs.Controls.Add(this.labelButtonSpecsTyped);
             this.pageDesignButtonSpecs.Controls.Add(this.labelButtonSpecsGeneric);
             this.pageDesignButtonSpecs.Flags = 65535;
-            this.pageDesignButtonSpecs.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageDesignButtonSpecs.ImageLarge")));
-            this.pageDesignButtonSpecs.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageDesignButtonSpecs.ImageMedium")));
+            this.pageDesignButtonSpecs.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignButtonSpecs.ImageLarge")));
+            this.pageDesignButtonSpecs.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignButtonSpecs.ImageMedium")));
             this.pageDesignButtonSpecs.ImageSmall = global::PaletteDesigner.Properties.Resources.KryptonBSActual;
             this.pageDesignButtonSpecs.LastVisibleSet = true;
             this.pageDesignButtonSpecs.MinimumSize = new System.Drawing.Size(50, 50);
@@ -1834,9 +1834,9 @@ namespace PaletteDesigner
             this.pageDesignButtons.Controls.Add(this.buttonTracking);
             this.pageDesignButtons.Controls.Add(this.buttonDefaultFocus);
             this.pageDesignButtons.Flags = 65535;
-            this.pageDesignButtons.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageDesignButtons.ImageLarge")));
-            this.pageDesignButtons.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageDesignButtons.ImageMedium")));
-            this.pageDesignButtons.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageDesignButtons.ImageSmall")));
+            this.pageDesignButtons.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignButtons.ImageLarge")));
+            this.pageDesignButtons.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignButtons.ImageMedium")));
+            this.pageDesignButtons.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignButtons.ImageSmall")));
             this.pageDesignButtons.LastVisibleSet = true;
             this.pageDesignButtons.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageDesignButtons.Name = "pageDesignButtons";
@@ -1855,7 +1855,7 @@ namespace PaletteDesigner
             this.buttonLive.Name = "buttonLive";
             this.buttonLive.Size = new System.Drawing.Size(90, 28);
             this.buttonLive.TabIndex = 16;
-            this.buttonLive.Values.Image = ((System.Drawing.Image)(resources.GetObject("buttonLive.Values.Image")));
+            this.buttonLive.Values.Image = ((System.Drawing.Bitmap)(resources.GetObject("buttonLive.Values.Image")));
             this.buttonLive.Values.Text = "Live";
             // 
             // borderDesignButtons
@@ -1924,8 +1924,8 @@ namespace PaletteDesigner
             // 
             this.pageButtonsStandalone.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageButtonsStandalone.Flags = 65535;
-            this.pageButtonsStandalone.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageButtonsStandalone.ImageLarge")));
-            this.pageButtonsStandalone.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageButtonsStandalone.ImageMedium")));
+            this.pageButtonsStandalone.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageButtonsStandalone.ImageLarge")));
+            this.pageButtonsStandalone.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageButtonsStandalone.ImageMedium")));
             this.pageButtonsStandalone.LastVisibleSet = true;
             this.pageButtonsStandalone.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageButtonsStandalone.Name = "pageButtonsStandalone";
@@ -1953,8 +1953,8 @@ namespace PaletteDesigner
             // 
             this.pageButtonsLowProfile.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageButtonsLowProfile.Flags = 65535;
-            this.pageButtonsLowProfile.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageButtonsLowProfile.ImageLarge")));
-            this.pageButtonsLowProfile.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageButtonsLowProfile.ImageMedium")));
+            this.pageButtonsLowProfile.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageButtonsLowProfile.ImageLarge")));
+            this.pageButtonsLowProfile.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageButtonsLowProfile.ImageMedium")));
             this.pageButtonsLowProfile.LastVisibleSet = true;
             this.pageButtonsLowProfile.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageButtonsLowProfile.Name = "pageButtonsLowProfile";
@@ -1994,8 +1994,8 @@ namespace PaletteDesigner
             // 
             this.pageButtonsButtonSpec.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageButtonsButtonSpec.Flags = 65535;
-            this.pageButtonsButtonSpec.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageButtonsButtonSpec.ImageLarge")));
-            this.pageButtonsButtonSpec.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageButtonsButtonSpec.ImageMedium")));
+            this.pageButtonsButtonSpec.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageButtonsButtonSpec.ImageLarge")));
+            this.pageButtonsButtonSpec.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageButtonsButtonSpec.ImageMedium")));
             this.pageButtonsButtonSpec.LastVisibleSet = true;
             this.pageButtonsButtonSpec.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageButtonsButtonSpec.Name = "pageButtonsButtonSpec";
@@ -2142,8 +2142,8 @@ namespace PaletteDesigner
             // 
             this.pageButtonsCustom1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageButtonsCustom1.Flags = 65535;
-            this.pageButtonsCustom1.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageButtonsCustom1.ImageLarge")));
-            this.pageButtonsCustom1.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageButtonsCustom1.ImageMedium")));
+            this.pageButtonsCustom1.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageButtonsCustom1.ImageLarge")));
+            this.pageButtonsCustom1.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageButtonsCustom1.ImageMedium")));
             this.pageButtonsCustom1.LastVisibleSet = true;
             this.pageButtonsCustom1.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageButtonsCustom1.Name = "pageButtonsCustom1";
@@ -2157,8 +2157,8 @@ namespace PaletteDesigner
             // 
             this.pageButtonsCustom2.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageButtonsCustom2.Flags = 65535;
-            this.pageButtonsCustom2.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageButtonsCustom2.ImageLarge")));
-            this.pageButtonsCustom2.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageButtonsCustom2.ImageMedium")));
+            this.pageButtonsCustom2.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageButtonsCustom2.ImageLarge")));
+            this.pageButtonsCustom2.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageButtonsCustom2.ImageMedium")));
             this.pageButtonsCustom2.LastVisibleSet = true;
             this.pageButtonsCustom2.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageButtonsCustom2.Name = "pageButtonsCustom2";
@@ -2172,8 +2172,8 @@ namespace PaletteDesigner
             // 
             this.pageButtonsCustom3.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageButtonsCustom3.Flags = 65535;
-            this.pageButtonsCustom3.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageButtonsCustom3.ImageLarge")));
-            this.pageButtonsCustom3.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageButtonsCustom3.ImageMedium")));
+            this.pageButtonsCustom3.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageButtonsCustom3.ImageLarge")));
+            this.pageButtonsCustom3.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageButtonsCustom3.ImageMedium")));
             this.pageButtonsCustom3.LastVisibleSet = true;
             this.pageButtonsCustom3.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageButtonsCustom3.Name = "pageButtonsCustom3";
@@ -2191,7 +2191,7 @@ namespace PaletteDesigner
             this.buttonCheckedPressed.Name = "buttonCheckedPressed";
             this.buttonCheckedPressed.Size = new System.Drawing.Size(124, 28);
             this.buttonCheckedPressed.TabIndex = 15;
-            this.buttonCheckedPressed.Values.Image = ((System.Drawing.Image)(resources.GetObject("buttonCheckedPressed.Values.Image")));
+            this.buttonCheckedPressed.Values.Image = ((System.Drawing.Bitmap)(resources.GetObject("buttonCheckedPressed.Values.Image")));
             this.buttonCheckedPressed.Values.Text = "Checked Pressed";
             // 
             // buttonCheckedTracking
@@ -2202,7 +2202,7 @@ namespace PaletteDesigner
             this.buttonCheckedTracking.Name = "buttonCheckedTracking";
             this.buttonCheckedTracking.Size = new System.Drawing.Size(124, 28);
             this.buttonCheckedTracking.TabIndex = 14;
-            this.buttonCheckedTracking.Values.Image = ((System.Drawing.Image)(resources.GetObject("buttonCheckedTracking.Values.Image")));
+            this.buttonCheckedTracking.Values.Image = ((System.Drawing.Bitmap)(resources.GetObject("buttonCheckedTracking.Values.Image")));
             this.buttonCheckedTracking.Values.Text = "Checked Tracking";
             // 
             // buttonCheckedNormal
@@ -2213,7 +2213,7 @@ namespace PaletteDesigner
             this.buttonCheckedNormal.Name = "buttonCheckedNormal";
             this.buttonCheckedNormal.Size = new System.Drawing.Size(124, 28);
             this.buttonCheckedNormal.TabIndex = 13;
-            this.buttonCheckedNormal.Values.Image = ((System.Drawing.Image)(resources.GetObject("buttonCheckedNormal.Values.Image")));
+            this.buttonCheckedNormal.Values.Image = ((System.Drawing.Bitmap)(resources.GetObject("buttonCheckedNormal.Values.Image")));
             this.buttonCheckedNormal.Values.Text = "Checked Normal";
             // 
             // buttonDisabled
@@ -2224,7 +2224,7 @@ namespace PaletteDesigner
             this.buttonDisabled.Name = "buttonDisabled";
             this.buttonDisabled.Size = new System.Drawing.Size(119, 28);
             this.buttonDisabled.TabIndex = 8;
-            this.buttonDisabled.Values.Image = ((System.Drawing.Image)(resources.GetObject("buttonDisabled.Values.Image")));
+            this.buttonDisabled.Values.Image = ((System.Drawing.Bitmap)(resources.GetObject("buttonDisabled.Values.Image")));
             this.buttonDisabled.Values.Text = "Disabled";
             // 
             // buttonPressed
@@ -2235,7 +2235,7 @@ namespace PaletteDesigner
             this.buttonPressed.Name = "buttonPressed";
             this.buttonPressed.Size = new System.Drawing.Size(119, 28);
             this.buttonPressed.TabIndex = 12;
-            this.buttonPressed.Values.Image = ((System.Drawing.Image)(resources.GetObject("buttonPressed.Values.Image")));
+            this.buttonPressed.Values.Image = ((System.Drawing.Bitmap)(resources.GetObject("buttonPressed.Values.Image")));
             this.buttonPressed.Values.Text = "Pressed";
             // 
             // buttonNormal
@@ -2246,7 +2246,7 @@ namespace PaletteDesigner
             this.buttonNormal.Name = "buttonNormal";
             this.buttonNormal.Size = new System.Drawing.Size(119, 28);
             this.buttonNormal.TabIndex = 9;
-            this.buttonNormal.Values.Image = ((System.Drawing.Image)(resources.GetObject("buttonNormal.Values.Image")));
+            this.buttonNormal.Values.Image = ((System.Drawing.Bitmap)(resources.GetObject("buttonNormal.Values.Image")));
             this.buttonNormal.Values.Text = "Normal";
             // 
             // buttonTracking
@@ -2257,7 +2257,7 @@ namespace PaletteDesigner
             this.buttonTracking.Name = "buttonTracking";
             this.buttonTracking.Size = new System.Drawing.Size(119, 28);
             this.buttonTracking.TabIndex = 11;
-            this.buttonTracking.Values.Image = ((System.Drawing.Image)(resources.GetObject("buttonTracking.Values.Image")));
+            this.buttonTracking.Values.Image = ((System.Drawing.Bitmap)(resources.GetObject("buttonTracking.Values.Image")));
             this.buttonTracking.Values.Text = "Tracking";
             // 
             // buttonDefaultFocus
@@ -2268,7 +2268,7 @@ namespace PaletteDesigner
             this.buttonDefaultFocus.Name = "buttonDefaultFocus";
             this.buttonDefaultFocus.Size = new System.Drawing.Size(124, 28);
             this.buttonDefaultFocus.TabIndex = 10;
-            this.buttonDefaultFocus.Values.Image = ((System.Drawing.Image)(resources.GetObject("buttonDefaultFocus.Values.Image")));
+            this.buttonDefaultFocus.Values.Image = ((System.Drawing.Bitmap)(resources.GetObject("buttonDefaultFocus.Values.Image")));
             this.buttonDefaultFocus.Values.Text = "Default + Focus";
             // 
             // pageDesignCheckBox
@@ -2290,7 +2290,7 @@ namespace PaletteDesigner
             this.pageDesignCheckBox.Controls.Add(this.cbUncheckedDisabled);
             this.pageDesignCheckBox.Controls.Add(this.kryptonCheckBox1);
             this.pageDesignCheckBox.Flags = 65535;
-            this.pageDesignCheckBox.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageDesignCheckBox.ImageSmall")));
+            this.pageDesignCheckBox.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignCheckBox.ImageSmall")));
             this.pageDesignCheckBox.LastVisibleSet = true;
             this.pageDesignCheckBox.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageDesignCheckBox.Name = "pageDesignCheckBox";
@@ -2445,8 +2445,8 @@ namespace PaletteDesigner
             // 
             this.pageDesignChromeTMS.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageDesignChromeTMS.Flags = 65535;
-            this.pageDesignChromeTMS.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageDesignChromeTMS.ImageLarge")));
-            this.pageDesignChromeTMS.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageDesignChromeTMS.ImageMedium")));
+            this.pageDesignChromeTMS.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignChromeTMS.ImageLarge")));
+            this.pageDesignChromeTMS.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignChromeTMS.ImageMedium")));
             this.pageDesignChromeTMS.ImageSmall = global::PaletteDesigner.Properties.Resources.KryptonTMS;
             this.pageDesignChromeTMS.LastVisibleSet = true;
             this.pageDesignChromeTMS.MinimumSize = new System.Drawing.Size(50, 50);
@@ -2469,9 +2469,9 @@ namespace PaletteDesigner
             this.pageDesignControls.Controls.Add(this.borderDesignControls);
             this.pageDesignControls.Controls.Add(this.kryptonNavigatorDesignControls);
             this.pageDesignControls.Flags = 65535;
-            this.pageDesignControls.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageDesignControls.ImageLarge")));
-            this.pageDesignControls.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageDesignControls.ImageMedium")));
-            this.pageDesignControls.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageDesignControls.ImageSmall")));
+            this.pageDesignControls.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignControls.ImageLarge")));
+            this.pageDesignControls.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignControls.ImageMedium")));
+            this.pageDesignControls.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignControls.ImageSmall")));
             this.pageDesignControls.LastVisibleSet = true;
             this.pageDesignControls.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageDesignControls.Name = "pageDesignControls";
@@ -2579,8 +2579,8 @@ namespace PaletteDesigner
             // 
             this.pageControlsClient.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageControlsClient.Flags = 65535;
-            this.pageControlsClient.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageControlsClient.ImageLarge")));
-            this.pageControlsClient.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageControlsClient.ImageMedium")));
+            this.pageControlsClient.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageControlsClient.ImageLarge")));
+            this.pageControlsClient.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageControlsClient.ImageMedium")));
             this.pageControlsClient.LastVisibleSet = true;
             this.pageControlsClient.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageControlsClient.Name = "pageControlsClient";
@@ -2594,8 +2594,8 @@ namespace PaletteDesigner
             // 
             this.pageControlsAlternate.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageControlsAlternate.Flags = 65535;
-            this.pageControlsAlternate.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageControlsAlternate.ImageLarge")));
-            this.pageControlsAlternate.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageControlsAlternate.ImageMedium")));
+            this.pageControlsAlternate.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageControlsAlternate.ImageLarge")));
+            this.pageControlsAlternate.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageControlsAlternate.ImageMedium")));
             this.pageControlsAlternate.LastVisibleSet = true;
             this.pageControlsAlternate.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageControlsAlternate.Name = "pageControlsAlternate";
@@ -2648,8 +2648,8 @@ namespace PaletteDesigner
             // 
             this.pageControlsCustom1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageControlsCustom1.Flags = 65535;
-            this.pageControlsCustom1.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageControlsCustom1.ImageLarge")));
-            this.pageControlsCustom1.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageControlsCustom1.ImageMedium")));
+            this.pageControlsCustom1.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageControlsCustom1.ImageLarge")));
+            this.pageControlsCustom1.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageControlsCustom1.ImageMedium")));
             this.pageControlsCustom1.LastVisibleSet = true;
             this.pageControlsCustom1.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageControlsCustom1.Name = "pageControlsCustom1";
@@ -2669,7 +2669,7 @@ namespace PaletteDesigner
             this.pageDesignGrid.Controls.Add(this.dataGridViewNormal);
             this.pageDesignGrid.Controls.Add(this.kryptonNavigatorDesignGrids);
             this.pageDesignGrid.Flags = 65535;
-            this.pageDesignGrid.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageDesignGrid.ImageSmall")));
+            this.pageDesignGrid.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignGrid.ImageSmall")));
             this.pageDesignGrid.LastVisibleSet = true;
             this.pageDesignGrid.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageDesignGrid.Name = "pageDesignGrid";
@@ -2863,8 +2863,8 @@ namespace PaletteDesigner
             // 
             this.kryptonGridList.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonGridList.Flags = 65535;
-            this.kryptonGridList.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonGridList.ImageLarge")));
-            this.kryptonGridList.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonGridList.ImageMedium")));
+            this.kryptonGridList.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonGridList.ImageLarge")));
+            this.kryptonGridList.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonGridList.ImageMedium")));
             this.kryptonGridList.LastVisibleSet = true;
             this.kryptonGridList.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonGridList.Name = "kryptonGridList";
@@ -2878,8 +2878,8 @@ namespace PaletteDesigner
             // 
             this.kryptonGridSheet.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonGridSheet.Flags = 65535;
-            this.kryptonGridSheet.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonGridSheet.ImageLarge")));
-            this.kryptonGridSheet.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonGridSheet.ImageMedium")));
+            this.kryptonGridSheet.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonGridSheet.ImageLarge")));
+            this.kryptonGridSheet.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonGridSheet.ImageMedium")));
             this.kryptonGridSheet.LastVisibleSet = true;
             this.kryptonGridSheet.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonGridSheet.Name = "kryptonGridSheet";
@@ -2893,8 +2893,8 @@ namespace PaletteDesigner
             // 
             this.kryptonGridCustom1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonGridCustom1.Flags = 65535;
-            this.kryptonGridCustom1.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonGridCustom1.ImageLarge")));
-            this.kryptonGridCustom1.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonGridCustom1.ImageMedium")));
+            this.kryptonGridCustom1.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonGridCustom1.ImageLarge")));
+            this.kryptonGridCustom1.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonGridCustom1.ImageMedium")));
             this.kryptonGridCustom1.LastVisibleSet = true;
             this.kryptonGridCustom1.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonGridCustom1.Name = "kryptonGridCustom1";
@@ -2912,9 +2912,9 @@ namespace PaletteDesigner
             this.pageDesignHeaderGroup.Controls.Add(this.labelHeaderGroupDisabled);
             this.pageDesignHeaderGroup.Controls.Add(this.headerGroup1Normal);
             this.pageDesignHeaderGroup.Flags = 65535;
-            this.pageDesignHeaderGroup.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageDesignHeaderGroup.ImageLarge")));
-            this.pageDesignHeaderGroup.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageDesignHeaderGroup.ImageMedium")));
-            this.pageDesignHeaderGroup.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageDesignHeaderGroup.ImageSmall")));
+            this.pageDesignHeaderGroup.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignHeaderGroup.ImageLarge")));
+            this.pageDesignHeaderGroup.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignHeaderGroup.ImageMedium")));
+            this.pageDesignHeaderGroup.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignHeaderGroup.ImageSmall")));
             this.pageDesignHeaderGroup.LastVisibleSet = true;
             this.pageDesignHeaderGroup.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageDesignHeaderGroup.Name = "pageDesignHeaderGroup";
@@ -2943,7 +2943,7 @@ namespace PaletteDesigner
             this.headerGroup1Disabled.Name = "headerGroup1Disabled";
             this.headerGroup1Disabled.Size = new System.Drawing.Size(158, 150);
             this.headerGroup1Disabled.TabIndex = 14;
-            this.headerGroup1Disabled.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("headerGroup1Disabled.ValuesPrimary.Image")));
+            this.headerGroup1Disabled.ValuesPrimary.Image = ((System.Drawing.Bitmap)(resources.GetObject("headerGroup1Disabled.ValuesPrimary.Image")));
             // 
             // labelHeaderGroupDisabled
             // 
@@ -2963,7 +2963,7 @@ namespace PaletteDesigner
             this.headerGroup1Normal.Name = "headerGroup1Normal";
             this.headerGroup1Normal.Size = new System.Drawing.Size(158, 150);
             this.headerGroup1Normal.TabIndex = 17;
-            this.headerGroup1Normal.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("headerGroup1Normal.ValuesPrimary.Image")));
+            this.headerGroup1Normal.ValuesPrimary.Image = ((System.Drawing.Bitmap)(resources.GetObject("headerGroup1Normal.ValuesPrimary.Image")));
             // 
             // pageDesignHeaders
             // 
@@ -2973,9 +2973,9 @@ namespace PaletteDesigner
             this.pageDesignHeaders.Controls.Add(this.borderDesignHeaders);
             this.pageDesignHeaders.Controls.Add(this.kryptonNavigatorDesignHeaders);
             this.pageDesignHeaders.Flags = 65535;
-            this.pageDesignHeaders.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageDesignHeaders.ImageLarge")));
-            this.pageDesignHeaders.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageDesignHeaders.ImageMedium")));
-            this.pageDesignHeaders.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageDesignHeaders.ImageSmall")));
+            this.pageDesignHeaders.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignHeaders.ImageLarge")));
+            this.pageDesignHeaders.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignHeaders.ImageMedium")));
+            this.pageDesignHeaders.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignHeaders.ImageSmall")));
             this.pageDesignHeaders.LastVisibleSet = true;
             this.pageDesignHeaders.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageDesignHeaders.Name = "pageDesignHeaders";
@@ -2996,7 +2996,7 @@ namespace PaletteDesigner
             this.header1Normal.TabIndex = 4;
             this.header1Normal.Values.Description = "Normal";
             this.header1Normal.Values.Heading = "Normal";
-            this.header1Normal.Values.Image = ((System.Drawing.Image)(resources.GetObject("header1Normal.Values.Image")));
+            this.header1Normal.Values.Image = ((System.Drawing.Bitmap)(resources.GetObject("header1Normal.Values.Image")));
             // 
             // header1Disabled
             // 
@@ -3008,7 +3008,7 @@ namespace PaletteDesigner
             this.header1Disabled.TabIndex = 3;
             this.header1Disabled.Values.Description = "Disabled";
             this.header1Disabled.Values.Heading = "Disabled";
-            this.header1Disabled.Values.Image = ((System.Drawing.Image)(resources.GetObject("header1Disabled.Values.Image")));
+            this.header1Disabled.Values.Image = ((System.Drawing.Bitmap)(resources.GetObject("header1Disabled.Values.Image")));
             // 
             // borderDesignHeaders
             // 
@@ -3065,8 +3065,8 @@ namespace PaletteDesigner
             // 
             this.pageHeadersPrimary.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageHeadersPrimary.Flags = 65535;
-            this.pageHeadersPrimary.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageHeadersPrimary.ImageLarge")));
-            this.pageHeadersPrimary.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageHeadersPrimary.ImageMedium")));
+            this.pageHeadersPrimary.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageHeadersPrimary.ImageLarge")));
+            this.pageHeadersPrimary.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageHeadersPrimary.ImageMedium")));
             this.pageHeadersPrimary.LastVisibleSet = true;
             this.pageHeadersPrimary.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageHeadersPrimary.Name = "pageHeadersPrimary";
@@ -3080,8 +3080,8 @@ namespace PaletteDesigner
             // 
             this.pageHeadersSecondary.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageHeadersSecondary.Flags = 65535;
-            this.pageHeadersSecondary.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageHeadersSecondary.ImageLarge")));
-            this.pageHeadersSecondary.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageHeadersSecondary.ImageMedium")));
+            this.pageHeadersSecondary.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageHeadersSecondary.ImageLarge")));
+            this.pageHeadersSecondary.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageHeadersSecondary.ImageMedium")));
             this.pageHeadersSecondary.LastVisibleSet = true;
             this.pageHeadersSecondary.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageHeadersSecondary.Name = "pageHeadersSecondary";
@@ -3145,8 +3145,8 @@ namespace PaletteDesigner
             // 
             this.pageHeadersCustom1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageHeadersCustom1.Flags = 65535;
-            this.pageHeadersCustom1.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageHeadersCustom1.ImageLarge")));
-            this.pageHeadersCustom1.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageHeadersCustom1.ImageMedium")));
+            this.pageHeadersCustom1.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageHeadersCustom1.ImageLarge")));
+            this.pageHeadersCustom1.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageHeadersCustom1.ImageMedium")));
             this.pageHeadersCustom1.LastVisibleSet = true;
             this.pageHeadersCustom1.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageHeadersCustom1.Name = "pageHeadersCustom1";
@@ -3160,8 +3160,8 @@ namespace PaletteDesigner
             // 
             this.pageHeadersCustom2.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageHeadersCustom2.Flags = 65535;
-            this.pageHeadersCustom2.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageHeadersCustom2.ImageLarge")));
-            this.pageHeadersCustom2.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageHeadersCustom2.ImageMedium")));
+            this.pageHeadersCustom2.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageHeadersCustom2.ImageLarge")));
+            this.pageHeadersCustom2.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageHeadersCustom2.ImageMedium")));
             this.pageHeadersCustom2.LastVisibleSet = true;
             this.pageHeadersCustom2.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageHeadersCustom2.Name = "pageHeadersCustom2";
@@ -3371,8 +3371,8 @@ namespace PaletteDesigner
             // 
             this.kryptonPage2.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage2.Flags = 65535;
-            this.kryptonPage2.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPage2.ImageLarge")));
-            this.kryptonPage2.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPage2.ImageMedium")));
+            this.kryptonPage2.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage2.ImageLarge")));
+            this.kryptonPage2.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage2.ImageMedium")));
             this.kryptonPage2.LastVisibleSet = true;
             this.kryptonPage2.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage2.Name = "kryptonPage2";
@@ -3399,8 +3399,8 @@ namespace PaletteDesigner
             // 
             this.kryptonPage6.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage6.Flags = 65535;
-            this.kryptonPage6.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPage6.ImageLarge")));
-            this.kryptonPage6.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPage6.ImageMedium")));
+            this.kryptonPage6.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage6.ImageLarge")));
+            this.kryptonPage6.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage6.ImageMedium")));
             this.kryptonPage6.LastVisibleSet = true;
             this.kryptonPage6.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage6.Name = "kryptonPage6";
@@ -3495,9 +3495,9 @@ namespace PaletteDesigner
             this.pageDesignLabels.Controls.Add(this.borderDesignLabels);
             this.pageDesignLabels.Controls.Add(this.kryptonNavigatorDesignLabels);
             this.pageDesignLabels.Flags = 65535;
-            this.pageDesignLabels.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageDesignLabels.ImageLarge")));
-            this.pageDesignLabels.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageDesignLabels.ImageMedium")));
-            this.pageDesignLabels.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageDesignLabels.ImageSmall")));
+            this.pageDesignLabels.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignLabels.ImageLarge")));
+            this.pageDesignLabels.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignLabels.ImageMedium")));
+            this.pageDesignLabels.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignLabels.ImageSmall")));
             this.pageDesignLabels.LastVisibleSet = true;
             this.pageDesignLabels.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageDesignLabels.Name = "pageDesignLabels";
@@ -3603,7 +3603,7 @@ namespace PaletteDesigner
             this.label1Live.Size = new System.Drawing.Size(113, 20);
             this.label1Live.TabIndex = 1;
             this.label1Live.Values.ExtraText = "(LinkLabel)";
-            this.label1Live.Values.Image = ((System.Drawing.Image)(resources.GetObject("label1Live.Values.Image")));
+            this.label1Live.Values.Image = ((System.Drawing.Bitmap)(resources.GetObject("label1Live.Values.Image")));
             this.label1Live.Values.Text = "Live";
             // 
             // label1Normal
@@ -3625,7 +3625,7 @@ namespace PaletteDesigner
             this.label1Pressed.Size = new System.Drawing.Size(133, 20);
             this.label1Pressed.TabIndex = 3;
             this.label1Pressed.Values.ExtraText = "(LinkLabel)";
-            this.label1Pressed.Values.Image = ((System.Drawing.Image)(resources.GetObject("label1Pressed.Values.Image")));
+            this.label1Pressed.Values.Image = ((System.Drawing.Bitmap)(resources.GetObject("label1Pressed.Values.Image")));
             this.label1Pressed.Values.Text = "Pressed";
             // 
             // label1NotVisited
@@ -3636,7 +3636,7 @@ namespace PaletteDesigner
             this.label1NotVisited.Size = new System.Drawing.Size(149, 20);
             this.label1NotVisited.TabIndex = 4;
             this.label1NotVisited.Values.ExtraText = "(LinkLabel)";
-            this.label1NotVisited.Values.Image = ((System.Drawing.Image)(resources.GetObject("label1NotVisited.Values.Image")));
+            this.label1NotVisited.Values.Image = ((System.Drawing.Bitmap)(resources.GetObject("label1NotVisited.Values.Image")));
             this.label1NotVisited.Values.Text = "NotVisited";
             // 
             // label1Visited
@@ -3648,7 +3648,7 @@ namespace PaletteDesigner
             this.label1Visited.Size = new System.Drawing.Size(128, 20);
             this.label1Visited.TabIndex = 5;
             this.label1Visited.Values.ExtraText = "(LinkLabel)";
-            this.label1Visited.Values.Image = ((System.Drawing.Image)(resources.GetObject("label1Visited.Values.Image")));
+            this.label1Visited.Values.Image = ((System.Drawing.Bitmap)(resources.GetObject("label1Visited.Values.Image")));
             this.label1Visited.Values.Text = "Visited";
             // 
             // borderDesignLabels
@@ -3713,8 +3713,8 @@ namespace PaletteDesigner
             // 
             this.pageLabelsNormalControl.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageLabelsNormalControl.Flags = 65535;
-            this.pageLabelsNormalControl.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageLabelsNormalControl.ImageLarge")));
-            this.pageLabelsNormalControl.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageLabelsNormalControl.ImageMedium")));
+            this.pageLabelsNormalControl.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageLabelsNormalControl.ImageLarge")));
+            this.pageLabelsNormalControl.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageLabelsNormalControl.ImageMedium")));
             this.pageLabelsNormalControl.LastVisibleSet = true;
             this.pageLabelsNormalControl.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageLabelsNormalControl.Name = "pageLabelsNormalControl";
@@ -3754,8 +3754,8 @@ namespace PaletteDesigner
             // 
             this.pageLabelsTitleControl.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageLabelsTitleControl.Flags = 65535;
-            this.pageLabelsTitleControl.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageLabelsTitleControl.ImageLarge")));
-            this.pageLabelsTitleControl.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageLabelsTitleControl.ImageMedium")));
+            this.pageLabelsTitleControl.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageLabelsTitleControl.ImageLarge")));
+            this.pageLabelsTitleControl.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageLabelsTitleControl.ImageMedium")));
             this.pageLabelsTitleControl.LastVisibleSet = true;
             this.pageLabelsTitleControl.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageLabelsTitleControl.Name = "pageLabelsTitleControl";
@@ -3873,8 +3873,8 @@ namespace PaletteDesigner
             // 
             this.pageLabelsCustom1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageLabelsCustom1.Flags = 65535;
-            this.pageLabelsCustom1.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageLabelsCustom1.ImageLarge")));
-            this.pageLabelsCustom1.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageLabelsCustom1.ImageMedium")));
+            this.pageLabelsCustom1.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageLabelsCustom1.ImageLarge")));
+            this.pageLabelsCustom1.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageLabelsCustom1.ImageMedium")));
             this.pageLabelsCustom1.LastVisibleSet = true;
             this.pageLabelsCustom1.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageLabelsCustom1.Name = "pageLabelsCustom1";
@@ -3889,8 +3889,8 @@ namespace PaletteDesigner
             // 
             this.pageLabelsCustom2.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageLabelsCustom2.Flags = 65535;
-            this.pageLabelsCustom2.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageLabelsCustom2.ImageLarge")));
-            this.pageLabelsCustom2.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageLabelsCustom2.ImageMedium")));
+            this.pageLabelsCustom2.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageLabelsCustom2.ImageLarge")));
+            this.pageLabelsCustom2.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageLabelsCustom2.ImageMedium")));
             this.pageLabelsCustom2.LastVisibleSet = true;
             this.pageLabelsCustom2.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageLabelsCustom2.Name = "pageLabelsCustom2";
@@ -3904,8 +3904,8 @@ namespace PaletteDesigner
             // 
             this.pageLabelsCustom3.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageLabelsCustom3.Flags = 65535;
-            this.pageLabelsCustom3.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageLabelsCustom3.ImageLarge")));
-            this.pageLabelsCustom3.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageLabelsCustom3.ImageMedium")));
+            this.pageLabelsCustom3.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageLabelsCustom3.ImageLarge")));
+            this.pageLabelsCustom3.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageLabelsCustom3.ImageMedium")));
             this.pageLabelsCustom3.LastVisibleSet = true;
             this.pageLabelsCustom3.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageLabelsCustom3.Name = "pageLabelsCustom3";
@@ -3922,9 +3922,9 @@ namespace PaletteDesigner
             this.pageDesignNavigator.Controls.Add(this.kryptonNavigatorDesignNavigator);
             this.pageDesignNavigator.Controls.Add(this.kryptonNavigator);
             this.pageDesignNavigator.Flags = 65535;
-            this.pageDesignNavigator.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageDesignNavigator.ImageLarge")));
-            this.pageDesignNavigator.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageDesignNavigator.ImageMedium")));
-            this.pageDesignNavigator.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageDesignNavigator.ImageSmall")));
+            this.pageDesignNavigator.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignNavigator.ImageLarge")));
+            this.pageDesignNavigator.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignNavigator.ImageMedium")));
+            this.pageDesignNavigator.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignNavigator.ImageSmall")));
             this.pageDesignNavigator.LastVisibleSet = true;
             this.pageDesignNavigator.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageDesignNavigator.Name = "pageDesignNavigator";
@@ -3985,8 +3985,8 @@ namespace PaletteDesigner
             // 
             this.pageNavigatorBarCheckButtonGroupOutside.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageNavigatorBarCheckButtonGroupOutside.Flags = 65535;
-            this.pageNavigatorBarCheckButtonGroupOutside.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageNavigatorBarCheckButtonGroupOutside.ImageLarge")));
-            this.pageNavigatorBarCheckButtonGroupOutside.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageNavigatorBarCheckButtonGroupOutside.ImageMedium")));
+            this.pageNavigatorBarCheckButtonGroupOutside.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageNavigatorBarCheckButtonGroupOutside.ImageLarge")));
+            this.pageNavigatorBarCheckButtonGroupOutside.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageNavigatorBarCheckButtonGroupOutside.ImageMedium")));
             this.pageNavigatorBarCheckButtonGroupOutside.LastVisibleSet = true;
             this.pageNavigatorBarCheckButtonGroupOutside.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageNavigatorBarCheckButtonGroupOutside.Name = "pageNavigatorBarCheckButtonGroupOutside";
@@ -4000,8 +4000,8 @@ namespace PaletteDesigner
             // 
             this.pageNavigatorBarCheckButtonGroupInside.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageNavigatorBarCheckButtonGroupInside.Flags = 65535;
-            this.pageNavigatorBarCheckButtonGroupInside.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageNavigatorBarCheckButtonGroupInside.ImageLarge")));
-            this.pageNavigatorBarCheckButtonGroupInside.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageNavigatorBarCheckButtonGroupInside.ImageMedium")));
+            this.pageNavigatorBarCheckButtonGroupInside.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageNavigatorBarCheckButtonGroupInside.ImageLarge")));
+            this.pageNavigatorBarCheckButtonGroupInside.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageNavigatorBarCheckButtonGroupInside.ImageMedium")));
             this.pageNavigatorBarCheckButtonGroupInside.LastVisibleSet = true;
             this.pageNavigatorBarCheckButtonGroupInside.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageNavigatorBarCheckButtonGroupInside.Name = "pageNavigatorBarCheckButtonGroupInside";
@@ -4015,8 +4015,8 @@ namespace PaletteDesigner
             // 
             this.pageNavigatorBarCheckButtonGroupOnly.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageNavigatorBarCheckButtonGroupOnly.Flags = 65535;
-            this.pageNavigatorBarCheckButtonGroupOnly.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageNavigatorBarCheckButtonGroupOnly.ImageLarge")));
-            this.pageNavigatorBarCheckButtonGroupOnly.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageNavigatorBarCheckButtonGroupOnly.ImageMedium")));
+            this.pageNavigatorBarCheckButtonGroupOnly.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageNavigatorBarCheckButtonGroupOnly.ImageLarge")));
+            this.pageNavigatorBarCheckButtonGroupOnly.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageNavigatorBarCheckButtonGroupOnly.ImageMedium")));
             this.pageNavigatorBarCheckButtonGroupOnly.LastVisibleSet = true;
             this.pageNavigatorBarCheckButtonGroupOnly.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageNavigatorBarCheckButtonGroupOnly.Name = "pageNavigatorBarCheckButtonGroupOnly";
@@ -4055,8 +4055,8 @@ namespace PaletteDesigner
             // 
             this.navigatorPage1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.navigatorPage1.Flags = 65535;
-            this.navigatorPage1.ImageLarge = ((System.Drawing.Image)(resources.GetObject("navigatorPage1.ImageLarge")));
-            this.navigatorPage1.ImageMedium = ((System.Drawing.Image)(resources.GetObject("navigatorPage1.ImageMedium")));
+            this.navigatorPage1.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("navigatorPage1.ImageLarge")));
+            this.navigatorPage1.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("navigatorPage1.ImageMedium")));
             this.navigatorPage1.ImageSmall = global::PaletteDesigner.Properties.Resources.environment;
             this.navigatorPage1.LastVisibleSet = true;
             this.navigatorPage1.MinimumSize = new System.Drawing.Size(50, 50);
@@ -4072,8 +4072,8 @@ namespace PaletteDesigner
             // 
             this.navigatorPage2.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.navigatorPage2.Flags = 65535;
-            this.navigatorPage2.ImageLarge = ((System.Drawing.Image)(resources.GetObject("navigatorPage2.ImageLarge")));
-            this.navigatorPage2.ImageMedium = ((System.Drawing.Image)(resources.GetObject("navigatorPage2.ImageMedium")));
+            this.navigatorPage2.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("navigatorPage2.ImageLarge")));
+            this.navigatorPage2.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("navigatorPage2.ImageMedium")));
             this.navigatorPage2.ImageSmall = global::PaletteDesigner.Properties.Resources.document_new;
             this.navigatorPage2.LastVisibleSet = true;
             this.navigatorPage2.MinimumSize = new System.Drawing.Size(50, 50);
@@ -4089,9 +4089,9 @@ namespace PaletteDesigner
             // 
             this.navigatorPage3.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.navigatorPage3.Flags = 65535;
-            this.navigatorPage3.ImageLarge = ((System.Drawing.Image)(resources.GetObject("navigatorPage3.ImageLarge")));
-            this.navigatorPage3.ImageMedium = ((System.Drawing.Image)(resources.GetObject("navigatorPage3.ImageMedium")));
-            this.navigatorPage3.ImageSmall = ((System.Drawing.Image)(resources.GetObject("navigatorPage3.ImageSmall")));
+            this.navigatorPage3.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("navigatorPage3.ImageLarge")));
+            this.navigatorPage3.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("navigatorPage3.ImageMedium")));
+            this.navigatorPage3.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("navigatorPage3.ImageSmall")));
             this.navigatorPage3.LastVisibleSet = true;
             this.navigatorPage3.MinimumSize = new System.Drawing.Size(50, 50);
             this.navigatorPage3.Name = "navigatorPage3";
@@ -4112,9 +4112,9 @@ namespace PaletteDesigner
             this.pageDesignPanels.Controls.Add(this.borderDesignPanels);
             this.pageDesignPanels.Controls.Add(this.kryptonNavigatorDesignPanels);
             this.pageDesignPanels.Flags = 65535;
-            this.pageDesignPanels.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageDesignPanels.ImageLarge")));
-            this.pageDesignPanels.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageDesignPanels.ImageMedium")));
-            this.pageDesignPanels.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageDesignPanels.ImageSmall")));
+            this.pageDesignPanels.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignPanels.ImageLarge")));
+            this.pageDesignPanels.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignPanels.ImageMedium")));
+            this.pageDesignPanels.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignPanels.ImageSmall")));
             this.pageDesignPanels.LastVisibleSet = true;
             this.pageDesignPanels.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageDesignPanels.Name = "pageDesignPanels";
@@ -4220,8 +4220,8 @@ namespace PaletteDesigner
             // 
             this.pagePanelsClient.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pagePanelsClient.Flags = 65535;
-            this.pagePanelsClient.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pagePanelsClient.ImageLarge")));
-            this.pagePanelsClient.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pagePanelsClient.ImageMedium")));
+            this.pagePanelsClient.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pagePanelsClient.ImageLarge")));
+            this.pagePanelsClient.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pagePanelsClient.ImageMedium")));
             this.pagePanelsClient.LastVisibleSet = true;
             this.pagePanelsClient.MinimumSize = new System.Drawing.Size(50, 50);
             this.pagePanelsClient.Name = "pagePanelsClient";
@@ -4235,8 +4235,8 @@ namespace PaletteDesigner
             // 
             this.pagePanelsAlternate.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pagePanelsAlternate.Flags = 65535;
-            this.pagePanelsAlternate.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pagePanelsAlternate.ImageLarge")));
-            this.pagePanelsAlternate.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pagePanelsAlternate.ImageMedium")));
+            this.pagePanelsAlternate.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pagePanelsAlternate.ImageLarge")));
+            this.pagePanelsAlternate.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pagePanelsAlternate.ImageMedium")));
             this.pagePanelsAlternate.LastVisibleSet = true;
             this.pagePanelsAlternate.MinimumSize = new System.Drawing.Size(50, 50);
             this.pagePanelsAlternate.Name = "pagePanelsAlternate";
@@ -4264,8 +4264,8 @@ namespace PaletteDesigner
             // 
             this.pagePanelsCustom1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pagePanelsCustom1.Flags = 65535;
-            this.pagePanelsCustom1.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pagePanelsCustom1.ImageLarge")));
-            this.pagePanelsCustom1.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pagePanelsCustom1.ImageMedium")));
+            this.pagePanelsCustom1.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pagePanelsCustom1.ImageLarge")));
+            this.pagePanelsCustom1.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pagePanelsCustom1.ImageMedium")));
             this.pagePanelsCustom1.LastVisibleSet = true;
             this.pagePanelsCustom1.MinimumSize = new System.Drawing.Size(50, 50);
             this.pagePanelsCustom1.Name = "pagePanelsCustom1";
@@ -4291,7 +4291,7 @@ namespace PaletteDesigner
             this.pageDesignRadioButton.Controls.Add(this.rbUncheckedNormal);
             this.pageDesignRadioButton.Controls.Add(this.rbUncheckedDisabled);
             this.pageDesignRadioButton.Flags = 65535;
-            this.pageDesignRadioButton.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageDesignRadioButton.ImageSmall")));
+            this.pageDesignRadioButton.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignRadioButton.ImageSmall")));
             this.pageDesignRadioButton.LastVisibleSet = true;
             this.pageDesignRadioButton.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageDesignRadioButton.Name = "pageDesignRadioButton";
@@ -4444,9 +4444,9 @@ namespace PaletteDesigner
             this.pageDesignSeparators.Controls.Add(this.borderDesignSeparators);
             this.pageDesignSeparators.Controls.Add(this.kryptonNavigatorDesignSeparators);
             this.pageDesignSeparators.Flags = 65535;
-            this.pageDesignSeparators.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageDesignSeparators.ImageLarge")));
-            this.pageDesignSeparators.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageDesignSeparators.ImageMedium")));
-            this.pageDesignSeparators.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageDesignSeparators.ImageSmall")));
+            this.pageDesignSeparators.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignSeparators.ImageLarge")));
+            this.pageDesignSeparators.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignSeparators.ImageMedium")));
+            this.pageDesignSeparators.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignSeparators.ImageSmall")));
             this.pageDesignSeparators.LastVisibleSet = true;
             this.pageDesignSeparators.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageDesignSeparators.Name = "pageDesignSeparators";
@@ -4754,8 +4754,8 @@ namespace PaletteDesigner
             // 
             this.pageSeparatorLowProfile.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageSeparatorLowProfile.Flags = 65535;
-            this.pageSeparatorLowProfile.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageSeparatorLowProfile.ImageLarge")));
-            this.pageSeparatorLowProfile.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageSeparatorLowProfile.ImageMedium")));
+            this.pageSeparatorLowProfile.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageSeparatorLowProfile.ImageLarge")));
+            this.pageSeparatorLowProfile.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageSeparatorLowProfile.ImageMedium")));
             this.pageSeparatorLowProfile.LastVisibleSet = true;
             this.pageSeparatorLowProfile.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageSeparatorLowProfile.Name = "pageSeparatorLowProfile";
@@ -4769,8 +4769,8 @@ namespace PaletteDesigner
             // 
             this.pageSeparatorHighProfile.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageSeparatorHighProfile.Flags = 65535;
-            this.pageSeparatorHighProfile.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageSeparatorHighProfile.ImageLarge")));
-            this.pageSeparatorHighProfile.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageSeparatorHighProfile.ImageMedium")));
+            this.pageSeparatorHighProfile.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageSeparatorHighProfile.ImageLarge")));
+            this.pageSeparatorHighProfile.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageSeparatorHighProfile.ImageMedium")));
             this.pageSeparatorHighProfile.LastVisibleSet = true;
             this.pageSeparatorHighProfile.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageSeparatorHighProfile.Name = "pageSeparatorHighProfile";
@@ -4798,8 +4798,8 @@ namespace PaletteDesigner
             // 
             this.pageSeparatorCustom1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageSeparatorCustom1.Flags = 65535;
-            this.pageSeparatorCustom1.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageSeparatorCustom1.ImageLarge")));
-            this.pageSeparatorCustom1.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageSeparatorCustom1.ImageMedium")));
+            this.pageSeparatorCustom1.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageSeparatorCustom1.ImageLarge")));
+            this.pageSeparatorCustom1.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageSeparatorCustom1.ImageMedium")));
             this.pageSeparatorCustom1.LastVisibleSet = true;
             this.pageSeparatorCustom1.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageSeparatorCustom1.Name = "pageSeparatorCustom1";
@@ -4817,9 +4817,9 @@ namespace PaletteDesigner
             this.pageDesignTabs.Controls.Add(this.borderDesignTabs);
             this.pageDesignTabs.Controls.Add(this.kryptonNavigatorDesignTabs);
             this.pageDesignTabs.Flags = 65535;
-            this.pageDesignTabs.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageDesignTabs.ImageLarge")));
-            this.pageDesignTabs.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageDesignTabs.ImageMedium")));
-            this.pageDesignTabs.ImageSmall = ((System.Drawing.Image)(resources.GetObject("pageDesignTabs.ImageSmall")));
+            this.pageDesignTabs.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignTabs.ImageLarge")));
+            this.pageDesignTabs.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignTabs.ImageMedium")));
+            this.pageDesignTabs.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageDesignTabs.ImageSmall")));
             this.pageDesignTabs.LastVisibleSet = true;
             this.pageDesignTabs.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageDesignTabs.Name = "pageDesignTabs";
@@ -4859,8 +4859,8 @@ namespace PaletteDesigner
             // 
             this.kryptonNavigatorTabs1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonNavigatorTabs1.Flags = 65535;
-            this.kryptonNavigatorTabs1.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonNavigatorTabs1.ImageLarge")));
-            this.kryptonNavigatorTabs1.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonNavigatorTabs1.ImageMedium")));
+            this.kryptonNavigatorTabs1.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonNavigatorTabs1.ImageLarge")));
+            this.kryptonNavigatorTabs1.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonNavigatorTabs1.ImageMedium")));
             this.kryptonNavigatorTabs1.ImageSmall = global::PaletteDesigner.Properties.Resources.environment;
             this.kryptonNavigatorTabs1.LastVisibleSet = true;
             this.kryptonNavigatorTabs1.MinimumSize = new System.Drawing.Size(50, 50);
@@ -4874,8 +4874,8 @@ namespace PaletteDesigner
             // 
             this.kryptonNavigatorTabs2.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonNavigatorTabs2.Flags = 65535;
-            this.kryptonNavigatorTabs2.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonNavigatorTabs2.ImageLarge")));
-            this.kryptonNavigatorTabs2.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonNavigatorTabs2.ImageMedium")));
+            this.kryptonNavigatorTabs2.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonNavigatorTabs2.ImageLarge")));
+            this.kryptonNavigatorTabs2.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonNavigatorTabs2.ImageMedium")));
             this.kryptonNavigatorTabs2.ImageSmall = global::PaletteDesigner.Properties.Resources.document_new;
             this.kryptonNavigatorTabs2.LastVisibleSet = true;
             this.kryptonNavigatorTabs2.MinimumSize = new System.Drawing.Size(50, 50);
@@ -4889,9 +4889,9 @@ namespace PaletteDesigner
             // 
             this.kryptonNavigatorTabs3.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonNavigatorTabs3.Flags = 65535;
-            this.kryptonNavigatorTabs3.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonNavigatorTabs3.ImageLarge")));
-            this.kryptonNavigatorTabs3.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonNavigatorTabs3.ImageMedium")));
-            this.kryptonNavigatorTabs3.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonNavigatorTabs3.ImageSmall")));
+            this.kryptonNavigatorTabs3.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonNavigatorTabs3.ImageLarge")));
+            this.kryptonNavigatorTabs3.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonNavigatorTabs3.ImageMedium")));
+            this.kryptonNavigatorTabs3.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonNavigatorTabs3.ImageSmall")));
             this.kryptonNavigatorTabs3.LastVisibleSet = true;
             this.kryptonNavigatorTabs3.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonNavigatorTabs3.Name = "kryptonNavigatorTabs3";
@@ -4958,8 +4958,8 @@ namespace PaletteDesigner
             // 
             this.pageTabHighProfile.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTabHighProfile.Flags = 65535;
-            this.pageTabHighProfile.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTabHighProfile.ImageLarge")));
-            this.pageTabHighProfile.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTabHighProfile.ImageMedium")));
+            this.pageTabHighProfile.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTabHighProfile.ImageLarge")));
+            this.pageTabHighProfile.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTabHighProfile.ImageMedium")));
             this.pageTabHighProfile.LastVisibleSet = true;
             this.pageTabHighProfile.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTabHighProfile.Name = "pageTabHighProfile";
@@ -4973,8 +4973,8 @@ namespace PaletteDesigner
             // 
             this.pageTabStandardProfile.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTabStandardProfile.Flags = 65535;
-            this.pageTabStandardProfile.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTabStandardProfile.ImageLarge")));
-            this.pageTabStandardProfile.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTabStandardProfile.ImageMedium")));
+            this.pageTabStandardProfile.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTabStandardProfile.ImageLarge")));
+            this.pageTabStandardProfile.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTabStandardProfile.ImageMedium")));
             this.pageTabStandardProfile.LastVisibleSet = true;
             this.pageTabStandardProfile.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTabStandardProfile.Name = "pageTabStandardProfile";
@@ -4988,8 +4988,8 @@ namespace PaletteDesigner
             // 
             this.pageTabLowProfile.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTabLowProfile.Flags = 65535;
-            this.pageTabLowProfile.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTabLowProfile.ImageLarge")));
-            this.pageTabLowProfile.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTabLowProfile.ImageMedium")));
+            this.pageTabLowProfile.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTabLowProfile.ImageLarge")));
+            this.pageTabLowProfile.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTabLowProfile.ImageMedium")));
             this.pageTabLowProfile.LastVisibleSet = true;
             this.pageTabLowProfile.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTabLowProfile.Name = "pageTabLowProfile";
@@ -5003,8 +5003,8 @@ namespace PaletteDesigner
             // 
             this.pageTabOneNote.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTabOneNote.Flags = 65535;
-            this.pageTabOneNote.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTabOneNote.ImageLarge")));
-            this.pageTabOneNote.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTabOneNote.ImageMedium")));
+            this.pageTabOneNote.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTabOneNote.ImageLarge")));
+            this.pageTabOneNote.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTabOneNote.ImageMedium")));
             this.pageTabOneNote.LastVisibleSet = true;
             this.pageTabOneNote.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTabOneNote.Name = "pageTabOneNote";
@@ -5042,8 +5042,8 @@ namespace PaletteDesigner
             // 
             this.pageTabCustom1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTabCustom1.Flags = 65535;
-            this.pageTabCustom1.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTabCustom1.ImageLarge")));
-            this.pageTabCustom1.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTabCustom1.ImageMedium")));
+            this.pageTabCustom1.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTabCustom1.ImageLarge")));
+            this.pageTabCustom1.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTabCustom1.ImageMedium")));
             this.pageTabCustom1.LastVisibleSet = true;
             this.pageTabCustom1.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTabCustom1.Name = "pageTabCustom1";
@@ -5058,8 +5058,8 @@ namespace PaletteDesigner
             // 
             this.pageTabCustom2.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTabCustom2.Flags = 65535;
-            this.pageTabCustom2.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTabCustom2.ImageLarge")));
-            this.pageTabCustom2.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTabCustom2.ImageMedium")));
+            this.pageTabCustom2.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTabCustom2.ImageLarge")));
+            this.pageTabCustom2.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTabCustom2.ImageMedium")));
             this.pageTabCustom2.LastVisibleSet = true;
             this.pageTabCustom2.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTabCustom2.Name = "pageTabCustom2";
@@ -5074,8 +5074,8 @@ namespace PaletteDesigner
             // 
             this.pageTabCustom3.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.pageTabCustom3.Flags = 65535;
-            this.pageTabCustom3.ImageLarge = ((System.Drawing.Image)(resources.GetObject("pageTabCustom3.ImageLarge")));
-            this.pageTabCustom3.ImageMedium = ((System.Drawing.Image)(resources.GetObject("pageTabCustom3.ImageMedium")));
+            this.pageTabCustom3.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("pageTabCustom3.ImageLarge")));
+            this.pageTabCustom3.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("pageTabCustom3.ImageMedium")));
             this.pageTabCustom3.LastVisibleSet = true;
             this.pageTabCustom3.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageTabCustom3.Name = "pageTabCustom3";

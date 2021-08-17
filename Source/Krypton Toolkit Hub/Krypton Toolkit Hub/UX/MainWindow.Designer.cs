@@ -216,6 +216,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // kmanToolkitHub
+            // 
+            this.kmanToolkitHub.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office365Blue;
+            // 
             // kryptonPanel1
             // 
             this.kryptonPanel1.Controls.Add(this.kryptonNavigator);
@@ -238,7 +242,7 @@
             this.kryptonNavigator.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
             this.kryptonNavigator.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonNavigator.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonNavigator.Location = new System.Drawing.Point(0, 114);
+            this.kryptonNavigator.Location = new System.Drawing.Point(0, 74);
             this.kryptonNavigator.Name = "kryptonNavigator";
             this.kryptonNavigator.NavigatorMode = Krypton.Navigator.NavigatorMode.BarCheckButtonGroupOutside;
             this.kryptonNavigator.Padding = new System.Windows.Forms.Padding(5);
@@ -253,7 +257,7 @@
             this.kryptonPage4});
             this.kryptonNavigator.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonNavigator.SelectedIndex = 0;
-            this.kryptonNavigator.Size = new System.Drawing.Size(1200, 631);
+            this.kryptonNavigator.Size = new System.Drawing.Size(1200, 671);
             this.kryptonNavigator.StateCommon.Bar.BarPaddingOutside = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.kryptonNavigator.StateCommon.Bar.CheckButtonGap = 5;
             this.kryptonNavigator.StateCommon.CheckButton.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Center;
@@ -269,12 +273,10 @@
             this.kryptonPageToolkit.Controls.Add(this.kryptonNavigatorToolkit);
             this.kryptonPageToolkit.Controls.Add(this.labeToolkitPage);
             this.kryptonPageToolkit.Flags = 62;
-            this.kryptonPageToolkit.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPageToolkit.ImageLarge")));
-            this.kryptonPageToolkit.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPageToolkit.ImageMedium")));
             this.kryptonPageToolkit.LastVisibleSet = true;
             this.kryptonPageToolkit.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageToolkit.Name = "kryptonPageToolkit";
-            this.kryptonPageToolkit.Size = new System.Drawing.Size(1198, 592);
+            this.kryptonPageToolkit.Size = new System.Drawing.Size(1198, 629);
             this.kryptonPageToolkit.Text = "Toolkit";
             this.kryptonPageToolkit.TextTitle = "";
             this.kryptonPageToolkit.ToolTipTitle = "Page ToolTip";
@@ -297,7 +299,7 @@
             this.kryptonPage2,
             this.kryptonPage3});
             this.kryptonNavigatorToolkit.SelectedIndex = 0;
-            this.kryptonNavigatorToolkit.Size = new System.Drawing.Size(1176, 539);
+            this.kryptonNavigatorToolkit.Size = new System.Drawing.Size(1176, 576);
             this.kryptonNavigatorToolkit.StateCommon.HeaderGroup.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
             this.kryptonNavigatorToolkit.StateCommon.Tab.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonNavigatorToolkit.TabIndex = 3;
@@ -349,7 +351,7 @@
             this.kryptonPage1.LastVisibleSet = true;
             this.kryptonPage1.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage1.Name = "kryptonPage1";
-            this.kryptonPage1.Size = new System.Drawing.Size(1176, 512);
+            this.kryptonPage1.Size = new System.Drawing.Size(1176, 547);
             this.kryptonPage1.Text = "Component Examples";
             this.kryptonPage1.ToolTipTitle = "Page ToolTip";
             this.kryptonPage1.UniqueName = "11B6F5673ADC4D0611B6F5673ADC4D06";
@@ -359,9 +361,11 @@
             this.linkKryptonInputBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonInputBox.Location = new System.Drawing.Point(972, 354);
             this.linkKryptonInputBox.Name = "linkKryptonInputBox";
-            this.linkKryptonInputBox.Size = new System.Drawing.Size(164, 26);
+            this.linkKryptonInputBox.Size = new System.Drawing.Size(199, 32);
             this.linkKryptonInputBox.StateCommon.AdjacentGap = 5;
             this.linkKryptonInputBox.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonInputBox.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonInputBox.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonInputBox.TabIndex = 48;
             this.linkKryptonInputBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonInputBox.Values.Image")));
             this.linkKryptonInputBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -373,9 +377,11 @@
             this.linkKryptonTaskDialog.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonTaskDialog.Location = new System.Drawing.Point(972, 430);
             this.linkKryptonTaskDialog.Name = "linkKryptonTaskDialog";
-            this.linkKryptonTaskDialog.Size = new System.Drawing.Size(179, 26);
+            this.linkKryptonTaskDialog.Size = new System.Drawing.Size(217, 32);
             this.linkKryptonTaskDialog.StateCommon.AdjacentGap = 5;
             this.linkKryptonTaskDialog.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonTaskDialog.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonTaskDialog.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonTaskDialog.TabIndex = 50;
             this.linkKryptonTaskDialog.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonTaskDialog.Values.Image")));
             this.linkKryptonTaskDialog.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -387,9 +393,11 @@
             this.linkKryptonMessageBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonMessageBox.Location = new System.Drawing.Point(972, 392);
             this.linkKryptonMessageBox.Name = "linkKryptonMessageBox";
-            this.linkKryptonMessageBox.Size = new System.Drawing.Size(190, 26);
+            this.linkKryptonMessageBox.Size = new System.Drawing.Size(231, 32);
             this.linkKryptonMessageBox.StateCommon.AdjacentGap = 5;
             this.linkKryptonMessageBox.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonMessageBox.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonMessageBox.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonMessageBox.TabIndex = 49;
             this.linkKryptonMessageBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonMessageBox.Values.Image")));
             this.linkKryptonMessageBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -401,9 +409,11 @@
             this.linkKryptonGroupBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonGroupBox.Location = new System.Drawing.Point(972, 164);
             this.linkKryptonGroupBox.Name = "linkKryptonGroupBox";
-            this.linkKryptonGroupBox.Size = new System.Drawing.Size(172, 26);
+            this.linkKryptonGroupBox.Size = new System.Drawing.Size(208, 32);
             this.linkKryptonGroupBox.StateCommon.AdjacentGap = 5;
             this.linkKryptonGroupBox.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonGroupBox.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonGroupBox.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonGroupBox.TabIndex = 43;
             this.linkKryptonGroupBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonGroupBox.Values.Image")));
             this.linkKryptonGroupBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -415,9 +425,11 @@
             this.linkKryptonSeparator.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonSeparator.Location = new System.Drawing.Point(972, 50);
             this.linkKryptonSeparator.Name = "linkKryptonSeparator";
-            this.linkKryptonSeparator.Size = new System.Drawing.Size(165, 26);
+            this.linkKryptonSeparator.Size = new System.Drawing.Size(200, 32);
             this.linkKryptonSeparator.StateCommon.AdjacentGap = 5;
             this.linkKryptonSeparator.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonSeparator.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonSeparator.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonSeparator.TabIndex = 40;
             this.linkKryptonSeparator.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonSeparator.Values.Image")));
             this.linkKryptonSeparator.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -429,9 +441,11 @@
             this.linkKryptonCommand.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonCommand.Location = new System.Drawing.Point(972, 316);
             this.linkKryptonCommand.Name = "linkKryptonCommand";
-            this.linkKryptonCommand.Size = new System.Drawing.Size(171, 26);
+            this.linkKryptonCommand.Size = new System.Drawing.Size(206, 32);
             this.linkKryptonCommand.StateCommon.AdjacentGap = 5;
             this.linkKryptonCommand.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonCommand.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonCommand.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonCommand.TabIndex = 47;
             this.linkKryptonCommand.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonCommand.Values.Image")));
             this.linkKryptonCommand.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -443,9 +457,11 @@
             this.linkKryptonBorderEdge.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonBorderEdge.Location = new System.Drawing.Point(972, 14);
             this.linkKryptonBorderEdge.Name = "linkKryptonBorderEdge";
-            this.linkKryptonBorderEdge.Size = new System.Drawing.Size(185, 26);
+            this.linkKryptonBorderEdge.Size = new System.Drawing.Size(224, 32);
             this.linkKryptonBorderEdge.StateCommon.AdjacentGap = 5;
             this.linkKryptonBorderEdge.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonBorderEdge.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonBorderEdge.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonBorderEdge.TabIndex = 39;
             this.linkKryptonBorderEdge.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonBorderEdge.Values.Image")));
             this.linkKryptonBorderEdge.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -457,9 +473,11 @@
             this.linkKryptonForm.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonForm.Location = new System.Drawing.Point(972, 468);
             this.linkKryptonForm.Name = "linkKryptonForm";
-            this.linkKryptonForm.Size = new System.Drawing.Size(132, 26);
+            this.linkKryptonForm.Size = new System.Drawing.Size(159, 32);
             this.linkKryptonForm.StateCommon.AdjacentGap = 5;
             this.linkKryptonForm.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonForm.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonForm.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonForm.TabIndex = 51;
             this.linkKryptonForm.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonForm.Values.Image")));
             this.linkKryptonForm.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -471,9 +489,11 @@
             this.linkKryptonPanel.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonPanel.Location = new System.Drawing.Point(972, 88);
             this.linkKryptonPanel.Name = "linkKryptonPanel";
-            this.linkKryptonPanel.Size = new System.Drawing.Size(134, 26);
+            this.linkKryptonPanel.Size = new System.Drawing.Size(161, 32);
             this.linkKryptonPanel.StateCommon.AdjacentGap = 5;
             this.linkKryptonPanel.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonPanel.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonPanel.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonPanel.TabIndex = 41;
             this.linkKryptonPanel.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonPanel.Values.Image")));
             this.linkKryptonPanel.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -485,9 +505,11 @@
             this.linkKryptonPalette.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonPalette.Location = new System.Drawing.Point(972, 278);
             this.linkKryptonPalette.Name = "linkKryptonPalette";
-            this.linkKryptonPalette.Size = new System.Drawing.Size(145, 26);
+            this.linkKryptonPalette.Size = new System.Drawing.Size(174, 32);
             this.linkKryptonPalette.StateCommon.AdjacentGap = 5;
             this.linkKryptonPalette.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonPalette.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonPalette.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonPalette.TabIndex = 46;
             this.linkKryptonPalette.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonPalette.Values.Image")));
             this.linkKryptonPalette.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -499,9 +521,11 @@
             this.linkKryptonGroup.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonGroup.Location = new System.Drawing.Point(972, 126);
             this.linkKryptonGroup.Name = "linkKryptonGroup";
-            this.linkKryptonGroup.Size = new System.Drawing.Size(141, 26);
+            this.linkKryptonGroup.Size = new System.Drawing.Size(169, 32);
             this.linkKryptonGroup.StateCommon.AdjacentGap = 5;
             this.linkKryptonGroup.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonGroup.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonGroup.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonGroup.TabIndex = 42;
             this.linkKryptonGroup.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonGroup.Values.Image")));
             this.linkKryptonGroup.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -513,9 +537,11 @@
             this.linkKryptonHeaderGroup.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonHeaderGroup.Location = new System.Drawing.Point(972, 202);
             this.linkKryptonHeaderGroup.Name = "linkKryptonHeaderGroup";
-            this.linkKryptonHeaderGroup.Size = new System.Drawing.Size(198, 26);
+            this.linkKryptonHeaderGroup.Size = new System.Drawing.Size(240, 32);
             this.linkKryptonHeaderGroup.StateCommon.AdjacentGap = 5;
             this.linkKryptonHeaderGroup.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonHeaderGroup.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonHeaderGroup.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonHeaderGroup.TabIndex = 44;
             this.linkKryptonHeaderGroup.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonHeaderGroup.Values.Image")));
             this.linkKryptonHeaderGroup.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -527,9 +553,11 @@
             this.linkKryptonHeader.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonHeader.Location = new System.Drawing.Point(972, 240);
             this.linkKryptonHeader.Name = "linkKryptonHeader";
-            this.linkKryptonHeader.Size = new System.Drawing.Size(148, 26);
+            this.linkKryptonHeader.Size = new System.Drawing.Size(178, 32);
             this.linkKryptonHeader.StateCommon.AdjacentGap = 5;
             this.linkKryptonHeader.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonHeader.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonHeader.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonHeader.TabIndex = 45;
             this.linkKryptonHeader.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonHeader.Values.Image")));
             this.linkKryptonHeader.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -541,9 +569,11 @@
             this.linkKryptonTreeView.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonTreeView.Location = new System.Drawing.Point(498, 468);
             this.linkKryptonTreeView.Name = "linkKryptonTreeView";
-            this.linkKryptonTreeView.Size = new System.Drawing.Size(166, 26);
+            this.linkKryptonTreeView.Size = new System.Drawing.Size(200, 32);
             this.linkKryptonTreeView.StateCommon.AdjacentGap = 5;
             this.linkKryptonTreeView.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonTreeView.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonTreeView.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonTreeView.TabIndex = 38;
             this.linkKryptonTreeView.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonTreeView.Values.Image")));
             this.linkKryptonTreeView.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -555,9 +585,11 @@
             this.linkKryptonMonthCalendar.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonMonthCalendar.Location = new System.Drawing.Point(498, 392);
             this.linkKryptonMonthCalendar.Name = "linkKryptonMonthCalendar";
-            this.linkKryptonMonthCalendar.Size = new System.Drawing.Size(212, 26);
+            this.linkKryptonMonthCalendar.Size = new System.Drawing.Size(259, 32);
             this.linkKryptonMonthCalendar.StateCommon.AdjacentGap = 5;
             this.linkKryptonMonthCalendar.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonMonthCalendar.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonMonthCalendar.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonMonthCalendar.TabIndex = 36;
             this.linkKryptonMonthCalendar.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonMonthCalendar.Values.Image")));
             this.linkKryptonMonthCalendar.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -569,9 +601,11 @@
             this.linkKryptonDateTimePicker.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonDateTimePicker.Location = new System.Drawing.Point(498, 354);
             this.linkKryptonDateTimePicker.Name = "linkKryptonDateTimePicker";
-            this.linkKryptonDateTimePicker.Size = new System.Drawing.Size(217, 26);
+            this.linkKryptonDateTimePicker.Size = new System.Drawing.Size(264, 32);
             this.linkKryptonDateTimePicker.StateCommon.AdjacentGap = 5;
             this.linkKryptonDateTimePicker.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonDateTimePicker.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonDateTimePicker.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonDateTimePicker.TabIndex = 35;
             this.linkKryptonDateTimePicker.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonDateTimePicker.Values.Image")));
             this.linkKryptonDateTimePicker.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -583,9 +617,11 @@
             this.linkKryptonDomainUpDown.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonDomainUpDown.Location = new System.Drawing.Point(498, 278);
             this.linkKryptonDomainUpDown.Name = "linkKryptonDomainUpDown";
-            this.linkKryptonDomainUpDown.Size = new System.Drawing.Size(224, 26);
+            this.linkKryptonDomainUpDown.Size = new System.Drawing.Size(274, 32);
             this.linkKryptonDomainUpDown.StateCommon.AdjacentGap = 5;
             this.linkKryptonDomainUpDown.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonDomainUpDown.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonDomainUpDown.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonDomainUpDown.TabIndex = 33;
             this.linkKryptonDomainUpDown.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonDomainUpDown.Values.Image")));
             this.linkKryptonDomainUpDown.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -597,9 +633,11 @@
             this.linkKryptonBreadCrumb.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonBreadCrumb.Location = new System.Drawing.Point(498, 316);
             this.linkKryptonBreadCrumb.Name = "linkKryptonBreadCrumb";
-            this.linkKryptonBreadCrumb.Size = new System.Drawing.Size(190, 26);
+            this.linkKryptonBreadCrumb.Size = new System.Drawing.Size(231, 32);
             this.linkKryptonBreadCrumb.StateCommon.AdjacentGap = 5;
             this.linkKryptonBreadCrumb.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonBreadCrumb.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonBreadCrumb.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonBreadCrumb.TabIndex = 34;
             this.linkKryptonBreadCrumb.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonBreadCrumb.Values.Image")));
             this.linkKryptonBreadCrumb.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -611,9 +649,11 @@
             this.linkKryptonNumericUpDown.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonNumericUpDown.Location = new System.Drawing.Point(498, 240);
             this.linkKryptonNumericUpDown.Name = "linkKryptonNumericUpDown";
-            this.linkKryptonNumericUpDown.Size = new System.Drawing.Size(229, 26);
+            this.linkKryptonNumericUpDown.Size = new System.Drawing.Size(280, 32);
             this.linkKryptonNumericUpDown.StateCommon.AdjacentGap = 5;
             this.linkKryptonNumericUpDown.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonNumericUpDown.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonNumericUpDown.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonNumericUpDown.TabIndex = 32;
             this.linkKryptonNumericUpDown.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonNumericUpDown.Values.Image")));
             this.linkKryptonNumericUpDown.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -625,9 +665,11 @@
             this.linkKryptonCheckedListBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonCheckedListBox.Location = new System.Drawing.Point(498, 50);
             this.linkKryptonCheckedListBox.Name = "linkKryptonCheckedListBox";
-            this.linkKryptonCheckedListBox.Size = new System.Drawing.Size(217, 26);
+            this.linkKryptonCheckedListBox.Size = new System.Drawing.Size(265, 32);
             this.linkKryptonCheckedListBox.StateCommon.AdjacentGap = 5;
             this.linkKryptonCheckedListBox.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonCheckedListBox.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonCheckedListBox.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonCheckedListBox.TabIndex = 27;
             this.linkKryptonCheckedListBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonCheckedListBox.Values.Image")));
             this.linkKryptonCheckedListBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -639,9 +681,11 @@
             this.linkKryptonListBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonListBox.Location = new System.Drawing.Point(498, 12);
             this.linkKryptonListBox.Name = "linkKryptonListBox";
-            this.linkKryptonListBox.Size = new System.Drawing.Size(150, 26);
+            this.linkKryptonListBox.Size = new System.Drawing.Size(181, 32);
             this.linkKryptonListBox.StateCommon.AdjacentGap = 5;
             this.linkKryptonListBox.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonListBox.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonListBox.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonListBox.TabIndex = 26;
             this.ttInformation.SetToolTip(this.linkKryptonListBox, "Krypton List Box");
             this.linkKryptonListBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonListBox.Values.Image")));
@@ -654,9 +698,11 @@
             this.linkKryptonMaskedTextBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonMaskedTextBox.Location = new System.Drawing.Point(498, 126);
             this.linkKryptonMaskedTextBox.Name = "linkKryptonMaskedTextBox";
-            this.linkKryptonMaskedTextBox.Size = new System.Drawing.Size(218, 26);
+            this.linkKryptonMaskedTextBox.Size = new System.Drawing.Size(265, 32);
             this.linkKryptonMaskedTextBox.StateCommon.AdjacentGap = 5;
             this.linkKryptonMaskedTextBox.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonMaskedTextBox.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonMaskedTextBox.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonMaskedTextBox.TabIndex = 29;
             this.linkKryptonMaskedTextBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonMaskedTextBox.Values.Image")));
             this.linkKryptonMaskedTextBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -668,9 +714,11 @@
             this.linkKryptonRichTextBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonRichTextBox.Location = new System.Drawing.Point(498, 164);
             this.linkKryptonRichTextBox.Name = "linkKryptonRichTextBox";
-            this.linkKryptonRichTextBox.Size = new System.Drawing.Size(192, 26);
+            this.linkKryptonRichTextBox.Size = new System.Drawing.Size(233, 32);
             this.linkKryptonRichTextBox.StateCommon.AdjacentGap = 5;
             this.linkKryptonRichTextBox.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonRichTextBox.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonRichTextBox.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonRichTextBox.TabIndex = 30;
             this.linkKryptonRichTextBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonRichTextBox.Values.Image")));
             this.linkKryptonRichTextBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -682,9 +730,11 @@
             this.linkKryptonComboBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonComboBox.Location = new System.Drawing.Point(498, 202);
             this.linkKryptonComboBox.Name = "linkKryptonComboBox";
-            this.linkKryptonComboBox.Size = new System.Drawing.Size(179, 26);
+            this.linkKryptonComboBox.Size = new System.Drawing.Size(217, 32);
             this.linkKryptonComboBox.StateCommon.AdjacentGap = 5;
             this.linkKryptonComboBox.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonComboBox.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonComboBox.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonComboBox.TabIndex = 31;
             this.linkKryptonComboBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonComboBox.Values.Image")));
             this.linkKryptonComboBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -696,9 +746,11 @@
             this.linkKryptonTextBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonTextBox.Location = new System.Drawing.Point(498, 88);
             this.linkKryptonTextBox.Name = "linkKryptonTextBox";
-            this.linkKryptonTextBox.Size = new System.Drawing.Size(156, 26);
+            this.linkKryptonTextBox.Size = new System.Drawing.Size(189, 32);
             this.linkKryptonTextBox.StateCommon.AdjacentGap = 5;
             this.linkKryptonTextBox.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonTextBox.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonTextBox.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonTextBox.TabIndex = 28;
             this.linkKryptonTextBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonTextBox.Values.Image")));
             this.linkKryptonTextBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -710,9 +762,11 @@
             this.linkKryptonDataGridView.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonDataGridView.Location = new System.Drawing.Point(498, 430);
             this.linkKryptonDataGridView.Name = "linkKryptonDataGridView";
-            this.linkKryptonDataGridView.Size = new System.Drawing.Size(203, 26);
+            this.linkKryptonDataGridView.Size = new System.Drawing.Size(247, 32);
             this.linkKryptonDataGridView.StateCommon.AdjacentGap = 5;
             this.linkKryptonDataGridView.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonDataGridView.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonDataGridView.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonDataGridView.TabIndex = 37;
             this.linkKryptonDataGridView.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonDataGridView.Values.Image")));
             this.linkKryptonDataGridView.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -724,9 +778,11 @@
             this.linkKryptonTrackBar.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonTrackBar.Location = new System.Drawing.Point(16, 468);
             this.linkKryptonTrackBar.Name = "linkKryptonTrackBar";
-            this.linkKryptonTrackBar.Size = new System.Drawing.Size(161, 26);
+            this.linkKryptonTrackBar.Size = new System.Drawing.Size(195, 32);
             this.linkKryptonTrackBar.StateCommon.AdjacentGap = 5;
             this.linkKryptonTrackBar.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonTrackBar.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonTrackBar.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonTrackBar.TabIndex = 25;
             this.ttInformation.SetToolTip(this.linkKryptonTrackBar, "Krypton Track Bar");
             this.linkKryptonTrackBar.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonTrackBar.Values.Image")));
@@ -739,9 +795,11 @@
             this.linkKryptonWrapLabel.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonWrapLabel.Location = new System.Drawing.Point(16, 354);
             this.linkKryptonWrapLabel.Name = "linkKryptonWrapLabel";
-            this.linkKryptonWrapLabel.Size = new System.Drawing.Size(177, 26);
+            this.linkKryptonWrapLabel.Size = new System.Drawing.Size(214, 32);
             this.linkKryptonWrapLabel.StateCommon.AdjacentGap = 5;
             this.linkKryptonWrapLabel.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonWrapLabel.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonWrapLabel.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonWrapLabel.TabIndex = 22;
             this.ttInformation.SetToolTip(this.linkKryptonWrapLabel, "Krypton Wrap Label");
             this.linkKryptonWrapLabel.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonWrapLabel.Values.Image")));
@@ -754,9 +812,11 @@
             this.linkKryptonColourButton.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonColourButton.Location = new System.Drawing.Point(16, 126);
             this.linkKryptonColourButton.Name = "linkKryptonColourButton";
-            this.linkKryptonColourButton.Size = new System.Drawing.Size(197, 26);
+            this.linkKryptonColourButton.Size = new System.Drawing.Size(239, 32);
             this.linkKryptonColourButton.StateCommon.AdjacentGap = 5;
             this.linkKryptonColourButton.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonColourButton.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonColourButton.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonColourButton.TabIndex = 16;
             this.ttInformation.SetToolTip(this.linkKryptonColourButton, "Krypton Colour Button");
             this.linkKryptonColourButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonColourButton.Values.Image")));
@@ -769,9 +829,11 @@
             this.linkKryptonDropButton.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonDropButton.Location = new System.Drawing.Point(16, 88);
             this.linkKryptonDropButton.Name = "linkKryptonDropButton";
-            this.linkKryptonDropButton.Size = new System.Drawing.Size(185, 26);
+            this.linkKryptonDropButton.Size = new System.Drawing.Size(224, 32);
             this.linkKryptonDropButton.StateCommon.AdjacentGap = 5;
             this.linkKryptonDropButton.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonDropButton.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonDropButton.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonDropButton.TabIndex = 15;
             this.ttInformation.SetToolTip(this.linkKryptonDropButton, "Krypton Drop Button");
             this.linkKryptonDropButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonDropButton.Values.Image")));
@@ -784,9 +846,11 @@
             this.linkKryptonContextMenu.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonContextMenu.Location = new System.Drawing.Point(16, 430);
             this.linkKryptonContextMenu.Name = "linkKryptonContextMenu";
-            this.linkKryptonContextMenu.Size = new System.Drawing.Size(198, 26);
+            this.linkKryptonContextMenu.Size = new System.Drawing.Size(241, 32);
             this.linkKryptonContextMenu.StateCommon.AdjacentGap = 5;
             this.linkKryptonContextMenu.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonContextMenu.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonContextMenu.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonContextMenu.TabIndex = 24;
             this.ttInformation.SetToolTip(this.linkKryptonContextMenu, "Krypton Context Menu");
             this.linkKryptonContextMenu.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonContextMenu.Values.Image")));
@@ -799,9 +863,11 @@
             this.linkKryptonRadioButton.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonRadioButton.Location = new System.Drawing.Point(16, 240);
             this.linkKryptonRadioButton.Name = "linkKryptonRadioButton";
-            this.linkKryptonRadioButton.Size = new System.Drawing.Size(190, 26);
+            this.linkKryptonRadioButton.Size = new System.Drawing.Size(231, 32);
             this.linkKryptonRadioButton.StateCommon.AdjacentGap = 5;
             this.linkKryptonRadioButton.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonRadioButton.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonRadioButton.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonRadioButton.TabIndex = 19;
             this.ttInformation.SetToolTip(this.linkKryptonRadioButton, "Krypton Radio Button");
             this.linkKryptonRadioButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonRadioButton.Values.Image")));
@@ -814,9 +880,11 @@
             this.linkKryptonCheckBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonCheckBox.Location = new System.Drawing.Point(16, 202);
             this.linkKryptonCheckBox.Name = "linkKryptonCheckBox";
-            this.linkKryptonCheckBox.Size = new System.Drawing.Size(170, 26);
+            this.linkKryptonCheckBox.Size = new System.Drawing.Size(206, 32);
             this.linkKryptonCheckBox.StateCommon.AdjacentGap = 5;
             this.linkKryptonCheckBox.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonCheckBox.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonCheckBox.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonCheckBox.TabIndex = 18;
             this.ttInformation.SetToolTip(this.linkKryptonCheckBox, "Krypton Check Box");
             this.linkKryptonCheckBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonCheckBox.Values.Image")));
@@ -829,9 +897,11 @@
             this.linkKryptonCheckSet.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonCheckSet.Location = new System.Drawing.Point(16, 164);
             this.linkKryptonCheckSet.Name = "linkKryptonCheckSet";
-            this.linkKryptonCheckSet.Size = new System.Drawing.Size(166, 26);
+            this.linkKryptonCheckSet.Size = new System.Drawing.Size(201, 32);
             this.linkKryptonCheckSet.StateCommon.AdjacentGap = 5;
             this.linkKryptonCheckSet.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonCheckSet.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonCheckSet.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonCheckSet.TabIndex = 17;
             this.ttInformation.SetToolTip(this.linkKryptonCheckSet, "Krypton Check Set");
             this.linkKryptonCheckSet.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonCheckSet.Values.Image")));
@@ -844,9 +914,11 @@
             this.linkKryptonCheckButton.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonCheckButton.Location = new System.Drawing.Point(16, 50);
             this.linkKryptonCheckButton.Name = "linkKryptonCheckButton";
-            this.linkKryptonCheckButton.Size = new System.Drawing.Size(192, 26);
+            this.linkKryptonCheckButton.Size = new System.Drawing.Size(233, 32);
             this.linkKryptonCheckButton.StateCommon.AdjacentGap = 5;
             this.linkKryptonCheckButton.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonCheckButton.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonCheckButton.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonCheckButton.TabIndex = 14;
             this.ttInformation.SetToolTip(this.linkKryptonCheckButton, "Krypton Check Button");
             this.linkKryptonCheckButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonCheckButton.Values.Image")));
@@ -859,9 +931,11 @@
             this.linkKryptonLinkLabel.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonLinkLabel.Location = new System.Drawing.Point(16, 316);
             this.linkKryptonLinkLabel.Name = "linkKryptonLinkLabel";
-            this.linkKryptonLinkLabel.Size = new System.Drawing.Size(167, 26);
+            this.linkKryptonLinkLabel.Size = new System.Drawing.Size(202, 32);
             this.linkKryptonLinkLabel.StateCommon.AdjacentGap = 5;
             this.linkKryptonLinkLabel.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonLinkLabel.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonLinkLabel.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonLinkLabel.TabIndex = 21;
             this.ttInformation.SetToolTip(this.linkKryptonLinkLabel, "Krypton Link Label");
             this.linkKryptonLinkLabel.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonLinkLabel.Values.Image")));
@@ -874,9 +948,11 @@
             this.linkKryptonSplitContainer.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonSplitContainer.Location = new System.Drawing.Point(16, 392);
             this.linkKryptonSplitContainer.Name = "linkKryptonSplitContainer";
-            this.linkKryptonSplitContainer.Size = new System.Drawing.Size(202, 26);
+            this.linkKryptonSplitContainer.Size = new System.Drawing.Size(246, 32);
             this.linkKryptonSplitContainer.StateCommon.AdjacentGap = 5;
             this.linkKryptonSplitContainer.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonSplitContainer.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonSplitContainer.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonSplitContainer.TabIndex = 23;
             this.ttInformation.SetToolTip(this.linkKryptonSplitContainer, "Krypton Split Container");
             this.linkKryptonSplitContainer.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonSplitContainer.Values.Image")));
@@ -889,9 +965,11 @@
             this.linkKryptonButton.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonButton.Location = new System.Drawing.Point(16, 12);
             this.linkKryptonButton.Name = "linkKryptonButton";
-            this.linkKryptonButton.Size = new System.Drawing.Size(144, 26);
+            this.linkKryptonButton.Size = new System.Drawing.Size(173, 32);
             this.linkKryptonButton.StateCommon.AdjacentGap = 5;
             this.linkKryptonButton.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonButton.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonButton.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonButton.TabIndex = 13;
             this.ttInformation.SetToolTip(this.linkKryptonButton, "Krypton Button");
             this.linkKryptonButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonButton.Values.Image")));
@@ -904,9 +982,11 @@
             this.linkKryptonLabel.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonLabel.Location = new System.Drawing.Point(16, 278);
             this.linkKryptonLabel.Name = "linkKryptonLabel";
-            this.linkKryptonLabel.Size = new System.Drawing.Size(133, 26);
+            this.linkKryptonLabel.Size = new System.Drawing.Size(160, 32);
             this.linkKryptonLabel.StateCommon.AdjacentGap = 5;
             this.linkKryptonLabel.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonLabel.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonLabel.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonLabel.TabIndex = 20;
             this.ttInformation.SetToolTip(this.linkKryptonLabel, "Krypton Label");
             this.linkKryptonLabel.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonLabel.Values.Image")));
@@ -942,8 +1022,10 @@
             this.linkInputForm.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkInputForm.Location = new System.Drawing.Point(16, 12);
             this.linkInputForm.Name = "linkInputForm";
-            this.linkInputForm.Size = new System.Drawing.Size(92, 26);
+            this.linkInputForm.Size = new System.Drawing.Size(114, 32);
             this.linkInputForm.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkInputForm.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkInputForm.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkInputForm.TabIndex = 11;
             this.linkInputForm.Values.Text = "Input Form";
             // 
@@ -952,8 +1034,10 @@
             this.linkMDIApplication.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkMDIApplication.Location = new System.Drawing.Point(16, 282);
             this.linkMDIApplication.Name = "linkMDIApplication";
-            this.linkMDIApplication.Size = new System.Drawing.Size(130, 26);
+            this.linkMDIApplication.Size = new System.Drawing.Size(160, 32);
             this.linkMDIApplication.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkMDIApplication.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkMDIApplication.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkMDIApplication.TabIndex = 17;
             this.linkMDIApplication.Values.Text = "MDI Application";
             // 
@@ -962,8 +1046,10 @@
             this.linkThreePaneApplicationBasic.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkThreePaneApplicationBasic.Location = new System.Drawing.Point(16, 57);
             this.linkThreePaneApplicationBasic.Name = "linkThreePaneApplicationBasic";
-            this.linkThreePaneApplicationBasic.Size = new System.Drawing.Size(231, 26);
+            this.linkThreePaneApplicationBasic.Size = new System.Drawing.Size(287, 32);
             this.linkThreePaneApplicationBasic.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkThreePaneApplicationBasic.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkThreePaneApplicationBasic.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkThreePaneApplicationBasic.TabIndex = 12;
             this.linkThreePaneApplicationBasic.Values.Text = "Three Pane Application (Basic)";
             // 
@@ -972,8 +1058,10 @@
             this.linkThreePaneApplicationExtended.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkThreePaneApplicationExtended.Location = new System.Drawing.Point(16, 102);
             this.linkThreePaneApplicationExtended.Name = "linkThreePaneApplicationExtended";
-            this.linkThreePaneApplicationExtended.Size = new System.Drawing.Size(262, 26);
+            this.linkThreePaneApplicationExtended.Size = new System.Drawing.Size(326, 32);
             this.linkThreePaneApplicationExtended.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkThreePaneApplicationExtended.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkThreePaneApplicationExtended.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkThreePaneApplicationExtended.TabIndex = 13;
             this.linkThreePaneApplicationExtended.Values.Text = "Three Pane Application (Extended)";
             // 
@@ -982,8 +1070,10 @@
             this.linkCustomControlUsingRenderers.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkCustomControlUsingRenderers.Location = new System.Drawing.Point(16, 462);
             this.linkCustomControlUsingRenderers.Name = "linkCustomControlUsingRenderers";
-            this.linkCustomControlUsingRenderers.Size = new System.Drawing.Size(248, 26);
+            this.linkCustomControlUsingRenderers.Size = new System.Drawing.Size(308, 32);
             this.linkCustomControlUsingRenderers.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkCustomControlUsingRenderers.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkCustomControlUsingRenderers.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkCustomControlUsingRenderers.TabIndex = 21;
             this.linkCustomControlUsingRenderers.Values.Text = "Custom Control using Renderers";
             // 
@@ -992,8 +1082,10 @@
             this.linkExpandingHeaderGroupsSplitters.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkExpandingHeaderGroupsSplitters.Location = new System.Drawing.Point(16, 147);
             this.linkExpandingHeaderGroupsSplitters.Name = "linkExpandingHeaderGroupsSplitters";
-            this.linkExpandingHeaderGroupsSplitters.Size = new System.Drawing.Size(271, 26);
+            this.linkExpandingHeaderGroupsSplitters.Size = new System.Drawing.Size(337, 32);
             this.linkExpandingHeaderGroupsSplitters.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkExpandingHeaderGroupsSplitters.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkExpandingHeaderGroupsSplitters.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkExpandingHeaderGroupsSplitters.TabIndex = 14;
             this.linkExpandingHeaderGroupsSplitters.Values.Text = "Expanding HeaderGroups (Splitters)";
             // 
@@ -1002,8 +1094,10 @@
             this.linkCustomControlUsingPalettes.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkCustomControlUsingPalettes.Location = new System.Drawing.Point(16, 417);
             this.linkCustomControlUsingPalettes.Name = "linkCustomControlUsingPalettes";
-            this.linkCustomControlUsingPalettes.Size = new System.Drawing.Size(232, 26);
+            this.linkCustomControlUsingPalettes.Size = new System.Drawing.Size(288, 32);
             this.linkCustomControlUsingPalettes.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkCustomControlUsingPalettes.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkCustomControlUsingPalettes.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkCustomControlUsingPalettes.TabIndex = 20;
             this.linkCustomControlUsingPalettes.Values.Text = "Custom Control using Palettes";
             // 
@@ -1012,8 +1106,10 @@
             this.linkLabelButtonSpecPlayground.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkLabelButtonSpecPlayground.Location = new System.Drawing.Point(16, 372);
             this.linkLabelButtonSpecPlayground.Name = "linkLabelButtonSpecPlayground";
-            this.linkLabelButtonSpecPlayground.Size = new System.Drawing.Size(183, 26);
+            this.linkLabelButtonSpecPlayground.Size = new System.Drawing.Size(227, 32);
             this.linkLabelButtonSpecPlayground.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelButtonSpecPlayground.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkLabelButtonSpecPlayground.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkLabelButtonSpecPlayground.TabIndex = 19;
             this.linkLabelButtonSpecPlayground.Values.Text = "ButtonSpec Playground";
             // 
@@ -1022,8 +1118,10 @@
             this.linkExpandingHeaderGroupsDockStyle.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkExpandingHeaderGroupsDockStyle.Location = new System.Drawing.Point(16, 192);
             this.linkExpandingHeaderGroupsDockStyle.Name = "linkExpandingHeaderGroupsDockStyle";
-            this.linkExpandingHeaderGroupsDockStyle.Size = new System.Drawing.Size(284, 26);
+            this.linkExpandingHeaderGroupsDockStyle.Size = new System.Drawing.Size(354, 32);
             this.linkExpandingHeaderGroupsDockStyle.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkExpandingHeaderGroupsDockStyle.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkExpandingHeaderGroupsDockStyle.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkExpandingHeaderGroupsDockStyle.TabIndex = 15;
             this.linkExpandingHeaderGroupsDockStyle.Values.Text = "Expanding HeaderGroups (DockStyle)";
             // 
@@ -1032,8 +1130,10 @@
             this.linkChildControlStack.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkChildControlStack.Location = new System.Drawing.Point(16, 327);
             this.linkChildControlStack.Name = "linkChildControlStack";
-            this.linkChildControlStack.Size = new System.Drawing.Size(151, 26);
+            this.linkChildControlStack.Size = new System.Drawing.Size(187, 32);
             this.linkChildControlStack.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkChildControlStack.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkChildControlStack.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkChildControlStack.TabIndex = 18;
             this.linkChildControlStack.Values.Text = "Child Control Stack";
             // 
@@ -1042,8 +1142,10 @@
             this.linkExpandingHeaderStack.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkExpandingHeaderStack.Location = new System.Drawing.Point(16, 237);
             this.linkExpandingHeaderStack.Name = "linkExpandingHeaderStack";
-            this.linkExpandingHeaderStack.Size = new System.Drawing.Size(251, 26);
+            this.linkExpandingHeaderStack.Size = new System.Drawing.Size(312, 32);
             this.linkExpandingHeaderStack.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkExpandingHeaderStack.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkExpandingHeaderStack.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkExpandingHeaderStack.TabIndex = 16;
             this.linkExpandingHeaderStack.Values.Text = "Expanding HeaderGroups (Stack)";
             // 
@@ -1069,8 +1171,10 @@
             this.linkTreeView.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkTreeView.Location = new System.Drawing.Point(16, 12);
             this.linkTreeView.Name = "linkTreeView";
-            this.linkTreeView.Size = new System.Drawing.Size(83, 26);
+            this.linkTreeView.Size = new System.Drawing.Size(102, 32);
             this.linkTreeView.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkTreeView.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkTreeView.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkTreeView.TabIndex = 16;
             this.linkTreeView.Values.Text = "Tree View";
             // 
@@ -1079,8 +1183,10 @@
             this.linkSystemThemedForms.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkSystemThemedForms.Location = new System.Drawing.Point(16, 57);
             this.linkSystemThemedForms.Name = "linkSystemThemedForms";
-            this.linkSystemThemedForms.Size = new System.Drawing.Size(177, 26);
+            this.linkSystemThemedForms.Size = new System.Drawing.Size(219, 32);
             this.linkSystemThemedForms.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkSystemThemedForms.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkSystemThemedForms.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkSystemThemedForms.TabIndex = 17;
             this.linkSystemThemedForms.Values.Text = "System Themed Forms";
             // 
@@ -1089,8 +1195,10 @@
             this.linkTestClipBase.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkTestClipBase.Location = new System.Drawing.Point(16, 102);
             this.linkTestClipBase.Name = "linkTestClipBase";
-            this.linkTestClipBase.Size = new System.Drawing.Size(112, 26);
+            this.linkTestClipBase.Size = new System.Drawing.Size(138, 32);
             this.linkTestClipBase.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkTestClipBase.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkTestClipBase.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkTestClipBase.TabIndex = 18;
             this.linkTestClipBase.Values.Text = "Test Clip Base";
             // 
@@ -1099,8 +1207,10 @@
             this.linkTestMessageBoxClipping.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkTestMessageBoxClipping.Location = new System.Drawing.Point(16, 147);
             this.linkTestMessageBoxClipping.Name = "linkTestMessageBoxClipping";
-            this.linkTestMessageBoxClipping.Size = new System.Drawing.Size(202, 26);
+            this.linkTestMessageBoxClipping.Size = new System.Drawing.Size(251, 32);
             this.linkTestMessageBoxClipping.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkTestMessageBoxClipping.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkTestMessageBoxClipping.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkTestMessageBoxClipping.TabIndex = 19;
             this.linkTestMessageBoxClipping.Values.Text = "Test MessageBox Clipping";
             // 
@@ -1109,8 +1219,10 @@
             this.linkTestTextClipping.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkTestTextClipping.Location = new System.Drawing.Point(16, 192);
             this.linkTestTextClipping.Name = "linkTestTextClipping";
-            this.linkTestTextClipping.Size = new System.Drawing.Size(142, 26);
+            this.linkTestTextClipping.Size = new System.Drawing.Size(175, 32);
             this.linkTestTextClipping.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkTestTextClipping.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkTestTextClipping.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkTestTextClipping.TabIndex = 20;
             this.linkTestTextClipping.Values.Text = "Test Text Clipping";
             // 
@@ -1119,9 +1231,11 @@
             this.labeToolkitPage.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labeToolkitPage.Location = new System.Drawing.Point(11, 14);
             this.labeToolkitPage.Name = "labeToolkitPage";
-            this.labeToolkitPage.Size = new System.Drawing.Size(250, 30);
+            this.labeToolkitPage.Size = new System.Drawing.Size(311, 37);
             this.labeToolkitPage.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeToolkitPage.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labeToolkitPage.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labeToolkitPage.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labeToolkitPage.TabIndex = 2;
             this.labeToolkitPage.Values.Text = "Krypton Toolkit Examples";
             // 
@@ -1142,7 +1256,7 @@
             this.kryptonPageDocking.LastVisibleSet = true;
             this.kryptonPageDocking.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageDocking.Name = "kryptonPageDocking";
-            this.kryptonPageDocking.Size = new System.Drawing.Size(1198, 592);
+            this.kryptonPageDocking.Size = new System.Drawing.Size(1198, 629);
             this.kryptonPageDocking.Text = "Docking";
             this.kryptonPageDocking.TextDescription = "";
             this.kryptonPageDocking.TextTitle = "";
@@ -1154,8 +1268,10 @@
             this.linkExternalDragToDocking.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkExternalDragToDocking.Location = new System.Drawing.Point(16, 412);
             this.linkExternalDragToDocking.Name = "linkExternalDragToDocking";
-            this.linkExternalDragToDocking.Size = new System.Drawing.Size(197, 26);
+            this.linkExternalDragToDocking.Size = new System.Drawing.Size(244, 32);
             this.linkExternalDragToDocking.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkExternalDragToDocking.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkExternalDragToDocking.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkExternalDragToDocking.TabIndex = 14;
             this.linkExternalDragToDocking.Values.Text = "External Drag To Docking";
             // 
@@ -1164,8 +1280,10 @@
             this.linkNavigatorAndFloatingWindows.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorAndFloatingWindows.Location = new System.Drawing.Point(221, 177);
             this.linkNavigatorAndFloatingWindows.Name = "linkNavigatorAndFloatingWindows";
-            this.linkNavigatorAndFloatingWindows.Size = new System.Drawing.Size(229, 26);
+            this.linkNavigatorAndFloatingWindows.Size = new System.Drawing.Size(285, 32);
             this.linkNavigatorAndFloatingWindows.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkNavigatorAndFloatingWindows.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkNavigatorAndFloatingWindows.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkNavigatorAndFloatingWindows.TabIndex = 17;
             this.linkNavigatorAndFloatingWindows.Values.Text = "Navigator + FloatingWindows";
             // 
@@ -1174,8 +1292,10 @@
             this.linkDockingCustomized.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkDockingCustomized.Location = new System.Drawing.Point(16, 100);
             this.linkDockingCustomized.Name = "linkDockingCustomized";
-            this.linkDockingCustomized.Size = new System.Drawing.Size(162, 26);
+            this.linkDockingCustomized.Size = new System.Drawing.Size(201, 32);
             this.linkDockingCustomized.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkDockingCustomized.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkDockingCustomized.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkDockingCustomized.TabIndex = 10;
             this.linkDockingCustomized.Values.Text = "Docking Customized";
             // 
@@ -1184,8 +1304,10 @@
             this.linkDockingFlags.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkDockingFlags.Location = new System.Drawing.Point(16, 256);
             this.linkDockingFlags.Name = "linkDockingFlags";
-            this.linkDockingFlags.Size = new System.Drawing.Size(114, 26);
+            this.linkDockingFlags.Size = new System.Drawing.Size(140, 32);
             this.linkDockingFlags.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkDockingFlags.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkDockingFlags.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkDockingFlags.TabIndex = 12;
             this.linkDockingFlags.Values.Text = "Docking Flags";
             // 
@@ -1194,8 +1316,10 @@
             this.linkDockingPersistence.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkDockingPersistence.Location = new System.Drawing.Point(16, 178);
             this.linkDockingPersistence.Name = "linkDockingPersistence";
-            this.linkDockingPersistence.Size = new System.Drawing.Size(158, 26);
+            this.linkDockingPersistence.Size = new System.Drawing.Size(195, 32);
             this.linkDockingPersistence.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkDockingPersistence.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkDockingPersistence.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkDockingPersistence.TabIndex = 11;
             this.linkDockingPersistence.Values.Text = "Docking Persistence";
             // 
@@ -1204,8 +1328,10 @@
             this.linkMultiControlDocking.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkMultiControlDocking.Location = new System.Drawing.Point(16, 334);
             this.linkMultiControlDocking.Name = "linkMultiControlDocking";
-            this.linkMultiControlDocking.Size = new System.Drawing.Size(173, 26);
+            this.linkMultiControlDocking.Size = new System.Drawing.Size(214, 32);
             this.linkMultiControlDocking.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkMultiControlDocking.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkMultiControlDocking.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkMultiControlDocking.TabIndex = 13;
             this.linkMultiControlDocking.Values.Text = "Multi Control Docking";
             // 
@@ -1214,8 +1340,10 @@
             this.linkStandardDocking.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkStandardDocking.Location = new System.Drawing.Point(221, 100);
             this.linkStandardDocking.Name = "linkStandardDocking";
-            this.linkStandardDocking.Size = new System.Drawing.Size(142, 26);
+            this.linkStandardDocking.Size = new System.Drawing.Size(176, 32);
             this.linkStandardDocking.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkStandardDocking.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkStandardDocking.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkStandardDocking.TabIndex = 15;
             this.linkStandardDocking.Values.Text = "Standard Docking";
             // 
@@ -1224,9 +1352,11 @@
             this.kryptonLabel3.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel3.Location = new System.Drawing.Point(216, 61);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(161, 30);
+            this.kryptonLabel3.Size = new System.Drawing.Size(199, 37);
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel3.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel3.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel3.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel3.TabIndex = 16;
             this.kryptonLabel3.Values.Text = "Usage Examples";
             // 
@@ -1235,9 +1365,11 @@
             this.kryptonLabel4.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel4.Location = new System.Drawing.Point(11, 61);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(174, 30);
+            this.kryptonLabel4.Size = new System.Drawing.Size(216, 37);
             this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel4.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel4.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel4.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel4.TabIndex = 18;
             this.kryptonLabel4.Values.Text = "Feature Examples";
             // 
@@ -1246,9 +1378,11 @@
             this.kryptonLabel2.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel2.Location = new System.Drawing.Point(11, 14);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(288, 33);
+            this.kryptonLabel2.Size = new System.Drawing.Size(358, 41);
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel2.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel2.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel2.TabIndex = 9;
             this.kryptonLabel2.Values.Text = "Krypton Docking Examples";
             // 
@@ -1270,7 +1404,7 @@
             this.kryptonPageWorkspace.LastVisibleSet = true;
             this.kryptonPageWorkspace.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageWorkspace.Name = "kryptonPageWorkspace";
-            this.kryptonPageWorkspace.Size = new System.Drawing.Size(1198, 592);
+            this.kryptonPageWorkspace.Size = new System.Drawing.Size(1198, 629);
             this.kryptonPageWorkspace.Text = "Workspace";
             this.kryptonPageWorkspace.TextTitle = "";
             this.kryptonPageWorkspace.ToolTipTitle = "Page ToolTip";
@@ -1281,8 +1415,10 @@
             this.linkCellMaximiseAndRestore.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkCellMaximiseAndRestore.Location = new System.Drawing.Point(17, 322);
             this.linkCellMaximiseAndRestore.Name = "linkCellMaximiseAndRestore";
-            this.linkCellMaximiseAndRestore.Size = new System.Drawing.Size(187, 26);
+            this.linkCellMaximiseAndRestore.Size = new System.Drawing.Size(232, 32);
             this.linkCellMaximiseAndRestore.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkCellMaximiseAndRestore.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkCellMaximiseAndRestore.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkCellMaximiseAndRestore.TabIndex = 14;
             this.linkCellMaximiseAndRestore.Values.Text = "Cell Maximise + Restore";
             // 
@@ -1291,8 +1427,10 @@
             this.linkWorkspacePersistence.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkWorkspacePersistence.Location = new System.Drawing.Point(17, 248);
             this.linkWorkspacePersistence.Name = "linkWorkspacePersistence";
-            this.linkWorkspacePersistence.Size = new System.Drawing.Size(178, 26);
+            this.linkWorkspacePersistence.Size = new System.Drawing.Size(221, 32);
             this.linkWorkspacePersistence.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkWorkspacePersistence.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkWorkspacePersistence.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkWorkspacePersistence.TabIndex = 13;
             this.linkWorkspacePersistence.Values.Text = "Workspace Persistence";
             // 
@@ -1301,8 +1439,10 @@
             this.linkWorkspaceMemoEditor.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkWorkspaceMemoEditor.Location = new System.Drawing.Point(222, 174);
             this.linkWorkspaceMemoEditor.Name = "linkWorkspaceMemoEditor";
-            this.linkWorkspaceMemoEditor.Size = new System.Drawing.Size(107, 26);
+            this.linkWorkspaceMemoEditor.Size = new System.Drawing.Size(132, 32);
             this.linkWorkspaceMemoEditor.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkWorkspaceMemoEditor.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkWorkspaceMemoEditor.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkWorkspaceMemoEditor.TabIndex = 18;
             this.linkWorkspaceMemoEditor.Values.Text = "Memo Editor";
             // 
@@ -1311,8 +1451,10 @@
             this.kryptonWorkspaceRibbonNavigator.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonWorkspaceRibbonNavigator.Location = new System.Drawing.Point(222, 100);
             this.kryptonWorkspaceRibbonNavigator.Name = "kryptonWorkspaceRibbonNavigator";
-            this.kryptonWorkspaceRibbonNavigator.Size = new System.Drawing.Size(257, 26);
+            this.kryptonWorkspaceRibbonNavigator.Size = new System.Drawing.Size(319, 32);
             this.kryptonWorkspaceRibbonNavigator.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonWorkspaceRibbonNavigator.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonWorkspaceRibbonNavigator.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonWorkspaceRibbonNavigator.TabIndex = 17;
             this.kryptonWorkspaceRibbonNavigator.Values.Text = "Ribbon + Navigator + Workspace";
             // 
@@ -1321,8 +1463,10 @@
             this.linkAdvancedPageDragAndDrop.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkAdvancedPageDragAndDrop.Location = new System.Drawing.Point(17, 472);
             this.linkAdvancedPageDragAndDrop.Name = "linkAdvancedPageDragAndDrop";
-            this.linkAdvancedPageDragAndDrop.Size = new System.Drawing.Size(221, 26);
+            this.linkAdvancedPageDragAndDrop.Size = new System.Drawing.Size(275, 32);
             this.linkAdvancedPageDragAndDrop.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkAdvancedPageDragAndDrop.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkAdvancedPageDragAndDrop.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkAdvancedPageDragAndDrop.TabIndex = 16;
             this.linkAdvancedPageDragAndDrop.Values.Text = "Advanced Page Drag + Drop";
             // 
@@ -1331,8 +1475,10 @@
             this.linkBasicPageDragAndDrop.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkBasicPageDragAndDrop.Location = new System.Drawing.Point(17, 396);
             this.linkBasicPageDragAndDrop.Name = "linkBasicPageDragAndDrop";
-            this.linkBasicPageDragAndDrop.Size = new System.Drawing.Size(186, 26);
+            this.linkBasicPageDragAndDrop.Size = new System.Drawing.Size(230, 32);
             this.linkBasicPageDragAndDrop.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkBasicPageDragAndDrop.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkBasicPageDragAndDrop.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkBasicPageDragAndDrop.TabIndex = 15;
             this.linkBasicPageDragAndDrop.Values.Text = "Basic Page Drag + Drop";
             // 
@@ -1341,8 +1487,10 @@
             this.linkWorkspaceCellLayout.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkWorkspaceCellLayout.Location = new System.Drawing.Point(17, 174);
             this.linkWorkspaceCellLayout.Name = "linkWorkspaceCellLayout";
-            this.linkWorkspaceCellLayout.Size = new System.Drawing.Size(177, 26);
+            this.linkWorkspaceCellLayout.Size = new System.Drawing.Size(219, 32);
             this.linkWorkspaceCellLayout.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkWorkspaceCellLayout.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkWorkspaceCellLayout.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkWorkspaceCellLayout.TabIndex = 12;
             this.linkWorkspaceCellLayout.Values.Text = "Workspace Cell Layout";
             // 
@@ -1351,8 +1499,10 @@
             this.linkWorkspaceCellModes.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkWorkspaceCellModes.Location = new System.Drawing.Point(17, 100);
             this.linkWorkspaceCellModes.Name = "linkWorkspaceCellModes";
-            this.linkWorkspaceCellModes.Size = new System.Drawing.Size(178, 26);
+            this.linkWorkspaceCellModes.Size = new System.Drawing.Size(220, 32);
             this.linkWorkspaceCellModes.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkWorkspaceCellModes.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkWorkspaceCellModes.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkWorkspaceCellModes.TabIndex = 11;
             this.linkWorkspaceCellModes.Values.Text = "Workspace Cell Modes";
             // 
@@ -1361,9 +1511,11 @@
             this.labelWorkspaceUsageExamples.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelWorkspaceUsageExamples.Location = new System.Drawing.Point(221, 61);
             this.labelWorkspaceUsageExamples.Name = "labelWorkspaceUsageExamples";
-            this.labelWorkspaceUsageExamples.Size = new System.Drawing.Size(161, 30);
+            this.labelWorkspaceUsageExamples.Size = new System.Drawing.Size(199, 37);
             this.labelWorkspaceUsageExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWorkspaceUsageExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelWorkspaceUsageExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelWorkspaceUsageExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelWorkspaceUsageExamples.TabIndex = 19;
             this.labelWorkspaceUsageExamples.Values.Text = "Usage Examples";
             // 
@@ -1372,9 +1524,11 @@
             this.labelWorkspaceFeatureExamples.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelWorkspaceFeatureExamples.Location = new System.Drawing.Point(14, 61);
             this.labelWorkspaceFeatureExamples.Name = "labelWorkspaceFeatureExamples";
-            this.labelWorkspaceFeatureExamples.Size = new System.Drawing.Size(174, 30);
+            this.labelWorkspaceFeatureExamples.Size = new System.Drawing.Size(216, 37);
             this.labelWorkspaceFeatureExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWorkspaceFeatureExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelWorkspaceFeatureExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelWorkspaceFeatureExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelWorkspaceFeatureExamples.TabIndex = 20;
             this.labelWorkspaceFeatureExamples.Values.Text = "Feature Examples";
             // 
@@ -1383,9 +1537,11 @@
             this.kryptonLabel5.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel5.Location = new System.Drawing.Point(11, 14);
             this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(316, 33);
+            this.kryptonLabel5.Size = new System.Drawing.Size(393, 41);
             this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel5.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel5.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel5.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel5.TabIndex = 10;
             this.kryptonLabel5.Values.Text = "Krypton Workspace Examples";
             // 
@@ -1415,12 +1571,10 @@
             this.kryptonPageNavigator.Controls.Add(this.labelNavigatorFeatureExamples);
             this.kryptonPageNavigator.Controls.Add(this.kryptonLabel6);
             this.kryptonPageNavigator.Flags = 62;
-            this.kryptonPageNavigator.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPageNavigator.ImageLarge")));
-            this.kryptonPageNavigator.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPageNavigator.ImageMedium")));
             this.kryptonPageNavigator.LastVisibleSet = true;
             this.kryptonPageNavigator.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageNavigator.Name = "kryptonPageNavigator";
-            this.kryptonPageNavigator.Size = new System.Drawing.Size(1198, 592);
+            this.kryptonPageNavigator.Size = new System.Drawing.Size(1198, 629);
             this.kryptonPageNavigator.Text = "Navigator";
             this.kryptonPageNavigator.TextTitle = "";
             this.kryptonPageNavigator.ToolTipTitle = "Page ToolTip";
@@ -1431,8 +1585,10 @@
             this.LinkNavigatorAndFloatingWindows2.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.LinkNavigatorAndFloatingWindows2.Location = new System.Drawing.Point(221, 281);
             this.LinkNavigatorAndFloatingWindows2.Name = "LinkNavigatorAndFloatingWindows2";
-            this.LinkNavigatorAndFloatingWindows2.Size = new System.Drawing.Size(229, 26);
+            this.LinkNavigatorAndFloatingWindows2.Size = new System.Drawing.Size(285, 32);
             this.LinkNavigatorAndFloatingWindows2.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkNavigatorAndFloatingWindows2.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.LinkNavigatorAndFloatingWindows2.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.LinkNavigatorAndFloatingWindows2.TabIndex = 40;
             this.LinkNavigatorAndFloatingWindows2.Values.Text = "Navigator + FloatingWindows";
             // 
@@ -1441,8 +1597,10 @@
             this.linkNavigatorPerTabButtons.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorPerTabButtons.Location = new System.Drawing.Point(16, 317);
             this.linkNavigatorPerTabButtons.Name = "linkNavigatorPerTabButtons";
-            this.linkNavigatorPerTabButtons.Size = new System.Drawing.Size(129, 26);
+            this.linkNavigatorPerTabButtons.Size = new System.Drawing.Size(160, 32);
             this.linkNavigatorPerTabButtons.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkNavigatorPerTabButtons.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkNavigatorPerTabButtons.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkNavigatorPerTabButtons.TabIndex = 27;
             this.linkNavigatorPerTabButtons.Values.Text = "Per-Tab Buttons";
             // 
@@ -1451,8 +1609,10 @@
             this.linkAdvancedNavigatorDragDrop.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkAdvancedNavigatorDragDrop.Location = new System.Drawing.Point(16, 497);
             this.linkAdvancedNavigatorDragDrop.Name = "linkAdvancedNavigatorDragDrop";
-            this.linkAdvancedNavigatorDragDrop.Size = new System.Drawing.Size(221, 26);
+            this.linkAdvancedNavigatorDragDrop.Size = new System.Drawing.Size(275, 32);
             this.linkAdvancedNavigatorDragDrop.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkAdvancedNavigatorDragDrop.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkAdvancedNavigatorDragDrop.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkAdvancedNavigatorDragDrop.TabIndex = 32;
             this.linkAdvancedNavigatorDragDrop.Values.Text = "Advanced Page Drag + Drop";
             // 
@@ -1461,8 +1621,10 @@
             this.linkBasicNavigatorDragDrop.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkBasicNavigatorDragDrop.Location = new System.Drawing.Point(16, 461);
             this.linkBasicNavigatorDragDrop.Name = "linkBasicNavigatorDragDrop";
-            this.linkBasicNavigatorDragDrop.Size = new System.Drawing.Size(186, 26);
+            this.linkBasicNavigatorDragDrop.Size = new System.Drawing.Size(230, 32);
             this.linkBasicNavigatorDragDrop.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkBasicNavigatorDragDrop.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkBasicNavigatorDragDrop.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkBasicNavigatorDragDrop.TabIndex = 31;
             this.linkBasicNavigatorDragDrop.Values.Text = "Basic Page Drag + Drop";
             // 
@@ -1471,8 +1633,10 @@
             this.linkNavigatorContextMenus.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorContextMenus.Location = new System.Drawing.Point(16, 389);
             this.linkNavigatorContextMenus.Name = "linkNavigatorContextMenus";
-            this.linkNavigatorContextMenus.Size = new System.Drawing.Size(198, 26);
+            this.linkNavigatorContextMenus.Size = new System.Drawing.Size(246, 32);
             this.linkNavigatorContextMenus.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkNavigatorContextMenus.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkNavigatorContextMenus.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkNavigatorContextMenus.TabIndex = 29;
             this.linkNavigatorContextMenus.Values.Text = "Navigator Context Menus";
             // 
@@ -1481,8 +1645,10 @@
             this.linkNavigatorTooltips.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorTooltips.Location = new System.Drawing.Point(16, 353);
             this.linkNavigatorTooltips.Name = "linkNavigatorTooltips";
-            this.linkNavigatorTooltips.Size = new System.Drawing.Size(149, 26);
+            this.linkNavigatorTooltips.Size = new System.Drawing.Size(185, 32);
             this.linkNavigatorTooltips.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkNavigatorTooltips.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkNavigatorTooltips.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkNavigatorTooltips.TabIndex = 28;
             this.linkNavigatorTooltips.Values.Text = "Navigator ToolTips";
             // 
@@ -1491,8 +1657,10 @@
             this.linkExpandingPages.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkExpandingPages.Location = new System.Drawing.Point(221, 245);
             this.linkExpandingPages.Name = "linkExpandingPages";
-            this.linkExpandingPages.Size = new System.Drawing.Size(135, 26);
+            this.linkExpandingPages.Size = new System.Drawing.Size(167, 32);
             this.linkExpandingPages.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkExpandingPages.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkExpandingPages.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkExpandingPages.TabIndex = 39;
             this.linkExpandingPages.Values.Text = "Expanding Pages";
             // 
@@ -1501,8 +1669,10 @@
             this.linkNavigatorPopupPages.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorPopupPages.Location = new System.Drawing.Point(16, 281);
             this.linkNavigatorPopupPages.Name = "linkNavigatorPopupPages";
-            this.linkNavigatorPopupPages.Size = new System.Drawing.Size(107, 26);
+            this.linkNavigatorPopupPages.Size = new System.Drawing.Size(132, 32);
             this.linkNavigatorPopupPages.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkNavigatorPopupPages.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkNavigatorPopupPages.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkNavigatorPopupPages.TabIndex = 26;
             this.linkNavigatorPopupPages.Values.Text = "Popup Pages";
             // 
@@ -1511,8 +1681,10 @@
             this.linkNavigatorAndRibbon.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorAndRibbon.Location = new System.Drawing.Point(221, 209);
             this.linkNavigatorAndRibbon.Name = "linkNavigatorAndRibbon";
-            this.linkNavigatorAndRibbon.Size = new System.Drawing.Size(257, 26);
+            this.linkNavigatorAndRibbon.Size = new System.Drawing.Size(319, 32);
             this.linkNavigatorAndRibbon.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkNavigatorAndRibbon.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkNavigatorAndRibbon.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkNavigatorAndRibbon.TabIndex = 38;
             this.linkNavigatorAndRibbon.Values.Text = "Ribbon + Navigator + Workspace";
             // 
@@ -1521,8 +1693,10 @@
             this.linkSinglelineAndMultiline.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkSinglelineAndMultiline.Location = new System.Drawing.Point(16, 209);
             this.linkSinglelineAndMultiline.Name = "linkSinglelineAndMultiline";
-            this.linkSinglelineAndMultiline.Size = new System.Drawing.Size(166, 26);
+            this.linkSinglelineAndMultiline.Size = new System.Drawing.Size(206, 32);
             this.linkSinglelineAndMultiline.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkSinglelineAndMultiline.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkSinglelineAndMultiline.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkSinglelineAndMultiline.TabIndex = 24;
             this.linkSinglelineAndMultiline.Values.Text = "Singleline + Multiline";
             // 
@@ -1531,8 +1705,10 @@
             this.linkTabBorderStyles.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkTabBorderStyles.Location = new System.Drawing.Point(16, 245);
             this.linkTabBorderStyles.Name = "linkTabBorderStyles";
-            this.linkTabBorderStyles.Size = new System.Drawing.Size(138, 26);
+            this.linkTabBorderStyles.Size = new System.Drawing.Size(171, 32);
             this.linkTabBorderStyles.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkTabBorderStyles.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkTabBorderStyles.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkTabBorderStyles.TabIndex = 25;
             this.linkTabBorderStyles.Values.Text = "Tab Border Styles";
             // 
@@ -1541,8 +1717,10 @@
             this.linkNavigatorOutlookMockup.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorOutlookMockup.Location = new System.Drawing.Point(221, 174);
             this.linkNavigatorOutlookMockup.Name = "linkNavigatorOutlookMockup";
-            this.linkNavigatorOutlookMockup.Size = new System.Drawing.Size(134, 26);
+            this.linkNavigatorOutlookMockup.Size = new System.Drawing.Size(166, 32);
             this.linkNavigatorOutlookMockup.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkNavigatorOutlookMockup.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkNavigatorOutlookMockup.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkNavigatorOutlookMockup.TabIndex = 37;
             this.linkNavigatorOutlookMockup.Values.Text = "Outlook Mockup";
             // 
@@ -1551,8 +1729,10 @@
             this.linkNavigatorOneNoteTabs.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorOneNoteTabs.Location = new System.Drawing.Point(221, 137);
             this.linkNavigatorOneNoteTabs.Name = "linkNavigatorOneNoteTabs";
-            this.linkNavigatorOneNoteTabs.Size = new System.Drawing.Size(117, 26);
+            this.linkNavigatorOneNoteTabs.Size = new System.Drawing.Size(144, 32);
             this.linkNavigatorOneNoteTabs.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkNavigatorOneNoteTabs.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkNavigatorOneNoteTabs.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkNavigatorOneNoteTabs.TabIndex = 35;
             this.linkNavigatorOneNoteTabs.Values.Text = "OneNote Tabs";
             // 
@@ -1561,8 +1741,10 @@
             this.linkNavigatorPalettes.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorPalettes.Location = new System.Drawing.Point(16, 137);
             this.linkNavigatorPalettes.Name = "linkNavigatorPalettes";
-            this.linkNavigatorPalettes.Size = new System.Drawing.Size(145, 26);
+            this.linkNavigatorPalettes.Size = new System.Drawing.Size(180, 32);
             this.linkNavigatorPalettes.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkNavigatorPalettes.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkNavigatorPalettes.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkNavigatorPalettes.TabIndex = 22;
             this.linkNavigatorPalettes.Values.Text = "Navigator Palettes";
             // 
@@ -1571,8 +1753,10 @@
             this.linkOrientationAndAlignment.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkOrientationAndAlignment.Location = new System.Drawing.Point(16, 173);
             this.linkOrientationAndAlignment.Name = "linkOrientationAndAlignment";
-            this.linkOrientationAndAlignment.Size = new System.Drawing.Size(190, 26);
+            this.linkOrientationAndAlignment.Size = new System.Drawing.Size(236, 32);
             this.linkOrientationAndAlignment.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkOrientationAndAlignment.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkOrientationAndAlignment.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkOrientationAndAlignment.TabIndex = 23;
             this.linkOrientationAndAlignment.Values.Text = "Orientation + Alignment";
             // 
@@ -1581,9 +1765,11 @@
             this.labelNavigatorUsageExamples.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelNavigatorUsageExamples.Location = new System.Drawing.Point(216, 61);
             this.labelNavigatorUsageExamples.Name = "labelNavigatorUsageExamples";
-            this.labelNavigatorUsageExamples.Size = new System.Drawing.Size(161, 30);
+            this.labelNavigatorUsageExamples.Size = new System.Drawing.Size(199, 37);
             this.labelNavigatorUsageExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNavigatorUsageExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelNavigatorUsageExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelNavigatorUsageExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelNavigatorUsageExamples.TabIndex = 36;
             this.labelNavigatorUsageExamples.Values.Text = "Usage Examples";
             // 
@@ -1592,8 +1778,10 @@
             this.linkNavigatorUserPageCreation.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorUserPageCreation.Location = new System.Drawing.Point(221, 101);
             this.linkNavigatorUserPageCreation.Name = "linkNavigatorUserPageCreation";
-            this.linkNavigatorUserPageCreation.Size = new System.Drawing.Size(151, 26);
+            this.linkNavigatorUserPageCreation.Size = new System.Drawing.Size(187, 32);
             this.linkNavigatorUserPageCreation.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkNavigatorUserPageCreation.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkNavigatorUserPageCreation.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkNavigatorUserPageCreation.TabIndex = 34;
             this.linkNavigatorUserPageCreation.Values.Text = "User Page Creation";
             // 
@@ -1602,8 +1790,10 @@
             this.linkNavigatorBasicEvents.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorBasicEvents.Location = new System.Drawing.Point(16, 533);
             this.linkNavigatorBasicEvents.Name = "linkNavigatorBasicEvents";
-            this.linkNavigatorBasicEvents.Size = new System.Drawing.Size(100, 26);
+            this.linkNavigatorBasicEvents.Size = new System.Drawing.Size(123, 32);
             this.linkNavigatorBasicEvents.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkNavigatorBasicEvents.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkNavigatorBasicEvents.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkNavigatorBasicEvents.TabIndex = 33;
             this.linkNavigatorBasicEvents.Values.Text = "Basic Events";
             // 
@@ -1612,8 +1802,10 @@
             this.linkNavigatorPlayground.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorPlayground.Location = new System.Drawing.Point(16, 425);
             this.linkNavigatorPlayground.Name = "linkNavigatorPlayground";
-            this.linkNavigatorPlayground.Size = new System.Drawing.Size(171, 26);
+            this.linkNavigatorPlayground.Size = new System.Drawing.Size(212, 32);
             this.linkNavigatorPlayground.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkNavigatorPlayground.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkNavigatorPlayground.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkNavigatorPlayground.TabIndex = 30;
             this.linkNavigatorPlayground.Values.Text = "Navigator Playground";
             // 
@@ -1622,8 +1814,10 @@
             this.linkNavigatorModes.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorModes.Location = new System.Drawing.Point(16, 101);
             this.linkNavigatorModes.Name = "linkNavigatorModes";
-            this.linkNavigatorModes.Size = new System.Drawing.Size(138, 26);
+            this.linkNavigatorModes.Size = new System.Drawing.Size(171, 32);
             this.linkNavigatorModes.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkNavigatorModes.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkNavigatorModes.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkNavigatorModes.TabIndex = 21;
             this.linkNavigatorModes.Values.Text = "Navigator Modes";
             // 
@@ -1632,9 +1826,11 @@
             this.labelNavigatorFeatureExamples.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelNavigatorFeatureExamples.Location = new System.Drawing.Point(11, 61);
             this.labelNavigatorFeatureExamples.Name = "labelNavigatorFeatureExamples";
-            this.labelNavigatorFeatureExamples.Size = new System.Drawing.Size(174, 30);
+            this.labelNavigatorFeatureExamples.Size = new System.Drawing.Size(216, 37);
             this.labelNavigatorFeatureExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNavigatorFeatureExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelNavigatorFeatureExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelNavigatorFeatureExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelNavigatorFeatureExamples.TabIndex = 41;
             this.labelNavigatorFeatureExamples.Values.Text = "Feature Examples";
             // 
@@ -1643,9 +1839,11 @@
             this.kryptonLabel6.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel6.Location = new System.Drawing.Point(11, 14);
             this.kryptonLabel6.Name = "kryptonLabel6";
-            this.kryptonLabel6.Size = new System.Drawing.Size(305, 33);
+            this.kryptonLabel6.Size = new System.Drawing.Size(380, 41);
             this.kryptonLabel6.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel6.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel6.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel6.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel6.TabIndex = 11;
             this.kryptonLabel6.Values.Text = "Krypton Navigator Examples";
             // 
@@ -1672,7 +1870,7 @@
             this.kryptonPageRibbon.LastVisibleSet = true;
             this.kryptonPageRibbon.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageRibbon.Name = "kryptonPageRibbon";
-            this.kryptonPageRibbon.Size = new System.Drawing.Size(1198, 592);
+            this.kryptonPageRibbon.Size = new System.Drawing.Size(1198, 629);
             this.kryptonPageRibbon.Text = "Ribbon";
             this.kryptonPageRibbon.TextTitle = "";
             this.kryptonPageRibbon.ToolTipTitle = "Page ToolTip";
@@ -1683,8 +1881,10 @@
             this.linkRibbonMemoEditor.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkRibbonMemoEditor.Location = new System.Drawing.Point(225, 273);
             this.linkRibbonMemoEditor.Name = "linkRibbonMemoEditor";
-            this.linkRibbonMemoEditor.Size = new System.Drawing.Size(107, 26);
+            this.linkRibbonMemoEditor.Size = new System.Drawing.Size(132, 32);
             this.linkRibbonMemoEditor.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkRibbonMemoEditor.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkRibbonMemoEditor.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkRibbonMemoEditor.TabIndex = 27;
             this.linkRibbonMemoEditor.Values.Text = "Memo Editor";
             // 
@@ -1693,8 +1893,10 @@
             this.linkKryptonGallery.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonGallery.Location = new System.Drawing.Point(16, 533);
             this.linkKryptonGallery.Name = "linkKryptonGallery";
-            this.linkKryptonGallery.Size = new System.Drawing.Size(196, 26);
+            this.linkKryptonGallery.Size = new System.Drawing.Size(244, 32);
             this.linkKryptonGallery.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKryptonGallery.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKryptonGallery.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKryptonGallery.TabIndex = 23;
             this.linkKryptonGallery.Values.Text = "Krypton Gallery Examples";
             // 
@@ -1703,8 +1905,10 @@
             this.linkRibbonGallery.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkRibbonGallery.Location = new System.Drawing.Point(16, 325);
             this.linkRibbonGallery.Name = "linkRibbonGallery";
-            this.linkRibbonGallery.Size = new System.Drawing.Size(119, 26);
+            this.linkRibbonGallery.Size = new System.Drawing.Size(147, 32);
             this.linkRibbonGallery.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkRibbonGallery.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkRibbonGallery.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkRibbonGallery.TabIndex = 19;
             this.linkRibbonGallery.Values.Text = "Ribbon Gallery";
             // 
@@ -1713,8 +1917,10 @@
             this.linkApplicationMenu.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkApplicationMenu.Location = new System.Drawing.Point(16, 481);
             this.linkApplicationMenu.Name = "linkApplicationMenu";
-            this.linkApplicationMenu.Size = new System.Drawing.Size(141, 26);
+            this.linkApplicationMenu.Size = new System.Drawing.Size(175, 32);
             this.linkApplicationMenu.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkApplicationMenu.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkApplicationMenu.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkApplicationMenu.TabIndex = 22;
             this.linkApplicationMenu.Values.Text = "Application Menu";
             // 
@@ -1723,8 +1929,10 @@
             this.linkRibbonControls.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkRibbonControls.Location = new System.Drawing.Point(16, 429);
             this.linkRibbonControls.Name = "linkRibbonControls";
-            this.linkRibbonControls.Size = new System.Drawing.Size(130, 26);
+            this.linkRibbonControls.Size = new System.Drawing.Size(161, 32);
             this.linkRibbonControls.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkRibbonControls.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkRibbonControls.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkRibbonControls.TabIndex = 21;
             this.linkRibbonControls.Values.Text = "Ribbon Controls";
             // 
@@ -1733,8 +1941,10 @@
             this.linkRibbonToolTips.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkRibbonToolTips.Location = new System.Drawing.Point(16, 377);
             this.linkRibbonToolTips.Name = "linkRibbonToolTips";
-            this.linkRibbonToolTips.Size = new System.Drawing.Size(130, 26);
+            this.linkRibbonToolTips.Size = new System.Drawing.Size(161, 32);
             this.linkRibbonToolTips.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkRibbonToolTips.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkRibbonToolTips.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkRibbonToolTips.TabIndex = 20;
             this.linkRibbonToolTips.Values.Text = "Ribbon ToolTips";
             // 
@@ -1743,8 +1953,10 @@
             this.linkMDIRibbon.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkMDIRibbon.Location = new System.Drawing.Point(225, 221);
             this.linkMDIRibbon.Name = "linkMDIRibbon";
-            this.linkMDIRibbon.Size = new System.Drawing.Size(99, 26);
+            this.linkMDIRibbon.Size = new System.Drawing.Size(122, 32);
             this.linkMDIRibbon.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkMDIRibbon.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkMDIRibbon.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkMDIRibbon.TabIndex = 26;
             this.linkMDIRibbon.Values.Text = "MDI Ribbon";
             // 
@@ -1753,8 +1965,10 @@
             this.linkQuickAccessToolbar.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkQuickAccessToolbar.Location = new System.Drawing.Point(16, 273);
             this.linkQuickAccessToolbar.Name = "linkQuickAccessToolbar";
-            this.linkQuickAccessToolbar.Size = new System.Drawing.Size(167, 26);
+            this.linkQuickAccessToolbar.Size = new System.Drawing.Size(207, 32);
             this.linkQuickAccessToolbar.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkQuickAccessToolbar.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkQuickAccessToolbar.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkQuickAccessToolbar.TabIndex = 18;
             this.linkQuickAccessToolbar.Values.Text = "Quick Access Toolbar";
             // 
@@ -1763,8 +1977,10 @@
             this.linkAutoShrinkingGroups.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkAutoShrinkingGroups.Location = new System.Drawing.Point(16, 221);
             this.linkAutoShrinkingGroups.Name = "linkAutoShrinkingGroups";
-            this.linkAutoShrinkingGroups.Size = new System.Drawing.Size(177, 26);
+            this.linkAutoShrinkingGroups.Size = new System.Drawing.Size(220, 32);
             this.linkAutoShrinkingGroups.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkAutoShrinkingGroups.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkAutoShrinkingGroups.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkAutoShrinkingGroups.TabIndex = 17;
             this.linkAutoShrinkingGroups.Values.Text = "Auto Shrinking Groups";
             // 
@@ -1773,8 +1989,10 @@
             this.linkRibbonAndNavigator.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkRibbonAndNavigator.Location = new System.Drawing.Point(225, 169);
             this.linkRibbonAndNavigator.Name = "linkRibbonAndNavigator";
-            this.linkRibbonAndNavigator.Size = new System.Drawing.Size(257, 26);
+            this.linkRibbonAndNavigator.Size = new System.Drawing.Size(319, 32);
             this.linkRibbonAndNavigator.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkRibbonAndNavigator.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkRibbonAndNavigator.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkRibbonAndNavigator.TabIndex = 25;
             this.linkRibbonAndNavigator.Values.Text = "Ribbon + Navigator + Workspace";
             // 
@@ -1783,8 +2001,10 @@
             this.linkOutlookMailClone.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkOutlookMailClone.Location = new System.Drawing.Point(225, 117);
             this.linkOutlookMailClone.Name = "linkOutlookMailClone";
-            this.linkOutlookMailClone.Size = new System.Drawing.Size(153, 26);
+            this.linkOutlookMailClone.Size = new System.Drawing.Size(189, 32);
             this.linkOutlookMailClone.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkOutlookMailClone.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkOutlookMailClone.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkOutlookMailClone.TabIndex = 24;
             this.linkOutlookMailClone.Values.Text = "Outlook Mail Clone";
             // 
@@ -1793,8 +2013,10 @@
             this.linkKeyTipsTabs.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKeyTipsTabs.Location = new System.Drawing.Point(16, 169);
             this.linkKeyTipsTabs.Name = "linkKeyTipsTabs";
-            this.linkKeyTipsTabs.Size = new System.Drawing.Size(210, 26);
+            this.linkKeyTipsTabs.Size = new System.Drawing.Size(261, 32);
             this.linkKeyTipsTabs.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkKeyTipsTabs.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkKeyTipsTabs.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkKeyTipsTabs.TabIndex = 16;
             this.linkKeyTipsTabs.Values.Text = "KeyTips + Keyboard Access";
             // 
@@ -1803,8 +2025,10 @@
             this.linkContextualTabs.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkContextualTabs.Location = new System.Drawing.Point(16, 117);
             this.linkContextualTabs.Name = "linkContextualTabs";
-            this.linkContextualTabs.Size = new System.Drawing.Size(128, 26);
+            this.linkContextualTabs.Size = new System.Drawing.Size(159, 32);
             this.linkContextualTabs.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkContextualTabs.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkContextualTabs.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkContextualTabs.TabIndex = 15;
             this.linkContextualTabs.Values.Text = "Contextual Tabs";
             // 
@@ -1813,9 +2037,11 @@
             this.labelRibbonUsageExamples.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelRibbonUsageExamples.Location = new System.Drawing.Point(222, 61);
             this.labelRibbonUsageExamples.Name = "labelRibbonUsageExamples";
-            this.labelRibbonUsageExamples.Size = new System.Drawing.Size(161, 30);
+            this.labelRibbonUsageExamples.Size = new System.Drawing.Size(199, 37);
             this.labelRibbonUsageExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRibbonUsageExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelRibbonUsageExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelRibbonUsageExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelRibbonUsageExamples.TabIndex = 28;
             this.labelRibbonUsageExamples.Values.Text = "Usage Examples";
             // 
@@ -1824,9 +2050,11 @@
             this.labelRibbonFeatureExamples.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelRibbonFeatureExamples.Location = new System.Drawing.Point(11, 61);
             this.labelRibbonFeatureExamples.Name = "labelRibbonFeatureExamples";
-            this.labelRibbonFeatureExamples.Size = new System.Drawing.Size(174, 30);
+            this.labelRibbonFeatureExamples.Size = new System.Drawing.Size(216, 37);
             this.labelRibbonFeatureExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRibbonFeatureExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelRibbonFeatureExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelRibbonFeatureExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelRibbonFeatureExamples.TabIndex = 29;
             this.labelRibbonFeatureExamples.Values.Text = "Feature Examples";
             // 
@@ -1835,9 +2063,11 @@
             this.kryptonLabel7.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel7.Location = new System.Drawing.Point(11, 14);
             this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(277, 33);
+            this.kryptonLabel7.Size = new System.Drawing.Size(345, 41);
             this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel7.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel7.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel7.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel7.TabIndex = 11;
             this.kryptonLabel7.Values.Text = "Krypton Ribbon Examples";
             // 
@@ -1849,12 +2079,10 @@
             this.kryptonPageApplicatons.Controls.Add(this.linkPaletteDesigner);
             this.kryptonPageApplicatons.Controls.Add(this.kryptonLabel8);
             this.kryptonPageApplicatons.Flags = 62;
-            this.kryptonPageApplicatons.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPageApplicatons.ImageLarge")));
-            this.kryptonPageApplicatons.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPageApplicatons.ImageMedium")));
             this.kryptonPageApplicatons.LastVisibleSet = true;
             this.kryptonPageApplicatons.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageApplicatons.Name = "kryptonPageApplicatons";
-            this.kryptonPageApplicatons.Size = new System.Drawing.Size(1198, 592);
+            this.kryptonPageApplicatons.Size = new System.Drawing.Size(1198, 629);
             this.kryptonPageApplicatons.Text = "Applications";
             this.kryptonPageApplicatons.TextTitle = "";
             this.kryptonPageApplicatons.ToolTipTitle = "Page ToolTip";
@@ -1865,8 +2093,10 @@
             this.linkPaletteUpgradeTool.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkPaletteUpgradeTool.Location = new System.Drawing.Point(17, 137);
             this.linkPaletteUpgradeTool.Name = "linkPaletteUpgradeTool";
-            this.linkPaletteUpgradeTool.Size = new System.Drawing.Size(166, 26);
+            this.linkPaletteUpgradeTool.Size = new System.Drawing.Size(206, 32);
             this.linkPaletteUpgradeTool.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkPaletteUpgradeTool.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkPaletteUpgradeTool.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkPaletteUpgradeTool.TabIndex = 13;
             this.linkPaletteUpgradeTool.Values.Text = "Palette Upgrade Tool";
             // 
@@ -1875,9 +2105,11 @@
             this.labelApplications.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelApplications.Location = new System.Drawing.Point(12, 61);
             this.labelApplications.Name = "labelApplications";
-            this.labelApplications.Size = new System.Drawing.Size(127, 30);
+            this.labelApplications.Size = new System.Drawing.Size(158, 37);
             this.labelApplications.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelApplications.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelApplications.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelApplications.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelApplications.TabIndex = 14;
             this.labelApplications.Values.Text = "Applications";
             // 
@@ -1886,8 +2118,10 @@
             this.linkPaletteDesigner.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkPaletteDesigner.Location = new System.Drawing.Point(17, 100);
             this.linkPaletteDesigner.Name = "linkPaletteDesigner";
-            this.linkPaletteDesigner.Size = new System.Drawing.Size(131, 26);
+            this.linkPaletteDesigner.Size = new System.Drawing.Size(162, 32);
             this.linkPaletteDesigner.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkPaletteDesigner.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.linkPaletteDesigner.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.linkPaletteDesigner.TabIndex = 12;
             this.linkPaletteDesigner.Values.Text = "Palette Designer";
             // 
@@ -1896,9 +2130,11 @@
             this.kryptonLabel8.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel8.Location = new System.Drawing.Point(11, 14);
             this.kryptonLabel8.Name = "kryptonLabel8";
-            this.kryptonLabel8.Size = new System.Drawing.Size(229, 33);
+            this.kryptonLabel8.Size = new System.Drawing.Size(284, 41);
             this.kryptonLabel8.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel8.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel8.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel8.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel8.TabIndex = 11;
             this.kryptonLabel8.Values.Text = "Krypton Applications";
             // 
@@ -1920,7 +2156,7 @@
             this.kryptonPage4.LastVisibleSet = true;
             this.kryptonPage4.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage4.Name = "kryptonPage4";
-            this.kryptonPage4.Size = new System.Drawing.Size(1198, 592);
+            this.kryptonPage4.Size = new System.Drawing.Size(1198, 629);
             this.kryptonPage4.Text = "About";
             this.kryptonPage4.TextTitle = "";
             this.kryptonPage4.ToolTipTitle = "Page ToolTip";
@@ -1931,8 +2167,10 @@
             this.kbtnTechnicalSystemInformation.AutoSize = true;
             this.kbtnTechnicalSystemInformation.Location = new System.Drawing.Point(11, 543);
             this.kbtnTechnicalSystemInformation.Name = "kbtnTechnicalSystemInformation";
-            this.kbtnTechnicalSystemInformation.Size = new System.Drawing.Size(226, 30);
+            this.kbtnTechnicalSystemInformation.Size = new System.Drawing.Size(279, 34);
             this.kbtnTechnicalSystemInformation.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnTechnicalSystemInformation.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnTechnicalSystemInformation.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnTechnicalSystemInformation.TabIndex = 38;
             this.ttInformation.SetToolTip(this.kbtnTechnicalSystemInformation, "Technical System Information");
             this.kbtnTechnicalSystemInformation.Values.Text = "Technical S&ystem Information";
@@ -1942,9 +2180,11 @@
             this.klblKryptonWorkspaceVersion.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.klblKryptonWorkspaceVersion.Location = new System.Drawing.Point(375, 461);
             this.klblKryptonWorkspaceVersion.Name = "klblKryptonWorkspaceVersion";
-            this.klblKryptonWorkspaceVersion.Size = new System.Drawing.Size(306, 30);
+            this.klblKryptonWorkspaceVersion.Size = new System.Drawing.Size(380, 37);
             this.klblKryptonWorkspaceVersion.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.klblKryptonWorkspaceVersion.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.klblKryptonWorkspaceVersion.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.klblKryptonWorkspaceVersion.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.klblKryptonWorkspaceVersion.TabIndex = 37;
             this.klblKryptonWorkspaceVersion.Values.Text = "Krypton Workspace Version: {0}";
             // 
@@ -1953,9 +2193,11 @@
             this.klblKryptonToolkitVersion.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.klblKryptonToolkitVersion.Location = new System.Drawing.Point(375, 381);
             this.klblKryptonToolkitVersion.Name = "klblKryptonToolkitVersion";
-            this.klblKryptonToolkitVersion.Size = new System.Drawing.Size(269, 30);
+            this.klblKryptonToolkitVersion.Size = new System.Drawing.Size(335, 37);
             this.klblKryptonToolkitVersion.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.klblKryptonToolkitVersion.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.klblKryptonToolkitVersion.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.klblKryptonToolkitVersion.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.klblKryptonToolkitVersion.TabIndex = 36;
             this.klblKryptonToolkitVersion.Values.Text = "Krypton Toolkit Version: {0}";
             // 
@@ -1964,9 +2206,11 @@
             this.klblKryptonRibbonVersion.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.klblKryptonRibbonVersion.Location = new System.Drawing.Point(375, 301);
             this.klblKryptonRibbonVersion.Name = "klblKryptonRibbonVersion";
-            this.klblKryptonRibbonVersion.Size = new System.Drawing.Size(270, 30);
+            this.klblKryptonRibbonVersion.Size = new System.Drawing.Size(336, 37);
             this.klblKryptonRibbonVersion.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.klblKryptonRibbonVersion.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.klblKryptonRibbonVersion.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.klblKryptonRibbonVersion.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.klblKryptonRibbonVersion.TabIndex = 35;
             this.klblKryptonRibbonVersion.Values.Text = "Krypton Ribbon Version: {0}";
             // 
@@ -1975,9 +2219,11 @@
             this.klblKryptonNavigatorVersion.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.klblKryptonNavigatorVersion.Location = new System.Drawing.Point(375, 221);
             this.klblKryptonNavigatorVersion.Name = "klblKryptonNavigatorVersion";
-            this.klblKryptonNavigatorVersion.Size = new System.Drawing.Size(296, 30);
+            this.klblKryptonNavigatorVersion.Size = new System.Drawing.Size(369, 37);
             this.klblKryptonNavigatorVersion.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.klblKryptonNavigatorVersion.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.klblKryptonNavigatorVersion.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.klblKryptonNavigatorVersion.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.klblKryptonNavigatorVersion.TabIndex = 34;
             this.klblKryptonNavigatorVersion.Values.Text = "Krypton Navigator Version: {0}";
             // 
@@ -1986,9 +2232,11 @@
             this.klblKryptonDockingVersion.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.klblKryptonDockingVersion.Location = new System.Drawing.Point(375, 141);
             this.klblKryptonDockingVersion.Name = "klblKryptonDockingVersion";
-            this.klblKryptonDockingVersion.Size = new System.Drawing.Size(280, 30);
+            this.klblKryptonDockingVersion.Size = new System.Drawing.Size(349, 37);
             this.klblKryptonDockingVersion.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.klblKryptonDockingVersion.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.klblKryptonDockingVersion.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.klblKryptonDockingVersion.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.klblKryptonDockingVersion.TabIndex = 33;
             this.klblKryptonDockingVersion.Values.Text = "Krypton Docking Version: {0}";
             // 
@@ -1997,8 +2245,10 @@
             this.kbtnReportABug.AutoSize = true;
             this.kbtnReportABug.Location = new System.Drawing.Point(735, 543);
             this.kbtnReportABug.Name = "kbtnReportABug";
-            this.kbtnReportABug.Size = new System.Drawing.Size(147, 30);
+            this.kbtnReportABug.Size = new System.Drawing.Size(147, 34);
             this.kbtnReportABug.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnReportABug.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnReportABug.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnReportABug.TabIndex = 32;
             this.kbtnReportABug.Values.Text = "Report a &Bug";
             this.kbtnReportABug.Click += new System.EventHandler(this.kbtnReportABug_Click);
@@ -2008,8 +2258,10 @@
             this.kbtnProjectHomepage.AutoSize = true;
             this.kbtnProjectHomepage.Location = new System.Drawing.Point(888, 543);
             this.kbtnProjectHomepage.Name = "kbtnProjectHomepage";
-            this.kbtnProjectHomepage.Size = new System.Drawing.Size(147, 30);
+            this.kbtnProjectHomepage.Size = new System.Drawing.Size(181, 34);
             this.kbtnProjectHomepage.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnProjectHomepage.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnProjectHomepage.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnProjectHomepage.TabIndex = 31;
             this.kbtnProjectHomepage.Values.Text = "&Project Homepage";
             this.kbtnProjectHomepage.Click += new System.EventHandler(this.kbtnProjectHomepage_Click);
@@ -2019,9 +2271,11 @@
             this.klblKryptonToolkitHubVersion.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.klblKryptonToolkitHubVersion.Location = new System.Drawing.Point(375, 61);
             this.klblKryptonToolkitHubVersion.Name = "klblKryptonToolkitHubVersion";
-            this.klblKryptonToolkitHubVersion.Size = new System.Drawing.Size(313, 30);
+            this.klblKryptonToolkitHubVersion.Size = new System.Drawing.Size(390, 37);
             this.klblKryptonToolkitHubVersion.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.klblKryptonToolkitHubVersion.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.klblKryptonToolkitHubVersion.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.klblKryptonToolkitHubVersion.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.klblKryptonToolkitHubVersion.TabIndex = 30;
             this.klblKryptonToolkitHubVersion.Values.Text = "Krypton Toolkit Hub Version: {0}";
             // 
@@ -2029,10 +2283,12 @@
             // 
             this.kbtnCheckForUpdates.AutoSize = true;
             this.kbtnCheckForUpdates.Enabled = false;
-            this.kbtnCheckForUpdates.Location = new System.Drawing.Point(1041, 543);
+            this.kbtnCheckForUpdates.Location = new System.Drawing.Point(1013, 583);
             this.kbtnCheckForUpdates.Name = "kbtnCheckForUpdates";
-            this.kbtnCheckForUpdates.Size = new System.Drawing.Size(146, 30);
+            this.kbtnCheckForUpdates.Size = new System.Drawing.Size(178, 34);
             this.kbtnCheckForUpdates.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnCheckForUpdates.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnCheckForUpdates.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnCheckForUpdates.TabIndex = 12;
             this.kbtnCheckForUpdates.Values.Text = "Check for &Updates";
             // 
@@ -2041,9 +2297,11 @@
             this.kryptonLabel9.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel9.Location = new System.Drawing.Point(11, 14);
             this.kryptonLabel9.Name = "kryptonLabel9";
-            this.kryptonLabel9.Size = new System.Drawing.Size(298, 33);
+            this.kryptonLabel9.Size = new System.Drawing.Size(371, 41);
             this.kryptonLabel9.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel9.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel9.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel9.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel9.TabIndex = 11;
             this.kryptonLabel9.Values.Text = "Krypton Toolkit Hub Details";
             // 
@@ -2062,8 +2320,10 @@
             this.kbtnClose.AutoSize = true;
             this.kbtnClose.Location = new System.Drawing.Point(1098, 15);
             this.kbtnClose.Name = "kbtnClose";
-            this.kbtnClose.Size = new System.Drawing.Size(90, 30);
+            this.kbtnClose.Size = new System.Drawing.Size(90, 34);
             this.kbtnClose.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnClose.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnClose.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnClose.TabIndex = 1;
             this.kbtnClose.Values.Text = "&Close";
             this.kbtnClose.Click += new System.EventHandler(this.kbtnClose_Click);
@@ -2071,19 +2331,20 @@
             // ss
             // 
             this.ss.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ss.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.ss.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsslCurrentStatus});
-            this.ss.Location = new System.Drawing.Point(0, 60);
+            this.ss.Location = new System.Drawing.Point(0, 56);
             this.ss.Name = "ss";
             this.ss.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.ss.Size = new System.Drawing.Size(1200, 22);
+            this.ss.Size = new System.Drawing.Size(1200, 26);
             this.ss.TabIndex = 0;
             this.ss.Text = "statusStrip1";
             // 
             // tsslCurrentStatus
             // 
             this.tsslCurrentStatus.Name = "tsslCurrentStatus";
-            this.tsslCurrentStatus.Size = new System.Drawing.Size(39, 17);
+            this.tsslCurrentStatus.Size = new System.Drawing.Size(50, 20);
             this.tsslCurrentStatus.Text = "Ready";
             this.tsslCurrentStatus.MouseEnter += new System.EventHandler(this.tsslCurrentStatus_MouseEnter);
             // 
@@ -2095,20 +2356,22 @@
             this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel2.Name = "kryptonPanel2";
             this.kryptonPanel2.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlCustom1;
-            this.kryptonPanel2.Size = new System.Drawing.Size(1200, 114);
+            this.kryptonPanel2.Size = new System.Drawing.Size(1200, 74);
             this.kryptonPanel2.TabIndex = 0;
             // 
             // kryptonLabel1
             // 
             this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
-            this.kryptonLabel1.Location = new System.Drawing.Point(12, 62);
+            this.kryptonLabel1.Location = new System.Drawing.Point(28, 16);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(432, 33);
+            this.kryptonLabel1.Size = new System.Drawing.Size(659, 41);
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel1.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel1.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel1.TabIndex = 3;
-            this.kryptonLabel1.Values.ExtraText = "Built for .NET Framework 4.7";
-            this.kryptonLabel1.Values.Text = "Krypton Toolkit Hub 5.500";
+            this.kryptonLabel1.Values.ExtraText = "Built for .NET Framework 4.8 and Net5";
+            this.kryptonLabel1.Values.Text = "Krypton Toolkit Hub 6.0.2108";
             // 
             // pictureBox1
             // 
@@ -2117,7 +2380,7 @@
             this.pictureBox1.Image = global::KryptonToolkitHub.Properties.Resources.Square_Design_64_x_64_New_Green;
             this.pictureBox1.Location = new System.Drawing.Point(1040, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 114);
+            this.pictureBox1.Size = new System.Drawing.Size(160, 74);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -2125,7 +2388,7 @@
             // MainWindow
             // 
             this.AcceptButton = this.kbtnClose;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 827);
             this.Controls.Add(this.kryptonPanel1);

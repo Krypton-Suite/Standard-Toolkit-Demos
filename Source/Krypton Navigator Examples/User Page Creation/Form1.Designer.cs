@@ -64,9 +64,9 @@ namespace UserPageCreation
             // 
             this.kryptonAddPage.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonAddPage.Flags = 65534;
-            this.kryptonAddPage.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonAddPage.ImageLarge")));
-            this.kryptonAddPage.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonAddPage.ImageMedium")));
-            this.kryptonAddPage.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonAddPage.ImageSmall")));
+            this.kryptonAddPage.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonAddPage.ImageLarge")));
+            this.kryptonAddPage.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonAddPage.ImageMedium")));
+            this.kryptonAddPage.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonAddPage.ImageSmall")));
             this.kryptonAddPage.LastVisibleSet = true;
             this.kryptonAddPage.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonAddPage.Name = "kryptonAddPage";

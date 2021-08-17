@@ -386,9 +386,9 @@ namespace TabBorderStyles
             // 
             this.kryptonPage1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage1.Flags = 65534;
-            this.kryptonPage1.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPage1.ImageLarge")));
-            this.kryptonPage1.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPage1.ImageMedium")));
-            this.kryptonPage1.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPage1.ImageSmall")));
+            this.kryptonPage1.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage1.ImageLarge")));
+            this.kryptonPage1.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage1.ImageMedium")));
+            this.kryptonPage1.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage1.ImageSmall")));
             this.kryptonPage1.LastVisibleSet = true;
             this.kryptonPage1.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage1.Name = "kryptonPage1";
@@ -401,9 +401,9 @@ namespace TabBorderStyles
             // 
             this.kryptonPage2.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage2.Flags = 65534;
-            this.kryptonPage2.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPage2.ImageLarge")));
-            this.kryptonPage2.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPage2.ImageMedium")));
-            this.kryptonPage2.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPage2.ImageSmall")));
+            this.kryptonPage2.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage2.ImageLarge")));
+            this.kryptonPage2.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage2.ImageMedium")));
+            this.kryptonPage2.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage2.ImageSmall")));
             this.kryptonPage2.LastVisibleSet = true;
             this.kryptonPage2.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage2.Name = "kryptonPage2";
@@ -416,9 +416,9 @@ namespace TabBorderStyles
             // 
             this.kryptonPage3.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage3.Flags = 65534;
-            this.kryptonPage3.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPage3.ImageLarge")));
-            this.kryptonPage3.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPage3.ImageMedium")));
-            this.kryptonPage3.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPage3.ImageSmall")));
+            this.kryptonPage3.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage3.ImageLarge")));
+            this.kryptonPage3.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage3.ImageMedium")));
+            this.kryptonPage3.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage3.ImageSmall")));
             this.kryptonPage3.LastVisibleSet = true;
             this.kryptonPage3.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage3.Name = "kryptonPage3";
@@ -431,9 +431,9 @@ namespace TabBorderStyles
             // 
             this.kryptonPage4.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage4.Flags = 65534;
-            this.kryptonPage4.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPage4.ImageLarge")));
-            this.kryptonPage4.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPage4.ImageMedium")));
-            this.kryptonPage4.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPage4.ImageSmall")));
+            this.kryptonPage4.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage4.ImageLarge")));
+            this.kryptonPage4.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage4.ImageMedium")));
+            this.kryptonPage4.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage4.ImageSmall")));
             this.kryptonPage4.LastVisibleSet = true;
             this.kryptonPage4.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage4.Name = "kryptonPage4";
@@ -446,9 +446,9 @@ namespace TabBorderStyles
             // 
             this.kryptonPage5.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage5.Flags = 65534;
-            this.kryptonPage5.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPage5.ImageLarge")));
-            this.kryptonPage5.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPage5.ImageMedium")));
-            this.kryptonPage5.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPage5.ImageSmall")));
+            this.kryptonPage5.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage5.ImageLarge")));
+            this.kryptonPage5.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage5.ImageMedium")));
+            this.kryptonPage5.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage5.ImageSmall")));
             this.kryptonPage5.LastVisibleSet = true;
             this.kryptonPage5.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage5.Name = "kryptonPage5";
@@ -461,9 +461,9 @@ namespace TabBorderStyles
             // 
             this.kryptonPage6.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage6.Flags = 65534;
-            this.kryptonPage6.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonPage6.ImageLarge")));
-            this.kryptonPage6.ImageMedium = ((System.Drawing.Image)(resources.GetObject("kryptonPage6.ImageMedium")));
-            this.kryptonPage6.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonPage6.ImageSmall")));
+            this.kryptonPage6.ImageLarge = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage6.ImageLarge")));
+            this.kryptonPage6.ImageMedium = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage6.ImageMedium")));
+            this.kryptonPage6.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage6.ImageSmall")));
             this.kryptonPage6.LastVisibleSet = true;
             this.kryptonPage6.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage6.Name = "kryptonPage6";
