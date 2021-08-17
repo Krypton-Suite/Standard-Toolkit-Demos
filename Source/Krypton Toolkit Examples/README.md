@@ -18,6 +18,7 @@ There are 2 set of solutions in these projects:
 ## [KryptonBorderEdge Examples](KryptonBorderEdge%20Examples/example.png)
 ## [KryptonBreadCrumb Examples](KryptonBreadCrumb%20Examples/example.png)
 ## [KryptonButton Examples](KryptonButton%20Examples/example.png)
+## [Krypton UAC Button](Krypton%20UAC%20Button/UACButtonUsage.gif)
 ## [KryptonCheckBox Examples](KryptonCheckBox%20Examples/example.png)
 ## [KryptonCheckButton Examples](KryptonCheckButton%20Examples/example.png)
 ## [KryptonCheckedListBox Examples](KryptonCheckedListBox%20Examples/example.png)

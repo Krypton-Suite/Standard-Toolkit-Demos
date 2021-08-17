@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31521.260
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 14.0.25123.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonButton Examples 2019", "KryptonButton Examples\KryptonButton Examples 2019.csproj", "{B50563E6-3123-49FC-816D-F873A0BCB789}"
 EndProject
@@ -124,7 +124,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonListView Examples 2019", "KryptonListView Examples 2019\KryptonListView Examples 2019.csproj", "{E49C593A-EDD6-4969-9374-808CBA09BE3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krypton Theme Playground 2019", "Krypton Theme Playground\Krypton Theme Playground 2019.csproj", "{9045540F-D0C2-4D24-AE30-C633FE4F08F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton Theme Playground 2019", "Krypton Theme Playground\Krypton Theme Playground 2019.csproj", "{9045540F-D0C2-4D24-AE30-C633FE4F08F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krypton UAC Button 2019", "Krypton UAC Button\Krypton UAC Button 2019.csproj", "{31ECCF66-0997-46BA-97C1-F4FEA3524971}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -368,6 +370,10 @@ Global
 		{9045540F-D0C2-4D24-AE30-C633FE4F08F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9045540F-D0C2-4D24-AE30-C633FE4F08F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9045540F-D0C2-4D24-AE30-C633FE4F08F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31ECCF66-0997-46BA-97C1-F4FEA3524971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31ECCF66-0997-46BA-97C1-F4FEA3524971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31ECCF66-0997-46BA-97C1-F4FEA3524971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31ECCF66-0997-46BA-97C1-F4FEA3524971}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
