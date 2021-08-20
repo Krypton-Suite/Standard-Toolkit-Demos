@@ -39,12 +39,12 @@ namespace KryptonFontDialog_Example_2019
             this.buttonShowFontDialog = new Krypton.Toolkit.KryptonButton();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
-            this.chkShowEffects = new Krypton.Toolkit.KryptonCheckBox();
-            this.chkShowApply = new Krypton.Toolkit.KryptonCheckBox();
-            this.chkAllowVectorFonts = new Krypton.Toolkit.KryptonCheckBox();
-            this.chkAllowSimulations = new Krypton.Toolkit.KryptonCheckBox();
-            this.chkAllowScriptChange = new Krypton.Toolkit.KryptonCheckBox();
-            this.chkShowColour = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkUseEXDialog = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkShowNetwork = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkAllowSomePages = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkAllowSelection = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkAllowPrintToFile = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkAllowCurrentPage = new Krypton.Toolkit.KryptonCheckBox();
             this.chkShowHelp = new Krypton.Toolkit.KryptonCheckBox();
             this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
             this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
@@ -93,7 +93,6 @@ namespace KryptonFontDialog_Example_2019
             // paletteSparkleOrange
             // 
             this.paletteSparkleOrange.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.paletteSparkleOrange.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.paletteSparkleOrange.Location = new System.Drawing.Point(184, 40);
             this.paletteSparkleOrange.Name = "paletteSparkleOrange";
             this.paletteSparkleOrange.Orientation = Krypton.Toolkit.VisualOrientation.Top;
@@ -105,7 +104,6 @@ namespace KryptonFontDialog_Example_2019
             // palette2010Black
             // 
             this.palette2010Black.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.palette2010Black.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.palette2010Black.Location = new System.Drawing.Point(15, 63);
             this.palette2010Black.Name = "palette2010Black";
             this.palette2010Black.Orientation = Krypton.Toolkit.VisualOrientation.Top;
@@ -117,7 +115,6 @@ namespace KryptonFontDialog_Example_2019
             // palette2010Silver
             // 
             this.palette2010Silver.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.palette2010Silver.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.palette2010Silver.Location = new System.Drawing.Point(15, 40);
             this.palette2010Silver.Name = "palette2010Silver";
             this.palette2010Silver.Orientation = Krypton.Toolkit.VisualOrientation.Top;
@@ -129,7 +126,6 @@ namespace KryptonFontDialog_Example_2019
             // paletteProfessional
             // 
             this.paletteProfessional.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.paletteProfessional.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.paletteProfessional.Location = new System.Drawing.Point(184, 63);
             this.paletteProfessional.Name = "paletteProfessional";
             this.paletteProfessional.Orientation = Krypton.Toolkit.VisualOrientation.Top;
@@ -141,7 +137,6 @@ namespace KryptonFontDialog_Example_2019
             // palette2007Blue
             // 
             this.palette2007Blue.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.palette2007Blue.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.palette2007Blue.Location = new System.Drawing.Point(184, 17);
             this.palette2007Blue.Name = "palette2007Blue";
             this.palette2007Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
@@ -154,7 +149,6 @@ namespace KryptonFontDialog_Example_2019
             // 
             this.palette2010Blue.Checked = true;
             this.palette2010Blue.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.palette2010Blue.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.palette2010Blue.Location = new System.Drawing.Point(15, 17);
             this.palette2010Blue.Name = "palette2010Blue";
             this.palette2010Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
@@ -172,7 +166,7 @@ namespace KryptonFontDialog_Example_2019
             this.buttonShowFontDialog.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.buttonShowFontDialog.Size = new System.Drawing.Size(307, 59);
             this.buttonShowFontDialog.TabIndex = 19;
-            this.buttonShowFontDialog.Values.Text = "Show FontDialog";
+            this.buttonShowFontDialog.Values.Text = "Show PrintDialog";
             this.buttonShowFontDialog.Click += new System.EventHandler(this.ButtonShowFontDialog_Click);
             // 
             // kryptonPanel1
@@ -197,84 +191,84 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonGroupBox2.Panel
             // 
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowEffects);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowApply);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowVectorFonts);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowSimulations);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowScriptChange);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowColour);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkUseEXDialog);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowNetwork);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowSomePages);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowSelection);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowPrintToFile);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowCurrentPage);
             this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowHelp);
             this.kryptonGroupBox2.Size = new System.Drawing.Size(199, 289);
             this.kryptonGroupBox2.TabIndex = 21;
             this.kryptonGroupBox2.Values.Heading = "Options:";
             // 
-            // chkShowEffects
+            // chkUseEXDialog
             // 
-            this.chkShowEffects.Checked = true;
-            this.chkShowEffects.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.chkShowEffects.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkShowEffects.Location = new System.Drawing.Point(4, 180);
-            this.chkShowEffects.Name = "chkShowEffects";
-            this.chkShowEffects.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.chkShowEffects.Size = new System.Drawing.Size(110, 24);
-            this.chkShowEffects.TabIndex = 6;
-            this.chkShowEffects.Values.Text = "Show Effects";
+            this.chkUseEXDialog.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
+            this.chkUseEXDialog.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.chkUseEXDialog.Enabled = false;
+            this.chkUseEXDialog.Location = new System.Drawing.Point(4, 180);
+            this.chkUseEXDialog.Name = "chkUseEXDialog";
+            this.chkUseEXDialog.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.chkUseEXDialog.Size = new System.Drawing.Size(128, 24);
+            this.chkUseEXDialog.TabIndex = 6;
+            this.chkUseEXDialog.Values.Text = "Use `EX` Dialog";
             // 
-            // chkShowApply
+            // chkShowNetwork
             // 
-            this.chkShowApply.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.chkShowApply.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.chkShowApply.Location = new System.Drawing.Point(4, 150);
-            this.chkShowApply.Name = "chkShowApply";
-            this.chkShowApply.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.chkShowApply.Size = new System.Drawing.Size(105, 24);
-            this.chkShowApply.TabIndex = 5;
-            this.chkShowApply.Values.Text = "Show Apply";
+            this.chkShowNetwork.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
+            this.chkShowNetwork.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.chkShowNetwork.Location = new System.Drawing.Point(4, 150);
+            this.chkShowNetwork.Name = "chkShowNetwork";
+            this.chkShowNetwork.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.chkShowNetwork.Size = new System.Drawing.Size(124, 24);
+            this.chkShowNetwork.TabIndex = 5;
+            this.chkShowNetwork.Values.Text = "Show Network";
             // 
-            // chkAllowVectorFonts
+            // chkAllowSomePages
             // 
-            this.chkAllowVectorFonts.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.chkAllowVectorFonts.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.chkAllowVectorFonts.Location = new System.Drawing.Point(4, 120);
-            this.chkAllowVectorFonts.Name = "chkAllowVectorFonts";
-            this.chkAllowVectorFonts.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.chkAllowVectorFonts.Size = new System.Drawing.Size(152, 24);
-            this.chkAllowVectorFonts.TabIndex = 4;
-            this.chkAllowVectorFonts.Values.Text = "Allow Vector Fonts";
+            this.chkAllowSomePages.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
+            this.chkAllowSomePages.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.chkAllowSomePages.Location = new System.Drawing.Point(4, 120);
+            this.chkAllowSomePages.Name = "chkAllowSomePages";
+            this.chkAllowSomePages.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.chkAllowSomePages.Size = new System.Drawing.Size(150, 24);
+            this.chkAllowSomePages.TabIndex = 4;
+            this.chkAllowSomePages.Values.Text = "Allow Some Pages";
             // 
-            // chkAllowSimulations
+            // chkAllowSelection
             // 
-            this.chkAllowSimulations.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.chkAllowSimulations.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.chkAllowSimulations.Location = new System.Drawing.Point(4, 90);
-            this.chkAllowSimulations.Name = "chkAllowSimulations";
-            this.chkAllowSimulations.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.chkAllowSimulations.Size = new System.Drawing.Size(145, 24);
-            this.chkAllowSimulations.TabIndex = 3;
-            this.chkAllowSimulations.Values.Text = "Allow Simulations";
+            this.chkAllowSelection.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
+            this.chkAllowSelection.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.chkAllowSelection.Location = new System.Drawing.Point(4, 90);
+            this.chkAllowSelection.Name = "chkAllowSelection";
+            this.chkAllowSelection.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.chkAllowSelection.Size = new System.Drawing.Size(128, 24);
+            this.chkAllowSelection.TabIndex = 3;
+            this.chkAllowSelection.Values.Text = "Allow Selection";
             // 
-            // chkAllowScriptChange
+            // chkAllowPrintToFile
             // 
-            this.chkAllowScriptChange.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.chkAllowScriptChange.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.chkAllowScriptChange.Location = new System.Drawing.Point(3, 60);
-            this.chkAllowScriptChange.Name = "chkAllowScriptChange";
-            this.chkAllowScriptChange.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.chkAllowScriptChange.Size = new System.Drawing.Size(161, 24);
-            this.chkAllowScriptChange.TabIndex = 2;
-            this.chkAllowScriptChange.Values.Text = "Allow Script Change";
+            this.chkAllowPrintToFile.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
+            this.chkAllowPrintToFile.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.chkAllowPrintToFile.Location = new System.Drawing.Point(3, 60);
+            this.chkAllowPrintToFile.Name = "chkAllowPrintToFile";
+            this.chkAllowPrintToFile.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.chkAllowPrintToFile.Size = new System.Drawing.Size(147, 24);
+            this.chkAllowPrintToFile.TabIndex = 2;
+            this.chkAllowPrintToFile.Values.Text = "Allow Print To File";
             // 
-            // chkShowColour
+            // chkAllowCurrentPage
             // 
-            this.chkShowColour.Checked = true;
-            this.chkShowColour.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.chkShowColour.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkShowColour.Location = new System.Drawing.Point(4, 30);
-            this.chkShowColour.Name = "chkShowColour";
-            this.chkShowColour.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.chkShowColour.Size = new System.Drawing.Size(111, 24);
-            this.chkShowColour.TabIndex = 1;
-            this.chkShowColour.Values.Text = "Show Colour";
+            this.chkAllowCurrentPage.Checked = true;
+            this.chkAllowCurrentPage.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
+            this.chkAllowCurrentPage.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkAllowCurrentPage.Location = new System.Drawing.Point(4, 30);
+            this.chkAllowCurrentPage.Name = "chkAllowCurrentPage";
+            this.chkAllowCurrentPage.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.chkAllowCurrentPage.Size = new System.Drawing.Size(155, 24);
+            this.chkAllowCurrentPage.TabIndex = 1;
+            this.chkAllowCurrentPage.Values.Text = "Allow Current Page";
             // 
             // chkShowHelp
             // 
@@ -363,7 +357,6 @@ namespace KryptonFontDialog_Example_2019
             // 
             this.kryptonCheckBox1.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonCheckBox1.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.kryptonCheckBox1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonCheckBox1.Location = new System.Drawing.Point(156, 4);
             this.kryptonCheckBox1.Name = "kryptonCheckBox1";
             this.kryptonCheckBox1.Orientation = Krypton.Toolkit.VisualOrientation.Top;
@@ -397,7 +390,6 @@ namespace KryptonFontDialog_Example_2019
             this.kryptonComboBox1.Location = new System.Drawing.Point(4, 4);
             this.kryptonComboBox1.Name = "kryptonComboBox1";
             this.kryptonComboBox1.Size = new System.Drawing.Size(146, 25);
-            this.kryptonComboBox1.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(-1);
             this.kryptonComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonComboBox1.TabIndex = 0;
             this.kryptonComboBox1.Text = "Microsoft Sans Serif";
@@ -409,7 +401,7 @@ namespace KryptonFontDialog_Example_2019
             this.ClientSize = new System.Drawing.Size(594, 410);
             this.Controls.Add(this.kryptonPanel1);
             this.Name = "Form1";
-            this.Text = "KryptonFontDialog Example";
+            this.Text = "KryptonPrintDialog Example";
             ((System.ComponentModel.ISupportInitialize)(this.groupBoxPalette.Panel)).EndInit();
             this.groupBoxPalette.Panel.ResumeLayout(false);
             this.groupBoxPalette.Panel.PerformLayout();
@@ -452,12 +444,12 @@ namespace KryptonFontDialog_Example_2019
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox2;
         private Krypton.Toolkit.KryptonCheckBox chkShowHelp;
-        private Krypton.Toolkit.KryptonCheckBox chkShowColour;
-        private Krypton.Toolkit.KryptonCheckBox chkShowEffects;
-        private Krypton.Toolkit.KryptonCheckBox chkShowApply;
-        private Krypton.Toolkit.KryptonCheckBox chkAllowVectorFonts;
-        private Krypton.Toolkit.KryptonCheckBox chkAllowSimulations;
-        private Krypton.Toolkit.KryptonCheckBox chkAllowScriptChange;
+        private Krypton.Toolkit.KryptonCheckBox chkAllowCurrentPage;
+        private Krypton.Toolkit.KryptonCheckBox chkUseEXDialog;
+        private Krypton.Toolkit.KryptonCheckBox chkShowNetwork;
+        private Krypton.Toolkit.KryptonCheckBox chkAllowSomePages;
+        private Krypton.Toolkit.KryptonCheckBox chkAllowSelection;
+        private Krypton.Toolkit.KryptonCheckBox chkAllowPrintToFile;
     }
 }
 
