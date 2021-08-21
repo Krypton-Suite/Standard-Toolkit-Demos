@@ -22,4 +22,7 @@
         <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
         <ApplicationManifest>app.manifest</ApplicationManifest>
     </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net48|AnyCPU'">
+      <PlatformTarget>x64</PlatformTarget>
+    </PropertyGroup>
 </Project>

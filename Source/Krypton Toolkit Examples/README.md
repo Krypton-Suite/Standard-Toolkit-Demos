@@ -53,6 +53,7 @@ There are 2 set of solutions in these projects:
 ## [KryptonNumericUpDown Examples](KryptonNumericUpDown%20Examples/example.png)
 ## [KryptonPalette Examples](KryptonPalette%20Examples/example.png)
 ## [KryptonPanel Examples](KryptonPanel%20Examples/example.png)
+## [KryptonPrintDialog Example](KryptonPrintDialog%20Example/example.png)
 ## [KryptonRadioButton Examples](KryptonRadioButton%20Examples/example.png)
 ## [KryptonRichTextBox Examples](KryptonRichTextBox%20Examples/example.png)
 ## [KryptonSeparator Examples](KryptonSeparator%20Examples/example.png)
