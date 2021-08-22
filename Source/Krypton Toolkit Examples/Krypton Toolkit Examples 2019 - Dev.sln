@@ -127,12 +127,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonListView Examples 20
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton Theme Playground 2019", "Krypton Theme Playground\Krypton Theme Playground 2019.csproj", "{9045540F-D0C2-4D24-AE30-C633FE4F08F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krypton UAC Button 2019", "Krypton UAC Button\Krypton UAC Button 2019.csproj", "{31ECCF66-0997-46BA-97C1-F4FEA3524971}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton UAC Button 2019", "Krypton UAC Button\Krypton UAC Button 2019.csproj", "{31ECCF66-0997-46BA-97C1-F4FEA3524971}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonFontDialog Example 2019", "KryptonFontDialog Example\KryptonFontDialog Example 2019.csproj", "{BD46345C-333F-4DA6-8145-274883F5388A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonColorDialog Example 2019", "KryptonColorDialog Example\KryptonColorDialog Example 2019.csproj", "{8A3E3D87-FD92-4CD4-9C22-1E61057BEBA8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonPrintDialog Example 2019", "KryptonPrintDialog Example\KryptonPrintDialog Example 2019.csproj", "{27C591CF-E471-4170-B65B-8C2E985ECACC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonHelpIcon Examples 2019", "KryptonHelpIcon Examples\KryptonHelpIcon Examples 2019.csproj", "{0743C17D-54F5-4A49-91A6-06E337B74901}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonScrollbar Examples 2019", "KryptonScrollbar Examples\KryptonScrollbar Examples 2019.csproj", "{7F8CC554-E1B1-4DBE-B659-9E548940C730}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -392,6 +397,14 @@ Global
 		{27C591CF-E471-4170-B65B-8C2E985ECACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27C591CF-E471-4170-B65B-8C2E985ECACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27C591CF-E471-4170-B65B-8C2E985ECACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0743C17D-54F5-4A49-91A6-06E337B74901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0743C17D-54F5-4A49-91A6-06E337B74901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0743C17D-54F5-4A49-91A6-06E337B74901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0743C17D-54F5-4A49-91A6-06E337B74901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F8CC554-E1B1-4DBE-B659-9E548940C730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F8CC554-E1B1-4DBE-B659-9E548940C730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F8CC554-E1B1-4DBE-B659-9E548940C730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F8CC554-E1B1-4DBE-B659-9E548940C730}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
