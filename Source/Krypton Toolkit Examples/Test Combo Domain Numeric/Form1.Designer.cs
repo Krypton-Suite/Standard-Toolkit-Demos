@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroupBox3 = new Krypton.Toolkit.KryptonGroupBox();
             this.kryptonDomainUpDown4 = new Krypton.Toolkit.KryptonDomainUpDown();
@@ -78,6 +79,9 @@
             // 
             // kryptonGroupBox3
             // 
+            this.kryptonGroupBox3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.kryptonGroupBox3.CaptionEdge = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonGroupBox3.CaptionOrientation = Krypton.Toolkit.ButtonOrientation.Auto;
             this.kryptonGroupBox3.Location = new System.Drawing.Point(4, 254);
             this.kryptonGroupBox3.Name = "kryptonGroupBox3";
             // 
@@ -100,6 +104,7 @@
             this.kryptonDomainUpDown4.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonDomainUpDown4.TabIndex = 3;
             this.kryptonDomainUpDown4.Text = "kryptonDomainUpDown4";
+            this.kryptonDomainUpDown4.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             // 
             // kryptonDomainUpDown3
             // 
@@ -111,6 +116,7 @@
             this.kryptonDomainUpDown3.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonDomainUpDown3.TabIndex = 2;
             this.kryptonDomainUpDown3.Text = "kryptonDomainUpDown3";
+            this.kryptonDomainUpDown3.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             // 
             // kryptonDomainUpDown2
             // 
@@ -122,6 +128,7 @@
             this.kryptonDomainUpDown2.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonDomainUpDown2.TabIndex = 1;
             this.kryptonDomainUpDown2.Text = "kryptonDomainUpDown2";
+            this.kryptonDomainUpDown2.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             // 
             // kryptonDomainUpDown1
             // 
@@ -132,9 +139,13 @@
             this.kryptonDomainUpDown1.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonDomainUpDown1.TabIndex = 0;
             this.kryptonDomainUpDown1.Text = "kryptonDomainUpDown1";
+            this.kryptonDomainUpDown1.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             // 
             // kryptonGroupBox2
             // 
+            this.kryptonGroupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.kryptonGroupBox2.CaptionEdge = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonGroupBox2.CaptionOrientation = Krypton.Toolkit.ButtonOrientation.Auto;
             this.kryptonGroupBox2.Location = new System.Drawing.Point(4, 130);
             this.kryptonGroupBox2.Name = "kryptonGroupBox2";
             // 
@@ -150,48 +161,139 @@
             // 
             // kryptonNumericUpDown4
             // 
+            this.kryptonNumericUpDown4.AllowDecimals = true;
             this.kryptonNumericUpDown4.DecimalPlaces = 99;
+            this.kryptonNumericUpDown4.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.kryptonNumericUpDown4.Location = new System.Drawing.Point(329, 45);
+            this.kryptonNumericUpDown4.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.kryptonNumericUpDown4.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.kryptonNumericUpDown4.Name = "kryptonNumericUpDown4";
             this.kryptonNumericUpDown4.Size = new System.Drawing.Size(120, 26);
             this.kryptonNumericUpDown4.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonNumericUpDown4.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonNumericUpDown4.TabIndex = 3;
+            this.kryptonNumericUpDown4.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.kryptonNumericUpDown4.Value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             // 
             // kryptonNumericUpDown3
             // 
+            this.kryptonNumericUpDown3.AllowDecimals = true;
             this.kryptonNumericUpDown3.DecimalPlaces = 99;
+            this.kryptonNumericUpDown3.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.kryptonNumericUpDown3.Location = new System.Drawing.Point(329, 4);
+            this.kryptonNumericUpDown3.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.kryptonNumericUpDown3.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.kryptonNumericUpDown3.Name = "kryptonNumericUpDown3";
             this.kryptonNumericUpDown3.Size = new System.Drawing.Size(120, 26);
             this.kryptonNumericUpDown3.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonNumericUpDown3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.kryptonNumericUpDown3.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonNumericUpDown3.TabIndex = 2;
+            this.kryptonNumericUpDown3.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.kryptonNumericUpDown3.Value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             // 
             // kryptonNumericUpDown2
             // 
+            this.kryptonNumericUpDown2.AllowDecimals = true;
             this.kryptonNumericUpDown2.DecimalPlaces = 99;
             this.kryptonNumericUpDown2.Enabled = false;
+            this.kryptonNumericUpDown2.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.kryptonNumericUpDown2.Location = new System.Drawing.Point(6, 45);
+            this.kryptonNumericUpDown2.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.kryptonNumericUpDown2.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.kryptonNumericUpDown2.Name = "kryptonNumericUpDown2";
             this.kryptonNumericUpDown2.Size = new System.Drawing.Size(120, 26);
             this.kryptonNumericUpDown2.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonNumericUpDown2.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonNumericUpDown2.TabIndex = 1;
+            this.kryptonNumericUpDown2.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.kryptonNumericUpDown2.Value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             // 
             // kryptonNumericUpDown1
             // 
+            this.kryptonNumericUpDown1.AllowDecimals = true;
             this.kryptonNumericUpDown1.DecimalPlaces = 99;
+            this.kryptonNumericUpDown1.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.kryptonNumericUpDown1.Location = new System.Drawing.Point(7, 4);
+            this.kryptonNumericUpDown1.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.kryptonNumericUpDown1.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.kryptonNumericUpDown1.Name = "kryptonNumericUpDown1";
             this.kryptonNumericUpDown1.Size = new System.Drawing.Size(120, 26);
             this.kryptonNumericUpDown1.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonNumericUpDown1.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonNumericUpDown1.TabIndex = 0;
+            this.kryptonNumericUpDown1.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.kryptonNumericUpDown1.Value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             // 
             // kryptonGroupBox1
             // 
+            this.kryptonGroupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.kryptonGroupBox1.CaptionEdge = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonGroupBox1.CaptionOrientation = Krypton.Toolkit.ButtonOrientation.Auto;
             this.kryptonGroupBox1.Location = new System.Drawing.Point(4, 4);
             this.kryptonGroupBox1.Name = "kryptonGroupBox1";
             // 
@@ -207,8 +309,12 @@
             // 
             // kryptonComboBoxA2
             // 
+            this.kryptonComboBoxA2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.kryptonComboBoxA2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.kryptonComboBoxA2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.kryptonComboBoxA2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.kryptonComboBoxA2.DropDownWidth = 121;
+            this.kryptonComboBoxA2.IntegralHeight = false;
             this.kryptonComboBoxA2.Items.AddRange(new object[] {
             "Drop List Center"});
             this.kryptonComboBoxA2.Location = new System.Drawing.Point(329, 37);
@@ -221,8 +327,13 @@
             // 
             // kryptonComboBox2
             // 
+            this.kryptonComboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.kryptonComboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.kryptonComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.kryptonComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.kryptonComboBox2.DropDownWidth = 121;
             this.kryptonComboBox2.Enabled = false;
+            this.kryptonComboBox2.IntegralHeight = false;
             this.kryptonComboBox2.Location = new System.Drawing.Point(6, 37);
             this.kryptonComboBox2.Name = "kryptonComboBox2";
             this.kryptonComboBox2.Size = new System.Drawing.Size(288, 25);
@@ -233,8 +344,12 @@
             // 
             // kryptonComboBoxA1
             // 
+            this.kryptonComboBoxA1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.kryptonComboBoxA1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.kryptonComboBoxA1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.kryptonComboBoxA1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.kryptonComboBoxA1.DropDownWidth = 121;
+            this.kryptonComboBoxA1.IntegralHeight = false;
             this.kryptonComboBoxA1.Items.AddRange(new object[] {
             "Drop List Pad Left"});
             this.kryptonComboBoxA1.Location = new System.Drawing.Point(329, 3);
@@ -248,7 +363,12 @@
             // 
             // kryptonComboBox1
             // 
+            this.kryptonComboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.kryptonComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.kryptonComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.kryptonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.kryptonComboBox1.DropDownWidth = 121;
+            this.kryptonComboBox1.IntegralHeight = false;
             this.kryptonComboBox1.Location = new System.Drawing.Point(6, 6);
             this.kryptonComboBox1.Name = "kryptonComboBox1";
             this.kryptonComboBox1.Size = new System.Drawing.Size(300, 25);
@@ -270,6 +390,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.kryptonPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Test_Combo_Domain_Numeric";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();

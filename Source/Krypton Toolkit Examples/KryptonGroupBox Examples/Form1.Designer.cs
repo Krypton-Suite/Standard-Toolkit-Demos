@@ -77,9 +77,9 @@
             // 
             // propertyGrid
             // 
-            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.propertyGrid.Location = new System.Drawing.Point(6, 19);
             this.propertyGrid.Name = "propertyGrid";
             this.propertyGrid.Size = new System.Drawing.Size(310, 533);
@@ -109,7 +109,9 @@
             // 
             // kryptonGroupBox4
             // 
+            this.kryptonGroupBox4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonGroupBox4.CaptionEdge = Krypton.Toolkit.VisualOrientation.Left;
+            this.kryptonGroupBox4.CaptionOrientation = Krypton.Toolkit.ButtonOrientation.Auto;
             this.kryptonGroupBox4.Location = new System.Drawing.Point(169, 32);
             this.kryptonGroupBox4.Name = "kryptonGroupBox4";
             this.kryptonGroupBox4.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
@@ -119,12 +121,14 @@
             this.kryptonGroupBox4.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
             this.kryptonGroupBox4.Size = new System.Drawing.Size(133, 128);
             this.kryptonGroupBox4.TabIndex = 1;
-            this.kryptonGroupBox4.Text = "Caption";
             this.kryptonGroupBox4.Values.Image = global::KryptonGroupBoxExamples.Properties.Resources.angel1;
             this.kryptonGroupBox4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.groupBox_MouseDown);
             // 
             // kryptonGroupBox3
             // 
+            this.kryptonGroupBox3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.kryptonGroupBox3.CaptionEdge = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonGroupBox3.CaptionOrientation = Krypton.Toolkit.ButtonOrientation.Auto;
             this.kryptonGroupBox3.Location = new System.Drawing.Point(17, 32);
             this.kryptonGroupBox3.Name = "kryptonGroupBox3";
             this.kryptonGroupBox3.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
@@ -134,7 +138,6 @@
             this.kryptonGroupBox3.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
             this.kryptonGroupBox3.Size = new System.Drawing.Size(132, 128);
             this.kryptonGroupBox3.TabIndex = 0;
-            this.kryptonGroupBox3.Text = "Caption";
             this.kryptonGroupBox3.Values.Description = "Extra";
             this.kryptonGroupBox3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.groupBox_MouseDown);
             // 
@@ -151,7 +154,10 @@
             // 
             // kryptonGroupBox2
             // 
-            this.kryptonGroupBox2.CaptionOverlap = 0;
+            this.kryptonGroupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.kryptonGroupBox2.CaptionEdge = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonGroupBox2.CaptionOrientation = Krypton.Toolkit.ButtonOrientation.Auto;
+            this.kryptonGroupBox2.CaptionOverlap = 0D;
             this.kryptonGroupBox2.Location = new System.Drawing.Point(169, 30);
             this.kryptonGroupBox2.Name = "kryptonGroupBox2";
             // 
@@ -159,16 +165,23 @@
             // 
             this.kryptonGroupBox2.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
             this.kryptonGroupBox2.Size = new System.Drawing.Size(133, 128);
-            this.kryptonGroupBox2.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonGroupBox2.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonGroupBox2.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonGroupBox2.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonGroupBox2.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonGroupBox2.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonGroupBox2.StateCommon.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonGroupBox2.TabIndex = 1;
-            this.kryptonGroupBox2.Text = "Caption";
             this.kryptonGroupBox2.Values.Image = global::KryptonGroupBoxExamples.Properties.Resources.angel1;
             this.kryptonGroupBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.groupBox_MouseDown);
             // 
             // kryptonGroupBox1
             // 
+            this.kryptonGroupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.kryptonGroupBox1.CaptionEdge = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonGroupBox1.CaptionOrientation = Krypton.Toolkit.ButtonOrientation.Auto;
             this.kryptonGroupBox1.Location = new System.Drawing.Point(17, 30);
             this.kryptonGroupBox1.Name = "kryptonGroupBox1";
             // 
@@ -177,7 +190,6 @@
             this.kryptonGroupBox1.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
             this.kryptonGroupBox1.Size = new System.Drawing.Size(132, 128);
             this.kryptonGroupBox1.TabIndex = 0;
-            this.kryptonGroupBox1.Text = "Caption";
             this.kryptonGroupBox1.Values.Image = global::KryptonGroupBoxExamples.Properties.Resources.angel1;
             this.kryptonGroupBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.groupBox_MouseDown);
             // 
@@ -194,7 +206,10 @@
             // 
             // kryptonGroupBox5
             // 
-            this.kryptonGroupBox5.CaptionOverlap = 1;
+            this.kryptonGroupBox5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.kryptonGroupBox5.CaptionEdge = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonGroupBox5.CaptionOrientation = Krypton.Toolkit.ButtonOrientation.Auto;
+            this.kryptonGroupBox5.CaptionOverlap = 1D;
             this.kryptonGroupBox5.CaptionStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.kryptonGroupBox5.Location = new System.Drawing.Point(169, 30);
             this.kryptonGroupBox5.Name = "kryptonGroupBox5";
@@ -205,14 +220,15 @@
             this.kryptonGroupBox5.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
             this.kryptonGroupBox5.Size = new System.Drawing.Size(133, 128);
             this.kryptonGroupBox5.TabIndex = 1;
-            this.kryptonGroupBox5.Text = "Caption";
             this.kryptonGroupBox5.Values.Image = global::KryptonGroupBoxExamples.Properties.Resources.angel1;
             this.kryptonGroupBox5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.groupBox_MouseDown);
             // 
             // kryptonGroupBox6
             // 
+            this.kryptonGroupBox6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonGroupBox6.CaptionEdge = Krypton.Toolkit.VisualOrientation.Right;
-            this.kryptonGroupBox6.CaptionOverlap = 0;
+            this.kryptonGroupBox6.CaptionOrientation = Krypton.Toolkit.ButtonOrientation.Auto;
+            this.kryptonGroupBox6.CaptionOverlap = 0D;
             this.kryptonGroupBox6.Location = new System.Drawing.Point(17, 30);
             this.kryptonGroupBox6.Name = "kryptonGroupBox6";
             this.kryptonGroupBox6.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
@@ -222,7 +238,6 @@
             this.kryptonGroupBox6.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
             this.kryptonGroupBox6.Size = new System.Drawing.Size(132, 128);
             this.kryptonGroupBox6.TabIndex = 0;
-            this.kryptonGroupBox6.Text = "Caption";
             this.kryptonGroupBox6.Values.Description = "Extra";
             this.kryptonGroupBox6.Values.Image = global::KryptonGroupBoxExamples.Properties.Resources.angel1;
             this.kryptonGroupBox6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.groupBox_MouseDown);

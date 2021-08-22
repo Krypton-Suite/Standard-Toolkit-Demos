@@ -188,8 +188,10 @@ namespace ExpandingHeaderGroupsSplitters
             // 
             this.kryptonSplitContainerHorizontal.Cursor = System.Windows.Forms.Cursors.Default;
             this.kryptonSplitContainerHorizontal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonSplitContainerHorizontal.FixedPanel = System.Windows.Forms.FixedPanel.None;
             this.kryptonSplitContainerHorizontal.Location = new System.Drawing.Point(5, 5);
             this.kryptonSplitContainerHorizontal.Name = "kryptonSplitContainerHorizontal";
+            this.kryptonSplitContainerHorizontal.Orientation = System.Windows.Forms.Orientation.Vertical;
             // 
             // kryptonSplitContainerHorizontal.Panel1
             // 
@@ -202,13 +204,18 @@ namespace ExpandingHeaderGroupsSplitters
             this.kryptonSplitContainerHorizontal.Panel2MinSize = 100;
             this.kryptonSplitContainerHorizontal.Size = new System.Drawing.Size(450, 299);
             this.kryptonSplitContainerHorizontal.SplitterDistance = 167;
+            this.kryptonSplitContainerHorizontal.SplitterIncrement = 1;
+            this.kryptonSplitContainerHorizontal.SplitterWidth = 5;
             this.kryptonSplitContainerHorizontal.TabIndex = 0;
             // 
             // kryptonHeaderGroupLeft
             // 
+            this.kryptonHeaderGroupLeft.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonHeaderGroupLeft.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecHeaderGroup[] {
             this.buttonSpecLeftRight});
             this.kryptonHeaderGroupLeft.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonHeaderGroupLeft.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonHeaderGroupLeft.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
             this.kryptonHeaderGroupLeft.HeaderVisibleSecondary = false;
             this.kryptonHeaderGroupLeft.Location = new System.Drawing.Point(0, 0);
             this.kryptonHeaderGroupLeft.Name = "kryptonHeaderGroupLeft";
@@ -230,24 +237,34 @@ namespace ExpandingHeaderGroupsSplitters
             // 
             // textBoxLeft
             // 
+            this.textBoxLeft.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.textBoxLeft.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.textBoxLeft.BackColor = System.Drawing.Color.White;
+            this.textBoxLeft.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.textBoxLeft.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxLeft.Location = new System.Drawing.Point(5, 5);
             this.textBoxLeft.Multiline = true;
             this.textBoxLeft.Name = "textBoxLeft";
             this.textBoxLeft.ReadOnly = true;
-            this.textBoxLeft.Size = new System.Drawing.Size(155, 258);
+            this.textBoxLeft.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBoxLeft.Size = new System.Drawing.Size(155, 257);
+            this.textBoxLeft.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.textBoxLeft.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.textBoxLeft.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.False;
-            this.textBoxLeft.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.textBoxLeft.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.textBoxLeft.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.textBoxLeft.StateCommon.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.textBoxLeft.TabIndex = 0;
             this.textBoxLeft.Text = resources.GetString("textBoxLeft.Text");
+            this.textBoxLeft.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // kryptonSplitContainerVertical
             // 
             this.kryptonSplitContainerVertical.Cursor = System.Windows.Forms.Cursors.Default;
             this.kryptonSplitContainerVertical.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonSplitContainerVertical.FixedPanel = System.Windows.Forms.FixedPanel.None;
             this.kryptonSplitContainerVertical.Location = new System.Drawing.Point(0, 0);
             this.kryptonSplitContainerVertical.Name = "kryptonSplitContainerVertical";
             this.kryptonSplitContainerVertical.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -263,11 +280,16 @@ namespace ExpandingHeaderGroupsSplitters
             this.kryptonSplitContainerVertical.Panel2MinSize = 100;
             this.kryptonSplitContainerVertical.Size = new System.Drawing.Size(278, 299);
             this.kryptonSplitContainerVertical.SplitterDistance = 133;
+            this.kryptonSplitContainerVertical.SplitterIncrement = 1;
+            this.kryptonSplitContainerVertical.SplitterWidth = 5;
             this.kryptonSplitContainerVertical.TabIndex = 0;
             // 
             // kryptonHeaderGroupRightTop
             // 
+            this.kryptonHeaderGroupRightTop.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonHeaderGroupRightTop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonHeaderGroupRightTop.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonHeaderGroupRightTop.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
             this.kryptonHeaderGroupRightTop.HeaderVisibleSecondary = false;
             this.kryptonHeaderGroupRightTop.Location = new System.Drawing.Point(0, 0);
             this.kryptonHeaderGroupRightTop.Name = "kryptonHeaderGroupRightTop";
@@ -283,27 +305,39 @@ namespace ExpandingHeaderGroupsSplitters
             // 
             // textBoxRightTop
             // 
+            this.textBoxRightTop.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.textBoxRightTop.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.textBoxRightTop.BackColor = System.Drawing.Color.White;
+            this.textBoxRightTop.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.textBoxRightTop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxRightTop.Location = new System.Drawing.Point(5, 5);
             this.textBoxRightTop.Multiline = true;
             this.textBoxRightTop.Name = "textBoxRightTop";
             this.textBoxRightTop.ReadOnly = true;
-            this.textBoxRightTop.Size = new System.Drawing.Size(266, 92);
+            this.textBoxRightTop.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBoxRightTop.Size = new System.Drawing.Size(266, 91);
+            this.textBoxRightTop.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.textBoxRightTop.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.textBoxRightTop.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.False;
-            this.textBoxRightTop.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.textBoxRightTop.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.textBoxRightTop.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.textBoxRightTop.StateCommon.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.textBoxRightTop.TabIndex = 0;
             this.textBoxRightTop.Text = "Use the arrow buttons on the headers to toggle the expanded/collapsed state.\r\n\r\nA" +
-                " step by step tutorial on building this kind of expanding/collapsing layout can " +
-                "be found in the help documentation.";
+    " step by step tutorial on building this kind of expanding/collapsing layout can " +
+    "be found in the help documentation.";
+            this.textBoxRightTop.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // kryptonHeaderGroupRightBottom
             // 
+            this.kryptonHeaderGroupRightBottom.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonHeaderGroupRightBottom.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecHeaderGroup[] {
             this.buttonSpecUpDown});
             this.kryptonHeaderGroupRightBottom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonHeaderGroupRightBottom.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonHeaderGroupRightBottom.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
             this.kryptonHeaderGroupRightBottom.HeaderVisibleSecondary = false;
             this.kryptonHeaderGroupRightBottom.Location = new System.Drawing.Point(0, 0);
             this.kryptonHeaderGroupRightBottom.Name = "kryptonHeaderGroupRightBottom";
@@ -325,19 +359,28 @@ namespace ExpandingHeaderGroupsSplitters
             // 
             // textBoxRightBottom
             // 
+            this.textBoxRightBottom.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.textBoxRightBottom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.textBoxRightBottom.BackColor = System.Drawing.Color.White;
+            this.textBoxRightBottom.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.textBoxRightBottom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxRightBottom.Location = new System.Drawing.Point(5, 5);
             this.textBoxRightBottom.Multiline = true;
             this.textBoxRightBottom.Name = "textBoxRightBottom";
             this.textBoxRightBottom.ReadOnly = true;
-            this.textBoxRightBottom.Size = new System.Drawing.Size(266, 120);
+            this.textBoxRightBottom.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBoxRightBottom.Size = new System.Drawing.Size(266, 119);
+            this.textBoxRightBottom.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.textBoxRightBottom.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.textBoxRightBottom.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.False;
-            this.textBoxRightBottom.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.textBoxRightBottom.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.textBoxRightBottom.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.textBoxRightBottom.StateCommon.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.textBoxRightBottom.TabIndex = 0;
             this.textBoxRightBottom.Text = resources.GetString("textBoxRightBottom.Text");
+            this.textBoxRightBottom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // toolStrip
             // 
@@ -392,6 +435,10 @@ namespace ExpandingHeaderGroupsSplitters
             this.toolSystem.Size = new System.Drawing.Size(49, 22);
             this.toolSystem.Text = "System";
             this.toolSystem.Click += new System.EventHandler(this.toolSystem_Click);
+            // 
+            // kryptonManager
+            // 
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2007Blue;
             // 
             // statusStrip1
             // 

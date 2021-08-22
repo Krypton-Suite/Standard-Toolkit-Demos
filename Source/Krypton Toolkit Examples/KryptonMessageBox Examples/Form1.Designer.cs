@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,7 +47,7 @@
             this.radioButtonYesNo = new System.Windows.Forms.RadioButton();
             this.radioButtonRetryCancel = new System.Windows.Forms.RadioButton();
             this.buttonShow = new System.Windows.Forms.Button();
-            this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonManager = new Krypton.Toolkit.KryptonManager();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.radioButtonSystem = new System.Windows.Forms.RadioButton();
             this.radioButtonOffice2003 = new System.Windows.Forms.RadioButton();
@@ -275,6 +274,10 @@
             this.buttonShow.Text = "Show";
             this.buttonShow.UseVisualStyleBackColor = true;
             this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click);
+            // 
+            // kryptonManager
+            // 
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2010Blue;
             // 
             // groupBox3
             // 

@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBoxPalette = new System.Windows.Forms.GroupBox();
+            this.rbOffice2010Black = new System.Windows.Forms.RadioButton();
+            this.rbOffice2010Silver = new System.Windows.Forms.RadioButton();
+            this.rbOffice2010Blue = new System.Windows.Forms.RadioButton();
             this.rbSparklePurple = new System.Windows.Forms.RadioButton();
             this.rbSparkleOrange = new System.Windows.Forms.RadioButton();
             this.rbSparkleBlue = new System.Windows.Forms.RadioButton();
@@ -42,7 +44,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.propertyGrid = new System.Windows.Forms.PropertyGrid();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.kryptonPalette = new Krypton.Toolkit.KryptonPalette(this.components);
+            this.kryptonPalette = new Krypton.Toolkit.KryptonPalette();
             this.groupBoxRibbon = new System.Windows.Forms.GroupBox();
             this.dtpRibbonTime = new Krypton.Toolkit.KryptonDateTimePicker();
             this.buttonSpecAny2 = new Krypton.Toolkit.ButtonSpecAny();
@@ -53,9 +55,6 @@
             this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
             this.dtpNormalShort = new Krypton.Toolkit.KryptonDateTimePicker();
             this.dtpNormalLong = new Krypton.Toolkit.KryptonDateTimePicker();
-            this.rbOffice2010Black = new System.Windows.Forms.RadioButton();
-            this.rbOffice2010Silver = new System.Windows.Forms.RadioButton();
-            this.rbOffice2010Blue = new System.Windows.Forms.RadioButton();
             this.groupBoxPalette.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBoxRibbon.SuspendLayout();
@@ -81,6 +80,41 @@
             this.groupBoxPalette.TabIndex = 3;
             this.groupBoxPalette.TabStop = false;
             this.groupBoxPalette.Text = "Palette";
+            // 
+            // rbOffice2010Black
+            // 
+            this.rbOffice2010Black.AutoSize = true;
+            this.rbOffice2010Black.Location = new System.Drawing.Point(24, 72);
+            this.rbOffice2010Black.Name = "rbOffice2010Black";
+            this.rbOffice2010Black.Size = new System.Drawing.Size(115, 17);
+            this.rbOffice2010Black.TabIndex = 2;
+            this.rbOffice2010Black.Text = "Office 2010 - Black";
+            this.rbOffice2010Black.UseVisualStyleBackColor = true;
+            this.rbOffice2010Black.CheckedChanged += new System.EventHandler(this.rbOffice2010Black_CheckedChanged);
+            // 
+            // rbOffice2010Silver
+            // 
+            this.rbOffice2010Silver.AutoSize = true;
+            this.rbOffice2010Silver.Location = new System.Drawing.Point(24, 49);
+            this.rbOffice2010Silver.Name = "rbOffice2010Silver";
+            this.rbOffice2010Silver.Size = new System.Drawing.Size(117, 17);
+            this.rbOffice2010Silver.TabIndex = 1;
+            this.rbOffice2010Silver.Text = "Office 2010 - Silver";
+            this.rbOffice2010Silver.UseVisualStyleBackColor = true;
+            this.rbOffice2010Silver.CheckedChanged += new System.EventHandler(this.rbOffice2010Silver_CheckedChanged);
+            // 
+            // rbOffice2010Blue
+            // 
+            this.rbOffice2010Blue.AutoSize = true;
+            this.rbOffice2010Blue.Checked = true;
+            this.rbOffice2010Blue.Location = new System.Drawing.Point(24, 26);
+            this.rbOffice2010Blue.Name = "rbOffice2010Blue";
+            this.rbOffice2010Blue.Size = new System.Drawing.Size(111, 17);
+            this.rbOffice2010Blue.TabIndex = 0;
+            this.rbOffice2010Blue.TabStop = true;
+            this.rbOffice2010Blue.Text = "Office 2010 - Blue";
+            this.rbOffice2010Blue.UseVisualStyleBackColor = true;
+            this.rbOffice2010Blue.CheckedChanged += new System.EventHandler(this.rbOffice2010Blue_CheckedChanged);
             // 
             // rbSparklePurple
             // 
@@ -172,9 +206,9 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.propertyGrid);
             this.groupBox4.Location = new System.Drawing.Point(400, 12);
             this.groupBox4.Name = "groupBox4";
@@ -185,9 +219,9 @@
             // 
             // propertyGrid
             // 
-            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.propertyGrid.Location = new System.Drawing.Point(6, 19);
             this.propertyGrid.Name = "propertyGrid";
             this.propertyGrid.Size = new System.Drawing.Size(307, 453);
@@ -206,6 +240,10 @@
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
+            // kryptonPalette
+            // 
+            this.kryptonPalette.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
+            // 
             // groupBoxRibbon
             // 
             this.groupBoxRibbon.Controls.Add(this.dtpRibbonTime);
@@ -223,6 +261,9 @@
             this.dtpRibbonTime.AlwaysActive = false;
             this.dtpRibbonTime.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecAny2});
+            this.dtpRibbonTime.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.dtpRibbonTime.CalendarFirstDayOfWeek = System.Windows.Forms.Day.Default;
+            this.dtpRibbonTime.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.dtpRibbonTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpRibbonTime.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.dtpRibbonTime.Location = new System.Drawing.Point(24, 92);
@@ -230,7 +271,7 @@
             this.dtpRibbonTime.Palette = this.kryptonPalette;
             this.dtpRibbonTime.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.dtpRibbonTime.ShowUpDown = true;
-            this.dtpRibbonTime.Size = new System.Drawing.Size(204, 23);
+            this.dtpRibbonTime.Size = new System.Drawing.Size(204, 21);
             this.dtpRibbonTime.TabIndex = 2;
             this.dtpRibbonTime.Enter += new System.EventHandler(this.dtp_Enter);
             // 
@@ -244,6 +285,9 @@
             // dtpRibbonShort
             // 
             this.dtpRibbonShort.AlwaysActive = false;
+            this.dtpRibbonShort.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.dtpRibbonShort.CalendarFirstDayOfWeek = System.Windows.Forms.Day.Default;
+            this.dtpRibbonShort.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.dtpRibbonShort.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpRibbonShort.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.dtpRibbonShort.Location = new System.Drawing.Point(24, 63);
@@ -257,7 +301,11 @@
             // dtpRibbonLong
             // 
             this.dtpRibbonLong.AlwaysActive = false;
+            this.dtpRibbonLong.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.dtpRibbonLong.CalendarFirstDayOfWeek = System.Windows.Forms.Day.Default;
             this.dtpRibbonLong.CustomNullText = "<Custom Text When Null>";
+            this.dtpRibbonLong.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
+            this.dtpRibbonLong.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpRibbonLong.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.dtpRibbonLong.Location = new System.Drawing.Point(24, 34);
             this.dtpRibbonLong.Name = "dtpRibbonLong";
@@ -284,13 +332,16 @@
             // 
             this.dtpNormalTime.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecAny1});
+            this.dtpNormalTime.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.dtpNormalTime.CalendarFirstDayOfWeek = System.Windows.Forms.Day.Default;
+            this.dtpNormalTime.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.dtpNormalTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpNormalTime.Location = new System.Drawing.Point(24, 93);
             this.dtpNormalTime.Name = "dtpNormalTime";
             this.dtpNormalTime.Palette = this.kryptonPalette;
             this.dtpNormalTime.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.dtpNormalTime.ShowUpDown = true;
-            this.dtpNormalTime.Size = new System.Drawing.Size(204, 23);
+            this.dtpNormalTime.Size = new System.Drawing.Size(204, 21);
             this.dtpNormalTime.TabIndex = 2;
             this.dtpNormalTime.Enter += new System.EventHandler(this.dtp_Enter);
             // 
@@ -303,6 +354,9 @@
             // 
             // dtpNormalShort
             // 
+            this.dtpNormalShort.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.dtpNormalShort.CalendarFirstDayOfWeek = System.Windows.Forms.Day.Default;
+            this.dtpNormalShort.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.dtpNormalShort.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNormalShort.Location = new System.Drawing.Point(24, 64);
             this.dtpNormalShort.Name = "dtpNormalShort";
@@ -314,7 +368,11 @@
             // 
             // dtpNormalLong
             // 
+            this.dtpNormalLong.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.dtpNormalLong.CalendarFirstDayOfWeek = System.Windows.Forms.Day.Default;
             this.dtpNormalLong.CustomNullText = "<Custom Text When Null>";
+            this.dtpNormalLong.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
+            this.dtpNormalLong.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpNormalLong.Location = new System.Drawing.Point(24, 35);
             this.dtpNormalLong.Name = "dtpNormalLong";
             this.dtpNormalLong.Palette = this.kryptonPalette;
@@ -323,40 +381,6 @@
             this.dtpNormalLong.Size = new System.Drawing.Size(204, 21);
             this.dtpNormalLong.TabIndex = 0;
             this.dtpNormalLong.Enter += new System.EventHandler(this.dtp_Enter);
-            // 
-            // rbOffice2010Black
-            // 
-            this.rbOffice2010Black.AutoSize = true;
-            this.rbOffice2010Black.Location = new System.Drawing.Point(24, 72);
-            this.rbOffice2010Black.Name = "rbOffice2010Black";
-            this.rbOffice2010Black.Size = new System.Drawing.Size(115, 17);
-            this.rbOffice2010Black.TabIndex = 2;
-            this.rbOffice2010Black.Text = "Office 2010 - Black";
-            this.rbOffice2010Black.UseVisualStyleBackColor = true;
-            this.rbOffice2010Black.CheckedChanged += new System.EventHandler(this.rbOffice2010Black_CheckedChanged);
-            // 
-            // rbOffice2010Silver
-            // 
-            this.rbOffice2010Silver.AutoSize = true;
-            this.rbOffice2010Silver.Location = new System.Drawing.Point(24, 49);
-            this.rbOffice2010Silver.Name = "rbOffice2010Silver";
-            this.rbOffice2010Silver.Size = new System.Drawing.Size(117, 17);
-            this.rbOffice2010Silver.TabIndex = 1;
-            this.rbOffice2010Silver.Text = "Office 2010 - Silver";
-            this.rbOffice2010Silver.UseVisualStyleBackColor = true;
-            this.rbOffice2010Silver.CheckedChanged += new System.EventHandler(this.rbOffice2010Silver_CheckedChanged);
-            // 
-            // rbOffice2010Blue
-            // 
-            this.rbOffice2010Blue.AutoSize = true;
-            this.rbOffice2010Blue.Checked = true;
-            this.rbOffice2010Blue.Location = new System.Drawing.Point(24, 26);
-            this.rbOffice2010Blue.Name = "rbOffice2010Blue";
-            this.rbOffice2010Blue.Size = new System.Drawing.Size(111, 17);
-            this.rbOffice2010Blue.TabIndex = 0;
-            this.rbOffice2010Blue.Text = "Office 2010 - Blue";
-            this.rbOffice2010Blue.UseVisualStyleBackColor = true;
-            this.rbOffice2010Blue.CheckedChanged += new System.EventHandler(this.rbOffice2010Blue_CheckedChanged);
             // 
             // Form1
             // 

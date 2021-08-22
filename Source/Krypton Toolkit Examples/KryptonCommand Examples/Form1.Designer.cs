@@ -90,8 +90,6 @@ namespace KryptonCommandExamples
             this.kryptonCommand.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonCommand.ImageLarge")));
             this.kryptonCommand.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonCommand.ImageSmall")));
             this.kryptonCommand.Text = "Text";
-            this.kryptonCommand.TextLine1 = "";
-            this.kryptonCommand.TextLine2 = "";
             // 
             // groupBoxControls
             // 
@@ -113,6 +111,11 @@ namespace KryptonCommandExamples
             // kryptonDropButton1
             // 
             this.kryptonDropButton1.AutoSize = true;
+            this.kryptonDropButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.kryptonDropButton1.ButtonOrientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonDropButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.kryptonDropButton1.DropDownOrientation = Krypton.Toolkit.VisualOrientation.Bottom;
+            this.kryptonDropButton1.DropDownPosition = Krypton.Toolkit.VisualOrientation.Right;
             this.kryptonDropButton1.Location = new System.Drawing.Point(19, 103);
             this.kryptonDropButton1.Name = "kryptonDropButton1";
             this.kryptonDropButton1.Size = new System.Drawing.Size(136, 25);
@@ -126,6 +129,7 @@ namespace KryptonCommandExamples
             this.buttonSpecAny1});
             this.kryptonHeader1.Location = new System.Drawing.Point(19, 165);
             this.kryptonHeader1.Name = "kryptonHeader1";
+            this.kryptonHeader1.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonHeader1.Size = new System.Drawing.Size(170, 31);
             this.kryptonHeader1.TabIndex = 4;
             this.kryptonHeader1.Values.Description = "";
@@ -139,8 +143,18 @@ namespace KryptonCommandExamples
             // kryptonColorButton1
             // 
             this.kryptonColorButton1.AutoSize = true;
+            this.kryptonColorButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.kryptonColorButton1.ButtonOrientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonColorButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.kryptonColorButton1.DropDownOrientation = Krypton.Toolkit.VisualOrientation.Bottom;
+            this.kryptonColorButton1.DropDownPosition = Krypton.Toolkit.VisualOrientation.Right;
+            this.kryptonColorButton1.EmptyBorderColor = System.Drawing.Color.DarkGray;
             this.kryptonColorButton1.Location = new System.Drawing.Point(19, 134);
             this.kryptonColorButton1.Name = "kryptonColorButton1";
+            this.kryptonColorButton1.SchemeStandard = Krypton.Toolkit.ColorScheme.OfficeStandard;
+            this.kryptonColorButton1.SchemeThemes = Krypton.Toolkit.ColorScheme.OfficeThemes;
+            this.kryptonColorButton1.SelectedColor = System.Drawing.Color.Red;
+            this.kryptonColorButton1.SelectedRect = new System.Drawing.Rectangle(0, 12, 16, 4);
             this.kryptonColorButton1.Size = new System.Drawing.Size(136, 25);
             this.kryptonColorButton1.TabIndex = 3;
             this.kryptonColorButton1.Values.Text = "ColorButton";
@@ -162,8 +176,11 @@ namespace KryptonCommandExamples
             // 
             // kryptonCheckBox1
             // 
+            this.kryptonCheckBox1.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
+            this.kryptonCheckBox1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonCheckBox1.Location = new System.Drawing.Point(261, 103);
             this.kryptonCheckBox1.Name = "kryptonCheckBox1";
+            this.kryptonCheckBox1.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonCheckBox1.Size = new System.Drawing.Size(76, 20);
             this.kryptonCheckBox1.TabIndex = 7;
             this.kryptonCheckBox1.Values.Text = "CheckBox";
@@ -171,8 +188,11 @@ namespace KryptonCommandExamples
             // kryptonCheckButton1
             // 
             this.kryptonCheckButton1.AutoSize = true;
+            this.kryptonCheckButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.kryptonCheckButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonCheckButton1.Location = new System.Drawing.Point(19, 72);
             this.kryptonCheckButton1.Name = "kryptonCheckButton1";
+            this.kryptonCheckButton1.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonCheckButton1.Size = new System.Drawing.Size(122, 25);
             this.kryptonCheckButton1.TabIndex = 1;
             this.kryptonCheckButton1.Values.Text = "CheckButton";
@@ -180,8 +200,11 @@ namespace KryptonCommandExamples
             // kryptonButton1
             // 
             this.kryptonButton1.AutoSize = true;
+            this.kryptonButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.kryptonButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButton1.Location = new System.Drawing.Point(19, 41);
             this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonButton1.Size = new System.Drawing.Size(122, 25);
             this.kryptonButton1.TabIndex = 0;
             // 

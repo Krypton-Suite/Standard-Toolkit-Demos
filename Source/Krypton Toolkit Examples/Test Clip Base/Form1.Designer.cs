@@ -40,30 +40,27 @@
             // 
             this.kryptonLabel2.AutoSize = false;
             this.kryptonLabel2.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
-            this.kryptonLabel2.Location = new System.Drawing.Point(83, 150);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel2.Location = new System.Drawing.Point(62, 122);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(172, 17);
+            this.kryptonLabel2.Size = new System.Drawing.Size(129, 14);
             this.kryptonLabel2.TabIndex = 8;
             this.kryptonLabel2.Values.Text = "Text (¯²·»¿_)";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 103);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(36, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(260, 17);
+            this.label1.Size = new System.Drawing.Size(196, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "Krypton clipped label follows below this..";
             // 
             // kryptonLabel1
             // 
             this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.TitlePanel;
-            this.kryptonLabel1.Location = new System.Drawing.Point(52, 36);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel1.Location = new System.Drawing.Point(39, 29);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(253, 35);
+            this.kryptonLabel1.Size = new System.Drawing.Size(204, 29);
             this.kryptonLabel1.TabIndex = 10;
             this.kryptonLabel1.Values.Text = "Auto Size Text (¯²·»¿_)";
             // 
@@ -71,10 +68,20 @@
             // 
             this.kryptonLabel3.AutoSize = false;
             this.kryptonLabel3.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
-            this.kryptonLabel3.Location = new System.Drawing.Point(108, 193);
-            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel3.Location = new System.Drawing.Point(81, 157);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(108, 42);
+            this.kryptonLabel3.Size = new System.Drawing.Size(81, 34);
+            this.kryptonLabel3.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonLabel3.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonLabel3.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
+            this.kryptonLabel3.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonLabel3.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonLabel3.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.kryptonLabel3.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonLabel3.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel3.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonLabel3.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.kryptonLabel3.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
             this.kryptonLabel3.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonLabel3.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonLabel3.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Character;
@@ -83,25 +90,28 @@
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(28, 259);
+            this.kryptonButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.kryptonButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.kryptonButton1.Location = new System.Drawing.Point(21, 210);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(90, 25);
+            this.kryptonButton1.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonButton1.Size = new System.Drawing.Size(68, 20);
             this.kryptonButton1.TabIndex = 12;
             this.kryptonButton1.Values.Text = "kryptonButton1";
             this.kryptonButton1.Click += new System.EventHandler(this.KryptonButton1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 321);
+            this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.kryptonLabel3);
             this.Controls.Add(this.kryptonLabel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.kryptonLabel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

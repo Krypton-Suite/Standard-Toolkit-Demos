@@ -70,9 +70,9 @@ namespace KryptonRadioButtonExamples
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.propertyGrid);
             this.groupBox4.Location = new System.Drawing.Point(234, 12);
             this.groupBox4.Name = "groupBox4";
@@ -83,9 +83,9 @@ namespace KryptonRadioButtonExamples
             // 
             // propertyGrid
             // 
-            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.propertyGrid.Location = new System.Drawing.Point(6, 19);
             this.propertyGrid.Name = "propertyGrid";
             this.propertyGrid.Size = new System.Drawing.Size(278, 447);
@@ -112,50 +112,57 @@ namespace KryptonRadioButtonExamples
             this.kryptonRadioButton7.CheckPosition = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonRadioButton7.Location = new System.Drawing.Point(23, 109);
             this.kryptonRadioButton7.Name = "kryptonRadioButton7";
+            this.kryptonRadioButton7.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonRadioButton7.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonRadioButton7.Size = new System.Drawing.Size(97, 35);
+            this.kryptonRadioButton7.Size = new System.Drawing.Size(88, 31);
             this.kryptonRadioButton7.TabIndex = 3;
             this.kryptonRadioButton7.Values.Text = "Above Option 6";
             this.kryptonRadioButton7.Enter += new System.EventHandler(this.RadioButtonEnter);
             // 
             // kryptonRadioButton8
             // 
+            this.kryptonRadioButton8.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton8.Location = new System.Drawing.Point(133, 31);
             this.kryptonRadioButton8.Name = "kryptonRadioButton8";
             this.kryptonRadioButton8.Orientation = Krypton.Toolkit.VisualOrientation.Right;
             this.kryptonRadioButton8.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonRadioButton8.Size = new System.Drawing.Size(22, 118);
+            this.kryptonRadioButton8.Size = new System.Drawing.Size(18, 109);
             this.kryptonRadioButton8.TabIndex = 4;
             this.kryptonRadioButton8.Values.Text = "Rotated Option 4";
             this.kryptonRadioButton8.Enter += new System.EventHandler(this.RadioButtonEnter);
             // 
             // kryptonRadioButton9
             // 
+            this.kryptonRadioButton9.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton9.Location = new System.Drawing.Point(158, 24);
             this.kryptonRadioButton9.Name = "kryptonRadioButton9";
             this.kryptonRadioButton9.Orientation = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton9.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonRadioButton9.Size = new System.Drawing.Size(22, 118);
+            this.kryptonRadioButton9.Size = new System.Drawing.Size(18, 109);
             this.kryptonRadioButton9.TabIndex = 5;
             this.kryptonRadioButton9.Values.Text = "Rotated Option 5";
             this.kryptonRadioButton9.Enter += new System.EventHandler(this.RadioButtonEnter);
             // 
             // kryptonRadioButton10
             // 
+            this.kryptonRadioButton10.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton10.Location = new System.Drawing.Point(22, 78);
             this.kryptonRadioButton10.Name = "kryptonRadioButton10";
+            this.kryptonRadioButton10.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonRadioButton10.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonRadioButton10.Size = new System.Drawing.Size(72, 22);
+            this.kryptonRadioButton10.Size = new System.Drawing.Size(66, 18);
             this.kryptonRadioButton10.TabIndex = 2;
             this.kryptonRadioButton10.Values.Text = "Option 3";
             this.kryptonRadioButton10.Enter += new System.EventHandler(this.RadioButtonEnter);
             // 
             // kryptonRadioButton11
             // 
+            this.kryptonRadioButton11.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton11.Location = new System.Drawing.Point(22, 53);
             this.kryptonRadioButton11.Name = "kryptonRadioButton11";
+            this.kryptonRadioButton11.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonRadioButton11.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonRadioButton11.Size = new System.Drawing.Size(72, 22);
+            this.kryptonRadioButton11.Size = new System.Drawing.Size(66, 18);
             this.kryptonRadioButton11.TabIndex = 1;
             this.kryptonRadioButton11.Values.Text = "Option 2";
             this.kryptonRadioButton11.Enter += new System.EventHandler(this.RadioButtonEnter);
@@ -163,10 +170,12 @@ namespace KryptonRadioButtonExamples
             // kryptonRadioButton12
             // 
             this.kryptonRadioButton12.Checked = true;
+            this.kryptonRadioButton12.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton12.Location = new System.Drawing.Point(22, 28);
             this.kryptonRadioButton12.Name = "kryptonRadioButton12";
+            this.kryptonRadioButton12.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonRadioButton12.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonRadioButton12.Size = new System.Drawing.Size(72, 22);
+            this.kryptonRadioButton12.Size = new System.Drawing.Size(66, 18);
             this.kryptonRadioButton12.TabIndex = 0;
             this.kryptonRadioButton12.Values.Text = "Option 1";
             this.kryptonRadioButton12.Enter += new System.EventHandler(this.RadioButtonEnter);
@@ -191,50 +200,57 @@ namespace KryptonRadioButtonExamples
             this.kryptonRadioButton6.CheckPosition = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonRadioButton6.Location = new System.Drawing.Point(23, 109);
             this.kryptonRadioButton6.Name = "kryptonRadioButton6";
+            this.kryptonRadioButton6.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonRadioButton6.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonRadioButton6.Size = new System.Drawing.Size(92, 31);
+            this.kryptonRadioButton6.Size = new System.Drawing.Size(97, 32);
             this.kryptonRadioButton6.TabIndex = 3;
             this.kryptonRadioButton6.Values.Text = "Above Option 6";
             this.kryptonRadioButton6.Enter += new System.EventHandler(this.RadioButtonEnter);
             // 
             // kryptonRadioButton5
             // 
+            this.kryptonRadioButton5.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton5.Location = new System.Drawing.Point(133, 31);
             this.kryptonRadioButton5.Name = "kryptonRadioButton5";
             this.kryptonRadioButton5.Orientation = Krypton.Toolkit.VisualOrientation.Right;
             this.kryptonRadioButton5.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonRadioButton5.Size = new System.Drawing.Size(19, 112);
+            this.kryptonRadioButton5.Size = new System.Drawing.Size(20, 117);
             this.kryptonRadioButton5.TabIndex = 4;
             this.kryptonRadioButton5.Values.Text = "Rotated Option 4";
             this.kryptonRadioButton5.Enter += new System.EventHandler(this.RadioButtonEnter);
             // 
             // kryptonRadioButton4
             // 
+            this.kryptonRadioButton4.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton4.Location = new System.Drawing.Point(158, 24);
             this.kryptonRadioButton4.Name = "kryptonRadioButton4";
             this.kryptonRadioButton4.Orientation = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton4.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonRadioButton4.Size = new System.Drawing.Size(19, 112);
+            this.kryptonRadioButton4.Size = new System.Drawing.Size(20, 117);
             this.kryptonRadioButton4.TabIndex = 5;
             this.kryptonRadioButton4.Values.Text = "Rotated Option 5";
             this.kryptonRadioButton4.Enter += new System.EventHandler(this.RadioButtonEnter);
             // 
             // kryptonRadioButton3
             // 
+            this.kryptonRadioButton3.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton3.Location = new System.Drawing.Point(22, 78);
             this.kryptonRadioButton3.Name = "kryptonRadioButton3";
+            this.kryptonRadioButton3.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonRadioButton3.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonRadioButton3.Size = new System.Drawing.Size(68, 19);
+            this.kryptonRadioButton3.Size = new System.Drawing.Size(71, 20);
             this.kryptonRadioButton3.TabIndex = 2;
             this.kryptonRadioButton3.Values.Text = "Option 3";
             this.kryptonRadioButton3.Enter += new System.EventHandler(this.RadioButtonEnter);
             // 
             // kryptonRadioButton2
             // 
+            this.kryptonRadioButton2.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton2.Location = new System.Drawing.Point(22, 53);
             this.kryptonRadioButton2.Name = "kryptonRadioButton2";
+            this.kryptonRadioButton2.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonRadioButton2.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonRadioButton2.Size = new System.Drawing.Size(68, 19);
+            this.kryptonRadioButton2.Size = new System.Drawing.Size(71, 20);
             this.kryptonRadioButton2.TabIndex = 1;
             this.kryptonRadioButton2.Values.Text = "Option 2";
             this.kryptonRadioButton2.Enter += new System.EventHandler(this.RadioButtonEnter);
@@ -242,10 +258,12 @@ namespace KryptonRadioButtonExamples
             // kryptonRadioButton1
             // 
             this.kryptonRadioButton1.Checked = true;
+            this.kryptonRadioButton1.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton1.Location = new System.Drawing.Point(22, 28);
             this.kryptonRadioButton1.Name = "kryptonRadioButton1";
+            this.kryptonRadioButton1.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonRadioButton1.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonRadioButton1.Size = new System.Drawing.Size(68, 19);
+            this.kryptonRadioButton1.Size = new System.Drawing.Size(71, 20);
             this.kryptonRadioButton1.TabIndex = 0;
             this.kryptonRadioButton1.Values.Text = "Option 1";
             this.kryptonRadioButton1.Enter += new System.EventHandler(this.RadioButtonEnter);
@@ -264,6 +282,7 @@ namespace KryptonRadioButtonExamples
             // 
             // kryptonRadioButton13
             // 
+            this.kryptonRadioButton13.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton13.Images.CheckedNormal = ((System.Drawing.Image)(resources.GetObject("kryptonRadioButton13.Images.CheckedNormal")));
             this.kryptonRadioButton13.Images.CheckedPressed = ((System.Drawing.Image)(resources.GetObject("kryptonRadioButton13.Images.CheckedPressed")));
             this.kryptonRadioButton13.Images.CheckedTracking = ((System.Drawing.Image)(resources.GetObject("kryptonRadioButton13.Images.CheckedTracking")));
@@ -273,6 +292,7 @@ namespace KryptonRadioButtonExamples
             this.kryptonRadioButton13.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.kryptonRadioButton13.Location = new System.Drawing.Point(23, 106);
             this.kryptonRadioButton13.Name = "kryptonRadioButton13";
+            this.kryptonRadioButton13.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonRadioButton13.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Black;
             this.kryptonRadioButton13.Size = new System.Drawing.Size(127, 29);
             this.kryptonRadioButton13.TabIndex = 2;
@@ -281,6 +301,7 @@ namespace KryptonRadioButtonExamples
             // 
             // kryptonRadioButton14
             // 
+            this.kryptonRadioButton14.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton14.Images.CheckedNormal = ((System.Drawing.Image)(resources.GetObject("kryptonRadioButton14.Images.CheckedNormal")));
             this.kryptonRadioButton14.Images.CheckedPressed = ((System.Drawing.Image)(resources.GetObject("kryptonRadioButton14.Images.CheckedPressed")));
             this.kryptonRadioButton14.Images.CheckedTracking = ((System.Drawing.Image)(resources.GetObject("kryptonRadioButton14.Images.CheckedTracking")));
@@ -290,6 +311,7 @@ namespace KryptonRadioButtonExamples
             this.kryptonRadioButton14.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.kryptonRadioButton14.Location = new System.Drawing.Point(23, 67);
             this.kryptonRadioButton14.Name = "kryptonRadioButton14";
+            this.kryptonRadioButton14.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonRadioButton14.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Black;
             this.kryptonRadioButton14.Size = new System.Drawing.Size(115, 29);
             this.kryptonRadioButton14.TabIndex = 1;
@@ -299,6 +321,7 @@ namespace KryptonRadioButtonExamples
             // kryptonRadioButton15
             // 
             this.kryptonRadioButton15.Checked = true;
+            this.kryptonRadioButton15.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton15.Images.CheckedNormal = ((System.Drawing.Image)(resources.GetObject("kryptonRadioButton15.Images.CheckedNormal")));
             this.kryptonRadioButton15.Images.CheckedPressed = ((System.Drawing.Image)(resources.GetObject("kryptonRadioButton15.Images.CheckedPressed")));
             this.kryptonRadioButton15.Images.CheckedTracking = ((System.Drawing.Image)(resources.GetObject("kryptonRadioButton15.Images.CheckedTracking")));
@@ -308,6 +331,7 @@ namespace KryptonRadioButtonExamples
             this.kryptonRadioButton15.LabelStyle = Krypton.Toolkit.LabelStyle.TitleControl;
             this.kryptonRadioButton15.Location = new System.Drawing.Point(23, 28);
             this.kryptonRadioButton15.Name = "kryptonRadioButton15";
+            this.kryptonRadioButton15.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonRadioButton15.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Black;
             this.kryptonRadioButton15.Size = new System.Drawing.Size(113, 29);
             this.kryptonRadioButton15.TabIndex = 0;
