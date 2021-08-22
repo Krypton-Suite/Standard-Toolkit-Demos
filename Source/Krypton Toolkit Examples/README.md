@@ -38,6 +38,7 @@ There are 2 set of solutions in these projects:
 ## [KryptonGroupBox Examples](KryptonGroupBox%20Examples/example.png)
 ## [KryptonHeader Examples](KryptonHeader%20Examples/example.png)
 ## [KryptonHeaderGroup Examples](KryptonHeaderGroup%20Examples/example.png)
+## [Krypton Help Icon Examples](KryptonHelpIcon%20Examples/KryptonHelpIcon.gif)
 ## [KryptonInputBox Examples](KryptonInputBox%20Examples/example.png)
 ## [KryptonLabel Examples](KryptonInputBox%20Examples/example.png)
 ## [KryptonLinkLabel Examples](KryptonLinkLabel%20Examples/example.png)
