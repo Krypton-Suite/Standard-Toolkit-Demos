@@ -15,7 +15,7 @@ using System.Runtime.CompilerServices;
 
 [assembly: AssemblyVersion("6.0.2108.0")]
 [assembly: AssemblyFileVersion("6.0.2108.0")]
-[assembly: AssemblyInformationalVersion("6.0.2108.0")]
+[assembly: AssemblyInformationalVersion("6.0.2111.0")]
 [assembly: AssemblyProduct("Krypton Explorer")]
 [assembly: Dependency("System", LoadHint.Always)]
 [assembly: Dependency("System.Drawing", LoadHint.Always)]

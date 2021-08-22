@@ -29,6 +29,7 @@ namespace KryptonHelpIconExamples
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
             this.SuspendLayout();
             // 
@@ -44,6 +45,7 @@ namespace KryptonHelpIconExamples
             this.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecAny1});
             this.ClientSize = new System.Drawing.Size(686, 390);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
