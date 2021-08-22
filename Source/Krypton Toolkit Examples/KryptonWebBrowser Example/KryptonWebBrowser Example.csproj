@@ -10,7 +10,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Content Include="..\..\Krypton Explorer\Krypton.ico" Link="Krypton.ico" />
         <Content Include="Krypton.ico" />
     </ItemGroup>
 

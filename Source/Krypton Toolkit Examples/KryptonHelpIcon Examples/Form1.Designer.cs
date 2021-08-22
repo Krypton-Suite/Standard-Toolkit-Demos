@@ -1,5 +1,5 @@
 ﻿
-namespace KryptonHelpIcon_Examples
+namespace KryptonHelpIconExamples
 {
     partial class Form1
     {
@@ -29,13 +29,21 @@ namespace KryptonHelpIcon_Examples
         /// </summary>
         private void InitializeComponent()
         {
+            this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
             this.SuspendLayout();
+            // 
+            // buttonSpecAny1
+            // 
+            this.buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.FormHelp;
+            this.buttonSpecAny1.UniqueName = "eca54f2bd9884c1ab2f772b438fa4e8b";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
+            this.buttonSpecAny1});
+            this.ClientSize = new System.Drawing.Size(686, 390);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -44,6 +52,8 @@ namespace KryptonHelpIcon_Examples
         }
 
         #endregion
+
+        private Krypton.Toolkit.ButtonSpecAny buttonSpecAny1;
     }
 }
 
