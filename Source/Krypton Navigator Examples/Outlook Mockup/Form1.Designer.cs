@@ -258,7 +258,7 @@ namespace OutlookMockup
             // 
             // newToolStripMenuItem
             // 
-            this.newToolStripMenuItem.Image = ((System.Drawing.Bitmap)(resources.GetObject("newToolStripMenuItem.Image")));
+            this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
@@ -267,7 +267,7 @@ namespace OutlookMockup
             // 
             // openToolStripMenuItem
             // 
-            this.openToolStripMenuItem.Image = ((System.Drawing.Bitmap)(resources.GetObject("openToolStripMenuItem.Image")));
+            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
@@ -281,7 +281,7 @@ namespace OutlookMockup
             // 
             // saveToolStripMenuItem
             // 
-            this.saveToolStripMenuItem.Image = ((System.Drawing.Bitmap)(resources.GetObject("saveToolStripMenuItem.Image")));
+            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
@@ -301,7 +301,7 @@ namespace OutlookMockup
             // 
             // printToolStripMenuItem
             // 
-            this.printToolStripMenuItem.Image = ((System.Drawing.Bitmap)(resources.GetObject("printToolStripMenuItem.Image")));
+            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
@@ -310,7 +310,7 @@ namespace OutlookMockup
             // 
             // printPreviewToolStripMenuItem
             // 
-            this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Bitmap)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
+            this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
             this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
@@ -363,7 +363,7 @@ namespace OutlookMockup
             // 
             // cutToolStripMenuItem
             // 
-            this.cutToolStripMenuItem.Image = ((System.Drawing.Bitmap)(resources.GetObject("cutToolStripMenuItem.Image")));
+            this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
             this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
@@ -372,7 +372,7 @@ namespace OutlookMockup
             // 
             // copyToolStripMenuItem
             // 
-            this.copyToolStripMenuItem.Image = ((System.Drawing.Bitmap)(resources.GetObject("copyToolStripMenuItem.Image")));
+            this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
             this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
@@ -381,7 +381,7 @@ namespace OutlookMockup
             // 
             // pasteToolStripMenuItem
             // 
-            this.pasteToolStripMenuItem.Image = ((System.Drawing.Bitmap)(resources.GetObject("pasteToolStripMenuItem.Image")));
+            this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
             this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
@@ -405,7 +405,7 @@ namespace OutlookMockup
             this.customizeToolStripMenuItem,
             this.optionsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.toolsToolStripMenuItem.Text = "&Tools";
             // 
             // customizeToolStripMenuItem
@@ -485,7 +485,7 @@ namespace OutlookMockup
             // newToolStripButton
             // 
             this.newToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.newToolStripButton.Image = ((System.Drawing.Bitmap)(resources.GetObject("newToolStripButton.Image")));
+            this.newToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripButton.Image")));
             this.newToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripButton.Name = "newToolStripButton";
             this.newToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -494,7 +494,7 @@ namespace OutlookMockup
             // openToolStripButton
             // 
             this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.openToolStripButton.Image = ((System.Drawing.Bitmap)(resources.GetObject("openToolStripButton.Image")));
+            this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
             this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripButton.Name = "openToolStripButton";
             this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -503,7 +503,7 @@ namespace OutlookMockup
             // saveToolStripButton
             // 
             this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.saveToolStripButton.Image = ((System.Drawing.Bitmap)(resources.GetObject("saveToolStripButton.Image")));
+            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
             this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripButton.Name = "saveToolStripButton";
             this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -512,7 +512,7 @@ namespace OutlookMockup
             // printToolStripButton
             // 
             this.printToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.printToolStripButton.Image = ((System.Drawing.Bitmap)(resources.GetObject("printToolStripButton.Image")));
+            this.printToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripButton.Image")));
             this.printToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripButton.Name = "printToolStripButton";
             this.printToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -526,7 +526,7 @@ namespace OutlookMockup
             // cutToolStripButton
             // 
             this.cutToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cutToolStripButton.Image = ((System.Drawing.Bitmap)(resources.GetObject("cutToolStripButton.Image")));
+            this.cutToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripButton.Image")));
             this.cutToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripButton.Name = "cutToolStripButton";
             this.cutToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -535,7 +535,7 @@ namespace OutlookMockup
             // copyToolStripButton
             // 
             this.copyToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.copyToolStripButton.Image = ((System.Drawing.Bitmap)(resources.GetObject("copyToolStripButton.Image")));
+            this.copyToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripButton.Image")));
             this.copyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripButton.Name = "copyToolStripButton";
             this.copyToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -544,7 +544,7 @@ namespace OutlookMockup
             // pasteToolStripButton
             // 
             this.pasteToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.pasteToolStripButton.Image = ((System.Drawing.Bitmap)(resources.GetObject("pasteToolStripButton.Image")));
+            this.pasteToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripButton.Image")));
             this.pasteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripButton.Name = "pasteToolStripButton";
             this.pasteToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -558,7 +558,7 @@ namespace OutlookMockup
             // helpToolStripButton
             // 
             this.helpToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.helpToolStripButton.Image = ((System.Drawing.Bitmap)(resources.GetObject("helpToolStripButton.Image")));
+            this.helpToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripButton.Image")));
             this.helpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.helpToolStripButton.Name = "helpToolStripButton";
             this.helpToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -599,36 +599,66 @@ namespace OutlookMockup
             this.kryptonSplitContainerMain.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.kryptonSplitContainerMain.Location = new System.Drawing.Point(4, 4);
             this.kryptonSplitContainerMain.Name = "kryptonSplitContainerMain";
+            this.kryptonSplitContainerMain.Orientation = System.Windows.Forms.Orientation.Vertical;
             // 
             // kryptonSplitContainerMain.Panel1
             // 
             this.kryptonSplitContainerMain.Panel1.Controls.Add(this.kryptonNavigatorMain);
+            this.kryptonSplitContainerMain.Panel1MinSize = 25;
             // 
             // kryptonSplitContainerMain.Panel2
             // 
             this.kryptonSplitContainerMain.Panel2.Controls.Add(this.kryptonSplitContainerDetails);
+            this.kryptonSplitContainerMain.Panel2MinSize = 25;
             this.kryptonSplitContainerMain.Size = new System.Drawing.Size(704, 442);
             this.kryptonSplitContainerMain.SplitterDistance = 183;
+            this.kryptonSplitContainerMain.SplitterIncrement = 1;
+            this.kryptonSplitContainerMain.SplitterWidth = 5;
             this.kryptonSplitContainerMain.TabIndex = 0;
             // 
             // kryptonNavigatorMain
             // 
+            this.kryptonNavigatorMain.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonNavigatorMain.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
             this.kryptonNavigatorMain.Button.ButtonSpecs.AddRange(new Krypton.Navigator.ButtonSpecNavigator[] {
             this.buttonSpecExpandCollapse});
+            this.kryptonNavigatorMain.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
             this.kryptonNavigatorMain.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
+            this.kryptonNavigatorMain.Button.ContextButtonAction = Krypton.Navigator.ContextButtonAction.SelectPage;
+            this.kryptonNavigatorMain.Button.ContextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonNavigatorMain.Button.ContextMenuMapImage = Krypton.Navigator.MapKryptonPageImage.Small;
+            this.kryptonNavigatorMain.Button.ContextMenuMapText = Krypton.Navigator.MapKryptonPageText.TextTitle;
+            this.kryptonNavigatorMain.Button.NextButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.kryptonNavigatorMain.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonNavigatorMain.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.kryptonNavigatorMain.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
             this.kryptonNavigatorMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonNavigatorMain.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
+            this.kryptonNavigatorMain.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
+            this.kryptonNavigatorMain.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonNavigatorMain.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonNavigatorMain.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
+            this.kryptonNavigatorMain.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
+            this.kryptonNavigatorMain.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
+            this.kryptonNavigatorMain.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
+            this.kryptonNavigatorMain.Header.HeaderValuesPrimary.MapDescription = Krypton.Navigator.MapKryptonPageText.None;
+            this.kryptonNavigatorMain.Header.HeaderValuesPrimary.MapHeading = Krypton.Navigator.MapKryptonPageText.TitleText;
             this.kryptonNavigatorMain.Header.HeaderValuesPrimary.MapImage = Krypton.Navigator.MapKryptonPageImage.None;
             this.kryptonNavigatorMain.Location = new System.Drawing.Point(0, 0);
             this.kryptonNavigatorMain.Name = "kryptonNavigatorMain";
             this.kryptonNavigatorMain.NavigatorMode = Krypton.Navigator.NavigatorMode.OutlookFull;
+            this.kryptonNavigatorMain.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.kryptonNavigatorMain.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPageMail,
             this.kryptonPageCalendar,
             this.kryptonPageNotes});
+            this.kryptonNavigatorMain.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonNavigatorMain.SelectedIndex = 0;
             this.kryptonNavigatorMain.Size = new System.Drawing.Size(183, 442);
             this.kryptonNavigatorMain.StateCommon.CheckButton.Content.AdjacentGap = 5;
+            this.kryptonNavigatorMain.StateCommon.CheckButton.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonNavigatorMain.StateCommon.CheckButton.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonNavigatorMain.StateCommon.CheckButton.Content.Padding = new System.Windows.Forms.Padding(-1);
             this.kryptonNavigatorMain.TabIndex = 0;
             this.kryptonNavigatorMain.Text = "kryptonNavigator1";
             this.kryptonNavigatorMain.SelectedPageChanged += new System.EventHandler(this.kryptonNavigatorMain_SelectedPageChanged);
@@ -725,12 +755,20 @@ namespace OutlookMockup
             // 
             // kryptonHeaderFolders
             // 
+            this.kryptonHeaderFolders.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonHeaderFolders.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonHeaderFolders.HeaderStyle = Krypton.Toolkit.HeaderStyle.Secondary;
             this.kryptonHeaderFolders.Location = new System.Drawing.Point(0, 62);
             this.kryptonHeaderFolders.Name = "kryptonHeaderFolders";
+            this.kryptonHeaderFolders.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonHeaderFolders.Size = new System.Drawing.Size(181, 20);
+            this.kryptonHeaderFolders.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonHeaderFolders.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonHeaderFolders.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonHeaderFolders.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)));
+            this.kryptonHeaderFolders.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonHeaderFolders.StateCommon.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonHeaderFolders.StateCommon.ButtonPadding = new System.Windows.Forms.Padding(-1);
             this.kryptonHeaderFolders.TabIndex = 2;
             this.kryptonHeaderFolders.Values.Description = "";
             this.kryptonHeaderFolders.Values.Heading = "Mail Folders";
@@ -770,12 +808,20 @@ namespace OutlookMockup
             // 
             // kryptonHeaderFavorites
             // 
+            this.kryptonHeaderFavorites.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonHeaderFavorites.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonHeaderFavorites.HeaderStyle = Krypton.Toolkit.HeaderStyle.Secondary;
             this.kryptonHeaderFavorites.Location = new System.Drawing.Point(0, 0);
             this.kryptonHeaderFavorites.Name = "kryptonHeaderFavorites";
+            this.kryptonHeaderFavorites.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonHeaderFavorites.Size = new System.Drawing.Size(181, 19);
+            this.kryptonHeaderFavorites.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonHeaderFavorites.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonHeaderFavorites.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonHeaderFavorites.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
+            this.kryptonHeaderFavorites.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonHeaderFavorites.StateCommon.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonHeaderFavorites.StateCommon.ButtonPadding = new System.Windows.Forms.Padding(-1);
             this.kryptonHeaderFavorites.TabIndex = 1;
             this.kryptonHeaderFavorites.Values.Description = "";
             this.kryptonHeaderFavorites.Values.Heading = "Favorite Folders";
@@ -829,8 +875,10 @@ namespace OutlookMockup
             // 
             // radioFriends
             // 
+            this.radioFriends.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioFriends.Location = new System.Drawing.Point(23, 73);
             this.radioFriends.Name = "radioFriends";
+            this.radioFriends.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioFriends.Size = new System.Drawing.Size(61, 18);
             this.radioFriends.TabIndex = 8;
             this.radioFriends.Values.Text = "Friends";
@@ -838,8 +886,10 @@ namespace OutlookMockup
             // 
             // radioFamily
             // 
+            this.radioFamily.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioFamily.Location = new System.Drawing.Point(23, 48);
             this.radioFamily.Name = "radioFamily";
+            this.radioFamily.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioFamily.Size = new System.Drawing.Size(57, 18);
             this.radioFamily.TabIndex = 7;
             this.radioFamily.Values.Text = "Family";
@@ -848,8 +898,10 @@ namespace OutlookMockup
             // radioProject
             // 
             this.radioProject.Checked = true;
+            this.radioProject.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioProject.Location = new System.Drawing.Point(23, 23);
             this.radioProject.Name = "radioProject";
+            this.radioProject.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioProject.Size = new System.Drawing.Size(58, 18);
             this.radioProject.TabIndex = 6;
             this.radioProject.Values.Text = "Project";
@@ -859,6 +911,7 @@ namespace OutlookMockup
             // 
             this.kryptonSplitContainerDetails.Cursor = System.Windows.Forms.Cursors.Default;
             this.kryptonSplitContainerDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonSplitContainerDetails.FixedPanel = System.Windows.Forms.FixedPanel.None;
             this.kryptonSplitContainerDetails.Location = new System.Drawing.Point(0, 0);
             this.kryptonSplitContainerDetails.Name = "kryptonSplitContainerDetails";
             this.kryptonSplitContainerDetails.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -866,30 +919,62 @@ namespace OutlookMockup
             // kryptonSplitContainerDetails.Panel1
             // 
             this.kryptonSplitContainerDetails.Panel1.Controls.Add(this.kryptonNavigatorDetails);
+            this.kryptonSplitContainerDetails.Panel1MinSize = 25;
             // 
             // kryptonSplitContainerDetails.Panel2
             // 
             this.kryptonSplitContainerDetails.Panel2.Controls.Add(this.kryptonButtonGroup);
+            this.kryptonSplitContainerDetails.Panel2MinSize = 25;
             this.kryptonSplitContainerDetails.Size = new System.Drawing.Size(516, 442);
             this.kryptonSplitContainerDetails.SplitterDistance = 233;
+            this.kryptonSplitContainerDetails.SplitterIncrement = 1;
+            this.kryptonSplitContainerDetails.SplitterWidth = 5;
             this.kryptonSplitContainerDetails.TabIndex = 0;
             // 
             // kryptonNavigatorDetails
             // 
+            this.kryptonNavigatorDetails.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonNavigatorDetails.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
+            this.kryptonNavigatorDetails.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
             this.kryptonNavigatorDetails.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
+            this.kryptonNavigatorDetails.Button.ContextButtonAction = Krypton.Navigator.ContextButtonAction.SelectPage;
+            this.kryptonNavigatorDetails.Button.ContextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonNavigatorDetails.Button.ContextMenuMapImage = Krypton.Navigator.MapKryptonPageImage.Small;
+            this.kryptonNavigatorDetails.Button.ContextMenuMapText = Krypton.Navigator.MapKryptonPageText.TextTitle;
+            this.kryptonNavigatorDetails.Button.NextButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.kryptonNavigatorDetails.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonNavigatorDetails.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.kryptonNavigatorDetails.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
             this.kryptonNavigatorDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonNavigatorDetails.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
+            this.kryptonNavigatorDetails.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
+            this.kryptonNavigatorDetails.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonNavigatorDetails.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonNavigatorDetails.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
+            this.kryptonNavigatorDetails.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
+            this.kryptonNavigatorDetails.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
+            this.kryptonNavigatorDetails.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
             this.kryptonNavigatorDetails.Header.HeaderVisibleSecondary = false;
             this.kryptonNavigatorDetails.Location = new System.Drawing.Point(0, 0);
             this.kryptonNavigatorDetails.Name = "kryptonNavigatorDetails";
             this.kryptonNavigatorDetails.NavigatorMode = Krypton.Navigator.NavigatorMode.HeaderGroup;
+            this.kryptonNavigatorDetails.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.kryptonNavigatorDetails.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPageMailDetails,
             this.kryptonPageCalendarDetails,
             this.kryptonPageNotesDetails});
+            this.kryptonNavigatorDetails.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonNavigatorDetails.SelectedIndex = 0;
             this.kryptonNavigatorDetails.Size = new System.Drawing.Size(516, 233);
+            this.kryptonNavigatorDetails.StateCommon.HeaderGroup.HeaderPrimary.ButtonPadding = new System.Windows.Forms.Padding(-1);
+            this.kryptonNavigatorDetails.StateCommon.HeaderGroup.HeaderPrimary.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonNavigatorDetails.StateCommon.HeaderGroup.HeaderPrimary.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonNavigatorDetails.StateCommon.HeaderGroup.HeaderPrimary.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.kryptonNavigatorDetails.StateCommon.HeaderGroup.HeaderPrimary.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.kryptonNavigatorDetails.StateCommon.HeaderGroup.HeaderPrimary.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.kryptonNavigatorDetails.StateCommon.HeaderGroup.HeaderPrimary.Content.Padding = new System.Windows.Forms.Padding(-1);
+            this.kryptonNavigatorDetails.StateCommon.HeaderGroup.HeaderPrimary.HeaderPadding = new System.Windows.Forms.Padding(-1);
+            this.kryptonNavigatorDetails.StateCommon.HeaderGroup.OverlayHeaders = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonNavigatorDetails.TabIndex = 0;
             this.kryptonNavigatorDetails.Text = "kryptonNavigator1";
             // 
@@ -932,7 +1017,12 @@ namespace OutlookMockup
             this.kryptonDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.kryptonDataGridView1.Size = new System.Drawing.Size(514, 202);
             this.kryptonDataGridView1.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
+            this.kryptonDataGridView1.StateCommon.DataCell.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonDataGridView1.StateCommon.DataCell.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonDataGridView1.StateCommon.DataCell.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonDataGridView1.StateCommon.DataCell.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
+            this.kryptonDataGridView1.StateCommon.DataCell.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonDataGridView1.StateCommon.DataCell.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonDataGridView1.TabIndex = 0;
             // 
             // dgName
@@ -1040,6 +1130,7 @@ namespace OutlookMockup
             // 
             // kryptonButtonGroup
             // 
+            this.kryptonButtonGroup.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonButtonGroup.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonButtonGroup.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonButtonGroup.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlAlternate;
@@ -1055,6 +1146,7 @@ namespace OutlookMockup
             // 
             // kryptonGroupInner
             // 
+            this.kryptonGroupInner.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonGroupInner.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonGroupInner.Location = new System.Drawing.Point(5, 5);
             this.kryptonGroupInner.Name = "kryptonGroupInner";
@@ -1075,8 +1167,10 @@ namespace OutlookMockup
             // 
             // radioOffice2010Black
             // 
+            this.radioOffice2010Black.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioOffice2010Black.Location = new System.Drawing.Point(17, 68);
             this.radioOffice2010Black.Name = "radioOffice2010Black";
+            this.radioOffice2010Black.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioOffice2010Black.Size = new System.Drawing.Size(119, 18);
             this.radioOffice2010Black.TabIndex = 2;
             this.radioOffice2010Black.Values.Text = "Office 2010 - Black";
@@ -1084,8 +1178,10 @@ namespace OutlookMockup
             // 
             // radioOffice2010Silver
             // 
+            this.radioOffice2010Silver.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioOffice2010Silver.Location = new System.Drawing.Point(17, 45);
             this.radioOffice2010Silver.Name = "radioOffice2010Silver";
+            this.radioOffice2010Silver.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioOffice2010Silver.Size = new System.Drawing.Size(119, 18);
             this.radioOffice2010Silver.TabIndex = 1;
             this.radioOffice2010Silver.Values.Text = "Office 2010 - Silver";
@@ -1094,8 +1190,10 @@ namespace OutlookMockup
             // radioOffice2010Blue
             // 
             this.radioOffice2010Blue.Checked = true;
+            this.radioOffice2010Blue.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioOffice2010Blue.Location = new System.Drawing.Point(17, 20);
             this.radioOffice2010Blue.Name = "radioOffice2010Blue";
+            this.radioOffice2010Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioOffice2010Blue.Size = new System.Drawing.Size(114, 18);
             this.radioOffice2010Blue.TabIndex = 0;
             this.radioOffice2010Blue.Values.Text = "Office 2010 - Blue";
@@ -1103,8 +1201,10 @@ namespace OutlookMockup
             // 
             // radioSparkle
             // 
+            this.radioSparkle.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioSparkle.Location = new System.Drawing.Point(288, 44);
             this.radioSparkle.Name = "radioSparkle";
+            this.radioSparkle.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioSparkle.Size = new System.Drawing.Size(62, 18);
             this.radioSparkle.TabIndex = 7;
             this.radioSparkle.Values.Text = "Sparkle";
@@ -1112,8 +1212,10 @@ namespace OutlookMockup
             // 
             // radioSystem
             // 
+            this.radioSystem.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioSystem.Location = new System.Drawing.Point(288, 68);
             this.radioSystem.Name = "radioSystem";
+            this.radioSystem.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioSystem.Size = new System.Drawing.Size(61, 18);
             this.radioSystem.TabIndex = 8;
             this.radioSystem.Values.Text = "System";
@@ -1121,8 +1223,10 @@ namespace OutlookMockup
             // 
             // radioOffice2003
             // 
+            this.radioOffice2003.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioOffice2003.Location = new System.Drawing.Point(288, 20);
             this.radioOffice2003.Name = "radioOffice2003";
+            this.radioOffice2003.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioOffice2003.Size = new System.Drawing.Size(81, 18);
             this.radioOffice2003.TabIndex = 6;
             this.radioOffice2003.Values.Text = "Office 2003";
@@ -1130,8 +1234,10 @@ namespace OutlookMockup
             // 
             // radioOffice2007Black
             // 
+            this.radioOffice2007Black.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioOffice2007Black.Location = new System.Drawing.Point(153, 68);
             this.radioOffice2007Black.Name = "radioOffice2007Black";
+            this.radioOffice2007Black.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioOffice2007Black.Size = new System.Drawing.Size(119, 18);
             this.radioOffice2007Black.TabIndex = 5;
             this.radioOffice2007Black.Values.Text = "Office 2007 - Black";
@@ -1139,8 +1245,10 @@ namespace OutlookMockup
             // 
             // radioOffice2007Silver
             // 
+            this.radioOffice2007Silver.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioOffice2007Silver.Location = new System.Drawing.Point(153, 45);
             this.radioOffice2007Silver.Name = "radioOffice2007Silver";
+            this.radioOffice2007Silver.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioOffice2007Silver.Size = new System.Drawing.Size(119, 18);
             this.radioOffice2007Silver.TabIndex = 4;
             this.radioOffice2007Silver.Values.Text = "Office 2007 - Silver";
@@ -1148,8 +1256,10 @@ namespace OutlookMockup
             // 
             // radioOffice2007Blue
             // 
+            this.radioOffice2007Blue.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioOffice2007Blue.Location = new System.Drawing.Point(153, 20);
             this.radioOffice2007Blue.Name = "radioOffice2007Blue";
+            this.radioOffice2007Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioOffice2007Blue.Size = new System.Drawing.Size(114, 18);
             this.radioOffice2007Blue.TabIndex = 3;
             this.radioOffice2007Blue.Values.Text = "Office 2007 - Blue";

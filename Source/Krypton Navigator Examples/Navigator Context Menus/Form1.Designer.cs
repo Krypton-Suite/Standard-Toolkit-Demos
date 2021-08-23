@@ -98,15 +98,36 @@ namespace NavigatorContextMenus
             // 
             // kryptonNavigator1
             // 
+            this.kryptonNavigator1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonNavigator1.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
+            this.kryptonNavigator1.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
             this.kryptonNavigator1.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
+            this.kryptonNavigator1.Button.ContextButtonAction = Krypton.Navigator.ContextButtonAction.SelectPage;
+            this.kryptonNavigator1.Button.ContextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonNavigator1.Button.ContextMenuMapImage = Krypton.Navigator.MapKryptonPageImage.Small;
+            this.kryptonNavigator1.Button.ContextMenuMapText = Krypton.Navigator.MapKryptonPageText.TextTitle;
+            this.kryptonNavigator1.Button.NextButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.kryptonNavigator1.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonNavigator1.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.kryptonNavigator1.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonNavigator1.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
+            this.kryptonNavigator1.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
+            this.kryptonNavigator1.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonNavigator1.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonNavigator1.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
+            this.kryptonNavigator1.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
+            this.kryptonNavigator1.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
+            this.kryptonNavigator1.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
             this.kryptonNavigator1.Location = new System.Drawing.Point(12, 12);
             this.kryptonNavigator1.Name = "kryptonNavigator1";
+            this.kryptonNavigator1.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
+            this.kryptonNavigator1.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.kryptonNavigator1.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.page1,
             this.page2,
             this.page3,
             this.page4});
+            this.kryptonNavigator1.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonNavigator1.SelectedIndex = 3;
             this.kryptonNavigator1.Size = new System.Drawing.Size(302, 146);
             this.kryptonNavigator1.TabIndex = 0;
@@ -132,7 +153,7 @@ namespace NavigatorContextMenus
             // 
             this.kryptonLabel1.Location = new System.Drawing.Point(16, 16);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(168, 20);
+            this.kryptonLabel1.Size = new System.Drawing.Size(155, 18);
             this.kryptonLabel1.TabIndex = 0;
             this.kryptonLabel1.Values.Text = "Right-click me or the header.";
             // 
@@ -156,17 +177,23 @@ namespace NavigatorContextMenus
             // 
             // kcmDollar1
             // 
-            this.kcmDollar1.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmDollar1.Image")));
+            this.kcmDollar1.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmDollar1.Image = ((System.Drawing.Image)(resources.GetObject("kcmDollar1.Image")));
+            this.kcmDollar1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmDollar1.Text = "Dollar 1";
             // 
             // kcmDollar2
             // 
-            this.kcmDollar2.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmDollar2.Image")));
+            this.kcmDollar2.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmDollar2.Image = ((System.Drawing.Image)(resources.GetObject("kcmDollar2.Image")));
+            this.kcmDollar2.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmDollar2.Text = "Dollar 2";
             // 
             // kcmDollar3
             // 
-            this.kcmDollar3.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmDollar3.Image")));
+            this.kcmDollar3.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmDollar3.Image = ((System.Drawing.Image)(resources.GetObject("kcmDollar3.Image")));
+            this.kcmDollar3.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmDollar3.Text = "Dollar 3";
             // 
             // page2
@@ -188,7 +215,7 @@ namespace NavigatorContextMenus
             // 
             this.kryptonLabel2.Location = new System.Drawing.Point(129, 77);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(168, 20);
+            this.kryptonLabel2.Size = new System.Drawing.Size(155, 18);
             this.kryptonLabel2.TabIndex = 1;
             this.kryptonLabel2.Values.Text = "Right-click me or the header.";
             // 
@@ -215,27 +242,37 @@ namespace NavigatorContextMenus
             // 
             // kcmEuro1
             // 
-            this.kcmEuro1.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmEuro1.Image")));
+            this.kcmEuro1.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmEuro1.Image = ((System.Drawing.Image)(resources.GetObject("kcmEuro1.Image")));
+            this.kcmEuro1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmEuro1.Text = "Euro 1";
             // 
             // kcmEuro2
             // 
-            this.kcmEuro2.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmEuro2.Image")));
+            this.kcmEuro2.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmEuro2.Image = ((System.Drawing.Image)(resources.GetObject("kcmEuro2.Image")));
+            this.kcmEuro2.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmEuro2.Text = "Euro 2";
             // 
             // kcmEuro3
             // 
-            this.kcmEuro3.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmEuro3.Image")));
+            this.kcmEuro3.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmEuro3.Image = ((System.Drawing.Image)(resources.GetObject("kcmEuro3.Image")));
+            this.kcmEuro3.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmEuro3.Text = "Euro 3";
             // 
             // kcmEuro4
             // 
-            this.kcmEuro4.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmEuro4.Image")));
+            this.kcmEuro4.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmEuro4.Image = ((System.Drawing.Image)(resources.GetObject("kcmEuro4.Image")));
+            this.kcmEuro4.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmEuro4.Text = "Euro 4";
             // 
             // kcmEuro5
             // 
-            this.kcmEuro5.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmEuro5.Image")));
+            this.kcmEuro5.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmEuro5.Image = ((System.Drawing.Image)(resources.GetObject("kcmEuro5.Image")));
+            this.kcmEuro5.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmEuro5.Text = "Euro 5";
             // 
             // page3
@@ -257,7 +294,7 @@ namespace NavigatorContextMenus
             // 
             this.kryptonLabel3.Location = new System.Drawing.Point(73, 47);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(168, 20);
+            this.kryptonLabel3.Size = new System.Drawing.Size(155, 18);
             this.kryptonLabel3.TabIndex = 1;
             this.kryptonLabel3.Values.Text = "Right-click me or the header.";
             // 
@@ -283,12 +320,16 @@ namespace NavigatorContextMenus
             // 
             // kcmYen1
             // 
-            this.kcmYen1.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmYen1.Image")));
+            this.kcmYen1.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmYen1.Image = ((System.Drawing.Image)(resources.GetObject("kcmYen1.Image")));
+            this.kcmYen1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmYen1.Text = "Yen 1";
             // 
             // kcmYen2
             // 
-            this.kcmYen2.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmYen2.Image")));
+            this.kcmYen2.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmYen2.Image = ((System.Drawing.Image)(resources.GetObject("kcmYen2.Image")));
+            this.kcmYen2.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmYen2.Text = "Yen 2";
             // 
             // kcmHeadingYenMore
@@ -304,12 +345,16 @@ namespace NavigatorContextMenus
             // 
             // kcmYen3
             // 
-            this.kcmYen3.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmYen3.Image")));
+            this.kcmYen3.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmYen3.Image = ((System.Drawing.Image)(resources.GetObject("kcmYen3.Image")));
+            this.kcmYen3.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmYen3.Text = "Yen 3";
             // 
             // kcmYen4
             // 
-            this.kcmYen4.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmYen4.Image")));
+            this.kcmYen4.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmYen4.Image = ((System.Drawing.Image)(resources.GetObject("kcmYen4.Image")));
+            this.kcmYen4.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmYen4.Text = "Yen 4";
             // 
             // page4
@@ -331,7 +376,7 @@ namespace NavigatorContextMenus
             // 
             this.kryptonLabel4.Location = new System.Drawing.Point(129, 19);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(168, 20);
+            this.kryptonLabel4.Size = new System.Drawing.Size(155, 18);
             this.kryptonLabel4.TabIndex = 1;
             this.kryptonLabel4.Values.Text = "Right-click me or the header.";
             // 
@@ -359,17 +404,23 @@ namespace NavigatorContextMenus
             // 
             // kcmPound1
             // 
-            this.kcmPound1.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmPound1.Image")));
+            this.kcmPound1.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmPound1.Image = ((System.Drawing.Image)(resources.GetObject("kcmPound1.Image")));
+            this.kcmPound1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmPound1.Text = "Pound 1";
             // 
             // kcmPound2
             // 
-            this.kcmPound2.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmPound2.Image")));
+            this.kcmPound2.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmPound2.Image = ((System.Drawing.Image)(resources.GetObject("kcmPound2.Image")));
+            this.kcmPound2.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmPound2.Text = "Pound 2";
             // 
             // kcmPound3
             // 
-            this.kcmPound3.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmPound3.Image")));
+            this.kcmPound3.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmPound3.Image = ((System.Drawing.Image)(resources.GetObject("kcmPound3.Image")));
+            this.kcmPound3.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmPound3.Text = "Pound 3";
             // 
             // kcmSeparatorPound
@@ -378,17 +429,23 @@ namespace NavigatorContextMenus
             // 
             // kcmPound4
             // 
-            this.kcmPound4.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmPound4.Image")));
+            this.kcmPound4.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmPound4.Image = ((System.Drawing.Image)(resources.GetObject("kcmPound4.Image")));
+            this.kcmPound4.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmPound4.Text = "Pound 4";
             // 
             // kcmPound5
             // 
-            this.kcmPound5.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmPound5.Image")));
+            this.kcmPound5.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmPound5.Image = ((System.Drawing.Image)(resources.GetObject("kcmPound5.Image")));
+            this.kcmPound5.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmPound5.Text = "Pound 5";
             // 
             // kcmPound6
             // 
-            this.kcmPound6.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmPound6.Image")));
+            this.kcmPound6.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmPound6.Image = ((System.Drawing.Image)(resources.GetObject("kcmPound6.Image")));
+            this.kcmPound6.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmPound6.Text = "Pound 6";
             // 
             // kcmNavigator
@@ -412,25 +469,33 @@ namespace NavigatorContextMenus
             // 
             // kcmFirst
             // 
-            this.kcmFirst.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmFirst.Image")));
+            this.kcmFirst.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmFirst.Image = ((System.Drawing.Image)(resources.GetObject("kcmFirst.Image")));
+            this.kcmFirst.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmFirst.Text = "Move To First";
             this.kcmFirst.Click += new System.EventHandler(this.kcmFirst_Click);
             // 
             // kcmPrevious
             // 
-            this.kcmPrevious.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmPrevious.Image")));
+            this.kcmPrevious.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmPrevious.Image = ((System.Drawing.Image)(resources.GetObject("kcmPrevious.Image")));
+            this.kcmPrevious.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmPrevious.Text = "Move Previous";
             this.kcmPrevious.Click += new System.EventHandler(this.kcmPrevious_Click);
             // 
             // kcmNext
             // 
-            this.kcmNext.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmNext.Image")));
+            this.kcmNext.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmNext.Image = ((System.Drawing.Image)(resources.GetObject("kcmNext.Image")));
+            this.kcmNext.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmNext.Text = "Move Next";
             this.kcmNext.Click += new System.EventHandler(this.kcmNext_Click);
             // 
             // kcmLast
             // 
-            this.kcmLast.Image = ((System.Drawing.Bitmap)(resources.GetObject("kcmLast.Image")));
+            this.kcmLast.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kcmLast.Image = ((System.Drawing.Image)(resources.GetObject("kcmLast.Image")));
+            this.kcmLast.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kcmLast.Text = "Move To Last";
             this.kcmLast.Click += new System.EventHandler(this.kcmLast_Click);
             // 
@@ -453,6 +518,10 @@ namespace NavigatorContextMenus
             this.label1.Size = new System.Drawing.Size(294, 78);
             this.label1.TabIndex = 2;
             this.label1.Text = resources.GetString("label1.Text");
+            // 
+            // kryptonManager1
+            // 
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.ProfessionalSystem;
             // 
             // Form1
             // 
