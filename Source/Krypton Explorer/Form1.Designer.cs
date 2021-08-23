@@ -182,6 +182,7 @@
             this.kllFontDialog = new Krypton.Toolkit.KryptonLinkLabel();
             this.klblPrintDialog = new Krypton.Toolkit.KryptonLinkLabel();
             this.kllKryptonScrollBars = new Krypton.Toolkit.KryptonLinkLabel();
+            this.kllKryptonWebBrowser = new Krypton.Toolkit.KryptonLinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelFill)).BeginInit();
             this.kryptonPanelFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator)).BeginInit();
@@ -281,7 +282,7 @@
             this.kryptonPage3,
             this.kryptonPage4});
             this.kryptonNavigator.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
-            this.kryptonNavigator.SelectedIndex = 8;
+            this.kryptonNavigator.SelectedIndex = 0;
             this.kryptonNavigator.Size = new System.Drawing.Size(683, 405);
             this.kryptonNavigator.StateCommon.Bar.BarPaddingInside = new System.Windows.Forms.Padding(-1);
             this.kryptonNavigator.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(-1);
@@ -374,6 +375,7 @@
             // kryptonPage1
             // 
             this.kryptonPage1.AutoHiddenSlideSize = new System.Drawing.Size(150, 150);
+            this.kryptonPage1.Controls.Add(this.kllKryptonWebBrowser);
             this.kryptonPage1.Controls.Add(this.linkKryptonTreeView);
             this.kryptonPage1.Controls.Add(this.linkKryptonInputBox);
             this.kryptonPage1.Controls.Add(this.linkKryptonTaskDialog);
@@ -2621,6 +2623,15 @@
             this.kllKryptonScrollBars.Values.Text = "KryptonScrollBars";
             this.kllKryptonScrollBars.LinkClicked += new System.EventHandler(this.kllKryptonScrollBars_LinkClicked);
             // 
+            // kllKryptonWebBrowser
+            // 
+            this.kllKryptonWebBrowser.Location = new System.Drawing.Point(159, 285);
+            this.kllKryptonWebBrowser.Name = "kllKryptonWebBrowser";
+            this.kllKryptonWebBrowser.Size = new System.Drawing.Size(122, 20);
+            this.kllKryptonWebBrowser.TabIndex = 40;
+            this.kllKryptonWebBrowser.Values.Text = "KryptonWebBrowser";
+            this.kllKryptonWebBrowser.LinkClicked += new System.EventHandler(this.kllKryptonWebBrowser_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2846,6 +2857,7 @@
         private Krypton.Toolkit.KryptonLabel kryptonLabel7;
         private Krypton.Toolkit.KryptonLinkLabel klblPrintDialog;
         private Krypton.Toolkit.KryptonLinkLabel kllKryptonScrollBars;
+        private Krypton.Toolkit.KryptonLinkLabel kllKryptonWebBrowser;
     }
 }
 

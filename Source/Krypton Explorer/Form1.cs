@@ -940,5 +940,14 @@ namespace KryptonExplorer
                 KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void kllKryptonWebBrowser_LinkClicked(object sender, EventArgs e)
+        {
+            try { Process.Start(@".\Krypton WebBrowser Example.exe"); }
+            catch (Exception ex)
+            {
+                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

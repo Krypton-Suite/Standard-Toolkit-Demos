@@ -5,7 +5,7 @@
 
 using Krypton.Toolkit;
 
-namespace KryptonWebBrowser_Example
+namespace KryptonWebBrowserExample
 {
     public partial class Form1 : KryptonForm
     {

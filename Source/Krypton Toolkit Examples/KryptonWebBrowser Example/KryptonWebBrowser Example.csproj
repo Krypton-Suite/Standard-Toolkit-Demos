@@ -3,7 +3,8 @@
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
         <TargetFramework>net48</TargetFramework>
-        <RootNamespace>KryptonWebBrowser_Example</RootNamespace>
+        <RootNamespace>KryptonWebBrowserExample</RootNamespace>
+        <AssemblyName>Krypton WebBrowser Example</AssemblyName>
         <UseWindowsForms>true</UseWindowsForms>
         <PlatformTarget>AnyCPU</PlatformTarget>
         <ApplicationIcon>..\..\Krypton Explorer\Krypton.ico</ApplicationIcon>

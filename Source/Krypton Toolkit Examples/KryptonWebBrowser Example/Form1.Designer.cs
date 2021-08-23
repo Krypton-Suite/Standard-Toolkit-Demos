@@ -1,5 +1,5 @@
 ﻿
-namespace KryptonWebBrowser_Example
+namespace KryptonWebBrowserExample
 {
     partial class Form1
     {
