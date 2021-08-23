@@ -112,12 +112,15 @@ namespace PaletteDesigner
             // kryptonRibbon1
             // 
             this.kryptonRibbon1.AllowFormIntegrate = true;
+            this.kryptonRibbon1.HideRibbonSize = new System.Drawing.Size(300, 250);
             this.kryptonRibbon1.InDesignHelperMode = true;
             this.kryptonRibbon1.Name = "kryptonRibbon1";
             this.kryptonRibbon1.QATButtons.AddRange(new System.ComponentModel.Component[] {
             this.kryptonRibbonQATButton1,
             this.kryptonRibbonQATButton2,
             this.kryptonRibbonQATButton3});
+            this.kryptonRibbon1.QATLocation = Krypton.Ribbon.QATLocation.Above;
+            this.kryptonRibbon1.RibbonAppButton.AppButtonMaxRecentSize = new System.Drawing.Size(350, 350);
             this.kryptonRibbon1.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem6,
             this.kryptonContextMenuSeparator1,
@@ -137,6 +140,7 @@ namespace PaletteDesigner
             this.kryptonRibbon1.RibbonAppButton.AppButtonSpecs.AddRange(new Krypton.Ribbon.ButtonSpecAppMenu[] {
             this.buttonSpecAppMenu2,
             this.buttonSpecAppMenu1});
+            this.kryptonRibbon1.RibbonAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbon1.RibbonContexts.AddRange(new Krypton.Ribbon.KryptonRibbonContext[] {
             this.kryptonRibbonContext1});
             this.kryptonRibbon1.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
@@ -153,61 +157,80 @@ namespace PaletteDesigner
             // 
             this.kryptonRibbonQATButton1.Image = global::PaletteDesigner.Properties.Resources.flag_scotland;
             this.kryptonRibbonQATButton1.Text = "Scotland";
+            this.kryptonRibbonQATButton1.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // kryptonRibbonQATButton2
             // 
             this.kryptonRibbonQATButton2.Image = global::PaletteDesigner.Properties.Resources.flag_iceland;
             this.kryptonRibbonQATButton2.Text = "Iceland";
+            this.kryptonRibbonQATButton2.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // kryptonRibbonQATButton3
             // 
             this.kryptonRibbonQATButton3.Image = global::PaletteDesigner.Properties.Resources.flag_brazil;
             this.kryptonRibbonQATButton3.Text = "Brazil";
+            this.kryptonRibbonQATButton3.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // kryptonContextMenuItem6
             // 
+            this.kryptonContextMenuItem6.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem6.Image = global::PaletteDesigner.Properties.Resources.AppMenuSendMessage;
+            this.kryptonContextMenuItem6.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem6.Text = "S&end";
             // 
             // kryptonContextMenuItem3
             // 
+            this.kryptonContextMenuItem3.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem3.Image = global::PaletteDesigner.Properties.Resources.AppMenuSave;
+            this.kryptonContextMenuItem3.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem3.Text = "&Save";
             // 
             // kryptonContextMenuItem4
             // 
+            this.kryptonContextMenuItem4.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem4.Image = global::PaletteDesigner.Properties.Resources.AppMenuSaveAs;
+            this.kryptonContextMenuItem4.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem4.Text = "Save &As";
             // 
             // kryptonContextMenuItem1
             // 
+            this.kryptonContextMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem1.Image = global::PaletteDesigner.Properties.Resources.AppMenuDelete;
+            this.kryptonContextMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem1.Text = "&Delete";
             // 
             // kryptonContextMenuItem5
             // 
+            this.kryptonContextMenuItem5.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem5.Image = global::PaletteDesigner.Properties.Resources.AppMenuPrint;
+            this.kryptonContextMenuItem5.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem5.Text = "&Print";
             // 
             // kryptonContextMenuItem7
             // 
+            this.kryptonContextMenuItem7.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem7.Image = global::PaletteDesigner.Properties.Resources.AppMenuClose;
+            this.kryptonContextMenuItem7.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem7.Text = "&Close";
             // 
             // kryptonRibbonRecentDoc1
             // 
+            this.kryptonRibbonRecentDoc1.ImageTransparentColor = System.Drawing.Color.Empty;
             this.kryptonRibbonRecentDoc1.Text = "Recent Document 1";
             // 
             // kryptonRibbonRecentDoc2
             // 
+            this.kryptonRibbonRecentDoc2.ImageTransparentColor = System.Drawing.Color.Empty;
             this.kryptonRibbonRecentDoc2.Text = "Recent Document 2";
             // 
             // kryptonRibbonRecentDoc3
             // 
+            this.kryptonRibbonRecentDoc3.ImageTransparentColor = System.Drawing.Color.Empty;
             this.kryptonRibbonRecentDoc3.Text = "Recent Document 3";
             // 
             // kryptonRibbonRecentDoc4
             // 
+            this.kryptonRibbonRecentDoc4.ImageTransparentColor = System.Drawing.Color.Empty;
             this.kryptonRibbonRecentDoc4.Text = "Recent Document 4";
             // 
             // buttonSpecAppMenu2
@@ -224,6 +247,7 @@ namespace PaletteDesigner
             // 
             // kryptonRibbonContext1
             // 
+            this.kryptonRibbonContext1.ContextColor = System.Drawing.Color.Red;
             this.kryptonRibbonContext1.ContextName = "Red";
             this.kryptonRibbonContext1.ContextTitle = "Red Context";
             // 
@@ -242,15 +266,19 @@ namespace PaletteDesigner
             // 
             // kryptonRibbonGroupTriple1
             // 
+            this.kryptonRibbonGroupTriple1.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton1,
             this.kryptonRibbonGroupButton2,
             this.kryptonRibbonGroupButton3});
+            this.kryptonRibbonGroupTriple1.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple1.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // kryptonRibbonGroupButton1
             // 
             this.kryptonRibbonGroupButton1.ButtonType = Krypton.Ribbon.GroupButtonType.Split;
             this.kryptonRibbonGroupButton1.KryptonContextMenu = this.kryptonContextMenu1;
+            this.kryptonRibbonGroupButton1.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonContextMenu1
             // 
@@ -274,36 +302,46 @@ namespace PaletteDesigner
             // 
             // kryptonContextMenuItem2
             // 
+            this.kryptonContextMenuItem2.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kryptonContextMenuItem2.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem2.Text = "Menu Item 1";
             // 
             // kryptonContextMenuItem8
             // 
             this.kryptonContextMenuItem8.Checked = true;
             this.kryptonContextMenuItem8.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.kryptonContextMenuItem8.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem8.Text = "Menu Item 2";
             // 
             // kryptonContextMenuItem9
             // 
             this.kryptonContextMenuItem9.Checked = true;
             this.kryptonContextMenuItem9.CheckState = System.Windows.Forms.CheckState.Indeterminate;
+            this.kryptonContextMenuItem9.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem9.Text = "Menu Item 3";
             // 
             // kryptonContextMenuItem10
             // 
+            this.kryptonContextMenuItem10.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kryptonContextMenuItem10.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem10.Text = "Menu Item 4";
             // 
             // kryptonContextMenuItem11
             // 
+            this.kryptonContextMenuItem11.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kryptonContextMenuItem11.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem11.Text = "Menu Item 5";
             // 
             // kryptonRibbonGroupButton2
             // 
             this.kryptonRibbonGroupButton2.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.kryptonRibbonGroupButton2.KryptonContextMenu = this.kryptonContextMenu1;
+            this.kryptonRibbonGroupButton2.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupButton3
             // 
             this.kryptonRibbonGroupButton3.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
+            this.kryptonRibbonGroupButton3.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroup2
             // 
@@ -319,6 +357,8 @@ namespace PaletteDesigner
             this.kryptonRibbonGroupLines1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupCluster1,
             this.kryptonRibbonGroupCluster2});
+            this.kryptonRibbonGroupLines1.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupLines1.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // kryptonRibbonGroupCluster1
             // 
@@ -331,6 +371,17 @@ namespace PaletteDesigner
             // 
             this.kryptonRibbonGroupClusterButton1.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.kryptonRibbonGroupClusterButton1.KryptonContextMenu = this.kryptonContextMenu1;
+            this.kryptonRibbonGroupClusterButton1.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupClusterButton2
+            // 
+            this.kryptonRibbonGroupClusterButton2.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupClusterButton2.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupClusterButton3
+            // 
+            this.kryptonRibbonGroupClusterButton3.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupClusterButton3.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster2
             // 
@@ -342,25 +393,37 @@ namespace PaletteDesigner
             // 
             this.kryptonRibbonGroupClusterButton4.ButtonType = Krypton.Ribbon.GroupButtonType.Split;
             this.kryptonRibbonGroupClusterButton4.KryptonContextMenu = this.kryptonContextMenu1;
+            this.kryptonRibbonGroupClusterButton4.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupClusterButton5
+            // 
+            this.kryptonRibbonGroupClusterButton5.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupClusterButton5.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupTriple2
             // 
+            this.kryptonRibbonGroupTriple2.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton4,
             this.kryptonRibbonGroupButton5,
             this.kryptonRibbonGroupButton6});
+            this.kryptonRibbonGroupTriple2.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple2.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // kryptonRibbonGroupButton4
             // 
             this.kryptonRibbonGroupButton4.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
+            this.kryptonRibbonGroupButton4.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupButton5
             // 
             this.kryptonRibbonGroupButton5.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
+            this.kryptonRibbonGroupButton5.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupButton6
             // 
             this.kryptonRibbonGroupButton6.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
+            this.kryptonRibbonGroupButton6.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonTab2
             // 
@@ -378,19 +441,53 @@ namespace PaletteDesigner
             // 
             // kryptonRibbonGroupTriple3
             // 
+            this.kryptonRibbonGroupTriple3.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton7,
             this.kryptonRibbonGroupButton8,
             this.kryptonRibbonGroupButton9});
             this.kryptonRibbonGroupTriple3.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple3.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
+            // 
+            // kryptonRibbonGroupButton7
+            // 
+            this.kryptonRibbonGroupButton7.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton7.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton8
+            // 
+            this.kryptonRibbonGroupButton8.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton8.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton9
+            // 
+            this.kryptonRibbonGroupButton9.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton9.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupTriple4
             // 
+            this.kryptonRibbonGroupTriple4.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton10,
             this.kryptonRibbonGroupButton11,
             this.kryptonRibbonGroupButton12});
             this.kryptonRibbonGroupTriple4.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple4.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
+            // 
+            // kryptonRibbonGroupButton10
+            // 
+            this.kryptonRibbonGroupButton10.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton10.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton11
+            // 
+            this.kryptonRibbonGroupButton11.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton11.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton12
+            // 
+            this.kryptonRibbonGroupButton12.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton12.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonTab3
             // 
@@ -407,10 +504,28 @@ namespace PaletteDesigner
             // 
             // kryptonRibbonGroupTriple5
             // 
+            this.kryptonRibbonGroupTriple5.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple5.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton13,
             this.kryptonRibbonGroupButton14,
             this.kryptonRibbonGroupButton15});
+            this.kryptonRibbonGroupTriple5.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple5.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
+            // 
+            // kryptonRibbonGroupButton13
+            // 
+            this.kryptonRibbonGroupButton13.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton13.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton14
+            // 
+            this.kryptonRibbonGroupButton14.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton14.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton15
+            // 
+            this.kryptonRibbonGroupButton15.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton15.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonTab4
             // 
