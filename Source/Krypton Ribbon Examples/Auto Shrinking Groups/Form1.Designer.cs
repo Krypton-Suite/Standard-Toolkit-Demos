@@ -28,7 +28,6 @@ namespace AutoShrinkingGroups
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kryptonRibbon = new Krypton.Ribbon.KryptonRibbon();
             this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
@@ -145,7 +144,7 @@ namespace AutoShrinkingGroups
             this.groupShrinkInfo = new Krypton.Toolkit.KryptonGroup();
             this.labelAutoShrinkage = new Krypton.Toolkit.KryptonLabel();
             this.labelAutoInstructions = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonManager = new Krypton.Toolkit.KryptonManager();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelFill)).BeginInit();
             this.panelFill.SuspendLayout();
@@ -161,21 +160,26 @@ namespace AutoShrinkingGroups
             this.kryptonRibbon.HideRibbonSize = new System.Drawing.Size(100, 250);
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
+            this.kryptonRibbon.QATLocation = Krypton.Ribbon.QATLocation.Above;
+            this.kryptonRibbon.RibbonAppButton.AppButtonMaxRecentSize = new System.Drawing.Size(350, 350);
             this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
+            this.kryptonRibbon.RibbonAppButton.AppButtonMinRecentSize = new System.Drawing.Size(250, 250);
             this.kryptonRibbon.RibbonAppButton.AppButtonShowRecentDocs = false;
+            this.kryptonRibbon.RibbonAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.kryptonRibbonTab1,
             this.kryptonRibbonTab2,
             this.kryptonRibbonTab3});
-            this.kryptonRibbon.SelectedContext = null;
             this.kryptonRibbon.SelectedTab = this.kryptonRibbonTab1;
             this.kryptonRibbon.Size = new System.Drawing.Size(772, 115);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // kryptonContextMenuItem1
             // 
+            this.kryptonContextMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("kryptonContextMenuItem1.Image")));
+            this.kryptonContextMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem1.Text = "E&xit";
             this.kryptonContextMenuItem1.Click += new System.EventHandler(this.appMenu_Click);
             // 
@@ -196,17 +200,53 @@ namespace AutoShrinkingGroups
             // 
             // kryptonRibbonGroupTriple1
             // 
+            this.kryptonRibbonGroupTriple1.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton1,
             this.kryptonRibbonGroupButton2,
             this.kryptonRibbonGroupButton3});
+            this.kryptonRibbonGroupTriple1.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple1.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
+            // 
+            // kryptonRibbonGroupButton1
+            // 
+            this.kryptonRibbonGroupButton1.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton1.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton2
+            // 
+            this.kryptonRibbonGroupButton2.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton2.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton3
+            // 
+            this.kryptonRibbonGroupButton3.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton3.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupTriple2
             // 
+            this.kryptonRibbonGroupTriple2.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton4,
             this.kryptonRibbonGroupButton5,
             this.kryptonRibbonGroupButton6});
+            this.kryptonRibbonGroupTriple2.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple2.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
+            // 
+            // kryptonRibbonGroupButton4
+            // 
+            this.kryptonRibbonGroupButton4.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton4.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton5
+            // 
+            this.kryptonRibbonGroupButton5.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton5.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton6
+            // 
+            this.kryptonRibbonGroupButton6.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton6.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroup2
             // 
@@ -217,17 +257,53 @@ namespace AutoShrinkingGroups
             // 
             // kryptonRibbonGroupTriple3
             // 
+            this.kryptonRibbonGroupTriple3.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton7,
             this.kryptonRibbonGroupButton8,
             this.kryptonRibbonGroupButton9});
+            this.kryptonRibbonGroupTriple3.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple3.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
+            // 
+            // kryptonRibbonGroupButton7
+            // 
+            this.kryptonRibbonGroupButton7.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton7.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton8
+            // 
+            this.kryptonRibbonGroupButton8.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton8.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton9
+            // 
+            this.kryptonRibbonGroupButton9.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton9.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupTriple4
             // 
+            this.kryptonRibbonGroupTriple4.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton10,
             this.kryptonRibbonGroupButton11,
             this.kryptonRibbonGroupButton12});
+            this.kryptonRibbonGroupTriple4.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple4.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
+            // 
+            // kryptonRibbonGroupButton10
+            // 
+            this.kryptonRibbonGroupButton10.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton10.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton11
+            // 
+            this.kryptonRibbonGroupButton11.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton11.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton12
+            // 
+            this.kryptonRibbonGroupButton12.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton12.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroup3
             // 
@@ -238,17 +314,53 @@ namespace AutoShrinkingGroups
             // 
             // kryptonRibbonGroupTriple5
             // 
+            this.kryptonRibbonGroupTriple5.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple5.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton13,
             this.kryptonRibbonGroupButton14,
             this.kryptonRibbonGroupButton15});
+            this.kryptonRibbonGroupTriple5.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple5.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
+            // 
+            // kryptonRibbonGroupButton13
+            // 
+            this.kryptonRibbonGroupButton13.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton13.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton14
+            // 
+            this.kryptonRibbonGroupButton14.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton14.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton15
+            // 
+            this.kryptonRibbonGroupButton15.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton15.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupTriple6
             // 
+            this.kryptonRibbonGroupTriple6.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple6.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton16,
             this.kryptonRibbonGroupButton17,
             this.kryptonRibbonGroupButton18});
+            this.kryptonRibbonGroupTriple6.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple6.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
+            // 
+            // kryptonRibbonGroupButton16
+            // 
+            this.kryptonRibbonGroupButton16.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton16.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton17
+            // 
+            this.kryptonRibbonGroupButton17.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton17.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton18
+            // 
+            this.kryptonRibbonGroupButton18.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton18.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonTab2
             // 
@@ -274,6 +386,48 @@ namespace AutoShrinkingGroups
             this.kryptonRibbonGroupButton32,
             this.kryptonRibbonGroupButton37,
             this.kryptonRibbonGroupButton38});
+            this.kryptonRibbonGroupLines1.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupLines1.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
+            // 
+            // kryptonRibbonGroupButton19
+            // 
+            this.kryptonRibbonGroupButton19.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton19.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton20
+            // 
+            this.kryptonRibbonGroupButton20.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton20.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton21
+            // 
+            this.kryptonRibbonGroupButton21.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton21.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton22
+            // 
+            this.kryptonRibbonGroupButton22.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton22.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton31
+            // 
+            this.kryptonRibbonGroupButton31.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton31.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton32
+            // 
+            this.kryptonRibbonGroupButton32.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton32.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton37
+            // 
+            this.kryptonRibbonGroupButton37.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton37.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton38
+            // 
+            this.kryptonRibbonGroupButton38.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton38.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroup5
             // 
@@ -291,6 +445,48 @@ namespace AutoShrinkingGroups
             this.kryptonRibbonGroupButton34,
             this.kryptonRibbonGroupButton39,
             this.kryptonRibbonGroupButton40});
+            this.kryptonRibbonGroupLines2.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupLines2.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
+            // 
+            // kryptonRibbonGroupButton23
+            // 
+            this.kryptonRibbonGroupButton23.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton23.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton24
+            // 
+            this.kryptonRibbonGroupButton24.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton24.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton25
+            // 
+            this.kryptonRibbonGroupButton25.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton25.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton26
+            // 
+            this.kryptonRibbonGroupButton26.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton26.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton33
+            // 
+            this.kryptonRibbonGroupButton33.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton33.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton34
+            // 
+            this.kryptonRibbonGroupButton34.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton34.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton39
+            // 
+            this.kryptonRibbonGroupButton39.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton39.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton40
+            // 
+            this.kryptonRibbonGroupButton40.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton40.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroup6
             // 
@@ -306,6 +502,38 @@ namespace AutoShrinkingGroups
             this.kryptonRibbonGroupButton35,
             this.kryptonRibbonGroupButton36,
             this.kryptonRibbonGroupButton41});
+            this.kryptonRibbonGroupLines3.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupLines3.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
+            // 
+            // kryptonRibbonGroupButton27
+            // 
+            this.kryptonRibbonGroupButton27.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton27.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton28
+            // 
+            this.kryptonRibbonGroupButton28.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton28.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton29
+            // 
+            this.kryptonRibbonGroupButton29.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton29.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton35
+            // 
+            this.kryptonRibbonGroupButton35.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton35.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton36
+            // 
+            this.kryptonRibbonGroupButton36.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton36.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // kryptonRibbonGroupButton41
+            // 
+            this.kryptonRibbonGroupButton41.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
+            this.kryptonRibbonGroupButton41.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonTab3
             // 
@@ -328,6 +556,8 @@ namespace AutoShrinkingGroups
             this.kryptonRibbonGroupCluster2,
             this.kryptonRibbonGroupCluster3,
             this.kryptonRibbonGroupCluster4});
+            this.kryptonRibbonGroupLines4.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupLines4.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // kryptonRibbonGroupCluster1
             // 
@@ -338,15 +568,21 @@ namespace AutoShrinkingGroups
             // 
             // kryptonRibbonGroupClusterButton1
             // 
+            this.kryptonRibbonGroupClusterButton1.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton1.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton1.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton2
             // 
+            this.kryptonRibbonGroupClusterButton2.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton2.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton2.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton5
             // 
+            this.kryptonRibbonGroupClusterButton5.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton5.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton5.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster2
             // 
@@ -357,15 +593,21 @@ namespace AutoShrinkingGroups
             // 
             // kryptonRibbonGroupClusterButton3
             // 
+            this.kryptonRibbonGroupClusterButton3.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton3.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton3.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton4
             // 
+            this.kryptonRibbonGroupClusterButton4.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton4.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton4.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton6
             // 
+            this.kryptonRibbonGroupClusterButton6.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton6.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton6.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster3
             // 
@@ -376,15 +618,21 @@ namespace AutoShrinkingGroups
             // 
             // kryptonRibbonGroupClusterButton7
             // 
+            this.kryptonRibbonGroupClusterButton7.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton7.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton7.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton8
             // 
+            this.kryptonRibbonGroupClusterButton8.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton8.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton8.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton49
             // 
+            this.kryptonRibbonGroupClusterButton49.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton49.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton49.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster4
             // 
@@ -396,19 +644,27 @@ namespace AutoShrinkingGroups
             // 
             // kryptonRibbonGroupClusterButton9
             // 
+            this.kryptonRibbonGroupClusterButton9.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton9.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton9.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton10
             // 
+            this.kryptonRibbonGroupClusterButton10.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton10.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton10.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton11
             // 
+            this.kryptonRibbonGroupClusterButton11.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton11.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton11.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton12
             // 
+            this.kryptonRibbonGroupClusterButton12.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton12.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton12.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupLines6
             // 
@@ -417,6 +673,8 @@ namespace AutoShrinkingGroups
             this.kryptonRibbonGroupCluster10,
             this.kryptonRibbonGroupCluster11,
             this.kryptonRibbonGroupCluster12});
+            this.kryptonRibbonGroupLines6.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupLines6.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // kryptonRibbonGroupCluster9
             // 
@@ -427,15 +685,21 @@ namespace AutoShrinkingGroups
             // 
             // kryptonRibbonGroupClusterButton25
             // 
+            this.kryptonRibbonGroupClusterButton25.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton25.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton25.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton26
             // 
+            this.kryptonRibbonGroupClusterButton26.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton26.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton26.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton27
             // 
+            this.kryptonRibbonGroupClusterButton27.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton27.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton27.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster10
             // 
@@ -446,15 +710,21 @@ namespace AutoShrinkingGroups
             // 
             // kryptonRibbonGroupClusterButton28
             // 
+            this.kryptonRibbonGroupClusterButton28.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton28.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton28.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton29
             // 
+            this.kryptonRibbonGroupClusterButton29.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton29.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton29.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton30
             // 
+            this.kryptonRibbonGroupClusterButton30.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton30.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton30.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster11
             // 
@@ -464,11 +734,15 @@ namespace AutoShrinkingGroups
             // 
             // kryptonRibbonGroupClusterButton31
             // 
+            this.kryptonRibbonGroupClusterButton31.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton31.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton31.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton32
             // 
+            this.kryptonRibbonGroupClusterButton32.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton32.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton32.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster12
             // 
@@ -480,19 +754,27 @@ namespace AutoShrinkingGroups
             // 
             // kryptonRibbonGroupClusterButton33
             // 
+            this.kryptonRibbonGroupClusterButton33.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton33.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton33.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton34
             // 
+            this.kryptonRibbonGroupClusterButton34.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton34.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton34.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton35
             // 
+            this.kryptonRibbonGroupClusterButton35.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton35.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton35.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton36
             // 
+            this.kryptonRibbonGroupClusterButton36.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton36.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton36.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroup8
             // 
@@ -505,6 +787,8 @@ namespace AutoShrinkingGroups
             this.kryptonRibbonGroupCluster5,
             this.kryptonRibbonGroupCluster6,
             this.kryptonRibbonGroupCluster7});
+            this.kryptonRibbonGroupLines5.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupLines5.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // kryptonRibbonGroupCluster5
             // 
@@ -514,11 +798,15 @@ namespace AutoShrinkingGroups
             // 
             // kryptonRibbonGroupClusterButton13
             // 
+            this.kryptonRibbonGroupClusterButton13.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton13.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton13.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton14
             // 
+            this.kryptonRibbonGroupClusterButton14.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton14.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton14.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster6
             // 
@@ -528,11 +816,15 @@ namespace AutoShrinkingGroups
             // 
             // kryptonRibbonGroupClusterButton15
             // 
+            this.kryptonRibbonGroupClusterButton15.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton15.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton15.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton16
             // 
+            this.kryptonRibbonGroupClusterButton16.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton16.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton16.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster7
             // 
@@ -542,11 +834,15 @@ namespace AutoShrinkingGroups
             // 
             // kryptonRibbonGroupClusterButton18
             // 
+            this.kryptonRibbonGroupClusterButton18.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton18.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton18.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupClusterButton19
             // 
+            this.kryptonRibbonGroupClusterButton19.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupClusterButton19.TextLine = "AB";
+            this.kryptonRibbonGroupClusterButton19.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // panelFill
             // 
@@ -559,6 +855,7 @@ namespace AutoShrinkingGroups
             // 
             // groupShrinkInfo
             // 
+            this.groupShrinkInfo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupShrinkInfo.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.groupShrinkInfo.Location = new System.Drawing.Point(12, 16);
             this.groupShrinkInfo.Name = "groupShrinkInfo";
@@ -581,7 +878,6 @@ namespace AutoShrinkingGroups
             // 
             // labelAutoInstructions
             // 
-            this.labelAutoInstructions.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelAutoInstructions.Location = new System.Drawing.Point(4, 37);
             this.labelAutoInstructions.Name = "labelAutoInstructions";
             this.labelAutoInstructions.Size = new System.Drawing.Size(277, 148);
@@ -590,7 +886,7 @@ namespace AutoShrinkingGroups
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2010Silver;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2007Black;
             // 
             // Form1
             // 

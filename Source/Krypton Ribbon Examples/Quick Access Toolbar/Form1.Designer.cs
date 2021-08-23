@@ -77,20 +77,28 @@ namespace QuickAccessToolbar
             // kryptonRibbon
             // 
             this.kryptonRibbon.AllowFormIntegrate = true;
+            this.kryptonRibbon.HideRibbonSize = new System.Drawing.Size(300, 250);
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
+            this.kryptonRibbon.QATLocation = Krypton.Ribbon.QATLocation.Above;
+            this.kryptonRibbon.RibbonAppButton.AppButtonMaxRecentSize = new System.Drawing.Size(350, 350);
             this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
+            this.kryptonRibbon.RibbonAppButton.AppButtonMinRecentSize = new System.Drawing.Size(250, 250);
             this.kryptonRibbon.RibbonAppButton.AppButtonShowRecentDocs = false;
+            this.kryptonRibbon.RibbonAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome});
+            this.kryptonRibbon.SelectedContext = null;
             this.kryptonRibbon.SelectedTab = this.tabHome;
             this.kryptonRibbon.Size = new System.Drawing.Size(375, 115);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // kryptonContextMenuItem1
             // 
+            this.kryptonContextMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("kryptonContextMenuItem1.Image")));
+            this.kryptonContextMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem1.Text = "E&xit";
             this.kryptonContextMenuItem1.Click += new System.EventHandler(this.appMenu_Click);
             // 
@@ -100,7 +108,7 @@ namespace QuickAccessToolbar
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2007Silver;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2007Blue;
             // 
             // panelFill
             // 
@@ -115,6 +123,7 @@ namespace QuickAccessToolbar
             // 
             // kryptonGroup2
             // 
+            this.kryptonGroup2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonGroup2.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonGroup2.Location = new System.Drawing.Point(12, 174);
             this.kryptonGroup2.Name = "kryptonGroup2";
@@ -130,8 +139,11 @@ namespace QuickAccessToolbar
             // 
             // buttonClear
             // 
+            this.buttonClear.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.buttonClear.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonClear.Location = new System.Drawing.Point(213, 40);
             this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.buttonClear.Size = new System.Drawing.Size(90, 25);
             this.buttonClear.TabIndex = 4;
             this.buttonClear.Values.Text = "Clear";
@@ -139,8 +151,11 @@ namespace QuickAccessToolbar
             // 
             // buttonRemove
             // 
+            this.buttonRemove.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.buttonRemove.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonRemove.Location = new System.Drawing.Point(116, 40);
             this.buttonRemove.Name = "buttonRemove";
+            this.buttonRemove.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.buttonRemove.Size = new System.Drawing.Size(90, 25);
             this.buttonRemove.TabIndex = 3;
             this.buttonRemove.Values.Text = "Remove";
@@ -148,8 +163,11 @@ namespace QuickAccessToolbar
             // 
             // buttonAdd
             // 
+            this.buttonAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.buttonAdd.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonAdd.Location = new System.Drawing.Point(20, 40);
             this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.buttonAdd.Size = new System.Drawing.Size(90, 25);
             this.buttonAdd.TabIndex = 2;
             this.buttonAdd.Values.Text = "Add";
@@ -166,6 +184,7 @@ namespace QuickAccessToolbar
             // 
             // kryptonGroup1
             // 
+            this.kryptonGroup1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonGroup1.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonGroup1.Location = new System.Drawing.Point(159, 16);
             this.kryptonGroup1.Name = "kryptonGroup1";
@@ -180,17 +199,23 @@ namespace QuickAccessToolbar
             // 
             // checkButtonDisallowUserChanges
             // 
+            this.checkButtonDisallowUserChanges.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.checkButtonDisallowUserChanges.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkButtonDisallowUserChanges.Location = new System.Drawing.Point(16, 82);
             this.checkButtonDisallowUserChanges.Name = "checkButtonDisallowUserChanges";
+            this.checkButtonDisallowUserChanges.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.checkButtonDisallowUserChanges.Size = new System.Drawing.Size(140, 25);
             this.checkButtonDisallowUserChanges.TabIndex = 3;
             this.checkButtonDisallowUserChanges.Values.Text = "Disallow User Changes";
             // 
             // checkButtonAllowUserChanges
             // 
+            this.checkButtonAllowUserChanges.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.checkButtonAllowUserChanges.Checked = true;
+            this.checkButtonAllowUserChanges.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkButtonAllowUserChanges.Location = new System.Drawing.Point(16, 51);
             this.checkButtonAllowUserChanges.Name = "checkButtonAllowUserChanges";
+            this.checkButtonAllowUserChanges.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.checkButtonAllowUserChanges.Size = new System.Drawing.Size(140, 25);
             this.checkButtonAllowUserChanges.TabIndex = 2;
             this.checkButtonAllowUserChanges.Values.Text = "Allow User Changes";
@@ -206,6 +231,7 @@ namespace QuickAccessToolbar
             // 
             // groupQATLocation
             // 
+            this.groupQATLocation.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupQATLocation.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.groupQATLocation.Location = new System.Drawing.Point(12, 16);
             this.groupQATLocation.Name = "groupQATLocation";
@@ -221,25 +247,34 @@ namespace QuickAccessToolbar
             // 
             // checkButtonHidden
             // 
+            this.checkButtonHidden.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.checkButtonHidden.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkButtonHidden.Location = new System.Drawing.Point(20, 101);
             this.checkButtonHidden.Name = "checkButtonHidden";
+            this.checkButtonHidden.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.checkButtonHidden.Size = new System.Drawing.Size(90, 25);
             this.checkButtonHidden.TabIndex = 4;
             this.checkButtonHidden.Values.Text = "Hidden";
             // 
             // checkButtonBelow
             // 
+            this.checkButtonBelow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.checkButtonBelow.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkButtonBelow.Location = new System.Drawing.Point(20, 70);
             this.checkButtonBelow.Name = "checkButtonBelow";
+            this.checkButtonBelow.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.checkButtonBelow.Size = new System.Drawing.Size(90, 25);
             this.checkButtonBelow.TabIndex = 3;
             this.checkButtonBelow.Values.Text = "Below";
             // 
             // checkButtonAbove
             // 
+            this.checkButtonAbove.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.checkButtonAbove.Checked = true;
+            this.checkButtonAbove.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkButtonAbove.Location = new System.Drawing.Point(20, 39);
             this.checkButtonAbove.Name = "checkButtonAbove";
+            this.checkButtonAbove.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.checkButtonAbove.Size = new System.Drawing.Size(90, 25);
             this.checkButtonAbove.TabIndex = 2;
             this.checkButtonAbove.Values.Text = "Above";
@@ -270,25 +305,34 @@ namespace QuickAccessToolbar
             // 
             // kryptonCheckButton1
             // 
+            this.kryptonCheckButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.kryptonCheckButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonCheckButton1.Location = new System.Drawing.Point(20, 101);
             this.kryptonCheckButton1.Name = "kryptonCheckButton1";
+            this.kryptonCheckButton1.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonCheckButton1.Size = new System.Drawing.Size(90, 25);
             this.kryptonCheckButton1.TabIndex = 4;
             this.kryptonCheckButton1.Values.Text = "Hidden";
             // 
             // kryptonCheckButton2
             // 
+            this.kryptonCheckButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.kryptonCheckButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonCheckButton2.Location = new System.Drawing.Point(20, 70);
             this.kryptonCheckButton2.Name = "kryptonCheckButton2";
+            this.kryptonCheckButton2.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonCheckButton2.Size = new System.Drawing.Size(90, 25);
             this.kryptonCheckButton2.TabIndex = 3;
             this.kryptonCheckButton2.Values.Text = "Below";
             // 
             // kryptonCheckButton3
             // 
+            this.kryptonCheckButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton3.Checked = true;
+            this.kryptonCheckButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonCheckButton3.Location = new System.Drawing.Point(20, 39);
             this.kryptonCheckButton3.Name = "kryptonCheckButton3";
+            this.kryptonCheckButton3.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonCheckButton3.Size = new System.Drawing.Size(90, 25);
             this.kryptonCheckButton3.TabIndex = 2;
             this.kryptonCheckButton3.Values.Text = "Above";
