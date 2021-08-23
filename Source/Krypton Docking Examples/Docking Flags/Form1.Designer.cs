@@ -52,21 +52,30 @@
             // 
             // kryptonDockableWorkspace
             // 
+            this.kryptonDockableWorkspace.ActivePage = null;
             this.kryptonDockableWorkspace.AutoHiddenHost = false;
             this.kryptonDockableWorkspace.CompactFlags = ((Krypton.Workspace.CompactFlags)(((Krypton.Workspace.CompactFlags.RemoveEmptyCells | Krypton.Workspace.CompactFlags.RemoveEmptySequences) 
             | Krypton.Workspace.CompactFlags.PromoteLeafs)));
+            this.kryptonDockableWorkspace.ContainerBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonDockableWorkspace.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonDockableWorkspace.Location = new System.Drawing.Point(3, 3);
             this.kryptonDockableWorkspace.Name = "kryptonDockableWorkspace";
             // 
             // 
             // 
+            this.kryptonDockableWorkspace.Root.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.kryptonDockableWorkspace.Root.UniqueName = "D3A631E8871B4E59D3A631E8871B4E59";
             this.kryptonDockableWorkspace.Root.WorkspaceControl = this.kryptonDockableWorkspace;
+            this.kryptonDockableWorkspace.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.LowProfile;
             this.kryptonDockableWorkspace.ShowMaximizeButton = false;
             this.kryptonDockableWorkspace.Size = new System.Drawing.Size(678, 558);
+            this.kryptonDockableWorkspace.SplitterWidth = 5;
             this.kryptonDockableWorkspace.TabIndex = 0;
             this.kryptonDockableWorkspace.TabStop = true;
+            // 
+            // kryptonDockingManager
+            // 
+            this.kryptonDockingManager.DefaultCloseRequest = Krypton.Docking.DockingCloseRequest.HidePage;
             // 
             // imageListSmall
             // 
