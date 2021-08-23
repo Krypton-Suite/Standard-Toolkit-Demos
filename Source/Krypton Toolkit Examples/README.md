@@ -55,6 +55,7 @@ There are 2 set of solutions in these projects:
 ## [KryptonPanel Examples](KryptonPanel%20Examples/example.png)
 ## [KryptonRadioButton Examples](KryptonRadioButton%20Examples/example.png)
 ## [KryptonRichTextBox Examples](KryptonRichTextBox%20Examples/example.png)
+## [KryptonScrollBar Examples](KryptonScrollbar%20Examples/KryptonScrollBar.gif)
 ## [KryptonSeparator Examples](KryptonSeparator%20Examples/example.png)
 ## [KryptonSplitContainer Examples](KryptonSplitContainer%20Examples/example.png)
 ## [KryptonTaskDialog Examples](KryptonTaskDialog%20Examples/example.png)
