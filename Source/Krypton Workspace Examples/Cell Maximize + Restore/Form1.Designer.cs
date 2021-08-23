@@ -85,9 +85,14 @@
             // 
             // kryptonWorkspace
             // 
-            this.kryptonWorkspace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonWorkspace.ActivePage = this.kryptonPage2;
+            this.kryptonWorkspace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonWorkspace.CompactFlags = ((Krypton.Workspace.CompactFlags)((((Krypton.Workspace.CompactFlags.RemoveEmptyCells | Krypton.Workspace.CompactFlags.RemoveEmptySequences) 
+            | Krypton.Workspace.CompactFlags.PromoteLeafs) 
+            | Krypton.Workspace.CompactFlags.AtLeastOneVisibleCell)));
+            this.kryptonWorkspace.ContainerBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonWorkspace.Location = new System.Drawing.Point(12, 12);
             this.kryptonWorkspace.Name = "kryptonWorkspace";
             // 
@@ -96,21 +101,48 @@
             this.kryptonWorkspace.Root.Children.AddRange(new System.ComponentModel.Component[] {
             this.kryptonWorkspaceCell1,
             this.kryptonWorkspaceSequence1});
+            this.kryptonWorkspace.Root.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.kryptonWorkspace.Root.UniqueName = "4364A9E9DAF34C0D4364A9E9DAF34C0D";
+            this.kryptonWorkspace.Root.WorkspaceControl = this.kryptonWorkspace;
+            this.kryptonWorkspace.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.LowProfile;
             this.kryptonWorkspace.Size = new System.Drawing.Size(610, 456);
+            this.kryptonWorkspace.SplitterWidth = 5;
             this.kryptonWorkspace.TabIndex = 0;
             this.kryptonWorkspace.TabStop = true;
-            this.kryptonWorkspace.ActiveCellChanged += new System.EventHandler<Krypton.Workspace.ActiveCellChangedEventArgs>(this.kryptonWorkspace_ActiveCellChanged);
             this.kryptonWorkspace.WorkspaceCellAdding += new System.EventHandler<Krypton.Workspace.WorkspaceCellEventArgs>(this.kryptonWorkspace_WorkspaceCellAdding);
+            this.kryptonWorkspace.ActiveCellChanged += new System.EventHandler<Krypton.Workspace.ActiveCellChangedEventArgs>(this.kryptonWorkspace_ActiveCellChanged);
             // 
             // kryptonWorkspaceCell1
             // 
             this.kryptonWorkspaceCell1.AllowPageDrag = true;
             this.kryptonWorkspaceCell1.AllowTabFocus = false;
+            this.kryptonWorkspaceCell1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.kryptonWorkspaceCell1.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.Context;
+            this.kryptonWorkspaceCell1.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
+            this.kryptonWorkspaceCell1.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonWorkspaceCell1.Button.ContextButtonAction = Krypton.Navigator.ContextButtonAction.SelectPage;
+            this.kryptonWorkspaceCell1.Button.ContextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonWorkspaceCell1.Button.ContextMenuMapImage = Krypton.Navigator.MapKryptonPageImage.Small;
+            this.kryptonWorkspaceCell1.Button.ContextMenuMapText = Krypton.Navigator.MapKryptonPageText.TextTitle;
+            this.kryptonWorkspaceCell1.Button.NextButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.kryptonWorkspaceCell1.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonWorkspaceCell1.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.kryptonWorkspaceCell1.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonWorkspaceCell1.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
+            this.kryptonWorkspaceCell1.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
+            this.kryptonWorkspaceCell1.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonWorkspaceCell1.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonWorkspaceCell1.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
+            this.kryptonWorkspaceCell1.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
+            this.kryptonWorkspaceCell1.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
+            this.kryptonWorkspaceCell1.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
             this.kryptonWorkspaceCell1.Name = "kryptonWorkspaceCell1";
+            this.kryptonWorkspaceCell1.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
+            this.kryptonWorkspaceCell1.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.kryptonWorkspaceCell1.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2});
+            this.kryptonWorkspaceCell1.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonWorkspaceCell1.SelectedIndex = 1;
             this.kryptonWorkspaceCell1.UniqueName = "B46823ED744B4A87B46823ED744B4A87";
             // 
@@ -171,15 +203,39 @@
             this.kryptonWorkspaceCell3});
             this.kryptonWorkspaceSequence1.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.kryptonWorkspaceSequence1.UniqueName = "99DF5376A7A6421599DF5376A7A64215";
+            this.kryptonWorkspaceSequence1.WorkspaceControl = null;
             // 
             // kryptonWorkspaceCell2
             // 
             this.kryptonWorkspaceCell2.AllowPageDrag = true;
             this.kryptonWorkspaceCell2.AllowTabFocus = false;
+            this.kryptonWorkspaceCell2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.kryptonWorkspaceCell2.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.Context;
+            this.kryptonWorkspaceCell2.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
+            this.kryptonWorkspaceCell2.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonWorkspaceCell2.Button.ContextButtonAction = Krypton.Navigator.ContextButtonAction.SelectPage;
+            this.kryptonWorkspaceCell2.Button.ContextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonWorkspaceCell2.Button.ContextMenuMapImage = Krypton.Navigator.MapKryptonPageImage.Small;
+            this.kryptonWorkspaceCell2.Button.ContextMenuMapText = Krypton.Navigator.MapKryptonPageText.TextTitle;
+            this.kryptonWorkspaceCell2.Button.NextButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.kryptonWorkspaceCell2.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonWorkspaceCell2.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.kryptonWorkspaceCell2.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonWorkspaceCell2.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
+            this.kryptonWorkspaceCell2.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
+            this.kryptonWorkspaceCell2.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonWorkspaceCell2.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonWorkspaceCell2.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
+            this.kryptonWorkspaceCell2.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
+            this.kryptonWorkspaceCell2.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
+            this.kryptonWorkspaceCell2.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
             this.kryptonWorkspaceCell2.Name = "kryptonWorkspaceCell2";
+            this.kryptonWorkspaceCell2.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
+            this.kryptonWorkspaceCell2.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.kryptonWorkspaceCell2.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage3,
             this.kryptonPage4});
+            this.kryptonWorkspaceCell2.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonWorkspaceCell2.SelectedIndex = 1;
             this.kryptonWorkspaceCell2.UniqueName = "9182BBE062034D889182BBE062034D88";
             // 
@@ -237,10 +293,33 @@
             // 
             this.kryptonWorkspaceCell3.AllowPageDrag = true;
             this.kryptonWorkspaceCell3.AllowTabFocus = false;
+            this.kryptonWorkspaceCell3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.kryptonWorkspaceCell3.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.Context;
+            this.kryptonWorkspaceCell3.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
+            this.kryptonWorkspaceCell3.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonWorkspaceCell3.Button.ContextButtonAction = Krypton.Navigator.ContextButtonAction.SelectPage;
+            this.kryptonWorkspaceCell3.Button.ContextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonWorkspaceCell3.Button.ContextMenuMapImage = Krypton.Navigator.MapKryptonPageImage.Small;
+            this.kryptonWorkspaceCell3.Button.ContextMenuMapText = Krypton.Navigator.MapKryptonPageText.TextTitle;
+            this.kryptonWorkspaceCell3.Button.NextButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.kryptonWorkspaceCell3.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonWorkspaceCell3.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.kryptonWorkspaceCell3.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonWorkspaceCell3.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
+            this.kryptonWorkspaceCell3.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
+            this.kryptonWorkspaceCell3.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonWorkspaceCell3.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.kryptonWorkspaceCell3.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
+            this.kryptonWorkspaceCell3.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
+            this.kryptonWorkspaceCell3.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
+            this.kryptonWorkspaceCell3.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
             this.kryptonWorkspaceCell3.Name = "kryptonWorkspaceCell3";
+            this.kryptonWorkspaceCell3.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
+            this.kryptonWorkspaceCell3.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.kryptonWorkspaceCell3.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage5,
             this.kryptonPage6});
+            this.kryptonWorkspaceCell3.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonWorkspaceCell3.SelectedIndex = 0;
             this.kryptonWorkspaceCell3.UniqueName = "A69A2BEFC56C49EFA69A2BEFC56C49EF";
             // 
