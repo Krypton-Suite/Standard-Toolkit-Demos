@@ -183,6 +183,7 @@
             this.klblPrintDialog = new Krypton.Toolkit.KryptonLinkLabel();
             this.kllKryptonScrollBars = new Krypton.Toolkit.KryptonLinkLabel();
             this.kllKryptonWebBrowser = new Krypton.Toolkit.KryptonLinkLabel();
+            this.kllKryptonHelpIcon = new Krypton.Toolkit.KryptonLinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelFill)).BeginInit();
             this.kryptonPanelFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator)).BeginInit();
@@ -375,6 +376,7 @@
             // kryptonPage1
             // 
             this.kryptonPage1.AutoHiddenSlideSize = new System.Drawing.Size(150, 150);
+            this.kryptonPage1.Controls.Add(this.kllKryptonHelpIcon);
             this.kryptonPage1.Controls.Add(this.kllKryptonWebBrowser);
             this.kryptonPage1.Controls.Add(this.linkKryptonTreeView);
             this.kryptonPage1.Controls.Add(this.linkKryptonInputBox);
@@ -2632,6 +2634,15 @@
             this.kllKryptonWebBrowser.Values.Text = "KryptonWebBrowser";
             this.kllKryptonWebBrowser.LinkClicked += new System.EventHandler(this.kllKryptonWebBrowser_LinkClicked);
             // 
+            // kllKryptonHelpIcon
+            // 
+            this.kllKryptonHelpIcon.Location = new System.Drawing.Point(334, 285);
+            this.kllKryptonHelpIcon.Name = "kllKryptonHelpIcon";
+            this.kllKryptonHelpIcon.Size = new System.Drawing.Size(102, 20);
+            this.kllKryptonHelpIcon.TabIndex = 41;
+            this.kllKryptonHelpIcon.Values.Text = "KryptonHelpIcon";
+            this.kllKryptonHelpIcon.LinkClicked += new System.EventHandler(this.kllKryptonHelpIcon_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2858,6 +2869,7 @@
         private Krypton.Toolkit.KryptonLinkLabel klblPrintDialog;
         private Krypton.Toolkit.KryptonLinkLabel kllKryptonScrollBars;
         private Krypton.Toolkit.KryptonLinkLabel kllKryptonWebBrowser;
+        private Krypton.Toolkit.KryptonLinkLabel kllKryptonHelpIcon;
     }
 }
 

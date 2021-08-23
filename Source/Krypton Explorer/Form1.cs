@@ -949,5 +949,14 @@ namespace KryptonExplorer
                 KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void kllKryptonHelpIcon_LinkClicked(object sender, EventArgs e)
+        {
+            try { Process.Start(@".\Krypton Help Icon Examples.exe"); }
+            catch (Exception ex)
+            {
+                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
