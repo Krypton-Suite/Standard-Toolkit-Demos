@@ -1512,21 +1512,18 @@ namespace KryptonContextMenuExamples
             // kryptonContextMenuRadioButton5
             // 
             this.kryptonContextMenuRadioButton5.ExtraText = "";
-            this.kryptonContextMenuRadioButton5.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
             this.kryptonContextMenuRadioButton5.Text = "One";
             // 
             // kryptonContextMenuRadioButton6
             // 
             this.kryptonContextMenuRadioButton6.Checked = true;
             this.kryptonContextMenuRadioButton6.ExtraText = "";
-            this.kryptonContextMenuRadioButton6.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
             this.kryptonContextMenuRadioButton6.Text = "Two";
             // 
             // kryptonContextMenuCheckBox3
             // 
             this.kryptonContextMenuCheckBox3.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuCheckBox3.ExtraText = "";
-            this.kryptonContextMenuCheckBox3.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
             this.kryptonContextMenuCheckBox3.Text = "Enabled";
             this.kryptonContextMenuCheckBox3.ThreeState = true;
             // 
@@ -1534,7 +1531,6 @@ namespace KryptonContextMenuExamples
             // 
             this.kryptonContextMenuLinkLabel2.ExtraText = "";
             this.kryptonContextMenuLinkLabel2.Image = ((System.Drawing.Image)(resources.GetObject("kryptonContextMenuLinkLabel2.Image")));
-            this.kryptonContextMenuLinkLabel2.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
             this.kryptonContextMenuLinkLabel2.LinkBehavior = Krypton.Toolkit.KryptonLinkBehavior.AlwaysUnderline;
             this.kryptonContextMenuLinkLabel2.Text = "Show Help";
             // 
@@ -1609,7 +1605,6 @@ namespace KryptonContextMenuExamples
             // 
             this.kryptonContextMenuCheckBox5.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuCheckBox5.ExtraText = "";
-            this.kryptonContextMenuCheckBox5.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
             // 
             // kryptonManager
             // 
@@ -2458,26 +2453,22 @@ namespace KryptonContextMenuExamples
             // 
             this.kryptonContextMenuRadioButton1.Checked = true;
             this.kryptonContextMenuRadioButton1.ExtraText = "";
-            this.kryptonContextMenuRadioButton1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
             this.kryptonContextMenuRadioButton1.Text = "RadioButton 1";
             // 
             // kryptonContextMenuRadioButton2
             // 
             this.kryptonContextMenuRadioButton2.ExtraText = "";
-            this.kryptonContextMenuRadioButton2.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
             this.kryptonContextMenuRadioButton2.Text = "RadioButton 2";
             // 
             // kryptonContextMenuRadioButton3
             // 
             this.kryptonContextMenuRadioButton3.ExtraText = "";
-            this.kryptonContextMenuRadioButton3.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
             this.kryptonContextMenuRadioButton3.Text = "RadioButton 3";
             // 
             // kryptonContextMenuCheckBox1
             // 
             this.kryptonContextMenuCheckBox1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuCheckBox1.ExtraText = "";
-            this.kryptonContextMenuCheckBox1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
             this.kryptonContextMenuCheckBox1.Text = "CheckBox A";
             this.kryptonContextMenuCheckBox1.ThreeState = true;
             // 
@@ -2485,7 +2476,7 @@ namespace KryptonContextMenuExamples
             // 
             this.kryptonContextMenuCheckBox2.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuCheckBox2.ExtraText = "";
-            this.kryptonContextMenuCheckBox2.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
+
             this.kryptonContextMenuCheckBox2.Text = "CheckBox B";
             this.kryptonContextMenuCheckBox2.ThreeState = true;
             // 
@@ -2504,7 +2495,6 @@ namespace KryptonContextMenuExamples
             // kryptonContextMenuLinkLabel1
             // 
             this.kryptonContextMenuLinkLabel1.ExtraText = "";
-            this.kryptonContextMenuLinkLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
             this.kryptonContextMenuLinkLabel1.LinkBehavior = Krypton.Toolkit.KryptonLinkBehavior.AlwaysUnderline;
             // 
             // kcmColors
@@ -2672,17 +2662,14 @@ namespace KryptonContextMenuExamples
             // 
             this.kryptonContextMenuCheckBox4.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuCheckBox4.ExtraText = "";
-            this.kryptonContextMenuCheckBox4.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
             // 
             // kryptonContextMenuRadioButton4
             // 
             this.kryptonContextMenuRadioButton4.ExtraText = "";
-            this.kryptonContextMenuRadioButton4.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
             // 
             // kryptonContextMenuLinkLabel3
             // 
             this.kryptonContextMenuLinkLabel3.ExtraText = "";
-            this.kryptonContextMenuLinkLabel3.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
             this.kryptonContextMenuLinkLabel3.LinkBehavior = Krypton.Toolkit.KryptonLinkBehavior.AlwaysUnderline;
             // 
             // Form1

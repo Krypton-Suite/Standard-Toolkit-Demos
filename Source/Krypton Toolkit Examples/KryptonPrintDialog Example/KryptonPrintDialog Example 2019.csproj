@@ -28,4 +28,7 @@
     <ItemGroup>
       <Content Include="Krypton.ico" />
     </ItemGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net48|AnyCPU'">
+      <PlatformTarget>x64</PlatformTarget>
+    </PropertyGroup>
 </Project>

@@ -40,12 +40,12 @@ namespace KryptonFontDialog_Example_2019
             this.buttonShowFontDialog = new Krypton.Toolkit.KryptonButton();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
-            this.chkShowEffects = new Krypton.Toolkit.KryptonCheckBox();
-            this.chkShowApply = new Krypton.Toolkit.KryptonCheckBox();
-            this.chkAllowVectorFonts = new Krypton.Toolkit.KryptonCheckBox();
-            this.chkAllowSimulations = new Krypton.Toolkit.KryptonCheckBox();
-            this.chkAllowScriptChange = new Krypton.Toolkit.KryptonCheckBox();
-            this.chkShowColour = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkUseEXDialog = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkShowNetwork = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkAllowSomePages = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkAllowSelection = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkAllowPrintToFile = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkAllowCurrentPage = new Krypton.Toolkit.KryptonCheckBox();
             this.chkShowHelp = new Krypton.Toolkit.KryptonCheckBox();
             this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
             this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
@@ -181,7 +181,7 @@ namespace KryptonFontDialog_Example_2019
             this.buttonShowFontDialog.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.buttonShowFontDialog.Size = new System.Drawing.Size(230, 48);
             this.buttonShowFontDialog.TabIndex = 19;
-            this.buttonShowFontDialog.Values.Text = "Show FontDialog";
+            this.buttonShowFontDialog.Values.Text = "Show PrintDialog";
             this.buttonShowFontDialog.Click += new System.EventHandler(this.ButtonShowFontDialog_Click);
             // 
             // kryptonPanel1
@@ -208,12 +208,12 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonGroupBox2.Panel
             // 
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowEffects);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowApply);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowVectorFonts);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowSimulations);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowScriptChange);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowColour);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkUseEXDialog);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowNetwork);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowSomePages);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowSelection);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowPrintToFile);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowCurrentPage);
             this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowHelp);
             this.kryptonGroupBox2.Size = new System.Drawing.Size(149, 235);
             this.kryptonGroupBox2.TabIndex = 21;
@@ -434,7 +434,7 @@ namespace KryptonFontDialog_Example_2019
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
-            this.Text = "KryptonFontDialog Example";
+            this.Text = "KryptonPrintDialog Example";
             ((System.ComponentModel.ISupportInitialize)(this.groupBoxPalette.Panel)).EndInit();
             this.groupBoxPalette.Panel.ResumeLayout(false);
             this.groupBoxPalette.Panel.PerformLayout();
@@ -477,12 +477,12 @@ namespace KryptonFontDialog_Example_2019
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox2;
         private Krypton.Toolkit.KryptonCheckBox chkShowHelp;
-        private Krypton.Toolkit.KryptonCheckBox chkShowColour;
-        private Krypton.Toolkit.KryptonCheckBox chkShowEffects;
-        private Krypton.Toolkit.KryptonCheckBox chkShowApply;
-        private Krypton.Toolkit.KryptonCheckBox chkAllowVectorFonts;
-        private Krypton.Toolkit.KryptonCheckBox chkAllowSimulations;
-        private Krypton.Toolkit.KryptonCheckBox chkAllowScriptChange;
+        private Krypton.Toolkit.KryptonCheckBox chkAllowCurrentPage;
+        private Krypton.Toolkit.KryptonCheckBox chkUseEXDialog;
+        private Krypton.Toolkit.KryptonCheckBox chkShowNetwork;
+        private Krypton.Toolkit.KryptonCheckBox chkAllowSomePages;
+        private Krypton.Toolkit.KryptonCheckBox chkAllowSelection;
+        private Krypton.Toolkit.KryptonCheckBox chkAllowPrintToFile;
     }
 }
 
