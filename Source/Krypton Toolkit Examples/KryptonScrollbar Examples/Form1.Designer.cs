@@ -32,14 +32,14 @@ namespace KryptonScrollbarExamples
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
-            this.ksbVertical = new Krypton.Toolkit.KryptonScrollBar();
-            this.ksbHorizontal = new Krypton.Toolkit.KryptonScrollBar();
-            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
-            this.knudHorizontal = new Krypton.Toolkit.KryptonNumericUpDown();
-            this.pbHorizontal = new System.Windows.Forms.ProgressBar();
             this.pbVertical = new System.Windows.Forms.ProgressBar();
             this.knudVertical = new Krypton.Toolkit.KryptonNumericUpDown();
             this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
+            this.pbHorizontal = new System.Windows.Forms.ProgressBar();
+            this.knudHorizontal = new Krypton.Toolkit.KryptonNumericUpDown();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            this.ksbHorizontal = new Krypton.Toolkit.KryptonScrollBar();
+            this.ksbVertical = new Krypton.Toolkit.KryptonScrollBar();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -59,74 +59,6 @@ namespace KryptonScrollbarExamples
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(404, 272);
             this.kryptonPanel1.TabIndex = 0;
-            // 
-            // ksbVertical
-            // 
-            this.ksbVertical.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(140)))), ((int)(((byte)(201)))));
-            this.ksbVertical.DisabledBorderColor = System.Drawing.Color.Gray;
-            this.ksbVertical.Location = new System.Drawing.Point(13, 13);
-            this.ksbVertical.Name = "ksbVertical";
-            this.ksbVertical.Opacity = 1D;
-            this.ksbVertical.Size = new System.Drawing.Size(19, 247);
-            this.ksbVertical.TabIndex = 0;
-            this.ksbVertical.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ksbVertical_Scroll);
-            // 
-            // ksbHorizontal
-            // 
-            this.ksbHorizontal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(140)))), ((int)(((byte)(201)))));
-            this.ksbHorizontal.DisabledBorderColor = System.Drawing.Color.Gray;
-            this.ksbHorizontal.Location = new System.Drawing.Point(39, 13);
-            this.ksbHorizontal.Name = "ksbHorizontal";
-            this.ksbHorizontal.Opacity = 1D;
-            this.ksbHorizontal.Orientation = Krypton.Toolkit.ScrollBarOrientation.Horizontal;
-            this.ksbHorizontal.Size = new System.Drawing.Size(353, 19);
-            this.ksbHorizontal.TabIndex = 1;
-            this.ksbHorizontal.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ksbHorizontal_Scroll);
-            // 
-            // kryptonLabel1
-            // 
-            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel1.Location = new System.Drawing.Point(39, 39);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(111, 20);
-            this.kryptonLabel1.TabIndex = 2;
-            this.kryptonLabel1.Values.Text = "Horizontal Value:";
-            // 
-            // knudHorizontal
-            // 
-            this.knudHorizontal.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.knudHorizontal.Location = new System.Drawing.Point(161, 39);
-            this.knudHorizontal.Maximum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.knudHorizontal.Minimum = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.knudHorizontal.Name = "knudHorizontal";
-            this.knudHorizontal.Size = new System.Drawing.Size(120, 22);
-            this.knudHorizontal.TabIndex = 3;
-            this.knudHorizontal.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.knudHorizontal.Value = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.knudHorizontal.ValueChanged += new System.EventHandler(this.knudHorizontal_ValueChanged);
-            // 
-            // pbHorizontal
-            // 
-            this.pbHorizontal.Location = new System.Drawing.Point(39, 66);
-            this.pbHorizontal.Name = "pbHorizontal";
-            this.pbHorizontal.Size = new System.Drawing.Size(353, 23);
-            this.pbHorizontal.TabIndex = 4;
             // 
             // pbVertical
             // 
@@ -172,6 +104,74 @@ namespace KryptonScrollbarExamples
             this.kryptonLabel2.Size = new System.Drawing.Size(94, 20);
             this.kryptonLabel2.TabIndex = 5;
             this.kryptonLabel2.Values.Text = "Vertical Value:";
+            // 
+            // pbHorizontal
+            // 
+            this.pbHorizontal.Location = new System.Drawing.Point(39, 66);
+            this.pbHorizontal.Name = "pbHorizontal";
+            this.pbHorizontal.Size = new System.Drawing.Size(353, 23);
+            this.pbHorizontal.TabIndex = 4;
+            // 
+            // knudHorizontal
+            // 
+            this.knudHorizontal.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.knudHorizontal.Location = new System.Drawing.Point(161, 39);
+            this.knudHorizontal.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.knudHorizontal.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.knudHorizontal.Name = "knudHorizontal";
+            this.knudHorizontal.Size = new System.Drawing.Size(120, 22);
+            this.knudHorizontal.TabIndex = 3;
+            this.knudHorizontal.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.knudHorizontal.Value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.knudHorizontal.ValueChanged += new System.EventHandler(this.knudHorizontal_ValueChanged);
+            // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.BoldControl;
+            this.kryptonLabel1.Location = new System.Drawing.Point(39, 39);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(111, 20);
+            this.kryptonLabel1.TabIndex = 2;
+            this.kryptonLabel1.Values.Text = "Horizontal Value:";
+            // 
+            // ksbHorizontal
+            // 
+            this.ksbHorizontal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(140)))), ((int)(((byte)(201)))));
+            this.ksbHorizontal.DisabledBorderColor = System.Drawing.Color.Gray;
+            this.ksbHorizontal.Location = new System.Drawing.Point(39, 13);
+            this.ksbHorizontal.Name = "ksbHorizontal";
+            this.ksbHorizontal.Opacity = 1D;
+            this.ksbHorizontal.Orientation = Krypton.Toolkit.ScrollBarOrientation.Horizontal;
+            this.ksbHorizontal.Size = new System.Drawing.Size(353, 19);
+            this.ksbHorizontal.TabIndex = 1;
+            this.ksbHorizontal.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ksbHorizontal_Scroll);
+            // 
+            // ksbVertical
+            // 
+            this.ksbVertical.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(140)))), ((int)(((byte)(201)))));
+            this.ksbVertical.DisabledBorderColor = System.Drawing.Color.Gray;
+            this.ksbVertical.Location = new System.Drawing.Point(13, 13);
+            this.ksbVertical.Name = "ksbVertical";
+            this.ksbVertical.Opacity = 1D;
+            this.ksbVertical.Size = new System.Drawing.Size(19, 247);
+            this.ksbVertical.TabIndex = 0;
+            this.ksbVertical.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ksbVertical_Scroll);
             // 
             // Form1
             // 
