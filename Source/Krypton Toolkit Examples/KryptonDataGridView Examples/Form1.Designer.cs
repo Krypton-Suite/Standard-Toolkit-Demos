@@ -28,7 +28,6 @@ namespace KryptonDataGridViewExamples
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -58,9 +57,9 @@ namespace KryptonDataGridViewExamples
             this.rbStyleCustom = new System.Windows.Forms.RadioButton();
             this.rbStyleSheet = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.buttonClearCellColors = new Krypton.Toolkit.KryptonButton();
             this.buttonRandomCellColors = new Krypton.Toolkit.KryptonButton();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonDataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
             this.colDateTime = new Krypton.Toolkit.KryptonDataGridViewDateTimePickerColumn();
             this.colComboBox = new Krypton.Toolkit.KryptonDataGridViewComboBoxColumn();
@@ -90,8 +89,8 @@ namespace KryptonDataGridViewExamples
             this.kryptonDataGridViewTextBoxColumn2 = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.kryptonDataGridViewTextBoxColumn3 = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.Column2 = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
-            this.kryptonPalette = new Krypton.Toolkit.KryptonPalette(this.components);
-            this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonPalette = new Krypton.Toolkit.KryptonPalette();
+            this.kryptonManager = new Krypton.Toolkit.KryptonManager();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtTestData)).BeginInit();
@@ -342,19 +341,13 @@ namespace KryptonDataGridViewExamples
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Operations";
             // 
-            // kryptonLabel1
-            // 
-            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
-            this.kryptonLabel1.Location = new System.Drawing.Point(477, 279);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(238, 20);
-            this.kryptonLabel1.TabIndex = 6;
-            this.kryptonLabel1.Values.Text = "Right click grid for Krypton Context Menu";
-            // 
             // buttonClearCellColors
             // 
+            this.buttonClearCellColors.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.buttonClearCellColors.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonClearCellColors.Location = new System.Drawing.Point(12, 60);
             this.buttonClearCellColors.Name = "buttonClearCellColors";
+            this.buttonClearCellColors.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.buttonClearCellColors.Size = new System.Drawing.Size(129, 29);
             this.buttonClearCellColors.TabIndex = 1;
             this.buttonClearCellColors.Values.Text = "Clear Cell Colors";
@@ -362,12 +355,23 @@ namespace KryptonDataGridViewExamples
             // 
             // buttonRandomCellColors
             // 
+            this.buttonRandomCellColors.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.buttonRandomCellColors.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonRandomCellColors.Location = new System.Drawing.Point(13, 26);
             this.buttonRandomCellColors.Name = "buttonRandomCellColors";
+            this.buttonRandomCellColors.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.buttonRandomCellColors.Size = new System.Drawing.Size(129, 29);
             this.buttonRandomCellColors.TabIndex = 0;
             this.buttonRandomCellColors.Values.Text = "Random Cell Colors";
             this.buttonRandomCellColors.Click += new System.EventHandler(this.buttonRandomCellColors_Click);
+            // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.Location = new System.Drawing.Point(477, 279);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(238, 20);
+            this.kryptonLabel1.TabIndex = 6;
+            this.kryptonLabel1.Values.Text = "Right click grid for Krypton Context Menu";
             // 
             // kryptonDataGridView1
             // 
@@ -394,16 +398,22 @@ namespace KryptonDataGridViewExamples
             // 
             // colDateTime
             // 
+            this.colDateTime.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.colDateTime.CalendarFirstDayOfWeek = System.Windows.Forms.Day.Default;
             this.colDateTime.Checked = false;
             this.colDateTime.DataPropertyName = "DateTime";
+            this.colDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.colDateTime.HeaderText = "DateTime";
             this.colDateTime.Name = "colDateTime";
             this.colDateTime.Width = 190;
             // 
             // colComboBox
             // 
+            this.colComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.colComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.colComboBox.DataPropertyName = "ComboBox";
             this.colComboBox.DataSource = null;
+            this.colComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.colComboBox.DropDownWidth = 121;
             this.colComboBox.HeaderText = "ComboBox";
             this.colComboBox.Items.Add("Mr");
@@ -417,15 +427,20 @@ namespace KryptonDataGridViewExamples
             // 
             this.colTextBox.DataPropertyName = "TextBox";
             this.colTextBox.HeaderText = "TextBox";
+            this.colTextBox.MaxInputLength = 32767;
             this.colTextBox.Name = "colTextBox";
+            this.colTextBox.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.colTextBox.Width = 100;
             // 
             // colMaskedTextBox
             // 
+            this.colMaskedTextBox.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
             this.colMaskedTextBox.DataPropertyName = "MaskedTextBox";
             this.colMaskedTextBox.HeaderText = "MaskedTextBox";
+            this.colMaskedTextBox.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
             this.colMaskedTextBox.Mask = "(99) 9999-9999";
             this.colMaskedTextBox.Name = "colMaskedTextBox";
+            this.colMaskedTextBox.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
             this.colMaskedTextBox.Width = 100;
             // 
             // colDomainUpDown
@@ -481,19 +496,39 @@ namespace KryptonDataGridViewExamples
             // 
             // kryptonContextMenuCheckBox1
             // 
+            this.kryptonContextMenuCheckBox1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuCheckBox1.ExtraText = "";
             // 
             // kryptonContextMenuCheckButton1
             // 
+            this.kryptonContextMenuCheckButton1.ButtonStyle = Krypton.Toolkit.ButtonStyle.Standalone;
             this.kryptonContextMenuCheckButton1.Text = "CheckButton";
             // 
             // kryptonContextMenuRadioButton1
             // 
             this.kryptonContextMenuRadioButton1.ExtraText = "";
+            this.kryptonContextMenuRadioButton1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
             // 
             // kryptonContextMenuLinkLabel1
             // 
             this.kryptonContextMenuLinkLabel1.ExtraText = "";
+            this.kryptonContextMenuLinkLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
+            this.kryptonContextMenuLinkLabel1.LinkBehavior = Krypton.Toolkit.KryptonLinkBehavior.AlwaysUnderline;
+            // 
+            // kryptonContextMenuColorColumns1
+            // 
+            this.kryptonContextMenuColorColumns1.BlockSize = new System.Drawing.Size(13, 13);
+            this.kryptonContextMenuColorColumns1.ColorScheme = Krypton.Toolkit.ColorScheme.OfficeThemes;
+            this.kryptonContextMenuColorColumns1.SelectedColor = System.Drawing.Color.Empty;
+            // 
+            // kryptonContextMenuImageSelect1
+            // 
+            this.kryptonContextMenuImageSelect1.ButtonStyle = Krypton.Toolkit.ButtonStyle.LowProfile;
+            this.kryptonContextMenuImageSelect1.Padding = new System.Windows.Forms.Padding(2);
+            // 
+            // kryptonContextMenuMonthCalendar1
+            // 
+            this.kryptonContextMenuMonthCalendar1.CalendarDimensions = new System.Drawing.Size(1, 1);
             // 
             // kryptonDataGridViewCheckBoxColumn1
             // 
@@ -512,29 +547,36 @@ namespace KryptonDataGridViewExamples
             // 
             this.kryptonDataGridViewTextBoxColumn4.DataPropertyName = "Age";
             this.kryptonDataGridViewTextBoxColumn4.HeaderText = "Age";
+            this.kryptonDataGridViewTextBoxColumn4.MaxInputLength = 32767;
             this.kryptonDataGridViewTextBoxColumn4.Name = "kryptonDataGridViewTextBoxColumn4";
             this.kryptonDataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.kryptonDataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.kryptonDataGridViewTextBoxColumn4.Width = 100;
             // 
             // kryptonDataGridViewTextBoxColumn5
             // 
             this.kryptonDataGridViewTextBoxColumn5.DataPropertyName = "Comment";
             this.kryptonDataGridViewTextBoxColumn5.HeaderText = "Comment";
+            this.kryptonDataGridViewTextBoxColumn5.MaxInputLength = 32767;
             this.kryptonDataGridViewTextBoxColumn5.Name = "kryptonDataGridViewTextBoxColumn5";
             this.kryptonDataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.kryptonDataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.kryptonDataGridViewTextBoxColumn5.Width = 100;
             // 
             // kryptonDataGridViewTextBoxColumn6
             // 
             this.kryptonDataGridViewTextBoxColumn6.DataPropertyName = "Name";
             this.kryptonDataGridViewTextBoxColumn6.HeaderText = "Name";
+            this.kryptonDataGridViewTextBoxColumn6.MaxInputLength = 32767;
             this.kryptonDataGridViewTextBoxColumn6.Name = "kryptonDataGridViewTextBoxColumn6";
             this.kryptonDataGridViewTextBoxColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.kryptonDataGridViewTextBoxColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.kryptonDataGridViewTextBoxColumn6.Width = 100;
             // 
             // kryptonDataGridViewButtonColumn1
             // 
             this.kryptonDataGridViewButtonColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.kryptonDataGridViewButtonColumn1.ButtonStyle = Krypton.Toolkit.ButtonStyle.Standalone;
             this.kryptonDataGridViewButtonColumn1.DataPropertyName = "Button";
             this.kryptonDataGridViewButtonColumn1.HeaderText = "Button";
             this.kryptonDataGridViewButtonColumn1.Name = "kryptonDataGridViewButtonColumn1";
@@ -558,29 +600,36 @@ namespace KryptonDataGridViewExamples
             // 
             this.kryptonDataGridViewTextBoxColumn1.DataPropertyName = "Name";
             this.kryptonDataGridViewTextBoxColumn1.HeaderText = "Name";
+            this.kryptonDataGridViewTextBoxColumn1.MaxInputLength = 32767;
             this.kryptonDataGridViewTextBoxColumn1.Name = "kryptonDataGridViewTextBoxColumn1";
             this.kryptonDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.kryptonDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.kryptonDataGridViewTextBoxColumn1.Width = 100;
             // 
             // kryptonDataGridViewTextBoxColumn2
             // 
             this.kryptonDataGridViewTextBoxColumn2.DataPropertyName = "Age";
             this.kryptonDataGridViewTextBoxColumn2.HeaderText = "Age";
+            this.kryptonDataGridViewTextBoxColumn2.MaxInputLength = 32767;
             this.kryptonDataGridViewTextBoxColumn2.Name = "kryptonDataGridViewTextBoxColumn2";
             this.kryptonDataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.kryptonDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.kryptonDataGridViewTextBoxColumn2.Width = 100;
             // 
             // kryptonDataGridViewTextBoxColumn3
             // 
             this.kryptonDataGridViewTextBoxColumn3.DataPropertyName = "Comment";
             this.kryptonDataGridViewTextBoxColumn3.HeaderText = "Comment";
+            this.kryptonDataGridViewTextBoxColumn3.MaxInputLength = 32767;
             this.kryptonDataGridViewTextBoxColumn3.Name = "kryptonDataGridViewTextBoxColumn3";
             this.kryptonDataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.kryptonDataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.kryptonDataGridViewTextBoxColumn3.Width = 100;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column2.ButtonStyle = Krypton.Toolkit.ButtonStyle.Standalone;
             this.Column2.DataPropertyName = "Name";
             this.Column2.HeaderText = "Button";
             this.Column2.Name = "Column2";
@@ -589,88 +638,286 @@ namespace KryptonDataGridViewExamples
             // 
             // kryptonPalette
             // 
+            this.kryptonPalette.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.kryptonPalette.GridStyles.GridCustom1.StateCommon.Background.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateCommon.Background.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.kryptonPalette.GridStyles.GridCustom1.StateCommon.Background.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateCommon.Background.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateCommon.Background.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateCommon.Background.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Back.Color1 = System.Drawing.Color.Gray;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Border.Color1 = System.Drawing.Color.Black;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Border.Color2 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Content.Color1 = System.Drawing.Color.White;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Content.Color2 = System.Drawing.Color.White;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Content.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Content.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Content.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Content.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Content.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Content.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Content.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.DataCell.Content.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Back.Color2 = System.Drawing.Color.Silver;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Rounded;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Border.Color1 = System.Drawing.Color.Black;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Border.Color2 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Content.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Content.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Content.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Content.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Content.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Content.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Content.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderColumn.Content.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Back.Color2 = System.Drawing.Color.Silver;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Rounded;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Border.Color1 = System.Drawing.Color.Black;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Border.Color2 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Content.Color1 = System.Drawing.Color.Black;
             this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Content.Color2 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Content.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Content.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Content.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Content.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Content.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Content.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Content.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateNormal.HeaderRow.Content.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Border.Color1 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Content.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Content.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Content.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Content.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Content.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Content.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Content.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderColumn.Content.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Border.Color1 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Content.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Content.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Content.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Content.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Content.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Content.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Content.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StatePressed.HeaderRow.Content.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Border.Color1 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Content.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Content.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Content.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Content.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Content.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Content.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Content.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.DataCell.Content.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Rounded;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Border.Color1 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Content.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Content.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Content.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Content.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Content.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Content.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Content.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderColumn.Content.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Rounded;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Border.Color1 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Content.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Content.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Content.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Content.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Content.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Content.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Content.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateSelected.HeaderRow.Content.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Border.Color1 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Content.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Content.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Content.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Content.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Content.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Content.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Content.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderColumn.Content.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Border.Color1 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Content.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Content.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Content.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Content.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Content.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Content.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Content.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Content.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             // 
             // kryptonManager
             // 

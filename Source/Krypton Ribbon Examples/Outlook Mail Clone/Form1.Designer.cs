@@ -497,8 +497,11 @@ namespace OutlookMailClone
             // 
             // kryptonButton2
             // 
+            this.kryptonButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.kryptonButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButton2.Location = new System.Drawing.Point(3, 34);
             this.kryptonButton2.Name = "kryptonButton2";
+            this.kryptonButton2.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonButton2.Size = new System.Drawing.Size(50, 25);
             this.kryptonButton2.TabIndex = 1;
             this.kryptonButton2.Values.Text = "Cc...";
@@ -512,6 +515,7 @@ namespace OutlookMailClone
             this.richTextBoxMessage.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBoxMessage.Location = new System.Drawing.Point(3, 92);
             this.richTextBoxMessage.Name = "richTextBoxMessage";
+            this.richTextBoxMessage.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
             this.richTextBoxMessage.Size = new System.Drawing.Size(762, 282);
             this.richTextBoxMessage.TabIndex = 6;
             this.richTextBoxMessage.Text = resources.GetString("richTextBoxMessage.Text");
@@ -524,6 +528,7 @@ namespace OutlookMailClone
             this.richTextBoxSubject.Location = new System.Drawing.Point(62, 65);
             this.richTextBoxSubject.Multiline = false;
             this.richTextBoxSubject.Name = "richTextBoxSubject";
+            this.richTextBoxSubject.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
             this.richTextBoxSubject.Size = new System.Drawing.Size(703, 21);
             this.richTextBoxSubject.TabIndex = 5;
             this.richTextBoxSubject.Text = "Outlook Mail Clone";
@@ -536,6 +541,7 @@ namespace OutlookMailClone
             this.richTextBoxCc.Location = new System.Drawing.Point(62, 34);
             this.richTextBoxCc.Multiline = false;
             this.richTextBoxCc.Name = "richTextBoxCc";
+            this.richTextBoxCc.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
             this.richTextBoxCc.Size = new System.Drawing.Size(703, 25);
             this.richTextBoxCc.TabIndex = 4;
             this.richTextBoxCc.Text = "";
@@ -548,14 +554,18 @@ namespace OutlookMailClone
             this.richTextBoxTo.Location = new System.Drawing.Point(62, 3);
             this.richTextBoxTo.Multiline = false;
             this.richTextBoxTo.Name = "richTextBoxTo";
+            this.richTextBoxTo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
             this.richTextBoxTo.Size = new System.Drawing.Size(703, 25);
             this.richTextBoxTo.TabIndex = 3;
             this.richTextBoxTo.Text = "friend@megacorp.com";
             // 
             // kryptonButton1
             // 
+            this.kryptonButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.kryptonButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButton1.Location = new System.Drawing.Point(3, 3);
             this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonButton1.Size = new System.Drawing.Size(50, 25);
             this.kryptonButton1.TabIndex = 0;
             this.kryptonButton1.Values.Text = "To...";
@@ -573,31 +583,43 @@ namespace OutlookMailClone
             // 
             // pasteToolStripMenuItem
             // 
+            this.pasteToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.pasteToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.ClipboardPasteSmall;
+            this.pasteToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.pasteToolStripMenuItem.Text = "Paste";
             // 
             // pasteSpecialToolStripMenuItem
             // 
+            this.pasteSpecialToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.pasteSpecialToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.ClipboardPasteSpecial;
+            this.pasteSpecialToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.pasteSpecialToolStripMenuItem.Text = "Paste Special";
             // 
             // saveToolStripMenuItem
             // 
+            this.saveToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.saveToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.QATSaveSmall;
+            this.saveToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // forwardToolStripMenuItem
             // 
+            this.forwardToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.forwardToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.QATForwardSmall;
+            this.forwardToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.forwardToolStripMenuItem.Text = "Forward";
             // 
             // deleteToolStripMenuItem
             // 
+            this.deleteToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.deleteToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.QATDeleteSmall;
+            this.deleteToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // exitToolStripMenuItem
             // 
+            this.exitToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.exitToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // cmsBusinessCards
@@ -612,6 +634,8 @@ namespace OutlookMailClone
             // 
             // otherBusinessCardsToolStripMenuItem
             // 
+            this.otherBusinessCardsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.otherBusinessCardsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.otherBusinessCardsToolStripMenuItem.Text = "Other Business Cards...";
             // 
             // cmsSignatures
@@ -626,6 +650,8 @@ namespace OutlookMailClone
             // 
             // signaturesToolStripMenuItem
             // 
+            this.signaturesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.signaturesToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.signaturesToolStripMenuItem.Text = "Signatures...";
             // 
             // cmsFollowUp
@@ -650,45 +676,63 @@ namespace OutlookMailClone
             // 
             // todayToolStripMenuItem1
             // 
+            this.todayToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.todayToolStripMenuItem1.Image = global::OutlookMailClone.Properties.Resources.OptionsToday;
+            this.todayToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.todayToolStripMenuItem1.Text = "Today";
             // 
             // tomorrowToolStripMenuItem1
             // 
+            this.tomorrowToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.tomorrowToolStripMenuItem1.Image = global::OutlookMailClone.Properties.Resources.OptionsTomorrow;
+            this.tomorrowToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.tomorrowToolStripMenuItem1.Text = "Tomorrow";
             // 
             // thisWeekToolStripMenuItem1
             // 
+            this.thisWeekToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.thisWeekToolStripMenuItem1.Image = global::OutlookMailClone.Properties.Resources.OptionsWeek;
+            this.thisWeekToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.thisWeekToolStripMenuItem1.Text = "This Week";
             // 
             // nextWeekToolStripMenuItem1
             // 
+            this.nextWeekToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.nextWeekToolStripMenuItem1.Image = global::OutlookMailClone.Properties.Resources.OptionsWeek;
+            this.nextWeekToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.nextWeekToolStripMenuItem1.Text = "Next Week";
             // 
             // noDateToolStripMenuItem1
             // 
+            this.noDateToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.noDateToolStripMenuItem1.Image = global::OutlookMailClone.Properties.Resources.OptionsToday;
+            this.noDateToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.noDateToolStripMenuItem1.Text = "No Date";
             // 
             // customToolStripMenuItem1
             // 
+            this.customToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.customToolStripMenuItem1.Image = global::OutlookMailClone.Properties.Resources.OptionsToday;
+            this.customToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.customToolStripMenuItem1.Text = "Custom...";
             // 
             // addReminderToolStripMenuItem1
             // 
+            this.addReminderToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.addReminderToolStripMenuItem1.Image = global::OutlookMailClone.Properties.Resources.OptionsReminder;
+            this.addReminderToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.addReminderToolStripMenuItem1.Text = "Add Reminder...";
             // 
             // clearFlagToolStripMenuItem1
             // 
+            this.clearFlagToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.clearFlagToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.clearFlagToolStripMenuItem1.Text = "Clear Flag";
             // 
             // flagForRecipientsToolStripMenuItem1
             // 
+            this.flagForRecipientsToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.flagForRecipientsToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.flagForRecipientsToolStripMenuItem1.Text = "Flag For Recipients...";
             // 
             // cmsSpelling
@@ -711,45 +755,63 @@ namespace OutlookMailClone
             // 
             // spellingGrammerToolStripMenuItem
             // 
+            this.spellingGrammerToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.spellingGrammerToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.ProofingSpellingSmall;
+            this.spellingGrammerToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.spellingGrammerToolStripMenuItem.Text = "Spelling & Grammar";
             // 
             // researchToolStripMenuItem
             // 
+            this.researchToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.researchToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.ProofingResearchSmall;
+            this.researchToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.researchToolStripMenuItem.Text = "Research...";
             // 
             // thesaoursToolStripMenuItem
             // 
+            this.thesaoursToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.thesaoursToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.ProofingThesaurusSmall;
+            this.thesaoursToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.thesaoursToolStripMenuItem.Text = "Thesaurus...";
             // 
             // translateToolStripMenuItem
             // 
+            this.translateToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.translateToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.ProofingTranslateSmall;
+            this.translateToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.translateToolStripMenuItem.Text = "Translate...";
             // 
             // translationScreentipToolStripMenuItem
             // 
+            this.translationScreentipToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.translationScreentipToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.ProofingTransScreentipSmall;
+            this.translationScreentipToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.translationScreentipToolStripMenuItem.Text = "Translation Screentip...";
             // 
             // setLanguageToolStripMenuItem
             // 
+            this.setLanguageToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.setLanguageToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.ProofingSetLanguageSmall;
+            this.setLanguageToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.setLanguageToolStripMenuItem.Text = "Set Language...";
             // 
             // wordCountToolStripMenuItem
             // 
+            this.wordCountToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.wordCountToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.ProofingWordCountSmall;
+            this.wordCountToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.wordCountToolStripMenuItem.Text = "Word Count...";
             // 
             // clearFlagToolStripMenuItem
             // 
+            this.clearFlagToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.clearFlagToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.clearFlagToolStripMenuItem.Text = "Clear Flag";
             // 
             // flagForRecipientsToolStripMenuItem
             // 
+            this.flagForRecipientsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.flagForRecipientsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.flagForRecipientsToolStripMenuItem.Text = "Flag for Recipients...";
             // 
             // cmsFormPublish
@@ -765,11 +827,15 @@ namespace OutlookMailClone
             // 
             // publishFormToolStripMenuItem
             // 
+            this.publishFormToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.publishFormToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.FormPublishSmall;
+            this.publishFormToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.publishFormToolStripMenuItem.Text = "Publish Form";
             // 
             // publishFormAsToolStripMenuItem
             // 
+            this.publishFormAsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.publishFormAsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.publishFormAsToolStripMenuItem.Text = "Publish Form As...";
             // 
             // cmsTable
@@ -788,26 +854,36 @@ namespace OutlookMailClone
             // 
             // insertTableToolStripMenuItem
             // 
+            this.insertTableToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.insertTableToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.TableSmall;
+            this.insertTableToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.insertTableToolStripMenuItem.Text = "Insert Table...";
             // 
             // drawTableToolStripMenuItem
             // 
+            this.drawTableToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.drawTableToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.TableDrawSmall;
+            this.drawTableToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.drawTableToolStripMenuItem.Text = "Draw Table";
             // 
             // convertTextToTableToolStripMenuItem
             // 
+            this.convertTextToTableToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.convertTextToTableToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.convertTextToTableToolStripMenuItem.Text = "Convert Text to Table...";
             // 
             // excelSpreadsheetToolStripMenuItem
             // 
+            this.excelSpreadsheetToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.excelSpreadsheetToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.ExcelSpreadsheetSmall;
+            this.excelSpreadsheetToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.excelSpreadsheetToolStripMenuItem.Text = "Excel Spreadsheet";
             // 
             // quickTablesToolStripMenuItem
             // 
+            this.quickTablesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.quickTablesToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.TableSmall;
+            this.quickTablesToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.quickTablesToolStripMenuItem.Text = "Quick Tables";
             // 
             // cmsTextBox
@@ -823,11 +899,15 @@ namespace OutlookMailClone
             // 
             // drawTextBoxToolStripMenuItem
             // 
+            this.drawTextBoxToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.drawTextBoxToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.TextBoxSmall;
+            this.drawTextBoxToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.drawTextBoxToolStripMenuItem.Text = "Draw Text Box";
             // 
             // saveSelectionToTextBoxGalleryToolStripMenuItem
             // 
+            this.saveSelectionToTextBoxGalleryToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.saveSelectionToTextBoxGalleryToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.saveSelectionToTextBoxGalleryToolStripMenuItem.Text = "Save Selection to Text Box Gallery";
             // 
             // cmsDropCap
@@ -842,7 +922,9 @@ namespace OutlookMailClone
             // 
             // dropCapOptionsToolStripMenuItem
             // 
+            this.dropCapOptionsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.dropCapOptionsToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.DropCapSmall;
+            this.dropCapOptionsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.dropCapOptionsToolStripMenuItem.Text = "Drop Cap Options...";
             // 
             // cmsEquation
@@ -858,11 +940,15 @@ namespace OutlookMailClone
             // 
             // insertNewEquationToolStripMenuItem
             // 
+            this.insertNewEquationToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.insertNewEquationToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.EquationSmall;
+            this.insertNewEquationToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.insertNewEquationToolStripMenuItem.Text = "Insert New Equation";
             // 
             // saveTextTToolStripMenuItem
             // 
+            this.saveTextTToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.saveTextTToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.saveTextTToolStripMenuItem.Text = "Save Selection to Equation Gallery...";
             // 
             // cmsQuickParts
@@ -877,6 +963,8 @@ namespace OutlookMailClone
             // 
             // saveSelectionToQuickPartsGalleryToolStripMenuItem
             // 
+            this.saveSelectionToQuickPartsGalleryToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.saveSelectionToQuickPartsGalleryToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.saveSelectionToQuickPartsGalleryToolStripMenuItem.Text = "Save Selection to Quick Parts Gallery...";
             // 
             // cmsSymbol
@@ -891,7 +979,9 @@ namespace OutlookMailClone
             // 
             // moreSymbolsToolStripMenuItem
             // 
+            this.moreSymbolsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.moreSymbolsToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.SymbolSmall;
+            this.moreSymbolsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.moreSymbolsToolStripMenuItem.Text = "More Symbols...";
             // 
             // cmsShapes
@@ -906,7 +996,9 @@ namespace OutlookMailClone
             // 
             // newDrawingCanvasToolStripMenuItem
             // 
+            this.newDrawingCanvasToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.newDrawingCanvasToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.DrawingCanvasSmall;
+            this.newDrawingCanvasToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.newDrawingCanvasToolStripMenuItem.Text = "New Drawing Canvas";
             // 
             // cmsThemes
@@ -924,20 +1016,28 @@ namespace OutlookMailClone
             // 
             // resetToThemeFromTemplateToolStripMenuItem
             // 
+            this.resetToThemeFromTemplateToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.resetToThemeFromTemplateToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.resetToThemeFromTemplateToolStripMenuItem.Text = "Reset to Theme from Template";
             // 
             // moreThemesOnMicrosoftOfficeToolStripMenuItem
             // 
+            this.moreThemesOnMicrosoftOfficeToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.moreThemesOnMicrosoftOfficeToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.moreThemesOnMicrosoftOfficeToolStripMenuItem.Text = "More Themes on Microsoft Office";
             // 
             // browseForThemesToolStripMenuItem
             // 
+            this.browseForThemesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.browseForThemesToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.BrowseThemesSmall;
+            this.browseForThemesToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.browseForThemesToolStripMenuItem.Text = "Browse for Themes...";
             // 
             // saveCurrentThemeToolStripMenuItem
             // 
+            this.saveCurrentThemeToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.saveCurrentThemeToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.SaveThemesSmall;
+            this.saveCurrentThemeToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.saveCurrentThemeToolStripMenuItem.Text = "Save Current Theme...";
             // 
             // cmsPageColor
@@ -955,14 +1055,20 @@ namespace OutlookMailClone
             // 
             // noColorToolStripMenuItem
             // 
+            this.noColorToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.noColorToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.noColorToolStripMenuItem.Text = "No Color";
             // 
             // moreColorsToolStripMenuItem
             // 
+            this.moreColorsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.moreColorsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.moreColorsToolStripMenuItem.Text = "More Colors...";
             // 
             // fillEffectsToolStripMenuItem
             // 
+            this.fillEffectsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.fillEffectsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.fillEffectsToolStripMenuItem.Text = "Fill Effects...";
             // 
             // cmsUseVotingButtons
@@ -981,18 +1087,26 @@ namespace OutlookMailClone
             // 
             // approveRejectToolStripMenuItem
             // 
+            this.approveRejectToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.approveRejectToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.approveRejectToolStripMenuItem.Text = "Approve; Reject";
             // 
             // yesNoToolStripMenuItem
             // 
+            this.yesNoToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.yesNoToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.yesNoToolStripMenuItem.Text = "Yes; No";
             // 
             // yesNoMaybeToolStripMenuItem
             // 
+            this.yesNoMaybeToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.yesNoMaybeToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.yesNoMaybeToolStripMenuItem.Text = "Yes; No; Maybe";
             // 
             // customToolStripMenuItem2
             // 
+            this.customToolStripMenuItem2.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.customToolStripMenuItem2.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.customToolStripMenuItem2.Text = "Custom...";
             // 
             // cmsSaveSentItem
@@ -1010,17 +1124,22 @@ namespace OutlookMailClone
             // 
             // otherFolderToolStripMenuItem
             // 
+            this.otherFolderToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.otherFolderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.OtherFolderSmall;
+            this.otherFolderToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.otherFolderToolStripMenuItem.Text = "Other Folder...";
             // 
             // useDefaultFolderToolStripMenuItem
             // 
             this.useDefaultFolderToolStripMenuItem.Checked = true;
             this.useDefaultFolderToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.useDefaultFolderToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.useDefaultFolderToolStripMenuItem.Text = "Use Default Folder";
             // 
             // dotNotSaveToolStripMenuItem
             // 
+            this.dotNotSaveToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.dotNotSaveToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.dotNotSaveToolStripMenuItem.Text = "Dot Not Save";
             // 
             // cmsChangeCase
@@ -1039,22 +1158,32 @@ namespace OutlookMailClone
             // 
             // sentenceCaseToolStripMenuItem
             // 
+            this.sentenceCaseToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.sentenceCaseToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.sentenceCaseToolStripMenuItem.Text = "Sentence case.";
             // 
             // lowercaseToolStripMenuItem
             // 
+            this.lowercaseToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.lowercaseToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.lowercaseToolStripMenuItem.Text = "lowercase";
             // 
             // uPPERCASEToolStripMenuItem
             // 
+            this.uPPERCASEToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.uPPERCASEToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.uPPERCASEToolStripMenuItem.Text = "UPPERCASE";
             // 
             // capitalizeEachWordToolStripMenuItem
             // 
+            this.capitalizeEachWordToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.capitalizeEachWordToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.capitalizeEachWordToolStripMenuItem.Text = "Capitalize Each Word";
             // 
             // tOGGLECASEToolStripMenuItem
             // 
+            this.tOGGLECASEToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.tOGGLECASEToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.tOGGLECASEToolStripMenuItem.Text = "tOGGLE cASE";
             // 
             // cmsSpacing
@@ -1072,22 +1201,30 @@ namespace OutlookMailClone
             // 
             // singleSpacingToolStripMenuItem
             // 
+            this.singleSpacingToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.singleSpacingToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.SpacingOne;
+            this.singleSpacingToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.singleSpacingToolStripMenuItem.Text = "Single Spacing";
             // 
             // spacingToolStripMenuItem
             // 
+            this.spacingToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.spacingToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.SpacingOneHalf;
+            this.spacingToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.spacingToolStripMenuItem.Text = "1.5 Spacing";
             // 
             // doubleSpacingToolStripMenuItem
             // 
+            this.doubleSpacingToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.doubleSpacingToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.SpacingDouble;
+            this.doubleSpacingToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.doubleSpacingToolStripMenuItem.Text = "Double Spacing";
             // 
             // paragraphToolStripMenuItem
             // 
+            this.paragraphToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.paragraphToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.SpacingParagraph;
+            this.paragraphToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.paragraphToolStripMenuItem.Text = "Paragraph...";
             // 
             // cmsBottomBorder
@@ -1121,82 +1258,114 @@ namespace OutlookMailClone
             // 
             // bottomBorderToolStripMenuItem
             // 
+            this.bottomBorderToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.bottomBorderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.BottomBorder;
+            this.bottomBorderToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.bottomBorderToolStripMenuItem.Text = "Bottom Border";
             // 
             // topBorderToolStripMenuItem
             // 
+            this.topBorderToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.topBorderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.TopBorder;
+            this.topBorderToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.topBorderToolStripMenuItem.Text = "Top Border";
             // 
             // leftBorderToolStripMenuItem
             // 
+            this.leftBorderToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.leftBorderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.LeftBorder;
+            this.leftBorderToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.leftBorderToolStripMenuItem.Text = "Left Border";
             // 
             // rightBorderToolStripMenuItem
             // 
+            this.rightBorderToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.rightBorderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.RightBorder;
+            this.rightBorderToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.rightBorderToolStripMenuItem.Text = "Right Border";
             // 
             // noBorderToolStripMenuItem
             // 
+            this.noBorderToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.noBorderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.NoBorder;
+            this.noBorderToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.noBorderToolStripMenuItem.Text = "No Border";
             // 
             // allBordersToolStripMenuItem
             // 
+            this.allBordersToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.allBordersToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.AllBorder;
+            this.allBordersToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.allBordersToolStripMenuItem.Text = "All Borders";
             // 
             // outsideBordersToolStripMenuItem
             // 
+            this.outsideBordersToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.outsideBordersToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.OutsideBorder;
+            this.outsideBordersToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.outsideBordersToolStripMenuItem.Text = "Outside Borders";
             // 
             // insideBordersToolStripMenuItem
             // 
+            this.insideBordersToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.insideBordersToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.InsideBorder;
+            this.insideBordersToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.insideBordersToolStripMenuItem.Text = "Inside Borders";
             // 
             // insideHorizontalBorderToolStripMenuItem
             // 
+            this.insideHorizontalBorderToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.insideHorizontalBorderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.InsideHorzBorder;
+            this.insideHorizontalBorderToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.insideHorizontalBorderToolStripMenuItem.Text = "Inside Horizontal Border";
             // 
             // insideVerticalBorderToolStripMenuItem
             // 
+            this.insideVerticalBorderToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.insideVerticalBorderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.InsideVertBorder;
+            this.insideVerticalBorderToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.insideVerticalBorderToolStripMenuItem.Text = "Inside Vertical Border";
             // 
             // diagonalDownBorderToolStripMenuItem
             // 
+            this.diagonalDownBorderToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.diagonalDownBorderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.DiagonalDownBorder;
+            this.diagonalDownBorderToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.diagonalDownBorderToolStripMenuItem.Text = "Diagonal Down Border";
             // 
             // diagonalUpBorderToolStripMenuItem
             // 
+            this.diagonalUpBorderToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.diagonalUpBorderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.DiagonalUpBorder;
+            this.diagonalUpBorderToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.diagonalUpBorderToolStripMenuItem.Text = "Diagonal Up Border";
             // 
             // horizontalLineToolStripMenuItem
             // 
+            this.horizontalLineToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.horizontalLineToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.HorizontalLineSmall;
+            this.horizontalLineToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.horizontalLineToolStripMenuItem.Text = "Horizontal Line";
             // 
             // drawTableToolStripMenuItem1
             // 
+            this.drawTableToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.drawTableToolStripMenuItem1.Image = global::OutlookMailClone.Properties.Resources.TableDrawSmall;
+            this.drawTableToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.drawTableToolStripMenuItem1.Text = "Draw Table";
             // 
             // viewGridlinesToolStripMenuItem
             // 
+            this.viewGridlinesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.viewGridlinesToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.ViewGridlines;
+            this.viewGridlinesToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.viewGridlinesToolStripMenuItem.Text = "View Gridlines";
             // 
             // bordersAndShadingToolStripMenuItem
             // 
+            this.bordersAndShadingToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.bordersAndShadingToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.BordersAndShading;
+            this.bordersAndShadingToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.bordersAndShadingToolStripMenuItem.Text = "Borders and Shading...";
             // 
             // cmsChangeStyles
@@ -1215,21 +1384,29 @@ namespace OutlookMailClone
             // 
             // styleSetToolStripMenuItem
             // 
+            this.styleSetToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.styleSetToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.StyleSet;
+            this.styleSetToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.styleSetToolStripMenuItem.Text = "Style Set";
             // 
             // colorsToolStripMenuItem
             // 
+            this.colorsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.colorsToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.ColorsSmall;
+            this.colorsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.colorsToolStripMenuItem.Text = "Colors";
             // 
             // fontsToolStripMenuItem
             // 
+            this.fontsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.fontsToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.FontsSmall;
+            this.fontsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.fontsToolStripMenuItem.Text = "Fonts";
             // 
             // setAsDefaultToolStripMenuItem
             // 
+            this.setAsDefaultToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.setAsDefaultToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.setAsDefaultToolStripMenuItem.Text = "Set as Default";
             // 
             // cmsQuickStyles
@@ -1246,16 +1423,22 @@ namespace OutlookMailClone
             // 
             // saveSelectionAsNewStyleToolStripMenuItem
             // 
+            this.saveSelectionAsNewStyleToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.saveSelectionAsNewStyleToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.saveSelectionAsNewStyleToolStripMenuItem.Text = "Save Selection as New Quick Style";
             // 
             // clearFormattingToolStripMenuItem
             // 
+            this.clearFormattingToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.clearFormattingToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.TextRubout;
+            this.clearFormattingToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.clearFormattingToolStripMenuItem.Text = "Clear Formatting";
             // 
             // applyStylesToolStripMenuItem
             // 
+            this.applyStylesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.applyStylesToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.ApplyStyles;
+            this.applyStylesToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.applyStylesToolStripMenuItem.Text = "Apply Styles...";
             // 
             // cmsFind
@@ -1271,11 +1454,15 @@ namespace OutlookMailClone
             // 
             // findToolStripMenuItem
             // 
+            this.findToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.findToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.FindSmall;
+            this.findToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.findToolStripMenuItem.Text = "Find...";
             // 
             // goToToolStripMenuItem
             // 
+            this.goToToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.goToToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.goToToolStripMenuItem.Text = "Go To...";
             // 
             // cmsSelect
@@ -1292,15 +1479,21 @@ namespace OutlookMailClone
             // 
             // selectAllToolStripMenuItem
             // 
+            this.selectAllToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.selectAllToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.selectAllToolStripMenuItem.Text = "Select All";
             // 
             // selectObjectsToolStripMenuItem
             // 
+            this.selectObjectsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.selectObjectsToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.SelectSmall;
+            this.selectObjectsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.selectObjectsToolStripMenuItem.Text = "Select Objects";
             // 
             // selectTextWithSimilarFormattingToolStripMenuItem
             // 
+            this.selectTextWithSimilarFormattingToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.selectTextWithSimilarFormattingToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.selectTextWithSimilarFormattingToolStripMenuItem.Text = "Select Text with Similar Formatting";
             // 
             // kryptonRibbon
@@ -1308,6 +1501,7 @@ namespace OutlookMailClone
             this.kryptonRibbon.AllowFormIntegrate = true;
             this.kryptonRibbon.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecHelp});
+            this.kryptonRibbon.HideRibbonSize = new System.Drawing.Size(300, 250);
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
             this.kryptonRibbon.QATButtons.AddRange(new System.ComponentModel.Component[] {
@@ -1317,9 +1511,9 @@ namespace OutlookMailClone
             this.qatQuickPrint,
             this.qatForward,
             this.qatDelete});
-            this.kryptonRibbon.RibbonAppButton.AppButtonBaseColorDark = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(162)))), ((int)(((byte)(9)))));
-            this.kryptonRibbon.RibbonAppButton.AppButtonBaseColorLight = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(212)))), ((int)(((byte)(46)))));
-            this.kryptonRibbon.RibbonAppButton.AppButtonImage = global::OutlookMailClone.Properties.Resources.Square_Design_64_x_64_New_Green;
+            this.kryptonRibbon.QATLocation = Krypton.Ribbon.QATLocation.Above;
+            this.kryptonRibbon.RibbonAppButton.AppButtonImage = global::OutlookMailClone.Properties.Resources.Main_Icon_64_x_64;
+            this.kryptonRibbon.RibbonAppButton.AppButtonMaxRecentSize = new System.Drawing.Size(350, 350);
             this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1,
             this.kryptonContextMenuItem2,
@@ -1345,6 +1539,7 @@ namespace OutlookMailClone
             this.kryptonRibbonRecentDoc8});
             this.kryptonRibbon.RibbonAppButton.AppButtonSpecs.AddRange(new Krypton.Ribbon.ButtonSpecAppMenu[] {
             this.buttonSpecAppMenu1});
+            this.kryptonRibbon.RibbonAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbon.RibbonStrings.RecentDocuments = "Create New Outlook Item";
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabMessage,
@@ -1365,54 +1560,68 @@ namespace OutlookMailClone
             // 
             this.qatSave.Image = global::OutlookMailClone.Properties.Resources.QATSaveSmall;
             this.qatSave.Text = "Save";
+            this.qatSave.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatUndo
             // 
             this.qatUndo.Image = global::OutlookMailClone.Properties.Resources.QATUndoSmall;
             this.qatUndo.Text = "Undo";
+            this.qatUndo.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatRedo
             // 
             this.qatRedo.Image = global::OutlookMailClone.Properties.Resources.QATRedoSmall;
             this.qatRedo.Text = "Redo";
+            this.qatRedo.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatQuickPrint
             // 
             this.qatQuickPrint.Image = global::OutlookMailClone.Properties.Resources.QATQuickPrintSmall;
             this.qatQuickPrint.Text = "Quick Print";
+            this.qatQuickPrint.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatForward
             // 
             this.qatForward.Image = global::OutlookMailClone.Properties.Resources.QATForwardSmall;
             this.qatForward.Text = "Forward";
+            this.qatForward.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.qatForward.Visible = false;
             // 
             // qatDelete
             // 
             this.qatDelete.Image = global::OutlookMailClone.Properties.Resources.QATDeleteSmall;
             this.qatDelete.Text = "Delete";
+            this.qatDelete.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.qatDelete.Visible = false;
             // 
             // kryptonContextMenuItem1
             // 
+            this.kryptonContextMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem1.Image = global::OutlookMailClone.Properties.Resources.AppMenuNewMailMessage;
+            this.kryptonContextMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem1.Text = "&New Mail Message";
             // 
             // kryptonContextMenuItem2
             // 
+            this.kryptonContextMenuItem2.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem2.Image = global::OutlookMailClone.Properties.Resources.AppMenuSendMessage;
+            this.kryptonContextMenuItem2.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem2.Text = "S&end";
             // 
             // kryptonContextMenuItem3
             // 
+            this.kryptonContextMenuItem3.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem3.Image = global::OutlookMailClone.Properties.Resources.AppMenuSave;
+            this.kryptonContextMenuItem3.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem3.Text = "&Save";
             // 
             // kryptonContextMenuItem4
             // 
+            this.kryptonContextMenuItem4.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem4.Image = global::OutlookMailClone.Properties.Resources.AppMenuSaveAs;
             this.kryptonContextMenuItem4.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItems1});
+            this.kryptonContextMenuItem4.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem4.SplitSubMenu = true;
             this.kryptonContextMenuItem4.Text = "Save &As";
             // 
@@ -1431,27 +1640,35 @@ namespace OutlookMailClone
             // 
             // kryptonContextMenuItem10
             // 
+            this.kryptonContextMenuItem10.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem10.ExtraText = "Save a copy of the item to your computer\r\nin one of several formats.";
             this.kryptonContextMenuItem10.Image = global::OutlookMailClone.Properties.Resources.AppMenuSaveAs;
+            this.kryptonContextMenuItem10.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem10.Text = "Save &As";
             // 
             // kryptonContextMenuItem5
             // 
+            this.kryptonContextMenuItem5.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem5.Image = global::OutlookMailClone.Properties.Resources.AppMenuDelete;
+            this.kryptonContextMenuItem5.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem5.Text = "&Delete";
             // 
             // kryptonContextMenuItem6
             // 
+            this.kryptonContextMenuItem6.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem6.Image = global::OutlookMailClone.Properties.Resources.AppMenuMove;
+            this.kryptonContextMenuItem6.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem6.Text = "&Move";
             // 
             // kryptonContextMenuItem7
             // 
+            this.kryptonContextMenuItem7.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem7.Image = global::OutlookMailClone.Properties.Resources.AppMenuPrint;
             this.kryptonContextMenuItem7.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItems2,
             this.kryptonContextMenuSeparator15,
             this.kryptonContextMenuItems3});
+            this.kryptonContextMenuItem7.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem7.SplitSubMenu = true;
             this.kryptonContextMenuItem7.Text = "&Print";
             // 
@@ -1473,26 +1690,34 @@ namespace OutlookMailClone
             // 
             // kryptonContextMenuItem11
             // 
+            this.kryptonContextMenuItem11.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem11.ExtraText = "Select a printer, number of copies, and\r\nother printing options before printing.";
             this.kryptonContextMenuItem11.Image = global::OutlookMailClone.Properties.Resources.AppMenuPrint;
+            this.kryptonContextMenuItem11.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem11.Text = "&Print";
             // 
             // kryptonContextMenuItem12
             // 
+            this.kryptonContextMenuItem12.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem12.ExtraText = "Send the item directly to the default printer\r\nwithout making changes.";
             this.kryptonContextMenuItem12.Image = global::OutlookMailClone.Properties.Resources.AppMenuQuickPrint;
+            this.kryptonContextMenuItem12.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem12.Text = "&Quick Print";
             // 
             // kryptonContextMenuItem13
             // 
+            this.kryptonContextMenuItem13.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem13.ExtraText = "Preview and make changes to pages before\r\nprinting.";
             this.kryptonContextMenuItem13.Image = global::OutlookMailClone.Properties.Resources.AppMenuPrintPreview;
+            this.kryptonContextMenuItem13.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem13.Text = "Print Pre&view";
             // 
             // kryptonContextMenuItem14
             // 
+            this.kryptonContextMenuItem14.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem14.ExtraText = "Change how an item prints by creating\r\nyour own print styles.";
             this.kryptonContextMenuItem14.Image = global::OutlookMailClone.Properties.Resources.AppMenuPrintStyles;
+            this.kryptonContextMenuItem14.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem14.Text = "Define Print &Styles";
             // 
             // kryptonContextMenuItems3
@@ -1510,49 +1735,63 @@ namespace OutlookMailClone
             // 
             // kryptonContextMenuItem15
             // 
+            this.kryptonContextMenuItem15.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem15.Image = global::OutlookMailClone.Properties.Resources.AppMenuMemoStyle;
+            this.kryptonContextMenuItem15.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem15.Text = "Memo Style";
             // 
             // kryptonContextMenuItem8
             // 
+            this.kryptonContextMenuItem8.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem8.Image = global::OutlookMailClone.Properties.Resources.AppMenuProperties;
+            this.kryptonContextMenuItem8.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem8.Text = "Pr&operties";
             // 
             // kryptonContextMenuItem9
             // 
+            this.kryptonContextMenuItem9.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem9.Image = global::OutlookMailClone.Properties.Resources.AppMenuClose;
+            this.kryptonContextMenuItem9.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem9.Text = "&Close";
             // 
             // kryptonRibbonRecentDoc1
             // 
+            this.kryptonRibbonRecentDoc1.ImageTransparentColor = System.Drawing.Color.Empty;
             this.kryptonRibbonRecentDoc1.Text = "Mail Message";
             // 
             // kryptonRibbonRecentDoc2
             // 
+            this.kryptonRibbonRecentDoc2.ImageTransparentColor = System.Drawing.Color.Empty;
             this.kryptonRibbonRecentDoc2.Text = "Appointment";
             // 
             // kryptonRibbonRecentDoc3
             // 
+            this.kryptonRibbonRecentDoc3.ImageTransparentColor = System.Drawing.Color.Empty;
             this.kryptonRibbonRecentDoc3.Text = "Meeting Request";
             // 
             // kryptonRibbonRecentDoc4
             // 
+            this.kryptonRibbonRecentDoc4.ImageTransparentColor = System.Drawing.Color.Empty;
             this.kryptonRibbonRecentDoc4.Text = "Contact";
             // 
             // kryptonRibbonRecentDoc5
             // 
+            this.kryptonRibbonRecentDoc5.ImageTransparentColor = System.Drawing.Color.Empty;
             this.kryptonRibbonRecentDoc5.Text = "Distribution List";
             // 
             // kryptonRibbonRecentDoc6
             // 
+            this.kryptonRibbonRecentDoc6.ImageTransparentColor = System.Drawing.Color.Empty;
             this.kryptonRibbonRecentDoc6.Text = "Task";
             // 
             // kryptonRibbonRecentDoc7
             // 
+            this.kryptonRibbonRecentDoc7.ImageTransparentColor = System.Drawing.Color.Empty;
             this.kryptonRibbonRecentDoc7.Text = "Note";
             // 
             // kryptonRibbonRecentDoc8
             // 
+            this.kryptonRibbonRecentDoc8.ImageTransparentColor = System.Drawing.Color.Empty;
             this.kryptonRibbonRecentDoc8.Text = "Choose Form";
             // 
             // buttonSpecAppMenu1
@@ -1585,8 +1824,10 @@ namespace OutlookMailClone
             // 
             // clipboard1
             // 
+            this.clipboard1.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.clipboard1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.clipboardPaste});
+            this.clipboard1.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.clipboard1.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // clipboardPaste
@@ -1597,36 +1838,45 @@ namespace OutlookMailClone
             this.clipboardPaste.KeyTip = "V";
             this.clipboardPaste.KryptonContextMenu = this.cmsPaste;
             this.clipboardPaste.TextLine1 = "Paste";
+            this.clipboardPaste.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // clipboard2
             // 
+            this.clipboard2.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.clipboard2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.clipboardCut,
             this.clipboardCopy,
             this.clipboardFormatPainter});
             this.clipboard2.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
+            this.clipboard2.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // clipboardCut
             // 
+            this.clipboardCut.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.clipboardCut.ImageLarge = ((System.Drawing.Image)(resources.GetObject("clipboardCut.ImageLarge")));
             this.clipboardCut.ImageSmall = global::OutlookMailClone.Properties.Resources.ClipboardCut;
             this.clipboardCut.KeyTip = "X";
             this.clipboardCut.TextLine1 = "Cut";
+            this.clipboardCut.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // clipboardCopy
             // 
+            this.clipboardCopy.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.clipboardCopy.ImageLarge = ((System.Drawing.Image)(resources.GetObject("clipboardCopy.ImageLarge")));
             this.clipboardCopy.ImageSmall = global::OutlookMailClone.Properties.Resources.ClipboardCopy;
             this.clipboardCopy.KeyTip = "C";
             this.clipboardCopy.TextLine1 = "Copy";
+            this.clipboardCopy.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // clipboardFormatPainter
             // 
+            this.clipboardFormatPainter.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.clipboardFormatPainter.ImageLarge = ((System.Drawing.Image)(resources.GetObject("clipboardFormatPainter.ImageLarge")));
             this.clipboardFormatPainter.ImageSmall = global::OutlookMailClone.Properties.Resources.ClipboardFormatPainter;
             this.clipboardFormatPainter.KeyTip = "FP";
             this.clipboardFormatPainter.TextLine1 = "Format";
             this.clipboardFormatPainter.TextLine2 = "Painter";
+            this.clipboardFormatPainter.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupBasicText
             // 
@@ -1648,6 +1898,8 @@ namespace OutlookMailClone
             this.basicTextColors,
             this.basicTextAlignment,
             this.basicTextTab});
+            this.basicTextLines.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.basicTextLines.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // basicTextFont
             // 
@@ -1657,13 +1909,17 @@ namespace OutlookMailClone
             // 
             // basicTextFontLarger
             // 
+            this.basicTextFontLarger.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.basicTextFontLarger.ImageSmall = global::OutlookMailClone.Properties.Resources.TextFontLarger;
             this.basicTextFontLarger.KeyTip = "FG";
+            this.basicTextFontLarger.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // basicTextFontSmaller
             // 
+            this.basicTextFontSmaller.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.basicTextFontSmaller.ImageSmall = global::OutlookMailClone.Properties.Resources.TextFontSmaller;
             this.basicTextFontSmaller.KeyTip = "FK";
+            this.basicTextFontSmaller.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // basicTextBullet
             // 
@@ -1673,13 +1929,17 @@ namespace OutlookMailClone
             // 
             // basicTextBulletPoints
             // 
+            this.basicTextBulletPoints.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.basicTextBulletPoints.ImageSmall = global::OutlookMailClone.Properties.Resources.TextBulletPoints;
             this.basicTextBulletPoints.KeyTip = "U";
+            this.basicTextBulletPoints.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // basicTextBulletNumbers
             // 
+            this.basicTextBulletNumbers.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.basicTextBulletNumbers.ImageSmall = global::OutlookMailClone.Properties.Resources.TextBulletNumbers;
             this.basicTextBulletNumbers.KeyTip = "N";
+            this.basicTextBulletNumbers.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // basicTextRubout
             // 
@@ -1688,8 +1948,10 @@ namespace OutlookMailClone
             // 
             // basicTextRuboutButton
             // 
+            this.basicTextRuboutButton.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.basicTextRuboutButton.ImageSmall = global::OutlookMailClone.Properties.Resources.TextRubout;
             this.basicTextRuboutButton.KeyTip = "E";
+            this.basicTextRuboutButton.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // basicTextStyle
             // 
@@ -1703,18 +1965,21 @@ namespace OutlookMailClone
             this.basicTextStyleBold.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.basicTextStyleBold.ImageSmall = global::OutlookMailClone.Properties.Resources.TextBold;
             this.basicTextStyleBold.KeyTip = "1";
+            this.basicTextStyleBold.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // basicTextStyleItalic
             // 
             this.basicTextStyleItalic.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.basicTextStyleItalic.ImageSmall = global::OutlookMailClone.Properties.Resources.TextItalics;
             this.basicTextStyleItalic.KeyTip = "2";
+            this.basicTextStyleItalic.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // basicTextStyleUnderline
             // 
             this.basicTextStyleUnderline.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.basicTextStyleUnderline.ImageSmall = global::OutlookMailClone.Properties.Resources.TextUnderline;
             this.basicTextStyleUnderline.KeyTip = "3";
+            this.basicTextStyleUnderline.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // basicTextColors
             // 
@@ -1724,20 +1989,31 @@ namespace OutlookMailClone
             // 
             // basicTextColorBack
             // 
+            this.basicTextColorBack.ButtonType = Krypton.Ribbon.GroupButtonType.Split;
+            this.basicTextColorBack.EmptyBorderColor = System.Drawing.Color.DarkGray;
             this.basicTextColorBack.ImageSmall = global::OutlookMailClone.Properties.Resources.TextBackColor;
             this.basicTextColorBack.KeyTip = "I";
             this.basicTextColorBack.RecentColors = new System.Drawing.Color[0];
             this.basicTextColorBack.SchemeStandard = Krypton.Toolkit.ColorScheme.Basic16;
+            this.basicTextColorBack.SchemeThemes = Krypton.Toolkit.ColorScheme.OfficeThemes;
             this.basicTextColorBack.SelectedColor = System.Drawing.Color.Yellow;
+            this.basicTextColorBack.SelectedRect = new System.Drawing.Rectangle(0, 12, 16, 4);
+            this.basicTextColorBack.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.basicTextColorBack.VisibleMoreColors = false;
             this.basicTextColorBack.VisibleThemes = false;
             // 
             // basicTextColorText
             // 
+            this.basicTextColorText.ButtonType = Krypton.Ribbon.GroupButtonType.Split;
+            this.basicTextColorText.EmptyBorderColor = System.Drawing.Color.DarkGray;
             this.basicTextColorText.ImageSmall = global::OutlookMailClone.Properties.Resources.TextColor;
             this.basicTextColorText.KeyTip = "FC";
             this.basicTextColorText.RecentColors = new System.Drawing.Color[0];
+            this.basicTextColorText.SchemeStandard = Krypton.Toolkit.ColorScheme.OfficeStandard;
+            this.basicTextColorText.SchemeThemes = Krypton.Toolkit.ColorScheme.OfficeThemes;
             this.basicTextColorText.SelectedColor = System.Drawing.Color.Black;
+            this.basicTextColorText.SelectedRect = new System.Drawing.Rectangle(0, 12, 16, 4);
+            this.basicTextColorText.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.basicTextColorText.VisibleNoColor = false;
             // 
             // basicTextAlignment
@@ -1749,18 +2025,24 @@ namespace OutlookMailClone
             // 
             // basicTextAlignLeft
             // 
+            this.basicTextAlignLeft.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.basicTextAlignLeft.ImageSmall = global::OutlookMailClone.Properties.Resources.TextAlignLeft;
             this.basicTextAlignLeft.KeyTip = "AL";
+            this.basicTextAlignLeft.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // basicTextAlignCenter
             // 
+            this.basicTextAlignCenter.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.basicTextAlignCenter.ImageSmall = global::OutlookMailClone.Properties.Resources.TextAlignCenter;
             this.basicTextAlignCenter.KeyTip = "AC";
+            this.basicTextAlignCenter.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // basicTextAlignRight
             // 
+            this.basicTextAlignRight.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.basicTextAlignRight.ImageSmall = global::OutlookMailClone.Properties.Resources.TextAlignRight;
             this.basicTextAlignRight.KeyTip = "AR";
+            this.basicTextAlignRight.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // basicTextTab
             // 
@@ -1770,13 +2052,17 @@ namespace OutlookMailClone
             // 
             // basicTextTabLeft
             // 
+            this.basicTextTabLeft.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.basicTextTabLeft.ImageSmall = global::OutlookMailClone.Properties.Resources.TextTabLeft;
             this.basicTextTabLeft.KeyTip = "AO";
+            this.basicTextTabLeft.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // basicTextTabRight
             // 
+            this.basicTextTabRight.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.basicTextTabRight.ImageSmall = global::OutlookMailClone.Properties.Resources.TextTabRight;
             this.basicTextTabRight.KeyTip = "AI";
+            this.basicTextTabRight.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupNames
             // 
@@ -1789,26 +2075,32 @@ namespace OutlookMailClone
             // 
             // namesGroup
             // 
+            this.namesGroup.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.namesGroup.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.namesAddressBook,
             this.namesCheckNames});
+            this.namesGroup.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.namesGroup.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // namesAddressBook
             // 
+            this.namesAddressBook.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.namesAddressBook.ImageLarge = global::OutlookMailClone.Properties.Resources.NamesAddressBook;
             this.namesAddressBook.ImageSmall = null;
             this.namesAddressBook.KeyTip = "AB";
             this.namesAddressBook.TextLine1 = "Address";
             this.namesAddressBook.TextLine2 = "Book";
+            this.namesAddressBook.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // namesCheckNames
             // 
+            this.namesCheckNames.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.namesCheckNames.ImageLarge = global::OutlookMailClone.Properties.Resources.NamesCheckNames;
             this.namesCheckNames.ImageSmall = null;
             this.namesCheckNames.KeyTip = "M";
             this.namesCheckNames.TextLine1 = "Check";
             this.namesCheckNames.TextLine2 = "Names";
+            this.namesCheckNames.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupMessageInclude
             // 
@@ -1822,26 +2114,33 @@ namespace OutlookMailClone
             // 
             // includeTriple1
             // 
+            this.includeTriple1.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.includeTriple1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.includeAttachFile,
             this.includeAttachItem,
             this.includeSignature});
+            this.includeTriple1.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.includeTriple1.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // includeAttachFile
             // 
+            this.includeAttachFile.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.includeAttachFile.ImageLarge = global::OutlookMailClone.Properties.Resources.IncludeAttachFile;
             this.includeAttachFile.ImageSmall = global::OutlookMailClone.Properties.Resources.IncludeAttachFileSmall;
             this.includeAttachFile.KeyTip = "AF";
             this.includeAttachFile.TextLine1 = "Attach";
             this.includeAttachFile.TextLine2 = "File";
+            this.includeAttachFile.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // includeAttachItem
             // 
+            this.includeAttachItem.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.includeAttachItem.ImageLarge = global::OutlookMailClone.Properties.Resources.IncludeAttachItem;
             this.includeAttachItem.ImageSmall = global::OutlookMailClone.Properties.Resources.IncludeAttachItemSmall;
             this.includeAttachItem.KeyTip = "AM";
             this.includeAttachItem.TextLine1 = "Attach";
             this.includeAttachItem.TextLine2 = "Item";
+            this.includeAttachItem.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // includeSignature
             // 
@@ -1851,6 +2150,13 @@ namespace OutlookMailClone
             this.includeSignature.KeyTip = "G";
             this.includeSignature.KryptonContextMenu = this.cmsSignatures;
             this.includeSignature.TextLine1 = "Signature";
+            this.includeSignature.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            // 
+            // includeTriple2
+            // 
+            this.includeTriple2.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
+            this.includeTriple2.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.includeTriple2.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // groupOptions
             // 
@@ -1863,6 +2169,7 @@ namespace OutlookMailClone
             // 
             // optionsTripleFollowup
             // 
+            this.optionsTripleFollowup.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.optionsTripleFollowup.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.optionsFollowUp,
             this.optionsHighImportance,
@@ -1879,22 +2186,27 @@ namespace OutlookMailClone
             this.optionsFollowUp.KryptonContextMenu = this.cmsFollowUp;
             this.optionsFollowUp.TextLine1 = "Follow";
             this.optionsFollowUp.TextLine2 = "Up";
+            this.optionsFollowUp.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // optionsHighImportance
             // 
+            this.optionsHighImportance.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.optionsHighImportance.ImageLarge = ((System.Drawing.Image)(resources.GetObject("optionsHighImportance.ImageLarge")));
             this.optionsHighImportance.ImageSmall = global::OutlookMailClone.Properties.Resources.OptionsHighImportance;
             this.optionsHighImportance.KeyTip = "H";
             this.optionsHighImportance.TextLine1 = "High";
             this.optionsHighImportance.TextLine2 = "Importance";
+            this.optionsHighImportance.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // optionsLowImportance
             // 
+            this.optionsLowImportance.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.optionsLowImportance.ImageLarge = ((System.Drawing.Image)(resources.GetObject("optionsLowImportance.ImageLarge")));
             this.optionsLowImportance.ImageSmall = global::OutlookMailClone.Properties.Resources.OptionsLowImportance;
             this.optionsLowImportance.KeyTip = "L";
             this.optionsLowImportance.TextLine1 = "Low";
             this.optionsLowImportance.TextLine2 = "Importance";
+            this.optionsLowImportance.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupZoom
             // 
@@ -1908,16 +2220,20 @@ namespace OutlookMailClone
             // 
             // proofingTriple
             // 
+            this.proofingTriple.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.proofingTriple.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.zoomMessageZoom});
+            this.proofingTriple.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.proofingTriple.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // zoomMessageZoom
             // 
+            this.zoomMessageZoom.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.zoomMessageZoom.ImageLarge = global::OutlookMailClone.Properties.Resources.ZoomLarge;
             this.zoomMessageZoom.ImageSmall = ((System.Drawing.Image)(resources.GetObject("zoomMessageZoom.ImageSmall")));
             this.zoomMessageZoom.KeyTip = "Q";
             this.zoomMessageZoom.TextLine1 = "Zoom";
+            this.zoomMessageZoom.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // tabInsert
             // 
@@ -1943,32 +2259,42 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple4
             // 
+            this.kryptonRibbonGroupTriple4.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.includeInsertAttachFile,
             this.includeInsertAttachItem});
+            this.kryptonRibbonGroupTriple4.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple4.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // includeInsertAttachFile
             // 
+            this.includeInsertAttachFile.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.includeInsertAttachFile.ImageLarge = global::OutlookMailClone.Properties.Resources.IncludeAttachFile;
             this.includeInsertAttachFile.ImageSmall = global::OutlookMailClone.Properties.Resources.IncludeAttachFileSmall;
             this.includeInsertAttachFile.KeyTip = "AF";
             this.includeInsertAttachFile.TextLine1 = "Attach";
             this.includeInsertAttachFile.TextLine2 = "File";
+            this.includeInsertAttachFile.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // includeInsertAttachItem
             // 
+            this.includeInsertAttachItem.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.includeInsertAttachItem.ImageLarge = global::OutlookMailClone.Properties.Resources.IncludeAttachItem;
             this.includeInsertAttachItem.ImageSmall = global::OutlookMailClone.Properties.Resources.IncludeAttachItemSmall;
             this.includeInsertAttachItem.KeyTip = "AM";
             this.includeInsertAttachItem.TextLine1 = "Attach";
             this.includeInsertAttachItem.TextLine2 = "Item";
+            this.includeInsertAttachItem.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupTriple5
             // 
+            this.kryptonRibbonGroupTriple5.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple5.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.includeInsertBusinessCard,
             this.includeInsertCalendar,
             this.includeInsertSignature});
+            this.kryptonRibbonGroupTriple5.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple5.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // includeInsertBusinessCard
             // 
@@ -1979,13 +2305,16 @@ namespace OutlookMailClone
             this.includeInsertBusinessCard.KryptonContextMenu = this.cmsBusinessCards;
             this.includeInsertBusinessCard.TextLine1 = "Business";
             this.includeInsertBusinessCard.TextLine2 = "Card";
+            this.includeInsertBusinessCard.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // includeInsertCalendar
             // 
+            this.includeInsertCalendar.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.includeInsertCalendar.ImageLarge = global::OutlookMailClone.Properties.Resources.IncludeCalendar;
             this.includeInsertCalendar.ImageSmall = global::OutlookMailClone.Properties.Resources.IncludeCalendarSmall;
             this.includeInsertCalendar.KeyTip = "OC";
             this.includeInsertCalendar.TextLine1 = "Calendar";
+            this.includeInsertCalendar.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // includeInsertSignature
             // 
@@ -1995,6 +2324,7 @@ namespace OutlookMailClone
             this.includeInsertSignature.KeyTip = "G";
             this.includeInsertSignature.KryptonContextMenu = this.cmsSignatures;
             this.includeInsertSignature.TextLine1 = "Signature";
+            this.includeInsertSignature.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupTables
             // 
@@ -2007,8 +2337,10 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple3
             // 
+            this.kryptonRibbonGroupTriple3.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.tablesTable});
+            this.kryptonRibbonGroupTriple3.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple3.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // tablesTable
@@ -2018,6 +2350,7 @@ namespace OutlookMailClone
             this.tablesTable.ImageSmall = ((System.Drawing.Image)(resources.GetObject("tablesTable.ImageSmall")));
             this.tablesTable.KryptonContextMenu = this.cmsTable;
             this.tablesTable.TextLine1 = "Table";
+            this.tablesTable.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupInsertIllustrations
             // 
@@ -2031,32 +2364,41 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple6
             // 
+            this.kryptonRibbonGroupTriple6.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple6.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.illustrationsPicture,
             this.illustrationsClipArt});
+            this.kryptonRibbonGroupTriple6.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple6.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // illustrationsPicture
             // 
+            this.illustrationsPicture.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.illustrationsPicture.ImageLarge = global::OutlookMailClone.Properties.Resources.PicturesLarge;
             this.illustrationsPicture.ImageSmall = ((System.Drawing.Image)(resources.GetObject("illustrationsPicture.ImageSmall")));
             this.illustrationsPicture.KeyTip = "P";
             this.illustrationsPicture.TextLine1 = "Picture";
+            this.illustrationsPicture.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // illustrationsClipArt
             // 
+            this.illustrationsClipArt.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.illustrationsClipArt.ImageLarge = global::OutlookMailClone.Properties.Resources.ClipArtLarge;
             this.illustrationsClipArt.ImageSmall = null;
             this.illustrationsClipArt.KeyTip = "F";
             this.illustrationsClipArt.TextLine1 = "Clip";
             this.illustrationsClipArt.TextLine2 = "Art";
+            this.illustrationsClipArt.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupTriple7
             // 
+            this.kryptonRibbonGroupTriple7.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple7.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.illustrationsShapes,
             this.illustrationsSmartArt,
             this.illustrationsChart});
+            this.kryptonRibbonGroupTriple7.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple7.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // illustrationsShapes
             // 
@@ -2066,20 +2408,25 @@ namespace OutlookMailClone
             this.illustrationsShapes.KeyTip = "SH";
             this.illustrationsShapes.KryptonContextMenu = this.cmsShapes;
             this.illustrationsShapes.TextLine1 = "Shapes";
+            this.illustrationsShapes.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // illustrationsSmartArt
             // 
+            this.illustrationsSmartArt.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.illustrationsSmartArt.ImageLarge = global::OutlookMailClone.Properties.Resources.SmartArtLarge;
             this.illustrationsSmartArt.ImageSmall = global::OutlookMailClone.Properties.Resources.SmartArtSmall;
             this.illustrationsSmartArt.KeyTip = "M";
             this.illustrationsSmartArt.TextLine1 = "SmartArt";
+            this.illustrationsSmartArt.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // illustrationsChart
             // 
+            this.illustrationsChart.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.illustrationsChart.ImageLarge = global::OutlookMailClone.Properties.Resources.ChartLarge;
             this.illustrationsChart.ImageSmall = global::OutlookMailClone.Properties.Resources.ChartSmall;
             this.illustrationsChart.KeyTip = "C";
             this.illustrationsChart.TextLine1 = "Chart";
+            this.illustrationsChart.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupLinks
             // 
@@ -2092,24 +2439,30 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple2
             // 
+            this.kryptonRibbonGroupTriple2.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.linksHyperlink,
             this.linksBookmark});
+            this.kryptonRibbonGroupTriple2.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple2.MinimumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // linksHyperlink
             // 
+            this.linksHyperlink.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.linksHyperlink.ImageLarge = global::OutlookMailClone.Properties.Resources.HyperlinkLarge;
             this.linksHyperlink.ImageSmall = global::OutlookMailClone.Properties.Resources.HyperlinkSmall;
             this.linksHyperlink.KeyTip = "I";
             this.linksHyperlink.TextLine1 = "Hyperlink";
+            this.linksHyperlink.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // linksBookmark
             // 
+            this.linksBookmark.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.linksBookmark.ImageLarge = global::OutlookMailClone.Properties.Resources.BookmarkLarge;
             this.linksBookmark.ImageSmall = global::OutlookMailClone.Properties.Resources.BookmarkSmall;
             this.linksBookmark.KeyTip = "K";
             this.linksBookmark.TextLine1 = "Bookmark";
+            this.linksBookmark.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupText
             // 
@@ -2123,10 +2476,12 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple8
             // 
+            this.kryptonRibbonGroupTriple8.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple8.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.textTextBox,
             this.textQuickParts,
             this.textWordArt});
+            this.kryptonRibbonGroupTriple8.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple8.MinimumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // textTextBox
@@ -2138,6 +2493,7 @@ namespace OutlookMailClone
             this.textTextBox.KryptonContextMenu = this.cmsTextBox;
             this.textTextBox.TextLine1 = "Text";
             this.textTextBox.TextLine2 = "Box";
+            this.textTextBox.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // textQuickParts
             // 
@@ -2148,21 +2504,26 @@ namespace OutlookMailClone
             this.textQuickParts.KryptonContextMenu = this.cmsQuickParts;
             this.textQuickParts.TextLine1 = "Quick";
             this.textQuickParts.TextLine2 = "Parts";
+            this.textQuickParts.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // textWordArt
             // 
+            this.textWordArt.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.textWordArt.ImageLarge = global::OutlookMailClone.Properties.Resources.WordArtLarge;
             this.textWordArt.ImageSmall = global::OutlookMailClone.Properties.Resources.WordArtSmall;
             this.textWordArt.KeyTip = "W";
             this.textWordArt.TextLine1 = "WordArt";
+            this.textWordArt.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupTriple9
             // 
+            this.kryptonRibbonGroupTriple9.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple9.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.textDropCap,
             this.textDateAndTime,
             this.textObject});
             this.kryptonRibbonGroupTriple9.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple9.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // textDropCap
             // 
@@ -2173,21 +2534,26 @@ namespace OutlookMailClone
             this.textDropCap.KryptonContextMenu = this.cmsDropCap;
             this.textDropCap.TextLine1 = "Drop";
             this.textDropCap.TextLine2 = "Cap";
+            this.textDropCap.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // textDateAndTime
             // 
+            this.textDateAndTime.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.textDateAndTime.ImageLarge = ((System.Drawing.Image)(resources.GetObject("textDateAndTime.ImageLarge")));
             this.textDateAndTime.ImageSmall = global::OutlookMailClone.Properties.Resources.DateTimeSmall;
             this.textDateAndTime.KeyTip = "D";
             this.textDateAndTime.TextLine1 = "Date &";
             this.textDateAndTime.TextLine2 = "Time";
+            this.textDateAndTime.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // textObject
             // 
+            this.textObject.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.textObject.ImageLarge = ((System.Drawing.Image)(resources.GetObject("textObject.ImageLarge")));
             this.textObject.ImageSmall = global::OutlookMailClone.Properties.Resources.ObjectSmall;
             this.textObject.KeyTip = "J";
             this.textObject.TextLine1 = "Object";
+            this.textObject.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupSymbols
             // 
@@ -2200,10 +2566,12 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple1
             // 
+            this.kryptonRibbonGroupTriple1.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.symbolsEquation,
             this.symbolSymbol,
             this.symbolHorizontalLine});
+            this.kryptonRibbonGroupTriple1.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple1.MinimumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // symbolsEquation
@@ -2214,6 +2582,7 @@ namespace OutlookMailClone
             this.symbolsEquation.KeyTip = "E";
             this.symbolsEquation.KryptonContextMenu = this.cmsEquation;
             this.symbolsEquation.TextLine1 = "Equation";
+            this.symbolsEquation.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // symbolSymbol
             // 
@@ -2223,14 +2592,17 @@ namespace OutlookMailClone
             this.symbolSymbol.KeyTip = "U";
             this.symbolSymbol.KryptonContextMenu = this.cmsSymbol;
             this.symbolSymbol.TextLine1 = "Symbol";
+            this.symbolSymbol.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // symbolHorizontalLine
             // 
+            this.symbolHorizontalLine.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.symbolHorizontalLine.ImageLarge = global::OutlookMailClone.Properties.Resources.HorizontalLineLarge;
             this.symbolHorizontalLine.ImageSmall = global::OutlookMailClone.Properties.Resources.HorizontalLineSmall;
             this.symbolHorizontalLine.KeyTip = "H";
             this.symbolHorizontalLine.TextLine1 = "Horizontal";
             this.symbolHorizontalLine.TextLine2 = "Line";
+            this.symbolHorizontalLine.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // tabOptions
             // 
@@ -2257,8 +2629,10 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple10
             // 
+            this.kryptonRibbonGroupTriple10.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple10.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.themesTheme});
+            this.kryptonRibbonGroupTriple10.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple10.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // themesTheme
@@ -2269,40 +2643,51 @@ namespace OutlookMailClone
             this.themesTheme.KeyTip = "TH";
             this.themesTheme.KryptonContextMenu = this.cmsThemes;
             this.themesTheme.TextLine1 = "Themes";
+            this.themesTheme.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupTriple11
             // 
+            this.kryptonRibbonGroupTriple11.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple11.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.themesColors,
             this.themesFonts,
             this.themesEffects});
             this.kryptonRibbonGroupTriple11.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple11.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // themesColors
             // 
+            this.themesColors.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.themesColors.ImageLarge = ((System.Drawing.Image)(resources.GetObject("themesColors.ImageLarge")));
             this.themesColors.ImageSmall = global::OutlookMailClone.Properties.Resources.ColorsSmall;
             this.themesColors.KeyTip = "TC";
             this.themesColors.TextLine1 = "Colors";
+            this.themesColors.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // themesFonts
             // 
+            this.themesFonts.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.themesFonts.ImageLarge = ((System.Drawing.Image)(resources.GetObject("themesFonts.ImageLarge")));
             this.themesFonts.ImageSmall = global::OutlookMailClone.Properties.Resources.FontsSmall;
             this.themesFonts.KeyTip = "TF";
             this.themesFonts.TextLine1 = "Fonts";
+            this.themesFonts.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // themesEffects
             // 
+            this.themesEffects.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.themesEffects.ImageLarge = ((System.Drawing.Image)(resources.GetObject("themesEffects.ImageLarge")));
             this.themesEffects.ImageSmall = global::OutlookMailClone.Properties.Resources.EffectsSmall;
             this.themesEffects.KeyTip = "TE";
             this.themesEffects.TextLine1 = "Effects";
+            this.themesEffects.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupTriple12
             // 
+            this.kryptonRibbonGroupTriple12.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple12.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.themesPageColor});
+            this.kryptonRibbonGroupTriple12.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple12.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // themesPageColor
@@ -2314,6 +2699,7 @@ namespace OutlookMailClone
             this.themesPageColor.KryptonContextMenu = this.cmsPageColor;
             this.themesPageColor.TextLine1 = "Page";
             this.themesPageColor.TextLine2 = "Color";
+            this.themesPageColor.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupFields
             // 
@@ -2326,9 +2712,11 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple13
             // 
+            this.kryptonRibbonGroupTriple13.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple13.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.fieldsShowBcc,
             this.fieldsShowFrom});
+            this.kryptonRibbonGroupTriple13.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple13.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // fieldsShowBcc
@@ -2337,6 +2725,7 @@ namespace OutlookMailClone
             this.fieldsShowBcc.ImageLarge = global::OutlookMailClone.Properties.Resources.ShowBccLarge;
             this.fieldsShowBcc.ImageSmall = null;
             this.fieldsShowBcc.TextLine1 = "Bcc";
+            this.fieldsShowBcc.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // fieldsShowFrom
             // 
@@ -2345,6 +2734,7 @@ namespace OutlookMailClone
             this.fieldsShowFrom.ImageSmall = ((System.Drawing.Image)(resources.GetObject("fieldsShowFrom.ImageSmall")));
             this.fieldsShowFrom.KeyTip = "F";
             this.fieldsShowFrom.TextLine1 = "From";
+            this.fieldsShowFrom.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupFormat
             // 
@@ -2357,6 +2747,7 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple14
             // 
+            this.kryptonRibbonGroupTriple14.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple14.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.formatPlainText,
             this.formatHTML,
@@ -2372,6 +2763,7 @@ namespace OutlookMailClone
             this.formatPlainText.KeyTip = "L";
             this.formatPlainText.TextLine1 = "Plain";
             this.formatPlainText.TextLine2 = "Text";
+            this.formatPlainText.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // formatHTML
             // 
@@ -2381,6 +2773,7 @@ namespace OutlookMailClone
             this.formatHTML.ImageSmall = global::OutlookMailClone.Properties.Resources.HTMLSmall;
             this.formatHTML.KeyTip = "H";
             this.formatHTML.TextLine1 = "HTML";
+            this.formatHTML.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // formatRichText
             // 
@@ -2390,6 +2783,7 @@ namespace OutlookMailClone
             this.formatRichText.KeyTip = "R";
             this.formatRichText.TextLine1 = "Rich";
             this.formatRichText.TextLine2 = "Text";
+            this.formatRichText.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupTracking
             // 
@@ -2403,8 +2797,10 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple15
             // 
+            this.kryptonRibbonGroupTriple15.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple15.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.trackingUseVotingButtons});
+            this.kryptonRibbonGroupTriple15.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple15.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // trackingUseVotingButtons
@@ -2416,21 +2812,27 @@ namespace OutlookMailClone
             this.trackingUseVotingButtons.KryptonContextMenu = this.cmsUseVotingButtons;
             this.trackingUseVotingButtons.TextLine1 = "Use Voting";
             this.trackingUseVotingButtons.TextLine2 = "Buttons";
+            this.trackingUseVotingButtons.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupLines3
             // 
             this.kryptonRibbonGroupLines3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupCheckBox1,
             this.kryptonRibbonGroupCheckBox2});
+            this.kryptonRibbonGroupLines3.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupLines3.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // kryptonRibbonGroupCheckBox1
             // 
+            this.kryptonRibbonGroupCheckBox1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonRibbonGroupCheckBox1.TextLine1 = "Request a Delivery Receipt";
+            this.kryptonRibbonGroupCheckBox1.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCheckBox2
             // 
+            this.kryptonRibbonGroupCheckBox2.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonRibbonGroupCheckBox2.TextLine1 = "Request a Read Receipt";
+            this.kryptonRibbonGroupCheckBox2.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupMoreOptions
             // 
@@ -2444,10 +2846,12 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple16
             // 
+            this.kryptonRibbonGroupTriple16.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple16.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.moreOptionsSaveSentItem,
             this.moreOptionsDelayDelivery,
             this.moreOptionsDirectRepliesTo});
+            this.kryptonRibbonGroupTriple16.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple16.MinimumSize = Krypton.Ribbon.GroupItemSize.Medium;
             // 
             // moreOptionsSaveSentItem
@@ -2459,6 +2863,7 @@ namespace OutlookMailClone
             this.moreOptionsSaveSentItem.KryptonContextMenu = this.cmsSaveSentItem;
             this.moreOptionsSaveSentItem.TextLine1 = "Save Sent";
             this.moreOptionsSaveSentItem.TextLine2 = "Item";
+            this.moreOptionsSaveSentItem.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // moreOptionsDelayDelivery
             // 
@@ -2468,6 +2873,7 @@ namespace OutlookMailClone
             this.moreOptionsDelayDelivery.KeyTip = "D";
             this.moreOptionsDelayDelivery.TextLine1 = "Delay";
             this.moreOptionsDelayDelivery.TextLine2 = "Delivery";
+            this.moreOptionsDelayDelivery.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // moreOptionsDirectRepliesTo
             // 
@@ -2477,6 +2883,7 @@ namespace OutlookMailClone
             this.moreOptionsDirectRepliesTo.KeyTip = "I";
             this.moreOptionsDirectRepliesTo.TextLine1 = "Direct";
             this.moreOptionsDirectRepliesTo.TextLine2 = "Replies To";
+            this.moreOptionsDirectRepliesTo.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // tabFormatText
             // 
@@ -2502,8 +2909,10 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple17
             // 
+            this.kryptonRibbonGroupTriple17.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple17.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.formatClipboardPaste});
+            this.kryptonRibbonGroupTriple17.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple17.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // formatClipboardPaste
@@ -2514,36 +2923,45 @@ namespace OutlookMailClone
             this.formatClipboardPaste.KeyTip = "V";
             this.formatClipboardPaste.KryptonContextMenu = this.cmsPaste;
             this.formatClipboardPaste.TextLine1 = "Paste";
+            this.formatClipboardPaste.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupTriple18
             // 
+            this.kryptonRibbonGroupTriple18.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple18.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.formatClipboardCut,
             this.formatClipboardCopy,
             this.formatClipboardFormatPainter});
             this.kryptonRibbonGroupTriple18.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple18.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // formatClipboardCut
             // 
+            this.formatClipboardCut.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.formatClipboardCut.ImageLarge = ((System.Drawing.Image)(resources.GetObject("formatClipboardCut.ImageLarge")));
             this.formatClipboardCut.ImageSmall = global::OutlookMailClone.Properties.Resources.ClipboardCut;
             this.formatClipboardCut.KeyTip = "X";
             this.formatClipboardCut.TextLine1 = "Cut";
+            this.formatClipboardCut.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // formatClipboardCopy
             // 
+            this.formatClipboardCopy.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.formatClipboardCopy.ImageLarge = ((System.Drawing.Image)(resources.GetObject("formatClipboardCopy.ImageLarge")));
             this.formatClipboardCopy.ImageSmall = global::OutlookMailClone.Properties.Resources.ClipboardCopy;
             this.formatClipboardCopy.KeyTip = "C";
             this.formatClipboardCopy.TextLine1 = "Copy";
+            this.formatClipboardCopy.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // formatClipboardFormatPainter
             // 
+            this.formatClipboardFormatPainter.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.formatClipboardFormatPainter.ImageLarge = ((System.Drawing.Image)(resources.GetObject("formatClipboardFormatPainter.ImageLarge")));
             this.formatClipboardFormatPainter.ImageSmall = global::OutlookMailClone.Properties.Resources.ClipboardFormatPainter;
             this.formatClipboardFormatPainter.KeyTip = "FP";
             this.formatClipboardFormatPainter.TextLine1 = "Format";
             this.formatClipboardFormatPainter.TextLine2 = "Painter";
+            this.formatClipboardFormatPainter.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupFormatFont
             // 
@@ -2561,6 +2979,8 @@ namespace OutlookMailClone
             this.kryptonRibbonGroupCluster2,
             this.kryptonRibbonGroupCluster4,
             this.kryptonRibbonGroupCluster3});
+            this.kryptonRibbonGroupLines1.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupLines1.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // kryptonRibbonGroupCluster1
             // 
@@ -2570,13 +2990,17 @@ namespace OutlookMailClone
             // 
             // fontGrowFont
             // 
+            this.fontGrowFont.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontGrowFont.ImageSmall = global::OutlookMailClone.Properties.Resources.TextFontLarger;
             this.fontGrowFont.KeyTip = "FG";
+            this.fontGrowFont.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // fontShrinkFont
             // 
+            this.fontShrinkFont.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontShrinkFont.ImageSmall = global::OutlookMailClone.Properties.Resources.TextFontSmaller;
             this.fontShrinkFont.KeyTip = "FK";
+            this.fontShrinkFont.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster2
             // 
@@ -2585,8 +3009,10 @@ namespace OutlookMailClone
             // 
             // fontTextClear
             // 
+            this.fontTextClear.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontTextClear.ImageSmall = global::OutlookMailClone.Properties.Resources.TextRubout;
             this.fontTextClear.KeyTip = "E";
+            this.fontTextClear.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster4
             // 
@@ -2596,13 +3022,17 @@ namespace OutlookMailClone
             // 
             // fontTextBackColor
             // 
+            this.fontTextBackColor.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontTextBackColor.ImageSmall = global::OutlookMailClone.Properties.Resources.TextBackColor;
             this.fontTextBackColor.KeyTip = "I";
+            this.fontTextBackColor.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // textFontColor
             // 
+            this.textFontColor.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.textFontColor.ImageSmall = global::OutlookMailClone.Properties.Resources.TextColor;
             this.textFontColor.KeyTip = "FC";
+            this.textFontColor.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster3
             // 
@@ -2617,33 +3047,45 @@ namespace OutlookMailClone
             // 
             // fontBold
             // 
+            this.fontBold.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontBold.ImageSmall = global::OutlookMailClone.Properties.Resources.TextBold;
             this.fontBold.KeyTip = "1";
+            this.fontBold.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // fontItalic
             // 
+            this.fontItalic.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontItalic.ImageSmall = global::OutlookMailClone.Properties.Resources.TextItalics;
             this.fontItalic.KeyTip = "2";
+            this.fontItalic.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // fontUnderline
             // 
+            this.fontUnderline.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontUnderline.ImageSmall = global::OutlookMailClone.Properties.Resources.TextUnderline;
             this.fontUnderline.KeyTip = "3";
+            this.fontUnderline.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // fontStrikethrough
             // 
+            this.fontStrikethrough.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontStrikethrough.ImageSmall = global::OutlookMailClone.Properties.Resources.TextStrikeout;
             this.fontStrikethrough.KeyTip = "4";
+            this.fontStrikethrough.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // fontSubscript
             // 
+            this.fontSubscript.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontSubscript.ImageSmall = global::OutlookMailClone.Properties.Resources.TextSubscript;
             this.fontSubscript.KeyTip = "5";
+            this.fontSubscript.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // fontSuperscript
             // 
+            this.fontSuperscript.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontSuperscript.ImageSmall = global::OutlookMailClone.Properties.Resources.TextSuperscript;
             this.fontSuperscript.KeyTip = "6";
+            this.fontSuperscript.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // fontChangeCase
             // 
@@ -2651,6 +3093,7 @@ namespace OutlookMailClone
             this.fontChangeCase.ImageSmall = global::OutlookMailClone.Properties.Resources.TextChangeCase;
             this.fontChangeCase.KeyTip = "7";
             this.fontChangeCase.KryptonContextMenu = this.cmsChangeCase;
+            this.fontChangeCase.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupFormatParagraph
             // 
@@ -2671,6 +3114,8 @@ namespace OutlookMailClone
             this.kryptonRibbonGroupCluster9,
             this.kryptonRibbonGroupCluster10,
             this.kryptonRibbonGroupCluster11});
+            this.kryptonRibbonGroupLines2.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupLines2.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // kryptonRibbonGroupCluster5
             // 
@@ -2681,18 +3126,24 @@ namespace OutlookMailClone
             // 
             // fontBullets
             // 
+            this.fontBullets.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontBullets.ImageSmall = global::OutlookMailClone.Properties.Resources.TextBulletPoints;
             this.fontBullets.KeyTip = "U";
+            this.fontBullets.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // fontNumbers
             // 
+            this.fontNumbers.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontNumbers.ImageSmall = global::OutlookMailClone.Properties.Resources.TextBulletNumbers;
             this.fontNumbers.KeyTip = "N";
+            this.fontNumbers.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // fontMultilevel
             // 
+            this.fontMultilevel.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontMultilevel.ImageSmall = global::OutlookMailClone.Properties.Resources.MultiLevelList;
             this.fontMultilevel.KeyTip = "M";
+            this.fontMultilevel.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster6
             // 
@@ -2702,13 +3153,17 @@ namespace OutlookMailClone
             // 
             // fontDecreaseIndent
             // 
+            this.fontDecreaseIndent.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontDecreaseIndent.ImageSmall = global::OutlookMailClone.Properties.Resources.TextTabLeft;
             this.fontDecreaseIndent.KeyTip = "AO";
+            this.fontDecreaseIndent.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // fontIncreaseIndent
             // 
+            this.fontIncreaseIndent.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontIncreaseIndent.ImageSmall = global::OutlookMailClone.Properties.Resources.TextTabRight;
             this.fontIncreaseIndent.KeyTip = "AI";
+            this.fontIncreaseIndent.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster7
             // 
@@ -2717,8 +3172,10 @@ namespace OutlookMailClone
             // 
             // fontSort
             // 
+            this.fontSort.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontSort.ImageSmall = global::OutlookMailClone.Properties.Resources.SortAscending;
             this.fontSort.KeyTip = "SO";
+            this.fontSort.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster8
             // 
@@ -2727,8 +3184,10 @@ namespace OutlookMailClone
             // 
             // fontMarkers
             // 
+            this.fontMarkers.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontMarkers.ImageSmall = global::OutlookMailClone.Properties.Resources.TextShowHideMarkup;
             this.fontMarkers.KeyTip = "8";
+            this.fontMarkers.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster9
             // 
@@ -2740,23 +3199,31 @@ namespace OutlookMailClone
             // 
             // fontJustifyLeft
             // 
+            this.fontJustifyLeft.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontJustifyLeft.ImageSmall = global::OutlookMailClone.Properties.Resources.TextAlignLeft;
             this.fontJustifyLeft.KeyTip = "AL";
+            this.fontJustifyLeft.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // fontJustifyCenter
             // 
+            this.fontJustifyCenter.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontJustifyCenter.ImageSmall = global::OutlookMailClone.Properties.Resources.TextAlignCenter;
             this.fontJustifyCenter.KeyTip = "AC";
+            this.fontJustifyCenter.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // fontJustifyRight
             // 
+            this.fontJustifyRight.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontJustifyRight.ImageSmall = global::OutlookMailClone.Properties.Resources.TextAlignRight;
             this.fontJustifyRight.KeyTip = "AR";
+            this.fontJustifyRight.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // fontJustify
             // 
+            this.fontJustify.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontJustify.ImageSmall = global::OutlookMailClone.Properties.Resources.TextJustify;
             this.fontJustify.KeyTip = "AJ";
+            this.fontJustify.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster10
             // 
@@ -2769,6 +3236,7 @@ namespace OutlookMailClone
             this.fontSpacing.ImageSmall = global::OutlookMailClone.Properties.Resources.LineSpacing;
             this.fontSpacing.KeyTip = "K";
             this.fontSpacing.KryptonContextMenu = this.cmsSpacing;
+            this.fontSpacing.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupCluster11
             // 
@@ -2778,14 +3246,17 @@ namespace OutlookMailClone
             // 
             // fontShading
             // 
+            this.fontShading.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.fontShading.ImageSmall = global::OutlookMailClone.Properties.Resources.Shading;
             this.fontShading.KeyTip = "H";
+            this.fontShading.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // fontBottomBorder
             // 
             this.fontBottomBorder.ButtonType = Krypton.Ribbon.GroupButtonType.Split;
             this.fontBottomBorder.ImageSmall = global::OutlookMailClone.Properties.Resources.BottomBorder;
             this.fontBottomBorder.KryptonContextMenu = this.cmsBottomBorder;
+            this.fontBottomBorder.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupFormatStyles
             // 
@@ -2798,8 +3269,10 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple19
             // 
+            this.kryptonRibbonGroupTriple19.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple19.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.stylesChangeStyles});
+            this.kryptonRibbonGroupTriple19.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple19.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // stylesChangeStyles
@@ -2811,6 +3284,7 @@ namespace OutlookMailClone
             this.stylesChangeStyles.KryptonContextMenu = this.cmsChangeStyles;
             this.stylesChangeStyles.TextLine1 = "Change";
             this.stylesChangeStyles.TextLine2 = "Styles";
+            this.stylesChangeStyles.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupFormatZoom
             // 
@@ -2823,16 +3297,20 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple20
             // 
+            this.kryptonRibbonGroupTriple20.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple20.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.zoomZoom});
+            this.kryptonRibbonGroupTriple20.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple20.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // zoomZoom
             // 
+            this.zoomZoom.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.zoomZoom.ImageLarge = global::OutlookMailClone.Properties.Resources.ZoomLarge;
             this.zoomZoom.ImageSmall = ((System.Drawing.Image)(resources.GetObject("zoomZoom.ImageSmall")));
             this.zoomZoom.KeyTip = "Q";
             this.zoomZoom.TextLine1 = "Zoom";
+            this.zoomZoom.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // groupFormatEditing
             // 
@@ -2845,6 +3323,7 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupTriple21
             // 
+            this.kryptonRibbonGroupTriple21.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple21.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton4,
             this.kryptonRibbonGroupButton5,
@@ -2860,13 +3339,16 @@ namespace OutlookMailClone
             this.kryptonRibbonGroupButton4.KeyTip = "FD";
             this.kryptonRibbonGroupButton4.KryptonContextMenu = this.cmsFind;
             this.kryptonRibbonGroupButton4.TextLine1 = "Find";
+            this.kryptonRibbonGroupButton4.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupButton5
             // 
+            this.kryptonRibbonGroupButton5.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton5.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton5.ImageLarge")));
             this.kryptonRibbonGroupButton5.ImageSmall = global::OutlookMailClone.Properties.Resources.FindReplaceSmall;
             this.kryptonRibbonGroupButton5.KeyTip = "R";
             this.kryptonRibbonGroupButton5.TextLine1 = "Replace";
+            this.kryptonRibbonGroupButton5.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupButton6
             // 
@@ -2876,6 +3358,7 @@ namespace OutlookMailClone
             this.kryptonRibbonGroupButton6.KeyTip = "SL";
             this.kryptonRibbonGroupButton6.KryptonContextMenu = this.cmsSelect;
             this.kryptonRibbonGroupButton6.TextLine1 = "Select";
+            this.kryptonRibbonGroupButton6.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // tabDeveloper
             // 
@@ -2896,25 +3379,31 @@ namespace OutlookMailClone
             // 
             // developerCodeTriple
             // 
+            this.developerCodeTriple.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.developerCodeTriple.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.developerCodeVB,
             this.developerCodeMacros});
+            this.developerCodeTriple.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.developerCodeTriple.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // developerCodeVB
             // 
+            this.developerCodeVB.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.developerCodeVB.ImageLarge = global::OutlookMailClone.Properties.Resources.CodeVisualBasic;
             this.developerCodeVB.ImageSmall = ((System.Drawing.Image)(resources.GetObject("developerCodeVB.ImageSmall")));
             this.developerCodeVB.KeyTip = "V";
             this.developerCodeVB.TextLine1 = "Visual";
             this.developerCodeVB.TextLine2 = "Basic";
+            this.developerCodeVB.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // developerCodeMacros
             // 
+            this.developerCodeMacros.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.developerCodeMacros.ImageLarge = global::OutlookMailClone.Properties.Resources.CodeMacros;
             this.developerCodeMacros.ImageSmall = ((System.Drawing.Image)(resources.GetObject("developerCodeMacros.ImageSmall")));
             this.developerCodeMacros.KeyTip = "PM";
             this.developerCodeMacros.TextLine1 = "Macros";
+            this.developerCodeMacros.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // developerForm
             // 
@@ -2927,27 +3416,33 @@ namespace OutlookMailClone
             // 
             // developerFormTriple
             // 
+            this.developerFormTriple.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.developerFormTriple.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.developerFormDesignThis,
             this.developerFormDesignA,
             this.developerFormPublish});
+            this.developerFormTriple.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.developerFormTriple.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // developerFormDesignThis
             // 
+            this.developerFormDesignThis.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.developerFormDesignThis.ImageLarge = global::OutlookMailClone.Properties.Resources.FormDesignThisForm;
             this.developerFormDesignThis.ImageSmall = ((System.Drawing.Image)(resources.GetObject("developerFormDesignThis.ImageSmall")));
             this.developerFormDesignThis.KeyTip = "D";
             this.developerFormDesignThis.TextLine1 = "Design";
             this.developerFormDesignThis.TextLine2 = "This Form";
+            this.developerFormDesignThis.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // developerFormDesignA
             // 
+            this.developerFormDesignA.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.developerFormDesignA.ImageLarge = global::OutlookMailClone.Properties.Resources.FormDesignAForm;
             this.developerFormDesignA.ImageSmall = ((System.Drawing.Image)(resources.GetObject("developerFormDesignA.ImageSmall")));
             this.developerFormDesignA.KeyTip = "O";
             this.developerFormDesignA.TextLine1 = "Design";
             this.developerFormDesignA.TextLine2 = "a Form";
+            this.developerFormDesignA.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // developerFormPublish
             // 
@@ -2956,40 +3451,55 @@ namespace OutlookMailClone
             this.developerFormPublish.ImageSmall = ((System.Drawing.Image)(resources.GetObject("developerFormPublish.ImageSmall")));
             this.developerFormPublish.KryptonContextMenu = this.cmsFormPublish;
             this.developerFormPublish.TextLine1 = "Publish";
+            this.developerFormPublish.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // todayToolStripMenuItem
             // 
+            this.todayToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.todayToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.OptionsReminder;
+            this.todayToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.todayToolStripMenuItem.Text = "Today";
             // 
             // tomorrowToolStripMenuItem
             // 
+            this.tomorrowToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.tomorrowToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.OptionsTomorrow;
+            this.tomorrowToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.tomorrowToolStripMenuItem.Text = "Tomorrow";
             // 
             // thisWeekToolStripMenuItem
             // 
+            this.thisWeekToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.thisWeekToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.OptionsWeek;
+            this.thisWeekToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.thisWeekToolStripMenuItem.Text = "This Week";
             // 
             // nextWeekToolStripMenuItem
             // 
+            this.nextWeekToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.nextWeekToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.OptionsWeek;
+            this.nextWeekToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.nextWeekToolStripMenuItem.Text = "Next Week";
             // 
             // noDateToolStripMenuItem
             // 
+            this.noDateToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.noDateToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.OptionsFollowUpSmall;
+            this.noDateToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.noDateToolStripMenuItem.Text = "No Date";
             // 
             // customToolStripMenuItem
             // 
+            this.customToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.customToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.OptionsFollowUpSmall;
+            this.customToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.customToolStripMenuItem.Text = "Custom...";
             // 
             // addReminderToolStripMenuItem
             // 
+            this.addReminderToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.addReminderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.OptionsReminder;
+            this.addReminderToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.addReminderToolStripMenuItem.Text = "Add Reminder...";
             // 
             // kryptonManager1
@@ -3006,8 +3516,33 @@ namespace OutlookMailClone
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StateCommon.Header.ButtonPadding = new System.Windows.Forms.Padding(-1);
+            this.StateCommon.Header.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.StateCommon.Header.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.StateCommon.Header.Content.LongText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.StateCommon.Header.Content.LongText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.StateCommon.Header.Content.LongText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.StateCommon.Header.Content.LongText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.StateCommon.Header.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.StateCommon.Header.Content.LongText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.StateCommon.Header.Content.LongText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.StateCommon.Header.Content.LongText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
             this.StateCommon.Header.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.StateCommon.Header.Content.LongText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.StateCommon.Header.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.StateCommon.Header.Content.Padding = new System.Windows.Forms.Padding(-1);
+            this.StateCommon.Header.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.StateCommon.Header.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.StateCommon.Header.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.StateCommon.Header.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.StateCommon.Header.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.StateCommon.Header.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.StateCommon.Header.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.StateCommon.Header.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
             this.StateCommon.Header.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.StateCommon.Header.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.StateCommon.Header.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.StateCommon.OverlayHeaders = Krypton.Toolkit.InheritBool.Inherit;
             this.Text = "Outlook Mail Clone";
             ((System.ComponentModel.ISupportInitialize)(this.panelFill)).EndInit();
             this.panelFill.ResumeLayout(false);

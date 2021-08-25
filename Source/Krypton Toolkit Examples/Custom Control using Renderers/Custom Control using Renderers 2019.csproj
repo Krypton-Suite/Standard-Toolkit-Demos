@@ -11,6 +11,9 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Krypton.ico" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Update="MyUserControl.cs">
   <SubType>UserControl</SubType>
     </Compile>

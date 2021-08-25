@@ -634,7 +634,7 @@
   <data name="FollowUp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FollowUp.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Square_Design_64_x_64_New_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Square Design 64 x 64 New Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Main Icon 64 x 64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Main Icon 64 x 64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

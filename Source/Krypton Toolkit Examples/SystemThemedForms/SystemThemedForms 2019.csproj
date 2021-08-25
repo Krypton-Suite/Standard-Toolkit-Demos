@@ -27,4 +27,10 @@
           <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
         <ApplicationManifest>app.manifest</ApplicationManifest>
 </PropertyGroup>
+    <ItemGroup>
+      <None Remove="Krypton.ico" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Krypton.ico" />
+    </ItemGroup>
 </Project>

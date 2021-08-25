@@ -32,8 +32,8 @@ namespace KryptonCheckedListBoxExamples
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkSystem = new Krypton.Toolkit.KryptonCheckButton();
-            this.checkSparkle = new Krypton.Toolkit.KryptonCheckButton();
             this.check2010Blue = new Krypton.Toolkit.KryptonCheckButton();
+            this.checkSparkle = new Krypton.Toolkit.KryptonCheckButton();
             this.check2007Blue = new Krypton.Toolkit.KryptonCheckButton();
             this.buttonAppend = new Krypton.Toolkit.KryptonButton();
             this.buttonInsert = new Krypton.Toolkit.KryptonButton();
@@ -46,6 +46,7 @@ namespace KryptonCheckedListBoxExamples
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.kryptonCheckSet = new Krypton.Toolkit.KryptonCheckSet(this.components);
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonPaletteOffice2007Blue = new Krypton.Toolkit.KryptonPalette();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonCheckSet)).BeginInit();
@@ -71,36 +72,48 @@ namespace KryptonCheckedListBoxExamples
             // checkSystem
             // 
             this.checkSystem.AutoSize = true;
+            this.checkSystem.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.checkSystem.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkSystem.Location = new System.Drawing.Point(125, 126);
             this.checkSystem.Name = "checkSystem";
+            this.checkSystem.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.checkSystem.Size = new System.Drawing.Size(113, 25);
             this.checkSystem.TabIndex = 7;
             this.checkSystem.Values.Text = "System";
             // 
-            // checkSparkle
-            // 
-            this.checkSparkle.AutoSize = true;
-            this.checkSparkle.Location = new System.Drawing.Point(125, 94);
-            this.checkSparkle.Name = "checkSparkle";
-            this.checkSparkle.Size = new System.Drawing.Size(113, 25);
-            this.checkSparkle.TabIndex = 6;
-            this.checkSparkle.Values.Text = "Sparkle - Blue";
-            // 
             // check2010Blue
             // 
             this.check2010Blue.AutoSize = true;
+            this.check2010Blue.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.check2010Blue.Checked = true;
+            this.check2010Blue.DialogResult = System.Windows.Forms.DialogResult.None;
             this.check2010Blue.Location = new System.Drawing.Point(125, 31);
             this.check2010Blue.Name = "check2010Blue";
+            this.check2010Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.check2010Blue.Size = new System.Drawing.Size(113, 25);
             this.check2010Blue.TabIndex = 5;
             this.check2010Blue.Values.Text = "Office 2010 - Blue";
             // 
+            // checkSparkle
+            // 
+            this.checkSparkle.AutoSize = true;
+            this.checkSparkle.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.checkSparkle.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.checkSparkle.Location = new System.Drawing.Point(125, 94);
+            this.checkSparkle.Name = "checkSparkle";
+            this.checkSparkle.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.checkSparkle.Size = new System.Drawing.Size(113, 25);
+            this.checkSparkle.TabIndex = 6;
+            this.checkSparkle.Values.Text = "Sparkle - Blue";
+            // 
             // check2007Blue
             // 
             this.check2007Blue.AutoSize = true;
+            this.check2007Blue.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.check2007Blue.DialogResult = System.Windows.Forms.DialogResult.None;
             this.check2007Blue.Location = new System.Drawing.Point(125, 62);
             this.check2007Blue.Name = "check2007Blue";
+            this.check2007Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.check2007Blue.Size = new System.Drawing.Size(113, 25);
             this.check2007Blue.TabIndex = 4;
             this.check2007Blue.Values.Text = "Office 2007 - Blue";
@@ -108,8 +121,11 @@ namespace KryptonCheckedListBoxExamples
             // buttonAppend
             // 
             this.buttonAppend.AutoSize = true;
+            this.buttonAppend.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.buttonAppend.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonAppend.Location = new System.Drawing.Point(19, 30);
             this.buttonAppend.Name = "buttonAppend";
+            this.buttonAppend.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.buttonAppend.Size = new System.Drawing.Size(90, 25);
             this.buttonAppend.TabIndex = 0;
             this.buttonAppend.Values.Text = "Append";
@@ -118,8 +134,11 @@ namespace KryptonCheckedListBoxExamples
             // buttonInsert
             // 
             this.buttonInsert.AutoSize = true;
+            this.buttonInsert.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.buttonInsert.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonInsert.Location = new System.Drawing.Point(19, 62);
             this.buttonInsert.Name = "buttonInsert";
+            this.buttonInsert.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.buttonInsert.Size = new System.Drawing.Size(90, 25);
             this.buttonInsert.TabIndex = 1;
             this.buttonInsert.Values.Text = "Insert";
@@ -128,8 +147,11 @@ namespace KryptonCheckedListBoxExamples
             // buttonClear
             // 
             this.buttonClear.AutoSize = true;
+            this.buttonClear.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.buttonClear.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonClear.Location = new System.Drawing.Point(19, 126);
             this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.buttonClear.Size = new System.Drawing.Size(90, 25);
             this.buttonClear.TabIndex = 3;
             this.buttonClear.Values.Text = "Clear";
@@ -138,8 +160,11 @@ namespace KryptonCheckedListBoxExamples
             // buttonRemove
             // 
             this.buttonRemove.AutoSize = true;
+            this.buttonRemove.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.buttonRemove.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonRemove.Location = new System.Drawing.Point(19, 94);
             this.buttonRemove.Name = "buttonRemove";
+            this.buttonRemove.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.buttonRemove.Size = new System.Drawing.Size(90, 25);
             this.buttonRemove.TabIndex = 2;
             this.buttonRemove.Values.Text = "Remove";
@@ -149,6 +174,8 @@ namespace KryptonCheckedListBoxExamples
             // 
             this.kryptonCheckedListBox.Location = new System.Drawing.Point(23, 24);
             this.kryptonCheckedListBox.Name = "kryptonCheckedListBox";
+            this.kryptonCheckedListBox.Padding = new System.Windows.Forms.Padding(1);
+            this.kryptonCheckedListBox.SelectionMode = Krypton.Toolkit.CheckedSelectionMode.One;
             this.kryptonCheckedListBox.Size = new System.Drawing.Size(227, 192);
             this.kryptonCheckedListBox.TabIndex = 4;
             this.kryptonCheckedListBox.SelectedIndexChanged += new System.EventHandler(this.kryptonListBox_SelectedIndexChanged);
@@ -175,9 +202,9 @@ namespace KryptonCheckedListBoxExamples
             // 
             // propertyGrid
             // 
-            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.propertyGrid.Location = new System.Drawing.Point(6, 19);
             this.propertyGrid.Name = "propertyGrid";
             this.propertyGrid.Size = new System.Drawing.Size(283, 365);
@@ -216,6 +243,15 @@ namespace KryptonCheckedListBoxExamples
             this.kryptonCheckSet.CheckButtons.Add(this.checkSystem);
             this.kryptonCheckSet.CheckedButton = this.check2010Blue;
             this.kryptonCheckSet.CheckedButtonChanged += new System.EventHandler(this.kryptonCheckSet_CheckedButtonChanged);
+            // 
+            // kryptonManager1
+            // 
+            // 
+            // kryptonPaletteOffice2007Blue
+            // 
+            this.kryptonPaletteOffice2007Blue.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
+            this.kryptonManager1.GlobalPalette = this.kryptonPaletteOffice2007Blue;
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Custom;
             // 
             // Form1
             // 
@@ -260,6 +296,7 @@ namespace KryptonCheckedListBoxExamples
         private System.Windows.Forms.ImageList imageList;
         private Krypton.Toolkit.KryptonCheckSet kryptonCheckSet;
         private Krypton.Toolkit.KryptonManager kryptonManager1;
+        private Krypton.Toolkit.KryptonPalette kryptonPaletteOffice2007Blue;
     }
 }
 

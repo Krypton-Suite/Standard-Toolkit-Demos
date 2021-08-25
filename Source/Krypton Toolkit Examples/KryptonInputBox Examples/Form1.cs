@@ -43,5 +43,10 @@ namespace KryptonInputBoxExamples
         {
             KryptonInputBox.Show(ktxtPromptText.Text, ktxtCaptionText.Text, ktxtDefaultResponseText.Text, ktxtCueText.Text, kcbCueTextColour.SelectedColor, _cueTypeface, kchkUsePasswordOption.Checked);
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -55,15 +55,18 @@ namespace MDIRibbon
             this.ribbon.AllowFormIntegrate = true;
             this.ribbon.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecHelp});
+            this.ribbon.HideRibbonSize = new System.Drawing.Size(300, 250);
             this.ribbon.InDesignHelperMode = true;
             this.ribbon.Name = "ribbon";
             this.ribbon.QATLocation = Krypton.Ribbon.QATLocation.Hidden;
+            this.ribbon.RibbonAppButton.AppButtonMaxRecentSize = new System.Drawing.Size(350, 350);
             this.ribbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
+            this.ribbon.RibbonAppButton.AppButtonMinRecentSize = new System.Drawing.Size(250, 250);
             this.ribbon.RibbonAppButton.AppButtonShowRecentDocs = false;
+            this.ribbon.RibbonAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.ribbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome});
-            this.ribbon.SelectedContext = null;
             this.ribbon.SelectedTab = this.tabHome;
             this.ribbon.Size = new System.Drawing.Size(692, 115);
             this.ribbon.TabIndex = 0;
@@ -77,7 +80,9 @@ namespace MDIRibbon
             // 
             // kryptonContextMenuItem1
             // 
+            this.kryptonContextMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("kryptonContextMenuItem1.Image")));
+            this.kryptonContextMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem1.Text = "E&xit";
             this.kryptonContextMenuItem1.Click += new System.EventHandler(this.appMenu_Click);
             // 
@@ -102,40 +107,52 @@ namespace MDIRibbon
             // 
             // kryptonRibbonGroupTriple2
             // 
+            this.kryptonRibbonGroupTriple2.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonNewWindow});
+            this.kryptonRibbonGroupTriple2.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple2.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // buttonNewWindow
             // 
+            this.buttonNewWindow.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonNewWindow.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonNewWindow.ImageLarge")));
             this.buttonNewWindow.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonNewWindow.ImageSmall")));
             this.buttonNewWindow.KeyTip = "N";
             this.buttonNewWindow.TextLine1 = "New";
             this.buttonNewWindow.TextLine2 = "Window";
+            this.buttonNewWindow.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonNewWindow.Click += new System.EventHandler(this.buttonNewWindow_Click);
             // 
             // kryptonRibbonGroupTriple3
             // 
+            this.kryptonRibbonGroupTriple3.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonCloseWindow,
             this.buttonCloseAllWindows});
+            this.kryptonRibbonGroupTriple3.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple3.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // buttonCloseWindow
             // 
+            this.buttonCloseWindow.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonCloseWindow.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonCloseWindow.ImageLarge")));
             this.buttonCloseWindow.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonCloseWindow.ImageSmall")));
             this.buttonCloseWindow.KeyTip = "X";
             this.buttonCloseWindow.TextLine1 = "Close";
             this.buttonCloseWindow.TextLine2 = "Window";
+            this.buttonCloseWindow.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonCloseWindow.Click += new System.EventHandler(this.buttonCloseWindow_Click);
             // 
             // buttonCloseAllWindows
             // 
+            this.buttonCloseAllWindows.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonCloseAllWindows.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonCloseAllWindows.ImageLarge")));
             this.buttonCloseAllWindows.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonCloseAllWindows.ImageSmall")));
             this.buttonCloseAllWindows.KeyTip = "A";
             this.buttonCloseAllWindows.TextLine1 = "Close All";
             this.buttonCloseAllWindows.TextLine2 = "Windows";
+            this.buttonCloseAllWindows.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonCloseAllWindows.Click += new System.EventHandler(this.buttonCloseAllWindows_Click);
             // 
             // kryptonRibbonGroup1
@@ -149,35 +166,44 @@ namespace MDIRibbon
             // 
             // kryptonRibbonGroupTriple4
             // 
+            this.kryptonRibbonGroupTriple4.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonCascade,
             this.buttonTileHorizontal,
             this.buttonTileVertical});
+            this.kryptonRibbonGroupTriple4.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple4.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // buttonCascade
             // 
+            this.buttonCascade.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonCascade.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonCascade.ImageLarge")));
             this.buttonCascade.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonCascade.ImageSmall")));
             this.buttonCascade.KeyTip = "C";
             this.buttonCascade.TextLine1 = "Cascade";
+            this.buttonCascade.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonCascade.Click += new System.EventHandler(this.buttonCascade_Click);
             // 
             // buttonTileHorizontal
             // 
+            this.buttonTileHorizontal.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonTileHorizontal.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonTileHorizontal.ImageLarge")));
             this.buttonTileHorizontal.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonTileHorizontal.ImageSmall")));
             this.buttonTileHorizontal.KeyTip = "H";
             this.buttonTileHorizontal.TextLine1 = "Tile";
             this.buttonTileHorizontal.TextLine2 = "Horizontal";
+            this.buttonTileHorizontal.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonTileHorizontal.Click += new System.EventHandler(this.buttonTileHorizontal_Click);
             // 
             // buttonTileVertical
             // 
+            this.buttonTileVertical.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonTileVertical.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonTileVertical.ImageLarge")));
             this.buttonTileVertical.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonTileVertical.ImageSmall")));
             this.buttonTileVertical.KeyTip = "V";
             this.buttonTileVertical.TextLine1 = "Tile";
             this.buttonTileVertical.TextLine2 = "Vertical";
+            this.buttonTileVertical.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonTileVertical.Click += new System.EventHandler(this.buttonTileVertical_Click);
             // 
             // kryptonManager1

@@ -11,6 +11,9 @@
         <ApplicationIcon>Krypton.ico</ApplicationIcon>
     </PropertyGroup>
     <ItemGroup>
+      <None Remove="Krypton.ico" />
+    </ItemGroup>
+    <ItemGroup>
         <Content Include="Krypton.ico" />
     </ItemGroup>
     <Choose>

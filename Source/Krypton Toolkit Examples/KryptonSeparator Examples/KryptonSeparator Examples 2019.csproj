@@ -13,6 +13,9 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Krypton.ico" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Krypton.ico" />
   </ItemGroup>
     <Choose>

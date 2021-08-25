@@ -36,9 +36,11 @@ namespace MDIApplication
             // 
             // radio2007Blue
             // 
+            this.radio2007Blue.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radio2007Blue.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.radio2007Blue.Location = new System.Drawing.Point(146, 15);
             this.radio2007Blue.Name = "radio2007Blue";
+            this.radio2007Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radio2007Blue.Size = new System.Drawing.Size(120, 20);
             this.radio2007Blue.TabIndex = 3;
             this.radio2007Blue.Values.Text = "Office 2007 - Blue";
@@ -46,9 +48,11 @@ namespace MDIApplication
             // 
             // radioOffice2003
             // 
+            this.radioOffice2003.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioOffice2003.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.radioOffice2003.Location = new System.Drawing.Point(146, 101);
             this.radioOffice2003.Name = "radioOffice2003";
+            this.radioOffice2003.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioOffice2003.Size = new System.Drawing.Size(85, 20);
             this.radioOffice2003.TabIndex = 9;
             this.radioOffice2003.Values.Text = "Office 2003";
@@ -56,9 +60,11 @@ namespace MDIApplication
             // 
             // radioSystem
             // 
+            this.radioSystem.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioSystem.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.radioSystem.Location = new System.Drawing.Point(146, 126);
             this.radioSystem.Name = "radioSystem";
+            this.radioSystem.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioSystem.Size = new System.Drawing.Size(62, 20);
             this.radioSystem.TabIndex = 10;
             this.radioSystem.Values.Text = "System";
@@ -66,9 +72,11 @@ namespace MDIApplication
             // 
             // radio2007Black
             // 
+            this.radio2007Black.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radio2007Black.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.radio2007Black.Location = new System.Drawing.Point(146, 65);
             this.radio2007Black.Name = "radio2007Black";
+            this.radio2007Black.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radio2007Black.Size = new System.Drawing.Size(125, 20);
             this.radio2007Black.TabIndex = 5;
             this.radio2007Black.Values.Text = "Office 2007 - Black";
@@ -95,9 +103,11 @@ namespace MDIApplication
             // 
             // radio2010Black
             // 
+            this.radio2010Black.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radio2010Black.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.radio2010Black.Location = new System.Drawing.Point(14, 65);
             this.radio2010Black.Name = "radio2010Black";
+            this.radio2010Black.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radio2010Black.Size = new System.Drawing.Size(125, 20);
             this.radio2010Black.TabIndex = 2;
             this.radio2010Black.Values.Text = "Office 2010 - Black";
@@ -105,9 +115,11 @@ namespace MDIApplication
             // 
             // radio2010Silver
             // 
+            this.radio2010Silver.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radio2010Silver.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.radio2010Silver.Location = new System.Drawing.Point(14, 40);
             this.radio2010Silver.Name = "radio2010Silver";
+            this.radio2010Silver.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radio2010Silver.Size = new System.Drawing.Size(126, 20);
             this.radio2010Silver.TabIndex = 1;
             this.radio2010Silver.Values.Text = "Office 2010 - Silver";
@@ -116,9 +128,11 @@ namespace MDIApplication
             // radio2010Blue
             // 
             this.radio2010Blue.Checked = true;
+            this.radio2010Blue.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radio2010Blue.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.radio2010Blue.Location = new System.Drawing.Point(14, 15);
             this.radio2010Blue.Name = "radio2010Blue";
+            this.radio2010Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radio2010Blue.Size = new System.Drawing.Size(120, 20);
             this.radio2010Blue.TabIndex = 0;
             this.radio2010Blue.Values.Text = "Office 2010 - Blue";
@@ -126,9 +140,11 @@ namespace MDIApplication
             // 
             // radioSparkleOrange
             // 
+            this.radioSparkleOrange.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioSparkleOrange.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.radioSparkleOrange.Location = new System.Drawing.Point(14, 126);
             this.radioSparkleOrange.Name = "radioSparkleOrange";
+            this.radioSparkleOrange.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioSparkleOrange.Size = new System.Drawing.Size(115, 20);
             this.radioSparkleOrange.TabIndex = 7;
             this.radioSparkleOrange.Values.Text = "Sparkle - Orange";
@@ -136,9 +152,11 @@ namespace MDIApplication
             // 
             // radioSparklePurple
             // 
+            this.radioSparklePurple.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioSparklePurple.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.radioSparklePurple.Location = new System.Drawing.Point(14, 151);
             this.radioSparklePurple.Name = "radioSparklePurple";
+            this.radioSparklePurple.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioSparklePurple.Size = new System.Drawing.Size(109, 20);
             this.radioSparklePurple.TabIndex = 8;
             this.radioSparklePurple.Values.Text = "Sparkle - Purple";
@@ -146,9 +164,11 @@ namespace MDIApplication
             // 
             // radioSparkleBlue
             // 
+            this.radioSparkleBlue.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioSparkleBlue.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.radioSparkleBlue.Location = new System.Drawing.Point(14, 101);
             this.radioSparkleBlue.Name = "radioSparkleBlue";
+            this.radioSparkleBlue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioSparkleBlue.Size = new System.Drawing.Size(98, 20);
             this.radioSparkleBlue.TabIndex = 6;
             this.radioSparkleBlue.Values.Text = "Sparkle - Blue";
@@ -156,13 +176,19 @@ namespace MDIApplication
             // 
             // radio2007Silver
             // 
+            this.radio2007Silver.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radio2007Silver.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.radio2007Silver.Location = new System.Drawing.Point(146, 40);
             this.radio2007Silver.Name = "radio2007Silver";
+            this.radio2007Silver.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radio2007Silver.Size = new System.Drawing.Size(126, 20);
             this.radio2007Silver.TabIndex = 4;
             this.radio2007Silver.Values.Text = "Office 2007 - Silver";
             this.radio2007Silver.CheckedChanged += new System.EventHandler(this.radio2007Silver_CheckedChanged);
+            // 
+            // kryptonManager
+            // 
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.SparkleBlue;
             // 
             // Form2
             // 

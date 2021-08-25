@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kryptonWorkspace = new Krypton.Workspace.KryptonWorkspace();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -41,7 +40,7 @@
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonAddPage = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.imageList = new System.Windows.Forms.ImageList(this.components);
+            this.imageList = new System.Windows.Forms.ImageList();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,7 +50,7 @@
             this.buttonApplySingleRow = new System.Windows.Forms.Button();
             this.buttonApplyGrid = new System.Windows.Forms.Button();
             this.buttonApplySingleCell = new System.Windows.Forms.Button();
-            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspace)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -59,16 +58,25 @@
             // 
             // kryptonWorkspace
             // 
-            this.kryptonWorkspace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonWorkspace.ActivePage = null;
+            this.kryptonWorkspace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonWorkspace.CompactFlags = ((Krypton.Workspace.CompactFlags)((((Krypton.Workspace.CompactFlags.RemoveEmptyCells | Krypton.Workspace.CompactFlags.RemoveEmptySequences) 
+            | Krypton.Workspace.CompactFlags.PromoteLeafs) 
+            | Krypton.Workspace.CompactFlags.AtLeastOneVisibleCell)));
+            this.kryptonWorkspace.ContainerBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonWorkspace.Location = new System.Drawing.Point(265, 52);
             this.kryptonWorkspace.Name = "kryptonWorkspace";
             // 
             // 
             // 
+            this.kryptonWorkspace.Root.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.kryptonWorkspace.Root.UniqueName = "0B1488CA488E48AFC0885C55F1E201CA";
+            this.kryptonWorkspace.Root.WorkspaceControl = this.kryptonWorkspace;
+            this.kryptonWorkspace.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.LowProfile;
             this.kryptonWorkspace.Size = new System.Drawing.Size(497, 463);
+            this.kryptonWorkspace.SplitterWidth = 5;
             this.kryptonWorkspace.TabIndex = 5;
             this.kryptonWorkspace.TabStop = true;
             this.kryptonWorkspace.WorkspaceCellAdding += new System.EventHandler<Krypton.Workspace.WorkspaceCellEventArgs>(this.kryptonWorkspace_WorkspaceCellAdding);
@@ -95,7 +103,7 @@
             this.label3.Size = new System.Drawing.Size(223, 53);
             this.label3.TabIndex = 5;
             this.label3.Text = "Creates embedded sequences. Sequences in the place of individual cells allows eve" +
-                "n the most complex layouts to be quickly defined.\r\n";
+    "n the most complex layouts to be quickly defined.\r\n";
             // 
             // label1
             // 
@@ -212,7 +220,7 @@
             this.label6.Size = new System.Drawing.Size(223, 39);
             this.label6.TabIndex = 7;
             this.label6.Text = "One cell per page and arranged into a grid. It tries to make the grid as square a" +
-                "s possible.";
+    "s possible.";
             // 
             // label5
             // 

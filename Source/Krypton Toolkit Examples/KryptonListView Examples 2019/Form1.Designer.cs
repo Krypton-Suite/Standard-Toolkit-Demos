@@ -80,16 +80,19 @@ namespace KryptonListViewExamples
             this.kryptonPanel1.Controls.Add(this.groupBox1);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(720, 365);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // viewCheckBox
             // 
+            this.viewCheckBox.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
+            this.viewCheckBox.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.viewCheckBox.Location = new System.Drawing.Point(463, 342);
-            this.viewCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.viewCheckBox.Margin = new System.Windows.Forms.Padding(2);
             this.viewCheckBox.Name = "viewCheckBox";
+            this.viewCheckBox.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.viewCheckBox.Size = new System.Drawing.Size(76, 20);
             this.viewCheckBox.TabIndex = 6;
             this.viewCheckBox.Values.Text = "CheckBox";
@@ -97,11 +100,14 @@ namespace KryptonListViewExamples
             // 
             // cmbTheme
             // 
+            this.cmbTheme.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.cmbTheme.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.cmbTheme.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmbTheme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.cmbTheme.DropDownWidth = 199;
             this.cmbTheme.IntegralHeight = false;
             this.cmbTheme.Location = new System.Drawing.Point(562, 342);
-            this.cmbTheme.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbTheme.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTheme.Name = "cmbTheme";
             this.cmbTheme.Size = new System.Drawing.Size(149, 21);
             this.cmbTheme.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
@@ -114,8 +120,11 @@ namespace KryptonListViewExamples
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupBox3.CaptionEdge = Krypton.Toolkit.VisualOrientation.Top;
+            this.groupBox3.CaptionOrientation = Krypton.Toolkit.ButtonOrientation.Auto;
             this.groupBox3.Location = new System.Drawing.Point(378, 4);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             // 
             // groupBox3.Panel
@@ -148,15 +157,26 @@ namespace KryptonListViewExamples
             this.listKrypton.ItemStyle = Krypton.Toolkit.ButtonStyle.ListItem;
             this.listKrypton.LargeImageList = this.imageList2;
             this.listKrypton.Location = new System.Drawing.Point(0, 0);
-            this.listKrypton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listKrypton.Margin = new System.Windows.Forms.Padding(2);
             this.listKrypton.Name = "listKrypton";
             this.listKrypton.OwnerDraw = true;
             this.listKrypton.Size = new System.Drawing.Size(336, 302);
             this.listKrypton.SmallImageList = this.imageList1;
+            this.listKrypton.StateCommon.Item.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.listKrypton.StateCommon.Item.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.listKrypton.StateCommon.Item.Content.Padding = new System.Windows.Forms.Padding(-1);
+            this.listKrypton.StateCommon.Item.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.listKrypton.StateCommon.Item.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.listKrypton.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listKrypton.StateCommon.Item.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.listKrypton.StateCommon.Item.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.listKrypton.StateCommon.Item.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.listKrypton.StateCommon.Item.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.True;
             this.listKrypton.StateCommon.Item.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.listKrypton.StateCommon.Item.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
             this.listKrypton.StateCommon.Item.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.listKrypton.StateCommon.Item.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.listKrypton.StateCommon.Item.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.listKrypton.TabIndex = 0;
             // 
             // imageList2
@@ -185,9 +205,9 @@ namespace KryptonListViewExamples
             this.groupBox2.Controls.Add(this.rbSmallIcon);
             this.groupBox2.Controls.Add(this.rbLargIcon);
             this.groupBox2.Location = new System.Drawing.Point(10, 336);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(400, 29);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -197,7 +217,7 @@ namespace KryptonListViewExamples
             // 
             this.rbDetails.AutoSize = true;
             this.rbDetails.Location = new System.Drawing.Point(323, 10);
-            this.rbDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbDetails.Margin = new System.Windows.Forms.Padding(2);
             this.rbDetails.Name = "rbDetails";
             this.rbDetails.Size = new System.Drawing.Size(57, 17);
             this.rbDetails.TabIndex = 4;
@@ -209,7 +229,7 @@ namespace KryptonListViewExamples
             // 
             this.rbTile.AutoSize = true;
             this.rbTile.Location = new System.Drawing.Point(266, 9);
-            this.rbTile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbTile.Margin = new System.Windows.Forms.Padding(2);
             this.rbTile.Name = "rbTile";
             this.rbTile.Size = new System.Drawing.Size(42, 17);
             this.rbTile.TabIndex = 3;
@@ -221,7 +241,7 @@ namespace KryptonListViewExamples
             // 
             this.rbList.AutoSize = true;
             this.rbList.Location = new System.Drawing.Point(179, 12);
-            this.rbList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbList.Margin = new System.Windows.Forms.Padding(2);
             this.rbList.Name = "rbList";
             this.rbList.Size = new System.Drawing.Size(41, 17);
             this.rbList.TabIndex = 2;
@@ -233,7 +253,7 @@ namespace KryptonListViewExamples
             // 
             this.rbSmallIcon.AutoSize = true;
             this.rbSmallIcon.Location = new System.Drawing.Point(92, 11);
-            this.rbSmallIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbSmallIcon.Margin = new System.Windows.Forms.Padding(2);
             this.rbSmallIcon.Name = "rbSmallIcon";
             this.rbSmallIcon.Size = new System.Drawing.Size(74, 17);
             this.rbSmallIcon.TabIndex = 1;
@@ -246,7 +266,7 @@ namespace KryptonListViewExamples
             this.rbLargIcon.AutoSize = true;
             this.rbLargIcon.Checked = true;
             this.rbLargIcon.Location = new System.Drawing.Point(5, 11);
-            this.rbLargIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbLargIcon.Margin = new System.Windows.Forms.Padding(2);
             this.rbLargIcon.Name = "rbLargIcon";
             this.rbLargIcon.Size = new System.Drawing.Size(76, 17);
             this.rbLargIcon.TabIndex = 0;
@@ -263,9 +283,9 @@ namespace KryptonListViewExamples
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.listWinform);
             this.groupBox1.Location = new System.Drawing.Point(10, 11);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(356, 319);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -290,7 +310,7 @@ namespace KryptonListViewExamples
             listViewItem6});
             this.listWinform.LargeImageList = this.imageList2;
             this.listWinform.Location = new System.Drawing.Point(2, 15);
-            this.listWinform.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listWinform.Margin = new System.Windows.Forms.Padding(2);
             this.listWinform.Name = "listWinform";
             this.listWinform.Size = new System.Drawing.Size(352, 302);
             this.listWinform.SmallImageList = this.imageList1;
@@ -308,7 +328,8 @@ namespace KryptonListViewExamples
             this.ClientSize = new System.Drawing.Size(720, 365);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "ListView Example";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();

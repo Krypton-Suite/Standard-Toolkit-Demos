@@ -52,9 +52,9 @@
             // 
             // propertyGrid
             // 
-            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.propertyGrid.Location = new System.Drawing.Point(6, 19);
             this.propertyGrid.Name = "propertyGrid";
             this.propertyGrid.Size = new System.Drawing.Size(310, 364);
@@ -100,6 +100,7 @@
             this.kryptonTrackBar4.DrawBackground = true;
             this.kryptonTrackBar4.Location = new System.Drawing.Point(15, 148);
             this.kryptonTrackBar4.Name = "kryptonTrackBar4";
+            this.kryptonTrackBar4.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.kryptonTrackBar4.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonTrackBar4.Size = new System.Drawing.Size(250, 27);
             this.kryptonTrackBar4.TabIndex = 3;
@@ -115,6 +116,7 @@
             this.kryptonTrackBar3.Location = new System.Drawing.Point(15, 97);
             this.kryptonTrackBar3.Maximum = 30;
             this.kryptonTrackBar3.Name = "kryptonTrackBar3";
+            this.kryptonTrackBar3.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.kryptonTrackBar3.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.kryptonTrackBar3.Size = new System.Drawing.Size(250, 41);
             this.kryptonTrackBar3.TabIndex = 2;
@@ -129,10 +131,12 @@
             this.kryptonTrackBar2.Location = new System.Drawing.Point(15, 60);
             this.kryptonTrackBar2.Maximum = 20;
             this.kryptonTrackBar2.Name = "kryptonTrackBar2";
+            this.kryptonTrackBar2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.kryptonTrackBar2.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.kryptonTrackBar2.Size = new System.Drawing.Size(250, 27);
             this.kryptonTrackBar2.TabIndex = 1;
             this.kryptonTrackBar2.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.kryptonTrackBar2.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Medium;
             this.kryptonTrackBar2.Value = 5;
             this.kryptonTrackBar2.Enter += new System.EventHandler(this.trackBar_Enter);
             // 
@@ -141,9 +145,11 @@
             this.kryptonTrackBar1.DrawBackground = true;
             this.kryptonTrackBar1.Location = new System.Drawing.Point(15, 30);
             this.kryptonTrackBar1.Name = "kryptonTrackBar1";
+            this.kryptonTrackBar1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.kryptonTrackBar1.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             this.kryptonTrackBar1.Size = new System.Drawing.Size(250, 20);
             this.kryptonTrackBar1.TabIndex = 0;
+            this.kryptonTrackBar1.TickStyle = System.Windows.Forms.TickStyle.BottomRight;
             this.kryptonTrackBar1.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Small;
             this.kryptonTrackBar1.Value = 1;
             this.kryptonTrackBar1.Enter += new System.EventHandler(this.trackBar_Enter);
@@ -175,6 +181,7 @@
             this.kryptonTrackBar11.Size = new System.Drawing.Size(27, 159);
             this.kryptonTrackBar11.TabIndex = 4;
             this.kryptonTrackBar11.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.kryptonTrackBar11.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Medium;
             this.kryptonTrackBar11.Value = 5;
             this.kryptonTrackBar11.Enter += new System.EventHandler(this.trackBar_Enter);
             // 
@@ -187,6 +194,7 @@
             this.kryptonTrackBar10.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Black;
             this.kryptonTrackBar10.Size = new System.Drawing.Size(20, 159);
             this.kryptonTrackBar10.TabIndex = 2;
+            this.kryptonTrackBar10.TickStyle = System.Windows.Forms.TickStyle.BottomRight;
             this.kryptonTrackBar10.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Small;
             this.kryptonTrackBar10.Value = 1;
             this.kryptonTrackBar10.Enter += new System.EventHandler(this.trackBar_Enter);
@@ -200,6 +208,7 @@
             this.kryptonTrackBar9.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Silver;
             this.kryptonTrackBar9.Size = new System.Drawing.Size(20, 159);
             this.kryptonTrackBar9.TabIndex = 1;
+            this.kryptonTrackBar9.TickStyle = System.Windows.Forms.TickStyle.BottomRight;
             this.kryptonTrackBar9.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Small;
             this.kryptonTrackBar9.Value = 1;
             this.kryptonTrackBar9.Enter += new System.EventHandler(this.trackBar_Enter);
@@ -246,6 +255,7 @@
             this.kryptonTrackBar7.Size = new System.Drawing.Size(27, 159);
             this.kryptonTrackBar7.TabIndex = 3;
             this.kryptonTrackBar7.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.kryptonTrackBar7.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Medium;
             this.kryptonTrackBar7.Value = 5;
             this.kryptonTrackBar7.Enter += new System.EventHandler(this.trackBar_Enter);
             // 
@@ -258,6 +268,7 @@
             this.kryptonTrackBar8.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             this.kryptonTrackBar8.Size = new System.Drawing.Size(20, 159);
             this.kryptonTrackBar8.TabIndex = 0;
+            this.kryptonTrackBar8.TickStyle = System.Windows.Forms.TickStyle.BottomRight;
             this.kryptonTrackBar8.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Small;
             this.kryptonTrackBar8.Value = 1;
             this.kryptonTrackBar8.Enter += new System.EventHandler(this.trackBar_Enter);

@@ -77,9 +77,9 @@ namespace KryptonPanelExamples
             // 
             // propertyGrid
             // 
-            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.propertyGrid.Location = new System.Drawing.Point(6, 19);
             this.propertyGrid.Name = "propertyGrid";
             this.propertyGrid.Size = new System.Drawing.Size(310, 531);
@@ -222,8 +222,11 @@ namespace KryptonPanelExamples
             this.panel4Custom.Size = new System.Drawing.Size(100, 100);
             this.panel4Custom.StateNormal.Color1 = System.Drawing.Color.White;
             this.panel4Custom.StateNormal.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel4Custom.StateNormal.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.panel4Custom.StateNormal.ColorAngle = 45F;
             this.panel4Custom.StateNormal.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Sigma;
+            this.panel4Custom.StateNormal.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.panel4Custom.StateNormal.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
             this.panel4Custom.StateNormal.Image = ((System.Drawing.Image)(resources.GetObject("panel4Custom.StateNormal.Image")));
             this.panel4Custom.StateNormal.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Local;
             this.panel4Custom.StateNormal.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
@@ -238,8 +241,12 @@ namespace KryptonPanelExamples
             this.panel2Custom.Size = new System.Drawing.Size(100, 100);
             this.panel2Custom.StateNormal.Color1 = System.Drawing.Color.White;
             this.panel2Custom.StateNormal.Color2 = System.Drawing.Color.Maroon;
+            this.panel2Custom.StateNormal.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.panel2Custom.StateNormal.ColorAngle = 10F;
             this.panel2Custom.StateNormal.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Sigma;
+            this.panel2Custom.StateNormal.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.panel2Custom.StateNormal.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.panel2Custom.StateNormal.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.panel2Custom.StateNormal.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.panel2Custom.TabIndex = 2;
             this.panel2Custom.MouseDown += new System.Windows.Forms.MouseEventHandler(this.kryptonPanel_MouseDown);
@@ -252,9 +259,13 @@ namespace KryptonPanelExamples
             this.panel3Custom.Size = new System.Drawing.Size(100, 100);
             this.panel3Custom.StateNormal.Color1 = System.Drawing.Color.White;
             this.panel3Custom.StateNormal.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel3Custom.StateNormal.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.panel3Custom.StateNormal.ColorAngle = 45F;
             this.panel3Custom.StateNormal.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.panel3Custom.StateNormal.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.panel3Custom.StateNormal.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
             this.panel3Custom.StateNormal.Image = ((System.Drawing.Image)(resources.GetObject("panel3Custom.StateNormal.Image")));
+            this.panel3Custom.StateNormal.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.panel3Custom.StateNormal.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
             this.panel3Custom.TabIndex = 1;
             this.panel3Custom.MouseDown += new System.Windows.Forms.MouseEventHandler(this.kryptonPanel_MouseDown);
@@ -267,8 +278,12 @@ namespace KryptonPanelExamples
             this.panel1Custom.Size = new System.Drawing.Size(100, 100);
             this.panel1Custom.StateNormal.Color1 = System.Drawing.Color.White;
             this.panel1Custom.StateNormal.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel1Custom.StateNormal.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.panel1Custom.StateNormal.ColorAngle = 60F;
             this.panel1Custom.StateNormal.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Rounded;
+            this.panel1Custom.StateNormal.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.panel1Custom.StateNormal.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.panel1Custom.StateNormal.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.panel1Custom.StateNormal.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.panel1Custom.TabIndex = 0;
             this.panel1Custom.MouseDown += new System.Windows.Forms.MouseEventHandler(this.kryptonPanel_MouseDown);

@@ -62,6 +62,7 @@ namespace KryptonGalleryExamples
             // 
             this.kryptonGallery1.AutoSize = true;
             this.kryptonGallery1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.kryptonGallery1.ButtonStyle = Krypton.Toolkit.ButtonStyle.LowProfile;
             this.kryptonGallery1.DropButtonRanges.AddRange(new Krypton.Ribbon.KryptonGalleryRange[] {
             this.kryptonGalleryRange1,
             this.kryptonGalleryRange2,
@@ -69,6 +70,7 @@ namespace KryptonGalleryExamples
             this.kryptonGallery1.ImageList = this.imageListMedium;
             this.kryptonGallery1.Location = new System.Drawing.Point(178, 20);
             this.kryptonGallery1.Name = "kryptonGallery1";
+            this.kryptonGallery1.Padding = new System.Windows.Forms.Padding(3);
             this.kryptonGallery1.PreferredItemSize = new System.Drawing.Size(4, 1);
             this.kryptonGallery1.Size = new System.Drawing.Size(174, 46);
             this.kryptonGallery1.TabIndex = 4;

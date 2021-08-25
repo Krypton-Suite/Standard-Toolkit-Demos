@@ -10,7 +10,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Content Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.ico" />
+        <Content Include="Krypton.ico" />
     </ItemGroup>
 
     <Choose>

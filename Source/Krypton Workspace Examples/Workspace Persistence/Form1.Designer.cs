@@ -73,23 +73,31 @@
             // 
             // kryptonWorkspace
             // 
-            this.kryptonWorkspace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonWorkspace.ActivePage = null;
+            this.kryptonWorkspace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonWorkspace.CompactFlags = ((Krypton.Workspace.CompactFlags)((((Krypton.Workspace.CompactFlags.RemoveEmptyCells | Krypton.Workspace.CompactFlags.RemoveEmptySequences) 
+            | Krypton.Workspace.CompactFlags.PromoteLeafs) 
+            | Krypton.Workspace.CompactFlags.AtLeastOneVisibleCell)));
+            this.kryptonWorkspace.ContainerBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonWorkspace.Location = new System.Drawing.Point(308, 48);
             this.kryptonWorkspace.Name = "kryptonWorkspace";
             // 
             // 
             // 
+            this.kryptonWorkspace.Root.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.kryptonWorkspace.Root.UniqueName = "BF526855C8FB4541BF526855C8FB4541";
             this.kryptonWorkspace.Root.WorkspaceControl = this.kryptonWorkspace;
+            this.kryptonWorkspace.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.LowProfile;
             this.kryptonWorkspace.Size = new System.Drawing.Size(464, 404);
+            this.kryptonWorkspace.SplitterWidth = 5;
             this.kryptonWorkspace.TabIndex = 4;
             this.kryptonWorkspace.TabStop = true;
-            this.kryptonWorkspace.PagesUnmatched += new System.EventHandler<Krypton.Workspace.PagesUnmatchedEventArgs>(this.kryptonWorkspace_PagesUnmatched);
             this.kryptonWorkspace.PageSaving += new System.EventHandler<Krypton.Workspace.PageSavingEventArgs>(this.kryptonWorkspace_PageSaving);
             this.kryptonWorkspace.PageLoading += new System.EventHandler<Krypton.Workspace.PageLoadingEventArgs>(this.kryptonWorkspace_PageLoading);
             this.kryptonWorkspace.RecreateLoadingPage += new System.EventHandler<Krypton.Workspace.RecreateLoadingPageEventArgs>(this.kryptonWorkspace_RecreateLoadingPage);
+            this.kryptonWorkspace.PagesUnmatched += new System.EventHandler<Krypton.Workspace.PagesUnmatchedEventArgs>(this.kryptonWorkspace_PagesUnmatched);
             // 
             // buttonClose
             // 
@@ -134,8 +142,8 @@
             this.label1.Size = new System.Drawing.Size(233, 99);
             this.label1.TabIndex = 2;
             this.label1.Text = "Persisting to/from a byte array is useful when you only need to keep data for the" +
-                " duration of your application. \r\n\r\nAlso great for persisting to and from a datab" +
-                "ase for use between user sessions.";
+    " duration of your application. \r\n\r\nAlso great for persisting to and from a datab" +
+    "ase for use between user sessions.";
             // 
             // bLoadFromArray
             // 
@@ -177,7 +185,7 @@
             this.label2.Size = new System.Drawing.Size(233, 63);
             this.label2.TabIndex = 2;
             this.label2.Text = "Using files for storage allows you to persist the layout when you application exi" +
-                "ts in order to restore it at the next startup.";
+    "ts in order to restore it at the next startup.";
             // 
             // bLoadFromFile
             // 
@@ -212,10 +220,6 @@
             this.openFileDialog.FileName = "example.xml";
             this.openFileDialog.Filter = "XML files|*.xml";
             this.openFileDialog.Title = "Load Workspace Layout";
-            // 
-            // kryptonManager1
-            // 
-            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Custom;
             // 
             // Form1
             // 
