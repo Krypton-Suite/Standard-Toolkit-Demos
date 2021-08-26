@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFrameworks>net35;net48;net5.0-windows</TargetFrameworks>
+    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
     <OutputType>WinExe</OutputType>
     <RootNamespace>KryptonTableLayoutPanelExamples</RootNamespace>
     <AssemblyName>Krypton TableLayoutPanel Examples</AssemblyName>
@@ -10,6 +10,9 @@
     <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Krypton.ico" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Krypton.ico" />
   </ItemGroup>
@@ -29,7 +32,7 @@
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
-                <PackageReference Include="Krypton.Toolkit.Canary.Lite" Version="6.0.2106" />
+                <PackageReference Include="Krypton.Toolkit.Canary.Lite" Version="6.0.2108.1" />
             </ItemGroup>
         </When>
         <Otherwise>

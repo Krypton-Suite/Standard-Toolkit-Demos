@@ -218,6 +218,7 @@ namespace KryptonFontDialog_Example_2019
             this.kryptonGroupBox2.Size = new System.Drawing.Size(149, 235);
             this.kryptonGroupBox2.TabIndex = 21;
             this.kryptonGroupBox2.Values.Heading = "Options:";
+            /*
             // 
             // chkShowEffects
             // 
@@ -292,6 +293,7 @@ namespace KryptonFontDialog_Example_2019
             this.chkShowColour.Size = new System.Drawing.Size(93, 20);
             this.chkShowColour.TabIndex = 1;
             this.chkShowColour.Values.Text = "Show Colour";
+            */
             // 
             // chkShowHelp
             // 
