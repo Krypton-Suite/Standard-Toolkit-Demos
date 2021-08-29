@@ -22,6 +22,8 @@ namespace Test_Clip_Base
         private void KryptonButton1_Click(object sender, System.EventArgs e)
         {
             kryptonButton1.Text = @"Changed";
+            using var fm2 = new Form2();
+            fm2.ShowDialog(this);
         }
     }
 }

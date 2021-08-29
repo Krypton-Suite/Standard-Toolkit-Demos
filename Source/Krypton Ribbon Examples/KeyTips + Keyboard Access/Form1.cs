@@ -27,7 +27,7 @@ namespace KeyTipsAndKeyboardAccess
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            checkSetPalette.CheckedButton = this.buttonOffice2007Black;
+            checkSetPalette.CheckedButton = this.buttonOffice2010Black;
         }
 
         private void checkSetPalette_CheckedButtonChanged(object sender, EventArgs e)
@@ -54,6 +54,8 @@ namespace KeyTipsAndKeyboardAccess
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
             else if (checkSetPalette.CheckedButton == buttonOffice2010Black)
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
+            else if (checkSetPalette.CheckedButton == buttonOffice365Black)
+                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office365Black;
         }
 
         private void OnDialogBoxLauncherClick(object sender, EventArgs e)
@@ -100,5 +102,6 @@ namespace KeyTipsAndKeyboardAccess
         {
             Close();
         }
+
     }
 }

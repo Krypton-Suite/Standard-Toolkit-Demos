@@ -38,6 +38,7 @@ namespace KeyTipsAndKeyboardAccess
             this.labelKeyTips = new Krypton.Toolkit.KryptonLabel();
             this.labelKeyTipInstructions = new Krypton.Toolkit.KryptonLabel();
             this.groupOffice2007Styles = new Krypton.Toolkit.KryptonGroup();
+            this.buttonOffice365Black = new Krypton.Toolkit.KryptonCheckButton();
             this.buttonOffice2010Black = new Krypton.Toolkit.KryptonCheckButton();
             this.buttonOffice2010Silver = new Krypton.Toolkit.KryptonCheckButton();
             this.buttonOffice2010Blue = new Krypton.Toolkit.KryptonCheckButton();
@@ -121,12 +122,15 @@ namespace KeyTipsAndKeyboardAccess
             ((System.ComponentModel.ISupportInitialize)(this.groupKeyboardInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupKeyboardInfo.Panel)).BeginInit();
             this.groupKeyboardInfo.Panel.SuspendLayout();
+            this.groupKeyboardInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupKeyTipsInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupKeyTipsInfo.Panel)).BeginInit();
             this.groupKeyTipsInfo.Panel.SuspendLayout();
+            this.groupKeyTipsInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupOffice2007Styles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupOffice2007Styles.Panel)).BeginInit();
             this.groupOffice2007Styles.Panel.SuspendLayout();
+            this.groupOffice2007Styles.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkSetPalette)).BeginInit();
             this.SuspendLayout();
@@ -137,43 +141,43 @@ namespace KeyTipsAndKeyboardAccess
             this.panelFill.Controls.Add(this.groupKeyTipsInfo);
             this.panelFill.Controls.Add(this.groupOffice2007Styles);
             this.panelFill.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFill.Location = new System.Drawing.Point(0, 115);
-            this.panelFill.Margin = new System.Windows.Forms.Padding(4);
+            this.panelFill.Location = new System.Drawing.Point(0, 135);
+            this.panelFill.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panelFill.Name = "panelFill";
-            this.panelFill.Size = new System.Drawing.Size(557, 546);
+            this.panelFill.Size = new System.Drawing.Size(637, 519);
             this.panelFill.TabIndex = 1;
             // 
             // groupKeyboardInfo
             // 
             this.groupKeyboardInfo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupKeyboardInfo.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
-            this.groupKeyboardInfo.Location = new System.Drawing.Point(14, 284);
-            this.groupKeyboardInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.groupKeyboardInfo.Location = new System.Drawing.Point(16, 303);
+            this.groupKeyboardInfo.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.groupKeyboardInfo.Name = "groupKeyboardInfo";
             // 
-            // 
+            // groupKeyboardInfo.Panel
             // 
             this.groupKeyboardInfo.Panel.Controls.Add(this.labelKeyboardNavigation);
             this.groupKeyboardInfo.Panel.Controls.Add(this.labelKeyboardInstructions);
-            this.groupKeyboardInfo.Size = new System.Drawing.Size(311, 190);
+            this.groupKeyboardInfo.Size = new System.Drawing.Size(355, 202);
             this.groupKeyboardInfo.TabIndex = 9;
             // 
             // labelKeyboardNavigation
             // 
             this.labelKeyboardNavigation.LabelStyle = Krypton.Toolkit.LabelStyle.TitlePanel;
-            this.labelKeyboardNavigation.Location = new System.Drawing.Point(4, 5);
-            this.labelKeyboardNavigation.Margin = new System.Windows.Forms.Padding(4);
+            this.labelKeyboardNavigation.Location = new System.Drawing.Point(5, 6);
+            this.labelKeyboardNavigation.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.labelKeyboardNavigation.Name = "labelKeyboardNavigation";
-            this.labelKeyboardNavigation.Size = new System.Drawing.Size(198, 29);
+            this.labelKeyboardNavigation.Size = new System.Drawing.Size(246, 35);
             this.labelKeyboardNavigation.TabIndex = 1;
             this.labelKeyboardNavigation.Values.Text = "Keyboard Navigation";
             // 
             // labelKeyboardInstructions
             // 
-            this.labelKeyboardInstructions.Location = new System.Drawing.Point(4, 43);
-            this.labelKeyboardInstructions.Margin = new System.Windows.Forms.Padding(4);
+            this.labelKeyboardInstructions.Location = new System.Drawing.Point(5, 46);
+            this.labelKeyboardInstructions.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.labelKeyboardInstructions.Name = "labelKeyboardInstructions";
-            this.labelKeyboardInstructions.Size = new System.Drawing.Size(265, 100);
+            this.labelKeyboardInstructions.Size = new System.Drawing.Size(330, 124);
             this.labelKeyboardInstructions.TabIndex = 2;
             this.labelKeyboardInstructions.Values.Text = resources.GetString("labelKeyboardInstructions.Values.Text");
             // 
@@ -181,33 +185,33 @@ namespace KeyTipsAndKeyboardAccess
             // 
             this.groupKeyTipsInfo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupKeyTipsInfo.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
-            this.groupKeyTipsInfo.Location = new System.Drawing.Point(14, 19);
-            this.groupKeyTipsInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.groupKeyTipsInfo.Location = new System.Drawing.Point(16, 20);
+            this.groupKeyTipsInfo.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.groupKeyTipsInfo.Name = "groupKeyTipsInfo";
             // 
-            // 
+            // groupKeyTipsInfo.Panel
             // 
             this.groupKeyTipsInfo.Panel.Controls.Add(this.labelKeyTips);
             this.groupKeyTipsInfo.Panel.Controls.Add(this.labelKeyTipInstructions);
-            this.groupKeyTipsInfo.Size = new System.Drawing.Size(311, 259);
+            this.groupKeyTipsInfo.Size = new System.Drawing.Size(355, 276);
             this.groupKeyTipsInfo.TabIndex = 8;
             // 
             // labelKeyTips
             // 
             this.labelKeyTips.LabelStyle = Krypton.Toolkit.LabelStyle.TitlePanel;
-            this.labelKeyTips.Location = new System.Drawing.Point(4, 5);
-            this.labelKeyTips.Margin = new System.Windows.Forms.Padding(4);
+            this.labelKeyTips.Location = new System.Drawing.Point(5, 6);
+            this.labelKeyTips.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.labelKeyTips.Name = "labelKeyTips";
-            this.labelKeyTips.Size = new System.Drawing.Size(80, 29);
+            this.labelKeyTips.Size = new System.Drawing.Size(99, 35);
             this.labelKeyTips.TabIndex = 1;
             this.labelKeyTips.Values.Text = "KeyTips";
             // 
             // labelKeyTipInstructions
             // 
-            this.labelKeyTipInstructions.Location = new System.Drawing.Point(4, 43);
-            this.labelKeyTipInstructions.Margin = new System.Windows.Forms.Padding(4);
+            this.labelKeyTipInstructions.Location = new System.Drawing.Point(5, 46);
+            this.labelKeyTipInstructions.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.labelKeyTipInstructions.Name = "labelKeyTipInstructions";
-            this.labelKeyTipInstructions.Size = new System.Drawing.Size(269, 164);
+            this.labelKeyTipInstructions.Size = new System.Drawing.Size(335, 204);
             this.labelKeyTipInstructions.TabIndex = 2;
             this.labelKeyTipInstructions.Values.Text = resources.GetString("labelKeyTipInstructions.Values.Text");
             // 
@@ -215,12 +219,13 @@ namespace KeyTipsAndKeyboardAccess
             // 
             this.groupOffice2007Styles.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupOffice2007Styles.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
-            this.groupOffice2007Styles.Location = new System.Drawing.Point(336, 19);
-            this.groupOffice2007Styles.Margin = new System.Windows.Forms.Padding(4);
+            this.groupOffice2007Styles.Location = new System.Drawing.Point(384, 20);
+            this.groupOffice2007Styles.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.groupOffice2007Styles.Name = "groupOffice2007Styles";
             // 
+            // groupOffice2007Styles.Panel
             // 
-            // 
+            this.groupOffice2007Styles.Panel.Controls.Add(this.buttonOffice365Black);
             this.groupOffice2007Styles.Panel.Controls.Add(this.buttonOffice2010Black);
             this.groupOffice2007Styles.Panel.Controls.Add(this.buttonOffice2010Silver);
             this.groupOffice2007Styles.Panel.Controls.Add(this.buttonOffice2010Blue);
@@ -233,18 +238,31 @@ namespace KeyTipsAndKeyboardAccess
             this.groupOffice2007Styles.Panel.Controls.Add(this.buttonOffice2007Silver);
             this.groupOffice2007Styles.Panel.Controls.Add(this.buttonOffice2007Blue);
             this.groupOffice2007Styles.Panel.Controls.Add(this.labelGlobalPalettes);
-            this.groupOffice2007Styles.Size = new System.Drawing.Size(210, 456);
+            this.groupOffice2007Styles.Size = new System.Drawing.Size(240, 486);
             this.groupOffice2007Styles.TabIndex = 7;
+            // 
+            // buttonOffice365Black
+            // 
+            this.buttonOffice365Black.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.buttonOffice365Black.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.buttonOffice365Black.Location = new System.Drawing.Point(32, 446);
+            this.buttonOffice365Black.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.buttonOffice365Black.Name = "buttonOffice365Black";
+            this.buttonOffice365Black.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.buttonOffice365Black.Size = new System.Drawing.Size(171, 31);
+            this.buttonOffice365Black.TabIndex = 12;
+            this.buttonOffice365Black.Values.Text = "Office 365 Black";
             // 
             // buttonOffice2010Black
             // 
             this.buttonOffice2010Black.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.buttonOffice2010Black.Checked = true;
             this.buttonOffice2010Black.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonOffice2010Black.Location = new System.Drawing.Point(28, 125);
-            this.buttonOffice2010Black.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonOffice2010Black.Location = new System.Drawing.Point(32, 114);
+            this.buttonOffice2010Black.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.buttonOffice2010Black.Name = "buttonOffice2010Black";
             this.buttonOffice2010Black.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonOffice2010Black.Size = new System.Drawing.Size(150, 29);
+            this.buttonOffice2010Black.Size = new System.Drawing.Size(171, 31);
             this.buttonOffice2010Black.TabIndex = 3;
             this.buttonOffice2010Black.Values.Text = "Office 2010 Black";
             // 
@@ -252,11 +270,11 @@ namespace KeyTipsAndKeyboardAccess
             // 
             this.buttonOffice2010Silver.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.buttonOffice2010Silver.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonOffice2010Silver.Location = new System.Drawing.Point(28, 90);
-            this.buttonOffice2010Silver.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonOffice2010Silver.Location = new System.Drawing.Point(32, 76);
+            this.buttonOffice2010Silver.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.buttonOffice2010Silver.Name = "buttonOffice2010Silver";
             this.buttonOffice2010Silver.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonOffice2010Silver.Size = new System.Drawing.Size(150, 29);
+            this.buttonOffice2010Silver.Size = new System.Drawing.Size(171, 31);
             this.buttonOffice2010Silver.TabIndex = 2;
             this.buttonOffice2010Silver.Values.Text = "Office 2010 Silver";
             // 
@@ -264,11 +282,11 @@ namespace KeyTipsAndKeyboardAccess
             // 
             this.buttonOffice2010Blue.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.buttonOffice2010Blue.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonOffice2010Blue.Location = new System.Drawing.Point(28, 55);
-            this.buttonOffice2010Blue.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonOffice2010Blue.Location = new System.Drawing.Point(32, 38);
+            this.buttonOffice2010Blue.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.buttonOffice2010Blue.Name = "buttonOffice2010Blue";
             this.buttonOffice2010Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonOffice2010Blue.Size = new System.Drawing.Size(150, 29);
+            this.buttonOffice2010Blue.Size = new System.Drawing.Size(171, 31);
             this.buttonOffice2010Blue.TabIndex = 1;
             this.buttonOffice2010Blue.Values.Text = "Office 2010 Blue";
             // 
@@ -276,11 +294,11 @@ namespace KeyTipsAndKeyboardAccess
             // 
             this.buttonSparkleOrange.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.buttonSparkleOrange.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonSparkleOrange.Location = new System.Drawing.Point(28, 334);
-            this.buttonSparkleOrange.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSparkleOrange.Location = new System.Drawing.Point(32, 336);
+            this.buttonSparkleOrange.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.buttonSparkleOrange.Name = "buttonSparkleOrange";
             this.buttonSparkleOrange.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonSparkleOrange.Size = new System.Drawing.Size(150, 29);
+            this.buttonSparkleOrange.Size = new System.Drawing.Size(171, 31);
             this.buttonSparkleOrange.TabIndex = 9;
             this.buttonSparkleOrange.Values.Text = "Sparkle - Orange";
             // 
@@ -288,11 +306,11 @@ namespace KeyTipsAndKeyboardAccess
             // 
             this.buttonSparklePurple.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.buttonSparklePurple.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonSparklePurple.Location = new System.Drawing.Point(28, 368);
-            this.buttonSparklePurple.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSparklePurple.Location = new System.Drawing.Point(32, 373);
+            this.buttonSparklePurple.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.buttonSparklePurple.Name = "buttonSparklePurple";
             this.buttonSparklePurple.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonSparklePurple.Size = new System.Drawing.Size(150, 29);
+            this.buttonSparklePurple.Size = new System.Drawing.Size(171, 31);
             this.buttonSparklePurple.TabIndex = 10;
             this.buttonSparklePurple.Values.Text = "Sparkle - Purple";
             // 
@@ -300,11 +318,11 @@ namespace KeyTipsAndKeyboardAccess
             // 
             this.buttonSparkleBlue.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.buttonSparkleBlue.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonSparkleBlue.Location = new System.Drawing.Point(28, 299);
-            this.buttonSparkleBlue.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSparkleBlue.Location = new System.Drawing.Point(32, 299);
+            this.buttonSparkleBlue.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.buttonSparkleBlue.Name = "buttonSparkleBlue";
             this.buttonSparkleBlue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonSparkleBlue.Size = new System.Drawing.Size(150, 29);
+            this.buttonSparkleBlue.Size = new System.Drawing.Size(171, 31);
             this.buttonSparkleBlue.TabIndex = 8;
             this.buttonSparkleBlue.Values.Text = "Sparkle - Blue";
             // 
@@ -312,11 +330,11 @@ namespace KeyTipsAndKeyboardAccess
             // 
             this.buttonProfessionalSystem.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.buttonProfessionalSystem.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonProfessionalSystem.Location = new System.Drawing.Point(28, 403);
-            this.buttonProfessionalSystem.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonProfessionalSystem.Location = new System.Drawing.Point(32, 410);
+            this.buttonProfessionalSystem.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.buttonProfessionalSystem.Name = "buttonProfessionalSystem";
             this.buttonProfessionalSystem.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonProfessionalSystem.Size = new System.Drawing.Size(150, 29);
+            this.buttonProfessionalSystem.Size = new System.Drawing.Size(171, 31);
             this.buttonProfessionalSystem.TabIndex = 11;
             this.buttonProfessionalSystem.Values.Text = "System";
             // 
@@ -324,24 +342,23 @@ namespace KeyTipsAndKeyboardAccess
             // 
             this.buttonProfessional2003.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.buttonProfessional2003.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonProfessional2003.Location = new System.Drawing.Point(28, 264);
-            this.buttonProfessional2003.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonProfessional2003.Location = new System.Drawing.Point(32, 262);
+            this.buttonProfessional2003.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.buttonProfessional2003.Name = "buttonProfessional2003";
             this.buttonProfessional2003.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonProfessional2003.Size = new System.Drawing.Size(150, 29);
+            this.buttonProfessional2003.Size = new System.Drawing.Size(171, 31);
             this.buttonProfessional2003.TabIndex = 7;
             this.buttonProfessional2003.Values.Text = "Office 2003";
             // 
             // buttonOffice2007Black
             // 
             this.buttonOffice2007Black.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.buttonOffice2007Black.Checked = true;
             this.buttonOffice2007Black.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonOffice2007Black.Location = new System.Drawing.Point(28, 230);
-            this.buttonOffice2007Black.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonOffice2007Black.Location = new System.Drawing.Point(32, 226);
+            this.buttonOffice2007Black.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.buttonOffice2007Black.Name = "buttonOffice2007Black";
             this.buttonOffice2007Black.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonOffice2007Black.Size = new System.Drawing.Size(150, 29);
+            this.buttonOffice2007Black.Size = new System.Drawing.Size(171, 31);
             this.buttonOffice2007Black.TabIndex = 6;
             this.buttonOffice2007Black.Values.Text = "Office 2007 Black";
             // 
@@ -349,11 +366,11 @@ namespace KeyTipsAndKeyboardAccess
             // 
             this.buttonOffice2007Silver.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.buttonOffice2007Silver.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonOffice2007Silver.Location = new System.Drawing.Point(28, 195);
-            this.buttonOffice2007Silver.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonOffice2007Silver.Location = new System.Drawing.Point(32, 188);
+            this.buttonOffice2007Silver.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.buttonOffice2007Silver.Name = "buttonOffice2007Silver";
             this.buttonOffice2007Silver.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonOffice2007Silver.Size = new System.Drawing.Size(150, 29);
+            this.buttonOffice2007Silver.Size = new System.Drawing.Size(171, 31);
             this.buttonOffice2007Silver.TabIndex = 5;
             this.buttonOffice2007Silver.Values.Text = "Office 2007 Silver";
             // 
@@ -361,21 +378,21 @@ namespace KeyTipsAndKeyboardAccess
             // 
             this.buttonOffice2007Blue.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.buttonOffice2007Blue.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonOffice2007Blue.Location = new System.Drawing.Point(28, 160);
-            this.buttonOffice2007Blue.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonOffice2007Blue.Location = new System.Drawing.Point(32, 150);
+            this.buttonOffice2007Blue.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.buttonOffice2007Blue.Name = "buttonOffice2007Blue";
             this.buttonOffice2007Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonOffice2007Blue.Size = new System.Drawing.Size(150, 29);
+            this.buttonOffice2007Blue.Size = new System.Drawing.Size(171, 31);
             this.buttonOffice2007Blue.TabIndex = 4;
             this.buttonOffice2007Blue.Values.Text = "Office 2007 Blue";
             // 
             // labelGlobalPalettes
             // 
             this.labelGlobalPalettes.LabelStyle = Krypton.Toolkit.LabelStyle.TitlePanel;
-            this.labelGlobalPalettes.Location = new System.Drawing.Point(4, 5);
-            this.labelGlobalPalettes.Margin = new System.Windows.Forms.Padding(4);
+            this.labelGlobalPalettes.Location = new System.Drawing.Point(5, 0);
+            this.labelGlobalPalettes.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.labelGlobalPalettes.Name = "labelGlobalPalettes";
-            this.labelGlobalPalettes.Size = new System.Drawing.Size(135, 29);
+            this.labelGlobalPalettes.Size = new System.Drawing.Size(167, 35);
             this.labelGlobalPalettes.TabIndex = 0;
             this.labelGlobalPalettes.Values.Text = "Global Palette";
             // 
@@ -385,12 +402,6 @@ namespace KeyTipsAndKeyboardAccess
             this.kryptonRibbon.HideRibbonSize = new System.Drawing.Size(300, 250);
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
-            this.kryptonRibbon.OverrideFocus.RibbonTab.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.kryptonRibbon.OverrideFocus.RibbonTab.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.kryptonRibbon.OverrideFocus.RibbonTab.BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.kryptonRibbon.OverrideFocus.RibbonTab.BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.kryptonRibbon.OverrideFocus.RibbonTab.BackColor5 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.kryptonRibbon.OverrideFocus.RibbonTab.TextColor = System.Drawing.Color.Empty;
             this.kryptonRibbon.QATButtons.AddRange(new System.ComponentModel.Component[] {
             this.qatUSA,
             this.qatCanada,
@@ -417,8 +428,13 @@ namespace KeyTipsAndKeyboardAccess
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome,
             this.kryptonRibbonTab1});
-            this.kryptonRibbon.SelectedTab = this.tabHome;
-            this.kryptonRibbon.Size = new System.Drawing.Size(557, 115);
+            this.kryptonRibbon.SelectedTab = this.kryptonRibbonTab1;
+            this.kryptonRibbon.Size = new System.Drawing.Size(637, 135);
+            this.kryptonRibbon.StateTracking.RibbonGroupArea.BackColor1 = System.Drawing.Color.Lime;
+            this.kryptonRibbon.StateTracking.RibbonGroupArea.BackColor2 = System.Drawing.Color.Lime;
+            this.kryptonRibbon.StateTracking.RibbonGroupArea.BackColor3 = System.Drawing.Color.Lime;
+            this.kryptonRibbon.StateTracking.RibbonGroupArea.BackColor4 = System.Drawing.Color.Lime;
+            this.kryptonRibbon.StateTracking.RibbonGroupArea.BackColor5 = System.Drawing.Color.Lime;
             this.kryptonRibbon.TabIndex = 0;
             // 
             // qatUSA
@@ -987,23 +1003,24 @@ namespace KeyTipsAndKeyboardAccess
             this.checkSetPalette.CheckButtons.Add(this.buttonOffice2010Black);
             this.checkSetPalette.CheckButtons.Add(this.buttonOffice2010Silver);
             this.checkSetPalette.CheckButtons.Add(this.buttonOffice2010Blue);
-            this.checkSetPalette.CheckedButton = this.buttonOffice2007Black;
+            this.checkSetPalette.CheckButtons.Add(this.buttonOffice365Black);
+            this.checkSetPalette.CheckedButton = this.buttonOffice2010Black;
             this.checkSetPalette.CheckedButtonChanged += new System.EventHandler(this.checkSetPalette_CheckedButtonChanged);
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2007Black;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2010Black;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 661);
+            this.ClientSize = new System.Drawing.Size(637, 654);
             this.Controls.Add(this.panelFill);
             this.Controls.Add(this.kryptonRibbon);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(564, 652);
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.MinimumSize = new System.Drawing.Size(642, 693);
             this.Name = "Form1";
             this.Text = "KeyTips + KeyboardAccess";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -1013,14 +1030,17 @@ namespace KeyTipsAndKeyboardAccess
             this.groupKeyboardInfo.Panel.ResumeLayout(false);
             this.groupKeyboardInfo.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupKeyboardInfo)).EndInit();
+            this.groupKeyboardInfo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupKeyTipsInfo.Panel)).EndInit();
             this.groupKeyTipsInfo.Panel.ResumeLayout(false);
             this.groupKeyTipsInfo.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupKeyTipsInfo)).EndInit();
+            this.groupKeyTipsInfo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupOffice2007Styles.Panel)).EndInit();
             this.groupOffice2007Styles.Panel.ResumeLayout(false);
             this.groupOffice2007Styles.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupOffice2007Styles)).EndInit();
+            this.groupOffice2007Styles.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkSetPalette)).EndInit();
             this.ResumeLayout(false);
@@ -1116,6 +1136,7 @@ namespace KeyTipsAndKeyboardAccess
         private Krypton.Toolkit.KryptonCheckButton buttonOffice2010Black;
         private Krypton.Toolkit.KryptonCheckButton buttonOffice2010Silver;
         private Krypton.Toolkit.KryptonCheckButton buttonOffice2010Blue;
+        private Krypton.Toolkit.KryptonCheckButton buttonOffice365Black;
     }
 }
 
