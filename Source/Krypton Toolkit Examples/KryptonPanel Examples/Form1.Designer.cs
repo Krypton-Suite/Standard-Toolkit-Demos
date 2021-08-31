@@ -47,6 +47,7 @@ namespace KryptonPanelExamples
             this.panel2Custom = new Krypton.Toolkit.KryptonPanel();
             this.panel3Custom = new Krypton.Toolkit.KryptonPanel();
             this.panel1Custom = new Krypton.Toolkit.KryptonPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panel4Office)).BeginInit();
@@ -288,11 +289,22 @@ namespace KryptonPanelExamples
             this.panel1Custom.TabIndex = 0;
             this.panel1Custom.MouseDown += new System.Windows.Forms.MouseEventHandler(this.kryptonPanel_MouseDown);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(8, 574);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(253, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Test \"ColouredForm\"";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 607);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -346,6 +358,7 @@ namespace KryptonPanelExamples
         private Krypton.Toolkit.KryptonPanel panel2Custom;
         private Krypton.Toolkit.KryptonPanel panel3Custom;
         private Krypton.Toolkit.KryptonPanel panel4Custom;
+        private System.Windows.Forms.Button button1;
     }
 }
 
