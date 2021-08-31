@@ -20,10 +20,7 @@ namespace MDIApplication
     {
         private int _count = 1;
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -41,11 +38,9 @@ namespace MDIApplication
             f.Show();
         }
 
-        private void newWindowToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        private void newWindowToolStripMenuItem_Click(object sender, EventArgs e) =>
             // Add another MDI child window
             AddMDIChildWindow();
-        }
 
         private void closeWindowToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -65,24 +60,12 @@ namespace MDIApplication
             }
         }
 
-        private void cascadeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.Cascade);
-        }
+        private void cascadeToolStripMenuItem_Click(object sender, EventArgs e) => LayoutMdi(MdiLayout.Cascade);
 
-        private void tileHorizontalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.TileHorizontal);
-        }
+        private void tileHorizontalToolStripMenuItem_Click(object sender, EventArgs e) => LayoutMdi(MdiLayout.TileHorizontal);
 
-        private void tileVerticalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.TileVertical);
-        }
+        private void tileVerticalToolStripMenuItem_Click(object sender, EventArgs e) => LayoutMdi(MdiLayout.TileVertical);
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e) => Close();
     }
 }

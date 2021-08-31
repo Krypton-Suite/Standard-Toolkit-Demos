@@ -24,10 +24,7 @@ namespace TestMessageBoxClipping
 //  Version 4.7.0.0  www.ComponentFactory.com
 // *****************************************************************************
 ";
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void kryptonOffice2013_CheckedChanged(object sender, EventArgs e)
         {

@@ -19,10 +19,7 @@ namespace KryptonListViewExamples
             ThemeManager.PropagateThemeSelector(cmbTheme);
         }
 
-        private void CmbTheme_SelectedIndexChanged(object sender, System.EventArgs e)
-        {
-            ThemeManager.SetTheme(cmbTheme.Text, kryptonManager1);
-        }
+        private void CmbTheme_SelectedIndexChanged(object sender, System.EventArgs e) => ThemeManager.SetTheme(cmbTheme.Text, kryptonManager1);
 
         private void ViewTypeChanged(object sender, System.EventArgs e)
         {

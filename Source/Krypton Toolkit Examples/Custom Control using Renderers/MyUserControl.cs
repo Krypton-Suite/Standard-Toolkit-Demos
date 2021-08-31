@@ -64,7 +64,7 @@ namespace CustomControlUsingRenderers
 
         public VisualOrientation Orientation
         {
-            get { return _orientation; }
+            get => _orientation;
 
             set
             {
@@ -306,32 +306,19 @@ namespace CustomControlUsingRenderers
             Invalidate();
         }
 
-        private void OnPalettePaint(object sender, PaletteLayoutEventArgs e)
-        {
+        private void OnPalettePaint(object sender, PaletteLayoutEventArgs e) =>
             // Palette indicates we might need to repaint, so lets do it
             Invalidate();
-        }
 
         #region IContentValues
-        public Image GetImage(PaletteState state)
-        {
-            return global::CustomControlUsingRenderers.Properties.Resources.wizard;
-        }
+        public Image GetImage(PaletteState state) => global::CustomControlUsingRenderers.Properties.Resources.wizard;
 
-        public Color GetImageTransparentColor(PaletteState state)
-        {
-            return Color.Empty;
-        }
+        public Color GetImageTransparentColor(PaletteState state) => Color.Empty;
 
-        public string GetLongText()
-        {
-            return "Click me!";
-        }
+        public string GetLongText() => "Click me!";
 
-        public string GetShortText()
-        {
-            return string.Empty;
-        }
+        public string GetShortText() => string.Empty;
+
         #endregion
     }
 }

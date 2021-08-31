@@ -22,10 +22,7 @@ namespace KryptonBreadCrumbExamples
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -38,31 +35,17 @@ namespace KryptonBreadCrumbExamples
             propertyGrid.SelectedObject = new KryptonBreadCrumbProxy(kryptonBreadCrumb1);
         }
 
-        private void breadCrumb_MouseDown(object sender, MouseEventArgs e)
-        {
+        private void breadCrumb_MouseDown(object sender, MouseEventArgs e) =>
             // Setup the property grid to edit this bread crumb
             propertyGrid.SelectedObject = new KryptonBreadCrumbProxy(sender as KryptonBreadCrumb);
-        }
 
-        private void buttonSpecAny1_Click(object sender, EventArgs e)
-        {
-            kryptonBreadCrumb2.SelectedItem = kryptonBreadCrumb2.RootItem;
-        }
+        private void buttonSpecAny1_Click(object sender, EventArgs e) => kryptonBreadCrumb2.SelectedItem = kryptonBreadCrumb2.RootItem;
 
-        private void menuSpider_Click(object sender, EventArgs e)
-        {
-            kryptonBreadCrumb3.SelectedItem = kryptonBreadCrumb3.RootItem.Items[0].Items[1].Items[2].Items[1];
-        }
+        private void menuSpider_Click(object sender, EventArgs e) => kryptonBreadCrumb3.SelectedItem = kryptonBreadCrumb3.RootItem.Items[0].Items[1].Items[2].Items[1];
 
-        private void menuKangeroo_Click(object sender, EventArgs e)
-        {
-            kryptonBreadCrumb3.SelectedItem = kryptonBreadCrumb3.RootItem.Items[0].Items[0].Items[2].Items[2];
-        }
+        private void menuKangeroo_Click(object sender, EventArgs e) => kryptonBreadCrumb3.SelectedItem = kryptonBreadCrumb3.RootItem.Items[0].Items[0].Items[2].Items[2];
 
-        private void menuFern_Click(object sender, EventArgs e)
-        {
-            kryptonBreadCrumb3.SelectedItem = kryptonBreadCrumb3.RootItem.Items[1].Items[0].Items[0];
-        }
+        private void menuFern_Click(object sender, EventArgs e) => kryptonBreadCrumb3.SelectedItem = kryptonBreadCrumb3.RootItem.Items[1].Items[0].Items[0];
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
@@ -112,157 +95,130 @@ namespace KryptonBreadCrumbExamples
             treeView1.SelectedNode = node;
         }
 
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
 
     public class KryptonBreadCrumbProxy
     {
         private KryptonBreadCrumb _breadCrumb;
 
-        public KryptonBreadCrumbProxy(KryptonBreadCrumb breadCrumb)
-        {
-            _breadCrumb = breadCrumb;
-        }
+        public KryptonBreadCrumbProxy(KryptonBreadCrumb breadCrumb) => _breadCrumb = breadCrumb;
 
         [Category("Visuals")]
         [Description("Palette applied to drawing.")]
         [DefaultValue(typeof(PaletteMode), "Global")]
         public PaletteMode PaletteMode
         {
-            get { return _breadCrumb.PaletteMode; }
-            set { _breadCrumb.PaletteMode = value; }
+            get => _breadCrumb.PaletteMode;
+            set => _breadCrumb.PaletteMode = value;
         }
 
         [Category("Layout")]
         [Description("Specifies whether a control will automatically size itself to fit its contents.")]
         public bool AutoSize
         {
-            get { return _breadCrumb.AutoSize; }
-            set { _breadCrumb.AutoSize = value; }
+            get => _breadCrumb.AutoSize;
+            set => _breadCrumb.AutoSize = value;
         }
 
         [Category("Layout")]
         [Description("Specifies if the control grows and shrinks to fit the contents exactly.")]
         public AutoSizeMode AutoSizeMode
         {
-            get { return _breadCrumb.AutoSizeMode; }
-            set { _breadCrumb.AutoSizeMode = value; }
+            get => _breadCrumb.AutoSizeMode;
+            set => _breadCrumb.AutoSizeMode = value;
         }
 
         [Category("Layout")]
         [Description("The size of the control is pixels.")]
         public Size Size
         {
-            get { return _breadCrumb.Size; }
-            set { _breadCrumb.Size = value; }
+            get => _breadCrumb.Size;
+            set => _breadCrumb.Size = value;
         }
 
         [Category("Layout")]
         [Description("The location of the control in pixels.")]
         public Point Location
         {
-            get { return _breadCrumb.Location; }
-            set { _breadCrumb.Location = value; }
+            get => _breadCrumb.Location;
+            set => _breadCrumb.Location = value;
         }
 
         [Category("Behavior")]
         [Description("Indicates whether the control is enabled.")]
         public bool Enabled
         {
-            get { return _breadCrumb.Enabled; }
-            set { _breadCrumb.Enabled = value; }
+            get => _breadCrumb.Enabled;
+            set => _breadCrumb.Enabled = value;
         }
 
         [Category("Visuals")]
         [Description("Collection of button specifications.")]
-        public KryptonBreadCrumb.BreadCrumbButtonSpecCollection ButtonSpecs
-        {
-            get { return _breadCrumb.ButtonSpecs; }
-        }
+        public KryptonBreadCrumb.BreadCrumbButtonSpecCollection ButtonSpecs => _breadCrumb.ButtonSpecs;
 
         [Category("Visuals")]
         [Description("Should drop down buttons allow navigation to children.")]
         public bool DropDownNavigation
         {
-            get { return _breadCrumb.DropDownNavigation; }
-            set { _breadCrumb.DropDownNavigation = value; }
+            get => _breadCrumb.DropDownNavigation;
+            set => _breadCrumb.DropDownNavigation = value;
         }
 
         [Category("Visuals")]
         [Description("Should tooltips be displayed for button specs.")]
         public bool AllowButtonSpecToolTips
         {
-            get { return _breadCrumb.AllowButtonSpecToolTips; }
-            set { _breadCrumb.AllowButtonSpecToolTips = value; }
+            get => _breadCrumb.AllowButtonSpecToolTips;
+            set => _breadCrumb.AllowButtonSpecToolTips = value;
         }
 
         [Category("Visuals")]
         [Description("Background style for the control.")]
         public PaletteBackStyle ControlBackStyle
         {
-            get { return _breadCrumb.ControlBackStyle; }
-            set { _breadCrumb.ControlBackStyle = value; }
+            get => _breadCrumb.ControlBackStyle;
+            set => _breadCrumb.ControlBackStyle = value;
         }
 
         [Category("Visuals")]
         [Description("Button style used for drawing each bread crumb.")]
         public ButtonStyle CrumbButtonStyle
         {
-            get { return _breadCrumb.CrumbButtonStyle; }
-            set { _breadCrumb.CrumbButtonStyle = value; }
+            get => _breadCrumb.CrumbButtonStyle;
+            set => _breadCrumb.CrumbButtonStyle = value;
         }
 
         [Category("Visuals")]
         [Description("Border style for the control.")]
         public PaletteBorderStyle ControlBorderStyle
         {
-            get { return _breadCrumb.ControlBorderStyle; }
-            set { _breadCrumb.ControlBorderStyle = value; }
+            get => _breadCrumb.ControlBorderStyle;
+            set => _breadCrumb.ControlBorderStyle = value;
         }
 
         [Category("Data")]
         [Description("Root bread crumb item.")]
-        public KryptonBreadCrumbItem RootItem
-        {
-            get { return _breadCrumb.RootItem; }
-        }
+        public KryptonBreadCrumbItem RootItem => _breadCrumb.RootItem;
 
         [Category("Visuals")]
         [Description("Overrides for defining common bread crumb appearance that other states can override.")]
-        public PaletteDoubleMetricRedirect StateCommon
-        {
-            get { return _breadCrumb.StateCommon; }
-        }
+        public PaletteDoubleMetricRedirect StateCommon => _breadCrumb.StateCommon;
 
         [Category("Visuals")]
         [Description("Overrides for defining disabled appearance.")]
-        public PaletteBreadCrumbDoubleState StateDisabled
-        {
-            get { return _breadCrumb.StateDisabled; }
-        }
+        public PaletteBreadCrumbDoubleState StateDisabled => _breadCrumb.StateDisabled;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal appearance.")]
-        public PaletteBreadCrumbDoubleState StateNormal
-        {
-            get { return _breadCrumb.StateNormal; }
-        }
+        public PaletteBreadCrumbDoubleState StateNormal => _breadCrumb.StateNormal;
 
         [Category("Visuals")]
         [Description("Overrides for defining tracking bread crumb appearance.")]
-        public PaletteBreadCrumbState StateTracking
-        {
-            get { return _breadCrumb.StateTracking; }
-        }
+        public PaletteBreadCrumbState StateTracking => _breadCrumb.StateTracking;
 
         [Category("Visuals")]
         [Description("Overrides for defining pressed bread crumb appearance.")]
-        public PaletteBreadCrumbState StatePressed
-        {
-            get { return _breadCrumb.StatePressed; }
-        }
+        public PaletteBreadCrumbState StatePressed => _breadCrumb.StatePressed;
     }
 }

@@ -19,10 +19,7 @@ namespace CustomControlUsingRenderers
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void kryptonCheckSet_CheckedButtonChanged(object sender, EventArgs e)
         {
@@ -68,15 +65,10 @@ namespace CustomControlUsingRenderers
             }
         }
 
-        private void checkBoxEnabled_CheckedChanged(object sender, EventArgs e)
-        {
+        private void checkBoxEnabled_CheckedChanged(object sender, EventArgs e) =>
             // Toggle the enabled state of the custom control instance
             myUserControl1.Enabled = !myUserControl1.Enabled;
-        }
 
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
 }

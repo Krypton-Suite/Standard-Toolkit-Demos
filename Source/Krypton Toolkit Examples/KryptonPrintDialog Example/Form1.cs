@@ -7,10 +7,7 @@ namespace KryptonFontDialog_Example_2019
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void Palette2010Blue_CheckedChanged(object sender, EventArgs e) => KryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
 

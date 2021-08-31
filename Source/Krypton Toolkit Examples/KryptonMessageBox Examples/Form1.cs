@@ -21,10 +21,7 @@ namespace KryptonMessageBoxExamples
         private MessageBoxIcon _mbIcon = MessageBoxIcon.Warning;
         private MessageBoxButtons _mbButtons = MessageBoxButtons.OKCancel;
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void palette_CheckedChanged(object sender, EventArgs e)
         {
@@ -126,9 +123,6 @@ namespace KryptonMessageBoxExamples
             }
         }
 
-        private void buttonShow_Click(object sender, EventArgs e)
-        {
-            KryptonMessageBox.Show(textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _mbIcon);
-        }
+        private void buttonShow_Click(object sender, EventArgs e) => KryptonMessageBox.Show(textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _mbIcon);
     }
 }

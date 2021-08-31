@@ -17,10 +17,7 @@ namespace KryptonPaletteExamples
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -128,10 +125,7 @@ namespace KryptonPaletteExamples
             btnExport.Enabled = true;
         }
 
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void buttonClose_Click(object sender, EventArgs e) => Close();
 
         private void btnExport_Click(object sender, EventArgs e)
         {
@@ -140,10 +134,7 @@ namespace KryptonPaletteExamples
             btnExport.Enabled = false;
         }
 
-        private void EnableDropShadow(bool enabled)
-        {
-            UseDropShadow = enabled;
-        }
+        private void EnableDropShadow(bool enabled) => UseDropShadow = enabled;
 
         private void btnImportCustomPalette_Click(object sender, EventArgs e)
         {

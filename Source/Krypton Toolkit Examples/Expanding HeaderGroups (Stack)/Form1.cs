@@ -17,20 +17,11 @@ namespace ExpandingHeaderGroupsStack
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
-        private void kryptonHeaderTop_CollapsedChanged(object sender, EventArgs e)
-        {
-            kryptonBorderEdgeTop.Visible = !kryptonHeaderTop.Collapsed;
-        }
+        private void kryptonHeaderTop_CollapsedChanged(object sender, EventArgs e) => kryptonBorderEdgeTop.Visible = !kryptonHeaderTop.Collapsed;
 
-        private void kryptonHeaderBottom_CollapsedChanged(object sender, EventArgs e)
-        {
-            kryptonBorderEdgeBottom.Visible = !kryptonHeaderBottom.Collapsed;
-        }
+        private void kryptonHeaderBottom_CollapsedChanged(object sender, EventArgs e) => kryptonBorderEdgeBottom.Visible = !kryptonHeaderBottom.Collapsed;
 
         private void toolOffice2010_Click(object sender, EventArgs e)
         {
@@ -80,9 +71,6 @@ namespace ExpandingHeaderGroupsStack
             }
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e) => Close();
     }
 }

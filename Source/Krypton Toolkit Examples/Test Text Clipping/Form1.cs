@@ -12,10 +12,7 @@ namespace TestTextClipping
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void kryptonOffice2010Blue_CheckedChanged(object sender, EventArgs e)
         {
@@ -113,15 +110,9 @@ namespace TestTextClipping
             }
         }
 
-        private void OnClick(object sender, EventArgs e)
-        {
-            KryptonMessageBox.Show(this, ((Control)sender).Name, @"Single click detected on ...");
-        }
+        private void OnClick(object sender, EventArgs e) => KryptonMessageBox.Show(this, ((Control)sender).Name, @"Single click detected on ...");
 
-        private void OnMouseClick(object sender, MouseEventArgs e)
-        {
-            KryptonMessageBox.Show(this, ((Control)sender).Name, @"Mouse click detected on ...");
-        }
+        private void OnMouseClick(object sender, MouseEventArgs e) => KryptonMessageBox.Show(this, ((Control)sender).Name, @"Mouse click detected on ...");
 
         private void kryptonOffice2013_CheckedChanged(object sender, EventArgs e)
         {
@@ -139,15 +130,8 @@ namespace TestTextClipping
             }
         }
 
-        private void InnerControl_MouseEnter(object sender, EventArgs e)
-        {
-            kryptonListBox1.Items.Add($"MouseEnter- {sender}");
-        }
+        private void InnerControl_MouseEnter(object sender, EventArgs e) => kryptonListBox1.Items.Add($"MouseEnter- {sender}");
 
-        private void InnerControl_MouseLeave(object sender, EventArgs e)
-        {
-            kryptonListBox1.Items.Add("MouseLeave");
-
-        }
+        private void InnerControl_MouseLeave(object sender, EventArgs e) => kryptonListBox1.Items.Add("MouseLeave");
     }
 }
