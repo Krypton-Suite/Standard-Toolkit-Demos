@@ -74,7 +74,7 @@ namespace KryptonScrollBars
             this.ksbHorizontal.Location = new System.Drawing.Point(37, 12);
             this.ksbHorizontal.Name = "ksbHorizontal";
             this.ksbHorizontal.Opacity = 1D;
-            this.ksbHorizontal.Orientation = Krypton.Toolkit.ScrollBarOrientation.HORIZONTAL;
+            this.ksbHorizontal.Orientation = Krypton.Toolkit.ScrollBarOrientation.Horizontal;
             this.ksbHorizontal.Size = new System.Drawing.Size(252, 19);
             this.ksbHorizontal.TabIndex = 2;
             this.ksbHorizontal.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ksbHorizontal_Scroll);
