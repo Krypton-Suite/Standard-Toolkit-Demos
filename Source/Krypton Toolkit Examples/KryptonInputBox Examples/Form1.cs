@@ -41,7 +41,8 @@ namespace KryptonInputBoxExamples
 
         private void kbtnShow_Click(object sender, EventArgs e)
         {
-            KryptonInputBox.Show(ktxtPromptText.Text, ktxtCaptionText.Text, ktxtDefaultResponseText.Text, ktxtCueText.Text, kcbCueTextColour.SelectedColor, _cueTypeface, kchkUsePasswordOption.Checked);
+            var res = KryptonInputBox.Show(ktxtPromptText.Text, ktxtCaptionText.Text, ktxtDefaultResponseText.Text, ktxtCueText.Text, kcbCueTextColour.SelectedColor, _cueTypeface, kchkUsePasswordOption.Checked);
+            KryptonMessageBox.Show(this, res, @"Result was :");
         }
 
         private void Form1_Load(object sender, EventArgs e)
