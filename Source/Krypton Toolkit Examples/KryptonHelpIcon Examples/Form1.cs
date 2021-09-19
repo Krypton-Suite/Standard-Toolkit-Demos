@@ -25,7 +25,7 @@ namespace KryptonHelpIconExamples
             palette365Blue.Checked = true;
         }
 
-        private void ChangePalette(PaletteModeManager mode) => KryptonManager.GlobalPaletteMode = mode;
+        private void ChangePalette(PaletteModeManager mode) => kryptonManager.GlobalPaletteMode = mode;
 
         private void paletteProfessional_CheckedChanged(object sender, EventArgs e)
         {
