@@ -32,9 +32,6 @@ namespace KryptonUACButton
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kchkElevateProcess = new Krypton.Toolkit.KryptonCheckBox();
-            this.kbtnRun = new Krypton.Toolkit.KryptonButton();
-            this.kbtnBrowse = new Krypton.Toolkit.KryptonButton();
-            this.ktxtProcessPath = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
@@ -43,9 +40,6 @@ namespace KryptonUACButton
             // kryptonPanel1
             // 
             this.kryptonPanel1.Controls.Add(this.kchkElevateProcess);
-            this.kryptonPanel1.Controls.Add(this.kbtnRun);
-            this.kryptonPanel1.Controls.Add(this.kbtnBrowse);
-            this.kryptonPanel1.Controls.Add(this.ktxtProcessPath);
             this.kryptonPanel1.Controls.Add(this.kryptonLabel1);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
@@ -63,44 +57,6 @@ namespace KryptonUACButton
             this.kchkElevateProcess.Size = new System.Drawing.Size(107, 20);
             this.kchkElevateProcess.TabIndex = 4;
             this.kchkElevateProcess.Values.Text = "&Elevate Process";
-            this.kchkElevateProcess.CheckedChanged += new System.EventHandler(this.kchkElevateProcess_CheckedChanged);
-            // 
-            // kbtnRun
-            // 
-            this.kbtnRun.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kbtnRun.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.kbtnRun.Location = new System.Drawing.Point(120, 54);
-            this.kbtnRun.Name = "kbtnRun";
-            this.kbtnRun.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kbtnRun.Size = new System.Drawing.Size(114, 25);
-            this.kbtnRun.TabIndex = 3;
-            this.kbtnRun.Values.Text = "&Run";
-            this.kbtnRun.Click += new System.EventHandler(this.kbtnRun_Click);
-            // 
-            // kbtnBrowse
-            // 
-            this.kbtnBrowse.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kbtnBrowse.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.kbtnBrowse.Location = new System.Drawing.Point(419, 24);
-            this.kbtnBrowse.Name = "kbtnBrowse";
-            this.kbtnBrowse.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kbtnBrowse.Size = new System.Drawing.Size(27, 25);
-            this.kbtnBrowse.TabIndex = 2;
-            this.kbtnBrowse.Values.Text = "...";
-            this.kbtnBrowse.Click += new System.EventHandler(this.kbtnBrowse_Click);
-            // 
-            // ktxtProcessPath
-            // 
-            this.ktxtProcessPath.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.ktxtProcessPath.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.ktxtProcessPath.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.ktxtProcessPath.Location = new System.Drawing.Point(120, 24);
-            this.ktxtProcessPath.Name = "ktxtProcessPath";
-            this.ktxtProcessPath.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.ktxtProcessPath.Size = new System.Drawing.Size(293, 23);
-            this.ktxtProcessPath.TabIndex = 1;
-            this.ktxtProcessPath.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ktxtProcessPath.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ktxtProcessPath_KeyDown);
             // 
             // kryptonLabel1
             // 
@@ -135,9 +91,6 @@ namespace KryptonUACButton
 
         private Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private Krypton.Toolkit.KryptonCheckBox kchkElevateProcess;
-        private Krypton.Toolkit.KryptonButton kbtnRun;
-        private Krypton.Toolkit.KryptonButton kbtnBrowse;
-        private Krypton.Toolkit.KryptonTextBox ktxtProcessPath;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
     }
 }

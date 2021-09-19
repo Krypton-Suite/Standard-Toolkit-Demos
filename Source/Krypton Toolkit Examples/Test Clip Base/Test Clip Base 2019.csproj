@@ -1,11 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
+        <TargetFrameworks>net5.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
         <RootNamespace>Test_Clip_Base</RootNamespace>
         <AssemblyName>Test Clip Base</AssemblyName>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <UseWindowsForms>true</UseWindowsForms>
+        <LangVersion>preview</LangVersion>
         <PlatformTarget>AnyCPU</PlatformTarget>
     </PropertyGroup>
     <PropertyGroup>

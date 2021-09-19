@@ -31,16 +31,17 @@ namespace KryptonFormExamples
             RecalcNonClient();
 
             kryptonManager.GlobalPaletteMode = kryptonCheckSetPalettes.CheckedIndex switch {
-                0 => PaletteModeManager.ProfessionalSystem,
-                1 => PaletteModeManager.Office2007Black,
-                2 => PaletteModeManager.Office2007Silver,
-                3 => PaletteModeManager.Office2007Blue,
-                4 => PaletteModeManager.ProfessionalOffice2003,
-                5 => PaletteModeManager.SparkleBlue,
-                6 => PaletteModeManager.SparkleOrange,
-                7 => PaletteModeManager.Office2010Black,
-                8 => PaletteModeManager.Office2010Silver,
-                9 => PaletteModeManager.Office2010Blue,
+                0 => PaletteModeManager.Office365Blue,
+                1 => PaletteModeManager.ProfessionalSystem,
+                2 => PaletteModeManager.Office2007Black,
+                3 => PaletteModeManager.Office2007Silver,
+                4 => PaletteModeManager.Office2007Blue,
+                5 => PaletteModeManager.ProfessionalOffice2003,
+                6 => PaletteModeManager.SparkleBlue,
+                7 => PaletteModeManager.SparkleOrange,
+                8 => PaletteModeManager.Office2010Black,
+                9 => PaletteModeManager.Office2010Silver,
+                10 => PaletteModeManager.Office2010Blue,
                 _ => kryptonManager.GlobalPaletteMode
             };
         }
