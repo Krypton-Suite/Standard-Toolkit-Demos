@@ -200,54 +200,6 @@ namespace KryptonFontDialog_Example_2019
             this.kryptonGroupBox2.TabIndex = 21;
             this.kryptonGroupBox2.Values.Heading = "Options:";
             // 
-            // chkUseEXDialog
-            // 
-            this.chkUseEXDialog.Location = new System.Drawing.Point(0, 0);
-            this.chkUseEXDialog.Margin = new System.Windows.Forms.Padding(4);
-            this.chkUseEXDialog.Name = "chkUseEXDialog";
-            this.chkUseEXDialog.Size = new System.Drawing.Size(61, 24);
-            this.chkUseEXDialog.TabIndex = 0;
-            // 
-            // chkShowNetwork
-            // 
-            this.chkShowNetwork.Location = new System.Drawing.Point(0, 0);
-            this.chkShowNetwork.Margin = new System.Windows.Forms.Padding(4);
-            this.chkShowNetwork.Name = "chkShowNetwork";
-            this.chkShowNetwork.Size = new System.Drawing.Size(61, 24);
-            this.chkShowNetwork.TabIndex = 1;
-            // 
-            // chkAllowSomePages
-            // 
-            this.chkAllowSomePages.Location = new System.Drawing.Point(0, 0);
-            this.chkAllowSomePages.Margin = new System.Windows.Forms.Padding(4);
-            this.chkAllowSomePages.Name = "chkAllowSomePages";
-            this.chkAllowSomePages.Size = new System.Drawing.Size(61, 24);
-            this.chkAllowSomePages.TabIndex = 2;
-            // 
-            // chkAllowSelection
-            // 
-            this.chkAllowSelection.Location = new System.Drawing.Point(0, 0);
-            this.chkAllowSelection.Margin = new System.Windows.Forms.Padding(4);
-            this.chkAllowSelection.Name = "chkAllowSelection";
-            this.chkAllowSelection.Size = new System.Drawing.Size(61, 24);
-            this.chkAllowSelection.TabIndex = 3;
-            // 
-            // chkAllowPrintToFile
-            // 
-            this.chkAllowPrintToFile.Location = new System.Drawing.Point(0, 0);
-            this.chkAllowPrintToFile.Margin = new System.Windows.Forms.Padding(4);
-            this.chkAllowPrintToFile.Name = "chkAllowPrintToFile";
-            this.chkAllowPrintToFile.Size = new System.Drawing.Size(61, 24);
-            this.chkAllowPrintToFile.TabIndex = 4;
-            // 
-            // chkAllowCurrentPage
-            // 
-            this.chkAllowCurrentPage.Location = new System.Drawing.Point(0, 0);
-            this.chkAllowCurrentPage.Margin = new System.Windows.Forms.Padding(4);
-            this.chkAllowCurrentPage.Name = "chkAllowCurrentPage";
-            this.chkAllowCurrentPage.Size = new System.Drawing.Size(61, 24);
-            this.chkAllowCurrentPage.TabIndex = 5;
-            // 
             // chkShowHelp
             // 
             this.chkShowHelp.Location = new System.Drawing.Point(4, 0);

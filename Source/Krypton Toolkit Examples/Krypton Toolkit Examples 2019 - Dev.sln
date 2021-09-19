@@ -135,13 +135,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonColorDialog Example 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonPrintDialog Example 2019", "KryptonPrintDialog Example\KryptonPrintDialog Example 2019.csproj", "{27C591CF-E471-4170-B65B-8C2E985ECACC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonHelpIcon Examples 2019", "KryptonHelpIcon Examples\KryptonHelpIcon Examples 2019.csproj", "{0743C17D-54F5-4A49-91A6-06E337B74901}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonHelpIcon Examples 2019", "KryptonHelpIcon Examples\KryptonHelpIcon Examples 2019.csproj", "{0743C17D-54F5-4A49-91A6-06E337B74901}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonScrollbar Examples 2019", "KryptonScrollbar Examples\KryptonScrollbar Examples 2019.csproj", "{7F8CC554-E1B1-4DBE-B659-9E548940C730}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonScrollbar Examples 2019", "KryptonScrollbar Examples\KryptonScrollbar Examples 2019.csproj", "{7F8CC554-E1B1-4DBE-B659-9E548940C730}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton Scrollbars 2019", "Krypton Scrollbars\Krypton Scrollbars 2019.csproj", "{AD90A17D-8D5E-4EA8-9ED4-3E588A3146DE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonTableLayoutPanel Examples 2019", "KryptonTableLayoutPanel Examples\KryptonTableLayoutPanel Examples 2019.csproj", "{B983A191-2661-4C00-8238-7D0D7E8264A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonPropertyGrid Examples 2019", "KryptonPropertyGrid Examples\KryptonPropertyGrid Examples 2019.csproj", "{0363F644-A20D-44CE-AB3F-D4BE6FBD8B16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -417,6 +419,10 @@ Global
 		{B983A191-2661-4C00-8238-7D0D7E8264A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B983A191-2661-4C00-8238-7D0D7E8264A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B983A191-2661-4C00-8238-7D0D7E8264A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0363F644-A20D-44CE-AB3F-D4BE6FBD8B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0363F644-A20D-44CE-AB3F-D4BE6FBD8B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0363F644-A20D-44CE-AB3F-D4BE6FBD8B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0363F644-A20D-44CE-AB3F-D4BE6FBD8B16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
