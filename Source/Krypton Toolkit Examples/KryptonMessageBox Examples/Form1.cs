@@ -20,6 +20,7 @@ namespace KryptonMessageBoxExamples
     {
         private MessageBoxIcon _mbIcon = MessageBoxIcon.Warning;
         private MessageBoxButtons _mbButtons = MessageBoxButtons.OKCancel;
+        private MessageBoxOptions _options = 0;
 
         public Form1()
         {
@@ -72,6 +73,11 @@ namespace KryptonMessageBoxExamples
             {
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
             }
+           else if (radioButtonOffice365Blue.Checked)
+            {
+                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office365Blue;
+            }
+
         }
 
         private void icon_CheckedChanged(object sender, EventArgs e)
@@ -128,7 +134,32 @@ namespace KryptonMessageBoxExamples
 
         private void buttonShow_Click(object sender, EventArgs e)
         {
-            KryptonMessageBox.Show(textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _mbIcon);
+            MessageBox.Show( textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _mbIcon, MessageBoxDefaultButton.Button1, _options);
+            KryptonMessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _mbIcon, options: _options);
+        }
+
+        private void ChkRightAlign_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkRightAlign.Checked)
+            {
+                _options |= MessageBoxOptions.RightAlign;
+            }
+            else
+            {
+                _options &= ~MessageBoxOptions.RightAlign;
+            }
+        }
+
+        private void ChkRtlReading_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkRtlReading.Checked)
+            {
+                _options |= MessageBoxOptions.RtlReading;
+            }
+            else
+            {
+                _options &= ~MessageBoxOptions.RtlReading;
+            }
         }
     }
 }
