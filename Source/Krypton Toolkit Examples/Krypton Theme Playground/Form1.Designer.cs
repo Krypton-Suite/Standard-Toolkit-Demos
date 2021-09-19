@@ -77,7 +77,12 @@ namespace KryptonThemePlayground
             this.kryptonComboBox1 = new Krypton.Toolkit.KryptonComboBox();
             this.kryptonCheckedListBox1 = new Krypton.Toolkit.KryptonCheckedListBox();
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
+            this.kcmbTheme = new Krypton.Toolkit.KryptonComboBox();
+            this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kcmbTheme)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
+            this.kryptonPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // propertyGrid
@@ -128,71 +133,39 @@ namespace KryptonThemePlayground
             treeNode7,
             treeNode9,
             treeNode14});
-            this.kryptonTreeView1.Padding = new System.Windows.Forms.Padding(1);
             this.kryptonTreeView1.Size = new System.Drawing.Size(120, 142);
             this.kryptonTreeView1.TabIndex = 22;
             // 
             // kryptonTextBox1
             // 
-            this.kryptonTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.kryptonTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.kryptonTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.kryptonTextBox1.Location = new System.Drawing.Point(208, 259);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.kryptonTextBox1.Size = new System.Drawing.Size(121, 23);
             this.kryptonTextBox1.TabIndex = 21;
             this.kryptonTextBox1.Text = "kryptonTextBox1";
-            this.kryptonTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // kryptonRichTextBox1
             // 
             this.kryptonRichTextBox1.Location = new System.Drawing.Point(208, 156);
             this.kryptonRichTextBox1.Name = "kryptonRichTextBox1";
-            this.kryptonRichTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
             this.kryptonRichTextBox1.Size = new System.Drawing.Size(121, 96);
             this.kryptonRichTextBox1.TabIndex = 20;
             this.kryptonRichTextBox1.Text = "kryptonRichTextBox1";
             // 
             // kryptonNumericUpDown1
             // 
-            this.kryptonNumericUpDown1.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             this.kryptonNumericUpDown1.Location = new System.Drawing.Point(208, 127);
-            this.kryptonNumericUpDown1.Maximum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.kryptonNumericUpDown1.Minimum = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
             this.kryptonNumericUpDown1.Name = "kryptonNumericUpDown1";
             this.kryptonNumericUpDown1.Size = new System.Drawing.Size(120, 22);
             this.kryptonNumericUpDown1.TabIndex = 19;
-            this.kryptonNumericUpDown1.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.kryptonNumericUpDown1.Value = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
             // 
             // kryptonMaskedTextBox1
             // 
-            this.kryptonMaskedTextBox1.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.kryptonMaskedTextBox1.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
             this.kryptonMaskedTextBox1.Location = new System.Drawing.Point(208, 97);
             this.kryptonMaskedTextBox1.Name = "kryptonMaskedTextBox1";
             this.kryptonMaskedTextBox1.Size = new System.Drawing.Size(120, 23);
             this.kryptonMaskedTextBox1.TabIndex = 18;
             this.kryptonMaskedTextBox1.Text = "kryptonMaskedTextBox1";
-            this.kryptonMaskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.kryptonMaskedTextBox1.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
             // 
             // kryptonListView1
             // 
@@ -213,20 +186,9 @@ namespace KryptonThemePlayground
             this.kryptonListView1.Name = "kryptonListView1";
             this.kryptonListView1.OwnerDraw = true;
             this.kryptonListView1.Size = new System.Drawing.Size(633, 55);
-            this.kryptonListView1.StateCommon.Item.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonListView1.StateCommon.Item.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonListView1.StateCommon.Item.Content.Padding = new System.Windows.Forms.Padding(-1);
-            this.kryptonListView1.StateCommon.Item.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonListView1.StateCommon.Item.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kryptonListView1.StateCommon.Item.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.kryptonListView1.StateCommon.Item.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonListView1.StateCommon.Item.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonListView1.StateCommon.Item.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.True;
             this.kryptonListView1.StateCommon.Item.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.kryptonListView1.StateCommon.Item.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
             this.kryptonListView1.StateCommon.Item.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.kryptonListView1.StateCommon.Item.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonListView1.StateCommon.Item.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonListView1.TabIndex = 17;
             this.kryptonListView1.View = System.Windows.Forms.View.Tile;
             // 
@@ -245,8 +207,6 @@ namespace KryptonThemePlayground
             "10"});
             this.kryptonListBox1.Location = new System.Drawing.Point(12, 233);
             this.kryptonListBox1.Name = "kryptonListBox1";
-            this.kryptonListBox1.Padding = new System.Windows.Forms.Padding(1);
-            this.kryptonListBox1.SelectionMode = System.Windows.Forms.SelectionMode.One;
             this.kryptonListBox1.Size = new System.Drawing.Size(189, 198);
             this.kryptonListBox1.TabIndex = 16;
             // 
@@ -257,24 +217,16 @@ namespace KryptonThemePlayground
             this.kryptonDomainUpDown1.Size = new System.Drawing.Size(120, 22);
             this.kryptonDomainUpDown1.TabIndex = 15;
             this.kryptonDomainUpDown1.Text = "kryptonDomainUpDown1";
-            this.kryptonDomainUpDown1.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             // 
             // kryptonDateTimePicker1
             // 
-            this.kryptonDateTimePicker1.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.kryptonDateTimePicker1.CalendarFirstDayOfWeek = System.Windows.Forms.Day.Default;
-            this.kryptonDateTimePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
-            this.kryptonDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.kryptonDateTimePicker1.Location = new System.Drawing.Point(208, 40);
             this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
-            this.kryptonDateTimePicker1.PaletteMode = Krypton.Toolkit.PaletteMode.Global;
             this.kryptonDateTimePicker1.Size = new System.Drawing.Size(121, 21);
             this.kryptonDateTimePicker1.TabIndex = 14;
             // 
             // kryptonComboBox1
             // 
-            this.kryptonComboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.kryptonComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.kryptonComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.kryptonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.kryptonComboBox1.DropDownWidth = 121;
@@ -311,28 +263,47 @@ namespace KryptonThemePlayground
             "10"});
             this.kryptonCheckedListBox1.Location = new System.Drawing.Point(12, 12);
             this.kryptonCheckedListBox1.Name = "kryptonCheckedListBox1";
-            this.kryptonCheckedListBox1.Padding = new System.Windows.Forms.Padding(1);
-            this.kryptonCheckedListBox1.SelectionMode = Krypton.Toolkit.CheckedSelectionMode.One;
             this.kryptonCheckedListBox1.Size = new System.Drawing.Size(189, 214);
             this.kryptonCheckedListBox1.TabIndex = 12;
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.kryptonButton1.Location = new System.Drawing.Point(554, 500);
+            this.kryptonButton1.Location = new System.Drawing.Point(555, 507);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonButton1.Size = new System.Drawing.Size(90, 25);
             this.kryptonButton1.TabIndex = 24;
             this.kryptonButton1.Values.Text = "kryptonButton1";
+            // 
+            // kcmbTheme
+            // 
+            this.kcmbTheme.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.kcmbTheme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.kcmbTheme.DropDownWidth = 218;
+            this.kcmbTheme.IntegralHeight = false;
+            this.kcmbTheme.Location = new System.Drawing.Point(12, 507);
+            this.kcmbTheme.Margin = new System.Windows.Forms.Padding(2);
+            this.kcmbTheme.Name = "kcmbTheme";
+            this.kcmbTheme.Size = new System.Drawing.Size(164, 21);
+            this.kcmbTheme.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kcmbTheme.TabIndex = 25;
+            this.kcmbTheme.SelectedValueChanged += new System.EventHandler(this.kcmbTheme_SelectedValueChanged);
+            // 
+            // kryptonPanel1
+            // 
+            this.kryptonPanel1.Controls.Add(this.kcmbTheme);
+            this.kryptonPanel1.Controls.Add(this.kryptonButton1);
+            this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonPanel1.Name = "kryptonPanel1";
+            this.kryptonPanel1.Size = new System.Drawing.Size(663, 544);
+            this.kryptonPanel1.TabIndex = 26;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(663, 544);
-            this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.propertyGrid);
             this.Controls.Add(this.kryptonTreeView1);
             this.Controls.Add(this.kryptonTextBox1);
@@ -345,11 +316,18 @@ namespace KryptonThemePlayground
             this.Controls.Add(this.kryptonDateTimePicker1);
             this.Controls.Add(this.kryptonComboBox1);
             this.Controls.Add(this.kryptonCheckedListBox1);
+            this.Controls.Add(this.kryptonPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Krypton Theme Test";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kcmbTheme)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
+            this.kryptonPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,6 +348,8 @@ namespace KryptonThemePlayground
         private Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
         private Krypton.Toolkit.KryptonCheckedListBox kryptonCheckedListBox1;
         private Krypton.Toolkit.KryptonButton kryptonButton1;
+        private Krypton.Toolkit.KryptonComboBox kcmbTheme;
+        private Krypton.Toolkit.KryptonPanel kryptonPanel1;
     }
 }
 

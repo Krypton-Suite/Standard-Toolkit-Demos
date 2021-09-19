@@ -27,10 +27,6 @@ namespace KryptonUACButton
 
         private void ktxtProcessPath_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                kbtnRun.ProcessToElevate = ktxtProcessPath.Text;
-            }
         }
 
         private void kbtnBrowse_Click(object sender, EventArgs e)
@@ -54,7 +50,7 @@ namespace KryptonUACButton
 
         private void kbtnRun_Click(object sender, EventArgs e)
         {
-            kbtnRun.ProcessToElevate = ktxtProcessPath.Text;
+            //kbtnRun.ProcessToElevate = ktxtProcessPath.Text;
 
             if (!kbtnRun.UseAsADialogButton)
             {

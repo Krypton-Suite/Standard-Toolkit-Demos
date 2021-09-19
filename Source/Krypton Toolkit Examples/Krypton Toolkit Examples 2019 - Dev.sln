@@ -143,7 +143,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton Scrollbars 2019", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonTableLayoutPanel Examples 2019", "KryptonTableLayoutPanel Examples\KryptonTableLayoutPanel Examples 2019.csproj", "{B983A191-2661-4C00-8238-7D0D7E8264A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonPropertyGrid Examples 2019", "KryptonPropertyGrid Examples\KryptonPropertyGrid Examples 2019.csproj", "{0363F644-A20D-44CE-AB3F-D4BE6FBD8B16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonPropertyGrid Examples 2019", "KryptonPropertyGrid Examples\KryptonPropertyGrid Examples 2019.csproj", "{0363F644-A20D-44CE-AB3F-D4BE6FBD8B16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krypton Theme Selector 2019", "Krypton Theme Selector\Krypton Theme Selector 2019.csproj", "{3233EE9A-D6EE-4E58-8A56-90D3BBF1494E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -423,6 +425,10 @@ Global
 		{0363F644-A20D-44CE-AB3F-D4BE6FBD8B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0363F644-A20D-44CE-AB3F-D4BE6FBD8B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0363F644-A20D-44CE-AB3F-D4BE6FBD8B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3233EE9A-D6EE-4E58-8A56-90D3BBF1494E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3233EE9A-D6EE-4E58-8A56-90D3BBF1494E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3233EE9A-D6EE-4E58-8A56-90D3BBF1494E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3233EE9A-D6EE-4E58-8A56-90D3BBF1494E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

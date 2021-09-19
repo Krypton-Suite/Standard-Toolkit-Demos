@@ -7,6 +7,8 @@ namespace KryptonHelpIconExamples
 {
     public partial class Form1 : KryptonForm
     {
+        private KryptonManager _manager = new KryptonManager();
+
         public Form1()
         {
             InitializeComponent();
@@ -25,7 +27,7 @@ namespace KryptonHelpIconExamples
             palette365Blue.Checked = true;
         }
 
-        private void ChangePalette(PaletteModeManager mode) => KryptonManager.GlobalPaletteMode = mode;
+        private void ChangePalette(PaletteModeManager mode) => _manager.GlobalPaletteMode = mode;
 
         private void paletteProfessional_CheckedChanged(object sender, EventArgs e)
         {
