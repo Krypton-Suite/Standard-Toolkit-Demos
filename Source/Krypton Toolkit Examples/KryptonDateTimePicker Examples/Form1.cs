@@ -20,117 +20,65 @@ namespace KryptonDateTimePickerExamples
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        private void Form1_Load(object sender, EventArgs e) =>
             // Setup the property grid to edit this date time picker control
             propertyGrid.SelectedObject = new KryptonDateTimePickerProxy(dtpNormalLong);
-        }
-        
-        private void dtp_Enter(object sender, EventArgs e)
-        {
+
+        private void dtp_Enter(object sender, EventArgs e) =>
             // Setup the property grid to edit this date time picker control
             propertyGrid.SelectedObject = new KryptonDateTimePickerProxy(sender as KryptonDateTimePicker);
-        }
 
-        private void rbOffice2010Blue_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.Office2010Blue;
-        }
+        private void rbOffice2010Blue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2010Blue;
 
-        private void rbOffice2010Silver_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.Office2010Silver;
-        }
+        private void rbOffice2010Silver_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2010Silver;
 
-        private void rbOffice2010Black_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.Office2010Black;
-        }
+        private void rbOffice2010Black_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2010Black;
 
-        private void rbOffice2007Blue_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.Office2007Blue;
-        }
+        private void rbOffice2007Blue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2007Blue;
 
-        private void rbOffice2007Silver_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.Office2007Silver;
-        }
+        private void rbOffice2007Silver_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2007Silver;
 
-        private void rbOffice2007Black_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.Office2007Black;
-        }
+        private void rbOffice2007Black_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2007Black;
 
-        private void rbSparkleBlue_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.SparkleBlue;
-        }
+        private void rbSparkleBlue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.SparkleBlue;
 
-        private void rbSparkleOrange_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.SparkleOrange;
-        }
+        private void rbSparkleOrange_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.SparkleOrange;
 
-        private void rbSparklePurple_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.SparklePurple;
-        }
+        private void rbSparklePurple_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.SparklePurple;
 
-        private void rbOffice2003_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.ProfessionalOffice2003;
-        }
+        private void rbOffice2003_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.ProfessionalOffice2003;
 
-        private void rbSystem_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.ProfessionalSystem;
-        }
+        private void rbSystem_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.ProfessionalSystem;
 
-        private void buttonSpecAny1_Click(object sender, EventArgs e)
-        {
-            dtpNormalTime.Value = DateTime.Now;
-        }
+        private void buttonSpecAny1_Click(object sender, EventArgs e) => dtpNormalTime.Value = DateTime.Now;
 
-        private void buttonSpecAny2_Click(object sender, EventArgs e)
-        {
-            dtpRibbonTime.Value = DateTime.Now;
-        }
+        private void buttonSpecAny2_Click(object sender, EventArgs e) => dtpRibbonTime.Value = DateTime.Now;
 
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
 
     public class KryptonDateTimePickerProxy
     {
         private KryptonDateTimePicker _dateTimePicker;
 
-        public KryptonDateTimePickerProxy(KryptonDateTimePicker dateTimePicker)
-        {
-            _dateTimePicker = dateTimePicker;
-        }
+        public KryptonDateTimePickerProxy(KryptonDateTimePicker dateTimePicker) => _dateTimePicker = dateTimePicker;
 
         [Category("Layout")]
         [Description("The size of the control is pixels.")]
         public Size Size
         {
-            get { return _dateTimePicker.Size; }
-            set { _dateTimePicker.Size = value; }
+            get => _dateTimePicker.Size;
+            set => _dateTimePicker.Size = value;
         }
 
         [Category("Layout")]
         [Description("The location of the control in pixels.")]
         public Point Location
         {
-            get { return _dateTimePicker.Location; }
-            set { _dateTimePicker.Location = value; }
+            get => _dateTimePicker.Location;
+            set => _dateTimePicker.Location = value;
         }
 
         /// <summary>
@@ -140,8 +88,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Specifies the number of rows and columns of months displayed.")]
         public Size CalendarDimensions
         {
-            get { return _dateTimePicker.CalendarDimensions; }
-            set { _dateTimePicker.CalendarDimensions = value; }
+            get => _dateTimePicker.CalendarDimensions;
+            set => _dateTimePicker.CalendarDimensions = value;
         }
 
         /// <summary>
@@ -151,8 +99,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Text used as label for todays date.")]
         public string CalendarTodayText
         {
-            get { return _dateTimePicker.CalendarTodayText; }
-            set { _dateTimePicker.CalendarTodayText = value; }
+            get => _dateTimePicker.CalendarTodayText;
+            set => _dateTimePicker.CalendarTodayText = value;
         }
 
         /// <summary>
@@ -162,8 +110,8 @@ namespace KryptonDateTimePickerExamples
         [Description("First day of the week.")]
         public Day CalendarFirstDayOfWeek
         {
-            get { return _dateTimePicker.CalendarFirstDayOfWeek; }
-            set { _dateTimePicker.CalendarFirstDayOfWeek = value; }
+            get => _dateTimePicker.CalendarFirstDayOfWeek;
+            set => _dateTimePicker.CalendarFirstDayOfWeek = value;
         }
 
         /// <summary>
@@ -173,8 +121,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Indicates whether this month calendar will display todays date.")]
         public bool CalendarShowToday
         {
-            get { return _dateTimePicker.CalendarShowToday; }
-            set { _dateTimePicker.CalendarShowToday = value; }
+            get => _dateTimePicker.CalendarShowToday;
+            set => _dateTimePicker.CalendarShowToday = value;
         }
 
         /// <summary>
@@ -184,8 +132,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Indicates whether this month calendar will circle the today date.")]
         public bool CalendarShowTodayCircle
         {
-            get { return _dateTimePicker.CalendarShowTodayCircle; }
-            set { _dateTimePicker.CalendarShowTodayCircle = value; }
+            get => _dateTimePicker.CalendarShowTodayCircle;
+            set => _dateTimePicker.CalendarShowTodayCircle = value;
         }
 
         /// <summary>
@@ -195,8 +143,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Indicates whether this month calendar will display week numbers to the left of each row.")]
         public bool CalendarShowWeekNumbers
         {
-            get { return _dateTimePicker.CalendarShowWeekNumbers; }
-            set { _dateTimePicker.CalendarShowWeekNumbers = value; }
+            get => _dateTimePicker.CalendarShowWeekNumbers;
+            set => _dateTimePicker.CalendarShowWeekNumbers = value;
         }
 
         /// <summary>
@@ -206,8 +154,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Today's display format.")]
         public string CalendarTodayFormat
         {
-            get { return _dateTimePicker.CalendarTodayFormat; }
-            set { _dateTimePicker.CalendarTodayFormat = value; }
+            get => _dateTimePicker.CalendarTodayFormat;
+            set => _dateTimePicker.CalendarTodayFormat = value;
         }
 
         /// <summary>
@@ -217,8 +165,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Today's date.")]
         public DateTime CalendarTodayDate
         {
-            get { return _dateTimePicker.CalendarTodayDate; }
-            set { _dateTimePicker.CalendarTodayDate = value; }
+            get => _dateTimePicker.CalendarTodayDate;
+            set => _dateTimePicker.CalendarTodayDate = value;
         }
 
         /// <summary>
@@ -228,8 +176,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Indicates which annual dates should be boldface.")]
         public DateTime[] CalendarAnnuallyBoldedDates
         {
-            get { return _dateTimePicker.CalendarAnnuallyBoldedDates; }
-            set { _dateTimePicker.CalendarAnnuallyBoldedDates = value; }
+            get => _dateTimePicker.CalendarAnnuallyBoldedDates;
+            set => _dateTimePicker.CalendarAnnuallyBoldedDates = value;
         }
 
         /// <summary>
@@ -239,8 +187,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Indicates which monthly dates should be boldface.")]
         public DateTime[] CalendarMonthlyBoldedDates
         {
-            get { return _dateTimePicker.CalendarMonthlyBoldedDates; }
-            set { _dateTimePicker.CalendarMonthlyBoldedDates = value; }
+            get => _dateTimePicker.CalendarMonthlyBoldedDates;
+            set => _dateTimePicker.CalendarMonthlyBoldedDates = value;
         }
 
         /// <summary>
@@ -250,8 +198,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Indicates which dates should be boldface.")]
         public DateTime[] CalendarBoldedDates
         {
-            get { return _dateTimePicker.CalendarBoldedDates; }
-            set { _dateTimePicker.CalendarBoldedDates = value; }
+            get => _dateTimePicker.CalendarBoldedDates;
+            set => _dateTimePicker.CalendarBoldedDates = value;
         }
 
         /// <summary>
@@ -261,8 +209,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Alignment of the drop-down calendar on the KryptonDateTimePicker control.")]
         public LeftRightAlignment DropDownAlign
         {
-            get { return _dateTimePicker.DropDownAlign; }
-            set { _dateTimePicker.DropDownAlign = value; }
+            get => _dateTimePicker.DropDownAlign;
+            set => _dateTimePicker.DropDownAlign = value;
         }
 
         /// <summary>
@@ -273,8 +221,8 @@ namespace KryptonDateTimePickerExamples
         [RefreshProperties(RefreshProperties.All)]
         public object ValueNullable
         {
-            get { return _dateTimePicker.ValueNullable; }
-            set { _dateTimePicker.ValueNullable = value; }
+            get => _dateTimePicker.ValueNullable;
+            set => _dateTimePicker.ValueNullable = value;
         }
 
         /// <summary>
@@ -285,8 +233,8 @@ namespace KryptonDateTimePickerExamples
         [RefreshProperties(RefreshProperties.All)]
         public DateTime Value
         {
-            get { return _dateTimePicker.Value; }
-            set { _dateTimePicker.Value = value; }
+            get => _dateTimePicker.Value;
+            set => _dateTimePicker.Value = value;
         }
 
         /// <summary>
@@ -297,8 +245,8 @@ namespace KryptonDateTimePickerExamples
         [RefreshProperties(RefreshProperties.Repaint)]
         public DateTimePickerFormat Format
         {
-            get { return _dateTimePicker.Format; }
-            set { _dateTimePicker.Format = value; }
+            get => _dateTimePicker.Format;
+            set => _dateTimePicker.Format = value;
         }
 
         /// <summary>
@@ -309,8 +257,8 @@ namespace KryptonDateTimePickerExamples
         [DefaultValue(false)]
         public bool ShowUpDown
         {
-            get { return _dateTimePicker.ShowUpDown; }
-            set { _dateTimePicker.ShowUpDown = value; }
+            get => _dateTimePicker.ShowUpDown;
+            set => _dateTimePicker.ShowUpDown = value;
         }
 
         /// <summary>
@@ -321,8 +269,8 @@ namespace KryptonDateTimePickerExamples
         [DefaultValue(false)]
         public bool ShowCheckBox
         {
-            get { return _dateTimePicker.ShowCheckBox; }
-            set { _dateTimePicker.ShowCheckBox = value; }
+            get => _dateTimePicker.ShowCheckBox;
+            set => _dateTimePicker.ShowCheckBox = value;
         }
 
         /// <summary>
@@ -333,8 +281,8 @@ namespace KryptonDateTimePickerExamples
         [DefaultValue(true)]
         public bool UseMnemonic
         {
-            get { return _dateTimePicker.UseMnemonic; }
-            set { _dateTimePicker.UseMnemonic = value; }
+            get => _dateTimePicker.UseMnemonic;
+            set => _dateTimePicker.UseMnemonic = value;
         }
 
         /// <summary>
@@ -344,8 +292,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Maximum allowable date.")]
         public DateTime MaxDate
         {
-            get { return _dateTimePicker.MaxDate; }
-            set { _dateTimePicker.MaxDate = value; }
+            get => _dateTimePicker.MaxDate;
+            set => _dateTimePicker.MaxDate = value;
         }
 
         /// <summary>
@@ -355,8 +303,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Minimum allowable date.")]
         public DateTime MinDate
         {
-            get { return _dateTimePicker.MinDate; }
-            set { _dateTimePicker.MinDate = value; }
+            get => _dateTimePicker.MinDate;
+            set => _dateTimePicker.MinDate = value;
         }
 
         /// <summary>
@@ -368,8 +316,8 @@ namespace KryptonDateTimePickerExamples
         [DefaultValue(true)]
         public bool Checked
         {
-            get { return _dateTimePicker.Checked; }
-            set { _dateTimePicker.Checked = value; }
+            get => _dateTimePicker.Checked;
+            set => _dateTimePicker.Checked = value;
         }
 
         /// <summary>
@@ -381,8 +329,8 @@ namespace KryptonDateTimePickerExamples
         [RefreshProperties(RefreshProperties.Repaint)]
         public string CustomFormat
         {
-            get { return _dateTimePicker.CustomFormat; }
-            set { _dateTimePicker.CustomFormat = value; }
+            get => _dateTimePicker.CustomFormat;
+            set => _dateTimePicker.CustomFormat = value;
         }
 
         /// <summary>
@@ -394,8 +342,8 @@ namespace KryptonDateTimePickerExamples
         [RefreshProperties(RefreshProperties.Repaint)]
         public string CustomNullText
         {
-            get { return _dateTimePicker.CustomNullText; }
-            set { _dateTimePicker.CustomNullText = value; }
+            get => _dateTimePicker.CustomNullText;
+            set => _dateTimePicker.CustomNullText = value;
         }
 
         /// <summary>
@@ -405,8 +353,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Header style for the month calendar.")]
         public HeaderStyle CalendarHeaderStyle
         {
-            get { return _dateTimePicker.CalendarHeaderStyle; }
-            set { _dateTimePicker.CalendarHeaderStyle = value; }
+            get => _dateTimePicker.CalendarHeaderStyle;
+            set => _dateTimePicker.CalendarHeaderStyle = value;
         }
 
         /// <summary>
@@ -416,8 +364,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Content style for the day entries.")]
         public ButtonStyle CalendarDayStyle
         {
-            get { return _dateTimePicker.CalendarDayStyle; }
-            set { _dateTimePicker.CalendarDayStyle = value; }
+            get => _dateTimePicker.CalendarDayStyle;
+            set => _dateTimePicker.CalendarDayStyle = value;
         }
 
         /// <summary>
@@ -427,8 +375,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Content style for the day of week labels.")]
         public ButtonStyle CalendarDayOfWeekStyle
         {
-            get { return _dateTimePicker.CalendarDayOfWeekStyle; }
-            set { _dateTimePicker.CalendarDayOfWeekStyle = value; }
+            get => _dateTimePicker.CalendarDayOfWeekStyle;
+            set => _dateTimePicker.CalendarDayOfWeekStyle = value;
         }
 
         /// <summary>
@@ -439,8 +387,8 @@ namespace KryptonDateTimePickerExamples
         [DefaultValue(typeof(PaletteMode), "Global")]
         public PaletteMode PaletteMode
         {
-            get { return _dateTimePicker.PaletteMode; }
-            set { _dateTimePicker.PaletteMode = value; }
+            get => _dateTimePicker.PaletteMode;
+            set => _dateTimePicker.PaletteMode = value;
         }
 
         /// <summary>
@@ -451,8 +399,8 @@ namespace KryptonDateTimePickerExamples
         [DefaultValue(null)]
         public IPalette Palette
         {
-            get { return _dateTimePicker.Palette; }
-            set { _dateTimePicker.Palette = value; }
+            get => _dateTimePicker.Palette;
+            set => _dateTimePicker.Palette = value;
         }
 
         /// <summary>
@@ -463,8 +411,8 @@ namespace KryptonDateTimePickerExamples
         [DefaultValue(true)]
         public bool AlwaysActive
         {
-            get { return _dateTimePicker.AlwaysActive; }
-            set { _dateTimePicker.AlwaysActive = value; }
+            get => _dateTimePicker.AlwaysActive;
+            set => _dateTimePicker.AlwaysActive = value;
         }
 
         /// <summary>
@@ -473,10 +421,7 @@ namespace KryptonDateTimePickerExamples
         [Category("Visuals - DateTimePicker")]
         [Description("CheckBox image overrides.")]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public CheckBoxImages Images
-        {
-            get { return _dateTimePicker.Images; }
-        }
+        public CheckBoxImages Images => _dateTimePicker.Images;
 
         /// <summary>
         /// Gets and sets the input control style.
@@ -485,8 +430,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Input control style.")]
         public InputControlStyle InputControlStyle
         {
-            get { return _dateTimePicker.InputControlStyle; }
-            set { _dateTimePicker.InputControlStyle = value; }
+            get => _dateTimePicker.InputControlStyle;
+            set => _dateTimePicker.InputControlStyle = value;
         }
 
         /// <summary>
@@ -496,8 +441,8 @@ namespace KryptonDateTimePickerExamples
         [Description("Up and down buttons style.")]
         public ButtonStyle UpDownButtonStyle
         {
-            get { return _dateTimePicker.UpDownButtonStyle; }
-            set { _dateTimePicker.UpDownButtonStyle = value; }
+            get => _dateTimePicker.UpDownButtonStyle;
+            set => _dateTimePicker.UpDownButtonStyle = value;
         }
 
         /// <summary>
@@ -507,8 +452,8 @@ namespace KryptonDateTimePickerExamples
         [Description("DropButton style.")]
         public ButtonStyle DropButtonStyle
         {
-            get { return _dateTimePicker.DropButtonStyle; }
-            set { _dateTimePicker.DropButtonStyle = value; }
+            get => _dateTimePicker.DropButtonStyle;
+            set => _dateTimePicker.DropButtonStyle = value;
         }
 
         /// <summary>
@@ -516,10 +461,7 @@ namespace KryptonDateTimePickerExamples
         /// </summary>
         [Category("Visuals - DateTimePicker")]
         [Description("Collection of button specifications.")]
-        public KryptonDateTimePicker.DateTimePickerButtonSpecCollection ButtonSpecs
-        {
-            get { return _dateTimePicker.ButtonSpecs; }
-        }
+        public KryptonDateTimePicker.DateTimePickerButtonSpecCollection ButtonSpecs => _dateTimePicker.ButtonSpecs;
 
         /// <summary>
         /// Gets and sets a value indicating if tooltips should be displayed for button specs.
@@ -529,8 +471,8 @@ namespace KryptonDateTimePickerExamples
         [DefaultValue(false)]
         public bool AllowButtonSpecToolTips
         {
-            get { return _dateTimePicker.AllowButtonSpecToolTips; }
-            set { _dateTimePicker.AllowButtonSpecToolTips = value; }
+            get => _dateTimePicker.AllowButtonSpecToolTips;
+            set => _dateTimePicker.AllowButtonSpecToolTips = value;
         }
 
         /// <summary>
@@ -538,39 +480,27 @@ namespace KryptonDateTimePickerExamples
         /// </summary>
         [Category("Visuals - DateTimePicker")]
         [Description("Overrides for defining common date time picker appearance that other states can override.")]
-        public PaletteInputControlTripleRedirect StateCommon
-        {
-            get { return _dateTimePicker.StateCommon; }
-        }
+        public PaletteInputControlTripleRedirect StateCommon => _dateTimePicker.StateCommon;
 
         /// <summary>
         /// Gets access to the disabled date time picker appearance entries.
         /// </summary>
         [Category("Visuals - DateTimePicker")]
         [Description("Overrides for defining disabled date time picker appearance.")]
-        public PaletteInputControlTripleStates StateDisabled
-        {
-            get { return _dateTimePicker.StateDisabled; }
-        }
+        public PaletteInputControlTripleStates StateDisabled => _dateTimePicker.StateDisabled;
 
         /// <summary>
         /// Gets access to the normal date time picker appearance entries.
         /// </summary>
         [Category("Visuals - DateTimePicker")]
         [Description("Overrides for defining normal date time picker appearance.")]
-        public PaletteInputControlTripleStates StateNormal
-        {
-            get { return _dateTimePicker.StateNormal; }
-        }
+        public PaletteInputControlTripleStates StateNormal => _dateTimePicker.StateNormal;
 
         /// <summary>
         /// Gets access to the active date time picker appearance entries.
         /// </summary>
         [Category("Visuals - DateTimePicker")]
         [Description("Overrides for defining active date time picker appearance.")]
-        public PaletteInputControlTripleStates StateActive
-        {
-            get { return _dateTimePicker.StateActive; }
-        }
+        public PaletteInputControlTripleStates StateActive => _dateTimePicker.StateActive;
     }
 }

@@ -17,10 +17,7 @@ namespace InputForm
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void office2010_Click(object sender, EventArgs e)
         {
@@ -74,14 +71,8 @@ namespace InputForm
             sparkleMenuItem.Checked = false;
         }
 
-        private void clearTelephone_Click(object sender, EventArgs e)
-        {
-            maskedTextBoxTelephone.Text = string.Empty;
-        }
+        private void clearTelephone_Click(object sender, EventArgs e) => maskedTextBoxTelephone.Text = string.Empty;
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e) => Close();
     }
 }

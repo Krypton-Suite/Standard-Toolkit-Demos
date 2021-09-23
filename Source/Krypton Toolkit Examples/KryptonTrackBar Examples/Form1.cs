@@ -7,37 +7,24 @@ namespace KryptonTrackBarExamples
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        private void Form1_Load(object sender, EventArgs e) =>
             // Setup the property grid to edit the first track bar control
             propertyGrid.SelectedObject = new KryptonTrackBarProxy(kryptonTrackBar1);
-        }
 
-        private void trackBar_Enter(object sender, EventArgs e)
-        {
+        private void trackBar_Enter(object sender, EventArgs e) =>
             // Setup the property grid to edit this track bar control
             propertyGrid.SelectedObject = new KryptonTrackBarProxy(sender as KryptonTrackBar);
-        }
 
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
 
     public class KryptonTrackBarProxy
     {
         private KryptonTrackBar _trackBar;
 
-        public KryptonTrackBarProxy(KryptonTrackBar trackBar)
-        {
-            _trackBar = trackBar;
-        }
+        public KryptonTrackBarProxy(KryptonTrackBar trackBar) => _trackBar = trackBar;
 
         /// <summary>
         /// Gets and sets the internal padding space.
@@ -45,8 +32,8 @@ namespace KryptonTrackBarExamples
         [DefaultValue(typeof(Padding), "0,0,0,0")]
         public Padding Padding
         {
-            get { return _trackBar.Padding; }
-            set { _trackBar.Padding = value; }
+            get => _trackBar.Padding;
+            set => _trackBar.Padding = value;
         }
 
         /// <summary>
@@ -56,8 +43,8 @@ namespace KryptonTrackBarExamples
         [Description("Background style.")]
         public PaletteBackStyle BackStyle
         {
-            get { return _trackBar.BackStyle; }
-            set { _trackBar.BackStyle = value; }
+            get => _trackBar.BackStyle;
+            set => _trackBar.BackStyle = value;
         }
 
         /// <summary>
@@ -66,10 +53,7 @@ namespace KryptonTrackBarExamples
         [Category("Visuals")]
         [Description("Overrides for defining track bar appearance when it has focus.")]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public PaletteTrackBarRedirect OverrideFocus
-        {
-            get { return _trackBar.OverrideFocus; }
-        }
+        public PaletteTrackBarRedirect OverrideFocus => _trackBar.OverrideFocus;
 
         /// <summary>
         /// Gets access to the common trackbar appearance that other states can override.
@@ -77,10 +61,7 @@ namespace KryptonTrackBarExamples
         [Category("Visuals")]
         [Description("Overrides for defining common trackbar appearance that other states can override.")]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public PaletteTrackBarRedirect StateCommon
-        {
-            get { return _trackBar.StateCommon; }
-        }
+        public PaletteTrackBarRedirect StateCommon => _trackBar.StateCommon;
 
         /// <summary>
         /// Gets access to the disabled trackbar appearance.
@@ -88,10 +69,7 @@ namespace KryptonTrackBarExamples
         [Category("Visuals")]
         [Description("Overrides for defining disabled trackbar appearance.")]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public PaletteTrackBarStates StateDisabled
-        {
-            get { return _trackBar.StateDisabled; }
-        }
+        public PaletteTrackBarStates StateDisabled => _trackBar.StateDisabled;
 
         /// <summary>
         /// Gets access to the normal trackbar appearance.
@@ -99,10 +77,7 @@ namespace KryptonTrackBarExamples
         [Category("Visuals")]
         [Description("Overrides for defining normal trackbar appearance.")]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public PaletteTrackBarStates StateNormal
-        {
-            get { return _trackBar.StateNormal; }
-        }
+        public PaletteTrackBarStates StateNormal => _trackBar.StateNormal;
 
         /// <summary>
         /// Gets access to the tracking trackbar appearance.
@@ -110,10 +85,7 @@ namespace KryptonTrackBarExamples
         [Category("Visuals")]
         [Description("Overrides for defining tracking trackbar appearance.")]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public PaletteTrackBarPositionStates StateTracking
-        {
-            get { return _trackBar.StateTracking; }
-        }
+        public PaletteTrackBarPositionStates StateTracking => _trackBar.StateTracking;
 
         /// <summary>
         /// Gets access to the pressed trackbar appearance.
@@ -121,10 +93,7 @@ namespace KryptonTrackBarExamples
         [Category("Visuals")]
         [Description("Overrides for defining pressed trackbar appearance.")]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public PaletteTrackBarPositionStates StatePressed
-        {
-            get { return _trackBar.StatePressed; }
-        }
+        public PaletteTrackBarPositionStates StatePressed => _trackBar.StatePressed;
 
         /// <summary>
         /// Gets and sets the size of the track bar elements.
@@ -134,8 +103,8 @@ namespace KryptonTrackBarExamples
         [DefaultValue(typeof(PaletteTrackBarSize), "Medium")]
         public PaletteTrackBarSize TrackBarSize
         {
-            get { return _trackBar.TrackBarSize; }
-            set { _trackBar.TrackBarSize = value; }
+            get => _trackBar.TrackBarSize;
+            set => _trackBar.TrackBarSize = value;
         }
 
         /// <summary>
@@ -147,8 +116,8 @@ namespace KryptonTrackBarExamples
         [RefreshProperties(RefreshProperties.All)]
         public TickStyle TickStyle
         {
-            get { return _trackBar.TickStyle; }
-            set { _trackBar.TickStyle = value; }
+            get => _trackBar.TickStyle;
+            set => _trackBar.TickStyle = value;
         }
 
         /// <summary>
@@ -159,8 +128,8 @@ namespace KryptonTrackBarExamples
         [DefaultValue(1)]
         public int TickFrequency
         {
-            get { return _trackBar.TickFrequency; }
-            set { _trackBar.TickFrequency = value; }
+            get => _trackBar.TickFrequency;
+            set => _trackBar.TickFrequency = value;
         }
 
         /// <summary>
@@ -171,8 +140,8 @@ namespace KryptonTrackBarExamples
         [DefaultValue(typeof(Orientation), "Horizontal")]
         public Orientation Orientation
         {
-            get { return _trackBar.Orientation; }
-            set { _trackBar.Orientation = value; }
+            get => _trackBar.Orientation;
+            set => _trackBar.Orientation = value;
         }
 
         /// <summary>
@@ -184,8 +153,8 @@ namespace KryptonTrackBarExamples
         [DefaultValue(10)]
         public int Maximum
         {
-            get { return _trackBar.Maximum; }
-            set { _trackBar.Maximum = value; }
+            get => _trackBar.Maximum;
+            set => _trackBar.Maximum = value;
         }
 
         /// <summary>
@@ -197,8 +166,8 @@ namespace KryptonTrackBarExamples
         [DefaultValue(0)]
         public int Minimum
         {
-            get { return _trackBar.Minimum; }
-            set { _trackBar.Minimum = value; }
+            get => _trackBar.Minimum;
+            set => _trackBar.Minimum = value;
         }
 
         /// <summary>
@@ -209,8 +178,8 @@ namespace KryptonTrackBarExamples
         [DefaultValue(0)]
         public int Value
         {
-            get { return _trackBar.Value; }
-            set { _trackBar.Value = value; }
+            get => _trackBar.Value;
+            set => _trackBar.Value = value;
         }
 
         /// <summary>
@@ -221,8 +190,8 @@ namespace KryptonTrackBarExamples
         [DefaultValue(1)]
         public int SmallChange
         {
-            get { return _trackBar.SmallChange; }
-            set { _trackBar.SmallChange = value; }
+            get => _trackBar.SmallChange;
+            set => _trackBar.SmallChange = value;
         }
 
         /// <summary>
@@ -233,8 +202,8 @@ namespace KryptonTrackBarExamples
         [DefaultValue(5)]
         public int LargeChange
         {
-            get { return _trackBar.LargeChange; }
-            set { _trackBar.LargeChange = value; }
+            get => _trackBar.LargeChange;
+            set => _trackBar.LargeChange = value;
         }
     }
 }

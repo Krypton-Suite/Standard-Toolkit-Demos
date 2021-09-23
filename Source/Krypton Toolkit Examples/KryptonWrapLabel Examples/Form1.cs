@@ -18,15 +18,9 @@ namespace KryptonWrapLabelExamples
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            propertyGrid.SelectedObject = kryptonWrapLabel;
-        }
+        private void Form1_Load(object sender, EventArgs e) => propertyGrid.SelectedObject = kryptonWrapLabel;
 
         private void buttonNormal_Click(object sender, EventArgs e)
         {
@@ -40,9 +34,6 @@ namespace KryptonWrapLabelExamples
             propertyGrid.SelectedObject = kryptonWrapLabel;
         }
 
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
 }

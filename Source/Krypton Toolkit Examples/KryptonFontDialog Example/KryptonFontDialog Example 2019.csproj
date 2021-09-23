@@ -26,6 +26,6 @@
       <None Remove="Krypton.ico" />
     </ItemGroup>
     <ItemGroup>
-      <Content Include="Krypton.ico" />
+      <EmbeddedResource Include="Krypton.ico" />
     </ItemGroup>
 </Project>

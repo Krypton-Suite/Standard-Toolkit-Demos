@@ -19,10 +19,7 @@ namespace ThreePaneApplication
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -63,18 +60,13 @@ namespace ThreePaneApplication
             kryptonHeaderGroupDetails.ButtonSpecs[1].Click += new EventHandler(OnNext);
         }
 
-        private void Form1_SystemColorsChanged(object sender, EventArgs e)
-        {
+        private void Form1_SystemColorsChanged(object sender, EventArgs e) =>
             // If the system colors change that might change the palette background
             // if the palette is calculating it from the system colors and so update
             // the control colors just in case.
             UpdateOnPaletteChanged();
-        }
 
-        private void toolStripLoadPalette_Click(object sender, EventArgs e)
-        {
-            loadPaletteToolStripMenuItem_Click(this, EventArgs.Empty);
-        }
+        private void toolStripLoadPalette_Click(object sender, EventArgs e) => loadPaletteToolStripMenuItem_Click(this, EventArgs.Empty);
 
         private void toolStripOffice2010Blue_Click(object sender, EventArgs e)
         {
@@ -303,10 +295,7 @@ namespace ThreePaneApplication
             readingPaneToolStripMenuItem.Checked = toolStripReadingPane.Checked;
         }
 
-        private void readingPaneToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            toolStripReadingPane.Checked = !toolStripReadingPane.Checked;
-        }
+        private void readingPaneToolStripMenuItem_Click(object sender, EventArgs e) => toolStripReadingPane.Checked = !toolStripReadingPane.Checked;
 
         private void toolStripPosition_CheckedChanged(object sender, EventArgs e)
         {
@@ -315,10 +304,7 @@ namespace ThreePaneApplication
             panePositonToolStripMenuItem.Checked = toolStripPosition.Checked;
         }
 
-        private void panePositonToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            toolStripPosition.Checked = !toolStripPosition.Checked;
-        }
+        private void panePositonToolStripMenuItem_Click(object sender, EventArgs e) => toolStripPosition.Checked = !toolStripPosition.Checked;
 
         private void treeView_AfterSelect(object sender, TreeViewEventArgs e)
         {
@@ -441,10 +427,7 @@ namespace ThreePaneApplication
             kryptonDataGridView.Refresh();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e) => Close();
 
         private void FilterDataTable(TreeNode node)
         {
