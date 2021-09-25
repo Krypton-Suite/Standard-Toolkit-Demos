@@ -30,7 +30,8 @@ namespace KryptonFontDialog_Example_2019
                 AnyColor = chkAnyColor.Checked,
                 FullOpen = chkFullOPen.Checked,
                 SolidColorOnly = chkSolidColorOnly.Checked,
-                CustomColors = customColors
+                CustomColors = customColors,
+                Title = @"Test Colour Dialog being set"
             };
             if (kfd.ShowDialog(this) == DialogResult.OK)
             {

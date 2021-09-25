@@ -42,7 +42,8 @@ namespace KryptonFontDialog_Example_2019
                 AllowVectorFonts = chkAllowVectorFonts.Checked,
                 ShowApply = chkShowApply.Checked,
                 ShowEffects = chkShowEffects.Checked,
-                Font = fontLast
+                Font = fontLast,
+                Title = @"Test Font Dialog being set"
            };
             if (kfd.ShowDialog(this) == DialogResult.OK)
             {
