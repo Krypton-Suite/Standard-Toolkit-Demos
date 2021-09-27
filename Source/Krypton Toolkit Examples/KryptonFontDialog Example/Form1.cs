@@ -43,13 +43,21 @@ namespace KryptonFontDialog_Example_2019
                 ShowApply = chkShowApply.Checked,
                 ShowEffects = chkShowEffects.Checked,
                 Font = fontLast,
-                Title = @"Test Font Dialog being set"
+                Title = @"Test Font Dialog being set",
+                DisplayIsPrinterFontDescription = true,
+                DisplayExtendedColorsButton = chklShowExtendedColours.Checked
            };
+            kfd.Color = Color.DarkOliveGreen;
             if (kfd.ShowDialog(this) == DialogResult.OK)
             {
                 KryptonMessageBox.Show(this, kfd.Font.ToString(), @"Font chosen is");
                 fontLast = kfd.Font;
             }
+        }
+
+        private void KryptonColorButton1_SelectedColorChanged(object sender, ColorEventArgs e)
+        {
+
         }
     }
 }
