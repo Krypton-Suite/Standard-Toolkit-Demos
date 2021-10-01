@@ -3,7 +3,7 @@
     <!-- do not change this ever !-->
     <?define UpgradeCode = "38FC3474-F06B-4C57-8869-15B23AEBFB10" ?>
 
-    <?define Version = "6.0.2108.0" ?> <!--"!(bind.FileVersion.Krypton.Toolkit.dll)" -->
+    <?define Version = "6.0.2110.274" ?> <!--"!(bind.FileVersion.Krypton.Toolkit.dll)" -->
 
     <?define ProductName = "Krypton Toolkit Demo Net48 Apps"?>
 
@@ -25,7 +25,6 @@
 
         <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
 
-        <Property Id="ARPNOMODIFY" Value="1" />
         <WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
 
         <!-- +++++++++++++++++++++++++++ Advertised shortcuts will not produce ICE errors, but will be converted to non-advertised shortcuts when installed -->
@@ -58,7 +57,7 @@
                 <Directory Id="ProgramMenuDir" Name="Krypton Toolkit Demos"/>
             </Directory>
             <Directory Id="CommonAppDataFolder">
-                <Directory Id="KryptonToolkitDemosDir" Name="Krypton Toolkit Demos" />
+                <Directory Id="KryptonToolkitDemosDir" Name="Krypton Toolkit Demos net48" />
             </Directory>
         </Directory>
 
@@ -80,36 +79,8 @@
         </Feature>
 
         <!-- Get the install to skip a few steps -->
-        <UIRef Id="WixUI_Common" />
-        <UI>
-            <Property Id="DefaultUIFont" Value="WixUI_Font_Normal" />
-            <TextStyle Id="WixUI_Font_Normal" FaceName="Tahoma" Size="8" />
-            <TextStyle Id="WixUI_Font_Bigger" FaceName="Tahoma" Size="12" />
-            <TextStyle Id="WixUI_Font_Title" FaceName="Tahoma" Size="9" Bold="yes" />
-
-            <Property Id="WIXUI_INSTALLDIR" Value="INSTALLDIR" />
-
-            <DialogRef Id="BrowseDlg" />
-            <DialogRef Id="DiskCostDlg" />
-            <DialogRef Id="ErrorDlg" />
-            <DialogRef Id="FatalError" />
-            <DialogRef Id="FilesInUse" />
-            <DialogRef Id="MsiRMFilesInUse" />
-            <DialogRef Id="PrepareDlg" />
-            <DialogRef Id="ProgressDlg" />
-            <DialogRef Id="ResumeDlg" />
-            <DialogRef Id="UserExit" />
-
-            <Publish Dialog="ExitDialog" Control="Finish" Event="EndDialog" Value="Return" Order="999">1</Publish>
-            <Publish Dialog="WelcomeEulaDlg" Control="Install" Event="NewDialog" Value="VerifyReadyDlg">1</Publish>
-            <Publish Dialog="VerifyReadyDlg" Control="Back" Event="NewDialog" Value="WelcomeEulaDlg" Order="1">NOT Installed</Publish>
-            <Publish Dialog="VerifyReadyDlg" Control="Back" Event="NewDialog" Value="MaintenanceTypeDlg" Order="2">Installed</Publish>
-
-            <Publish Dialog="MaintenanceWelcomeDlg" Control="Next" Event="NewDialog" Value="MaintenanceTypeDlg">1</Publish>
-            <Publish Dialog="MaintenanceTypeDlg" Control="RepairButton" Event="NewDialog" Value="VerifyReadyDlg">1</Publish>
-            <Publish Dialog="MaintenanceTypeDlg" Control="RemoveButton" Event="NewDialog" Value="VerifyReadyDlg">1</Publish>
-            <Publish Dialog="MaintenanceTypeDlg" Control="Back" Event="NewDialog" Value="MaintenanceWelcomeDlg">1</Publish>
-        </UI>
+        <Property Id="WIXUI_INSTALLDIR" Value="KryptonToolkitDemosDir" />
+        <UIRef Id="WixUI_InstallDir" />
 
         <UIRef Id="WixUI_ErrorProgressText" />
 
