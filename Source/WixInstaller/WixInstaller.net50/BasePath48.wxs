@@ -163,13 +163,6 @@
                 <File Id="fil22122E7FC770E15136047CEBEA5E36F5" KeyPath="yes" Source="$(var.BasePath48)\Krypton Bread Crumb Examples.exe.config" />
             </Component>
             
-            <Component Id="cmp92784C3614D6E6F7EA96F134D6A7C091" Guid="*">
-                <File Id="filBE1AE7C496324971E3F770F7F5CA839F" KeyPath="yes" Source="$(var.BasePath48)\Krypton Button Examples.exe" />
-            </Component>
-            <Component Id="cmp4F707833A4F7157529AB9984043EE000" Guid="*">
-                <File Id="fil2D5E4C000CFE9639BC627D5BF68A5C27" KeyPath="yes" Source="$(var.BasePath48)\Krypton Button Examples.exe.config" />
-            </Component>
-            
             <Component Id="cmpDEB9B3B728DF9F59A7E47BC1BDB9222A" Guid="*">
                 <File Id="fil417B6155A5DEEA655129F74E0B670454" KeyPath="yes" Source="$(var.BasePath48)\Krypton Checkbox Examples.exe" />
             </Component>
@@ -331,13 +324,6 @@
                 <File Id="fil0BE877CA1D7B8A310396C2961DAF3F5A" KeyPath="yes" Source="$(var.BasePath48)\Krypton ListBox Examples.exe.config" />
             </Component>
             
-            <Component Id="cmpA42F96D8FAF099A9E0152270215B0EE1" Guid="*">
-                <File Id="fil87A378400345BA10C446B14E391737A1" KeyPath="yes" Source="$(var.BasePath48)\Krypton ListView Examples.exe" />
-            </Component>
-            <Component Id="cmp01943F86BEC29D6EA0F5BD3593F283F9" Guid="*">
-                <File Id="filFA8D2A72E56842C0D3A7F2E5A36B9922" KeyPath="yes" Source="$(var.BasePath48)\Krypton ListView Examples.exe.config" />
-            </Component>
-            
             <Component Id="cmp6D0C73A71300FCD73064CCC9ABDBDBB8" Guid="*">
                 <File Id="fil09E790DD3C7D28078F3E6B1767C3784C" KeyPath="yes" Source="$(var.BasePath48)\Krypton Masked TextBox Examples.exe" />
             </Component>
@@ -415,13 +401,6 @@
                 <File Id="fil4B7AFF7E4E0F4CD417010F44C06AEE73" KeyPath="yes" Source="$(var.BasePath48)\Krypton TextBox Examples.exe.config" />
             </Component>
             
-            <Component Id="cmp40F132E5A05A08526E3859718F78264E" Guid="*">
-                <File Id="fil9DB2689ECB6F120D4FCEF02418506F8F" KeyPath="yes" Source="$(var.BasePath48)\Krypton Toolkit Hub.exe" />
-            </Component>
-            <Component Id="cmp84627D2120D73390ADFF28309CD97DA0" Guid="*">
-                <File Id="fil81A81F73C1A793BADC99E6233C231DF7" KeyPath="yes" Source="$(var.BasePath48)\Krypton Toolkit Hub.exe.config" />
-            </Component>
-            
             <Component Id="cmpA26D624D53441D89D51343484CE0D260" Guid="*">
                 <File Id="filEB7D376AEFC6DCE8D79DFBC9F5E6EA0C" KeyPath="yes" Source="$(var.BasePath48)\Krypton TrackBar Examples.exe" />
             </Component>
@@ -446,45 +425,18 @@
             <Component Id="cmpF516D08681648F27C4B345E85C460529" Guid="*">
                 <File Id="filA1AB5A40BE7F74D3E5F1A37F56029B35" KeyPath="yes" Source="$(var.BasePath48)\Krypton.Docking.dll" />
             </Component>
-            
-            <Component Id="cmpE4E9572C65CEA8CB4CEC5EC444F70B01" Guid="*">
-                <File Id="fil822C4DD28C97A39776E4316E9D3B41BE" KeyPath="yes" Source="$(var.BasePath48)\Krypton.Docking.xml" />
-            </Component>
             <Component Id="cmpBEDD0227F9C5253BC7C8D8CD19C89E1E" Guid="*">
                 <File Id="fil685E1B1E01CA067F528929B480894E0F" KeyPath="yes" Source="$(var.BasePath48)\Krypton.Navigator.dll" />
-            </Component>
-            
-            <Component Id="cmpA9BCF8245AA5DB306221CFE94C40530A" Guid="*">
-                <File Id="fil15CC21A921124258521D618E45ED8536" KeyPath="yes" Source="$(var.BasePath48)\Krypton.Navigator.xml" />
             </Component>
             <Component Id="cmpD78D282C3685B3C3A09245C283788F27" Guid="*">
                 <File Id="fil110B6BAB37D75487362714E2A6054D6F" KeyPath="yes" Source="$(var.BasePath48)\Krypton.Ribbon.dll" />
             </Component>
-            
-            <Component Id="cmpF888E325D06E04B21CF5083365806689" Guid="*">
-                <File Id="filD18D1A4C51432ECB2B2A43647647CE52" KeyPath="yes" Source="$(var.BasePath48)\Krypton.Ribbon.xml" />
-            </Component>
             <Component Id="cmp6231D0390E30CED0307646381B7B815F" Guid="*">
                 <File Id="fil0B150A5F8923D475729BC7557B9D80F1" KeyPath="yes" Source="$(var.BasePath48)\Krypton.Toolkit.dll" />
-            </Component>
-            
-            <Component Id="cmpBDAE4E6CC7B1FA18CFF6FC3FE79693D1" Guid="*">
-                <File Id="filEC08F1CC0E1691E70DF8D842F338D47B" KeyPath="yes" Source="$(var.BasePath48)\Krypton.Toolkit.xml" />
             </Component>
             <Component Id="cmp2321ACD09DAE53193BE6AA587ACBEC8C" Guid="*">
                 <File Id="fil15DA49D6BB86E02EFF46BD84A02ACCD5" KeyPath="yes" Source="$(var.BasePath48)\Krypton.Workspace.dll" />
             </Component>
-            
-            <Component Id="cmpD3D96E077CD68954227C867B498D0D09" Guid="*">
-                <File Id="fil524B3B3874A0C989D09AFADDE9BF50DB" KeyPath="yes" Source="$(var.BasePath48)\Krypton.Workspace.xml" />
-            </Component>
-            <Component Id="cmp1B3B27EEF67AD72252006053B0C74A09" Guid="*">
-                <File Id="filCE15257C4262F005040AB2F8F8CD0A61" KeyPath="yes" Source="$(var.BasePath48)\KryptonWebBrowser Example.exe" />
-            </Component>
-            <Component Id="cmp8E0A4AA7B928BCB96EBB8BE6952BFB20" Guid="*">
-                <File Id="fil3C3443EA8103A1ACF0979FC49ED6F447" KeyPath="yes" Source="$(var.BasePath48)\KryptonWebBrowser Example.exe.config" />
-            </Component>
-            
             <Component Id="cmp9E440FA6B5D91C7D00047B78AFD94902" Guid="*">
                 <File Id="fil2BC6ED1E111E67C6A063035645AE7236" KeyPath="yes" Source="$(var.BasePath48)\MDI Application.exe" />
             </Component>
@@ -583,13 +535,6 @@
                 <File Id="filCA2E11C79A7DAD2245137C4216A96B89" KeyPath="yes" Source="$(var.BasePath48)\Outlook Mockup.exe.config" />
             </Component>
             
-            <Component Id="cmp8658F5DD87E12C834FD1EC981C05BC0F" Guid="*">
-                <File Id="fil257DDCE86122FB288CD8B02213E521A9" KeyPath="yes" Source="$(var.BasePath48)\Palette Designer.exe" />
-            </Component>
-            <Component Id="cmp6E7971F14981B0D2E9DF687DB09AC86C" Guid="*">
-                <File Id="fil94B7C4F26BEA9D4F200635F7F38F5B52" KeyPath="yes" Source="$(var.BasePath48)\Palette Designer.exe.config" />
-            </Component>
-            
             <Component Id="cmpB19A0E449CFAA57450A03689ACF48A5D" Guid="*">
                 <File Id="fil664C77464718B7A3A45B2C7A5D16E489" KeyPath="yes" Source="$(var.BasePath48)\Per Tab Buttons.exe" />
             </Component>
@@ -665,13 +610,6 @@
             </Component>
             <Component Id="cmp11CD513E9C5BF992EF6856570B7A4F96" Guid="*">
                 <File Id="fil3B5E6AE0082242C27CD6AC8432253B36" KeyPath="yes" Source="$(var.BasePath48)\Tab Border Styles.exe.config" />
-            </Component>
-            
-            <Component Id="cmpA35DA2D14C28828F1C06BA51C0E57036" Guid="*">
-                <File Id="fil94D543BD03849AD25A4464F8D7635E66" KeyPath="yes" Source="$(var.BasePath48)\Test Clip Base.exe" />
-            </Component>
-            <Component Id="cmp13E8421464540FBFD697CB909C39E726" Guid="*">
-                <File Id="filE78F1784036A29614624F74C6F696AE6" KeyPath="yes" Source="$(var.BasePath48)\Test Clip Base.exe.config" />
             </Component>
             
             <Component Id="cmp511BB02B0C55E7344751DD49FB0C5388" Guid="*">
@@ -810,9 +748,6 @@
             <ComponentRef Id="cmp704B3E7757BDA78650D3C33870B8DA1E" />
             <ComponentRef Id="cmpC808FFA8A9B66B5CE04E7FE853DB75A4" />
             
-            <ComponentRef Id="cmp92784C3614D6E6F7EA96F134D6A7C091" />
-            <ComponentRef Id="cmp4F707833A4F7157529AB9984043EE000" />
-            
             <ComponentRef Id="cmpDEB9B3B728DF9F59A7E47BC1BDB9222A" />
             <ComponentRef Id="cmp1FB39F943466B6DB962FCA7ABB82C204" />
             
@@ -882,9 +817,6 @@
             <ComponentRef Id="cmp69BD1BB7A8462369CC1A75AD1822D7F3" />
             <ComponentRef Id="cmp0906093BD0359E11CF3CDE8CAFA210EB" />
             
-            <ComponentRef Id="cmpA42F96D8FAF099A9E0152270215B0EE1" />
-            <ComponentRef Id="cmp01943F86BEC29D6EA0F5BD3593F283F9" />
-            
             <ComponentRef Id="cmp6D0C73A71300FCD73064CCC9ABDBDBB8" />
             <ComponentRef Id="cmp28D77245A29ABF9B02441E0B3DC5A82E" />
             
@@ -918,9 +850,6 @@
             <ComponentRef Id="cmp3C15A7158278FFF927ADF24D417C0DD6" />
             <ComponentRef Id="cmp4841466F32C018C452D8CD5BEAF7885C" />
             
-            <ComponentRef Id="cmp40F132E5A05A08526E3859718F78264E" />
-            <ComponentRef Id="cmp84627D2120D73390ADFF28309CD97DA0" />
-            
             <ComponentRef Id="cmpA26D624D53441D89D51343484CE0D260" />
             <ComponentRef Id="cmp34324CEB627529172F08BCA0F601BCFA" />
             
@@ -931,23 +860,10 @@
             <ComponentRef Id="cmpD1B7F0771A5F222FE09AA232830360B8" />
             
             <ComponentRef Id="cmpF516D08681648F27C4B345E85C460529" />
-            
-            <ComponentRef Id="cmpE4E9572C65CEA8CB4CEC5EC444F70B01" />
             <ComponentRef Id="cmpBEDD0227F9C5253BC7C8D8CD19C89E1E" />
-            
-            <ComponentRef Id="cmpA9BCF8245AA5DB306221CFE94C40530A" />
             <ComponentRef Id="cmpD78D282C3685B3C3A09245C283788F27" />
-            
-            <ComponentRef Id="cmpF888E325D06E04B21CF5083365806689" />
             <ComponentRef Id="cmp6231D0390E30CED0307646381B7B815F" />
-            
-            <ComponentRef Id="cmpBDAE4E6CC7B1FA18CFF6FC3FE79693D1" />
             <ComponentRef Id="cmp2321ACD09DAE53193BE6AA587ACBEC8C" />
-            
-            <ComponentRef Id="cmpD3D96E077CD68954227C867B498D0D09" />
-            <ComponentRef Id="cmp1B3B27EEF67AD72252006053B0C74A09" />
-            <ComponentRef Id="cmp8E0A4AA7B928BCB96EBB8BE6952BFB20" />
-            
             <ComponentRef Id="cmp9E440FA6B5D91C7D00047B78AFD94902" />
             <ComponentRef Id="cmp286283BC18F6BF1F883B777B1D249C44" />
             
@@ -990,9 +906,6 @@
             <ComponentRef Id="cmp58E2AD51D313B619F1CF4119A47BBE72" />
             <ComponentRef Id="cmpD7B879629E90367D10692E27EF421D59" />
             
-            <ComponentRef Id="cmp8658F5DD87E12C834FD1EC981C05BC0F" />
-            <ComponentRef Id="cmp6E7971F14981B0D2E9DF687DB09AC86C" />
-            
             <ComponentRef Id="cmpB19A0E449CFAA57450A03689ACF48A5D" />
             <ComponentRef Id="cmpDF92CDB54E7FAEC3E390DCBE70A45727" />
             
@@ -1025,9 +938,6 @@
             
             <ComponentRef Id="cmpF81191FC4D1EB14B0E3E959385A6D7A9" />
             <ComponentRef Id="cmp11CD513E9C5BF992EF6856570B7A4F96" />
-            
-            <ComponentRef Id="cmpA35DA2D14C28828F1C06BA51C0E57036" />
-            <ComponentRef Id="cmp13E8421464540FBFD697CB909C39E726" />
             
             <ComponentRef Id="cmp511BB02B0C55E7344751DD49FB0C5388" />
             <ComponentRef Id="cmp6ADF1B94BE64B1431757DEFEAB331984" />

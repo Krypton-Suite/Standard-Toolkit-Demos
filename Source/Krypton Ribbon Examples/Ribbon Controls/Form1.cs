@@ -30,7 +30,7 @@ namespace RibbonControls
                 miscCmbTheme.ComboBox.StateCommon.ComboBox.Content.Font;
             // Hook into changes in the global palette
             ThemeManager.PropagateThemeSelector(miscCmbTheme.ComboBox);
-            miscCmbTheme.Text = ThemeManager.ReturnPaletteModeManagerAsString(KryptonManager.GlobalPaletteMode);
+            miscCmbTheme.Text = ThemeManager.ReturnPaletteModeManagerAsString(kryptonManager.GlobalPaletteMode);
         }
 
         private LinkLabel CreateLinkLabel(string text)
