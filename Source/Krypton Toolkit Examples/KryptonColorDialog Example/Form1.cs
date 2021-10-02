@@ -3,11 +3,18 @@ using System.Windows.Forms;
 
 using Krypton.Toolkit;
 
+using KryptonColorDialog.Properties;
+
 namespace KryptonFontDialog_Example_2019
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1() => InitializeComponent();
+        public Form1()
+        {
+            InitializeComponent();
+            Icon = Resources.Krypton;
+
+        }
 
         private void Palette2010Blue_CheckedChanged(object sender, EventArgs e) => kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
 
@@ -24,14 +31,15 @@ namespace KryptonFontDialog_Example_2019
         private int[] customColors;
         private void ButtonShowFontDialog_Click(object sender, EventArgs e)
         {
-            var kfd = new KryptonColorDialog {
+            var kfd = new Krypton.Toolkit.KryptonColorDialog {
                 AllowFullOpen = chkAllowFullOpen.Checked,
                 ShowHelp = chkShowHelp.Checked,
                 AnyColor = chkAnyColor.Checked,
                 FullOpen = chkFullOPen.Checked,
                 SolidColorOnly = chkSolidColorOnly.Checked,
                 CustomColors = customColors,
-                Title = @"Test Colour Dialog being set"
+                Title = @"Test Colour Dialog being set",
+                ShowIcon = chkShowIcon.Checked
             };
             if (kfd.ShowDialog(this) == DialogResult.OK)
             {

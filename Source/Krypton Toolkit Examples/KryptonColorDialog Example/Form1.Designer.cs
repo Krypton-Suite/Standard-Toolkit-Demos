@@ -40,6 +40,7 @@ namespace KryptonFontDialog_Example_2019
             this.buttonShowFontDialog = new Krypton.Toolkit.KryptonButton();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
+            this.chkShowIcon = new Krypton.Toolkit.KryptonCheckBox();
             this.chkSolidColorOnly = new Krypton.Toolkit.KryptonCheckBox();
             this.chkFullOPen = new Krypton.Toolkit.KryptonCheckBox();
             this.chkAnyColor = new Krypton.Toolkit.KryptonCheckBox();
@@ -72,6 +73,9 @@ namespace KryptonFontDialog_Example_2019
             // 
             // groupBoxPalette
             // 
+            this.groupBoxPalette.CaptionStyle = Krypton.Toolkit.LabelStyle.GroupBoxCaption;
+            this.groupBoxPalette.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlGroupBox;
+            this.groupBoxPalette.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlGroupBox;
             this.groupBoxPalette.Location = new System.Drawing.Point(12, 12);
             this.groupBoxPalette.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxPalette.Name = "groupBoxPalette";
@@ -174,12 +178,16 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonGroupBox2
             // 
+            this.kryptonGroupBox2.CaptionStyle = Krypton.Toolkit.LabelStyle.GroupBoxCaption;
+            this.kryptonGroupBox2.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlGroupBox;
+            this.kryptonGroupBox2.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlGroupBox;
             this.kryptonGroupBox2.Location = new System.Drawing.Point(372, 28);
             this.kryptonGroupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonGroupBox2.Name = "kryptonGroupBox2";
             // 
             // kryptonGroupBox2.Panel
             // 
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowIcon);
             this.kryptonGroupBox2.Panel.Controls.Add(this.chkSolidColorOnly);
             this.kryptonGroupBox2.Panel.Controls.Add(this.chkFullOPen);
             this.kryptonGroupBox2.Panel.Controls.Add(this.chkAnyColor);
@@ -188,6 +196,15 @@ namespace KryptonFontDialog_Example_2019
             this.kryptonGroupBox2.Size = new System.Drawing.Size(199, 289);
             this.kryptonGroupBox2.TabIndex = 21;
             this.kryptonGroupBox2.Values.Heading = "Options:";
+            // 
+            // chkShowIcon
+            // 
+            this.chkShowIcon.Location = new System.Drawing.Point(4, 149);
+            this.chkShowIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkShowIcon.Name = "chkShowIcon";
+            this.chkShowIcon.Size = new System.Drawing.Size(95, 24);
+            this.chkShowIcon.TabIndex = 5;
+            this.chkShowIcon.Values.Text = "Show Icon";
             // 
             // chkSolidColorOnly
             // 
@@ -238,6 +255,9 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonGroupBox1
             // 
+            this.kryptonGroupBox1.CaptionStyle = Krypton.Toolkit.LabelStyle.GroupBoxCaption;
+            this.kryptonGroupBox1.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlGroupBox;
+            this.kryptonGroupBox1.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlGroupBox;
             this.kryptonGroupBox1.Location = new System.Drawing.Point(12, 153);
             this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonGroupBox1.Name = "kryptonGroupBox1";
@@ -323,7 +343,10 @@ namespace KryptonFontDialog_Example_2019
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(595, 410);
             this.Controls.Add(this.kryptonPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "KryptonColorDialog Example";
             ((System.ComponentModel.ISupportInitialize)(this.groupBoxPalette.Panel)).EndInit();
@@ -373,6 +396,7 @@ namespace KryptonFontDialog_Example_2019
         private Krypton.Toolkit.KryptonCheckBox chkFullOPen;
         private Krypton.Toolkit.KryptonCheckBox chkAnyColor;
         private Krypton.Toolkit.KryptonManager kryptonManager;
+        private Krypton.Toolkit.KryptonCheckBox chkShowIcon;
     }
 }
 
