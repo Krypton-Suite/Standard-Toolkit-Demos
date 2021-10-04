@@ -80,7 +80,7 @@ namespace KeyTipsAndKeyboardAccess
         {
             KryptonRibbonGroupButton button = (KryptonRibbonGroupButton)sender;
 
-            string text = button.TextLine1;
+            var text = button.TextLine1;
             if (!string.IsNullOrEmpty(button.TextLine2))
                 text += " " + button.TextLine2;
 
