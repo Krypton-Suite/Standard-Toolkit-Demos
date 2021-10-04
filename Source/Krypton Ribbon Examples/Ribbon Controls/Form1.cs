@@ -154,7 +154,7 @@ namespace RibbonControls
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            bool defaultRibbonCheckBox = Settings.Default.RibbonCheckBox;
+            var defaultRibbonCheckBox = Settings.Default.RibbonCheckBox;
             Settings.Default.Save();
         }
     }

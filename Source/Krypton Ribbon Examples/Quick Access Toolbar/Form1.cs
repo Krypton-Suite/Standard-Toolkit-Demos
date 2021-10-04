@@ -97,7 +97,7 @@ namespace QuickAccessToolbar
         
         private void UpdateButtons()
         {
-            bool enable = (kryptonRibbon.QATButtons.Count > 0);
+            var enable = (kryptonRibbon.QATButtons.Count > 0);
             buttonRemove.Enabled = enable;
             buttonClear.Enabled = enable;
         }

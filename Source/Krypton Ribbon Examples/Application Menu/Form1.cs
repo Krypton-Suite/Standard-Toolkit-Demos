@@ -38,8 +38,8 @@ namespace ApplicationMenu
             kryptonRibbon1.RibbonAppButton.AppButtonShowRecentDocs = checkBoxShowRecentDocs.Checked;
             kryptonRibbon1.RibbonStrings.RecentDocuments = textBoxDocsTitle.Text;
 
-            int minWidth = int.Parse(textBoxMinWidth.Text);
-            int minHeight = int.Parse(textBoxMinHeight.Text);
+            var minWidth = int.Parse(textBoxMinWidth.Text);
+            var minHeight = int.Parse(textBoxMinHeight.Text);
             kryptonRibbon1.RibbonAppButton.AppButtonMinRecentSize = new Size(minWidth, minHeight);
         }
 
