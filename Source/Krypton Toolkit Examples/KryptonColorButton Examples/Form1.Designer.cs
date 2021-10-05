@@ -59,6 +59,7 @@ namespace KryptonColorButtonExamples
             this.kryptonColorButton2 = new Krypton.Toolkit.KryptonColorButton();
             this.kryptonColorButton3 = new Krypton.Toolkit.KryptonColorButton();
             this.kryptonColorButton4 = new Krypton.Toolkit.KryptonColorButton();
+            this.kryptonColorButton5 = new Krypton.Toolkit.KryptonColorButton();
             this.groupProperties.SuspendLayout();
             this.groupBlue.SuspendLayout();
             this.group2003.SuspendLayout();
@@ -70,7 +71,7 @@ namespace KryptonColorButtonExamples
             // buttonClose
             // 
             this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonClose.Location = new System.Drawing.Point(457, 497);
+            this.buttonClose.Location = new System.Drawing.Point(463, 519);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(95, 52);
             this.buttonClose.TabIndex = 5;
@@ -130,7 +131,6 @@ namespace KryptonColorButtonExamples
             this.blueRight.Strings.ThemeColors = "Basic Colors";
             this.blueRight.TabIndex = 5;
             this.blueRight.Values.Image = ((System.Drawing.Image)(resources.GetObject("blueRight.Values.Image")));
-            this.blueRight.Values.RoundedCorners = ((sbyte)(0));
             this.blueRight.Values.Text = "";
             this.blueRight.VisibleMoreColors = false;
             this.blueRight.VisibleNoColor = false;
@@ -153,7 +153,6 @@ namespace KryptonColorButtonExamples
             this.blueLeft.Strings.ThemeColors = "Basic Colors";
             this.blueLeft.TabIndex = 3;
             this.blueLeft.Values.Image = ((System.Drawing.Image)(resources.GetObject("blueLeft.Values.Image")));
-            this.blueLeft.Values.RoundedCorners = ((sbyte)(0));
             this.blueLeft.Values.Text = "";
             this.blueLeft.VisibleMoreColors = false;
             this.blueLeft.VisibleNoColor = false;
@@ -176,7 +175,6 @@ namespace KryptonColorButtonExamples
             this.blueBottom.Strings.ThemeColors = "Basic Colors";
             this.blueBottom.TabIndex = 4;
             this.blueBottom.Values.Image = ((System.Drawing.Image)(resources.GetObject("blueBottom.Values.Image")));
-            this.blueBottom.Values.RoundedCorners = ((sbyte)(0));
             this.blueBottom.Values.Text = "";
             this.blueBottom.VisibleMoreColors = false;
             this.blueBottom.VisibleNoColor = false;
@@ -199,7 +197,6 @@ namespace KryptonColorButtonExamples
             this.blueTop.Strings.ThemeColors = "Basic Colors";
             this.blueTop.TabIndex = 2;
             this.blueTop.Values.Image = global::KryptonColorButtonExamples.Properties.Resources.Empty16x16;
-            this.blueTop.Values.RoundedCorners = ((sbyte)(0));
             this.blueTop.Values.Text = "";
             this.blueTop.VisibleMoreColors = false;
             this.blueTop.VisibleNoColor = false;
@@ -213,13 +210,9 @@ namespace KryptonColorButtonExamples
             this.blueDropDown.SelectedColor = System.Drawing.Color.Blue;
             this.blueDropDown.Size = new System.Drawing.Size(102, 25);
             this.blueDropDown.Splitter = false;
-            this.blueDropDown.StateCommon.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.blueDropDown.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.blueDropDown.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.blueDropDown.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.blueDropDown.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.blueDropDown.TabIndex = 1;
-            this.blueDropDown.Values.RoundedCorners = ((sbyte)(0));
             this.blueDropDown.Values.Text = "DropDown";
             this.blueDropDown.Enter += new System.EventHandler(this.colorButtonEnter);
             // 
@@ -229,13 +222,9 @@ namespace KryptonColorButtonExamples
             this.blueSplitter.Name = "blueSplitter";
             this.blueSplitter.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.blueSplitter.Size = new System.Drawing.Size(102, 25);
-            this.blueSplitter.StateCommon.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.blueSplitter.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.blueSplitter.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.blueSplitter.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.blueSplitter.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.blueSplitter.TabIndex = 0;
-            this.blueSplitter.Values.RoundedCorners = ((sbyte)(0));
             this.blueSplitter.Values.Text = "Splitter";
             this.blueSplitter.Enter += new System.EventHandler(this.colorButtonEnter);
             // 
@@ -261,14 +250,10 @@ namespace KryptonColorButtonExamples
             this.sparkleBottom.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.sparkleBottom.SelectedRect = new System.Drawing.Rectangle(0, 0, 16, 16);
             this.sparkleBottom.Size = new System.Drawing.Size(83, 44);
-            this.sparkleBottom.StateCommon.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.sparkleBottom.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.sparkleBottom.StateCommon.Content.Padding = new System.Windows.Forms.Padding(6, 0, 2, 0);
-            this.sparkleBottom.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.sparkleBottom.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.sparkleBottom.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.sparkleBottom.TabIndex = 2;
-            this.sparkleBottom.Values.RoundedCorners = ((sbyte)(0));
             this.sparkleBottom.Values.Text = "Bottom";
             this.sparkleBottom.Enter += new System.EventHandler(this.colorButtonEnter);
             // 
@@ -281,14 +266,10 @@ namespace KryptonColorButtonExamples
             this.sparkleTop.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.sparkleTop.SelectedRect = new System.Drawing.Rectangle(0, 0, 16, 16);
             this.sparkleTop.Size = new System.Drawing.Size(83, 44);
-            this.sparkleTop.StateCommon.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.sparkleTop.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.sparkleTop.StateCommon.Content.Padding = new System.Windows.Forms.Padding(6, 0, 2, 0);
-            this.sparkleTop.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.sparkleTop.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.sparkleTop.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.sparkleTop.TabIndex = 0;
-            this.sparkleTop.Values.RoundedCorners = ((sbyte)(0));
             this.sparkleTop.Values.Text = "Top";
             this.sparkleTop.Enter += new System.EventHandler(this.colorButtonEnter);
             // 
@@ -301,14 +282,10 @@ namespace KryptonColorButtonExamples
             this.sparkleLeft.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.sparkleLeft.SelectedRect = new System.Drawing.Rectangle(0, 0, 16, 16);
             this.sparkleLeft.Size = new System.Drawing.Size(83, 25);
-            this.sparkleLeft.StateCommon.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.sparkleLeft.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.sparkleLeft.StateCommon.Content.Padding = new System.Windows.Forms.Padding(6, 0, 2, 0);
-            this.sparkleLeft.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.sparkleLeft.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.sparkleLeft.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.sparkleLeft.TabIndex = 1;
-            this.sparkleLeft.Values.RoundedCorners = ((sbyte)(0));
             this.sparkleLeft.Values.Text = "Left";
             this.sparkleLeft.Enter += new System.EventHandler(this.colorButtonEnter);
             // 
@@ -320,14 +297,10 @@ namespace KryptonColorButtonExamples
             this.sparkleRight.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.sparkleRight.SelectedRect = new System.Drawing.Rectangle(0, 0, 16, 16);
             this.sparkleRight.Size = new System.Drawing.Size(83, 25);
-            this.sparkleRight.StateCommon.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.sparkleRight.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.sparkleRight.StateCommon.Content.Padding = new System.Windows.Forms.Padding(6, 0, 2, 0);
-            this.sparkleRight.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.sparkleRight.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.sparkleRight.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.sparkleRight.TabIndex = 3;
-            this.sparkleRight.Values.RoundedCorners = ((sbyte)(0));
             this.sparkleRight.Values.Text = "Right";
             this.sparkleRight.Enter += new System.EventHandler(this.colorButtonEnter);
             // 
@@ -356,14 +329,11 @@ namespace KryptonColorButtonExamples
             this.systemRight.SelectedColor = System.Drawing.Color.Olive;
             this.systemRight.SelectedRect = new System.Drawing.Rectangle(0, 0, 16, 16);
             this.systemRight.Size = new System.Drawing.Size(50, 56);
-            this.systemRight.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.systemRight.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.systemRight.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.systemRight.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.systemRight.Strings.ThemeColors = "Basic Colors";
             this.systemRight.TabIndex = 3;
             this.systemRight.Values.Image = ((System.Drawing.Image)(resources.GetObject("systemRight.Values.Image")));
-            this.systemRight.Values.RoundedCorners = ((sbyte)(0));
             this.systemRight.Values.Text = "Right";
             this.systemRight.VisibleMoreColors = false;
             this.systemRight.VisibleNoColor = false;
@@ -381,14 +351,11 @@ namespace KryptonColorButtonExamples
             this.systemDown.SelectedColor = System.Drawing.Color.MediumBlue;
             this.systemDown.SelectedRect = new System.Drawing.Rectangle(0, 0, 16, 16);
             this.systemDown.Size = new System.Drawing.Size(54, 56);
-            this.systemDown.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.systemDown.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.systemDown.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.systemDown.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.systemDown.Strings.ThemeColors = "Basic Colors";
             this.systemDown.TabIndex = 2;
             this.systemDown.Values.Image = ((System.Drawing.Image)(resources.GetObject("systemDown.Values.Image")));
-            this.systemDown.Values.RoundedCorners = ((sbyte)(0));
             this.systemDown.Values.Text = "Down";
             this.systemDown.VisibleMoreColors = false;
             this.systemDown.VisibleNoColor = false;
@@ -407,14 +374,11 @@ namespace KryptonColorButtonExamples
             this.systemLeft.SelectedColor = System.Drawing.Color.Gray;
             this.systemLeft.SelectedRect = new System.Drawing.Rectangle(0, 0, 16, 16);
             this.systemLeft.Size = new System.Drawing.Size(39, 56);
-            this.systemLeft.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.systemLeft.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.systemLeft.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.systemLeft.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.systemLeft.Strings.ThemeColors = "Basic Colors";
             this.systemLeft.TabIndex = 1;
             this.systemLeft.Values.Image = ((System.Drawing.Image)(resources.GetObject("systemLeft.Values.Image")));
-            this.systemLeft.Values.RoundedCorners = ((sbyte)(0));
             this.systemLeft.Values.Text = "Left";
             this.systemLeft.VisibleMoreColors = false;
             this.systemLeft.VisibleNoColor = false;
@@ -433,14 +397,11 @@ namespace KryptonColorButtonExamples
             this.systemUp.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.systemUp.SelectedRect = new System.Drawing.Rectangle(0, 0, 16, 16);
             this.systemUp.Size = new System.Drawing.Size(34, 56);
-            this.systemUp.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.systemUp.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.systemUp.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.systemUp.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.systemUp.Strings.ThemeColors = "Basic Colors";
             this.systemUp.TabIndex = 0;
             this.systemUp.Values.Image = global::KryptonColorButtonExamples.Properties.Resources.Empty16x16;
-            this.systemUp.Values.RoundedCorners = ((sbyte)(0));
             this.systemUp.Values.Text = "Up";
             this.systemUp.VisibleMoreColors = false;
             this.systemUp.VisibleNoColor = false;
@@ -472,13 +433,10 @@ namespace KryptonColorButtonExamples
             this.silverRight.SelectedRect = new System.Drawing.Rectangle(0, 0, 16, 16);
             this.silverRight.Size = new System.Drawing.Size(48, 56);
             this.silverRight.Splitter = false;
-            this.silverRight.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.silverRight.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.silverRight.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.silverRight.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.silverRight.TabIndex = 3;
             this.silverRight.Values.Image = ((System.Drawing.Image)(resources.GetObject("silverRight.Values.Image")));
-            this.silverRight.Values.RoundedCorners = ((sbyte)(0));
             this.silverRight.Values.Text = "Right";
             this.silverRight.Enter += new System.EventHandler(this.colorButtonEnter);
             // 
@@ -493,13 +451,10 @@ namespace KryptonColorButtonExamples
             this.silverDown.SelectedRect = new System.Drawing.Rectangle(0, 0, 16, 16);
             this.silverDown.Size = new System.Drawing.Size(54, 56);
             this.silverDown.Splitter = false;
-            this.silverDown.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.silverDown.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.silverDown.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.silverDown.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.silverDown.TabIndex = 2;
             this.silverDown.Values.Image = ((System.Drawing.Image)(resources.GetObject("silverDown.Values.Image")));
-            this.silverDown.Values.RoundedCorners = ((sbyte)(0));
             this.silverDown.Values.Text = "Down";
             this.silverDown.Enter += new System.EventHandler(this.colorButtonEnter);
             // 
@@ -515,13 +470,10 @@ namespace KryptonColorButtonExamples
             this.silverLeft.SelectedRect = new System.Drawing.Rectangle(0, 0, 16, 16);
             this.silverLeft.Size = new System.Drawing.Size(38, 56);
             this.silverLeft.Splitter = false;
-            this.silverLeft.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.silverLeft.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.silverLeft.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.silverLeft.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.silverLeft.TabIndex = 1;
             this.silverLeft.Values.Image = ((System.Drawing.Image)(resources.GetObject("silverLeft.Values.Image")));
-            this.silverLeft.Values.RoundedCorners = ((sbyte)(0));
             this.silverLeft.Values.Text = "Left";
             this.silverLeft.Enter += new System.EventHandler(this.colorButtonEnter);
             // 
@@ -537,13 +489,10 @@ namespace KryptonColorButtonExamples
             this.silverUp.SelectedRect = new System.Drawing.Rectangle(0, 0, 16, 16);
             this.silverUp.Size = new System.Drawing.Size(34, 56);
             this.silverUp.Splitter = false;
-            this.silverUp.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.silverUp.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.silverUp.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.silverUp.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.silverUp.TabIndex = 0;
             this.silverUp.Values.Image = global::KryptonColorButtonExamples.Properties.Resources.Empty16x16;
-            this.silverUp.Values.RoundedCorners = ((sbyte)(0));
             this.silverUp.Values.Text = "Up";
             this.silverUp.Enter += new System.EventHandler(this.colorButtonEnter);
             // 
@@ -572,13 +521,11 @@ namespace KryptonColorButtonExamples
             this.kryptonColorButton1.SelectedRect = new System.Drawing.Rectangle(0, 0, 20, 50);
             this.kryptonColorButton1.Size = new System.Drawing.Size(61, 90);
             this.kryptonColorButton1.Splitter = false;
-            this.kryptonColorButton1.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonColorButton1.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonColorButton1.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonColorButton1.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonColorButton1.TabIndex = 3;
             this.kryptonColorButton1.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonColorButton1.Values.Image")));
-            this.kryptonColorButton1.Values.RoundedCorners = ((sbyte)(4));
+            this.kryptonColorButton1.Values.RoundedCorners = 4;
             this.kryptonColorButton1.Values.Text = "Tall";
             // 
             // kryptonColorButton2
@@ -592,13 +539,11 @@ namespace KryptonColorButtonExamples
             this.kryptonColorButton2.SelectedRect = new System.Drawing.Rectangle(0, 0, 100, 20);
             this.kryptonColorButton2.Size = new System.Drawing.Size(133, 60);
             this.kryptonColorButton2.Splitter = false;
-            this.kryptonColorButton2.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonColorButton2.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonColorButton2.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonColorButton2.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonColorButton2.TabIndex = 2;
             this.kryptonColorButton2.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonColorButton2.Values.Image")));
-            this.kryptonColorButton2.Values.RoundedCorners = ((sbyte)(7));
+            this.kryptonColorButton2.Values.RoundedCorners = 7;
             this.kryptonColorButton2.Values.Text = "Wide";
             // 
             // kryptonColorButton3
@@ -613,13 +558,11 @@ namespace KryptonColorButtonExamples
             this.kryptonColorButton3.SelectedRect = new System.Drawing.Rectangle(0, 0, 16, 16);
             this.kryptonColorButton3.Size = new System.Drawing.Size(65, 56);
             this.kryptonColorButton3.Splitter = false;
-            this.kryptonColorButton3.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonColorButton3.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonColorButton3.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonColorButton3.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonColorButton3.TabIndex = 1;
             this.kryptonColorButton3.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonColorButton3.Values.Image")));
-            this.kryptonColorButton3.Values.RoundedCorners = ((sbyte)(2));
+            this.kryptonColorButton3.Values.RoundedCorners = 2;
             this.kryptonColorButton3.Values.Text = "sqauare";
             // 
             // kryptonColorButton4
@@ -634,20 +577,33 @@ namespace KryptonColorButtonExamples
             this.kryptonColorButton4.SelectedRect = new System.Drawing.Rectangle(0, 0, 16, 16);
             this.kryptonColorButton4.Size = new System.Drawing.Size(56, 56);
             this.kryptonColorButton4.Splitter = false;
-            this.kryptonColorButton4.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonColorButton4.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonColorButton4.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonColorButton4.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonColorButton4.TabIndex = 0;
             this.kryptonColorButton4.Values.Image = global::KryptonColorButtonExamples.Properties.Resources.Empty16x16;
-            this.kryptonColorButton4.Values.RoundedCorners = ((sbyte)(8));
+            this.kryptonColorButton4.Values.RoundedCorners = 8;
             this.kryptonColorButton4.Values.Text = "Round";
+            // 
+            // kryptonColorButton5
+            // 
+            this.kryptonColorButton5.Location = new System.Drawing.Point(382, 476);
+            this.kryptonColorButton5.Name = "kryptonColorButton5";
+            this.kryptonColorButton5.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.kryptonColorButton5.SelectedColor = System.Drawing.Color.Blue;
+            this.kryptonColorButton5.Size = new System.Drawing.Size(139, 25);
+            this.kryptonColorButton5.Splitter = false;
+            this.kryptonColorButton5.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonColorButton5.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonColorButton5.TabIndex = 6;
+            this.kryptonColorButton5.Values.Text = "Click Override";
+            this.kryptonColorButton5.Click += new System.EventHandler(this.KryptonColorButton5_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 576);
+            this.Controls.Add(this.kryptonColorButton5);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -709,6 +665,7 @@ namespace KryptonColorButtonExamples
         private Krypton.Toolkit.KryptonColorButton kryptonColorButton2;
         private Krypton.Toolkit.KryptonColorButton kryptonColorButton3;
         private Krypton.Toolkit.KryptonColorButton kryptonColorButton4;
+        private Krypton.Toolkit.KryptonColorButton kryptonColorButton5;
     }
 }
 
