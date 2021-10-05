@@ -32,6 +32,17 @@ namespace KryptonColorButtonExamples
             propertyGrid.SelectedObject = new KryptonColorButtonProxy(sender as KryptonColorButton);
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
+
+        private void KryptonColorButton5_Click(object sender, EventArgs e)
+        {
+            if (KryptonMessageBox.Show(this,
+                @"Do you want to perform the normal colourButtonAction ?",
+                @"Launch what you want",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                kryptonColorButton5.PerformDropDown();
+            }
+        }
     }
 
     public class KryptonColorButtonProxy

@@ -94,6 +94,7 @@ namespace RibbonControls
             this.rbOffice2003 = new Krypton.Toolkit.KryptonRadioButton();
             this.rbOffice2007Black = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonRibbonGroupColorButton1 = new Krypton.Ribbon.KryptonRibbonGroupColorButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.kryptonPanel.SuspendLayout();
@@ -113,7 +114,6 @@ namespace RibbonControls
             this.kryptonRibbon.RibbonAppButton.AppButtonShowRecentDocs = false;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.ribbonTab});
-            this.kryptonRibbon.SelectedContext = null;
             this.kryptonRibbon.SelectedTab = this.ribbonTab;
             this.kryptonRibbon.Size = new System.Drawing.Size(1487, 135);
             this.kryptonRibbon.TabIndex = 0;
@@ -519,7 +519,8 @@ namespace RibbonControls
             // kryptonRibbonGroupLines3
             // 
             this.kryptonRibbonGroupLines3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
-            this.miscCmbTheme});
+            this.miscCmbTheme,
+            this.kryptonRibbonGroupColorButton1});
             this.kryptonRibbonGroupLines3.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // miscCmbTheme
@@ -665,6 +666,10 @@ namespace RibbonControls
             // 
             this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2007Blue;
             // 
+            // kryptonRibbonGroupColorButton1
+            // 
+            this.kryptonRibbonGroupColorButton1.RecentColors = new System.Drawing.Color[0];
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -758,6 +763,7 @@ namespace RibbonControls
         private Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton2;
         private Krypton.Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines3;
         private Krypton.Ribbon.KryptonRibbonGroupComboBox miscCmbTheme;
+        private Krypton.Ribbon.KryptonRibbonGroupColorButton kryptonRibbonGroupColorButton1;
     }
 }
 
