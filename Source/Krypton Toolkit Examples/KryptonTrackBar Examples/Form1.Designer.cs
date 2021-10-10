@@ -45,9 +45,16 @@
             this.kryptonTrackBar6 = new Krypton.Toolkit.KryptonTrackBar();
             this.kryptonTrackBar7 = new Krypton.Toolkit.KryptonTrackBar();
             this.kryptonTrackBar8 = new Krypton.Toolkit.KryptonTrackBar();
+            this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonTrackBar12 = new Krypton.Toolkit.KryptonTrackBar();
+            this.kryptonTrackBar13 = new Krypton.Toolkit.KryptonTrackBar();
+            this.kryptonTrackBar14 = new Krypton.Toolkit.KryptonTrackBar();
+            this.kryptonTrackBar15 = new Krypton.Toolkit.KryptonTrackBar();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
+            this.kryptonPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // propertyGrid
@@ -57,7 +64,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.propertyGrid.Location = new System.Drawing.Point(6, 19);
             this.propertyGrid.Name = "propertyGrid";
-            this.propertyGrid.Size = new System.Drawing.Size(310, 364);
+            this.propertyGrid.Size = new System.Drawing.Size(310, 497);
             this.propertyGrid.TabIndex = 0;
             this.propertyGrid.ToolbarVisible = false;
             // 
@@ -66,7 +73,7 @@
             this.groupBox4.Controls.Add(this.propertyGrid);
             this.groupBox4.Location = new System.Drawing.Point(297, 12);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(322, 389);
+            this.groupBox4.Size = new System.Drawing.Size(322, 522);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Properties for Selected KryptonTrackBar";
@@ -74,7 +81,7 @@
             // buttonClose
             // 
             this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonClose.Location = new System.Drawing.Point(544, 407);
+            this.buttonClose.Location = new System.Drawing.Point(544, 540);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 23);
             this.buttonClose.TabIndex = 3;
@@ -97,7 +104,6 @@
             // 
             // kryptonTrackBar4
             // 
-            this.kryptonTrackBar4.DrawBackground = true;
             this.kryptonTrackBar4.Location = new System.Drawing.Point(15, 148);
             this.kryptonTrackBar4.Name = "kryptonTrackBar4";
             this.kryptonTrackBar4.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -112,7 +118,6 @@
             // 
             // kryptonTrackBar3
             // 
-            this.kryptonTrackBar3.DrawBackground = true;
             this.kryptonTrackBar3.Location = new System.Drawing.Point(15, 97);
             this.kryptonTrackBar3.Maximum = 30;
             this.kryptonTrackBar3.Name = "kryptonTrackBar3";
@@ -127,7 +132,6 @@
             // 
             // kryptonTrackBar2
             // 
-            this.kryptonTrackBar2.DrawBackground = true;
             this.kryptonTrackBar2.Location = new System.Drawing.Point(15, 60);
             this.kryptonTrackBar2.Maximum = 20;
             this.kryptonTrackBar2.Name = "kryptonTrackBar2";
@@ -142,7 +146,6 @@
             // 
             // kryptonTrackBar1
             // 
-            this.kryptonTrackBar1.DrawBackground = true;
             this.kryptonTrackBar1.Location = new System.Drawing.Point(15, 30);
             this.kryptonTrackBar1.Name = "kryptonTrackBar1";
             this.kryptonTrackBar1.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -172,7 +175,6 @@
             // 
             // kryptonTrackBar11
             // 
-            this.kryptonTrackBar11.DrawBackground = true;
             this.kryptonTrackBar11.Location = new System.Drawing.Point(141, 28);
             this.kryptonTrackBar11.Maximum = 20;
             this.kryptonTrackBar11.Name = "kryptonTrackBar11";
@@ -187,7 +189,6 @@
             // 
             // kryptonTrackBar10
             // 
-            this.kryptonTrackBar10.DrawBackground = true;
             this.kryptonTrackBar10.Location = new System.Drawing.Point(74, 28);
             this.kryptonTrackBar10.Name = "kryptonTrackBar10";
             this.kryptonTrackBar10.Orientation = System.Windows.Forms.Orientation.Vertical;
@@ -201,7 +202,6 @@
             // 
             // kryptonTrackBar9
             // 
-            this.kryptonTrackBar9.DrawBackground = true;
             this.kryptonTrackBar9.Location = new System.Drawing.Point(44, 28);
             this.kryptonTrackBar9.Name = "kryptonTrackBar9";
             this.kryptonTrackBar9.Orientation = System.Windows.Forms.Orientation.Vertical;
@@ -215,7 +215,6 @@
             // 
             // kryptonTrackBar5
             // 
-            this.kryptonTrackBar5.DrawBackground = true;
             this.kryptonTrackBar5.Location = new System.Drawing.Point(238, 28);
             this.kryptonTrackBar5.Name = "kryptonTrackBar5";
             this.kryptonTrackBar5.Orientation = System.Windows.Forms.Orientation.Vertical;
@@ -231,7 +230,6 @@
             // 
             // kryptonTrackBar6
             // 
-            this.kryptonTrackBar6.DrawBackground = true;
             this.kryptonTrackBar6.Location = new System.Drawing.Point(182, 28);
             this.kryptonTrackBar6.Maximum = 20;
             this.kryptonTrackBar6.Name = "kryptonTrackBar6";
@@ -246,7 +244,6 @@
             // 
             // kryptonTrackBar7
             // 
-            this.kryptonTrackBar7.DrawBackground = true;
             this.kryptonTrackBar7.Location = new System.Drawing.Point(105, 28);
             this.kryptonTrackBar7.Maximum = 20;
             this.kryptonTrackBar7.Name = "kryptonTrackBar7";
@@ -261,7 +258,6 @@
             // 
             // kryptonTrackBar8
             // 
-            this.kryptonTrackBar8.DrawBackground = true;
             this.kryptonTrackBar8.Location = new System.Drawing.Point(14, 28);
             this.kryptonTrackBar8.Name = "kryptonTrackBar8";
             this.kryptonTrackBar8.Orientation = System.Windows.Forms.Orientation.Vertical;
@@ -273,11 +269,88 @@
             this.kryptonTrackBar8.Value = 1;
             this.kryptonTrackBar8.Enter += new System.EventHandler(this.trackBar_Enter);
             // 
+            // kryptonPanel1
+            // 
+            this.kryptonPanel1.Controls.Add(this.kryptonTrackBar12);
+            this.kryptonPanel1.Controls.Add(this.kryptonTrackBar13);
+            this.kryptonPanel1.Controls.Add(this.kryptonTrackBar14);
+            this.kryptonPanel1.Controls.Add(this.kryptonTrackBar15);
+            this.kryptonPanel1.Location = new System.Drawing.Point(12, 407);
+            this.kryptonPanel1.Name = "kryptonPanel1";
+            this.kryptonPanel1.Size = new System.Drawing.Size(279, 156);
+            this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.kryptonPanel1.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.kryptonPanel1.StateCommon.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Local;
+            this.kryptonPanel1.StateCommon.ColorAngle = 45F;
+            this.kryptonPanel1.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.GlassCenter;
+            this.kryptonPanel1.StateCommon.Draw = Krypton.Toolkit.InheritBool.True;
+            this.kryptonPanel1.StateCommon.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptonPanel1.StateCommon.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.kryptonPanel1.StateCommon.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonPanel1.TabIndex = 4;
+            // 
+            // kryptonTrackBar12
+            // 
+            this.kryptonTrackBar12.BackStyle = Krypton.Toolkit.PaletteBackStyle.ButtonStandalone;
+            this.kryptonTrackBar12.DrawBackground = false;
+            this.kryptonTrackBar12.Location = new System.Drawing.Point(14, 121);
+            this.kryptonTrackBar12.Name = "kryptonTrackBar12";
+            this.kryptonTrackBar12.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.kryptonTrackBar12.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonTrackBar12.Size = new System.Drawing.Size(250, 27);
+            this.kryptonTrackBar12.TabIndex = 7;
+            this.kryptonTrackBar12.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.kryptonTrackBar12.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Large;
+            this.kryptonTrackBar12.Value = 7;
+            this.kryptonTrackBar12.VolumeControl = true;
+            // 
+            // kryptonTrackBar13
+            // 
+            this.kryptonTrackBar13.DrawBackground = false;
+            this.kryptonTrackBar13.Location = new System.Drawing.Point(14, 70);
+            this.kryptonTrackBar13.Maximum = 30;
+            this.kryptonTrackBar13.Name = "kryptonTrackBar13";
+            this.kryptonTrackBar13.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.kryptonTrackBar13.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
+            this.kryptonTrackBar13.Size = new System.Drawing.Size(250, 41);
+            this.kryptonTrackBar13.TabIndex = 6;
+            this.kryptonTrackBar13.TickStyle = System.Windows.Forms.TickStyle.Both;
+            this.kryptonTrackBar13.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Large;
+            this.kryptonTrackBar13.Value = 15;
+            // 
+            // kryptonTrackBar14
+            // 
+            this.kryptonTrackBar14.DrawBackground = false;
+            this.kryptonTrackBar14.Location = new System.Drawing.Point(14, 33);
+            this.kryptonTrackBar14.Maximum = 20;
+            this.kryptonTrackBar14.Name = "kryptonTrackBar14";
+            this.kryptonTrackBar14.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.kryptonTrackBar14.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.kryptonTrackBar14.Size = new System.Drawing.Size(250, 27);
+            this.kryptonTrackBar14.TabIndex = 5;
+            this.kryptonTrackBar14.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.kryptonTrackBar14.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Medium;
+            this.kryptonTrackBar14.Value = 5;
+            // 
+            // kryptonTrackBar15
+            // 
+            this.kryptonTrackBar15.DrawBackground = false;
+            this.kryptonTrackBar15.Location = new System.Drawing.Point(14, 3);
+            this.kryptonTrackBar15.Name = "kryptonTrackBar15";
+            this.kryptonTrackBar15.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.kryptonTrackBar15.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
+            this.kryptonTrackBar15.Size = new System.Drawing.Size(250, 20);
+            this.kryptonTrackBar15.TabIndex = 4;
+            this.kryptonTrackBar15.TickStyle = System.Windows.Forms.TickStyle.BottomRight;
+            this.kryptonTrackBar15.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Small;
+            this.kryptonTrackBar15.Value = 1;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 438);
+            this.ClientSize = new System.Drawing.Size(629, 590);
+            this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonClose);
@@ -294,6 +367,9 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
+            this.kryptonPanel1.ResumeLayout(false);
+            this.kryptonPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -316,6 +392,11 @@
         private Krypton.Toolkit.KryptonTrackBar kryptonTrackBar6;
         private Krypton.Toolkit.KryptonTrackBar kryptonTrackBar7;
         private Krypton.Toolkit.KryptonTrackBar kryptonTrackBar8;
+        private Krypton.Toolkit.KryptonPanel kryptonPanel1;
+        private Krypton.Toolkit.KryptonTrackBar kryptonTrackBar12;
+        private Krypton.Toolkit.KryptonTrackBar kryptonTrackBar13;
+        private Krypton.Toolkit.KryptonTrackBar kryptonTrackBar14;
+        private Krypton.Toolkit.KryptonTrackBar kryptonTrackBar15;
     }
 }
 
