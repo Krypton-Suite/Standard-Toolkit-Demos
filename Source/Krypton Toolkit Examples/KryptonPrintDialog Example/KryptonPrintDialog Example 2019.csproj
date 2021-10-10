@@ -2,8 +2,8 @@
     <PropertyGroup>
         <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
-        <RootNamespace>KryptonFontDialog</RootNamespace>
-        <AssemblyName>KryptonFontDialog Example</AssemblyName>
+        <RootNamespace>KryptonPrintDialog</RootNamespace>
+        <AssemblyName>KryptonPrintDialog Example</AssemblyName>
         <UseWindowsForms>true</UseWindowsForms>
     </PropertyGroup>
     <Choose>

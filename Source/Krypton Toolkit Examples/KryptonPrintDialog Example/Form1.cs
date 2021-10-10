@@ -36,7 +36,8 @@ namespace KryptonFontDialog_Example_2019
                 ShowNetwork = chkShowNetwork.Checked,
                 //UseEXDialog = chkUseEXDialog.Checked,     <- Currently there is not a kryptonised version
                 Document = docToPrint,
-                Title = @"Test Print Dialog being set"
+                Title = @"Test Print Dialog being set",
+                ShowIcon = chkShowIcon.Checked
             };
             if (kfd.ShowDialog(this) == DialogResult.OK)
             {
