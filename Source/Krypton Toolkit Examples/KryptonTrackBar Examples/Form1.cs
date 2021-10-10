@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows.Forms;
+
 using Krypton.Toolkit;
 
 namespace KryptonTrackBarExamples
@@ -46,6 +47,19 @@ namespace KryptonTrackBarExamples
             get => _trackBar.BackStyle;
             set => _trackBar.BackStyle = value;
         }
+
+        /// <summary>
+        /// Gets and sets if the control should draw the background.
+        /// </summary>
+        [Category("Visuals")]
+        [Description("Draw Background (Default = true);\r\nNote: Does not draw correctly in designer if false.")]
+        [RefreshProperties(RefreshProperties.Repaint)]
+        public bool DrawBackground
+        {
+            get => _trackBar.DrawBackground;
+            set => _trackBar.DrawBackground = value;
+        }
+
 
         /// <summary>
         /// Gets access to the track bar appearance when it has focus.
