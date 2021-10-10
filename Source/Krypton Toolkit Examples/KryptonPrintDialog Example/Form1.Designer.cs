@@ -29,6 +29,7 @@ namespace KryptonFontDialog_Example_2019
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBoxPalette = new Krypton.Toolkit.KryptonGroupBox();
             this.paletteSparkleOrange = new Krypton.Toolkit.KryptonRadioButton();
             this.palette2010Black = new Krypton.Toolkit.KryptonRadioButton();
@@ -53,7 +54,8 @@ namespace KryptonFontDialog_Example_2019
             this.kryptonCheckBox1 = new Krypton.Toolkit.KryptonCheckBox();
             this.kryptonListBox1 = new Krypton.Toolkit.KryptonListBox();
             this.kryptonComboBox1 = new Krypton.Toolkit.KryptonComboBox();
-            this.kryptonManager = new Krypton.Toolkit.KryptonManager();
+            this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
+            this.chkShowIcon = new Krypton.Toolkit.KryptonCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.groupBoxPalette)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupBoxPalette.Panel)).BeginInit();
             this.groupBoxPalette.Panel.SuspendLayout();
@@ -181,6 +183,7 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonGroupBox2.Panel
             // 
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowIcon);
             this.kryptonGroupBox2.Panel.Controls.Add(this.chkUseEXDialog);
             this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowNetwork);
             this.kryptonGroupBox2.Panel.Controls.Add(this.chkAllowSomePages);
@@ -194,55 +197,61 @@ namespace KryptonFontDialog_Example_2019
             // 
             // chkUseEXDialog
             // 
-            this.chkUseEXDialog.Location = new System.Drawing.Point(0, 0);
+            this.chkUseEXDialog.Location = new System.Drawing.Point(20, -1);
             this.chkUseEXDialog.Margin = new System.Windows.Forms.Padding(4);
             this.chkUseEXDialog.Name = "chkUseEXDialog";
-            this.chkUseEXDialog.Size = new System.Drawing.Size(61, 24);
+            this.chkUseEXDialog.Size = new System.Drawing.Size(111, 24);
             this.chkUseEXDialog.TabIndex = 0;
+            this.chkUseEXDialog.Values.Text = "UseEXDialog";
             // 
             // chkShowNetwork
             // 
-            this.chkShowNetwork.Location = new System.Drawing.Point(0, 0);
+            this.chkShowNetwork.Location = new System.Drawing.Point(20, 31);
             this.chkShowNetwork.Margin = new System.Windows.Forms.Padding(4);
             this.chkShowNetwork.Name = "chkShowNetwork";
-            this.chkShowNetwork.Size = new System.Drawing.Size(61, 24);
+            this.chkShowNetwork.Size = new System.Drawing.Size(124, 24);
             this.chkShowNetwork.TabIndex = 1;
+            this.chkShowNetwork.Values.Text = "Show Network";
             // 
             // chkAllowSomePages
             // 
-            this.chkAllowSomePages.Location = new System.Drawing.Point(0, 0);
+            this.chkAllowSomePages.Location = new System.Drawing.Point(20, 63);
             this.chkAllowSomePages.Margin = new System.Windows.Forms.Padding(4);
             this.chkAllowSomePages.Name = "chkAllowSomePages";
-            this.chkAllowSomePages.Size = new System.Drawing.Size(61, 24);
+            this.chkAllowSomePages.Size = new System.Drawing.Size(150, 24);
             this.chkAllowSomePages.TabIndex = 2;
+            this.chkAllowSomePages.Values.Text = "Allow Some Pages";
             // 
             // chkAllowSelection
             // 
-            this.chkAllowSelection.Location = new System.Drawing.Point(0, 0);
+            this.chkAllowSelection.Location = new System.Drawing.Point(20, 95);
             this.chkAllowSelection.Margin = new System.Windows.Forms.Padding(4);
             this.chkAllowSelection.Name = "chkAllowSelection";
-            this.chkAllowSelection.Size = new System.Drawing.Size(61, 24);
+            this.chkAllowSelection.Size = new System.Drawing.Size(128, 24);
             this.chkAllowSelection.TabIndex = 3;
+            this.chkAllowSelection.Values.Text = "Allow Selection";
             // 
             // chkAllowPrintToFile
             // 
-            this.chkAllowPrintToFile.Location = new System.Drawing.Point(0, 0);
+            this.chkAllowPrintToFile.Location = new System.Drawing.Point(20, 127);
             this.chkAllowPrintToFile.Margin = new System.Windows.Forms.Padding(4);
             this.chkAllowPrintToFile.Name = "chkAllowPrintToFile";
-            this.chkAllowPrintToFile.Size = new System.Drawing.Size(61, 24);
+            this.chkAllowPrintToFile.Size = new System.Drawing.Size(147, 24);
             this.chkAllowPrintToFile.TabIndex = 4;
+            this.chkAllowPrintToFile.Values.Text = "Allow Print To File";
             // 
             // chkAllowCurrentPage
             // 
-            this.chkAllowCurrentPage.Location = new System.Drawing.Point(0, 0);
+            this.chkAllowCurrentPage.Location = new System.Drawing.Point(20, 159);
             this.chkAllowCurrentPage.Margin = new System.Windows.Forms.Padding(4);
             this.chkAllowCurrentPage.Name = "chkAllowCurrentPage";
-            this.chkAllowCurrentPage.Size = new System.Drawing.Size(61, 24);
+            this.chkAllowCurrentPage.Size = new System.Drawing.Size(155, 24);
             this.chkAllowCurrentPage.TabIndex = 5;
+            this.chkAllowCurrentPage.Values.Text = "Allow Current Page";
             // 
             // chkShowHelp
             // 
-            this.chkShowHelp.Location = new System.Drawing.Point(4, 0);
+            this.chkShowHelp.Location = new System.Drawing.Point(20, 189);
             this.chkShowHelp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkShowHelp.Name = "chkShowHelp";
             this.chkShowHelp.Size = new System.Drawing.Size(98, 24);
@@ -330,6 +339,15 @@ namespace KryptonFontDialog_Example_2019
             this.kryptonComboBox1.TabIndex = 0;
             this.kryptonComboBox1.Text = "Microsoft Sans Serif";
             // 
+            // chkShowIcon
+            // 
+            this.chkShowIcon.Location = new System.Drawing.Point(20, 219);
+            this.chkShowIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkShowIcon.Name = "chkShowIcon";
+            this.chkShowIcon.Size = new System.Drawing.Size(95, 24);
+            this.chkShowIcon.TabIndex = 6;
+            this.chkShowIcon.Values.Text = "Show Icon";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -388,6 +406,7 @@ namespace KryptonFontDialog_Example_2019
         private Krypton.Toolkit.KryptonCheckBox chkAllowSelection;
         private Krypton.Toolkit.KryptonCheckBox chkAllowPrintToFile;
         private Krypton.Toolkit.KryptonManager kryptonManager;
+        private Krypton.Toolkit.KryptonCheckBox chkShowIcon;
     }
 }
 
