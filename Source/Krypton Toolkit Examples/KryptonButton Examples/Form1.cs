@@ -30,7 +30,9 @@ namespace KryptonButtonExamples
         {
             // Setup the property grid to edit this button
             if (sender is KryptonButton kb )
+            {
                 propertyGrid.SelectedObject = new KryptonButtonProxy(kb);
+            }
         }
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();

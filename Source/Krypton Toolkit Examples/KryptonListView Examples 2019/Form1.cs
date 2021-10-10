@@ -16,7 +16,7 @@ namespace KryptonListViewExamples
         public Form1()
         {
             InitializeComponent();
-            ThemeManager.PropagateThemeSelector(cmbTheme);
+            ThemeManager.PropagateThemeSelector(cmbTheme, @"black");
         }
 
         private void CmbTheme_SelectedIndexChanged(object sender, System.EventArgs e) => ThemeManager.SetTheme(cmbTheme.Text, kryptonManager1);
@@ -25,7 +25,10 @@ namespace KryptonListViewExamples
         {
             var rb = sender as RadioButton;
             if (!rb.Checked)
+            {
                 return;
+            }
+
             var view = View.Details;
             viewCheckBox.Enabled = true;
             switch (rb.Text)
