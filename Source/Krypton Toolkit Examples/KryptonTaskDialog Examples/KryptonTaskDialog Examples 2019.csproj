@@ -6,12 +6,14 @@
         <AssemblyName>Krypton TaskDialog Examples</AssemblyName>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <UseWindowsForms>true</UseWindowsForms>
+        <NeutralLanguage>en</NeutralLanguage>
+        <LangVersion>preview</LangVersion>
     </PropertyGroup>
     <PropertyGroup>
         <ApplicationIcon>Krypton.ico</ApplicationIcon>
     </PropertyGroup>
     <ItemGroup>
-      <None Remove="Krypton.ico" />
+        <None Remove="Krypton.ico" />
     </ItemGroup>
     <ItemGroup>
         <Content Include="Krypton.ico" />

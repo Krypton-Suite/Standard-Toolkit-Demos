@@ -1,12 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-  <PropertyGroup>
-    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>Test_Combo_Domain_Numeric</RootNamespace>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <UseWindowsForms>true</UseWindowsForms>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
+        <OutputType>WinExe</OutputType>
+        <RootNamespace>Test_Combo_Domain_Numeric</RootNamespace>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <UseWindowsForms>true</UseWindowsForms>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <NeutralLanguage>en</NeutralLanguage>
+        <LangVersion>preview</LangVersion>
+    </PropertyGroup>
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
@@ -20,13 +22,13 @@
         </Otherwise>
     </Choose>
     <PropertyGroup>
-          <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+        <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
         <ApplicationManifest>app.manifest</ApplicationManifest>
-</PropertyGroup>
+    </PropertyGroup>
     <ItemGroup>
-      <None Remove="Krypton.ico" />
+        <None Remove="Krypton.ico" />
     </ItemGroup>
     <ItemGroup>
-      <Content Include="Krypton.ico" />
+        <Content Include="Krypton.ico" />
     </ItemGroup>
 </Project>

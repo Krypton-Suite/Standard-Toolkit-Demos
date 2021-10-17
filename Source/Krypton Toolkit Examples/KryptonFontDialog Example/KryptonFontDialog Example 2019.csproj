@@ -5,6 +5,8 @@
         <RootNamespace>KryptonFontDialog</RootNamespace>
         <AssemblyName>KryptonFontDialog Example</AssemblyName>
         <UseWindowsForms>true</UseWindowsForms>
+    	    <NeutralLanguage>en</NeutralLanguage>
+	    <LangVersion>preview</LangVersion>
     </PropertyGroup>
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
@@ -21,6 +23,8 @@
     <PropertyGroup>
         <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
         <ApplicationManifest>app.manifest</ApplicationManifest>
+    	    <NeutralLanguage>en</NeutralLanguage>
+	    <LangVersion>preview</LangVersion>
     </PropertyGroup>
     <ItemGroup>
       <None Remove="Krypton.ico" />

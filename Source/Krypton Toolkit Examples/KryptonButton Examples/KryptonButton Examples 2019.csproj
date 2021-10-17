@@ -9,9 +9,11 @@
         <UseApplicationTrust>false</UseApplicationTrust>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <UseWindowsForms>true</UseWindowsForms>
+        <NeutralLanguage>en</NeutralLanguage>
+        <LangVersion>preview</LangVersion>
     </PropertyGroup>
     <ItemGroup>
-      <None Remove="Krypton.ico" />
+        <None Remove="Krypton.ico" />
     </ItemGroup>
     <ItemGroup>
         <Content Include="Krypton.ico" />

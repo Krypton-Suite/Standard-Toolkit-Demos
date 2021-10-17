@@ -5,6 +5,9 @@
         <RootNamespace>KryptonPrintDialog</RootNamespace>
         <AssemblyName>KryptonPrintDialog Example</AssemblyName>
         <UseWindowsForms>true</UseWindowsForms>
+        <LangVersion>preview</LangVersion>
+        <NeutralLanguage>en</NeutralLanguage>
+        <LangVersion>preview</LangVersion>
     </PropertyGroup>
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
@@ -23,12 +26,12 @@
         <ApplicationManifest>app.manifest</ApplicationManifest>
     </PropertyGroup>
     <ItemGroup>
-      <None Remove="Krypton.ico" />
+        <None Remove="Krypton.ico" />
     </ItemGroup>
     <ItemGroup>
-      <Content Include="Krypton.ico" />
+        <Content Include="Krypton.ico" />
     </ItemGroup>
     <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net48|AnyCPU'">
-      <PlatformTarget>x64</PlatformTarget>
+        <PlatformTarget>x64</PlatformTarget>
     </PropertyGroup>
 </Project>

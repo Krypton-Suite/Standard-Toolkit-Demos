@@ -7,6 +7,8 @@
         <AssemblyName>Krypton ListView Examples</AssemblyName>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <PlatformTarget>AnyCPU</PlatformTarget>
+        <NeutralLanguage>en</NeutralLanguage>
+        <LangVersion>preview</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
