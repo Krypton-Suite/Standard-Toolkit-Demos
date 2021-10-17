@@ -1,19 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>KryptonThemePlayground</RootNamespace>
-    <AssemblyName>Krypton Theme Playground</AssemblyName>
-    <ApplicationIcon>Krypton.ico</ApplicationIcon>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <UseWindowsForms>true</UseWindowsForms>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
-  <ItemGroup>
-    <Content Include="Krypton.ico" />
-  </ItemGroup>
+    <PropertyGroup>
+        <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
+        <OutputType>WinExe</OutputType>
+        <RootNamespace>KryptonThemePlayground</RootNamespace>
+        <AssemblyName>Krypton Theme Playground</AssemblyName>
+        <ApplicationIcon>Krypton.ico</ApplicationIcon>
+        <UseApplicationTrust>false</UseApplicationTrust>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <UseWindowsForms>true</UseWindowsForms>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <NeutralLanguage>en</NeutralLanguage>
+        <LangVersion>preview</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <Content Include="Krypton.ico" />
+    </ItemGroup>
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
@@ -26,16 +28,16 @@
             </ItemGroup>
         </Otherwise>
     </Choose>
-  <PropertyGroup>
+    <PropertyGroup>
         <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
-  </PropertyGroup> 
+    </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Krypton.ico" />
-  </ItemGroup>
+    <ItemGroup>
+        <None Remove="Krypton.ico" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <Content Include="Krypton.ico" />
-  </ItemGroup>
+    <ItemGroup>
+        <Content Include="Krypton.ico" />
+    </ItemGroup>
 
 </Project>

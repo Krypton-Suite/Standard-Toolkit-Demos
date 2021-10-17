@@ -1,23 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-  <PropertyGroup>
-    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>ThreePaneApplication</RootNamespace>
-    <AssemblyName>Three Pane Application Extended</AssemblyName>
-    <ApplicationIcon>Krypton.ico</ApplicationIcon>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <UseWindowsForms>true</UseWindowsForms>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
-  <ItemGroup>
-    <None Remove="Krypton.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Krypton.ico" />
-    <Content Include="Resources\PaneOrientation.png" />
-    <Content Include="Resources\ReadingPane.png" />
-  </ItemGroup>
+    <PropertyGroup>
+        <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
+        <OutputType>WinExe</OutputType>
+        <RootNamespace>ThreePaneApplication</RootNamespace>
+        <AssemblyName>Three Pane Application Extended</AssemblyName>
+        <ApplicationIcon>Krypton.ico</ApplicationIcon>
+        <UseApplicationTrust>false</UseApplicationTrust>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <UseWindowsForms>true</UseWindowsForms>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <NeutralLanguage>en</NeutralLanguage>
+        <LangVersion>preview</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Remove="Krypton.ico" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="Krypton.ico" />
+        <Content Include="Resources\PaneOrientation.png" />
+        <Content Include="Resources\ReadingPane.png" />
+    </ItemGroup>
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
@@ -30,8 +32,8 @@
             </ItemGroup>
         </Otherwise>
     </Choose>
-  <PropertyGroup>
+    <PropertyGroup>
         <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
         <ApplicationManifest>app.manifest</ApplicationManifest>
-  </PropertyGroup>
+    </PropertyGroup>
 </Project>

@@ -8,6 +8,8 @@
         <UseWindowsForms>true</UseWindowsForms>
         <LangVersion>preview</LangVersion>
         <PlatformTarget>AnyCPU</PlatformTarget>
+        <NeutralLanguage>en</NeutralLanguage>
+        <LangVersion>preview</LangVersion>
     </PropertyGroup>
     <PropertyGroup>
         <ApplicationIcon>Resources\Krypton.ico</ApplicationIcon>
@@ -29,9 +31,9 @@
         <ApplicationManifest>app.manifest</ApplicationManifest>
     </PropertyGroup>
     <ItemGroup>
-      <None Remove="Krypton.ico" />
+        <None Remove="Krypton.ico" />
     </ItemGroup>
     <ItemGroup>
-      <Content Include="Krypton.ico" />
+        <Content Include="Krypton.ico" />
     </ItemGroup>
 </Project>
