@@ -9,14 +9,18 @@ namespace Test_Clip_Base
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void kryptonLabel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void KryptonButton1_Click(object sender, System.EventArgs e)
+        {
+            kryptonButton1.Text = @"Changed";
+            using var fm2 = new Form2();
+            fm2.ShowDialog(this);
         }
     }
 }

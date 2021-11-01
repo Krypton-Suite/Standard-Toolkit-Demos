@@ -1,13 +1,14 @@
-﻿// *****************************************************************************
-// BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
-//  © Component Factory Pty Ltd, 2006-2016, All rights reserved.
-// The software and associated documentation supplied hereunder are the 
-//  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
-// 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2021. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  Version 4.7.0.0  www.ComponentFactory.com
-// *************************************************************************
+﻿#region BSD License
+/*
+ * 
+ * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
+ *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
+ * 
+ *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  
+ */
+#endregion
 
 using System;
 using System.Diagnostics;
@@ -24,7 +25,8 @@ namespace KryptonExplorer
     public partial class Form1 : KryptonForm
     {
         #region Variables
-        private Version _currentVersion = Assembly.GetExecutingAssembly().GetName().Version;
+
+        private Version _currentVersion = new Version(6, 0, 2111, 0);
         #endregion
 
         public Form1()
@@ -906,7 +908,7 @@ namespace KryptonExplorer
 
         private void kbtnViewLatestReleaseNotes_Click(object sender, EventArgs e)
         {
-            Process.Start(@"https://www.somsubhra.com/github-release-stats/?username=Wagnerp&repository=Krypton-NET-5.500");
+            Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/Documents/Help/Changelog.md");
         }
 
         private void kbtnApplyTheme_Click(object sender, EventArgs e)
@@ -930,9 +932,31 @@ namespace KryptonExplorer
             Process.Start("https://www.nuget.org/packages/KryptonExtendedToolkit5472/");
         }
 
-        private void KbtnKryptonDemoApplicationPackage_Click(object sender, EventArgs e)
+        private void kllKryptonScrollBars_LinkClicked(object sender, EventArgs e)
         {
-            Process.Start("https://www.nuget.org/packages/KryptonToolkitSuite5472Demos/");
+            try { Process.Start(@".\Krypton Scrollbar Examples.exe"); }
+            catch (Exception ex)
+            {
+                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void kllKryptonWebBrowser_LinkClicked(object sender, EventArgs e)
+        {
+            try { Process.Start(@".\Krypton WebBrowser Example.exe"); }
+            catch (Exception ex)
+            {
+                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void kllKryptonHelpIcon_LinkClicked(object sender, EventArgs e)
+        {
+            try { Process.Start(@".\Krypton Help Icon Examples.exe"); }
+            catch (Exception ex)
+            {
+                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

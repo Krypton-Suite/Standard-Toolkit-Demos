@@ -13,11 +13,24 @@
     <ItemGroup>
         <Content Include="Krypton.ico" />
     </ItemGroup>
+    <ItemGroup>
+      <Compile Update="Properties\Resources.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Resources.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Update="Properties\Resources.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
-                <PackageReference Include="Krypton.Toolkit.Canary.Lite" Version="6.0.2106" />
-                <PackageReference Include="Krypton.Ribbon.Canary.Lite" Version="6.0.2106" />
+                <PackageReference Include="Krypton.Toolkit.Canary" Version="6.2110.274-beta" />
+                <PackageReference Include="Krypton.Ribbon.Canary" Version="6.2110.274-beta" />
             </ItemGroup>
         </When>
         <Otherwise>
@@ -29,5 +42,6 @@
     </Choose>
     <PropertyGroup>
         <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
     </PropertyGroup>
 </Project>

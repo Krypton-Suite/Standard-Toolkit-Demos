@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.buttonClose = new System.Windows.Forms.Button();
             this.groupBox = new System.Windows.Forms.GroupBox();
             this.propertyGrid = new System.Windows.Forms.PropertyGrid();
             this.kryptonTreeView = new Krypton.Toolkit.KryptonTreeView();
-            this.imageList = new System.Windows.Forms.ImageList(this.components);
+            this.imageList = new System.Windows.Forms.ImageList();
             this.kryptonContextMenu1 = new Krypton.Toolkit.KryptonContextMenu();
             this.kryptonContextMenuHeading1 = new Krypton.Toolkit.KryptonContextMenuHeading();
             this.kryptonContextMenuMonthCalendar1 = new Krypton.Toolkit.KryptonContextMenuMonthCalendar();
@@ -49,7 +48,7 @@
             this.kryptonContextMenuColorColumns1 = new Krypton.Toolkit.KryptonContextMenuColorColumns();
             this.kryptonContextMenuImageSelect1 = new Krypton.Toolkit.KryptonContextMenuImageSelect();
             this.kryptonContextMenuSeparator1 = new Krypton.Toolkit.KryptonContextMenuSeparator();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripComboBoxA = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -63,8 +62,8 @@
             this.buttonInsert = new Krypton.Toolkit.KryptonButton();
             this.buttonClear = new Krypton.Toolkit.KryptonButton();
             this.buttonRemove = new Krypton.Toolkit.KryptonButton();
-            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
-            this.kryptonCheckSet = new Krypton.Toolkit.KryptonCheckSet(this.components);
+            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager();
+            this.kryptonCheckSet = new Krypton.Toolkit.KryptonCheckSet();
             this.kryptonContextMenuItem2 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.btnToggleNodeCheckBox = new Krypton.Toolkit.KryptonButton();
             this.groupBox.SuspendLayout();
@@ -116,6 +115,7 @@
             this.kryptonTreeView.KryptonContextMenu = this.kryptonContextMenu1;
             this.kryptonTreeView.Location = new System.Drawing.Point(13, 31);
             this.kryptonTreeView.Name = "kryptonTreeView";
+            this.kryptonTreeView.Padding = new System.Windows.Forms.Padding(1);
             this.kryptonTreeView.SelectedImageIndex = 3;
             this.kryptonTreeView.Size = new System.Drawing.Size(255, 259);
             this.kryptonTreeView.TabIndex = 6;
@@ -152,6 +152,10 @@
             // 
             this.kryptonContextMenuHeading1.ExtraText = "";
             // 
+            // kryptonContextMenuMonthCalendar1
+            // 
+            this.kryptonContextMenuMonthCalendar1.CalendarDimensions = new System.Drawing.Size(1, 1);
+            // 
             // kryptonContextMenuItems1
             // 
             this.kryptonContextMenuItems1.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
@@ -159,9 +163,11 @@
             // 
             // kryptonContextMenuItem1
             // 
+            this.kryptonContextMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem1.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItems2,
             this.kryptonContextMenuHeading2});
+            this.kryptonContextMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem1.Text = "Menu Item";
             // 
             // kryptonContextMenuHeading2
@@ -170,30 +176,45 @@
             // 
             // kryptonContextMenuCheckBox1
             // 
+            this.kryptonContextMenuCheckBox1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuCheckBox1.ExtraText = "extra";
+            this.kryptonContextMenuCheckBox1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
             // 
             // kryptonContextMenuCheckButton1
             // 
+            this.kryptonContextMenuCheckButton1.ButtonStyle = Krypton.Toolkit.ButtonStyle.Standalone;
             this.kryptonContextMenuCheckButton1.ExtraText = "extra";
             this.kryptonContextMenuCheckButton1.Text = "CheckButton";
             // 
             // kryptonContextMenuRadioButton1
             // 
             this.kryptonContextMenuRadioButton1.ExtraText = "extra";
+            this.kryptonContextMenuRadioButton1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
             // 
             // kryptonContextMenuLinkLabel1
             // 
             this.kryptonContextMenuLinkLabel1.ExtraText = "extra";
+            this.kryptonContextMenuLinkLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalControl;
+            this.kryptonContextMenuLinkLabel1.LinkBehavior = Krypton.Toolkit.KryptonLinkBehavior.AlwaysUnderline;
+            // 
+            // kryptonContextMenuColorColumns1
+            // 
+            this.kryptonContextMenuColorColumns1.BlockSize = new System.Drawing.Size(13, 13);
+            this.kryptonContextMenuColorColumns1.ColorScheme = Krypton.Toolkit.ColorScheme.OfficeThemes;
+            this.kryptonContextMenuColorColumns1.SelectedColor = System.Drawing.Color.Empty;
             // 
             // kryptonContextMenuImageSelect1
             // 
+            this.kryptonContextMenuImageSelect1.ButtonStyle = Krypton.Toolkit.ButtonStyle.LowProfile;
             this.kryptonContextMenuImageSelect1.ImageIndexEnd = 0;
             this.kryptonContextMenuImageSelect1.ImageIndexStart = 5;
             this.kryptonContextMenuImageSelect1.ImageList = this.imageList;
+            this.kryptonContextMenuImageSelect1.Padding = new System.Windows.Forms.Padding(2);
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.toolStripComboBoxA,
@@ -245,46 +266,61 @@
             // checkSystem
             // 
             this.checkSystem.AutoSize = true;
+            this.checkSystem.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.checkSystem.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkSystem.Location = new System.Drawing.Point(125, 126);
             this.checkSystem.Name = "checkSystem";
-            this.checkSystem.Size = new System.Drawing.Size(113, 25);
+            this.checkSystem.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.checkSystem.Size = new System.Drawing.Size(113, 28);
             this.checkSystem.TabIndex = 7;
             this.checkSystem.Values.Text = "System";
             // 
             // checkSparkle
             // 
             this.checkSparkle.AutoSize = true;
+            this.checkSparkle.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.checkSparkle.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkSparkle.Location = new System.Drawing.Point(125, 93);
             this.checkSparkle.Name = "checkSparkle";
-            this.checkSparkle.Size = new System.Drawing.Size(113, 25);
+            this.checkSparkle.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.checkSparkle.Size = new System.Drawing.Size(113, 28);
             this.checkSparkle.TabIndex = 6;
             this.checkSparkle.Values.Text = "Sparkle - Blue";
             // 
             // check2010Blue
             // 
             this.check2010Blue.AutoSize = true;
+            this.check2010Blue.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.check2010Blue.Checked = true;
+            this.check2010Blue.DialogResult = System.Windows.Forms.DialogResult.None;
             this.check2010Blue.Location = new System.Drawing.Point(125, 31);
             this.check2010Blue.Name = "check2010Blue";
-            this.check2010Blue.Size = new System.Drawing.Size(113, 25);
+            this.check2010Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.check2010Blue.Size = new System.Drawing.Size(133, 28);
             this.check2010Blue.TabIndex = 5;
             this.check2010Blue.Values.Text = "Office 2010 - Blue";
             // 
             // check2007Blue
             // 
             this.check2007Blue.AutoSize = true;
+            this.check2007Blue.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.check2007Blue.DialogResult = System.Windows.Forms.DialogResult.None;
             this.check2007Blue.Location = new System.Drawing.Point(125, 62);
             this.check2007Blue.Name = "check2007Blue";
-            this.check2007Blue.Size = new System.Drawing.Size(113, 25);
+            this.check2007Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.check2007Blue.Size = new System.Drawing.Size(133, 28);
             this.check2007Blue.TabIndex = 4;
             this.check2007Blue.Values.Text = "Office 2007 - Blue";
             // 
             // buttonAppend
             // 
             this.buttonAppend.AutoSize = true;
+            this.buttonAppend.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.buttonAppend.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonAppend.Location = new System.Drawing.Point(19, 30);
             this.buttonAppend.Name = "buttonAppend";
-            this.buttonAppend.Size = new System.Drawing.Size(90, 25);
+            this.buttonAppend.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.buttonAppend.Size = new System.Drawing.Size(90, 28);
             this.buttonAppend.TabIndex = 0;
             this.buttonAppend.Values.Text = "Append";
             this.buttonAppend.Click += new System.EventHandler(this.buttonAppend_Click);
@@ -292,9 +328,12 @@
             // buttonInsert
             // 
             this.buttonInsert.AutoSize = true;
+            this.buttonInsert.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.buttonInsert.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonInsert.Location = new System.Drawing.Point(19, 62);
             this.buttonInsert.Name = "buttonInsert";
-            this.buttonInsert.Size = new System.Drawing.Size(90, 25);
+            this.buttonInsert.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.buttonInsert.Size = new System.Drawing.Size(90, 28);
             this.buttonInsert.TabIndex = 1;
             this.buttonInsert.Values.Text = "Insert";
             this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
@@ -302,9 +341,12 @@
             // buttonClear
             // 
             this.buttonClear.AutoSize = true;
+            this.buttonClear.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.buttonClear.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonClear.Location = new System.Drawing.Point(19, 126);
             this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(90, 25);
+            this.buttonClear.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.buttonClear.Size = new System.Drawing.Size(90, 28);
             this.buttonClear.TabIndex = 3;
             this.buttonClear.Values.Text = "Clear";
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
@@ -312,12 +354,19 @@
             // buttonRemove
             // 
             this.buttonRemove.AutoSize = true;
+            this.buttonRemove.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.buttonRemove.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonRemove.Location = new System.Drawing.Point(19, 94);
             this.buttonRemove.Name = "buttonRemove";
-            this.buttonRemove.Size = new System.Drawing.Size(90, 25);
+            this.buttonRemove.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.buttonRemove.Size = new System.Drawing.Size(90, 28);
             this.buttonRemove.TabIndex = 2;
             this.buttonRemove.Values.Text = "Remove";
             this.buttonRemove.Click += new System.EventHandler(this.buttonRemove_Click);
+            // 
+            // kryptonManager1
+            // 
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2010Blue;
             // 
             // kryptonCheckSet
             // 
@@ -330,13 +379,18 @@
             // 
             // kryptonContextMenuItem2
             // 
+            this.kryptonContextMenuItem2.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kryptonContextMenuItem2.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem2.Text = "Menu Item";
             // 
             // btnToggleNodeCheckBox
             // 
             this.btnToggleNodeCheckBox.AutoSize = true;
+            this.btnToggleNodeCheckBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.btnToggleNodeCheckBox.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnToggleNodeCheckBox.Location = new System.Drawing.Point(13, 308);
             this.btnToggleNodeCheckBox.Name = "btnToggleNodeCheckBox";
+            this.btnToggleNodeCheckBox.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.btnToggleNodeCheckBox.Size = new System.Drawing.Size(138, 25);
             this.btnToggleNodeCheckBox.TabIndex = 8;
             this.btnToggleNodeCheckBox.Values.Text = "Toggle Node CheckBox";

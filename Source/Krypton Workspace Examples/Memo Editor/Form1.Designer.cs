@@ -107,9 +107,10 @@
             // 
             // kryptonRibbon
             // 
-            this.kryptonRibbon.AllowFormIntegrate = false;
+            this.kryptonRibbon.HideRibbonSize = new System.Drawing.Size(300, 250);
+            this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
-            //this.kryptonRibbon.RibbonAppButton.AppButtonImage = ((System.Drawing.Image)(resources.GetObject("kryptonRibbon.RibbonAppButton.AppButtonImage")));
+            this.kryptonRibbon.QATLocation = Krypton.Ribbon.QATLocation.Above;
             this.kryptonRibbon.RibbonAppButton.AppButtonMaxRecentSize = new System.Drawing.Size(250, 200);
             this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.appButtonNewMemo,
@@ -124,58 +125,68 @@
             this.kryptonRibbon.RibbonAppButton.AppButtonMinRecentSize = new System.Drawing.Size(150, 200);
             this.kryptonRibbon.RibbonAppButton.AppButtonSpecs.AddRange(new Krypton.Ribbon.ButtonSpecAppMenu[] {
             this.buttonSpecExit});
+            this.kryptonRibbon.RibbonAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.ribbonTabMemo,
             this.ribbonTabAppearance});
+            this.kryptonRibbon.SelectedContext = null;
             this.kryptonRibbon.SelectedTab = this.ribbonTabMemo;
-            this.kryptonRibbon.Size = new System.Drawing.Size(584, 114);
+            this.kryptonRibbon.Size = new System.Drawing.Size(584, 115);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // appButtonNewMemo
             // 
-            //this.appButtonNewMemo.Image = ((System.Drawing.Image)(resources.GetObject("appButtonNewMemo.Image")));
+            this.appButtonNewMemo.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.appButtonNewMemo.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.appButtonNewMemo.Text = "&New";
             this.appButtonNewMemo.Click += new System.EventHandler(this.buttonNewMemo_Click);
             // 
             // appButtonOpenMemo
             // 
-            //this.appButtonOpenMemo.Image = ((System.Drawing.Image)(resources.GetObject("appButtonOpenMemo.Image")));
+            this.appButtonOpenMemo.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.appButtonOpenMemo.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.appButtonOpenMemo.Text = "&Open";
             this.appButtonOpenMemo.Click += new System.EventHandler(this.buttonOpenMemo_Click);
             // 
             // appButtonSaveMemo
             // 
-            //this.appButtonSaveMemo.Image = ((System.Drawing.Image)(resources.GetObject("appButtonSaveMemo.Image")));
+            this.appButtonSaveMemo.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.appButtonSaveMemo.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.appButtonSaveMemo.Text = "&Save";
             this.appButtonSaveMemo.Click += new System.EventHandler(this.buttonSaveMemo_Click);
             // 
             // appButtonSaveAsMemo
             // 
-            //this.appButtonSaveAsMemo.Image = ((System.Drawing.Image)(resources.GetObject("appButtonSaveAsMemo.Image")));
+            this.appButtonSaveAsMemo.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.appButtonSaveAsMemo.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.appButtonSaveAsMemo.Text = "Save &As...";
             this.appButtonSaveAsMemo.Click += new System.EventHandler(this.buttonSaveAsMemo_Click);
             // 
             // appButtonSaveAllMemo
             // 
-            //this.appButtonSaveAllMemo.Image = ((System.Drawing.Image)(resources.GetObject("appButtonSaveAllMemo.Image")));
+            this.appButtonSaveAllMemo.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.appButtonSaveAllMemo.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.appButtonSaveAllMemo.Text = "Save A&ll";
             this.appButtonSaveAllMemo.Click += new System.EventHandler(this.buttonSaveAllMemo_Click);
             // 
             // appButtonCloseMemo
             // 
+            this.appButtonCloseMemo.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.appButtonCloseMemo.Image = global::MemoEditor.Properties.Resources.close24;
+            this.appButtonCloseMemo.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.appButtonCloseMemo.Text = "&Close";
             this.appButtonCloseMemo.Click += new System.EventHandler(this.buttonCloseMemo_Click);
             // 
             // appButtonCloseAllMemo
             // 
+            this.appButtonCloseAllMemo.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.appButtonCloseAllMemo.Image = global::MemoEditor.Properties.Resources.closeAll24;
+            this.appButtonCloseAllMemo.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.appButtonCloseAllMemo.Text = "Clos&e All";
             this.appButtonCloseAllMemo.Click += new System.EventHandler(this.buttonCloseAllMemo_Click);
             // 
             // buttonSpecExit
             // 
-            //this.buttonSpecExit.Image = ((System.Drawing.Image)(resources.GetObject("buttonSpecExit.Image")));
             this.buttonSpecExit.Style = Krypton.Toolkit.PaletteButtonStyle.Alternate;
             this.buttonSpecExit.Text = "Exit";
             this.buttonSpecExit.UniqueName = "24B4BB79AD0B474C24B4BB79AD0B474C";
@@ -193,7 +204,6 @@
             // kryptonRibbonGroup1
             // 
             this.kryptonRibbonGroup1.DialogBoxLauncher = false;
-            //this.kryptonRibbonGroup1.Image = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroup1.Image")));
             this.kryptonRibbonGroup1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple1,
             this.kryptonRibbonGroupSeparator1,
@@ -204,91 +214,99 @@
             // 
             // kryptonRibbonGroupTriple1
             // 
+            this.kryptonRibbonGroupTriple1.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonNewMemo,
             this.buttonOpenMemo});
+            this.kryptonRibbonGroupTriple1.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple1.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // buttonNewMemo
             // 
-            //this.buttonNewMemo.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonNewMemo.ImageLarge")));
-            //this.buttonNewMemo.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonNewMemo.ImageSmall")));
+            this.buttonNewMemo.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonNewMemo.KeyTip = "N";
             this.buttonNewMemo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.buttonNewMemo.TextLine1 = "New";
+            this.buttonNewMemo.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonNewMemo.Click += new System.EventHandler(this.buttonNewMemo_Click);
             // 
             // buttonOpenMemo
             // 
-            //this.buttonOpenMemo.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonOpenMemo.ImageLarge")));
-            //this.buttonOpenMemo.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonOpenMemo.ImageSmall")));
+            this.buttonOpenMemo.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonOpenMemo.KeyTip = "O";
             this.buttonOpenMemo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.buttonOpenMemo.TextLine1 = "Open";
+            this.buttonOpenMemo.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonOpenMemo.Click += new System.EventHandler(this.buttonOpenMemo_Click);
             // 
             // kryptonRibbonGroupTriple3
             // 
+            this.kryptonRibbonGroupTriple3.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonSaveMemo,
             this.buttonSaveAsMemo,
             this.buttonSaveAllMemo});
+            this.kryptonRibbonGroupTriple3.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple3.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // buttonSaveMemo
             // 
-            //this.buttonSaveMemo.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonSaveMemo.ImageLarge")));
-            //this.buttonSaveMemo.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSaveMemo.ImageSmall")));
+            this.buttonSaveMemo.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonSaveMemo.KeyTip = "S";
             this.buttonSaveMemo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.buttonSaveMemo.TextLine1 = "Save";
+            this.buttonSaveMemo.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSaveMemo.Click += new System.EventHandler(this.buttonSaveMemo_Click);
             // 
             // buttonSaveAsMemo
             // 
-            //this.buttonSaveAsMemo.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonSaveAsMemo.ImageLarge")));
-            //this.buttonSaveAsMemo.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSaveAsMemo.ImageSmall")));
+            this.buttonSaveAsMemo.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonSaveAsMemo.KeyTip = "A";
             this.buttonSaveAsMemo.TextLine1 = "Save";
             this.buttonSaveAsMemo.TextLine2 = "As";
+            this.buttonSaveAsMemo.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSaveAsMemo.Click += new System.EventHandler(this.buttonSaveAsMemo_Click);
             // 
             // buttonSaveAllMemo
             // 
-            //this.buttonSaveAllMemo.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonSaveAllMemo.ImageLarge")));
-            //this.buttonSaveAllMemo.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSaveAllMemo.ImageSmall")));
+            this.buttonSaveAllMemo.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonSaveAllMemo.KeyTip = "L";
-            this.buttonSaveAllMemo.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
-                        | System.Windows.Forms.Keys.S)));
+            this.buttonSaveAllMemo.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.S)));
             this.buttonSaveAllMemo.TextLine1 = "Save";
             this.buttonSaveAllMemo.TextLine2 = "All";
+            this.buttonSaveAllMemo.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSaveAllMemo.Click += new System.EventHandler(this.buttonSaveAllMemo_Click);
             // 
             // kryptonRibbonGroupTriple4
             // 
+            this.kryptonRibbonGroupTriple4.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonCloseMemo,
             this.buttonCloseAllMemo});
+            this.kryptonRibbonGroupTriple4.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
+            this.kryptonRibbonGroupTriple4.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // buttonCloseMemo
             // 
-            ////this.buttonCloseMemo.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonCloseMemo.ImageLarge")));
-            //this.buttonCloseMemo.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonCloseMemo.ImageSmall")));
+            this.buttonCloseMemo.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonCloseMemo.KeyTip = "C";
             this.buttonCloseMemo.TextLine1 = "Close";
+            this.buttonCloseMemo.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonCloseMemo.Click += new System.EventHandler(this.buttonCloseMemo_Click);
             // 
             // buttonCloseAllMemo
             // 
-            //this.buttonCloseAllMemo.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonCloseAllMemo.ImageLarge")));
-            //this.buttonCloseAllMemo.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonCloseAllMemo.ImageSmall")));
+            this.buttonCloseAllMemo.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonCloseAllMemo.KeyTip = "E";
             this.buttonCloseAllMemo.TextLine1 = "Close";
             this.buttonCloseAllMemo.TextLine2 = "All";
+            this.buttonCloseAllMemo.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonCloseAllMemo.Click += new System.EventHandler(this.buttonCloseAllMemo_Click);
             // 
             // kryptonRibbonGroup2
             // 
             this.kryptonRibbonGroup2.DialogBoxLauncher = false;
-            //this.kryptonRibbonGroup2.Image = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroup2.Image")));
             this.kryptonRibbonGroup2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple2,
             this.kryptonRibbonGroupTriple5});
@@ -296,65 +314,69 @@
             // 
             // kryptonRibbonGroupTriple2
             // 
+            this.kryptonRibbonGroupTriple2.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonSingleGroupArrange});
+            this.kryptonRibbonGroupTriple2.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple2.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // buttonSingleGroupArrange
             // 
-            //this.buttonSingleGroupArrange.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonSingleGroupArrange.ImageLarge")));
-            //this.buttonSingleGroupArrange.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSingleGroupArrange.ImageSmall")));
+            this.buttonSingleGroupArrange.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonSingleGroupArrange.KeyTip = "T";
-            this.buttonSingleGroupArrange.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
-                        | System.Windows.Forms.Keys.T)));
+            this.buttonSingleGroupArrange.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.T)));
             this.buttonSingleGroupArrange.TextLine1 = "Single";
             this.buttonSingleGroupArrange.TextLine2 = "Group";
+            this.buttonSingleGroupArrange.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSingleGroupArrange.Click += new System.EventHandler(this.buttonSingleGroupArrange_Click);
             // 
             // kryptonRibbonGroupTriple5
             // 
+            this.kryptonRibbonGroupTriple5.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple5.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonGridArrange,
             this.buttonVerticalArrange,
             this.buttonHorizontalArrange});
             this.kryptonRibbonGroupTriple5.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple5.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // buttonGridArrange
             // 
-            //this.buttonGridArrange.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonGridArrange.ImageLarge")));
-            //this.buttonGridArrange.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonGridArrange.ImageSmall")));
+            this.buttonGridArrange.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonGridArrange.KeyTip = "G";
-            this.buttonGridArrange.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
-                        | System.Windows.Forms.Keys.G)));
+            this.buttonGridArrange.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.G)));
             this.buttonGridArrange.TextLine1 = "Grid";
+            this.buttonGridArrange.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonGridArrange.Click += new System.EventHandler(this.buttonGridArrange_Click);
             // 
             // buttonVerticalArrange
             // 
-            //this.buttonVerticalArrange.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonVerticalArrange.ImageLarge")));
-            //this.buttonVerticalArrange.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonVerticalArrange.ImageSmall")));
+            this.buttonVerticalArrange.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonVerticalArrange.KeyTip = "V";
             this.buttonVerticalArrange.TextLine1 = "Vertical";
+            this.buttonVerticalArrange.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonVerticalArrange.Click += new System.EventHandler(this.buttonVerticalArrange_Click);
             // 
             // buttonHorizontalArrange
             // 
-            //this.buttonHorizontalArrange.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonHorizontalArrange.ImageLarge")));
-            //this.buttonHorizontalArrange.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonHorizontalArrange.ImageSmall")));
+            this.buttonHorizontalArrange.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonHorizontalArrange.KeyTip = "H";
             this.buttonHorizontalArrange.TextLine1 = "Horizontal";
+            this.buttonHorizontalArrange.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonHorizontalArrange.Click += new System.EventHandler(this.buttonHorizontalArrange_Click);
             // 
             // kryptonRibbonGroup3
             // 
             this.kryptonRibbonGroup3.DialogBoxLauncher = false;
-            //this.kryptonRibbonGroup3.Image = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroup3.Image")));
             this.kryptonRibbonGroup3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple6});
             this.kryptonRibbonGroup3.TextLine1 = "Predefined";
             // 
             // kryptonRibbonGroupTriple6
             // 
+            this.kryptonRibbonGroupTriple6.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple6.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonReadMe,
             this.buttonShortcuts,
@@ -364,24 +386,26 @@
             // 
             // buttonReadMe
             // 
+            this.buttonReadMe.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonReadMe.ImageLarge = null;
-            //this.buttonReadMe.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonReadMe.ImageSmall")));
             this.buttonReadMe.TextLine1 = "ReadMe";
+            this.buttonReadMe.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonReadMe.Click += new System.EventHandler(this.buttonReadMe_Click);
             // 
             // buttonShortcuts
             // 
+            this.buttonShortcuts.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonShortcuts.ImageLarge = null;
-            //this.buttonShortcuts.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonShortcuts.ImageSmall")));
             this.buttonShortcuts.TextLine1 = "Shortcuts";
+            this.buttonShortcuts.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonShortcuts.Click += new System.EventHandler(this.buttonShortcuts_Click);
             // 
             // buttonPersistence
             // 
-            //this.buttonPersistence.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonPersistence.ImageLarge")));
-            //this.buttonPersistence.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonPersistence.ImageSmall")));
+            this.buttonPersistence.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonPersistence.KeyTip = "P";
             this.buttonPersistence.TextLine1 = "Persistence";
+            this.buttonPersistence.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonPersistence.Click += new System.EventHandler(this.buttonPersistence_Click);
             // 
             // ribbonTabAppearance
@@ -395,7 +419,6 @@
             // kryptonRibbonGroup4
             // 
             this.kryptonRibbonGroup4.DialogBoxLauncher = false;
-            //this.kryptonRibbonGroup4.Image = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroup4.Image")));
             this.kryptonRibbonGroup4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple12,
             this.kryptonRibbonGroupTriple7,
@@ -406,6 +429,7 @@
             // 
             // kryptonRibbonGroupTriple12
             // 
+            this.kryptonRibbonGroupTriple12.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple12.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.button2010Blue,
             this.button2010Silver,
@@ -417,29 +441,30 @@
             // 
             this.button2010Blue.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.button2010Blue.Checked = true;
-            //this.button2010Blue.ImageSmall = ((System.Drawing.Image)(resources.GetObject("button2010Blue.ImageSmall")));
             this.button2010Blue.Tag = "Office2010Blue";
             this.button2010Blue.TextLine1 = "2010 Blue";
+            this.button2010Blue.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.button2010Blue.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // button2010Silver
             // 
             this.button2010Silver.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            //this.button2010Silver.ImageSmall = ((System.Drawing.Image)(resources.GetObject("button2010Silver.ImageSmall")));
             this.button2010Silver.Tag = "Office2010Silver";
             this.button2010Silver.TextLine1 = "2010 Silver";
+            this.button2010Silver.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.button2010Silver.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // button2010Black
             // 
             this.button2010Black.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            //this.button2010Black.ImageSmall = ((System.Drawing.Image)(resources.GetObject("button2010Black.ImageSmall")));
             this.button2010Black.Tag = "Office2010Black";
             this.button2010Black.TextLine1 = "2010 Black";
+            this.button2010Black.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.button2010Black.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // kryptonRibbonGroupTriple7
             // 
+            this.kryptonRibbonGroupTriple7.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple7.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.button2007Blue,
             this.button2007Silver,
@@ -450,38 +475,36 @@
             // button2007Blue
             // 
             this.button2007Blue.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            //this.button2007Blue.ImageLarge = ((System.Drawing.Image)(resources.GetObject("button2007Blue.ImageLarge")));
-            //this.button2007Blue.ImageSmall = ((System.Drawing.Image)(resources.GetObject("button2007Blue.ImageSmall")));
             this.button2007Blue.KeyTip = "2B";
             this.button2007Blue.Tag = "Office2007Blue";
             this.button2007Blue.TextLine1 = "2007";
             this.button2007Blue.TextLine2 = "Blue";
+            this.button2007Blue.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.button2007Blue.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // button2007Silver
             // 
             this.button2007Silver.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            //this.button2007Silver.ImageLarge = ((System.Drawing.Image)(resources.GetObject("button2007Silver.ImageLarge")));
-            //this.button2007Silver.ImageSmall = ((System.Drawing.Image)(resources.GetObject("button2007Silver.ImageSmall")));
             this.button2007Silver.KeyTip = "2S";
             this.button2007Silver.Tag = "Office2007Silver";
             this.button2007Silver.TextLine1 = "2007";
             this.button2007Silver.TextLine2 = "Silver";
+            this.button2007Silver.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.button2007Silver.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // button2007Black
             // 
             this.button2007Black.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            //this.button2007Black.ImageLarge = ((System.Drawing.Image)(resources.GetObject("button2007Black.ImageLarge")));
-            //this.button2007Black.ImageSmall = ((System.Drawing.Image)(resources.GetObject("button2007Black.ImageSmall")));
             this.button2007Black.KeyTip = "2L";
             this.button2007Black.Tag = "Office2007Black";
             this.button2007Black.TextLine1 = "2007";
             this.button2007Black.TextLine2 = "Black";
+            this.button2007Black.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.button2007Black.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // kryptonRibbonGroupTriple8
             // 
+            this.kryptonRibbonGroupTriple8.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple8.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonSparkleBlue,
             this.buttonSparkleOrange,
@@ -492,38 +515,36 @@
             // buttonSparkleBlue
             // 
             this.buttonSparkleBlue.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            //this.buttonSparkleBlue.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonSparkleBlue.ImageLarge")));
-            //this.buttonSparkleBlue.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSparkleBlue.ImageSmall")));
             this.buttonSparkleBlue.KeyTip = "SB";
             this.buttonSparkleBlue.Tag = "SparkleBlue";
             this.buttonSparkleBlue.TextLine1 = "Sparkle";
             this.buttonSparkleBlue.TextLine2 = "Blue";
+            this.buttonSparkleBlue.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSparkleBlue.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // buttonSparkleOrange
             // 
             this.buttonSparkleOrange.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            //this.buttonSparkleOrange.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonSparkleOrange.ImageLarge")));
-            //this.buttonSparkleOrange.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSparkleOrange.ImageSmall")));
             this.buttonSparkleOrange.KeyTip = "SO";
             this.buttonSparkleOrange.Tag = "SparkleOrange";
             this.buttonSparkleOrange.TextLine1 = "Sparkle";
             this.buttonSparkleOrange.TextLine2 = "Orange";
+            this.buttonSparkleOrange.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSparkleOrange.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // buttonSparklePurple
             // 
             this.buttonSparklePurple.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            //this.buttonSparklePurple.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonSparklePurple.ImageLarge")));
-            //this.buttonSparklePurple.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSparklePurple.ImageSmall")));
             this.buttonSparklePurple.KeyTip = "SO";
             this.buttonSparklePurple.Tag = "SparklePurple";
             this.buttonSparklePurple.TextLine1 = "Sparkle";
             this.buttonSparklePurple.TextLine2 = "Purple";
+            this.buttonSparklePurple.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSparklePurple.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // kryptonRibbonGroupTriple9
             // 
+            this.kryptonRibbonGroupTriple9.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple9.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonSystem,
             this.button2003});
@@ -533,27 +554,24 @@
             // buttonSystem
             // 
             this.buttonSystem.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            //this.buttonSystem.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonSystem.ImageLarge")));
-            //this.buttonSystem.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSystem.ImageSmall")));
             this.buttonSystem.KeyTip = "Y";
             this.buttonSystem.Tag = "ProfessionalSystem";
             this.buttonSystem.TextLine1 = "System";
+            this.buttonSystem.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSystem.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // button2003
             // 
             this.button2003.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            //this.button2003.ImageLarge = ((System.Drawing.Image)(resources.GetObject("button2003.ImageLarge")));
-            //this.button2003.ImageSmall = ((System.Drawing.Image)(resources.GetObject("button2003.ImageSmall")));
             this.button2003.KeyTip = "3";
             this.button2003.Tag = "ProfessionalOffice2003";
             this.button2003.TextLine1 = "2003";
+            this.button2003.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.button2003.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // kryptonRibbonGroup5
             // 
             this.kryptonRibbonGroup5.DialogBoxLauncher = false;
-            //this.kryptonRibbonGroup5.Image = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroup5.Image")));
             this.kryptonRibbonGroup5.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple10,
             this.kryptonRibbonGroupTriple11});
@@ -561,6 +579,7 @@
             // 
             // kryptonRibbonGroupTriple10
             // 
+            this.kryptonRibbonGroupTriple10.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple10.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonTabs,
             this.buttonRibbonTabs,
@@ -571,34 +590,35 @@
             // buttonTabs
             // 
             this.buttonTabs.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            //this.buttonTabs.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonTabs.ImageLarge")));
             this.buttonTabs.ImageSmall = global::MemoEditor.Properties.Resources.Tabs;
             this.buttonTabs.KeyTip = "T";
             this.buttonTabs.Tag = "BarTabGroup";
             this.buttonTabs.TextLine1 = "Tabs";
+            this.buttonTabs.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonTabs.Click += new System.EventHandler(this.buttonGrouping_Click);
             // 
             // buttonRibbonTabs
             // 
             this.buttonRibbonTabs.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            //this.buttonRibbonTabs.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonRibbonTabs.ImageLarge")));
             this.buttonRibbonTabs.ImageSmall = global::MemoEditor.Properties.Resources.Tabs;
             this.buttonRibbonTabs.KeyTip = "R";
             this.buttonRibbonTabs.Tag = "BarRibbonTabGroup";
             this.buttonRibbonTabs.TextLine1 = "Ribbon Tabs";
+            this.buttonRibbonTabs.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonRibbonTabs.Click += new System.EventHandler(this.buttonGrouping_Click);
             // 
             // buttonButtons
             // 
             this.buttonButtons.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            //this.buttonButtons.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonButtons.ImageLarge")));
             this.buttonButtons.ImageSmall = global::MemoEditor.Properties.Resources.Tabs;
             this.buttonButtons.Tag = "BarCheckButtonGroupOutside";
             this.buttonButtons.TextLine1 = "Buttons";
+            this.buttonButtons.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonButtons.Click += new System.EventHandler(this.buttonGrouping_Click);
             // 
             // kryptonRibbonGroupTriple11
             // 
+            this.kryptonRibbonGroupTriple11.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple11.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonHeader,
             this.buttonHeaderButtons,
@@ -609,66 +629,73 @@
             // buttonHeader
             // 
             this.buttonHeader.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            //this.buttonHeader.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonHeader.ImageLarge")));
             this.buttonHeader.ImageSmall = global::MemoEditor.Properties.Resources.Tabs;
             this.buttonHeader.KeyTip = "H";
             this.buttonHeader.Tag = "HeaderGroup";
             this.buttonHeader.TextLine1 = "Header";
+            this.buttonHeader.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonHeader.Click += new System.EventHandler(this.buttonGrouping_Click);
             // 
             // buttonHeaderButtons
             // 
             this.buttonHeaderButtons.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            //this.buttonHeaderButtons.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonHeaderButtons.ImageLarge")));
             this.buttonHeaderButtons.ImageSmall = global::MemoEditor.Properties.Resources.Tabs;
             this.buttonHeaderButtons.KeyTip = "D";
             this.buttonHeaderButtons.Tag = "HeaderBarCheckButtonHeaderGroup";
             this.buttonHeaderButtons.TextLine1 = "Header Buttons";
+            this.buttonHeaderButtons.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonHeaderButtons.Click += new System.EventHandler(this.buttonGrouping_Click);
             // 
             // buttonStack
             // 
             this.buttonStack.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            //this.buttonStack.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonStack.ImageLarge")));
             this.buttonStack.ImageSmall = global::MemoEditor.Properties.Resources.Tabs;
             this.buttonStack.KeyTip = "Y";
             this.buttonStack.Tag = "StackCheckButtonGroup";
             this.buttonStack.TextLine1 = "Stack";
+            this.buttonStack.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonStack.Click += new System.EventHandler(this.buttonGrouping_Click);
             // 
             // kryptonPanel1
             // 
             this.kryptonPanel1.Controls.Add(this.kryptonWorkspace);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, 114);
+            this.kryptonPanel1.Location = new System.Drawing.Point(0, 115);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(5);
-            this.kryptonPanel1.Size = new System.Drawing.Size(584, 350);
+            this.kryptonPanel1.Size = new System.Drawing.Size(584, 349);
             this.kryptonPanel1.TabIndex = 1;
             // 
             // kryptonWorkspace
             // 
+            this.kryptonWorkspace.ActivePage = null;
+            this.kryptonWorkspace.CompactFlags = ((Krypton.Workspace.CompactFlags)((((Krypton.Workspace.CompactFlags.RemoveEmptyCells | Krypton.Workspace.CompactFlags.RemoveEmptySequences) 
+            | Krypton.Workspace.CompactFlags.PromoteLeafs) 
+            | Krypton.Workspace.CompactFlags.AtLeastOneVisibleCell)));
+            this.kryptonWorkspace.ContainerBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonWorkspace.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonWorkspace.Location = new System.Drawing.Point(5, 5);
             this.kryptonWorkspace.Name = "kryptonWorkspace";
             // 
             // 
             // 
+            this.kryptonWorkspace.Root.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.kryptonWorkspace.Root.UniqueName = "95EF19B665334EE77CBA364F49E3EB38";
+            this.kryptonWorkspace.Root.WorkspaceControl = this.kryptonWorkspace;
             this.kryptonWorkspace.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.HighProfile;
-            this.kryptonWorkspace.Size = new System.Drawing.Size(574, 340);
+            this.kryptonWorkspace.Size = new System.Drawing.Size(574, 339);
+            this.kryptonWorkspace.SplitterWidth = 5;
             this.kryptonWorkspace.TabIndex = 1;
             this.kryptonWorkspace.TabStop = true;
-            this.kryptonWorkspace.ActivePageChanged += new System.EventHandler<Krypton.Workspace.ActivePageChangedEventArgs>(this.kryptonWorkspace_ActivePageChanged);
-            this.kryptonWorkspace.ActiveCellChanged += new System.EventHandler<Krypton.Workspace.ActiveCellChangedEventArgs>(this.kryptonWorkspace_ActiveCellChanged);
             this.kryptonWorkspace.WorkspaceCellAdding += new System.EventHandler<Krypton.Workspace.WorkspaceCellEventArgs>(this.kryptonWorkspace_WorkspaceCellAdding);
+            this.kryptonWorkspace.ActiveCellChanged += new System.EventHandler<Krypton.Workspace.ActiveCellChangedEventArgs>(this.kryptonWorkspace_ActiveCellChanged);
+            this.kryptonWorkspace.ActivePageChanged += new System.EventHandler<Krypton.Workspace.ActivePageChangedEventArgs>(this.kryptonWorkspace_ActivePageChanged);
             // 
             // imageList32
             // 
-            //this.imageList32.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList32.ImageStream")));
+            this.imageList32.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList32.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList32.TransparentColor = System.Drawing.Color.Magenta;
-            //this.imageList32.Images.SetKeyName(0, "closeAll32.bmp");
-            //this.imageList32.Images.SetKeyName(1, "close32.bmp");
             // 
             // openFileDialog
             // 
@@ -689,13 +716,13 @@
             this.ClientSize = new System.Drawing.Size(584, 464);
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.kryptonRibbon);
-            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(489, 414);
             this.Name = "MemoEditorForm";
             this.Text = "Memo Editor";
-            this.Load += new System.EventHandler(this.MemoEditorForm1_Load);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MemoEditorForm_FormClosed);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MemoEditorForm_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MemoEditorForm_FormClosed);
+            this.Load += new System.EventHandler(this.MemoEditorForm1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);

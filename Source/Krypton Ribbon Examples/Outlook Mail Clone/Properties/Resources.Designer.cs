@@ -19,7 +19,7 @@ namespace OutlookMailClone.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -843,6 +843,16 @@ namespace OutlookMailClone.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Main_Icon_64_x_64 {
+            get {
+                object obj = ResourceManager.GetObject("Main Icon 64 x 64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MoreOptionsSmall {
             get {
                 object obj = ResourceManager.GetObject("MoreOptionsSmall", resourceCulture);
@@ -1396,16 +1406,6 @@ namespace OutlookMailClone.Properties {
         internal static System.Drawing.Bitmap SpacingParagraph {
             get {
                 object obj = ResourceManager.GetObject("SpacingParagraph", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Square_Design_64_x_64_New_Green {
-            get {
-                object obj = ResourceManager.GetObject("Square_Design_64_x_64_New_Green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

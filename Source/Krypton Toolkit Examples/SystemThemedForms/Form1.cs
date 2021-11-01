@@ -27,24 +27,12 @@ namespace SystemThemedForms
             //button10.BackColor = SystemColors.ActiveCaption;
         }
 
-        private void ButtonSpecAny1_Click(object sender, EventArgs e)
-        {
-            KryptonMessageBox.Show(this, "FormButton Clicked");
-        }
+        private void ButtonSpecAny1_Click(object sender, EventArgs e) => KryptonMessageBox.Show(this, "FormButton Clicked");
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-        }
+        private void button1_Click(object sender, EventArgs e) => this.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
-        }
+        private void button2_Click(object sender, EventArgs e) => this.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
-        }
+        private void button3_Click(object sender, EventArgs e) => this.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
     }
 }

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" InitialTargets="EnsureWixToolsetInstalled" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+		<ProductVersion>3.10</ProductVersion>
+		<ProjectGuid>fb130ee8-3629-4d44-a7c4-fbcb55c59d8d</ProjectGuid>
+		<SchemaVersion>2.0</SchemaVersion>
+		<OutputName>Samples.v6.2110.274-beta.Net48</OutputName>
+		<OutputType>Package</OutputType>
+		<Name>WixInstaller.net48</Name>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+		<OutputPath>bin\$(Configuration)\</OutputPath>
+		<IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+		<DefineConstants>Debug</DefineConstants>
+		<SuppressAllWarnings>False</SuppressAllWarnings>
+		<Pedantic>True</Pedantic>
+		<VerboseOutput>True</VerboseOutput>
+		<SuppressPdbOutput>True</SuppressPdbOutput>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+		<OutputPath>bin\$(Configuration)\</OutputPath>
+		<IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+		<SuppressAllWarnings>False</SuppressAllWarnings>
+		<Pedantic>True</Pedantic>
+		<VerboseOutput>True</VerboseOutput>
+		<SuppressPdbOutput>True</SuppressPdbOutput>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="BasePath48.wxs" />
+		<Compile Include="CheckFor.Net.wxs" />
+		<Compile Include="KryptonToolkitDemos.wxs" />
+		<Compile Include="Product.wxs" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="License.rtf" />
+	</ItemGroup>
+	<ItemGroup>
+		<WixExtension Include="WixUtilExtension">
+			<HintPath>$(WixExtDir)\WixUtilExtension.dll</HintPath>
+			<Name>WixUtilExtension</Name>
+		</WixExtension>
+		<WixExtension Include="WixUIExtension">
+			<HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
+			<Name>WixUIExtension</Name>
+		</WixExtension>
+		<WixExtension Include="WixNetFxExtension">
+			<HintPath>$(WixExtDir)\WixNetFxExtension.dll</HintPath>
+			<Name>WixNetFxExtension</Name>
+		</WixExtension>
+	</ItemGroup>
+	<Import Project="$(WixTargetsPath)" Condition=" '$(WixTargetsPath)' != '' " />
+	<Import Project="$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets" Condition=" '$(WixTargetsPath)' == '' AND Exists('$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets') " />
+	<Target Name="EnsureWixToolsetInstalled" Condition=" '$(WixTargetsImported)' != 'true' ">
+		<Error Text="The WiX Toolset v3.11 (or newer) build tools must be installed to build this project. To download the WiX Toolset, see http://wixtoolset.org/releases/" />
+	</Target>
+	<Target Name="BeforeBuild">
+		<PropertyGroup>
+			<LinkerBaseInputPaths>..\..\..\Binaries\Krypton Demos\Release\net48</LinkerBaseInputPaths>
+			<DefineConstants>BasePath48=..\..\..\Binaries\Krypton Demos\Release\net48</DefineConstants>
+		</PropertyGroup>
+		<HeatDirectory OutputFile="BasePath48.wxs" DirectoryRefId="KryptonToolkitDemosDir" ComponentGroupName="BasePath48" SuppressCom="true" Directory="..\..\..\Binaries\Krypton Demos\Release\net48" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="true" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.BasePath48" Transforms="RemovePdbs.xslt" />
+	</Target>
+	<!--
+    To modify your build process, add your task inside one of the targets below and uncomment it.
+    Other similar extension points exist, see Wix.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+</Project>

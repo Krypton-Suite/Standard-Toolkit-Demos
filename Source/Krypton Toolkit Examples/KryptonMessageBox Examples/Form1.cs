@@ -1,16 +1,18 @@
-﻿// *****************************************************************************
-// 
-//  © Component Factory Pty Ltd, 2006 - 2016. All rights reserved.
-//	The software and associated documentation supplied hereunder are the 
-//  proprietary information of Component Factory Pty Ltd, PO Box 1504, 
-//  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
-// 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2021. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  Version 5.550.0 	www.ComponentFactory.com
-// *****************************************************************************
+﻿#region BSD License
+/*
+ * 
+ * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
+ *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
+ * 
+ *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  
+ */
+#endregion
 
 using System;
 using System.Windows.Forms;
+
 using Krypton.Toolkit;
 
 namespace KryptonMessageBoxExamples
@@ -18,12 +20,11 @@ namespace KryptonMessageBoxExamples
     public partial class Form1 : Form
     {
         private MessageBoxIcon _mbIcon = MessageBoxIcon.Warning;
+        private KryptonMessageBoxIcon _kmbIcon = KryptonMessageBoxIcon.WARNING;
         private MessageBoxButtons _mbButtons = MessageBoxButtons.OKCancel;
+        private MessageBoxOptions _options = 0;
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void palette_CheckedChanged(object sender, EventArgs e)
         {
@@ -71,6 +72,11 @@ namespace KryptonMessageBoxExamples
             {
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
             }
+            else if (radioButtonOffice365Blue.Checked)
+            {
+                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office365Blue;
+            }
+
         }
 
         private void icon_CheckedChanged(object sender, EventArgs e)
@@ -127,7 +133,41 @@ namespace KryptonMessageBoxExamples
 
         private void buttonShow_Click(object sender, EventArgs e)
         {
-            KryptonMessageBox.Show(textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _mbIcon);
+            if (radioButtonWinLogo.Checked)
+            {
+                KryptonMessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text, _mbButtons, KryptonMessageBoxIcon.WINDOWSLOGO, options: _options);
+            }
+            else
+            {
+                MessageBox.Show(textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _mbIcon,
+                    MessageBoxDefaultButton.Button1, _options);
+                KryptonMessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _mbIcon,
+                    options: _options);
+            }
+        }
+
+        private void ChkRightAlign_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkRightAlign.Checked)
+            {
+                _options |= MessageBoxOptions.RightAlign;
+            }
+            else
+            {
+                _options &= ~MessageBoxOptions.RightAlign;
+            }
+        }
+
+        private void ChkRtlReading_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkRtlReading.Checked)
+            {
+                _options |= MessageBoxOptions.RtlReading;
+            }
+            else
+            {
+                _options &= ~MessageBoxOptions.RtlReading;
+            }
         }
     }
 }

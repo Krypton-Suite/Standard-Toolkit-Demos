@@ -48,7 +48,6 @@ namespace MDIRibbon
             // 
             // labelMessage
             // 
-            this.labelMessage.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelMessage.Location = new System.Drawing.Point(15, 13);
             this.labelMessage.Name = "labelMessage";
             this.labelMessage.Size = new System.Drawing.Size(236, 20);
@@ -57,9 +56,11 @@ namespace MDIRibbon
             // 
             // buttonOK
             // 
+            this.buttonOK.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonOK.Location = new System.Drawing.Point(89, 48);
             this.buttonOK.Name = "buttonOK";
+            this.buttonOK.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.buttonOK.Size = new System.Drawing.Size(67, 25);
             this.buttonOK.TabIndex = 0;
             this.buttonOK.Values.Text = "OK";

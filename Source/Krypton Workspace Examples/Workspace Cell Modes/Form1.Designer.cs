@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,8 +48,8 @@
             this.kryptonWorkspace = new Krypton.Workspace.KryptonWorkspace();
             this.buttonAddPage = new System.Windows.Forms.Button();
             this.buttonClearPages = new System.Windows.Forms.Button();
-            this.imageList = new System.Windows.Forms.ImageList(this.components);
-            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
+            this.imageList = new System.Windows.Forms.ImageList();
+            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspace)).BeginInit();
             this.SuspendLayout();
@@ -85,7 +84,7 @@
             this.label1.Size = new System.Drawing.Size(246, 57);
             this.label1.TabIndex = 13;
             this.label1.Text = "Note: TabStrip style modes have been excluded from the list as they serve no usef" +
-                "ul \r\npurpose within the Workspace control.";
+    "ul \r\npurpose within the Workspace control.";
             // 
             // radioOutlookMini
             // 
@@ -245,16 +244,25 @@
             // 
             // kryptonWorkspace
             // 
-            this.kryptonWorkspace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonWorkspace.ActivePage = null;
+            this.kryptonWorkspace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonWorkspace.CompactFlags = ((Krypton.Workspace.CompactFlags)((((Krypton.Workspace.CompactFlags.RemoveEmptyCells | Krypton.Workspace.CompactFlags.RemoveEmptySequences) 
+            | Krypton.Workspace.CompactFlags.PromoteLeafs) 
+            | Krypton.Workspace.CompactFlags.AtLeastOneVisibleCell)));
+            this.kryptonWorkspace.ContainerBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonWorkspace.Location = new System.Drawing.Point(285, 57);
             this.kryptonWorkspace.Name = "kryptonWorkspace";
             // 
             // 
             // 
+            this.kryptonWorkspace.Root.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.kryptonWorkspace.Root.UniqueName = "EBB79296DCDD40AAF79B5D0F977EEA9A";
+            this.kryptonWorkspace.Root.WorkspaceControl = this.kryptonWorkspace;
+            this.kryptonWorkspace.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.LowProfile;
             this.kryptonWorkspace.Size = new System.Drawing.Size(477, 475);
+            this.kryptonWorkspace.SplitterWidth = 5;
             this.kryptonWorkspace.TabIndex = 4;
             this.kryptonWorkspace.TabStop = true;
             this.kryptonWorkspace.WorkspaceCellAdding += new System.EventHandler<Krypton.Workspace.WorkspaceCellEventArgs>(this.kryptonWorkspace_WorkspaceCellAdding);

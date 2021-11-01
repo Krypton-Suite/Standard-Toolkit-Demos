@@ -6,7 +6,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace KryptonWebBrowser_Example
+namespace KryptonWebBrowserExample
 {
     static class Program
     {

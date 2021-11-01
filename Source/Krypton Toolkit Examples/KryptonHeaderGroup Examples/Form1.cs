@@ -1,13 +1,14 @@
-﻿// *****************************************************************************
-// 
-//  © Component Factory Pty Ltd, 2006 - 2016. All rights reserved.
-//	The software and associated documentation supplied hereunder are the 
-//  proprietary information of Component Factory Pty Ltd, PO Box 1504, 
-//  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
-// 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2021. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  Version 5.550.0 	www.ComponentFactory.com
-// *****************************************************************************
+﻿#region BSD License
+/*
+ * 
+ * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
+ *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
+ * 
+ *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  
+ */
+#endregion
 
 using System;
 using System.Drawing;
@@ -19,22 +20,15 @@ namespace KryptonHeaderGroupExamples
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        private void Form1_Load(object sender, EventArgs e) =>
             // Setup the property grid to edit this header group
             propertyGrid.SelectedObject = new KryptonHeaderGroupProxy(headerGroup1Office);
-        }
 
-        private void headerGroup_MouseDown(object sender, MouseEventArgs e)
-        {
+        private void headerGroup_MouseDown(object sender, MouseEventArgs e) =>
             // Setup the property grid to edit this header group
             propertyGrid.SelectedObject = new KryptonHeaderGroupProxy(sender as KryptonHeaderGroup);
-        }
 
         private void panel_MouseDown(object sender, MouseEventArgs e)
         {
@@ -52,28 +46,22 @@ namespace KryptonHeaderGroupExamples
             propertyGrid.SelectedObject = new KryptonHeaderGroupProxy(c.Parent.Parent as KryptonHeaderGroup);
         }
 
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
 
     public class KryptonHeaderGroupProxy
     {
         private KryptonHeaderGroup _headerGroup;
 
-        public KryptonHeaderGroupProxy(KryptonHeaderGroup headerGroup)
-        {
-            _headerGroup = headerGroup;
-        }
+        public KryptonHeaderGroupProxy(KryptonHeaderGroup headerGroup) => _headerGroup = headerGroup;
 
         [Category("Visuals")]
         [Description("Should tooltips be displayed for button specs.")]
         [DefaultValue(false)]
         public bool AllowButtonSpecToolTips
         {
-            get { return _headerGroup.AllowButtonSpecToolTips; }
-            set { _headerGroup.AllowButtonSpecToolTips = value; }
+            get => _headerGroup.AllowButtonSpecToolTips;
+            set => _headerGroup.AllowButtonSpecToolTips = value;
         }
 
         [Category("Visuals")]
@@ -81,8 +69,8 @@ namespace KryptonHeaderGroupExamples
         [DefaultValue(true)]
         public bool AutoCollapseArrow
         {
-            get { return _headerGroup.AutoCollapseArrow; }
-            set { _headerGroup.AutoCollapseArrow = value; }
+            get => _headerGroup.AutoCollapseArrow;
+            set => _headerGroup.AutoCollapseArrow = value;
         }
 
         [Category("Visuals")]
@@ -90,8 +78,8 @@ namespace KryptonHeaderGroupExamples
         [DefaultValue(false)]
         public bool Collapsed
         {
-            get { return _headerGroup.Collapsed; }
-            set { _headerGroup.Collapsed = value; }
+            get => _headerGroup.Collapsed;
+            set => _headerGroup.Collapsed = value;
         }
 
         [Category("Visuals")]
@@ -99,8 +87,8 @@ namespace KryptonHeaderGroupExamples
         [DefaultValue(typeof(HeaderGroupCollapsedTarget), "Collapse to Primary Header")]
         public HeaderGroupCollapsedTarget CollapseTarget
         {
-            get { return _headerGroup.CollapseTarget; }
-            set { _headerGroup.CollapseTarget = value; }
+            get => _headerGroup.CollapseTarget;
+            set => _headerGroup.CollapseTarget = value;
         }
 
 		[Category("Visuals")]
@@ -108,9 +96,9 @@ namespace KryptonHeaderGroupExamples
 		[DefaultValue(typeof(PaletteBorderStyle), "Control - Client")]
 		public PaletteBorderStyle GroupBorderStyle
 		{
-			get { return _headerGroup.GroupBorderStyle; }
-            set { _headerGroup.GroupBorderStyle = value; }
-		}
+			get => _headerGroup.GroupBorderStyle;
+            set => _headerGroup.GroupBorderStyle = value;
+        }
 
 		/// <summary>
 		/// Gets and sets the background style.
@@ -120,8 +108,8 @@ namespace KryptonHeaderGroupExamples
         [DefaultValue(typeof(PaletteBackStyle), "Control - Client")]
         public PaletteBackStyle GroupBackStyle
         {
-            get { return _headerGroup.GroupBackStyle; }
-            set { _headerGroup.GroupBackStyle = value; }
+            get => _headerGroup.GroupBackStyle;
+            set => _headerGroup.GroupBackStyle = value;
         }
 
 		[Category("Visuals")]
@@ -129,17 +117,17 @@ namespace KryptonHeaderGroupExamples
 		[DefaultValue(typeof(HeaderStyle), "Primary")]
 		public HeaderStyle HeaderStylePrimary
 		{
-			get { return _headerGroup.HeaderStylePrimary; }
-            set { _headerGroup.HeaderStylePrimary = value; }
-		}
+			get => _headerGroup.HeaderStylePrimary;
+            set => _headerGroup.HeaderStylePrimary = value;
+        }
 
 		[Category("Visuals")]
 		[Description("Secondary header style.")]
 		[DefaultValue(typeof(HeaderStyle), "Secondary")]
 		public HeaderStyle HeaderStyleSecondary
 		{
-            get { return _headerGroup.HeaderStyleSecondary; }
-            set { _headerGroup.HeaderStyleSecondary = value; }
+            get => _headerGroup.HeaderStyleSecondary;
+            set => _headerGroup.HeaderStyleSecondary = value;
         }
 
 		[Category("Visuals")]
@@ -147,8 +135,8 @@ namespace KryptonHeaderGroupExamples
 		[DefaultValue(typeof(VisualOrientation), "Top")]
 		public VisualOrientation HeaderPositionPrimary
 		{
-			get { return _headerGroup.HeaderPositionPrimary; }
-            set { _headerGroup.HeaderPositionPrimary = value; }
+			get => _headerGroup.HeaderPositionPrimary;
+            set => _headerGroup.HeaderPositionPrimary = value;
         }
 
         [Category("Visuals")]
@@ -156,8 +144,8 @@ namespace KryptonHeaderGroupExamples
         [DefaultValue(typeof(VisualOrientation), "Bottom")]
         public VisualOrientation HeaderPositionSecondary
         {
-            get { return _headerGroup.HeaderPositionSecondary; }
-            set { _headerGroup.HeaderPositionSecondary = value; }
+            get => _headerGroup.HeaderPositionSecondary;
+            set => _headerGroup.HeaderPositionSecondary = value;
         }
 
         [Category("Visuals")]
@@ -165,8 +153,8 @@ namespace KryptonHeaderGroupExamples
         [DefaultValue(true)]
         public bool HeaderVisiblePrimary
         {
-            get { return _headerGroup.HeaderVisiblePrimary; }
-            set { _headerGroup.HeaderVisiblePrimary = value; }
+            get => _headerGroup.HeaderVisiblePrimary;
+            set => _headerGroup.HeaderVisiblePrimary = value;
         }
 
         [Category("Visuals")]
@@ -174,83 +162,65 @@ namespace KryptonHeaderGroupExamples
         [DefaultValue(true)]
         public bool HeaderVisibleSecondary
         {
-            get { return _headerGroup.HeaderVisibleSecondary; }
-            set { _headerGroup.HeaderVisibleSecondary = value; }
+            get => _headerGroup.HeaderVisibleSecondary;
+            set => _headerGroup.HeaderVisibleSecondary = value;
         }
 
         [Category("Visuals")]
         [Description("Overrides for defining common header group appearance that other states can override.")]
-        public PaletteHeaderGroupRedirect StateCommon
-        {
-            get { return _headerGroup.StateCommon; }
-        }
+        public PaletteHeaderGroupRedirect StateCommon => _headerGroup.StateCommon;
 
         [Category("Visuals")]
         [Description("Overrides for defining disabled header group appearance.")]
-        public PaletteHeaderGroup StateDisabled
-        {
-            get { return _headerGroup.StateDisabled; }
-        }
+        public PaletteHeaderGroup StateDisabled => _headerGroup.StateDisabled;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal header group appearance.")]
-        public PaletteHeaderGroup StateNormal
-        {
-            get { return _headerGroup.StateNormal; }
-        }
+        public PaletteHeaderGroup StateNormal => _headerGroup.StateNormal;
 
         [Category("Visuals")]
         [Description("Collection of button specifications.")]
-        public KryptonHeaderGroup.HeaderGroupButtonSpecCollection ButtonSpecs
-        {
-            get { return _headerGroup.ButtonSpecs; }
-        }
+        public KryptonHeaderGroup.HeaderGroupButtonSpecCollection ButtonSpecs => _headerGroup.ButtonSpecs;
 
-		[Category("Visuals")]
+        [Category("Visuals")]
 		[Description("Primary header values")]
-        public HeaderGroupValuesPrimary ValuesPrimary
-		{
-            get { return _headerGroup.ValuesPrimary; }
-		}
+        public HeaderGroupValuesPrimary ValuesPrimary => _headerGroup.ValuesPrimary;
 
-		[Category("Visuals")]
+        [Category("Visuals")]
 		[Description("Secondary header values")]
-        public HeaderGroupValuesSecondary ValuesSecondary
-        {
-            get { return _headerGroup.ValuesSecondary; }
-        }
+        public HeaderGroupValuesSecondary ValuesSecondary => _headerGroup.ValuesSecondary;
 
         [Category("Visuals")]
         [Description("Palette applied to drawing.")]
         [DefaultValue(typeof(PaletteMode), "Global")]
         public PaletteMode PaletteMode
         {
-            get { return _headerGroup.PaletteMode; }
-            set { _headerGroup.PaletteMode = value; }
+            get => _headerGroup.PaletteMode;
+            set => _headerGroup.PaletteMode = value;
         }
 
         [Category("Layout")]
         [Description("The size of the control is pixels.")]
         public Size Size
         {
-            get { return _headerGroup.Size; }
-            set { _headerGroup.Size = value; }
+            get => _headerGroup.Size;
+            set => _headerGroup.Size = value;
         }
 
         [Category("Layout")]
         [Description("The location of the control in pixels.")]
         public Point Location
         {
-            get { return _headerGroup.Location; }
-            set { _headerGroup.Location = value; }
+            get => _headerGroup.Location;
+            set => _headerGroup.Location = value;
         }
 
         [Category("Behavior")]
         [Description("Indicates whether the control is enabled.")]
         public bool Enabled
         {
-            get { return _headerGroup.Enabled; }
-            set { _headerGroup.Enabled = value; }
+            get => _headerGroup.Enabled;
+            set => _headerGroup.Enabled = value;
         }
     }
 }

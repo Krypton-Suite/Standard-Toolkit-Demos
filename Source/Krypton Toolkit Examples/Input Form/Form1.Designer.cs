@@ -89,7 +89,7 @@ namespace InputForm
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(321, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(311, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -217,11 +217,11 @@ namespace InputForm
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.kryptonPanel1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(321, 381);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(311, 370);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 24);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(321, 406);
+            this.toolStripContainer1.Size = new System.Drawing.Size(311, 395);
             this.toolStripContainer1.TabIndex = 2;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -236,7 +236,7 @@ namespace InputForm
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(10, 14, 10, 10);
-            this.kryptonPanel1.Size = new System.Drawing.Size(321, 381);
+            this.kryptonPanel1.Size = new System.Drawing.Size(311, 370);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -275,112 +275,213 @@ namespace InputForm
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(301, 357);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(291, 346);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // labelName
             // 
             this.labelName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelName.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelName.Location = new System.Drawing.Point(3, 3);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(68, 20);
+            this.labelName.Size = new System.Drawing.Size(68, 23);
+            this.labelName.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelName.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelName.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
+            this.labelName.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.labelName.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.labelName.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.labelName.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.labelName.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelName.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelName.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.labelName.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
             this.labelName.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.labelName.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.labelName.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelName.TabIndex = 4;
             this.labelName.Values.Text = "Name";
             // 
             // labelAddress
             // 
             this.labelAddress.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelAddress.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
-            this.labelAddress.Location = new System.Drawing.Point(3, 29);
+            this.labelAddress.Location = new System.Drawing.Point(3, 32);
             this.labelAddress.Name = "labelAddress";
             this.labelAddress.Size = new System.Drawing.Size(68, 96);
+            this.labelAddress.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelAddress.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelAddress.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
+            this.labelAddress.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.labelAddress.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.labelAddress.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.labelAddress.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.labelAddress.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelAddress.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelAddress.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.labelAddress.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
             this.labelAddress.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.labelAddress.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.labelAddress.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelAddress.TabIndex = 5;
             this.labelAddress.Values.Text = "Address";
             // 
             // labelTelephone
             // 
-            this.labelTelephone.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
-            this.labelTelephone.Location = new System.Drawing.Point(3, 131);
+            this.labelTelephone.Location = new System.Drawing.Point(3, 134);
             this.labelTelephone.Name = "labelTelephone";
             this.labelTelephone.Size = new System.Drawing.Size(68, 20);
+            this.labelTelephone.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelTelephone.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelTelephone.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
+            this.labelTelephone.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.labelTelephone.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.labelTelephone.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.labelTelephone.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.labelTelephone.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelTelephone.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelTelephone.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.labelTelephone.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
             this.labelTelephone.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.labelTelephone.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.labelTelephone.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelTelephone.TabIndex = 6;
             this.labelTelephone.Values.Text = "Telephone";
             // 
             // labelStatus
             // 
             this.labelStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelStatus.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
-            this.labelStatus.Location = new System.Drawing.Point(3, 158);
+            this.labelStatus.Location = new System.Drawing.Point(3, 163);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(68, 21);
+            this.labelStatus.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelStatus.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelStatus.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
+            this.labelStatus.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.labelStatus.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.labelStatus.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.labelStatus.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.labelStatus.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelStatus.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelStatus.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.labelStatus.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
             this.labelStatus.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.labelStatus.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.labelStatus.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelStatus.TabIndex = 7;
             this.labelStatus.Values.Text = "Status";
             // 
             // labelAge
             // 
             this.labelAge.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelAge.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
-            this.labelAge.Location = new System.Drawing.Point(3, 185);
+            this.labelAge.Location = new System.Drawing.Point(3, 190);
             this.labelAge.Name = "labelAge";
             this.labelAge.Size = new System.Drawing.Size(68, 22);
+            this.labelAge.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelAge.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelAge.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
+            this.labelAge.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.labelAge.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.labelAge.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.labelAge.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.labelAge.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelAge.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelAge.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.labelAge.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
             this.labelAge.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.labelAge.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.labelAge.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelAge.TabIndex = 13;
             this.labelAge.Values.Text = "Age";
             // 
             // labelDOB
             // 
             this.labelDOB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelDOB.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
-            this.labelDOB.Location = new System.Drawing.Point(3, 213);
+            this.labelDOB.Location = new System.Drawing.Point(3, 218);
             this.labelDOB.Name = "labelDOB";
             this.labelDOB.Size = new System.Drawing.Size(68, 21);
+            this.labelDOB.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelDOB.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelDOB.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
+            this.labelDOB.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.labelDOB.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.labelDOB.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.labelDOB.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.labelDOB.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelDOB.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelDOB.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.labelDOB.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
             this.labelDOB.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.labelDOB.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.labelDOB.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelDOB.TabIndex = 15;
             this.labelDOB.Values.Text = "D.O.B";
             // 
             // labelGender
             // 
             this.labelGender.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelGender.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
-            this.labelGender.Location = new System.Drawing.Point(3, 240);
+            this.labelGender.Location = new System.Drawing.Point(3, 245);
             this.labelGender.Name = "labelGender";
             this.labelGender.Size = new System.Drawing.Size(68, 20);
+            this.labelGender.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelGender.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelGender.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
+            this.labelGender.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.labelGender.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.labelGender.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.labelGender.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.labelGender.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelGender.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelGender.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.labelGender.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
             this.labelGender.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.labelGender.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.labelGender.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelGender.TabIndex = 8;
             this.labelGender.Values.Text = "Gender";
             // 
             // labelEmployed
             // 
             this.labelEmployed.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelEmployed.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
-            this.labelEmployed.Location = new System.Drawing.Point(3, 266);
+            this.labelEmployed.Location = new System.Drawing.Point(3, 271);
             this.labelEmployed.Name = "labelEmployed";
             this.labelEmployed.Size = new System.Drawing.Size(68, 20);
+            this.labelEmployed.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelEmployed.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelEmployed.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
+            this.labelEmployed.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.labelEmployed.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.labelEmployed.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.labelEmployed.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.labelEmployed.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelEmployed.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.labelEmployed.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.labelEmployed.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
             this.labelEmployed.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.labelEmployed.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.labelEmployed.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelEmployed.TabIndex = 9;
             this.labelEmployed.Values.Text = "Employed";
             // 
             // textBoxName
             // 
             this.textBoxName.AlwaysActive = false;
+            this.textBoxName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.textBoxName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.textBoxName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.textBoxName.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.textBoxName.Location = new System.Drawing.Point(77, 3);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(189, 20);
+            this.textBoxName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBoxName.Size = new System.Drawing.Size(189, 23);
             this.textBoxName.TabIndex = 0;
+            this.textBoxName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // richTextBoxAddress
             // 
             this.richTextBoxAddress.AlwaysActive = false;
             this.richTextBoxAddress.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.richTextBoxAddress.Location = new System.Drawing.Point(77, 29);
+            this.richTextBoxAddress.Location = new System.Drawing.Point(77, 32);
             this.richTextBoxAddress.Name = "richTextBoxAddress";
+            this.richTextBoxAddress.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
             this.richTextBoxAddress.Size = new System.Drawing.Size(189, 96);
             this.richTextBoxAddress.TabIndex = 1;
             this.richTextBoxAddress.Text = "";
@@ -390,14 +491,18 @@ namespace InputForm
             this.maskedTextBoxTelephone.AlwaysActive = false;
             this.maskedTextBoxTelephone.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.clearTelephone});
+            this.maskedTextBoxTelephone.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
             this.maskedTextBoxTelephone.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.maskedTextBoxTelephone.Location = new System.Drawing.Point(77, 131);
+            this.maskedTextBoxTelephone.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.maskedTextBoxTelephone.Location = new System.Drawing.Point(77, 134);
             this.maskedTextBoxTelephone.Mask = "(000) 000-000";
             this.maskedTextBoxTelephone.Name = "maskedTextBoxTelephone";
             this.maskedTextBoxTelephone.PromptChar = '?';
-            this.maskedTextBoxTelephone.Size = new System.Drawing.Size(130, 21);
+            this.maskedTextBoxTelephone.Size = new System.Drawing.Size(130, 23);
             this.maskedTextBoxTelephone.TabIndex = 2;
             this.maskedTextBoxTelephone.Text = "(   )    -";
+            this.maskedTextBoxTelephone.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.maskedTextBoxTelephone.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
             // 
             // clearTelephone
             // 
@@ -409,14 +514,19 @@ namespace InputForm
             // comboStatus
             // 
             this.comboStatus.AlwaysActive = false;
+            this.comboStatus.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.comboStatus.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.comboStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.comboStatus.DropDownWidth = 150;
             this.comboStatus.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
+            this.comboStatus.IntegralHeight = false;
             this.comboStatus.Items.AddRange(new object[] {
             "Single",
             "Married",
             "Divorced",
             "Separated"});
-            this.comboStatus.Location = new System.Drawing.Point(77, 158);
+            this.comboStatus.Location = new System.Drawing.Point(77, 163);
             this.comboStatus.Name = "comboStatus";
             this.comboStatus.Size = new System.Drawing.Size(130, 21);
             this.comboStatus.TabIndex = 3;
@@ -424,8 +534,13 @@ namespace InputForm
             // numericAge
             // 
             this.numericAge.AlwaysActive = false;
+            this.numericAge.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericAge.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.numericAge.Location = new System.Drawing.Point(77, 185);
+            this.numericAge.Location = new System.Drawing.Point(77, 190);
             this.numericAge.Maximum = new decimal(new int[] {
             120,
             0,
@@ -439,6 +554,7 @@ namespace InputForm
             this.numericAge.Name = "numericAge";
             this.numericAge.Size = new System.Drawing.Size(61, 22);
             this.numericAge.TabIndex = 4;
+            this.numericAge.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.numericAge.Value = new decimal(new int[] {
             21,
             0,
@@ -448,10 +564,15 @@ namespace InputForm
             // dtpDOB
             // 
             this.dtpDOB.AlwaysActive = false;
+            this.dtpDOB.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.dtpDOB.CalendarFirstDayOfWeek = System.Windows.Forms.Day.Default;
             this.dtpDOB.CalendarTodayDate = new System.DateTime(2009, 8, 23, 0, 0, 0, 0);
+            this.dtpDOB.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
+            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpDOB.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.dtpDOB.Location = new System.Drawing.Point(77, 213);
+            this.dtpDOB.Location = new System.Drawing.Point(77, 218);
             this.dtpDOB.Name = "dtpDOB";
+            this.dtpDOB.PaletteMode = Krypton.Toolkit.PaletteMode.Global;
             this.dtpDOB.Size = new System.Drawing.Size(186, 21);
             this.dtpDOB.TabIndex = 5;
             // 
@@ -460,7 +581,7 @@ namespace InputForm
             this.flowLayoutPanel2.AutoSize = true;
             this.flowLayoutPanel2.Controls.Add(this.radioButtonMale);
             this.flowLayoutPanel2.Controls.Add(this.radioButtonFemale);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(74, 237);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(74, 242);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(122, 26);
@@ -468,27 +589,33 @@ namespace InputForm
             // 
             // radioButtonMale
             // 
+            this.radioButtonMale.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioButtonMale.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.radioButtonMale.Location = new System.Drawing.Point(3, 3);
             this.radioButtonMale.Name = "radioButtonMale";
+            this.radioButtonMale.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioButtonMale.Size = new System.Drawing.Size(49, 20);
             this.radioButtonMale.TabIndex = 0;
             this.radioButtonMale.Values.Text = "Male";
             // 
             // radioButtonFemale
             // 
+            this.radioButtonFemale.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioButtonFemale.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.radioButtonFemale.Location = new System.Drawing.Point(58, 3);
             this.radioButtonFemale.Name = "radioButtonFemale";
+            this.radioButtonFemale.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.radioButtonFemale.Size = new System.Drawing.Size(61, 20);
             this.radioButtonFemale.TabIndex = 1;
             this.radioButtonFemale.Values.Text = "Female";
             // 
             // checkBoxEmployed
             // 
-            this.checkBoxEmployed.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
-            this.checkBoxEmployed.Location = new System.Drawing.Point(77, 266);
+            this.checkBoxEmployed.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
+            this.checkBoxEmployed.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.checkBoxEmployed.Location = new System.Drawing.Point(77, 271);
             this.checkBoxEmployed.Name = "checkBoxEmployed";
+            this.checkBoxEmployed.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.checkBoxEmployed.Size = new System.Drawing.Size(78, 20);
             this.checkBoxEmployed.TabIndex = 6;
             this.checkBoxEmployed.Values.Text = "Employed";
@@ -498,7 +625,7 @@ namespace InputForm
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.buttonOK);
             this.flowLayoutPanel1.Controls.Add(this.buttonCancel);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(74, 289);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(74, 294);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 13, 0, 0);
@@ -507,27 +634,37 @@ namespace InputForm
             // 
             // buttonOK
             // 
+            this.buttonOK.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.buttonOK.Location = new System.Drawing.Point(3, 16);
             this.buttonOK.Name = "buttonOK";
+            this.buttonOK.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.buttonOK.Size = new System.Drawing.Size(90, 25);
             this.buttonOK.TabIndex = 0;
             this.buttonOK.Values.Text = "OK";
             this.buttonOK.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // buttonCancel
             // 
+            this.buttonCancel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonCancel.Location = new System.Drawing.Point(99, 16);
             this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Orientation = Krypton.Toolkit.VisualOrientation.Top;
+            this.buttonCancel.Size = new System.Drawing.Size(90, 25);
             this.buttonCancel.TabIndex = 1;
             this.buttonCancel.Values.Text = "Cancel";
             this.buttonCancel.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // kryptonManager1
+            // 
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2007Blue;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 420);
+            this.ClientSize = new System.Drawing.Size(311, 419);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

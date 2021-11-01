@@ -1,13 +1,14 @@
-﻿// *****************************************************************************
-// 
-//  © Component Factory Pty Ltd, 2006 - 2016. All rights reserved.
-//	The software and associated documentation supplied hereunder are the 
-//  proprietary information of Component Factory Pty Ltd, PO Box 1504, 
-//  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
-// 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2021. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  Version 5.550.0 	www.ComponentFactory.com
-// *****************************************************************************
+﻿#region BSD License
+/*
+ * 
+ * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
+ *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
+ * 
+ *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  
+ */
+#endregion
 
 using System;
 using System.Drawing;
@@ -18,10 +19,7 @@ namespace ThreePaneApplication
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -62,18 +60,13 @@ namespace ThreePaneApplication
             kryptonHeaderGroupDetails.ButtonSpecs[1].Click += new EventHandler(OnNext);
         }
 
-        private void Form1_SystemColorsChanged(object sender, EventArgs e)
-        {
+        private void Form1_SystemColorsChanged(object sender, EventArgs e) =>
             // If the system colors change that might change the palette background
             // if the palette is calculating it from the system colors and so update
             // the control colors just in case.
             UpdateOnPaletteChanged();
-        }
 
-        private void toolStripLoadPalette_Click(object sender, EventArgs e)
-        {
-            loadPaletteToolStripMenuItem_Click(this, EventArgs.Empty);
-        }
+        private void toolStripLoadPalette_Click(object sender, EventArgs e) => loadPaletteToolStripMenuItem_Click(this, EventArgs.Empty);
 
         private void toolStripOffice2010Blue_Click(object sender, EventArgs e)
         {
@@ -302,10 +295,7 @@ namespace ThreePaneApplication
             readingPaneToolStripMenuItem.Checked = toolStripReadingPane.Checked;
         }
 
-        private void readingPaneToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            toolStripReadingPane.Checked = !toolStripReadingPane.Checked;
-        }
+        private void readingPaneToolStripMenuItem_Click(object sender, EventArgs e) => toolStripReadingPane.Checked = !toolStripReadingPane.Checked;
 
         private void toolStripPosition_CheckedChanged(object sender, EventArgs e)
         {
@@ -314,10 +304,7 @@ namespace ThreePaneApplication
             panePositonToolStripMenuItem.Checked = toolStripPosition.Checked;
         }
 
-        private void panePositonToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            toolStripPosition.Checked = !toolStripPosition.Checked;
-        }
+        private void panePositonToolStripMenuItem_Click(object sender, EventArgs e) => toolStripPosition.Checked = !toolStripPosition.Checked;
 
         private void treeView_AfterSelect(object sender, TreeViewEventArgs e)
         {
@@ -440,10 +427,7 @@ namespace ThreePaneApplication
             kryptonDataGridView.Refresh();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e) => Close();
 
         private void FilterDataTable(TreeNode node)
         {

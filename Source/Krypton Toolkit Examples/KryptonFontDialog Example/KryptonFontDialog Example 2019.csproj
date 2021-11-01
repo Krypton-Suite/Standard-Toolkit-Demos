@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
+        <OutputType>WinExe</OutputType>
+        <RootNamespace>KryptonFontDialog</RootNamespace>
+        <AssemblyName>KryptonFontDialog Example</AssemblyName>
+        <UseWindowsForms>true</UseWindowsForms>
+    	    <NeutralLanguage>en</NeutralLanguage>
+	    <LangVersion>preview</LangVersion>
+    </PropertyGroup>
+    <Choose>
+        <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
+            <ItemGroup>
+                <PackageReference Include="Krypton.Toolkit.Canary.Lite" Version="6.0.2106" />
+            </ItemGroup>
+        </When>
+        <Otherwise>
+            <ItemGroup>
+                <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
+            </ItemGroup>
+        </Otherwise>
+    </Choose>
+    <PropertyGroup>
+        <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+    	    <NeutralLanguage>en</NeutralLanguage>
+	    <LangVersion>preview</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+      <None Remove="Krypton.ico" />
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Include="Krypton.ico" />
+    </ItemGroup>
+</Project>

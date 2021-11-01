@@ -28,7 +28,6 @@ namespace ExpandingPages
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -126,8 +125,8 @@ namespace ExpandingPages
             this.kryptonCheckButton2 = new Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton1 = new Krypton.Toolkit.KryptonCheckButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
-            this.kryptonPalettes = new Krypton.Toolkit.KryptonCheckSet(this.components);
+            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager();
+            this.kryptonPalettes = new Krypton.Toolkit.KryptonCheckSet();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -163,7 +162,7 @@ namespace ExpandingPages
             // menuStrip1
             // 
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
@@ -341,7 +340,7 @@ namespace ExpandingPages
             this.customizeToolStripMenuItem,
             this.optionsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.toolsToolStripMenuItem.Text = "&Tools";
             // 
             // customizeToolStripMenuItem
@@ -400,7 +399,7 @@ namespace ExpandingPages
             // toolStrip1
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripButton,
             this.openToolStripButton,
@@ -535,6 +534,7 @@ namespace ExpandingPages
             // 
             // pageButtons
             // 
+            this.pageButtons.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pageButtons.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pageButtons.Location = new System.Drawing.Point(174, 129);
             this.pageButtons.Name = "pageButtons";
@@ -553,11 +553,16 @@ namespace ExpandingPages
             this.richTextBox2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox2.Location = new System.Drawing.Point(5, 5);
             this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
             this.richTextBox2.Size = new System.Drawing.Size(415, 257);
+            this.richTextBox2.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.richTextBox2.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.richTextBox2.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.False;
             this.richTextBox2.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.richTextBox2.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.richTextBox2.StateCommon.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.richTextBox2.TabIndex = 0;
             this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
             // 
@@ -576,16 +581,35 @@ namespace ExpandingPages
             this.navigatorTop.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
             this.navigatorTop.Button.ButtonSpecs.AddRange(new Krypton.Navigator.ButtonSpecNavigator[] {
             this.buttonTopArrow});
+            this.navigatorTop.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
             this.navigatorTop.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
+            this.navigatorTop.Button.ContextButtonAction = Krypton.Navigator.ContextButtonAction.SelectPage;
+            this.navigatorTop.Button.ContextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.navigatorTop.Button.ContextMenuMapImage = Krypton.Navigator.MapKryptonPageImage.Small;
+            this.navigatorTop.Button.ContextMenuMapText = Krypton.Navigator.MapKryptonPageText.TextTitle;
+            this.navigatorTop.Button.NextButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.navigatorTop.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.navigatorTop.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.navigatorTop.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
             this.navigatorTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.navigatorTop.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
+            this.navigatorTop.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
+            this.navigatorTop.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
+            this.navigatorTop.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.navigatorTop.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
+            this.navigatorTop.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
+            this.navigatorTop.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
+            this.navigatorTop.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
             this.navigatorTop.Location = new System.Drawing.Point(174, 5);
             this.navigatorTop.Name = "navigatorTop";
             this.navigatorTop.NavigatorMode = Krypton.Navigator.NavigatorMode.HeaderBarCheckButtonGroup;
+            this.navigatorTop.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.navigatorTop.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.pageEntryForm,
             this.kryptonPage4,
             this.pageProgressBars,
             this.pageColors});
+            this.navigatorTop.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.navigatorTop.PopupPages.AllowPopupPages = Krypton.Navigator.PopupPageAllow.OnlyCompatibleModes;
             this.navigatorTop.PopupPages.Element = Krypton.Navigator.PopupPageElement.Navigator;
             this.navigatorTop.PopupPages.Position = Krypton.Navigator.PopupPagePosition.BelowMatch;
@@ -624,25 +648,35 @@ namespace ExpandingPages
             // 
             // textBox3
             // 
+            this.textBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.textBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.textBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.textBox3.Location = new System.Drawing.Point(217, 39);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBox3.Size = new System.Drawing.Size(100, 23);
             this.textBox3.TabIndex = 7;
             this.textBox3.Text = "Dead";
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // textBox4
             // 
+            this.textBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.textBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.textBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.textBox4.Location = new System.Drawing.Point(217, 15);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBox4.Size = new System.Drawing.Size(100, 23);
             this.textBox4.TabIndex = 6;
             this.textBox4.Text = "Prime Minister";
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // kryptonLabel3
             // 
             this.kryptonLabel3.Location = new System.Drawing.Point(170, 40);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(42, 18);
+            this.kryptonLabel3.Size = new System.Drawing.Size(44, 20);
             this.kryptonLabel3.TabIndex = 5;
             this.kryptonLabel3.Values.Text = "Status";
             // 
@@ -650,25 +684,35 @@ namespace ExpandingPages
             // 
             this.kryptonLabel4.Location = new System.Drawing.Point(161, 15);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(51, 18);
+            this.kryptonLabel4.Size = new System.Drawing.Size(54, 20);
             this.kryptonLabel4.TabIndex = 4;
             this.kryptonLabel4.Values.Text = "Position";
             // 
             // textBox2
             // 
+            this.textBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.textBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.textBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.textBox2.Location = new System.Drawing.Point(53, 39);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBox2.Size = new System.Drawing.Size(100, 23);
             this.textBox2.TabIndex = 3;
             this.textBox2.Text = "Chruchill";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // textBox1
             // 
+            this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.textBox1.Location = new System.Drawing.Point(53, 15);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "Winston";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // kryptonLabel2
             // 
@@ -928,15 +972,33 @@ namespace ExpandingPages
             this.navigatorLeft.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
             this.navigatorLeft.Button.ButtonSpecs.AddRange(new Krypton.Navigator.ButtonSpecNavigator[] {
             this.buttonLeft});
+            this.navigatorLeft.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
             this.navigatorLeft.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
+            this.navigatorLeft.Button.ContextButtonAction = Krypton.Navigator.ContextButtonAction.SelectPage;
+            this.navigatorLeft.Button.ContextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.navigatorLeft.Button.ContextMenuMapImage = Krypton.Navigator.MapKryptonPageImage.Small;
+            this.navigatorLeft.Button.ContextMenuMapText = Krypton.Navigator.MapKryptonPageText.TextTitle;
+            this.navigatorLeft.Button.NextButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.navigatorLeft.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.navigatorLeft.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.navigatorLeft.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
             this.navigatorLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.navigatorLeft.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
+            this.navigatorLeft.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
             this.navigatorLeft.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Left;
+            this.navigatorLeft.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.navigatorLeft.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
+            this.navigatorLeft.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
+            this.navigatorLeft.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
+            this.navigatorLeft.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
             this.navigatorLeft.Location = new System.Drawing.Point(5, 5);
             this.navigatorLeft.Name = "navigatorLeft";
             this.navigatorLeft.NavigatorMode = Krypton.Navigator.NavigatorMode.HeaderBarCheckButtonGroup;
+            this.navigatorLeft.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.navigatorLeft.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.pageRichTextBox,
             this.pageListBox});
+            this.navigatorLeft.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.navigatorLeft.PopupPages.AllowPopupPages = Krypton.Navigator.PopupPageAllow.OnlyCompatibleModes;
             this.navigatorLeft.PopupPages.Element = Krypton.Navigator.PopupPageElement.Navigator;
             this.navigatorLeft.PopupPages.Position = Krypton.Navigator.PopupPagePosition.FarMatch;
@@ -972,11 +1034,16 @@ namespace ExpandingPages
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Location = new System.Drawing.Point(5, 5);
             this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
             this.richTextBox1.Size = new System.Drawing.Size(121, 286);
+            this.richTextBox1.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.richTextBox1.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.richTextBox1.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.False;
             this.richTextBox1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.richTextBox1.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.richTextBox1.StateCommon.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "Plenty of room here to enter some notes. Help yourself!";
             // 
@@ -1004,9 +1071,12 @@ namespace ExpandingPages
             // 
             // kryptonCheckButton7
             // 
+            this.kryptonCheckButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton7.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
+            this.kryptonCheckButton7.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonCheckButton7.Location = new System.Drawing.Point(16, 78);
             this.kryptonCheckButton7.Name = "kryptonCheckButton7";
+            this.kryptonCheckButton7.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonCheckButton7.Size = new System.Drawing.Size(100, 25);
             this.kryptonCheckButton7.TabIndex = 8;
             this.kryptonCheckButton7.Values.Text = "2010 Black";
@@ -1014,9 +1084,12 @@ namespace ExpandingPages
             // 
             // kryptonCheckButton8
             // 
+            this.kryptonCheckButton8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton8.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
+            this.kryptonCheckButton8.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonCheckButton8.Location = new System.Drawing.Point(16, 45);
             this.kryptonCheckButton8.Name = "kryptonCheckButton8";
+            this.kryptonCheckButton8.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonCheckButton8.Size = new System.Drawing.Size(100, 25);
             this.kryptonCheckButton8.TabIndex = 7;
             this.kryptonCheckButton8.Values.Text = "2010 Silver";
@@ -1024,10 +1097,13 @@ namespace ExpandingPages
             // 
             // kryptonCheckButton9
             // 
+            this.kryptonCheckButton9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton9.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
             this.kryptonCheckButton9.Checked = true;
+            this.kryptonCheckButton9.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonCheckButton9.Location = new System.Drawing.Point(16, 12);
             this.kryptonCheckButton9.Name = "kryptonCheckButton9";
+            this.kryptonCheckButton9.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonCheckButton9.Size = new System.Drawing.Size(100, 25);
             this.kryptonCheckButton9.TabIndex = 6;
             this.kryptonCheckButton9.Values.Text = "2010 Blue";
@@ -1035,18 +1111,24 @@ namespace ExpandingPages
             // 
             // kryptonCheckButton6
             // 
+            this.kryptonCheckButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton6.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
+            this.kryptonCheckButton6.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonCheckButton6.Location = new System.Drawing.Point(16, 243);
             this.kryptonCheckButton6.Name = "kryptonCheckButton6";
+            this.kryptonCheckButton6.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonCheckButton6.Size = new System.Drawing.Size(100, 25);
             this.kryptonCheckButton6.TabIndex = 4;
             this.kryptonCheckButton6.Values.Text = "Sparkle";
             // 
             // kryptonCheckButton5
             // 
+            this.kryptonCheckButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton5.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
+            this.kryptonCheckButton5.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonCheckButton5.Location = new System.Drawing.Point(16, 210);
             this.kryptonCheckButton5.Name = "kryptonCheckButton5";
+            this.kryptonCheckButton5.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonCheckButton5.Size = new System.Drawing.Size(100, 25);
             this.kryptonCheckButton5.TabIndex = 3;
             this.kryptonCheckButton5.Values.Text = "2003";
@@ -1054,9 +1136,12 @@ namespace ExpandingPages
             // 
             // kryptonCheckButton4
             // 
+            this.kryptonCheckButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton4.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
+            this.kryptonCheckButton4.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonCheckButton4.Location = new System.Drawing.Point(16, 276);
             this.kryptonCheckButton4.Name = "kryptonCheckButton4";
+            this.kryptonCheckButton4.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonCheckButton4.Size = new System.Drawing.Size(100, 25);
             this.kryptonCheckButton4.TabIndex = 5;
             this.kryptonCheckButton4.Values.Text = "System";
@@ -1064,9 +1149,12 @@ namespace ExpandingPages
             // 
             // kryptonCheckButton3
             // 
+            this.kryptonCheckButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton3.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
+            this.kryptonCheckButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonCheckButton3.Location = new System.Drawing.Point(16, 177);
             this.kryptonCheckButton3.Name = "kryptonCheckButton3";
+            this.kryptonCheckButton3.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonCheckButton3.Size = new System.Drawing.Size(100, 25);
             this.kryptonCheckButton3.TabIndex = 2;
             this.kryptonCheckButton3.Values.Text = "2007 Black";
@@ -1074,9 +1162,12 @@ namespace ExpandingPages
             // 
             // kryptonCheckButton2
             // 
+            this.kryptonCheckButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton2.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
+            this.kryptonCheckButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonCheckButton2.Location = new System.Drawing.Point(16, 144);
             this.kryptonCheckButton2.Name = "kryptonCheckButton2";
+            this.kryptonCheckButton2.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonCheckButton2.Size = new System.Drawing.Size(100, 25);
             this.kryptonCheckButton2.TabIndex = 1;
             this.kryptonCheckButton2.Values.Text = "2007 Silver";
@@ -1084,9 +1175,12 @@ namespace ExpandingPages
             // 
             // kryptonCheckButton1
             // 
+            this.kryptonCheckButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton1.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
+            this.kryptonCheckButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonCheckButton1.Location = new System.Drawing.Point(16, 111);
             this.kryptonCheckButton1.Name = "kryptonCheckButton1";
+            this.kryptonCheckButton1.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonCheckButton1.Size = new System.Drawing.Size(100, 25);
             this.kryptonCheckButton1.TabIndex = 0;
             this.kryptonCheckButton1.Values.Text = "2007 Blue";
@@ -1094,7 +1188,7 @@ namespace ExpandingPages
             // 
             // statusStrip1
             // 
-            this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
             this.statusStrip1.Location = new System.Drawing.Point(0, 452);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;

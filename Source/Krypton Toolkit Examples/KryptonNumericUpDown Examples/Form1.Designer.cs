@@ -88,9 +88,9 @@
             // 
             // propertyGrid
             // 
-            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.propertyGrid.Location = new System.Drawing.Point(6, 19);
             this.propertyGrid.Name = "propertyGrid";
             this.propertyGrid.Size = new System.Drawing.Size(310, 337);
@@ -121,10 +121,16 @@
             0,
             0,
             0});
+            this.nud1.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud1.Name = "nud1";
             this.nud1.Size = new System.Drawing.Size(96, 22);
             this.nud1.TabIndex = 0;
             this.nud1.ThousandsSeparator = true;
+            this.nud1.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.nud1.Value = new decimal(new int[] {
             2000,
             0,
@@ -145,11 +151,17 @@
             0,
             0,
             0});
+            this.nud2.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud2.Name = "nud2";
             this.nud2.Size = new System.Drawing.Size(96, 22);
+            this.nud2.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.nud2.TabIndex = 1;
-            this.nud2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nud2.ThousandsSeparator = true;
+            this.nud2.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.nud2.Value = new decimal(new int[] {
             3000,
             0,
@@ -170,11 +182,17 @@
             0,
             0,
             0});
+            this.nud3.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud3.Name = "nud3";
             this.nud3.Size = new System.Drawing.Size(96, 22);
+            this.nud3.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.nud3.TabIndex = 2;
-            this.nud3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.nud3.ThousandsSeparator = true;
+            this.nud3.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.nud3.Value = new decimal(new int[] {
             4000,
             0,
@@ -184,6 +202,7 @@
             // 
             // nud4
             // 
+            this.nud4.AllowDecimals = true;
             this.nud4.DecimalPlaces = 2;
             this.nud4.Increment = new decimal(new int[] {
             5,
@@ -191,6 +210,16 @@
             0,
             65536});
             this.nud4.Location = new System.Drawing.Point(138, 31);
+            this.nud4.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.nud4.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud4.Name = "nud4";
             this.nud4.Size = new System.Drawing.Size(96, 22);
             this.nud4.TabIndex = 3;
@@ -203,8 +232,13 @@
             131072});
             this.nud4.Enter += new System.EventHandler(this.nud_Enter);
             // 
+            // kryptonManager1
+            // 
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2007Blue;
+            // 
             // nud5
             // 
+            this.nud5.AllowDecimals = true;
             this.nud5.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecAny1});
             this.nud5.DecimalPlaces = 3;
@@ -214,10 +248,20 @@
             0,
             65536});
             this.nud5.Location = new System.Drawing.Point(138, 59);
+            this.nud5.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.nud5.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud5.Name = "nud5";
             this.nud5.Size = new System.Drawing.Size(114, 22);
+            this.nud5.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.nud5.TabIndex = 4;
-            this.nud5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nud5.ThousandsSeparator = true;
             this.nud5.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.nud5.Value = new decimal(new int[] {
@@ -236,6 +280,7 @@
             // 
             // nud6
             // 
+            this.nud6.AllowDecimals = true;
             this.nud6.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecAny2,
             this.buttonSpecAny3});
@@ -246,10 +291,20 @@
             0,
             65536});
             this.nud6.Location = new System.Drawing.Point(138, 87);
+            this.nud6.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.nud6.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud6.Name = "nud6";
             this.nud6.Size = new System.Drawing.Size(131, 22);
+            this.nud6.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.nud6.TabIndex = 5;
-            this.nud6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.nud6.ThousandsSeparator = true;
             this.nud6.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.nud6.Value = new decimal(new int[] {
@@ -296,16 +351,22 @@
             // 
             // kryptonContextMenuItem1
             // 
+            this.kryptonContextMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kryptonContextMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem1.Text = "10.0000";
             this.kryptonContextMenuItem1.Click += new System.EventHandler(this.kryptonContextMenuItem1_Click);
             // 
             // kryptonContextMenuItem2
             // 
+            this.kryptonContextMenuItem2.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kryptonContextMenuItem2.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem2.Text = "20.0000";
             this.kryptonContextMenuItem2.Click += new System.EventHandler(this.kryptonContextMenuItem2_Click);
             // 
             // kryptonContextMenuItem3
             // 
+            this.kryptonContextMenuItem3.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kryptonContextMenuItem3.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem3.Text = "40.0000";
             this.kryptonContextMenuItem3.Click += new System.EventHandler(this.kryptonContextMenuItem3_Click);
             // 
@@ -322,11 +383,15 @@
             // 
             // kryptonContextMenuItem4
             // 
+            this.kryptonContextMenuItem4.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kryptonContextMenuItem4.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem4.Text = "Minimum";
             this.kryptonContextMenuItem4.Click += new System.EventHandler(this.kryptonContextMenuItem4_Click);
             // 
             // kryptonContextMenuItem5
             // 
+            this.kryptonContextMenuItem5.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.kryptonContextMenuItem5.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem5.Text = "Maximum";
             this.kryptonContextMenuItem5.Click += new System.EventHandler(this.kryptonContextMenuItem5_Click);
             // 
@@ -375,10 +440,16 @@
             0,
             0,
             0});
+            this.nud7.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud7.Name = "nud7";
             this.nud7.Size = new System.Drawing.Size(96, 22);
             this.nud7.TabIndex = 0;
             this.nud7.ThousandsSeparator = true;
+            this.nud7.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.nud7.Value = new decimal(new int[] {
             2000,
             0,
@@ -388,6 +459,7 @@
             // 
             // nud12
             // 
+            this.nud12.AllowDecimals = true;
             this.nud12.AlwaysActive = false;
             this.nud12.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecAny4,
@@ -400,10 +472,20 @@
             65536});
             this.nud12.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.nud12.Location = new System.Drawing.Point(138, 87);
+            this.nud12.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.nud12.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud12.Name = "nud12";
             this.nud12.Size = new System.Drawing.Size(131, 22);
+            this.nud12.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.nud12.TabIndex = 5;
-            this.nud12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.nud12.ThousandsSeparator = true;
             this.nud12.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.nud12.Value = new decimal(new int[] {
@@ -442,11 +524,17 @@
             0,
             0,
             0});
+            this.nud8.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud8.Name = "nud8";
             this.nud8.Size = new System.Drawing.Size(96, 22);
+            this.nud8.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.nud8.TabIndex = 1;
-            this.nud8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nud8.ThousandsSeparator = true;
+            this.nud8.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.nud8.Value = new decimal(new int[] {
             3000,
             0,
@@ -456,6 +544,7 @@
             // 
             // nud11
             // 
+            this.nud11.AllowDecimals = true;
             this.nud11.AlwaysActive = false;
             this.nud11.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecAny6});
@@ -467,10 +556,20 @@
             65536});
             this.nud11.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.nud11.Location = new System.Drawing.Point(138, 59);
+            this.nud11.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.nud11.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud11.Name = "nud11";
             this.nud11.Size = new System.Drawing.Size(114, 22);
+            this.nud11.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.nud11.TabIndex = 4;
-            this.nud11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nud11.ThousandsSeparator = true;
             this.nud11.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.nud11.Value = new decimal(new int[] {
@@ -502,11 +601,17 @@
             0,
             0,
             0});
+            this.nud9.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud9.Name = "nud9";
             this.nud9.Size = new System.Drawing.Size(96, 22);
+            this.nud9.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.nud9.TabIndex = 2;
-            this.nud9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.nud9.ThousandsSeparator = true;
+            this.nud9.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.nud9.Value = new decimal(new int[] {
             4000,
             0,
@@ -516,6 +621,7 @@
             // 
             // nud10
             // 
+            this.nud10.AllowDecimals = true;
             this.nud10.AlwaysActive = false;
             this.nud10.DecimalPlaces = 2;
             this.nud10.Increment = new decimal(new int[] {
@@ -525,6 +631,16 @@
             65536});
             this.nud10.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.nud10.Location = new System.Drawing.Point(138, 31);
+            this.nud10.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.nud10.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud10.Name = "nud10";
             this.nud10.Size = new System.Drawing.Size(96, 22);
             this.nud10.TabIndex = 3;

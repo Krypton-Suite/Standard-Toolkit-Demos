@@ -80,6 +80,8 @@ namespace RibbonControls
             this.kryptonRibbonGroupButton1 = new Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroupCheckBox1 = new Krypton.Ribbon.KryptonRibbonGroupCheckBox();
             this.kryptonRibbonGroupButton2 = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupLines3 = new Krypton.Ribbon.KryptonRibbonGroupLines();
+            this.miscCmbTheme = new Krypton.Ribbon.KryptonRibbonGroupComboBox();
             this.kryptonPanel = new Krypton.Toolkit.KryptonPanel();
             this.kryptonHeaderGroup = new Krypton.Toolkit.KryptonHeaderGroup();
             this.rbOffice2010Blue = new Krypton.Toolkit.KryptonRadioButton();
@@ -92,6 +94,7 @@ namespace RibbonControls
             this.rbOffice2003 = new Krypton.Toolkit.KryptonRadioButton();
             this.rbOffice2007Black = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonRibbonGroupColorButton1 = new Krypton.Ribbon.KryptonRibbonGroupColorButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.kryptonPanel.SuspendLayout();
@@ -112,7 +115,7 @@ namespace RibbonControls
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.ribbonTab});
             this.kryptonRibbon.SelectedTab = this.ribbonTab;
-            this.kryptonRibbon.Size = new System.Drawing.Size(1115, 115);
+            this.kryptonRibbon.Size = new System.Drawing.Size(1487, 135);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // kryptonContextMenuItem1
@@ -314,7 +317,7 @@ namespace RibbonControls
             // 
             this.comboBox1.DropDownWidth = 121;
             this.comboBox1.FormattingEnabled = false;
-            this.comboBox1.ItemHeight = 15;
+            this.comboBox1.ItemHeight = 19;
             this.comboBox1.Items.AddRange(new object[] {
             "First",
             "Second",
@@ -331,7 +334,7 @@ namespace RibbonControls
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.DropDownWidth = 121;
             this.comboBox2.FormattingEnabled = false;
-            this.comboBox2.ItemHeight = 15;
+            this.comboBox2.ItemHeight = 19;
             this.comboBox2.Items.AddRange(new object[] {
             "England",
             "Scotland",
@@ -349,7 +352,7 @@ namespace RibbonControls
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.DropDownWidth = 103;
             this.comboBox3.FormattingEnabled = false;
-            this.comboBox3.ItemHeight = 15;
+            this.comboBox3.ItemHeight = 19;
             this.comboBox3.Items.AddRange(new object[] {
             "Windows 95",
             "Windows 98",
@@ -483,7 +486,8 @@ namespace RibbonControls
             // kryptonRibbonGroup9
             // 
             this.kryptonRibbonGroup9.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
-            this.kryptonRibbonGroupTriple8});
+            this.kryptonRibbonGroupTriple8,
+            this.kryptonRibbonGroupLines3});
             this.kryptonRibbonGroup9.TextLine1 = "Misc";
             // 
             // kryptonRibbonGroupTriple8
@@ -512,13 +516,31 @@ namespace RibbonControls
             this.kryptonRibbonGroupButton2.TextLine1 = "Disabled";
             this.kryptonRibbonGroupButton2.TextLine2 = "Button";
             // 
+            // kryptonRibbonGroupLines3
+            // 
+            this.kryptonRibbonGroupLines3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.miscCmbTheme,
+            this.kryptonRibbonGroupColorButton1});
+            this.kryptonRibbonGroupLines3.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
+            // 
+            // miscCmbTheme
+            // 
+            this.miscCmbTheme.DropDownWidth = 300;
+            this.miscCmbTheme.FormattingEnabled = false;
+            this.miscCmbTheme.ItemHeight = 19;
+            this.miscCmbTheme.MaxDropDownItems = 16;
+            this.miscCmbTheme.MaximumSize = new System.Drawing.Size(300, 0);
+            this.miscCmbTheme.MinimumSize = new System.Drawing.Size(300, 0);
+            this.miscCmbTheme.Text = "";
+            // 
             // kryptonPanel
             // 
             this.kryptonPanel.Controls.Add(this.kryptonHeaderGroup);
             this.kryptonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel.Location = new System.Drawing.Point(0, 115);
+            this.kryptonPanel.Location = new System.Drawing.Point(0, 135);
+            this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel.Name = "kryptonPanel";
-            this.kryptonPanel.Size = new System.Drawing.Size(1115, 161);
+            this.kryptonPanel.Size = new System.Drawing.Size(1487, 205);
             this.kryptonPanel.TabIndex = 1;
             // 
             // kryptonHeaderGroup
@@ -527,7 +549,8 @@ namespace RibbonControls
             this.kryptonHeaderGroup.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlRibbon;
             this.kryptonHeaderGroup.HeaderVisiblePrimary = false;
             this.kryptonHeaderGroup.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup.Location = new System.Drawing.Point(23, 22);
+            this.kryptonHeaderGroup.Location = new System.Drawing.Point(31, 27);
+            this.kryptonHeaderGroup.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonHeaderGroup.Name = "kryptonHeaderGroup";
             // 
             // kryptonHeaderGroup.Panel
@@ -541,45 +564,49 @@ namespace RibbonControls
             this.kryptonHeaderGroup.Panel.Controls.Add(this.rbOffice2007Silver);
             this.kryptonHeaderGroup.Panel.Controls.Add(this.rbOffice2003);
             this.kryptonHeaderGroup.Panel.Controls.Add(this.rbOffice2007Black);
-            this.kryptonHeaderGroup.Size = new System.Drawing.Size(434, 109);
+            this.kryptonHeaderGroup.Size = new System.Drawing.Size(579, 134);
             this.kryptonHeaderGroup.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonHeaderGroup.StateCommon.Border.Rounding = 9;
+            this.kryptonHeaderGroup.StateCommon.Border.Rounding = 9F;
             this.kryptonHeaderGroup.TabIndex = 0;
             // 
             // rbOffice2010Blue
             // 
-            this.rbOffice2010Blue.Location = new System.Drawing.Point(19, 13);
+            this.rbOffice2010Blue.Location = new System.Drawing.Point(25, 16);
+            this.rbOffice2010Blue.Margin = new System.Windows.Forms.Padding(4);
             this.rbOffice2010Blue.Name = "rbOffice2010Blue";
-            this.rbOffice2010Blue.Size = new System.Drawing.Size(120, 20);
+            this.rbOffice2010Blue.Size = new System.Drawing.Size(145, 24);
             this.rbOffice2010Blue.TabIndex = 0;
             this.rbOffice2010Blue.Values.Text = "Office 2010 - Blue";
             this.rbOffice2010Blue.CheckedChanged += new System.EventHandler(this.rbOffice2010Blue_CheckedChanged);
             // 
             // rbOffice2010Silver
             // 
-            this.rbOffice2010Silver.Location = new System.Drawing.Point(19, 37);
+            this.rbOffice2010Silver.Location = new System.Drawing.Point(25, 46);
+            this.rbOffice2010Silver.Margin = new System.Windows.Forms.Padding(4);
             this.rbOffice2010Silver.Name = "rbOffice2010Silver";
-            this.rbOffice2010Silver.Size = new System.Drawing.Size(126, 20);
+            this.rbOffice2010Silver.Size = new System.Drawing.Size(153, 24);
             this.rbOffice2010Silver.TabIndex = 1;
             this.rbOffice2010Silver.Values.Text = "Office 2010 - Silver";
             this.rbOffice2010Silver.CheckedChanged += new System.EventHandler(this.rbOffice2010Silver_CheckedChanged);
             // 
             // rbOffice2010Black
             // 
-            this.rbOffice2010Black.Location = new System.Drawing.Point(19, 61);
+            this.rbOffice2010Black.Location = new System.Drawing.Point(25, 75);
+            this.rbOffice2010Black.Margin = new System.Windows.Forms.Padding(4);
             this.rbOffice2010Black.Name = "rbOffice2010Black";
-            this.rbOffice2010Black.Size = new System.Drawing.Size(125, 20);
+            this.rbOffice2010Black.Size = new System.Drawing.Size(151, 24);
             this.rbOffice2010Black.TabIndex = 2;
             this.rbOffice2010Black.Values.Text = "Office 2010 - Black";
             this.rbOffice2010Black.CheckedChanged += new System.EventHandler(this.rbOffice2010Black_CheckedChanged);
             // 
             // rbSparkle
             // 
-            this.rbSparkle.Location = new System.Drawing.Point(315, 37);
+            this.rbSparkle.Location = new System.Drawing.Point(420, 46);
+            this.rbSparkle.Margin = new System.Windows.Forms.Padding(4);
             this.rbSparkle.Name = "rbSparkle";
-            this.rbSparkle.Size = new System.Drawing.Size(98, 20);
+            this.rbSparkle.Size = new System.Drawing.Size(118, 24);
             this.rbSparkle.TabIndex = 7;
             this.rbSparkle.Values.Text = "Sparkle - Blue";
             this.rbSparkle.CheckedChanged += new System.EventHandler(this.rbSparkle_CheckedChanged);
@@ -587,45 +614,50 @@ namespace RibbonControls
             // rbOffice2007Blue
             // 
             this.rbOffice2007Blue.Checked = true;
-            this.rbOffice2007Blue.Location = new System.Drawing.Point(166, 13);
+            this.rbOffice2007Blue.Location = new System.Drawing.Point(221, 16);
+            this.rbOffice2007Blue.Margin = new System.Windows.Forms.Padding(4);
             this.rbOffice2007Blue.Name = "rbOffice2007Blue";
-            this.rbOffice2007Blue.Size = new System.Drawing.Size(120, 20);
+            this.rbOffice2007Blue.Size = new System.Drawing.Size(145, 24);
             this.rbOffice2007Blue.TabIndex = 3;
             this.rbOffice2007Blue.Values.Text = "Office 2007 - Blue";
             this.rbOffice2007Blue.CheckedChanged += new System.EventHandler(this.rbOffice2007Blue_CheckedChanged);
             // 
             // rbSystem
             // 
-            this.rbSystem.Location = new System.Drawing.Point(315, 61);
+            this.rbSystem.Location = new System.Drawing.Point(420, 75);
+            this.rbSystem.Margin = new System.Windows.Forms.Padding(4);
             this.rbSystem.Name = "rbSystem";
-            this.rbSystem.Size = new System.Drawing.Size(62, 20);
+            this.rbSystem.Size = new System.Drawing.Size(72, 24);
             this.rbSystem.TabIndex = 8;
             this.rbSystem.Values.Text = "System";
             this.rbSystem.CheckedChanged += new System.EventHandler(this.rbSystem_CheckedChanged);
             // 
             // rbOffice2007Silver
             // 
-            this.rbOffice2007Silver.Location = new System.Drawing.Point(166, 37);
+            this.rbOffice2007Silver.Location = new System.Drawing.Point(221, 46);
+            this.rbOffice2007Silver.Margin = new System.Windows.Forms.Padding(4);
             this.rbOffice2007Silver.Name = "rbOffice2007Silver";
-            this.rbOffice2007Silver.Size = new System.Drawing.Size(126, 20);
+            this.rbOffice2007Silver.Size = new System.Drawing.Size(153, 24);
             this.rbOffice2007Silver.TabIndex = 4;
             this.rbOffice2007Silver.Values.Text = "Office 2007 - Silver";
             this.rbOffice2007Silver.CheckedChanged += new System.EventHandler(this.rbOffice2007Silver_CheckedChanged);
             // 
             // rbOffice2003
             // 
-            this.rbOffice2003.Location = new System.Drawing.Point(315, 13);
+            this.rbOffice2003.Location = new System.Drawing.Point(420, 16);
+            this.rbOffice2003.Margin = new System.Windows.Forms.Padding(4);
             this.rbOffice2003.Name = "rbOffice2003";
-            this.rbOffice2003.Size = new System.Drawing.Size(85, 20);
+            this.rbOffice2003.Size = new System.Drawing.Size(101, 24);
             this.rbOffice2003.TabIndex = 6;
             this.rbOffice2003.Values.Text = "Office 2003";
             this.rbOffice2003.CheckedChanged += new System.EventHandler(this.rbOffice2003_CheckedChanged);
             // 
             // rbOffice2007Black
             // 
-            this.rbOffice2007Black.Location = new System.Drawing.Point(166, 61);
+            this.rbOffice2007Black.Location = new System.Drawing.Point(221, 75);
+            this.rbOffice2007Black.Margin = new System.Windows.Forms.Padding(4);
             this.rbOffice2007Black.Name = "rbOffice2007Black";
-            this.rbOffice2007Black.Size = new System.Drawing.Size(125, 20);
+            this.rbOffice2007Black.Size = new System.Drawing.Size(151, 24);
             this.rbOffice2007Black.TabIndex = 5;
             this.rbOffice2007Black.Values.Text = "Office 2007 - Black";
             this.rbOffice2007Black.CheckedChanged += new System.EventHandler(this.rbOffice2007Black_CheckedChanged);
@@ -634,15 +666,20 @@ namespace RibbonControls
             // 
             this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2007Blue;
             // 
+            // kryptonRibbonGroupColorButton1
+            // 
+            this.kryptonRibbonGroupColorButton1.RecentColors = new System.Drawing.Color[0];
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1115, 276);
+            this.ClientSize = new System.Drawing.Size(1487, 340);
             this.Controls.Add(this.kryptonPanel);
             this.Controls.Add(this.kryptonRibbon);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(250, 232);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(327, 275);
             this.Name = "Form1";
             this.Text = "Ribbon Controls";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -724,6 +761,9 @@ namespace RibbonControls
         private Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton1;
         private Krypton.Ribbon.KryptonRibbonGroupCheckBox kryptonRibbonGroupCheckBox1;
         private Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton2;
+        private Krypton.Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines3;
+        private Krypton.Ribbon.KryptonRibbonGroupComboBox miscCmbTheme;
+        private Krypton.Ribbon.KryptonRibbonGroupColorButton kryptonRibbonGroupColorButton1;
     }
 }
 

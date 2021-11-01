@@ -1,13 +1,14 @@
-﻿// *****************************************************************************
-// 
-//  © Component Factory Pty Ltd, 2006 - 2016. All rights reserved.
-//	The software and associated documentation supplied hereunder are the 
-//  proprietary information of Component Factory Pty Ltd, PO Box 1504, 
-//  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
-// 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2021. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  Version 5.550.0 	www.ComponentFactory.com
-// *****************************************************************************
+﻿#region BSD License
+/*
+ * 
+ * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
+ *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
+ * 
+ *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  
+ */
+#endregion
 
 using System;
 using System.Drawing;
@@ -19,77 +20,41 @@ namespace KryptonFormExamples
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void kryptonCheckSetPalettes_CheckedButtonChanged(object sender, EventArgs e)
         {
             // Recalc the non client size to reflect new border style
             RecalcNonClient();
 
-            switch (kryptonCheckSetPalettes.CheckedIndex)
-            {
-                case 0:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
-                    break;
-                case 1:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Black;
-                    break;
-                case 2:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
-                    break;
-                case 3:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
-                    break;
-                case 4:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalOffice2003;
-                    break;
-                case 5:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
-                    break;
-                case 6:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
-                    break;
-                case 7:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
-                    break;
-                case 8:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
-                    break;
-                case 9:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
-                    break;
-            }
+            kryptonManager.GlobalPaletteMode = kryptonCheckSetPalettes.CheckedIndex switch {
+                0 => PaletteModeManager.Office365Blue,
+                1 => PaletteModeManager.ProfessionalSystem,
+                2 => PaletteModeManager.Office2007Black,
+                3 => PaletteModeManager.Office2007Silver,
+                4 => PaletteModeManager.Office2007Blue,
+                5 => PaletteModeManager.ProfessionalOffice2003,
+                6 => PaletteModeManager.SparkleBlue,
+                7 => PaletteModeManager.SparkleOrange,
+                8 => PaletteModeManager.Office2010Black,
+                9 => PaletteModeManager.Office2010Silver,
+                10 => PaletteModeManager.Office2010Blue,
+                _ => kryptonManager.GlobalPaletteMode
+            };
         }
 
         private void kryptonCheckSetStyles_CheckedButtonChanged(object sender, EventArgs e)
         {
-            switch (kryptonCheckSetStyles.CheckedIndex)
-            {
-                case 0:
-                    FormBorderStyle = FormBorderStyle.Sizable;
-                    break;
-                case 1:
-                    FormBorderStyle = FormBorderStyle.FixedToolWindow;
-                    break;
-                case 2:
-                    FormBorderStyle = FormBorderStyle.SizableToolWindow;
-                    break;
-                case 3:
-                    FormBorderStyle = FormBorderStyle.FixedDialog;
-                    break;
-                case 4:
-                    FormBorderStyle = FormBorderStyle.Fixed3D;
-                    break;
-                case 5:
-                    FormBorderStyle = FormBorderStyle.FixedSingle;
-                    break;
-                case 6:
-                    FormBorderStyle = FormBorderStyle.None;
-                    break;
-            }
+            FormBorderStyle = kryptonCheckSetStyles.CheckedIndex switch {
+                0 => FormBorderStyle.Sizable,
+                1 => FormBorderStyle.FixedToolWindow,
+                2 => FormBorderStyle.SizableToolWindow,
+                3 => FormBorderStyle.FixedDialog,
+                4 => FormBorderStyle.Fixed3D,
+                5 => FormBorderStyle.FixedSingle,
+                6 => FormBorderStyle.None,
+                _ => FormBorderStyle
+            };
 
             // Recalc the non client size to reflect new border style
             RecalcNonClient();
@@ -112,18 +77,15 @@ namespace KryptonFormExamples
     {
         private KryptonForm _form;
 
-        public KryptonFormProxy(KryptonForm form)
-        {
-            _form = form;
-        }
+        public KryptonFormProxy(KryptonForm form) => _form = form;
 
         [Category("Appearance")]
         [Description("The text associated with the control.")]
         [DefaultValue("")]
         public string Text
         {
-            get { return _form.Text; }
-            set { _form.Text = value; }
+            get => _form.Text;
+            set => _form.Text = value;
         }
 
         [Category("Appearance")]
@@ -131,8 +93,8 @@ namespace KryptonFormExamples
         [DefaultValue("")]
         public string TextExtra
         {
-            get { return _form.TextExtra; }
-            set { _form.TextExtra = value; }
+            get => _form.TextExtra;
+            set => _form.TextExtra = value;
         }
 
         [Category("Appearance")]
@@ -140,8 +102,8 @@ namespace KryptonFormExamples
         [DefaultValue("")]
         public Icon Icon
         {
-            get { return _form.Icon; }
-            set { _form.Icon = value; }
+            get => _form.Icon;
+            set => _form.Icon = value;
         }
 
         [Category("Visuals")]
@@ -149,8 +111,8 @@ namespace KryptonFormExamples
         [DefaultValue(true)]
         public bool AllowFormChrome
         {
-            get { return _form.AllowFormChrome; }
-            set { _form.AllowFormChrome = value; }
+            get => _form.AllowFormChrome;
+            set => _form.AllowFormChrome = value;
         }
 
         [Category("Visuals")]
@@ -158,8 +120,8 @@ namespace KryptonFormExamples
         [DefaultValue(true)]
         public bool AllowStatusStripMerge
         {
-            get { return _form.AllowStatusStripMerge; }
-            set { _form.AllowStatusStripMerge = value; }
+            get => _form.AllowStatusStripMerge;
+            set => _form.AllowStatusStripMerge = value;
         }
 
         [Category("Visuals")]
@@ -167,8 +129,8 @@ namespace KryptonFormExamples
         [DefaultValue(typeof(HeaderStyle), "Form")]
         public HeaderStyle HeaderStyle
         {
-            get { return _form.HeaderStyle; }
-            set { _form.HeaderStyle = value; }
+            get => _form.HeaderStyle;
+            set => _form.HeaderStyle = value;
         }
 
         [Category("Visuals")]
@@ -176,8 +138,8 @@ namespace KryptonFormExamples
         [DefaultValue(typeof(PaletteBorderStyle), "FormMain")]
         public PaletteBorderStyle GroupBorderStyle
         {
-            get { return _form.GroupBorderStyle; }
-            set { _form.GroupBorderStyle = value; }
+            get => _form.GroupBorderStyle;
+            set => _form.GroupBorderStyle = value;
         }
 
         [Category("Visuals")]
@@ -185,68 +147,57 @@ namespace KryptonFormExamples
         [DefaultValue(typeof(PaletteBackStyle), "FormMain")]
         public PaletteBackStyle GroupBackStyle
         {
-            get { return _form.GroupBackStyle; }
-            set { _form.GroupBackStyle = value; }
+            get => _form.GroupBackStyle;
+            set => _form.GroupBackStyle = value;
         }
 
         [Category("Visuals")]
         [Description("Overrides for defining common form appearance that other states can override.")]
-        public PaletteFormRedirect StateCommon
-        {
-            get { return _form.StateCommon; }
-        }
+        public PaletteFormRedirect StateCommon => _form.StateCommon;
 
         [Category("Visuals")]
         [Description("Overrides for defining inactive form appearance.")]
-        public PaletteForm StateInactive
-        {
-            get { return _form.StateInactive; }
-        }
+        public PaletteForm StateInactive => _form.StateInactive;
 
         [Category("Visuals")]
         [Description("Overrides for defining active form appearance.")]
-        public PaletteForm StateActive
-        {
-            get { return _form.StateActive; }
-        }
+        public PaletteForm StateActive => _form.StateActive;
 
         [Category("Visuals")]
         [Description("Collection of button specifications.")]
-        public KryptonForm.FormButtonSpecCollection ButtonSpecs
-        {
-            get { return _form.ButtonSpecs; }
-        }
+        public KryptonForm.FormButtonSpecCollection ButtonSpecs => _form.ButtonSpecs;
 
         [Category("Window Style")]
         [DefaultValue(true)]
         public bool ControlBox
         {
-            get { return _form.ControlBox; }
-            set { _form.ControlBox = value; }
+            get => _form.ControlBox;
+            set => _form.ControlBox = value;
         }
 
         [Category("Window Style")]
         [DefaultValue(true)]
         public bool MaximizeBox
         {
-            get { return _form.MaximizeBox; }
-            set { _form.MaximizeBox = value; }
+            get => _form.MaximizeBox;
+            set => _form.MaximizeBox = value;
         }
 
         [Category("Window Style")]
         [DefaultValue(true)]
         public bool MinimizeBox
         {
-            get { return _form.MinimizeBox; }
-            set { _form.MinimizeBox = value; }
+            get => _form.MinimizeBox;
+            set => _form.MinimizeBox = value;
         }
 
         [Category("Window Style")]
         [DefaultValue(true)]
         public bool ShowIcon
         {
-            get { return _form.ShowIcon; }
-            set { _form.ShowIcon = value; }
+            get => _form.ShowIcon;
+            set => _form.ShowIcon = value;
         }
+
     }
 }

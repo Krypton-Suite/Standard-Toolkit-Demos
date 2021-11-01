@@ -3,12 +3,9 @@
 //  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2021 - 2021. All rights reserved.
 // *****************************************************************************
 
-using System.Runtime;
-using System.Windows.Forms;
-
 using Krypton.Toolkit;
 
-namespace KryptonWebBrowser_Example
+namespace KryptonWebBrowserExample
 {
     public partial class Form1 : KryptonForm
     {
@@ -22,10 +19,6 @@ namespace KryptonWebBrowser_Example
             kcmbTheme.Text = ThemeManager.ReturnPaletteModeManagerAsString(kryptonManager1.GlobalPaletteMode);
         }
 
-        private void KcmbTheme_SelectedValueChanged(object sender, System.EventArgs e)
-        {
-            ThemeManager.SetTheme(kcmbTheme.Text, kryptonManager1);
-
-        }
+        private void KcmbTheme_SelectedValueChanged(object sender, System.EventArgs e) => ThemeManager.SetTheme(kcmbTheme.Text, kryptonManager1);
     }
 }

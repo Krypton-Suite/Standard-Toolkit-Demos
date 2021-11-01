@@ -52,6 +52,7 @@
             this.checkBoxClose = new System.Windows.Forms.CheckBox();
             this.checkBoxRetry = new System.Windows.Forms.CheckBox();
             this.groupBoxBasic = new System.Windows.Forms.GroupBox();
+            this.buttonFill = new System.Windows.Forms.Button();
             this.comboBoxIcon = new System.Windows.Forms.ComboBox();
             this.labelIcon = new System.Windows.Forms.Label();
             this.groupBoxFooter = new System.Windows.Forms.GroupBox();
@@ -75,7 +76,6 @@
             this.paletteProfessional = new System.Windows.Forms.RadioButton();
             this.palette2007Blue = new System.Windows.Forms.RadioButton();
             this.palette2010Blue = new System.Windows.Forms.RadioButton();
-            this.buttonFill = new System.Windows.Forms.Button();
             this.groupBoxBasic.SuspendLayout();
             this.groupBoxFooter.SuspendLayout();
             this.groupBoxCheckBox.SuspendLayout();
@@ -86,7 +86,7 @@
             // labelCaption
             // 
             this.labelCaption.AutoSize = true;
-            this.labelCaption.Location = new System.Drawing.Point(36, 39);
+            this.labelCaption.Location = new System.Drawing.Point(23, 39);
             this.labelCaption.Name = "labelCaption";
             this.labelCaption.Size = new System.Drawing.Size(68, 13);
             this.labelCaption.TabIndex = 0;
@@ -95,7 +95,7 @@
             // labelMainInstructions
             // 
             this.labelMainInstructions.AutoSize = true;
-            this.labelMainInstructions.Location = new System.Drawing.Point(18, 68);
+            this.labelMainInstructions.Location = new System.Drawing.Point(-2, 68);
             this.labelMainInstructions.Name = "labelMainInstructions";
             this.labelMainInstructions.Size = new System.Drawing.Size(89, 13);
             this.labelMainInstructions.TabIndex = 1;
@@ -104,7 +104,7 @@
             // labelContent
             // 
             this.labelContent.AutoSize = true;
-            this.labelContent.Location = new System.Drawing.Point(61, 94);
+            this.labelContent.Location = new System.Drawing.Point(51, 94);
             this.labelContent.Name = "labelContent";
             this.labelContent.Size = new System.Drawing.Size(46, 13);
             this.labelContent.TabIndex = 2;
@@ -137,7 +137,7 @@
             // 
             // buttonShowTaskDialog
             // 
-            this.buttonShowTaskDialog.Location = new System.Drawing.Point(377, 341);
+            this.buttonShowTaskDialog.Location = new System.Drawing.Point(396, 341);
             this.buttonShowTaskDialog.Name = "buttonShowTaskDialog";
             this.buttonShowTaskDialog.Size = new System.Drawing.Size(254, 59);
             this.buttonShowTaskDialog.TabIndex = 6;
@@ -152,15 +152,20 @@
             this.kryptonTaskDialogCommand4,
             this.kryptonTaskDialogCommand5,
             this.kryptonTaskDialogCommand6});
+            this.kryptonTaskDialog.CommonButtons = Krypton.Toolkit.TaskDialogButtons.OK;
             this.kryptonTaskDialog.Content = null;
+            this.kryptonTaskDialog.DefaultButton = Krypton.Toolkit.TaskDialogButtons.None;
             this.kryptonTaskDialog.DefaultRadioButton = null;
             this.kryptonTaskDialog.FooterHyperlink = null;
+            this.kryptonTaskDialog.FooterIcon = System.Windows.Forms.MessageBoxIcon.None;
             this.kryptonTaskDialog.FooterText = null;
+            this.kryptonTaskDialog.Icon = System.Windows.Forms.MessageBoxIcon.None;
             this.kryptonTaskDialog.MainInstruction = null;
             this.kryptonTaskDialog.RadioButtons.AddRange(new Krypton.Toolkit.KryptonTaskDialogCommand[] {
             this.kryptonTaskDialogCommand1,
             this.kryptonTaskDialogCommand2,
             this.kryptonTaskDialogCommand3});
+            this.kryptonTaskDialog.TextExtra = "Ctrl+C to copy";
             this.kryptonTaskDialog.WindowTitle = null;
             // 
             // kryptonTaskDialogCommand4
@@ -195,6 +200,10 @@
             // 
             this.kryptonTaskDialogCommand3.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.kryptonTaskDialogCommand3.Text = "Third option";
+            // 
+            // kryptonManager
+            // 
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2010Blue;
             // 
             // checkBoxOK
             // 
@@ -284,6 +293,16 @@
             this.groupBoxBasic.TabStop = false;
             this.groupBoxBasic.Text = "Basic Settings";
             // 
+            // buttonFill
+            // 
+            this.buttonFill.Location = new System.Drawing.Point(64, 136);
+            this.buttonFill.Name = "buttonFill";
+            this.buttonFill.Size = new System.Drawing.Size(40, 23);
+            this.buttonFill.TabIndex = 15;
+            this.buttonFill.Text = "Fill";
+            this.buttonFill.UseVisualStyleBackColor = true;
+            this.buttonFill.Click += new System.EventHandler(this.buttonFill_Click);
+            // 
             // comboBoxIcon
             // 
             this.comboBoxIcon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -341,7 +360,7 @@
             // labelFooterIcon
             // 
             this.labelFooterIcon.AutoSize = true;
-            this.labelFooterIcon.Location = new System.Drawing.Point(74, 87);
+            this.labelFooterIcon.Location = new System.Drawing.Point(70, 87);
             this.labelFooterIcon.Name = "labelFooterIcon";
             this.labelFooterIcon.Size = new System.Drawing.Size(31, 13);
             this.labelFooterIcon.TabIndex = 9;
@@ -350,7 +369,7 @@
             // labelFooterText
             // 
             this.labelFooterText.AutoSize = true;
-            this.labelFooterText.Location = new System.Drawing.Point(77, 29);
+            this.labelFooterText.Location = new System.Drawing.Point(73, 29);
             this.labelFooterText.Name = "labelFooterText";
             this.labelFooterText.Size = new System.Drawing.Size(29, 13);
             this.labelFooterText.TabIndex = 5;
@@ -359,7 +378,7 @@
             // labelFooterHyperlink
             // 
             this.labelFooterHyperlink.AutoSize = true;
-            this.labelFooterHyperlink.Location = new System.Drawing.Point(54, 58);
+            this.labelFooterHyperlink.Location = new System.Drawing.Point(45, 58);
             this.labelFooterHyperlink.Name = "labelFooterHyperlink";
             this.labelFooterHyperlink.Size = new System.Drawing.Size(51, 13);
             this.labelFooterHyperlink.TabIndex = 6;
@@ -388,7 +407,7 @@
             this.groupBoxCheckBox.Controls.Add(this.textBoxCheckBoxText);
             this.groupBoxCheckBox.Location = new System.Drawing.Point(364, 12);
             this.groupBoxCheckBox.Name = "groupBoxCheckBox";
-            this.groupBoxCheckBox.Size = new System.Drawing.Size(276, 88);
+            this.groupBoxCheckBox.Size = new System.Drawing.Size(322, 88);
             this.groupBoxCheckBox.TabIndex = 15;
             this.groupBoxCheckBox.TabStop = false;
             this.groupBoxCheckBox.Text = "CheckBox Settings";
@@ -396,7 +415,7 @@
             // checkBoxInitialState
             // 
             this.checkBoxInitialState.AutoSize = true;
-            this.checkBoxInitialState.Location = new System.Drawing.Point(54, 59);
+            this.checkBoxInitialState.Location = new System.Drawing.Point(68, 59);
             this.checkBoxInitialState.Name = "checkBoxInitialState";
             this.checkBoxInitialState.Size = new System.Drawing.Size(81, 17);
             this.checkBoxInitialState.TabIndex = 10;
@@ -414,7 +433,7 @@
             // 
             // textBoxCheckBoxText
             // 
-            this.textBoxCheckBoxText.Location = new System.Drawing.Point(54, 32);
+            this.textBoxCheckBoxText.Location = new System.Drawing.Point(68, 32);
             this.textBoxCheckBoxText.Name = "textBoxCheckBoxText";
             this.textBoxCheckBoxText.Size = new System.Drawing.Size(200, 21);
             this.textBoxCheckBoxText.TabIndex = 9;
@@ -426,7 +445,7 @@
             this.groupBox1.Controls.Add(this.checkBoxRadioButtons);
             this.groupBox1.Location = new System.Drawing.Point(364, 107);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(276, 91);
+            this.groupBox1.Size = new System.Drawing.Size(322, 91);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Extra Settings";
@@ -465,7 +484,7 @@
             this.groupBoxPalette.Controls.Add(this.palette2010Blue);
             this.groupBoxPalette.Location = new System.Drawing.Point(364, 205);
             this.groupBoxPalette.Name = "groupBoxPalette";
-            this.groupBoxPalette.Size = new System.Drawing.Size(276, 118);
+            this.groupBoxPalette.Size = new System.Drawing.Size(322, 118);
             this.groupBoxPalette.TabIndex = 17;
             this.groupBoxPalette.TabStop = false;
             this.groupBoxPalette.Text = "Palette";
@@ -473,7 +492,7 @@
             // paletteSparkleOrange
             // 
             this.paletteSparkleOrange.AutoSize = true;
-            this.paletteSparkleOrange.Location = new System.Drawing.Point(157, 54);
+            this.paletteSparkleOrange.Location = new System.Drawing.Point(171, 54);
             this.paletteSparkleOrange.Name = "paletteSparkleOrange";
             this.paletteSparkleOrange.Size = new System.Drawing.Size(106, 17);
             this.paletteSparkleOrange.TabIndex = 5;
@@ -506,7 +525,7 @@
             // paletteProfessional
             // 
             this.paletteProfessional.AutoSize = true;
-            this.paletteProfessional.Location = new System.Drawing.Point(157, 77);
+            this.paletteProfessional.Location = new System.Drawing.Point(171, 77);
             this.paletteProfessional.Name = "paletteProfessional";
             this.paletteProfessional.Size = new System.Drawing.Size(83, 17);
             this.paletteProfessional.TabIndex = 2;
@@ -517,7 +536,7 @@
             // palette2007Blue
             // 
             this.palette2007Blue.AutoSize = true;
-            this.palette2007Blue.Location = new System.Drawing.Point(157, 31);
+            this.palette2007Blue.Location = new System.Drawing.Point(171, 31);
             this.palette2007Blue.Name = "palette2007Blue";
             this.palette2007Blue.Size = new System.Drawing.Size(111, 17);
             this.palette2007Blue.TabIndex = 1;
@@ -537,22 +556,12 @@
             this.palette2010Blue.Text = "Office 2010 - Blue";
             this.palette2010Blue.UseVisualStyleBackColor = true;
             this.palette2010Blue.CheckedChanged += new System.EventHandler(this.palette2010Blue_CheckedChanged);
-            //
-            // buttonFill
-            //
-            this.buttonFill.Location = new System.Drawing.Point(64, 136);
-            this.buttonFill.Name = "buttonFill";
-            this.buttonFill.Size = new System.Drawing.Size(40, 23);
-            this.buttonFill.TabIndex = 15;
-            this.buttonFill.Text = "Fill";
-            this.buttonFill.UseVisualStyleBackColor = true;
-            this.buttonFill.Click += new System.EventHandler(this.buttonFill_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(652, 412);
+            this.ClientSize = new System.Drawing.Size(704, 416);
             this.Controls.Add(this.groupBoxPalette);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxCheckBox);

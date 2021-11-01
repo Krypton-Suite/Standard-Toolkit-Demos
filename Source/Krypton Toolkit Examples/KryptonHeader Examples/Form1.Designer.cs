@@ -70,9 +70,9 @@ namespace KryptonHeaderExamples
             // 
             // propertyGrid
             // 
-            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.propertyGrid.Location = new System.Drawing.Point(6, 19);
             this.propertyGrid.Name = "propertyGrid";
             this.propertyGrid.Size = new System.Drawing.Size(310, 591);
@@ -115,6 +115,7 @@ namespace KryptonHeaderExamples
             this.office6.HeaderStyle = Krypton.Toolkit.HeaderStyle.Secondary;
             this.office6.Location = new System.Drawing.Point(98, 155);
             this.office6.Name = "office6";
+            this.office6.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.office6.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.office6.Size = new System.Drawing.Size(176, 34);
             this.office6.TabIndex = 5;
@@ -126,14 +127,12 @@ namespace KryptonHeaderExamples
             // buttonSpecUp
             // 
             this.buttonSpecUp.Checked = Krypton.Toolkit.ButtonCheckState.Checked;
-            //this.buttonSpecUp.Image = ((System.Drawing.Image)(resources.GetObject("buttonSpecUp.Image")));
             this.buttonSpecUp.ToolTipTitle = "Sort in Descending Order";
             this.buttonSpecUp.UniqueName = "406C13856FEF4CA3406C13856FEF4CA3";
             // 
             // buttonSpecDown
             // 
             this.buttonSpecDown.Checked = Krypton.Toolkit.ButtonCheckState.Unchecked;
-            //this.buttonSpecDown.Image = ((System.Drawing.Image)(resources.GetObject("buttonSpecDown.Image")));
             this.buttonSpecDown.ToolTipTitle = "Sort in Ascending Order";
             this.buttonSpecDown.UniqueName = "BE9A34366DE6465CBE9A34366DE6465C";
             // 
@@ -142,6 +141,7 @@ namespace KryptonHeaderExamples
             this.office5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.office5.Location = new System.Drawing.Point(98, 121);
             this.office5.Name = "office5";
+            this.office5.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.office5.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.office5.Size = new System.Drawing.Size(176, 33);
             this.office5.TabIndex = 4;
@@ -156,13 +156,19 @@ namespace KryptonHeaderExamples
             this.office4.HeaderStyle = Krypton.Toolkit.HeaderStyle.Secondary;
             this.office4.Location = new System.Drawing.Point(98, 57);
             this.office4.Name = "office4";
+            this.office4.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.office4.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.office4.Size = new System.Drawing.Size(176, 24);
+            this.office4.StateCommon.ButtonPadding = new System.Windows.Forms.Padding(-1);
+            this.office4.StateCommon.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.office4.StateCommon.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.office4.StateCommon.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.office4.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.office4.StateCommon.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.office4.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1);
             this.office4.TabIndex = 3;
             this.office4.Values.Description = "";
             this.office4.Values.Heading = "Secondary";
-            //this.office4.Values.Image = ((System.Drawing.Image)(resources.GetObject("office4.Values.Image")));
             this.office4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
             // 
             // office2
@@ -196,13 +202,19 @@ namespace KryptonHeaderExamples
             this.office3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.office3.Location = new System.Drawing.Point(98, 23);
             this.office3.Name = "office3";
+            this.office3.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.office3.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.office3.Size = new System.Drawing.Size(176, 33);
+            this.office3.StateCommon.ButtonPadding = new System.Windows.Forms.Padding(-1);
+            this.office3.StateCommon.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.office3.StateCommon.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.office3.StateCommon.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.office3.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.office3.StateCommon.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.office3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1);
             this.office3.TabIndex = 2;
             this.office3.Values.Description = "";
             this.office3.Values.Heading = "Primary";
-            //this.office3.Values.Image = ((System.Drawing.Image)(resources.GetObject("office3.Values.Image")));
             this.office3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
             // 
             // groupBox2
@@ -230,6 +242,7 @@ namespace KryptonHeaderExamples
             this.blue6.HeaderStyle = Krypton.Toolkit.HeaderStyle.Secondary;
             this.blue6.Location = new System.Drawing.Point(98, 155);
             this.blue6.Name = "blue6";
+            this.blue6.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.blue6.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             this.blue6.Size = new System.Drawing.Size(176, 36);
             this.blue6.TabIndex = 5;
@@ -243,6 +256,7 @@ namespace KryptonHeaderExamples
             this.blue5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.blue5.Location = new System.Drawing.Point(98, 117);
             this.blue5.Name = "blue5";
+            this.blue5.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.blue5.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             this.blue5.Size = new System.Drawing.Size(176, 34);
             this.blue5.TabIndex = 4;
@@ -257,13 +271,19 @@ namespace KryptonHeaderExamples
             this.blue4.HeaderStyle = Krypton.Toolkit.HeaderStyle.Secondary;
             this.blue4.Location = new System.Drawing.Point(98, 61);
             this.blue4.Name = "blue4";
+            this.blue4.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.blue4.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             this.blue4.Size = new System.Drawing.Size(176, 25);
+            this.blue4.StateCommon.ButtonPadding = new System.Windows.Forms.Padding(-1);
+            this.blue4.StateCommon.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.blue4.StateCommon.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.blue4.StateCommon.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.blue4.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.blue4.StateCommon.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.blue4.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1);
             this.blue4.TabIndex = 3;
             this.blue4.Values.Description = "";
             this.blue4.Values.Heading = "Secondary";
-            //this.blue4.Values.Image = ((System.Drawing.Image)(resources.GetObject("blue4.Values.Image")));
             this.blue4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
             // 
             // blue2
@@ -297,13 +317,19 @@ namespace KryptonHeaderExamples
             this.blue3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.blue3.Location = new System.Drawing.Point(98, 23);
             this.blue3.Name = "blue3";
+            this.blue3.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.blue3.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             this.blue3.Size = new System.Drawing.Size(176, 34);
+            this.blue3.StateCommon.ButtonPadding = new System.Windows.Forms.Padding(-1);
+            this.blue3.StateCommon.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.blue3.StateCommon.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.blue3.StateCommon.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.blue3.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.blue3.StateCommon.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.blue3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1);
             this.blue3.TabIndex = 2;
             this.blue3.Values.Description = "";
             this.blue3.Values.Heading = "Primary";
-            //this.blue3.Values.Image = ((System.Drawing.Image)(resources.GetObject("blue3.Values.Image")));
             this.blue3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
             // 
             // groupBox3
@@ -323,69 +349,131 @@ namespace KryptonHeaderExamples
             this.custom3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.custom3.Location = new System.Drawing.Point(16, 114);
             this.custom3.Name = "custom3";
+            this.custom3.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.custom3.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
             this.custom3.Size = new System.Drawing.Size(258, 42);
+            this.custom3.StateCommon.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.custom3.StateCommon.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.HalfCut;
+            this.custom3.StateCommon.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.custom3.StateCommon.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.custom3.StateCommon.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.custom3.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.custom3.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.custom3.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.HalfCut;
-            this.custom3.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.custom3.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.custom3.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.custom3.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.custom3.StateCommon.Border.Rounding = 2;
+            this.custom3.StateCommon.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.custom3.StateCommon.Border.Rounding = 2F;
             this.custom3.StateCommon.Border.Width = 2;
+            this.custom3.StateCommon.ButtonPadding = new System.Windows.Forms.Padding(-1);
+            this.custom3.StateCommon.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.custom3.StateCommon.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.custom3.StateCommon.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.custom3.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.custom3.StateCommon.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.custom3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1);
             this.custom3.TabIndex = 2;
             this.custom3.Values.Description = "";
             this.custom3.Values.Heading = "Primary";
-            //this.custom3.Values.Image = ((System.Drawing.Image)(resources.GetObject("custom3.Values.Image")));
             this.custom3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
             // 
             // custom1
             // 
+            this.custom1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.custom1.Location = new System.Drawing.Point(16, 23);
             this.custom1.Name = "custom1";
+            this.custom1.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.custom1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.custom1.Size = new System.Drawing.Size(162, 42);
+            this.custom1.Size = new System.Drawing.Size(109, 36);
+            this.custom1.StateNormal.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.custom1.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.custom1.StateNormal.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.custom1.StateNormal.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
             this.custom1.StateNormal.Back.Image = global::KryptonHeader_Examples.Properties.Resources.pageBg;
+            this.custom1.StateNormal.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.custom1.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.custom1.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.custom1.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.custom1.StateNormal.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.custom1.StateNormal.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.custom1.StateNormal.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.custom1.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.custom1.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.custom1.StateNormal.Border.Rounding = 15;
+            this.custom1.StateNormal.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.custom1.StateNormal.Border.Rounding = 15F;
             this.custom1.StateNormal.Border.Width = 2;
+            this.custom1.StateNormal.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.custom1.StateNormal.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.custom1.StateNormal.Content.Padding = new System.Windows.Forms.Padding(-1);
+            this.custom1.StateNormal.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.custom1.StateNormal.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.custom1.StateNormal.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.custom1.StateNormal.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.custom1.StateNormal.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.custom1.StateNormal.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.custom1.StateNormal.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.custom1.StateNormal.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
             this.custom1.StateNormal.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.custom1.StateNormal.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.custom1.StateNormal.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.custom1.TabIndex = 0;
             this.custom1.Values.Description = "";
             this.custom1.Values.Heading = "Image Effect";
-            //this.custom1.Values.Image = ((System.Drawing.Image)(resources.GetObject("custom1.Values.Image")));
             this.custom1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
             // 
             // custom2
             // 
+            this.custom2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.custom2.Location = new System.Drawing.Point(16, 72);
             this.custom2.Name = "custom2";
+            this.custom2.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.custom2.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.custom2.Size = new System.Drawing.Size(127, 38);
+            this.custom2.Size = new System.Drawing.Size(86, 32);
             this.custom2.StateNormal.Back.Color1 = System.Drawing.SystemColors.InactiveCaptionText;
             this.custom2.StateNormal.Back.Color2 = System.Drawing.SystemColors.InactiveCaption;
+            this.custom2.StateNormal.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.custom2.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.custom2.StateNormal.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.custom2.StateNormal.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.custom2.StateNormal.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.custom2.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.custom2.StateNormal.Border.Color1 = System.Drawing.SystemColors.GradientInactiveCaption;
             this.custom2.StateNormal.Border.Color2 = System.Drawing.SystemColors.InactiveCaption;
+            this.custom2.StateNormal.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.custom2.StateNormal.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Sigma;
             this.custom2.StateNormal.Border.Draw = Krypton.Toolkit.InheritBool.False;
-            this.custom2.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.custom2.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.custom2.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.custom2.StateNormal.Border.Rounding = 7;
+            this.custom2.StateNormal.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.custom2.StateNormal.Border.Rounding = 7F;
             this.custom2.StateNormal.Border.Width = 3;
+            this.custom2.StateNormal.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.custom2.StateNormal.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.custom2.StateNormal.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.custom2.StateNormal.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.custom2.StateNormal.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.custom2.StateNormal.Content.Padding = new System.Windows.Forms.Padding(-1);
             this.custom2.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.Black;
+            this.custom2.StateNormal.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.custom2.StateNormal.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.custom2.StateNormal.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.custom2.StateNormal.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.custom2.StateNormal.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.custom2.StateNormal.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.custom2.StateNormal.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.custom2.StateNormal.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
+            this.custom2.StateNormal.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.custom2.StateNormal.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.custom2.StateNormal.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.custom2.TabIndex = 1;
             this.custom2.Values.Description = "";
             this.custom2.Values.Heading = "Calendar";
-            //this.custom2.Values.Image = ((System.Drawing.Image)(resources.GetObject("custom2.Values.Image")));
             this.custom2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
             // 
             // Form1
@@ -400,7 +488,7 @@ namespace KryptonHeaderExamples
             this.Controls.Add(this.groupBox4);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";

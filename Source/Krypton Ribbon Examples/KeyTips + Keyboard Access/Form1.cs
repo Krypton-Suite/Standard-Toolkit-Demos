@@ -1,13 +1,14 @@
-﻿// *****************************************************************************
-// 
-//  © Component Factory Pty Ltd, 2006 - 2016. All rights reserved.
-//	The software and associated documentation supplied hereunder are the 
-//  proprietary information of Component Factory Pty Ltd, PO Box 1504, 
-//  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
-// 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2021. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  Version 5.550.0 	www.ComponentFactory.com
-// *****************************************************************************
+﻿#region BSD License
+/*
+ * 
+ * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
+ *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
+ * 
+ *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  
+ */
+#endregion
 
 using System;
 using System.Windows.Forms;
@@ -26,7 +27,7 @@ namespace KeyTipsAndKeyboardAccess
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            checkSetPalette.CheckedButton = this.buttonOffice2007Black;
+            checkSetPalette.CheckedButton = this.buttonOffice2010Black;
         }
 
         private void checkSetPalette_CheckedButtonChanged(object sender, EventArgs e)
@@ -53,6 +54,8 @@ namespace KeyTipsAndKeyboardAccess
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
             else if (checkSetPalette.CheckedButton == buttonOffice2010Black)
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
+            else if (checkSetPalette.CheckedButton == buttonOffice365Black)
+                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office365Black;
         }
 
         private void OnDialogBoxLauncherClick(object sender, EventArgs e)
@@ -77,7 +80,7 @@ namespace KeyTipsAndKeyboardAccess
         {
             KryptonRibbonGroupButton button = (KryptonRibbonGroupButton)sender;
 
-            string text = button.TextLine1;
+            var text = button.TextLine1;
             if (!string.IsNullOrEmpty(button.TextLine2))
                 text += " " + button.TextLine2;
 
@@ -99,5 +102,6 @@ namespace KeyTipsAndKeyboardAccess
         {
             Close();
         }
+
     }
 }

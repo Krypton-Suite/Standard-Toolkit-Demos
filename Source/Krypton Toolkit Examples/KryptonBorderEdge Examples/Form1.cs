@@ -1,13 +1,14 @@
-﻿// *****************************************************************************
-// 
-//  © Component Factory Pty Ltd, 2006 - 2016. All rights reserved.
-//	The software and associated documentation supplied hereunder are the 
-//  proprietary information of Component Factory Pty Ltd, PO Box 1504, 
-//  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
-// 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2021. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  Version 5.550.0 	www.ComponentFactory.com
-// *****************************************************************************
+﻿#region BSD License
+/*
+ * 
+ * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
+ *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
+ * 
+ *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  
+ */
+#endregion
 
 using System;
 using System.Drawing;
@@ -19,16 +20,11 @@ namespace KryptonBorderEdgeExamples
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        private void Form1_Load(object sender, EventArgs e) =>
             // Setup the property grid to edit this border edge
             propertyGrid.SelectedObject = new KryptonBorderEdgeProxy(borderEdgeH1);
-        }
 
         private void buttonOffice2010Blue_Click(object sender, EventArgs e)
         {
@@ -60,111 +56,75 @@ namespace KryptonBorderEdgeExamples
             propertyGrid.SelectedObject = kryptonPaletteCustom;
         }
 
-        private void button_Enter(object sender, EventArgs e)
-        {
+        private void button_Enter(object sender, EventArgs e) =>
             // Setup the property grid to edit this button
             propertyGrid.SelectedObject = new KryptonButtonProxy(sender as KryptonButton);
-        }
 
-        private void checkButton_Enter(object sender, EventArgs e)
-        {
+        private void checkButton_Enter(object sender, EventArgs e) =>
             // Setup the property grid to edit this check button
             propertyGrid.SelectedObject = new KryptonCheckButtonProxy(sender as KryptonCheckButton);
-        }
 
-        private void borderEdge_MouseDown(object sender, MouseEventArgs e)
-        {
+        private void borderEdge_MouseDown(object sender, MouseEventArgs e) =>
             // Setup the property grid to edit this border edge
             propertyGrid.SelectedObject = new KryptonBorderEdgeProxy(sender as KryptonBorderEdge);
-        }
 
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
 
     public class KryptonButtonProxy
     {
         private KryptonButton _button;
 
-        public KryptonButtonProxy(KryptonButton button)
-        {
-            _button = button;
-        }
+        public KryptonButtonProxy(KryptonButton button) => _button = button;
 
         [Category("Visuals")]
         [Description("Button style.")]
         [DefaultValue(typeof(ButtonStyle), "Standalone")]
         public ButtonStyle ButtonStyle
         {
-            get { return _button.ButtonStyle; }
-            set { _button.ButtonStyle = value; }
+            get => _button.ButtonStyle;
+            set => _button.ButtonStyle = value;
         }
 
         [Category("Visuals")]
         [Description("Button values")]
-        public ButtonValues Values
-        {
-            get { return _button.Values; }
-        }
+        public ButtonValues Values => _button.Values;
 
         [Category("Visuals")]
         [Description("Overrides for defining common button appearance that other states can override.")]
-        public PaletteTripleRedirect StateCommon
-        {
-            get { return _button.StateCommon; }
-        }
+        public PaletteTripleRedirect StateCommon => _button.StateCommon;
 
         [Category("Visuals")]
         [Description("Overrides for defining disabled button appearance.")]
-        public PaletteTriple StateDisabled
-        {
-            get { return _button.StateDisabled; }
-        }
+        public PaletteTriple StateDisabled => _button.StateDisabled;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal button appearance.")]
-        public PaletteTriple StateNormal
-        {
-            get { return _button.StateNormal; }
-        }
+        public PaletteTriple StateNormal => _button.StateNormal;
 
         [Category("Visuals")]
         [Description("Overrides for defining hot tracking button appearance.")]
-        public PaletteTriple StateTracking
-        {
-            get { return _button.StateTracking; }
-        }
+        public PaletteTriple StateTracking => _button.StateTracking;
 
         [Category("Visuals")]
         [Description("Overrides for defining pressed button appearance.")]
-        public PaletteTriple StatePressed
-        {
-            get { return _button.StatePressed; }
-        }
+        public PaletteTriple StatePressed => _button.StatePressed;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal button appearance when default.")]
-        public PaletteTripleRedirect OverrideDefault
-        {
-            get { return _button.OverrideDefault; }
-        }
+        public PaletteTripleRedirect OverrideDefault => _button.OverrideDefault;
 
         [Category("Visuals")]
         [Description("Overrides for defining button appearance when it has focus.")]
-        public PaletteTripleRedirect OverrideFocus
-        {
-            get { return _button.OverrideFocus; }
-        }
+        public PaletteTripleRedirect OverrideFocus => _button.OverrideFocus;
 
         [Category("Visuals")]
         [Description("Visual orientation of the control.")]
         [DefaultValue(typeof(VisualOrientation), "Top")]
         public VisualOrientation Orientation
         {
-            get { return _button.Orientation; }
-            set { _button.Orientation = value; }
+            get => _button.Orientation;
+            set => _button.Orientation = value;
         }
 
         [Category("Visuals")]
@@ -172,8 +132,8 @@ namespace KryptonBorderEdgeExamples
         [DefaultValue(typeof(PaletteMode), "Global")]
         public PaletteMode PaletteMode
         {
-            get { return _button.PaletteMode; }
-            set { _button.PaletteMode = value; }
+            get => _button.PaletteMode;
+            set => _button.PaletteMode = value;
         }
 
         [Category("Layout")]
@@ -181,8 +141,8 @@ namespace KryptonBorderEdgeExamples
         [DefaultValue(false)]
         public bool AutoSize
         {
-            get { return _button.AutoSize; }
-            set { _button.AutoSize = value; }
+            get => _button.AutoSize;
+            set => _button.AutoSize = value;
         }
 
         [Category("Layout")]
@@ -190,32 +150,32 @@ namespace KryptonBorderEdgeExamples
         [DefaultValue(typeof(AutoSizeMode), "GrowOnly")]
         public AutoSizeMode AutoSizeMode
         {
-            get { return _button.AutoSizeMode; }
-            set { _button.AutoSizeMode = value; }
+            get => _button.AutoSizeMode;
+            set => _button.AutoSizeMode = value;
         }
 
         [Category("Layout")]
         [Description("The size of the control is pixels.")]
         public Size Size
         {
-            get { return _button.Size; }
-            set { _button.Size = value; }
+            get => _button.Size;
+            set => _button.Size = value;
         }
 
         [Category("Layout")]
         [Description("The location of the control in pixels.")]
         public Point Location
         {
-            get { return _button.Location; }
-            set { _button.Location = value; }
+            get => _button.Location;
+            set => _button.Location = value;
         }
 
         [Category("Behavior")]
         [Description("Indicates whether the control is enabled.")]
         public bool Enabled
         {
-            get { return _button.Enabled; }
-            set { _button.Enabled = value; }
+            get => _button.Enabled;
+            set => _button.Enabled = value;
         }
     }
 
@@ -223,104 +183,68 @@ namespace KryptonBorderEdgeExamples
     {
         private KryptonCheckButton _checkButton;
 
-        public KryptonCheckButtonProxy(KryptonCheckButton checkButton)
-        {
-            _checkButton = checkButton;
-        }
+        public KryptonCheckButtonProxy(KryptonCheckButton checkButton) => _checkButton = checkButton;
 
         [Category("Visuals")]
         [Description("Button style.")]
         [DefaultValue(typeof(ButtonStyle), "Standalone")]
         public ButtonStyle ButtonStyle
         {
-            get { return _checkButton.ButtonStyle; }
-            set { _checkButton.ButtonStyle = value; }
+            get => _checkButton.ButtonStyle;
+            set => _checkButton.ButtonStyle = value;
         }
 
         [Category("Visuals")]
         [Description("Button values")]
-        public ButtonValues Values
-        {
-            get { return _checkButton.Values; }
-        }
+        public ButtonValues Values => _checkButton.Values;
 
         [Category("Visuals")]
         [Description("Overrides for defining common button appearance that other states can override.")]
-        public PaletteTripleRedirect StateCommon
-        {
-            get { return _checkButton.StateCommon; }
-        }
+        public PaletteTripleRedirect StateCommon => _checkButton.StateCommon;
 
         [Category("Visuals")]
         [Description("Overrides for defining disabled button appearance.")]
-        public PaletteTriple StateDisabled
-        {
-            get { return _checkButton.StateDisabled; }
-        }
+        public PaletteTriple StateDisabled => _checkButton.StateDisabled;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal button appearance.")]
-        public PaletteTriple StateNormal
-        {
-            get { return _checkButton.StateNormal; }
-        }
+        public PaletteTriple StateNormal => _checkButton.StateNormal;
 
         [Category("Visuals")]
         [Description("Overrides for defining hot tracking button appearance.")]
-        public PaletteTriple StateTracking
-        {
-            get { return _checkButton.StateTracking; }
-        }
+        public PaletteTriple StateTracking => _checkButton.StateTracking;
 
         [Category("Visuals")]
         [Description("Overrides for defining pressed button appearance.")]
-        public PaletteTriple StatePressed
-        {
-            get { return _checkButton.StatePressed; }
-        }
+        public PaletteTriple StatePressed => _checkButton.StatePressed;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal checked button appearance.")]
-        public PaletteTriple StateCheckedNormal
-        {
-            get { return _checkButton.StateCheckedNormal; }
-        }
+        public PaletteTriple StateCheckedNormal => _checkButton.StateCheckedNormal;
 
         [Category("Visuals")]
         [Description("Overrides for defining hot tracking checked button appearance.")]
-        public PaletteTriple StateCheckedTracking
-        {
-            get { return _checkButton.StateCheckedTracking; }
-        }
+        public PaletteTriple StateCheckedTracking => _checkButton.StateCheckedTracking;
 
         [Category("Visuals")]
         [Description("Overrides for defining pressed checked button appearance.")]
-        public PaletteTriple StateCheckedPressed
-        {
-            get { return _checkButton.StateCheckedPressed; }
-        }
+        public PaletteTriple StateCheckedPressed => _checkButton.StateCheckedPressed;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal button appearance when default.")]
-        public PaletteTripleRedirect OverrideDefault
-        {
-            get { return _checkButton.OverrideDefault; }
-        }
+        public PaletteTripleRedirect OverrideDefault => _checkButton.OverrideDefault;
 
         [Category("Visuals")]
         [Description("Overrides for defining button appearance when it has focus.")]
-        public PaletteTripleRedirect OverrideFocus
-        {
-            get { return _checkButton.OverrideFocus; }
-        }
+        public PaletteTripleRedirect OverrideFocus => _checkButton.OverrideFocus;
 
         [Category("Visuals")]
         [Description("Visual orientation of the control.")]
         [DefaultValue(typeof(VisualOrientation), "Top")]
         public VisualOrientation Orientation
         {
-            get { return _checkButton.Orientation; }
-            set { _checkButton.Orientation = value; }
+            get => _checkButton.Orientation;
+            set => _checkButton.Orientation = value;
         }
 
         [Category("Visuals")]
@@ -328,8 +252,8 @@ namespace KryptonBorderEdgeExamples
         [DefaultValue(typeof(PaletteMode), "Global")]
         public PaletteMode PaletteMode
         {
-            get { return _checkButton.PaletteMode; }
-            set { _checkButton.PaletteMode = value; }
+            get => _checkButton.PaletteMode;
+            set => _checkButton.PaletteMode = value;
         }
 
         [Category("Layout")]
@@ -337,8 +261,8 @@ namespace KryptonBorderEdgeExamples
         [DefaultValue(false)]
         public bool AutoSize
         {
-            get { return _checkButton.AutoSize; }
-            set { _checkButton.AutoSize = value; }
+            get => _checkButton.AutoSize;
+            set => _checkButton.AutoSize = value;
         }
 
         [Category("Layout")]
@@ -346,40 +270,40 @@ namespace KryptonBorderEdgeExamples
         [DefaultValue(typeof(AutoSizeMode), "GrowOnly")]
         public AutoSizeMode AutoSizeMode
         {
-            get { return _checkButton.AutoSizeMode; }
-            set { _checkButton.AutoSizeMode = value; }
+            get => _checkButton.AutoSizeMode;
+            set => _checkButton.AutoSizeMode = value;
         }
 
         [Category("Layout")]
         [Description("The size of the control is pixels.")]
         public Size Size
         {
-            get { return _checkButton.Size; }
-            set { _checkButton.Size = value; }
+            get => _checkButton.Size;
+            set => _checkButton.Size = value;
         }
 
         [Category("Layout")]
         [Description("The location of the control in pixels.")]
         public Point Location
         {
-            get { return _checkButton.Location; }
-            set { _checkButton.Location = value; }
+            get => _checkButton.Location;
+            set => _checkButton.Location = value;
         }
 
         [Category("Appearance")]
         [Description("Indicates whether the control is in the checked state.")]
         public bool Checked
         {
-            get { return _checkButton.Checked; }
-            set { _checkButton.Checked = value; }
+            get => _checkButton.Checked;
+            set => _checkButton.Checked = value;
         }
 
         [Category("Behavior")]
         [Description("Indicates whether the control is enabled.")]
         public bool Enabled
         {
-            get { return _checkButton.Enabled; }
-            set { _checkButton.Enabled = value; }
+            get => _checkButton.Enabled;
+            set => _checkButton.Enabled = value;
         }
     }
 
@@ -387,48 +311,36 @@ namespace KryptonBorderEdgeExamples
     {
         private KryptonBorderEdge _borderEdge;
 
-        public KryptonBorderEdgeProxy(KryptonBorderEdge borderEdge)
-        {
-            _borderEdge = borderEdge;
-        }
+        public KryptonBorderEdgeProxy(KryptonBorderEdge borderEdge) => _borderEdge = borderEdge;
 
         [Category("Visuals")]
         [Description("Border style.")]
         [DefaultValue(typeof(PaletteBorderStyle), "ControlClient")]
         public PaletteBorderStyle BorderStyle
         {
-            get { return _borderEdge.BorderStyle; }
-            set { _borderEdge.BorderStyle = value; }
+            get => _borderEdge.BorderStyle;
+            set => _borderEdge.BorderStyle = value;
         }
 
         [Category("Visuals")]
         [Description("Overrides for defining common border edge appearance that other states can override.")]
-        public PaletteBorderEdgeRedirect StateCommon
-        {
-            get { return _borderEdge.StateCommon; }
-        }
+        public PaletteBorderEdgeRedirect StateCommon => _borderEdge.StateCommon;
 
         [Category("Visuals")]
         [Description("Overrides for defining disabled border edge appearance.")]
-        public PaletteBorderEdge StateDisabled
-        {
-            get { return _borderEdge.StateDisabled; }
-        }
+        public PaletteBorderEdge StateDisabled => _borderEdge.StateDisabled;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal border edge appearance.")]
-        public PaletteBorderEdge StateNormal
-        {
-            get { return _borderEdge.StateNormal; }
-        }
+        public PaletteBorderEdge StateNormal => _borderEdge.StateNormal;
 
         [Category("Visuals")]
         [Description("Visual orientation of the control.")]
         [DefaultValue(typeof(Orientation), "Horizontal")]
         public Orientation Orientation
         {
-            get { return _borderEdge.Orientation; }
-            set { _borderEdge.Orientation = value; }
+            get => _borderEdge.Orientation;
+            set => _borderEdge.Orientation = value;
         }
 
         [Category("Visuals")]
@@ -436,8 +348,8 @@ namespace KryptonBorderEdgeExamples
         [DefaultValue(typeof(PaletteMode), "Global")]
         public PaletteMode PaletteMode
         {
-            get { return _borderEdge.PaletteMode; }
-            set { _borderEdge.PaletteMode = value; }
+            get => _borderEdge.PaletteMode;
+            set => _borderEdge.PaletteMode = value;
         }
 
         [Category("Layout")]
@@ -445,8 +357,8 @@ namespace KryptonBorderEdgeExamples
         [DefaultValue(false)]
         public bool AutoSize
         {
-            get { return _borderEdge.AutoSize; }
-            set { _borderEdge.AutoSize = value; }
+            get => _borderEdge.AutoSize;
+            set => _borderEdge.AutoSize = value;
         }
 
         [Category("Layout")]
@@ -454,32 +366,32 @@ namespace KryptonBorderEdgeExamples
         [DefaultValue(typeof(AutoSizeMode), "GrowOnly")]
         public AutoSizeMode AutoSizeMode
         {
-            get { return _borderEdge.AutoSizeMode; }
-            set { _borderEdge.AutoSizeMode = value; }
+            get => _borderEdge.AutoSizeMode;
+            set => _borderEdge.AutoSizeMode = value;
         }
 
         [Category("Layout")]
         [Description("The size of the control is pixels.")]
         public Size Size
         {
-            get { return _borderEdge.Size; }
-            set { _borderEdge.Size = value; }
+            get => _borderEdge.Size;
+            set => _borderEdge.Size = value;
         }
 
         [Category("Layout")]
         [Description("The location of the control in pixels.")]
         public Point Location
         {
-            get { return _borderEdge.Location; }
-            set { _borderEdge.Location = value; }
+            get => _borderEdge.Location;
+            set => _borderEdge.Location = value;
         }
 
         [Category("Behavior")]
         [Description("Indicates whether the control is enabled.")]
         public bool Enabled
         {
-            get { return _borderEdge.Enabled; }
-            set { _borderEdge.Enabled = value; }
+            get => _borderEdge.Enabled;
+            set => _borderEdge.Enabled = value;
         }
     }
 }

@@ -43,9 +43,7 @@
             // buttonSpecAny1
             // 
             this.buttonSpecAny1.ExtraText = "ExtraButton";
-            this.buttonSpecAny1.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
             this.buttonSpecAny1.Text = "Button";
-            this.buttonSpecAny1.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Next;
             this.buttonSpecAny1.UniqueName = "16A6E91058454CD77C97174C1594D930";
             // 

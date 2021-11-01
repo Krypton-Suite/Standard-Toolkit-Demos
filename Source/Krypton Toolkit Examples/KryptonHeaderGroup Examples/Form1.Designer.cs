@@ -82,8 +82,8 @@ namespace KryptonHeaderGroupExamples
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.propertyGrid);
             this.groupBox4.Location = new System.Drawing.Point(333, 12);
             this.groupBox4.Name = "groupBox4";
@@ -94,9 +94,9 @@ namespace KryptonHeaderGroupExamples
             // 
             // propertyGrid
             // 
-            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.propertyGrid.Location = new System.Drawing.Point(6, 19);
             this.propertyGrid.Name = "propertyGrid";
             this.propertyGrid.Size = new System.Drawing.Size(309, 603);
@@ -128,6 +128,8 @@ namespace KryptonHeaderGroupExamples
             // 
             // headerGroup2Office
             // 
+            this.headerGroup2Office.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.headerGroup2Office.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
             this.headerGroup2Office.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Top;
             this.headerGroup2Office.Location = new System.Drawing.Point(141, 28);
             this.headerGroup2Office.Name = "headerGroup2Office";
@@ -137,8 +139,12 @@ namespace KryptonHeaderGroupExamples
             // 
             this.headerGroup2Office.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
             this.headerGroup2Office.Size = new System.Drawing.Size(158, 129);
+            this.headerGroup2Office.StateNormal.HeaderPrimary.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup2Office.StateNormal.HeaderPrimary.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
             this.headerGroup2Office.StateNormal.HeaderPrimary.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.headerGroup2Office.StateNormal.HeaderPrimary.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.headerGroup2Office.StateNormal.HeaderPrimary.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup2Office.StateNormal.HeaderPrimary.Content.Padding = new System.Windows.Forms.Padding(-1);
             this.headerGroup2Office.TabIndex = 1;
             this.headerGroup2Office.ValuesPrimary.Heading = "Calendar";
             this.headerGroup2Office.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("headerGroup2Office.ValuesPrimary.Image")));
@@ -149,8 +155,11 @@ namespace KryptonHeaderGroupExamples
             // 
             this.headerGroup1Office.AllowButtonSpecToolTips = true;
             this.headerGroup1Office.AutoSize = true;
+            this.headerGroup1Office.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.headerGroup1Office.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecHeaderGroup[] {
             this.buttonSpecHeaderGroup1});
+            this.headerGroup1Office.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.headerGroup1Office.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
             this.headerGroup1Office.Location = new System.Drawing.Point(11, 28);
             this.headerGroup1Office.Name = "headerGroup1Office";
             this.headerGroup1Office.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
@@ -161,14 +170,12 @@ namespace KryptonHeaderGroupExamples
             this.headerGroup1Office.Panel.MinimumSize = new System.Drawing.Size(106, 80);
             this.headerGroup1Office.Panel.Padding = new System.Windows.Forms.Padding(5);
             this.headerGroup1Office.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
-            this.headerGroup1Office.Size = new System.Drawing.Size(124, 133);
+            this.headerGroup1Office.Size = new System.Drawing.Size(106, 124);
             this.headerGroup1Office.TabIndex = 0;
             this.headerGroup1Office.MouseDown += new System.Windows.Forms.MouseEventHandler(this.headerGroup_MouseDown);
             // 
             // buttonSpecHeaderGroup1
             // 
-            this.buttonSpecHeaderGroup1.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
-            this.buttonSpecHeaderGroup1.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.buttonSpecHeaderGroup1.ToolTipTitle = "Toggle the Collapsed/Expanded state";
             this.buttonSpecHeaderGroup1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.ArrowUp;
             this.buttonSpecHeaderGroup1.UniqueName = "A3F93613DE6E4171A3F93613DE6E4171";
@@ -179,7 +186,7 @@ namespace KryptonHeaderGroupExamples
             this.headerGroup1OfficeRTB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.headerGroup1OfficeRTB.Location = new System.Drawing.Point(5, 5);
             this.headerGroup1OfficeRTB.Name = "headerGroup1OfficeRTB";
-            this.headerGroup1OfficeRTB.Size = new System.Drawing.Size(112, 70);
+            this.headerGroup1OfficeRTB.Size = new System.Drawing.Size(96, 70);
             this.headerGroup1OfficeRTB.TabIndex = 0;
             this.headerGroup1OfficeRTB.Text = "Use the arrow on the top header to see the expand and collapse in operation.";
             this.headerGroup1OfficeRTB.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rtb_MouseDown);
@@ -197,6 +204,8 @@ namespace KryptonHeaderGroupExamples
             // 
             // headerGroup2Blue
             // 
+            this.headerGroup2Blue.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.headerGroup2Blue.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
             this.headerGroup2Blue.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Top;
             this.headerGroup2Blue.Location = new System.Drawing.Point(141, 28);
             this.headerGroup2Blue.Name = "headerGroup2Blue";
@@ -206,8 +215,12 @@ namespace KryptonHeaderGroupExamples
             // 
             this.headerGroup2Blue.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
             this.headerGroup2Blue.Size = new System.Drawing.Size(158, 134);
+            this.headerGroup2Blue.StateNormal.HeaderPrimary.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup2Blue.StateNormal.HeaderPrimary.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
             this.headerGroup2Blue.StateNormal.HeaderPrimary.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.headerGroup2Blue.StateNormal.HeaderPrimary.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.headerGroup2Blue.StateNormal.HeaderPrimary.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup2Blue.StateNormal.HeaderPrimary.Content.Padding = new System.Windows.Forms.Padding(-1);
             this.headerGroup2Blue.TabIndex = 2;
             this.headerGroup2Blue.ValuesPrimary.Heading = "Calendar";
             this.headerGroup2Blue.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("headerGroup2Blue.ValuesPrimary.Image")));
@@ -218,8 +231,11 @@ namespace KryptonHeaderGroupExamples
             // 
             this.headerGroup1Blue.AllowButtonSpecToolTips = true;
             this.headerGroup1Blue.AutoSize = true;
+            this.headerGroup1Blue.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.headerGroup1Blue.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecHeaderGroup[] {
             this.buttonSpecHeaderGroup3});
+            this.headerGroup1Blue.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.headerGroup1Blue.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
             this.headerGroup1Blue.Location = new System.Drawing.Point(11, 28);
             this.headerGroup1Blue.Name = "headerGroup1Blue";
             this.headerGroup1Blue.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
@@ -236,8 +252,6 @@ namespace KryptonHeaderGroupExamples
             // 
             // buttonSpecHeaderGroup3
             // 
-            this.buttonSpecHeaderGroup3.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
-            this.buttonSpecHeaderGroup3.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.buttonSpecHeaderGroup3.ToolTipTitle = "Toggle the Collapsed/Expanded state";
             this.buttonSpecHeaderGroup3.Type = Krypton.Toolkit.PaletteButtonSpecStyle.ArrowUp;
             this.buttonSpecHeaderGroup3.UniqueName = "7C2CD73A480A44C57C2CD73A480A44C5";
@@ -268,6 +282,9 @@ namespace KryptonHeaderGroupExamples
             // 
             // headerGroup4Custom
             // 
+            this.headerGroup4Custom.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.headerGroup4Custom.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.headerGroup4Custom.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
             this.headerGroup4Custom.Location = new System.Drawing.Point(162, 148);
             this.headerGroup4Custom.Name = "headerGroup4Custom";
             this.headerGroup4Custom.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
@@ -278,40 +295,89 @@ namespace KryptonHeaderGroupExamples
             this.headerGroup4Custom.Size = new System.Drawing.Size(137, 104);
             this.headerGroup4Custom.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(125)))), ((int)(((byte)(222)))));
             this.headerGroup4Custom.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(186)))), ((int)(((byte)(247)))));
+            this.headerGroup4Custom.StateNormal.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup4Custom.StateNormal.Back.ColorAngle = 15F;
             this.headerGroup4Custom.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Sigma;
+            this.headerGroup4Custom.StateNormal.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup4Custom.StateNormal.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.headerGroup4Custom.StateNormal.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup4Custom.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.headerGroup4Custom.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(45)))), ((int)(((byte)(150)))));
-            this.headerGroup4Custom.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.headerGroup4Custom.StateNormal.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup4Custom.StateNormal.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup4Custom.StateNormal.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.headerGroup4Custom.StateNormal.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup4Custom.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.headerGroup4Custom.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.headerGroup4Custom.StateNormal.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup4Custom.StateNormal.Border.Width = 1;
             this.headerGroup4Custom.StateNormal.HeaderPrimary.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
+            this.headerGroup4Custom.StateNormal.HeaderPrimary.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup4Custom.StateNormal.HeaderPrimary.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.headerGroup4Custom.StateNormal.HeaderPrimary.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderPrimary.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderPrimary.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup4Custom.StateNormal.HeaderPrimary.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.headerGroup4Custom.StateNormal.HeaderPrimary.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(45)))), ((int)(((byte)(150)))));
-            this.headerGroup4Custom.StateNormal.HeaderPrimary.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.headerGroup4Custom.StateNormal.HeaderPrimary.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderPrimary.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderPrimary.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderPrimary.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderPrimary.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.headerGroup4Custom.StateNormal.HeaderPrimary.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderPrimary.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup4Custom.StateNormal.HeaderPrimary.Border.Width = 1;
+            this.headerGroup4Custom.StateNormal.HeaderPrimary.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderPrimary.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
             this.headerGroup4Custom.StateNormal.HeaderPrimary.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.headerGroup4Custom.StateNormal.HeaderPrimary.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.headerGroup4Custom.StateNormal.HeaderPrimary.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderPrimary.Content.Padding = new System.Windows.Forms.Padding(-1);
             this.headerGroup4Custom.StateNormal.HeaderSecondary.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup4Custom.StateNormal.HeaderSecondary.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup4Custom.StateNormal.HeaderSecondary.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.headerGroup4Custom.StateNormal.HeaderSecondary.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(45)))), ((int)(((byte)(150)))));
-            this.headerGroup4Custom.StateNormal.HeaderSecondary.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.headerGroup4Custom.StateNormal.HeaderSecondary.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup4Custom.StateNormal.HeaderSecondary.Border.Width = 1;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
             this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.LongText.Color1 = System.Drawing.Color.White;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.LongText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.LongText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.LongText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.LongText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.LongText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.LongText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.LongText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.LongText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
             this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.Padding = new System.Windows.Forms.Padding(-1);
             this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
             this.headerGroup4Custom.StateNormal.HeaderSecondary.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.headerGroup4Custom.TabIndex = 5;
             this.headerGroup4Custom.ValuesPrimary.Heading = "Computer";
@@ -321,8 +387,11 @@ namespace KryptonHeaderGroupExamples
             // headerGroup3Custom
             // 
             this.headerGroup3Custom.AllowButtonSpecToolTips = true;
+            this.headerGroup3Custom.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.headerGroup3Custom.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecHeaderGroup[] {
             this.buttonSpecHeaderGroup5});
+            this.headerGroup3Custom.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.headerGroup3Custom.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
             this.headerGroup3Custom.Location = new System.Drawing.Point(15, 148);
             this.headerGroup3Custom.Name = "headerGroup3Custom";
             this.headerGroup3Custom.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
@@ -333,41 +402,88 @@ namespace KryptonHeaderGroupExamples
             this.headerGroup3Custom.Size = new System.Drawing.Size(137, 104);
             this.headerGroup3Custom.StateCommon.HeaderPrimary.ButtonEdgeInset = 4;
             this.headerGroup3Custom.StateCommon.HeaderPrimary.ButtonPadding = new System.Windows.Forms.Padding(2, -1, 0, -1);
+            this.headerGroup3Custom.StateCommon.HeaderPrimary.HeaderPadding = new System.Windows.Forms.Padding(-1);
             this.headerGroup3Custom.StateCommon.OverlayHeaders = Krypton.Toolkit.InheritBool.False;
             this.headerGroup3Custom.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
+            this.headerGroup3Custom.StateNormal.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup3Custom.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.headerGroup3Custom.StateNormal.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup3Custom.StateNormal.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.headerGroup3Custom.StateNormal.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup3Custom.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.headerGroup3Custom.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(201)))), ((int)(((byte)(255)))));
-            this.headerGroup3Custom.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.headerGroup3Custom.StateNormal.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup3Custom.StateNormal.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup3Custom.StateNormal.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.headerGroup3Custom.StateNormal.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup3Custom.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.headerGroup3Custom.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.headerGroup3Custom.StateNormal.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup3Custom.StateNormal.Border.Width = 2;
             this.headerGroup3Custom.StateNormal.HeaderPrimary.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(201)))), ((int)(((byte)(255)))));
             this.headerGroup3Custom.StateNormal.HeaderPrimary.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup3Custom.StateNormal.HeaderPrimary.Back.ColorAngle = 70F;
             this.headerGroup3Custom.StateNormal.HeaderPrimary.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Rounded;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup3Custom.StateNormal.HeaderPrimary.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.headerGroup3Custom.StateNormal.HeaderPrimary.Border.Draw = Krypton.Toolkit.InheritBool.False;
-            this.headerGroup3Custom.StateNormal.HeaderPrimary.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.headerGroup3Custom.StateNormal.HeaderPrimary.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Content.Padding = new System.Windows.Forms.Padding(-1);
             this.headerGroup3Custom.StateNormal.HeaderPrimary.Content.ShortText.Color1 = System.Drawing.Color.Black;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup3Custom.StateNormal.HeaderPrimary.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderPrimary.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
             this.headerGroup3Custom.StateNormal.HeaderPrimary.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.headerGroup3Custom.StateNormal.HeaderSecondary.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.headerGroup3Custom.StateNormal.HeaderSecondary.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(201)))), ((int)(((byte)(255)))));
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup3Custom.StateNormal.HeaderSecondary.Back.ColorAngle = 70F;
             this.headerGroup3Custom.StateNormal.HeaderSecondary.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Rounded;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup3Custom.StateNormal.HeaderSecondary.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.headerGroup3Custom.StateNormal.HeaderSecondary.Border.Draw = Krypton.Toolkit.InheritBool.False;
-            this.headerGroup3Custom.StateNormal.HeaderSecondary.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.headerGroup3Custom.StateNormal.HeaderSecondary.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Content.LongText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Content.LongText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Content.LongText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Content.LongText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup3Custom.StateNormal.HeaderSecondary.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Content.LongText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Content.LongText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Content.LongText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
             this.headerGroup3Custom.StateNormal.HeaderSecondary.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Content.LongText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
             this.headerGroup3Custom.StateNormal.HeaderSecondary.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.headerGroup3Custom.StateNormal.HeaderSecondary.Content.Padding = new System.Windows.Forms.Padding(-1);
             this.headerGroup3Custom.TabIndex = 4;
             this.headerGroup3Custom.ValuesPrimary.Heading = "Notepad";
             this.headerGroup3Custom.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("headerGroup3Custom.ValuesPrimary.Image")));
@@ -378,13 +494,15 @@ namespace KryptonHeaderGroupExamples
             // 
             this.buttonSpecHeaderGroup5.Edge = Krypton.Toolkit.PaletteRelativeEdgeAlign.Far;
             this.buttonSpecHeaderGroup5.Style = Krypton.Toolkit.PaletteButtonStyle.ButtonSpec;
-            this.buttonSpecHeaderGroup5.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.buttonSpecHeaderGroup5.ToolTipTitle = "Drop down for option selection";
             this.buttonSpecHeaderGroup5.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Context;
             this.buttonSpecHeaderGroup5.UniqueName = "02BAE7AC90E9401302BAE7AC90E94013";
             // 
             // headerGroup2Custom
             // 
+            this.headerGroup2Custom.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.headerGroup2Custom.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.headerGroup2Custom.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
             this.headerGroup2Custom.Location = new System.Drawing.Point(162, 26);
             this.headerGroup2Custom.Name = "headerGroup2Custom";
             this.headerGroup2Custom.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
@@ -396,37 +514,82 @@ namespace KryptonHeaderGroupExamples
             this.headerGroup2Custom.StateCommon.OverlayHeaders = Krypton.Toolkit.InheritBool.False;
             this.headerGroup2Custom.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
             this.headerGroup2Custom.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.headerGroup2Custom.StateNormal.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup2Custom.StateNormal.Back.ColorAngle = 180F;
             this.headerGroup2Custom.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.headerGroup2Custom.StateNormal.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup2Custom.StateNormal.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.headerGroup2Custom.StateNormal.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup2Custom.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.headerGroup2Custom.StateNormal.Border.Color1 = System.Drawing.SystemColors.Control;
+            this.headerGroup2Custom.StateNormal.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup2Custom.StateNormal.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.headerGroup2Custom.StateNormal.Border.Draw = Krypton.Toolkit.InheritBool.True;
-            this.headerGroup2Custom.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.headerGroup2Custom.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.headerGroup2Custom.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.headerGroup2Custom.StateNormal.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.headerGroup2Custom.StateNormal.Border.Rounding = 11;
+            this.headerGroup2Custom.StateNormal.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup2Custom.StateNormal.Border.Rounding = 11F;
             this.headerGroup2Custom.StateNormal.Border.Width = 1;
             this.headerGroup2Custom.StateNormal.HeaderPrimary.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.headerGroup2Custom.StateNormal.HeaderPrimary.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
+            this.headerGroup2Custom.StateNormal.HeaderPrimary.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup2Custom.StateNormal.HeaderPrimary.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Sigma;
+            this.headerGroup2Custom.StateNormal.HeaderPrimary.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderPrimary.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderPrimary.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup2Custom.StateNormal.HeaderPrimary.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderPrimary.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderPrimary.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
             this.headerGroup2Custom.StateNormal.HeaderPrimary.Content.Padding = new System.Windows.Forms.Padding(12, 6, -1, -1);
+            this.headerGroup2Custom.StateNormal.HeaderPrimary.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderPrimary.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.headerGroup2Custom.StateNormal.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.headerGroup2Custom.StateNormal.HeaderPrimary.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderPrimary.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup2Custom.StateNormal.HeaderPrimary.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderPrimary.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderPrimary.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderPrimary.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderPrimary.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderPrimary.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
             this.headerGroup2Custom.StateNormal.HeaderPrimary.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.headerGroup2Custom.StateNormal.HeaderSecondary.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             this.headerGroup2Custom.StateNormal.HeaderSecondary.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup2Custom.StateNormal.HeaderSecondary.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Sigma;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup2Custom.StateNormal.HeaderSecondary.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
             this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.LongText.Color1 = System.Drawing.Color.White;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.LongText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.LongText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.LongText.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.LongText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.LongText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.LongText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.LongText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.LongText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.LongText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
             this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.Padding = new System.Windows.Forms.Padding(12, -1, -1, 5);
             this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
             this.headerGroup2Custom.StateNormal.HeaderSecondary.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.headerGroup2Custom.TabIndex = 3;
             this.headerGroup2Custom.ValuesPrimary.Heading = "Dark Style";
@@ -435,6 +598,9 @@ namespace KryptonHeaderGroupExamples
             // 
             // headerGroup1Custom
             // 
+            this.headerGroup1Custom.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.headerGroup1Custom.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
+            this.headerGroup1Custom.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
             this.headerGroup1Custom.Location = new System.Drawing.Point(15, 26);
             this.headerGroup1Custom.Name = "headerGroup1Custom";
             this.headerGroup1Custom.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
@@ -443,42 +609,72 @@ namespace KryptonHeaderGroupExamples
             // 
             this.headerGroup1Custom.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
             this.headerGroup1Custom.Size = new System.Drawing.Size(137, 111);
+            this.headerGroup1Custom.StateCommon.HeaderPrimary.ButtonPadding = new System.Windows.Forms.Padding(-1);
             this.headerGroup1Custom.StateCommon.HeaderPrimary.HeaderPadding = new System.Windows.Forms.Padding(6, 6, 6, 0);
+            this.headerGroup1Custom.StateCommon.HeaderSecondary.ButtonPadding = new System.Windows.Forms.Padding(-1);
             this.headerGroup1Custom.StateCommon.HeaderSecondary.HeaderPadding = new System.Windows.Forms.Padding(6, 0, 6, 6);
             this.headerGroup1Custom.StateCommon.OverlayHeaders = Krypton.Toolkit.InheritBool.False;
             this.headerGroup1Custom.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(212)))), ((int)(((byte)(192)))));
+            this.headerGroup1Custom.StateNormal.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup1Custom.StateNormal.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
-            this.headerGroup1Custom.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.headerGroup1Custom.StateNormal.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup1Custom.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.headerGroup1Custom.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.headerGroup1Custom.StateNormal.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.headerGroup1Custom.StateNormal.Border.Rounding = 11;
+            this.headerGroup1Custom.StateNormal.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup1Custom.StateNormal.Border.Rounding = 11F;
             this.headerGroup1Custom.StateNormal.Border.Width = 5;
             this.headerGroup1Custom.StateNormal.HeaderPrimary.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(212)))), ((int)(((byte)(192)))));
             this.headerGroup1Custom.StateNormal.HeaderPrimary.Back.Color2 = System.Drawing.Color.White;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.headerGroup1Custom.StateNormal.HeaderPrimary.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup1Custom.StateNormal.HeaderPrimary.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.headerGroup1Custom.StateNormal.HeaderPrimary.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.headerGroup1Custom.StateNormal.HeaderPrimary.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.headerGroup1Custom.StateNormal.HeaderPrimary.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.headerGroup1Custom.StateNormal.HeaderPrimary.Border.Rounding = 6;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Border.Rounding = 6F;
             this.headerGroup1Custom.StateNormal.HeaderPrimary.Border.Width = 0;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Content.Padding = new System.Windows.Forms.Padding(-1);
             this.headerGroup1Custom.StateNormal.HeaderPrimary.Content.ShortText.Color1 = System.Drawing.Color.Black;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup1Custom.StateNormal.HeaderPrimary.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderPrimary.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
             this.headerGroup1Custom.StateNormal.HeaderPrimary.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.headerGroup1Custom.StateNormal.HeaderSecondary.Back.Color1 = System.Drawing.Color.White;
             this.headerGroup1Custom.StateNormal.HeaderSecondary.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(212)))), ((int)(((byte)(192)))));
+            this.headerGroup1Custom.StateNormal.HeaderSecondary.Back.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderSecondary.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderSecondary.Back.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.headerGroup1Custom.StateNormal.HeaderSecondary.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.headerGroup1Custom.StateNormal.HeaderSecondary.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.headerGroup1Custom.StateNormal.HeaderSecondary.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.headerGroup1Custom.StateNormal.HeaderSecondary.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.headerGroup1Custom.StateNormal.HeaderSecondary.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderSecondary.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderSecondary.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderSecondary.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.headerGroup1Custom.StateNormal.HeaderSecondary.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.headerGroup1Custom.StateNormal.HeaderSecondary.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.headerGroup1Custom.StateNormal.HeaderSecondary.Border.Rounding = 6;
+            this.headerGroup1Custom.StateNormal.HeaderSecondary.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
+            this.headerGroup1Custom.StateNormal.HeaderSecondary.Border.Rounding = 6F;
             this.headerGroup1Custom.StateNormal.HeaderSecondary.Border.Width = 0;
             this.headerGroup1Custom.TabIndex = 2;
             this.headerGroup1Custom.ValuesPrimary.Heading = "Blogging";

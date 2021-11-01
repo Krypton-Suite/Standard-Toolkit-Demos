@@ -1,13 +1,14 @@
-﻿// *****************************************************************************
-// 
-//  © Component Factory Pty Ltd, 2006 - 2016. All rights reserved.
-//	The software and associated documentation supplied hereunder are the 
-//  proprietary information of Component Factory Pty Ltd, PO Box 1504, 
-//  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
-// 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2021. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  Version 5.550.0 	www.ComponentFactory.com
-// *****************************************************************************
+﻿#region BSD License
+/*
+ * 
+ * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
+ *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
+ * 
+ *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  
+ */
+#endregion
 
 using System;
 using System.Drawing;
@@ -63,7 +64,7 @@ namespace CustomControlUsingRenderers
 
         public VisualOrientation Orientation
         {
-            get { return _orientation; }
+            get => _orientation;
 
             set
             {
@@ -267,14 +268,7 @@ namespace CustomControlUsingRenderers
             {
                 if (_mouseOver)
                 {
-                    if (_mouseDown)
-                    {
-                        return PaletteState.Pressed;
-                    }
-                    else
-                    {
-                        return PaletteState.Tracking;
-                    }
+                    return _mouseDown ? PaletteState.Pressed : PaletteState.Tracking;
                 }
                 else
                 {
@@ -312,32 +306,19 @@ namespace CustomControlUsingRenderers
             Invalidate();
         }
 
-        private void OnPalettePaint(object sender, PaletteLayoutEventArgs e)
-        {
+        private void OnPalettePaint(object sender, PaletteLayoutEventArgs e) =>
             // Palette indicates we might need to repaint, so lets do it
             Invalidate();
-        }
 
         #region IContentValues
-        public Image GetImage(PaletteState state)
-        {
-            return global::CustomControlUsingRenderers.Properties.Resources.wizard;
-        }
+        public Image GetImage(PaletteState state) => global::CustomControlUsingRenderers.Properties.Resources.wizard;
 
-        public Color GetImageTransparentColor(PaletteState state)
-        {
-            return Color.Empty;
-        }
+        public Color GetImageTransparentColor(PaletteState state) => Color.Empty;
 
-        public string GetLongText()
-        {
-            return "Click me!";
-        }
+        public string GetLongText() => "Click me!";
 
-        public string GetShortText()
-        {
-            return string.Empty;
-        }
+        public string GetShortText() => string.Empty;
+
         #endregion
     }
 }

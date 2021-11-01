@@ -78,6 +78,10 @@
             this.kryptonPanel2.Size = new System.Drawing.Size(400, 407);
             this.kryptonPanel2.TabIndex = 0;
             // 
+            // kryptonDockingManager
+            // 
+            this.kryptonDockingManager.DefaultCloseRequest = Krypton.Docking.DockingCloseRequest.HidePage;
+            // 
             // imageListSmall
             // 
             this.imageListSmall.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListSmall.ImageStream")));

@@ -1,13 +1,14 @@
-﻿// *****************************************************************************
-// 
-//  © Component Factory Pty Ltd, 2006 - 2016. All rights reserved.
-//	The software and associated documentation supplied hereunder are the 
-//  proprietary information of Component Factory Pty Ltd, PO Box 1504, 
-//  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
-// 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2021. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  Version 5.550.0 	www.ComponentFactory.com
-// *****************************************************************************
+﻿#region BSD License
+/*
+ * 
+ * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
+ *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
+ * 
+ *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  
+ */
+#endregion
 
 using System;
 using System.Drawing;
@@ -19,131 +20,85 @@ namespace KryptonCheckButtonExamples
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        private void Form1_Load(object sender, EventArgs e) =>
             // Setup the property grid to edit this button
             propertyGrid.SelectedObject = new KryptonCheckButtonProxy(button1Sparkle);
-        }
 
-        private void checkButton_Enter(object sender, EventArgs e)
-        {
+        private void checkButton_Enter(object sender, EventArgs e) =>
             // Setup the property grid to edit this button
             propertyGrid.SelectedObject = new KryptonCheckButtonProxy(sender as KryptonCheckButton);
-        }
 
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
 
     public class KryptonCheckButtonProxy
     {
         private KryptonCheckButton _checkButton;
 
-        public KryptonCheckButtonProxy(KryptonCheckButton checkButton)
-        {
-            _checkButton = checkButton;
-        }
+        public KryptonCheckButtonProxy(KryptonCheckButton checkButton) => _checkButton = checkButton;
 
         [Category("Visuals")]
         [Description("Button style.")]
         [DefaultValue(typeof(ButtonStyle), "Standalone")]
         public ButtonStyle ButtonStyle
         {
-            get { return _checkButton.ButtonStyle; }
-            set { _checkButton.ButtonStyle = value; }
+            get => _checkButton.ButtonStyle;
+            set => _checkButton.ButtonStyle = value;
         }
 
         [Category("Visuals")]
         [Description("Button values")]
-        public ButtonValues Values
-        {
-            get { return _checkButton.Values; }
-        }
+        public ButtonValues Values => _checkButton.Values;
 
         [Category("Visuals")]
         [Description("Overrides for defining common button appearance that other states can override.")]
-        public PaletteTripleRedirect StateCommon
-        {
-            get { return _checkButton.StateCommon; }
-        }
+        public PaletteTripleRedirect StateCommon => _checkButton.StateCommon;
 
         [Category("Visuals")]
         [Description("Overrides for defining disabled button appearance.")]
-        public PaletteTriple StateDisabled
-        {
-            get { return _checkButton.StateDisabled; }
-        }
+        public PaletteTriple StateDisabled => _checkButton.StateDisabled;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal button appearance.")]
-        public PaletteTriple StateNormal
-        {
-            get { return _checkButton.StateNormal; }
-        }
+        public PaletteTriple StateNormal => _checkButton.StateNormal;
 
         [Category("Visuals")]
         [Description("Overrides for defining hot tracking button appearance.")]
-        public PaletteTriple StateTracking
-        {
-            get { return _checkButton.StateTracking; }
-        }
+        public PaletteTriple StateTracking => _checkButton.StateTracking;
 
         [Category("Visuals")]
         [Description("Overrides for defining pressed button appearance.")]
-        public PaletteTriple StatePressed
-        {
-            get { return _checkButton.StatePressed; }
-        }
+        public PaletteTriple StatePressed => _checkButton.StatePressed;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal checked button appearance.")]
-        public PaletteTriple StateCheckedNormal
-        {
-            get { return _checkButton.StateCheckedNormal; }
-        }
+        public PaletteTriple StateCheckedNormal => _checkButton.StateCheckedNormal;
 
         [Category("Visuals")]
         [Description("Overrides for defining hot tracking checked button appearance.")]
-        public PaletteTriple StateCheckedTracking
-        {
-            get { return _checkButton.StateCheckedTracking; }
-        }
+        public PaletteTriple StateCheckedTracking => _checkButton.StateCheckedTracking;
 
         [Category("Visuals")]
         [Description("Overrides for defining pressed checked button appearance.")]
-        public PaletteTriple StateCheckedPressed
-        {
-            get { return _checkButton.StateCheckedPressed; }
-        }
+        public PaletteTriple StateCheckedPressed => _checkButton.StateCheckedPressed;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal button appearance when default.")]
-        public PaletteTripleRedirect OverrideDefault
-        {
-            get { return _checkButton.OverrideDefault; }
-        }
+        public PaletteTripleRedirect OverrideDefault => _checkButton.OverrideDefault;
 
         [Category("Visuals")]
         [Description("Overrides for defining button appearance when it has focus.")]
-        public PaletteTripleRedirect OverrideFocus
-        {
-            get { return _checkButton.OverrideFocus; }
-        }
+        public PaletteTripleRedirect OverrideFocus => _checkButton.OverrideFocus;
 
         [Category("Visuals")]
         [Description("Visual orientation of the control.")]
         [DefaultValue(typeof(VisualOrientation), "Top")]
         public VisualOrientation Orientation
         {
-            get { return _checkButton.Orientation; }
-            set { _checkButton.Orientation = value; }
+            get => _checkButton.Orientation;
+            set => _checkButton.Orientation = value;
         }
 
         [Category("Visuals")]
@@ -151,8 +106,8 @@ namespace KryptonCheckButtonExamples
         [DefaultValue(typeof(PaletteMode), "Global")]
         public PaletteMode PaletteMode
         {
-            get { return _checkButton.PaletteMode; }
-            set { _checkButton.PaletteMode = value; }
+            get => _checkButton.PaletteMode;
+            set => _checkButton.PaletteMode = value;
         }
 
         [Category("Layout")]
@@ -160,8 +115,8 @@ namespace KryptonCheckButtonExamples
         [DefaultValue(false)]
         public bool AutoSize
         {
-            get { return _checkButton.AutoSize; }
-            set { _checkButton.AutoSize = value; }
+            get => _checkButton.AutoSize;
+            set => _checkButton.AutoSize = value;
         }
 
         [Category("Layout")]
@@ -169,40 +124,40 @@ namespace KryptonCheckButtonExamples
         [DefaultValue(typeof(AutoSizeMode), "GrowOnly")]
         public AutoSizeMode AutoSizeMode
         {
-            get { return _checkButton.AutoSizeMode; }
-            set { _checkButton.AutoSizeMode = value; }
+            get => _checkButton.AutoSizeMode;
+            set => _checkButton.AutoSizeMode = value;
         }
 
         [Category("Layout")]
         [Description("The size of the control is pixels.")]
         public Size Size
         {
-            get { return _checkButton.Size; }
-            set { _checkButton.Size = value; }
+            get => _checkButton.Size;
+            set => _checkButton.Size = value;
         }
 
         [Category("Layout")]
         [Description("The location of the control in pixels.")]
         public Point Location
         {
-            get { return _checkButton.Location; }
-            set { _checkButton.Location = value; }
+            get => _checkButton.Location;
+            set => _checkButton.Location = value;
         }
 
         [Category("Appearance")]
         [Description("Indicates whether the control is in the checked state.")]
         public bool Checked
         {
-            get { return _checkButton.Checked; }
-            set { _checkButton.Checked = value; }
+            get => _checkButton.Checked;
+            set => _checkButton.Checked = value;
         }
 
         [Category("Behavior")]
         [Description("Indicates whether the control is enabled.")]
         public bool Enabled
         {
-            get { return _checkButton.Enabled; }
-            set { _checkButton.Enabled = value; }
+            get => _checkButton.Enabled;
+            set => _checkButton.Enabled = value;
         }
     }
 }
