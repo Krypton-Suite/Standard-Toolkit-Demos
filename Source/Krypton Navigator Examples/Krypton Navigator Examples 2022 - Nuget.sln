@@ -1,37 +1,37 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29521.150
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31825.309
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Navigator Modes 2019", "Navigator Modes\Navigator Modes 2019.csproj", "{D76F290E-8546-440A-98E6-6C6BC426D2B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Navigator Modes 2022", "Navigator Modes\Navigator Modes 2022.csproj", "{D76F290E-8546-440A-98E6-6C6BC426D2B2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "User Page Creation 2019", "User Page Creation\User Page Creation 2019.csproj", "{42AC06D0-2FA3-4947-B61B-C801DD8C5413}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "User Page Creation 2022", "User Page Creation\User Page Creation 2022.csproj", "{42AC06D0-2FA3-4947-B61B-C801DD8C5413}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Navigator Playground 2019", "Navigator Playground\Navigator Playground 2019.csproj", "{8FF79C43-0E59-4E21-A8F3-6E9E4F3154EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Navigator Playground 2022", "Navigator Playground\Navigator Playground 2022.csproj", "{8FF79C43-0E59-4E21-A8F3-6E9E4F3154EE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic Events 2019", "Basic Events\Basic Events 2019.csproj", "{826F4ED0-866F-4354-B0C6-482DA5A25CD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic Events 2022", "Basic Events\Basic Events 2022.csproj", "{826F4ED0-866F-4354-B0C6-482DA5A25CD4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orientation + Alignment 2019", "Orientation + Alignment\Orientation + Alignment 2019.csproj", "{546ED88E-A953-4041-98AF-EB2DB758EDD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orientation + Alignment 2022", "Orientation + Alignment\Orientation + Alignment 2022.csproj", "{546ED88E-A953-4041-98AF-EB2DB758EDD6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Navigator Palettes 2019", "Navigator Palettes\Navigator Palettes 2019.csproj", "{305FC9AC-BD98-4DE0-81A8-245209395B2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Navigator Palettes 2022", "Navigator Palettes\Navigator Palettes 2022.csproj", "{305FC9AC-BD98-4DE0-81A8-245209395B2E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneNote Tabs 2019", "OneNote Tabs\OneNote Tabs 2019.csproj", "{50F16849-656D-4C9A-AFE3-3E128757AD67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneNote Tabs 2022", "OneNote Tabs\OneNote Tabs 2022.csproj", "{50F16849-656D-4C9A-AFE3-3E128757AD67}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tab Border Styles 2019", "Tab Border Styles\Tab Border Styles 2019.csproj", "{D72909C6-A2E7-4FE6-9DA0-2D39F2BBD187}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tab Border Styles 2022", "Tab Border Styles\Tab Border Styles 2022.csproj", "{D72909C6-A2E7-4FE6-9DA0-2D39F2BBD187}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Outlook Mockup 2019", "Outlook Mockup\Outlook Mockup 2019.csproj", "{9497EDA8-5D49-4708-825D-FA52C6FDB962}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Outlook Mockup 2022", "Outlook Mockup\Outlook Mockup 2022.csproj", "{9497EDA8-5D49-4708-825D-FA52C6FDB962}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleline + Multiline 2019", "Singleline + Multiline\Singleline + Multiline 2019.csproj", "{C499485E-21F6-4A4E-878A-65C7B9E86637}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleline + Multiline 2022", "Singleline + Multiline\Singleline + Multiline 2022.csproj", "{C499485E-21F6-4A4E-878A-65C7B9E86637}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Popup Pages 2019", "Popup Pages\Popup Pages 2019.csproj", "{99F8F0C5-B840-4152-BC2C-9CD182BC670D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Popup Pages 2022", "Popup Pages\Popup Pages 2022.csproj", "{99F8F0C5-B840-4152-BC2C-9CD182BC670D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expanding Pages 2019", "Expanding Pages\Expanding Pages 2019.csproj", "{9A35098C-1B06-485F-BC81-18CE5BCA39B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expanding Pages 2022", "Expanding Pages\Expanding Pages 2022.csproj", "{9A35098C-1B06-485F-BC81-18CE5BCA39B5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Navigator ToolTips 2019", "Navigator Tooltips\Navigator ToolTips 2019.csproj", "{1BCB18C0-67AB-498A-B586-5D2FFA3F99FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Navigator ToolTips 2022", "Navigator Tooltips\Navigator ToolTips 2022.csproj", "{1BCB18C0-67AB-498A-B586-5D2FFA3F99FB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Navigator Context Menus 2019", "Navigator Context Menus\Navigator Context Menus 2019.csproj", "{6E993E95-B34E-47E0-91F2-4C4CA154A65B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Navigator Context Menus 2022", "Navigator Context Menus\Navigator Context Menus 2022.csproj", "{6E993E95-B34E-47E0-91F2-4C4CA154A65B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Per-Tab Buttons 2019", "Per-Tab Buttons\Per-Tab Buttons 2019.csproj", "{82003863-6059-49A4-AC05-3A4A5328049A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Per-Tab Buttons 2022", "Per-Tab Buttons\Per-Tab Buttons 2022.csproj", "{82003863-6059-49A4-AC05-3A4A5328049A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D395B1A6-68BB-43F3-A2AF-AACAA36BA922}"
 	ProjectSection(SolutionItems) = preProject
