@@ -101,7 +101,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonTaskDialog Examples 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonInputBox Examples 2022", "KryptonInputBox Examples\KryptonInputBox Examples 2022.csproj", "{16DA7141-9737-4A0A-8A3D-F53775657C29}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton.Toolkit 2019", "..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2019.csproj", "{590D9BA6-7A3E-412E-870F-1F75446D9823}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton.Toolkit 2022", "..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2022.csproj", "{590D9BA6-7A3E-412E-870F-1F75446D9823}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonTreeView Examples 2022", "KryptonTreeView Examples\KryptonTreeView Examples 2022.csproj", "{8AA88DB8-CECE-4D99-AE61-EF89ED0E4590}"
 EndProject
