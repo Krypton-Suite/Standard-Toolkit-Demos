@@ -3,7 +3,7 @@
         <TargetFrameworks>net48;net5.0-windows;net6.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
         <RootNamespace>KryptonPrintDialog</RootNamespace>
-        <AssemblyName>KryptonPrintDialog Example</AssemblyName>
+        <AssemblyName>Krypton Print Dialog Example</AssemblyName>
         <UseWindowsForms>true</UseWindowsForms>
         <LangVersion>preview</LangVersion>
         <NeutralLanguage>en</NeutralLanguage>

@@ -3,7 +3,7 @@
         <TargetFrameworks>net48;net5.0-windows;net6.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
         <RootNamespace>KryptonColorDialog</RootNamespace>
-        <AssemblyName>KryptonColorDialog Example</AssemblyName>
+        <AssemblyName>Krypton Color Dialog Example</AssemblyName>
         <UseWindowsForms>true</UseWindowsForms>
         <NeutralLanguage>en</NeutralLanguage>
         <NeutralLanguage>en</NeutralLanguage>

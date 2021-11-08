@@ -39,840 +39,468 @@ namespace KryptonExplorer
 
         private void linkKryptonBorderEdge_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Border Edge Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Border Edge Examples");
         }
 
         private void linkKryptonButton_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Button Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Button Examples");
         }
 
         private void linkKryptonCheckBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton CheckBox Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton CheckBox Examples");
         }
 
         private void linkKryptonCheckButton_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton CheckButton Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton CheckButton Examples");
         }
 
         private void linkKryptonDropButton_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton DropButton Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton DropButton Examples");
         }
 
         private void linkKryptonColorButton_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton ColorButton Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton ColorButton Examples");
         }
 
         private void linkKryptonCheckSet_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton CheckSet Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton CheckSet Examples");
         }
 
         private void linkKryptonContextMenu_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Context Menu Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Context Menu Examples");
         }
 
         private void linkKryptonDataGridView_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Data GridView Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Data GridView Examples");
         }
 
         private void linkKryptonForm_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Form Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Form Examples");
         }
 
         private void linkKryptonGroup_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Group Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Group Examples");
         }
 
         private void linkKryptonGroupBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton GroupBox Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton GroupBox Examples");
         }
 
         private void linkKryptonHeader_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Header Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Header Examples");
         }
 
         private void linkKryptonHeaderGroup_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Header Group Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Header Group Examples");
         }
 
         private void linkKryptonLabel_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Label Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Label Examples");
         }
 
         private void linkKryptonWrapLabel_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Wrap Label Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Wrap Label Examples");
         }
 
         private void linkKryptonCommand_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Command Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Command Examples");
         }
 
         private void linkKryptonLinkLabel_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Link Label Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Link Label Examples");
         }
 
         private void linkKryptonListBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton ListBox Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton ListBox Examples");
         }
 
         private void linkKryptonCheckedListBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Checked ListBox Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Checked ListBox Examples");
         }
 
         private void linkKryptonMaskedTextBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Masked TextBox Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Masked TextBox Examples");
         }
 
         private void linkKryptonPalette_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Palette Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Palette Examples");
         }
 
         private void linkKryptonPanel_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Panel Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Panel Examples");
         }
 
         private void linkKryptonSeparator_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Separator Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Separator Examples");
         }
 
         private void linkKryptonRadioButton_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton RadioButton Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton RadioButton Examples");
         }
 
         private void linkKryptobTrackBar_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton TrackBar Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton TrackBar Examples");
         }
 
         private void linkKryptonSplitContainer_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Split Container Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Split Container Examples");
         }
 
         private void linkKryptonComboBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton ComboBox Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton ComboBox Examples");
         }
 
         private void linkKryptonTextBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton TextBox Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton TextBox Examples");
         }
 
         private void linkKryptonRichTextBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Rich TextBox Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Rich TextBox Examples");
         }
 
         private void linkKryptonNumericUpDown_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Numeric UpDown Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Numeric UpDown Examples");
         }
 
         private void linkKryptonDomainUpDown_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Domain UpDown Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Domain UpDown Examples");
         }
 
         private void linkKryptonBreadCrumb_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Bread Crumb Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Bread Crumb Examples");
         }
 
         private void linkKryptonDateTimePicker_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton DateTimePicker Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton DateTimePicker Examples");
         }
 
         private void linkKryptonMonthCalendar_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Month Calendar Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Month Calendar Examples");
         }
 
         private void linkKryptonInputBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton InputBox Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton InputBox Examples");
         }
 
         private void linkKryptonMessageBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton MessageBox Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton MessageBox Examples");
         }
 
         private void linkKryptonTaskDialog_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton TaskDialog Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton TaskDialog Examples");
         }
 
         private void linkKryptonTreeView_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton TreeView Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton TreeView Examples");
         }
 
         private void linkInputForm_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Input Form Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Input Form Examples");
         }
 
         private void linkThreePaneApplicationBasic_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Three Pane Application Basic.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Three Pane Application Basic");
         }
 
         private void linkThreePaneApplicationExtended_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Three Pane Application Extended.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Three Pane Application Extended");
         }
 
         private void linkMDIApplication_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\MDI Application.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("MDI Application");
         }
 
         private void linkCustomControlUsingPalettes_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Custom Control Using Palettes.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Custom Control Using Palettes");
         }
 
         private void linkCustomControlUsingRenderers_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Custom Control Using Renderers.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Custom Control Using Renderers");
         }
 
         private void linkExpandingSplitters_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Expanding Header Groups Splitters Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Expanding Header Groups Splitters Examples");
         }
 
         private void linkExpandingDockStyle_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Expanding Header Groups DockStyle Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Expanding Header Groups DockStyle Examples");
         }
 
         private void linkExpandingHeaderStack_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Expanding Header Groups Stack Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Expanding Header Groups Stack Examples");
         }
 
         private void linkChildControlStack_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Child Control Stack.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Child Control Stack");
         }
 
         private void linkLabelButtonSpecPlayground_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Button Spec Playground.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Button Spec Playground");
         }
 
         private void linkNavigatorModes_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Navigator Modes.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Navigator Modes");
         }
 
         private void linkNavigatorPalettes_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Navigator Palettes.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Navigator Palettes");
         }
 
         private void linkOrientationAndAlignment_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Orientation Plus Alignment.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Orientation Plus Alignment");
         }
 
         private void linkSinglelineAndMultiline_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Singleline Plus Multiline.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Singleline Plus Multiline");
         }
 
         private void linkTabBorderStyles_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Tab Border Styles.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Tab Border Styles");
         }
 
         private void linkNavigatorPopupPages_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Popup Pages.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Popup Pages");
         }
 
         private void linkNavigatorPerTabButtons_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Per Tab Buttons.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Per Tab Buttons");
         }
 
         private void linkNavigatorTooltips_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Navigator Tool Tips.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Navigator Tool Tips");
         }
 
         private void linkNavigatorContextMenus_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Navigator Context Menus.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Navigator Context Menus");
         }
 
         private void linkNavigatorPlayground_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Navigator Playground.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Navigator Playground");
         }
 
         private void linkContextualTabs_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Contextual Tabs.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Contextual Tabs");
         }
 
         private void linkKeyTipsTabs_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Key Tips And Keyboard Access.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Key Tips And Keyboard Access");
         }
 
         private void labelAutoShrinkingGroups_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Auto Shrinking Groups.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Auto Shrinking Groups");
         }
 
         private void labelQuickAccessToolbar_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Quick Access Toolbar.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Quick Access Toolbar");
         }
 
         private void linkRibbonGallery_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Ribbon Gallery.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Ribbon Gallery");
         }
 
         private void linkRibbonToolTips_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Ribbon Tool Tips.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Ribbon Tool Tips");
         }
 
         private void linkRibbonControls_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Ribbon Controls.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Ribbon Controls");
         }
 
         private void linkKryptonGallery_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Gallery Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Gallery Examples");
         }
 
         private void linkApplicationMenu_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Application Menu.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Application Menu");
         }
 
         private void linkOutlookMailClone_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Outlook Mail Clone.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Outlook Mail Clone");
         }
 
         private void linkRibbonAndNavigator_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Ribbon And Navigator And Workspace.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Ribbon And Navigator And Workspace");
         }
 
         private void linkMDIRibbon_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\MDI Ribbon.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("MDI Ribbon");
         }
 
         private void linkExpandingPages_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Expanding Pages.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Expanding Pages");
         }
 
         private void linkNavigatorBasicEvents_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Basic Events.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Basic Events");
         }
 
         private void linkNavigatorUserPageCreation_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\User Page Creation.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("User Page Creation");
         }
 
         private void linkNavigatorOneNoteTabs_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\OneNote Tabs.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("OneNote Tabs");
         }
 
         private void linkNavigatorOutlookMockup_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Outlook Mockup.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Outlook Mockup");
         }
 
         private void linkWorkspaceCellModes_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Workspace Cell Modes.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Workspace Cell Modes");
         }
 
         private void linkWorkspaceCellLayout_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Workspace Cell Layout.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Workspace Cell Layout");
         }
 
         private void linkWorkspacePersistence_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\WorkspacePersistence.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("WorkspacePersistence");
         }
 
         private void linkCellMaximizeAndRestore_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Cell Maximize And Restore.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Cell Maximize And Restore");
         }
 
         private void linkBasicPageDragAndDrop_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Basic Page Drag And Drop.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Basic Page Drag And Drop");
         }
 
         private void linkAdvancedPageDragAndDrop_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Advanced Page Drag And Drop.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Advanced Page Drag And Drop");
         }
 
         private void memoEditor_Clicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Memo Editor.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Memo Editor");
         }
 
         private void linkStandardDocking_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Standard Docking.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Standard Docking");
         }
 
         private void linkMultiControlDocking_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Multi Control Docking.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Multi Control Docking");
         }
 
         private void linkExternalDragToDocking_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\External Drag To Docking.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("External Drag To Docking");
         }
 
 
         private void linkNavigatorAndFloatingWindows_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Navigator And Floating Windows.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Navigator And Floating Windows");
         }
 
         private void linkDockingPersistence_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Docking Persistence.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Docking Persistence");
         }
 
         private void linkDockingFlags_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Docking Flags.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Docking Flags");
         }
 
         private void linkDockingCustomized_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Docking Customized.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Docking Customized");
         }
 
         private void linkPaletteDesigner_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Palette Designer.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Palette Designer");
         }
 
         private void linkPaletteUpgradeTool_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Palette Upgrade Tool.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Palette Upgrade Tool.exe");
         }
 
 
@@ -934,29 +562,44 @@ namespace KryptonExplorer
 
         private void kllKryptonScrollBars_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Scrollbar Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Scrollbar Examples");
         }
 
         private void kllKryptonWebBrowser_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton WebBrowser Example.exe"); }
+            LaunchApplication("Krypton WebBrowser Example");
+        }
+
+        private void kllKryptonHelpIcon_LinkClicked(object sender, EventArgs e)
+        {
+            LaunchApplication("Krypton Help Icon Examples");
+        }
+
+        private void kllColourDialog_LinkClicked(object sender, EventArgs e)
+        {
+            LaunchApplication("Krypton Color Dialog Example");
+        }
+
+        private void LaunchApplication(string exampleName)
+        {
+            try
+            {
+                Process.Start($@".\{exampleName}.exe");
+            }
             catch (Exception ex)
             {
                 KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void kllKryptonHelpIcon_LinkClicked(object sender, EventArgs e)
+        private void kllFontDialog_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\Krypton Help Icon Examples.exe"); }
-            catch (Exception ex)
-            {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LaunchApplication("Krypton Font Dialog Example");
+        }
+
+        private void klblPrintDialog_LinkClicked(object sender, EventArgs e)
+        {
+            LaunchApplication("Krypton Print Dialog Example");
         }
     }
 }

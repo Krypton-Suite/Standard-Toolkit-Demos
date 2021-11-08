@@ -3,7 +3,7 @@
         <TargetFrameworks>net48;net5.0-windows;net6.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
         <RootNamespace>KryptonFontDialog</RootNamespace>
-        <AssemblyName>KryptonFontDialog Example</AssemblyName>
+        <AssemblyName>Krypton Font Dialog Example</AssemblyName>
         <UseWindowsForms>true</UseWindowsForms>
     	    <NeutralLanguage>en</NeutralLanguage>
 	    <LangVersion>preview</LangVersion>
