@@ -3,10 +3,10 @@
     <!-- do not change this ever !-->
     <?define UpgradeCode = "38FC3474-F06B-4C57-8869-15B23AEBFB10" ?>
 
-    <?define Version = "6.0.2110.274" ?>
+    <?define Version = "6.0.2111.310" ?>
     <!--"!(bind.FileVersion.Krypton.Toolkit.dll)" -->
 
-    <?define ProductName = "Krypton Toolkit Demo Net50 Apps"?>
+    <?define ProductName = "Krypton Toolkit Demo Net60 Apps"?>
 
     <Product
         Version="$(var.Version)"
@@ -75,7 +75,7 @@
 
         <Feature Id="ProductFeature" Title="KryptonToolkitDemos_Setup" Level="1">
             <ComponentGroupRef Id="KryptonToolkitDemos" />
-            <ComponentGroupRef Id="BasePath50" />
+            <ComponentGroupRef Id="BasePath60" />
             <ComponentRef Id='ProgramMenuDir2'/>
         </Feature>
 
