@@ -85,14 +85,14 @@ namespace KryptonDataGridViewExamples
             this.Column2 = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
             this.kryptonPalette = new Krypton.Toolkit.KryptonPalette(this.components);
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
-            this.colCheckBox = new Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn();
-            this.colNumericUpDown = new Krypton.Toolkit.KryptonDataGridViewNumericUpDownColumn();
-            this.colDomainUpDown = new Krypton.Toolkit.KryptonDataGridViewDomainUpDownColumn();
-            this.colMaskedTextBox = new Krypton.Toolkit.KryptonDataGridViewMaskedTextBoxColumn();
-            this.colTextBox = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colComboBox = new Krypton.Toolkit.KryptonDataGridViewComboBoxColumn();
-            this.colDateTime = new Krypton.Toolkit.KryptonDataGridViewDateTimePickerColumn();
             this.btnForm2 = new System.Windows.Forms.Button();
+            this.colDateTime = new Krypton.Toolkit.KryptonDataGridViewDateTimePickerColumn();
+            this.colComboBox = new Krypton.Toolkit.KryptonDataGridViewComboBoxColumn();
+            this.colTextBox = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.colMaskedTextBox = new Krypton.Toolkit.KryptonDataGridViewMaskedTextBoxColumn();
+            this.colDomainUpDown = new Krypton.Toolkit.KryptonDataGridViewDomainUpDownColumn();
+            this.colNumericUpDown = new Krypton.Toolkit.KryptonDataGridViewNumericUpDownColumn();
+            this.colCheckBox = new Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtTestData)).BeginInit();
@@ -394,6 +394,7 @@ namespace KryptonDataGridViewExamples
             this.kryptonDataGridView1.RowHeadersWidth = 51;
             this.kryptonDataGridView1.Size = new System.Drawing.Size(954, 252);
             this.kryptonDataGridView1.TabIndex = 0;
+            this.kryptonDataGridView1.CellToolTipTextNeeded += new System.Windows.Forms.DataGridViewCellToolTipTextNeededEventHandler(this.kryptonDataGridView1_CellToolTipTextNeeded);
             // 
             // kryptonContextMenu1
             // 
@@ -684,58 +685,27 @@ namespace KryptonDataGridViewExamples
             this.kryptonManager.GlobalPalette = this.kryptonPalette;
             this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Custom;
             // 
-            // colCheckBox
+            // btnForm2
             // 
-            this.colCheckBox.DataPropertyName = "CheckBox";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.NullValue = false;
-            this.colCheckBox.DefaultCellStyle = dataGridViewCellStyle1;
-            this.colCheckBox.FalseValue = null;
-            this.colCheckBox.HeaderText = "CheckBox";
-            this.colCheckBox.IndeterminateValue = null;
-            this.colCheckBox.MinimumWidth = 6;
-            this.colCheckBox.Name = "colCheckBox";
-            this.colCheckBox.TrueValue = null;
-            this.colCheckBox.Width = 68;
+            this.btnForm2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnForm2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnForm2.Location = new System.Drawing.Point(664, 413);
+            this.btnForm2.Name = "btnForm2";
+            this.btnForm2.Size = new System.Drawing.Size(308, 30);
+            this.btnForm2.TabIndex = 7;
+            this.btnForm2.Text = "&Open Programatic Populate";
+            this.btnForm2.UseVisualStyleBackColor = true;
+            this.btnForm2.Click += new System.EventHandler(this.BtnForm2_Click);
             // 
-            // colNumericUpDown
+            // colDateTime
             // 
-            this.colNumericUpDown.AllowDecimals = false;
-            this.colNumericUpDown.DataPropertyName = "NumericUpDown";
-            this.colNumericUpDown.HeaderText = "NumericUpDown";
-            this.colNumericUpDown.MinimumWidth = 6;
-            this.colNumericUpDown.Name = "colNumericUpDown";
-            this.colNumericUpDown.Width = 105;
-            // 
-            // colDomainUpDown
-            // 
-            this.colDomainUpDown.DataPropertyName = "DomainUpDown";
-            this.colDomainUpDown.HeaderText = "DomainUpDown";
-            this.colDomainUpDown.Items.AddRange(new string[] {
-            "Single",
-            "Married",
-            "Divorced",
-            "Separated"});
-            this.colDomainUpDown.MinimumWidth = 6;
-            this.colDomainUpDown.Name = "colDomainUpDown";
-            this.colDomainUpDown.Width = 105;
-            // 
-            // colMaskedTextBox
-            // 
-            this.colMaskedTextBox.DataPropertyName = "MaskedTextBox";
-            this.colMaskedTextBox.HeaderText = "MaskedTextBox";
-            this.colMaskedTextBox.Mask = "(99) 9999-9999";
-            this.colMaskedTextBox.MinimumWidth = 6;
-            this.colMaskedTextBox.Name = "colMaskedTextBox";
-            this.colMaskedTextBox.Width = 100;
-            // 
-            // colTextBox
-            // 
-            this.colTextBox.DataPropertyName = "TextBox";
-            this.colTextBox.HeaderText = "TextBox";
-            this.colTextBox.MinimumWidth = 6;
-            this.colTextBox.Name = "colTextBox";
-            this.colTextBox.Width = 100;
+            this.colDateTime.Checked = false;
+            this.colDateTime.DataPropertyName = "DateTime";
+            this.colDateTime.HeaderText = "DateTime";
+            this.colDateTime.MinimumWidth = 6;
+            this.colDateTime.Name = "colDateTime";
+            this.colDateTime.ToolTipText = "Datetime Tool tip text";
+            this.colDateTime.Width = 190;
             // 
             // colComboBox
             // 
@@ -751,26 +721,58 @@ namespace KryptonDataGridViewExamples
             this.colComboBox.Name = "colComboBox";
             this.colComboBox.Width = 75;
             // 
-            // colDateTime
+            // colTextBox
             // 
-            this.colDateTime.Checked = false;
-            this.colDateTime.DataPropertyName = "DateTime";
-            this.colDateTime.HeaderText = "DateTime";
-            this.colDateTime.MinimumWidth = 6;
-            this.colDateTime.Name = "colDateTime";
-            this.colDateTime.Width = 190;
+            this.colTextBox.DataPropertyName = "TextBox";
+            this.colTextBox.HeaderText = "TextBox";
+            this.colTextBox.MinimumWidth = 6;
+            this.colTextBox.Name = "colTextBox";
+            this.colTextBox.Width = 100;
             // 
-            // btnForm2
+            // colMaskedTextBox
             // 
-            this.btnForm2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnForm2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnForm2.Location = new System.Drawing.Point(664, 413);
-            this.btnForm2.Name = "btnForm2";
-            this.btnForm2.Size = new System.Drawing.Size(308, 30);
-            this.btnForm2.TabIndex = 7;
-            this.btnForm2.Text = "&Open Programatic Populate";
-            this.btnForm2.UseVisualStyleBackColor = true;
-            this.btnForm2.Click += new System.EventHandler(this.BtnForm2_Click);
+            this.colMaskedTextBox.DataPropertyName = "MaskedTextBox";
+            this.colMaskedTextBox.HeaderText = "MaskedTextBox";
+            this.colMaskedTextBox.Mask = "(99) 9999-9999";
+            this.colMaskedTextBox.MinimumWidth = 6;
+            this.colMaskedTextBox.Name = "colMaskedTextBox";
+            this.colMaskedTextBox.Width = 100;
+            // 
+            // colDomainUpDown
+            // 
+            this.colDomainUpDown.DataPropertyName = "DomainUpDown";
+            this.colDomainUpDown.HeaderText = "DomainUpDown";
+            this.colDomainUpDown.Items.AddRange(new string[] {
+            "Single",
+            "Married",
+            "Divorced",
+            "Separated"});
+            this.colDomainUpDown.MinimumWidth = 6;
+            this.colDomainUpDown.Name = "colDomainUpDown";
+            this.colDomainUpDown.Width = 105;
+            // 
+            // colNumericUpDown
+            // 
+            this.colNumericUpDown.AllowDecimals = false;
+            this.colNumericUpDown.DataPropertyName = "NumericUpDown";
+            this.colNumericUpDown.HeaderText = "NumericUpDown";
+            this.colNumericUpDown.MinimumWidth = 6;
+            this.colNumericUpDown.Name = "colNumericUpDown";
+            this.colNumericUpDown.Width = 105;
+            // 
+            // colCheckBox
+            // 
+            this.colCheckBox.DataPropertyName = "CheckBox";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.NullValue = false;
+            this.colCheckBox.DefaultCellStyle = dataGridViewCellStyle1;
+            this.colCheckBox.FalseValue = null;
+            this.colCheckBox.HeaderText = "CheckBox";
+            this.colCheckBox.IndeterminateValue = null;
+            this.colCheckBox.MinimumWidth = 6;
+            this.colCheckBox.Name = "colCheckBox";
+            this.colCheckBox.TrueValue = null;
+            this.colCheckBox.Width = 68;
             // 
             // Form1
             // 
@@ -862,6 +864,7 @@ namespace KryptonDataGridViewExamples
         private Krypton.Toolkit.KryptonContextMenuImageSelect kryptonContextMenuImageSelect1;
         private Krypton.Toolkit.KryptonContextMenuMonthCalendar kryptonContextMenuMonthCalendar1;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private System.Windows.Forms.Button btnForm2;
         private Krypton.Toolkit.KryptonDataGridViewDateTimePickerColumn colDateTime;
         private Krypton.Toolkit.KryptonDataGridViewComboBoxColumn colComboBox;
         private Krypton.Toolkit.KryptonDataGridViewTextBoxColumn colTextBox;
@@ -869,7 +872,6 @@ namespace KryptonDataGridViewExamples
         private Krypton.Toolkit.KryptonDataGridViewDomainUpDownColumn colDomainUpDown;
         private Krypton.Toolkit.KryptonDataGridViewNumericUpDownColumn colNumericUpDown;
         private Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn colCheckBox;
-        private System.Windows.Forms.Button btnForm2;
     }
 }
 

@@ -92,6 +92,11 @@ namespace KryptonDataGridViewExamples
             using var dlg = new Form2();
             dlg.ShowDialog(this);
         }
+
+        private void kryptonDataGridView1_CellToolTipTextNeeded(object sender, DataGridViewCellToolTipTextNeededEventArgs e)
+        {
+
+        }
     }
 
     public class KryptonDataGridViewProxy
