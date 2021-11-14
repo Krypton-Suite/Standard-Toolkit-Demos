@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBoxPalette = new System.Windows.Forms.GroupBox();
             this.rbOffice2010Black = new System.Windows.Forms.RadioButton();
@@ -44,13 +45,13 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.propertyGrid = new System.Windows.Forms.PropertyGrid();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.kryptonPalette = new Krypton.Toolkit.KryptonPalette();
             this.groupBoxRibbon = new System.Windows.Forms.GroupBox();
+            this.groupBoxNormal = new System.Windows.Forms.GroupBox();
             this.dtpRibbonTime = new Krypton.Toolkit.KryptonDateTimePicker();
             this.buttonSpecAny2 = new Krypton.Toolkit.ButtonSpecAny();
+            this.kryptonPalette = new Krypton.Toolkit.KryptonPalette(this.components);
             this.dtpRibbonShort = new Krypton.Toolkit.KryptonDateTimePicker();
             this.dtpRibbonLong = new Krypton.Toolkit.KryptonDateTimePicker();
-            this.groupBoxNormal = new System.Windows.Forms.GroupBox();
             this.dtpNormalTime = new Krypton.Toolkit.KryptonDateTimePicker();
             this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
             this.dtpNormalShort = new Krypton.Toolkit.KryptonDateTimePicker();
@@ -86,7 +87,7 @@
             this.rbOffice2010Black.AutoSize = true;
             this.rbOffice2010Black.Location = new System.Drawing.Point(24, 72);
             this.rbOffice2010Black.Name = "rbOffice2010Black";
-            this.rbOffice2010Black.Size = new System.Drawing.Size(115, 17);
+            this.rbOffice2010Black.Size = new System.Drawing.Size(143, 21);
             this.rbOffice2010Black.TabIndex = 2;
             this.rbOffice2010Black.Text = "Office 2010 - Black";
             this.rbOffice2010Black.UseVisualStyleBackColor = true;
@@ -97,7 +98,7 @@
             this.rbOffice2010Silver.AutoSize = true;
             this.rbOffice2010Silver.Location = new System.Drawing.Point(24, 49);
             this.rbOffice2010Silver.Name = "rbOffice2010Silver";
-            this.rbOffice2010Silver.Size = new System.Drawing.Size(117, 17);
+            this.rbOffice2010Silver.Size = new System.Drawing.Size(144, 21);
             this.rbOffice2010Silver.TabIndex = 1;
             this.rbOffice2010Silver.Text = "Office 2010 - Silver";
             this.rbOffice2010Silver.UseVisualStyleBackColor = true;
@@ -109,7 +110,7 @@
             this.rbOffice2010Blue.Checked = true;
             this.rbOffice2010Blue.Location = new System.Drawing.Point(24, 26);
             this.rbOffice2010Blue.Name = "rbOffice2010Blue";
-            this.rbOffice2010Blue.Size = new System.Drawing.Size(111, 17);
+            this.rbOffice2010Blue.Size = new System.Drawing.Size(137, 21);
             this.rbOffice2010Blue.TabIndex = 0;
             this.rbOffice2010Blue.TabStop = true;
             this.rbOffice2010Blue.Text = "Office 2010 - Blue";
@@ -121,7 +122,7 @@
             this.rbSparklePurple.AutoSize = true;
             this.rbSparklePurple.Location = new System.Drawing.Point(163, 72);
             this.rbSparklePurple.Name = "rbSparklePurple";
-            this.rbSparklePurple.Size = new System.Drawing.Size(100, 17);
+            this.rbSparklePurple.Size = new System.Drawing.Size(124, 21);
             this.rbSparklePurple.TabIndex = 8;
             this.rbSparklePurple.Text = "Sparkle - Purple";
             this.rbSparklePurple.UseVisualStyleBackColor = true;
@@ -132,7 +133,7 @@
             this.rbSparkleOrange.AutoSize = true;
             this.rbSparkleOrange.Location = new System.Drawing.Point(163, 49);
             this.rbSparkleOrange.Name = "rbSparkleOrange";
-            this.rbSparkleOrange.Size = new System.Drawing.Size(106, 17);
+            this.rbSparkleOrange.Size = new System.Drawing.Size(131, 21);
             this.rbSparkleOrange.TabIndex = 7;
             this.rbSparkleOrange.Text = "Sparkle - Orange";
             this.rbSparkleOrange.UseVisualStyleBackColor = true;
@@ -143,7 +144,7 @@
             this.rbSparkleBlue.AutoSize = true;
             this.rbSparkleBlue.Location = new System.Drawing.Point(163, 26);
             this.rbSparkleBlue.Name = "rbSparkleBlue";
-            this.rbSparkleBlue.Size = new System.Drawing.Size(90, 17);
+            this.rbSparkleBlue.Size = new System.Drawing.Size(111, 21);
             this.rbSparkleBlue.TabIndex = 6;
             this.rbSparkleBlue.Text = "Sparkle - Blue";
             this.rbSparkleBlue.UseVisualStyleBackColor = true;
@@ -154,7 +155,7 @@
             this.rbSystem.AutoSize = true;
             this.rbSystem.Location = new System.Drawing.Point(163, 127);
             this.rbSystem.Name = "rbSystem";
-            this.rbSystem.Size = new System.Drawing.Size(60, 17);
+            this.rbSystem.Size = new System.Drawing.Size(75, 21);
             this.rbSystem.TabIndex = 10;
             this.rbSystem.Text = "System";
             this.rbSystem.UseVisualStyleBackColor = true;
@@ -165,7 +166,7 @@
             this.rbOffice2003.AutoSize = true;
             this.rbOffice2003.Location = new System.Drawing.Point(163, 104);
             this.rbOffice2003.Name = "rbOffice2003";
-            this.rbOffice2003.Size = new System.Drawing.Size(81, 17);
+            this.rbOffice2003.Size = new System.Drawing.Size(99, 21);
             this.rbOffice2003.TabIndex = 9;
             this.rbOffice2003.Text = "Office 2003";
             this.rbOffice2003.UseVisualStyleBackColor = true;
@@ -176,7 +177,7 @@
             this.rbOffice2007Black.AutoSize = true;
             this.rbOffice2007Black.Location = new System.Drawing.Point(24, 150);
             this.rbOffice2007Black.Name = "rbOffice2007Black";
-            this.rbOffice2007Black.Size = new System.Drawing.Size(115, 17);
+            this.rbOffice2007Black.Size = new System.Drawing.Size(143, 21);
             this.rbOffice2007Black.TabIndex = 5;
             this.rbOffice2007Black.Text = "Office 2007 - Black";
             this.rbOffice2007Black.UseVisualStyleBackColor = true;
@@ -187,7 +188,7 @@
             this.rbOffice2007Silver.AutoSize = true;
             this.rbOffice2007Silver.Location = new System.Drawing.Point(24, 127);
             this.rbOffice2007Silver.Name = "rbOffice2007Silver";
-            this.rbOffice2007Silver.Size = new System.Drawing.Size(117, 17);
+            this.rbOffice2007Silver.Size = new System.Drawing.Size(144, 21);
             this.rbOffice2007Silver.TabIndex = 4;
             this.rbOffice2007Silver.Text = "Office 2007 - Silver";
             this.rbOffice2007Silver.UseVisualStyleBackColor = true;
@@ -198,7 +199,7 @@
             this.rbOffice2007Blue.AutoSize = true;
             this.rbOffice2007Blue.Location = new System.Drawing.Point(24, 104);
             this.rbOffice2007Blue.Name = "rbOffice2007Blue";
-            this.rbOffice2007Blue.Size = new System.Drawing.Size(111, 17);
+            this.rbOffice2007Blue.Size = new System.Drawing.Size(137, 21);
             this.rbOffice2007Blue.TabIndex = 3;
             this.rbOffice2007Blue.Text = "Office 2007 - Blue";
             this.rbOffice2007Blue.UseVisualStyleBackColor = true;
@@ -240,10 +241,6 @@
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
-            // kryptonPalette
-            // 
-            this.kryptonPalette.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
-            // 
             // groupBoxRibbon
             // 
             this.groupBoxRibbon.Controls.Add(this.dtpRibbonTime);
@@ -255,66 +252,6 @@
             this.groupBoxRibbon.TabIndex = 1;
             this.groupBoxRibbon.TabStop = false;
             this.groupBoxRibbon.Text = "Ribbon Style";
-            // 
-            // dtpRibbonTime
-            // 
-            this.dtpRibbonTime.AlwaysActive = false;
-            this.dtpRibbonTime.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
-            this.buttonSpecAny2});
-            this.dtpRibbonTime.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.dtpRibbonTime.CalendarFirstDayOfWeek = System.Windows.Forms.Day.Default;
-            this.dtpRibbonTime.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
-            this.dtpRibbonTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpRibbonTime.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.dtpRibbonTime.Location = new System.Drawing.Point(24, 92);
-            this.dtpRibbonTime.Name = "dtpRibbonTime";
-            this.dtpRibbonTime.Palette = this.kryptonPalette;
-            this.dtpRibbonTime.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.dtpRibbonTime.ShowUpDown = true;
-            this.dtpRibbonTime.Size = new System.Drawing.Size(204, 21);
-            this.dtpRibbonTime.TabIndex = 2;
-            this.dtpRibbonTime.Enter += new System.EventHandler(this.dtp_Enter);
-            // 
-            // buttonSpecAny2
-            // 
-            this.buttonSpecAny2.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
-            this.buttonSpecAny2.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
-            this.buttonSpecAny2.UniqueName = "711F5E5D57D243B7711F5E5D57D243B7";
-            this.buttonSpecAny2.Click += new System.EventHandler(this.buttonSpecAny2_Click);
-            // 
-            // dtpRibbonShort
-            // 
-            this.dtpRibbonShort.AlwaysActive = false;
-            this.dtpRibbonShort.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.dtpRibbonShort.CalendarFirstDayOfWeek = System.Windows.Forms.Day.Default;
-            this.dtpRibbonShort.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
-            this.dtpRibbonShort.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpRibbonShort.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.dtpRibbonShort.Location = new System.Drawing.Point(24, 63);
-            this.dtpRibbonShort.Name = "dtpRibbonShort";
-            this.dtpRibbonShort.Palette = this.kryptonPalette;
-            this.dtpRibbonShort.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.dtpRibbonShort.Size = new System.Drawing.Size(204, 21);
-            this.dtpRibbonShort.TabIndex = 1;
-            this.dtpRibbonShort.Enter += new System.EventHandler(this.dtp_Enter);
-            // 
-            // dtpRibbonLong
-            // 
-            this.dtpRibbonLong.AlwaysActive = false;
-            this.dtpRibbonLong.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.dtpRibbonLong.CalendarFirstDayOfWeek = System.Windows.Forms.Day.Default;
-            this.dtpRibbonLong.CustomNullText = "<Custom Text When Null>";
-            this.dtpRibbonLong.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
-            this.dtpRibbonLong.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpRibbonLong.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.dtpRibbonLong.Location = new System.Drawing.Point(24, 34);
-            this.dtpRibbonLong.Name = "dtpRibbonLong";
-            this.dtpRibbonLong.Palette = this.kryptonPalette;
-            this.dtpRibbonLong.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.dtpRibbonLong.ShowCheckBox = true;
-            this.dtpRibbonLong.Size = new System.Drawing.Size(204, 21);
-            this.dtpRibbonLong.TabIndex = 0;
-            this.dtpRibbonLong.Enter += new System.EventHandler(this.dtp_Enter);
             // 
             // groupBoxNormal
             // 
@@ -328,63 +265,109 @@
             this.groupBoxNormal.TabStop = false;
             this.groupBoxNormal.Text = "Normal Style";
             // 
+            // dtpRibbonTime
+            // 
+            this.dtpRibbonTime.AlwaysActive = false;
+            this.dtpRibbonTime.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
+            this.buttonSpecAny2});
+            this.dtpRibbonTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpRibbonTime.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
+            this.dtpRibbonTime.Location = new System.Drawing.Point(24, 92);
+            this.dtpRibbonTime.Name = "dtpRibbonTime";
+            this.dtpRibbonTime.Palette = this.kryptonPalette;
+            this.dtpRibbonTime.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
+            this.dtpRibbonTime.ShowUpDown = true;
+            this.dtpRibbonTime.Size = new System.Drawing.Size(204, 25);
+            this.dtpRibbonTime.TabIndex = 2;
+            this.dtpRibbonTime.Enter += new System.EventHandler(this.dtp_Enter);
+            // 
+            // buttonSpecAny2
+            // 
+            this.buttonSpecAny2.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
+            this.buttonSpecAny2.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
+            this.buttonSpecAny2.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
+            this.buttonSpecAny2.UniqueName = "711F5E5D57D243B7711F5E5D57D243B7";
+            this.buttonSpecAny2.Click += new System.EventHandler(this.buttonSpecAny2_Click);
+            // 
+            // kryptonPalette
+            // 
+            this.kryptonPalette.BasePaletteMode = Krypton.Toolkit.PaletteMode.Office365Blue;
+            // 
+            // dtpRibbonShort
+            // 
+            this.dtpRibbonShort.AlwaysActive = false;
+            this.dtpRibbonShort.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpRibbonShort.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
+            this.dtpRibbonShort.Location = new System.Drawing.Point(24, 63);
+            this.dtpRibbonShort.Name = "dtpRibbonShort";
+            this.dtpRibbonShort.Palette = this.kryptonPalette;
+            this.dtpRibbonShort.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
+            this.dtpRibbonShort.Size = new System.Drawing.Size(204, 25);
+            this.dtpRibbonShort.TabIndex = 1;
+            this.dtpRibbonShort.Enter += new System.EventHandler(this.dtp_Enter);
+            // 
+            // dtpRibbonLong
+            // 
+            this.dtpRibbonLong.AlwaysActive = false;
+            this.dtpRibbonLong.CustomNullText = "<Custom Text When Null>";
+            this.dtpRibbonLong.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
+            this.dtpRibbonLong.Location = new System.Drawing.Point(24, 34);
+            this.dtpRibbonLong.Name = "dtpRibbonLong";
+            this.dtpRibbonLong.Palette = this.kryptonPalette;
+            this.dtpRibbonLong.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
+            this.dtpRibbonLong.ShowCheckBox = true;
+            this.dtpRibbonLong.Size = new System.Drawing.Size(204, 25);
+            this.dtpRibbonLong.TabIndex = 0;
+            this.dtpRibbonLong.Enter += new System.EventHandler(this.dtp_Enter);
+            // 
             // dtpNormalTime
             // 
             this.dtpNormalTime.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecAny1});
-            this.dtpNormalTime.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.dtpNormalTime.CalendarFirstDayOfWeek = System.Windows.Forms.Day.Default;
-            this.dtpNormalTime.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.dtpNormalTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpNormalTime.Location = new System.Drawing.Point(24, 93);
             this.dtpNormalTime.Name = "dtpNormalTime";
             this.dtpNormalTime.Palette = this.kryptonPalette;
             this.dtpNormalTime.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.dtpNormalTime.ShowUpDown = true;
-            this.dtpNormalTime.Size = new System.Drawing.Size(204, 21);
+            this.dtpNormalTime.Size = new System.Drawing.Size(204, 25);
             this.dtpNormalTime.TabIndex = 2;
             this.dtpNormalTime.Enter += new System.EventHandler(this.dtp_Enter);
             // 
             // buttonSpecAny1
             // 
             this.buttonSpecAny1.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
+            this.buttonSpecAny1.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
             this.buttonSpecAny1.UniqueName = "529C8C7BCFA94ED8529C8C7BCFA94ED8";
             this.buttonSpecAny1.Click += new System.EventHandler(this.buttonSpecAny1_Click);
             // 
             // dtpNormalShort
             // 
-            this.dtpNormalShort.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.dtpNormalShort.CalendarFirstDayOfWeek = System.Windows.Forms.Day.Default;
-            this.dtpNormalShort.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.dtpNormalShort.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNormalShort.Location = new System.Drawing.Point(24, 64);
             this.dtpNormalShort.Name = "dtpNormalShort";
             this.dtpNormalShort.Palette = this.kryptonPalette;
             this.dtpNormalShort.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            this.dtpNormalShort.Size = new System.Drawing.Size(204, 21);
+            this.dtpNormalShort.Size = new System.Drawing.Size(204, 25);
             this.dtpNormalShort.TabIndex = 1;
             this.dtpNormalShort.Enter += new System.EventHandler(this.dtp_Enter);
             // 
             // dtpNormalLong
             // 
-            this.dtpNormalLong.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.dtpNormalLong.CalendarFirstDayOfWeek = System.Windows.Forms.Day.Default;
             this.dtpNormalLong.CustomNullText = "<Custom Text When Null>";
-            this.dtpNormalLong.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
-            this.dtpNormalLong.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpNormalLong.Location = new System.Drawing.Point(24, 35);
             this.dtpNormalLong.Name = "dtpNormalLong";
             this.dtpNormalLong.Palette = this.kryptonPalette;
             this.dtpNormalLong.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.dtpNormalLong.ShowCheckBox = true;
-            this.dtpNormalLong.Size = new System.Drawing.Size(204, 21);
+            this.dtpNormalLong.Size = new System.Drawing.Size(204, 25);
             this.dtpNormalLong.TabIndex = 0;
             this.dtpNormalLong.Enter += new System.EventHandler(this.dtp_Enter);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(729, 535);
             this.Controls.Add(this.groupBoxRibbon);
@@ -394,8 +377,7 @@
             this.Controls.Add(this.groupBoxPalette);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(800, 700);
             this.MinimumSize = new System.Drawing.Size(745, 573);
             this.Name = "Form1";
             this.Text = "KryptonDateTimePicker Examples";
