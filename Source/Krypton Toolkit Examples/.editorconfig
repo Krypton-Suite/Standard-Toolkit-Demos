@@ -109,3 +109,4 @@ dotnet_style_qualification_for_property = false:suggestion
 
 [*.{cs,vb}]
 dotnet_diagnostic.CA1416.severity=silent
+dotnet_diagnostic.WFAC010.severity=silent
