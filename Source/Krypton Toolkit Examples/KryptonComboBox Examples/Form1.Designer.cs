@@ -108,10 +108,7 @@ namespace KryptonComboBoxExamples
             // kryptonComboBox3Blue
             // 
             this.kryptonComboBox3Blue.AlwaysActive = false;
-            this.kryptonComboBox3Blue.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.kryptonComboBox3Blue.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.kryptonComboBox3Blue.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.kryptonComboBox3Blue.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.kryptonComboBox3Blue.DropDownWidth = 121;
             this.kryptonComboBox3Blue.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.kryptonComboBox3Blue.IntegralHeight = false;
@@ -132,12 +129,9 @@ namespace KryptonComboBoxExamples
             // 
             // kryptonComboBox2Blue
             // 
-            this.kryptonComboBox2Blue.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.kryptonComboBox2Blue.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.kryptonComboBox2Blue.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecAny1});
             this.kryptonComboBox2Blue.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.kryptonComboBox2Blue.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.kryptonComboBox2Blue.DropDownWidth = 121;
             this.kryptonComboBox2Blue.IntegralHeight = false;
             this.kryptonComboBox2Blue.Items.AddRange(new object[] {
@@ -153,6 +147,7 @@ namespace KryptonComboBoxExamples
             this.kryptonComboBox2Blue.Size = new System.Drawing.Size(169, 21);
             this.kryptonComboBox2Blue.TabIndex = 1;
             this.kryptonComboBox2Blue.Text = "clear with button";
+            this.kryptonComboBox2Blue.DoubleClick += new System.EventHandler(this.kryptonComboBox2Blue_DoubleClick);
             this.kryptonComboBox2Blue.Enter += new System.EventHandler(this.kryptonComboBox1Blue_Enter);
             // 
             // buttonSpecAny1
@@ -164,14 +159,12 @@ namespace KryptonComboBoxExamples
             // 
             // kryptonComboBox1Blue
             // 
-            this.kryptonComboBox1Blue.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.kryptonComboBox1Blue.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.kryptonComboBox1Blue.CueHint.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.kryptonComboBox1Blue.CueHint.CueHintText = "Cue Hint Text";
             this.kryptonComboBox1Blue.CueHint.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonComboBox1Blue.CueHint.Padding = new System.Windows.Forms.Padding(0);
             this.kryptonComboBox1Blue.CueHint.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonComboBox1Blue.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.kryptonComboBox1Blue.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.kryptonComboBox1Blue.DropDownWidth = 169;
             this.kryptonComboBox1Blue.IntegralHeight = false;
             this.kryptonComboBox1Blue.Items.AddRange(new object[] {
@@ -186,6 +179,7 @@ namespace KryptonComboBoxExamples
             this.kryptonComboBox1Blue.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             this.kryptonComboBox1Blue.Size = new System.Drawing.Size(169, 21);
             this.kryptonComboBox1Blue.TabIndex = 0;
+            this.kryptonComboBox1Blue.DoubleClick += new System.EventHandler(this.kryptonComboBox1Blue_DoubleClick);
             this.kryptonComboBox1Blue.Enter += new System.EventHandler(this.kryptonComboBox1Blue_Enter);
             // 
             // groupBox1
@@ -203,10 +197,7 @@ namespace KryptonComboBoxExamples
             // kryptonComboBox6System
             // 
             this.kryptonComboBox6System.AlwaysActive = false;
-            this.kryptonComboBox6System.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.kryptonComboBox6System.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.kryptonComboBox6System.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.kryptonComboBox6System.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.kryptonComboBox6System.DropDownWidth = 121;
             this.kryptonComboBox6System.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.kryptonComboBox6System.IntegralHeight = false;
@@ -224,16 +215,14 @@ namespace KryptonComboBoxExamples
             this.kryptonComboBox6System.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonComboBox6System.TabIndex = 2;
             this.kryptonComboBox6System.Text = "ribbon style";
+            this.kryptonComboBox6System.DoubleClick += new System.EventHandler(this.kryptonComboBox6System_DoubleClick);
             this.kryptonComboBox6System.Enter += new System.EventHandler(this.kryptonComboBox1Blue_Enter);
             // 
             // kryptonComboBox5System
             // 
-            this.kryptonComboBox5System.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.kryptonComboBox5System.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.kryptonComboBox5System.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecAny2});
             this.kryptonComboBox5System.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.kryptonComboBox5System.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.kryptonComboBox5System.DropDownWidth = 121;
             this.kryptonComboBox5System.IntegralHeight = false;
             this.kryptonComboBox5System.Items.AddRange(new object[] {
@@ -250,6 +239,7 @@ namespace KryptonComboBoxExamples
             this.kryptonComboBox5System.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonComboBox5System.TabIndex = 0;
             this.kryptonComboBox5System.Text = "clear with button";
+            this.kryptonComboBox5System.DoubleClick += new System.EventHandler(this.kryptonComboBox5System_DoubleClick);
             this.kryptonComboBox5System.Enter += new System.EventHandler(this.kryptonComboBox1Blue_Enter);
             // 
             // buttonSpecAny2
@@ -262,10 +252,7 @@ namespace KryptonComboBoxExamples
             // 
             // kryptonComboBox4System
             // 
-            this.kryptonComboBox4System.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.kryptonComboBox4System.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.kryptonComboBox4System.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.kryptonComboBox4System.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.kryptonComboBox4System.DropDownWidth = 169;
             this.kryptonComboBox4System.IntegralHeight = false;
             this.kryptonComboBox4System.Items.AddRange(new object[] {
@@ -282,6 +269,7 @@ namespace KryptonComboBoxExamples
             this.kryptonComboBox4System.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonComboBox4System.TabIndex = 0;
             this.kryptonComboBox4System.Text = "normal";
+            this.kryptonComboBox4System.DoubleClick += new System.EventHandler(this.kryptonComboBox4System_DoubleClick);
             this.kryptonComboBox4System.Enter += new System.EventHandler(this.kryptonComboBox1Blue_Enter);
             // 
             // groupBox3
@@ -297,14 +285,13 @@ namespace KryptonComboBoxExamples
             // 
             // kryptonComboBox8Custom
             // 
-            this.kryptonComboBox8Custom.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.kryptonComboBox8Custom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.kryptonComboBox8Custom.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecAny3,
             this.buttonSpecAny4});
             this.kryptonComboBox8Custom.CueHint.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.kryptonComboBox8Custom.CueHint.CueHintText = "Cue Hint Text";
             this.kryptonComboBox8Custom.CueHint.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonComboBox8Custom.CueHint.Padding = new System.Windows.Forms.Padding(0);
             this.kryptonComboBox8Custom.CueHint.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonComboBox8Custom.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.kryptonComboBox8Custom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -321,17 +308,14 @@ namespace KryptonComboBoxExamples
             this.kryptonComboBox8Custom.Name = "kryptonComboBox8Custom";
             this.kryptonComboBox8Custom.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonComboBox8Custom.Size = new System.Drawing.Size(169, 23);
-            this.kryptonComboBox8Custom.StateCommon.ComboBox.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonComboBox8Custom.StateCommon.ComboBox.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kryptonComboBox8Custom.StateCommon.ComboBox.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonComboBox8Custom.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonComboBox8Custom.StateCommon.ComboBox.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonComboBox8Custom.StateCommon.ComboBox.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonComboBox8Custom.StateCommon.ComboBox.Border.Rounding = 2F;
             this.kryptonComboBox8Custom.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonComboBox8Custom.TabIndex = 0;
+            this.kryptonComboBox8Custom.DoubleClick += new System.EventHandler(this.kryptonComboBox8Custom_DoubleClick);
             this.kryptonComboBox8Custom.Enter += new System.EventHandler(this.kryptonComboBox1Blue_Enter);
             // 
             // buttonSpecAny3
@@ -350,10 +334,7 @@ namespace KryptonComboBoxExamples
             // 
             // kryptonComboBox7Custom
             // 
-            this.kryptonComboBox7Custom.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.kryptonComboBox7Custom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.kryptonComboBox7Custom.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.kryptonComboBox7Custom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.kryptonComboBox7Custom.DropDownWidth = 169;
             this.kryptonComboBox7Custom.IntegralHeight = false;
             this.kryptonComboBox7Custom.Items.AddRange(new object[] {
@@ -367,18 +348,15 @@ namespace KryptonComboBoxExamples
             this.kryptonComboBox7Custom.Name = "kryptonComboBox7Custom";
             this.kryptonComboBox7Custom.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Black;
             this.kryptonComboBox7Custom.Size = new System.Drawing.Size(169, 23);
-            this.kryptonComboBox7Custom.StateCommon.ComboBox.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonComboBox7Custom.StateCommon.ComboBox.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kryptonComboBox7Custom.StateCommon.ComboBox.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonComboBox7Custom.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonComboBox7Custom.StateCommon.ComboBox.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonComboBox7Custom.StateCommon.ComboBox.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonComboBox7Custom.StateCommon.ComboBox.Border.Rounding = 2F;
             this.kryptonComboBox7Custom.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonComboBox7Custom.TabIndex = 0;
             this.kryptonComboBox7Custom.Text = "centered";
+            this.kryptonComboBox7Custom.DoubleClick += new System.EventHandler(this.kryptonComboBox7Custom_DoubleClick);
             this.kryptonComboBox7Custom.Enter += new System.EventHandler(this.kryptonComboBox1Blue_Enter);
             // 
             // Form1
