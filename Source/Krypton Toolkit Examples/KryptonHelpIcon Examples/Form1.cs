@@ -62,8 +62,6 @@ namespace KryptonHelpIconExamples
 
         private void palette2010White_CheckedChanged(object sender, EventArgs e) => ChangePalette(PaletteModeManager.Office2010White);
 
-        private void paletteOffice2013_CheckedChanged(object sender, EventArgs e) => ChangePalette(PaletteModeManager.Office2013);
-
         private void paletteOffice2013White_CheckedChanged(object sender, EventArgs e) => ChangePalette(PaletteModeManager.Office2013White);
 
         private void palette365Black_CheckedChanged(object sender, EventArgs e) => ChangePalette(PaletteModeManager.Office365Black);
