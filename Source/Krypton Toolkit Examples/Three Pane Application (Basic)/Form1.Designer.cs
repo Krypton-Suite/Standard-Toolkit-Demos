@@ -1052,7 +1052,6 @@ namespace ThreePaneApplication
         private Krypton.Toolkit.KryptonRadioButton kryptonOffice2010Silver;
         private Krypton.Toolkit.KryptonRadioButton kryptonRadioButton1;
         private Krypton.Toolkit.KryptonRadioButton kryptonRadioButton2;
-        private Krypton.Toolkit.KryptonRadioButton kryptonOffice2013;
         private Krypton.Toolkit.KryptonRadioButton kryptonOffice2013White;
     }
 }
