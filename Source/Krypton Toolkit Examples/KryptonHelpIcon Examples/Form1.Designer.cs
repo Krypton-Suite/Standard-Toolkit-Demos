@@ -37,7 +37,6 @@ namespace KryptonHelpIconExamples
             this.paletteSparklePurple = new Krypton.Toolkit.KryptonRadioButton();
             this.paletteSparkleBlue = new Krypton.Toolkit.KryptonRadioButton();
             this.paletteOffice2013White = new Krypton.Toolkit.KryptonRadioButton();
-            this.paletteOffice2013 = new Krypton.Toolkit.KryptonRadioButton();
             this.palette365BlueDarkMode = new Krypton.Toolkit.KryptonRadioButton();
             this.palette365BlueLightMode = new Krypton.Toolkit.KryptonRadioButton();
             this.palette365Silver = new Krypton.Toolkit.KryptonRadioButton();
@@ -106,7 +105,6 @@ namespace KryptonHelpIconExamples
             this.kryptonGroupBox1.Panel.Controls.Add(this.paletteSparklePurple);
             this.kryptonGroupBox1.Panel.Controls.Add(this.paletteSparkleBlue);
             this.kryptonGroupBox1.Panel.Controls.Add(this.paletteOffice2013White);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.paletteOffice2013);
             this.kryptonGroupBox1.Panel.Controls.Add(this.palette365BlueDarkMode);
             this.kryptonGroupBox1.Panel.Controls.Add(this.palette365BlueLightMode);
             this.kryptonGroupBox1.Panel.Controls.Add(this.palette365Silver);
@@ -170,16 +168,6 @@ namespace KryptonHelpIconExamples
             this.paletteOffice2013White.TabIndex = 49;
             this.paletteOffice2013White.Values.Text = "Office 2013 - White";
             this.paletteOffice2013White.CheckedChanged += new System.EventHandler(this.paletteOffice2013White_CheckedChanged);
-            // 
-            // paletteOffice2013
-            // 
-            this.paletteOffice2013.Location = new System.Drawing.Point(307, 287);
-            this.paletteOffice2013.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.paletteOffice2013.Name = "paletteOffice2013";
-            this.paletteOffice2013.Size = new System.Drawing.Size(101, 24);
-            this.paletteOffice2013.TabIndex = 48;
-            this.paletteOffice2013.Values.Text = "Office 2013";
-            this.paletteOffice2013.CheckedChanged += new System.EventHandler(this.paletteOffice2013_CheckedChanged);
             // 
             // palette365BlueDarkMode
             // 
@@ -536,7 +524,6 @@ namespace KryptonHelpIconExamples
         private Krypton.Toolkit.KryptonRadioButton palette2010Blue;
         private Krypton.Toolkit.KryptonRadioButton paletteSparkleBlue;
         private Krypton.Toolkit.KryptonRadioButton paletteOffice2013White;
-        private Krypton.Toolkit.KryptonRadioButton paletteOffice2013;
         private Krypton.Toolkit.KryptonRadioButton palette365BlueDarkMode;
         private Krypton.Toolkit.KryptonRadioButton palette365BlueLightMode;
         private Krypton.Toolkit.KryptonRadioButton palette365Silver;

@@ -92,7 +92,6 @@ namespace ThreePaneApplication
             this.kryptonOffice2007Silver = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonOffice2007Blue = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonOffice2013White = new Krypton.Toolkit.KryptonRadioButton();
-            this.kryptonOffice2013 = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
             this.kryptonPaletteCustom = new Krypton.Toolkit.KryptonPalette(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -625,7 +624,6 @@ namespace ThreePaneApplication
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2007Silver);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2007Blue);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2013White);
-            this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2013);
             this.kryptonGroup1.Size = new System.Drawing.Size(291, 204);
             this.kryptonGroup1.TabIndex = 0;
             // 
@@ -772,17 +770,6 @@ namespace ThreePaneApplication
             this.kryptonOffice2013White.TabIndex = 4;
             this.kryptonOffice2013White.Values.Text = "Office 2013 - White";
             this.kryptonOffice2013White.CheckedChanged += new System.EventHandler(this.kryptonOffice2013White_CheckedChanged);
-            // 
-            // kryptonOffice2013
-            // 
-            this.kryptonOffice2013.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.kryptonOffice2013.Location = new System.Drawing.Point(147, 85);
-            this.kryptonOffice2013.Name = "kryptonOffice2013";
-            this.kryptonOffice2013.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonOffice2013.Size = new System.Drawing.Size(126, 20);
-            this.kryptonOffice2013.TabIndex = 3;
-            this.kryptonOffice2013.Values.Text = "Office 2013 - Silver";
-            this.kryptonOffice2013.CheckedChanged += new System.EventHandler(this.kryptonOffice2013_CheckedChanged);
             // 
             // kryptonManager
             // 
@@ -1409,7 +1396,6 @@ namespace ThreePaneApplication
         private Krypton.Toolkit.KryptonRadioButton kryptonOffice2010Silver;
         private Krypton.Toolkit.KryptonRadioButton kryptonRadioButton1;
         private Krypton.Toolkit.KryptonRadioButton kryptonRadioButton2;
-        private Krypton.Toolkit.KryptonRadioButton kryptonOffice2013;
         private Krypton.Toolkit.KryptonRadioButton kryptonOffice2013White;
     }
 }
