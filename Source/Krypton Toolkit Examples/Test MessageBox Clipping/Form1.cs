@@ -30,7 +30,7 @@ namespace TestMessageBoxClipping
         {
             if (kryptonOffice2013.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2013;
+                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2013White;
             }
         }
 

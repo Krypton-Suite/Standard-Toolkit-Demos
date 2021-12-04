@@ -79,7 +79,6 @@ namespace TestTextClipping
             this.kryptonSparkleOrange = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonOffice2010Blue = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonOffice2010Silver = new Krypton.Toolkit.KryptonRadioButton();
-            this.kryptonOffice2013 = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonOffice2013White = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonSparklePurple = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonSparkleBlue = new Krypton.Toolkit.KryptonRadioButton();
@@ -497,7 +496,6 @@ namespace TestTextClipping
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonSparkleOrange);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2010Blue);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2010Silver);
-            this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2013);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2013White);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonSparklePurple);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonSparkleBlue);
@@ -554,17 +552,6 @@ namespace TestTextClipping
             this.kryptonOffice2010Silver.TabIndex = 1;
             this.kryptonOffice2010Silver.Values.Text = "Office 2010 - Silver";
             this.kryptonOffice2010Silver.CheckedChanged += new System.EventHandler(this.kryptonOffice2010Silver_CheckedChanged);
-            // 
-            // kryptonOffice2013
-            // 
-            this.kryptonOffice2013.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.kryptonOffice2013.Location = new System.Drawing.Point(531, 10);
-            this.kryptonOffice2013.Name = "kryptonOffice2013";
-            this.kryptonOffice2013.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonOffice2013.Size = new System.Drawing.Size(85, 20);
-            this.kryptonOffice2013.TabIndex = 21;
-            this.kryptonOffice2013.Values.Text = "Office 2013";
-            this.kryptonOffice2013.CheckedChanged += new System.EventHandler(this.kryptonOffice2013_CheckedChanged);
             // 
             // kryptonOffice2013White
             // 
@@ -1222,7 +1209,6 @@ namespace TestTextClipping
         private Krypton.Toolkit.KryptonTreeView kryptonTreeView1;
         private Krypton.Toolkit.KryptonCheckedListBox kryptonCheckedListBox2;
         private Krypton.Toolkit.KryptonCheckedListBox kryptonCheckedListBox1;
-        private Krypton.Toolkit.KryptonRadioButton kryptonOffice2013;
         private Krypton.Toolkit.KryptonRadioButton kryptonOffice2013White;
         private Krypton.Toolkit.KryptonRadioButton kryptonRadioButton1;
         private Krypton.Toolkit.KryptonRadioButton kryptonRadioButton2;
