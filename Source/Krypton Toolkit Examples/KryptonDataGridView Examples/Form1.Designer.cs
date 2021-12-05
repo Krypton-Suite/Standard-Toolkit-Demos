@@ -29,9 +29,9 @@ namespace KryptonDataGridViewExamples
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.buttonClose = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -58,10 +58,18 @@ namespace KryptonDataGridViewExamples
             this.rbStyleCustom = new System.Windows.Forms.RadioButton();
             this.rbStyleSheet = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnForm2 = new System.Windows.Forms.Button();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.buttonClearCellColors = new Krypton.Toolkit.KryptonButton();
             this.buttonRandomCellColors = new Krypton.Toolkit.KryptonButton();
-            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonDataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
+            this.colDateTime = new Krypton.Toolkit.KryptonDataGridViewDateTimePickerColumn();
+            this.colComboBox = new Krypton.Toolkit.KryptonDataGridViewComboBoxColumn();
+            this.colTextBox = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.colMaskedTextBox = new Krypton.Toolkit.KryptonDataGridViewMaskedTextBoxColumn();
+            this.colDomainUpDown = new Krypton.Toolkit.KryptonDataGridViewDomainUpDownColumn();
+            this.colNumericUpDown = new Krypton.Toolkit.KryptonDataGridViewNumericUpDownColumn();
+            this.colCheckBox = new Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn();
             this.kryptonContextMenu1 = new Krypton.Toolkit.KryptonContextMenu();
             this.kryptonContextMenuItems1 = new Krypton.Toolkit.KryptonContextMenuItems();
             this.kryptonContextMenuHeading1 = new Krypton.Toolkit.KryptonContextMenuHeading();
@@ -85,14 +93,6 @@ namespace KryptonDataGridViewExamples
             this.Column2 = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
             this.kryptonPalette = new Krypton.Toolkit.KryptonPalette(this.components);
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
-            this.btnForm2 = new System.Windows.Forms.Button();
-            this.colDateTime = new Krypton.Toolkit.KryptonDataGridViewDateTimePickerColumn();
-            this.colComboBox = new Krypton.Toolkit.KryptonDataGridViewComboBoxColumn();
-            this.colTextBox = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
-            this.colMaskedTextBox = new Krypton.Toolkit.KryptonDataGridViewMaskedTextBoxColumn();
-            this.colDomainUpDown = new Krypton.Toolkit.KryptonDataGridViewDomainUpDownColumn();
-            this.colNumericUpDown = new Krypton.Toolkit.KryptonDataGridViewNumericUpDownColumn();
-            this.colCheckBox = new Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtTestData)).BeginInit();
@@ -104,9 +104,8 @@ namespace KryptonDataGridViewExamples
             // 
             // buttonClose
             // 
-            this.buttonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonClose.Location = new System.Drawing.Point(1149, 462);
+            this.buttonClose.Location = new System.Drawing.Point(807, 462);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 23);
             this.buttonClose.TabIndex = 4;
@@ -116,24 +115,23 @@ namespace KryptonDataGridViewExamples
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.propertyGrid);
-            this.groupBox4.Location = new System.Drawing.Point(972, 12);
+            this.groupBox4.Location = new System.Drawing.Point(888, 12);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(252, 437);
+            this.groupBox4.Size = new System.Drawing.Size(336, 473);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Properties for KryptonDataGridView";
             // 
             // propertyGrid
             // 
-            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.propertyGrid.Location = new System.Drawing.Point(6, 19);
+            this.propertyGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.propertyGrid.Location = new System.Drawing.Point(3, 20);
             this.propertyGrid.Name = "propertyGrid";
-            this.propertyGrid.Size = new System.Drawing.Size(240, 412);
+            this.propertyGrid.Size = new System.Drawing.Size(330, 450);
             this.propertyGrid.TabIndex = 0;
             this.propertyGrid.ToolbarVisible = false;
             // 
@@ -201,7 +199,6 @@ namespace KryptonDataGridViewExamples
             // 
             // groupBoxPalette
             // 
-            this.groupBoxPalette.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBoxPalette.Controls.Add(this.rbOffice2010Blue);
             this.groupBoxPalette.Controls.Add(this.rbSparkle);
             this.groupBoxPalette.Controls.Add(this.rbSystem);
@@ -298,7 +295,6 @@ namespace KryptonDataGridViewExamples
             // 
             // groupBoxGridStyle
             // 
-            this.groupBoxGridStyle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBoxGridStyle.Controls.Add(this.rbStyleCustom);
             this.groupBoxGridStyle.Controls.Add(this.rbStyleSheet);
             this.groupBoxGridStyle.Controls.Add(this.rbStyleList);
@@ -333,7 +329,6 @@ namespace KryptonDataGridViewExamples
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox1.Controls.Add(this.buttonClearCellColors);
             this.groupBox1.Controls.Add(this.buttonRandomCellColors);
             this.groupBox1.Location = new System.Drawing.Point(259, 279);
@@ -342,6 +337,26 @@ namespace KryptonDataGridViewExamples
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Operations";
+            // 
+            // btnForm2
+            // 
+            this.btnForm2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnForm2.Location = new System.Drawing.Point(574, 413);
+            this.btnForm2.Name = "btnForm2";
+            this.btnForm2.Size = new System.Drawing.Size(308, 30);
+            this.btnForm2.TabIndex = 7;
+            this.btnForm2.Text = "&Open Programatic Populate";
+            this.btnForm2.UseVisualStyleBackColor = true;
+            this.btnForm2.Click += new System.EventHandler(this.BtnForm2_Click);
+            // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.kryptonLabel1.Location = new System.Drawing.Point(477, 279);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(295, 24);
+            this.kryptonLabel1.TabIndex = 6;
+            this.kryptonLabel1.Values.Text = "Right click grid for Krypton Context Menu";
             // 
             // buttonClearCellColors
             // 
@@ -361,20 +376,8 @@ namespace KryptonDataGridViewExamples
             this.buttonRandomCellColors.Values.Text = "Random Cell Colors";
             this.buttonRandomCellColors.Click += new System.EventHandler(this.buttonRandomCellColors_Click);
             // 
-            // kryptonLabel1
-            // 
-            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
-            this.kryptonLabel1.Location = new System.Drawing.Point(477, 279);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(295, 24);
-            this.kryptonLabel1.TabIndex = 6;
-            this.kryptonLabel1.Values.Text = "Right click grid for Krypton Context Menu";
-            // 
             // kryptonDataGridView1
             // 
-            this.kryptonDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonDataGridView1.AutoGenerateColumns = false;
             this.kryptonDataGridView1.ColumnHeadersHeight = 36;
             this.kryptonDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -392,9 +395,86 @@ namespace KryptonDataGridViewExamples
             this.kryptonDataGridView1.Location = new System.Drawing.Point(12, 20);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
             this.kryptonDataGridView1.RowHeadersWidth = 51;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(954, 252);
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(870, 252);
             this.kryptonDataGridView1.TabIndex = 0;
             this.kryptonDataGridView1.CellToolTipTextNeeded += new System.Windows.Forms.DataGridViewCellToolTipTextNeededEventHandler(this.kryptonDataGridView1_CellToolTipTextNeeded);
+            // 
+            // colDateTime
+            // 
+            this.colDateTime.Checked = false;
+            this.colDateTime.DataPropertyName = "DateTime";
+            this.colDateTime.HeaderText = "DateTime";
+            this.colDateTime.MinimumWidth = 6;
+            this.colDateTime.Name = "colDateTime";
+            this.colDateTime.ToolTipText = "Datetime Tool tip text";
+            this.colDateTime.Width = 190;
+            // 
+            // colComboBox
+            // 
+            this.colComboBox.DataPropertyName = "ComboBox";
+            this.colComboBox.DataSource = null;
+            this.colComboBox.DropDownWidth = 121;
+            this.colComboBox.HeaderText = "ComboBox";
+            this.colComboBox.Items.Add("Mr");
+            this.colComboBox.Items.Add("Mrs");
+            this.colComboBox.Items.Add("Miss");
+            this.colComboBox.Items.Add("Ms");
+            this.colComboBox.MinimumWidth = 6;
+            this.colComboBox.Name = "colComboBox";
+            this.colComboBox.Width = 75;
+            // 
+            // colTextBox
+            // 
+            this.colTextBox.DataPropertyName = "TextBox";
+            this.colTextBox.HeaderText = "TextBox";
+            this.colTextBox.MinimumWidth = 6;
+            this.colTextBox.Name = "colTextBox";
+            this.colTextBox.Width = 100;
+            // 
+            // colMaskedTextBox
+            // 
+            this.colMaskedTextBox.DataPropertyName = "MaskedTextBox";
+            this.colMaskedTextBox.HeaderText = "MaskedTextBox";
+            this.colMaskedTextBox.Mask = "(99) 9999-9999";
+            this.colMaskedTextBox.MinimumWidth = 6;
+            this.colMaskedTextBox.Name = "colMaskedTextBox";
+            this.colMaskedTextBox.Width = 100;
+            // 
+            // colDomainUpDown
+            // 
+            this.colDomainUpDown.DataPropertyName = "DomainUpDown";
+            this.colDomainUpDown.HeaderText = "DomainUpDown";
+            this.colDomainUpDown.Items.AddRange(new string[] {
+            "Single",
+            "Married",
+            "Divorced",
+            "Separated"});
+            this.colDomainUpDown.MinimumWidth = 6;
+            this.colDomainUpDown.Name = "colDomainUpDown";
+            this.colDomainUpDown.Width = 105;
+            // 
+            // colNumericUpDown
+            // 
+            this.colNumericUpDown.AllowDecimals = false;
+            this.colNumericUpDown.DataPropertyName = "NumericUpDown";
+            this.colNumericUpDown.HeaderText = "NumericUpDown";
+            this.colNumericUpDown.MinimumWidth = 6;
+            this.colNumericUpDown.Name = "colNumericUpDown";
+            this.colNumericUpDown.Width = 105;
+            // 
+            // colCheckBox
+            // 
+            this.colCheckBox.DataPropertyName = "CheckBox";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.NullValue = false;
+            this.colCheckBox.DefaultCellStyle = dataGridViewCellStyle1;
+            this.colCheckBox.FalseValue = null;
+            this.colCheckBox.HeaderText = "CheckBox";
+            this.colCheckBox.IndeterminateValue = null;
+            this.colCheckBox.MinimumWidth = 6;
+            this.colCheckBox.Name = "colCheckBox";
+            this.colCheckBox.TrueValue = null;
+            this.colCheckBox.Width = 68;
             // 
             // kryptonContextMenu1
             // 
@@ -685,95 +765,6 @@ namespace KryptonDataGridViewExamples
             this.kryptonManager.GlobalPalette = this.kryptonPalette;
             this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Custom;
             // 
-            // btnForm2
-            // 
-            this.btnForm2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnForm2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnForm2.Location = new System.Drawing.Point(664, 413);
-            this.btnForm2.Name = "btnForm2";
-            this.btnForm2.Size = new System.Drawing.Size(308, 30);
-            this.btnForm2.TabIndex = 7;
-            this.btnForm2.Text = "&Open Programatic Populate";
-            this.btnForm2.UseVisualStyleBackColor = true;
-            this.btnForm2.Click += new System.EventHandler(this.BtnForm2_Click);
-            // 
-            // colDateTime
-            // 
-            this.colDateTime.Checked = false;
-            this.colDateTime.DataPropertyName = "DateTime";
-            this.colDateTime.HeaderText = "DateTime";
-            this.colDateTime.MinimumWidth = 6;
-            this.colDateTime.Name = "colDateTime";
-            this.colDateTime.ToolTipText = "Datetime Tool tip text";
-            this.colDateTime.Width = 190;
-            // 
-            // colComboBox
-            // 
-            this.colComboBox.DataPropertyName = "ComboBox";
-            this.colComboBox.DataSource = null;
-            this.colComboBox.DropDownWidth = 121;
-            this.colComboBox.HeaderText = "ComboBox";
-            this.colComboBox.Items.Add("Mr");
-            this.colComboBox.Items.Add("Mrs");
-            this.colComboBox.Items.Add("Miss");
-            this.colComboBox.Items.Add("Ms");
-            this.colComboBox.MinimumWidth = 6;
-            this.colComboBox.Name = "colComboBox";
-            this.colComboBox.Width = 75;
-            // 
-            // colTextBox
-            // 
-            this.colTextBox.DataPropertyName = "TextBox";
-            this.colTextBox.HeaderText = "TextBox";
-            this.colTextBox.MinimumWidth = 6;
-            this.colTextBox.Name = "colTextBox";
-            this.colTextBox.Width = 100;
-            // 
-            // colMaskedTextBox
-            // 
-            this.colMaskedTextBox.DataPropertyName = "MaskedTextBox";
-            this.colMaskedTextBox.HeaderText = "MaskedTextBox";
-            this.colMaskedTextBox.Mask = "(99) 9999-9999";
-            this.colMaskedTextBox.MinimumWidth = 6;
-            this.colMaskedTextBox.Name = "colMaskedTextBox";
-            this.colMaskedTextBox.Width = 100;
-            // 
-            // colDomainUpDown
-            // 
-            this.colDomainUpDown.DataPropertyName = "DomainUpDown";
-            this.colDomainUpDown.HeaderText = "DomainUpDown";
-            this.colDomainUpDown.Items.AddRange(new string[] {
-            "Single",
-            "Married",
-            "Divorced",
-            "Separated"});
-            this.colDomainUpDown.MinimumWidth = 6;
-            this.colDomainUpDown.Name = "colDomainUpDown";
-            this.colDomainUpDown.Width = 105;
-            // 
-            // colNumericUpDown
-            // 
-            this.colNumericUpDown.AllowDecimals = false;
-            this.colNumericUpDown.DataPropertyName = "NumericUpDown";
-            this.colNumericUpDown.HeaderText = "NumericUpDown";
-            this.colNumericUpDown.MinimumWidth = 6;
-            this.colNumericUpDown.Name = "colNumericUpDown";
-            this.colNumericUpDown.Width = 105;
-            // 
-            // colCheckBox
-            // 
-            this.colCheckBox.DataPropertyName = "CheckBox";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.NullValue = false;
-            this.colCheckBox.DefaultCellStyle = dataGridViewCellStyle1;
-            this.colCheckBox.FalseValue = null;
-            this.colCheckBox.HeaderText = "CheckBox";
-            this.colCheckBox.IndeterminateValue = null;
-            this.colCheckBox.MinimumWidth = 6;
-            this.colCheckBox.Name = "colCheckBox";
-            this.colCheckBox.TrueValue = null;
-            this.colCheckBox.Width = 68;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -788,11 +779,10 @@ namespace KryptonDataGridViewExamples
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.groupBox4);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(750, 416);
+            this.MinimumSize = new System.Drawing.Size(1254, 544);
             this.Name = "Form1";
             this.Text = "KryptonDataGridView Examples";
             this.Load += new System.EventHandler(this.Form1_Load);
