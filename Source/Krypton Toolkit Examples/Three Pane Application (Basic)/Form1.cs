@@ -122,6 +122,5 @@ namespace ThreePaneApplication
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2013White;
             }
         }
-
     }
 }

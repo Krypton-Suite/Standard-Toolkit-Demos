@@ -26,14 +26,6 @@ namespace TestMessageBoxClipping
 ";
         public Form1() => InitializeComponent();
 
-        private void kryptonOffice2013_CheckedChanged(object sender, EventArgs e)
-        {
-            if (kryptonOffice2013.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2013White;
-            }
-        }
-
         private void kryptonOffice2010Silver_CheckedChanged(object sender, EventArgs e)
         {
             if (kryptonOffice2010Silver.Checked)

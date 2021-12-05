@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
@@ -60,53 +59,10 @@
             // 
             // kryptonThemeComboBox1
             // 
-            this.kryptonThemeComboBox1.AutoCompleteCustomSource.AddRange(new string[] {
-            "System.String[]"});
-            this.kryptonThemeComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.kryptonThemeComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.kryptonThemeComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.kryptonThemeComboBox1.DropDownWidth = 278;
             this.kryptonThemeComboBox1.IntegralHeight = false;
-            this.kryptonThemeComboBox1.Items.AddRange(new object[] {
-            "Professional - System",
-            "Professional - Office 2003",
-            "Office 2007 - Black",
-            "Office 2007 - Black (Dark Mode)",
-            "Office 2007 - Blue",
-            "Office 2007 - Blue (Dark Mode)",
-            "Office 2007 - Blue (Light Mode)",
-            "Office 2007 - Silver",
-            "Office 2007 - Silver (Dark Mode)",
-            "Office 2007 - Silver (Light Mode)",
-            "Office 2010 - Black",
-            "Office 2010 - Black (Dark Mode)",
-            "Office 2010 - Blue",
-            "Office 2010 - Blue (Dark Mode)",
-            "Office 2010 - Blue (Light Mode)",
-            "Office 2010 - Silver",
-            "Office 2010 - Silver (Dark Mode)",
-            "Office 2010 - Silver (Light Mode)",
-            "Office 2010 - White",
-            "Office 2013",
-            "Office 365 - Black",
-            "Office 365 - Black (Dark Mode)",
-            "Office 365 - Blue",
-            "Office 365 - Blue (Dark Mode)",
-            "Office 365 - Blue (Light Mode)",
-            "Office 365 - Silver",
-            "Office 365 - Silver (Dark Mode)",
-            "Office 365 - Silver (Light Mode)",
-            "Office 365 - White",
-            "Sparkle - Blue",
-            "Sparkle - Blue (Dark Mode)",
-            "Sparkle - Blue (Light Mode)",
-            "Sparkle - Orange",
-            "Sparkle - Orange (Dark Mode)",
-            "Sparkle - Orange (Light Mode)",
-            "Sparkle - Purple",
-            "Sparkle - Purple (Dark Mode)",
-            "Sparkle - Purple (Light Mode)",
-            "Custom"});
             this.kryptonThemeComboBox1.Location = new System.Drawing.Point(151, 47);
             this.kryptonThemeComboBox1.Name = "kryptonThemeComboBox1";
             this.kryptonThemeComboBox1.Size = new System.Drawing.Size(278, 22);
@@ -138,7 +94,7 @@
         #endregion
 
         private Krypton.Toolkit.KryptonPanel kryptonPanel1;
-        private Krypton.Toolkit.KryptonThemeComboBox kryptonThemeComboBox1;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private Krypton.Toolkit.KryptonThemeComboBox kryptonThemeComboBox1;
     }
 }

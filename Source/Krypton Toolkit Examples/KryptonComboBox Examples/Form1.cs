@@ -61,6 +61,24 @@ namespace KryptonComboBoxExamples
         }
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
+
+        private void kryptonComboBox1Blue_DoubleClick(object sender, EventArgs e) => InvokeDoubleClick();
+
+        private void InvokeDoubleClick() =>
+            KryptonMessageBox.Show("You've invoked the double click event.", "Double Click", MessageBoxButtons.OK,
+                KryptonMessageBoxIcon.INFORMATION);
+
+        private void kryptonComboBox2Blue_DoubleClick(object sender, EventArgs e) => InvokeDoubleClick();
+
+        private void kryptonComboBox4System_DoubleClick(object sender, EventArgs e) => InvokeDoubleClick();
+
+        private void kryptonComboBox5System_DoubleClick(object sender, EventArgs e) => InvokeDoubleClick();
+
+        private void kryptonComboBox6System_DoubleClick(object sender, EventArgs e) => InvokeDoubleClick();
+
+        private void kryptonComboBox7Custom_DoubleClick(object sender, EventArgs e) => InvokeDoubleClick();
+
+        private void kryptonComboBox8Custom_DoubleClick(object sender, EventArgs e) => InvokeDoubleClick();
     }
 
     public class KryptonComboBoxProxy
