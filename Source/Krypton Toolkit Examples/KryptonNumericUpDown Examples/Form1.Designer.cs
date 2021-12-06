@@ -225,6 +225,7 @@
             this.nud5.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.nud5.TabIndex = 4;
             this.nud5.ThousandsSeparator = true;
+            this.nud5.ToolTipValues.EnableToolTips = true;
             this.nud5.TrailingZeroes = false;
             this.nud5.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.nud5.Value = new decimal(new int[] {

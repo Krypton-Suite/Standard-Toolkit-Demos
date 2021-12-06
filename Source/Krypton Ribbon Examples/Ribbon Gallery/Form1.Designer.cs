@@ -121,7 +121,6 @@ namespace RibbonGallery
             this.kryptonRibbonGroupButton1.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton1.ImageSmall")));
             this.kryptonRibbonGroupButton1.TextLine1 = "Office 2010";
             this.kryptonRibbonGroupButton1.TextLine2 = "Blue";
-            this.kryptonRibbonGroupButton1.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbonGroupButton1.Click += new System.EventHandler(this.kryptonRibbonGroupButton1_Click);
             // 
             // kryptonRibbonGroupButton2
@@ -130,7 +129,6 @@ namespace RibbonGallery
             this.kryptonRibbonGroupButton2.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton2.ImageSmall")));
             this.kryptonRibbonGroupButton2.TextLine1 = "Office 2007";
             this.kryptonRibbonGroupButton2.TextLine2 = "Silver";
-            this.kryptonRibbonGroupButton2.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbonGroupButton2.Click += new System.EventHandler(this.kryptonRibbonGroupButton2_Click);
             // 
             // kryptonRibbonGroupButton3
@@ -138,7 +136,6 @@ namespace RibbonGallery
             this.kryptonRibbonGroupButton3.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.kryptonRibbonGroupButton3.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton3.ImageSmall")));
             this.kryptonRibbonGroupButton3.TextLine1 = "Sparkle Orange";
-            this.kryptonRibbonGroupButton3.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbonGroupButton3.Click += new System.EventHandler(this.kryptonRibbonGroupButton3_Click);
             // 
             // kryptonRibbonGroup2
@@ -157,7 +154,6 @@ namespace RibbonGallery
             this.galleryNormal.ImageList = this.imageList1;
             this.galleryNormal.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.galleryNormal.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
-            this.galleryNormal.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // imageList1
             // 
@@ -192,7 +188,6 @@ namespace RibbonGallery
             this.galleryRanges.KeyTip = "Y";
             this.galleryRanges.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.galleryRanges.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
-            this.galleryRanges.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonGalleryRange5
             // 
@@ -220,7 +215,6 @@ namespace RibbonGallery
             this.galleryCustom.KeyTip = "Z";
             this.galleryCustom.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.galleryCustom.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
-            this.galleryCustom.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.galleryCustom.GalleryDropMenu += new System.EventHandler<Krypton.Ribbon.GalleryDropMenuEventArgs>(this.galleryCustom_GalleryDropMenu);
             // 
             // kryptonGalleryRange1

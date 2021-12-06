@@ -989,7 +989,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton1.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton1.ImageSmall")));
             this.kryptonRibbonGroupButton1.KeyTip = "BM";
             this.kryptonRibbonGroupButton1.TextLine1 = "Bookmarks";
-            this.kryptonRibbonGroupButton1.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupTriple4
             // 
@@ -1008,7 +1007,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton2.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton2.ImageSmall")));
             this.kryptonRibbonGroupButton2.KeyTip = "BA";
             this.kryptonRibbonGroupButton2.TextLine1 = "Add";
-            this.kryptonRibbonGroupButton2.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupButton3
             // 
@@ -1017,7 +1015,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton3.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton3.ImageSmall")));
             this.kryptonRibbonGroupButton3.KeyTip = "BD";
             this.kryptonRibbonGroupButton3.TextLine1 = "Delete";
-            this.kryptonRibbonGroupButton3.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupButton10
             // 
@@ -1026,7 +1023,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton10.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton10.ImageSmall")));
             this.kryptonRibbonGroupButton10.KeyTip = "BP";
             this.kryptonRibbonGroupButton10.TextLine1 = "Preference";
-            this.kryptonRibbonGroupButton10.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroup2
             // 
@@ -1057,7 +1053,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton4.KeyTip = "DC";
             this.kryptonRibbonGroupButton4.TextLine1 = "Data";
             this.kryptonRibbonGroupButton4.TextLine2 = "Copy";
-            this.kryptonRibbonGroupButton4.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupButton5
             // 
@@ -1067,7 +1062,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton5.KeyTip = "DA";
             this.kryptonRibbonGroupButton5.TextLine1 = "Data";
             this.kryptonRibbonGroupButton5.TextLine2 = "Add";
-            this.kryptonRibbonGroupButton5.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupButton6
             // 
@@ -1077,7 +1071,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton6.KeyTip = "DD";
             this.kryptonRibbonGroupButton6.TextLine1 = "Data";
             this.kryptonRibbonGroupButton6.TextLine2 = "Delete";
-            this.kryptonRibbonGroupButton6.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupTriple3
             // 
@@ -1097,7 +1090,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton7.KeyTip = "DF";
             this.kryptonRibbonGroupButton7.TextLine1 = "Data";
             this.kryptonRibbonGroupButton7.TextLine2 = "Find";
-            this.kryptonRibbonGroupButton7.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupButton8
             // 
@@ -1107,7 +1099,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton8.KeyTip = "DE";
             this.kryptonRibbonGroupButton8.TextLine1 = "Data";
             this.kryptonRibbonGroupButton8.TextLine2 = "Edit";
-            this.kryptonRibbonGroupButton8.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupButton9
             // 
@@ -1118,7 +1109,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton9.KeyTip = "DL";
             this.kryptonRibbonGroupButton9.TextLine1 = "Data";
             this.kryptonRibbonGroupButton9.TextLine2 = "Lock";
-            this.kryptonRibbonGroupButton9.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonTab2
             // 
@@ -1155,7 +1145,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton11.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton11.ImageSmall")));
             this.kryptonRibbonGroupButton11.KeyTip = "DG";
             this.kryptonRibbonGroupButton11.TextLine1 = "Green";
-            this.kryptonRibbonGroupButton11.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupButton12
             // 
@@ -1164,7 +1153,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton12.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton12.ImageSmall")));
             this.kryptonRibbonGroupButton12.KeyTip = "DR";
             this.kryptonRibbonGroupButton12.TextLine1 = "Red";
-            this.kryptonRibbonGroupButton12.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupButton13
             // 
@@ -1173,7 +1161,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton13.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton13.ImageSmall")));
             this.kryptonRibbonGroupButton13.KeyTip = "DY";
             this.kryptonRibbonGroupButton13.TextLine1 = "Yellow";
-            this.kryptonRibbonGroupButton13.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroup5
             // 
@@ -1200,7 +1187,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton18.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton18.ImageSmall")));
             this.kryptonRibbonGroupButton18.KeyTip = "S";
             this.kryptonRibbonGroupButton18.TextLine1 = "Blocks";
-            this.kryptonRibbonGroupButton18.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupLines1
             // 
@@ -1217,7 +1203,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton19.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton19.ImageSmall")));
             this.kryptonRibbonGroupButton19.TextLine1 = "Blue";
             this.kryptonRibbonGroupButton19.TextLine2 = "Block";
-            this.kryptonRibbonGroupButton19.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupButton20
             // 
@@ -1227,7 +1212,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton20.KeyTip = "Y";
             this.kryptonRibbonGroupButton20.TextLine1 = "Yellow";
             this.kryptonRibbonGroupButton20.TextLine2 = "Block";
-            this.kryptonRibbonGroupButton20.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroup4
             // 
@@ -1254,7 +1238,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton14.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton14.ImageSmall")));
             this.kryptonRibbonGroupButton14.KeyTip = "CR";
             this.kryptonRibbonGroupButton14.TextLine1 = "Red";
-            this.kryptonRibbonGroupButton14.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupTriple7
             // 
@@ -1273,7 +1256,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton15.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton15.ImageSmall")));
             this.kryptonRibbonGroupButton15.KeyTip = "CG";
             this.kryptonRibbonGroupButton15.TextLine1 = "Green";
-            this.kryptonRibbonGroupButton15.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupButton16
             // 
@@ -1282,7 +1264,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton16.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton16.ImageSmall")));
             this.kryptonRibbonGroupButton16.KeyTip = "CB";
             this.kryptonRibbonGroupButton16.TextLine1 = "Blue";
-            this.kryptonRibbonGroupButton16.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonRibbonGroupButton17
             // 
@@ -1291,7 +1272,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupButton17.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton17.ImageSmall")));
             this.kryptonRibbonGroupButton17.KeyTip = "CY";
             this.kryptonRibbonGroupButton17.TextLine1 = "Yellow";
-            this.kryptonRibbonGroupButton17.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             // 
             // kryptonPage8
             // 
