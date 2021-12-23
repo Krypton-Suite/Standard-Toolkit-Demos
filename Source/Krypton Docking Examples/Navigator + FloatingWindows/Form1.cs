@@ -66,8 +66,8 @@ namespace NavigatorAndFloatingWindows
             kryptonDockingManager.ManageFloating(this);
 
             // Add initial floating window and navigator documents
-            kryptonDockingManager.AddFloatingWindow("Floating", new KryptonPage[] { NewDocument(), NewDocument() });
-            kryptonDockingManager.AddToNavigator("Navigator", new KryptonPage[] { NewDocument(), NewDocument(), NewDocument() });
+            kryptonDockingManager.AddFloatingWindow(@"Floating", new KryptonPage[] { NewDocument(), NewDocument() });
+            kryptonDockingManager.AddToNavigator(@"Navigator", new KryptonPage[] { NewDocument(), NewDocument(), NewDocument() });
         }
     }
 }

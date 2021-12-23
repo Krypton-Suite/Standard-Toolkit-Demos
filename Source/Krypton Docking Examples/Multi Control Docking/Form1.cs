@@ -27,10 +27,7 @@ namespace MultiControlDocking
             InitializeComponent();
         }
 
-        private KryptonPage NewInput()
-        {
-            return NewPage("Input ", 1, new ContentInput());
-        }
+        private KryptonPage NewInput() => NewPage(@"Input ", 1, new ContentInput());
 
         private KryptonPage NewPage(string name, int image, Control content)
         {
@@ -46,6 +43,7 @@ namespace MultiControlDocking
             // Add the control for display inside the page
             content.Dock = DockStyle.Fill;
             p.Controls.Add(content);
+            p.MinimumSize = content.MinimumSize;
 
             _count++;
             return p;
@@ -54,16 +52,16 @@ namespace MultiControlDocking
         private void Form1_Load(object sender, EventArgs e)
         {
             // Add docking to the two panels and allow floating windows
-            kryptonDockingManager.ManageControl("Control1", kryptonPanel2);
-            kryptonDockingManager.ManageControl("Control2", kryptonPanel3);
+            kryptonDockingManager.ManageControl(@"Control1", kryptonPanel2);
+            kryptonDockingManager.ManageControl(@"Control2", kryptonPanel3);
             kryptonDockingManager.ManageFloating(this);
 
 
             // Add docking pages
-            kryptonDockingManager.AddDockspace("Control1", DockingEdge.Left, new KryptonPage[] { NewInput(), NewInput() });
-            kryptonDockingManager.AddDockspace("Control1", DockingEdge.Bottom, new KryptonPage[] { NewInput(), NewInput() });
-            kryptonDockingManager.AddDockspace("Control2", DockingEdge.Bottom, new KryptonPage[] { NewInput(), NewInput() });
-            kryptonDockingManager.AddAutoHiddenGroup("Control2", DockingEdge.Right, new KryptonPage[] { NewInput(), NewInput() });
+            kryptonDockingManager.AddDockspace(@"Control1", DockingEdge.Left, new KryptonPage[] { NewInput(), NewInput() });
+            kryptonDockingManager.AddDockspace(@"Control1", DockingEdge.Bottom, new KryptonPage[] { NewInput(), NewInput() });
+            kryptonDockingManager.AddDockspace(@"Control2", DockingEdge.Bottom, new KryptonPage[] { NewInput(), NewInput() });
+            kryptonDockingManager.AddAutoHiddenGroup(@"Control2", DockingEdge.Right, new KryptonPage[] { NewInput(), NewInput() });
         }
     }
 }
