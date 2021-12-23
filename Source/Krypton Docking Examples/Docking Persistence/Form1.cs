@@ -41,15 +41,9 @@ namespace DockingPersistence
             return page;
         }
 
-        private KryptonPage NewInput()
-        {
-            return NewPage("Input ", 1, new ContentInput());
-        }
+        private KryptonPage NewInput() => NewPage("Input ", 1, new ContentInput());
 
-        private KryptonPage NewPropertyGrid()
-        {
-            return NewPage("Properties ", 2, new ContentPropertyGrid());
-        }
+        private KryptonPage NewPropertyGrid() => NewPage("Properties ", 2, new ContentPropertyGrid());
 
         private KryptonPage NewPage(string name, int image, Control content)
         {
@@ -79,9 +73,9 @@ namespace DockingPersistence
             kryptonDockingManager.ManageFloating(this);
 
             // Add docking pages
-            kryptonDockingManager.AddDockspace("Control", DockingEdge.Left, new KryptonPage[] { NewPropertyGrid() });
-            kryptonDockingManager.AddDockspace("Control", DockingEdge.Bottom, new KryptonPage[] { NewInput(), NewInput() });
-            kryptonDockingManager.AddAutoHiddenGroup("Control", DockingEdge.Right, new KryptonPage[] { NewPropertyGrid() });
+            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Left, new KryptonPage[] { NewPropertyGrid() });
+            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Bottom, new KryptonPage[] { NewInput(), NewInput() });
+            kryptonDockingManager.AddAutoHiddenGroup(@"Control", DockingEdge.Right, new KryptonPage[] { NewPropertyGrid() });
             kryptonDockingManager.AddToWorkspace("Workspace", new KryptonPage[] { NewDocument(), NewDocument(), NewDocument() });
         }
 
@@ -149,7 +143,7 @@ namespace DockingPersistence
         {
             // Example code showing how to save extra data into the global config
             e.XmlWriter.WriteStartElement("CustomGlobalData");
-            e.XmlWriter.WriteAttributeString("SavedTime", DateTime.Now.ToString(@"u"));
+            e.XmlWriter.WriteAttributeString(@"SavedTime", DateTime.Now.ToString(@"u"));
             e.XmlWriter.WriteEndElement();
         }
 
@@ -157,7 +151,7 @@ namespace DockingPersistence
         {
             // Example code showing how to reload the extra data that was saved into the global config
             e.XmlReader.Read();
-            Console.WriteLine("GlobalConfig was saved at {0}", e.XmlReader.GetAttribute("SavedTime"));
+            Console.WriteLine("GlobalConfig was saved at {0}", e.XmlReader.GetAttribute(@"SavedTime"));
             e.XmlReader.Read();
         }
 
@@ -165,7 +159,7 @@ namespace DockingPersistence
         {
             // Example code showing how to save extra data into the page config
             e.XmlWriter.WriteStartElement("CustomPageData");
-            e.XmlWriter.WriteAttributeString("SavedMilliseconds", DateTime.Now.Millisecond.ToString());
+            e.XmlWriter.WriteAttributeString(@"SavedMilliseconds", DateTime.Now.Millisecond.ToString());
             e.XmlWriter.WriteEndElement();
         }
 
@@ -173,7 +167,7 @@ namespace DockingPersistence
         {
             // Example code showing how to reload the extra data that was saved into the page config
             e.XmlReader.Read();
-            Console.WriteLine("PageConfig was saved at {0}", e.XmlReader.GetAttribute("SavedMilliseconds"));
+            Console.WriteLine("PageConfig was saved at {0}", e.XmlReader.GetAttribute(@"SavedMilliseconds"));
             e.XmlReader.Read();
         }
 

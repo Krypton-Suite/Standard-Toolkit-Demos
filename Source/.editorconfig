@@ -13,6 +13,12 @@ dotnet_sort_system_directives_first = true
 dotnet_separate_import_directive_groups = true
 dotnet_code_quality.enable_platform_analyzer_on_pre_net5_target=true
 
+# 	Naming rule violation: These words must begin with upper case characters: textBoxResponse_KeyDown
+dotnet_diagnostic.IDE1006.severity = silent
+
+#	Remove unnecessary suppression
+dotnet_diagnostic.IDE0079.severity = silent
+
 # CS1591: Missing XML comment for publicly visible type or member
 dotnet_diagnostic.CS1591.severity = silent
 

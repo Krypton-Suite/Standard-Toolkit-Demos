@@ -146,7 +146,6 @@
             this.buttonSaveArray1.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSaveArray1.ImageSmall")));
             this.buttonSaveArray1.KeyTip = "SA1";
             this.buttonSaveArray1.TextLine1 = "Save Array 1";
-            this.buttonSaveArray1.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSaveArray1.Click += new System.EventHandler(this.buttonSaveArray1_Click);
             // 
             // buttonSaveArray2
@@ -156,7 +155,6 @@
             this.buttonSaveArray2.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSaveArray2.ImageSmall")));
             this.buttonSaveArray2.KeyTip = "SA2";
             this.buttonSaveArray2.TextLine1 = "Save Array 2";
-            this.buttonSaveArray2.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSaveArray2.Click += new System.EventHandler(this.buttonSaveArray2_Click);
             // 
             // buttonSaveArray3
@@ -166,7 +164,6 @@
             this.buttonSaveArray3.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSaveArray3.ImageSmall")));
             this.buttonSaveArray3.KeyTip = "SA3";
             this.buttonSaveArray3.TextLine1 = "Save Array 3";
-            this.buttonSaveArray3.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSaveArray3.Click += new System.EventHandler(this.buttonSaveArray3_Click);
             // 
             // kryptonRibbonGroupTriple3
@@ -187,7 +184,6 @@
             this.buttonLoadArray1.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonLoadArray1.ImageSmall")));
             this.buttonLoadArray1.KeyTip = "LA1";
             this.buttonLoadArray1.TextLine1 = "Load Array 1";
-            this.buttonLoadArray1.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonLoadArray1.Click += new System.EventHandler(this.buttonLoadArray1_Click);
             // 
             // buttonLoadArray2
@@ -198,7 +194,6 @@
             this.buttonLoadArray2.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonLoadArray2.ImageSmall")));
             this.buttonLoadArray2.KeyTip = "LA2";
             this.buttonLoadArray2.TextLine1 = "Load Array 2";
-            this.buttonLoadArray2.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonLoadArray2.Click += new System.EventHandler(this.buttonLoadArray2_Click);
             // 
             // buttonLoadArray3
@@ -209,7 +204,6 @@
             this.buttonLoadArray3.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonLoadArray3.ImageSmall")));
             this.buttonLoadArray3.KeyTip = "LA3";
             this.buttonLoadArray3.TextLine1 = "Load Array 3";
-            this.buttonLoadArray3.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonLoadArray3.Click += new System.EventHandler(this.buttonLoadArray3_Click);
             // 
             // kryptonRibbonGroup2
@@ -238,7 +232,6 @@
             this.buttonSaveFile.KeyTip = "SF";
             this.buttonSaveFile.TextLine1 = "Save";
             this.buttonSaveFile.TextLine2 = "File";
-            this.buttonSaveFile.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSaveFile.Click += new System.EventHandler(this.buttonSaveFile_Click);
             // 
             // kryptonRibbonGroupTriple4
@@ -257,7 +250,6 @@
             this.buttonLoadFile.KeyTip = "LF";
             this.buttonLoadFile.TextLine1 = "Load";
             this.buttonLoadFile.TextLine2 = "File";
-            this.buttonLoadFile.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonLoadFile.Click += new System.EventHandler(this.buttonLoadFile_Click);
             // 
             // kryptonRibbonGroup3
@@ -285,7 +277,6 @@
             this.buttonHideAll.KeyTip = "VH";
             this.buttonHideAll.TextLine1 = "Hide";
             this.buttonHideAll.TextLine2 = "All";
-            this.buttonHideAll.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonHideAll.Click += new System.EventHandler(this.buttonHideAll_Click);
             // 
             // buttonShowAll
@@ -296,7 +287,6 @@
             this.buttonShowAll.KeyTip = "VS";
             this.buttonShowAll.TextLine1 = "Show";
             this.buttonShowAll.TextLine2 = "All";
-            this.buttonShowAll.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonShowAll.Click += new System.EventHandler(this.buttonShowAll_Click);
             // 
             // kryptonPanel
