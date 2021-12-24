@@ -77,10 +77,10 @@ namespace StandardDocking
             kryptonDockingManager.ManageFloating(this);
 
             // Add initial docking pages
-            kryptonDockingManager.AddToWorkspace(@"Workspace", new KryptonPage[] { NewDocument(), NewDocument() });
+            kryptonDockingManager.AddToWorkspace(@"Workspace", new[] { NewDocument(), NewDocument() });
             _props3 = NewPropertyGrid();
-            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Right, new KryptonPage[] { _props3, NewInput() });
-            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Bottom, new KryptonPage[] { NewInput(), NewPropertyGrid() });
+            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Right, new[] { _props3, NewInput() });
+            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Bottom, new[] { NewInput(), NewPropertyGrid() });
 
             // Set correct initial ribbon palette buttons
             UpdatePaletteButtons();
@@ -108,23 +108,23 @@ namespace StandardDocking
         {
             // Add a new cell with three pages into the root sequence of the workspace
             KryptonWorkspaceCell cell = new KryptonWorkspaceCell();
-            cell.Pages.AddRange(new KryptonPage[] { NewDocument(), NewDocument(), NewDocument() });
+            cell.Pages.AddRange(new[] { NewDocument(), NewDocument(), NewDocument() });
             kryptonDockableWorkspace.Root.Children.Add(cell);
         }
 
         private void buttonFloatingSingle_Click(object sender, EventArgs e) =>
             // Add a new floating window with a single page
-            kryptonDockingManager.AddFloatingWindow(@"Floating", new KryptonPage[] { NewInput() });
+            kryptonDockingManager.AddFloatingWindow(@"Floating", new[] { NewInput() });
 
         private void buttonFloatingTabbed_Click(object sender, EventArgs e) =>
             // Add a new floating window with two pages
-            kryptonDockingManager.AddFloatingWindow(@"Floating", new KryptonPage[] { NewPropertyGrid(), NewDocument() });
+            kryptonDockingManager.AddFloatingWindow(@"Floating", new[] { NewPropertyGrid(), NewDocument() });
 
         private void buttonFloatingComplex_Click(object sender, EventArgs e)
         {
             // Add single page to a new floating window
             KryptonDockingFloatingWindow window = kryptonDockingManager.AddFloatingWindow(@"Floating", 
-                                                                                          new KryptonPage[] { NewInput() }, 
+                                                                                          new[] { NewInput() }, 
                                                                                           new Size(500, 400));
 
             // Create a sequence that contains two cells, with a page in each cell
@@ -143,59 +143,59 @@ namespace StandardDocking
             // Add new auto hidden group to left edge of the panel
             kryptonDockingManager.AddAutoHiddenGroup(@"Control", 
                 DockingEdge.Left, 
-                new KryptonPage[] { NewInput(), NewPropertyGrid() });
+                new[] { NewInput(), NewPropertyGrid() });
 
         private void buttonRightAutoHidden_Click(object sender, EventArgs e) =>
             // Add new auto hidden group to right edge of the panel
             kryptonDockingManager.AddAutoHiddenGroup(@"Control", 
                 DockingEdge.Right, 
-                new KryptonPage[] { NewInput(), NewPropertyGrid() });
+                new[] { NewInput(), NewPropertyGrid() });
 
         private void buttonBottomAutoHidden_Click(object sender, EventArgs e) =>
             // Add new auto hidden group to bottom edge of the panel
             kryptonDockingManager.AddAutoHiddenGroup(@"Control", 
                 DockingEdge.Bottom, 
-                new KryptonPage[] { NewInput(), NewPropertyGrid(), NewDocument() });
+                new[] { NewInput(), NewPropertyGrid(), NewDocument() });
 
         private void buttonLeftDockedSingle_Click(object sender, EventArgs e) =>
             // Add page to left edge of the panel
             kryptonDockingManager.AddDockspace(@"Control", 
                 DockingEdge.Left, 
-                new KryptonPage[] { NewInput() });
+                new[] { NewInput() });
 
         private void buttonLeftDockedTabbed_Click(object sender, EventArgs e) =>
             // Add three tabbed pages to left edge of the panel
             kryptonDockingManager.AddDockspace(@"Control", 
                 DockingEdge.Left, 
-                new KryptonPage[] { NewInput(), NewPropertyGrid(), NewDocument() });
+                new[] { NewInput(), NewPropertyGrid(), NewDocument() });
 
         private void buttonLeftDockedStack_Click(object sender, EventArgs e) =>
             // Add three vertical-stacked pages to left edge of the panel
             kryptonDockingManager.AddDockspace(@"Control", 
                 DockingEdge.Left, 
-                new KryptonPage[] { NewDocument() }, 
-                new KryptonPage[] { NewDocument() }, 
-                new KryptonPage[] { NewDocument() });
+                new[] { NewDocument() }, 
+                new[] { NewDocument() }, 
+                new[] { NewDocument() });
 
         private void buttonRightDockedSingle_Click(object sender, EventArgs e) =>
             // Add page to right edge of the panel
             kryptonDockingManager.AddDockspace(@"Control", 
                 DockingEdge.Right, 
-                new KryptonPage[] { NewInput() });
+                new[] { NewInput() });
 
         private void buttonTopDockedTabbed_Click(object sender, EventArgs e) =>
             // Add three tabbed pages to top edge of the panel
             kryptonDockingManager.AddDockspace(@"Control", 
                 DockingEdge.Top, 
-                new KryptonPage[] { NewInput(), NewPropertyGrid(), NewDocument() });
+                new[] { NewInput(), NewPropertyGrid(), NewDocument() });
 
         private void buttonBottomDockedStack_Click(object sender, EventArgs e) =>
             // Add three horizontal-stacked pages to bottom edge of the panel
             kryptonDockingManager.AddDockspace(@"Control", 
                 DockingEdge.Bottom, 
-                new KryptonPage[] { NewDocument() }, 
-                new KryptonPage[] { NewDocument() }, 
-                new KryptonPage[] { NewDocument() });
+                new[] { NewDocument() }, 
+                new[] { NewDocument() }, 
+                new[] { NewDocument() });
 
         private void buttonDeleteAll_Click(object sender, EventArgs e)
         {

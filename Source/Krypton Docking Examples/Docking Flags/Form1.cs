@@ -82,9 +82,9 @@ namespace DockingFlags
             kryptonDockingManager.ManageFloating(this);
 
             // Add docking pages
-            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Left, new KryptonPage[] { NewFlags(), NewFlags() });
-            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Bottom, new KryptonPage[] { NewDocument() });
-            kryptonDockingManager.AddToWorkspace("Workspace", new KryptonPage[] { NewFlags(), NewFlags() });
+            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Left, new[] { NewFlags(), NewFlags() });
+            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Bottom, new[] { NewDocument() });
+            kryptonDockingManager.AddToWorkspace("Workspace", new[] { NewFlags(), NewFlags() });
         }
     }
 }

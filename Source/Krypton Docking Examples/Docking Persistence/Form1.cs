@@ -73,10 +73,10 @@ namespace DockingPersistence
             kryptonDockingManager.ManageFloating(this);
 
             // Add docking pages
-            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Left, new KryptonPage[] { NewPropertyGrid() });
-            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Bottom, new KryptonPage[] { NewInput(), NewInput() });
-            kryptonDockingManager.AddAutoHiddenGroup(@"Control", DockingEdge.Right, new KryptonPage[] { NewPropertyGrid() });
-            kryptonDockingManager.AddToWorkspace("Workspace", new KryptonPage[] { NewDocument(), NewDocument(), NewDocument() });
+            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Left, new[] { NewPropertyGrid() });
+            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Bottom, new[] { NewInput(), NewInput() });
+            kryptonDockingManager.AddAutoHiddenGroup(@"Control", DockingEdge.Right, new[] { NewPropertyGrid() });
+            kryptonDockingManager.AddToWorkspace("Workspace", new[] { NewDocument(), NewDocument(), NewDocument() });
         }
 
         private void buttonSaveArray1_Click(object sender, EventArgs e)
