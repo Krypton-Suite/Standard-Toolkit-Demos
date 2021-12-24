@@ -58,10 +58,10 @@ namespace MultiControlDocking
 
 
             // Add docking pages
-            kryptonDockingManager.AddDockspace(@"Control1", DockingEdge.Left, new KryptonPage[] { NewInput(), NewInput() });
-            kryptonDockingManager.AddDockspace(@"Control1", DockingEdge.Bottom, new KryptonPage[] { NewInput(), NewInput() });
-            kryptonDockingManager.AddDockspace(@"Control2", DockingEdge.Bottom, new KryptonPage[] { NewInput(), NewInput() });
-            kryptonDockingManager.AddAutoHiddenGroup(@"Control2", DockingEdge.Right, new KryptonPage[] { NewInput(), NewInput() });
+            kryptonDockingManager.AddDockspace(@"Control1", DockingEdge.Left, new[] { NewInput(), NewInput() });
+            kryptonDockingManager.AddDockspace(@"Control1", DockingEdge.Bottom, new[] { NewInput(), NewInput() });
+            kryptonDockingManager.AddDockspace(@"Control2", DockingEdge.Bottom, new[] { NewInput(), NewInput() });
+            kryptonDockingManager.AddAutoHiddenGroup(@"Control2", DockingEdge.Right, new[] { NewInput(), NewInput() });
         }
     }
 }

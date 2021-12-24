@@ -66,8 +66,8 @@ namespace ExternalDragToDocking
             kryptonDockingManager.ManageFloating(this);
 
             // Add initial docking pages
-            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Left, new KryptonPage[] { NewTreeView() });
-            kryptonDockingManager.AddToWorkspace("Workspace", new KryptonPage[] { NewDocument() });
+            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Left, new[] { NewTreeView() });
+            kryptonDockingManager.AddToWorkspace("Workspace", new[] { NewDocument() });
         }
     }
 }

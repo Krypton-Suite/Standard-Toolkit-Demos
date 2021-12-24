@@ -103,7 +103,7 @@ namespace ExternalDragToDocking
 
                     // Add a floating window to the docking manager which contains the new drag page
                     KryptonDockingFloatingWindow fw = Form1.DockingManager.AddFloatingWindow(@"Floating", 
-                                                                                             new KryptonPage[] { dragPage }, 
+                                                                                             new[] { dragPage }, 
                                                                                              new Point(MousePosition.X - pt.X, MousePosition.Y - pt.Y));
 
                     // DoEvents spins the message loop so that the window gets fully created and shown
