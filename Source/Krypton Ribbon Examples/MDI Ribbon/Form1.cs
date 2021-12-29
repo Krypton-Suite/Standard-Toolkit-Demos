@@ -77,9 +77,11 @@ namespace MDIRibbon
 
         private void AddMDIChildWindow()
         {
-            Form2 f = new Form2();
-            f.Text = "Child " + (_count++).ToString();
-            f.MdiParent = this;
+            Form2 f = new Form2
+            {
+                Text = "Child " + (_count++).ToString(),
+                MdiParent = this
+            };
             f.Show();
         }
 
