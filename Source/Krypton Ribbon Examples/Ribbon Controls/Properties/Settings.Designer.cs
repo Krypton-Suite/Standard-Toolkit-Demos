@@ -28,10 +28,10 @@ namespace RibbonControls.Properties {
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool RibbonCheckBox {
             get {
-                return ((bool)(this["RibbonCheckBox"]));
+                return ((bool)(this[@"RibbonCheckBox"]));
             }
             set {
-                this["RibbonCheckBox"] = value;
+                this[@"RibbonCheckBox"] = value;
             }
         }
         
@@ -40,10 +40,10 @@ namespace RibbonControls.Properties {
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool CheckBox {
             get {
-                return ((bool)(this["CheckBox"]));
+                return ((bool)(this[@"CheckBox"]));
             }
             set {
-                this["CheckBox"] = value;
+                this[@"CheckBox"] = value;
             }
         }
         
@@ -52,10 +52,10 @@ namespace RibbonControls.Properties {
         [global::System.Configuration.DefaultSettingValueAttribute("2018-01-01")]
         public global::System.DateTime DateTimePicker1 {
             get {
-                return ((global::System.DateTime)(this["DateTimePicker1"]));
+                return ((global::System.DateTime)(this[@"DateTimePicker1"]));
             }
             set {
-                this["DateTimePicker1"] = value;
+                this[@"DateTimePicker1"] = value;
             }
         }
     }

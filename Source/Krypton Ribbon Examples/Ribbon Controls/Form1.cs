@@ -35,23 +35,29 @@ namespace RibbonControls
 
         private LinkLabel CreateLinkLabel(string text)
         {
-            LinkLabel ll = new LinkLabel();
-            ll.BackColor = Color.Transparent;
-            ll.Text = text;
+            LinkLabel ll = new LinkLabel
+            {
+                BackColor = Color.Transparent,
+                Text = text
+            };
             return ll;
         }
 
         private NumericUpDown CreateNumericUpDown(decimal value)
         {
-            NumericUpDown nud = new NumericUpDown();
-            nud.Value = value;
+            NumericUpDown nud = new NumericUpDown
+            {
+                Value = value
+            };
             return nud;
         }
 
         private ProgressBar CreateProgressBar(int value)
         {
-            ProgressBar pb = new ProgressBar();
-            pb.Value = value;
+            ProgressBar pb = new ProgressBar
+            {
+                Value = value
+            };
             return pb;
         }
 
