@@ -19,6 +19,7 @@
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BasePath60.wxs" />
     <Compile Include="KryptonToolkitDemos.wxs" />
     <Compile Include="Product.wxs" />
   </ItemGroup>
