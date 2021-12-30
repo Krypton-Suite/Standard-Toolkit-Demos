@@ -1,5 +1,4 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
-     xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension"
      xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
 
     <?define KryptonToolkitDemosSource=$(sys.SOURCEFILEDIR)..\..\..\Standard-Toolkit\Bin\Release\net48?>

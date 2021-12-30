@@ -3,7 +3,7 @@
     <!-- do not change this ever !-->
     <?define UpgradeCode = "38FC3474-F06B-4C57-8869-15B23AEBFB10" ?>
 
-    <?define Version = "6.0.2111.310" ?> <!--"!(bind.FileVersion.Krypton.Toolkit.dll)" -->
+    <?define Version = "6.0.2112.364" ?> <!--"!(bind.FileVersion.Krypton.Toolkit.dll)" -->
 
     <?define ProductName = "Krypton Toolkit Demo Net48 Apps"?>
 

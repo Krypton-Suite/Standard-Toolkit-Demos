@@ -17,10 +17,9 @@ using Krypton.Toolkit;
 
 namespace KryptonMessageBoxExamples
 {
-    public partial class Form1 : Form
+    public partial class Form1 : KryptonForm
     {
         private MessageBoxIcon _mbIcon = MessageBoxIcon.Warning;
-        private KryptonMessageBoxIcon _kmbIcon = KryptonMessageBoxIcon.WARNING;
         private MessageBoxButtons _mbButtons = MessageBoxButtons.OKCancel;
         private MessageBoxOptions _options = 0;
 

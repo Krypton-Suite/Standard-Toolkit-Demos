@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <!-- do not change this ever !-->
-    <?define UpgradeCode = "38FC3474-F06B-4C57-8869-15B23AEBFB10" ?>
+    <?define UpgradeCode = "38FC3474-F06B-4C57-8869-15B23AEBFB60" ?>
 
-    <?define Version = "6.0.2111.310" ?>
+    <?define Version = "6.0.2112.364" ?>
     <!--"!(bind.FileVersion.Krypton.Toolkit.dll)" -->
 
     <?define ProductName = "Krypton Toolkit Demo Net60 Apps"?>
@@ -33,15 +33,6 @@
 
         <!-- This property enables verbose logging in WiX custom actions. It writes extra entries to the MSI log. -->
         <Property Id="LOGVERBOSE" Value="1"/>
-
-        <PropertyRef Id="NETFRAMEWORK45" />
-        <!-- Pull in the checks for .Net 4.x-->
-        <PropertyRef Id="WIX_IS_NETFRAMEWORK_480_OR_LATER_INSTALLED"/>
-
-        <!-- Taken from https://github.com/wixtoolset/issues/issues/5977 -->
-        <Condition Message="[ProductName] Requires .NET Framework 4.8.0 or later to be installed. Please install from the `Pre-Reqs` folder.">
-            <![CDATA[Installed OR WIX_IS_NETFRAMEWORK_480_OR_LATER_INSTALLED]]>
-        </Condition>
 
         <InstallExecuteSequence>
             <!-- This disables removing shortcuts except on uninstall. -->

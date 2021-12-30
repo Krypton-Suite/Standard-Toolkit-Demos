@@ -1,6 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net48;net5.0-windows;net6.0-windows</TargetFrameworks>
+        <!--<TargetFrameworks>net48;net5.0-windows;net6.0-windows</TargetFrameworks>-->
+        <TargetFrameworks>net5.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
         <RootNamespace>RibbonControls</RootNamespace>
         <AssemblyName>Ribbon Controls</AssemblyName>
