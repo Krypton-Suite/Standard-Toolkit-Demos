@@ -606,16 +606,9 @@ namespace KryptonFormExamples
             this.kryptonCheckSetStyles.CheckedButton = this.kryptonSizable;
             this.kryptonCheckSetStyles.CheckedButtonChanged += new System.EventHandler(this.kryptonCheckSetStyles_CheckedButtonChanged);
             // 
-            // kryptonManager
-            // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office365Blue;
-            // 
             // buttonSpecAny1
             // 
             this.buttonSpecAny1.Image = global::KryptonFormExamples.Properties.Resources.AppMenuMemoStyle;
-            this.buttonSpecAny1.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
-            this.buttonSpecAny1.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
-            this.buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Generic;
             this.buttonSpecAny1.UniqueName = "3ca9db8764264fbeb2b9756a40409b9a";
             // 
             // Form1
