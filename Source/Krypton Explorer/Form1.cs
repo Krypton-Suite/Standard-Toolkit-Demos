@@ -25,7 +25,9 @@ namespace KryptonExplorer
     {
         #region Variables
 
-        private Version _currentVersion = new Version(6, 0, 2111, 0);
+        private Version _currentVersion = new Version(6, int.Parse(DateTime.Now.ToString("yyMM")), DateTime.Now.DayOfYear, 0);
+
+        Settings settings = new Settings();
         #endregion
 
         public Form1()
@@ -314,33 +316,30 @@ namespace KryptonExplorer
         {
             FileVersionInfo fvi = FileVersionInfo.GetVersionInfo($@"{Path.GetDirectoryName(Application.ExecutablePath)}\Krypton.Toolkit.dll");
 
-            Settings settings = new Settings();
-
             kryptonManager1.GlobalPaletteMode = settings.Theme;
 
+
+            kcmbTheme.SelectedIndex = settings.ThemeSelectedIndex;
+            
             kcmbTheme.Text = ThemeManager.ReturnPaletteModeManagerAsString(settings.Theme);
 
-            tslVersion.Text = $@"Krypton Explorer Version: {_currentVersion} - Toolkit Version: {fvi.FileVersion}";
-
-            ThemeManager.PropagateThemeSelector(kcmbTheme);
+            tslVersion.Text = $"Krypton Explorer Version: { _currentVersion } - Toolkit Version: { fvi.FileVersion }";
         }
 
         private void kbtnOpenApplicationPath_Click(object sender, EventArgs e) => Process.Start(@"explorer.exe", @"\{Application.ExecutablePath}");
 
-        private void kcmbTheme_SelectedIndexChanged(object sender, EventArgs e) => kbtnApplyTheme.Enabled = true;
+        private void kbtnViewLatestReleaseNotes_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/Documents/Help/Changelog.md");
+        }
+
+        private void KbtnKryptonToolkitPackage_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.nuget.org/packages/KryptonToolkitSuite5472/");
+        }
 
         private void kbtnViewLatestReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/Documents/Help/Changelog.md");
 
-        private void kbtnApplyTheme_Click(object sender, EventArgs e)
-        {
-            ThemeManager.SetTheme(kcmbTheme.Text, kryptonManager1);
-
-            ThemeManager.ApplyGlobalTheme(kryptonManager1, ThemeManager.GetPaletteMode(kryptonManager1));
-
-            Invalidate();
-
-            kbtnApplyTheme.Enabled = false;
-        }
 
         private void KbtnKryptonToolkitPackage_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/commits/alpha");
 
@@ -373,6 +372,29 @@ namespace KryptonExplorer
 
         private void kllFontDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Font Dialog Example");
 
+        private void klblPrintDialog_LinkClicked(object sender, EventArgs e)
+        {
+            LaunchApplication("Krypton Print Dialog Example");
+        }
+
+        private void kcmbTheme_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            settings.ThemeSelectedIndex = kcmbTheme.SelectedIndex;
+
+            settings.Theme = ThemeManager.GetPaletteMode(kcmbTheme.Manager);
+
+            settings.Save();
+        }
+
+        private void kbtnRestoreTheme_Click(object sender, EventArgs e)
+        {
+            kcmbTheme.SelectedIndex = 22;
+
+            settings.Theme = PaletteModeManager.Office365Blue;
+
+            settings.Save();
+        }
+        
         private void klblPrintDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Print Dialog Example");
     }
 }
