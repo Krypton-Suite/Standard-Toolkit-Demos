@@ -43,7 +43,7 @@ namespace ContextualTabs
             // Let user change the color definition
             if (colorDialog.ShowDialog() == DialogResult.OK)
             {
-                // Update the displayed color feedback
+                // Update the Displayed color feedback
                 panelContextColor.StateCommon.Color1 = colorDialog.Color;
             }
         }
