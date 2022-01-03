@@ -327,22 +327,7 @@ namespace KryptonExplorer
         }
 
         private void kbtnOpenApplicationPath_Click(object sender, EventArgs e) => Process.Start(@"explorer.exe", @"\{Application.ExecutablePath}");
-
-        private void kbtnViewLatestReleaseNotes_Click(object sender, EventArgs e)
-        {
-            Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/Documents/Help/Changelog.md");
-        }
-
-        private void KbtnKryptonToolkitPackage_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://www.nuget.org/packages/KryptonToolkitSuite5472/");
-        }
-
-        private void kbtnViewLatestReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/Documents/Help/Changelog.md");
-
-
-        private void KbtnKryptonToolkitPackage_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/commits/alpha");
-
+        
         private void KbtnKryptonExtendedToolkitPackage_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Extended-Toolkit/commits/alpha");
 
         private void kllKryptonScrollBars_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Scrollbar Examples");
@@ -371,12 +356,7 @@ namespace KryptonExplorer
         }
 
         private void kllFontDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Font Dialog Example");
-
-        private void klblPrintDialog_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication("Krypton Print Dialog Example");
-        }
-
+        
         private void kcmbTheme_SelectedIndexChanged(object sender, EventArgs e)
         {
             settings.ThemeSelectedIndex = kcmbTheme.SelectedIndex;
@@ -396,5 +376,15 @@ namespace KryptonExplorer
         }
         
         private void klblPrintDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Print Dialog Example");
+
+        private void kbtnKryptonToolkitPackage_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"https://www.nuget.org/profiles/Krypton_Suite");
+        }
+
+        private void kbtnViewLatestReleaseNotes_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/Documents/Help/Changelog.md");
+        }
     }
 }
