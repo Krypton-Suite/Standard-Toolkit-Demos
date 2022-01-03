@@ -68,11 +68,11 @@ namespace RibbonControls
             richTextBox1.RichTextBox.Rtf = @"{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\colortbl ;\red0\green0\blue255;\red0\green128\blue0;\red255\green0\blue0;}{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\cf1\f0\fs20 RichTextBox\cf0  with \cf2 Multiline\cf0  set to \cf3 True\cf0 .\par}";
 
             // Hook into the button spec buttons
-            textBox3.ButtonSpecs[0].Click += new EventHandler(OnTextBox3Clear);
-            comboBox3.ButtonSpecs[0].Click += new EventHandler(OnComboBox3Clear);
-            dateTimePicker3.ButtonSpecs[0].Click += new EventHandler(OnDateTimePicker3Clear);
-            maskedTextBox3.ButtonSpecs[0].Click += new EventHandler(OnMaskedTextBox3Clear);
-            numericUpDown2.ButtonSpecs[0].Click += new EventHandler(OnNumericUpDown2Clear);
+            textBox3.ButtonSpecs[0].Click += OnTextBox3Clear;
+            comboBox3.ButtonSpecs[0].Click += OnComboBox3Clear;
+            dateTimePicker3.ButtonSpecs[0].Click += OnDateTimePicker3Clear;
+            maskedTextBox3.ButtonSpecs[0].Click += OnMaskedTextBox3Clear;
+            numericUpDown2.ButtonSpecs[0].Click += OnNumericUpDown2Clear;
             
             // Create and associate various controls
             custom9.CustomControl = CreateLinkLabel("LinkLabel Control");
