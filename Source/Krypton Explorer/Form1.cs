@@ -377,14 +377,12 @@ namespace KryptonExplorer
         
         private void klblPrintDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Print Dialog Example");
 
-        private void kbtnKryptonToolkitPackage_Click(object sender, EventArgs e)
-        {
-            Process.Start(@"https://www.nuget.org/profiles/Krypton_Suite");
-        }
+        private void kbtnKryptonToolkitPackage_Click(object sender, EventArgs e) => Process.Start(@"https://www.nuget.org/profiles/Krypton_Suite");
 
-        private void kbtnViewLatestReleaseNotes_Click(object sender, EventArgs e)
-        {
-            Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/Documents/Help/Changelog.md");
-        }
+        private void kbtnViewLatestReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/Documents/Help/Changelog.md");
+
+        private void kbtnViewLatestCanaryReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/canary/Documents/Help/Changelog.md");
+
+        private void kbtnViewLatestNightlyReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/nightly/Documents/Help/Changelog.md");
     }
 }
