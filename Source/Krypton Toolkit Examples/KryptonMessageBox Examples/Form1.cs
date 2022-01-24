@@ -138,8 +138,8 @@ namespace KryptonMessageBoxExamples
             }
             else
             {
-                MessageBox.Show(textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _mbIcon,
-                    MessageBoxDefaultButton.Button1, _options);
+                //? Why is this here? MessageBox.Show(textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _mbIcon, MessageBoxDefaultButton.Button1, _options);
+
                 KryptonMessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _mbIcon,
                     options: _options);
             }
