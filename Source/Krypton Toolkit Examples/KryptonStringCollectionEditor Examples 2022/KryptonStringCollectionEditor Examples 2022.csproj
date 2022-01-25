@@ -2,14 +2,19 @@
     <PropertyGroup>
         <TargetFrameworks>net48;net5.0-windows;net6.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
-        <RootNamespace>NavigatorPlayground</RootNamespace>
-        <AssemblyName>Navigator Playground</AssemblyName>
+        <RootNamespace>KryptonStringCollectionEditorExamples</RootNamespace>
+        <AssemblyName>Krypton String Collection Editor Examples</AssemblyName>
         <ApplicationIcon>Krypton.ico</ApplicationIcon>
         <UseApplicationTrust>false</UseApplicationTrust>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <UseWindowsForms>true</UseWindowsForms>
         <PlatformTarget>AnyCPU</PlatformTarget>
+        <NeutralLanguage>en</NeutralLanguage>
+        <LangVersion>preview</LangVersion>
     </PropertyGroup>
+    <ItemGroup>
+        <None Remove="Krypton.ico" />
+    </ItemGroup>
     <ItemGroup>
         <Content Include="Krypton.ico" />
     </ItemGroup>
@@ -17,13 +22,11 @@
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
                 <PackageReference Include="Krypton.Toolkit.Canary" Version="60.22.1.23-beta" />
-                <PackageReference Include="Krypton.Navigator.Canary" Version="60.22.1.23-beta" />
             </ItemGroup>
         </When>
         <Otherwise>
             <ItemGroup>
                 <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2022.csproj" />
-                <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Navigator\Krypton.Navigator 2022.csproj" />
             </ItemGroup>
         </Otherwise>
     </Choose>
