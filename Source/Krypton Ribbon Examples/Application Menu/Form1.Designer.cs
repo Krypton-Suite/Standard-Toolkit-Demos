@@ -104,7 +104,10 @@ namespace ApplicationMenu
             this.kryptonRibbon1.RibbonAppButton.AppButtonSpecs.AddRange(new Krypton.Ribbon.ButtonSpecAppMenu[] {
             this.buttonSpecAppMenu1,
             this.buttonSpecAppMenu2});
+<<<<<<< Updated upstream
             this.kryptonRibbon1.RibbonAppButton.IgnoreDoubleClickClose = true;
+=======
+>>>>>>> Stashed changes
             this.kryptonRibbon1.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.kryptonRibbonTab1});
             this.kryptonRibbon1.SelectedContext = null;
