@@ -25,26 +25,10 @@ namespace KryptonContextMenuExamples
         {
             comboBoxH.SelectedIndex = 2;
             comboBoxV.SelectedIndex = 1;
+            kryptonThemeComboBox1.Items.Remove(kryptonThemeComboBox1.Items.Count-1);    // Remove the "Custom" option
+            kryptonThemeComboBox1.SelectedIndex = 4;
         }
-
-        private void radio2010Blue_CheckedChanged(object sender, EventArgs e) => kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
-
-        private void radioBlue_CheckedChanged(object sender, EventArgs e) => kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
-
-        private void radioSilver_CheckedChanged(object sender, EventArgs e) => kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
-
-        private void radioOffice2003_CheckedChanged(object sender, EventArgs e) => kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalOffice2003;
-
-        private void radioSystem_CheckedChanged(object sender, EventArgs e) => kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
-
-        private void radioSparklePurple_CheckedChanged(object sender, EventArgs e) => kryptonManager.GlobalPaletteMode = PaletteModeManager.SparklePurple;
-
-        private void radioSparkleOrange_CheckedChanged(object sender, EventArgs e) => kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
-
-        private void radioSparkleBlue_CheckedChanged(object sender, EventArgs e) => kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
-
-        private void radioCustom_CheckedChanged(object sender, EventArgs e) => kryptonManager.GlobalPalette = kryptonPalette1;
-
+        
         private void buttonShowHeadingsClick(object sender, EventArgs e) => ShowMenu(buttonShowHeadings, kcmHeadings);
 
         private void buttonShowSeparatorsClick(object sender, EventArgs e) => ShowMenu(buttonShowSeparators, kcmSeparators);
