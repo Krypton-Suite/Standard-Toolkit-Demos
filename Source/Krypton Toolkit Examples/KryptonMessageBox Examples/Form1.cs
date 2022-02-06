@@ -23,7 +23,10 @@ namespace KryptonMessageBoxExamples
         private MessageBoxButtons _mbButtons = MessageBoxButtons.OKCancel;
         private MessageBoxOptions _options = 0;
 
-        public Form1() => InitializeComponent();
+        public Form1()
+        {
+            InitializeComponent();
+        }
 
         private void palette_CheckedChanged(object sender, EventArgs e)
         {
