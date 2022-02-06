@@ -489,8 +489,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BlurValues.BlurWhenFocusLost = true;
-            this.BlurValues.EnableBlur = true;
-            this.BlurValues.Radius = ((byte)(40));
             this.ClientSize = new System.Drawing.Size(557, 473);
             this.Controls.Add(this.chkRtlReading);
             this.Controls.Add(this.chkRightAlign);

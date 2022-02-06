@@ -21,7 +21,9 @@ namespace KryptonStringCollectionEditorExamples
 
         private void kbtnShow_Click(object sender, EventArgs e)
         {
-            KryptonStringCollectionEditor collectionEditor = new KryptonStringCollectionEditor();
+            KryptonStringCollectionEditor collectionEditor = new KryptonStringCollectionEditor(ktxtHeaderText.Text,
+                ktxtCancelButtonText.Text, ktxtCueText.Text, ktxOKButtonText.Text, kcbUseRichTextBox.Checked,
+                ktxtHelpMessageBoxTitleText.Text, ktxtHelpMessageBoxText.Text);
 
             if (collectionEditor.ShowDialog() == DialogResult.OK)
             {
