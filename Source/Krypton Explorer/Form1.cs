@@ -25,7 +25,7 @@ namespace KryptonExplorer
     {
         #region Variables
 
-        private Version _currentVersion = new Version(6, int.Parse(DateTime.Now.ToString("yyMM")), DateTime.Now.DayOfYear, 0);
+        private Version _currentVersion = new Version(60, int.Parse(DateTime.Now.ToString("yy")), int.Parse(DateTime.Now.Month.ToString()), DateTime.Now.DayOfYear);
 
         Settings settings = new Settings();
         #endregion
@@ -38,6 +38,7 @@ namespace KryptonExplorer
             kryptonNavigatorToolkit.SelectedIndex = 0;
         }
 
+        #region Links
         private void linkKryptonBorderEdge_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Border Edge Examples");
 
         private void linkKryptonButton_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Button Examples");
@@ -305,10 +306,10 @@ namespace KryptonExplorer
 
         private void linkDockingCustomized_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Docking Customized");
 
-        private void linkPaletteDesigner_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Palette Designer");
+        private void linkPaletteDesigner_LinkClicked(object sender, EventArgs e) => LaunchPaletteDesignerApplication();
 
-        private void linkPaletteUpgradeTool_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Palette Upgrade Tool.exe");
-
+        private void linkPaletteUpgradeTool_LinkClicked(object sender, EventArgs e) => LaunchPaletteUpgradeToolApplication();
+        #endregion
 
         private void kryptonButtonClose_Click(object sender, EventArgs e) => Close();
 
@@ -348,6 +349,58 @@ namespace KryptonExplorer
             catch (Exception ex)
             {
                 KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Cursor = Cursors.Default;
+            }
+        }
+
+        private void LaunchPaletteDesignerApplication()
+        {
+            try
+            {
+                Cursor = Cursors.AppStarting;
+
+                if (File.Exists(@".\Palette Designer.exe"))
+                {
+                    LaunchApplication(@"Palette Designer");
+                }
+                else
+                {
+                    KryptonMessageBox.Show(
+                        "The Palette Designer is not currently installed. Please download the latest installation package from:\nhttps://github.com/Krypton-Suite/Theme-Palettes/releases", @"Application Not Installed", MessageBoxButtons.OK, KryptonMessageBoxIcon.INFORMATION);
+                }
+            }
+            catch (Exception e)
+            {
+                KryptonMessageBox.Show(this, e.Message, @"Explorer", MessageBoxButtons.OK, KryptonMessageBoxIcon.ERROR);
+            }
+            finally
+            {
+                Cursor = Cursors.Default;
+            }
+        }
+
+        private void LaunchPaletteUpgradeToolApplication()
+        {
+            try
+            {
+                Cursor = Cursors.AppStarting;
+
+                if (File.Exists(@".\Palette Upgrade Tool.exe"))
+                {
+                    LaunchApplication(@"Palette Upgrade Tool");
+                }
+                else
+                {
+                    KryptonMessageBox.Show(
+                        "The Palette Upgrade Tool is not currently installed. Please download the latest installation package from:\nhttps://github.com/Krypton-Suite/Theme-Palettes/releases", @"Application Not Installed", MessageBoxButtons.OK, KryptonMessageBoxIcon.INFORMATION);
+                }
+            }
+            catch (Exception e)
+            {
+                KryptonMessageBox.Show(this, e.Message, @"Explorer", MessageBoxButtons.OK, KryptonMessageBoxIcon.ERROR);
             }
             finally
             {
