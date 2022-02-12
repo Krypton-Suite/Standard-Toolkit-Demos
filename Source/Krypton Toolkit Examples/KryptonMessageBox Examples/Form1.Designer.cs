@@ -495,7 +495,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BlurValues.BlurWhenFocusLost = true;
-            this.BlurValues.Opacity = 80;
             this.ClientSize = new System.Drawing.Size(557, 473);
             this.Controls.Add(this.chkRtlReading);
             this.Controls.Add(this.chkRightAlign);
@@ -512,8 +511,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
+            this.Opacity = 0.8D;
             this.Text = "KryptonMessageBox Examples";
-            this.UseDropShadow = true;
             ((System.ComponentModel.ISupportInitialize)(this.groupBoxIcon.Panel)).EndInit();
             this.groupBoxIcon.Panel.ResumeLayout(false);
             this.groupBoxIcon.Panel.PerformLayout();
