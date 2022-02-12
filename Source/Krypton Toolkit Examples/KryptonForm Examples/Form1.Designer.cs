@@ -117,7 +117,7 @@ namespace KryptonFormExamples
             this.menu3ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(629, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(629, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -128,7 +128,7 @@ namespace KryptonFormExamples
             this.twoToolStripMenuItem,
             this.threeToolStripMenuItem});
             this.menu1ToolStripMenuItem.Name = "menu1ToolStripMenuItem";
-            this.menu1ToolStripMenuItem.Size = new System.Drawing.Size(68, 34);
+            this.menu1ToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.menu1ToolStripMenuItem.Text = "Menu1";
             // 
             // oneToolStripMenuItem
@@ -155,7 +155,7 @@ namespace KryptonFormExamples
             this.fourToolStripMenuItem,
             this.fiveToolStripMenuItem});
             this.menu2ToolStripMenuItem.Name = "menu2ToolStripMenuItem";
-            this.menu2ToolStripMenuItem.Size = new System.Drawing.Size(68, 34);
+            this.menu2ToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.menu2ToolStripMenuItem.Text = "Menu2";
             // 
             // fourToolStripMenuItem
@@ -177,7 +177,7 @@ namespace KryptonFormExamples
             this.sevenToolStripMenuItem,
             this.eightToolStripMenuItem});
             this.menu3ToolStripMenuItem.Name = "menu3ToolStripMenuItem";
-            this.menu3ToolStripMenuItem.Size = new System.Drawing.Size(68, 34);
+            this.menu3ToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.menu3ToolStripMenuItem.Text = "Menu3";
             // 
             // sixToolStripMenuItem
@@ -216,7 +216,7 @@ namespace KryptonFormExamples
             this.helpToolStripButton});
             this.toolStrip1.Location = new System.Drawing.Point(4, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(257, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(257, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -226,7 +226,7 @@ namespace KryptonFormExamples
             this.newToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripButton.Image")));
             this.newToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripButton.Name = "newToolStripButton";
-            this.newToolStripButton.Size = new System.Drawing.Size(29, 28);
+            this.newToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.newToolStripButton.Text = "&New";
             // 
             // openToolStripButton
@@ -235,7 +235,7 @@ namespace KryptonFormExamples
             this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
             this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripButton.Name = "openToolStripButton";
-            this.openToolStripButton.Size = new System.Drawing.Size(29, 36);
+            this.openToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.openToolStripButton.Text = "&Open";
             // 
             // saveToolStripButton
@@ -244,7 +244,7 @@ namespace KryptonFormExamples
             this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
             this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(29, 36);
+            this.saveToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.saveToolStripButton.Text = "&Save";
             // 
             // printToolStripButton
@@ -253,13 +253,13 @@ namespace KryptonFormExamples
             this.printToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripButton.Image")));
             this.printToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripButton.Name = "printToolStripButton";
-            this.printToolStripButton.Size = new System.Drawing.Size(29, 36);
+            this.printToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.printToolStripButton.Text = "&Print";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 39);
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // cutToolStripButton
             // 
@@ -267,7 +267,7 @@ namespace KryptonFormExamples
             this.cutToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripButton.Image")));
             this.cutToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripButton.Name = "cutToolStripButton";
-            this.cutToolStripButton.Size = new System.Drawing.Size(29, 36);
+            this.cutToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.cutToolStripButton.Text = "C&ut";
             // 
             // copyToolStripButton
@@ -276,7 +276,7 @@ namespace KryptonFormExamples
             this.copyToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripButton.Image")));
             this.copyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripButton.Name = "copyToolStripButton";
-            this.copyToolStripButton.Size = new System.Drawing.Size(29, 36);
+            this.copyToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.copyToolStripButton.Text = "&Copy";
             // 
             // pasteToolStripButton
@@ -285,13 +285,13 @@ namespace KryptonFormExamples
             this.pasteToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripButton.Image")));
             this.pasteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripButton.Name = "pasteToolStripButton";
-            this.pasteToolStripButton.Size = new System.Drawing.Size(29, 36);
+            this.pasteToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.pasteToolStripButton.Text = "&Paste";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 39);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // helpToolStripButton
             // 
@@ -299,7 +299,7 @@ namespace KryptonFormExamples
             this.helpToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripButton.Image")));
             this.helpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.helpToolStripButton.Name = "helpToolStripButton";
-            this.helpToolStripButton.Size = new System.Drawing.Size(29, 36);
+            this.helpToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.helpToolStripButton.Text = "He&lp";
             // 
             // statusStrip1
@@ -330,11 +330,11 @@ namespace KryptonFormExamples
             this.toolStripContainer1.ContentPanel.Controls.Add(this.kryptonHeaderGroup2);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.kryptonHeaderGroup1);
             this.toolStripContainer1.ContentPanel.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(629, 476);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(629, 482);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 30);
+            this.toolStripContainer1.Location = new System.Drawing.Point(0, 28);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(629, 507);
+            this.toolStripContainer1.Size = new System.Drawing.Size(629, 509);
             this.toolStripContainer1.TabIndex = 3;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -354,7 +354,7 @@ namespace KryptonFormExamples
             // kryptonHeaderGroup3.Panel
             // 
             this.kryptonHeaderGroup3.Panel.Controls.Add(this.propertyGrid);
-            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(218, 461);
+            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(218, 467);
             this.kryptonHeaderGroup3.TabIndex = 2;
             this.kryptonHeaderGroup3.ValuesPrimary.Heading = "Form Properties";
             this.kryptonHeaderGroup3.ValuesPrimary.Image = null;
@@ -365,7 +365,7 @@ namespace KryptonFormExamples
             this.propertyGrid.HelpVisible = false;
             this.propertyGrid.Location = new System.Drawing.Point(0, 0);
             this.propertyGrid.Name = "propertyGrid";
-            this.propertyGrid.Size = new System.Drawing.Size(216, 423);
+            this.propertyGrid.Size = new System.Drawing.Size(216, 429);
             this.propertyGrid.TabIndex = 0;
             this.propertyGrid.ToolbarVisible = false;
             // 
@@ -386,7 +386,7 @@ namespace KryptonFormExamples
             this.kryptonHeaderGroup2.Panel.Controls.Add(this.kryptonSizeableToolWindow);
             this.kryptonHeaderGroup2.Panel.Controls.Add(this.kryptonFixedToolWindow);
             this.kryptonHeaderGroup2.Panel.Controls.Add(this.kryptonSizable);
-            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(191, 460);
+            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(191, 466);
             this.kryptonHeaderGroup2.TabIndex = 1;
             this.kryptonHeaderGroup2.ValuesPrimary.Heading = "Form Border Styles";
             this.kryptonHeaderGroup2.ValuesPrimary.Image = null;
@@ -476,7 +476,7 @@ namespace KryptonFormExamples
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.kryptonOffice2007Black);
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.kryptonOffice2007Silver);
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.kryptonOffice2007Blue);
-            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(166, 460);
+            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(166, 466);
             this.kryptonHeaderGroup1.TabIndex = 0;
             this.kryptonHeaderGroup1.ValuesPrimary.Heading = "Palettes";
             this.kryptonHeaderGroup1.ValuesPrimary.Image = null;
@@ -612,33 +612,21 @@ namespace KryptonFormExamples
             // buttonSpecAny2
             // 
             this.buttonSpecAny2.Image = global::KryptonFormExamples.Properties.Resources.RedCircle;
-            this.buttonSpecAny2.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
-            this.buttonSpecAny2.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
-            this.buttonSpecAny2.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Generic;
             this.buttonSpecAny2.UniqueName = "f0eada412ffc405e8af39ebb85915773";
             // 
             // buttonSpecAny3
             // 
             this.buttonSpecAny3.Image = global::KryptonFormExamples.Properties.Resources.Arrow;
-            this.buttonSpecAny3.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
-            this.buttonSpecAny3.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
-            this.buttonSpecAny3.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Generic;
             this.buttonSpecAny3.UniqueName = "612a47f975b24129a388ae5824f0fa45";
             // 
             // buttonSpecAny4
             // 
             this.buttonSpecAny4.Image = global::KryptonFormExamples.Properties.Resources.Question;
-            this.buttonSpecAny4.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
-            this.buttonSpecAny4.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
-            this.buttonSpecAny4.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Generic;
             this.buttonSpecAny4.UniqueName = "d95175649cad42478f6bdad7a527fe81";
             // 
             // buttonSpecAny1
             // 
             this.buttonSpecAny1.Image = global::KryptonFormExamples.Properties.Resources.AppMenuMemoStyle;
-            this.buttonSpecAny1.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
-            this.buttonSpecAny1.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
-            this.buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Generic;
             this.buttonSpecAny1.UniqueName = "3ca9db8764264fbeb2b9756a40409b9a";
             // 
             // Form1
@@ -646,10 +634,10 @@ namespace KryptonFormExamples
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
-            ((Krypton.Toolkit.ButtonSpecAny)(this.buttonSpecAny2)),
-            ((Krypton.Toolkit.ButtonSpecAny)(this.buttonSpecAny3)),
-            ((Krypton.Toolkit.ButtonSpecAny)(this.buttonSpecAny4)),
-            ((Krypton.Toolkit.ButtonSpecAny)(this.buttonSpecAny1))});
+            this.buttonSpecAny2,
+            this.buttonSpecAny3,
+            this.buttonSpecAny4,
+            this.buttonSpecAny1});
             this.ClientSize = new System.Drawing.Size(629, 563);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.statusStrip1);
