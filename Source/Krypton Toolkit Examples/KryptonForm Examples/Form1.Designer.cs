@@ -85,6 +85,7 @@ namespace KryptonFormExamples
             this.buttonSpecAny3 = new Krypton.Toolkit.ButtonSpecAny();
             this.buttonSpecAny4 = new Krypton.Toolkit.ButtonSpecAny();
             this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
+            this.leftButtonSpec = new Krypton.Toolkit.ButtonSpecAny();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -612,22 +613,44 @@ namespace KryptonFormExamples
             // buttonSpecAny2
             // 
             this.buttonSpecAny2.Image = global::KryptonFormExamples.Properties.Resources.RedCircle;
+            this.buttonSpecAny2.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
+            this.buttonSpecAny2.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
+            this.buttonSpecAny2.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Generic;
             this.buttonSpecAny2.UniqueName = "f0eada412ffc405e8af39ebb85915773";
             // 
             // buttonSpecAny3
             // 
             this.buttonSpecAny3.Image = global::KryptonFormExamples.Properties.Resources.Arrow;
+            this.buttonSpecAny3.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
+            this.buttonSpecAny3.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
+            this.buttonSpecAny3.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Generic;
             this.buttonSpecAny3.UniqueName = "612a47f975b24129a388ae5824f0fa45";
             // 
             // buttonSpecAny4
             // 
             this.buttonSpecAny4.Image = global::KryptonFormExamples.Properties.Resources.Question;
+            this.buttonSpecAny4.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
+            this.buttonSpecAny4.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
+            this.buttonSpecAny4.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Generic;
             this.buttonSpecAny4.UniqueName = "d95175649cad42478f6bdad7a527fe81";
             // 
             // buttonSpecAny1
             // 
             this.buttonSpecAny1.Image = global::KryptonFormExamples.Properties.Resources.AppMenuMemoStyle;
+            this.buttonSpecAny1.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
+            this.buttonSpecAny1.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
+            this.buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Generic;
             this.buttonSpecAny1.UniqueName = "3ca9db8764264fbeb2b9756a40409b9a";
+            // 
+            // leftButtonSpec
+            // 
+            this.leftButtonSpec.Edge = Krypton.Toolkit.PaletteRelativeEdgeAlign.Near;
+            this.leftButtonSpec.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
+            this.leftButtonSpec.Text = "LeftBS";
+            this.leftButtonSpec.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
+            this.leftButtonSpec.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Generic;
+            this.leftButtonSpec.UniqueName = "fbf70c75d3c2453297d120b55758c104";
+            this.leftButtonSpec.Visible = false;
             // 
             // Form1
             // 
@@ -637,7 +660,8 @@ namespace KryptonFormExamples
             this.buttonSpecAny2,
             this.buttonSpecAny3,
             this.buttonSpecAny4,
-            this.buttonSpecAny1});
+            this.buttonSpecAny1,
+            this.leftButtonSpec});
             this.ClientSize = new System.Drawing.Size(629, 563);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.statusStrip1);
@@ -740,6 +764,7 @@ namespace KryptonFormExamples
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny2;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny3;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny4;
+        private Krypton.Toolkit.ButtonSpecAny leftButtonSpec;
     }
 }
 
