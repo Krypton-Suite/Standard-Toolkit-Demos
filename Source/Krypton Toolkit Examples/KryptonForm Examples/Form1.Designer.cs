@@ -118,7 +118,7 @@ namespace KryptonFormExamples
             this.menu3ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(629, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(629, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -129,7 +129,7 @@ namespace KryptonFormExamples
             this.twoToolStripMenuItem,
             this.threeToolStripMenuItem});
             this.menu1ToolStripMenuItem.Name = "menu1ToolStripMenuItem";
-            this.menu1ToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.menu1ToolStripMenuItem.Size = new System.Drawing.Size(68, 26);
             this.menu1ToolStripMenuItem.Text = "Menu1";
             // 
             // oneToolStripMenuItem
@@ -156,7 +156,7 @@ namespace KryptonFormExamples
             this.fourToolStripMenuItem,
             this.fiveToolStripMenuItem});
             this.menu2ToolStripMenuItem.Name = "menu2ToolStripMenuItem";
-            this.menu2ToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.menu2ToolStripMenuItem.Size = new System.Drawing.Size(68, 26);
             this.menu2ToolStripMenuItem.Text = "Menu2";
             // 
             // fourToolStripMenuItem
@@ -178,7 +178,7 @@ namespace KryptonFormExamples
             this.sevenToolStripMenuItem,
             this.eightToolStripMenuItem});
             this.menu3ToolStripMenuItem.Name = "menu3ToolStripMenuItem";
-            this.menu3ToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.menu3ToolStripMenuItem.Size = new System.Drawing.Size(68, 26);
             this.menu3ToolStripMenuItem.Text = "Menu3";
             // 
             // sixToolStripMenuItem
@@ -331,11 +331,11 @@ namespace KryptonFormExamples
             this.toolStripContainer1.ContentPanel.Controls.Add(this.kryptonHeaderGroup2);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.kryptonHeaderGroup1);
             this.toolStripContainer1.ContentPanel.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(629, 482);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(629, 480);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 28);
+            this.toolStripContainer1.Location = new System.Drawing.Point(0, 30);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(629, 509);
+            this.toolStripContainer1.Size = new System.Drawing.Size(629, 507);
             this.toolStripContainer1.TabIndex = 3;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -355,7 +355,7 @@ namespace KryptonFormExamples
             // kryptonHeaderGroup3.Panel
             // 
             this.kryptonHeaderGroup3.Panel.Controls.Add(this.propertyGrid);
-            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(218, 467);
+            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(218, 465);
             this.kryptonHeaderGroup3.TabIndex = 2;
             this.kryptonHeaderGroup3.ValuesPrimary.Heading = "Form Properties";
             this.kryptonHeaderGroup3.ValuesPrimary.Image = null;
@@ -366,7 +366,7 @@ namespace KryptonFormExamples
             this.propertyGrid.HelpVisible = false;
             this.propertyGrid.Location = new System.Drawing.Point(0, 0);
             this.propertyGrid.Name = "propertyGrid";
-            this.propertyGrid.Size = new System.Drawing.Size(216, 429);
+            this.propertyGrid.Size = new System.Drawing.Size(216, 427);
             this.propertyGrid.TabIndex = 0;
             this.propertyGrid.ToolbarVisible = false;
             // 
@@ -387,7 +387,7 @@ namespace KryptonFormExamples
             this.kryptonHeaderGroup2.Panel.Controls.Add(this.kryptonSizeableToolWindow);
             this.kryptonHeaderGroup2.Panel.Controls.Add(this.kryptonFixedToolWindow);
             this.kryptonHeaderGroup2.Panel.Controls.Add(this.kryptonSizable);
-            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(191, 466);
+            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(191, 464);
             this.kryptonHeaderGroup2.TabIndex = 1;
             this.kryptonHeaderGroup2.ValuesPrimary.Heading = "Form Border Styles";
             this.kryptonHeaderGroup2.ValuesPrimary.Image = null;
@@ -477,7 +477,7 @@ namespace KryptonFormExamples
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.kryptonOffice2007Black);
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.kryptonOffice2007Silver);
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.kryptonOffice2007Blue);
-            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(166, 466);
+            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(166, 464);
             this.kryptonHeaderGroup1.TabIndex = 0;
             this.kryptonHeaderGroup1.ValuesPrimary.Heading = "Palettes";
             this.kryptonHeaderGroup1.ValuesPrimary.Image = null;
@@ -645,12 +645,11 @@ namespace KryptonFormExamples
             // leftButtonSpec
             // 
             this.leftButtonSpec.Edge = Krypton.Toolkit.PaletteRelativeEdgeAlign.Near;
-            this.leftButtonSpec.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
+            this.leftButtonSpec.Style = Krypton.Toolkit.PaletteButtonStyle.NavigatorMini;
             this.leftButtonSpec.Text = "LeftBS";
             this.leftButtonSpec.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
-            this.leftButtonSpec.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Generic;
+            this.leftButtonSpec.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
             this.leftButtonSpec.UniqueName = "fbf70c75d3c2453297d120b55758c104";
-            this.leftButtonSpec.Visible = false;
             // 
             // Form1
             // 
