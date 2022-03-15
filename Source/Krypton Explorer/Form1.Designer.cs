@@ -1710,6 +1710,7 @@
             this.kryptonPageApplicatons.TextTitle = "";
             this.kryptonPageApplicatons.ToolTipTitle = "Page ToolTip";
             this.kryptonPageApplicatons.UniqueName = "F1D9B8A768F74629F1D9B8A768F74629";
+            this.kryptonPageApplicatons.Visible = false;
             // 
             // linkPaletteUpgradeTool
             // 
