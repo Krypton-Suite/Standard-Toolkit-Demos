@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Alpha");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Up", new System.Windows.Forms.TreeNode[] {
             treeNode1});
@@ -214,8 +215,8 @@
             this.kryptonBreadCrumbItem142 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonBreadCrumbItem143 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonBreadCrumb1 = new Krypton.Toolkit.KryptonBreadCrumb();
-            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager();
-            this.kryptonPaletteOffice2007Blue = new Krypton.Toolkit.KryptonPalette();
+            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonPaletteOffice2007Blue = new Krypton.Toolkit.KryptonPalette(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.kryptonBreadCrumb3 = new Krypton.Toolkit.KryptonBreadCrumb();
             this.buttonSpecAny2 = new Krypton.Toolkit.ButtonSpecAny();
@@ -1003,7 +1004,6 @@
             // kryptonBreadCrumb1
             // 
             this.kryptonBreadCrumb1.AutoSize = false;
-            this.kryptonBreadCrumb1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonBreadCrumb1.Location = new System.Drawing.Point(20, 27);
             this.kryptonBreadCrumb1.Name = "kryptonBreadCrumb1";
             this.kryptonBreadCrumb1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
@@ -1024,10 +1024,6 @@
             this.kryptonManager1.GlobalPalette = this.kryptonPaletteOffice2007Blue;
             this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Custom;
             // 
-            // kryptonPaletteOffice2007Blue
-            // 
-            this.kryptonPaletteOffice2007Blue.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.kryptonBreadCrumb3);
@@ -1043,7 +1039,6 @@
             // kryptonBreadCrumb3
             // 
             this.kryptonBreadCrumb3.AutoSize = false;
-            this.kryptonBreadCrumb3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonBreadCrumb3.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecAny2});
             this.kryptonBreadCrumb3.Location = new System.Drawing.Point(20, 101);
@@ -1087,29 +1082,22 @@
             // 
             // menuSpider
             // 
-            this.menuSpider.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.menuSpider.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.menuSpider.Text = "Spider";
             this.menuSpider.Click += new System.EventHandler(this.menuSpider_Click);
             // 
             // menuKangeroo
             // 
-            this.menuKangeroo.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.menuKangeroo.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.menuKangeroo.Text = "Kangeroo";
             this.menuKangeroo.Click += new System.EventHandler(this.menuKangeroo_Click);
             // 
             // menuFern
             // 
-            this.menuFern.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.menuFern.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.menuFern.Text = "Fern";
             this.menuFern.Click += new System.EventHandler(this.menuFern_Click);
             // 
             // kryptonBreadCrumb2
             // 
             this.kryptonBreadCrumb2.AutoSize = false;
-            this.kryptonBreadCrumb2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonBreadCrumb2.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecAny1});
             this.kryptonBreadCrumb2.Location = new System.Drawing.Point(20, 64);
@@ -1179,7 +1167,6 @@
             // kryptonBreadCrumb4
             // 
             this.kryptonBreadCrumb4.AutoSize = false;
-            this.kryptonBreadCrumb4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonBreadCrumb4.Location = new System.Drawing.Point(20, 38);
             this.kryptonBreadCrumb4.Name = "kryptonBreadCrumb4";
             // 
@@ -1257,7 +1244,7 @@
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
-            this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
