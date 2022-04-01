@@ -6,7 +6,7 @@
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>{52644353-9421-4c9a-8333-6bcc36b7587b}</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>Samples.v6.2112.364-beta.Net50</OutputName>
+    <OutputName>Samples.v65.22.4.91-beta.Net50</OutputName>
     <OutputType>Package</OutputType>
     <Name>WixInstaller.net48</Name>
   </PropertyGroup>
