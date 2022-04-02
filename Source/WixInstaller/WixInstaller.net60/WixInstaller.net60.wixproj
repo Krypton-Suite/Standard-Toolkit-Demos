@@ -6,7 +6,7 @@
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>55a517f1-9be9-45dd-8676-e363b217c907</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>Samples.v6.2112.364-beta.Net60</OutputName>
+    <OutputName>Samples.v65.22.4.91-beta.Net60</OutputName>
     <OutputType>Package</OutputType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
