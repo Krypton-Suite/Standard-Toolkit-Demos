@@ -13,9 +13,11 @@
 using System;
 using System.Diagnostics;
 using System.IO;
+using System.Reflection;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
+using Krypton.Toolkit.Tooling;
 
 using KryptonExplorer.Properties;
 
@@ -323,6 +325,8 @@ namespace KryptonExplorer
             kcmbTheme.SelectedIndex = settings.ThemeSelectedIndex;
             
             kcmbTheme.Text = ThemeManager.ReturnPaletteModeManagerAsString(settings.Theme);
+
+            tsslBuildDate.Text = $"Build Date: {GeneralToolkitUtilities.GetLinkerTimestampUtc(Assembly.GetExecutingAssembly())} ";
 
             tslVersion.Text = $"Krypton Explorer Version: { _currentVersion } - Toolkit Version: { fvi.FileVersion }";
         }
