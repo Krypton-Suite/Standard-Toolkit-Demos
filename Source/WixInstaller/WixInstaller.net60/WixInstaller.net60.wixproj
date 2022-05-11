@@ -25,6 +25,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="License.rtf" />
+    <Content Include="WixInstaller.net60.wax" />
   </ItemGroup>
   <ItemGroup>
     <WixExtension Include="WixUtilExtension">

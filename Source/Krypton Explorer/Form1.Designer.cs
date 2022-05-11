@@ -185,6 +185,7 @@
             this.ss = new System.Windows.Forms.StatusStrip();
             this.tslVersion = new System.Windows.Forms.ToolStripStatusLabel();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
+            this.tsslBuildDate = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelFill)).BeginInit();
             this.kryptonPanelFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator)).BeginInit();
@@ -1990,6 +1991,7 @@
             this.ss.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ss.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.ss.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsslBuildDate,
             this.tslVersion});
             this.ss.Location = new System.Drawing.Point(0, 43);
             this.ss.Name = "ss";
@@ -2002,7 +2004,7 @@
             // tslVersion
             // 
             this.tslVersion.Name = "tslVersion";
-            this.tslVersion.Size = new System.Drawing.Size(688, 17);
+            this.tslVersion.Size = new System.Drawing.Size(607, 17);
             this.tslVersion.Spring = true;
             this.tslVersion.Text = "Version: {0}";
             this.tslVersion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -2010,6 +2012,12 @@
             // kryptonManager1
             // 
             this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office365Black;
+            // 
+            // tsslBuildDate
+            // 
+            this.tsslBuildDate.Name = "tsslBuildDate";
+            this.tsslBuildDate.Size = new System.Drawing.Size(81, 17);
+            this.tsslBuildDate.Text = "Build Date: {0}";
             // 
             // Form1
             // 
@@ -2239,6 +2247,7 @@
         private Krypton.Toolkit.KryptonButton kbtnViewLatestReleaseNotes;
         private Krypton.Toolkit.KryptonButton kbtnViewLatestNightlyReleaseNotes;
         private Krypton.Toolkit.KryptonButton kbtnViewLatestCanaryReleaseNotes;
+        private System.Windows.Forms.ToolStripStatusLabel tsslBuildDate;
     }
 }
 
