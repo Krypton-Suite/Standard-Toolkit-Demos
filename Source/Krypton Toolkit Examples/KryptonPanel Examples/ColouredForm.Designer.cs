@@ -31,6 +31,14 @@ namespace KryptonGroupExamples
         {
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel6 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonPanel7 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonPanel8 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonPanel9 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonPanel10 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel9 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel7 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
@@ -40,26 +48,18 @@ namespace KryptonGroupExamples
             this.kryptonPanel3 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonPanel7 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonPanel8 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonPanel9 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonPanel10 = new Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel6)).BeginInit();
             this.kryptonPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel1
@@ -94,13 +94,80 @@ namespace KryptonGroupExamples
             this.kryptonPanel6.Name = "kryptonPanel6";
             this.kryptonPanel6.Size = new System.Drawing.Size(1011, 253);
             this.kryptonPanel6.StateCommon.Color1 = System.Drawing.Color.Black;
-            this.kryptonPanel6.StateCommon.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel6.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kryptonPanel6.StateCommon.Draw = Krypton.Toolkit.InheritBool.True;
-            this.kryptonPanel6.StateCommon.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
-            this.kryptonPanel6.StateCommon.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel6.StateCommon.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPanel6.TabIndex = 17;
+            // 
+            // kryptonLabel3
+            // 
+            this.kryptonLabel3.Location = new System.Drawing.Point(785, 26);
+            this.kryptonLabel3.Name = "kryptonLabel3";
+            this.kryptonLabel3.Size = new System.Drawing.Size(66, 24);
+            this.kryptonLabel3.TabIndex = 19;
+            this.kryptonLabel3.Values.Text = "Enabled";
+            // 
+            // kryptonPanel7
+            // 
+            this.kryptonPanel7.Location = new System.Drawing.Point(785, 56);
+            this.kryptonPanel7.Name = "kryptonPanel7";
+            this.kryptonPanel7.Size = new System.Drawing.Size(193, 171);
+            this.kryptonPanel7.StateCommon.Color1 = System.Drawing.Color.Black;
+            this.kryptonPanel7.StateCommon.Draw = Krypton.Toolkit.InheritBool.True;
+            this.kryptonPanel7.StateCommon.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptonPanel7.TabIndex = 18;
+            // 
+            // kryptonLabel4
+            // 
+            this.kryptonLabel4.Location = new System.Drawing.Point(561, 26);
+            this.kryptonLabel4.Name = "kryptonLabel4";
+            this.kryptonLabel4.Size = new System.Drawing.Size(70, 24);
+            this.kryptonLabel4.TabIndex = 17;
+            this.kryptonLabel4.Values.Text = "Disabled";
+            // 
+            // kryptonPanel8
+            // 
+            this.kryptonPanel8.Enabled = false;
+            this.kryptonPanel8.Location = new System.Drawing.Point(561, 56);
+            this.kryptonPanel8.Name = "kryptonPanel8";
+            this.kryptonPanel8.Size = new System.Drawing.Size(193, 171);
+            this.kryptonPanel8.StateCommon.Color1 = System.Drawing.Color.Black;
+            this.kryptonPanel8.StateCommon.Draw = Krypton.Toolkit.InheritBool.True;
+            this.kryptonPanel8.StateCommon.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptonPanel8.TabIndex = 16;
+            // 
+            // kryptonLabel5
+            // 
+            this.kryptonLabel5.Location = new System.Drawing.Point(257, 26);
+            this.kryptonLabel5.Name = "kryptonLabel5";
+            this.kryptonLabel5.Size = new System.Drawing.Size(66, 24);
+            this.kryptonLabel5.TabIndex = 15;
+            this.kryptonLabel5.Values.Text = "Enabled";
+            // 
+            // kryptonPanel9
+            // 
+            this.kryptonPanel9.Location = new System.Drawing.Point(257, 56);
+            this.kryptonPanel9.Name = "kryptonPanel9";
+            this.kryptonPanel9.Size = new System.Drawing.Size(193, 171);
+            this.kryptonPanel9.StateCommon.Color1 = System.Drawing.Color.Black;
+            this.kryptonPanel9.StateCommon.Draw = Krypton.Toolkit.InheritBool.True;
+            this.kryptonPanel9.TabIndex = 14;
+            // 
+            // kryptonLabel6
+            // 
+            this.kryptonLabel6.Location = new System.Drawing.Point(33, 26);
+            this.kryptonLabel6.Name = "kryptonLabel6";
+            this.kryptonLabel6.Size = new System.Drawing.Size(70, 24);
+            this.kryptonLabel6.TabIndex = 13;
+            this.kryptonLabel6.Values.Text = "Disabled";
+            // 
+            // kryptonPanel10
+            // 
+            this.kryptonPanel10.Enabled = false;
+            this.kryptonPanel10.Location = new System.Drawing.Point(33, 56);
+            this.kryptonPanel10.Name = "kryptonPanel10";
+            this.kryptonPanel10.Size = new System.Drawing.Size(193, 171);
+            this.kryptonPanel10.StateCommon.Color1 = System.Drawing.Color.Black;
+            this.kryptonPanel10.StateCommon.Draw = Krypton.Toolkit.InheritBool.True;
+            this.kryptonPanel10.TabIndex = 12;
             // 
             // kryptonLabel9
             // 
@@ -124,12 +191,8 @@ namespace KryptonGroupExamples
             this.kryptonPanel4.Name = "kryptonPanel4";
             this.kryptonPanel4.Size = new System.Drawing.Size(193, 171);
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.Black;
-            this.kryptonPanel4.StateCommon.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel4.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kryptonPanel4.StateCommon.Draw = Krypton.Toolkit.InheritBool.True;
             this.kryptonPanel4.StateCommon.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonPanel4.StateCommon.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel4.StateCommon.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPanel4.TabIndex = 10;
             // 
             // kryptonLabel8
@@ -147,12 +210,8 @@ namespace KryptonGroupExamples
             this.kryptonPanel5.Name = "kryptonPanel5";
             this.kryptonPanel5.Size = new System.Drawing.Size(193, 171);
             this.kryptonPanel5.StateCommon.Color1 = System.Drawing.Color.Black;
-            this.kryptonPanel5.StateCommon.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel5.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kryptonPanel5.StateCommon.Draw = Krypton.Toolkit.InheritBool.True;
             this.kryptonPanel5.StateCommon.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonPanel5.StateCommon.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel5.StateCommon.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPanel5.TabIndex = 8;
             // 
             // kryptonLabel2
@@ -169,12 +228,7 @@ namespace KryptonGroupExamples
             this.kryptonPanel3.Name = "kryptonPanel3";
             this.kryptonPanel3.Size = new System.Drawing.Size(193, 171);
             this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.Black;
-            this.kryptonPanel3.StateCommon.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel3.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kryptonPanel3.StateCommon.Draw = Krypton.Toolkit.InheritBool.True;
-            this.kryptonPanel3.StateCommon.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
-            this.kryptonPanel3.StateCommon.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel3.StateCommon.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPanel3.TabIndex = 2;
             // 
             // kryptonLabel1
@@ -192,108 +246,13 @@ namespace KryptonGroupExamples
             this.kryptonPanel2.Name = "kryptonPanel2";
             this.kryptonPanel2.Size = new System.Drawing.Size(193, 171);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.Black;
-            this.kryptonPanel2.StateCommon.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel2.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kryptonPanel2.StateCommon.Draw = Krypton.Toolkit.InheritBool.True;
-            this.kryptonPanel2.StateCommon.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
-            this.kryptonPanel2.StateCommon.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel2.StateCommon.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPanel2.TabIndex = 0;
-            // 
-            // kryptonLabel3
-            // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(785, 26);
-            this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(66, 24);
-            this.kryptonLabel3.TabIndex = 19;
-            this.kryptonLabel3.Values.Text = "Enabled";
-            // 
-            // kryptonPanel7
-            // 
-            this.kryptonPanel7.Location = new System.Drawing.Point(785, 56);
-            this.kryptonPanel7.Name = "kryptonPanel7";
-            this.kryptonPanel7.Size = new System.Drawing.Size(193, 171);
-            this.kryptonPanel7.StateCommon.Color1 = System.Drawing.Color.Black;
-            this.kryptonPanel7.StateCommon.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel7.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kryptonPanel7.StateCommon.Draw = Krypton.Toolkit.InheritBool.True;
-            this.kryptonPanel7.StateCommon.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonPanel7.StateCommon.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel7.StateCommon.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonPanel7.TabIndex = 18;
-            // 
-            // kryptonLabel4
-            // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(561, 26);
-            this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(70, 24);
-            this.kryptonLabel4.TabIndex = 17;
-            this.kryptonLabel4.Values.Text = "Disabled";
-            // 
-            // kryptonPanel8
-            // 
-            this.kryptonPanel8.Enabled = false;
-            this.kryptonPanel8.Location = new System.Drawing.Point(561, 56);
-            this.kryptonPanel8.Name = "kryptonPanel8";
-            this.kryptonPanel8.Size = new System.Drawing.Size(193, 171);
-            this.kryptonPanel8.StateCommon.Color1 = System.Drawing.Color.Black;
-            this.kryptonPanel8.StateCommon.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel8.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kryptonPanel8.StateCommon.Draw = Krypton.Toolkit.InheritBool.True;
-            this.kryptonPanel8.StateCommon.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonPanel8.StateCommon.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel8.StateCommon.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonPanel8.TabIndex = 16;
-            // 
-            // kryptonLabel5
-            // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(257, 26);
-            this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(66, 24);
-            this.kryptonLabel5.TabIndex = 15;
-            this.kryptonLabel5.Values.Text = "Enabled";
-            // 
-            // kryptonPanel9
-            // 
-            this.kryptonPanel9.Location = new System.Drawing.Point(257, 56);
-            this.kryptonPanel9.Name = "kryptonPanel9";
-            this.kryptonPanel9.Size = new System.Drawing.Size(193, 171);
-            this.kryptonPanel9.StateCommon.Color1 = System.Drawing.Color.Black;
-            this.kryptonPanel9.StateCommon.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel9.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kryptonPanel9.StateCommon.Draw = Krypton.Toolkit.InheritBool.True;
-            this.kryptonPanel9.StateCommon.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
-            this.kryptonPanel9.StateCommon.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel9.StateCommon.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonPanel9.TabIndex = 14;
-            // 
-            // kryptonLabel6
-            // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(33, 26);
-            this.kryptonLabel6.Name = "kryptonLabel6";
-            this.kryptonLabel6.Size = new System.Drawing.Size(70, 24);
-            this.kryptonLabel6.TabIndex = 13;
-            this.kryptonLabel6.Values.Text = "Disabled";
-            // 
-            // kryptonPanel10
-            // 
-            this.kryptonPanel10.Enabled = false;
-            this.kryptonPanel10.Location = new System.Drawing.Point(33, 56);
-            this.kryptonPanel10.Name = "kryptonPanel10";
-            this.kryptonPanel10.Size = new System.Drawing.Size(193, 171);
-            this.kryptonPanel10.StateCommon.Color1 = System.Drawing.Color.Black;
-            this.kryptonPanel10.StateCommon.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel10.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kryptonPanel10.StateCommon.Draw = Krypton.Toolkit.InheritBool.True;
-            this.kryptonPanel10.StateCommon.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
-            this.kryptonPanel10.StateCommon.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanel10.StateCommon.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonPanel10.TabIndex = 12;
             // 
             // ColouredForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1035, 536);
             this.Controls.Add(this.kryptonPanel1);
             this.Name = "ColouredForm";
@@ -304,14 +263,14 @@ namespace KryptonGroupExamples
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel6)).EndInit();
             this.kryptonPanel6.ResumeLayout(false);
             this.kryptonPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
             this.ResumeLayout(false);
 
         }
