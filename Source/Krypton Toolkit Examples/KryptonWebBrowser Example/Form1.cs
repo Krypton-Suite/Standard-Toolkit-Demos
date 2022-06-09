@@ -19,10 +19,6 @@ namespace KryptonWebBrowserExample
             kcmbTheme.Text = ThemeManager.ReturnPaletteModeManagerAsString(kryptonManager1.GlobalPaletteMode);
         }
 
-        private void KcmbTheme_SelectedValueChanged(object sender, System.EventArgs e)
-        {
-            ThemeManager.SetTheme(kcmbTheme.Text, kryptonManager1);
-
-        }
+        private void KcmbTheme_SelectedValueChanged(object sender, System.EventArgs e) => ThemeManager.SetTheme(kcmbTheme.Text, kryptonManager1);
     }
 }

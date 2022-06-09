@@ -36,8 +36,8 @@ namespace ExternalDragToDocking
 
         public Form1 Form1
         {
-            get { return _form1; }
-            set { _form1 = value; }
+            get => _form1;
+            set => _form1 = value;
         }
 
         protected override void OnMouseDown(MouseEventArgs e)
@@ -102,8 +102,8 @@ namespace ExternalDragToDocking
                     _dragging = true;
 
                     // Add a floating window to the docking manager which contains the new drag page
-                    KryptonDockingFloatingWindow fw = Form1.DockingManager.AddFloatingWindow("Floating", 
-                                                                                             new KryptonPage[] { dragPage }, 
+                    KryptonDockingFloatingWindow fw = Form1.DockingManager.AddFloatingWindow(@"Floating", 
+                                                                                             new[] { dragPage }, 
                                                                                              new Point(MousePosition.X - pt.X, MousePosition.Y - pt.Y));
 
                     // DoEvents spins the message loop so that the window gets fully created and shown

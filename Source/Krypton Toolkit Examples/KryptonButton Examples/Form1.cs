@@ -20,111 +20,78 @@ namespace KryptonButtonExamples
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        private void Form1_Load(object sender, EventArgs e) =>
             // Setup the property grid to edit this button
             propertyGrid.SelectedObject = new KryptonButtonProxy(button1Sparkle);
-        }
 
         private void button_Enter(object sender, EventArgs e)
         {
             // Setup the property grid to edit this button
             if (sender is KryptonButton kb )
+            {
                 propertyGrid.SelectedObject = new KryptonButtonProxy(kb);
+            }
         }
 
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
 
     public class KryptonButtonProxy
     {
         private KryptonButton _button;
 
-        public KryptonButtonProxy(KryptonButton button)
-        {
-            _button = button;
-        }
+        public KryptonButtonProxy(KryptonButton button) => _button = button;
 
         [Category("Visuals")]
         [Description("Button style.")]
         [DefaultValue(typeof(ButtonStyle), "Standalone")]
         public ButtonStyle ButtonStyle
         {
-            get { return _button.ButtonStyle; }
-            set { _button.ButtonStyle = value; }
+            get => _button.ButtonStyle;
+            set => _button.ButtonStyle = value;
         }
 
         [Category("Visuals")]
         [Description("Button values")]
-        public ButtonValues Values
-        {
-            get { return _button.Values; }
-        }
+        public ButtonValues Values => _button.Values;
 
         [Category("Visuals")]
         [Description("Overrides for defining common button appearance that other states can override.")]
-        public PaletteTripleRedirect StateCommon
-        {
-            get { return _button.StateCommon; }
-        }
+        public PaletteTripleRedirect StateCommon => _button.StateCommon;
 
         [Category("Visuals")]
         [Description("Overrides for defining disabled button appearance.")]
-        public PaletteTriple StateDisabled
-        {
-            get { return _button.StateDisabled; }
-        }
+        public PaletteTriple StateDisabled => _button.StateDisabled;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal button appearance.")]
-        public PaletteTriple StateNormal
-        {
-            get { return _button.StateNormal; }
-        }
+        public PaletteTriple StateNormal => _button.StateNormal;
 
         [Category("Visuals")]
         [Description("Overrides for defining hot tracking button appearance.")]
-        public PaletteTriple StateTracking
-        {
-            get { return _button.StateTracking; }
-        }
+        public PaletteTriple StateTracking => _button.StateTracking;
 
         [Category("Visuals")]
         [Description("Overrides for defining pressed button appearance.")]
-        public PaletteTriple StatePressed
-        {
-            get { return _button.StatePressed; }
-        }
+        public PaletteTriple StatePressed => _button.StatePressed;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal button appearance when default.")]
-        public PaletteTripleRedirect OverrideDefault
-        {
-            get { return _button.OverrideDefault; }
-        }
+        public PaletteTripleRedirect OverrideDefault => _button.OverrideDefault;
 
         [Category("Visuals")]
         [Description("Overrides for defining button appearance when it has focus.")]
-        public PaletteTripleRedirect OverrideFocus
-        {
-            get { return _button.OverrideFocus; }
-        }
+        public PaletteTripleRedirect OverrideFocus => _button.OverrideFocus;
 
         [Category("Visuals")]
         [Description("Visual orientation of the control.")]
         [DefaultValue(typeof(VisualOrientation), "Top")]
         public VisualOrientation Orientation
         {
-            get { return _button.Orientation; }
-            set { _button.Orientation = value;  }
+            get => _button.Orientation;
+            set => _button.Orientation = value;
         }
 
         [Category("Visuals")]
@@ -132,8 +99,8 @@ namespace KryptonButtonExamples
         [DefaultValue(typeof(PaletteMode), "Global")]
         public PaletteMode PaletteMode
         {
-            get { return _button.PaletteMode; }
-            set { _button.PaletteMode = value; }
+            get => _button.PaletteMode;
+            set => _button.PaletteMode = value;
         }
 
         [Category("Layout")]
@@ -141,8 +108,8 @@ namespace KryptonButtonExamples
         [DefaultValue(false)]
         public bool AutoSize
         {
-            get { return _button.AutoSize; }
-            set { _button.AutoSize = value; }
+            get => _button.AutoSize;
+            set => _button.AutoSize = value;
         }
 
         [Category("Layout")]
@@ -150,32 +117,32 @@ namespace KryptonButtonExamples
         [DefaultValue(typeof(AutoSizeMode), "GrowOnly")]
         public AutoSizeMode AutoSizeMode
         {
-            get { return _button.AutoSizeMode; }
-            set { _button.AutoSizeMode = value; }
+            get => _button.AutoSizeMode;
+            set => _button.AutoSizeMode = value;
         }
 
         [Category("Layout")]
         [Description("The size of the control is pixels.")]
         public Size Size
         {
-            get { return _button.Size; }
-            set { _button.Size = value; }
+            get => _button.Size;
+            set => _button.Size = value;
         }
 
         [Category("Layout")]
         [Description("The location of the control in pixels.")]
         public Point Location
         {
-            get { return _button.Location; }
-            set { _button.Location = value; }
+            get => _button.Location;
+            set => _button.Location = value;
         }
 
         [Category("Behavior")]
         [Description("Indicates whether the control is enabled.")]
         public bool Enabled
         {
-            get { return _button.Enabled; }
-            set { _button.Enabled = value; }
+            get => _button.Enabled;
+            set => _button.Enabled = value;
         }
     }
 }

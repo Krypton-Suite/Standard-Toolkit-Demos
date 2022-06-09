@@ -19,15 +19,9 @@ namespace ButtonSpecPlayground
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void buttonClose_Click(object sender, EventArgs e) => Close();
 
         private void kryptonButtonAdd_Click(object sender, EventArgs e)
         {
@@ -72,45 +66,21 @@ namespace ButtonSpecPlayground
             UpdateActionButtons();
         }
 
-        private void kryptonButtonTopP_Click(object sender, EventArgs e)
-        {
-            kryptonHeaderGroup1.HeaderPositionPrimary = VisualOrientation.Top;
-        }
+        private void kryptonButtonTopP_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionPrimary = VisualOrientation.Top;
 
-        private void kryptonButtonLeftP_Click(object sender, EventArgs e)
-        {
-            kryptonHeaderGroup1.HeaderPositionPrimary = VisualOrientation.Left;
-        }
+        private void kryptonButtonLeftP_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionPrimary = VisualOrientation.Left;
 
-        private void kryptonButtonRightP_Click(object sender, EventArgs e)
-        {
-            kryptonHeaderGroup1.HeaderPositionPrimary = VisualOrientation.Right;
-        }
+        private void kryptonButtonRightP_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionPrimary = VisualOrientation.Right;
 
-        private void kryptonButtonBottomP_Click(object sender, EventArgs e)
-        {
-            kryptonHeaderGroup1.HeaderPositionPrimary = VisualOrientation.Bottom;
-        }
+        private void kryptonButtonBottomP_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionPrimary = VisualOrientation.Bottom;
 
-        private void kryptonButtonTopS_Click(object sender, EventArgs e)
-        {
-            kryptonHeaderGroup1.HeaderPositionSecondary = VisualOrientation.Top;
-        }
+        private void kryptonButtonTopS_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionSecondary = VisualOrientation.Top;
 
-        private void kryptonButtonLeftS_Click(object sender, EventArgs e)
-        {
-            kryptonHeaderGroup1.HeaderPositionSecondary = VisualOrientation.Left;
-        }
+        private void kryptonButtonLeftS_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionSecondary = VisualOrientation.Left;
 
-        private void kryptonButtonRightS_Click(object sender, EventArgs e)
-        {
-            kryptonHeaderGroup1.HeaderPositionSecondary = VisualOrientation.Right;
-        }
+        private void kryptonButtonRightS_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionSecondary = VisualOrientation.Right;
 
-        private void kryptonButtonBottomS_Click(object sender, EventArgs e)
-        {
-            kryptonHeaderGroup1.HeaderPositionSecondary = VisualOrientation.Bottom;
-        }
+        private void kryptonButtonBottomS_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionSecondary = VisualOrientation.Bottom;
 
         private void OnButtonSelected(object sender, EventArgs e)
         {

@@ -6,14 +6,16 @@ namespace KryptonThemePlayground
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void kryptonCheckedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            kpg.SelectedObject = kryptonCheckedListBox1;
         }
     }
 }

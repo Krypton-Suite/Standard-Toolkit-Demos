@@ -18,70 +18,31 @@ namespace KryptonMonthCalendarExamples
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
 
-        private void rbOffice2010Blue_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.Office2010Blue;
-        }
+        private void rbOffice2010Blue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2010Blue;
 
-        private void rbOffice2010Silver_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.Office2010Silver;
-        }
+        private void rbOffice2010Silver_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2010Silver;
 
-        private void rbOffice2010Black_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.Office2010Black;
-        }
+        private void rbOffice2010Black_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2010Black;
 
-        private void rbOffice2007Blue_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.Office2007Blue;
-        }
+        private void rbOffice2007Blue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2007Blue;
 
-        private void rbOffice2007Silver_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.Office2007Silver;
-        }
+        private void rbOffice2007Silver_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2007Silver;
 
-        private void rbOffice2007Black_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.Office2007Black;
-        }
+        private void rbOffice2007Black_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2007Black;
 
-        private void rbSparkleBlue_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.SparkleBlue;
-        }
+        private void rbSparkleBlue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.SparkleBlue;
 
-        private void rbSparkleOrange_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.SparkleOrange;
-        }
+        private void rbSparkleOrange_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.SparkleOrange;
 
-        private void rbSparklePurple_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.SparklePurple;
-        }
-        
-        private void rbOffice2003_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.ProfessionalOffice2003;
-        }
+        private void rbSparklePurple_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.SparklePurple;
 
-        private void rbSystem_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonPalette.BasePaletteMode = PaletteMode.ProfessionalSystem;
-        }
+        private void rbOffice2003_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.ProfessionalOffice2003;
 
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void rbSystem_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.ProfessionalSystem;
+
+        private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
 }

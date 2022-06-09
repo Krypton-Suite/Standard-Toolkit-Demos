@@ -236,10 +236,8 @@ namespace CustomControlUsingPalettes
             Invalidate();
         }
 
-        private void OnPalettePaint(object sender, PaletteLayoutEventArgs e)
-        {
+        private void OnPalettePaint(object sender, PaletteLayoutEventArgs e) =>
             // Palette indicates we might need to repaint, so lets do it
             Invalidate();
-        }
     }
 }

@@ -18,10 +18,7 @@ namespace ExpandingHeaderGroupsDockStyle
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void toolOffice2010_Click(object sender, EventArgs e)
         {
@@ -71,9 +68,6 @@ namespace ExpandingHeaderGroupsDockStyle
             }
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e) => Close();
     }
 }

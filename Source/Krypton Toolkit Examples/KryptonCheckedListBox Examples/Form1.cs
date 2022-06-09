@@ -21,10 +21,7 @@ namespace KryptonCheckedListBoxExamples
         private int _next = 1;
         private Random _rand = new Random();
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -99,10 +96,7 @@ namespace KryptonCheckedListBoxExamples
             }
         }
 
-        private void buttonClear_Click(object sender, EventArgs e)
-        {
-            kryptonCheckedListBox.Items.Clear();
-        }
+        private void buttonClear_Click(object sender, EventArgs e) => kryptonCheckedListBox.Items.Clear();
 
         private void kryptonCheckSet_CheckedButtonChanged(object sender, EventArgs e)
         {
@@ -124,9 +118,6 @@ namespace KryptonCheckedListBoxExamples
             }
         }
 
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
 }

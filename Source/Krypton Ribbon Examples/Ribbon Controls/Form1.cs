@@ -24,27 +24,40 @@ namespace RibbonControls
         public Form1()
         {
             InitializeComponent();
+            miscCmbTheme.ComboBox.StateCommon.ComboBox.Content.Font =
+                new Font(@"Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            miscCmbTheme.ComboBox.StateCommon.Item.Content.ShortText.Font =
+                miscCmbTheme.ComboBox.StateCommon.ComboBox.Content.Font;
+            // Hook into changes in the global palette
+            ThemeManager.PropagateThemeSelector(miscCmbTheme.ComboBox);
+            miscCmbTheme.Text = ThemeManager.ReturnPaletteModeManagerAsString(kryptonManager.GlobalPaletteMode);
         }
 
         private LinkLabel CreateLinkLabel(string text)
         {
-            LinkLabel ll = new LinkLabel();
-            ll.BackColor = Color.Transparent;
-            ll.Text = text;
+            LinkLabel ll = new LinkLabel
+            {
+                BackColor = Color.Transparent,
+                Text = text
+            };
             return ll;
         }
 
         private NumericUpDown CreateNumericUpDown(decimal value)
         {
-            NumericUpDown nud = new NumericUpDown();
-            nud.Value = value;
+            NumericUpDown nud = new NumericUpDown
+            {
+                Value = value
+            };
             return nud;
         }
 
         private ProgressBar CreateProgressBar(int value)
         {
-            ProgressBar pb = new ProgressBar();
-            pb.Value = value;
+            ProgressBar pb = new ProgressBar
+            {
+                Value = value
+            };
             return pb;
         }
 
@@ -55,11 +68,11 @@ namespace RibbonControls
             richTextBox1.RichTextBox.Rtf = @"{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\colortbl ;\red0\green0\blue255;\red0\green128\blue0;\red255\green0\blue0;}{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\cf1\f0\fs20 RichTextBox\cf0  with \cf2 Multiline\cf0  set to \cf3 True\cf0 .\par}";
 
             // Hook into the button spec buttons
-            textBox3.ButtonSpecs[0].Click += new EventHandler(OnTextBox3Clear);
-            comboBox3.ButtonSpecs[0].Click += new EventHandler(OnComboBox3Clear);
-            dateTimePicker3.ButtonSpecs[0].Click += new EventHandler(OnDateTimePicker3Clear);
-            maskedTextBox3.ButtonSpecs[0].Click += new EventHandler(OnMaskedTextBox3Clear);
-            numericUpDown2.ButtonSpecs[0].Click += new EventHandler(OnNumericUpDown2Clear);
+            textBox3.ButtonSpecs[0].Click += OnTextBox3Clear;
+            comboBox3.ButtonSpecs[0].Click += OnComboBox3Clear;
+            dateTimePicker3.ButtonSpecs[0].Click += OnDateTimePicker3Clear;
+            maskedTextBox3.ButtonSpecs[0].Click += OnMaskedTextBox3Clear;
+            numericUpDown2.ButtonSpecs[0].Click += OnNumericUpDown2Clear;
             
             // Create and associate various controls
             custom9.CustomControl = CreateLinkLabel("LinkLabel Control");
@@ -147,7 +160,7 @@ namespace RibbonControls
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            bool defaultRibbonCheckBox = Settings.Default.RibbonCheckBox;
+            var defaultRibbonCheckBox = Settings.Default.RibbonCheckBox;
             Settings.Default.Save();
         }
     }

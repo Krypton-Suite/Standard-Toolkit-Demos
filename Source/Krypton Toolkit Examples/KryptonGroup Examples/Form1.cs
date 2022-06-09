@@ -47,6 +47,8 @@ namespace KryptonGroupExamples
             colouredForm.ShowDialog(this);
         }
     }
+        private void buttonClose_Click(object sender, EventArgs e) => Close();
+    }
 
     public class KryptonGroupProxy
     {

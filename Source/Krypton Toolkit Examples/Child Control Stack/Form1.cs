@@ -18,10 +18,7 @@ namespace ChildControlStack
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -30,11 +27,9 @@ namespace ChildControlStack
             textBoxFiller.SelectionLength = 0;
         }
 
-        private void kryptonCheckSet_CheckedButtonChanged(object sender, EventArgs e)
-        {
+        private void kryptonCheckSet_CheckedButtonChanged(object sender, EventArgs e) =>
             // Put the name for the checkbutton into the header
             kryptonHeader.Values.Heading = kryptonCheckSet.CheckedButton.Values.Text;
-        }
 
         private void toolOffice2010_Click(object sender, EventArgs e)
         {
@@ -84,9 +79,6 @@ namespace ChildControlStack
             }
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e) => Close();
     }
 }

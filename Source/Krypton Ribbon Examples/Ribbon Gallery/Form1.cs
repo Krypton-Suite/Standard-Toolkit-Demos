@@ -27,24 +27,34 @@ namespace RibbonGallery
 
         private void galleryCustom_GalleryDropMenu(object sender, GalleryDropMenuEventArgs e)
         {
-            KryptonContextMenuHeading h = new KryptonContextMenuHeading();
-            h.Text = "Customize Drop Menu";
+            KryptonContextMenuHeading h = new KryptonContextMenuHeading
+            {
+                Text = "Customize Drop Menu"
+            };
 
             KryptonContextMenuItems items1 = new KryptonContextMenuItems();
-            KryptonContextMenuItem item1 = new KryptonContextMenuItem();
-            item1.Text = "Custom Entry 1";
-            KryptonContextMenuItem item2 = new KryptonContextMenuItem();
-            item2.Text = "Custom Entry 2";
-            item2.Checked = true;
+            KryptonContextMenuItem item1 = new KryptonContextMenuItem
+            {
+                Text = "Custom Entry 1"
+            };
+            KryptonContextMenuItem item2 = new KryptonContextMenuItem
+            {
+                Text = "Custom Entry 2",
+                Checked = true
+            };
             items1.Items.Add(item1);
             items1.Items.Add(item2);
 
             KryptonContextMenuItems items2 = new KryptonContextMenuItems();
-            KryptonContextMenuItem item3 = new KryptonContextMenuItem();
-            item3.Text = "Custom Entry 3";
-            KryptonContextMenuItem item4 = new KryptonContextMenuItem();
-            item4.Text = "Custom Entry 4";
-            item4.CheckState = CheckState.Indeterminate;
+            KryptonContextMenuItem item3 = new KryptonContextMenuItem
+            {
+                Text = "Custom Entry 3"
+            };
+            KryptonContextMenuItem item4 = new KryptonContextMenuItem
+            {
+                Text = "Custom Entry 4",
+                CheckState = CheckState.Indeterminate
+            };
             items2.Items.Add(item3);
             items2.Items.Add(item4);
 

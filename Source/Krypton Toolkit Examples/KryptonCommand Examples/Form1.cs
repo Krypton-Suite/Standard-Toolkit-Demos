@@ -18,20 +18,11 @@ namespace KryptonCommandExamples
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
-        private void buttonAttach_Click(object sender, EventArgs e)
-        {
-            AssignCommand(kryptonCommand);
-        }
+        private void buttonAttach_Click(object sender, EventArgs e) => AssignCommand(kryptonCommand);
 
-        private void buttonUnattach_Click(object sender, EventArgs e)
-        {
-            AssignCommand(null);
-        }
+        private void buttonUnattach_Click(object sender, EventArgs e) => AssignCommand(null);
 
         private void AssignCommand(KryptonCommand command)
         {
@@ -45,9 +36,6 @@ namespace KryptonCommandExamples
             kryptonCheckBox1.KryptonCommand = command;
         }
 
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
 }

@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+    <PropertyGroup>
+        <TargetFrameworks>net48;net5.0-windows;net6.0-windows</TargetFrameworks>
+        <OutputType>WinExe</OutputType>
+        <RootNamespace>KryptonSeparatorExamples</RootNamespace>
+        <AssemblyName>Krypton Separator Examples</AssemblyName>
+        <ApplicationIcon>Krypton.ico</ApplicationIcon>
+        <StartupObject>
+        </StartupObject>
+        <UseApplicationTrust>false</UseApplicationTrust>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <UseWindowsForms>true</UseWindowsForms>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <NeutralLanguage>en</NeutralLanguage>
+        <LangVersion>preview</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Remove="Krypton.ico" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="Krypton.ico" />
+    </ItemGroup>
+    <Choose>
+        <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
+            <ItemGroup>
+                <PackageReference Include="Krypton.Toolkit.Canary" Version="65.22.3.89-beta" />
+            </ItemGroup>
+        </When>
+        <Otherwise>
+            <ItemGroup>
+                <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2022.csproj" />
+            </ItemGroup>
+        </Otherwise>
+    </Choose>
+    <PropertyGroup>
+        <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+    </PropertyGroup>
+</Project>

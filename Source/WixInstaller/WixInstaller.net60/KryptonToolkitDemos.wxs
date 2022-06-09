@@ -1,0 +1,20 @@
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+
+    <?define KryptonToolkitDemosSource=$(sys.SOURCEFILEDIR)..\..\..\Standard-Toolkit\Bin\Release\net60?>
+
+    <Fragment>
+
+        <DirectoryRef Id="KryptonToolkitDemosDir" />
+        
+
+        <util:CloseApplication CloseMessage="yes" Id="CloseKryptonToolkitDemosApp" Target="Krypton Explorer.exe" RebootPrompt="no"/>
+
+        <ComponentGroup Id="KryptonToolkitDemos">
+            <!--<Component >
+                <File Source="$(var.KryptonToolkitDemosSource)\Krypton.Toolkit.dll" KeyPath="yes" />
+            </Component>-->
+
+        </ComponentGroup>
+        </Fragment>
+</Wix>

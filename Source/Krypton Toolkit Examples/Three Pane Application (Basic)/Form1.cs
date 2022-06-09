@@ -17,10 +17,7 @@ namespace ThreePaneApplication
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void kryptonOffice2010Blue_CheckedChanged(object sender, EventArgs e)
         {
@@ -123,14 +120,6 @@ namespace ThreePaneApplication
             if (kryptonOffice2013White.Checked)
             {
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2013White;
-            }
-        }
-
-        private void kryptonOffice2013_CheckedChanged(object sender, EventArgs e)
-        {
-            if (kryptonOffice2013.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2013;
             }
         }
     }

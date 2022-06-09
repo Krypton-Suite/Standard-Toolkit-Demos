@@ -17,10 +17,7 @@ namespace MDIApplication
 {
     public partial class Form2 : KryptonForm
     {
-        public Form2()
-        {
-            InitializeComponent();
-        }
+        public Form2() => InitializeComponent();
 
         protected override void Dispose(bool disposing)
         {
@@ -135,11 +132,9 @@ namespace MDIApplication
             }
         }
 
-        private void OnPaletteChanged(object sender, EventArgs e)
-        {
+        private void OnPaletteChanged(object sender, EventArgs e) =>
             // Update buttons to reflect the new palette setting
             UpdateRadioButtons();
-        }
 
         private void UpdateRadioButtons()
         {

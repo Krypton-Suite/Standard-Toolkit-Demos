@@ -28,25 +28,13 @@ namespace ExternalDragToDocking
             InitializeComponent();
         }
 
-        public KryptonPage NewDocument()
-        {
-            return NewPage("Document ", 0, new ContentDocument());
-        }
+        public KryptonPage NewDocument() => NewPage("Document ", 0, new ContentDocument());
 
-        public KryptonPage NewInput()
-        {
-            return NewPage("Input ", 1, new ContentInput());
-        }
+        public KryptonPage NewInput() => NewPage("Input ", 1, new ContentInput());
 
-        public KryptonPage NewPropertyGrid()
-        {
-            return NewPage("Properties ", 2, new ContentPropertyGrid());
-        }
+        public KryptonPage NewPropertyGrid() => NewPage("Properties ", 2, new ContentPropertyGrid());
 
-        public KryptonPage NewTreeView()
-        {
-            return NewPage("TreeView ", 3, new ContentTreeView(this));
-        }
+        public KryptonPage NewTreeView() => NewPage("TreeView ", 3, new ContentTreeView(this));
 
         public KryptonPage NewPage(string name, int image, Control content)
         {
@@ -68,10 +56,7 @@ namespace ExternalDragToDocking
             return p;
         }
 
-        public KryptonDockingManager DockingManager
-        {
-            get { return kryptonDockingManager; }
-        }
+        public KryptonDockingManager DockingManager => kryptonDockingManager;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -81,8 +66,8 @@ namespace ExternalDragToDocking
             kryptonDockingManager.ManageFloating(this);
 
             // Add initial docking pages
-            kryptonDockingManager.AddDockspace("Control", DockingEdge.Left, new KryptonPage[] { NewTreeView() });
-            kryptonDockingManager.AddToWorkspace("Workspace", new KryptonPage[] { NewDocument() });
+            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Left, new[] { NewTreeView() });
+            kryptonDockingManager.AddToWorkspace("Workspace", new[] { NewDocument() });
         }
     }
 }
