@@ -31,71 +31,75 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new Krypton.Toolkit.KryptonLabel();
-            this.label2 = new System.Windows.Forms.Label();
             this.textBoxCaption = new Krypton.Toolkit.KryptonTextBox();
             this.textBoxMessage = new System.Windows.Forms.TextBox();
             this.radioButtonNone = new Krypton.Toolkit.KryptonRadioButton();
-            this.radioButtonError = new System.Windows.Forms.RadioButton();
-            this.radioButtonQuestion = new System.Windows.Forms.RadioButton();
-            this.radioButtonWarning = new System.Windows.Forms.RadioButton();
-            this.radioButtonInformation = new System.Windows.Forms.RadioButton();
-            this.radioButtonOK = new System.Windows.Forms.RadioButton();
-            this.radioButtonOKCancel = new System.Windows.Forms.RadioButton();
-            this.radioButtonAbortRetryIgnore = new System.Windows.Forms.RadioButton();
-            this.radioButtonYesNoCancel = new System.Windows.Forms.RadioButton();
             this.groupBoxIcon = new Krypton.Toolkit.KryptonGroupBox();
-            this.radioButtonWinLogo = new System.Windows.Forms.RadioButton();
-            this.groupBoxButtons = new System.Windows.Forms.GroupBox();
-            this.radioButtonYesNo = new System.Windows.Forms.RadioButton();
-            this.radioButtonRetryCancel = new System.Windows.Forms.RadioButton();
-            this.buttonShow = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButtonOffice365Blue = new System.Windows.Forms.RadioButton();
-            this.radioButtonSystem = new System.Windows.Forms.RadioButton();
-            this.radioButtonOffice2003 = new System.Windows.Forms.RadioButton();
-            this.radioButtonSparklePurple = new System.Windows.Forms.RadioButton();
-            this.radioButtonSparkleOrange = new System.Windows.Forms.RadioButton();
-            this.radioButtonSparkleBlue = new System.Windows.Forms.RadioButton();
-            this.radioButtonOffice2007Black = new System.Windows.Forms.RadioButton();
-            this.radioButtonOffice2007Silver = new System.Windows.Forms.RadioButton();
-            this.radioButtonOffice2007Blue = new System.Windows.Forms.RadioButton();
-            this.radioButtonOffice2010Black = new System.Windows.Forms.RadioButton();
-            this.radioButtonOffice2010Silver = new System.Windows.Forms.RadioButton();
-            this.radioButtonOffice2010Blue = new System.Windows.Forms.RadioButton();
-            this.chkRightAlign = new System.Windows.Forms.CheckBox();
-            this.chkRtlReading = new System.Windows.Forms.CheckBox();
+            this.kradWinLogo = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradQuestion = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradError = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradInformation = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradWarning = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
+            this.kradYesNo = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradCancelTryContinue = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradRetryCancel = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradOK = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradYesNoCancel = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradAbortRetryIgnore = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradOKCancel = new Krypton.Toolkit.KryptonRadioButton();
+            this.kbtnShow = new Krypton.Toolkit.KryptonButton();
+            this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
+            this.kchkRtlReading = new Krypton.Toolkit.KryptonCheckBox();
+            this.kchkRightAlign = new Krypton.Toolkit.KryptonCheckBox();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            this.kradOffice2007Blue = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradOffice2007Black = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradOffice2007Silver = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradOffice2010Blue = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradOffice2010Black = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradOffice2010Silver = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradOffice2013 = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradOffice365Blue = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradOffice365Black = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradOffice365Silver = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradSparkleBlue = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradSparkleOrange = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradSparklePurple = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradOffice2003 = new Krypton.Toolkit.KryptonRadioButton();
+            this.kradSystem = new Krypton.Toolkit.KryptonRadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupBoxIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupBoxIcon.Panel)).BeginInit();
             this.groupBoxIcon.Panel.SuspendLayout();
             this.groupBoxIcon.SuspendLayout();
-            this.groupBoxButtons.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
+            this.kryptonGroupBox1.Panel.SuspendLayout();
+            this.kryptonGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
+            this.kryptonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).BeginInit();
+            this.kryptonGroupBox2.Panel.SuspendLayout();
+            this.kryptonGroupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
-            this.label1.Location = new System.Drawing.Point(13, 23);
+            this.label1.Location = new System.Drawing.Point(11, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 24);
+            this.label1.Size = new System.Drawing.Size(53, 20);
             this.label1.TabIndex = 0;
             this.label1.Values.Text = "Caption";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 54);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Message";
             // 
             // textBoxCaption
             // 
             this.textBoxCaption.Location = new System.Drawing.Point(70, 21);
             this.textBoxCaption.Name = "textBoxCaption";
-            this.textBoxCaption.Size = new System.Drawing.Size(246, 27);
+            this.textBoxCaption.Size = new System.Drawing.Size(246, 23);
             this.textBoxCaption.TabIndex = 1;
             this.textBoxCaption.Text = "Caption";
             // 
@@ -112,111 +116,11 @@
             // 
             this.radioButtonNone.Location = new System.Drawing.Point(14, 3);
             this.radioButtonNone.Name = "radioButtonNone";
-            this.radioButtonNone.Size = new System.Drawing.Size(61, 24);
+            this.radioButtonNone.Size = new System.Drawing.Size(52, 20);
             this.radioButtonNone.TabIndex = 0;
             this.radioButtonNone.Tag = "0";
             this.radioButtonNone.Values.Text = "None";
             this.radioButtonNone.CheckedChanged += new System.EventHandler(this.icon_CheckedChanged);
-            // 
-            // radioButtonError
-            // 
-            this.radioButtonError.AutoSize = true;
-            this.radioButtonError.Location = new System.Drawing.Point(14, 26);
-            this.radioButtonError.Name = "radioButtonError";
-            this.radioButtonError.Size = new System.Drawing.Size(60, 21);
-            this.radioButtonError.TabIndex = 1;
-            this.radioButtonError.Tag = "16";
-            this.radioButtonError.Text = "Error";
-            this.radioButtonError.UseVisualStyleBackColor = true;
-            this.radioButtonError.CheckedChanged += new System.EventHandler(this.icon_CheckedChanged);
-            // 
-            // radioButtonQuestion
-            // 
-            this.radioButtonQuestion.AutoSize = true;
-            this.radioButtonQuestion.Location = new System.Drawing.Point(14, 49);
-            this.radioButtonQuestion.Name = "radioButtonQuestion";
-            this.radioButtonQuestion.Size = new System.Drawing.Size(83, 21);
-            this.radioButtonQuestion.TabIndex = 2;
-            this.radioButtonQuestion.Tag = "32";
-            this.radioButtonQuestion.Text = "Question";
-            this.radioButtonQuestion.UseVisualStyleBackColor = true;
-            this.radioButtonQuestion.CheckedChanged += new System.EventHandler(this.icon_CheckedChanged);
-            // 
-            // radioButtonWarning
-            // 
-            this.radioButtonWarning.AutoSize = true;
-            this.radioButtonWarning.Checked = true;
-            this.radioButtonWarning.Location = new System.Drawing.Point(117, 3);
-            this.radioButtonWarning.Name = "radioButtonWarning";
-            this.radioButtonWarning.Size = new System.Drawing.Size(81, 21);
-            this.radioButtonWarning.TabIndex = 3;
-            this.radioButtonWarning.TabStop = true;
-            this.radioButtonWarning.Tag = "48";
-            this.radioButtonWarning.Text = "Warning";
-            this.radioButtonWarning.UseVisualStyleBackColor = true;
-            this.radioButtonWarning.CheckedChanged += new System.EventHandler(this.icon_CheckedChanged);
-            // 
-            // radioButtonInformation
-            // 
-            this.radioButtonInformation.AutoSize = true;
-            this.radioButtonInformation.Location = new System.Drawing.Point(117, 26);
-            this.radioButtonInformation.Name = "radioButtonInformation";
-            this.radioButtonInformation.Size = new System.Drawing.Size(100, 21);
-            this.radioButtonInformation.TabIndex = 4;
-            this.radioButtonInformation.Tag = "64";
-            this.radioButtonInformation.Text = "Information";
-            this.radioButtonInformation.UseVisualStyleBackColor = true;
-            this.radioButtonInformation.CheckedChanged += new System.EventHandler(this.icon_CheckedChanged);
-            // 
-            // radioButtonOK
-            // 
-            this.radioButtonOK.AutoSize = true;
-            this.radioButtonOK.Location = new System.Drawing.Point(16, 23);
-            this.radioButtonOK.Name = "radioButtonOK";
-            this.radioButtonOK.Size = new System.Drawing.Size(47, 21);
-            this.radioButtonOK.TabIndex = 0;
-            this.radioButtonOK.Tag = "0";
-            this.radioButtonOK.Text = "OK";
-            this.radioButtonOK.UseVisualStyleBackColor = true;
-            this.radioButtonOK.CheckedChanged += new System.EventHandler(this.buttons_CheckedChanged);
-            // 
-            // radioButtonOKCancel
-            // 
-            this.radioButtonOKCancel.AutoSize = true;
-            this.radioButtonOKCancel.Checked = true;
-            this.radioButtonOKCancel.Location = new System.Drawing.Point(16, 46);
-            this.radioButtonOKCancel.Name = "radioButtonOKCancel";
-            this.radioButtonOKCancel.Size = new System.Drawing.Size(91, 21);
-            this.radioButtonOKCancel.TabIndex = 1;
-            this.radioButtonOKCancel.TabStop = true;
-            this.radioButtonOKCancel.Tag = "1";
-            this.radioButtonOKCancel.Text = "OK Cancel";
-            this.radioButtonOKCancel.UseVisualStyleBackColor = true;
-            this.radioButtonOKCancel.CheckedChanged += new System.EventHandler(this.buttons_CheckedChanged);
-            // 
-            // radioButtonAbortRetryIgnore
-            // 
-            this.radioButtonAbortRetryIgnore.AutoSize = true;
-            this.radioButtonAbortRetryIgnore.Location = new System.Drawing.Point(98, 23);
-            this.radioButtonAbortRetryIgnore.Name = "radioButtonAbortRetryIgnore";
-            this.radioButtonAbortRetryIgnore.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAbortRetryIgnore.TabIndex = 3;
-            this.radioButtonAbortRetryIgnore.Tag = "2";
-            this.radioButtonAbortRetryIgnore.Text = "Abort Retry Ignore";
-            this.radioButtonAbortRetryIgnore.UseVisualStyleBackColor = true;
-            this.radioButtonAbortRetryIgnore.CheckedChanged += new System.EventHandler(this.buttons_CheckedChanged);
-            // 
-            // radioButtonYesNoCancel
-            // 
-            this.radioButtonYesNoCancel.AutoSize = true;
-            this.radioButtonYesNoCancel.Location = new System.Drawing.Point(113, 50);
-            this.radioButtonYesNoCancel.Name = "radioButtonYesNoCancel";
-            this.radioButtonYesNoCancel.Size = new System.Drawing.Size(115, 21);
-            this.radioButtonYesNoCancel.TabIndex = 5;
-            this.radioButtonYesNoCancel.Tag = "3";
-            this.radioButtonYesNoCancel.Text = "Yes No Cancel";
-            this.radioButtonYesNoCancel.UseVisualStyleBackColor = true;
-            this.radioButtonYesNoCancel.CheckedChanged += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // groupBoxIcon
             // 
@@ -228,284 +132,363 @@
             // 
             // groupBoxIcon.Panel
             // 
-            this.groupBoxIcon.Panel.Controls.Add(this.radioButtonWinLogo);
+            this.groupBoxIcon.Panel.Controls.Add(this.kradWinLogo);
+            this.groupBoxIcon.Panel.Controls.Add(this.kradQuestion);
+            this.groupBoxIcon.Panel.Controls.Add(this.kradError);
+            this.groupBoxIcon.Panel.Controls.Add(this.kradInformation);
             this.groupBoxIcon.Panel.Controls.Add(this.radioButtonNone);
-            this.groupBoxIcon.Panel.Controls.Add(this.radioButtonError);
-            this.groupBoxIcon.Panel.Controls.Add(this.radioButtonQuestion);
-            this.groupBoxIcon.Panel.Controls.Add(this.radioButtonWarning);
-            this.groupBoxIcon.Panel.Controls.Add(this.radioButtonInformation);
-            this.groupBoxIcon.Size = new System.Drawing.Size(246, 100);
+            this.groupBoxIcon.Panel.Controls.Add(this.kradWarning);
+            this.groupBoxIcon.Size = new System.Drawing.Size(246, 105);
             this.groupBoxIcon.TabIndex = 4;
             this.groupBoxIcon.Values.Heading = "Icon";
             // 
-            // radioButtonWinLogo
+            // kradWinLogo
             // 
-            this.radioButtonWinLogo.AutoSize = true;
-            this.radioButtonWinLogo.Location = new System.Drawing.Point(117, 49);
-            this.radioButtonWinLogo.Name = "radioButtonWinLogo";
-            this.radioButtonWinLogo.Size = new System.Drawing.Size(84, 21);
-            this.radioButtonWinLogo.TabIndex = 5;
-            this.radioButtonWinLogo.Tag = "32";
-            this.radioButtonWinLogo.Text = "WinLogo";
-            this.radioButtonWinLogo.UseVisualStyleBackColor = true;
+            this.kradWinLogo.Location = new System.Drawing.Point(111, 53);
+            this.kradWinLogo.Name = "kradWinLogo";
+            this.kradWinLogo.Size = new System.Drawing.Size(72, 20);
+            this.kradWinLogo.TabIndex = 11;
+            this.kradWinLogo.Values.Text = "WinLogo";
+            this.kradWinLogo.CheckedChanged += new System.EventHandler(this.icon_CheckedChanged);
             // 
-            // groupBoxButtons
+            // kradQuestion
             // 
-            this.groupBoxButtons.Controls.Add(this.radioButtonYesNo);
-            this.groupBoxButtons.Controls.Add(this.radioButtonRetryCancel);
-            this.groupBoxButtons.Controls.Add(this.radioButtonOK);
-            this.groupBoxButtons.Controls.Add(this.radioButtonOKCancel);
-            this.groupBoxButtons.Controls.Add(this.radioButtonYesNoCancel);
-            this.groupBoxButtons.Controls.Add(this.radioButtonAbortRetryIgnore);
-            this.groupBoxButtons.Location = new System.Drawing.Point(70, 283);
-            this.groupBoxButtons.Name = "groupBoxButtons";
-            this.groupBoxButtons.Size = new System.Drawing.Size(246, 100);
-            this.groupBoxButtons.TabIndex = 5;
-            this.groupBoxButtons.TabStop = false;
-            this.groupBoxButtons.Text = "Buttons";
+            this.kradQuestion.Location = new System.Drawing.Point(14, 53);
+            this.kradQuestion.Name = "kradQuestion";
+            this.kradQuestion.Size = new System.Drawing.Size(72, 20);
+            this.kradQuestion.TabIndex = 10;
+            this.kradQuestion.Values.Text = "Question";
+            this.kradQuestion.CheckedChanged += new System.EventHandler(this.icon_CheckedChanged);
             // 
-            // radioButtonYesNo
+            // kradError
             // 
-            this.radioButtonYesNo.AutoSize = true;
-            this.radioButtonYesNo.Location = new System.Drawing.Point(129, 74);
-            this.radioButtonYesNo.Name = "radioButtonYesNo";
-            this.radioButtonYesNo.Size = new System.Drawing.Size(71, 21);
-            this.radioButtonYesNo.TabIndex = 4;
-            this.radioButtonYesNo.Tag = "4";
-            this.radioButtonYesNo.Text = "Yes No";
-            this.radioButtonYesNo.UseVisualStyleBackColor = true;
-            this.radioButtonYesNo.CheckedChanged += new System.EventHandler(this.buttons_CheckedChanged);
+            this.kradError.Location = new System.Drawing.Point(14, 29);
+            this.kradError.Name = "kradError";
+            this.kradError.Size = new System.Drawing.Size(49, 20);
+            this.kradError.TabIndex = 11;
+            this.kradError.Values.Text = "Error";
+            this.kradError.CheckedChanged += new System.EventHandler(this.icon_CheckedChanged);
             // 
-            // radioButtonRetryCancel
+            // kradInformation
             // 
-            this.radioButtonRetryCancel.AutoSize = true;
-            this.radioButtonRetryCancel.Location = new System.Drawing.Point(16, 71);
-            this.radioButtonRetryCancel.Name = "radioButtonRetryCancel";
-            this.radioButtonRetryCancel.Size = new System.Drawing.Size(107, 21);
-            this.radioButtonRetryCancel.TabIndex = 2;
-            this.radioButtonRetryCancel.Tag = "5";
-            this.radioButtonRetryCancel.Text = "Retry Cancel";
-            this.radioButtonRetryCancel.UseVisualStyleBackColor = true;
-            this.radioButtonRetryCancel.CheckedChanged += new System.EventHandler(this.buttons_CheckedChanged);
+            this.kradInformation.Location = new System.Drawing.Point(111, 29);
+            this.kradInformation.Name = "kradInformation";
+            this.kradInformation.Size = new System.Drawing.Size(87, 20);
+            this.kradInformation.TabIndex = 9;
+            this.kradInformation.Values.Text = "Information";
+            this.kradInformation.CheckedChanged += new System.EventHandler(this.icon_CheckedChanged);
             // 
-            // buttonShow
+            // kradWarning
             // 
-            this.buttonShow.Location = new System.Drawing.Point(70, 398);
-            this.buttonShow.Name = "buttonShow";
-            this.buttonShow.Size = new System.Drawing.Size(466, 57);
-            this.buttonShow.TabIndex = 1;
-            this.buttonShow.Text = "Show";
-            this.buttonShow.UseVisualStyleBackColor = true;
-            this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.radioButtonOffice365Blue);
-            this.groupBox3.Controls.Add(this.radioButtonSystem);
-            this.groupBox3.Controls.Add(this.radioButtonOffice2003);
-            this.groupBox3.Controls.Add(this.radioButtonSparklePurple);
-            this.groupBox3.Controls.Add(this.radioButtonSparkleOrange);
-            this.groupBox3.Controls.Add(this.radioButtonSparkleBlue);
-            this.groupBox3.Controls.Add(this.radioButtonOffice2007Black);
-            this.groupBox3.Controls.Add(this.radioButtonOffice2007Silver);
-            this.groupBox3.Controls.Add(this.radioButtonOffice2007Blue);
-            this.groupBox3.Controls.Add(this.radioButtonOffice2010Black);
-            this.groupBox3.Controls.Add(this.radioButtonOffice2010Silver);
-            this.groupBox3.Controls.Add(this.radioButtonOffice2010Blue);
-            this.groupBox3.Location = new System.Drawing.Point(329, 12);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(216, 315);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Palette";
-            // 
-            // radioButtonOffice365Blue
-            // 
-            this.radioButtonOffice365Blue.AutoSize = true;
-            this.radioButtonOffice365Blue.Location = new System.Drawing.Point(14, 275);
-            this.radioButtonOffice365Blue.Name = "radioButtonOffice365Blue";
-            this.radioButtonOffice365Blue.Size = new System.Drawing.Size(129, 21);
-            this.radioButtonOffice365Blue.TabIndex = 11;
-            this.radioButtonOffice365Blue.Tag = "0";
-            this.radioButtonOffice365Blue.Text = "Office 365 - Blue";
-            this.radioButtonOffice365Blue.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonSystem
-            // 
-            this.radioButtonSystem.AutoSize = true;
-            this.radioButtonSystem.Location = new System.Drawing.Point(14, 252);
-            this.radioButtonSystem.Name = "radioButtonSystem";
-            this.radioButtonSystem.Size = new System.Drawing.Size(159, 21);
-            this.radioButtonSystem.TabIndex = 10;
-            this.radioButtonSystem.Tag = "0";
-            this.radioButtonSystem.Text = "Professional - System";
-            this.radioButtonSystem.UseVisualStyleBackColor = true;
-            this.radioButtonSystem.CheckedChanged += new System.EventHandler(this.palette_CheckedChanged);
-            // 
-            // radioButtonOffice2003
-            // 
-            this.radioButtonOffice2003.AutoSize = true;
-            this.radioButtonOffice2003.Location = new System.Drawing.Point(14, 229);
-            this.radioButtonOffice2003.Name = "radioButtonOffice2003";
-            this.radioButtonOffice2003.Size = new System.Drawing.Size(183, 21);
-            this.radioButtonOffice2003.TabIndex = 9;
-            this.radioButtonOffice2003.Tag = "0";
-            this.radioButtonOffice2003.Text = "Professional - Office 2003";
-            this.radioButtonOffice2003.UseVisualStyleBackColor = true;
-            this.radioButtonOffice2003.CheckedChanged += new System.EventHandler(this.palette_CheckedChanged);
-            // 
-            // radioButtonSparklePurple
-            // 
-            this.radioButtonSparklePurple.AutoSize = true;
-            this.radioButtonSparklePurple.Location = new System.Drawing.Point(14, 206);
-            this.radioButtonSparklePurple.Name = "radioButtonSparklePurple";
-            this.radioButtonSparklePurple.Size = new System.Drawing.Size(124, 21);
-            this.radioButtonSparklePurple.TabIndex = 8;
-            this.radioButtonSparklePurple.Tag = "0";
-            this.radioButtonSparklePurple.Text = "Sparkle - Purple";
-            this.radioButtonSparklePurple.UseVisualStyleBackColor = true;
-            this.radioButtonSparklePurple.CheckedChanged += new System.EventHandler(this.palette_CheckedChanged);
-            // 
-            // radioButtonSparkleOrange
-            // 
-            this.radioButtonSparkleOrange.AutoSize = true;
-            this.radioButtonSparkleOrange.Location = new System.Drawing.Point(14, 183);
-            this.radioButtonSparkleOrange.Name = "radioButtonSparkleOrange";
-            this.radioButtonSparkleOrange.Size = new System.Drawing.Size(131, 21);
-            this.radioButtonSparkleOrange.TabIndex = 7;
-            this.radioButtonSparkleOrange.Tag = "0";
-            this.radioButtonSparkleOrange.Text = "Sparkle - Orange";
-            this.radioButtonSparkleOrange.UseVisualStyleBackColor = true;
-            this.radioButtonSparkleOrange.CheckedChanged += new System.EventHandler(this.palette_CheckedChanged);
-            // 
-            // radioButtonSparkleBlue
-            // 
-            this.radioButtonSparkleBlue.AutoSize = true;
-            this.radioButtonSparkleBlue.Location = new System.Drawing.Point(14, 160);
-            this.radioButtonSparkleBlue.Name = "radioButtonSparkleBlue";
-            this.radioButtonSparkleBlue.Size = new System.Drawing.Size(111, 21);
-            this.radioButtonSparkleBlue.TabIndex = 6;
-            this.radioButtonSparkleBlue.Tag = "0";
-            this.radioButtonSparkleBlue.Text = "Sparkle - Blue";
-            this.radioButtonSparkleBlue.UseVisualStyleBackColor = true;
-            this.radioButtonSparkleBlue.CheckedChanged += new System.EventHandler(this.palette_CheckedChanged);
-            // 
-            // radioButtonOffice2007Black
-            // 
-            this.radioButtonOffice2007Black.AutoSize = true;
-            this.radioButtonOffice2007Black.Location = new System.Drawing.Point(14, 137);
-            this.radioButtonOffice2007Black.Name = "radioButtonOffice2007Black";
-            this.radioButtonOffice2007Black.Size = new System.Drawing.Size(143, 21);
-            this.radioButtonOffice2007Black.TabIndex = 5;
-            this.radioButtonOffice2007Black.Tag = "0";
-            this.radioButtonOffice2007Black.Text = "Office 2007 - Black";
-            this.radioButtonOffice2007Black.UseVisualStyleBackColor = true;
-            this.radioButtonOffice2007Black.CheckedChanged += new System.EventHandler(this.palette_CheckedChanged);
-            // 
-            // radioButtonOffice2007Silver
-            // 
-            this.radioButtonOffice2007Silver.AutoSize = true;
-            this.radioButtonOffice2007Silver.Location = new System.Drawing.Point(14, 114);
-            this.radioButtonOffice2007Silver.Name = "radioButtonOffice2007Silver";
-            this.radioButtonOffice2007Silver.Size = new System.Drawing.Size(144, 21);
-            this.radioButtonOffice2007Silver.TabIndex = 4;
-            this.radioButtonOffice2007Silver.Tag = "0";
-            this.radioButtonOffice2007Silver.Text = "Office 2007 - Silver";
-            this.radioButtonOffice2007Silver.UseVisualStyleBackColor = true;
-            this.radioButtonOffice2007Silver.CheckedChanged += new System.EventHandler(this.palette_CheckedChanged);
-            // 
-            // radioButtonOffice2007Blue
-            // 
-            this.radioButtonOffice2007Blue.AutoSize = true;
-            this.radioButtonOffice2007Blue.Location = new System.Drawing.Point(14, 91);
-            this.radioButtonOffice2007Blue.Name = "radioButtonOffice2007Blue";
-            this.radioButtonOffice2007Blue.Size = new System.Drawing.Size(137, 21);
-            this.radioButtonOffice2007Blue.TabIndex = 3;
-            this.radioButtonOffice2007Blue.Tag = "0";
-            this.radioButtonOffice2007Blue.Text = "Office 2007 - Blue";
-            this.radioButtonOffice2007Blue.UseVisualStyleBackColor = true;
-            this.radioButtonOffice2007Blue.CheckedChanged += new System.EventHandler(this.palette_CheckedChanged);
-            // 
-            // radioButtonOffice2010Black
-            // 
-            this.radioButtonOffice2010Black.AutoSize = true;
-            this.radioButtonOffice2010Black.Location = new System.Drawing.Point(14, 68);
-            this.radioButtonOffice2010Black.Name = "radioButtonOffice2010Black";
-            this.radioButtonOffice2010Black.Size = new System.Drawing.Size(143, 21);
-            this.radioButtonOffice2010Black.TabIndex = 2;
-            this.radioButtonOffice2010Black.Tag = "0";
-            this.radioButtonOffice2010Black.Text = "Office 2010 - Black";
-            this.radioButtonOffice2010Black.UseVisualStyleBackColor = true;
-            this.radioButtonOffice2010Black.CheckedChanged += new System.EventHandler(this.palette_CheckedChanged);
-            // 
-            // radioButtonOffice2010Silver
-            // 
-            this.radioButtonOffice2010Silver.AutoSize = true;
-            this.radioButtonOffice2010Silver.Location = new System.Drawing.Point(14, 45);
-            this.radioButtonOffice2010Silver.Name = "radioButtonOffice2010Silver";
-            this.radioButtonOffice2010Silver.Size = new System.Drawing.Size(144, 21);
-            this.radioButtonOffice2010Silver.TabIndex = 1;
-            this.radioButtonOffice2010Silver.Tag = "0";
-            this.radioButtonOffice2010Silver.Text = "Office 2010 - Silver";
-            this.radioButtonOffice2010Silver.UseVisualStyleBackColor = true;
-            this.radioButtonOffice2010Silver.CheckedChanged += new System.EventHandler(this.palette_CheckedChanged);
-            // 
-            // radioButtonOffice2010Blue
-            // 
-            this.radioButtonOffice2010Blue.AutoSize = true;
-            this.radioButtonOffice2010Blue.Checked = true;
-            this.radioButtonOffice2010Blue.Location = new System.Drawing.Point(14, 22);
-            this.radioButtonOffice2010Blue.Name = "radioButtonOffice2010Blue";
-            this.radioButtonOffice2010Blue.Size = new System.Drawing.Size(137, 21);
-            this.radioButtonOffice2010Blue.TabIndex = 0;
-            this.radioButtonOffice2010Blue.TabStop = true;
-            this.radioButtonOffice2010Blue.Tag = "0";
-            this.radioButtonOffice2010Blue.Text = "Office 2010 - Blue";
-            this.radioButtonOffice2010Blue.UseVisualStyleBackColor = true;
-            this.radioButtonOffice2010Blue.CheckedChanged += new System.EventHandler(this.palette_CheckedChanged);
-            // 
-            // chkRightAlign
-            // 
-            this.chkRightAlign.AutoSize = true;
-            this.chkRightAlign.Location = new System.Drawing.Point(329, 330);
-            this.chkRightAlign.Name = "chkRightAlign";
-            this.chkRightAlign.Size = new System.Drawing.Size(216, 21);
-            this.chkRightAlign.TabIndex = 6;
-            this.chkRightAlign.Text = "MessageBoxOptions.RightAlign";
-            this.chkRightAlign.UseVisualStyleBackColor = true;
-            this.chkRightAlign.CheckedChanged += new System.EventHandler(this.ChkRightAlign_CheckedChanged);
-            // 
-            // chkRtlReading
-            // 
-            this.chkRtlReading.AutoSize = true;
-            this.chkRtlReading.Location = new System.Drawing.Point(329, 357);
-            this.chkRtlReading.Name = "chkRtlReading";
-            this.chkRtlReading.Size = new System.Drawing.Size(221, 21);
-            this.chkRtlReading.TabIndex = 7;
-            this.chkRtlReading.Text = "MessageBoxOptions.RtlReading";
-            this.chkRtlReading.UseVisualStyleBackColor = true;
-            this.chkRtlReading.CheckedChanged += new System.EventHandler(this.ChkRtlReading_CheckedChanged);
+            this.kradWarning.Checked = true;
+            this.kradWarning.Location = new System.Drawing.Point(111, 3);
+            this.kradWarning.Name = "kradWarning";
+            this.kradWarning.Size = new System.Drawing.Size(69, 20);
+            this.kradWarning.TabIndex = 8;
+            this.kradWarning.Values.Text = "Warning";
+            this.kradWarning.CheckedChanged += new System.EventHandler(this.icon_CheckedChanged);
             // 
             // kryptonManager
             // 
             this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2010Blue;
             // 
+            // kryptonGroupBox1
+            // 
+            this.kryptonGroupBox1.CaptionStyle = Krypton.Toolkit.LabelStyle.GroupBoxCaption;
+            this.kryptonGroupBox1.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlGroupBox;
+            this.kryptonGroupBox1.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlGroupBox;
+            this.kryptonGroupBox1.Location = new System.Drawing.Point(70, 287);
+            this.kryptonGroupBox1.Name = "kryptonGroupBox1";
+            // 
+            // kryptonGroupBox1.Panel
+            // 
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kradYesNo);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kradCancelTryContinue);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kradRetryCancel);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kradOK);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kradYesNoCancel);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kradAbortRetryIgnore);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kradOKCancel);
+            this.kryptonGroupBox1.Size = new System.Drawing.Size(246, 136);
+            this.kryptonGroupBox1.TabIndex = 8;
+            this.kryptonGroupBox1.Values.Heading = "Buttons";
+            // 
+            // kradYesNo
+            // 
+            this.kradYesNo.Location = new System.Drawing.Point(111, 55);
+            this.kradYesNo.Name = "kradYesNo";
+            this.kradYesNo.Size = new System.Drawing.Size(61, 20);
+            this.kradYesNo.TabIndex = 14;
+            this.kradYesNo.Values.Text = "Yes No";
+            this.kradYesNo.CheckedChanged += new System.EventHandler(this.buttons_CheckedChanged);
+            // 
+            // kradCancelTryContinue
+            // 
+            this.kradCancelTryContinue.Location = new System.Drawing.Point(14, 81);
+            this.kradCancelTryContinue.Name = "kradCancelTryContinue";
+            this.kradCancelTryContinue.Size = new System.Drawing.Size(132, 20);
+            this.kradCancelTryContinue.TabIndex = 15;
+            this.kradCancelTryContinue.ToolTipValues.Description = "This option will only work if using .NET 6 or greater";
+            this.kradCancelTryContinue.ToolTipValues.EnableToolTips = true;
+            this.kradCancelTryContinue.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            this.kradCancelTryContinue.Values.Text = "Cancel Try Continue";
+            this.kradCancelTryContinue.CheckedChanged += new System.EventHandler(this.buttons_CheckedChanged);
+            // 
+            // kradRetryCancel
+            // 
+            this.kradRetryCancel.Location = new System.Drawing.Point(14, 55);
+            this.kradRetryCancel.Name = "kradRetryCancel";
+            this.kradRetryCancel.Size = new System.Drawing.Size(90, 20);
+            this.kradRetryCancel.TabIndex = 13;
+            this.kradRetryCancel.Values.Text = "Retry Cancel";
+            this.kradRetryCancel.CheckedChanged += new System.EventHandler(this.buttons_CheckedChanged);
+            // 
+            // kradOK
+            // 
+            this.kradOK.Location = new System.Drawing.Point(14, 3);
+            this.kradOK.Name = "kradOK";
+            this.kradOK.Size = new System.Drawing.Size(39, 20);
+            this.kradOK.TabIndex = 9;
+            this.kradOK.Values.Text = "OK";
+            this.kradOK.CheckedChanged += new System.EventHandler(this.buttons_CheckedChanged);
+            // 
+            // kradYesNoCancel
+            // 
+            this.kradYesNoCancel.Location = new System.Drawing.Point(111, 29);
+            this.kradYesNoCancel.Name = "kradYesNoCancel";
+            this.kradYesNoCancel.Size = new System.Drawing.Size(100, 20);
+            this.kradYesNoCancel.TabIndex = 12;
+            this.kradYesNoCancel.Values.Text = "Yes No Cancel";
+            this.kradYesNoCancel.CheckedChanged += new System.EventHandler(this.buttons_CheckedChanged);
+            // 
+            // kradAbortRetryIgnore
+            // 
+            this.kradAbortRetryIgnore.Location = new System.Drawing.Point(111, 3);
+            this.kradAbortRetryIgnore.Name = "kradAbortRetryIgnore";
+            this.kradAbortRetryIgnore.Size = new System.Drawing.Size(124, 20);
+            this.kradAbortRetryIgnore.TabIndex = 10;
+            this.kradAbortRetryIgnore.Values.Text = "Abort Retry Ignore";
+            this.kradAbortRetryIgnore.CheckedChanged += new System.EventHandler(this.buttons_CheckedChanged);
+            // 
+            // kradOKCancel
+            // 
+            this.kradOKCancel.Checked = true;
+            this.kradOKCancel.Location = new System.Drawing.Point(14, 29);
+            this.kradOKCancel.Name = "kradOKCancel";
+            this.kradOKCancel.Size = new System.Drawing.Size(78, 20);
+            this.kradOKCancel.TabIndex = 11;
+            this.kradOKCancel.Values.Text = "OK Cancel";
+            this.kradOKCancel.CheckedChanged += new System.EventHandler(this.buttons_CheckedChanged);
+            // 
+            // kbtnShow
+            // 
+            this.kbtnShow.CornerRoundingRadius = -1F;
+            this.kbtnShow.Location = new System.Drawing.Point(70, 429);
+            this.kbtnShow.Name = "kbtnShow";
+            this.kbtnShow.Size = new System.Drawing.Size(608, 57);
+            this.kbtnShow.TabIndex = 9;
+            this.kbtnShow.Values.Text = "Show";
+            this.kbtnShow.Click += new System.EventHandler(this.kbtnShow_Click);
+            // 
+            // kryptonPanel1
+            // 
+            this.kryptonPanel1.Controls.Add(this.kryptonGroupBox2);
+            this.kryptonPanel1.Controls.Add(this.kchkRtlReading);
+            this.kryptonPanel1.Controls.Add(this.kchkRightAlign);
+            this.kryptonPanel1.Controls.Add(this.kryptonLabel1);
+            this.kryptonPanel1.Controls.Add(this.label1);
+            this.kryptonPanel1.Controls.Add(this.kryptonGroupBox1);
+            this.kryptonPanel1.Controls.Add(this.groupBoxIcon);
+            this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel1.Name = "kryptonPanel1";
+            this.kryptonPanel1.Size = new System.Drawing.Size(690, 491);
+            this.kryptonPanel1.TabIndex = 10;
+            // 
+            // kryptonGroupBox2
+            // 
+            this.kryptonGroupBox2.CaptionStyle = Krypton.Toolkit.LabelStyle.GroupBoxCaption;
+            this.kryptonGroupBox2.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlGroupBox;
+            this.kryptonGroupBox2.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlGroupBox;
+            this.kryptonGroupBox2.Location = new System.Drawing.Point(322, 21);
+            this.kryptonGroupBox2.Name = "kryptonGroupBox2";
+            // 
+            // kryptonGroupBox2.Panel
+            // 
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kradSystem);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kradOffice2003);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kradSparklePurple);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kradSparkleOrange);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kradSparkleBlue);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kradOffice365Silver);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kradOffice365Black);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kradOffice365Blue);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kradOffice2013);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kradOffice2010Silver);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kradOffice2010Black);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kradOffice2010Blue);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kradOffice2007Silver);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kradOffice2007Black);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kradOffice2007Blue);
+            this.kryptonGroupBox2.Size = new System.Drawing.Size(357, 315);
+            this.kryptonGroupBox2.TabIndex = 16;
+            this.kryptonGroupBox2.Values.Heading = "Palette";
+            // 
+            // kchkRtlReading
+            // 
+            this.kchkRtlReading.Location = new System.Drawing.Point(329, 364);
+            this.kchkRtlReading.Name = "kchkRtlReading";
+            this.kchkRtlReading.Size = new System.Drawing.Size(197, 20);
+            this.kchkRtlReading.TabIndex = 13;
+            this.kchkRtlReading.Values.Text = "MessageBoxOptions.RtlReading";
+            // 
+            // kchkRightAlign
+            // 
+            this.kchkRightAlign.Location = new System.Drawing.Point(329, 338);
+            this.kchkRightAlign.Name = "kchkRightAlign";
+            this.kchkRightAlign.Size = new System.Drawing.Size(195, 20);
+            this.kchkRightAlign.TabIndex = 12;
+            this.kchkRightAlign.Values.Text = "MessageBoxOptions.RightAlign";
+            // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.kryptonLabel1.Location = new System.Drawing.Point(11, 52);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(59, 20);
+            this.kryptonLabel1.TabIndex = 11;
+            this.kryptonLabel1.Values.Text = "Message";
+            // 
+            // kradOffice2007Blue
+            // 
+            this.kradOffice2007Blue.Location = new System.Drawing.Point(11, 12);
+            this.kradOffice2007Blue.Name = "kradOffice2007Blue";
+            this.kradOffice2007Blue.Size = new System.Drawing.Size(120, 20);
+            this.kradOffice2007Blue.TabIndex = 0;
+            this.kradOffice2007Blue.Values.Text = "Office 2007 - Blue";
+            // 
+            // kradOffice2007Black
+            // 
+            this.kradOffice2007Black.Location = new System.Drawing.Point(11, 40);
+            this.kradOffice2007Black.Name = "kradOffice2007Black";
+            this.kradOffice2007Black.Size = new System.Drawing.Size(125, 20);
+            this.kradOffice2007Black.TabIndex = 1;
+            this.kradOffice2007Black.Values.Text = "Office 2007 - Black";
+            // 
+            // kradOffice2007Silver
+            // 
+            this.kradOffice2007Silver.Location = new System.Drawing.Point(11, 68);
+            this.kradOffice2007Silver.Name = "kradOffice2007Silver";
+            this.kradOffice2007Silver.Size = new System.Drawing.Size(126, 20);
+            this.kradOffice2007Silver.TabIndex = 2;
+            this.kradOffice2007Silver.Values.Text = "Office 2007 - Silver";
+            // 
+            // kradOffice2010Blue
+            // 
+            this.kradOffice2010Blue.Checked = true;
+            this.kradOffice2010Blue.Location = new System.Drawing.Point(11, 96);
+            this.kradOffice2010Blue.Name = "kradOffice2010Blue";
+            this.kradOffice2010Blue.Size = new System.Drawing.Size(120, 20);
+            this.kradOffice2010Blue.TabIndex = 3;
+            this.kradOffice2010Blue.Values.Text = "Office 2010 - Blue";
+            // 
+            // kradOffice2010Black
+            // 
+            this.kradOffice2010Black.Location = new System.Drawing.Point(11, 124);
+            this.kradOffice2010Black.Name = "kradOffice2010Black";
+            this.kradOffice2010Black.Size = new System.Drawing.Size(125, 20);
+            this.kradOffice2010Black.TabIndex = 4;
+            this.kradOffice2010Black.Values.Text = "Office 2010 - Black";
+            // 
+            // kradOffice2010Silver
+            // 
+            this.kradOffice2010Silver.Location = new System.Drawing.Point(11, 152);
+            this.kradOffice2010Silver.Name = "kradOffice2010Silver";
+            this.kradOffice2010Silver.Size = new System.Drawing.Size(126, 20);
+            this.kradOffice2010Silver.TabIndex = 5;
+            this.kradOffice2010Silver.Values.Text = "Office 2010 - Silver";
+            // 
+            // kradOffice2013
+            // 
+            this.kradOffice2013.Location = new System.Drawing.Point(11, 180);
+            this.kradOffice2013.Name = "kradOffice2013";
+            this.kradOffice2013.Size = new System.Drawing.Size(85, 20);
+            this.kradOffice2013.TabIndex = 6;
+            this.kradOffice2013.Values.Text = "Office 2013";
+            // 
+            // kradOffice365Blue
+            // 
+            this.kradOffice365Blue.Location = new System.Drawing.Point(11, 208);
+            this.kradOffice365Blue.Name = "kradOffice365Blue";
+            this.kradOffice365Blue.Size = new System.Drawing.Size(113, 20);
+            this.kradOffice365Blue.TabIndex = 7;
+            this.kradOffice365Blue.Values.Text = "Office 365 - Blue";
+            // 
+            // kradOffice365Black
+            // 
+            this.kradOffice365Black.Location = new System.Drawing.Point(11, 236);
+            this.kradOffice365Black.Name = "kradOffice365Black";
+            this.kradOffice365Black.Size = new System.Drawing.Size(118, 20);
+            this.kradOffice365Black.TabIndex = 8;
+            this.kradOffice365Black.Values.Text = "Office 365 - Black";
+            // 
+            // kradOffice365Silver
+            // 
+            this.kradOffice365Silver.Location = new System.Drawing.Point(11, 264);
+            this.kradOffice365Silver.Name = "kradOffice365Silver";
+            this.kradOffice365Silver.Size = new System.Drawing.Size(119, 20);
+            this.kradOffice365Silver.TabIndex = 9;
+            this.kradOffice365Silver.Values.Text = "Office 365 - Silver";
+            // 
+            // kradSparkleBlue
+            // 
+            this.kradSparkleBlue.Location = new System.Drawing.Point(182, 12);
+            this.kradSparkleBlue.Name = "kradSparkleBlue";
+            this.kradSparkleBlue.Size = new System.Drawing.Size(98, 20);
+            this.kradSparkleBlue.TabIndex = 10;
+            this.kradSparkleBlue.Values.Text = "Sparkle - Blue";
+            // 
+            // kradSparkleOrange
+            // 
+            this.kradSparkleOrange.Location = new System.Drawing.Point(182, 40);
+            this.kradSparkleOrange.Name = "kradSparkleOrange";
+            this.kradSparkleOrange.Size = new System.Drawing.Size(115, 20);
+            this.kradSparkleOrange.TabIndex = 11;
+            this.kradSparkleOrange.Values.Text = "Sparkle - Orange";
+            // 
+            // kradSparklePurple
+            // 
+            this.kradSparklePurple.Location = new System.Drawing.Point(182, 68);
+            this.kradSparklePurple.Name = "kradSparklePurple";
+            this.kradSparklePurple.Size = new System.Drawing.Size(109, 20);
+            this.kradSparklePurple.TabIndex = 12;
+            this.kradSparklePurple.Values.Text = "Sparkle - Purple";
+            // 
+            // kradOffice2003
+            // 
+            this.kradOffice2003.Location = new System.Drawing.Point(182, 96);
+            this.kradOffice2003.Name = "kradOffice2003";
+            this.kradOffice2003.Size = new System.Drawing.Size(162, 20);
+            this.kradOffice2003.TabIndex = 13;
+            this.kradOffice2003.Values.Text = "Professional - Office 2003";
+            // 
+            // kradSystem
+            // 
+            this.kradSystem.Location = new System.Drawing.Point(182, 124);
+            this.kradSystem.Name = "kradSystem";
+            this.kradSystem.Size = new System.Drawing.Size(139, 20);
+            this.kradSystem.TabIndex = 14;
+            this.kradSystem.Values.Text = "Professional - System";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BlurValues.BlurWhenFocusLost = true;
-            this.ClientSize = new System.Drawing.Size(557, 473);
-            this.Controls.Add(this.chkRtlReading);
-            this.Controls.Add(this.chkRightAlign);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.buttonShow);
-            this.Controls.Add(this.groupBoxButtons);
-            this.Controls.Add(this.groupBoxIcon);
+            this.ClientSize = new System.Drawing.Size(690, 491);
+            this.Controls.Add(this.kbtnShow);
             this.Controls.Add(this.textBoxMessage);
             this.Controls.Add(this.textBoxCaption);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.kryptonPanel1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -518,10 +501,19 @@
             this.groupBoxIcon.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupBoxIcon)).EndInit();
             this.groupBoxIcon.ResumeLayout(false);
-            this.groupBoxButtons.ResumeLayout(false);
-            this.groupBoxButtons.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
+            this.kryptonGroupBox1.Panel.ResumeLayout(false);
+            this.kryptonGroupBox1.Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).EndInit();
+            this.kryptonGroupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
+            this.kryptonPanel1.ResumeLayout(false);
+            this.kryptonPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).EndInit();
+            this.kryptonGroupBox2.Panel.ResumeLayout(false);
+            this.kryptonGroupBox2.Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).EndInit();
+            this.kryptonGroupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -530,40 +522,45 @@
         #endregion
 
         private Krypton.Toolkit.KryptonLabel label1;
-        private System.Windows.Forms.Label label2;
         private Krypton.Toolkit.KryptonTextBox textBoxCaption;
         private System.Windows.Forms.TextBox textBoxMessage;
         private Krypton.Toolkit.KryptonRadioButton radioButtonNone;
-        private System.Windows.Forms.RadioButton radioButtonError;
-        private System.Windows.Forms.RadioButton radioButtonQuestion;
-        private System.Windows.Forms.RadioButton radioButtonWarning;
-        private System.Windows.Forms.RadioButton radioButtonInformation;
-        private System.Windows.Forms.RadioButton radioButtonOK;
-        private System.Windows.Forms.RadioButton radioButtonOKCancel;
-        private System.Windows.Forms.RadioButton radioButtonAbortRetryIgnore;
-        private System.Windows.Forms.RadioButton radioButtonYesNoCancel;
         private Krypton.Toolkit.KryptonGroupBox groupBoxIcon;
-        private System.Windows.Forms.GroupBox groupBoxButtons;
-        private System.Windows.Forms.RadioButton radioButtonYesNo;
-        private System.Windows.Forms.RadioButton radioButtonRetryCancel;
-        private System.Windows.Forms.Button buttonShow;
         private Krypton.Toolkit.KryptonManager kryptonManager;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButtonSystem;
-        private System.Windows.Forms.RadioButton radioButtonOffice2003;
-        private System.Windows.Forms.RadioButton radioButtonSparklePurple;
-        private System.Windows.Forms.RadioButton radioButtonSparkleOrange;
-        private System.Windows.Forms.RadioButton radioButtonSparkleBlue;
-        private System.Windows.Forms.RadioButton radioButtonOffice2007Black;
-        private System.Windows.Forms.RadioButton radioButtonOffice2007Silver;
-        private System.Windows.Forms.RadioButton radioButtonOffice2007Blue;
-        private System.Windows.Forms.RadioButton radioButtonOffice2010Black;
-        private System.Windows.Forms.RadioButton radioButtonOffice2010Silver;
-        private System.Windows.Forms.RadioButton radioButtonOffice2010Blue;
-        private System.Windows.Forms.RadioButton radioButtonOffice365Blue;
-        private System.Windows.Forms.CheckBox chkRightAlign;
-        private System.Windows.Forms.CheckBox chkRtlReading;
-        private System.Windows.Forms.RadioButton radioButtonWinLogo;
+        private Krypton.Toolkit.KryptonRadioButton kradWinLogo;
+        private Krypton.Toolkit.KryptonRadioButton kradQuestion;
+        private Krypton.Toolkit.KryptonRadioButton kradError;
+        private Krypton.Toolkit.KryptonRadioButton kradInformation;
+        private Krypton.Toolkit.KryptonRadioButton kradWarning;
+        private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
+        private Krypton.Toolkit.KryptonRadioButton kradYesNo;
+        private Krypton.Toolkit.KryptonRadioButton kradCancelTryContinue;
+        private Krypton.Toolkit.KryptonRadioButton kradRetryCancel;
+        private Krypton.Toolkit.KryptonRadioButton kradOK;
+        private Krypton.Toolkit.KryptonRadioButton kradYesNoCancel;
+        private Krypton.Toolkit.KryptonRadioButton kradAbortRetryIgnore;
+        private Krypton.Toolkit.KryptonRadioButton kradOKCancel;
+        private Krypton.Toolkit.KryptonButton kbtnShow;
+        private Krypton.Toolkit.KryptonPanel kryptonPanel1;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private Krypton.Toolkit.KryptonCheckBox kchkRtlReading;
+        private Krypton.Toolkit.KryptonCheckBox kchkRightAlign;
+        private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox2;
+        private Krypton.Toolkit.KryptonRadioButton kradOffice365Silver;
+        private Krypton.Toolkit.KryptonRadioButton kradOffice365Black;
+        private Krypton.Toolkit.KryptonRadioButton kradOffice365Blue;
+        private Krypton.Toolkit.KryptonRadioButton kradOffice2013;
+        private Krypton.Toolkit.KryptonRadioButton kradOffice2010Silver;
+        private Krypton.Toolkit.KryptonRadioButton kradOffice2010Black;
+        private Krypton.Toolkit.KryptonRadioButton kradOffice2010Blue;
+        private Krypton.Toolkit.KryptonRadioButton kradOffice2007Silver;
+        private Krypton.Toolkit.KryptonRadioButton kradOffice2007Black;
+        private Krypton.Toolkit.KryptonRadioButton kradOffice2007Blue;
+        private Krypton.Toolkit.KryptonRadioButton kradSystem;
+        private Krypton.Toolkit.KryptonRadioButton kradOffice2003;
+        private Krypton.Toolkit.KryptonRadioButton kradSparklePurple;
+        private Krypton.Toolkit.KryptonRadioButton kradSparkleOrange;
+        private Krypton.Toolkit.KryptonRadioButton kradSparkleBlue;
     }
 }
 
