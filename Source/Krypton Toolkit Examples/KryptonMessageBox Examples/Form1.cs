@@ -20,6 +20,7 @@ namespace KryptonMessageBoxExamples
     public partial class Form1 : KryptonForm
     {
         private MessageBoxIcon _mbIcon = MessageBoxIcon.Warning;
+        private KryptonMessageBoxIcon _kmbIcon = KryptonMessageBoxIcon.Warning;
         private MessageBoxButtons _mbButtons = MessageBoxButtons.OKCancel;
         private MessageBoxOptions _options = 0;
 
@@ -86,22 +87,27 @@ namespace KryptonMessageBoxExamples
             if (radioButtonNone.Checked)
             {
                 _mbIcon = MessageBoxIcon.None;
+                _kmbIcon = KryptonMessageBoxIcon.None;
             }
             else if (kradError.Checked)
             {
                 _mbIcon = MessageBoxIcon.Error;
+                _kmbIcon = KryptonMessageBoxIcon.Error;
             }
             else if (kradQuestion.Checked)
             {
                 _mbIcon = MessageBoxIcon.Question;
+                _kmbIcon = KryptonMessageBoxIcon.Question;
             }
             else if (kradWarning.Checked)
             {
                 _mbIcon = MessageBoxIcon.Warning;
+                _kmbIcon = KryptonMessageBoxIcon.Warning;
             }
             else if (kradInformation.Checked)
             {
                 _mbIcon = MessageBoxIcon.Information;
+                _kmbIcon = KryptonMessageBoxIcon.Information;
             }
         }
 
@@ -167,13 +173,13 @@ namespace KryptonMessageBoxExamples
         {
             if (kradWinLogo.Checked)
             {
-                KryptonMessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text, _mbButtons, KryptonMessageBoxIcon.WINDOWSLOGO, options: _options);
+                KryptonMessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text, _mbButtons, KryptonMessageBoxIcon.WindowsLogo, options: _options);
             }
             else
             {
                 MessageBox.Show(textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _mbIcon, MessageBoxDefaultButton.Button1, _options);
 
-                KryptonMessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _mbIcon,
+                KryptonMessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _kmbIcon,
                     options: _options);
             }
         }

@@ -16,7 +16,7 @@ namespace KryptonHelpIconExamples
 
         private void BsHelpIcon_Click(object sender, EventArgs e) =>
             KryptonMessageBox.Show("You have requested help... Please enter your code here.", "Help Demo",
-                MessageBoxButtons.OK, KryptonMessageBoxIcon.INFORMATION);
+                MessageBoxButtons.OK, KryptonMessageBoxIcon.Information);
 
         private void Form1_Load(object sender, EventArgs e) => palette365Blue.Checked = true;
 
