@@ -87,13 +87,13 @@ namespace KryptonTaskDialogExamples
             kryptonTaskDialog.WindowTitle = textBoxCaption.Text;
             kryptonTaskDialog.MainInstruction = textBoxMainInstructions.Text;
             kryptonTaskDialog.Content = textBoxContent.Text;
-            kryptonTaskDialog.Icon = (MessageBoxIcon)Enum.Parse(typeof(MessageBoxIcon), comboBoxIcon.Text);
+            kryptonTaskDialog.Icon = (KryptonMessageBoxIcon)Enum.Parse(typeof(KryptonMessageBoxIcon), comboBoxIcon.Text);
             kryptonTaskDialog.CommonButtons = commonButtons;
             kryptonTaskDialog.CheckboxText = textBoxCheckBoxText.Text;
             kryptonTaskDialog.CheckboxState = checkBoxInitialState.Checked;
             kryptonTaskDialog.FooterText = textBoxFooterText.Text;
             kryptonTaskDialog.FooterHyperlink = textBoxFooterHyperlink.Text;
-            kryptonTaskDialog.FooterIcon = (MessageBoxIcon)Enum.Parse(typeof(MessageBoxIcon), comboBoxFooterIcon.Text);
+            kryptonTaskDialog.FooterIcon = (KryptonMessageBoxIcon)Enum.Parse(typeof(KryptonMessageBoxIcon), comboBoxFooterIcon.Text);
             kryptonTaskDialog.ShowDialog(this);
         }
 

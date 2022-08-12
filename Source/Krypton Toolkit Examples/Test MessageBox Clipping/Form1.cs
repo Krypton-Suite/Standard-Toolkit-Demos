@@ -156,7 +156,7 @@ namespace TestMessageBoxClipping
             {
                 MessageBox.Show(this, ex.StackTrace, ex.Message);
                 KryptonMessageBox.Show(this, ex.StackTrace, ex.Message);
-                KryptonTaskDialog.Show(ex.Message, "MinInstruction", ex.StackTrace, MessageBoxIcon.Stop,
+                KryptonTaskDialog.Show(ex.Message, "MinInstruction", ex.StackTrace, KryptonMessageBoxIcon.Stop,
                     TaskDialogButtons.Close);
             }
         }
@@ -183,7 +183,7 @@ namespace TestMessageBoxClipping
             catch (Exception ex)
             {
                 MessageBox.Show(this, ex.StackTrace, "ex.Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                KryptonMessageBox.Show(this, ex.StackTrace, "ex.Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                KryptonMessageBox.Show(this, ex.StackTrace, "ex.Message", MessageBoxButtons.OK, KryptonMessageBoxIcon.Stop);
             }
         }
 
@@ -209,7 +209,7 @@ namespace TestMessageBoxClipping
             catch (Exception ex)
             {
                 MessageBox.Show(ex.StackTrace, "ex.Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                KryptonMessageBox.Show(ex.StackTrace, "ex.Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                KryptonMessageBox.Show(ex.StackTrace, "ex.Message", MessageBoxButtons.OK, KryptonMessageBoxIcon.Stop);
             }
         }
     }

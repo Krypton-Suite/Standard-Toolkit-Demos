@@ -38,7 +38,7 @@ namespace KryptonColorButtonExamples
             if (KryptonMessageBox.Show(this,
                 @"Do you want to perform the normal colourButtonAction ?",
                 @"Launch what you want",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                MessageBoxButtons.YesNo, KryptonMessageBoxIcon.Question) == DialogResult.Yes)
             {
                 kryptonColorButton5.PerformDropDown();
             }

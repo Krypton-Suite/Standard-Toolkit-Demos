@@ -125,7 +125,7 @@ namespace KryptonListBoxExamples
         private void kryptonListBox_DoubleClick(object sender, EventArgs e)
         {
             KryptonMessageBox.Show("You've invoked the double click event.", "Double Click", MessageBoxButtons.OK,
-                KryptonMessageBoxIcon.INFORMATION);
+                KryptonMessageBoxIcon.Information);
         }
     }
 }

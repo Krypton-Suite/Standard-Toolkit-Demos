@@ -21,7 +21,7 @@ namespace KryptonUACButton
 
         private void kbtnTest_Click(object sender, EventArgs e)
         {
-            KryptonMessageBox.Show("UAC elevation requires developer input.", "UAC Button Example", MessageBoxButtons.OK, KryptonMessageBoxIcon.SHIELD);
+            KryptonMessageBox.Show("UAC elevation requires developer input.", "UAC Button Example", MessageBoxButtons.OK, KryptonMessageBoxIcon.Shield);
         }
     }
 }
