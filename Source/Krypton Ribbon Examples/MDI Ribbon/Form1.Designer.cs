@@ -121,7 +121,6 @@ namespace MDIRibbon
             this.buttonNewWindow.KeyTip = "N";
             this.buttonNewWindow.TextLine1 = "New";
             this.buttonNewWindow.TextLine2 = "Window";
-            this.buttonNewWindow.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonNewWindow.Click += new System.EventHandler(this.buttonNewWindow_Click);
             // 
             // kryptonRibbonGroupTriple3
@@ -141,7 +140,6 @@ namespace MDIRibbon
             this.buttonCloseWindow.KeyTip = "X";
             this.buttonCloseWindow.TextLine1 = "Close";
             this.buttonCloseWindow.TextLine2 = "Window";
-            this.buttonCloseWindow.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonCloseWindow.Click += new System.EventHandler(this.buttonCloseWindow_Click);
             // 
             // buttonCloseAllWindows
@@ -152,7 +150,6 @@ namespace MDIRibbon
             this.buttonCloseAllWindows.KeyTip = "A";
             this.buttonCloseAllWindows.TextLine1 = "Close All";
             this.buttonCloseAllWindows.TextLine2 = "Windows";
-            this.buttonCloseAllWindows.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonCloseAllWindows.Click += new System.EventHandler(this.buttonCloseAllWindows_Click);
             // 
             // kryptonRibbonGroup1
@@ -181,7 +178,6 @@ namespace MDIRibbon
             this.buttonCascade.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonCascade.ImageSmall")));
             this.buttonCascade.KeyTip = "C";
             this.buttonCascade.TextLine1 = "Cascade";
-            this.buttonCascade.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonCascade.Click += new System.EventHandler(this.buttonCascade_Click);
             // 
             // buttonTileHorizontal
@@ -192,7 +188,6 @@ namespace MDIRibbon
             this.buttonTileHorizontal.KeyTip = "H";
             this.buttonTileHorizontal.TextLine1 = "Tile";
             this.buttonTileHorizontal.TextLine2 = "Horizontal";
-            this.buttonTileHorizontal.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonTileHorizontal.Click += new System.EventHandler(this.buttonTileHorizontal_Click);
             // 
             // buttonTileVertical
@@ -203,7 +198,6 @@ namespace MDIRibbon
             this.buttonTileVertical.KeyTip = "V";
             this.buttonTileVertical.TextLine1 = "Tile";
             this.buttonTileVertical.TextLine2 = "Vertical";
-            this.buttonTileVertical.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonTileVertical.Click += new System.EventHandler(this.buttonTileVertical_Click);
             // 
             // kryptonManager1

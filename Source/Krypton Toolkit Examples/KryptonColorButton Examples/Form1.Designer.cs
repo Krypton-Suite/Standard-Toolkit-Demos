@@ -225,6 +225,7 @@ namespace KryptonColorButtonExamples
             this.blueSplitter.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.blueSplitter.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.blueSplitter.TabIndex = 0;
+            this.blueSplitter.Values.Image = ((System.Drawing.Image)(resources.GetObject("blueSplitter.Values.Image")));
             this.blueSplitter.Values.Text = "Splitter";
             this.blueSplitter.Enter += new System.EventHandler(this.colorButtonEnter);
             // 
@@ -600,7 +601,7 @@ namespace KryptonColorButtonExamples
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 576);
             this.Controls.Add(this.kryptonColorButton5);

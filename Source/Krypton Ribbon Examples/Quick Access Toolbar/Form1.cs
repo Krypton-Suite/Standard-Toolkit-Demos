@@ -20,9 +20,9 @@ namespace QuickAccessToolbar
 {
     public partial class Form1 : KryptonForm
     {
-        private int _count = 0;
+        private int _count;
 
-        private Image[] _images = new Image[]{  global::QuickAccessToolbar.Properties.Resources.flag_australia,
+        private readonly Image[] _images = new Image[]{  global::QuickAccessToolbar.Properties.Resources.flag_australia,
                                                 global::QuickAccessToolbar.Properties.Resources.flag_cameroon,
                                                 global::QuickAccessToolbar.Properties.Resources.flag_canada,
                                                 global::QuickAccessToolbar.Properties.Resources.flag_czech_republic,
@@ -35,7 +35,7 @@ namespace QuickAccessToolbar
                                                 global::QuickAccessToolbar.Properties.Resources.flag_peru,
                                                 global::QuickAccessToolbar.Properties.Resources.flag_wales  };
 
-        private string[] _names = new string[]{ "Australia", "Cameroon", "Canada",
+        private readonly string[] _names = new string[]{ "Australia", "Cameroon", "Canada",
                                                 "Czech Republic", "Egypt", "France",
                                                 "Hong Kong", "Italy", "Lithuania",
                                                 "New Zealand", "Peru", "Wales" };
@@ -72,9 +72,11 @@ namespace QuickAccessToolbar
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            KryptonRibbonQATButton qatButton = new KryptonRibbonQATButton();
-            qatButton.Text = _names[_count];
-            qatButton.Image = _images[_count];
+            KryptonRibbonQATButton qatButton = new KryptonRibbonQATButton
+            {
+                Text = _names[_count],
+                Image = _images[_count]
+            };
             _count = (++_count % 12);
             kryptonRibbon.QATButtons.Add(qatButton);
 

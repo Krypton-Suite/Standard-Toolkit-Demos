@@ -35,6 +35,9 @@
             this.kryptonPageToolkit = new Krypton.Navigator.KryptonPage();
             this.kryptonNavigatorToolkit = new Krypton.Navigator.KryptonNavigator();
             this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
+            this.kllKryptonScrollBars = new Krypton.Toolkit.KryptonLinkLabel();
+            this.kllKryptonHelpIcon = new Krypton.Toolkit.KryptonLinkLabel();
+            this.kllKryptonWebBrowser = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonTreeView = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonInputBox = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonTaskDialog = new Krypton.Toolkit.KryptonLinkLabel();
@@ -98,6 +101,11 @@
             this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonPageDialogs = new Krypton.Navigator.KryptonPage();
+            this.klblPrintDialog = new Krypton.Toolkit.KryptonLinkLabel();
+            this.kllColourDialog = new Krypton.Toolkit.KryptonLinkLabel();
+            this.kllFontDialog = new Krypton.Toolkit.KryptonLinkLabel();
+            this.kryptonLabel7 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonPageWorkspace = new Krypton.Navigator.KryptonPage();
             this.linkCellMaximizeAndRestore = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkWorkspacePersistence = new Krypton.Toolkit.KryptonLinkLabel();
@@ -155,15 +163,16 @@
             this.labelApplicationsPage = new Krypton.Toolkit.KryptonLabel();
             this.labelApplications = new Krypton.Toolkit.KryptonLabel();
             this.linkPaletteDesigner = new Krypton.Toolkit.KryptonLinkLabel();
-            this.kryptonPage3 = new Krypton.Navigator.KryptonPage();
-            this.kbtnApplyTheme = new Krypton.Toolkit.KryptonButton();
-            this.kbtnViewLatestReleaseNotes = new Krypton.Toolkit.KryptonButton();
+            this.kryptonPageSettings = new Krypton.Navigator.KryptonPage();
+            this.kcmbTheme = new Krypton.Toolkit.KryptonThemeComboBox();
             this.kbtnOpenApplicationPath = new Krypton.Toolkit.KryptonButton();
             this.kbtnRestoreTheme = new Krypton.Toolkit.KryptonButton();
-            this.kcmbTheme = new Krypton.Toolkit.KryptonComboBox();
             this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonPage4 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPageReleases = new Krypton.Navigator.KryptonPage();
+            this.kbtnViewLatestNightlyReleaseNotes = new Krypton.Toolkit.KryptonButton();
+            this.kbtnViewLatestCanaryReleaseNotes = new Krypton.Toolkit.KryptonButton();
+            this.kbtnViewLatestReleaseNotes = new Krypton.Toolkit.KryptonButton();
             this.kbtnKryptonExtendedToolkitPackage = new Krypton.Toolkit.KryptonButton();
             this.kbtnKryptonToolkitPackage = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
@@ -176,14 +185,7 @@
             this.ss = new System.Windows.Forms.StatusStrip();
             this.tslVersion = new System.Windows.Forms.ToolStripStatusLabel();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
-            this.kryptonPageDialogs = new Krypton.Navigator.KryptonPage();
-            this.kryptonLabel7 = new Krypton.Toolkit.KryptonLabel();
-            this.kllColourDialog = new Krypton.Toolkit.KryptonLinkLabel();
-            this.kllFontDialog = new Krypton.Toolkit.KryptonLinkLabel();
-            this.klblPrintDialog = new Krypton.Toolkit.KryptonLinkLabel();
-            this.kllKryptonScrollBars = new Krypton.Toolkit.KryptonLinkLabel();
-            this.kllKryptonWebBrowser = new Krypton.Toolkit.KryptonLinkLabel();
-            this.kllKryptonHelpIcon = new Krypton.Toolkit.KryptonLinkLabel();
+            this.tsslBuildDate = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelFill)).BeginInit();
             this.kryptonPanelFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator)).BeginInit();
@@ -198,6 +200,8 @@
             this.kryptonPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPageDocking)).BeginInit();
             this.kryptonPageDocking.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPageDialogs)).BeginInit();
+            this.kryptonPageDialogs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPageWorkspace)).BeginInit();
             this.kryptonPageWorkspace.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPageNavigator)).BeginInit();
@@ -206,19 +210,17 @@
             this.kryptonPageRibbon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPageApplicatons)).BeginInit();
             this.kryptonPageApplicatons.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPage3)).BeginInit();
-            this.kryptonPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPageSettings)).BeginInit();
+            this.kryptonPageSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kcmbTheme)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPage4)).BeginInit();
-            this.kryptonPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPageReleases)).BeginInit();
+            this.kryptonPageReleases.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelTop)).BeginInit();
             this.kryptonPanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelBottom)).BeginInit();
             this.kryptonPanelBottom.SuspendLayout();
             this.ss.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPageDialogs)).BeginInit();
-            this.kryptonPageDialogs.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPanelFill
@@ -234,40 +236,15 @@
             // 
             // kryptonNavigator
             // 
-            this.kryptonNavigator.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonNavigator.Bar.BarMapExtraText = Krypton.Navigator.MapKryptonPageText.Title;
-            this.kryptonNavigator.Bar.BarMapImage = Krypton.Navigator.MapKryptonPageImage.Small;
             this.kryptonNavigator.Bar.BarMapText = Krypton.Navigator.MapKryptonPageText.Text;
-            this.kryptonNavigator.Bar.BarMultiline = Krypton.Navigator.BarMultiline.Singleline;
             this.kryptonNavigator.Bar.BarOrientation = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonNavigator.Bar.CheckButtonStyle = Krypton.Toolkit.ButtonStyle.LowProfile;
-            this.kryptonNavigator.Bar.ItemAlignment = Krypton.Toolkit.RelativePositionAlign.Near;
-            this.kryptonNavigator.Bar.ItemMaximumSize = new System.Drawing.Size(200, 200);
-            this.kryptonNavigator.Bar.ItemMinimumSize = new System.Drawing.Size(20, 20);
             this.kryptonNavigator.Bar.ItemOrientation = Krypton.Toolkit.ButtonOrientation.FixedTop;
-            this.kryptonNavigator.Bar.ItemSizing = Krypton.Navigator.BarItemSizing.SameHeight;
             this.kryptonNavigator.Bar.TabBorderStyle = Krypton.Toolkit.TabBorderStyle.OneNote;
-            this.kryptonNavigator.Bar.TabStyle = Krypton.Toolkit.TabStyle.HighProfile;
             this.kryptonNavigator.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
-            this.kryptonNavigator.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
             this.kryptonNavigator.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
-            this.kryptonNavigator.Button.ContextButtonAction = Krypton.Navigator.ContextButtonAction.SelectPage;
-            this.kryptonNavigator.Button.ContextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
-            this.kryptonNavigator.Button.ContextMenuMapImage = Krypton.Navigator.MapKryptonPageImage.Small;
-            this.kryptonNavigator.Button.ContextMenuMapText = Krypton.Navigator.MapKryptonPageText.TextTitle;
-            this.kryptonNavigator.Button.NextButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
-            this.kryptonNavigator.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
-            this.kryptonNavigator.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
-            this.kryptonNavigator.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
             this.kryptonNavigator.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonNavigator.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.kryptonNavigator.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
-            this.kryptonNavigator.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonNavigator.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonNavigator.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
-            this.kryptonNavigator.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
-            this.kryptonNavigator.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
-            this.kryptonNavigator.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
             this.kryptonNavigator.Location = new System.Drawing.Point(10, 10);
             this.kryptonNavigator.Name = "kryptonNavigator";
             this.kryptonNavigator.NavigatorMode = Krypton.Navigator.NavigatorMode.BarCheckButtonGroupOutside;
@@ -280,42 +257,22 @@
             this.kryptonPageNavigator,
             this.kryptonPageRibbon,
             this.kryptonPageApplicatons,
-            this.kryptonPage3,
-            this.kryptonPage4});
+            this.kryptonPageSettings,
+            this.kryptonPageReleases});
             this.kryptonNavigator.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonNavigator.SelectedIndex = 0;
             this.kryptonNavigator.Size = new System.Drawing.Size(683, 405);
-            this.kryptonNavigator.StateCommon.Bar.BarPaddingInside = new System.Windows.Forms.Padding(-1);
-            this.kryptonNavigator.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(-1);
             this.kryptonNavigator.StateCommon.Bar.BarPaddingOutside = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.kryptonNavigator.StateCommon.Bar.BarPaddingTabs = new System.Windows.Forms.Padding(-1);
-            this.kryptonNavigator.StateCommon.Bar.ButtonPadding = new System.Windows.Forms.Padding(-1);
             this.kryptonNavigator.StateCommon.Bar.CheckButtonGap = 5;
-            this.kryptonNavigator.StateCommon.CheckButton.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonNavigator.StateCommon.CheckButton.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonNavigator.StateCommon.CheckButton.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.kryptonNavigator.StateCommon.CheckButton.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonNavigator.StateCommon.CheckButton.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonNavigator.StateCommon.CheckButton.Content.Padding = new System.Windows.Forms.Padding(-1);
-            this.kryptonNavigator.StateCommon.CheckButton.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonNavigator.StateCommon.CheckButton.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kryptonNavigator.StateCommon.CheckButton.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonNavigator.StateCommon.CheckButton.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.kryptonNavigator.StateCommon.CheckButton.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonNavigator.StateCommon.CheckButton.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonNavigator.StateCommon.CheckButton.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonNavigator.StateCommon.CheckButton.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonNavigator.StateCommon.CheckButton.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kryptonNavigator.StateCommon.CheckButton.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonNavigator.StateCommon.CheckButton.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonNavigator.StateCommon.CheckButton.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonNavigator.TabIndex = 0;
             this.kryptonNavigator.Text = "kryptonNavigator1";
             // 
             // kryptonPageToolkit
             // 
             this.kryptonPageToolkit.AutoHiddenSlideSize = new System.Drawing.Size(150, 150);
-            this.kryptonPageToolkit.Controls.Add(this.kllKryptonScrollBars);
             this.kryptonPageToolkit.Controls.Add(this.kryptonNavigatorToolkit);
             this.kryptonPageToolkit.Controls.Add(this.labeToolkitPage);
             this.kryptonPageToolkit.Flags = 62;
@@ -333,26 +290,8 @@
             this.kryptonNavigatorToolkit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonNavigatorToolkit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonNavigatorToolkit.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
-            this.kryptonNavigatorToolkit.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
             this.kryptonNavigatorToolkit.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
-            this.kryptonNavigatorToolkit.Button.ContextButtonAction = Krypton.Navigator.ContextButtonAction.SelectPage;
-            this.kryptonNavigatorToolkit.Button.ContextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
-            this.kryptonNavigatorToolkit.Button.ContextMenuMapImage = Krypton.Navigator.MapKryptonPageImage.Small;
-            this.kryptonNavigatorToolkit.Button.ContextMenuMapText = Krypton.Navigator.MapKryptonPageText.TextTitle;
-            this.kryptonNavigatorToolkit.Button.NextButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
-            this.kryptonNavigatorToolkit.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
-            this.kryptonNavigatorToolkit.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
-            this.kryptonNavigatorToolkit.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
-            this.kryptonNavigatorToolkit.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.kryptonNavigatorToolkit.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
-            this.kryptonNavigatorToolkit.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonNavigatorToolkit.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonNavigatorToolkit.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
-            this.kryptonNavigatorToolkit.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
-            this.kryptonNavigatorToolkit.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
-            this.kryptonNavigatorToolkit.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
             this.kryptonNavigatorToolkit.Location = new System.Drawing.Point(18, 51);
             this.kryptonNavigatorToolkit.Name = "kryptonNavigatorToolkit";
             this.kryptonNavigatorToolkit.NavigatorMode = Krypton.Navigator.NavigatorMode.BarCheckButtonGroupOutside;
@@ -360,22 +299,16 @@
             this.kryptonNavigatorToolkit.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2});
-            this.kryptonNavigatorToolkit.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonNavigatorToolkit.SelectedIndex = 0;
             this.kryptonNavigatorToolkit.Size = new System.Drawing.Size(532, 336);
-            this.kryptonNavigatorToolkit.StateCommon.HeaderGroup.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonNavigatorToolkit.StateCommon.HeaderGroup.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kryptonNavigatorToolkit.StateCommon.HeaderGroup.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonNavigatorToolkit.StateCommon.HeaderGroup.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
-            this.kryptonNavigatorToolkit.StateCommon.HeaderGroup.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
-            this.kryptonNavigatorToolkit.StateCommon.HeaderGroup.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonNavigatorToolkit.StateCommon.HeaderGroup.OverlayHeaders = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonNavigatorToolkit.TabIndex = 0;
             this.kryptonNavigatorToolkit.Text = "kryptonNavigator1";
             // 
             // kryptonPage1
             // 
             this.kryptonPage1.AutoHiddenSlideSize = new System.Drawing.Size(150, 150);
+            this.kryptonPage1.Controls.Add(this.kllKryptonScrollBars);
             this.kryptonPage1.Controls.Add(this.kllKryptonHelpIcon);
             this.kryptonPage1.Controls.Add(this.kllKryptonWebBrowser);
             this.kryptonPage1.Controls.Add(this.linkKryptonTreeView);
@@ -426,15 +359,39 @@
             this.kryptonPage1.ToolTipTitle = "Page ToolTip";
             this.kryptonPage1.UniqueName = "11B6F5673ADC4D0611B6F5673ADC4D06";
             // 
+            // kllKryptonScrollBars
+            // 
+            this.kllKryptonScrollBars.Location = new System.Drawing.Point(10, 285);
+            this.kllKryptonScrollBars.Name = "kllKryptonScrollBars";
+            this.kllKryptonScrollBars.Size = new System.Drawing.Size(106, 20);
+            this.kllKryptonScrollBars.TabIndex = 42;
+            this.kllKryptonScrollBars.Values.Text = "KryptonScrollBars";
+            this.kllKryptonScrollBars.LinkClicked += new System.EventHandler(this.kllKryptonScrollBars_LinkClicked);
+            // 
+            // kllKryptonHelpIcon
+            // 
+            this.kllKryptonHelpIcon.Location = new System.Drawing.Point(334, 285);
+            this.kllKryptonHelpIcon.Name = "kllKryptonHelpIcon";
+            this.kllKryptonHelpIcon.Size = new System.Drawing.Size(102, 20);
+            this.kllKryptonHelpIcon.TabIndex = 41;
+            this.kllKryptonHelpIcon.Values.Text = "KryptonHelpIcon";
+            this.kllKryptonHelpIcon.LinkClicked += new System.EventHandler(this.kllKryptonHelpIcon_LinkClicked);
+            // 
+            // kllKryptonWebBrowser
+            // 
+            this.kllKryptonWebBrowser.Location = new System.Drawing.Point(159, 285);
+            this.kllKryptonWebBrowser.Name = "kllKryptonWebBrowser";
+            this.kllKryptonWebBrowser.Size = new System.Drawing.Size(122, 20);
+            this.kllKryptonWebBrowser.TabIndex = 40;
+            this.kllKryptonWebBrowser.Values.Text = "KryptonWebBrowser";
+            this.kllKryptonWebBrowser.LinkClicked += new System.EventHandler(this.kllKryptonWebBrowser_LinkClicked);
+            // 
             // linkKryptonTreeView
             // 
             this.linkKryptonTreeView.Location = new System.Drawing.Point(159, 262);
             this.linkKryptonTreeView.Name = "linkKryptonTreeView";
             this.linkKryptonTreeView.Size = new System.Drawing.Size(124, 20);
             this.linkKryptonTreeView.StateCommon.AdjacentGap = 5;
-            this.linkKryptonTreeView.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonTreeView.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonTreeView.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonTreeView.TabIndex = 25;
             this.linkKryptonTreeView.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonTreeView.Values.Image")));
             this.linkKryptonTreeView.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -447,9 +404,6 @@
             this.linkKryptonInputBox.Name = "linkKryptonInputBox";
             this.linkKryptonInputBox.Size = new System.Drawing.Size(123, 20);
             this.linkKryptonInputBox.StateCommon.AdjacentGap = 5;
-            this.linkKryptonInputBox.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonInputBox.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonInputBox.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonInputBox.TabIndex = 35;
             this.linkKryptonInputBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonInputBox.Values.Image")));
             this.linkKryptonInputBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -462,9 +416,6 @@
             this.linkKryptonTaskDialog.Name = "linkKryptonTaskDialog";
             this.linkKryptonTaskDialog.Size = new System.Drawing.Size(134, 20);
             this.linkKryptonTaskDialog.StateCommon.AdjacentGap = 5;
-            this.linkKryptonTaskDialog.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonTaskDialog.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonTaskDialog.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonTaskDialog.TabIndex = 37;
             this.linkKryptonTaskDialog.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonTaskDialog.Values.Image")));
             this.linkKryptonTaskDialog.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -477,9 +428,6 @@
             this.linkKryptonMessageBox.Name = "linkKryptonMessageBox";
             this.linkKryptonMessageBox.Size = new System.Drawing.Size(143, 20);
             this.linkKryptonMessageBox.StateCommon.AdjacentGap = 5;
-            this.linkKryptonMessageBox.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonMessageBox.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonMessageBox.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonMessageBox.TabIndex = 36;
             this.linkKryptonMessageBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonMessageBox.Values.Image")));
             this.linkKryptonMessageBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -492,14 +440,11 @@
             this.linkKryptobTrackBar.Name = "linkKryptobTrackBar";
             this.linkKryptobTrackBar.Size = new System.Drawing.Size(121, 20);
             this.linkKryptobTrackBar.StateCommon.AdjacentGap = 5;
-            this.linkKryptobTrackBar.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptobTrackBar.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptobTrackBar.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptobTrackBar.TabIndex = 12;
             this.linkKryptobTrackBar.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptobTrackBar.Values.Image")));
             this.linkKryptobTrackBar.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptobTrackBar.Values.Text = "KryptonTrackBar";
-            this.linkKryptobTrackBar.LinkClicked += new System.EventHandler(this.linkKryptobTrackBar_LinkClicked);
+            this.linkKryptobTrackBar.LinkClicked += new System.EventHandler(this.linkKryptonTrackBar_LinkClicked);
             // 
             // linkKryptonGroupBox
             // 
@@ -507,9 +452,6 @@
             this.linkKryptonGroupBox.Name = "linkKryptonGroupBox";
             this.linkKryptonGroupBox.Size = new System.Drawing.Size(129, 20);
             this.linkKryptonGroupBox.StateCommon.AdjacentGap = 5;
-            this.linkKryptonGroupBox.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonGroupBox.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonGroupBox.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonGroupBox.TabIndex = 30;
             this.linkKryptonGroupBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonGroupBox.Values.Image")));
             this.linkKryptonGroupBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -522,9 +464,6 @@
             this.linkKryptonWrapLabel.Name = "linkKryptonWrapLabel";
             this.linkKryptonWrapLabel.Size = new System.Drawing.Size(133, 20);
             this.linkKryptonWrapLabel.StateCommon.AdjacentGap = 5;
-            this.linkKryptonWrapLabel.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonWrapLabel.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonWrapLabel.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonWrapLabel.TabIndex = 9;
             this.linkKryptonWrapLabel.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonWrapLabel.Values.Image")));
             this.linkKryptonWrapLabel.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -537,9 +476,6 @@
             this.linkKryptonSeparator.Name = "linkKryptonSeparator";
             this.linkKryptonSeparator.Size = new System.Drawing.Size(128, 20);
             this.linkKryptonSeparator.StateCommon.AdjacentGap = 5;
-            this.linkKryptonSeparator.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonSeparator.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonSeparator.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonSeparator.TabIndex = 27;
             this.linkKryptonSeparator.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonSeparator.Values.Image")));
             this.linkKryptonSeparator.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -552,9 +488,6 @@
             this.kryptonLinkLabel2.Name = "kryptonLinkLabel2";
             this.kryptonLinkLabel2.Size = new System.Drawing.Size(159, 20);
             this.kryptonLinkLabel2.StateCommon.AdjacentGap = 5;
-            this.kryptonLinkLabel2.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLinkLabel2.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLinkLabel2.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.kryptonLinkLabel2.TabIndex = 23;
             this.kryptonLinkLabel2.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonLinkLabel2.Values.Image")));
             this.kryptonLinkLabel2.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -567,9 +500,6 @@
             this.kryptonLinkLabel1.Name = "kryptonLinkLabel1";
             this.kryptonLinkLabel1.Size = new System.Drawing.Size(159, 20);
             this.kryptonLinkLabel1.StateCommon.AdjacentGap = 5;
-            this.kryptonLinkLabel1.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLinkLabel1.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLinkLabel1.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.kryptonLinkLabel1.TabIndex = 22;
             this.kryptonLinkLabel1.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonLinkLabel1.Values.Image")));
             this.kryptonLinkLabel1.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -582,9 +512,6 @@
             this.linkKryptonDomainUpDown.Name = "linkKryptonDomainUpDown";
             this.linkKryptonDomainUpDown.Size = new System.Drawing.Size(165, 20);
             this.linkKryptonDomainUpDown.StateCommon.AdjacentGap = 5;
-            this.linkKryptonDomainUpDown.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonDomainUpDown.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonDomainUpDown.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonDomainUpDown.TabIndex = 20;
             this.linkKryptonDomainUpDown.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonDomainUpDown.Values.Image")));
             this.linkKryptonDomainUpDown.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -597,9 +524,6 @@
             this.linkKryptonBreadCrumb.Name = "linkKryptonBreadCrumb";
             this.linkKryptonBreadCrumb.Size = new System.Drawing.Size(143, 20);
             this.linkKryptonBreadCrumb.StateCommon.AdjacentGap = 5;
-            this.linkKryptonBreadCrumb.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonBreadCrumb.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonBreadCrumb.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonBreadCrumb.TabIndex = 21;
             this.linkKryptonBreadCrumb.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonBreadCrumb.Values.Image")));
             this.linkKryptonBreadCrumb.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -612,9 +536,6 @@
             this.linkKryptonNumericUpDown.Name = "linkKryptonNumericUpDown";
             this.linkKryptonNumericUpDown.Size = new System.Drawing.Size(169, 20);
             this.linkKryptonNumericUpDown.StateCommon.AdjacentGap = 5;
-            this.linkKryptonNumericUpDown.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonNumericUpDown.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonNumericUpDown.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonNumericUpDown.TabIndex = 19;
             this.linkKryptonNumericUpDown.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonNumericUpDown.Values.Image")));
             this.linkKryptonNumericUpDown.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -627,9 +548,6 @@
             this.linkKryptonCommand.Name = "linkKryptonCommand";
             this.linkKryptonCommand.Size = new System.Drawing.Size(131, 20);
             this.linkKryptonCommand.StateCommon.AdjacentGap = 5;
-            this.linkKryptonCommand.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonCommand.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonCommand.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonCommand.TabIndex = 34;
             this.linkKryptonCommand.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonCommand.Values.Image")));
             this.linkKryptonCommand.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -642,9 +560,6 @@
             this.linkKryptonCheckedListBox.Name = "linkKryptonCheckedListBox";
             this.linkKryptonCheckedListBox.Size = new System.Drawing.Size(160, 20);
             this.linkKryptonCheckedListBox.StateCommon.AdjacentGap = 5;
-            this.linkKryptonCheckedListBox.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonCheckedListBox.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonCheckedListBox.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonCheckedListBox.TabIndex = 14;
             this.linkKryptonCheckedListBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonCheckedListBox.Values.Image")));
             this.linkKryptonCheckedListBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -657,9 +572,6 @@
             this.linkKryptonListBox.Name = "linkKryptonListBox";
             this.linkKryptonListBox.Size = new System.Drawing.Size(113, 20);
             this.linkKryptonListBox.StateCommon.AdjacentGap = 5;
-            this.linkKryptonListBox.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonListBox.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonListBox.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonListBox.TabIndex = 13;
             this.linkKryptonListBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonListBox.Values.Image")));
             this.linkKryptonListBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -672,9 +584,6 @@
             this.linkKryptonColorButton.Name = "linkKryptonColorButton";
             this.linkKryptonColorButton.Size = new System.Drawing.Size(141, 20);
             this.linkKryptonColorButton.StateCommon.AdjacentGap = 5;
-            this.linkKryptonColorButton.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonColorButton.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonColorButton.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonColorButton.TabIndex = 3;
             this.linkKryptonColorButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonColorButton.Values.Image")));
             this.linkKryptonColorButton.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -687,9 +596,6 @@
             this.linkKryptonDropButton.Name = "linkKryptonDropButton";
             this.linkKryptonDropButton.Size = new System.Drawing.Size(139, 20);
             this.linkKryptonDropButton.StateCommon.AdjacentGap = 5;
-            this.linkKryptonDropButton.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonDropButton.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonDropButton.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonDropButton.TabIndex = 2;
             this.linkKryptonDropButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonDropButton.Values.Image")));
             this.linkKryptonDropButton.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -702,9 +608,6 @@
             this.linkKryptonMaskedTextBox.Name = "linkKryptonMaskedTextBox";
             this.linkKryptonMaskedTextBox.Size = new System.Drawing.Size(160, 20);
             this.linkKryptonMaskedTextBox.StateCommon.AdjacentGap = 5;
-            this.linkKryptonMaskedTextBox.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonMaskedTextBox.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonMaskedTextBox.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonMaskedTextBox.TabIndex = 16;
             this.linkKryptonMaskedTextBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonMaskedTextBox.Values.Image")));
             this.linkKryptonMaskedTextBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -717,9 +620,6 @@
             this.linkKryptonContextMenu.Name = "linkKryptonContextMenu";
             this.linkKryptonContextMenu.Size = new System.Drawing.Size(149, 20);
             this.linkKryptonContextMenu.StateCommon.AdjacentGap = 5;
-            this.linkKryptonContextMenu.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonContextMenu.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonContextMenu.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonContextMenu.TabIndex = 11;
             this.linkKryptonContextMenu.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonContextMenu.Values.Image")));
             this.linkKryptonContextMenu.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -732,9 +632,6 @@
             this.linkKryptonRichTextBox.Name = "linkKryptonRichTextBox";
             this.linkKryptonRichTextBox.Size = new System.Drawing.Size(141, 20);
             this.linkKryptonRichTextBox.StateCommon.AdjacentGap = 5;
-            this.linkKryptonRichTextBox.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonRichTextBox.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonRichTextBox.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonRichTextBox.TabIndex = 17;
             this.linkKryptonRichTextBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonRichTextBox.Values.Image")));
             this.linkKryptonRichTextBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -747,9 +644,6 @@
             this.linkKryptonComboBox.Name = "linkKryptonComboBox";
             this.linkKryptonComboBox.Size = new System.Drawing.Size(135, 20);
             this.linkKryptonComboBox.StateCommon.AdjacentGap = 5;
-            this.linkKryptonComboBox.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonComboBox.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonComboBox.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonComboBox.TabIndex = 18;
             this.linkKryptonComboBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonComboBox.Values.Image")));
             this.linkKryptonComboBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -762,9 +656,6 @@
             this.linkKryptonTextBox.Name = "linkKryptonTextBox";
             this.linkKryptonTextBox.Size = new System.Drawing.Size(117, 20);
             this.linkKryptonTextBox.StateCommon.AdjacentGap = 5;
-            this.linkKryptonTextBox.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonTextBox.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonTextBox.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonTextBox.TabIndex = 15;
             this.linkKryptonTextBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonTextBox.Values.Image")));
             this.linkKryptonTextBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -777,9 +668,6 @@
             this.linkKryptonDataGridView.Name = "linkKryptonDataGridView";
             this.linkKryptonDataGridView.Size = new System.Drawing.Size(149, 20);
             this.linkKryptonDataGridView.StateCommon.AdjacentGap = 5;
-            this.linkKryptonDataGridView.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonDataGridView.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonDataGridView.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonDataGridView.TabIndex = 24;
             this.linkKryptonDataGridView.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonDataGridView.Values.Image")));
             this.linkKryptonDataGridView.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -792,9 +680,6 @@
             this.linkKryptonRadioButton.Name = "linkKryptonRadioButton";
             this.linkKryptonRadioButton.Size = new System.Drawing.Size(143, 20);
             this.linkKryptonRadioButton.StateCommon.AdjacentGap = 5;
-            this.linkKryptonRadioButton.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonRadioButton.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonRadioButton.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonRadioButton.TabIndex = 6;
             this.linkKryptonRadioButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonRadioButton.Values.Image")));
             this.linkKryptonRadioButton.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -807,9 +692,6 @@
             this.linkKryptonCheckBox.Name = "linkKryptonCheckBox";
             this.linkKryptonCheckBox.Size = new System.Drawing.Size(128, 20);
             this.linkKryptonCheckBox.StateCommon.AdjacentGap = 5;
-            this.linkKryptonCheckBox.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonCheckBox.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonCheckBox.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonCheckBox.TabIndex = 5;
             this.linkKryptonCheckBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonCheckBox.Values.Image")));
             this.linkKryptonCheckBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -822,9 +704,6 @@
             this.linkKryptonBorderEdge.Name = "linkKryptonBorderEdge";
             this.linkKryptonBorderEdge.Size = new System.Drawing.Size(139, 20);
             this.linkKryptonBorderEdge.StateCommon.AdjacentGap = 5;
-            this.linkKryptonBorderEdge.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonBorderEdge.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonBorderEdge.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonBorderEdge.TabIndex = 26;
             this.linkKryptonBorderEdge.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonBorderEdge.Values.Image")));
             this.linkKryptonBorderEdge.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -837,9 +716,6 @@
             this.linkKryptonForm.Name = "linkKryptonForm";
             this.linkKryptonForm.Size = new System.Drawing.Size(103, 20);
             this.linkKryptonForm.StateCommon.AdjacentGap = 5;
-            this.linkKryptonForm.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonForm.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonForm.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonForm.TabIndex = 38;
             this.linkKryptonForm.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonForm.Values.Image")));
             this.linkKryptonForm.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -852,9 +728,6 @@
             this.linkKryptonCheckSet.Name = "linkKryptonCheckSet";
             this.linkKryptonCheckSet.Size = new System.Drawing.Size(125, 20);
             this.linkKryptonCheckSet.StateCommon.AdjacentGap = 5;
-            this.linkKryptonCheckSet.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonCheckSet.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonCheckSet.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonCheckSet.TabIndex = 4;
             this.linkKryptonCheckSet.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonCheckSet.Values.Image")));
             this.linkKryptonCheckSet.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -867,9 +740,6 @@
             this.linkKryptonCheckButton.Name = "linkKryptonCheckButton";
             this.linkKryptonCheckButton.Size = new System.Drawing.Size(144, 20);
             this.linkKryptonCheckButton.StateCommon.AdjacentGap = 5;
-            this.linkKryptonCheckButton.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonCheckButton.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonCheckButton.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonCheckButton.TabIndex = 1;
             this.linkKryptonCheckButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonCheckButton.Values.Image")));
             this.linkKryptonCheckButton.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -882,9 +752,6 @@
             this.linkKryptonLinkLabel.Name = "linkKryptonLinkLabel";
             this.linkKryptonLinkLabel.Size = new System.Drawing.Size(125, 20);
             this.linkKryptonLinkLabel.StateCommon.AdjacentGap = 5;
-            this.linkKryptonLinkLabel.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonLinkLabel.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonLinkLabel.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonLinkLabel.TabIndex = 8;
             this.linkKryptonLinkLabel.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonLinkLabel.Values.Image")));
             this.linkKryptonLinkLabel.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -897,9 +764,6 @@
             this.linkKryptonSplitContainer.Name = "linkKryptonSplitContainer";
             this.linkKryptonSplitContainer.Size = new System.Drawing.Size(152, 20);
             this.linkKryptonSplitContainer.StateCommon.AdjacentGap = 5;
-            this.linkKryptonSplitContainer.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonSplitContainer.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonSplitContainer.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonSplitContainer.TabIndex = 10;
             this.linkKryptonSplitContainer.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonSplitContainer.Values.Image")));
             this.linkKryptonSplitContainer.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -912,9 +776,6 @@
             this.linkKryptonPanel.Name = "linkKryptonPanel";
             this.linkKryptonPanel.Size = new System.Drawing.Size(104, 20);
             this.linkKryptonPanel.StateCommon.AdjacentGap = 5;
-            this.linkKryptonPanel.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonPanel.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonPanel.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonPanel.TabIndex = 28;
             this.linkKryptonPanel.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonPanel.Values.Image")));
             this.linkKryptonPanel.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -927,9 +788,6 @@
             this.linkKryptonPalette.Name = "linkKryptonPalette";
             this.linkKryptonPalette.Size = new System.Drawing.Size(112, 20);
             this.linkKryptonPalette.StateCommon.AdjacentGap = 5;
-            this.linkKryptonPalette.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonPalette.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonPalette.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonPalette.TabIndex = 33;
             this.linkKryptonPalette.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonPalette.Values.Image")));
             this.linkKryptonPalette.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -942,9 +800,6 @@
             this.linkKryptonButton.Name = "linkKryptonButton";
             this.linkKryptonButton.Size = new System.Drawing.Size(111, 20);
             this.linkKryptonButton.StateCommon.AdjacentGap = 5;
-            this.linkKryptonButton.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonButton.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonButton.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonButton.TabIndex = 0;
             this.linkKryptonButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonButton.Values.Image")));
             this.linkKryptonButton.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -957,9 +812,6 @@
             this.linkKryptonLabel.Name = "linkKryptonLabel";
             this.linkKryptonLabel.Size = new System.Drawing.Size(103, 20);
             this.linkKryptonLabel.StateCommon.AdjacentGap = 5;
-            this.linkKryptonLabel.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonLabel.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonLabel.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonLabel.TabIndex = 7;
             this.linkKryptonLabel.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonLabel.Values.Image")));
             this.linkKryptonLabel.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -972,9 +824,6 @@
             this.linkKryptonGroup.Name = "linkKryptonGroup";
             this.linkKryptonGroup.Size = new System.Drawing.Size(109, 20);
             this.linkKryptonGroup.StateCommon.AdjacentGap = 5;
-            this.linkKryptonGroup.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonGroup.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonGroup.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonGroup.TabIndex = 29;
             this.linkKryptonGroup.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonGroup.Values.Image")));
             this.linkKryptonGroup.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -987,9 +836,6 @@
             this.linkKryptonHeaderGroup.Name = "linkKryptonHeaderGroup";
             this.linkKryptonHeaderGroup.Size = new System.Drawing.Size(148, 20);
             this.linkKryptonHeaderGroup.StateCommon.AdjacentGap = 5;
-            this.linkKryptonHeaderGroup.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonHeaderGroup.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonHeaderGroup.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonHeaderGroup.TabIndex = 31;
             this.linkKryptonHeaderGroup.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonHeaderGroup.Values.Image")));
             this.linkKryptonHeaderGroup.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -1002,9 +848,6 @@
             this.linkKryptonHeader.Name = "linkKryptonHeader";
             this.linkKryptonHeader.Size = new System.Drawing.Size(114, 20);
             this.linkKryptonHeader.StateCommon.AdjacentGap = 5;
-            this.linkKryptonHeader.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonHeader.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.linkKryptonHeader.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
             this.linkKryptonHeader.TabIndex = 32;
             this.linkKryptonHeader.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonHeader.Values.Image")));
             this.linkKryptonHeader.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -1029,7 +872,7 @@
             this.kryptonPage2.LastVisibleSet = true;
             this.kryptonPage2.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage2.Name = "kryptonPage2";
-            this.kryptonPage2.Size = new System.Drawing.Size(494, 290);
+            this.kryptonPage2.Size = new System.Drawing.Size(532, 311);
             this.kryptonPage2.Text = "Application Examples";
             this.kryptonPage2.ToolTipTitle = "Page ToolTip";
             this.kryptonPage2.UniqueName = "4722B7548CB44C0C4722B7548CB44C0C";
@@ -1138,21 +981,8 @@
             this.labeToolkitPage.Location = new System.Drawing.Point(12, 12);
             this.labeToolkitPage.Name = "labeToolkitPage";
             this.labeToolkitPage.Size = new System.Drawing.Size(295, 28);
-            this.labeToolkitPage.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.labeToolkitPage.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.labeToolkitPage.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.labeToolkitPage.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labeToolkitPage.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.labeToolkitPage.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeToolkitPage.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.labeToolkitPage.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labeToolkitPage.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.labeToolkitPage.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.labeToolkitPage.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labeToolkitPage.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.labeToolkitPage.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labeToolkitPage.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labeToolkitPage.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labeToolkitPage.TabIndex = 1;
             this.labeToolkitPage.Values.Text = "Krypton Toolkit Examples";
             // 
@@ -1173,7 +1003,7 @@
             this.kryptonPageDocking.LastVisibleSet = true;
             this.kryptonPageDocking.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageDocking.Name = "kryptonPageDocking";
-            this.kryptonPageDocking.Size = new System.Drawing.Size(529, 379);
+            this.kryptonPageDocking.Size = new System.Drawing.Size(568, 403);
             this.kryptonPageDocking.Text = "Docking";
             this.kryptonPageDocking.TextDescription = "";
             this.kryptonPageDocking.TextTitle = "";
@@ -1248,21 +1078,8 @@
             this.kryptonLabel2.Location = new System.Drawing.Point(220, 48);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(133, 20);
-            this.kryptonLabel2.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel2.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel2.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.kryptonLabel2.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonLabel2.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.kryptonLabel2.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonLabel2.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel2.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel2.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel2.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kryptonLabel2.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel2.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel2.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel2.TabIndex = 6;
             this.kryptonLabel2.Values.Text = "Usage Examples";
             // 
@@ -1271,21 +1088,8 @@
             this.kryptonLabel3.Location = new System.Drawing.Point(15, 48);
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.Size = new System.Drawing.Size(145, 20);
-            this.kryptonLabel3.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel3.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel3.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.kryptonLabel3.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonLabel3.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel3.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.kryptonLabel3.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonLabel3.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel3.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel3.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel3.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kryptonLabel3.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel3.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel3.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel3.TabIndex = 7;
             this.kryptonLabel3.Values.Text = "Feature Examples";
             // 
@@ -1294,23 +1098,64 @@
             this.kryptonLabel1.Location = new System.Drawing.Point(12, 12);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(308, 28);
-            this.kryptonLabel1.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel1.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel1.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.kryptonLabel1.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonLabel1.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.kryptonLabel1.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonLabel1.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel1.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel1.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel1.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kryptonLabel1.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel1.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel1.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel1.TabIndex = 8;
             this.kryptonLabel1.Values.Text = "Krypton Docking Examples";
+            // 
+            // kryptonPageDialogs
+            // 
+            this.kryptonPageDialogs.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.kryptonPageDialogs.Controls.Add(this.klblPrintDialog);
+            this.kryptonPageDialogs.Controls.Add(this.kllColourDialog);
+            this.kryptonPageDialogs.Controls.Add(this.kllFontDialog);
+            this.kryptonPageDialogs.Controls.Add(this.kryptonLabel7);
+            this.kryptonPageDialogs.Flags = 65534;
+            this.kryptonPageDialogs.LastVisibleSet = true;
+            this.kryptonPageDialogs.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPageDialogs.Name = "kryptonPageDialogs";
+            this.kryptonPageDialogs.Size = new System.Drawing.Size(568, 403);
+            this.kryptonPageDialogs.Text = "Dialogs";
+            this.kryptonPageDialogs.TextTitle = "";
+            this.kryptonPageDialogs.ToolTipTitle = "Page ToolTip";
+            this.kryptonPageDialogs.UniqueName = "6caa255387df4d83bac139a5ca95d75b";
+            // 
+            // klblPrintDialog
+            // 
+            this.klblPrintDialog.Location = new System.Drawing.Point(18, 96);
+            this.klblPrintDialog.Name = "klblPrintDialog";
+            this.klblPrintDialog.Size = new System.Drawing.Size(75, 20);
+            this.klblPrintDialog.TabIndex = 12;
+            this.klblPrintDialog.Values.Text = "Print Dialog";
+            this.klblPrintDialog.LinkClicked += new System.EventHandler(this.klblPrintDialog_LinkClicked);
+            // 
+            // kllColourDialog
+            // 
+            this.kllColourDialog.Location = new System.Drawing.Point(20, 52);
+            this.kllColourDialog.Name = "kllColourDialog";
+            this.kllColourDialog.Size = new System.Drawing.Size(86, 20);
+            this.kllColourDialog.TabIndex = 10;
+            this.kllColourDialog.Values.Text = "Colour Dialog";
+            this.kllColourDialog.LinkClicked += new System.EventHandler(this.kllColourDialog_LinkClicked);
+            // 
+            // kllFontDialog
+            // 
+            this.kllFontDialog.Location = new System.Drawing.Point(20, 73);
+            this.kllFontDialog.Name = "kllFontDialog";
+            this.kllFontDialog.Size = new System.Drawing.Size(74, 20);
+            this.kllFontDialog.TabIndex = 11;
+            this.kllFontDialog.Values.Text = "Font Dialog";
+            this.kllFontDialog.LinkClicked += new System.EventHandler(this.kllFontDialog_LinkClicked);
+            // 
+            // kryptonLabel7
+            // 
+            this.kryptonLabel7.Location = new System.Drawing.Point(12, 12);
+            this.kryptonLabel7.Name = "kryptonLabel7";
+            this.kryptonLabel7.Size = new System.Drawing.Size(289, 28);
+            this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel7.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel7.TabIndex = 9;
+            this.kryptonLabel7.Values.Text = "Krypton Dialog Examples";
             // 
             // kryptonPageWorkspace
             // 
@@ -1413,21 +1258,8 @@
             this.labelWorkspaceUsageExamples.Location = new System.Drawing.Point(220, 48);
             this.labelWorkspaceUsageExamples.Name = "labelWorkspaceUsageExamples";
             this.labelWorkspaceUsageExamples.Size = new System.Drawing.Size(133, 20);
-            this.labelWorkspaceUsageExamples.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelWorkspaceUsageExamples.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelWorkspaceUsageExamples.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.labelWorkspaceUsageExamples.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelWorkspaceUsageExamples.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.labelWorkspaceUsageExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWorkspaceUsageExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.labelWorkspaceUsageExamples.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelWorkspaceUsageExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.labelWorkspaceUsageExamples.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelWorkspaceUsageExamples.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelWorkspaceUsageExamples.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.labelWorkspaceUsageExamples.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelWorkspaceUsageExamples.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelWorkspaceUsageExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelWorkspaceUsageExamples.TabIndex = 8;
             this.labelWorkspaceUsageExamples.Values.Text = "Usage Examples";
             // 
@@ -1436,21 +1268,8 @@
             this.labelWorkspaceFeatureExamples.Location = new System.Drawing.Point(15, 48);
             this.labelWorkspaceFeatureExamples.Name = "labelWorkspaceFeatureExamples";
             this.labelWorkspaceFeatureExamples.Size = new System.Drawing.Size(145, 20);
-            this.labelWorkspaceFeatureExamples.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelWorkspaceFeatureExamples.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelWorkspaceFeatureExamples.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.labelWorkspaceFeatureExamples.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelWorkspaceFeatureExamples.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.labelWorkspaceFeatureExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWorkspaceFeatureExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.labelWorkspaceFeatureExamples.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelWorkspaceFeatureExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.labelWorkspaceFeatureExamples.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelWorkspaceFeatureExamples.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelWorkspaceFeatureExamples.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.labelWorkspaceFeatureExamples.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelWorkspaceFeatureExamples.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelWorkspaceFeatureExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelWorkspaceFeatureExamples.TabIndex = 9;
             this.labelWorkspaceFeatureExamples.Values.Text = "Feature Examples";
             // 
@@ -1459,21 +1278,8 @@
             this.labelWorkspacePage.Location = new System.Drawing.Point(12, 12);
             this.labelWorkspacePage.Name = "labelWorkspacePage";
             this.labelWorkspacePage.Size = new System.Drawing.Size(340, 28);
-            this.labelWorkspacePage.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelWorkspacePage.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelWorkspacePage.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.labelWorkspacePage.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelWorkspacePage.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.labelWorkspacePage.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWorkspacePage.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.labelWorkspacePage.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelWorkspacePage.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.labelWorkspacePage.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelWorkspacePage.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelWorkspacePage.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.labelWorkspacePage.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelWorkspacePage.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelWorkspacePage.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelWorkspacePage.TabIndex = 10;
             this.labelWorkspacePage.Values.Text = "Krypton Workspace Examples";
             // 
@@ -1652,21 +1458,8 @@
             this.labelNavigatorUsageExamples.Location = new System.Drawing.Point(220, 48);
             this.labelNavigatorUsageExamples.Name = "labelNavigatorUsageExamples";
             this.labelNavigatorUsageExamples.Size = new System.Drawing.Size(133, 20);
-            this.labelNavigatorUsageExamples.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelNavigatorUsageExamples.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelNavigatorUsageExamples.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.labelNavigatorUsageExamples.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelNavigatorUsageExamples.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.labelNavigatorUsageExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNavigatorUsageExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.labelNavigatorUsageExamples.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelNavigatorUsageExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.labelNavigatorUsageExamples.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelNavigatorUsageExamples.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelNavigatorUsageExamples.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.labelNavigatorUsageExamples.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelNavigatorUsageExamples.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelNavigatorUsageExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelNavigatorUsageExamples.TabIndex = 15;
             this.labelNavigatorUsageExamples.Values.Text = "Usage Examples";
             // 
@@ -1711,21 +1504,8 @@
             this.labelNavigatorFeatureExamples.Location = new System.Drawing.Point(15, 48);
             this.labelNavigatorFeatureExamples.Name = "labelNavigatorFeatureExamples";
             this.labelNavigatorFeatureExamples.Size = new System.Drawing.Size(145, 20);
-            this.labelNavigatorFeatureExamples.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelNavigatorFeatureExamples.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelNavigatorFeatureExamples.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.labelNavigatorFeatureExamples.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelNavigatorFeatureExamples.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.labelNavigatorFeatureExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNavigatorFeatureExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.labelNavigatorFeatureExamples.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelNavigatorFeatureExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.labelNavigatorFeatureExamples.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelNavigatorFeatureExamples.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelNavigatorFeatureExamples.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.labelNavigatorFeatureExamples.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelNavigatorFeatureExamples.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelNavigatorFeatureExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelNavigatorFeatureExamples.TabIndex = 20;
             this.labelNavigatorFeatureExamples.Values.Text = "Feature Examples";
             // 
@@ -1734,21 +1514,8 @@
             this.labelNavigatorPage.Location = new System.Drawing.Point(12, 12);
             this.labelNavigatorPage.Name = "labelNavigatorPage";
             this.labelNavigatorPage.Size = new System.Drawing.Size(327, 28);
-            this.labelNavigatorPage.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelNavigatorPage.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelNavigatorPage.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.labelNavigatorPage.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelNavigatorPage.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.labelNavigatorPage.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNavigatorPage.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.labelNavigatorPage.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelNavigatorPage.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.labelNavigatorPage.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelNavigatorPage.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelNavigatorPage.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.labelNavigatorPage.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelNavigatorPage.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelNavigatorPage.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelNavigatorPage.TabIndex = 21;
             this.labelNavigatorPage.Values.Text = "Krypton Navigator Examples";
             // 
@@ -1903,21 +1670,8 @@
             this.labelRibbonUsageExamples.Location = new System.Drawing.Point(220, 48);
             this.labelRibbonUsageExamples.Name = "labelRibbonUsageExamples";
             this.labelRibbonUsageExamples.Size = new System.Drawing.Size(133, 20);
-            this.labelRibbonUsageExamples.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelRibbonUsageExamples.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelRibbonUsageExamples.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.labelRibbonUsageExamples.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelRibbonUsageExamples.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.labelRibbonUsageExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRibbonUsageExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.labelRibbonUsageExamples.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelRibbonUsageExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.labelRibbonUsageExamples.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelRibbonUsageExamples.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelRibbonUsageExamples.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.labelRibbonUsageExamples.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelRibbonUsageExamples.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelRibbonUsageExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelRibbonUsageExamples.TabIndex = 13;
             this.labelRibbonUsageExamples.Values.Text = "Usage Examples";
             // 
@@ -1926,21 +1680,8 @@
             this.labelRibbonFeatureExamples.Location = new System.Drawing.Point(15, 48);
             this.labelRibbonFeatureExamples.Name = "labelRibbonFeatureExamples";
             this.labelRibbonFeatureExamples.Size = new System.Drawing.Size(145, 20);
-            this.labelRibbonFeatureExamples.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelRibbonFeatureExamples.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelRibbonFeatureExamples.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.labelRibbonFeatureExamples.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelRibbonFeatureExamples.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.labelRibbonFeatureExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRibbonFeatureExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.labelRibbonFeatureExamples.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelRibbonFeatureExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.labelRibbonFeatureExamples.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelRibbonFeatureExamples.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelRibbonFeatureExamples.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.labelRibbonFeatureExamples.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelRibbonFeatureExamples.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelRibbonFeatureExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelRibbonFeatureExamples.TabIndex = 14;
             this.labelRibbonFeatureExamples.Values.Text = "Feature Examples";
             // 
@@ -1949,21 +1690,8 @@
             this.labelRibbonPage.Location = new System.Drawing.Point(12, 12);
             this.labelRibbonPage.Name = "labelRibbonPage";
             this.labelRibbonPage.Size = new System.Drawing.Size(296, 28);
-            this.labelRibbonPage.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelRibbonPage.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelRibbonPage.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.labelRibbonPage.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelRibbonPage.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.labelRibbonPage.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRibbonPage.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.labelRibbonPage.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelRibbonPage.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.labelRibbonPage.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelRibbonPage.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelRibbonPage.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.labelRibbonPage.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelRibbonPage.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelRibbonPage.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelRibbonPage.TabIndex = 15;
             this.labelRibbonPage.Values.Text = "Krypton Ribbon Examples";
             // 
@@ -1978,11 +1706,12 @@
             this.kryptonPageApplicatons.LastVisibleSet = true;
             this.kryptonPageApplicatons.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageApplicatons.Name = "kryptonPageApplicatons";
-            this.kryptonPageApplicatons.Size = new System.Drawing.Size(527, 384);
+            this.kryptonPageApplicatons.Size = new System.Drawing.Size(568, 403);
             this.kryptonPageApplicatons.Text = "Applications";
             this.kryptonPageApplicatons.TextTitle = "";
             this.kryptonPageApplicatons.ToolTipTitle = "Page ToolTip";
             this.kryptonPageApplicatons.UniqueName = "F1D9B8A768F74629F1D9B8A768F74629";
+            this.kryptonPageApplicatons.Visible = false;
             // 
             // linkPaletteUpgradeTool
             // 
@@ -1998,21 +1727,8 @@
             this.labelApplicationsPage.Location = new System.Drawing.Point(12, 12);
             this.labelApplicationsPage.Name = "labelApplicationsPage";
             this.labelApplicationsPage.Size = new System.Drawing.Size(242, 28);
-            this.labelApplicationsPage.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelApplicationsPage.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelApplicationsPage.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.labelApplicationsPage.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelApplicationsPage.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.labelApplicationsPage.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelApplicationsPage.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.labelApplicationsPage.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelApplicationsPage.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.labelApplicationsPage.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelApplicationsPage.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelApplicationsPage.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.labelApplicationsPage.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelApplicationsPage.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelApplicationsPage.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelApplicationsPage.TabIndex = 2;
             this.labelApplicationsPage.Values.Text = "Krypton Applications";
             // 
@@ -2021,21 +1737,8 @@
             this.labelApplications.Location = new System.Drawing.Point(15, 48);
             this.labelApplications.Name = "labelApplications";
             this.labelApplications.Size = new System.Drawing.Size(103, 20);
-            this.labelApplications.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelApplications.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelApplications.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.labelApplications.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelApplications.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.labelApplications.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelApplications.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.labelApplications.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelApplications.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.labelApplications.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelApplications.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelApplications.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.labelApplications.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelApplications.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelApplications.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelApplications.TabIndex = 3;
             this.labelApplications.Values.Text = "Applications";
             // 
@@ -2048,142 +1751,46 @@
             this.linkPaletteDesigner.Values.Text = "Palette Designer";
             this.linkPaletteDesigner.LinkClicked += new System.EventHandler(this.linkPaletteDesigner_LinkClicked);
             // 
-            // kryptonPage3
+            // kryptonPageSettings
             // 
-            this.kryptonPage3.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
-            this.kryptonPage3.Controls.Add(this.kbtnApplyTheme);
-            this.kryptonPage3.Controls.Add(this.kbtnViewLatestReleaseNotes);
-            this.kryptonPage3.Controls.Add(this.kbtnOpenApplicationPath);
-            this.kryptonPage3.Controls.Add(this.kbtnRestoreTheme);
-            this.kryptonPage3.Controls.Add(this.kcmbTheme);
-            this.kryptonPage3.Controls.Add(this.kryptonLabel5);
-            this.kryptonPage3.Controls.Add(this.kryptonLabel4);
-            this.kryptonPage3.Flags = 65534;
-            this.kryptonPage3.LastVisibleSet = true;
-            this.kryptonPage3.MinimumSize = new System.Drawing.Size(50, 50);
-            this.kryptonPage3.Name = "kryptonPage3";
-            this.kryptonPage3.Size = new System.Drawing.Size(529, 379);
-            this.kryptonPage3.Text = "Settings";
-            this.kryptonPage3.TextTitle = "";
-            this.kryptonPage3.ToolTipTitle = "Page ToolTip";
-            this.kryptonPage3.UniqueName = "CFA5B88FD61444D09FBDCFC6D2B57A3A";
+            this.kryptonPageSettings.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.kryptonPageSettings.Controls.Add(this.kcmbTheme);
+            this.kryptonPageSettings.Controls.Add(this.kbtnOpenApplicationPath);
+            this.kryptonPageSettings.Controls.Add(this.kbtnRestoreTheme);
+            this.kryptonPageSettings.Controls.Add(this.kryptonLabel5);
+            this.kryptonPageSettings.Controls.Add(this.kryptonLabel4);
+            this.kryptonPageSettings.Flags = 65534;
+            this.kryptonPageSettings.LastVisibleSet = true;
+            this.kryptonPageSettings.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPageSettings.Name = "kryptonPageSettings";
+            this.kryptonPageSettings.Size = new System.Drawing.Size(568, 403);
+            this.kryptonPageSettings.Text = "Settings";
+            this.kryptonPageSettings.TextTitle = "";
+            this.kryptonPageSettings.ToolTipTitle = "Page ToolTip";
+            this.kryptonPageSettings.UniqueName = "CFA5B88FD61444D09FBDCFC6D2B57A3A";
             // 
-            // kbtnApplyTheme
+            // kcmbTheme
             // 
-            this.kbtnApplyTheme.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.kbtnApplyTheme.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.kbtnApplyTheme.Enabled = false;
-            this.kbtnApplyTheme.Location = new System.Drawing.Point(339, 51);
-            this.kbtnApplyTheme.Name = "kbtnApplyTheme";
-            this.kbtnApplyTheme.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kbtnApplyTheme.Size = new System.Drawing.Size(80, 28);
-            this.kbtnApplyTheme.StateCommon.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.LongText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.LongText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kbtnApplyTheme.StateCommon.Content.LongText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.LongText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.LongText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.LongText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.LongText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.LongText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1);
-            this.kbtnApplyTheme.StateCommon.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kbtnApplyTheme.StateCommon.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnApplyTheme.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kbtnApplyTheme.TabIndex = 8;
-            this.kbtnApplyTheme.Values.Text = "&Apply";
-            this.kbtnApplyTheme.Click += new System.EventHandler(this.kbtnApplyTheme_Click);
-            // 
-            // kbtnViewLatestReleaseNotes
-            // 
-            this.kbtnViewLatestReleaseNotes.AutoSize = true;
-            this.kbtnViewLatestReleaseNotes.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kbtnViewLatestReleaseNotes.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.kbtnViewLatestReleaseNotes.Location = new System.Drawing.Point(31, 195);
-            this.kbtnViewLatestReleaseNotes.Name = "kbtnViewLatestReleaseNotes";
-            this.kbtnViewLatestReleaseNotes.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kbtnViewLatestReleaseNotes.Size = new System.Drawing.Size(286, 33);
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1);
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kbtnViewLatestReleaseNotes.TabIndex = 7;
-            this.kbtnViewLatestReleaseNotes.Values.Text = "View &Latest Release Notes";
-            this.kbtnViewLatestReleaseNotes.Click += new System.EventHandler(this.kbtnViewLatestReleaseNotes_Click);
+            this.kcmbTheme.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.kcmbTheme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.kcmbTheme.DropDownWidth = 363;
+            this.kcmbTheme.IntegralHeight = false;
+            this.kcmbTheme.Location = new System.Drawing.Point(118, 50);
+            this.kcmbTheme.Name = "kcmbTheme";
+            this.kcmbTheme.Size = new System.Drawing.Size(363, 25);
+            this.kcmbTheme.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kcmbTheme.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kcmbTheme.TabIndex = 3;
+            this.kcmbTheme.SelectedIndexChanged += new System.EventHandler(this.kcmbTheme_SelectedIndexChanged);
             // 
             // kbtnOpenApplicationPath
             // 
             this.kbtnOpenApplicationPath.AutoSize = true;
-            this.kbtnOpenApplicationPath.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kbtnOpenApplicationPath.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kbtnOpenApplicationPath.Location = new System.Drawing.Point(31, 141);
             this.kbtnOpenApplicationPath.Name = "kbtnOpenApplicationPath";
-            this.kbtnOpenApplicationPath.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kbtnOpenApplicationPath.Size = new System.Drawing.Size(241, 33);
-            this.kbtnOpenApplicationPath.StateCommon.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.LongText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.LongText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kbtnOpenApplicationPath.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kbtnOpenApplicationPath.StateCommon.Content.LongText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.LongText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.LongText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.LongText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.LongText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.LongText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1);
-            this.kbtnOpenApplicationPath.StateCommon.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kbtnOpenApplicationPath.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kbtnOpenApplicationPath.StateCommon.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnOpenApplicationPath.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnOpenApplicationPath.TabIndex = 6;
             this.kbtnOpenApplicationPath.Values.Text = "Op&en Application Path";
             this.kbtnOpenApplicationPath.Click += new System.EventHandler(this.kbtnOpenApplicationPath_Click);
@@ -2191,105 +1798,22 @@
             // kbtnRestoreTheme
             // 
             this.kbtnRestoreTheme.AutoSize = true;
-            this.kbtnRestoreTheme.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kbtnRestoreTheme.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kbtnRestoreTheme.Location = new System.Drawing.Point(31, 87);
             this.kbtnRestoreTheme.Name = "kbtnRestoreTheme";
-            this.kbtnRestoreTheme.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kbtnRestoreTheme.Size = new System.Drawing.Size(202, 33);
-            this.kbtnRestoreTheme.StateCommon.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.LongText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.LongText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kbtnRestoreTheme.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kbtnRestoreTheme.StateCommon.Content.LongText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.LongText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.LongText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.LongText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.LongText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.LongText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1);
-            this.kbtnRestoreTheme.StateCommon.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kbtnRestoreTheme.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kbtnRestoreTheme.StateCommon.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnRestoreTheme.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnRestoreTheme.TabIndex = 5;
             this.kbtnRestoreTheme.Values.Text = "&Restore to Default";
-            // 
-            // kcmbTheme
-            // 
-            this.kcmbTheme.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.kcmbTheme.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.kcmbTheme.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.kcmbTheme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.kcmbTheme.DropDownWidth = 215;
-            this.kcmbTheme.IntegralHeight = false;
-            this.kcmbTheme.Location = new System.Drawing.Point(118, 52);
-            this.kcmbTheme.Name = "kcmbTheme";
-            this.kcmbTheme.Size = new System.Drawing.Size(215, 25);
-            this.kcmbTheme.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kcmbTheme.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kcmbTheme.StateCommon.Item.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.LongText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.LongText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kcmbTheme.StateCommon.Item.Content.LongText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.LongText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.LongText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.LongText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.LongText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.LongText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.Padding = new System.Windows.Forms.Padding(-1);
-            this.kcmbTheme.StateCommon.Item.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kcmbTheme.StateCommon.Item.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kcmbTheme.StateCommon.Item.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kcmbTheme.TabIndex = 4;
-            this.kcmbTheme.SelectedIndexChanged += new System.EventHandler(this.kcmbTheme_SelectedIndexChanged);
+            this.kbtnRestoreTheme.Click += new System.EventHandler(this.kbtnRestoreTheme_Click);
             // 
             // kryptonLabel5
             // 
             this.kryptonLabel5.Location = new System.Drawing.Point(31, 51);
             this.kryptonLabel5.Name = "kryptonLabel5";
             this.kryptonLabel5.Size = new System.Drawing.Size(81, 24);
-            this.kryptonLabel5.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel5.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel5.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.kryptonLabel5.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonLabel5.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel5.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.kryptonLabel5.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonLabel5.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel5.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel5.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel5.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kryptonLabel5.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel5.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel5.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel5.TabIndex = 3;
             this.kryptonLabel5.Values.Text = "Theme:";
             // 
@@ -2298,143 +1822,101 @@
             this.kryptonLabel4.Location = new System.Drawing.Point(12, 12);
             this.kryptonLabel4.Name = "kryptonLabel4";
             this.kryptonLabel4.Size = new System.Drawing.Size(297, 28);
-            this.kryptonLabel4.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel4.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel4.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.kryptonLabel4.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonLabel4.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel4.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.kryptonLabel4.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonLabel4.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel4.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel4.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel4.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kryptonLabel4.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel4.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel4.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel4.TabIndex = 2;
             this.kryptonLabel4.Values.Text = "Krypton Explorer Settings";
             // 
-            // kryptonPage4
+            // kryptonPageReleases
             // 
-            this.kryptonPage4.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
-            this.kryptonPage4.Controls.Add(this.kbtnKryptonExtendedToolkitPackage);
-            this.kryptonPage4.Controls.Add(this.kbtnKryptonToolkitPackage);
-            this.kryptonPage4.Controls.Add(this.kryptonLabel6);
-            this.kryptonPage4.Flags = 65534;
-            this.kryptonPage4.LastVisibleSet = true;
-            this.kryptonPage4.MinimumSize = new System.Drawing.Size(50, 50);
-            this.kryptonPage4.Name = "kryptonPage4";
-            this.kryptonPage4.Size = new System.Drawing.Size(568, 403);
-            this.kryptonPage4.Text = "Releases";
-            this.kryptonPage4.TextDescription = "";
-            this.kryptonPage4.TextTitle = "";
-            this.kryptonPage4.ToolTipTitle = "Page ToolTip";
-            this.kryptonPage4.UniqueName = "36f7a05b89394cc5922db2b6b1367bd8";
+            this.kryptonPageReleases.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.kryptonPageReleases.Controls.Add(this.kbtnViewLatestNightlyReleaseNotes);
+            this.kryptonPageReleases.Controls.Add(this.kbtnViewLatestCanaryReleaseNotes);
+            this.kryptonPageReleases.Controls.Add(this.kbtnViewLatestReleaseNotes);
+            this.kryptonPageReleases.Controls.Add(this.kbtnKryptonExtendedToolkitPackage);
+            this.kryptonPageReleases.Controls.Add(this.kbtnKryptonToolkitPackage);
+            this.kryptonPageReleases.Controls.Add(this.kryptonLabel6);
+            this.kryptonPageReleases.Flags = 65534;
+            this.kryptonPageReleases.LastVisibleSet = true;
+            this.kryptonPageReleases.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPageReleases.Name = "kryptonPageReleases";
+            this.kryptonPageReleases.Size = new System.Drawing.Size(568, 403);
+            this.kryptonPageReleases.Text = "Releases";
+            this.kryptonPageReleases.TextDescription = "";
+            this.kryptonPageReleases.TextTitle = "";
+            this.kryptonPageReleases.ToolTipTitle = "Page ToolTip";
+            this.kryptonPageReleases.UniqueName = "36f7a05b89394cc5922db2b6b1367bd8";
+            // 
+            // kbtnViewLatestNightlyReleaseNotes
+            // 
+            this.kbtnViewLatestNightlyReleaseNotes.AutoSize = true;
+            this.kbtnViewLatestNightlyReleaseNotes.Location = new System.Drawing.Point(32, 277);
+            this.kbtnViewLatestNightlyReleaseNotes.Name = "kbtnViewLatestNightlyReleaseNotes";
+            this.kbtnViewLatestNightlyReleaseNotes.Size = new System.Drawing.Size(350, 33);
+            this.kbtnViewLatestNightlyReleaseNotes.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnViewLatestNightlyReleaseNotes.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnViewLatestNightlyReleaseNotes.TabIndex = 11;
+            this.kbtnViewLatestNightlyReleaseNotes.Values.Text = "View Latest Ni&ghtly Release Notes";
+            this.kbtnViewLatestNightlyReleaseNotes.Click += new System.EventHandler(this.kbtnViewLatestNightlyReleaseNotes_Click);
+            // 
+            // kbtnViewLatestCanaryReleaseNotes
+            // 
+            this.kbtnViewLatestCanaryReleaseNotes.AutoSize = true;
+            this.kbtnViewLatestCanaryReleaseNotes.Location = new System.Drawing.Point(32, 202);
+            this.kbtnViewLatestCanaryReleaseNotes.Name = "kbtnViewLatestCanaryReleaseNotes";
+            this.kbtnViewLatestCanaryReleaseNotes.Size = new System.Drawing.Size(350, 33);
+            this.kbtnViewLatestCanaryReleaseNotes.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnViewLatestCanaryReleaseNotes.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnViewLatestCanaryReleaseNotes.TabIndex = 10;
+            this.kbtnViewLatestCanaryReleaseNotes.Values.Text = "View Latest &Canary Release Notes";
+            this.kbtnViewLatestCanaryReleaseNotes.Click += new System.EventHandler(this.kbtnViewLatestCanaryReleaseNotes_Click);
+            // 
+            // kbtnViewLatestReleaseNotes
+            // 
+            this.kbtnViewLatestReleaseNotes.AutoSize = true;
+            this.kbtnViewLatestReleaseNotes.Location = new System.Drawing.Point(32, 127);
+            this.kbtnViewLatestReleaseNotes.Name = "kbtnViewLatestReleaseNotes";
+            this.kbtnViewLatestReleaseNotes.Size = new System.Drawing.Size(350, 33);
+            this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnViewLatestReleaseNotes.TabIndex = 9;
+            this.kbtnViewLatestReleaseNotes.Values.Text = "View Latest &Stable/Signed Release Notes";
+            this.kbtnViewLatestReleaseNotes.Click += new System.EventHandler(this.kbtnViewLatestReleaseNotes_Click);
             // 
             // kbtnKryptonExtendedToolkitPackage
             // 
             this.kbtnKryptonExtendedToolkitPackage.AutoSize = true;
-            this.kbtnKryptonExtendedToolkitPackage.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kbtnKryptonExtendedToolkitPackage.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kbtnKryptonExtendedToolkitPackage.Location = new System.Drawing.Point(31, 138);
             this.kbtnKryptonExtendedToolkitPackage.Name = "kbtnKryptonExtendedToolkitPackage";
-            this.kbtnKryptonExtendedToolkitPackage.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kbtnKryptonExtendedToolkitPackage.Size = new System.Drawing.Size(368, 33);
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.LongText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.LongText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.LongText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.LongText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.LongText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.LongText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.LongText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.LongText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1);
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnKryptonExtendedToolkitPackage.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnKryptonExtendedToolkitPackage.TabIndex = 8;
             this.kbtnKryptonExtendedToolkitPackage.Values.Text = "Krypton Extended Toolkit Package";
+            this.kbtnKryptonExtendedToolkitPackage.Visible = false;
             this.kbtnKryptonExtendedToolkitPackage.Click += new System.EventHandler(this.KbtnKryptonExtendedToolkitPackage_Click);
             // 
             // kbtnKryptonToolkitPackage
             // 
             this.kbtnKryptonToolkitPackage.AutoSize = true;
-            this.kbtnKryptonToolkitPackage.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kbtnKryptonToolkitPackage.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kbtnKryptonToolkitPackage.Location = new System.Drawing.Point(31, 52);
             this.kbtnKryptonToolkitPackage.Name = "kbtnKryptonToolkitPackage";
-            this.kbtnKryptonToolkitPackage.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kbtnKryptonToolkitPackage.Size = new System.Drawing.Size(264, 33);
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.LongText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.LongText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kbtnKryptonToolkitPackage.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.LongText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.LongText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.LongText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.LongText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.LongText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.LongText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1);
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kbtnKryptonToolkitPackage.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kbtnKryptonToolkitPackage.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnKryptonToolkitPackage.TabIndex = 6;
             this.kbtnKryptonToolkitPackage.ToolTipValues.Description = "Get the latest toolkit binaries for your application";
             this.kbtnKryptonToolkitPackage.ToolTipValues.Image = global::KryptonExplorer.Properties.Resources.Square_Design_32_x_32_Green;
-            this.kbtnKryptonToolkitPackage.Values.Text = "Krypton Toolkit Package";
-            this.kbtnKryptonToolkitPackage.Click += new System.EventHandler(this.KbtnKryptonToolkitPackage_Click);
+            this.kbtnKryptonToolkitPackage.Values.Text = "Krypton Toolkit Packages";
+            this.kbtnKryptonToolkitPackage.Click += new System.EventHandler(this.kbtnKryptonToolkitPackage_Click);
             // 
             // kryptonLabel6
             // 
             this.kryptonLabel6.Location = new System.Drawing.Point(18, 12);
             this.kryptonLabel6.Name = "kryptonLabel6";
             this.kryptonLabel6.Size = new System.Drawing.Size(285, 28);
-            this.kryptonLabel6.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel6.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel6.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.kryptonLabel6.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonLabel6.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kryptonLabel6.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel6.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.kryptonLabel6.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonLabel6.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel6.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel6.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel6.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kryptonLabel6.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel6.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel6.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel6.TabIndex = 3;
             this.kryptonLabel6.Values.Text = "Krypton NuGet Packages";
             // 
@@ -2442,11 +1924,9 @@
             // 
             this.kryptonButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonButtonClose.AutoSize = true;
-            this.kryptonButtonClose.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonButtonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.kryptonButtonClose.Location = new System.Drawing.Point(619, 6);
             this.kryptonButtonClose.Name = "kryptonButtonClose";
-            this.kryptonButtonClose.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonButtonClose.Size = new System.Drawing.Size(74, 28);
             this.kryptonButtonClose.TabIndex = 0;
             this.kryptonButtonClose.Values.Text = "Close";
@@ -2469,27 +1949,14 @@
             this.labelKryptonExplorer.Location = new System.Drawing.Point(10, 26);
             this.labelKryptonExplorer.Name = "labelKryptonExplorer";
             this.labelKryptonExplorer.Size = new System.Drawing.Size(200, 28);
-            this.labelKryptonExplorer.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelKryptonExplorer.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelKryptonExplorer.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.labelKryptonExplorer.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelKryptonExplorer.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.labelKryptonExplorer.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelKryptonExplorer.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.labelKryptonExplorer.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.labelKryptonExplorer.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.labelKryptonExplorer.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.labelKryptonExplorer.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelKryptonExplorer.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.labelKryptonExplorer.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelKryptonExplorer.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.labelKryptonExplorer.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelKryptonExplorer.TabIndex = 0;
             this.labelKryptonExplorer.Values.Text = "Krypton Explorer";
             // 
             // pictureBoxRight
             // 
-            this.pictureBoxRight.BackColor = System.Drawing.SystemColors.Window;
+            this.pictureBoxRight.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBoxRight.Image = global::KryptonExplorer.Properties.Resources.Main_Icon_64_x_64;
@@ -2502,11 +1969,9 @@
             // 
             // kryptonPanelTopBorder
             // 
-            this.kryptonPanelTopBorder.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonPanelTopBorder.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanelTopBorder.Location = new System.Drawing.Point(0, 90);
             this.kryptonPanelTopBorder.Name = "kryptonPanelTopBorder";
-            this.kryptonPanelTopBorder.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.kryptonPanelTopBorder.Size = new System.Drawing.Size(703, 1);
             // 
             // kryptonPanelBottom
@@ -2518,12 +1983,7 @@
             this.kryptonPanelBottom.Name = "kryptonPanelBottom";
             this.kryptonPanelBottom.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonPanelBottom.Size = new System.Drawing.Size(703, 65);
-            this.kryptonPanelBottom.StateNormal.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPanelBottom.StateNormal.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
-            this.kryptonPanelBottom.StateNormal.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonPanelBottom.StateNormal.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
-            this.kryptonPanelBottom.StateNormal.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonPanelBottom.StateNormal.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPanelBottom.TabIndex = 2;
             // 
             // ss
@@ -2531,6 +1991,7 @@
             this.ss.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ss.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.ss.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsslBuildDate,
             this.tslVersion});
             this.ss.Location = new System.Drawing.Point(0, 43);
             this.ss.Name = "ss";
@@ -2543,7 +2004,7 @@
             // tslVersion
             // 
             this.tslVersion.Name = "tslVersion";
-            this.tslVersion.Size = new System.Drawing.Size(688, 17);
+            this.tslVersion.Size = new System.Drawing.Size(607, 17);
             this.tslVersion.Spring = true;
             this.tslVersion.Text = "Version: {0}";
             this.tslVersion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -2552,96 +2013,11 @@
             // 
             this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office365Black;
             // 
-            // kryptonPageDialogs
+            // tsslBuildDate
             // 
-            this.kryptonPageDialogs.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
-            this.kryptonPageDialogs.Controls.Add(this.klblPrintDialog);
-            this.kryptonPageDialogs.Controls.Add(this.kllColourDialog);
-            this.kryptonPageDialogs.Controls.Add(this.kllFontDialog);
-            this.kryptonPageDialogs.Controls.Add(this.kryptonLabel7);
-            this.kryptonPageDialogs.Flags = 65534;
-            this.kryptonPageDialogs.LastVisibleSet = true;
-            this.kryptonPageDialogs.MinimumSize = new System.Drawing.Size(50, 50);
-            this.kryptonPageDialogs.Name = "kryptonPageDialogs";
-            this.kryptonPageDialogs.Size = new System.Drawing.Size(529, 379);
-            this.kryptonPageDialogs.Text = "Dialogs";
-            this.kryptonPageDialogs.TextTitle = "";
-            this.kryptonPageDialogs.ToolTipTitle = "Page ToolTip";
-            this.kryptonPageDialogs.UniqueName = "6caa255387df4d83bac139a5ca95d75b";
-            // 
-            // kryptonLabel7
-            // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(12, 12);
-            this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(289, 28);
-            this.kryptonLabel7.StateCommon.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel7.StateCommon.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel7.StateCommon.Padding = new System.Windows.Forms.Padding(-1);
-            this.kryptonLabel7.StateCommon.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonLabel7.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel7.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.kryptonLabel7.StateCommon.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonLabel7.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel7.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonLabel7.StateCommon.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel7.StateCommon.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.kryptonLabel7.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel7.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonLabel7.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kryptonLabel7.TabIndex = 9;
-            this.kryptonLabel7.Values.Text = "Krypton Dialog Examples";
-            // 
-            // kllColourDialog
-            // 
-            this.kllColourDialog.Location = new System.Drawing.Point(20, 52);
-            this.kllColourDialog.Name = "kllColourDialog";
-            this.kllColourDialog.Size = new System.Drawing.Size(86, 20);
-            this.kllColourDialog.TabIndex = 10;
-            this.kllColourDialog.Values.Text = "Colour Dialog";
-            // 
-            // kllFontDialog
-            // 
-            this.kllFontDialog.Location = new System.Drawing.Point(20, 73);
-            this.kllFontDialog.Name = "kllFontDialog";
-            this.kllFontDialog.Size = new System.Drawing.Size(74, 20);
-            this.kllFontDialog.TabIndex = 11;
-            this.kllFontDialog.Values.Text = "Font Dialog";
-            // 
-            // klblPrintDialog
-            // 
-            this.klblPrintDialog.Location = new System.Drawing.Point(18, 96);
-            this.klblPrintDialog.Name = "klblPrintDialog";
-            this.klblPrintDialog.Size = new System.Drawing.Size(75, 20);
-            this.klblPrintDialog.TabIndex = 12;
-            this.klblPrintDialog.Values.Text = "Print Dialog";
-            // 
-            // kllKryptonScrollBars
-            // 
-            this.kllKryptonScrollBars.Location = new System.Drawing.Point(20, 361);
-            this.kllKryptonScrollBars.Name = "kllKryptonScrollBars";
-            this.kllKryptonScrollBars.Size = new System.Drawing.Size(106, 20);
-            this.kllKryptonScrollBars.TabIndex = 39;
-            this.kllKryptonScrollBars.Values.Text = "KryptonScrollBars";
-            this.kllKryptonScrollBars.LinkClicked += new System.EventHandler(this.kllKryptonScrollBars_LinkClicked);
-            // 
-            // kllKryptonWebBrowser
-            // 
-            this.kllKryptonWebBrowser.Location = new System.Drawing.Point(159, 285);
-            this.kllKryptonWebBrowser.Name = "kllKryptonWebBrowser";
-            this.kllKryptonWebBrowser.Size = new System.Drawing.Size(122, 20);
-            this.kllKryptonWebBrowser.TabIndex = 40;
-            this.kllKryptonWebBrowser.Values.Text = "KryptonWebBrowser";
-            this.kllKryptonWebBrowser.LinkClicked += new System.EventHandler(this.kllKryptonWebBrowser_LinkClicked);
-            // 
-            // kllKryptonHelpIcon
-            // 
-            this.kllKryptonHelpIcon.Location = new System.Drawing.Point(334, 285);
-            this.kllKryptonHelpIcon.Name = "kllKryptonHelpIcon";
-            this.kllKryptonHelpIcon.Size = new System.Drawing.Size(102, 20);
-            this.kllKryptonHelpIcon.TabIndex = 41;
-            this.kllKryptonHelpIcon.Values.Text = "KryptonHelpIcon";
-            this.kllKryptonHelpIcon.LinkClicked += new System.EventHandler(this.kllKryptonHelpIcon_LinkClicked);
+            this.tsslBuildDate.Name = "tsslBuildDate";
+            this.tsslBuildDate.Size = new System.Drawing.Size(81, 17);
+            this.tsslBuildDate.Text = "Build Date: {0}";
             // 
             // Form1
             // 
@@ -2678,6 +2054,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPageDocking)).EndInit();
             this.kryptonPageDocking.ResumeLayout(false);
             this.kryptonPageDocking.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPageDialogs)).EndInit();
+            this.kryptonPageDialogs.ResumeLayout(false);
+            this.kryptonPageDialogs.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPageWorkspace)).EndInit();
             this.kryptonPageWorkspace.ResumeLayout(false);
             this.kryptonPageWorkspace.PerformLayout();
@@ -2690,13 +2069,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPageApplicatons)).EndInit();
             this.kryptonPageApplicatons.ResumeLayout(false);
             this.kryptonPageApplicatons.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPage3)).EndInit();
-            this.kryptonPage3.ResumeLayout(false);
-            this.kryptonPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPageSettings)).EndInit();
+            this.kryptonPageSettings.ResumeLayout(false);
+            this.kryptonPageSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kcmbTheme)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPage4)).EndInit();
-            this.kryptonPage4.ResumeLayout(false);
-            this.kryptonPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPageReleases)).EndInit();
+            this.kryptonPageReleases.ResumeLayout(false);
+            this.kryptonPageReleases.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelTop)).EndInit();
             this.kryptonPanelTop.ResumeLayout(false);
             this.kryptonPanelTop.PerformLayout();
@@ -2706,9 +2085,6 @@
             this.kryptonPanelBottom.PerformLayout();
             this.ss.ResumeLayout(false);
             this.ss.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPageDialogs)).EndInit();
-            this.kryptonPageDialogs.ResumeLayout(false);
-            this.kryptonPageDialogs.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2850,15 +2226,12 @@
         private Krypton.Toolkit.KryptonLinkLabel linkKryptonTreeView;
         private System.Windows.Forms.StatusStrip ss;
         private System.Windows.Forms.ToolStripStatusLabel tslVersion;
-        private Krypton.Navigator.KryptonPage kryptonPage3;
-        private Krypton.Toolkit.KryptonComboBox kcmbTheme;
+        private Krypton.Navigator.KryptonPage kryptonPageSettings;
         private Krypton.Toolkit.KryptonLabel kryptonLabel5;
         private Krypton.Toolkit.KryptonLabel kryptonLabel4;
         private Krypton.Toolkit.KryptonButton kbtnRestoreTheme;
         private Krypton.Toolkit.KryptonButton kbtnOpenApplicationPath;
-        private Krypton.Toolkit.KryptonButton kbtnViewLatestReleaseNotes;
-        private Krypton.Toolkit.KryptonButton kbtnApplyTheme;
-        private Krypton.Navigator.KryptonPage kryptonPage4;
+        private Krypton.Navigator.KryptonPage kryptonPageReleases;
         private Krypton.Toolkit.KryptonLabel kryptonLabel6;
         private Krypton.Toolkit.KryptonButton kbtnKryptonExtendedToolkitPackage;
         private Krypton.Toolkit.KryptonButton kbtnKryptonToolkitPackage;
@@ -2867,9 +2240,14 @@
         private Krypton.Toolkit.KryptonLinkLabel kllFontDialog;
         private Krypton.Toolkit.KryptonLabel kryptonLabel7;
         private Krypton.Toolkit.KryptonLinkLabel klblPrintDialog;
-        private Krypton.Toolkit.KryptonLinkLabel kllKryptonScrollBars;
         private Krypton.Toolkit.KryptonLinkLabel kllKryptonWebBrowser;
         private Krypton.Toolkit.KryptonLinkLabel kllKryptonHelpIcon;
+        private Krypton.Toolkit.KryptonLinkLabel kllKryptonScrollBars;
+        private Krypton.Toolkit.KryptonThemeComboBox kcmbTheme;
+        private Krypton.Toolkit.KryptonButton kbtnViewLatestReleaseNotes;
+        private Krypton.Toolkit.KryptonButton kbtnViewLatestNightlyReleaseNotes;
+        private Krypton.Toolkit.KryptonButton kbtnViewLatestCanaryReleaseNotes;
+        private System.Windows.Forms.ToolStripStatusLabel tsslBuildDate;
     }
 }
 

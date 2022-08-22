@@ -227,7 +227,6 @@
             this.buttonNewMemo.KeyTip = "N";
             this.buttonNewMemo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.buttonNewMemo.TextLine1 = "New";
-            this.buttonNewMemo.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonNewMemo.Click += new System.EventHandler(this.buttonNewMemo_Click);
             // 
             // buttonOpenMemo
@@ -236,7 +235,6 @@
             this.buttonOpenMemo.KeyTip = "O";
             this.buttonOpenMemo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.buttonOpenMemo.TextLine1 = "Open";
-            this.buttonOpenMemo.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonOpenMemo.Click += new System.EventHandler(this.buttonOpenMemo_Click);
             // 
             // kryptonRibbonGroupTriple3
@@ -255,7 +253,6 @@
             this.buttonSaveMemo.KeyTip = "S";
             this.buttonSaveMemo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.buttonSaveMemo.TextLine1 = "Save";
-            this.buttonSaveMemo.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSaveMemo.Click += new System.EventHandler(this.buttonSaveMemo_Click);
             // 
             // buttonSaveAsMemo
@@ -264,7 +261,6 @@
             this.buttonSaveAsMemo.KeyTip = "A";
             this.buttonSaveAsMemo.TextLine1 = "Save";
             this.buttonSaveAsMemo.TextLine2 = "As";
-            this.buttonSaveAsMemo.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSaveAsMemo.Click += new System.EventHandler(this.buttonSaveAsMemo_Click);
             // 
             // buttonSaveAllMemo
@@ -275,7 +271,6 @@
             | System.Windows.Forms.Keys.S)));
             this.buttonSaveAllMemo.TextLine1 = "Save";
             this.buttonSaveAllMemo.TextLine2 = "All";
-            this.buttonSaveAllMemo.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSaveAllMemo.Click += new System.EventHandler(this.buttonSaveAllMemo_Click);
             // 
             // kryptonRibbonGroupTriple4
@@ -292,7 +287,6 @@
             this.buttonCloseMemo.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonCloseMemo.KeyTip = "C";
             this.buttonCloseMemo.TextLine1 = "Close";
-            this.buttonCloseMemo.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonCloseMemo.Click += new System.EventHandler(this.buttonCloseMemo_Click);
             // 
             // buttonCloseAllMemo
@@ -301,7 +295,6 @@
             this.buttonCloseAllMemo.KeyTip = "E";
             this.buttonCloseAllMemo.TextLine1 = "Close";
             this.buttonCloseAllMemo.TextLine2 = "All";
-            this.buttonCloseAllMemo.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonCloseAllMemo.Click += new System.EventHandler(this.buttonCloseAllMemo_Click);
             // 
             // kryptonRibbonGroup2
@@ -328,7 +321,6 @@
             | System.Windows.Forms.Keys.T)));
             this.buttonSingleGroupArrange.TextLine1 = "Single";
             this.buttonSingleGroupArrange.TextLine2 = "Group";
-            this.buttonSingleGroupArrange.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSingleGroupArrange.Click += new System.EventHandler(this.buttonSingleGroupArrange_Click);
             // 
             // kryptonRibbonGroupTriple5
@@ -348,7 +340,6 @@
             this.buttonGridArrange.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.G)));
             this.buttonGridArrange.TextLine1 = "Grid";
-            this.buttonGridArrange.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonGridArrange.Click += new System.EventHandler(this.buttonGridArrange_Click);
             // 
             // buttonVerticalArrange
@@ -356,7 +347,6 @@
             this.buttonVerticalArrange.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonVerticalArrange.KeyTip = "V";
             this.buttonVerticalArrange.TextLine1 = "Vertical";
-            this.buttonVerticalArrange.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonVerticalArrange.Click += new System.EventHandler(this.buttonVerticalArrange_Click);
             // 
             // buttonHorizontalArrange
@@ -364,7 +354,6 @@
             this.buttonHorizontalArrange.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonHorizontalArrange.KeyTip = "H";
             this.buttonHorizontalArrange.TextLine1 = "Horizontal";
-            this.buttonHorizontalArrange.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonHorizontalArrange.Click += new System.EventHandler(this.buttonHorizontalArrange_Click);
             // 
             // kryptonRibbonGroup3
@@ -389,7 +378,6 @@
             this.buttonReadMe.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonReadMe.ImageLarge = null;
             this.buttonReadMe.TextLine1 = "ReadMe";
-            this.buttonReadMe.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonReadMe.Click += new System.EventHandler(this.buttonReadMe_Click);
             // 
             // buttonShortcuts
@@ -397,7 +385,6 @@
             this.buttonShortcuts.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonShortcuts.ImageLarge = null;
             this.buttonShortcuts.TextLine1 = "Shortcuts";
-            this.buttonShortcuts.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonShortcuts.Click += new System.EventHandler(this.buttonShortcuts_Click);
             // 
             // buttonPersistence
@@ -405,7 +392,6 @@
             this.buttonPersistence.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonPersistence.KeyTip = "P";
             this.buttonPersistence.TextLine1 = "Persistence";
-            this.buttonPersistence.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonPersistence.Click += new System.EventHandler(this.buttonPersistence_Click);
             // 
             // ribbonTabAppearance
@@ -443,7 +429,6 @@
             this.button2010Blue.Checked = true;
             this.button2010Blue.Tag = "Office2010Blue";
             this.button2010Blue.TextLine1 = "2010 Blue";
-            this.button2010Blue.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.button2010Blue.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // button2010Silver
@@ -451,7 +436,6 @@
             this.button2010Silver.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.button2010Silver.Tag = "Office2010Silver";
             this.button2010Silver.TextLine1 = "2010 Silver";
-            this.button2010Silver.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.button2010Silver.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // button2010Black
@@ -459,7 +443,6 @@
             this.button2010Black.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.button2010Black.Tag = "Office2010Black";
             this.button2010Black.TextLine1 = "2010 Black";
-            this.button2010Black.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.button2010Black.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // kryptonRibbonGroupTriple7
@@ -479,7 +462,6 @@
             this.button2007Blue.Tag = "Office2007Blue";
             this.button2007Blue.TextLine1 = "2007";
             this.button2007Blue.TextLine2 = "Blue";
-            this.button2007Blue.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.button2007Blue.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // button2007Silver
@@ -489,7 +471,6 @@
             this.button2007Silver.Tag = "Office2007Silver";
             this.button2007Silver.TextLine1 = "2007";
             this.button2007Silver.TextLine2 = "Silver";
-            this.button2007Silver.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.button2007Silver.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // button2007Black
@@ -499,7 +480,6 @@
             this.button2007Black.Tag = "Office2007Black";
             this.button2007Black.TextLine1 = "2007";
             this.button2007Black.TextLine2 = "Black";
-            this.button2007Black.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.button2007Black.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // kryptonRibbonGroupTriple8
@@ -519,7 +499,6 @@
             this.buttonSparkleBlue.Tag = "SparkleBlue";
             this.buttonSparkleBlue.TextLine1 = "Sparkle";
             this.buttonSparkleBlue.TextLine2 = "Blue";
-            this.buttonSparkleBlue.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSparkleBlue.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // buttonSparkleOrange
@@ -529,7 +508,6 @@
             this.buttonSparkleOrange.Tag = "SparkleOrange";
             this.buttonSparkleOrange.TextLine1 = "Sparkle";
             this.buttonSparkleOrange.TextLine2 = "Orange";
-            this.buttonSparkleOrange.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSparkleOrange.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // buttonSparklePurple
@@ -539,7 +517,6 @@
             this.buttonSparklePurple.Tag = "SparklePurple";
             this.buttonSparklePurple.TextLine1 = "Sparkle";
             this.buttonSparklePurple.TextLine2 = "Purple";
-            this.buttonSparklePurple.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSparklePurple.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // kryptonRibbonGroupTriple9
@@ -557,7 +534,6 @@
             this.buttonSystem.KeyTip = "Y";
             this.buttonSystem.Tag = "ProfessionalSystem";
             this.buttonSystem.TextLine1 = "System";
-            this.buttonSystem.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSystem.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // button2003
@@ -566,7 +542,6 @@
             this.button2003.KeyTip = "3";
             this.button2003.Tag = "ProfessionalOffice2003";
             this.button2003.TextLine1 = "2003";
-            this.button2003.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.button2003.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // kryptonRibbonGroup5
@@ -594,7 +569,6 @@
             this.buttonTabs.KeyTip = "T";
             this.buttonTabs.Tag = "BarTabGroup";
             this.buttonTabs.TextLine1 = "Tabs";
-            this.buttonTabs.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonTabs.Click += new System.EventHandler(this.buttonGrouping_Click);
             // 
             // buttonRibbonTabs
@@ -604,7 +578,6 @@
             this.buttonRibbonTabs.KeyTip = "R";
             this.buttonRibbonTabs.Tag = "BarRibbonTabGroup";
             this.buttonRibbonTabs.TextLine1 = "Ribbon Tabs";
-            this.buttonRibbonTabs.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonRibbonTabs.Click += new System.EventHandler(this.buttonGrouping_Click);
             // 
             // buttonButtons
@@ -613,7 +586,6 @@
             this.buttonButtons.ImageSmall = global::MemoEditor.Properties.Resources.Tabs;
             this.buttonButtons.Tag = "BarCheckButtonGroupOutside";
             this.buttonButtons.TextLine1 = "Buttons";
-            this.buttonButtons.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonButtons.Click += new System.EventHandler(this.buttonGrouping_Click);
             // 
             // kryptonRibbonGroupTriple11
@@ -633,7 +605,6 @@
             this.buttonHeader.KeyTip = "H";
             this.buttonHeader.Tag = "HeaderGroup";
             this.buttonHeader.TextLine1 = "Header";
-            this.buttonHeader.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonHeader.Click += new System.EventHandler(this.buttonGrouping_Click);
             // 
             // buttonHeaderButtons
@@ -643,7 +614,6 @@
             this.buttonHeaderButtons.KeyTip = "D";
             this.buttonHeaderButtons.Tag = "HeaderBarCheckButtonHeaderGroup";
             this.buttonHeaderButtons.TextLine1 = "Header Buttons";
-            this.buttonHeaderButtons.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonHeaderButtons.Click += new System.EventHandler(this.buttonGrouping_Click);
             // 
             // buttonStack
@@ -653,7 +623,6 @@
             this.buttonStack.KeyTip = "Y";
             this.buttonStack.Tag = "StackCheckButtonGroup";
             this.buttonStack.TextLine1 = "Stack";
-            this.buttonStack.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonStack.Click += new System.EventHandler(this.buttonGrouping_Click);
             // 
             // kryptonPanel1

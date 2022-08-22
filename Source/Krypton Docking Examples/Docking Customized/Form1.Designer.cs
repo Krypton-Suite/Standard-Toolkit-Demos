@@ -127,7 +127,6 @@
             this.modeStackGroup.KeyTip = "SG";
             this.modeStackGroup.Tag = "StackCheckButtonGroup";
             this.modeStackGroup.TextLine1 = "Stack - Group";
-            this.modeStackGroup.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.modeStackGroup.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
             // 
             // modeStackHeaderGroup
@@ -138,7 +137,6 @@
             this.modeStackHeaderGroup.KeyTip = "SH";
             this.modeStackHeaderGroup.Tag = "StackCheckButtonHeaderGroup";
             this.modeStackHeaderGroup.TextLine1 = "Stack - HeaderGroup";
-            this.modeStackHeaderGroup.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.modeStackHeaderGroup.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
             // 
             // kryptonRibbonGroup3
@@ -168,7 +166,6 @@
             this.modeBarGroupOutside.KeyTip = "BO";
             this.modeBarGroupOutside.Tag = "BarCheckButtonGroupOutside";
             this.modeBarGroupOutside.TextLine1 = "Bar - GroupOutside";
-            this.modeBarGroupOutside.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.modeBarGroupOutside.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
             // 
             // modeBarGroupInside
@@ -179,7 +176,6 @@
             this.modeBarGroupInside.KeyTip = "BI";
             this.modeBarGroupInside.Tag = "BarCheckButtonGroupInside";
             this.modeBarGroupInside.TextLine1 = "Bar - GroupInside";
-            this.modeBarGroupInside.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.modeBarGroupInside.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
             // 
             // modeTabGroup
@@ -190,7 +186,6 @@
             this.modeTabGroup.KeyTip = "BT";
             this.modeTabGroup.Tag = "BarTabGroup";
             this.modeTabGroup.TextLine1 = "Bar - TabGroup";
-            this.modeTabGroup.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.modeTabGroup.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
             // 
             // kryptonRibbonGroup5
@@ -218,7 +213,6 @@
             this.modeBarRibbonTabGroup.KeyTip = "BR";
             this.modeBarRibbonTabGroup.Tag = "BarRibbonTabGroup";
             this.modeBarRibbonTabGroup.TextLine1 = "BarRibbon - TabGroup";
-            this.modeBarRibbonTabGroup.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.modeBarRibbonTabGroup.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
             // 
             // kryptonRibbonGroup4
@@ -247,7 +241,6 @@
             this.modeHeaderBarGroup.KeyTip = "HG";
             this.modeHeaderBarGroup.Tag = "HeaderBarCheckButtonGroup";
             this.modeHeaderBarGroup.TextLine1 = "HeaderBar - Group";
-            this.modeHeaderBarGroup.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.modeHeaderBarGroup.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
             // 
             // modeHeaderBarHeaderGroup
@@ -258,7 +251,6 @@
             this.modeHeaderBarHeaderGroup.KeyTip = "HH";
             this.modeHeaderBarHeaderGroup.Tag = "HeaderBarCheckButtonHeaderGroup";
             this.modeHeaderBarHeaderGroup.TextLine1 = "HeaderBar - HeaderGroup";
-            this.modeHeaderBarHeaderGroup.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.modeHeaderBarHeaderGroup.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
             // 
             // kryptonRibbonGroup7
@@ -283,7 +275,6 @@
             this.modeHeaderGroupTab.KeyTip = "GT";
             this.modeHeaderGroupTab.Tag = "HeaderGroupTab";
             this.modeHeaderGroupTab.TextLine1 = "HeaderGroup - Tab";
-            this.modeHeaderGroupTab.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.modeHeaderGroupTab.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
             // 
             // kryptonRibbonTab2
@@ -319,7 +310,6 @@
             this.colorsRandom.KeyTip = "R";
             this.colorsRandom.TextLine1 = "Random";
             this.colorsRandom.TextLine2 = "Page Colors";
-            this.colorsRandom.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.colorsRandom.Click += new System.EventHandler(this.colorsRandom_Click);
             // 
             // colorsReset
@@ -329,7 +319,6 @@
             this.colorsReset.KeyTip = "S";
             this.colorsReset.TextLine1 = "Reset";
             this.colorsReset.TextLine2 = "Page Colors";
-            this.colorsReset.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.colorsReset.Click += new System.EventHandler(this.colorsReset_Click);
             // 
             // kryptonRibbonGroup6
@@ -355,7 +344,6 @@
             this.buttonSpecsAdd.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonSpecsAdd.ImageLarge")));
             this.buttonSpecsAdd.TextLine1 = "Add Page";
             this.buttonSpecsAdd.TextLine2 = "ButtonSpecs";
-            this.buttonSpecsAdd.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSpecsAdd.Click += new System.EventHandler(this.buttonSpecsAdd_Click);
             // 
             // buttonSpecsClear
@@ -365,7 +353,6 @@
             this.buttonSpecsClear.KeyTip = "C";
             this.buttonSpecsClear.TextLine1 = "Clear Page";
             this.buttonSpecsClear.TextLine2 = "ButtonSpecs";
-            this.buttonSpecsClear.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.buttonSpecsClear.Click += new System.EventHandler(this.buttonSpecsClear_Click);
             // 
             // kryptonPanel

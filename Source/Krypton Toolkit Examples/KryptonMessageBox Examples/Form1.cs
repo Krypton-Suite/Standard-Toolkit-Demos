@@ -17,62 +17,65 @@ using Krypton.Toolkit;
 
 namespace KryptonMessageBoxExamples
 {
-    public partial class Form1 : Form
+    public partial class Form1 : KryptonForm
     {
         private MessageBoxIcon _mbIcon = MessageBoxIcon.Warning;
-        private KryptonMessageBoxIcon _kmbIcon = KryptonMessageBoxIcon.WARNING;
+        private KryptonMessageBoxIcon _kmbIcon = KryptonMessageBoxIcon.Warning;
         private MessageBoxButtons _mbButtons = MessageBoxButtons.OKCancel;
         private MessageBoxOptions _options = 0;
 
-        public Form1() => InitializeComponent();
+        public Form1()
+        {
+            InitializeComponent();
+        }
 
         private void palette_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButtonOffice2010Blue.Checked)
+            if (kradOffice2010Blue.Checked)
             {
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
             }
-            else if (radioButtonOffice2010Silver.Checked)
+            else if (kradOffice2010Silver.Checked)
             {
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
             }
-            else if (radioButtonOffice2010Black.Checked)
+            else if (kradOffice2010Black.Checked)
             {
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
             }
-            else if (radioButtonOffice2007Blue.Checked)
+            else if (kradOffice2007Blue.Checked)
             {
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
             }
-            else if (radioButtonOffice2007Silver.Checked)
+            else if (kradOffice2007Silver.Checked)
             {
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
             }
-            else if (radioButtonOffice2007Black.Checked)
+            else if (kradOffice2007Black.Checked)
             {
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Black;
             }
-            else if (radioButtonSparkleBlue.Checked)
+            else if (kradSparkleBlue.Checked)
             {
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
             }
-            else if (radioButtonSparkleOrange.Checked)
+            else if (kradSparkleOrange.Checked)
             {
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
             }
-            else if (radioButtonSparklePurple.Checked)
+            else if (kradSparklePurple.Checked)
             {
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.SparklePurple;
             }
-            else if (radioButtonOffice2003.Checked)
+            else if (kradOffice2003.Checked)
             {
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalOffice2003;
             }
-            else if (radioButtonSystem.Checked)
+            else if (kradSystem.Checked)
             {
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
             }
-            else if (radioButtonOffice365Blue.Checked)
+            else if (kradOffice365Blue.Checked)
             {
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.Office365Blue;
             }
@@ -84,71 +87,67 @@ namespace KryptonMessageBoxExamples
             if (radioButtonNone.Checked)
             {
                 _mbIcon = MessageBoxIcon.None;
+                _kmbIcon = KryptonMessageBoxIcon.None;
             }
-            else if (radioButtonError.Checked)
+            else if (kradError.Checked)
             {
                 _mbIcon = MessageBoxIcon.Error;
+                _kmbIcon = KryptonMessageBoxIcon.Error;
             }
-            else if (radioButtonQuestion.Checked)
+            else if (kradQuestion.Checked)
             {
                 _mbIcon = MessageBoxIcon.Question;
+                _kmbIcon = KryptonMessageBoxIcon.Question;
             }
-            else if (radioButtonWarning.Checked)
+            else if (kradWarning.Checked)
             {
                 _mbIcon = MessageBoxIcon.Warning;
+                _kmbIcon = KryptonMessageBoxIcon.Warning;
             }
-            else if (radioButtonInformation.Checked)
+            else if (kradInformation.Checked)
             {
                 _mbIcon = MessageBoxIcon.Information;
+                _kmbIcon = KryptonMessageBoxIcon.Information;
             }
         }
 
         private void buttons_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButtonOK.Checked)
+            if (kradOK.Checked)
             {
                 _mbButtons = MessageBoxButtons.OK;
             }
-            else if (radioButtonOKCancel.Checked)
+            else if (kradOKCancel.Checked)
             {
                 _mbButtons = MessageBoxButtons.OKCancel;
             }
-            else if (radioButtonRetryCancel.Checked)
+            else if (kradRetryCancel.Checked)
             {
                 _mbButtons = MessageBoxButtons.RetryCancel;
             }
-            else if (radioButtonAbortRetryIgnore.Checked)
+            else if (kradAbortRetryIgnore.Checked)
             {
                 _mbButtons = MessageBoxButtons.AbortRetryIgnore;
             }
-            else if (radioButtonYesNo.Checked)
+            else if (kradYesNo.Checked)
             {
                 _mbButtons = MessageBoxButtons.YesNo;
             }
-            else if (radioButtonYesNoCancel.Checked)
+            else if (kradYesNoCancel.Checked)
             {
                 _mbButtons = MessageBoxButtons.YesNoCancel;
             }
-        }
-
-        private void buttonShow_Click(object sender, EventArgs e)
-        {
-            if (radioButtonWinLogo.Checked)
+#if NET60_OR_GREATER
+            else if (kradCancelTryContinue.Checked)
             {
-                KryptonMessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text, _mbButtons, KryptonMessageBoxIcon.WINDOWSLOGO, options: _options);
+                _mbButtons = MessageBoxButtons.CancelTryContinue;
             }
-            else
-            {
-                MessageBox.Show(textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _mbIcon,
-                    MessageBoxDefaultButton.Button1, _options);
-                KryptonMessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _mbIcon,
-                    options: _options);
-            }
+#endif
         }
 
         private void ChkRightAlign_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkRightAlign.Checked)
+            if (kchkRightAlign.Checked)
             {
                 _options |= MessageBoxOptions.RightAlign;
             }
@@ -160,13 +159,28 @@ namespace KryptonMessageBoxExamples
 
         private void ChkRtlReading_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkRtlReading.Checked)
+            if (kchkRtlReading.Checked)
             {
                 _options |= MessageBoxOptions.RtlReading;
             }
             else
             {
                 _options &= ~MessageBoxOptions.RtlReading;
+            }
+        }
+
+        private void kbtnShow_Click(object sender, EventArgs e)
+        {
+            if (kradWinLogo.Checked)
+            {
+                KryptonMessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text, _mbButtons, KryptonMessageBoxIcon.WindowsLogo, options: _options);
+            }
+            else
+            {
+                MessageBox.Show(textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _mbIcon, MessageBoxDefaultButton.Button1, _options);
+
+                KryptonMessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text, _mbButtons, _kmbIcon,
+                    options: _options);
             }
         }
     }

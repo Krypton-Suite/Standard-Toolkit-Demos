@@ -29,10 +29,9 @@ namespace MDIRibbon
             {
                 // Remember to unhook from static event, otherwise 
                 // this object cannot be garbage collected later on
-                KryptonManager.GlobalPaletteChanged -= new EventHandler(OnPaletteChanged);
+                KryptonManager.GlobalPaletteChanged -= OnPaletteChanged;
 
-                if (components != null)
-                    components.Dispose();
+                components?.Dispose();
             }
             base.Dispose(disposing);
         }       
@@ -43,7 +42,7 @@ namespace MDIRibbon
             UpdateRadioButtons();
 
             // Hook into changes in the global palette
-            KryptonManager.GlobalPaletteChanged += new EventHandler(OnPaletteChanged);
+            KryptonManager.GlobalPaletteChanged += OnPaletteChanged;
         }
 
         private void radioSystem_CheckedChanged(object sender, EventArgs e)

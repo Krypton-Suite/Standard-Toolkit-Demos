@@ -390,6 +390,8 @@ namespace KeyTipsAndKeyboardAccess
             this.kryptonRibbonTab2,
             this.kryptonRibbonTab3,
             this.kryptonRibbonTab4});
+            this.kryptonRibbon.SelectedContext = null;
+            this.kryptonRibbon.SelectedTab = this.tabHome;
             this.kryptonRibbon.Size = new System.Drawing.Size(637, 135);
             this.kryptonRibbon.StateTracking.RibbonGroupArea.BackColor1 = System.Drawing.Color.Lime;
             this.kryptonRibbon.StateTracking.RibbonGroupArea.BackColor2 = System.Drawing.Color.Lime;
@@ -897,6 +899,7 @@ namespace KeyTipsAndKeyboardAccess
             this.MinimumSize = new System.Drawing.Size(642, 693);
             this.Name = "Form1";
             this.Text = "KeyTips + KeyboardAccess";
+            this.UseDropShadow = false;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelFill)).EndInit();
             this.panelFill.ResumeLayout(false);

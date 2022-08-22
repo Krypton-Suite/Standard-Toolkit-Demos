@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Alpha");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Up", new System.Windows.Forms.TreeNode[] {
             treeNode1});
@@ -70,47 +71,41 @@
             treeNode9,
             treeNode20});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.kryptonBreadCrumbItem1 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem2 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem3 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem4 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem5 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem6 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem7 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem8 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem9 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem10 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem11 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem12 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem13 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem14 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem15 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem16 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem17 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem18 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem19 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem20 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem21 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem22 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem23 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem24 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem25 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem26 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem27 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem28 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem29 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem30 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem31 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem32 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem33 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem34 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem35 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem36 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem37 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem38 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem39 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem40 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem41 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.propertyGrid = new System.Windows.Forms.PropertyGrid();
+            this.buttonClose = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.kryptonBreadCrumb4 = new Krypton.Toolkit.KryptonBreadCrumb();
+            this.kryptonBreadCrumbItem124 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem125 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem126 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem127 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem128 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem129 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem130 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem131 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem132 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem133 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem134 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem135 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem136 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem137 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem138 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem139 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem140 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem141 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem142 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem143 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumb3 = new Krypton.Toolkit.KryptonBreadCrumb();
+            this.buttonSpecAny2 = new Krypton.Toolkit.ButtonSpecAny();
+            this.kryptonContextMenu1 = new Krypton.Toolkit.KryptonContextMenu();
+            this.kryptonContextMenuHeading1 = new Krypton.Toolkit.KryptonContextMenuHeading();
+            this.kryptonContextMenuItems1 = new Krypton.Toolkit.KryptonContextMenuItems();
+            this.menuSpider = new Krypton.Toolkit.KryptonContextMenuItem();
+            this.menuKangeroo = new Krypton.Toolkit.KryptonContextMenuItem();
+            this.menuFern = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonBreadCrumbItem42 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonBreadCrumbItem43 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonBreadCrumbItem44 = new Krypton.Toolkit.KryptonBreadCrumbItem();
@@ -152,6 +147,8 @@
             this.kryptonBreadCrumbItem80 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonBreadCrumbItem81 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonBreadCrumbItem82 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumb2 = new Krypton.Toolkit.KryptonBreadCrumb();
+            this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
             this.kryptonBreadCrumbItem83 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonBreadCrumbItem84 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonBreadCrumbItem85 = new Krypton.Toolkit.KryptonBreadCrumbItem();
@@ -193,270 +190,361 @@
             this.kryptonBreadCrumbItem121 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonBreadCrumbItem122 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonBreadCrumbItem123 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem124 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem125 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem126 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem127 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem128 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem129 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem130 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem131 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem132 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem133 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem134 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem135 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem136 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem137 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem138 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem139 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem140 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem141 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem142 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonBreadCrumbItem143 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonBreadCrumb1 = new Krypton.Toolkit.KryptonBreadCrumb();
-            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager();
-            this.kryptonPaletteOffice2007Blue = new Krypton.Toolkit.KryptonPalette();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.kryptonBreadCrumb3 = new Krypton.Toolkit.KryptonBreadCrumb();
-            this.buttonSpecAny2 = new Krypton.Toolkit.ButtonSpecAny();
-            this.kryptonContextMenu1 = new Krypton.Toolkit.KryptonContextMenu();
-            this.kryptonContextMenuHeading1 = new Krypton.Toolkit.KryptonContextMenuHeading();
-            this.kryptonContextMenuItems1 = new Krypton.Toolkit.KryptonContextMenuItems();
-            this.menuSpider = new Krypton.Toolkit.KryptonContextMenuItem();
-            this.menuKangeroo = new Krypton.Toolkit.KryptonContextMenuItem();
-            this.menuFern = new Krypton.Toolkit.KryptonContextMenuItem();
-            this.kryptonBreadCrumb2 = new Krypton.Toolkit.KryptonBreadCrumb();
-            this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.propertyGrid = new System.Windows.Forms.PropertyGrid();
-            this.buttonClose = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.kryptonBreadCrumb4 = new Krypton.Toolkit.KryptonBreadCrumb();
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonBreadCrumb1)).BeginInit();
+            this.kryptonBreadCrumbItem1 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem2 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem3 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem4 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem5 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem6 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem7 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem8 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem9 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem10 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem11 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem12 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem13 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem14 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem15 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem16 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem17 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem18 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem19 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem20 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem21 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem22 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem23 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem24 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem25 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem26 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem27 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem28 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem29 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem30 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem31 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem32 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem33 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem34 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem35 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem36 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem37 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem38 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem39 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem40 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonBreadCrumbItem41 = new Krypton.Toolkit.KryptonBreadCrumbItem();
+            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonPaletteOffice2007Blue = new Krypton.Toolkit.KryptonPalette(this.components);
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonBreadCrumb3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonBreadCrumb2)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonBreadCrumb4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonBreadCrumb3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonBreadCrumb2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonBreadCrumb1)).BeginInit();
             this.SuspendLayout();
             // 
-            // kryptonBreadCrumbItem1
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.kryptonBreadCrumb3);
+            this.groupBox1.Controls.Add(this.kryptonBreadCrumb2);
+            this.groupBox1.Controls.Add(this.kryptonBreadCrumb1);
+            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(442, 147);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Simple Examples";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.Controls.Add(this.propertyGrid);
+            this.groupBox4.Location = new System.Drawing.Point(461, 13);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(301, 488);
+            this.groupBox4.TabIndex = 2;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Properties for Selection";
+            // 
+            // propertyGrid
+            // 
+            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.propertyGrid.Location = new System.Drawing.Point(6, 19);
+            this.propertyGrid.Name = "propertyGrid";
+            this.propertyGrid.Size = new System.Drawing.Size(289, 463);
+            this.propertyGrid.TabIndex = 0;
+            this.propertyGrid.ToolbarVisible = false;
+            // 
+            // buttonClose
+            // 
+            this.buttonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.buttonClose.Location = new System.Drawing.Point(688, 511);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(75, 23);
+            this.buttonClose.TabIndex = 3;
+            this.buttonClose.Text = "&Close";
+            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.kryptonBreadCrumb4);
+            this.groupBox2.Controls.Add(this.treeView1);
+            this.groupBox2.Location = new System.Drawing.Point(13, 167);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(442, 334);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Sync with TreeControl";
+            // 
+            // treeView1
+            // 
+            this.treeView1.HideSelection = false;
+            this.treeView1.Location = new System.Drawing.Point(20, 82);
+            this.treeView1.Name = "treeView1";
+            treeNode1.Name = "Node18";
+            treeNode1.Text = "Alpha";
+            treeNode2.Name = "Node12";
+            treeNode2.Text = "Up";
+            treeNode3.Name = "Node19";
+            treeNode3.Text = "Beta";
+            treeNode4.Name = "Node13";
+            treeNode4.Text = "Down";
+            treeNode5.Name = "Node2";
+            treeNode5.Text = "Red";
+            treeNode6.Name = "Node14";
+            treeNode6.Text = "Left";
+            treeNode7.Name = "Node15";
+            treeNode7.Text = "Right";
+            treeNode8.Name = "Node3";
+            treeNode8.Text = "Green";
+            treeNode9.Name = "Node0";
+            treeNode9.Text = "Top";
+            treeNode10.Name = "Node20";
+            treeNode10.Text = "Gamma";
+            treeNode11.Name = "Node7";
+            treeNode11.Text = "Fast";
+            treeNode12.Name = "Node21";
+            treeNode12.Text = "Theta";
+            treeNode13.Name = "Node8";
+            treeNode13.Text = "Slow";
+            treeNode14.Name = "Node5";
+            treeNode14.Text = "Tall";
+            treeNode15.Name = "Node22";
+            treeNode15.Text = "Omega";
+            treeNode16.Name = "Node9";
+            treeNode16.Text = "Strong";
+            treeNode17.Name = "Node23";
+            treeNode17.Text = "Delta";
+            treeNode18.Name = "Node11";
+            treeNode18.Text = "Weak";
+            treeNode19.Name = "Node6";
+            treeNode19.Text = "Short";
+            treeNode20.Name = "Node1";
+            treeNode20.Text = "Bottom";
+            treeNode21.Name = "Node0";
+            treeNode21.Text = "Root";
+            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode21});
+            this.treeView1.Size = new System.Drawing.Size(402, 234);
+            this.treeView1.TabIndex = 1;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
-            this.kryptonBreadCrumbItem1.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem2,
-            this.kryptonBreadCrumbItem20});
-            this.kryptonBreadCrumbItem1.ShortText = "Animals";
+            // kryptonBreadCrumb4
             // 
-            // kryptonBreadCrumbItem2
+            this.kryptonBreadCrumb4.AutoSize = false;
+            this.kryptonBreadCrumb4.ControlBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
+            this.kryptonBreadCrumb4.Location = new System.Drawing.Point(20, 38);
+            this.kryptonBreadCrumb4.Name = "kryptonBreadCrumb4";
             // 
-            this.kryptonBreadCrumbItem2.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem3,
-            this.kryptonBreadCrumbItem7,
-            this.kryptonBreadCrumbItem11,
-            this.kryptonBreadCrumbItem15});
-            this.kryptonBreadCrumbItem2.ShortText = "Vertebrates";
             // 
-            // kryptonBreadCrumbItem3
             // 
-            this.kryptonBreadCrumbItem3.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem4,
-            this.kryptonBreadCrumbItem5,
-            this.kryptonBreadCrumbItem6});
-            this.kryptonBreadCrumbItem3.ShortText = "Fish";
+            this.kryptonBreadCrumb4.RootItem.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem124,
+            this.kryptonBreadCrumbItem133});
+            this.kryptonBreadCrumb4.RootItem.ShortText = "Root";
+            this.kryptonBreadCrumb4.SelectedItem = this.kryptonBreadCrumb4.RootItem;
+            this.kryptonBreadCrumb4.Size = new System.Drawing.Size(402, 27);
+            this.kryptonBreadCrumb4.TabIndex = 0;
+            this.kryptonBreadCrumb4.SelectedItemChanged += new System.EventHandler(this.kryptonBreadCrumb4_SelectedItemChanged);
+            this.kryptonBreadCrumb4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.breadCrumb_MouseDown);
             // 
-            // kryptonBreadCrumbItem4
+            // kryptonBreadCrumbItem124
             // 
-            this.kryptonBreadCrumbItem4.ShortText = "Shark";
+            this.kryptonBreadCrumbItem124.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem125,
+            this.kryptonBreadCrumbItem130});
+            this.kryptonBreadCrumbItem124.ShortText = "Top";
             // 
-            // kryptonBreadCrumbItem5
+            // kryptonBreadCrumbItem125
             // 
-            this.kryptonBreadCrumbItem5.ShortText = "Seahorse";
+            this.kryptonBreadCrumbItem125.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem126,
+            this.kryptonBreadCrumbItem128});
+            this.kryptonBreadCrumbItem125.ShortText = "Red";
             // 
-            // kryptonBreadCrumbItem6
+            // kryptonBreadCrumbItem126
             // 
-            this.kryptonBreadCrumbItem6.ShortText = "Salmon";
+            this.kryptonBreadCrumbItem126.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem127});
+            this.kryptonBreadCrumbItem126.ShortText = "Up";
             // 
-            // kryptonBreadCrumbItem7
+            // kryptonBreadCrumbItem127
             // 
-            this.kryptonBreadCrumbItem7.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem8,
-            this.kryptonBreadCrumbItem9,
-            this.kryptonBreadCrumbItem10});
-            this.kryptonBreadCrumbItem7.ShortText = "Reptiles";
+            this.kryptonBreadCrumbItem127.ShortText = "Alpha";
             // 
-            // kryptonBreadCrumbItem8
+            // kryptonBreadCrumbItem128
             // 
-            this.kryptonBreadCrumbItem8.ShortText = "Python";
+            this.kryptonBreadCrumbItem128.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem129});
+            this.kryptonBreadCrumbItem128.ShortText = "Down";
             // 
-            // kryptonBreadCrumbItem9
+            // kryptonBreadCrumbItem129
             // 
-            this.kryptonBreadCrumbItem9.ShortText = "Chameleon";
+            this.kryptonBreadCrumbItem129.ShortText = "Beta";
             // 
-            // kryptonBreadCrumbItem10
+            // kryptonBreadCrumbItem130
             // 
-            this.kryptonBreadCrumbItem10.ShortText = "Crocodile";
+            this.kryptonBreadCrumbItem130.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem131,
+            this.kryptonBreadCrumbItem132});
+            this.kryptonBreadCrumbItem130.ShortText = "Green";
             // 
-            // kryptonBreadCrumbItem11
+            // kryptonBreadCrumbItem131
             // 
-            this.kryptonBreadCrumbItem11.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem12,
-            this.kryptonBreadCrumbItem13,
-            this.kryptonBreadCrumbItem14});
-            this.kryptonBreadCrumbItem11.ShortText = "Marsupials";
+            this.kryptonBreadCrumbItem131.ShortText = "Left";
             // 
-            // kryptonBreadCrumbItem12
+            // kryptonBreadCrumbItem132
             // 
-            this.kryptonBreadCrumbItem12.ShortText = "Wombat";
+            this.kryptonBreadCrumbItem132.ShortText = "Right";
             // 
-            // kryptonBreadCrumbItem13
+            // kryptonBreadCrumbItem133
             // 
-            this.kryptonBreadCrumbItem13.ShortText = "Koala";
+            this.kryptonBreadCrumbItem133.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem134,
+            this.kryptonBreadCrumbItem139});
+            this.kryptonBreadCrumbItem133.ShortText = "Bottom";
             // 
-            // kryptonBreadCrumbItem14
+            // kryptonBreadCrumbItem134
             // 
-            this.kryptonBreadCrumbItem14.ShortText = "Kangaroo";
+            this.kryptonBreadCrumbItem134.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem135,
+            this.kryptonBreadCrumbItem137});
+            this.kryptonBreadCrumbItem134.ShortText = "Tall";
             // 
-            // kryptonBreadCrumbItem15
+            // kryptonBreadCrumbItem135
             // 
-            this.kryptonBreadCrumbItem15.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem16,
-            this.kryptonBreadCrumbItem17,
-            this.kryptonBreadCrumbItem18,
-            this.kryptonBreadCrumbItem19});
-            this.kryptonBreadCrumbItem15.ShortText = "Primates";
+            this.kryptonBreadCrumbItem135.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem136});
+            this.kryptonBreadCrumbItem135.ShortText = "Fast";
             // 
-            // kryptonBreadCrumbItem16
+            // kryptonBreadCrumbItem136
             // 
-            this.kryptonBreadCrumbItem16.ShortText = "Monkey";
+            this.kryptonBreadCrumbItem136.ShortText = "Gamma";
             // 
-            // kryptonBreadCrumbItem17
+            // kryptonBreadCrumbItem137
             // 
-            this.kryptonBreadCrumbItem17.ShortText = "Gorilla";
+            this.kryptonBreadCrumbItem137.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem138});
+            this.kryptonBreadCrumbItem137.ShortText = "Slow";
             // 
-            // kryptonBreadCrumbItem18
+            // kryptonBreadCrumbItem138
             // 
-            this.kryptonBreadCrumbItem18.ShortText = "Chimpanzee";
+            this.kryptonBreadCrumbItem138.ShortText = "Theta";
             // 
-            // kryptonBreadCrumbItem19
+            // kryptonBreadCrumbItem139
             // 
-            this.kryptonBreadCrumbItem19.ShortText = "Baboon";
+            this.kryptonBreadCrumbItem139.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem140,
+            this.kryptonBreadCrumbItem142});
+            this.kryptonBreadCrumbItem139.ShortText = "Short";
             // 
-            // kryptonBreadCrumbItem20
+            // kryptonBreadCrumbItem140
             // 
-            this.kryptonBreadCrumbItem20.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem21,
-            this.kryptonBreadCrumbItem25,
-            this.kryptonBreadCrumbItem29,
-            this.kryptonBreadCrumbItem33});
-            this.kryptonBreadCrumbItem20.ShortText = "Invertebrates";
+            this.kryptonBreadCrumbItem140.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem141});
+            this.kryptonBreadCrumbItem140.ShortText = "Strong";
             // 
-            // kryptonBreadCrumbItem21
+            // kryptonBreadCrumbItem141
             // 
-            this.kryptonBreadCrumbItem21.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem22,
-            this.kryptonBreadCrumbItem23,
-            this.kryptonBreadCrumbItem24});
-            this.kryptonBreadCrumbItem21.ShortText = "Mollusks";
+            this.kryptonBreadCrumbItem141.ShortText = "Omega";
             // 
-            // kryptonBreadCrumbItem22
+            // kryptonBreadCrumbItem142
             // 
-            this.kryptonBreadCrumbItem22.ShortText = "Slug";
+            this.kryptonBreadCrumbItem142.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem143});
+            this.kryptonBreadCrumbItem142.ShortText = "Weak";
             // 
-            // kryptonBreadCrumbItem23
+            // kryptonBreadCrumbItem143
             // 
-            this.kryptonBreadCrumbItem23.ShortText = "Snail";
+            this.kryptonBreadCrumbItem143.ShortText = "Delta";
             // 
-            // kryptonBreadCrumbItem24
+            // kryptonBreadCrumb3
             // 
-            this.kryptonBreadCrumbItem24.ShortText = "Squid";
+            this.kryptonBreadCrumb3.AutoSize = false;
+            this.kryptonBreadCrumb3.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
+            this.buttonSpecAny2});
+            this.kryptonBreadCrumb3.ControlBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
+            this.kryptonBreadCrumb3.Location = new System.Drawing.Point(20, 101);
+            this.kryptonBreadCrumb3.Name = "kryptonBreadCrumb3";
+            this.kryptonBreadCrumb3.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             // 
-            // kryptonBreadCrumbItem25
             // 
-            this.kryptonBreadCrumbItem25.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem26,
-            this.kryptonBreadCrumbItem27,
-            this.kryptonBreadCrumbItem28});
-            this.kryptonBreadCrumbItem25.ShortText = "Crustaceans";
             // 
-            // kryptonBreadCrumbItem26
+            this.kryptonBreadCrumb3.RootItem.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem42,
+            this.kryptonBreadCrumbItem78});
+            this.kryptonBreadCrumb3.RootItem.ShortText = "Root";
+            this.kryptonBreadCrumb3.SelectedItem = this.kryptonBreadCrumb3.RootItem;
+            this.kryptonBreadCrumb3.Size = new System.Drawing.Size(402, 27);
+            this.kryptonBreadCrumb3.TabIndex = 2;
+            this.kryptonBreadCrumb3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.breadCrumb_MouseDown);
             // 
-            this.kryptonBreadCrumbItem26.ShortText = "Crab";
+            // buttonSpecAny2
             // 
-            // kryptonBreadCrumbItem27
+            this.buttonSpecAny2.KryptonContextMenu = this.kryptonContextMenu1;
+            this.buttonSpecAny2.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
+            this.buttonSpecAny2.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
+            this.buttonSpecAny2.Type = Krypton.Toolkit.PaletteButtonSpecStyle.DropDown;
+            this.buttonSpecAny2.UniqueName = "BF2ABC476E114B81BF2ABC476E114B81";
             // 
-            this.kryptonBreadCrumbItem27.ShortText = "Lobster";
+            // kryptonContextMenu1
             // 
-            // kryptonBreadCrumbItem28
+            this.kryptonContextMenu1.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonContextMenuHeading1,
+            this.kryptonContextMenuItems1});
             // 
-            this.kryptonBreadCrumbItem28.ShortText = "Barnacle";
+            // kryptonContextMenuHeading1
             // 
-            // kryptonBreadCrumbItem29
+            this.kryptonContextMenuHeading1.ExtraText = "";
+            this.kryptonContextMenuHeading1.Text = "Shortcuts";
             // 
-            this.kryptonBreadCrumbItem29.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem30,
-            this.kryptonBreadCrumbItem31,
-            this.kryptonBreadCrumbItem32});
-            this.kryptonBreadCrumbItem29.ShortText = "Arachnids";
+            // kryptonContextMenuItems1
             // 
-            // kryptonBreadCrumbItem30
+            this.kryptonContextMenuItems1.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.menuSpider,
+            this.menuKangeroo,
+            this.menuFern});
             // 
-            this.kryptonBreadCrumbItem30.ShortText = "Scorpion";
+            // menuSpider
             // 
-            // kryptonBreadCrumbItem31
+            this.menuSpider.Text = "Spider";
+            this.menuSpider.Click += new System.EventHandler(this.menuSpider_Click);
             // 
-            this.kryptonBreadCrumbItem31.ShortText = "Spider";
+            // menuKangeroo
             // 
-            // kryptonBreadCrumbItem32
+            this.menuKangeroo.Text = "Kangeroo";
+            this.menuKangeroo.Click += new System.EventHandler(this.menuKangeroo_Click);
             // 
-            this.kryptonBreadCrumbItem32.ShortText = "Tick";
+            // menuFern
             // 
-            // kryptonBreadCrumbItem33
-            // 
-            this.kryptonBreadCrumbItem33.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem34,
-            this.kryptonBreadCrumbItem35,
-            this.kryptonBreadCrumbItem36});
-            this.kryptonBreadCrumbItem33.ShortText = "Insects";
-            // 
-            // kryptonBreadCrumbItem34
-            // 
-            this.kryptonBreadCrumbItem34.ShortText = "Butterfly";
-            // 
-            // kryptonBreadCrumbItem35
-            // 
-            this.kryptonBreadCrumbItem35.ShortText = "Fly";
-            // 
-            // kryptonBreadCrumbItem36
-            // 
-            this.kryptonBreadCrumbItem36.ShortText = "Moth";
-            // 
-            // kryptonBreadCrumbItem37
-            // 
-            this.kryptonBreadCrumbItem37.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem38});
-            this.kryptonBreadCrumbItem37.ShortText = "Plants";
-            // 
-            // kryptonBreadCrumbItem38
-            // 
-            this.kryptonBreadCrumbItem38.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem39,
-            this.kryptonBreadCrumbItem40,
-            this.kryptonBreadCrumbItem41});
-            this.kryptonBreadCrumbItem38.ShortText = "Seedless";
-            // 
-            // kryptonBreadCrumbItem39
-            // 
-            this.kryptonBreadCrumbItem39.ShortText = "Fern";
-            // 
-            // kryptonBreadCrumbItem40
-            // 
-            this.kryptonBreadCrumbItem40.ShortText = "Horsetail";
-            // 
-            // kryptonBreadCrumbItem41
-            // 
-            this.kryptonBreadCrumbItem41.ShortText = "Club Moss";
+            this.menuFern.Text = "Fern";
+            this.menuFern.Click += new System.EventHandler(this.menuFern_Click);
             // 
             // kryptonBreadCrumbItem42
             // 
@@ -674,6 +762,40 @@
             // 
             this.kryptonBreadCrumbItem82.ShortText = "Club Moss";
             // 
+            // kryptonBreadCrumb2
+            // 
+            this.kryptonBreadCrumb2.AutoSize = false;
+            this.kryptonBreadCrumb2.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
+            this.buttonSpecAny1});
+            this.kryptonBreadCrumb2.ControlBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
+            this.kryptonBreadCrumb2.Location = new System.Drawing.Point(20, 64);
+            this.kryptonBreadCrumb2.Name = "kryptonBreadCrumb2";
+            this.kryptonBreadCrumb2.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
+            // 
+            // 
+            // 
+            this.kryptonBreadCrumb2.RootItem.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem83,
+            this.kryptonBreadCrumbItem119});
+            this.kryptonBreadCrumb2.RootItem.ShortText = "Root";
+            this.kryptonBreadCrumb2.SelectedItem = this.kryptonBreadCrumb2.RootItem;
+            this.kryptonBreadCrumb2.Size = new System.Drawing.Size(402, 27);
+            this.kryptonBreadCrumb2.StateTracking.BreadCrumb.Border.Color1 = System.Drawing.Color.Fuchsia;
+            this.kryptonBreadCrumb2.StateTracking.BreadCrumb.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonBreadCrumb2.StateTracking.BreadCrumb.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonBreadCrumb2.TabIndex = 1;
+            this.kryptonBreadCrumb2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.breadCrumb_MouseDown);
+            // 
+            // buttonSpecAny1
+            // 
+            this.buttonSpecAny1.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
+            this.buttonSpecAny1.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
+            this.buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
+            this.buttonSpecAny1.UniqueName = "DD50F0F9917A4145DD50F0F9917A4145";
+            this.buttonSpecAny1.Click += new System.EventHandler(this.buttonSpecAny1_Click);
+            // 
             // kryptonBreadCrumbItem83
             // 
             this.kryptonBreadCrumbItem83.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
@@ -890,120 +1012,10 @@
             // 
             this.kryptonBreadCrumbItem123.ShortText = "Club Moss";
             // 
-            // kryptonBreadCrumbItem124
-            // 
-            this.kryptonBreadCrumbItem124.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem125,
-            this.kryptonBreadCrumbItem130});
-            this.kryptonBreadCrumbItem124.ShortText = "Top";
-            // 
-            // kryptonBreadCrumbItem125
-            // 
-            this.kryptonBreadCrumbItem125.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem126,
-            this.kryptonBreadCrumbItem128});
-            this.kryptonBreadCrumbItem125.ShortText = "Red";
-            // 
-            // kryptonBreadCrumbItem126
-            // 
-            this.kryptonBreadCrumbItem126.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem127});
-            this.kryptonBreadCrumbItem126.ShortText = "Up";
-            // 
-            // kryptonBreadCrumbItem127
-            // 
-            this.kryptonBreadCrumbItem127.ShortText = "Alpha";
-            // 
-            // kryptonBreadCrumbItem128
-            // 
-            this.kryptonBreadCrumbItem128.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem129});
-            this.kryptonBreadCrumbItem128.ShortText = "Down";
-            // 
-            // kryptonBreadCrumbItem129
-            // 
-            this.kryptonBreadCrumbItem129.ShortText = "Beta";
-            // 
-            // kryptonBreadCrumbItem130
-            // 
-            this.kryptonBreadCrumbItem130.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem131,
-            this.kryptonBreadCrumbItem132});
-            this.kryptonBreadCrumbItem130.ShortText = "Green";
-            // 
-            // kryptonBreadCrumbItem131
-            // 
-            this.kryptonBreadCrumbItem131.ShortText = "Left";
-            // 
-            // kryptonBreadCrumbItem132
-            // 
-            this.kryptonBreadCrumbItem132.ShortText = "Right";
-            // 
-            // kryptonBreadCrumbItem133
-            // 
-            this.kryptonBreadCrumbItem133.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem134,
-            this.kryptonBreadCrumbItem139});
-            this.kryptonBreadCrumbItem133.ShortText = "Bottom";
-            // 
-            // kryptonBreadCrumbItem134
-            // 
-            this.kryptonBreadCrumbItem134.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem135,
-            this.kryptonBreadCrumbItem137});
-            this.kryptonBreadCrumbItem134.ShortText = "Tall";
-            // 
-            // kryptonBreadCrumbItem135
-            // 
-            this.kryptonBreadCrumbItem135.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem136});
-            this.kryptonBreadCrumbItem135.ShortText = "Fast";
-            // 
-            // kryptonBreadCrumbItem136
-            // 
-            this.kryptonBreadCrumbItem136.ShortText = "Gamma";
-            // 
-            // kryptonBreadCrumbItem137
-            // 
-            this.kryptonBreadCrumbItem137.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem138});
-            this.kryptonBreadCrumbItem137.ShortText = "Slow";
-            // 
-            // kryptonBreadCrumbItem138
-            // 
-            this.kryptonBreadCrumbItem138.ShortText = "Theta";
-            // 
-            // kryptonBreadCrumbItem139
-            // 
-            this.kryptonBreadCrumbItem139.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem140,
-            this.kryptonBreadCrumbItem142});
-            this.kryptonBreadCrumbItem139.ShortText = "Short";
-            // 
-            // kryptonBreadCrumbItem140
-            // 
-            this.kryptonBreadCrumbItem140.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem141});
-            this.kryptonBreadCrumbItem140.ShortText = "Strong";
-            // 
-            // kryptonBreadCrumbItem141
-            // 
-            this.kryptonBreadCrumbItem141.ShortText = "Omega";
-            // 
-            // kryptonBreadCrumbItem142
-            // 
-            this.kryptonBreadCrumbItem142.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem143});
-            this.kryptonBreadCrumbItem142.ShortText = "Weak";
-            // 
-            // kryptonBreadCrumbItem143
-            // 
-            this.kryptonBreadCrumbItem143.ShortText = "Delta";
-            // 
             // kryptonBreadCrumb1
             // 
             this.kryptonBreadCrumb1.AutoSize = false;
-            this.kryptonBreadCrumb1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
+            this.kryptonBreadCrumb1.ControlBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
             this.kryptonBreadCrumb1.Location = new System.Drawing.Point(20, 27);
             this.kryptonBreadCrumb1.Name = "kryptonBreadCrumb1";
             this.kryptonBreadCrumb1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
@@ -1019,6 +1031,222 @@
             this.kryptonBreadCrumb1.TabIndex = 0;
             this.kryptonBreadCrumb1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.breadCrumb_MouseDown);
             // 
+            // kryptonBreadCrumbItem1
+            // 
+            this.kryptonBreadCrumbItem1.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem2,
+            this.kryptonBreadCrumbItem20});
+            this.kryptonBreadCrumbItem1.ShortText = "Animals";
+            // 
+            // kryptonBreadCrumbItem2
+            // 
+            this.kryptonBreadCrumbItem2.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem3,
+            this.kryptonBreadCrumbItem7,
+            this.kryptonBreadCrumbItem11,
+            this.kryptonBreadCrumbItem15});
+            this.kryptonBreadCrumbItem2.ShortText = "Vertebrates";
+            // 
+            // kryptonBreadCrumbItem3
+            // 
+            this.kryptonBreadCrumbItem3.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem4,
+            this.kryptonBreadCrumbItem5,
+            this.kryptonBreadCrumbItem6});
+            this.kryptonBreadCrumbItem3.ShortText = "Fish";
+            // 
+            // kryptonBreadCrumbItem4
+            // 
+            this.kryptonBreadCrumbItem4.ShortText = "Shark";
+            // 
+            // kryptonBreadCrumbItem5
+            // 
+            this.kryptonBreadCrumbItem5.ShortText = "Seahorse";
+            // 
+            // kryptonBreadCrumbItem6
+            // 
+            this.kryptonBreadCrumbItem6.ShortText = "Salmon";
+            // 
+            // kryptonBreadCrumbItem7
+            // 
+            this.kryptonBreadCrumbItem7.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem8,
+            this.kryptonBreadCrumbItem9,
+            this.kryptonBreadCrumbItem10});
+            this.kryptonBreadCrumbItem7.ShortText = "Reptiles";
+            // 
+            // kryptonBreadCrumbItem8
+            // 
+            this.kryptonBreadCrumbItem8.ShortText = "Python";
+            // 
+            // kryptonBreadCrumbItem9
+            // 
+            this.kryptonBreadCrumbItem9.ShortText = "Chameleon";
+            // 
+            // kryptonBreadCrumbItem10
+            // 
+            this.kryptonBreadCrumbItem10.ShortText = "Crocodile";
+            // 
+            // kryptonBreadCrumbItem11
+            // 
+            this.kryptonBreadCrumbItem11.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem12,
+            this.kryptonBreadCrumbItem13,
+            this.kryptonBreadCrumbItem14});
+            this.kryptonBreadCrumbItem11.ShortText = "Marsupials";
+            // 
+            // kryptonBreadCrumbItem12
+            // 
+            this.kryptonBreadCrumbItem12.ShortText = "Wombat";
+            // 
+            // kryptonBreadCrumbItem13
+            // 
+            this.kryptonBreadCrumbItem13.ShortText = "Koala";
+            // 
+            // kryptonBreadCrumbItem14
+            // 
+            this.kryptonBreadCrumbItem14.ShortText = "Kangaroo";
+            // 
+            // kryptonBreadCrumbItem15
+            // 
+            this.kryptonBreadCrumbItem15.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem16,
+            this.kryptonBreadCrumbItem17,
+            this.kryptonBreadCrumbItem18,
+            this.kryptonBreadCrumbItem19});
+            this.kryptonBreadCrumbItem15.ShortText = "Primates";
+            // 
+            // kryptonBreadCrumbItem16
+            // 
+            this.kryptonBreadCrumbItem16.ShortText = "Monkey";
+            // 
+            // kryptonBreadCrumbItem17
+            // 
+            this.kryptonBreadCrumbItem17.ShortText = "Gorilla";
+            // 
+            // kryptonBreadCrumbItem18
+            // 
+            this.kryptonBreadCrumbItem18.ShortText = "Chimpanzee";
+            // 
+            // kryptonBreadCrumbItem19
+            // 
+            this.kryptonBreadCrumbItem19.ShortText = "Baboon";
+            // 
+            // kryptonBreadCrumbItem20
+            // 
+            this.kryptonBreadCrumbItem20.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem21,
+            this.kryptonBreadCrumbItem25,
+            this.kryptonBreadCrumbItem29,
+            this.kryptonBreadCrumbItem33});
+            this.kryptonBreadCrumbItem20.ShortText = "Invertebrates";
+            // 
+            // kryptonBreadCrumbItem21
+            // 
+            this.kryptonBreadCrumbItem21.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem22,
+            this.kryptonBreadCrumbItem23,
+            this.kryptonBreadCrumbItem24});
+            this.kryptonBreadCrumbItem21.ShortText = "Mollusks";
+            // 
+            // kryptonBreadCrumbItem22
+            // 
+            this.kryptonBreadCrumbItem22.ShortText = "Slug";
+            // 
+            // kryptonBreadCrumbItem23
+            // 
+            this.kryptonBreadCrumbItem23.ShortText = "Snail";
+            // 
+            // kryptonBreadCrumbItem24
+            // 
+            this.kryptonBreadCrumbItem24.ShortText = "Squid";
+            // 
+            // kryptonBreadCrumbItem25
+            // 
+            this.kryptonBreadCrumbItem25.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem26,
+            this.kryptonBreadCrumbItem27,
+            this.kryptonBreadCrumbItem28});
+            this.kryptonBreadCrumbItem25.ShortText = "Crustaceans";
+            // 
+            // kryptonBreadCrumbItem26
+            // 
+            this.kryptonBreadCrumbItem26.ShortText = "Crab";
+            // 
+            // kryptonBreadCrumbItem27
+            // 
+            this.kryptonBreadCrumbItem27.ShortText = "Lobster";
+            // 
+            // kryptonBreadCrumbItem28
+            // 
+            this.kryptonBreadCrumbItem28.ShortText = "Barnacle";
+            // 
+            // kryptonBreadCrumbItem29
+            // 
+            this.kryptonBreadCrumbItem29.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem30,
+            this.kryptonBreadCrumbItem31,
+            this.kryptonBreadCrumbItem32});
+            this.kryptonBreadCrumbItem29.ShortText = "Arachnids";
+            // 
+            // kryptonBreadCrumbItem30
+            // 
+            this.kryptonBreadCrumbItem30.ShortText = "Scorpion";
+            // 
+            // kryptonBreadCrumbItem31
+            // 
+            this.kryptonBreadCrumbItem31.ShortText = "Spider";
+            // 
+            // kryptonBreadCrumbItem32
+            // 
+            this.kryptonBreadCrumbItem32.ShortText = "Tick";
+            // 
+            // kryptonBreadCrumbItem33
+            // 
+            this.kryptonBreadCrumbItem33.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem34,
+            this.kryptonBreadCrumbItem35,
+            this.kryptonBreadCrumbItem36});
+            this.kryptonBreadCrumbItem33.ShortText = "Insects";
+            // 
+            // kryptonBreadCrumbItem34
+            // 
+            this.kryptonBreadCrumbItem34.ShortText = "Butterfly";
+            // 
+            // kryptonBreadCrumbItem35
+            // 
+            this.kryptonBreadCrumbItem35.ShortText = "Fly";
+            // 
+            // kryptonBreadCrumbItem36
+            // 
+            this.kryptonBreadCrumbItem36.ShortText = "Moth";
+            // 
+            // kryptonBreadCrumbItem37
+            // 
+            this.kryptonBreadCrumbItem37.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem38});
+            this.kryptonBreadCrumbItem37.ShortText = "Plants";
+            // 
+            // kryptonBreadCrumbItem38
+            // 
+            this.kryptonBreadCrumbItem38.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
+            this.kryptonBreadCrumbItem39,
+            this.kryptonBreadCrumbItem40,
+            this.kryptonBreadCrumbItem41});
+            this.kryptonBreadCrumbItem38.ShortText = "Seedless";
+            // 
+            // kryptonBreadCrumbItem39
+            // 
+            this.kryptonBreadCrumbItem39.ShortText = "Fern";
+            // 
+            // kryptonBreadCrumbItem40
+            // 
+            this.kryptonBreadCrumbItem40.ShortText = "Horsetail";
+            // 
+            // kryptonBreadCrumbItem41
+            // 
+            this.kryptonBreadCrumbItem41.ShortText = "Club Moss";
+            // 
             // kryptonManager1
             // 
             this.kryptonManager1.GlobalPalette = this.kryptonPaletteOffice2007Blue;
@@ -1026,231 +1254,11 @@
             // 
             // kryptonPaletteOffice2007Blue
             // 
-            this.kryptonPaletteOffice2007Blue.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.kryptonBreadCrumb3);
-            this.groupBox1.Controls.Add(this.kryptonBreadCrumb2);
-            this.groupBox1.Controls.Add(this.kryptonBreadCrumb1);
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(442, 147);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Simple Examples";
-            // 
-            // kryptonBreadCrumb3
-            // 
-            this.kryptonBreadCrumb3.AutoSize = false;
-            this.kryptonBreadCrumb3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonBreadCrumb3.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
-            this.buttonSpecAny2});
-            this.kryptonBreadCrumb3.Location = new System.Drawing.Point(20, 101);
-            this.kryptonBreadCrumb3.Name = "kryptonBreadCrumb3";
-            this.kryptonBreadCrumb3.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
-            // 
-            // 
-            // 
-            this.kryptonBreadCrumb3.RootItem.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem42,
-            this.kryptonBreadCrumbItem78});
-            this.kryptonBreadCrumb3.RootItem.ShortText = "Root";
-            this.kryptonBreadCrumb3.SelectedItem = this.kryptonBreadCrumb3.RootItem;
-            this.kryptonBreadCrumb3.Size = new System.Drawing.Size(402, 27);
-            this.kryptonBreadCrumb3.TabIndex = 2;
-            this.kryptonBreadCrumb3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.breadCrumb_MouseDown);
-            // 
-            // buttonSpecAny2
-            // 
-            this.buttonSpecAny2.KryptonContextMenu = this.kryptonContextMenu1;
-            this.buttonSpecAny2.Type = Krypton.Toolkit.PaletteButtonSpecStyle.DropDown;
-            this.buttonSpecAny2.UniqueName = "BF2ABC476E114B81BF2ABC476E114B81";
-            // 
-            // kryptonContextMenu1
-            // 
-            this.kryptonContextMenu1.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
-            this.kryptonContextMenuHeading1,
-            this.kryptonContextMenuItems1});
-            // 
-            // kryptonContextMenuHeading1
-            // 
-            this.kryptonContextMenuHeading1.ExtraText = "";
-            this.kryptonContextMenuHeading1.Text = "Shortcuts";
-            // 
-            // kryptonContextMenuItems1
-            // 
-            this.kryptonContextMenuItems1.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
-            this.menuSpider,
-            this.menuKangeroo,
-            this.menuFern});
-            // 
-            // menuSpider
-            // 
-            this.menuSpider.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.menuSpider.ShortcutKeys = System.Windows.Forms.Keys.None;
-            this.menuSpider.Text = "Spider";
-            this.menuSpider.Click += new System.EventHandler(this.menuSpider_Click);
-            // 
-            // menuKangeroo
-            // 
-            this.menuKangeroo.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.menuKangeroo.ShortcutKeys = System.Windows.Forms.Keys.None;
-            this.menuKangeroo.Text = "Kangeroo";
-            this.menuKangeroo.Click += new System.EventHandler(this.menuKangeroo_Click);
-            // 
-            // menuFern
-            // 
-            this.menuFern.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.menuFern.ShortcutKeys = System.Windows.Forms.Keys.None;
-            this.menuFern.Text = "Fern";
-            this.menuFern.Click += new System.EventHandler(this.menuFern_Click);
-            // 
-            // kryptonBreadCrumb2
-            // 
-            this.kryptonBreadCrumb2.AutoSize = false;
-            this.kryptonBreadCrumb2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonBreadCrumb2.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
-            this.buttonSpecAny1});
-            this.kryptonBreadCrumb2.Location = new System.Drawing.Point(20, 64);
-            this.kryptonBreadCrumb2.Name = "kryptonBreadCrumb2";
-            this.kryptonBreadCrumb2.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
-            // 
-            // 
-            // 
-            this.kryptonBreadCrumb2.RootItem.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem83,
-            this.kryptonBreadCrumbItem119});
-            this.kryptonBreadCrumb2.RootItem.ShortText = "Root";
-            this.kryptonBreadCrumb2.SelectedItem = this.kryptonBreadCrumb2.RootItem;
-            this.kryptonBreadCrumb2.Size = new System.Drawing.Size(402, 27);
-            this.kryptonBreadCrumb2.TabIndex = 1;
-            this.kryptonBreadCrumb2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.breadCrumb_MouseDown);
-            // 
-            // buttonSpecAny1
-            // 
-            this.buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
-            this.buttonSpecAny1.UniqueName = "DD50F0F9917A4145DD50F0F9917A4145";
-            this.buttonSpecAny1.Click += new System.EventHandler(this.buttonSpecAny1_Click);
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.propertyGrid);
-            this.groupBox4.Location = new System.Drawing.Point(461, 13);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(301, 488);
-            this.groupBox4.TabIndex = 2;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Properties for Selection";
-            // 
-            // propertyGrid
-            // 
-            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.propertyGrid.Location = new System.Drawing.Point(6, 19);
-            this.propertyGrid.Name = "propertyGrid";
-            this.propertyGrid.Size = new System.Drawing.Size(289, 463);
-            this.propertyGrid.TabIndex = 0;
-            this.propertyGrid.ToolbarVisible = false;
-            // 
-            // buttonClose
-            // 
-            this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonClose.Location = new System.Drawing.Point(688, 511);
-            this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(75, 23);
-            this.buttonClose.TabIndex = 3;
-            this.buttonClose.Text = "&Close";
-            this.buttonClose.UseVisualStyleBackColor = true;
-            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.kryptonBreadCrumb4);
-            this.groupBox2.Controls.Add(this.treeView1);
-            this.groupBox2.Location = new System.Drawing.Point(13, 167);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(442, 334);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Sync with TreeControl";
-            // 
-            // kryptonBreadCrumb4
-            // 
-            this.kryptonBreadCrumb4.AutoSize = false;
-            this.kryptonBreadCrumb4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonBreadCrumb4.Location = new System.Drawing.Point(20, 38);
-            this.kryptonBreadCrumb4.Name = "kryptonBreadCrumb4";
-            // 
-            // 
-            // 
-            this.kryptonBreadCrumb4.RootItem.Items.AddRange(new Krypton.Toolkit.KryptonBreadCrumbItem[] {
-            this.kryptonBreadCrumbItem124,
-            this.kryptonBreadCrumbItem133});
-            this.kryptonBreadCrumb4.RootItem.ShortText = "Root";
-            this.kryptonBreadCrumb4.SelectedItem = this.kryptonBreadCrumb4.RootItem;
-            this.kryptonBreadCrumb4.Size = new System.Drawing.Size(402, 27);
-            this.kryptonBreadCrumb4.TabIndex = 0;
-            this.kryptonBreadCrumb4.SelectedItemChanged += new System.EventHandler(this.kryptonBreadCrumb4_SelectedItemChanged);
-            this.kryptonBreadCrumb4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.breadCrumb_MouseDown);
-            // 
-            // treeView1
-            // 
-            this.treeView1.HideSelection = false;
-            this.treeView1.Location = new System.Drawing.Point(20, 82);
-            this.treeView1.Name = "treeView1";
-            treeNode1.Name = "Node18";
-            treeNode1.Text = "Alpha";
-            treeNode2.Name = "Node12";
-            treeNode2.Text = "Up";
-            treeNode3.Name = "Node19";
-            treeNode3.Text = "Beta";
-            treeNode4.Name = "Node13";
-            treeNode4.Text = "Down";
-            treeNode5.Name = "Node2";
-            treeNode5.Text = "Red";
-            treeNode6.Name = "Node14";
-            treeNode6.Text = "Left";
-            treeNode7.Name = "Node15";
-            treeNode7.Text = "Right";
-            treeNode8.Name = "Node3";
-            treeNode8.Text = "Green";
-            treeNode9.Name = "Node0";
-            treeNode9.Text = "Top";
-            treeNode10.Name = "Node20";
-            treeNode10.Text = "Gamma";
-            treeNode11.Name = "Node7";
-            treeNode11.Text = "Fast";
-            treeNode12.Name = "Node21";
-            treeNode12.Text = "Theta";
-            treeNode13.Name = "Node8";
-            treeNode13.Text = "Slow";
-            treeNode14.Name = "Node5";
-            treeNode14.Text = "Tall";
-            treeNode15.Name = "Node22";
-            treeNode15.Text = "Omega";
-            treeNode16.Name = "Node9";
-            treeNode16.Text = "Strong";
-            treeNode17.Name = "Node23";
-            treeNode17.Text = "Delta";
-            treeNode18.Name = "Node11";
-            treeNode18.Text = "Weak";
-            treeNode19.Name = "Node6";
-            treeNode19.Text = "Short";
-            treeNode20.Name = "Node1";
-            treeNode20.Text = "Bottom";
-            treeNode21.Name = "Node0";
-            treeNode21.Text = "Root";
-            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode21});
-            this.treeView1.Size = new System.Drawing.Size(402, 234);
-            this.treeView1.TabIndex = 1;
-            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            this.kryptonPaletteOffice2007Blue.BasePaletteMode = Krypton.Toolkit.PaletteMode.Office365Blue;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(775, 546);
             this.Controls.Add(this.groupBox2);
@@ -1258,20 +1266,19 @@
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "KryptonBreadCrumb Examples";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonBreadCrumb1)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonBreadCrumb3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonBreadCrumb2)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonBreadCrumb4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonBreadCrumb3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonBreadCrumb2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonBreadCrumb1)).EndInit();
             this.ResumeLayout(false);
 
         }

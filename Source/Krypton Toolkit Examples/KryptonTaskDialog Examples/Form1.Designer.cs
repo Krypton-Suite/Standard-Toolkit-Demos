@@ -157,9 +157,9 @@
             this.kryptonTaskDialog.DefaultButton = Krypton.Toolkit.TaskDialogButtons.None;
             this.kryptonTaskDialog.DefaultRadioButton = null;
             this.kryptonTaskDialog.FooterHyperlink = null;
-            this.kryptonTaskDialog.FooterIcon = System.Windows.Forms.MessageBoxIcon.None;
+            this.kryptonTaskDialog.FooterIcon = Krypton.Toolkit.KryptonMessageBoxIcon.None;
             this.kryptonTaskDialog.FooterText = null;
-            this.kryptonTaskDialog.Icon = System.Windows.Forms.MessageBoxIcon.None;
+            this.kryptonTaskDialog.Icon = Krypton.Toolkit.KryptonMessageBoxIcon.None;
             this.kryptonTaskDialog.MainInstruction = null;
             this.kryptonTaskDialog.RadioButtons.AddRange(new Krypton.Toolkit.KryptonTaskDialogCommand[] {
             this.kryptonTaskDialogCommand1,

@@ -30,6 +30,9 @@ namespace KryptonDataGridViewExamples
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            Krypton.Toolkit.IconSpec iconSpec1 = new Krypton.Toolkit.IconSpec();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonDataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
             this.ID = new Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
@@ -46,7 +49,7 @@ namespace KryptonDataGridViewExamples
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(800, 450);
+            this.kryptonPanel1.Size = new System.Drawing.Size(600, 450);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // kryptonDataGridView1
@@ -60,11 +63,12 @@ namespace KryptonDataGridViewExamples
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
             this.kryptonDataGridView1.RowHeadersWidth = 51;
             this.kryptonDataGridView1.RowTemplate.Height = 24;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(632, 245);
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(525, 245);
             this.kryptonDataGridView1.TabIndex = 0;
             // 
             // ID
             // 
+            this.ID.DefaultCellStyle = dataGridViewCellStyle1;
             this.ID.HeaderText = "ID";
             this.ID.MinimumWidth = 6;
             this.ID.Name = "ID";
@@ -80,11 +84,14 @@ namespace KryptonDataGridViewExamples
             // 
             // CheckBox
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.NullValue = false;
-            this.CheckBox.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.NullValue = false;
+            this.CheckBox.DefaultCellStyle = dataGridViewCellStyle2;
             this.CheckBox.FalseValue = null;
             this.CheckBox.HeaderText = "Checkbox";
+            iconSpec1.Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Right;
+            iconSpec1.Icon = ((System.Drawing.Image)(resources.GetObject("iconSpec1.Icon")));
+            this.CheckBox.IconSpecs.Add(iconSpec1);
             this.CheckBox.IndeterminateValue = null;
             this.CheckBox.MinimumWidth = 6;
             this.CheckBox.Name = "CheckBox";
@@ -95,8 +102,9 @@ namespace KryptonDataGridViewExamples
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 450);
             this.Controls.Add(this.kryptonPanel1);
+            this.MaximumSize = new System.Drawing.Size(800, 700);
             this.Name = "Form2";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();

@@ -26,7 +26,7 @@ namespace DockingCustomized
         private int _count = 1;
         private Random _random = new Random(DateTime.Now.Millisecond);
         private NavigatorMode _mode = NavigatorMode.HeaderBarCheckButtonHeaderGroup;
-        private PaletteButtonSpecStyle[] _buttonSpecStyles = new PaletteButtonSpecStyle[]{ PaletteButtonSpecStyle.ArrowDown, PaletteButtonSpecStyle.ArrowLeft,
+        private PaletteButtonSpecStyle[] _buttonSpecStyles = new[]{ PaletteButtonSpecStyle.ArrowDown, PaletteButtonSpecStyle.ArrowLeft,
                                                                                            PaletteButtonSpecStyle.ArrowRight, PaletteButtonSpecStyle.ArrowUp,
                                                                                            PaletteButtonSpecStyle.Close, PaletteButtonSpecStyle.Context,
                                                                                            PaletteButtonSpecStyle.DropDown };
@@ -46,15 +46,9 @@ namespace DockingCustomized
             return page;
         }
 
-        private KryptonPage NewInput()
-        {
-            return NewPage("Input ", 1, new ContentInput());
-        }
+        private KryptonPage NewInput() => NewPage("Input ", 1, new ContentInput());
 
-        private KryptonPage NewPropertyGrid()
-        {
-            return NewPage("Properties ", 2, new ContentPropertyGrid());
-        }
+        private KryptonPage NewPropertyGrid() => NewPage("Properties ", 2, new ContentPropertyGrid());
 
         private KryptonPage NewPage(string name, int image, Control content)
         {
@@ -83,9 +77,9 @@ namespace DockingCustomized
             kryptonDockingManager.ManageFloating(this);
 
             // Add initial docking pages
-            kryptonDockingManager.AddToWorkspace("Workspace", new KryptonPage[] { NewDocument(), NewDocument() });
-            kryptonDockingManager.AddDockspace("Control", DockingEdge.Right, new KryptonPage[] { NewPropertyGrid(), NewInput(), NewPropertyGrid(), NewInput() });
-            kryptonDockingManager.AddDockspace("Control", DockingEdge.Bottom, new KryptonPage[] { NewInput(), NewPropertyGrid(), NewInput(), NewPropertyGrid() });
+            kryptonDockingManager.AddToWorkspace("Workspace", new[] { NewDocument(), NewDocument() });
+            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Right, new[] { NewPropertyGrid(), NewInput(), NewPropertyGrid(), NewInput() });
+            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Bottom, new[] { NewInput(), NewPropertyGrid(), NewInput(), NewPropertyGrid() });
 
             UpdateModeButtons();
         }
@@ -251,9 +245,6 @@ namespace DockingCustomized
             cell.NavigatorMode = _mode;
         }
 
-        private Color RandomColor()
-        {
-            return Color.FromArgb(_random.Next(255), _random.Next(255), _random.Next(255));
-        }
+        private Color RandomColor() => Color.FromArgb(_random.Next(255), _random.Next(255), _random.Next(255));
     }
 }

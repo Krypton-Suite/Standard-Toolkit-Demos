@@ -43,7 +43,7 @@ namespace ContextualTabs
             // Let user change the color definition
             if (colorDialog.ShowDialog() == DialogResult.OK)
             {
-                // Update the displayed color feedback
+                // Update the Displayed color feedback
                 panelContextColor.StateCommon.Color1 = colorDialog.Color;
             }
         }
@@ -51,21 +51,28 @@ namespace ContextualTabs
         private void buttonAddContext_Click(object sender, EventArgs e)
         {
             // Create a new context that uses the information specified
-            KryptonRibbonContext newContext = new KryptonRibbonContext();
-            newContext.ContextName = textBoxContextName.Text;
-            newContext.ContextTitle = textBoxContextTitle.Text;
-            newContext.ContextColor = panelContextColor.StateCommon.Color1;
+            KryptonRibbonContext newContext = new KryptonRibbonContext
+            {
+                ContextName = textBoxContextName.Text,
+                ContextTitle = textBoxContextTitle.Text,
+                ContextColor = panelContextColor.StateCommon.Color1
+            };
             kryptonRibbon.RibbonContexts.Add(newContext);
 
             // Create a new ribbon page that specifies the new context name
-            KryptonRibbonTab newTab = new KryptonRibbonTab();
-            newTab.ContextName = newContext.ContextName;
+            KryptonRibbonTab newTab = new KryptonRibbonTab
+            {
+                ContextName = newContext.ContextName
+            };
             kryptonRibbon.RibbonTabs.Add(newTab);
 
             // Update the selected context name on the form and control so it shows
-            string newSelectedContext = textBoxSelectedContexts.Text;
+            var newSelectedContext = textBoxSelectedContexts.Text;
             if (newSelectedContext.Length > 0)
+            {
                 newSelectedContext += ",";
+            }
+
             newSelectedContext += newContext.ContextName;
             textBoxSelectedContexts.Text = newSelectedContext;
             kryptonRibbon.SelectedContext = newSelectedContext;

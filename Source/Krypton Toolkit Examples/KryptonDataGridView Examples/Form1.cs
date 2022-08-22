@@ -30,8 +30,8 @@ namespace KryptonDataGridViewExamples
             dtTestData.Rows.Add(dt, "Mrs", "Mary", "(01) 2345-6789", "Married", 21, "Press!", false);
             dtTestData.Rows.Add(dt, "Miss", "Mandy", "(03) 5555-1111", "Single", 44, "Press!", false);
             dtTestData.Rows.Add(dt, "Ms", "Mercy", "(99) 2211-2211", "Single", 25, "Press!", true);
-            dtTestData.Rows.Add(dt, "Mr", "Micheal", "(07) 0070-0700", "Divorced", 35, "Press!", false);
-            dtTestData.Rows.Add(dt, "Mrs", "Marge", "(10) 2311-2311", "Married", 80, "Press!", true);
+            dtTestData.Rows.Add(dt, "Mr", "Micheal\r\nSingle\r\nMarried", "(07) 0070-0700", "Divorced", 35, "Press!", false);
+            dtTestData.Rows.Add(dt, "Mrs", "Marge has a really long name normally, and this should wrap", "(10) 2311-2311", "Married", 80, "Press!", true);
 
             // Show selected data grid properties in the property grid
             propertyGrid.SelectedObject = new KryptonDataGridViewProxy(kryptonDataGridView1);
@@ -85,12 +85,15 @@ namespace KryptonDataGridViewExamples
             }
         }
 
-        private void buttonClose_Click(object sender, EventArgs e) => Close();
-
         private void BtnForm2_Click(object sender, EventArgs e)
         {
             using var dlg = new Form2();
             dlg.ShowDialog(this);
+        }
+
+        private void kryptonDataGridView1_CellToolTipTextNeeded(object sender, DataGridViewCellToolTipTextNeededEventArgs e)
+        {
+
         }
     }
 

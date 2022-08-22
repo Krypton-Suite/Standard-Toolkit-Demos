@@ -132,6 +132,16 @@ namespace KryptonFormExamples
             get => _form.HeaderStyle;
             set => _form.HeaderStyle = value;
         }
+        [Category(@"Visuals")]
+        [Description(@"The Form Title position, relative to available space")]
+        [RefreshProperties(RefreshProperties.All)]
+        [DefaultValue(typeof(PaletteRelativeAlign), "Near")]
+        public PaletteRelativeAlign FormTitleAlign
+        {
+            get => _form.FormTitleAlign;
+            set => _form.FormTitleAlign = value;
+        }
+
 
         [Category("Visuals")]
         [Description("Chrome group border style.")]

@@ -16,7 +16,7 @@ namespace KryptonHelpIconExamples
 
         private void BsHelpIcon_Click(object sender, EventArgs e) =>
             KryptonMessageBox.Show("You have requested help... Please enter your code here.", "Help Demo",
-                MessageBoxButtons.OK, KryptonMessageBoxIcon.INFORMATION);
+                MessageBoxButtons.OK, KryptonMessageBoxIcon.Information);
 
         private void Form1_Load(object sender, EventArgs e) => palette365Blue.Checked = true;
 
@@ -61,8 +61,6 @@ namespace KryptonHelpIconExamples
         private void palette2010SilverLightMode_CheckedChanged(object sender, EventArgs e) => ChangePalette(PaletteModeManager.Office2010SilverLightMode);
 
         private void palette2010White_CheckedChanged(object sender, EventArgs e) => ChangePalette(PaletteModeManager.Office2010White);
-
-        private void paletteOffice2013_CheckedChanged(object sender, EventArgs e) => ChangePalette(PaletteModeManager.Office2013);
 
         private void paletteOffice2013White_CheckedChanged(object sender, EventArgs e) => ChangePalette(PaletteModeManager.Office2013White);
 

@@ -122,13 +122,5 @@ namespace ThreePaneApplication
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2013White;
             }
         }
-
-        private void kryptonOffice2013_CheckedChanged(object sender, EventArgs e)
-        {
-            if (kryptonOffice2013.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2013;
-            }
-        }
     }
 }

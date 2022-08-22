@@ -86,20 +86,16 @@ namespace KryptonListBoxExamples
             // 
             this.kryptonListBox.Location = new System.Drawing.Point(23, 24);
             this.kryptonListBox.Name = "kryptonListBox";
-            this.kryptonListBox.Padding = new System.Windows.Forms.Padding(1);
-            this.kryptonListBox.SelectionMode = System.Windows.Forms.SelectionMode.One;
             this.kryptonListBox.Size = new System.Drawing.Size(227, 192);
             this.kryptonListBox.TabIndex = 0;
             this.kryptonListBox.SelectedIndexChanged += new System.EventHandler(this.kryptonListBox_SelectedIndexChanged);
+            this.kryptonListBox.DoubleClick += new System.EventHandler(this.kryptonListBox_DoubleClick);
             // 
             // buttonAppend
             // 
             this.buttonAppend.AutoSize = true;
-            this.buttonAppend.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.buttonAppend.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonAppend.Location = new System.Drawing.Point(19, 30);
             this.buttonAppend.Name = "buttonAppend";
-            this.buttonAppend.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.buttonAppend.Size = new System.Drawing.Size(90, 25);
             this.buttonAppend.TabIndex = 0;
             this.buttonAppend.Values.Text = "Append";
@@ -108,11 +104,8 @@ namespace KryptonListBoxExamples
             // buttonClear
             // 
             this.buttonClear.AutoSize = true;
-            this.buttonClear.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.buttonClear.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonClear.Location = new System.Drawing.Point(19, 126);
             this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.buttonClear.Size = new System.Drawing.Size(90, 25);
             this.buttonClear.TabIndex = 3;
             this.buttonClear.Values.Text = "Clear";
@@ -121,11 +114,8 @@ namespace KryptonListBoxExamples
             // buttonRemove
             // 
             this.buttonRemove.AutoSize = true;
-            this.buttonRemove.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.buttonRemove.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonRemove.Location = new System.Drawing.Point(19, 94);
             this.buttonRemove.Name = "buttonRemove";
-            this.buttonRemove.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.buttonRemove.Size = new System.Drawing.Size(90, 25);
             this.buttonRemove.TabIndex = 2;
             this.buttonRemove.Values.Text = "Remove";
@@ -134,11 +124,8 @@ namespace KryptonListBoxExamples
             // buttonInsert
             // 
             this.buttonInsert.AutoSize = true;
-            this.buttonInsert.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.buttonInsert.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonInsert.Location = new System.Drawing.Point(19, 62);
             this.buttonInsert.Name = "buttonInsert";
-            this.buttonInsert.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.buttonInsert.Size = new System.Drawing.Size(90, 25);
             this.buttonInsert.TabIndex = 1;
             this.buttonInsert.Values.Text = "Insert";
@@ -164,11 +151,8 @@ namespace KryptonListBoxExamples
             // checkSystem
             // 
             this.checkSystem.AutoSize = true;
-            this.checkSystem.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.checkSystem.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkSystem.Location = new System.Drawing.Point(125, 126);
             this.checkSystem.Name = "checkSystem";
-            this.checkSystem.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.checkSystem.Size = new System.Drawing.Size(113, 25);
             this.checkSystem.TabIndex = 7;
             this.checkSystem.Values.Text = "System";
@@ -176,11 +160,8 @@ namespace KryptonListBoxExamples
             // checkSparkle
             // 
             this.checkSparkle.AutoSize = true;
-            this.checkSparkle.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.checkSparkle.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkSparkle.Location = new System.Drawing.Point(125, 93);
             this.checkSparkle.Name = "checkSparkle";
-            this.checkSparkle.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.checkSparkle.Size = new System.Drawing.Size(113, 25);
             this.checkSparkle.TabIndex = 6;
             this.checkSparkle.Values.Text = "Sparkle - Blue";
@@ -188,12 +169,9 @@ namespace KryptonListBoxExamples
             // check2010Blue
             // 
             this.check2010Blue.AutoSize = true;
-            this.check2010Blue.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.check2010Blue.Checked = true;
-            this.check2010Blue.DialogResult = System.Windows.Forms.DialogResult.None;
             this.check2010Blue.Location = new System.Drawing.Point(125, 31);
             this.check2010Blue.Name = "check2010Blue";
-            this.check2010Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.check2010Blue.Size = new System.Drawing.Size(113, 25);
             this.check2010Blue.TabIndex = 5;
             this.check2010Blue.Values.Text = "Office 2010 - Black";
@@ -201,11 +179,8 @@ namespace KryptonListBoxExamples
             // check2007Blue
             // 
             this.check2007Blue.AutoSize = true;
-            this.check2007Blue.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.check2007Blue.DialogResult = System.Windows.Forms.DialogResult.None;
             this.check2007Blue.Location = new System.Drawing.Point(125, 62);
             this.check2007Blue.Name = "check2007Blue";
-            this.check2007Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
             this.check2007Blue.Size = new System.Drawing.Size(113, 25);
             this.check2007Blue.TabIndex = 4;
             this.check2007Blue.Values.Text = "Office 2007 - Blue";
