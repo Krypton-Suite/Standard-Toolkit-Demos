@@ -1,7 +1,7 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
      xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
 
-    <?define KryptonToolkitDemosSource=$(sys.SOURCEFILEDIR)..\..\..\Standard-Toolkit\Bin\Release\net48?>
+    <?define KryptonToolkitDemosSource=$(sys.SOURCEFILEDIR)..\..\..\Standard-Toolkit\Bin\Release\net70?>
 
     <Fragment>
 
