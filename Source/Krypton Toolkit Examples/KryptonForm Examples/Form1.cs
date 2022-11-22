@@ -28,7 +28,7 @@ namespace KryptonFormExamples
             RecalcNonClient();
 
             kryptonManager.GlobalPaletteMode = kryptonCheckSetPalettes.CheckedIndex switch {
-                0 => PaletteModeManager.Office365Blue,
+                0 => PaletteModeManager.Microsoft365Blue,
                 1 => PaletteModeManager.ProfessionalSystem,
                 2 => PaletteModeManager.Office2007Black,
                 3 => PaletteModeManager.Office2007Silver,
