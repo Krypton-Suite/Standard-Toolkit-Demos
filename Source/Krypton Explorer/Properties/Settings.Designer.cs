@@ -12,7 +12,7 @@ namespace KryptonExplorer.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.1.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.4.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -37,7 +37,7 @@ namespace KryptonExplorer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Office 365 - Blue")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Microsoft 365 - Blue")]
         public global::Krypton.Toolkit.PaletteModeManager Theme {
             get {
                 return ((global::Krypton.Toolkit.PaletteModeManager)(this["Theme"]));
@@ -49,13 +49,13 @@ namespace KryptonExplorer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Setting {
+        [global::System.Configuration.DefaultSettingValueAttribute("2022-11-21")]
+        public global::System.DateTime BuildDate {
             get {
-                return ((string)(this["Setting"]));
+                return ((global::System.DateTime)(this["BuildDate"]));
             }
             set {
-                this["Setting"] = value;
+                this["BuildDate"] = value;
             }
         }
     }
