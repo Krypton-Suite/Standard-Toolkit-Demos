@@ -1,4 +1,7 @@
-# <img src="https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png"> Standard Toolkit Demos - Changelog
+# <img src="https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png?raw=true"> Standard Toolkit Demos - ChangeLog
+
+## 2022-12-xx - Build 2212 - December 2022
+* Fixed theme bug for `KryptonExplorer`
 
 ## 2022-11-21 - Build 2211 - November 2022
 * Add support for .NET 7
