@@ -163,10 +163,7 @@ namespace CustomControlUsingRenderers
                     _paletteContent.Style = PaletteContentStyle.ButtonStandalone;
 
                     // Cleaup resources by disposing of old memento instance
-                    if (_mementoContent != null)
-                    {
-                        _mementoContent.Dispose();
-                    }
+                    _mementoContent?.Dispose();
 
                     // Ask the renderer to work out how the Content values will be layed out and
                     // return a memento object that we cache for use when actually performing painting

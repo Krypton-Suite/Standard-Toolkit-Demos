@@ -37,6 +37,7 @@ namespace KryptonContextMenuExamples
             this.buttonImageSelect = new System.Windows.Forms.Button();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.groupBoxPalette = new System.Windows.Forms.GroupBox();
+            this.kryptonThemeComboBox1 = new Krypton.Toolkit.KryptonThemeComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.labelHorizontal = new System.Windows.Forms.Label();
             this.comboBoxH = new System.Windows.Forms.ComboBox();
@@ -256,14 +257,14 @@ namespace KryptonContextMenuExamples
             this.kryptonContextMenuCheckBox4 = new Krypton.Toolkit.KryptonContextMenuCheckBox();
             this.kryptonContextMenuRadioButton4 = new Krypton.Toolkit.KryptonContextMenuRadioButton();
             this.kryptonContextMenuLinkLabel3 = new Krypton.Toolkit.KryptonContextMenuLinkLabel();
-            this.kryptonThemeComboBox1 = new Krypton.Toolkit.KryptonThemeComboBox();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.groupBoxPalette.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.SuspendLayout();
             // 
+            kryptonManager.GlobalApplyToolstrips = false;
             // buttonShowHeadings
             // 
             this.buttonShowHeadings.Location = new System.Drawing.Point(76, 217);
@@ -316,6 +317,7 @@ namespace KryptonContextMenuExamples
             // 
             // imageList
             // 
+            this.imageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
             this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
             this.imageList.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList.Images.SetKeyName(0, "flag_australia.png");
@@ -338,6 +340,23 @@ namespace KryptonContextMenuExamples
             this.groupBoxPalette.TabIndex = 0;
             this.groupBoxPalette.TabStop = false;
             this.groupBoxPalette.Text = "Palette";
+            // 
+            // kryptonThemeComboBox1
+            // 
+            this.kryptonThemeComboBox1.CornerRoundingRadius = 1F;
+            this.kryptonThemeComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.kryptonThemeComboBox1.DropDownWidth = 367;
+            this.kryptonThemeComboBox1.IntegralHeight = false;
+            this.kryptonThemeComboBox1.Location = new System.Drawing.Point(12, 23);
+            this.kryptonThemeComboBox1.MaxDropDownItems = 12;
+            this.kryptonThemeComboBox1.Name = "kryptonThemeComboBox1";
+            this.kryptonThemeComboBox1.Size = new System.Drawing.Size(367, 25);
+            this.kryptonThemeComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonThemeComboBox1.StateCommon.ComboBox.Border.Rounding = 1F;
+            this.kryptonThemeComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonThemeComboBox1.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -1243,6 +1262,7 @@ namespace KryptonContextMenuExamples
             // 
             this.kryptonContextMenuLinkLabel2.ExtraText = "";
             this.kryptonContextMenuLinkLabel2.Image = ((System.Drawing.Image)(resources.GetObject("kryptonContextMenuLinkLabel2.Image")));
+            this.kryptonContextMenuLinkLabel2.LinkBehavior = Krypton.Toolkit.KryptonLinkBehavior.AlwaysUnderline;
             this.kryptonContextMenuLinkLabel2.Text = "Show Help";
             // 
             // kryptonContextMenuCheckButton3
@@ -1299,6 +1319,7 @@ namespace KryptonContextMenuExamples
             // 
             // kryptonContextMenuMonthCalendar1
             // 
+            this.kryptonContextMenuMonthCalendar1.DayStyle = Krypton.Toolkit.ButtonStyle.CalendarDay;
             this.kryptonContextMenuMonthCalendar1.SelectionEnd = new System.DateTime(2009, 3, 11, 0, 0, 0, 0);
             this.kryptonContextMenuMonthCalendar1.SelectionStart = new System.DateTime(2009, 3, 11, 0, 0, 0, 0);
             this.kryptonContextMenuMonthCalendar1.TodayDate = new System.DateTime(2009, 3, 11, 0, 0, 0, 0);
@@ -1322,6 +1343,11 @@ namespace KryptonContextMenuExamples
             this.kryptonContextMenuCheckButton2,
             this.kryptonContextMenuSeparator16,
             this.kryptonContextMenuLinkLabel1});
+            this.kcmControls.StateCommon.ControlOuter.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kcmControls.StateCommon.ControlOuter.Border.Rounding = 5F;
+            this.kcmControls.StateCommon.HasShadow = false;
             // 
             // kryptonContextMenuHeading6
             // 
@@ -1369,6 +1395,7 @@ namespace KryptonContextMenuExamples
             // kryptonContextMenuLinkLabel1
             // 
             this.kryptonContextMenuLinkLabel1.ExtraText = "";
+            this.kryptonContextMenuLinkLabel1.LinkBehavior = Krypton.Toolkit.KryptonLinkBehavior.AlwaysUnderline;
             // 
             // kcmColors
             // 
@@ -1463,6 +1490,7 @@ namespace KryptonContextMenuExamples
             // 
             // kryptonContextMenuMonthCalendar2
             // 
+            this.kryptonContextMenuMonthCalendar2.DayStyle = Krypton.Toolkit.ButtonStyle.CalendarDay;
             this.kryptonContextMenuMonthCalendar2.SelectionEnd = new System.DateTime(2009, 3, 11, 0, 0, 0, 0);
             this.kryptonContextMenuMonthCalendar2.SelectionStart = new System.DateTime(2009, 3, 11, 0, 0, 0, 0);
             this.kryptonContextMenuMonthCalendar2.TodayDate = new System.DateTime(2009, 3, 11, 0, 0, 0, 0);
@@ -1515,23 +1543,7 @@ namespace KryptonContextMenuExamples
             // kryptonContextMenuLinkLabel3
             // 
             this.kryptonContextMenuLinkLabel3.ExtraText = "";
-            // 
-            // kryptonThemeComboBox1
-            // 
-            this.kryptonThemeComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.kryptonThemeComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kryptonThemeComboBox1.DropDownWidth = 367;
-            this.kryptonThemeComboBox1.IntegralHeight = false;
-            this.kryptonThemeComboBox1.Location = new System.Drawing.Point(12, 23);
-            this.kryptonThemeComboBox1.MaxDropDownItems = 12;
-            this.kryptonThemeComboBox1.Name = "kryptonThemeComboBox1";
-            this.kryptonThemeComboBox1.Size = new System.Drawing.Size(367, 25);
-            this.kryptonThemeComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonThemeComboBox1.StateCommon.ComboBox.Border.Rounding = 1F;
-            this.kryptonThemeComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonThemeComboBox1.TabIndex = 0;
+            this.kryptonContextMenuLinkLabel3.LinkBehavior = Krypton.Toolkit.KryptonLinkBehavior.AlwaysUnderline;
             // 
             // kryptonPanel1
             // 
@@ -1565,9 +1577,9 @@ namespace KryptonContextMenuExamples
             this.Text = "KryptonContextMenu Examples";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBoxPalette.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.ResumeLayout(false);
 

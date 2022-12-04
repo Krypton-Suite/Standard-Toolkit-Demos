@@ -23,6 +23,7 @@ namespace RibbonAndNavigatorAndWorkspace
         public Form1()
         {
             InitializeComponent();
+            ButtonSpecClose.Enabled = false;
         }
 
         private void buttonSpecExpandCollapse_Click(object sender, EventArgs e)
