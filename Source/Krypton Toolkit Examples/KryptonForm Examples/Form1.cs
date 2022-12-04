@@ -20,7 +20,12 @@ namespace KryptonFormExamples
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1() => InitializeComponent();
+        public Form1()
+        {
+            InitializeComponent();
+            //ButtonSpecClose.Enabled = false;
+            ButtonSpecClose.ToolTipShadow = false;
+        }
 
         private void kryptonCheckSetPalettes_CheckedButtonChanged(object sender, EventArgs e)
         {

@@ -43,6 +43,22 @@ namespace KryptonColorButtonExamples
                 kryptonColorButton5.PerformDropDown();
             }
         }
+
+        private void blueRight_Click(object sender, EventArgs e)
+        {
+            blueRight.AddUpdateRecentColors(new[] 
+                { 
+                    Color.Yellow, 
+                    Color.YellowGreen, 
+                    Color.GreenYellow, 
+                    Color.LightGoldenrodYellow, 
+                    Color.LightYellow, 
+                    Color.PaleGoldenrod, 
+                    Color.Gold, 
+                    Color.Goldenrod 
+                });
+            blueRight.PerformDropDown();
+        }
     }
 
     public class KryptonColorButtonProxy

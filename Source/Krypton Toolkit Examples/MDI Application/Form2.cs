@@ -27,10 +27,7 @@ namespace MDIApplication
                 // this object cannot be garbage collected later on
                 KryptonManager.GlobalPaletteChanged -= new EventHandler(OnPaletteChanged);
 
-                if (components != null)
-                {
-                    components.Dispose();
-                }
+                components?.Dispose();
             }
             base.Dispose(disposing);
         }

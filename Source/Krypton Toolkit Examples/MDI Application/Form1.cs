@@ -45,10 +45,7 @@ namespace MDIApplication
         private void closeWindowToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Close just the active child
-            if (ActiveMdiChild != null)
-            {
-                ActiveMdiChild.Close();
-            }
+            ActiveMdiChild?.Close();
         }
 
         private void closeAllWidowToolStripMenuItem_Click(object sender, EventArgs e)
