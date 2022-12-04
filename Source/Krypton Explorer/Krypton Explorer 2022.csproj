@@ -9,6 +9,7 @@
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <UseWindowsForms>true</UseWindowsForms>
         <PlatformTarget>AnyCPU</PlatformTarget>
+		<LangVersion>latest</LangVersion>
     </PropertyGroup>
     <ItemGroup>
         <Content Include="Krypton.ico" />

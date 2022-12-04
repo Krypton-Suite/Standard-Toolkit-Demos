@@ -11,9 +11,11 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
-using System.Reflection;
+using System.Net;
+//using System.Net.Http;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
@@ -26,9 +28,12 @@ namespace KryptonExplorer
     {
         #region Variables
 
-        private Version _currentVersion = new Version(80, int.Parse(DateTime.Now.ToString("yy")), 11, 326);
+        private Version _currentVersion = new Version(80, int.Parse(DateTime.Now.ToString("yy")), 12, 339);
 
-        private Settings _settings = new Settings();
+        private Settings _settings = new();
+
+        private string _documentationDownladLocation;
+
         #endregion
 
         public Form1()
@@ -334,8 +339,6 @@ namespace KryptonExplorer
 
         private void kbtnOpenApplicationPath_Click(object sender, EventArgs e) => Process.Start(@"explorer.exe", @"\{Application.ExecutablePath}");
         
-        private void KbtnKryptonExtendedToolkitPackage_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Extended-Toolkit/commits/alpha");
-
         private void kllKryptonScrollBars_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Scrollbar Examples");
 
         private void kllKryptonWebBrowser_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton WebBrowser Example");
@@ -442,5 +445,91 @@ namespace KryptonExplorer
         private void kbtnViewLatestCanaryReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/canary/Documents/Help/Changelog.md");
 
         private void kbtnViewLatestNightlyReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/nightly/Documents/Help/Changelog.md");
+
+        private void kbtnDownloadLatestDocumentation_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new()
+            {
+                Title = @"Download documentation installer to:",
+                Filter = @"Windows Executables|*.exe",
+                FileName = @"Standard Toolkit Documentation Installer"
+            };
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                WebClient client = new();
+
+                _documentationDownladLocation = Path.GetFullPath(sfd.FileName);
+
+                tspbDownloadStatus.Visible = true;
+
+                client.DownloadFile(@"https://tinyurl.com/mvksw89c", _documentationDownladLocation);
+
+                tspbDownloadStatus.Text = $@"Downloading: {Path.GetFileName(_documentationDownladLocation)}";
+
+                client.DownloadProgressChanged += DownloadProgressChanged;
+
+                client.DownloadFileCompleted += DownloadFileCompleted;
+            }
+        }
+
+        private void DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
+        {
+            try
+            {
+                DialogResult result = KryptonMessageBox.Show(@"Download completed. Install now?", @"Download Successful",
+                    MessageBoxButtons.YesNo, KryptonMessageBoxIcon.Information);
+
+                if (result == DialogResult.Yes)
+                {
+                    Process.Start(_documentationDownladLocation);
+                }
+            }
+            catch (Exception exception)
+            {
+                KryptonMessageBox.Show($"Error: {exception}");
+            }
+        }
+
+        private void DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
+        {
+            tspbDownloadStatus.Maximum = (int)e.TotalBytesToReceive / 100;
+
+            tspbDownloadStatus.Value = (int)e.BytesReceived / 100;
+        }
+
+        private async void bgwDownloadDocumentation_DoWork(object sender, DoWorkEventArgs e)
+        {
+            //HttpClient client = new();
+
+            WebClient client = new();
+
+            tspbDownloadStatus.Text = $@"Downloading: {Path.GetFileName(_documentationDownladLocation)}";
+
+            if (!string.IsNullOrEmpty(_documentationDownladLocation))
+            {
+                //var downladContent = await client.GetStreamAsync(@"https://tinyurl.com/mvksw89c");
+
+                //using (var fs = File.Create(_documentationDownladLocation))
+                //{
+                //    downladContent.CopyTo(fs);
+                //}
+
+                client.DownloadFile(@"https://tinyurl.com/mvksw89c", _documentationDownladLocation);
+            }
+        }
+
+        private void bgwDownloadDocumentation_ProgressChanged(object sender, ProgressChangedEventArgs e) => tspbDownloadStatus.Value = e.ProgressPercentage;
+
+        private void bgwDownloadDocumentation_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            DialogResult result = KryptonMessageBox.Show(@"Download completed. Install now?", @"Download Successful",
+                MessageBoxButtons.YesNo, KryptonMessageBoxIcon.Information);
+
+            if (result == DialogResult.Yes)
+            {
+                Process.Start(_documentationDownladLocation);
+            }
+        }
     }
 }
