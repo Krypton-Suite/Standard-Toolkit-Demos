@@ -55,7 +55,7 @@ namespace KeyTipsAndKeyboardAccess
             else if (checkSetPalette.CheckedButton == buttonOffice2010Black)
                 kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
             else if (checkSetPalette.CheckedButton == buttonOffice365Black)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office365Black;
+                kryptonManager.GlobalPaletteMode = PaletteModeManager.Microsoft365Black;
         }
 
         private void OnDialogBoxLauncherClick(object sender, EventArgs e)

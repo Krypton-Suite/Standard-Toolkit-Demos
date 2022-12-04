@@ -77,7 +77,7 @@ namespace KryptonMessageBoxExamples
             }
             else if (kradOffice365Blue.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office365Blue;
+                kryptonManager.GlobalPaletteMode = PaletteModeManager.Microsoft365Blue;
             }
 
         }

@@ -427,7 +427,7 @@ namespace KryptonDataGridViewExamples
             // 
             // kryptonPalette
             // 
-            this.kryptonPalette.BasePaletteMode = Krypton.Toolkit.PaletteMode.Office365Blue;
+            this.kryptonPalette.BasePaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Blue;
             this.kryptonPalette.GridStyles.GridCustom1.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonPalette.GridStyles.GridCustom1.StateCommon.Background.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
             this.kryptonPalette.GridStyles.GridCustom1.StateCommon.Background.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;

@@ -291,7 +291,7 @@
             // 
             // kryptonPalette
             // 
-            this.kryptonPalette.BasePaletteMode = Krypton.Toolkit.PaletteMode.Office365Blue;
+            this.kryptonPalette.BasePaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Blue;
             // 
             // dtpRibbonShort
             // 

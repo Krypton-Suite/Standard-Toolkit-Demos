@@ -17,7 +17,6 @@ using System.Reflection;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
-using Krypton.Toolkit.Tooling;
 
 using KryptonExplorer.Properties;
 
@@ -27,9 +26,9 @@ namespace KryptonExplorer
     {
         #region Variables
 
-        private Version _currentVersion = new Version(65, int.Parse(DateTime.Now.ToString("yy")), int.Parse(DateTime.Now.Month.ToString()), DateTime.Now.DayOfYear);
+        private Version _currentVersion = new Version(80, int.Parse(DateTime.Now.ToString("yy")), 11, 326);
 
-        Settings settings = new Settings();
+        private Settings _settings = new Settings();
         #endregion
 
         public Form1()
@@ -319,16 +318,18 @@ namespace KryptonExplorer
         {
             FileVersionInfo fvi = FileVersionInfo.GetVersionInfo($@"{Path.GetDirectoryName(Application.ExecutablePath)}\Krypton.Toolkit.dll");
 
-            kryptonManager1.GlobalPaletteMode = settings.Theme;
+            kryptonManager1.GlobalPaletteMode = _settings.Theme;
 
 
-            kcmbTheme.SelectedIndex = settings.ThemeSelectedIndex;
+            kcmbTheme.SelectedIndex = _settings.ThemeSelectedIndex;
             
-            kcmbTheme.Text = ThemeManager.ReturnPaletteModeManagerAsString(settings.Theme);
+            kcmbTheme.Text = ThemeManager.ReturnPaletteModeManagerAsString(_settings.Theme);
 
-            tsslBuildDate.Text = $"Build Date: {GeneralToolkitUtilities.GetLinkerTimestampUtc(Assembly.GetExecutingAssembly())} ";
+            //tsslBuildDate.Text = $"Build Date: {GeneralToolkitUtilities.GetLinkerTimestampUtc(Assembly.GetExecutingAssembly())} ";
 
-            tslVersion.Text = $"Krypton Explorer Version: { _currentVersion } - Toolkit Version: { fvi.FileVersion }";
+            tsslBuildDate.Text = $@"Build Date: {_settings.BuildDate.ToShortDateString()}";
+
+            tslVersion.Text = $@"Krypton Explorer Version: { _currentVersion } - Toolkit Version: { fvi.FileVersion }";
         }
 
         private void kbtnOpenApplicationPath_Click(object sender, EventArgs e) => Process.Start(@"explorer.exe", @"\{Application.ExecutablePath}");
@@ -352,7 +353,7 @@ namespace KryptonExplorer
             }
             catch (Exception ex)
             {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, KryptonMessageBoxIcon.Error);
             }
             finally
             {
@@ -373,12 +374,12 @@ namespace KryptonExplorer
                 else
                 {
                     KryptonMessageBox.Show(
-                        "The Palette Designer is not currently installed. Please download the latest installation package from:\nhttps://github.com/Krypton-Suite/Theme-Palettes/releases", @"Application Not Installed", MessageBoxButtons.OK, KryptonMessageBoxIcon.INFORMATION);
+                        "The Palette Designer is not currently installed. Please download the latest installation package from:\nhttps://github.com/Krypton-Suite/Theme-Palettes/releases", @"Application Not Installed", MessageBoxButtons.OK, KryptonMessageBoxIcon.Information);
                 }
             }
             catch (Exception e)
             {
-                KryptonMessageBox.Show(this, e.Message, @"Explorer", MessageBoxButtons.OK, KryptonMessageBoxIcon.ERROR);
+                KryptonMessageBox.Show(this, e.Message, @"Explorer", MessageBoxButtons.OK, KryptonMessageBoxIcon.Error);
             }
             finally
             {
@@ -399,12 +400,12 @@ namespace KryptonExplorer
                 else
                 {
                     KryptonMessageBox.Show(
-                        "The Palette Upgrade Tool is not currently installed. Please download the latest installation package from:\nhttps://github.com/Krypton-Suite/Theme-Palettes/releases", @"Application Not Installed", MessageBoxButtons.OK, KryptonMessageBoxIcon.INFORMATION);
+                        "The Palette Upgrade Tool is not currently installed. Please download the latest installation package from:\nhttps://github.com/Krypton-Suite/Theme-Palettes/releases", @"Application Not Installed", MessageBoxButtons.OK, KryptonMessageBoxIcon.Information);
                 }
             }
             catch (Exception e)
             {
-                KryptonMessageBox.Show(this, e.Message, @"Explorer", MessageBoxButtons.OK, KryptonMessageBoxIcon.ERROR);
+                KryptonMessageBox.Show(this, e.Message, @"Explorer", MessageBoxButtons.OK, KryptonMessageBoxIcon.Error);
             }
             finally
             {
@@ -416,20 +417,20 @@ namespace KryptonExplorer
         
         private void kcmbTheme_SelectedIndexChanged(object sender, EventArgs e)
         {
-            settings.ThemeSelectedIndex = kcmbTheme.SelectedIndex;
+            _settings.ThemeSelectedIndex = kcmbTheme.SelectedIndex;
 
-            settings.Theme = ThemeManager.GetPaletteMode(kcmbTheme.Manager);
+            _settings.Theme = ThemeManager.GetPaletteModeManager(kcmbTheme.Manager);
 
-            settings.Save();
+            _settings.Save();
         }
 
         private void kbtnRestoreTheme_Click(object sender, EventArgs e)
         {
             kcmbTheme.SelectedIndex = 22;
 
-            settings.Theme = PaletteModeManager.Office365Blue;
+            _settings.Theme = PaletteModeManager.Microsoft365Blue;
 
-            settings.Save();
+            _settings.Save();
         }
         
         private void klblPrintDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Print Dialog Example");

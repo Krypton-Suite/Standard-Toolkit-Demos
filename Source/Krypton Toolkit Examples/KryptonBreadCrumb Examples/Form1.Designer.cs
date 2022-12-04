@@ -1254,7 +1254,7 @@
             // 
             // kryptonPaletteOffice2007Blue
             // 
-            this.kryptonPaletteOffice2007Blue.BasePaletteMode = Krypton.Toolkit.PaletteMode.Office365Blue;
+            this.kryptonPaletteOffice2007Blue.BasePaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Blue;
             // 
             // Form1
             // 
