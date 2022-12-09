@@ -170,6 +170,8 @@
             this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonPageReleases = new Krypton.Navigator.KryptonPage();
+            this.kbtnLaunchHelp = new Krypton.Toolkit.KryptonButton();
+            this.kbtnDownloadLatestDocumentation = new Krypton.Toolkit.KryptonButton();
             this.kbtnKryptonToolkitPackage = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
             this.kpChangeLog = new Krypton.Navigator.KryptonPage();
@@ -185,11 +187,10 @@
             this.kryptonPanelBottom = new Krypton.Toolkit.KryptonPanel();
             this.ss = new System.Windows.Forms.StatusStrip();
             this.tsslBuildDate = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tslVersion = new System.Windows.Forms.ToolStripStatusLabel();
-            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
-            this.kbtnDownloadLatestDocumentation = new Krypton.Toolkit.KryptonButton();
             this.tsslDownloadStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.tspbDownloadStatus = new System.Windows.Forms.ToolStripProgressBar();
+            this.tslVersion = new System.Windows.Forms.ToolStripStatusLabel();
+            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
             this.bgwDownloadDocumentation = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelFill)).BeginInit();
             this.kryptonPanelFill.SuspendLayout();
@@ -284,7 +285,7 @@
             this.kryptonPageReleases,
             this.kpChangeLog});
             this.kryptonNavigator.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
-            this.kryptonNavigator.SelectedIndex = 8;
+            this.kryptonNavigator.SelectedIndex = 9;
             this.kryptonNavigator.Size = new System.Drawing.Size(683, 405);
             this.kryptonNavigator.StateCommon.Bar.BarPaddingInside = new System.Windows.Forms.Padding(-1);
             this.kryptonNavigator.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(-1);
@@ -1870,6 +1871,7 @@
             // kryptonPageReleases
             // 
             this.kryptonPageReleases.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.kryptonPageReleases.Controls.Add(this.kbtnLaunchHelp);
             this.kryptonPageReleases.Controls.Add(this.kbtnDownloadLatestDocumentation);
             this.kryptonPageReleases.Controls.Add(this.kbtnKryptonToolkitPackage);
             this.kryptonPageReleases.Controls.Add(this.kryptonLabel6);
@@ -1883,6 +1885,36 @@
             this.kryptonPageReleases.TextTitle = "";
             this.kryptonPageReleases.ToolTipTitle = "Page ToolTip";
             this.kryptonPageReleases.UniqueName = "36f7a05b89394cc5922db2b6b1367bd8";
+            // 
+            // kbtnLaunchHelp
+            // 
+            this.kbtnLaunchHelp.AutoSize = true;
+            this.kbtnLaunchHelp.CornerRoundingRadius = -1F;
+            this.kbtnLaunchHelp.Location = new System.Drawing.Point(31, 159);
+            this.kbtnLaunchHelp.Name = "kbtnLaunchHelp";
+            this.kbtnLaunchHelp.Size = new System.Drawing.Size(279, 33);
+            this.kbtnLaunchHelp.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnLaunchHelp.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnLaunchHelp.TabIndex = 8;
+            this.kbtnLaunchHelp.ToolTipValues.Description = "Get the latest toolkit binaries for your application";
+            this.kbtnLaunchHelp.ToolTipValues.Image = global::KryptonExplorer.Properties.Resources.Square_Design_32_x_32_Green;
+            this.kbtnLaunchHelp.Values.Text = "Launch &Help";
+            this.kbtnLaunchHelp.Click += new System.EventHandler(this.kbtnLaunchHelp_Click);
+            // 
+            // kbtnDownloadLatestDocumentation
+            // 
+            this.kbtnDownloadLatestDocumentation.AutoSize = true;
+            this.kbtnDownloadLatestDocumentation.CornerRoundingRadius = -1F;
+            this.kbtnDownloadLatestDocumentation.Location = new System.Drawing.Point(31, 106);
+            this.kbtnDownloadLatestDocumentation.Name = "kbtnDownloadLatestDocumentation";
+            this.kbtnDownloadLatestDocumentation.Size = new System.Drawing.Size(279, 33);
+            this.kbtnDownloadLatestDocumentation.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnDownloadLatestDocumentation.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnDownloadLatestDocumentation.TabIndex = 7;
+            this.kbtnDownloadLatestDocumentation.ToolTipValues.Description = "Get the latest toolkit binaries for your application";
+            this.kbtnDownloadLatestDocumentation.ToolTipValues.Image = global::KryptonExplorer.Properties.Resources.Square_Design_32_x_32_Green;
+            this.kbtnDownloadLatestDocumentation.Values.Text = "Download Latest Documentation";
+            this.kbtnDownloadLatestDocumentation.Click += new System.EventHandler(this.kbtnDownloadLatestDocumentation_Click);
             // 
             // kbtnKryptonToolkitPackage
             // 
@@ -1921,7 +1953,7 @@
             this.kpChangeLog.MinimumSize = new System.Drawing.Size(150, 50);
             this.kpChangeLog.Name = "kpChangeLog";
             this.kpChangeLog.Size = new System.Drawing.Size(568, 403);
-            this.kpChangeLog.Text = "ChangeLog";
+            this.kpChangeLog.Text = "Changelog";
             this.kpChangeLog.TextTitle = "";
             this.kpChangeLog.ToolTipTitle = "Page ToolTip";
             this.kpChangeLog.UniqueName = "394aa587ef994979a37ee24e986c16a9";
@@ -1937,6 +1969,7 @@
             this.kbtnViewLatestNightlyReleaseNotes.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbtnViewLatestNightlyReleaseNotes.TabIndex = 15;
             this.kbtnViewLatestNightlyReleaseNotes.Values.Text = "View Latest Ni&ghtly Release Notes";
+            this.kbtnViewLatestNightlyReleaseNotes.Click += new System.EventHandler(this.kbtnViewLatestNightlyReleaseNotes_Click);
             // 
             // kbtnViewLatestCanaryReleaseNotes
             // 
@@ -1949,6 +1982,7 @@
             this.kbtnViewLatestCanaryReleaseNotes.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbtnViewLatestCanaryReleaseNotes.TabIndex = 14;
             this.kbtnViewLatestCanaryReleaseNotes.Values.Text = "View Latest &Canary Release Notes";
+            this.kbtnViewLatestCanaryReleaseNotes.Click += new System.EventHandler(this.kbtnViewLatestCanaryReleaseNotes_Click);
             // 
             // kbtnViewLatestReleaseNotes
             // 
@@ -1961,6 +1995,7 @@
             this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbtnViewLatestReleaseNotes.TabIndex = 13;
             this.kbtnViewLatestReleaseNotes.Values.Text = "View Latest &Stable/Signed Release Notes";
+            this.kbtnViewLatestReleaseNotes.Click += new System.EventHandler(this.kbtnViewLatestReleaseNotes_Click);
             // 
             // kryptonLabel8
             // 
@@ -2062,6 +2097,17 @@
             this.tsslBuildDate.Size = new System.Drawing.Size(81, 17);
             this.tsslBuildDate.Text = "Build Date: {0}";
             // 
+            // tsslDownloadStatus
+            // 
+            this.tsslDownloadStatus.Name = "tsslDownloadStatus";
+            this.tsslDownloadStatus.Size = new System.Drawing.Size(0, 17);
+            // 
+            // tspbDownloadStatus
+            // 
+            this.tspbDownloadStatus.Name = "tspbDownloadStatus";
+            this.tspbDownloadStatus.Size = new System.Drawing.Size(100, 16);
+            this.tspbDownloadStatus.Visible = false;
+            // 
             // tslVersion
             // 
             this.tslVersion.Name = "tslVersion";
@@ -2073,32 +2119,6 @@
             // kryptonManager1
             // 
             this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Microsoft365Black;
-            // 
-            // kbtnDownloadLatestDocumentation
-            // 
-            this.kbtnDownloadLatestDocumentation.AutoSize = true;
-            this.kbtnDownloadLatestDocumentation.CornerRoundingRadius = -1F;
-            this.kbtnDownloadLatestDocumentation.Location = new System.Drawing.Point(31, 106);
-            this.kbtnDownloadLatestDocumentation.Name = "kbtnDownloadLatestDocumentation";
-            this.kbtnDownloadLatestDocumentation.Size = new System.Drawing.Size(279, 33);
-            this.kbtnDownloadLatestDocumentation.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kbtnDownloadLatestDocumentation.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kbtnDownloadLatestDocumentation.TabIndex = 7;
-            this.kbtnDownloadLatestDocumentation.ToolTipValues.Description = "Get the latest toolkit binaries for your application";
-            this.kbtnDownloadLatestDocumentation.ToolTipValues.Image = global::KryptonExplorer.Properties.Resources.Square_Design_32_x_32_Green;
-            this.kbtnDownloadLatestDocumentation.Values.Text = "Download Latest Documentation";
-            this.kbtnDownloadLatestDocumentation.Click += new System.EventHandler(this.kbtnDownloadLatestDocumentation_Click);
-            // 
-            // tsslDownloadStatus
-            // 
-            this.tsslDownloadStatus.Name = "tsslDownloadStatus";
-            this.tsslDownloadStatus.Size = new System.Drawing.Size(0, 17);
-            // 
-            // tspbDownloadStatus
-            // 
-            this.tspbDownloadStatus.Name = "tspbDownloadStatus";
-            this.tspbDownloadStatus.Size = new System.Drawing.Size(100, 16);
-            this.tspbDownloadStatus.Visible = false;
             // 
             // bgwDownloadDocumentation
             // 
@@ -2345,6 +2365,7 @@
         private System.Windows.Forms.ToolStripStatusLabel tsslDownloadStatus;
         private System.Windows.Forms.ToolStripProgressBar tspbDownloadStatus;
         private System.ComponentModel.BackgroundWorker bgwDownloadDocumentation;
+        private Krypton.Toolkit.KryptonButton kbtnLaunchHelp;
     }
 }
 
