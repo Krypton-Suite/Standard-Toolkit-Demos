@@ -11,9 +11,11 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
-using System.Reflection;
+using System.Net;
+//using System.Net.Http;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
@@ -26,9 +28,12 @@ namespace KryptonExplorer
     {
         #region Variables
 
-        private Version _currentVersion = new Version(80, int.Parse(DateTime.Now.ToString("yy")), 11, 326);
+        private Version _currentVersion = new Version(80, int.Parse(DateTime.Now.ToString("yy")), 12, 339);
 
-        private Settings _settings = new Settings();
+        private Settings _settings = new();
+
+        private string _documentationDownladLocation;
+
         #endregion
 
         public Form1()
@@ -40,73 +45,108 @@ namespace KryptonExplorer
         }
 
         #region Links
-        private void linkKryptonBorderEdge_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Border Edge Examples");
 
-        private void linkKryptonButton_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Button Examples");
+        private void linkKryptonBorderEdge_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Border Edge Examples");
 
-        private void linkKryptonCheckBox_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton CheckBox Examples");
+        private void linkKryptonButton_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Button Examples");
 
-        private void linkKryptonCheckButton_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton CheckButton Examples");
+        private void linkKryptonCheckBox_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton CheckBox Examples");
 
-        private void linkKryptonDropButton_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton DropButton Examples");
+        private void linkKryptonCheckButton_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton CheckButton Examples");
 
-        private void linkKryptonColorButton_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton ColorButton Examples");
+        private void linkKryptonDropButton_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton DropButton Examples");
 
-        private void linkKryptonCheckSet_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton CheckSet Examples");
+        private void linkKryptonColorButton_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton ColorButton Examples");
 
-        private void linkKryptonContextMenu_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Context Menu Examples");
+        private void linkKryptonCheckSet_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton CheckSet Examples");
 
-        private void linkKryptonDataGridView_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Data GridView Examples");
+        private void linkKryptonContextMenu_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Context Menu Examples");
 
-        private void linkKryptonForm_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Form Examples");
+        private void linkKryptonDataGridView_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Data GridView Examples");
 
-        private void linkKryptonGroup_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Group Examples");
+        private void linkKryptonForm_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Form Examples");
 
-        private void linkKryptonGroupBox_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton GroupBox Examples");
+        private void linkKryptonGroup_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Group Examples");
 
-        private void linkKryptonHeader_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Header Examples");
+        private void linkKryptonGroupBox_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton GroupBox Examples");
 
-        private void linkKryptonHeaderGroup_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Header Group Examples");
+        private void linkKryptonHeader_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Header Examples");
 
-        private void linkKryptonLabel_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Label Examples");
+        private void linkKryptonHeaderGroup_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Header Group Examples");
 
-        private void linkKryptonWrapLabel_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Wrap Label Examples");
+        private void linkKryptonLabel_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Label Examples");
 
-        private void linkKryptonCommand_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Command Examples");
+        private void linkKryptonWrapLabel_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Wrap Label Examples");
 
-        private void linkKryptonLinkLabel_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Link Label Examples");
+        private void linkKryptonCommand_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Command Examples");
 
-        private void linkKryptonListBox_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton ListBox Examples");
+        private void linkKryptonLinkLabel_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Link Label Examples");
 
-        private void linkKryptonCheckedListBox_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Checked ListBox Examples");
+        private void linkKryptonListBox_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton ListBox Examples");
 
-        private void linkKryptonMaskedTextBox_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Masked TextBox Examples");
+        private void linkKryptonCheckedListBox_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Checked ListBox Examples");
 
-        private void linkKryptonPalette_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Palette Examples");
+        private void linkKryptonMaskedTextBox_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Masked TextBox Examples");
 
-        private void linkKryptonPanel_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Panel Examples");
+        private void linkKryptonPalette_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Palette Examples");
 
-        private void linkKryptonSeparator_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Separator Examples");
+        private void linkKryptonPanel_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Panel Examples");
 
-        private void linkKryptonRadioButton_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton RadioButton Examples");
+        private void linkKryptonSeparator_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Separator Examples");
 
-        private void linkKryptonTrackBar_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton TrackBar Examples");
+        private void linkKryptonRadioButton_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton RadioButton Examples");
 
-        private void linkKryptonSplitContainer_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Split Container Examples");
+        private void linkKryptonTrackBar_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton TrackBar Examples");
 
-        private void linkKryptonComboBox_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton ComboBox Examples");
+        private void linkKryptonSplitContainer_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Split Container Examples");
 
-        private void linkKryptonTextBox_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton TextBox Examples");
+        private void linkKryptonComboBox_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton ComboBox Examples");
 
-        private void linkKryptonRichTextBox_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Rich TextBox Examples");
+        private void linkKryptonTextBox_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton TextBox Examples");
 
-        private void linkKryptonNumericUpDown_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Numeric UpDown Examples");
+        private void linkKryptonRichTextBox_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Rich TextBox Examples");
 
-        private void linkKryptonDomainUpDown_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Domain UpDown Examples");
+        private void linkKryptonNumericUpDown_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Numeric UpDown Examples");
 
-        private void linkKryptonBreadCrumb_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Bread Crumb Examples");
+        private void linkKryptonDomainUpDown_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Domain UpDown Examples");
 
-        private void linkKryptonDateTimePicker_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton DateTimePicker Examples");
+        private void linkKryptonBreadCrumb_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Bread Crumb Examples");
+
+        private void linkKryptonDateTimePicker_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton DateTimePicker Examples");
 
         private void linkKryptonMonthCalendar_LinkClicked(object sender, EventArgs e)
         {
@@ -248,101 +288,133 @@ namespace KryptonExplorer
             LaunchApplication(@"Key Tips And Keyboard Access");
         }
 
-        private void labelAutoShrinkingGroups_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Auto Shrinking Groups");
+        private void labelAutoShrinkingGroups_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Auto Shrinking Groups");
 
-        private void labelQuickAccessToolbar_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Quick Access Toolbar");
+        private void labelQuickAccessToolbar_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Quick Access Toolbar");
 
         private void linkRibbonGallery_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Ribbon Gallery");
 
-        private void linkRibbonToolTips_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Ribbon Tool Tips");
+        private void linkRibbonToolTips_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Ribbon Tool Tips");
 
-        private void linkRibbonControls_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Ribbon Controls");
+        private void linkRibbonControls_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Ribbon Controls");
 
-        private void linkKryptonGallery_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Gallery Examples");
+        private void linkKryptonGallery_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Gallery Examples");
 
-        private void linkApplicationMenu_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Application Menu");
+        private void linkApplicationMenu_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Application Menu");
 
-        private void linkOutlookMailClone_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Outlook Mail Clone");
+        private void linkOutlookMailClone_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Outlook Mail Clone");
 
-        private void linkRibbonAndNavigator_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Ribbon And Navigator And Workspace");
+        private void linkRibbonAndNavigator_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Ribbon And Navigator And Workspace");
 
         private void linkMDIRibbon_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"MDI Ribbon");
 
-        private void linkExpandingPages_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Expanding Pages");
+        private void linkExpandingPages_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Expanding Pages");
 
-        private void linkNavigatorBasicEvents_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Basic Events");
+        private void linkNavigatorBasicEvents_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Basic Events");
 
-        private void linkNavigatorUserPageCreation_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"User Page Creation");
+        private void linkNavigatorUserPageCreation_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"User Page Creation");
 
-        private void linkNavigatorOneNoteTabs_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"OneNote Tabs");
+        private void linkNavigatorOneNoteTabs_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"OneNote Tabs");
 
-        private void linkNavigatorOutlookMockup_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Outlook Mockup");
+        private void linkNavigatorOutlookMockup_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Outlook Mockup");
 
-        private void linkWorkspaceCellModes_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Workspace Cell Modes");
+        private void linkWorkspaceCellModes_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Workspace Cell Modes");
 
-        private void linkWorkspaceCellLayout_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Workspace Cell Layout");
+        private void linkWorkspaceCellLayout_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Workspace Cell Layout");
 
-        private void linkWorkspacePersistence_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"WorkspacePersistence");
+        private void linkWorkspacePersistence_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"WorkspacePersistence");
 
-        private void linkCellMaximizeAndRestore_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Cell Maximize And Restore");
+        private void linkCellMaximizeAndRestore_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Cell Maximize And Restore");
 
-        private void linkBasicPageDragAndDrop_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Basic Page Drag And Drop");
+        private void linkBasicPageDragAndDrop_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Basic Page Drag And Drop");
 
-        private void linkAdvancedPageDragAndDrop_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Advanced Page Drag And Drop");
+        private void linkAdvancedPageDragAndDrop_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Advanced Page Drag And Drop");
 
         private void memoEditor_Clicked(object sender, EventArgs e) => LaunchApplication(@"Memo Editor");
 
-        private void linkStandardDocking_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Standard Docking");
+        private void linkStandardDocking_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Standard Docking");
 
-        private void linkMultiControlDocking_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Multi Control Docking");
+        private void linkMultiControlDocking_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Multi Control Docking");
 
-        private void linkExternalDragToDocking_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"External Drag To Docking");
+        private void linkExternalDragToDocking_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"External Drag To Docking");
 
 
-        private void linkNavigatorAndFloatingWindows_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Navigator And Floating Windows");
+        private void linkNavigatorAndFloatingWindows_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Navigator And Floating Windows");
 
-        private void linkDockingPersistence_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Docking Persistence");
+        private void linkDockingPersistence_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Docking Persistence");
 
         private void linkDockingFlags_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Docking Flags");
 
-        private void linkDockingCustomized_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Docking Customized");
+        private void linkDockingCustomized_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Docking Customized");
 
         private void linkPaletteDesigner_LinkClicked(object sender, EventArgs e) => LaunchPaletteDesignerApplication();
 
-        private void linkPaletteUpgradeTool_LinkClicked(object sender, EventArgs e) => LaunchPaletteUpgradeToolApplication();
+        private void linkPaletteUpgradeTool_LinkClicked(object sender, EventArgs e) =>
+            LaunchPaletteUpgradeToolApplication();
+
         #endregion
 
         private void kryptonButtonClose_Click(object sender, EventArgs e) => Close();
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            FileVersionInfo fvi = FileVersionInfo.GetVersionInfo($@"{Path.GetDirectoryName(Application.ExecutablePath)}\Krypton.Toolkit.dll");
+            FileVersionInfo fvi =
+                FileVersionInfo.GetVersionInfo(
+                    $@"{Path.GetDirectoryName(Application.ExecutablePath)}\Krypton.Toolkit.dll");
 
             kryptonManager1.GlobalPaletteMode = _settings.Theme;
 
 
             kcmbTheme.SelectedIndex = _settings.ThemeSelectedIndex;
-            
+
             kcmbTheme.Text = ThemeManager.ReturnPaletteModeManagerAsString(_settings.Theme);
 
             //tsslBuildDate.Text = $"Build Date: {GeneralToolkitUtilities.GetLinkerTimestampUtc(Assembly.GetExecutingAssembly())} ";
 
             tsslBuildDate.Text = $@"Build Date: {_settings.BuildDate.ToShortDateString()}";
 
-            tslVersion.Text = $@"Krypton Explorer Version: { _currentVersion } - Toolkit Version: { fvi.FileVersion }";
+            tslVersion.Text = $@"Krypton Explorer Version: {_currentVersion} - Toolkit Version: {fvi.FileVersion}";
         }
 
-        private void kbtnOpenApplicationPath_Click(object sender, EventArgs e) => Process.Start(@"explorer.exe", @"\{Application.ExecutablePath}");
-        
-        private void KbtnKryptonExtendedToolkitPackage_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Extended-Toolkit/commits/alpha");
+        private void kbtnOpenApplicationPath_Click(object sender, EventArgs e) =>
+            Process.Start(Application.ExecutablePath); //@"explorer.exe", @"\{Application.ExecutablePath}");
 
-        private void kllKryptonScrollBars_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Scrollbar Examples");
+        private void kllKryptonScrollBars_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Scrollbar Examples");
 
-        private void kllKryptonWebBrowser_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton WebBrowser Example");
+        private void kllKryptonWebBrowser_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton WebBrowser Example");
 
-        private void kllKryptonHelpIcon_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Help Icon Examples");
+        private void kllKryptonHelpIcon_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Help Icon Examples");
 
-        private void kllColourDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Color Dialog Example");
+        private void kllColourDialog_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Color Dialog Example");
 
         private void LaunchApplication(string exampleName)
         {
@@ -353,7 +425,8 @@ namespace KryptonExplorer
             }
             catch (Exception ex)
             {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK, KryptonMessageBoxIcon.Error);
+                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK,
+                    KryptonMessageBoxIcon.Error);
             }
             finally
             {
@@ -374,7 +447,8 @@ namespace KryptonExplorer
                 else
                 {
                     KryptonMessageBox.Show(
-                        "The Palette Designer is not currently installed. Please download the latest installation package from:\nhttps://github.com/Krypton-Suite/Theme-Palettes/releases", @"Application Not Installed", MessageBoxButtons.OK, KryptonMessageBoxIcon.Information);
+                        "The Palette Designer is not currently installed. Please download the latest installation package from:\nhttps://github.com/Krypton-Suite/Theme-Palettes/releases",
+                        @"Application Not Installed", MessageBoxButtons.OK, KryptonMessageBoxIcon.Information);
                 }
             }
             catch (Exception e)
@@ -400,7 +474,8 @@ namespace KryptonExplorer
                 else
                 {
                     KryptonMessageBox.Show(
-                        "The Palette Upgrade Tool is not currently installed. Please download the latest installation package from:\nhttps://github.com/Krypton-Suite/Theme-Palettes/releases", @"Application Not Installed", MessageBoxButtons.OK, KryptonMessageBoxIcon.Information);
+                        "The Palette Upgrade Tool is not currently installed. Please download the latest installation package from:\nhttps://github.com/Krypton-Suite/Theme-Palettes/releases",
+                        @"Application Not Installed", MessageBoxButtons.OK, KryptonMessageBoxIcon.Information);
                 }
             }
             catch (Exception e)
@@ -413,8 +488,9 @@ namespace KryptonExplorer
             }
         }
 
-        private void kllFontDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Font Dialog Example");
-        
+        private void kllFontDialog_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Font Dialog Example");
+
         private void kcmbTheme_SelectedIndexChanged(object sender, EventArgs e)
         {
             _settings.ThemeSelectedIndex = kcmbTheme.SelectedIndex;
@@ -426,21 +502,144 @@ namespace KryptonExplorer
 
         private void kbtnRestoreTheme_Click(object sender, EventArgs e)
         {
-            kcmbTheme.SelectedIndex = 22;
+            kcmbTheme.SelectedIndex = 25;
 
             _settings.Theme = PaletteModeManager.Microsoft365Blue;
 
+            _settings.HelpFileLocation = @"";
+
             _settings.Save();
         }
-        
-        private void klblPrintDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Print Dialog Example");
 
-        private void kbtnKryptonToolkitPackage_Click(object sender, EventArgs e) => Process.Start(@"https://www.nuget.org/profiles/Krypton_Suite");
+        private void klblPrintDialog_LinkClicked(object sender, EventArgs e) =>
+            LaunchApplication(@"Krypton Print Dialog Example");
+
+        private void kbtnKryptonToolkitPackage_Click(object sender, EventArgs e) =>
+            Process.Start(@"https://www.nuget.org/profiles/Krypton_Suite");
 
         private void kbtnViewLatestReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/Documents/Help/Changelog.md");
 
         private void kbtnViewLatestCanaryReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/canary/Documents/Help/Changelog.md");
 
-        private void kbtnViewLatestNightlyReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/nightly/Documents/Help/Changelog.md");
+        private void kbtnViewLatestNightlyReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/alpha/Documents/Help/Changelog.md");
+
+        private void kbtnDownloadLatestDocumentation_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new()
+            {
+                Title = @"Download documentation installer to:",
+                Filter = @"Windows Executables|*.exe",
+                FileName = @"Standard Toolkit Documentation Installer"
+            };
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                WebClient client = new();
+
+                _documentationDownladLocation = Path.GetFullPath(sfd.FileName);
+
+                tspbDownloadStatus.Visible = true;
+
+                client.DownloadFile(@"https://tinyurl.com/mvksw89c", _documentationDownladLocation);
+
+                tspbDownloadStatus.Text = $@"Downloading: {Path.GetFileName(_documentationDownladLocation)}";
+
+                client.DownloadProgressChanged += DownloadProgressChanged;
+
+                client.DownloadFileCompleted += DownloadFileCompleted;
+            }
+        }
+
+        private void DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
+        {
+            try
+            {
+                DialogResult result = KryptonMessageBox.Show(@"Download completed. Install now?",
+                    @"Download Successful",
+                    MessageBoxButtons.YesNo, KryptonMessageBoxIcon.Information);
+
+                if (result == DialogResult.Yes)
+                {
+                    Process.Start(_documentationDownladLocation);
+                }
+            }
+            catch (Exception exception)
+            {
+                KryptonMessageBox.Show($"Error: {exception}");
+            }
+        }
+
+        private void DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
+        {
+            tspbDownloadStatus.Maximum = (int)e.TotalBytesToReceive / 100;
+
+            tspbDownloadStatus.Value = (int)e.BytesReceived / 100;
+        }
+
+        private async void bgwDownloadDocumentation_DoWork(object sender, DoWorkEventArgs e)
+        {
+            //HttpClient client = new();
+
+            WebClient client = new();
+
+            tspbDownloadStatus.Text = $@"Downloading: {Path.GetFileName(_documentationDownladLocation)}";
+
+            if (!string.IsNullOrEmpty(_documentationDownladLocation))
+            {
+                //var downladContent = await client.GetStreamAsync(@"https://tinyurl.com/mvksw89c");
+
+                //using (var fs = File.Create(_documentationDownladLocation))
+                //{
+                //    downladContent.CopyTo(fs);
+                //}
+
+                client.DownloadFile(@"https://tinyurl.com/mvksw89c", _documentationDownladLocation);
+            }
+        }
+
+        private void bgwDownloadDocumentation_ProgressChanged(object sender, ProgressChangedEventArgs e) =>
+            tspbDownloadStatus.Value = e.ProgressPercentage;
+
+        private void bgwDownloadDocumentation_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            DialogResult result = KryptonMessageBox.Show(@"Download completed. Install now?", @"Download Successful",
+                MessageBoxButtons.YesNo, KryptonMessageBoxIcon.Information);
+
+            if (result == DialogResult.Yes)
+            {
+                Process.Start(_documentationDownladLocation);
+            }
+        }
+
+        private void kbtnLaunchHelp_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!string.IsNullOrEmpty(_settings.HelpFileLocation))
+                {
+                    if (File.Exists(_settings.HelpFileLocation))
+                    {
+                        Process.Start(_settings.HelpFileLocation);
+                    }
+                    else
+                    {
+                        HelpFileLocator locator = new HelpFileLocator();
+
+                        locator.Show();
+                    }
+                }
+                else
+                {
+                    HelpFileLocator locator = new HelpFileLocator();
+
+                    locator.Show();
+                }
+            }
+            catch (Exception exc)
+            {
+                KryptonMessageBox.Show($@"Error: {exc}", @"Unexpected Error", MessageBoxButtons.OK,
+                    KryptonMessageBoxIcon.Error);
+            }
+        }
     }
 }

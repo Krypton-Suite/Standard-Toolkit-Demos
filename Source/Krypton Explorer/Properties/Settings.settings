@@ -11,5 +11,8 @@
     <Setting Name="BuildDate" Type="System.DateTime" Scope="User">
       <Value Profile="(Default)">2022-11-21</Value>
     </Setting>
+    <Setting Name="HelpFileLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>
