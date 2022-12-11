@@ -65,7 +65,8 @@ namespace KryptonComboBoxExamples
         private void kryptonComboBox1Blue_DoubleClick(object sender, EventArgs e) => InvokeDoubleClick();
 
         private void InvokeDoubleClick() =>
-            KryptonMessageBox.Show("You've invoked the double click event.", "Double Click", MessageBoxButtons.OK,
+            KryptonMessageBox.Show("You've invoked the double click event.", "Double Click", 
+                KryptonMessageBoxButtons.OK,
                 KryptonMessageBoxIcon.Information);
 
         private void kryptonComboBox2Blue_DoubleClick(object sender, EventArgs e) => InvokeDoubleClick();

@@ -12,6 +12,7 @@
 
 using System;
 using System.Windows.Forms;
+
 using Krypton.Toolkit;
 
 namespace MDIApplication
@@ -42,11 +43,9 @@ namespace MDIApplication
             // Add another MDI child window
             AddMDIChildWindow();
 
-        private void closeWindowToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        private void closeWindowToolStripMenuItem_Click(object sender, EventArgs e) =>
             // Close just the active child
             ActiveMdiChild?.Close();
-        }
 
         private void closeAllWidowToolStripMenuItem_Click(object sender, EventArgs e)
         {

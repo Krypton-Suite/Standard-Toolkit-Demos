@@ -58,7 +58,8 @@ namespace KryptonListViewExamples
             }
             catch (Exception exception)
             {
-                KryptonMessageBox.Show(this, exception.Message, @"Not Supported", MessageBoxButtons.OK, KryptonMessageBoxIcon.Warning);
+                KryptonMessageBox.Show(this, exception.Message, @"Not Supported", 
+                    KryptonMessageBoxButtons.OK, KryptonMessageBoxIcon.Warning);
             }
         }
 

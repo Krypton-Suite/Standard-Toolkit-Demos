@@ -12,6 +12,7 @@
 
 using System;
 using System.Windows.Forms;
+
 using Krypton.Toolkit;
 
 namespace KryptonListBoxExamples
@@ -19,7 +20,7 @@ namespace KryptonListBoxExamples
     public partial class Form1 : Form
     {
         private int _next = 1;
-        private Random _rand = new Random();
+        private Random _rand = new();
 
         public Form1() => InitializeComponent();
 
@@ -40,8 +41,7 @@ namespace KryptonListBoxExamples
 
         private object CreateNewItem()
         {
-            KryptonListItem item = new KryptonListItem
-            {
+            KryptonListItem item = new KryptonListItem {
                 ShortText = $"Item {(_next++)}",
                 LongText = $"({_rand.Next(Int32.MaxValue)})",
                 Image = imageList.Images[_rand.Next(imageList.Images.Count - 1)]
@@ -122,10 +122,9 @@ namespace KryptonListBoxExamples
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
 
-        private void kryptonListBox_DoubleClick(object sender, EventArgs e)
-        {
-            KryptonMessageBox.Show("You've invoked the double click event.", "Double Click", MessageBoxButtons.OK,
+        private void kryptonListBox_DoubleClick(object sender, EventArgs e) =>
+            KryptonMessageBox.Show("You've invoked the double click event.", "Double Click",
+                KryptonMessageBoxButtons.OK,
                 KryptonMessageBoxIcon.Information);
-        }
     }
 }

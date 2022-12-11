@@ -4,9 +4,6 @@ namespace KryptonThemeSelector
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
     }
 }
