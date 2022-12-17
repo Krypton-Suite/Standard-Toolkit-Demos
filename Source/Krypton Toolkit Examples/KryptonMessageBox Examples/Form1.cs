@@ -195,5 +195,18 @@ namespace KryptonMessageBoxExamples
             // Indicate that the HelpRequested event is handled.
             hlpEvent.Handled = true;        
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            foreach (string value in Enum.GetNames(typeof(KryptonMessageBoxIcon)))
+            {
+                kcmbIcons.Items.Add(value);
+            }
+        }
+
+        private void kcmbIcons_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _kmbIcon = (KryptonMessageBoxIcon)Enum.Parse(typeof(KryptonMessageBoxIcon), kcmbIcons.Text);
+        }
     }
 }
