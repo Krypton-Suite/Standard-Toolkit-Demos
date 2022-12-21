@@ -10,6 +10,7 @@
 	* [Expanding HeaderGroups (Stack)](#expanding-headergroups-stack)
 	* [Input Form](#input-form)
 	* [Krypton Scrollbars](#krypton-scrollbars)
+	* [Krypton Theme Selector](#krypton-theme_selector)
 	* [KryptonBorderEdge Examples](#kryptonborderedge-examples)
 	* [[KryptonBreadCrumb Examples](#kryptonbreadcrumb-examples)
 	* [KryptonButton Examples](#kryptonbutton-examples)
@@ -96,6 +97,11 @@ There are 2 set of solutions in these projects:
 ![Input Form](Input%20Form/example.png)
 ## Krypton Scrollbars
 ![Krypton Scrollbars](Krypton%20Scrollbars/KryptonScrollBars.gif)
+
+## Krypton Theme Selector
+- Automatically filled ComboBox with events to change the theme when selection changes:
+![Krypton Theme Selector](Krypton%20Theme%20Selector/Example.png)
+
 ## KryptonBorderEdge Examples
 ![KryptonBorderEdge Examples](KryptonBorderEdge%20Examples/example.png)
 ## [KryptonBreadCrumb Examples
