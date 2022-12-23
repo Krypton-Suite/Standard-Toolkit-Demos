@@ -341,7 +341,7 @@ namespace ThreePaneApplication
         private void loadPaletteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Create a new palette for the importing
-            KryptonPalette newPalette = new KryptonPalette();
+            KryptonCustomPaletteBase newPalette = new KryptonCustomPaletteBase();
 
             // If the user managed to load a palette file
             if (newPalette.Import().Length > 0)

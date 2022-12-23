@@ -46,7 +46,7 @@ namespace KryptonCheckedListBoxExamples
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.kryptonCheckSet = new Krypton.Toolkit.KryptonCheckSet(this.components);
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
-            this.kryptonPaletteOffice2007Blue = new Krypton.Toolkit.KryptonPalette();
+            this.kryptonPaletteOffice2007Blue = new Krypton.Toolkit.KryptonCustomPaletteBase();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonCheckSet)).BeginInit();
@@ -296,7 +296,7 @@ namespace KryptonCheckedListBoxExamples
         private System.Windows.Forms.ImageList imageList;
         private Krypton.Toolkit.KryptonCheckSet kryptonCheckSet;
         private Krypton.Toolkit.KryptonManager kryptonManager1;
-        private Krypton.Toolkit.KryptonPalette kryptonPaletteOffice2007Blue;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteOffice2007Blue;
     }
 }
 

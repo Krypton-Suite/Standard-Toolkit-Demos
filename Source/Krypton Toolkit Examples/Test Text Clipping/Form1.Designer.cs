@@ -89,7 +89,7 @@ namespace TestTextClipping
             this.kryptonOffice2007Silver = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonOffice2007Blue = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
-            this.kryptonPaletteCustom = new Krypton.Toolkit.KryptonPalette(this.components);
+            this.kryptonPaletteCustom = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.kryptonRadioButton1 = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton2 = new Krypton.Toolkit.KryptonRadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelMain)).BeginInit();
@@ -839,7 +839,7 @@ namespace TestTextClipping
         private Krypton.Toolkit.KryptonPanel kryptonPanelMain;
         private Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroupDetails;
         private Krypton.Toolkit.KryptonManager kryptonManager;
-        private Krypton.Toolkit.KryptonPalette kryptonPaletteCustom;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteCustom;
         private Krypton.Toolkit.KryptonGroup kryptonGroup1;
         private Krypton.Toolkit.KryptonRadioButton kryptonOffice2007Black;
         private Krypton.Toolkit.KryptonRadioButton kryptonOffice2007Silver;

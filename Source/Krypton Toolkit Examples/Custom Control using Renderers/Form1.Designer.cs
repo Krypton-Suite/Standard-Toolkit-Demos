@@ -48,7 +48,7 @@ namespace CustomControlUsingRenderers
             this.buttonClose = new System.Windows.Forms.Button();
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
             this.kryptonCheckSet = new Krypton.Toolkit.KryptonCheckSet(this.components);
-            this.kryptonPaletteCustom = new Krypton.Toolkit.KryptonPalette(this.components);
+            this.kryptonPaletteCustom = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.groupBoxDescription.SuspendLayout();
             this.groupBoxCustomControl.SuspendLayout();
             this.groupBoxPalettes.SuspendLayout();
@@ -461,7 +461,7 @@ namespace CustomControlUsingRenderers
         private System.Windows.Forms.RadioButton radioTop;
         private Krypton.Toolkit.KryptonCheckButton buttonOffice2010Blue;
         private Krypton.Toolkit.KryptonCheckButton buttonOffice2007Blue;
-        private Krypton.Toolkit.KryptonPalette kryptonPaletteCustom;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteCustom;
     }
 }
 

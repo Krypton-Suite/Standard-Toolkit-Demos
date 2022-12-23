@@ -93,7 +93,7 @@ namespace ThreePaneApplication
             this.kryptonOffice2007Blue = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonOffice2013White = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
-            this.kryptonPaletteCustom = new Krypton.Toolkit.KryptonPalette(this.components);
+            this.kryptonPaletteCustom = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.kryptonRadioButton1 = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton2 = new Krypton.Toolkit.KryptonRadioButton();
@@ -1035,7 +1035,7 @@ namespace ThreePaneApplication
         private Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroupDetails;
         private Krypton.Toolkit.KryptonGroup kryptonButtonGroup;
         private Krypton.Toolkit.KryptonManager kryptonManager;
-        private Krypton.Toolkit.KryptonPalette kryptonPaletteCustom;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteCustom;
         private Krypton.Toolkit.KryptonGroup kryptonGroup1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private Krypton.Toolkit.KryptonRadioButton kryptonOffice2007Black;

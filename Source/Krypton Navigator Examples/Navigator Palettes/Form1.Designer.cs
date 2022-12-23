@@ -50,8 +50,8 @@ namespace NavigatorPalettes
             this.radioOffice2003 = new System.Windows.Forms.RadioButton();
             this.radioSystem = new System.Windows.Forms.RadioButton();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.kryptonPaletteBlogger = new Krypton.Toolkit.KryptonPalette(this.components);
-            this.kryptonPaletteLightweight = new Krypton.Toolkit.KryptonPalette(this.components);
+            this.kryptonPaletteBlogger = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
+            this.kryptonPaletteLightweight = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator1)).BeginInit();
             this.kryptonNavigator1.SuspendLayout();
@@ -1447,8 +1447,8 @@ namespace NavigatorPalettes
         private System.Windows.Forms.RadioButton radioOffice2003;
         private System.Windows.Forms.RadioButton radioSystem;
         private System.Windows.Forms.Button buttonClose;
-        private Krypton.Toolkit.KryptonPalette kryptonPaletteBlogger;
-        private Krypton.Toolkit.KryptonPalette kryptonPaletteLightweight;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteBlogger;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteLightweight;
         private System.Windows.Forms.RadioButton radioOffice2007Black;
         private System.Windows.Forms.RadioButton radioOffice2007Silver;
         private System.Windows.Forms.RadioButton radioOffice2007Blue;

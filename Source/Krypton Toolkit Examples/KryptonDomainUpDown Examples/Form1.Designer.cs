@@ -68,7 +68,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.propertyGrid = new System.Windows.Forms.PropertyGrid();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
-            this.kryptonPalette = new Krypton.Toolkit.KryptonPalette();
+            this.kryptonPalette = new Krypton.Toolkit.KryptonCustomPaletteBase();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -871,7 +871,7 @@
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem9;
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem10;
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem11;
-        private Krypton.Toolkit.KryptonPalette kryptonPalette;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPalette;
     }
 }
 

@@ -72,7 +72,7 @@ namespace KryptonDataGridViewExamples
             this.kryptonContextMenuColorColumns1 = new Krypton.Toolkit.KryptonContextMenuColorColumns();
             this.kryptonContextMenuImageSelect1 = new Krypton.Toolkit.KryptonContextMenuImageSelect();
             this.kryptonContextMenuMonthCalendar1 = new Krypton.Toolkit.KryptonContextMenuMonthCalendar();
-            this.kryptonPalette = new Krypton.Toolkit.KryptonPalette(this.components);
+            this.kryptonPalette = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
             this.colDateTime = new Krypton.Toolkit.KryptonDataGridViewDateTimePickerColumn();
             this.colComboBox = new Krypton.Toolkit.KryptonDataGridViewComboBoxColumn();
@@ -686,7 +686,7 @@ namespace KryptonDataGridViewExamples
         private System.Windows.Forms.RadioButton rbStyleSheet;
         private System.Data.DataSet dataSet;
         private System.Data.DataTable dtTestData;
-        private Krypton.Toolkit.KryptonPalette kryptonPalette;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPalette;
         private Krypton.Toolkit.KryptonManager kryptonManager;
         private System.Windows.Forms.GroupBox groupBox1;
         private Krypton.Toolkit.KryptonButton buttonRandomCellColors;

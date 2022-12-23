@@ -46,7 +46,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.propertyGrid = new System.Windows.Forms.PropertyGrid();
             this.kryptonMonthCalendar1 = new Krypton.Toolkit.KryptonMonthCalendar();
-            this.kryptonPalette = new Krypton.Toolkit.KryptonPalette(this.components);
+            this.kryptonPalette = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
             this.groupBoxPalette.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -291,7 +291,7 @@
         private System.Windows.Forms.RadioButton rbSparklePurple;
         private System.Windows.Forms.RadioButton rbSparkleOrange;
         private Krypton.Toolkit.KryptonMonthCalendar kryptonMonthCalendar1;
-        private Krypton.Toolkit.KryptonPalette kryptonPalette;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPalette;
         private System.Windows.Forms.RadioButton rbOffice2010Black;
         private System.Windows.Forms.RadioButton rbOffice2010Silver;
         private System.Windows.Forms.RadioButton rbOffice2010Blue;

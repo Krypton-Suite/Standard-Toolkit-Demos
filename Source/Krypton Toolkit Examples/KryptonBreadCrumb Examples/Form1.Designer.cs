@@ -233,7 +233,7 @@
             this.kryptonBreadCrumbItem40 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonBreadCrumbItem41 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
-            this.kryptonPaletteOffice2007Blue = new Krypton.Toolkit.KryptonPalette(this.components);
+            this.kryptonPaletteOffice2007Blue = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -1298,7 +1298,7 @@
         private Krypton.Toolkit.KryptonContextMenuItem menuSpider;
         private Krypton.Toolkit.KryptonContextMenuItem menuKangeroo;
         private Krypton.Toolkit.KryptonContextMenuItem menuFern;
-        private Krypton.Toolkit.KryptonPalette kryptonPaletteOffice2007Blue;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteOffice2007Blue;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.PropertyGrid propertyGrid;
         private System.Windows.Forms.Button buttonClose;

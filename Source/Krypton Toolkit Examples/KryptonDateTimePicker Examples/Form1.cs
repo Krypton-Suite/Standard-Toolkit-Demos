@@ -397,7 +397,7 @@ namespace KryptonDateTimePickerExamples
         [Category("Visuals - DateTimePicker")]
         [Description("Custom palette applied to drawing.")]
         [DefaultValue(null)]
-        public IPalette Palette
+        public PaletteBase Palette
         {
             get => _dateTimePicker.Palette;
             set => _dateTimePicker.Palette = value;

@@ -22,7 +22,7 @@ namespace CustomControlUsingPalettes
     {
         private bool _mouseOver;
         private bool _mouseDown;
-        private IPalette _palette;
+        private PaletteBase _palette;
 
         public MyUserControl()
         {
@@ -37,11 +37,11 @@ namespace CustomControlUsingPalettes
             // Hook into palette events
             if (_palette != null)
             {
-                _palette.PalettePaint += new EventHandler<PaletteLayoutEventArgs>(OnPalettePaint);
+                _palette.PalettePaint += OnPalettePaint;
             }
 
             // We want to be notified whenever the global palette changes
-            KryptonManager.GlobalPaletteChanged += new EventHandler(OnGlobalPaletteChanged);
+            KryptonManager.GlobalPaletteChanged += OnGlobalPaletteChanged;
         }
 
         protected override void Dispose(bool disposing)
@@ -51,12 +51,12 @@ namespace CustomControlUsingPalettes
                 // Unhook from the palette events
                 if (_palette != null)
                 {
-                    _palette.PalettePaint -= new EventHandler<PaletteLayoutEventArgs>(OnPalettePaint);
+                    _palette.PalettePaint -= OnPalettePaint;
                     _palette = null;
                 }
 
                 // Unhook from the static events, otherwise we cannot be garbage collected
-                KryptonManager.GlobalPaletteChanged -= new EventHandler(OnGlobalPaletteChanged);
+                KryptonManager.GlobalPaletteChanged -= OnGlobalPaletteChanged;
             }
 
             base.Dispose(disposing);
@@ -220,16 +220,16 @@ namespace CustomControlUsingPalettes
             // Unhook events from old palette
             if (_palette != null)
             {
-                _palette.PalettePaint -= new EventHandler<PaletteLayoutEventArgs>(OnPalettePaint);
+                _palette.PalettePaint -= OnPalettePaint;
             }
 
-            // Cache the new IPalette that is the global palette
+            // Cache the new PaletteBase that is the global palette
             _palette = KryptonManager.CurrentGlobalPalette;
 
             // Hook into events for the new palette
             if (_palette != null)
             {
-                _palette.PalettePaint += new EventHandler<PaletteLayoutEventArgs>(OnPalettePaint);
+                _palette.PalettePaint += OnPalettePaint;
             }
 
             // Change of palette means we should repaint to show any changes

@@ -44,7 +44,7 @@ namespace CustomControlUsingPalettes
             this.groupBoxDescription = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.kryptonPaletteCustom = new Krypton.Toolkit.KryptonPalette(this.components);
+            this.kryptonPaletteCustom = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonCheckSet)).BeginInit();
             this.groupBoxPalettes.SuspendLayout();
             this.groupBoxCustomControl.SuspendLayout();
@@ -512,7 +512,7 @@ namespace CustomControlUsingPalettes
         private System.Windows.Forms.GroupBox groupBoxDescription;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.CheckBox checkBoxEnabled;
-        private Krypton.Toolkit.KryptonPalette kryptonPaletteCustom;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteCustom;
         private Krypton.Toolkit.KryptonCheckButton buttonCustom;
         private System.Windows.Forms.TextBox textBox1;
         private Krypton.Toolkit.KryptonCheckButton buttonOffice2010Blue;

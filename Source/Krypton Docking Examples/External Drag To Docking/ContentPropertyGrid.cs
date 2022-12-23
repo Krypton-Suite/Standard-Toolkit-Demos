@@ -52,7 +52,7 @@ namespace ExternalDragToDocking
         private void OnGlobalPaletteChanged(object sender, EventArgs e)
         {
             // Use the current font from the global palette
-            IPalette palette = KryptonManager.CurrentGlobalPalette;
+            var palette = KryptonManager.CurrentGlobalPalette;
             Font font = palette.GetContentShortTextFont(PaletteContentStyle.LabelNormalControl, PaletteState.Normal);
             propertyGrid1.Font = font;
         }
