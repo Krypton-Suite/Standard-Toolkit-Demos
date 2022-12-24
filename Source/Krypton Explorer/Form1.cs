@@ -425,7 +425,7 @@ namespace KryptonExplorer
             }
             catch (Exception ex)
             {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", MessageBoxButtons.OK,
+                KryptonMessageBox.Show(this, ex.Message, @"Explorer", KryptonMessageBoxButtons.OK,
                     KryptonMessageBoxIcon.Error);
             }
             finally
@@ -448,12 +448,12 @@ namespace KryptonExplorer
                 {
                     KryptonMessageBox.Show(
                         "The Palette Designer is not currently installed. Please download the latest installation package from:\nhttps://github.com/Krypton-Suite/Theme-Palettes/releases",
-                        @"Application Not Installed", MessageBoxButtons.OK, KryptonMessageBoxIcon.Information);
+                        @"Application Not Installed", KryptonMessageBoxButtons.OK, KryptonMessageBoxIcon.Information);
                 }
             }
             catch (Exception e)
             {
-                KryptonMessageBox.Show(this, e.Message, @"Explorer", MessageBoxButtons.OK, KryptonMessageBoxIcon.Error);
+                KryptonMessageBox.Show(this, e.Message, @"Explorer", KryptonMessageBoxButtons.OK, KryptonMessageBoxIcon.Error);
             }
             finally
             {
@@ -475,12 +475,12 @@ namespace KryptonExplorer
                 {
                     KryptonMessageBox.Show(
                         "The Palette Upgrade Tool is not currently installed. Please download the latest installation package from:\nhttps://github.com/Krypton-Suite/Theme-Palettes/releases",
-                        @"Application Not Installed", MessageBoxButtons.OK, KryptonMessageBoxIcon.Information);
+                        @"Application Not Installed", KryptonMessageBoxButtons.OK, KryptonMessageBoxIcon.Information);
                 }
             }
             catch (Exception e)
             {
-                KryptonMessageBox.Show(this, e.Message, @"Explorer", MessageBoxButtons.OK, KryptonMessageBoxIcon.Error);
+                KryptonMessageBox.Show(this, e.Message, @"Explorer", KryptonMessageBoxButtons.OK, KryptonMessageBoxIcon.Error);
             }
             finally
             {
@@ -556,7 +556,7 @@ namespace KryptonExplorer
             {
                 DialogResult result = KryptonMessageBox.Show(@"Download completed. Install now?",
                     @"Download Successful",
-                    MessageBoxButtons.YesNo, KryptonMessageBoxIcon.Information);
+                    KryptonMessageBoxButtons.YesNo, KryptonMessageBoxIcon.Information);
 
                 if (result == DialogResult.Yes)
                 {
@@ -603,7 +603,7 @@ namespace KryptonExplorer
         private void bgwDownloadDocumentation_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             DialogResult result = KryptonMessageBox.Show(@"Download completed. Install now?", @"Download Successful",
-                MessageBoxButtons.YesNo, KryptonMessageBoxIcon.Information);
+                KryptonMessageBoxButtons.YesNo, KryptonMessageBoxIcon.Information);
 
             if (result == DialogResult.Yes)
             {
@@ -637,7 +637,7 @@ namespace KryptonExplorer
             }
             catch (Exception exc)
             {
-                KryptonMessageBox.Show($@"Error: {exc}", @"Unexpected Error", MessageBoxButtons.OK,
+                KryptonMessageBox.Show($@"Error: {exc}", @"Unexpected Error", KryptonMessageBoxButtons.OK,
                     KryptonMessageBoxIcon.Error);
             }
         }
