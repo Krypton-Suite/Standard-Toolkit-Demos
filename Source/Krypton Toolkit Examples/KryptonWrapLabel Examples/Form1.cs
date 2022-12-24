@@ -12,6 +12,7 @@
 
 using System;
 using System.Windows.Forms;
+
 using Krypton.Toolkit;
 
 namespace KryptonWrapLabelExamples
@@ -35,5 +36,11 @@ namespace KryptonWrapLabelExamples
         }
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
+
+        private void klwlblTest_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            KryptonMessageBox.Show(@"Hello world!", @"Test", KryptonMessageBoxButtons.OK,
+                KryptonMessageBoxIcon.Information);
+        }
     }
 }
