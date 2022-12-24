@@ -21,7 +21,7 @@ namespace InputForm
 
         private void office2010_Click(object sender, EventArgs e)
         {
-            kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+            kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
             toolStripOffice2010.Checked = true;
             toolStripOffice2007.Checked = false;
             toolStripSystem.Checked = false;
@@ -34,7 +34,7 @@ namespace InputForm
 
         private void office2007_Click(object sender, EventArgs e)
         {
-            kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+            kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Blue;
             toolStripOffice2010.Checked = false;
             toolStripOffice2007.Checked = true;
             toolStripSystem.Checked = false;
@@ -47,7 +47,7 @@ namespace InputForm
 
         private void sparkle_Click(object sender, EventArgs e)
         {
-            kryptonManager1.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+            kryptonManager1.GlobalPaletteMode = PaletteMode.SparkleBlue;
             toolStripOffice2010.Checked = false;
             toolStripOffice2007.Checked = false;
             toolStripSystem.Checked = false;
@@ -60,7 +60,7 @@ namespace InputForm
 
         private void system_Click(object sender, EventArgs e)
         {
-            kryptonManager1.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+            kryptonManager1.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
             toolStripOffice2010.Checked = false;
             toolStripOffice2007.Checked = false;
             toolStripSystem.Checked = true;

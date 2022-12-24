@@ -35,7 +35,7 @@ namespace ChildControlStack
         {
             if (!toolOffice2010.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
                 toolOffice2010.Checked = menuOffice2010.Checked = true;
                 toolOffice2007.Checked = menuOffice2007.Checked = false;
                 toolSystem.Checked = menuSystem.Checked = false;
@@ -47,7 +47,7 @@ namespace ChildControlStack
         {
             if (!toolOffice2007.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
                 toolOffice2010.Checked = menuOffice2010.Checked = false;
                 toolOffice2007.Checked = menuOffice2007.Checked = true;
                 toolSystem.Checked = menuSystem.Checked = false;
@@ -59,7 +59,7 @@ namespace ChildControlStack
         {
             if (!toolSystem.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
                 toolOffice2010.Checked = menuOffice2010.Checked = false;
                 toolOffice2007.Checked = menuOffice2007.Checked = false;
                 toolSystem.Checked = menuSystem.Checked = true;
@@ -71,7 +71,7 @@ namespace ChildControlStack
         {
            if (!toolSparkle.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
                 toolOffice2010.Checked = menuOffice2010.Checked = false;
                 toolOffice2007.Checked = menuOffice2007.Checked = false;
                 toolSystem.Checked = menuSystem.Checked = false;

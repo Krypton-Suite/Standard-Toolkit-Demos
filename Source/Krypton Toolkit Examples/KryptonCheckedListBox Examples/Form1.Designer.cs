@@ -251,7 +251,7 @@ namespace KryptonCheckedListBoxExamples
             // 
             this.kryptonPaletteOffice2007Blue.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
             this.kryptonManager1.GlobalPalette = this.kryptonPaletteOffice2007Blue;
-            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Custom;
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             // 
             // Form1
             // 

@@ -10,7 +10,7 @@
 	* [Expanding HeaderGroups (Stack)](#expanding-headergroups-stack)
 	* [Input Form](#input-form)
 	* [Krypton Scrollbars](#krypton-scrollbars)
-	* [Krypton Theme Selector](#krypton-theme_selector)
+	* [Krypton Theme Selector](#krypton-theme-selector)
 	* [KryptonBorderEdge Examples](#kryptonborderedge-examples)
 	* [[KryptonBreadCrumb Examples](#kryptonbreadcrumb-examples)
 	* [KryptonButton Examples](#kryptonbutton-examples)

@@ -27,19 +27,19 @@ namespace CustomControlUsingPalettes
             switch (kryptonCheckSet.CheckedIndex)
             {
                 case 0:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+                    kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
                     break;
                 case 1:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+                    kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
                     break;
                 case 2:
                     kryptonManager.GlobalPalette = kryptonPaletteCustom;
                     break;
                 case 3:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+                    kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
                     break;
                 case 4:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+                    kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
                     break;
             }
         }

@@ -30,7 +30,7 @@ namespace RibbonControls
                 miscCmbTheme.ComboBox.StateCommon.ComboBox.Content.Font;
             // Hook into changes in the global palette
             ThemeManager.PropagateThemeSelector(miscCmbTheme.ComboBox);
-            miscCmbTheme.Text = ThemeManager.ReturnPaletteModeManagerAsString(kryptonManager.GlobalPaletteMode);
+            miscCmbTheme.Text = ThemeManager.ReturnPaletteModeAsString(kryptonManager.GlobalPaletteMode);
         }
 
         private LinkLabel CreateLinkLabel(string text)
@@ -110,47 +110,47 @@ namespace RibbonControls
 
         private void rbOffice2010Blue_CheckedChanged(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
         }
 
         private void rbOffice2010Silver_CheckedChanged(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
         }
 
         private void rbOffice2010Black_CheckedChanged(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
         }
 
         private void rbOffice2007Blue_CheckedChanged(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
         }
 
         private void rbOffice2007Silver_CheckedChanged(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
         }
 
         private void rbOffice2007Black_CheckedChanged(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Black;
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
         }
 
         private void rbOffice2003_CheckedChanged(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalOffice2003;
+            kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
         }
 
         private void rbSystem_CheckedChanged(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+            kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
         }
 
         private void rbSparkle_CheckedChanged(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+            kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
         }
 
         private void appMenu_Click(object sender, EventArgs e)

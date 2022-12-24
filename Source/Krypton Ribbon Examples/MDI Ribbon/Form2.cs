@@ -48,67 +48,67 @@ namespace MDIRibbon
         private void radioSystem_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSystem.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
         }
 
         private void radioOffice2003_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2003.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalOffice2003;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
         }
 
         private void radio2010Blue_CheckedChanged(object sender, EventArgs e)
         {
             if (radio2010Blue.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
         }
 
         private void radio2010Silver_CheckedChanged(object sender, EventArgs e)
         {
             if (radio2010Silver.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
         }
 
         private void radio2010Black_CheckedChanged(object sender, EventArgs e)
         {
             if (radio2010Black.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
         }
 
         private void radioBlue_CheckedChanged(object sender, EventArgs e)
         {
             if (radioBlue.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
         }
 
         private void radioSilver_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSilver.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
         }
 
         private void radioBlack_CheckedChanged(object sender, EventArgs e)
         {
             if (radioBlack.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
         }
 
         private void radioSparkleBlue_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSparkleBlue.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
         }
 
         private void radioSparkleOrange_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSparkleOrange.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleOrange;
         }
 
         private void radioSparklePurple_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSparklePurple.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparklePurple;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparklePurple;
         }
 
         private void OnPaletteChanged(object sender, EventArgs e)
@@ -121,37 +121,37 @@ namespace MDIRibbon
         {
             switch(kryptonManager.GlobalPaletteMode)
             {
-                case PaletteModeManager.ProfessionalSystem:
+                case PaletteMode.ProfessionalSystem:
                     radioSystem.Checked = true;
                     break;
-                case PaletteModeManager.ProfessionalOffice2003:
+                case PaletteMode.ProfessionalOffice2003:
                     radioOffice2003.Checked = true;
                     break;
-                case PaletteModeManager.Office2007Blue:
+                case PaletteMode.Office2007Blue:
                     radioBlue.Checked = true;
                     break;
-                case PaletteModeManager.Office2007Silver:
+                case PaletteMode.Office2007Silver:
                     radioSilver.Checked = true;
                     break;
-                case PaletteModeManager.Office2007Black:
+                case PaletteMode.Office2007Black:
                     radioBlack.Checked = true;
                     break;
-                case PaletteModeManager.SparkleBlue:
+                case PaletteMode.SparkleBlue:
                     radioSparkleBlue.Checked = true;
                     break;
-                case PaletteModeManager.SparkleOrange:
+                case PaletteMode.SparkleOrange:
                     radioSparkleOrange.Checked = true;
                     break;
-                case PaletteModeManager.SparklePurple:
+                case PaletteMode.SparklePurple:
                     radioSparklePurple.Checked = true;
                     break;
-                case PaletteModeManager.Office2010Blue:
+                case PaletteMode.Office2010Blue:
                     radio2010Blue.Checked = true;
                     break;
-                case PaletteModeManager.Office2010Silver:
+                case PaletteMode.Office2010Silver:
                     radio2010Silver.Checked = true;
                     break;
-                case PaletteModeManager.Office2010Black:
+                case PaletteMode.Office2010Black:
                     radio2010Black.Checked = true;
                     break;
             }

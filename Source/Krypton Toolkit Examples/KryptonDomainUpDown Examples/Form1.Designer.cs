@@ -803,7 +803,7 @@
             this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Content.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
             this.kryptonPalette.GridStyles.GridCustom1.StateTracking.HeaderRow.Content.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonManager1.GlobalPalette = this.kryptonPalette;
-            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Custom;
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             // 
             // Form1
             // 

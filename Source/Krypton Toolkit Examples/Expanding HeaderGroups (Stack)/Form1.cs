@@ -27,7 +27,7 @@ namespace ExpandingHeaderGroupsStack
         {
             if (!toolOffice2010.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
                 toolOffice2010.Checked = menuOffice2010.Checked = true;
                 toolOffice2007.Checked = menuOffice2007.Checked = false;
                 toolSparkle.Checked = menuSparkle.Checked = false;
@@ -39,7 +39,7 @@ namespace ExpandingHeaderGroupsStack
         {
             if (!toolOffice2007.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
                 toolOffice2010.Checked = menuOffice2010.Checked = false;
                 toolOffice2007.Checked = menuOffice2007.Checked = true;
                 toolSparkle.Checked = menuSparkle.Checked = false;
@@ -51,7 +51,7 @@ namespace ExpandingHeaderGroupsStack
         {
             if (!toolSparkle.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
                 toolOffice2010.Checked = menuOffice2010.Checked = false;
                 toolOffice2007.Checked = menuOffice2007.Checked = false;
                 toolSparkle.Checked = menuSparkle.Checked = true;
@@ -63,7 +63,7 @@ namespace ExpandingHeaderGroupsStack
         {
             if (!toolSystem.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
                 toolOffice2010.Checked = menuOffice2010.Checked = false;
                 toolOffice2007.Checked = menuOffice2007.Checked = false;
                 toolSparkle.Checked = menuSparkle.Checked = false;

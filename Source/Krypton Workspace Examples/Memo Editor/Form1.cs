@@ -349,7 +349,7 @@ namespace MemoEditor
         {
             // The tag property of the button is the enum string value of the palette we want
             KryptonRibbonGroupButton button = (KryptonRibbonGroupButton)sender;
-            kryptonManager.GlobalPaletteMode = (PaletteModeManager)Enum.Parse(typeof(PaletteModeManager), (string)button.Tag);
+            kryptonManager.GlobalPaletteMode = ThemeManager.GetThemeManagerMode((string)button.Tag);
             UpdateButtonsFromPalette();
         }
 

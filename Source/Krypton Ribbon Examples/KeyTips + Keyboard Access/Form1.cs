@@ -33,29 +33,29 @@ namespace KeyTipsAndKeyboardAccess
         private void checkSetPalette_CheckedButtonChanged(object sender, EventArgs e)
         {
             if (checkSetPalette.CheckedButton == buttonOffice2007Blue)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
             else if (checkSetPalette.CheckedButton == buttonOffice2007Silver)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
             else if (checkSetPalette.CheckedButton == buttonOffice2007Black)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
             else if (checkSetPalette.CheckedButton == buttonProfessional2003)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalOffice2003;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
             else if (checkSetPalette.CheckedButton == buttonProfessionalSystem)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
             else if (checkSetPalette.CheckedButton == buttonSparkleBlue)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
             else if (checkSetPalette.CheckedButton == buttonSparkleOrange)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleOrange;
             else if (checkSetPalette.CheckedButton == buttonSparklePurple)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparklePurple;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparklePurple;
             else if (checkSetPalette.CheckedButton == buttonOffice2010Blue)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
             else if (checkSetPalette.CheckedButton == buttonOffice2010Silver)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
             else if (checkSetPalette.CheckedButton == buttonOffice2010Black)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
             else if (checkSetPalette.CheckedButton == buttonOffice365Black)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Microsoft365Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Microsoft365Black;
         }
 
         private void OnDialogBoxLauncherClick(object sender, EventArgs e)

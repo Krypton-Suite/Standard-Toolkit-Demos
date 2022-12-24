@@ -188,7 +188,7 @@ namespace MDIApplication
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.SparkleBlue;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             // 
             // Form2
             // 
