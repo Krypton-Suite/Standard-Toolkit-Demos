@@ -1404,7 +1404,7 @@ namespace NavigatorPalettes
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.SparkleBlue;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             // 
             // Form1
             // 

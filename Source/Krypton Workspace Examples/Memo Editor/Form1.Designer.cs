@@ -427,21 +427,21 @@
             // 
             this.button2010Blue.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.button2010Blue.Checked = true;
-            this.button2010Blue.Tag = "Office2010Blue";
+            this.button2010Blue.Tag = "Office 2010 - Blue";
             this.button2010Blue.TextLine1 = "2010 Blue";
             this.button2010Blue.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // button2010Silver
             // 
             this.button2010Silver.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            this.button2010Silver.Tag = "Office2010Silver";
+            this.button2010Silver.Tag = "Office 2010 - Silver";
             this.button2010Silver.TextLine1 = "2010 Silver";
             this.button2010Silver.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
             // button2010Black
             // 
             this.button2010Black.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            this.button2010Black.Tag = "Office2010Black";
+            this.button2010Black.Tag = "Office 2010 - Black";
             this.button2010Black.TextLine1 = "2010 Black";
             this.button2010Black.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
@@ -459,7 +459,7 @@
             // 
             this.button2007Blue.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.button2007Blue.KeyTip = "2B";
-            this.button2007Blue.Tag = "Office2007Blue";
+            this.button2007Blue.Tag = "Office 2007 - Blue";
             this.button2007Blue.TextLine1 = "2007";
             this.button2007Blue.TextLine2 = "Blue";
             this.button2007Blue.Click += new System.EventHandler(this.buttonPalette_Clicked);
@@ -468,7 +468,7 @@
             // 
             this.button2007Silver.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.button2007Silver.KeyTip = "2S";
-            this.button2007Silver.Tag = "Office2007Silver";
+            this.button2007Silver.Tag = "Office 2007 - Silver";
             this.button2007Silver.TextLine1 = "2007";
             this.button2007Silver.TextLine2 = "Silver";
             this.button2007Silver.Click += new System.EventHandler(this.buttonPalette_Clicked);
@@ -477,7 +477,7 @@
             // 
             this.button2007Black.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.button2007Black.KeyTip = "2L";
-            this.button2007Black.Tag = "Office2007Black";
+            this.button2007Black.Tag = "Office 2007 - Black";
             this.button2007Black.TextLine1 = "2007";
             this.button2007Black.TextLine2 = "Black";
             this.button2007Black.Click += new System.EventHandler(this.buttonPalette_Clicked);
@@ -496,7 +496,7 @@
             // 
             this.buttonSparkleBlue.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.buttonSparkleBlue.KeyTip = "SB";
-            this.buttonSparkleBlue.Tag = "SparkleBlue";
+            this.buttonSparkleBlue.Tag = "Sparkle - Blue";
             this.buttonSparkleBlue.TextLine1 = "Sparkle";
             this.buttonSparkleBlue.TextLine2 = "Blue";
             this.buttonSparkleBlue.Click += new System.EventHandler(this.buttonPalette_Clicked);
@@ -505,7 +505,7 @@
             // 
             this.buttonSparkleOrange.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.buttonSparkleOrange.KeyTip = "SO";
-            this.buttonSparkleOrange.Tag = "SparkleOrange";
+            this.buttonSparkleOrange.Tag = "Sparkle - Orange";
             this.buttonSparkleOrange.TextLine1 = "Sparkle";
             this.buttonSparkleOrange.TextLine2 = "Orange";
             this.buttonSparkleOrange.Click += new System.EventHandler(this.buttonPalette_Clicked);
@@ -513,8 +513,8 @@
             // buttonSparklePurple
             // 
             this.buttonSparklePurple.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            this.buttonSparklePurple.KeyTip = "SO";
-            this.buttonSparklePurple.Tag = "SparklePurple";
+            this.buttonSparklePurple.KeyTip = "SP";
+            this.buttonSparklePurple.Tag = "Sparkle - Purple";
             this.buttonSparklePurple.TextLine1 = "Sparkle";
             this.buttonSparklePurple.TextLine2 = "Purple";
             this.buttonSparklePurple.Click += new System.EventHandler(this.buttonPalette_Clicked);
@@ -532,7 +532,7 @@
             // 
             this.buttonSystem.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.buttonSystem.KeyTip = "Y";
-            this.buttonSystem.Tag = "ProfessionalSystem";
+            this.buttonSystem.Tag = "Professional - System";
             this.buttonSystem.TextLine1 = "System";
             this.buttonSystem.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
@@ -540,7 +540,7 @@
             // 
             this.button2003.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.button2003.KeyTip = "3";
-            this.button2003.Tag = "ProfessionalOffice2003";
+            this.button2003.Tag = "Professional - Office 2003";
             this.button2003.TextLine1 = "2003";
             this.button2003.Click += new System.EventHandler(this.buttonPalette_Clicked);
             // 
@@ -685,7 +685,6 @@
             this.ClientSize = new System.Drawing.Size(584, 464);
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.kryptonRibbon);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(489, 414);
             this.Name = "MemoEditorForm";
             this.Text = "Memo Editor";

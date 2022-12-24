@@ -63,23 +63,23 @@ namespace KryptonSeparatorExamples
             richTextBox1.Text = str + "\n" + newText;
         }
 
-        private void office2010Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+        private void office2010Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
 
-        private void office2010Silver_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
+        private void office2010Silver_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Silver;
 
-        private void office2010Black_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2010Black;
+        private void office2010Black_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Black;
 
-        private void office2007Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+        private void office2007Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Blue;
 
-        private void office2007Silver_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
+        private void office2007Silver_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Silver;
 
-        private void office2007Black_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2007Black;
+        private void office2007Black_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Black;
 
-        private void sparkleBlue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+        private void sparkleBlue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.SparkleBlue;
 
-        private void office2003_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.ProfessionalOffice2003;
+        private void office2003_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
 
-        private void system_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+        private void system_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
     }

@@ -188,7 +188,7 @@ namespace MDIRibbon
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2007Black;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Black;
             // 
             // Form2
             // 

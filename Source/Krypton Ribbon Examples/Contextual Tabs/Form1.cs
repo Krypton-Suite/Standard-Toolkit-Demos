@@ -81,67 +81,67 @@ namespace ContextualTabs
         private void radioOffice2010Blue_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2010Blue.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
         }
 
         private void radioOffice2010Silver_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2010Silver.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
         }
 
         private void radioOffice2010Black_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2010Black.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
         }
 
         private void radioOffice2007Blue_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2007Blue.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
         }
 
         private void radioOffice2007Silver_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2007Silver.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
         }
 
         private void radioOffice2007Black_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2007Black.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
         }
 
         private void radioOffice2003_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2003.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalOffice2003;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
         }
 
         private void radioSparkleBlue_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSparkleBlue.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
         }
 
         private void radioSparkleOrange_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSparkleOrange.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleOrange;
         }
 
         private void radioSparklePurple_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSparklePurple.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparklePurple;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparklePurple;
         }
 
         private void radioSystem_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSystem.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
         }
 
         private void appMenu_Click(object sender, EventArgs e)

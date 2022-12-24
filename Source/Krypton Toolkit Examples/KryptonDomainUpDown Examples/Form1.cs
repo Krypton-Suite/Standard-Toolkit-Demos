@@ -30,13 +30,13 @@ namespace KryptonDomainUpDownExamples
             // Setup the property grid to edit this domain upo-down control
             propertyGrid.SelectedObject = new KryptonDomainUpDownProxy(sender as KryptonDomainUpDown);
 
-        private void buttonOffice2010Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+        private void buttonOffice2010Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
 
-        private void buttonOffice2007Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+        private void buttonOffice2007Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Blue;
 
-        private void buttonSystem_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+        private void buttonSystem_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
 
-        private void buttonSparkleBlue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+        private void buttonSparkleBlue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.SparkleBlue;
 
         private void buttonSpecAny1_Click(object sender, EventArgs e) => dud5.Text = string.Empty;
 

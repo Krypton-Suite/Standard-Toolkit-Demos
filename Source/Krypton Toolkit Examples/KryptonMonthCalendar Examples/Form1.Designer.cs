@@ -251,7 +251,7 @@
             // kryptonManager1
             // 
             this.kryptonManager1.GlobalPalette = this.kryptonPalette;
-            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Custom;
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             // 
             // Form1
             // 

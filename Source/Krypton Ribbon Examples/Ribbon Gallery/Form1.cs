@@ -69,7 +69,7 @@ namespace RibbonGallery
         {
             if (kryptonRibbonGroupButton1.Checked)
             {
-                kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+                kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
                 kryptonRibbonGroupButton2.Checked = false;
                 kryptonRibbonGroupButton3.Checked = false;
             }
@@ -79,7 +79,7 @@ namespace RibbonGallery
         {
             if (kryptonRibbonGroupButton2.Checked)
             {
-                kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
+                kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Silver;
                 kryptonRibbonGroupButton1.Checked = false;
                 kryptonRibbonGroupButton3.Checked = false;
             }
@@ -89,7 +89,7 @@ namespace RibbonGallery
         {
             if (kryptonRibbonGroupButton3.Checked)
             {
-                kryptonManager1.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
+                kryptonManager1.GlobalPaletteMode = PaletteMode.SparkleOrange;
                 kryptonRibbonGroupButton1.Checked = false;
                 kryptonRibbonGroupButton2.Checked = false;
             }

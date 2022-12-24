@@ -787,7 +787,7 @@ namespace KryptonBorderEdgeExamples
             // 
             this.kryptonPaletteOffice2007Blue.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
             this.kryptonManager.GlobalPalette = this.kryptonPaletteOffice2007Blue;
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Custom;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             // 
             // kryptonPaletteOffice2010Blue
             // 

@@ -30,13 +30,13 @@ namespace KryptonNumericUpDownExamples
             // Setup the property grid to edit this numeric up-down control
             propertyGrid.SelectedObject = new KryptonNumericUpDownProxy(sender as KryptonNumericUpDown);
 
-        private void buttonOffice2010Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+        private void buttonOffice2010Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
 
-        private void buttonOffice2007Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+        private void buttonOffice2007Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Blue;
 
-        private void buttonSystem_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+        private void buttonSystem_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
 
-        private void buttonSparkleBlue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+        private void buttonSparkleBlue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.SparkleBlue;
 
         private void buttonSpecAny1_Click(object sender, EventArgs e) => nud5.Value = nud5.Minimum;
 

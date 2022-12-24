@@ -144,7 +144,7 @@ namespace KryptonPaletteExamples
 
                 kryptonManager.GlobalPalette = kryptonPaletteCustom;
 
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Custom;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Custom;
             }
             catch //(Exception exc)
             {

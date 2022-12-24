@@ -555,7 +555,7 @@ namespace KryptonDataGridViewExamples
             // kryptonManager
             // 
             this.kryptonManager.GlobalPalette = this.kryptonPalette;
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Custom;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             // 
             // colDateTime
             // 

@@ -947,7 +947,7 @@ namespace ThreePaneApplication
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2007Blue;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
             // 
             // kryptonPaletteCustom
             // 

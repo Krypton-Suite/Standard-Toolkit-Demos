@@ -102,19 +102,19 @@ namespace KryptonCheckedListBoxExamples
         {
             if (kryptonCheckSet.CheckedButton == check2007Blue)
             {
-                kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+                kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Blue;
             }
             else if (kryptonCheckSet.CheckedButton == check2010Blue)
             {
-                kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+                kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
             }
             else if (kryptonCheckSet.CheckedButton == checkSparkle)
             {
-                kryptonManager1.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+                kryptonManager1.GlobalPaletteMode = PaletteMode.SparkleBlue;
             }
             else if (kryptonCheckSet.CheckedButton == checkSystem)
             {
-                kryptonManager1.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+                kryptonManager1.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
             }
         }
 

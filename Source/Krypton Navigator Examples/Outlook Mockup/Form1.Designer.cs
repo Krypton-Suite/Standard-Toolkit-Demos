@@ -1267,7 +1267,7 @@ namespace OutlookMockup
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.ProfessionalSystem;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             // 
             // dataSet
             // 
