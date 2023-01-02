@@ -6,7 +6,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace Test_Combo_Domain_Numeric
+namespace TestComboDomainNumeric
 {
     internal static class Program
     {

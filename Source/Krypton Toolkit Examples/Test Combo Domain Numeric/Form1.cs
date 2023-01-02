@@ -5,7 +5,7 @@
 
 using Krypton.Toolkit;
 
-namespace Test_Combo_Domain_Numeric
+namespace TestComboDomainNumeric
 {
     public partial class Form1 : KryptonForm
     {
