@@ -1,7 +1,10 @@
 # <img src="https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png?raw=true"> Standard Toolkit Demos - ChangeLog
 
-## 2022-12-xx - Build 2212 - December 2022
+## 2023-01-23 - Build 2301 - January 2023
 * Update missing binary icons
+* Fixes fallout from latest `IPalette` changes
+
+## 2022-12-22 - Build 2212 - December 2022
 * Updates `KryptonMessageBoxExample` to showcase [#866](https://github.com/Krypton-Suite/Standard-Toolkit/issues/866)
 * The help file can now be launched via the `KryptonExplorer` (if installed)
 * Resolves [#112](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/112), Alpha Branch does not build against "Alpha" of the Toolkit
