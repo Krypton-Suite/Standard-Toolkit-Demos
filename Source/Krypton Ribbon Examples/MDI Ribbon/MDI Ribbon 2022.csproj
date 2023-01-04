@@ -16,8 +16,8 @@
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
-                <PackageReference Include="Krypton.Toolkit.Canary" Version="65.22.3.89-beta" />
-                <PackageReference Include="Krypton.Ribbon.Canary" Version="65.22.3.89-beta" />
+                <PackageReference Include="Krypton.Toolkit.Canary" Version="80.22.12.356-beta" />
+                <PackageReference Include="Krypton.Ribbon.Canary" Version="80.22.12.356-beta" />
             </ItemGroup>
         </When>
         <Otherwise>
