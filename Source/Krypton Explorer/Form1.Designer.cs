@@ -192,7 +192,6 @@
             this.tslVersion = new System.Windows.Forms.ToolStripStatusLabel();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
             this.bgwDownloadDocumentation = new System.ComponentModel.BackgroundWorker();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelFill)).BeginInit();
             this.kryptonPanelFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator)).BeginInit();
@@ -317,8 +316,8 @@
             // 
             // kryptonNavigatorToolkit
             // 
-            this.kryptonNavigatorToolkit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.kryptonNavigatorToolkit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonNavigatorToolkit.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
             this.kryptonNavigatorToolkit.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
@@ -347,7 +346,6 @@
             // kryptonPage1
             // 
             this.kryptonPage1.AutoHiddenSlideSize = new System.Drawing.Size(150, 150);
-            this.kryptonPage1.Controls.Add(this.linkLabel1);
             this.kryptonPage1.Controls.Add(this.kllKryptonScrollBars);
             this.kryptonPage1.Controls.Add(this.kllKryptonHelpIcon);
             this.kryptonPage1.Controls.Add(this.kllKryptonWebBrowser);
@@ -2119,7 +2117,7 @@
             // 
             // kryptonManager1
             // 
-            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.SparkleBlueDarkMode;
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Blue;
             // 
             // bgwDownloadDocumentation
             // 
@@ -2128,16 +2126,6 @@
             this.bgwDownloadDocumentation.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgwDownloadDocumentation_DoWork);
             this.bgwDownloadDocumentation.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.bgwDownloadDocumentation_ProgressChanged);
             this.bgwDownloadDocumentation.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgwDownloadDocumentation_RunWorkerCompleted);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(167, 270);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(53, 13);
-            this.linkLabel1.TabIndex = 43;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "linkLabel1";
             // 
             // Form1
             // 
@@ -2377,7 +2365,6 @@
         private System.Windows.Forms.ToolStripProgressBar tspbDownloadStatus;
         private System.ComponentModel.BackgroundWorker bgwDownloadDocumentation;
         private Krypton.Toolkit.KryptonButton kbtnLaunchHelp;
-        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

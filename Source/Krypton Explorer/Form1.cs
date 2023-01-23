@@ -28,7 +28,7 @@ namespace KryptonExplorer
     {
         #region Variables
 
-        private Version _currentVersion = new Version(80, int.Parse(DateTime.Now.ToString("yy")), 12, 339);
+        private Version _currentVersion = new Version(80, int.Parse(DateTime.Now.ToString("yy")), 1, 23);
 
         private Settings _settings = new();
 
@@ -387,12 +387,12 @@ namespace KryptonExplorer
                 FileVersionInfo.GetVersionInfo(
                     $@"{Path.GetDirectoryName(Application.ExecutablePath)}\Krypton.Toolkit.dll");
 
-            kryptonManager1.GlobalPaletteMode = _settings.Theme;
+            kryptonManager1.GlobalPaletteMode = PaletteMode.Microsoft365Blue; // _settings.Theme;
 
 
             kcmbTheme.SelectedIndex = _settings.ThemeSelectedIndex;
 
-            kcmbTheme.Text = ThemeManager.ReturnPaletteModeManagerAsString(_settings.Theme);
+            kcmbTheme.Text = ThemeManager.ReturnPaletteModeAsString(kryptonManager1.GlobalPaletteMode);
 
             //tsslBuildDate.Text = $"Build Date: {GeneralToolkitUtilities.GetLinkerTimestampUtc(Assembly.GetExecutingAssembly())} ";
 
@@ -495,7 +495,7 @@ namespace KryptonExplorer
         {
             _settings.ThemeSelectedIndex = kcmbTheme.SelectedIndex;
 
-            _settings.Theme = ThemeManager.GetPaletteModeManager(kcmbTheme.Manager);
+            _settings.Theme = ThemeManager.GetPaletteMode(kryptonManager1);
 
             _settings.Save();
         }
@@ -504,7 +504,7 @@ namespace KryptonExplorer
         {
             kcmbTheme.SelectedIndex = 25;
 
-            _settings.Theme = PaletteModeManager.Microsoft365Blue;
+            _settings.Theme = PaletteMode.Microsoft365Blue;
 
             _settings.HelpFileLocation = @"";
 

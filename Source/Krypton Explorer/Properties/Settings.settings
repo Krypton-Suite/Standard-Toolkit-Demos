@@ -9,7 +9,7 @@
       <Value Profile="(Default)">Microsoft 365 - Blue</Value>
     </Setting>
     <Setting Name="BuildDate" Type="System.DateTime" Scope="User">
-      <Value Profile="(Default)">2022-11-21</Value>
+      <Value Profile="(Default)">2023-01-23</Value>
     </Setting>
     <Setting Name="HelpFileLocation" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
