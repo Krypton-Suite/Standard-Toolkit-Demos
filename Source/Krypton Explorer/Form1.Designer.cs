@@ -35,6 +35,7 @@
             this.kryptonPageToolkit = new Krypton.Navigator.KryptonPage();
             this.kryptonNavigatorToolkit = new Krypton.Navigator.KryptonNavigator();
             this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
+            this.kllPropertyGrid = new Krypton.Toolkit.KryptonLinkLabel();
             this.kllKryptonScrollBars = new Krypton.Toolkit.KryptonLinkLabel();
             this.kllKryptonHelpIcon = new Krypton.Toolkit.KryptonLinkLabel();
             this.kllKryptonWebBrowser = new Krypton.Toolkit.KryptonLinkLabel();
@@ -185,6 +186,7 @@
             this.pictureBoxRight = new System.Windows.Forms.PictureBox();
             this.kryptonPanelTopBorder = new Krypton.Toolkit.KryptonBorderEdge();
             this.kryptonPanelBottom = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonBorderEdge1 = new Krypton.Toolkit.KryptonBorderEdge();
             this.ss = new System.Windows.Forms.StatusStrip();
             this.tsslBuildDate = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslDownloadStatus = new System.Windows.Forms.ToolStripStatusLabel();
@@ -192,7 +194,6 @@
             this.tslVersion = new System.Windows.Forms.ToolStripStatusLabel();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
             this.bgwDownloadDocumentation = new System.ComponentModel.BackgroundWorker();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelFill)).BeginInit();
             this.kryptonPanelFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator)).BeginInit();
@@ -239,8 +240,7 @@
             this.kryptonPanelFill.Location = new System.Drawing.Point(0, 91);
             this.kryptonPanelFill.Name = "kryptonPanelFill";
             this.kryptonPanelFill.Padding = new System.Windows.Forms.Padding(10);
-            this.kryptonPanelFill.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
-            this.kryptonPanelFill.Size = new System.Drawing.Size(703, 425);
+            this.kryptonPanelFill.Size = new System.Drawing.Size(710, 449);
             this.kryptonPanelFill.TabIndex = 1;
             // 
             // kryptonNavigator
@@ -286,8 +286,8 @@
             this.kryptonPageReleases,
             this.kpChangeLog});
             this.kryptonNavigator.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
-            this.kryptonNavigator.SelectedIndex = 0;
-            this.kryptonNavigator.Size = new System.Drawing.Size(683, 405);
+            this.kryptonNavigator.SelectedIndex = 7;
+            this.kryptonNavigator.Size = new System.Drawing.Size(690, 429);
             this.kryptonNavigator.StateCommon.Bar.BarPaddingInside = new System.Windows.Forms.Padding(-1);
             this.kryptonNavigator.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(-1);
             this.kryptonNavigator.StateCommon.Bar.BarPaddingOutside = new System.Windows.Forms.Padding(0, 0, 0, 10);
@@ -309,7 +309,7 @@
             this.kryptonPageToolkit.LastVisibleSet = true;
             this.kryptonPageToolkit.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageToolkit.Name = "kryptonPageToolkit";
-            this.kryptonPageToolkit.Size = new System.Drawing.Size(566, 403);
+            this.kryptonPageToolkit.Size = new System.Drawing.Size(575, 427);
             this.kryptonPageToolkit.Text = "Toolkit";
             this.kryptonPageToolkit.TextTitle = "";
             this.kryptonPageToolkit.ToolTipTitle = "Page ToolTip";
@@ -339,7 +339,7 @@
             this.kryptonPage1,
             this.kryptonPage2});
             this.kryptonNavigatorToolkit.SelectedIndex = 0;
-            this.kryptonNavigatorToolkit.Size = new System.Drawing.Size(530, 336);
+            this.kryptonNavigatorToolkit.Size = new System.Drawing.Size(539, 360);
             this.kryptonNavigatorToolkit.StateCommon.HeaderGroup.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
             this.kryptonNavigatorToolkit.TabIndex = 0;
             this.kryptonNavigatorToolkit.Text = "kryptonNavigator1";
@@ -347,7 +347,7 @@
             // kryptonPage1
             // 
             this.kryptonPage1.AutoHiddenSlideSize = new System.Drawing.Size(150, 150);
-            this.kryptonPage1.Controls.Add(this.linkLabel1);
+            this.kryptonPage1.Controls.Add(this.kllPropertyGrid);
             this.kryptonPage1.Controls.Add(this.kllKryptonScrollBars);
             this.kryptonPage1.Controls.Add(this.kllKryptonHelpIcon);
             this.kryptonPage1.Controls.Add(this.kllKryptonWebBrowser);
@@ -394,40 +394,59 @@
             this.kryptonPage1.LastVisibleSet = true;
             this.kryptonPage1.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage1.Name = "kryptonPage1";
-            this.kryptonPage1.Size = new System.Drawing.Size(530, 309);
+            this.kryptonPage1.Size = new System.Drawing.Size(539, 335);
             this.kryptonPage1.Text = "Component Examples";
             this.kryptonPage1.ToolTipTitle = "Page ToolTip";
             this.kryptonPage1.UniqueName = "11B6F5673ADC4D0611B6F5673ADC4D06";
             // 
+            // kllPropertyGrid
+            // 
+            this.kllPropertyGrid.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.kllPropertyGrid.Location = new System.Drawing.Point(4, 307);
+            this.kllPropertyGrid.Name = "kllPropertyGrid";
+            this.kllPropertyGrid.Size = new System.Drawing.Size(140, 20);
+            this.kllPropertyGrid.TabIndex = 43;
+            this.kllPropertyGrid.Values.Image = ((System.Drawing.Image)(resources.GetObject("kllPropertyGrid.Values.Image")));
+            this.kllPropertyGrid.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.kllPropertyGrid.Values.Text = "KryptonPropertyGrid";
+            this.kllPropertyGrid.LinkClicked += new System.EventHandler(this.kllPropertyGrid_LinkClicked);
+            // 
             // kllKryptonScrollBars
             // 
-            this.kllKryptonScrollBars.Location = new System.Drawing.Point(10, 285);
+            this.kllKryptonScrollBars.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.kllKryptonScrollBars.Location = new System.Drawing.Point(4, 285);
             this.kllKryptonScrollBars.Name = "kllKryptonScrollBars";
-            this.kllKryptonScrollBars.Size = new System.Drawing.Size(106, 20);
+            this.kllKryptonScrollBars.Size = new System.Drawing.Size(123, 20);
             this.kllKryptonScrollBars.TabIndex = 42;
+            this.kllKryptonScrollBars.Values.Image = ((System.Drawing.Image)(resources.GetObject("kllKryptonScrollBars.Values.Image")));
             this.kllKryptonScrollBars.Values.Text = "KryptonScrollBars";
             this.kllKryptonScrollBars.LinkClicked += new System.EventHandler(this.kllKryptonScrollBars_LinkClicked);
             // 
             // kllKryptonHelpIcon
             // 
+            this.kllKryptonHelpIcon.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kllKryptonHelpIcon.Location = new System.Drawing.Point(334, 285);
             this.kllKryptonHelpIcon.Name = "kllKryptonHelpIcon";
-            this.kllKryptonHelpIcon.Size = new System.Drawing.Size(102, 20);
+            this.kllKryptonHelpIcon.Size = new System.Drawing.Size(119, 20);
             this.kllKryptonHelpIcon.TabIndex = 41;
+            this.kllKryptonHelpIcon.Values.Image = ((System.Drawing.Image)(resources.GetObject("kllKryptonHelpIcon.Values.Image")));
             this.kllKryptonHelpIcon.Values.Text = "KryptonHelpIcon";
             this.kllKryptonHelpIcon.LinkClicked += new System.EventHandler(this.kllKryptonHelpIcon_LinkClicked);
             // 
             // kllKryptonWebBrowser
             // 
+            this.kllKryptonWebBrowser.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kllKryptonWebBrowser.Location = new System.Drawing.Point(159, 285);
             this.kllKryptonWebBrowser.Name = "kllKryptonWebBrowser";
-            this.kllKryptonWebBrowser.Size = new System.Drawing.Size(122, 20);
+            this.kllKryptonWebBrowser.Size = new System.Drawing.Size(139, 20);
             this.kllKryptonWebBrowser.TabIndex = 40;
+            this.kllKryptonWebBrowser.Values.Image = ((System.Drawing.Image)(resources.GetObject("kllKryptonWebBrowser.Values.Image")));
             this.kllKryptonWebBrowser.Values.Text = "KryptonWebBrowser";
             this.kllKryptonWebBrowser.LinkClicked += new System.EventHandler(this.kllKryptonWebBrowser_LinkClicked);
             // 
             // linkKryptonTreeView
             // 
+            this.linkKryptonTreeView.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonTreeView.Location = new System.Drawing.Point(159, 262);
             this.linkKryptonTreeView.Name = "linkKryptonTreeView";
             this.linkKryptonTreeView.Size = new System.Drawing.Size(124, 20);
@@ -440,6 +459,7 @@
             // 
             // linkKryptonInputBox
             // 
+            this.linkKryptonInputBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonInputBox.Location = new System.Drawing.Point(334, 199);
             this.linkKryptonInputBox.Name = "linkKryptonInputBox";
             this.linkKryptonInputBox.Size = new System.Drawing.Size(123, 20);
@@ -452,6 +472,7 @@
             // 
             // linkKryptonTaskDialog
             // 
+            this.linkKryptonTaskDialog.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonTaskDialog.Location = new System.Drawing.Point(334, 241);
             this.linkKryptonTaskDialog.Name = "linkKryptonTaskDialog";
             this.linkKryptonTaskDialog.Size = new System.Drawing.Size(134, 20);
@@ -464,6 +485,7 @@
             // 
             // linkKryptonMessageBox
             // 
+            this.linkKryptonMessageBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonMessageBox.Location = new System.Drawing.Point(334, 220);
             this.linkKryptonMessageBox.Name = "linkKryptonMessageBox";
             this.linkKryptonMessageBox.Size = new System.Drawing.Size(143, 20);
@@ -476,6 +498,7 @@
             // 
             // linkKryptobTrackBar
             // 
+            this.linkKryptobTrackBar.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptobTrackBar.Location = new System.Drawing.Point(4, 261);
             this.linkKryptobTrackBar.Name = "linkKryptobTrackBar";
             this.linkKryptobTrackBar.Size = new System.Drawing.Size(121, 20);
@@ -488,6 +511,7 @@
             // 
             // linkKryptonGroupBox
             // 
+            this.linkKryptonGroupBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonGroupBox.Location = new System.Drawing.Point(334, 93);
             this.linkKryptonGroupBox.Name = "linkKryptonGroupBox";
             this.linkKryptonGroupBox.Size = new System.Drawing.Size(129, 20);
@@ -500,6 +524,7 @@
             // 
             // linkKryptonWrapLabel
             // 
+            this.linkKryptonWrapLabel.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonWrapLabel.Location = new System.Drawing.Point(4, 198);
             this.linkKryptonWrapLabel.Name = "linkKryptonWrapLabel";
             this.linkKryptonWrapLabel.Size = new System.Drawing.Size(133, 20);
@@ -512,6 +537,7 @@
             // 
             // linkKryptonSeparator
             // 
+            this.linkKryptonSeparator.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonSeparator.Location = new System.Drawing.Point(334, 30);
             this.linkKryptonSeparator.Name = "linkKryptonSeparator";
             this.linkKryptonSeparator.Size = new System.Drawing.Size(128, 20);
@@ -524,6 +550,7 @@
             // 
             // kryptonLinkLabel2
             // 
+            this.kryptonLinkLabel2.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLinkLabel2.Location = new System.Drawing.Point(159, 219);
             this.kryptonLinkLabel2.Name = "kryptonLinkLabel2";
             this.kryptonLinkLabel2.Size = new System.Drawing.Size(159, 20);
@@ -536,6 +563,7 @@
             // 
             // kryptonLinkLabel1
             // 
+            this.kryptonLinkLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLinkLabel1.Location = new System.Drawing.Point(159, 198);
             this.kryptonLinkLabel1.Name = "kryptonLinkLabel1";
             this.kryptonLinkLabel1.Size = new System.Drawing.Size(159, 20);
@@ -548,6 +576,7 @@
             // 
             // linkKryptonDomainUpDown
             // 
+            this.linkKryptonDomainUpDown.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonDomainUpDown.Location = new System.Drawing.Point(159, 156);
             this.linkKryptonDomainUpDown.Name = "linkKryptonDomainUpDown";
             this.linkKryptonDomainUpDown.Size = new System.Drawing.Size(165, 20);
@@ -560,6 +589,7 @@
             // 
             // linkKryptonBreadCrumb
             // 
+            this.linkKryptonBreadCrumb.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonBreadCrumb.Location = new System.Drawing.Point(159, 177);
             this.linkKryptonBreadCrumb.Name = "linkKryptonBreadCrumb";
             this.linkKryptonBreadCrumb.Size = new System.Drawing.Size(143, 20);
@@ -572,6 +602,7 @@
             // 
             // linkKryptonNumericUpDown
             // 
+            this.linkKryptonNumericUpDown.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonNumericUpDown.Location = new System.Drawing.Point(159, 135);
             this.linkKryptonNumericUpDown.Name = "linkKryptonNumericUpDown";
             this.linkKryptonNumericUpDown.Size = new System.Drawing.Size(169, 20);
@@ -584,6 +615,7 @@
             // 
             // linkKryptonCommand
             // 
+            this.linkKryptonCommand.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonCommand.Location = new System.Drawing.Point(334, 177);
             this.linkKryptonCommand.Name = "linkKryptonCommand";
             this.linkKryptonCommand.Size = new System.Drawing.Size(131, 20);
@@ -596,6 +628,7 @@
             // 
             // linkKryptonCheckedListBox
             // 
+            this.linkKryptonCheckedListBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonCheckedListBox.Location = new System.Drawing.Point(159, 30);
             this.linkKryptonCheckedListBox.Name = "linkKryptonCheckedListBox";
             this.linkKryptonCheckedListBox.Size = new System.Drawing.Size(160, 20);
@@ -608,6 +641,7 @@
             // 
             // linkKryptonListBox
             // 
+            this.linkKryptonListBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonListBox.Location = new System.Drawing.Point(159, 9);
             this.linkKryptonListBox.Name = "linkKryptonListBox";
             this.linkKryptonListBox.Size = new System.Drawing.Size(113, 20);
@@ -620,6 +654,7 @@
             // 
             // linkKryptonColorButton
             // 
+            this.linkKryptonColorButton.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonColorButton.Location = new System.Drawing.Point(4, 72);
             this.linkKryptonColorButton.Name = "linkKryptonColorButton";
             this.linkKryptonColorButton.Size = new System.Drawing.Size(141, 20);
@@ -632,6 +667,7 @@
             // 
             // linkKryptonDropButton
             // 
+            this.linkKryptonDropButton.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonDropButton.Location = new System.Drawing.Point(4, 51);
             this.linkKryptonDropButton.Name = "linkKryptonDropButton";
             this.linkKryptonDropButton.Size = new System.Drawing.Size(139, 20);
@@ -644,6 +680,7 @@
             // 
             // linkKryptonMaskedTextBox
             // 
+            this.linkKryptonMaskedTextBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonMaskedTextBox.Location = new System.Drawing.Point(159, 72);
             this.linkKryptonMaskedTextBox.Name = "linkKryptonMaskedTextBox";
             this.linkKryptonMaskedTextBox.Size = new System.Drawing.Size(160, 20);
@@ -656,6 +693,7 @@
             // 
             // linkKryptonContextMenu
             // 
+            this.linkKryptonContextMenu.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonContextMenu.Location = new System.Drawing.Point(4, 240);
             this.linkKryptonContextMenu.Name = "linkKryptonContextMenu";
             this.linkKryptonContextMenu.Size = new System.Drawing.Size(149, 20);
@@ -668,6 +706,7 @@
             // 
             // linkKryptonRichTextBox
             // 
+            this.linkKryptonRichTextBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonRichTextBox.Location = new System.Drawing.Point(159, 93);
             this.linkKryptonRichTextBox.Name = "linkKryptonRichTextBox";
             this.linkKryptonRichTextBox.Size = new System.Drawing.Size(141, 20);
@@ -680,6 +719,7 @@
             // 
             // linkKryptonComboBox
             // 
+            this.linkKryptonComboBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonComboBox.Location = new System.Drawing.Point(159, 114);
             this.linkKryptonComboBox.Name = "linkKryptonComboBox";
             this.linkKryptonComboBox.Size = new System.Drawing.Size(135, 20);
@@ -692,6 +732,7 @@
             // 
             // linkKryptonTextBox
             // 
+            this.linkKryptonTextBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonTextBox.Location = new System.Drawing.Point(159, 51);
             this.linkKryptonTextBox.Name = "linkKryptonTextBox";
             this.linkKryptonTextBox.Size = new System.Drawing.Size(117, 20);
@@ -704,6 +745,7 @@
             // 
             // linkKryptonDataGridView
             // 
+            this.linkKryptonDataGridView.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonDataGridView.Location = new System.Drawing.Point(159, 240);
             this.linkKryptonDataGridView.Name = "linkKryptonDataGridView";
             this.linkKryptonDataGridView.Size = new System.Drawing.Size(149, 20);
@@ -716,6 +758,7 @@
             // 
             // linkKryptonRadioButton
             // 
+            this.linkKryptonRadioButton.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonRadioButton.Location = new System.Drawing.Point(4, 135);
             this.linkKryptonRadioButton.Name = "linkKryptonRadioButton";
             this.linkKryptonRadioButton.Size = new System.Drawing.Size(143, 20);
@@ -728,6 +771,7 @@
             // 
             // linkKryptonCheckBox
             // 
+            this.linkKryptonCheckBox.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonCheckBox.Location = new System.Drawing.Point(4, 114);
             this.linkKryptonCheckBox.Name = "linkKryptonCheckBox";
             this.linkKryptonCheckBox.Size = new System.Drawing.Size(128, 20);
@@ -740,6 +784,7 @@
             // 
             // linkKryptonBorderEdge
             // 
+            this.linkKryptonBorderEdge.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonBorderEdge.Location = new System.Drawing.Point(334, 9);
             this.linkKryptonBorderEdge.Name = "linkKryptonBorderEdge";
             this.linkKryptonBorderEdge.Size = new System.Drawing.Size(139, 20);
@@ -752,6 +797,7 @@
             // 
             // linkKryptonForm
             // 
+            this.linkKryptonForm.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonForm.Location = new System.Drawing.Point(334, 262);
             this.linkKryptonForm.Name = "linkKryptonForm";
             this.linkKryptonForm.Size = new System.Drawing.Size(103, 20);
@@ -764,6 +810,7 @@
             // 
             // linkKryptonCheckSet
             // 
+            this.linkKryptonCheckSet.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonCheckSet.Location = new System.Drawing.Point(4, 93);
             this.linkKryptonCheckSet.Name = "linkKryptonCheckSet";
             this.linkKryptonCheckSet.Size = new System.Drawing.Size(125, 20);
@@ -776,6 +823,7 @@
             // 
             // linkKryptonCheckButton
             // 
+            this.linkKryptonCheckButton.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonCheckButton.Location = new System.Drawing.Point(4, 30);
             this.linkKryptonCheckButton.Name = "linkKryptonCheckButton";
             this.linkKryptonCheckButton.Size = new System.Drawing.Size(144, 20);
@@ -788,6 +836,7 @@
             // 
             // linkKryptonLinkLabel
             // 
+            this.linkKryptonLinkLabel.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonLinkLabel.Location = new System.Drawing.Point(4, 177);
             this.linkKryptonLinkLabel.Name = "linkKryptonLinkLabel";
             this.linkKryptonLinkLabel.Size = new System.Drawing.Size(125, 20);
@@ -800,6 +849,7 @@
             // 
             // linkKryptonSplitContainer
             // 
+            this.linkKryptonSplitContainer.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonSplitContainer.Location = new System.Drawing.Point(4, 219);
             this.linkKryptonSplitContainer.Name = "linkKryptonSplitContainer";
             this.linkKryptonSplitContainer.Size = new System.Drawing.Size(152, 20);
@@ -812,6 +862,7 @@
             // 
             // linkKryptonPanel
             // 
+            this.linkKryptonPanel.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonPanel.Location = new System.Drawing.Point(334, 51);
             this.linkKryptonPanel.Name = "linkKryptonPanel";
             this.linkKryptonPanel.Size = new System.Drawing.Size(104, 20);
@@ -824,6 +875,7 @@
             // 
             // linkKryptonPalette
             // 
+            this.linkKryptonPalette.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonPalette.Location = new System.Drawing.Point(334, 156);
             this.linkKryptonPalette.Name = "linkKryptonPalette";
             this.linkKryptonPalette.Size = new System.Drawing.Size(112, 20);
@@ -836,6 +888,7 @@
             // 
             // linkKryptonButton
             // 
+            this.linkKryptonButton.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonButton.Location = new System.Drawing.Point(4, 9);
             this.linkKryptonButton.Name = "linkKryptonButton";
             this.linkKryptonButton.Size = new System.Drawing.Size(111, 20);
@@ -848,6 +901,7 @@
             // 
             // linkKryptonLabel
             // 
+            this.linkKryptonLabel.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonLabel.Location = new System.Drawing.Point(4, 156);
             this.linkKryptonLabel.Name = "linkKryptonLabel";
             this.linkKryptonLabel.Size = new System.Drawing.Size(103, 20);
@@ -860,6 +914,7 @@
             // 
             // linkKryptonGroup
             // 
+            this.linkKryptonGroup.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonGroup.Location = new System.Drawing.Point(334, 72);
             this.linkKryptonGroup.Name = "linkKryptonGroup";
             this.linkKryptonGroup.Size = new System.Drawing.Size(109, 20);
@@ -872,6 +927,7 @@
             // 
             // linkKryptonHeaderGroup
             // 
+            this.linkKryptonHeaderGroup.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonHeaderGroup.Location = new System.Drawing.Point(334, 114);
             this.linkKryptonHeaderGroup.Name = "linkKryptonHeaderGroup";
             this.linkKryptonHeaderGroup.Size = new System.Drawing.Size(148, 20);
@@ -884,6 +940,7 @@
             // 
             // linkKryptonHeader
             // 
+            this.linkKryptonHeader.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonHeader.Location = new System.Drawing.Point(334, 135);
             this.linkKryptonHeader.Name = "linkKryptonHeader";
             this.linkKryptonHeader.Size = new System.Drawing.Size(114, 20);
@@ -919,6 +976,7 @@
             // 
             // linkInputForm
             // 
+            this.linkInputForm.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkInputForm.Location = new System.Drawing.Point(13, 9);
             this.linkInputForm.Name = "linkInputForm";
             this.linkInputForm.Size = new System.Drawing.Size(71, 20);
@@ -928,6 +986,7 @@
             // 
             // linkMDIApplication
             // 
+            this.linkMDIApplication.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkMDIApplication.Location = new System.Drawing.Point(13, 135);
             this.linkMDIApplication.Name = "linkMDIApplication";
             this.linkMDIApplication.Size = new System.Drawing.Size(99, 20);
@@ -937,6 +996,7 @@
             // 
             // linkThreePaneApplicationBasic
             // 
+            this.linkThreePaneApplicationBasic.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkThreePaneApplicationBasic.Location = new System.Drawing.Point(13, 30);
             this.linkThreePaneApplicationBasic.Name = "linkThreePaneApplicationBasic";
             this.linkThreePaneApplicationBasic.Size = new System.Drawing.Size(175, 20);
@@ -946,6 +1006,7 @@
             // 
             // linkThreePaneApplicationExtended
             // 
+            this.linkThreePaneApplicationExtended.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkThreePaneApplicationExtended.Location = new System.Drawing.Point(13, 51);
             this.linkThreePaneApplicationExtended.Name = "linkThreePaneApplicationExtended";
             this.linkThreePaneApplicationExtended.Size = new System.Drawing.Size(198, 20);
@@ -955,6 +1016,7 @@
             // 
             // linkCustomControlUsingRenderers
             // 
+            this.linkCustomControlUsingRenderers.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkCustomControlUsingRenderers.Location = new System.Drawing.Point(13, 219);
             this.linkCustomControlUsingRenderers.Name = "linkCustomControlUsingRenderers";
             this.linkCustomControlUsingRenderers.Size = new System.Drawing.Size(188, 20);
@@ -964,6 +1026,7 @@
             // 
             // linkExpandingHeaderGroupsSplitters
             // 
+            this.linkExpandingHeaderGroupsSplitters.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkExpandingHeaderGroupsSplitters.Location = new System.Drawing.Point(13, 72);
             this.linkExpandingHeaderGroupsSplitters.Name = "linkExpandingHeaderGroupsSplitters";
             this.linkExpandingHeaderGroupsSplitters.Size = new System.Drawing.Size(205, 20);
@@ -973,6 +1036,7 @@
             // 
             // linkCustomControlUsingPalettes
             // 
+            this.linkCustomControlUsingPalettes.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkCustomControlUsingPalettes.Location = new System.Drawing.Point(13, 198);
             this.linkCustomControlUsingPalettes.Name = "linkCustomControlUsingPalettes";
             this.linkCustomControlUsingPalettes.Size = new System.Drawing.Size(175, 20);
@@ -982,6 +1046,7 @@
             // 
             // linkLabelButtonSpecPlayground
             // 
+            this.linkLabelButtonSpecPlayground.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkLabelButtonSpecPlayground.Location = new System.Drawing.Point(13, 177);
             this.linkLabelButtonSpecPlayground.Name = "linkLabelButtonSpecPlayground";
             this.linkLabelButtonSpecPlayground.Size = new System.Drawing.Size(139, 20);
@@ -991,6 +1056,7 @@
             // 
             // linkExpandingHeaderGroupsDockStyle
             // 
+            this.linkExpandingHeaderGroupsDockStyle.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkExpandingHeaderGroupsDockStyle.Location = new System.Drawing.Point(13, 93);
             this.linkExpandingHeaderGroupsDockStyle.Name = "linkExpandingHeaderGroupsDockStyle";
             this.linkExpandingHeaderGroupsDockStyle.Size = new System.Drawing.Size(215, 20);
@@ -1000,6 +1066,7 @@
             // 
             // linkChildControlStack
             // 
+            this.linkChildControlStack.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkChildControlStack.Location = new System.Drawing.Point(13, 156);
             this.linkChildControlStack.Name = "linkChildControlStack";
             this.linkChildControlStack.Size = new System.Drawing.Size(115, 20);
@@ -1009,6 +1076,7 @@
             // 
             // linkExpandingHeaderStack
             // 
+            this.linkExpandingHeaderStack.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkExpandingHeaderStack.Location = new System.Drawing.Point(13, 114);
             this.linkExpandingHeaderStack.Name = "linkExpandingHeaderStack";
             this.linkExpandingHeaderStack.Size = new System.Drawing.Size(190, 20);
@@ -1018,11 +1086,14 @@
             // 
             // labeToolkitPage
             // 
+            this.labeToolkitPage.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labeToolkitPage.Location = new System.Drawing.Point(12, 12);
             this.labeToolkitPage.Name = "labeToolkitPage";
             this.labeToolkitPage.Size = new System.Drawing.Size(295, 28);
             this.labeToolkitPage.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeToolkitPage.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labeToolkitPage.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labeToolkitPage.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labeToolkitPage.TabIndex = 1;
             this.labeToolkitPage.Values.Text = "Krypton Toolkit Examples";
             // 
@@ -1052,6 +1123,7 @@
             // 
             // linkExternalDragToDocking
             // 
+            this.linkExternalDragToDocking.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkExternalDragToDocking.Location = new System.Drawing.Point(20, 159);
             this.linkExternalDragToDocking.Name = "linkExternalDragToDocking";
             this.linkExternalDragToDocking.Size = new System.Drawing.Size(149, 20);
@@ -1061,6 +1133,7 @@
             // 
             // linkNavigatorAndFloatingWindows
             // 
+            this.linkNavigatorAndFloatingWindows.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorAndFloatingWindows.Location = new System.Drawing.Point(225, 96);
             this.linkNavigatorAndFloatingWindows.Name = "linkNavigatorAndFloatingWindows";
             this.linkNavigatorAndFloatingWindows.Size = new System.Drawing.Size(174, 20);
@@ -1070,6 +1143,7 @@
             // 
             // linkDockingCustomized
             // 
+            this.linkDockingCustomized.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkDockingCustomized.Location = new System.Drawing.Point(20, 75);
             this.linkDockingCustomized.Name = "linkDockingCustomized";
             this.linkDockingCustomized.Size = new System.Drawing.Size(123, 20);
@@ -1079,6 +1153,7 @@
             // 
             // linkDockingFlags
             // 
+            this.linkDockingFlags.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkDockingFlags.Location = new System.Drawing.Point(20, 117);
             this.linkDockingFlags.Name = "linkDockingFlags";
             this.linkDockingFlags.Size = new System.Drawing.Size(87, 20);
@@ -1088,6 +1163,7 @@
             // 
             // linkDockingPersistence
             // 
+            this.linkDockingPersistence.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkDockingPersistence.Location = new System.Drawing.Point(20, 96);
             this.linkDockingPersistence.Name = "linkDockingPersistence";
             this.linkDockingPersistence.Size = new System.Drawing.Size(120, 20);
@@ -1097,6 +1173,7 @@
             // 
             // linkMultiControlDocking
             // 
+            this.linkMultiControlDocking.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkMultiControlDocking.Location = new System.Drawing.Point(20, 138);
             this.linkMultiControlDocking.Name = "linkMultiControlDocking";
             this.linkMultiControlDocking.Size = new System.Drawing.Size(131, 20);
@@ -1106,6 +1183,7 @@
             // 
             // linkStandardDocking
             // 
+            this.linkStandardDocking.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkStandardDocking.Location = new System.Drawing.Point(225, 75);
             this.linkStandardDocking.Name = "linkStandardDocking";
             this.linkStandardDocking.Size = new System.Drawing.Size(108, 20);
@@ -1115,31 +1193,40 @@
             // 
             // kryptonLabel2
             // 
+            this.kryptonLabel2.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel2.Location = new System.Drawing.Point(220, 48);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(133, 20);
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel2.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel2.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel2.TabIndex = 6;
             this.kryptonLabel2.Values.Text = "Usage Examples";
             // 
             // kryptonLabel3
             // 
+            this.kryptonLabel3.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel3.Location = new System.Drawing.Point(15, 48);
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.Size = new System.Drawing.Size(145, 20);
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel3.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel3.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel3.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel3.TabIndex = 7;
             this.kryptonLabel3.Values.Text = "Feature Examples";
             // 
             // kryptonLabel1
             // 
+            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel1.Location = new System.Drawing.Point(12, 12);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(308, 28);
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel1.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel1.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel1.TabIndex = 8;
             this.kryptonLabel1.Values.Text = "Krypton Docking Examples";
             // 
@@ -1162,6 +1249,7 @@
             // 
             // klblPrintDialog
             // 
+            this.klblPrintDialog.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.klblPrintDialog.Location = new System.Drawing.Point(18, 96);
             this.klblPrintDialog.Name = "klblPrintDialog";
             this.klblPrintDialog.Size = new System.Drawing.Size(75, 20);
@@ -1171,6 +1259,7 @@
             // 
             // kllColourDialog
             // 
+            this.kllColourDialog.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kllColourDialog.Location = new System.Drawing.Point(20, 52);
             this.kllColourDialog.Name = "kllColourDialog";
             this.kllColourDialog.Size = new System.Drawing.Size(86, 20);
@@ -1180,6 +1269,7 @@
             // 
             // kllFontDialog
             // 
+            this.kllFontDialog.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kllFontDialog.Location = new System.Drawing.Point(20, 73);
             this.kllFontDialog.Name = "kllFontDialog";
             this.kllFontDialog.Size = new System.Drawing.Size(74, 20);
@@ -1189,11 +1279,14 @@
             // 
             // kryptonLabel7
             // 
+            this.kryptonLabel7.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel7.Location = new System.Drawing.Point(12, 12);
             this.kryptonLabel7.Name = "kryptonLabel7";
             this.kryptonLabel7.Size = new System.Drawing.Size(289, 28);
             this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel7.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel7.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel7.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel7.TabIndex = 9;
             this.kryptonLabel7.Values.Text = "Krypton Dialog Examples";
             // 
@@ -1223,6 +1316,7 @@
             // 
             // linkCellMaximizeAndRestore
             // 
+            this.linkCellMaximizeAndRestore.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkCellMaximizeAndRestore.Location = new System.Drawing.Point(20, 138);
             this.linkCellMaximizeAndRestore.Name = "linkCellMaximizeAndRestore";
             this.linkCellMaximizeAndRestore.Size = new System.Drawing.Size(142, 20);
@@ -1232,6 +1326,7 @@
             // 
             // linkWorkspacePersistence
             // 
+            this.linkWorkspacePersistence.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkWorkspacePersistence.Location = new System.Drawing.Point(20, 117);
             this.linkWorkspacePersistence.Name = "linkWorkspacePersistence";
             this.linkWorkspacePersistence.Size = new System.Drawing.Size(135, 20);
@@ -1241,6 +1336,7 @@
             // 
             // linkWorkspaceMemoEditor
             // 
+            this.linkWorkspaceMemoEditor.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkWorkspaceMemoEditor.Location = new System.Drawing.Point(225, 96);
             this.linkWorkspaceMemoEditor.Name = "linkWorkspaceMemoEditor";
             this.linkWorkspaceMemoEditor.Size = new System.Drawing.Size(82, 20);
@@ -1250,6 +1346,7 @@
             // 
             // kryptonWorkspaceRibbonNavigator
             // 
+            this.kryptonWorkspaceRibbonNavigator.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonWorkspaceRibbonNavigator.Location = new System.Drawing.Point(225, 75);
             this.kryptonWorkspaceRibbonNavigator.Name = "kryptonWorkspaceRibbonNavigator";
             this.kryptonWorkspaceRibbonNavigator.Size = new System.Drawing.Size(194, 20);
@@ -1259,6 +1356,7 @@
             // 
             // linkAdvancedPageDragAndDrop
             // 
+            this.linkAdvancedPageDragAndDrop.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkAdvancedPageDragAndDrop.Location = new System.Drawing.Point(20, 180);
             this.linkAdvancedPageDragAndDrop.Name = "linkAdvancedPageDragAndDrop";
             this.linkAdvancedPageDragAndDrop.Size = new System.Drawing.Size(167, 20);
@@ -1268,6 +1366,7 @@
             // 
             // linkBasicPageDragAndDrop
             // 
+            this.linkBasicPageDragAndDrop.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkBasicPageDragAndDrop.Location = new System.Drawing.Point(20, 159);
             this.linkBasicPageDragAndDrop.Name = "linkBasicPageDragAndDrop";
             this.linkBasicPageDragAndDrop.Size = new System.Drawing.Size(141, 20);
@@ -1277,6 +1376,7 @@
             // 
             // linkWorkspaceCellLayout
             // 
+            this.linkWorkspaceCellLayout.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkWorkspaceCellLayout.Location = new System.Drawing.Point(20, 96);
             this.linkWorkspaceCellLayout.Name = "linkWorkspaceCellLayout";
             this.linkWorkspaceCellLayout.Size = new System.Drawing.Size(134, 20);
@@ -1286,6 +1386,7 @@
             // 
             // linkWorkspaceCellModes
             // 
+            this.linkWorkspaceCellModes.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkWorkspaceCellModes.Location = new System.Drawing.Point(20, 75);
             this.linkWorkspaceCellModes.Name = "linkWorkspaceCellModes";
             this.linkWorkspaceCellModes.Size = new System.Drawing.Size(135, 20);
@@ -1295,31 +1396,40 @@
             // 
             // labelWorkspaceUsageExamples
             // 
+            this.labelWorkspaceUsageExamples.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelWorkspaceUsageExamples.Location = new System.Drawing.Point(220, 48);
             this.labelWorkspaceUsageExamples.Name = "labelWorkspaceUsageExamples";
             this.labelWorkspaceUsageExamples.Size = new System.Drawing.Size(133, 20);
             this.labelWorkspaceUsageExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWorkspaceUsageExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelWorkspaceUsageExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelWorkspaceUsageExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelWorkspaceUsageExamples.TabIndex = 8;
             this.labelWorkspaceUsageExamples.Values.Text = "Usage Examples";
             // 
             // labelWorkspaceFeatureExamples
             // 
+            this.labelWorkspaceFeatureExamples.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelWorkspaceFeatureExamples.Location = new System.Drawing.Point(15, 48);
             this.labelWorkspaceFeatureExamples.Name = "labelWorkspaceFeatureExamples";
             this.labelWorkspaceFeatureExamples.Size = new System.Drawing.Size(145, 20);
             this.labelWorkspaceFeatureExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWorkspaceFeatureExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelWorkspaceFeatureExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelWorkspaceFeatureExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelWorkspaceFeatureExamples.TabIndex = 9;
             this.labelWorkspaceFeatureExamples.Values.Text = "Feature Examples";
             // 
             // labelWorkspacePage
             // 
+            this.labelWorkspacePage.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelWorkspacePage.Location = new System.Drawing.Point(12, 12);
             this.labelWorkspacePage.Name = "labelWorkspacePage";
             this.labelWorkspacePage.Size = new System.Drawing.Size(340, 28);
             this.labelWorkspacePage.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWorkspacePage.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelWorkspacePage.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelWorkspacePage.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelWorkspacePage.TabIndex = 10;
             this.labelWorkspacePage.Values.Text = "Krypton Workspace Examples";
             // 
@@ -1360,6 +1470,7 @@
             // 
             // LinkNavigatorAndFloatingWindows2
             // 
+            this.LinkNavigatorAndFloatingWindows2.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.LinkNavigatorAndFloatingWindows2.Location = new System.Drawing.Point(225, 180);
             this.LinkNavigatorAndFloatingWindows2.Name = "LinkNavigatorAndFloatingWindows2";
             this.LinkNavigatorAndFloatingWindows2.Size = new System.Drawing.Size(174, 20);
@@ -1369,6 +1480,7 @@
             // 
             // linkNavigatorPerTabButtons
             // 
+            this.linkNavigatorPerTabButtons.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorPerTabButtons.Location = new System.Drawing.Point(20, 201);
             this.linkNavigatorPerTabButtons.Name = "linkNavigatorPerTabButtons";
             this.linkNavigatorPerTabButtons.Size = new System.Drawing.Size(98, 20);
@@ -1378,6 +1490,7 @@
             // 
             // linkAdvancedNavigatorDragDrop
             // 
+            this.linkAdvancedNavigatorDragDrop.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkAdvancedNavigatorDragDrop.Location = new System.Drawing.Point(20, 305);
             this.linkAdvancedNavigatorDragDrop.Name = "linkAdvancedNavigatorDragDrop";
             this.linkAdvancedNavigatorDragDrop.Size = new System.Drawing.Size(167, 20);
@@ -1387,6 +1500,7 @@
             // 
             // linkBasicNavigatorDragDrop
             // 
+            this.linkBasicNavigatorDragDrop.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkBasicNavigatorDragDrop.Location = new System.Drawing.Point(20, 284);
             this.linkBasicNavigatorDragDrop.Name = "linkBasicNavigatorDragDrop";
             this.linkBasicNavigatorDragDrop.Size = new System.Drawing.Size(141, 20);
@@ -1396,6 +1510,7 @@
             // 
             // linkNavigatorContextMenus
             // 
+            this.linkNavigatorContextMenus.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorContextMenus.Location = new System.Drawing.Point(20, 242);
             this.linkNavigatorContextMenus.Name = "linkNavigatorContextMenus";
             this.linkNavigatorContextMenus.Size = new System.Drawing.Size(150, 20);
@@ -1405,6 +1520,7 @@
             // 
             // linkNavigatorTooltips
             // 
+            this.linkNavigatorTooltips.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorTooltips.Location = new System.Drawing.Point(20, 221);
             this.linkNavigatorTooltips.Name = "linkNavigatorTooltips";
             this.linkNavigatorTooltips.Size = new System.Drawing.Size(114, 20);
@@ -1414,6 +1530,7 @@
             // 
             // linkExpandingPages
             // 
+            this.linkExpandingPages.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkExpandingPages.Location = new System.Drawing.Point(225, 159);
             this.linkExpandingPages.Name = "linkExpandingPages";
             this.linkExpandingPages.Size = new System.Drawing.Size(103, 20);
@@ -1423,6 +1540,7 @@
             // 
             // linkNavigatorPopupPages
             // 
+            this.linkNavigatorPopupPages.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorPopupPages.Location = new System.Drawing.Point(20, 180);
             this.linkNavigatorPopupPages.Name = "linkNavigatorPopupPages";
             this.linkNavigatorPopupPages.Size = new System.Drawing.Size(82, 20);
@@ -1432,6 +1550,7 @@
             // 
             // linkNavigatorAndRibbon
             // 
+            this.linkNavigatorAndRibbon.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorAndRibbon.Location = new System.Drawing.Point(225, 138);
             this.linkNavigatorAndRibbon.Name = "linkNavigatorAndRibbon";
             this.linkNavigatorAndRibbon.Size = new System.Drawing.Size(194, 20);
@@ -1441,6 +1560,7 @@
             // 
             // linkSinglelineAndMultiline
             // 
+            this.linkSinglelineAndMultiline.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkSinglelineAndMultiline.Location = new System.Drawing.Point(20, 138);
             this.linkSinglelineAndMultiline.Name = "linkSinglelineAndMultiline";
             this.linkSinglelineAndMultiline.Size = new System.Drawing.Size(126, 20);
@@ -1450,6 +1570,7 @@
             // 
             // linkTabBorderStyles
             // 
+            this.linkTabBorderStyles.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkTabBorderStyles.Location = new System.Drawing.Point(20, 159);
             this.linkTabBorderStyles.Name = "linkTabBorderStyles";
             this.linkTabBorderStyles.Size = new System.Drawing.Size(105, 20);
@@ -1459,6 +1580,7 @@
             // 
             // linkNavigatorOutlookMockup
             // 
+            this.linkNavigatorOutlookMockup.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorOutlookMockup.Location = new System.Drawing.Point(225, 117);
             this.linkNavigatorOutlookMockup.Name = "linkNavigatorOutlookMockup";
             this.linkNavigatorOutlookMockup.Size = new System.Drawing.Size(102, 20);
@@ -1468,6 +1590,7 @@
             // 
             // linkNavigatorOneNoteTabs
             // 
+            this.linkNavigatorOneNoteTabs.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorOneNoteTabs.Location = new System.Drawing.Point(225, 96);
             this.linkNavigatorOneNoteTabs.Name = "linkNavigatorOneNoteTabs";
             this.linkNavigatorOneNoteTabs.Size = new System.Drawing.Size(89, 20);
@@ -1477,6 +1600,7 @@
             // 
             // linkNavigatorPalettes
             // 
+            this.linkNavigatorPalettes.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorPalettes.Location = new System.Drawing.Point(20, 96);
             this.linkNavigatorPalettes.Name = "linkNavigatorPalettes";
             this.linkNavigatorPalettes.Size = new System.Drawing.Size(110, 20);
@@ -1486,6 +1610,7 @@
             // 
             // linkOrientationAndAlignment
             // 
+            this.linkOrientationAndAlignment.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkOrientationAndAlignment.Location = new System.Drawing.Point(20, 117);
             this.linkOrientationAndAlignment.Name = "linkOrientationAndAlignment";
             this.linkOrientationAndAlignment.Size = new System.Drawing.Size(144, 20);
@@ -1495,16 +1620,20 @@
             // 
             // labelNavigatorUsageExamples
             // 
+            this.labelNavigatorUsageExamples.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelNavigatorUsageExamples.Location = new System.Drawing.Point(220, 48);
             this.labelNavigatorUsageExamples.Name = "labelNavigatorUsageExamples";
             this.labelNavigatorUsageExamples.Size = new System.Drawing.Size(133, 20);
             this.labelNavigatorUsageExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNavigatorUsageExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelNavigatorUsageExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelNavigatorUsageExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelNavigatorUsageExamples.TabIndex = 15;
             this.labelNavigatorUsageExamples.Values.Text = "Usage Examples";
             // 
             // linkNavigatorUserPageCreation
             // 
+            this.linkNavigatorUserPageCreation.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorUserPageCreation.Location = new System.Drawing.Point(225, 75);
             this.linkNavigatorUserPageCreation.Name = "linkNavigatorUserPageCreation";
             this.linkNavigatorUserPageCreation.Size = new System.Drawing.Size(115, 20);
@@ -1514,6 +1643,7 @@
             // 
             // linkNavigatorBasicEvents
             // 
+            this.linkNavigatorBasicEvents.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorBasicEvents.Location = new System.Drawing.Point(20, 326);
             this.linkNavigatorBasicEvents.Name = "linkNavigatorBasicEvents";
             this.linkNavigatorBasicEvents.Size = new System.Drawing.Size(76, 20);
@@ -1523,6 +1653,7 @@
             // 
             // linkNavigatorPlayground
             // 
+            this.linkNavigatorPlayground.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorPlayground.Location = new System.Drawing.Point(20, 263);
             this.linkNavigatorPlayground.Name = "linkNavigatorPlayground";
             this.linkNavigatorPlayground.Size = new System.Drawing.Size(130, 20);
@@ -1532,6 +1663,7 @@
             // 
             // linkNavigatorModes
             // 
+            this.linkNavigatorModes.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkNavigatorModes.Location = new System.Drawing.Point(20, 75);
             this.linkNavigatorModes.Name = "linkNavigatorModes";
             this.linkNavigatorModes.Size = new System.Drawing.Size(105, 20);
@@ -1541,21 +1673,27 @@
             // 
             // labelNavigatorFeatureExamples
             // 
+            this.labelNavigatorFeatureExamples.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelNavigatorFeatureExamples.Location = new System.Drawing.Point(15, 48);
             this.labelNavigatorFeatureExamples.Name = "labelNavigatorFeatureExamples";
             this.labelNavigatorFeatureExamples.Size = new System.Drawing.Size(145, 20);
             this.labelNavigatorFeatureExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNavigatorFeatureExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelNavigatorFeatureExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelNavigatorFeatureExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelNavigatorFeatureExamples.TabIndex = 20;
             this.labelNavigatorFeatureExamples.Values.Text = "Feature Examples";
             // 
             // labelNavigatorPage
             // 
+            this.labelNavigatorPage.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelNavigatorPage.Location = new System.Drawing.Point(12, 12);
             this.labelNavigatorPage.Name = "labelNavigatorPage";
             this.labelNavigatorPage.Size = new System.Drawing.Size(327, 28);
             this.labelNavigatorPage.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNavigatorPage.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelNavigatorPage.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelNavigatorPage.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelNavigatorPage.TabIndex = 21;
             this.labelNavigatorPage.Values.Text = "Krypton Navigator Examples";
             // 
@@ -1590,6 +1728,7 @@
             // 
             // linkRibbonMemoEditor
             // 
+            this.linkRibbonMemoEditor.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkRibbonMemoEditor.Location = new System.Drawing.Point(225, 138);
             this.linkRibbonMemoEditor.Name = "linkRibbonMemoEditor";
             this.linkRibbonMemoEditor.Size = new System.Drawing.Size(82, 20);
@@ -1599,6 +1738,7 @@
             // 
             // linkKryptonGallery
             // 
+            this.linkKryptonGallery.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKryptonGallery.Location = new System.Drawing.Point(20, 243);
             this.linkKryptonGallery.Name = "linkKryptonGallery";
             this.linkKryptonGallery.Size = new System.Drawing.Size(149, 20);
@@ -1608,6 +1748,7 @@
             // 
             // linkRibbonGallery
             // 
+            this.linkRibbonGallery.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkRibbonGallery.Location = new System.Drawing.Point(20, 159);
             this.linkRibbonGallery.Name = "linkRibbonGallery";
             this.linkRibbonGallery.Size = new System.Drawing.Size(91, 20);
@@ -1617,6 +1758,7 @@
             // 
             // linkApplicationMenu
             // 
+            this.linkApplicationMenu.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkApplicationMenu.Location = new System.Drawing.Point(20, 222);
             this.linkApplicationMenu.Name = "linkApplicationMenu";
             this.linkApplicationMenu.Size = new System.Drawing.Size(107, 20);
@@ -1626,6 +1768,7 @@
             // 
             // linkRibbonControls
             // 
+            this.linkRibbonControls.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkRibbonControls.Location = new System.Drawing.Point(20, 201);
             this.linkRibbonControls.Name = "linkRibbonControls";
             this.linkRibbonControls.Size = new System.Drawing.Size(99, 20);
@@ -1635,6 +1778,7 @@
             // 
             // linkRibbonToolTips
             // 
+            this.linkRibbonToolTips.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkRibbonToolTips.Location = new System.Drawing.Point(20, 180);
             this.linkRibbonToolTips.Name = "linkRibbonToolTips";
             this.linkRibbonToolTips.Size = new System.Drawing.Size(99, 20);
@@ -1644,6 +1788,7 @@
             // 
             // linkMDIRibbon
             // 
+            this.linkMDIRibbon.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkMDIRibbon.Location = new System.Drawing.Point(225, 117);
             this.linkMDIRibbon.Name = "linkMDIRibbon";
             this.linkMDIRibbon.Size = new System.Drawing.Size(76, 20);
@@ -1653,6 +1798,7 @@
             // 
             // linkQuickAccessToolbar
             // 
+            this.linkQuickAccessToolbar.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkQuickAccessToolbar.Location = new System.Drawing.Point(20, 138);
             this.linkQuickAccessToolbar.Name = "linkQuickAccessToolbar";
             this.linkQuickAccessToolbar.Size = new System.Drawing.Size(127, 20);
@@ -1662,6 +1808,7 @@
             // 
             // linkAutoShrinkingGroups
             // 
+            this.linkAutoShrinkingGroups.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkAutoShrinkingGroups.Location = new System.Drawing.Point(20, 117);
             this.linkAutoShrinkingGroups.Name = "linkAutoShrinkingGroups";
             this.linkAutoShrinkingGroups.Size = new System.Drawing.Size(134, 20);
@@ -1671,6 +1818,7 @@
             // 
             // linkRibbonAndNavigator
             // 
+            this.linkRibbonAndNavigator.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkRibbonAndNavigator.Location = new System.Drawing.Point(225, 96);
             this.linkRibbonAndNavigator.Name = "linkRibbonAndNavigator";
             this.linkRibbonAndNavigator.Size = new System.Drawing.Size(194, 20);
@@ -1680,6 +1828,7 @@
             // 
             // linkOutlookMailClone
             // 
+            this.linkOutlookMailClone.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkOutlookMailClone.Location = new System.Drawing.Point(225, 75);
             this.linkOutlookMailClone.Name = "linkOutlookMailClone";
             this.linkOutlookMailClone.Size = new System.Drawing.Size(116, 20);
@@ -1689,6 +1838,7 @@
             // 
             // linkKeyTipsTabs
             // 
+            this.linkKeyTipsTabs.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkKeyTipsTabs.Location = new System.Drawing.Point(20, 96);
             this.linkKeyTipsTabs.Name = "linkKeyTipsTabs";
             this.linkKeyTipsTabs.Size = new System.Drawing.Size(159, 20);
@@ -1698,6 +1848,7 @@
             // 
             // linkContextualTabs
             // 
+            this.linkContextualTabs.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkContextualTabs.Location = new System.Drawing.Point(20, 75);
             this.linkContextualTabs.Name = "linkContextualTabs";
             this.linkContextualTabs.Size = new System.Drawing.Size(98, 20);
@@ -1707,31 +1858,40 @@
             // 
             // labelRibbonUsageExamples
             // 
+            this.labelRibbonUsageExamples.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelRibbonUsageExamples.Location = new System.Drawing.Point(220, 48);
             this.labelRibbonUsageExamples.Name = "labelRibbonUsageExamples";
             this.labelRibbonUsageExamples.Size = new System.Drawing.Size(133, 20);
             this.labelRibbonUsageExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRibbonUsageExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelRibbonUsageExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelRibbonUsageExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelRibbonUsageExamples.TabIndex = 13;
             this.labelRibbonUsageExamples.Values.Text = "Usage Examples";
             // 
             // labelRibbonFeatureExamples
             // 
+            this.labelRibbonFeatureExamples.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelRibbonFeatureExamples.Location = new System.Drawing.Point(15, 48);
             this.labelRibbonFeatureExamples.Name = "labelRibbonFeatureExamples";
             this.labelRibbonFeatureExamples.Size = new System.Drawing.Size(145, 20);
             this.labelRibbonFeatureExamples.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRibbonFeatureExamples.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelRibbonFeatureExamples.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelRibbonFeatureExamples.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelRibbonFeatureExamples.TabIndex = 14;
             this.labelRibbonFeatureExamples.Values.Text = "Feature Examples";
             // 
             // labelRibbonPage
             // 
+            this.labelRibbonPage.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelRibbonPage.Location = new System.Drawing.Point(12, 12);
             this.labelRibbonPage.Name = "labelRibbonPage";
             this.labelRibbonPage.Size = new System.Drawing.Size(296, 28);
             this.labelRibbonPage.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRibbonPage.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelRibbonPage.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelRibbonPage.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelRibbonPage.TabIndex = 15;
             this.labelRibbonPage.Values.Text = "Krypton Ribbon Examples";
             // 
@@ -1755,6 +1915,7 @@
             // 
             // linkPaletteUpgradeTool
             // 
+            this.linkPaletteUpgradeTool.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkPaletteUpgradeTool.Location = new System.Drawing.Point(20, 96);
             this.linkPaletteUpgradeTool.Name = "linkPaletteUpgradeTool";
             this.linkPaletteUpgradeTool.Size = new System.Drawing.Size(126, 20);
@@ -1764,26 +1925,33 @@
             // 
             // labelApplicationsPage
             // 
+            this.labelApplicationsPage.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelApplicationsPage.Location = new System.Drawing.Point(12, 12);
             this.labelApplicationsPage.Name = "labelApplicationsPage";
             this.labelApplicationsPage.Size = new System.Drawing.Size(242, 28);
             this.labelApplicationsPage.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelApplicationsPage.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelApplicationsPage.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelApplicationsPage.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelApplicationsPage.TabIndex = 2;
             this.labelApplicationsPage.Values.Text = "Krypton Applications";
             // 
             // labelApplications
             // 
+            this.labelApplications.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.labelApplications.Location = new System.Drawing.Point(15, 48);
             this.labelApplications.Name = "labelApplications";
             this.labelApplications.Size = new System.Drawing.Size(103, 20);
             this.labelApplications.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelApplications.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelApplications.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelApplications.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelApplications.TabIndex = 3;
             this.labelApplications.Values.Text = "Applications";
             // 
             // linkPaletteDesigner
             // 
+            this.linkPaletteDesigner.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.linkPaletteDesigner.Location = new System.Drawing.Point(20, 75);
             this.linkPaletteDesigner.Name = "linkPaletteDesigner";
             this.linkPaletteDesigner.Size = new System.Drawing.Size(100, 20);
@@ -1803,7 +1971,7 @@
             this.kryptonPageSettings.LastVisibleSet = true;
             this.kryptonPageSettings.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageSettings.Name = "kryptonPageSettings";
-            this.kryptonPageSettings.Size = new System.Drawing.Size(568, 403);
+            this.kryptonPageSettings.Size = new System.Drawing.Size(575, 427);
             this.kryptonPageSettings.Text = "Settings";
             this.kryptonPageSettings.TextTitle = "";
             this.kryptonPageSettings.ToolTipTitle = "Page ToolTip";
@@ -1811,7 +1979,6 @@
             // 
             // kcmbTheme
             // 
-            this.kcmbTheme.CornerRoundingRadius = -1F;
             this.kcmbTheme.CueHint.Padding = new System.Windows.Forms.Padding(0);
             this.kcmbTheme.DropDownWidth = 363;
             this.kcmbTheme.IntegralHeight = false;
@@ -1826,12 +1993,15 @@
             // kbtnOpenApplicationPath
             // 
             this.kbtnOpenApplicationPath.AutoSize = true;
-            this.kbtnOpenApplicationPath.CornerRoundingRadius = -1F;
             this.kbtnOpenApplicationPath.Location = new System.Drawing.Point(31, 141);
             this.kbtnOpenApplicationPath.Name = "kbtnOpenApplicationPath";
             this.kbtnOpenApplicationPath.Size = new System.Drawing.Size(241, 33);
             this.kbtnOpenApplicationPath.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnOpenApplicationPath.StateCommon.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnOpenApplicationPath.StateCommon.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnOpenApplicationPath.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnOpenApplicationPath.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnOpenApplicationPath.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnOpenApplicationPath.TabIndex = 6;
             this.kbtnOpenApplicationPath.Values.Text = "Op&en Application Path";
             this.kbtnOpenApplicationPath.Click += new System.EventHandler(this.kbtnOpenApplicationPath_Click);
@@ -1839,33 +2009,42 @@
             // kbtnRestoreTheme
             // 
             this.kbtnRestoreTheme.AutoSize = true;
-            this.kbtnRestoreTheme.CornerRoundingRadius = -1F;
             this.kbtnRestoreTheme.Location = new System.Drawing.Point(31, 87);
             this.kbtnRestoreTheme.Name = "kbtnRestoreTheme";
             this.kbtnRestoreTheme.Size = new System.Drawing.Size(202, 33);
             this.kbtnRestoreTheme.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnRestoreTheme.StateCommon.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnRestoreTheme.StateCommon.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnRestoreTheme.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnRestoreTheme.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnRestoreTheme.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnRestoreTheme.TabIndex = 5;
             this.kbtnRestoreTheme.Values.Text = "&Restore to Default";
             this.kbtnRestoreTheme.Click += new System.EventHandler(this.kbtnRestoreTheme_Click);
             // 
             // kryptonLabel5
             // 
+            this.kryptonLabel5.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel5.Location = new System.Drawing.Point(31, 51);
             this.kryptonLabel5.Name = "kryptonLabel5";
             this.kryptonLabel5.Size = new System.Drawing.Size(81, 24);
             this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel5.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel5.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel5.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel5.TabIndex = 3;
             this.kryptonLabel5.Values.Text = "Theme:";
             // 
             // kryptonLabel4
             // 
+            this.kryptonLabel4.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel4.Location = new System.Drawing.Point(12, 12);
             this.kryptonLabel4.Name = "kryptonLabel4";
             this.kryptonLabel4.Size = new System.Drawing.Size(297, 28);
             this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel4.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel4.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel4.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel4.TabIndex = 2;
             this.kryptonLabel4.Values.Text = "Krypton Explorer Settings";
             // 
@@ -1890,55 +2069,70 @@
             // kbtnLaunchHelp
             // 
             this.kbtnLaunchHelp.AutoSize = true;
-            this.kbtnLaunchHelp.CornerRoundingRadius = -1F;
             this.kbtnLaunchHelp.Location = new System.Drawing.Point(31, 159);
             this.kbtnLaunchHelp.Name = "kbtnLaunchHelp";
             this.kbtnLaunchHelp.Size = new System.Drawing.Size(279, 33);
             this.kbtnLaunchHelp.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnLaunchHelp.StateCommon.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnLaunchHelp.StateCommon.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnLaunchHelp.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnLaunchHelp.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnLaunchHelp.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnLaunchHelp.TabIndex = 8;
             this.kbtnLaunchHelp.ToolTipValues.Description = "Get the latest toolkit binaries for your application";
             this.kbtnLaunchHelp.ToolTipValues.Image = global::KryptonExplorer.Properties.Resources.Square_Design_32_x_32_Green;
+            this.kbtnLaunchHelp.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kbtnLaunchHelp.Values.Text = "Launch &Help";
             this.kbtnLaunchHelp.Click += new System.EventHandler(this.kbtnLaunchHelp_Click);
             // 
             // kbtnDownloadLatestDocumentation
             // 
             this.kbtnDownloadLatestDocumentation.AutoSize = true;
-            this.kbtnDownloadLatestDocumentation.CornerRoundingRadius = -1F;
             this.kbtnDownloadLatestDocumentation.Location = new System.Drawing.Point(31, 106);
             this.kbtnDownloadLatestDocumentation.Name = "kbtnDownloadLatestDocumentation";
             this.kbtnDownloadLatestDocumentation.Size = new System.Drawing.Size(281, 33);
             this.kbtnDownloadLatestDocumentation.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnDownloadLatestDocumentation.StateCommon.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnDownloadLatestDocumentation.StateCommon.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnDownloadLatestDocumentation.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnDownloadLatestDocumentation.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnDownloadLatestDocumentation.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnDownloadLatestDocumentation.TabIndex = 7;
             this.kbtnDownloadLatestDocumentation.ToolTipValues.Description = "Get the latest toolkit binaries for your application";
             this.kbtnDownloadLatestDocumentation.ToolTipValues.Image = global::KryptonExplorer.Properties.Resources.Square_Design_32_x_32_Green;
+            this.kbtnDownloadLatestDocumentation.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kbtnDownloadLatestDocumentation.Values.Text = "Download Latest Documentation";
             this.kbtnDownloadLatestDocumentation.Click += new System.EventHandler(this.kbtnDownloadLatestDocumentation_Click);
             // 
             // kbtnKryptonToolkitPackage
             // 
             this.kbtnKryptonToolkitPackage.AutoSize = true;
-            this.kbtnKryptonToolkitPackage.CornerRoundingRadius = -1F;
             this.kbtnKryptonToolkitPackage.Location = new System.Drawing.Point(31, 52);
             this.kbtnKryptonToolkitPackage.Name = "kbtnKryptonToolkitPackage";
             this.kbtnKryptonToolkitPackage.Size = new System.Drawing.Size(264, 33);
             this.kbtnKryptonToolkitPackage.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnKryptonToolkitPackage.StateCommon.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnKryptonToolkitPackage.StateCommon.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnKryptonToolkitPackage.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnKryptonToolkitPackage.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnKryptonToolkitPackage.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnKryptonToolkitPackage.TabIndex = 6;
             this.kbtnKryptonToolkitPackage.ToolTipValues.Description = "Get the latest toolkit binaries for your application";
             this.kbtnKryptonToolkitPackage.ToolTipValues.Image = global::KryptonExplorer.Properties.Resources.Square_Design_32_x_32_Green;
+            this.kbtnKryptonToolkitPackage.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kbtnKryptonToolkitPackage.Values.Text = "Krypton Toolkit Packages";
             this.kbtnKryptonToolkitPackage.Click += new System.EventHandler(this.kbtnKryptonToolkitPackage_Click);
             // 
             // kryptonLabel6
             // 
+            this.kryptonLabel6.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel6.Location = new System.Drawing.Point(18, 12);
             this.kryptonLabel6.Name = "kryptonLabel6";
             this.kryptonLabel6.Size = new System.Drawing.Size(285, 28);
             this.kryptonLabel6.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel6.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel6.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel6.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel6.TabIndex = 3;
             this.kryptonLabel6.Values.Text = "Krypton NuGet Packages";
             // 
@@ -1962,12 +2156,15 @@
             // kbtnViewLatestNightlyReleaseNotes
             // 
             this.kbtnViewLatestNightlyReleaseNotes.AutoSize = true;
-            this.kbtnViewLatestNightlyReleaseNotes.CornerRoundingRadius = -1F;
             this.kbtnViewLatestNightlyReleaseNotes.Location = new System.Drawing.Point(31, 198);
             this.kbtnViewLatestNightlyReleaseNotes.Name = "kbtnViewLatestNightlyReleaseNotes";
             this.kbtnViewLatestNightlyReleaseNotes.Size = new System.Drawing.Size(350, 33);
             this.kbtnViewLatestNightlyReleaseNotes.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnViewLatestNightlyReleaseNotes.StateCommon.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnViewLatestNightlyReleaseNotes.StateCommon.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnViewLatestNightlyReleaseNotes.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnViewLatestNightlyReleaseNotes.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnViewLatestNightlyReleaseNotes.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnViewLatestNightlyReleaseNotes.TabIndex = 15;
             this.kbtnViewLatestNightlyReleaseNotes.Values.Text = "View Latest Ni&ghtly Release Notes";
             this.kbtnViewLatestNightlyReleaseNotes.Click += new System.EventHandler(this.kbtnViewLatestNightlyReleaseNotes_Click);
@@ -1975,12 +2172,15 @@
             // kbtnViewLatestCanaryReleaseNotes
             // 
             this.kbtnViewLatestCanaryReleaseNotes.AutoSize = true;
-            this.kbtnViewLatestCanaryReleaseNotes.CornerRoundingRadius = -1F;
             this.kbtnViewLatestCanaryReleaseNotes.Location = new System.Drawing.Point(31, 123);
             this.kbtnViewLatestCanaryReleaseNotes.Name = "kbtnViewLatestCanaryReleaseNotes";
             this.kbtnViewLatestCanaryReleaseNotes.Size = new System.Drawing.Size(350, 33);
             this.kbtnViewLatestCanaryReleaseNotes.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnViewLatestCanaryReleaseNotes.StateCommon.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnViewLatestCanaryReleaseNotes.StateCommon.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnViewLatestCanaryReleaseNotes.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnViewLatestCanaryReleaseNotes.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnViewLatestCanaryReleaseNotes.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnViewLatestCanaryReleaseNotes.TabIndex = 14;
             this.kbtnViewLatestCanaryReleaseNotes.Values.Text = "View Latest &Canary Release Notes";
             this.kbtnViewLatestCanaryReleaseNotes.Click += new System.EventHandler(this.kbtnViewLatestCanaryReleaseNotes_Click);
@@ -1988,23 +2188,29 @@
             // kbtnViewLatestReleaseNotes
             // 
             this.kbtnViewLatestReleaseNotes.AutoSize = true;
-            this.kbtnViewLatestReleaseNotes.CornerRoundingRadius = -1F;
             this.kbtnViewLatestReleaseNotes.Location = new System.Drawing.Point(31, 48);
             this.kbtnViewLatestReleaseNotes.Name = "kbtnViewLatestReleaseNotes";
             this.kbtnViewLatestReleaseNotes.Size = new System.Drawing.Size(352, 33);
             this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kbtnViewLatestReleaseNotes.TabIndex = 13;
             this.kbtnViewLatestReleaseNotes.Values.Text = "View Latest &Stable/Signed Release Notes";
             this.kbtnViewLatestReleaseNotes.Click += new System.EventHandler(this.kbtnViewLatestReleaseNotes_Click);
             // 
             // kryptonLabel8
             // 
+            this.kryptonLabel8.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel8.Location = new System.Drawing.Point(18, 12);
             this.kryptonLabel8.Name = "kryptonLabel8";
             this.kryptonLabel8.Size = new System.Drawing.Size(263, 28);
             this.kryptonLabel8.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel8.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel8.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel8.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel8.TabIndex = 4;
             this.kryptonLabel8.Values.Text = "Krypton Release Notes";
             // 
@@ -2012,9 +2218,8 @@
             // 
             this.kryptonButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonButtonClose.AutoSize = true;
-            this.kryptonButtonClose.CornerRoundingRadius = -1F;
             this.kryptonButtonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.kryptonButtonClose.Location = new System.Drawing.Point(619, 6);
+            this.kryptonButtonClose.Location = new System.Drawing.Point(626, 12);
             this.kryptonButtonClose.Name = "kryptonButtonClose";
             this.kryptonButtonClose.Size = new System.Drawing.Size(74, 28);
             this.kryptonButtonClose.TabIndex = 0;
@@ -2029,7 +2234,7 @@
             this.kryptonPanelTop.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanelTop.Name = "kryptonPanelTop";
             this.kryptonPanelTop.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.kryptonPanelTop.Size = new System.Drawing.Size(703, 90);
+            this.kryptonPanelTop.Size = new System.Drawing.Size(710, 90);
             this.kryptonPanelTop.TabIndex = 0;
             // 
             // labelKryptonExplorer
@@ -2040,6 +2245,8 @@
             this.labelKryptonExplorer.Size = new System.Drawing.Size(200, 28);
             this.labelKryptonExplorer.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelKryptonExplorer.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.labelKryptonExplorer.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.labelKryptonExplorer.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.labelKryptonExplorer.TabIndex = 0;
             this.labelKryptonExplorer.Values.Text = "Krypton Explorer";
             // 
@@ -2049,7 +2256,7 @@
             this.pictureBoxRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBoxRight.Image = global::KryptonExplorer.Properties.Resources.Main_Icon_64_x_64;
-            this.pictureBoxRight.Location = new System.Drawing.Point(596, 0);
+            this.pictureBoxRight.Location = new System.Drawing.Point(603, 0);
             this.pictureBoxRight.Name = "pictureBoxRight";
             this.pictureBoxRight.Size = new System.Drawing.Size(107, 90);
             this.pictureBoxRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -2061,19 +2268,30 @@
             this.kryptonPanelTopBorder.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanelTopBorder.Location = new System.Drawing.Point(0, 90);
             this.kryptonPanelTopBorder.Name = "kryptonPanelTopBorder";
-            this.kryptonPanelTopBorder.Size = new System.Drawing.Size(703, 1);
+            this.kryptonPanelTopBorder.Size = new System.Drawing.Size(710, 1);
             // 
             // kryptonPanelBottom
             // 
+            this.kryptonPanelBottom.Controls.Add(this.kryptonBorderEdge1);
             this.kryptonPanelBottom.Controls.Add(this.ss);
             this.kryptonPanelBottom.Controls.Add(this.kryptonButtonClose);
             this.kryptonPanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonPanelBottom.Location = new System.Drawing.Point(0, 516);
+            this.kryptonPanelBottom.Location = new System.Drawing.Point(0, 540);
             this.kryptonPanelBottom.Name = "kryptonPanelBottom";
             this.kryptonPanelBottom.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
-            this.kryptonPanelBottom.Size = new System.Drawing.Size(703, 65);
+            this.kryptonPanelBottom.Size = new System.Drawing.Size(710, 71);
             this.kryptonPanelBottom.StateNormal.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.kryptonPanelBottom.StateNormal.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPanelBottom.TabIndex = 2;
+            // 
+            // kryptonBorderEdge1
+            // 
+            this.kryptonBorderEdge1.BorderStyle = Krypton.Toolkit.PaletteBorderStyle.HeaderPrimary;
+            this.kryptonBorderEdge1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.kryptonBorderEdge1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonBorderEdge1.Name = "kryptonBorderEdge1";
+            this.kryptonBorderEdge1.Size = new System.Drawing.Size(710, 1);
+            this.kryptonBorderEdge1.Text = "kryptonBorderEdge1";
             // 
             // ss
             // 
@@ -2084,10 +2302,10 @@
             this.tsslDownloadStatus,
             this.tspbDownloadStatus,
             this.tslVersion});
-            this.ss.Location = new System.Drawing.Point(0, 43);
+            this.ss.Location = new System.Drawing.Point(0, 49);
             this.ss.Name = "ss";
             this.ss.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.ss.Size = new System.Drawing.Size(703, 22);
+            this.ss.Size = new System.Drawing.Size(710, 22);
             this.ss.SizingGrip = false;
             this.ss.TabIndex = 1;
             this.ss.Text = "statusStrip1";
@@ -2112,14 +2330,10 @@
             // tslVersion
             // 
             this.tslVersion.Name = "tslVersion";
-            this.tslVersion.Size = new System.Drawing.Size(607, 17);
+            this.tslVersion.Size = new System.Drawing.Size(614, 17);
             this.tslVersion.Spring = true;
             this.tslVersion.Text = "Version: {0}";
             this.tslVersion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // kryptonManager1
-            // 
-            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.SparkleBlueDarkMode;
             // 
             // bgwDownloadDocumentation
             // 
@@ -2129,21 +2343,11 @@
             this.bgwDownloadDocumentation.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.bgwDownloadDocumentation_ProgressChanged);
             this.bgwDownloadDocumentation.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgwDownloadDocumentation_RunWorkerCompleted);
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(167, 270);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(53, 13);
-            this.linkLabel1.TabIndex = 43;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "linkLabel1";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(703, 581);
+            this.ClientSize = new System.Drawing.Size(710, 611);
             this.Controls.Add(this.kryptonPanelFill);
             this.Controls.Add(this.kryptonPanelTopBorder);
             this.Controls.Add(this.kryptonPanelTop);
@@ -2377,7 +2581,8 @@
         private System.Windows.Forms.ToolStripProgressBar tspbDownloadStatus;
         private System.ComponentModel.BackgroundWorker bgwDownloadDocumentation;
         private Krypton.Toolkit.KryptonButton kbtnLaunchHelp;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private Krypton.Toolkit.KryptonLinkLabel kllPropertyGrid;
+        private Krypton.Toolkit.KryptonBorderEdge kryptonBorderEdge1;
     }
 }
 

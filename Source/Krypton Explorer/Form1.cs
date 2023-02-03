@@ -392,7 +392,7 @@ namespace KryptonExplorer
 
             kcmbTheme.SelectedIndex = _settings.ThemeSelectedIndex;
 
-            kcmbTheme.Text = ThemeManager.ReturnPaletteModeManagerAsString(_settings.Theme);
+            kcmbTheme.Text = ThemeManager.ReturnPaletteModeAsString(_settings.Theme);
 
             //tsslBuildDate.Text = $"Build Date: {GeneralToolkitUtilities.GetLinkerTimestampUtc(Assembly.GetExecutingAssembly())} ";
 
@@ -495,16 +495,16 @@ namespace KryptonExplorer
         {
             _settings.ThemeSelectedIndex = kcmbTheme.SelectedIndex;
 
-            _settings.Theme = ThemeManager.GetPaletteModeManager(kcmbTheme.Manager);
+            _settings.Theme = ThemeManager.GetPaletteMode(kcmbTheme.Manager);
 
             _settings.Save();
         }
 
         private void kbtnRestoreTheme_Click(object sender, EventArgs e)
         {
-            kcmbTheme.SelectedIndex = 25;
+            kcmbTheme.SelectedIndex = 33;
 
-            _settings.Theme = PaletteModeManager.Microsoft365Blue;
+            _settings.Theme = PaletteMode.Microsoft365Blue;
 
             _settings.HelpFileLocation = @"";
 
@@ -641,5 +641,7 @@ namespace KryptonExplorer
                     KryptonMessageBoxIcon.Error);
             }
         }
+
+        private void kllPropertyGrid_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Property Grid Example");
     }
 }
