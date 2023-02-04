@@ -150,6 +150,7 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonFileDialog Example 2022", "KryptonFileDialog Example\KryptonFileDialog Example 2022.csproj", "{1EAD48F0-8B20-453A-9380-811A1DF3EE3B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonFolderBrowserDialog Example 2022", "KryptonFolderBrowserDialog Example\KryptonFolderBrowserDialog Example 2022.csproj", "{FFA8A22D-E087-44BD-8D58-C0FB8E552C97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonPropertyGridExample 2022", "KryptonPropertyGridExample\KryptonPropertyGridExample 2022.csproj", "{4798B87D-B9B9-4DF0-A68A-F8E67E8BF9E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -441,6 +442,10 @@ Global
 		{FFA8A22D-E087-44BD-8D58-C0FB8E552C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFA8A22D-E087-44BD-8D58-C0FB8E552C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFA8A22D-E087-44BD-8D58-C0FB8E552C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4798B87D-B9B9-4DF0-A68A-F8E67E8BF9E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4798B87D-B9B9-4DF0-A68A-F8E67E8BF9E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4798B87D-B9B9-4DF0-A68A-F8E67E8BF9E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4798B87D-B9B9-4DF0-A68A-F8E67E8BF9E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
