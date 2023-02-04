@@ -1,5 +1,10 @@
 # <img src="https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png?raw=true"> Standard Toolkit Demos - ChangeLog
 
+## 2023-02-20 - Build 2302 - February 2023
+* Add property grid example
+* Fix `KryptonExplorer` layout
+* Add missing icons to links in `KryptonExplorer`
+
 ## 2023-01-23 - Build 2301 - January 2023
 * Update missing binary icons
 * Fixes fallout from latest `IPalette` changes

@@ -118,6 +118,45 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="kllPropertyGrid.Values.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk3WAAAAAAAAAFYAAAAoAAAAEAAAABAAAAABAAQAAAAAAAAAAADEDgAAxA4AAAgAAAAIAAAA/wD///b2
+        9v9ZWVn/QkJC/4aGhv9kZGT/nJyc/01NTf8BEQAAAAAAABQ0EAAAAAAAEzNBAAAAAAAUMzQQAAAAAAFD
+        M0EAAAAAABQzNBERAAAAAUMzczIQAAAAFDMzMzEAAAABczMzMhAAAAEzM0QzEAAAATM0EUMQAAABIzUQ
+        FhAAAAATM1EBAAAAAAEjNBAAAAAAABERAAAAAAAAAAAAAA==
+</value>
+  </data>
+  <data name="kllKryptonScrollBars.Values.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wQAADsEBuJFr7QAAAG9JREFUOE/tk7ENwCAMBBktc1DCzgbRgFjkg5GQIsdFhClTXPO8r8F2AF601uoA
+        D6rWY9SQh0op8N6DiKZEdhZqyAMxxvHqEELYE0hkZ6GGZkHv/ZJoPUYNf8EBgfkbjwjMq5xznseUUtoS
+        fDxnuBt9uwr3IXUvDgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="kllKryptonHelpIcon.Values.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wQAADsEBuJFr7QAAATpJREFUOE+lkrtKxEAUhlP4BoqNpdquohbiDWxEYgQv2VnfwE5LsRVB2EpYwzaW
+        7mV2XHwAC5/A2sILC9HCJ9Bt/D0nmCVnJgHF4uNM/vnPzyFzPAD/whH2DJbLGm1l8FbuoK86eKXaCjWW
+        bC8zOGxXMUTmOplRiEbEvtwAu3m38QH//CGpWZ1DnAB1jZWsKYheMFxax9jqPlUfm/WeCFFdLMoAA501
+        jO+cYOboNjnPHt9hIjwd3DHkb9oB/MOEKWXqoItJdWbrsQggoW8ZEtaq9xiZ9rF1+S7vND5FQNEEo3Mh
+        NmqPjk44E7QsQ0Lp8MbRfriSAW3M0xRftjG4eBLfKc4rJCH0vlkTN3t0HUTPstmglvaIAN4wJySnuXAT
+        U3g8MjapISb4dWLa0kbFYMH2Mo7wV3LF3wPvGws42mCHPXrZAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="kllKryptonWebBrowser.Values.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wQAADsEBuJFr7QAAAWFJREFUOE+lU7tOw0AQzEcAEpTAnyBACBogZ8dCgpqvgOB8RGgREX6BBOY7gHxB
+        SpBIGkhBN8ycsHVHQmFRTG53bnd2z7tpAfgXZoggwxLRI4Ymw1QIcrzwjKN7LP6O9xwGGZNiYnJc8/wK
+        UpwIssVRdMyYAzfHS2alV5NgIywQM6ns5FgWyD/Svzi8waaNcUTsj9pWZQWYAVboj5i4WwnI5v1Id1GB
+        Ldrv+1dYcAV6VEUTsJPzWoDEsKrYTnBK/8GpbiFOd7LDFHv8Jk+1AN88PSqxagP5VqLvJv/wfVWVHd1h
+        jV1/1gJyROqSdpfVLt1kQVyY40w2z3XGfbgCzZ+Q4bkWoBMTcz/WX1CnbgfavrEd0ZwxBgl2qjF2brE9
+        M0YrUqCtJbG7wA+p5akE6JeqqALk39iBv0iuCIMnfOuAp11l2seyxalLN1nwBAT9YdSB5qzxCrLVQdW2
+        C89pDrS+AcCXrHo5kPKeAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="linkKryptonTreeView.Values.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wD//wD/
@@ -820,9 +859,6 @@
         /wD//wD//wD//wD//wD//wD//wD//wD//wD//wD//wD//wD//wD//wD/
 </value>
   </data>
-  <metadata name="ss.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>166, 17</value>
-  </metadata>
   <metadata name="ss.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>166, 17</value>
   </metadata>
