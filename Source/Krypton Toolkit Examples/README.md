@@ -28,6 +28,8 @@
 	* [KryptonDateTimePicker](#kryptondatetimepicker)
 	* [KryptonDomainUpDown](#kryptondomainupdown)
 	* [KryptonDropButton](#kryptondropbutton)
+	* [KryptonFileDialog](#kryptonfiledialog)
+	* [KryptonFolderBrowserDialog](#kryptonfolderbrowserdialog)
 	* [KryptonFontDialog](#kryptonfontdialog)
 	* [KryptonForm](#kryptonform)
 	* [KryptonGroup](#kryptongroup)
@@ -136,6 +138,10 @@ There are 2 set of solutions in these projects:
 ![KryptonDomainUpDown Examples](KryptonDomainUpDown%20Examples/example.png)
 ## KryptonDropButton
 ![KryptonDropButton Examples](KryptonDropButton%20Examples/example.png)
+## KryptonFileDialog
+![KryptonFileDialog Example](KryptonFileDialog%20Example/example.png)
+## KryptonFolderBrowserDialog
+![KryptonFolderBrowserDialog Example](KryptonFolderBrowserDialog%20Example/example.png)
 ## KryptonFontDialog
 ![KryptonFontDialog Example](KryptonFontDialog%20Example/example.png)
 ## KryptonForm

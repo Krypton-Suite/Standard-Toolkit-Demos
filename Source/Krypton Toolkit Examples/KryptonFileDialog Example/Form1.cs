@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
@@ -12,57 +13,45 @@ namespace KryptonFontDialog_Example_2019
             InitializeComponent();
         }
 
-        private void Palette2010Blue_CheckedChanged(object sender, EventArgs e)
-        {
-            KryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
-        }
-
-        private void Palette2010Silver_CheckedChanged(object sender, EventArgs e)
-        {
-            KryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
-        }
-
-        private void Palette2010Black_CheckedChanged(object sender, EventArgs e)
-        {
-            KryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
-        }
-
-        private void Palette2007Blue_CheckedChanged(object sender, EventArgs e)
-        {
-            KryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
-        }
-
-        private void PaletteSparkleOrange_CheckedChanged(object sender, EventArgs e)
-        {
-            KryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
-        }
-
-        private void PaletteProfessional_CheckedChanged(object sender, EventArgs e)
-        {
-            KryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
-        }
-
-        private void FolderBrowserDialog1_HelpRequest(object sender, EventArgs e)
-        {
-
-        }
-
         private void ButtonShowFontDialog_Click(object sender, EventArgs e)
         {
-            var kfd = new Krypton.Toolkit.KryptonFontDialog {
-                ShowColor = chkShowColour.Checked,
-                ShowHelp = chkShowHelp.Checked,
-                AllowScriptChange = chkAllowScriptChange.Checked,
-                AllowSimulations = chkAllowSimulations.Checked,
-                AllowVectorFonts = chkAllowVectorFonts.Checked,
-                ShowApply = chkShowApply.Checked,
-                ShowEffects = chkShowEffects.Checked
+         /*   using var kfd = new KryptonOpenFileDialog
+                {
+                    AddExtension = true,
+                    AutoUpgradeEnabled = true,
+                    CheckFileExists = true,
+                    CheckPathExists = true,
+                    DefaultExt = "exe",
+                    DereferenceLinks = true,
+                    //FileName = "",
+                    Filter = @"Image Files(*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF",
+                    //FilterIndex = 0,
+                    //InitialDirectory = "",
+                    //Container = {  },
+                    //CustomPlaces = {  },
+                    //Multiselect = true,
+                    // ReadOnlyChecked = true, // Get only
+                    //RestoreDirectory = true,
+                    ShowHelp = true,
+                    ShowPreview = true,
+                    ShowReadOnly = true,
+                    //Site = ISite,
+                    //SupportMultiDottedExtensions = true,
+                    //Tag = "",
+                    Title = @"Select a File to Open",
+                    //ValidateNames = true
+                    // Icon = this.Icon
+                    };
+            // And also take into account other options that are currently missing in early .net FW's
+            // https://github.com/dotnet/winforms/issues/5405
+            // And take into account open positioning, so that it is similar to Tooltip positioning:
+            // https://stackoverflow.com/questions/1256130/setting-the-start-position-for-openfiledialog-savefiledialog
 
-            };
+
             if (kfd.ShowDialog(this) == DialogResult.OK)
             {
-                KryptonMessageBox.Show(this, kfd.Font.ToString(), @"Font chosen is");
-            }
+                KryptonMessageBox.Show(this, kfd.FileName, @"File chosen is");
+            }*/
         }
     }
 }
