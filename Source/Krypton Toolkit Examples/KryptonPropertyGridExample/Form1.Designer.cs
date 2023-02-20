@@ -76,7 +76,6 @@
             // kryptonButton1
             // 
             this.kryptonButton1.CornerRoundingRadius = -1F;
-            this.kryptonButton1.CustomUACShieldSize = new System.Drawing.Size(16, 16);
             this.kryptonButton1.Location = new System.Drawing.Point(411, 13);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.Size = new System.Drawing.Size(90, 25);

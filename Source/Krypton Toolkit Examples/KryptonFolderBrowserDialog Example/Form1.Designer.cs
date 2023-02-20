@@ -71,7 +71,6 @@ namespace KryptonFontDialog_Example_2019
             // buttonShowFontDialog
             // 
             buttonShowFontDialog.CornerRoundingRadius = -1F;
-            buttonShowFontDialog.CustomUACShieldSize = new System.Drawing.Size(16, 16);
             buttonShowFontDialog.Location = new System.Drawing.Point(264, 323);
             buttonShowFontDialog.Name = "buttonShowFontDialog";
             buttonShowFontDialog.Size = new System.Drawing.Size(307, 59);
@@ -205,7 +204,6 @@ namespace KryptonFontDialog_Example_2019
             // kryptonButton1
             // 
             kryptonButton1.CornerRoundingRadius = -1F;
-            kryptonButton1.CustomUACShieldSize = new System.Drawing.Size(16, 16);
             kryptonButton1.Location = new System.Drawing.Point(156, 65);
             kryptonButton1.Name = "kryptonButton1";
             kryptonButton1.Size = new System.Drawing.Size(90, 25);
