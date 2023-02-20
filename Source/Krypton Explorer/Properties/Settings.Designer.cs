@@ -59,7 +59,7 @@ namespace KryptonExplorer.Properties
 
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2022-11-21")]
+        [global::System.Configuration.DefaultSettingValueAttribute("2023-02-20")]
         public global::System.DateTime BuildDate
         {
             get
