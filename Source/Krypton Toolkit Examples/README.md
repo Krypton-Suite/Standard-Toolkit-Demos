@@ -9,6 +9,7 @@
 	* [Expanding HeaderGroups (Splitters)](#expanding-headergroups-splitters)
 	* [Expanding HeaderGroups (Stack)](#expanding-headergroups-stack)
 	* [Input Form](#input-form)
+	* [Integrated Toolbars](#integrated-toolbars)
 	* [Krypton Scrollbars](#krypton-scrollbars)
 	* [Krypton Theme Selector](#krypton-theme-selector)
 	* [KryptonBorderEdge Examples](#kryptonborderedge-examples)
@@ -98,6 +99,10 @@ There are 2 set of solutions in these projects:
 ![Expanding HeaderGroups (Stack)](Expanding%20HeaderGroups%20(Stack)/example.png)
 ## Input Form
 ![Input Form](Input%20Form/example.png)
+
+## Integrated Toolbars
+![Integrated Toolbars](IntegratedToolbarExample/IntegratedToolbarExample.gif)
+
 ## Krypton Scrollbars
 ![Krypton Scrollbars](Krypton%20Scrollbars/KryptonScrollBars.gif)
 

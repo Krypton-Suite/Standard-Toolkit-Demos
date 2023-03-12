@@ -1,5 +1,9 @@
 # <img src="https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png?raw=true"> Standard Toolkit Demos - ChangeLog
 
+## 2023-03-20 - Build 2303 - March 2023
+* Add integrated toolbar example
+* Cleaned up help icon example
+
 ## 2023-02-20 - Build 2302 - February 2023
 * Add property grid example
 * Fix `KryptonExplorer` layout
