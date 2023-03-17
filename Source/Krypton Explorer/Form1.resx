@@ -118,6 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="kryptonLinkLabel3.Values.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAAHpJREFUOE+tkN0JwCAMhIVO0X0c2AH62j0U5yhpKglYcv0J+vChHpfjYiCiIaDo
+        IeScaQQTUGtdPbQArTMtgM/E7KWUjd9RzUiHK1wmGYpi1gCja4PlAgR83p9W8AUwh3D7AyF1Q0aHDTzM
+        CehBpjdMgJdWfQQo/ofCCbVnGCT3tA7bAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="kllPropertyGrid.Values.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk3WAAAAAAAAAFYAAAAoAAAAEAAAABAAAAABAAQAAAAAAAAAAADEDgAAxA4AAAgAAAAIAAAA/wD///b2
@@ -129,7 +137,7 @@
   <data name="kllKryptonScrollBars.Values.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAAG9JREFUOE/tk7ENwCAMBBktc1DCzgbRgFjkg5GQIsdFhClTXPO8r8F2AF601uoA
+        wAAADsABataJCQAAAG9JREFUOE/tk7ENwCAMBBktc1DCzgbRgFjkg5GQIsdFhClTXPO8r8F2AF601uoA
         D6rWY9SQh0op8N6DiKZEdhZqyAMxxvHqEELYE0hkZ6GGZkHv/ZJoPUYNf8EBgfkbjwjMq5xznseUUtoS
         fDxnuBt9uwr3IXUvDgAAAABJRU5ErkJggg==
 </value>
@@ -137,7 +145,7 @@
   <data name="kllKryptonHelpIcon.Values.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAATpJREFUOE+lkrtKxEAUhlP4BoqNpdquohbiDWxEYgQv2VnfwE5LsRVB2EpYwzaW
+        wAAADsABataJCQAAATpJREFUOE+lkrtKxEAUhlP4BoqNpdquohbiDWxEYgQv2VnfwE5LsRVB2EpYwzaW
         7mV2XHwAC5/A2sILC9HCJ9Bt/D0nmCVnJgHF4uNM/vnPzyFzPAD/whH2DJbLGm1l8FbuoK86eKXaCjWW
         bC8zOGxXMUTmOplRiEbEvtwAu3m38QH//CGpWZ1DnAB1jZWsKYheMFxax9jqPlUfm/WeCFFdLMoAA501
         jO+cYOboNjnPHt9hIjwd3DHkb9oB/MOEKWXqoItJdWbrsQggoW8ZEtaq9xiZ9rF1+S7vND5FQNEEo3Mh
@@ -148,7 +156,7 @@
   <data name="kllKryptonWebBrowser.Values.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAAWFJREFUOE+lU7tOw0AQzEcAEpTAnyBACBogZ8dCgpqvgOB8RGgREX6BBOY7gHxB
+        wAAADsABataJCQAAAWFJREFUOE+lU7tOw0AQzEcAEpTAnyBACBogZ8dCgpqvgOB8RGgREX6BBOY7gHxB
         SpBIGkhBN8ycsHVHQmFRTG53bnd2z7tpAfgXZoggwxLRI4Ymw1QIcrzwjKN7LP6O9xwGGZNiYnJc8/wK
         UpwIssVRdMyYAzfHS2alV5NgIywQM6ns5FgWyD/Svzi8waaNcUTsj9pWZQWYAVboj5i4WwnI5v1Id1GB
         Ldrv+1dYcAV6VEUTsJPzWoDEsKrYTnBK/8GpbiFOd7LDFHv8Jk+1AN88PSqxagP5VqLvJv/wfVWVHd1h

@@ -28,7 +28,7 @@ namespace KryptonExplorer
     {
         #region Variables
 
-        private Version _currentVersion = new Version(80, int.Parse(DateTime.Now.ToString("yy")), 02, 51);
+        private Version _currentVersion = new(80, int.Parse(DateTime.Now.ToString("yy")), 03, 84);
 
         private Settings _settings = new();
 
@@ -643,5 +643,7 @@ namespace KryptonExplorer
         }
 
         private void kllPropertyGrid_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Property Grid Example");
+
+        private void kllblIntegratedToolbar_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Integrated Toolbar Example");
     }
 }
