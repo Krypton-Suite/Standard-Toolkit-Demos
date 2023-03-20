@@ -40,6 +40,10 @@
             this.bsPaste = new Krypton.Toolkit.ButtonSpecAny();
             this.bsUndo = new Krypton.Toolkit.ButtonSpecAny();
             this.bsRedo = new Krypton.Toolkit.ButtonSpecAny();
+            this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
+            this.buttonSpecAny2 = new Krypton.Toolkit.ButtonSpecAny();
+            this.buttonSpecAny3 = new Krypton.Toolkit.ButtonSpecAny();
+            this.buttonSpecAny4 = new Krypton.Toolkit.ButtonSpecAny();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).BeginInit();
@@ -76,66 +80,68 @@
             // 
             // bsNew
             // 
-            this.bsNew.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
-            this.bsNew.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.bsNew.Type = Krypton.Toolkit.PaletteButtonSpecStyle.New;
             this.bsNew.UniqueName = "5bb4d0dbd09c4b93b18c3fa718de9e13";
             // 
             // bsOpen
             // 
-            this.bsOpen.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
-            this.bsOpen.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.bsOpen.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Open;
             this.bsOpen.UniqueName = "854fc76fe0ca423194cacf6c3ce3e713";
             // 
             // bsSave
             // 
-            this.bsSave.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
-            this.bsSave.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.bsSave.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Save;
             this.bsSave.UniqueName = "2f9ade8185cc45a3bc0bef093f9a1b01";
             // 
             // bsSaveAs
             // 
-            this.bsSaveAs.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
-            this.bsSaveAs.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.bsSaveAs.Type = Krypton.Toolkit.PaletteButtonSpecStyle.SaveAs;
             this.bsSaveAs.UniqueName = "0b6d01fc58d24d7c8767aa858d4ea6d8";
             // 
             // bsCut
             // 
-            this.bsCut.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
-            this.bsCut.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.bsCut.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Cut;
             this.bsCut.UniqueName = "19c1beb980364e6794a713fa6ef99844";
             // 
             // bsCopy
             // 
-            this.bsCopy.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
-            this.bsCopy.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.bsCopy.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Copy;
             this.bsCopy.UniqueName = "69065a8a4dbd4d4388a31311fb5f4084";
             // 
             // bsPaste
             // 
-            this.bsPaste.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
-            this.bsPaste.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.bsPaste.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Paste;
             this.bsPaste.UniqueName = "1aa6c2a04d71415f98a981ce431fa7f3";
             // 
             // bsUndo
             // 
-            this.bsUndo.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
-            this.bsUndo.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.bsUndo.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Undo;
             this.bsUndo.UniqueName = "77803245e5f1461c9f7d4efe14dbd3ad";
             // 
             // bsRedo
             // 
-            this.bsRedo.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
-            this.bsRedo.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.bsRedo.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Redo;
             this.bsRedo.UniqueName = "3ae1531e1f524ebf954d4e14dbe77421";
+            // 
+            // buttonSpecAny1
+            // 
+            this.buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.PageSetup;
+            this.buttonSpecAny1.UniqueName = "9b31b3d22d574a10bc81c9f3cba770c6";
+            // 
+            // buttonSpecAny2
+            // 
+            this.buttonSpecAny2.Type = Krypton.Toolkit.PaletteButtonSpecStyle.PrintPreview;
+            this.buttonSpecAny2.UniqueName = "69d756be05a84a54ab1dcde7d88c8329";
+            // 
+            // buttonSpecAny3
+            // 
+            this.buttonSpecAny3.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Print;
+            this.buttonSpecAny3.UniqueName = "56b504ff170b4f628a030a78305db67e";
+            // 
+            // buttonSpecAny4
+            // 
+            this.buttonSpecAny4.Type = Krypton.Toolkit.PaletteButtonSpecStyle.QuickPrint;
+            this.buttonSpecAny4.UniqueName = "b046cdcdba06405e977ecaf351f61e29";
             // 
             // Form1
             // 
@@ -150,7 +156,11 @@
             this.bsCopy,
             this.bsPaste,
             this.bsUndo,
-            this.bsRedo});
+            this.bsRedo,
+            this.buttonSpecAny1,
+            this.buttonSpecAny2,
+            this.buttonSpecAny3,
+            this.buttonSpecAny4});
             this.ClientSize = new System.Drawing.Size(502, 78);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -181,5 +191,9 @@
         private Krypton.Toolkit.ButtonSpecAny bsPaste;
         private Krypton.Toolkit.ButtonSpecAny bsUndo;
         private Krypton.Toolkit.ButtonSpecAny bsRedo;
+        private Krypton.Toolkit.ButtonSpecAny buttonSpecAny1;
+        private Krypton.Toolkit.ButtonSpecAny buttonSpecAny2;
+        private Krypton.Toolkit.ButtonSpecAny buttonSpecAny3;
+        private Krypton.Toolkit.ButtonSpecAny buttonSpecAny4;
     }
 }

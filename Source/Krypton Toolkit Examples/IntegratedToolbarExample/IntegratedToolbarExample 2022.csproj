@@ -2,8 +2,8 @@
     <PropertyGroup>
         <TargetFrameworks>net48;net6.0-windows;net7.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
-        <RootNamespace>InputForm</RootNamespace>
-        <AssemblyName>Input Form Examples</AssemblyName>
+        <RootNamespace>IntegratedToolbarExample</RootNamespace>
+        <AssemblyName>Integrated Toolbar Example</AssemblyName>
         <ApplicationIcon>Krypton.ico</ApplicationIcon>
         <UseApplicationTrust>false</UseApplicationTrust>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
