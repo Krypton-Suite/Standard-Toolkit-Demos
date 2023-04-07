@@ -31,7 +31,8 @@ namespace KryptonFontDialog_Example_2019
         private int[] customColors;
         private void ButtonShowFontDialog_Click(object sender, EventArgs e)
         {
-            var kfd = new Krypton.Toolkit.KryptonColorDialog {
+            var kfd = new Krypton.Toolkit.KryptonColorDialog 
+            {
                 AllowFullOpen = chkAllowFullOpen.Checked,
                 ShowHelp = chkShowHelp.Checked,
                 AnyColor = chkAnyColor.Checked,

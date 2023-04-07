@@ -29,26 +29,24 @@ namespace KryptonFontDialog_Example_2019
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             buttonFileOpenDialog = new Krypton.Toolkit.KryptonButton();
             kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             kryptonThemeComboBox1 = new Krypton.Toolkit.KryptonThemeComboBox();
             kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
-            chkShowEffects = new Krypton.Toolkit.KryptonCheckBox();
-            chkShowApply = new Krypton.Toolkit.KryptonCheckBox();
-            chkAllowVectorFonts = new Krypton.Toolkit.KryptonCheckBox();
-            chkAllowSimulations = new Krypton.Toolkit.KryptonCheckBox();
-            chkAllowScriptChange = new Krypton.Toolkit.KryptonCheckBox();
-            chkShowColour = new Krypton.Toolkit.KryptonCheckBox();
-            chkShowHelp = new Krypton.Toolkit.KryptonCheckBox();
+            chkRestoreDirectory = new Krypton.Toolkit.KryptonCheckBox();
+            chkDereferenceLinks = new Krypton.Toolkit.KryptonCheckBox();
+            chkCheckPathExists = new Krypton.Toolkit.KryptonCheckBox();
+            chkCheckFileExists = new Krypton.Toolkit.KryptonCheckBox();
+            chkAddExtension = new Krypton.Toolkit.KryptonCheckBox();
             kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
+            kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
+            kryptonNumericUpDown1 = new Krypton.Toolkit.KryptonNumericUpDown();
+            kryptonButton1 = new Krypton.Toolkit.KryptonButton();
+            kryptonCheckBox1 = new Krypton.Toolkit.KryptonCheckBox();
             kryptonListBox1 = new Krypton.Toolkit.KryptonListBox();
             kryptonComboBox1 = new Krypton.Toolkit.KryptonComboBox();
-            kryptonCheckBox1 = new Krypton.Toolkit.KryptonCheckBox();
-            kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
-            kryptonButton1 = new Krypton.Toolkit.KryptonButton();
-            kryptonNumericUpDown1 = new Krypton.Toolkit.KryptonNumericUpDown();
+            kryptonCheckBox2 = new Krypton.Toolkit.KryptonCheckBox();
             ((System.ComponentModel.ISupportInitialize)kryptonPanel1).BeginInit();
             kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)kryptonThemeComboBox1).BeginInit();
@@ -57,17 +55,19 @@ namespace KryptonFontDialog_Example_2019
             kryptonGroupBox2.Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)kryptonGroupBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)kryptonGroupBox1.Panel).BeginInit();
+            kryptonGroupBox1.Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)kryptonComboBox1).BeginInit();
             SuspendLayout();
             // 
             // buttonFileOpenDialog
             // 
+            buttonFileOpenDialog.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             buttonFileOpenDialog.Location = new System.Drawing.Point(264, 323);
             buttonFileOpenDialog.Name = "buttonFileOpenDialog";
             buttonFileOpenDialog.Size = new System.Drawing.Size(307, 59);
             buttonFileOpenDialog.TabIndex = 19;
-            buttonFileOpenDialog.Values.Text = "File Open Dialog";
-            buttonFileOpenDialog.Click += ButtonShowFontDialog_Click;
+            buttonFileOpenDialog.Values.Text = "File Save Dialog";
+            buttonFileOpenDialog.Click += ButtonShowFileDialog_Click;
             // 
             // kryptonPanel1
             // 
@@ -84,7 +84,6 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonThemeComboBox1
             // 
-            kryptonThemeComboBox1.CornerRoundingRadius = -1F;
             kryptonThemeComboBox1.DisplayMember = "30";
             kryptonThemeComboBox1.DropDownWidth = 339;
             kryptonThemeComboBox1.IntegralHeight = false;
@@ -112,94 +111,106 @@ namespace KryptonFontDialog_Example_2019
             // 
             // 
             // 
-            kryptonGroupBox2.Panel.Controls.Add(chkShowEffects);
-            kryptonGroupBox2.Panel.Controls.Add(chkShowApply);
-            kryptonGroupBox2.Panel.Controls.Add(chkAllowVectorFonts);
-            kryptonGroupBox2.Panel.Controls.Add(chkAllowSimulations);
-            kryptonGroupBox2.Panel.Controls.Add(chkAllowScriptChange);
-            kryptonGroupBox2.Panel.Controls.Add(chkShowColour);
-            kryptonGroupBox2.Panel.Controls.Add(chkShowHelp);
+            kryptonGroupBox2.Panel.Controls.Add(chkRestoreDirectory);
+            kryptonGroupBox2.Panel.Controls.Add(chkDereferenceLinks);
+            kryptonGroupBox2.Panel.Controls.Add(chkCheckPathExists);
+            kryptonGroupBox2.Panel.Controls.Add(chkCheckFileExists);
+            kryptonGroupBox2.Panel.Controls.Add(chkAddExtension);
             kryptonGroupBox2.Size = new System.Drawing.Size(199, 289);
             kryptonGroupBox2.TabIndex = 21;
             kryptonGroupBox2.Values.Heading = "Options:";
             // 
-            // chkShowEffects
+            // chkRestoreDirectory
             // 
-            chkShowEffects.Checked = true;
-            chkShowEffects.CheckState = System.Windows.Forms.CheckState.Checked;
-            chkShowEffects.Location = new System.Drawing.Point(4, 180);
-            chkShowEffects.Name = "chkShowEffects";
-            chkShowEffects.Size = new System.Drawing.Size(110, 24);
-            chkShowEffects.TabIndex = 6;
-            chkShowEffects.Values.Text = "Show Effects";
+            chkRestoreDirectory.Checked = true;
+            chkRestoreDirectory.CheckState = System.Windows.Forms.CheckState.Checked;
+            chkRestoreDirectory.Location = new System.Drawing.Point(4, 180);
+            chkRestoreDirectory.Name = "chkRestoreDirectory";
+            chkRestoreDirectory.Size = new System.Drawing.Size(143, 24);
+            chkRestoreDirectory.TabIndex = 6;
+            chkRestoreDirectory.Values.Text = "Restore Directory";
             // 
-            // chkShowApply
+            // chkDereferenceLinks
             // 
-            chkShowApply.Location = new System.Drawing.Point(4, 150);
-            chkShowApply.Name = "chkShowApply";
-            chkShowApply.Size = new System.Drawing.Size(105, 24);
-            chkShowApply.TabIndex = 5;
-            chkShowApply.Values.Text = "Show Apply";
+            chkDereferenceLinks.Location = new System.Drawing.Point(4, 90);
+            chkDereferenceLinks.Name = "chkDereferenceLinks";
+            chkDereferenceLinks.Size = new System.Drawing.Size(145, 24);
+            chkDereferenceLinks.TabIndex = 3;
+            chkDereferenceLinks.Values.Text = "Dereference Links";
             // 
-            // chkAllowVectorFonts
+            // chkCheckPathExists
             // 
-            chkAllowVectorFonts.Location = new System.Drawing.Point(4, 120);
-            chkAllowVectorFonts.Name = "chkAllowVectorFonts";
-            chkAllowVectorFonts.Size = new System.Drawing.Size(152, 24);
-            chkAllowVectorFonts.TabIndex = 4;
-            chkAllowVectorFonts.Values.Text = "Allow Vector Fonts";
+            chkCheckPathExists.Location = new System.Drawing.Point(3, 60);
+            chkCheckPathExists.Name = "chkCheckPathExists";
+            chkCheckPathExists.Size = new System.Drawing.Size(142, 24);
+            chkCheckPathExists.TabIndex = 2;
+            chkCheckPathExists.Values.Text = "Check Path Exists";
             // 
-            // chkAllowSimulations
+            // chkCheckFileExists
             // 
-            chkAllowSimulations.Location = new System.Drawing.Point(4, 90);
-            chkAllowSimulations.Name = "chkAllowSimulations";
-            chkAllowSimulations.Size = new System.Drawing.Size(145, 24);
-            chkAllowSimulations.TabIndex = 3;
-            chkAllowSimulations.Values.Text = "Allow Simulations";
+            chkCheckFileExists.Checked = true;
+            chkCheckFileExists.CheckState = System.Windows.Forms.CheckState.Checked;
+            chkCheckFileExists.Location = new System.Drawing.Point(4, 30);
+            chkCheckFileExists.Name = "chkCheckFileExists";
+            chkCheckFileExists.Size = new System.Drawing.Size(134, 24);
+            chkCheckFileExists.TabIndex = 1;
+            chkCheckFileExists.Values.Text = "Check File Exists";
             // 
-            // chkAllowScriptChange
+            // chkAddExtension
             // 
-            chkAllowScriptChange.Location = new System.Drawing.Point(3, 60);
-            chkAllowScriptChange.Name = "chkAllowScriptChange";
-            chkAllowScriptChange.Size = new System.Drawing.Size(161, 24);
-            chkAllowScriptChange.TabIndex = 2;
-            chkAllowScriptChange.Values.Text = "Allow Script Change";
-            // 
-            // chkShowColour
-            // 
-            chkShowColour.Checked = true;
-            chkShowColour.CheckState = System.Windows.Forms.CheckState.Checked;
-            chkShowColour.Location = new System.Drawing.Point(4, 30);
-            chkShowColour.Name = "chkShowColour";
-            chkShowColour.Size = new System.Drawing.Size(111, 24);
-            chkShowColour.TabIndex = 1;
-            chkShowColour.Values.Text = "Show Colour";
-            // 
-            // chkShowHelp
-            // 
-            chkShowHelp.Location = new System.Drawing.Point(4, 0);
-            chkShowHelp.Name = "chkShowHelp";
-            chkShowHelp.Size = new System.Drawing.Size(98, 24);
-            chkShowHelp.TabIndex = 0;
-            chkShowHelp.Values.Text = "Show Help";
+            chkAddExtension.Location = new System.Drawing.Point(4, 0);
+            chkAddExtension.Name = "chkAddExtension";
+            chkAddExtension.Size = new System.Drawing.Size(122, 24);
+            chkAddExtension.TabIndex = 0;
+            chkAddExtension.Values.Text = "Add Extension";
             // 
             // kryptonGroupBox1
             // 
             kryptonGroupBox1.Location = new System.Drawing.Point(12, 153);
             kryptonGroupBox1.Name = "kryptonGroupBox1";
+            // 
+            // 
+            // 
+            kryptonGroupBox1.Panel.Controls.Add(kryptonTextBox1);
+            kryptonGroupBox1.Panel.Controls.Add(kryptonNumericUpDown1);
+            kryptonGroupBox1.Panel.Controls.Add(kryptonButton1);
+            kryptonGroupBox1.Panel.Controls.Add(kryptonCheckBox1);
+            kryptonGroupBox1.Panel.Controls.Add(kryptonListBox1);
+            kryptonGroupBox1.Panel.Controls.Add(kryptonComboBox1);
             kryptonGroupBox1.Size = new System.Drawing.Size(348, 164);
             kryptonGroupBox1.TabIndex = 20;
-            // kryptonGroupBox1.Panel
+            kryptonGroupBox1.Values.Heading = "Style to match:";
             // 
-            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonTextBox1);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonNumericUpDown1);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonButton1);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonCheckBox1);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonListBox1);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonComboBox1);
-            this.kryptonGroupBox1.Size = new System.Drawing.Size(348, 164);
-            this.kryptonGroupBox1.TabIndex = 20;
-            this.kryptonGroupBox1.Values.Heading = "Style to match:";
+            // kryptonTextBox1
+            // 
+            kryptonTextBox1.Location = new System.Drawing.Point(156, 29);
+            kryptonTextBox1.Name = "kryptonTextBox1";
+            kryptonTextBox1.Size = new System.Drawing.Size(134, 27);
+            kryptonTextBox1.TabIndex = 6;
+            kryptonTextBox1.Text = "kryptonTextBox1";
+            // 
+            // kryptonNumericUpDown1
+            // 
+            kryptonNumericUpDown1.Location = new System.Drawing.Point(156, 97);
+            kryptonNumericUpDown1.Name = "kryptonNumericUpDown1";
+            kryptonNumericUpDown1.Size = new System.Drawing.Size(90, 26);
+            kryptonNumericUpDown1.TabIndex = 5;
+            // 
+            // kryptonButton1
+            // 
+            kryptonButton1.Location = new System.Drawing.Point(156, 65);
+            kryptonButton1.Name = "kryptonButton1";
+            kryptonButton1.Size = new System.Drawing.Size(90, 25);
+            kryptonButton1.TabIndex = 4;
+            kryptonButton1.Values.Text = "kryptonButton1";
+            // 
+            // kryptonCheckBox1
+            // 
+            kryptonCheckBox1.Location = new System.Drawing.Point(156, 4);
+            kryptonCheckBox1.Name = "kryptonCheckBox1";
+            kryptonCheckBox1.Size = new System.Drawing.Size(152, 24);
+            kryptonCheckBox1.TabIndex = 2;
+            kryptonCheckBox1.Values.Text = "kryptonCheckBox1";
             // 
             // kryptonListBox1
             // 
@@ -211,7 +222,6 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonComboBox1
             // 
-            kryptonComboBox1.CornerRoundingRadius = -1F;
             kryptonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             kryptonComboBox1.DropDownWidth = 121;
             kryptonComboBox1.IntegralHeight = false;
@@ -223,36 +233,15 @@ namespace KryptonFontDialog_Example_2019
             kryptonComboBox1.TabIndex = 0;
             kryptonComboBox1.Text = "Microsoft Sans Serif";
             // 
-            // kryptonCheckBox1
+            // kryptonCheckBox2
             // 
-            kryptonCheckBox1.Location = new System.Drawing.Point(156, 4);
-            kryptonCheckBox1.Name = "kryptonCheckBox1";
-            kryptonCheckBox1.Size = new System.Drawing.Size(152, 24);
-            kryptonCheckBox1.TabIndex = 2;
-            kryptonCheckBox1.Values.Text = "kryptonCheckBox1";
-            // 
-            // kryptonTextBox1
-            // 
-            kryptonTextBox1.Location = new System.Drawing.Point(156, 29);
-            kryptonTextBox1.Name = "kryptonTextBox1";
-            kryptonTextBox1.Size = new System.Drawing.Size(134, 27);
-            kryptonTextBox1.TabIndex = 6;
-            kryptonTextBox1.Text = "kryptonTextBox1";
-            // 
-            // kryptonButton1
-            // 
-            kryptonButton1.Location = new System.Drawing.Point(156, 65);
-            kryptonButton1.Name = "kryptonButton1";
-            kryptonButton1.Size = new System.Drawing.Size(90, 25);
-            kryptonButton1.TabIndex = 4;
-            kryptonButton1.Values.Text = "kryptonButton1";
-            // 
-            // kryptonNumericUpDown1
-            // 
-            kryptonNumericUpDown1.Location = new System.Drawing.Point(156, 97);
-            kryptonNumericUpDown1.Name = "kryptonNumericUpDown1";
-            kryptonNumericUpDown1.Size = new System.Drawing.Size(90, 26);
-            kryptonNumericUpDown1.TabIndex = 5;
+            kryptonCheckBox2.Checked = true;
+            kryptonCheckBox2.CheckState = System.Windows.Forms.CheckState.Checked;
+            kryptonCheckBox2.Location = new System.Drawing.Point(4, 180);
+            kryptonCheckBox2.Name = "kryptonCheckBox2";
+            kryptonCheckBox2.Size = new System.Drawing.Size(143, 24);
+            kryptonCheckBox2.TabIndex = 6;
+            kryptonCheckBox2.Values.Text = "Restore Directory";
             // 
             // Form1
             // 
@@ -260,8 +249,13 @@ namespace KryptonFontDialog_Example_2019
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(594, 410);
             Controls.Add(kryptonPanel1);
+            FormTitleAlign = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            IntegratedToolBarValues.Owner = this;
             Name = "Form1";
-            Text = "KryptonFileDialog Example";
+            SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            Text = "KryptonSaveFileDialog Example";
+            Resize += Form1_Resize;
+            Controls.SetChildIndex(kryptonPanel1, 0);
             ((System.ComponentModel.ISupportInitialize)kryptonPanel1).EndInit();
             kryptonPanel1.ResumeLayout(false);
             kryptonPanel1.PerformLayout();
@@ -271,6 +265,8 @@ namespace KryptonFontDialog_Example_2019
             kryptonGroupBox2.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)kryptonGroupBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)kryptonGroupBox1.Panel).EndInit();
+            kryptonGroupBox1.Panel.ResumeLayout(false);
+            kryptonGroupBox1.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)kryptonGroupBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)kryptonComboBox1).EndInit();
             ResumeLayout(false);
@@ -281,13 +277,11 @@ namespace KryptonFontDialog_Example_2019
         private Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox2;
-        private Krypton.Toolkit.KryptonCheckBox chkShowHelp;
-        private Krypton.Toolkit.KryptonCheckBox chkShowColour;
-        private Krypton.Toolkit.KryptonCheckBox chkShowEffects;
-        private Krypton.Toolkit.KryptonCheckBox chkShowApply;
-        private Krypton.Toolkit.KryptonCheckBox chkAllowVectorFonts;
-        private Krypton.Toolkit.KryptonCheckBox chkAllowSimulations;
-        private Krypton.Toolkit.KryptonCheckBox chkAllowScriptChange;
+        private Krypton.Toolkit.KryptonCheckBox chkAddExtension;
+        private Krypton.Toolkit.KryptonCheckBox chkCheckFileExists;
+        private Krypton.Toolkit.KryptonCheckBox chkRestoreDirectory;
+        private Krypton.Toolkit.KryptonCheckBox chkDereferenceLinks;
+        private Krypton.Toolkit.KryptonCheckBox chkCheckPathExists;
         private Krypton.Toolkit.KryptonListBox kryptonListBox1;
         private Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
         private Krypton.Toolkit.KryptonCheckBox kryptonCheckBox1;
@@ -296,6 +290,7 @@ namespace KryptonFontDialog_Example_2019
         private Krypton.Toolkit.KryptonNumericUpDown kryptonNumericUpDown1;
         private Krypton.Toolkit.KryptonThemeComboBox kryptonThemeComboBox1;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private Krypton.Toolkit.KryptonCheckBox kryptonCheckBox2;
     }
 }
 

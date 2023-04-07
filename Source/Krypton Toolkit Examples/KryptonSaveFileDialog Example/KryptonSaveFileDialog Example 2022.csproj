@@ -2,8 +2,8 @@
     <PropertyGroup>
         <TargetFrameworks>net48</TargetFrameworks>
         <OutputType>WinExe</OutputType>
-        <RootNamespace>KryptonFileDialog</RootNamespace>
-        <AssemblyName>KryptonFileDialog Example</AssemblyName>
+        <RootNamespace>KryptonSaveFileDialog</RootNamespace>
+        <AssemblyName>KryptonSaveFileDialog Example</AssemblyName>
         <UseWindowsForms>true</UseWindowsForms>
         <PlatformTarget>AnyCPU</PlatformTarget>
         <NeutralLanguage>en</NeutralLanguage>
