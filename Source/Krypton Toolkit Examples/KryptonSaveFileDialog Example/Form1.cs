@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
@@ -8,10 +7,7 @@ namespace KryptonFontDialog_Example_2019
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void ButtonShowFileDialog_Click(object sender, EventArgs e)
         {
@@ -39,11 +35,6 @@ namespace KryptonFontDialog_Example_2019
             {
                 KryptonMessageBox.Show(this, kfd.FileName, @"File chosen is");
             }
-        }
-
-        private void Form1_Resize(object sender, EventArgs e)
-        {
-
         }
     }
 }
