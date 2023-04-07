@@ -18,7 +18,7 @@
 	* [Krypton UAC Button](#krypton-uac-button)
 	* [KryptonCheckBox Examples](#kryptoncheckbox-examples)
 	* [KryptonCheckButton Examples](#kryptoncheckbutton-examples)
-	* [[KryptonCheckedListBox Examples](#kryptoncheckedlistbox-examples)
+	* [KryptonCheckedListBox Examples](#kryptoncheckedlistbox-examples)
 	* [KryptonCheckSet Examples](#kryptoncheckset-examples)
 	* [KryptonColorButton Examples](#kryptoncolorbutton-examples)
 	* [KryptonColorDialog](#kryptoncolordialog)
@@ -29,8 +29,6 @@
 	* [KryptonDateTimePicker](#kryptondatetimepicker)
 	* [KryptonDomainUpDown](#kryptondomainupdown)
 	* [KryptonDropButton](#kryptondropbutton)
-	* [KryptonFileDialog](#kryptonfiledialog)
-	* [KryptonFolderBrowserDialog](#kryptonfolderbrowserdialog)
 	* [KryptonFontDialog](#kryptonfontdialog)
 	* [KryptonForm](#kryptonform)
 	* [KryptonGroup](#kryptongroup)
@@ -44,15 +42,17 @@
 	* [KryptonListBox](#kryptonlistbox)
 	* [KryptonListView](#kryptonlistview)
 	* [KryptonMaskedTextBox](#kryptonmaskedtextbox)
-	* [[KryptonMessageBox](#kryptonmessagebox)
+	* [KryptonMessageBox](#kryptonmessagebox)
 	* [KryptonMonthCalendar](#kryptonmonthcalendar)
 	* [KryptonNumericUpDown](#kryptonnumericupdown)
+	* [KryptonOpenFileDialog](#kryptonopenfiledialog)
 	* [KryptonPalette](#kryptonpalette)
 	* [KryptonPanel](#kryptonpanel)
 	* [KryptonPrintDialog](#kryptonprintdialog)
 	* [KryptonPropertyGrid](#kryptonpropertygrid)
 	* [KryptonRadioButton](#kryptonradiobutton)
 	* [KryptonRichTextBox](#kryptonrichtextbox)
+	* [KryptonSaveFileDialog](#kryptonsavefiledialog)
 	* [KryptonScrollBar](#kryptonscrollbar)
 	* [KryptonSeparator](#kryptonseparator)
 	* [KryptonSplitContainer](#kryptonsplitcontainer)
@@ -144,10 +144,6 @@ There are 2 set of solutions in these projects:
 ![KryptonDomainUpDown Examples](KryptonDomainUpDown%20Examples/example.png)
 ## KryptonDropButton
 ![KryptonDropButton Examples](KryptonDropButton%20Examples/example.png)
-## KryptonFileDialog
-![KryptonFileDialog Example](KryptonFileDialog%20Example/example.png)
-## KryptonFolderBrowserDialog
-![KryptonFolderBrowserDialog Example](KryptonFolderBrowserDialog%20Example/example.png)
 ## KryptonFontDialog
 ![KryptonFontDialog Example](KryptonFontDialog%20Example/example.png)
 ## KryptonForm
@@ -183,6 +179,8 @@ There are 2 set of solutions in these projects:
 ![KryptonMonthCalendar Examples](KryptonMonthCalendar%20Examples/example.png)
 ## KryptonNumericUpDown
 ![KryptonNumericUpDown Examples](KryptonNumericUpDown%20Examples/example.png)
+## KryptonOpenFileDialog
+![KryptonOpenFileDialog Example](KryptonOpenFileDialog%20Example/example.png)
 ## KryptonPalette
 ![KryptonPalette Examples](KryptonPalette%20Examples/example.png)
 ## KryptonPanel
@@ -195,6 +193,8 @@ There are 2 set of solutions in these projects:
 ![KryptonRadioButton Examples](KryptonRadioButton%20Examples/example.png)
 ## KryptonRichTextBox
 ![KryptonRichTextBox Examples](KryptonRichTextBox%20Examples/example.png)
+## KryptonSaveFileDialog
+![KryptonSaveFileDialog Example](KryptonSaveFileDialog%20Example/example.png)
 ## KryptonScrollBar
 ![KryptonScrollBar Examples](KryptonScrollbar%20Examples/KryptonScrollBars.gif)
 ## KryptonSeparator

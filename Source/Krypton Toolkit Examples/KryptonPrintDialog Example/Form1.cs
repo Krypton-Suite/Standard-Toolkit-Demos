@@ -27,7 +27,8 @@ namespace KryptonFontDialog_Example_2019
             //PrintDialog;
             var docToPrint = new System.Drawing.Printing.PrintDocument();
             docToPrint.PrintPage += DocToPrint_PrintPage;
-            var kfd = new KryptonPrintDialog {
+            var kfd = new KryptonPrintDialog 
+            {
                 ShowHelp = chkShowHelp.Checked,
                 AllowCurrentPage = chkAllowCurrentPage.Checked,
                 AllowPrintToFile = chkAllowPrintToFile.Checked,
