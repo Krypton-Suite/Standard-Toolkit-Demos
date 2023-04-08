@@ -1,5 +1,5 @@
 ﻿
-namespace KryptonFontDialog_Example_2019
+namespace KryptonOpenFileDialog_Example_2019
 {
     partial class Form1
     {
@@ -290,12 +290,10 @@ namespace KryptonFontDialog_Example_2019
             ClientSize = new System.Drawing.Size(891, 641);
             Controls.Add(kryptonPanel1);
             FormTitleAlign = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            IntegratedToolBarValues.Owner = this;
             Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             Name = "Form1";
             SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             Text = "KryptonOpenFileDialog Example";
-            Resize += Form1_Resize;
             Controls.SetChildIndex(kryptonPanel1, 0);
             ((System.ComponentModel.ISupportInitialize)kryptonPanel1).EndInit();
             kryptonPanel1.ResumeLayout(false);

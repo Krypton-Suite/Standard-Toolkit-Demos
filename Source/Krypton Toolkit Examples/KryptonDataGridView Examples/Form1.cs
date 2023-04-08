@@ -24,6 +24,7 @@ namespace KryptonDataGridViewExamples
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            kryptonDataGridView1.BorderStyle = BorderStyle.Fixed3D;
             // Create some simple test data for display
             DateTime dt = DateTime.Now.Date;
             dtTestData.Rows.Add(dt, "Mr", "Mark", "(55) 5555-5555", "Single", 36, "Press!", true);

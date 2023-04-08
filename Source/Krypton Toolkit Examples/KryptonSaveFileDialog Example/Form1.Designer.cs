@@ -250,11 +250,9 @@ namespace KryptonFontDialog_Example_2019
             ClientSize = new System.Drawing.Size(594, 410);
             Controls.Add(kryptonPanel1);
             FormTitleAlign = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            IntegratedToolBarValues.Owner = this;
             Name = "Form1";
             SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             Text = "KryptonSaveFileDialog Example";
-            Resize += Form1_Resize;
             Controls.SetChildIndex(kryptonPanel1, 0);
             ((System.ComponentModel.ISupportInitialize)kryptonPanel1).EndInit();
             kryptonPanel1.ResumeLayout(false);
