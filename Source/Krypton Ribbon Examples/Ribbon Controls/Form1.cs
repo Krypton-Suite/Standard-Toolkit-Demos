@@ -15,6 +15,7 @@ using System.Drawing;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
+
 using RibbonControls.Properties;
 
 namespace RibbonControls
@@ -73,7 +74,7 @@ namespace RibbonControls
             dateTimePicker3.ButtonSpecs[0].Click += OnDateTimePicker3Clear;
             maskedTextBox3.ButtonSpecs[0].Click += OnMaskedTextBox3Clear;
             numericUpDown2.ButtonSpecs[0].Click += OnNumericUpDown2Clear;
-            
+
             // Create and associate various controls
             custom9.CustomControl = CreateLinkLabel("LinkLabel Control");
             custom10.CustomControl = CreateNumericUpDown(50);

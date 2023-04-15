@@ -1,6 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net48;net6.0-windows;net7.0-windows</TargetFrameworks>
+        <!--<TargetFrameworks>net48;net6.0-windows;net7.0-windows</TargetFrameworks>-->
+        <TargetFrameworks>net6.0-windows</TargetFrameworks>
+        <UseWinforms>true</UseWinforms>
         <OutputType>WinExe</OutputType>
         <RootNamespace>KryptonContextMenuExamples</RootNamespace>
         <AssemblyName>Krypton Context Menu Examples</AssemblyName>
