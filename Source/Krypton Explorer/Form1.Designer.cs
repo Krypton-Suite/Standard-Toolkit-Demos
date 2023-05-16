@@ -320,8 +320,8 @@
             // 
             // kryptonNavigatorToolkit
             // 
-            this.kryptonNavigatorToolkit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.kryptonNavigatorToolkit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonNavigatorToolkit.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
             this.kryptonNavigatorToolkit.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
