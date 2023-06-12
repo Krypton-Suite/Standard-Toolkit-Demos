@@ -2,7 +2,7 @@
 	<!-- do not change this ever !-->
 	<?define UpgradeCode = "38FC3474-F06B-4C57-8869-15B23AEBFB60" ?>
 
-	<?define Version = "80.22.11.325" ?>
+	<?define Version = "80.23.4.180" ?>
 	<!--"!(bind.FileVersion.Krypton.Toolkit.dll)" -->
 
 	<?define ProductName = "Krypton Toolkit Demo Net60 Apps"?>
