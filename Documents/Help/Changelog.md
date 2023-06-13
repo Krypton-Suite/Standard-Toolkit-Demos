@@ -1,6 +1,9 @@
 # <img src="https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png?raw=true"> Standard Toolkit Demos - ChangeLog
 
-## 2023-04-## - Build 2304 - April 2023
+## 2023-06-26 - Build 2306 - June 2023
+* Upgraded installer projects to WIX 4
+
+## 2023-04-24 - Build 2304 - April 2023
 * Add `KryptonFolderBrowserDialog` example
 * Add `KryptonOpenFileDialog` example
 * Add `KryptonSaveFileDialog` example
