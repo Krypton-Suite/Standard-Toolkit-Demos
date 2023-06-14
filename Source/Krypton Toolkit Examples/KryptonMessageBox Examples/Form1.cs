@@ -28,8 +28,6 @@ namespace KryptonMessageBoxExamples
         private KryptonMessageBoxButtons _mbButtons = KryptonMessageBoxButtons.OKCancel;
         private MessageBoxOptions _options = 0;
         private MessageBoxContentAreaType _contentAreaType = MessageBoxContentAreaType.Normal;
-        private int _linkAreaStart, _linkAreaEnd;
-        private KryptonCommand _commandTest;
 
         public Form1()
         {
@@ -156,7 +154,9 @@ namespace KryptonMessageBoxExamples
                 _kmbIcon,
                 options: _options,
                 showHelpButton: chkShowHelp.Checked, contentAreaType: _contentAreaType,
-                linkAreaStart: _linkAreaStart, linkAreaEnd: _linkAreaEnd, linkAreaCommand: _commandTest);
+                linkAreaStart: decimal.ToInt32(knudLinkAreaStart.Value),
+                linkAreaEnd: decimal.ToInt32(knudLinkAreaEnd.Value),
+                linkAreaCommand: kcmdTest);
 
             textBoxMessage.Text = $@"Krypton DialogResult = {res}";
         }
@@ -250,11 +250,6 @@ namespace KryptonMessageBoxExamples
             }
         }
 
-        private void kbtnAttachCommand_Click(object sender, EventArgs e)
-        {
-            _commandTest = kcmdTest;
-        }
-
         private void kcmdTest_Execute(object sender, EventArgs e)
         {
             try
@@ -288,8 +283,6 @@ namespace KryptonMessageBoxExamples
             knudLinkAreaEnd.Enabled = enabled;
 
             ktxtResourcePath.Enabled = enabled;
-
-            kbtnAttachCommand.Enabled = enabled;
         }
     }
 }

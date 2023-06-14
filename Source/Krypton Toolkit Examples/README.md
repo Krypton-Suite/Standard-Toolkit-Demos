@@ -179,6 +179,7 @@ There are 2 set of solutions in these projects:
 ![KryptonMaskedTextBox Examples](KryptonMaskedTextBox%20Examples/example.png)
 ## [KryptonMessageBox
 ![KryptonMessageBox Examples](KryptonMessageBox%20Examples/example.png)
+![KryptonMessageBox Examples](KryptonMessageBox%20Examples/KryptonMessageBoxWrapLabelExample.gif)
 ## KryptonMonthCalendar
 ![KryptonMonthCalendar Examples](KryptonMonthCalendar%20Examples/example.png)
 ## KryptonNumericUpDown

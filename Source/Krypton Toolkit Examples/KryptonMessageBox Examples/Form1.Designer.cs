@@ -53,20 +53,19 @@
             this.kradOKCancel = new Krypton.Toolkit.KryptonRadioButton();
             this.kbtnShow = new Krypton.Toolkit.KryptonButton();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
+            this.ktxtResourcePath = new Krypton.Toolkit.KryptonTextBox();
+            this.bsaBrowse = new Krypton.Toolkit.ButtonSpecAny();
+            this.knudLinkAreaEnd = new Krypton.Toolkit.KryptonNumericUpDown();
+            this.klblLinkAreaEnd = new Krypton.Toolkit.KryptonLabel();
+            this.knudLinkAreaStart = new Krypton.Toolkit.KryptonNumericUpDown();
+            this.klblLinkAreaStart = new Krypton.Toolkit.KryptonLabel();
+            this.kcmbContentAreaType = new Krypton.Toolkit.KryptonComboBox();
             this.chkShowHelp = new Krypton.Toolkit.KryptonCheckBox();
             this.kryptonThemeComboBox1 = new Krypton.Toolkit.KryptonThemeComboBox();
             this.kchkRtlReading = new Krypton.Toolkit.KryptonCheckBox();
             this.kchkRightAlign = new Krypton.Toolkit.KryptonCheckBox();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
-            this.kcmbContentAreaType = new Krypton.Toolkit.KryptonComboBox();
-            this.klblLinkAreaStart = new Krypton.Toolkit.KryptonLabel();
-            this.knudLinkAreaStart = new Krypton.Toolkit.KryptonNumericUpDown();
-            this.knudLinkAreaEnd = new Krypton.Toolkit.KryptonNumericUpDown();
-            this.klblLinkAreaEnd = new Krypton.Toolkit.KryptonLabel();
-            this.ktxtResourcePath = new Krypton.Toolkit.KryptonTextBox();
-            this.kbtnAttachCommand = new Krypton.Toolkit.KryptonButton();
-            this.bsaBrowse = new Krypton.Toolkit.ButtonSpecAny();
             this.kcmdTest = new Krypton.Toolkit.KryptonCommand();
             ((System.ComponentModel.ISupportInitialize)(this.groupBoxIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupBoxIcon.Panel)).BeginInit();
@@ -79,12 +78,12 @@
             this.kryptonGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).BeginInit();
             this.kryptonGroupBox2.Panel.SuspendLayout();
             this.kryptonGroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kcmbContentAreaType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -128,7 +127,7 @@
             // 
             // groupBoxIcon
             // 
-            this.groupBoxIcon.Location = new System.Drawing.Point(70, 350);
+            this.groupBoxIcon.Location = new System.Drawing.Point(70, 318);
             this.groupBoxIcon.Name = "groupBoxIcon";
             // 
             // groupBoxIcon.Panel
@@ -301,7 +300,7 @@
             // 
             this.kbtnShow.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kbtnShow.Location = new System.Drawing.Point(70, 543);
+            this.kbtnShow.Location = new System.Drawing.Point(70, 503);
             this.kbtnShow.Name = "kbtnShow";
             this.kbtnShow.Size = new System.Drawing.Size(592, 57);
             this.kbtnShow.TabIndex = 7;
@@ -323,8 +322,88 @@
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(690, 614);
+            this.kryptonPanel1.Size = new System.Drawing.Size(690, 574);
             this.kryptonPanel1.TabIndex = 0;
+            // 
+            // kryptonGroupBox2
+            // 
+            this.kryptonGroupBox2.Location = new System.Drawing.Point(70, 176);
+            this.kryptonGroupBox2.Name = "kryptonGroupBox2";
+            // 
+            // kryptonGroupBox2.Panel
+            // 
+            this.kryptonGroupBox2.Panel.Controls.Add(this.ktxtResourcePath);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.knudLinkAreaEnd);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.klblLinkAreaEnd);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.knudLinkAreaStart);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.klblLinkAreaStart);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kcmbContentAreaType);
+            this.kryptonGroupBox2.Size = new System.Drawing.Size(246, 136);
+            this.kryptonGroupBox2.TabIndex = 9;
+            this.kryptonGroupBox2.Values.Heading = "Content Area Type";
+            // 
+            // ktxtResourcePath
+            // 
+            this.ktxtResourcePath.ButtonSpecs.Add(this.bsaBrowse);
+            this.ktxtResourcePath.Enabled = false;
+            this.ktxtResourcePath.Location = new System.Drawing.Point(14, 77);
+            this.ktxtResourcePath.Name = "ktxtResourcePath";
+            this.ktxtResourcePath.Size = new System.Drawing.Size(215, 24);
+            this.ktxtResourcePath.TabIndex = 5;
+            // 
+            // bsaBrowse
+            // 
+            this.bsaBrowse.Text = "...";
+            this.bsaBrowse.UniqueName = "ffe02cb1dc9f459c96d1eaf55bd7e985";
+            this.bsaBrowse.Click += new System.EventHandler(this.bsaBrowse_Click);
+            // 
+            // knudLinkAreaEnd
+            // 
+            this.knudLinkAreaEnd.Enabled = false;
+            this.knudLinkAreaEnd.Location = new System.Drawing.Point(160, 40);
+            this.knudLinkAreaEnd.Name = "knudLinkAreaEnd";
+            this.knudLinkAreaEnd.Size = new System.Drawing.Size(55, 22);
+            this.knudLinkAreaEnd.TabIndex = 4;
+            // 
+            // klblLinkAreaEnd
+            // 
+            this.klblLinkAreaEnd.Enabled = false;
+            this.klblLinkAreaEnd.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.klblLinkAreaEnd.Location = new System.Drawing.Point(120, 40);
+            this.klblLinkAreaEnd.Name = "klblLinkAreaEnd";
+            this.klblLinkAreaEnd.Size = new System.Drawing.Size(34, 20);
+            this.klblLinkAreaEnd.TabIndex = 3;
+            this.klblLinkAreaEnd.Values.Text = "End:";
+            // 
+            // knudLinkAreaStart
+            // 
+            this.knudLinkAreaStart.Enabled = false;
+            this.knudLinkAreaStart.Location = new System.Drawing.Point(59, 40);
+            this.knudLinkAreaStart.Name = "knudLinkAreaStart";
+            this.knudLinkAreaStart.Size = new System.Drawing.Size(55, 22);
+            this.knudLinkAreaStart.TabIndex = 2;
+            // 
+            // klblLinkAreaStart
+            // 
+            this.klblLinkAreaStart.Enabled = false;
+            this.klblLinkAreaStart.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.klblLinkAreaStart.Location = new System.Drawing.Point(14, 40);
+            this.klblLinkAreaStart.Name = "klblLinkAreaStart";
+            this.klblLinkAreaStart.Size = new System.Drawing.Size(39, 20);
+            this.klblLinkAreaStart.TabIndex = 1;
+            this.klblLinkAreaStart.Values.Text = "Start:";
+            // 
+            // kcmbContentAreaType
+            // 
+            this.kcmbContentAreaType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.kcmbContentAreaType.DropDownWidth = 215;
+            this.kcmbContentAreaType.IntegralHeight = false;
+            this.kcmbContentAreaType.Location = new System.Drawing.Point(14, 9);
+            this.kcmbContentAreaType.Name = "kcmbContentAreaType";
+            this.kcmbContentAreaType.Size = new System.Drawing.Size(215, 21);
+            this.kcmbContentAreaType.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kcmbContentAreaType.TabIndex = 0;
+            this.kcmbContentAreaType.SelectedIndexChanged += new System.EventHandler(this.kcmbContentAreaType_SelectedIndexChanged);
             // 
             // chkShowHelp
             // 
@@ -372,97 +451,6 @@
             this.kryptonLabel1.Target = this.textBoxMessage;
             this.kryptonLabel1.Values.Text = "&Message";
             // 
-            // kryptonGroupBox2
-            // 
-            this.kryptonGroupBox2.Location = new System.Drawing.Point(70, 176);
-            this.kryptonGroupBox2.Name = "kryptonGroupBox2";
-            // 
-            // kryptonGroupBox2.Panel
-            // 
-            this.kryptonGroupBox2.Panel.Controls.Add(this.kbtnAttachCommand);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.ktxtResourcePath);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.knudLinkAreaEnd);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.klblLinkAreaEnd);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.knudLinkAreaStart);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.klblLinkAreaStart);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.kcmbContentAreaType);
-            this.kryptonGroupBox2.Size = new System.Drawing.Size(246, 152);
-            this.kryptonGroupBox2.TabIndex = 9;
-            this.kryptonGroupBox2.Values.Heading = "Content Area Type";
-            // 
-            // kcmbContentAreaType
-            // 
-            this.kcmbContentAreaType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kcmbContentAreaType.DropDownWidth = 215;
-            this.kcmbContentAreaType.IntegralHeight = false;
-            this.kcmbContentAreaType.Location = new System.Drawing.Point(14, 4);
-            this.kcmbContentAreaType.Name = "kcmbContentAreaType";
-            this.kcmbContentAreaType.Size = new System.Drawing.Size(215, 21);
-            this.kcmbContentAreaType.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kcmbContentAreaType.TabIndex = 0;
-            this.kcmbContentAreaType.SelectedIndexChanged += new System.EventHandler(this.kcmbContentAreaType_SelectedIndexChanged);
-            // 
-            // klblLinkAreaStart
-            // 
-            this.klblLinkAreaStart.Enabled = false;
-            this.klblLinkAreaStart.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
-            this.klblLinkAreaStart.Location = new System.Drawing.Point(14, 31);
-            this.klblLinkAreaStart.Name = "klblLinkAreaStart";
-            this.klblLinkAreaStart.Size = new System.Drawing.Size(39, 20);
-            this.klblLinkAreaStart.TabIndex = 1;
-            this.klblLinkAreaStart.Values.Text = "Start:";
-            // 
-            // knudLinkAreaStart
-            // 
-            this.knudLinkAreaStart.Enabled = false;
-            this.knudLinkAreaStart.Location = new System.Drawing.Point(59, 31);
-            this.knudLinkAreaStart.Name = "knudLinkAreaStart";
-            this.knudLinkAreaStart.Size = new System.Drawing.Size(55, 22);
-            this.knudLinkAreaStart.TabIndex = 2;
-            // 
-            // knudLinkAreaEnd
-            // 
-            this.knudLinkAreaEnd.Enabled = false;
-            this.knudLinkAreaEnd.Location = new System.Drawing.Point(160, 31);
-            this.knudLinkAreaEnd.Name = "knudLinkAreaEnd";
-            this.knudLinkAreaEnd.Size = new System.Drawing.Size(55, 22);
-            this.knudLinkAreaEnd.TabIndex = 4;
-            // 
-            // klblLinkAreaEnd
-            // 
-            this.klblLinkAreaEnd.Enabled = false;
-            this.klblLinkAreaEnd.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
-            this.klblLinkAreaEnd.Location = new System.Drawing.Point(120, 31);
-            this.klblLinkAreaEnd.Name = "klblLinkAreaEnd";
-            this.klblLinkAreaEnd.Size = new System.Drawing.Size(34, 20);
-            this.klblLinkAreaEnd.TabIndex = 3;
-            this.klblLinkAreaEnd.Values.Text = "End:";
-            // 
-            // ktxtResourcePath
-            // 
-            this.ktxtResourcePath.ButtonSpecs.Add(this.bsaBrowse);
-            this.ktxtResourcePath.Enabled = false;
-            this.ktxtResourcePath.Location = new System.Drawing.Point(14, 59);
-            this.ktxtResourcePath.Name = "ktxtResourcePath";
-            this.ktxtResourcePath.Size = new System.Drawing.Size(215, 24);
-            this.ktxtResourcePath.TabIndex = 5;
-            // 
-            // kbtnAttachCommand
-            // 
-            this.kbtnAttachCommand.Enabled = false;
-            this.kbtnAttachCommand.Location = new System.Drawing.Point(14, 89);
-            this.kbtnAttachCommand.Name = "kbtnAttachCommand";
-            this.kbtnAttachCommand.Size = new System.Drawing.Size(215, 25);
-            this.kbtnAttachCommand.TabIndex = 6;
-            this.kbtnAttachCommand.Values.Text = "Attach KryptonCommand";
-            this.kbtnAttachCommand.Click += new System.EventHandler(this.kbtnAttachCommand_Click);
-            // 
-            // bsaBrowse
-            // 
-            this.bsaBrowse.Text = "...";
-            this.bsaBrowse.UniqueName = "ffe02cb1dc9f459c96d1eaf55bd7e985";
-            this.bsaBrowse.Click += new System.EventHandler(this.bsaBrowse_Click);
-            // 
             // kcmdTest
             // 
             this.kcmdTest.Text = "kryptonCommand1";
@@ -472,7 +460,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 614);
+            this.ClientSize = new System.Drawing.Size(690, 574);
             this.Controls.Add(this.textBoxMessage);
             this.Controls.Add(this.textBoxCaption);
             this.Controls.Add(this.kryptonPanel1);
@@ -501,13 +489,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).EndInit();
             this.kryptonGroupBox2.Panel.ResumeLayout(false);
             this.kryptonGroupBox2.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).EndInit();
             this.kryptonGroupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kcmbContentAreaType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -550,7 +538,6 @@
         private Krypton.Toolkit.KryptonLabel klblLinkAreaEnd;
         private Krypton.Toolkit.KryptonNumericUpDown knudLinkAreaStart;
         private Krypton.Toolkit.KryptonTextBox ktxtResourcePath;
-        private Krypton.Toolkit.KryptonButton kbtnAttachCommand;
         private Krypton.Toolkit.ButtonSpecAny bsaBrowse;
         private Krypton.Toolkit.KryptonCommand kcmdTest;
     }
