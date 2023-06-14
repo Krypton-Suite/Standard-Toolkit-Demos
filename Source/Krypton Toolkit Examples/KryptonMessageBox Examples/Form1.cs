@@ -11,7 +11,9 @@
 #endregion
 
 using System;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
@@ -25,6 +27,9 @@ namespace KryptonMessageBoxExamples
         private KryptonMessageBoxIcon _kmbIcon = KryptonMessageBoxIcon.Warning;
         private KryptonMessageBoxButtons _mbButtons = KryptonMessageBoxButtons.OKCancel;
         private MessageBoxOptions _options = 0;
+        private MessageBoxContentAreaType _contentAreaType = MessageBoxContentAreaType.Normal;
+        private int _linkAreaStart, _linkAreaEnd;
+        private KryptonCommand _commandTest;
 
         public Form1()
         {
@@ -139,10 +144,10 @@ namespace KryptonMessageBoxExamples
 #endif
                )
             {
-                MessageBox.Show(textBoxMessage.Text, textBoxCaption.Text, 
-                    (MessageBoxButtons)_mbButtons, 
-                    _mbIcon, MessageBoxDefaultButton.Button1, 
-                    _options, 
+                MessageBox.Show(textBoxMessage.Text, textBoxCaption.Text,
+                    (MessageBoxButtons)_mbButtons,
+                    _mbIcon, MessageBoxDefaultButton.Button1,
+                    _options,
                     chkShowHelp.Checked);
             }
 
@@ -150,7 +155,8 @@ namespace KryptonMessageBoxExamples
                 _mbButtons,
                 _kmbIcon,
                 options: _options,
-                showHelpButton: chkShowHelp.Checked);
+                showHelpButton: chkShowHelp.Checked, contentAreaType: _contentAreaType,
+                linkAreaStart: _linkAreaStart, linkAreaEnd: _linkAreaEnd, linkAreaCommand: _commandTest);
 
             textBoxMessage.Text = $@"Krypton DialogResult = {res}";
         }
@@ -163,20 +169,19 @@ namespace KryptonMessageBoxExamples
         private void Form1_HelpRequested(object sender, HelpEventArgs hlpEvent)
         {
             // Create a custom Help window in response to the HelpRequested event.
-            using Form helpForm = new() 
-            {
+            using Form helpForm = new() {
                 // Set up the form position, size, and title caption.
                 StartPosition = FormStartPosition.Manual,
                 Size = new Size(200, 400),
-                DesktopLocation = new Point(DesktopBounds.X + Size.Width,DesktopBounds.Top),
+                DesktopLocation = new Point(DesktopBounds.X + Size.Width, DesktopBounds.Top),
                 Text = @"Help Form"
             };
 
             // Create a label to contain the Help text.
-            Label helpLabel = new Label ();
+            Label helpLabel = new Label();
 
             // Add the label to the form and set its text.
-            helpForm.Controls.Add (helpLabel);
+            helpForm.Controls.Add(helpLabel);
             helpLabel.Dock = DockStyle.Fill;
 
             // Use the sender parameter to identify the context of the Help request.
@@ -187,13 +192,13 @@ namespace KryptonMessageBoxExamples
 
             // Set the Help form to be owned by the main form. This helps
             // to ensure that the Help form is disposed of.
-            AddOwnedForm (helpForm);
+            AddOwnedForm(helpForm);
 
             // Show the custom Help window.
-            helpForm.Show ();
+            helpForm.Show();
 
             // Indicate that the HelpRequested event is handled.
-            hlpEvent.Handled = true;        
+            hlpEvent.Handled = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -202,11 +207,89 @@ namespace KryptonMessageBoxExamples
             {
                 kcmbIcons.Items.Add(value);
             }
+
+            foreach (string value in Enum.GetNames(typeof(MessageBoxContentAreaType)))
+            {
+                kcmbContentAreaType.Items.Add(value);
+            }
+
+            knudLinkAreaStart.Maximum = textBoxMessage.Text.Length;
+
+            knudLinkAreaEnd.Maximum = textBoxMessage.Text.Length;
+
+            knudLinkAreaEnd.Value = textBoxMessage.Text.Length;
+        }
+
+        private void textBoxMessage_TextChanged(object sender, EventArgs e)
+        {
+            knudLinkAreaStart.Maximum = textBoxMessage.Text.Length;
+
+            knudLinkAreaEnd.Maximum = textBoxMessage.Text.Length;
+
+            knudLinkAreaEnd.Value = textBoxMessage.Text.Length;
         }
 
         private void kcmbIcons_SelectedIndexChanged(object sender, EventArgs e)
         {
             _kmbIcon = (KryptonMessageBoxIcon)Enum.Parse(typeof(KryptonMessageBoxIcon), kcmbIcons.Text);
+        }
+
+        private void kcmbContentAreaType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (kcmbContentAreaType.SelectedIndex == 0)
+            {
+                _contentAreaType = MessageBoxContentAreaType.Normal;
+
+                ToggleContentAreaControls(false);
+            }
+            else
+            {
+                _contentAreaType = MessageBoxContentAreaType.LinkLabel;
+
+                ToggleContentAreaControls(true);
+            }
+        }
+
+        private void kbtnAttachCommand_Click(object sender, EventArgs e)
+        {
+            _commandTest = kcmdTest;
+        }
+
+        private void kcmdTest_Execute(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start(ktxtResourcePath.Text);
+            }
+            catch (Exception exception)
+            {
+                KryptonMessageBox.Show(exception.Message);
+            }
+        }
+
+        private void bsaBrowse_Click(object sender, EventArgs e)
+        {
+            KryptonOpenFileDialog ofd = new() { Title = @"Browse for file:" };
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                ktxtResourcePath.Text = Path.GetFullPath(ofd.FileName);
+            }
+        }
+
+        private void ToggleContentAreaControls(bool enabled)
+        {
+            klblLinkAreaStart.Enabled = enabled;
+
+            klblLinkAreaEnd.Enabled = enabled;
+
+            knudLinkAreaStart.Enabled = enabled;
+
+            knudLinkAreaEnd.Enabled = enabled;
+
+            ktxtResourcePath.Enabled = enabled;
+
+            kbtnAttachCommand.Enabled = enabled;
         }
     }
 }

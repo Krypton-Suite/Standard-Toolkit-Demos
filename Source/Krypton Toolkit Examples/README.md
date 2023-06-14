@@ -117,6 +117,7 @@ There are 2 set of solutions in these projects:
 ![KryptonBreadCrumb Examples](KryptonBreadCrumb%20Examples/example.png)
 ## KryptonButton Examples
 ![KryptonButton Examples](KryptonButton%20Examples/example.png)
+![KryptonSplitButton](KryptonButton%20Examples/KryptonSplitButtonDemo.gif)
 ## Krypton UAC Button
 ![Krypton UAC Button](Krypton%20UAC%20Button/UACButtonUsage.gif)
 ## KryptonCheckBox Examples
