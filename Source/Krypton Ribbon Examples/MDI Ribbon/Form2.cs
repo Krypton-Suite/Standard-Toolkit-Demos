@@ -48,67 +48,89 @@ namespace MDIRibbon
         private void radioSystem_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSystem.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
+            }
         }
 
         private void radioOffice2003_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2003.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
+            }
         }
 
         private void radio2010Blue_CheckedChanged(object sender, EventArgs e)
         {
             if (radio2010Blue.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
+            }
         }
 
         private void radio2010Silver_CheckedChanged(object sender, EventArgs e)
         {
             if (radio2010Silver.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
+            }
         }
 
         private void radio2010Black_CheckedChanged(object sender, EventArgs e)
         {
             if (radio2010Black.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
+            }
         }
 
         private void radioBlue_CheckedChanged(object sender, EventArgs e)
         {
             if (radioBlue.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
+            }
         }
 
         private void radioSilver_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSilver.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
+            }
         }
 
         private void radioBlack_CheckedChanged(object sender, EventArgs e)
         {
             if (radioBlack.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
+            }
         }
 
         private void radioSparkleBlue_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSparkleBlue.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
+            }
         }
 
         private void radioSparkleOrange_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSparkleOrange.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.SparkleOrange;
+            }
         }
 
         private void radioSparklePurple_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSparklePurple.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.SparklePurple;
+            }
         }
 
         private void OnPaletteChanged(object sender, EventArgs e)

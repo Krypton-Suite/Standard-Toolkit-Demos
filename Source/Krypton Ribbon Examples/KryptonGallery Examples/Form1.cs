@@ -29,29 +29,35 @@ namespace KryptonGalleryExamples
         private void radioSmallList_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSmallList.Checked)
+            {
                 kryptonGallery1.ImageList = imageListSmall;
+            }
         }
 
         private void radioMediumList_CheckedChanged(object sender, EventArgs e)
         {
             if (radioMediumList.Checked)
+            {
                 kryptonGallery1.ImageList = imageListMedium;
+            }
         }
 
         private void radioLargeList_CheckedChanged(object sender, EventArgs e)
         {
             if (radioLargeList.Checked)
+            {
                 kryptonGallery1.ImageList = imageListLarge;
+            }
         }
 
         private void numericWidth_ValueChanged(object sender, EventArgs e)
         {
-            kryptonGallery1.PreferredItemSize = new Size(Convert.ToInt32(numericWidth.Value), kryptonGallery1.PreferredItemSize.Height);
+            kryptonGallery1.PreferredItemSize = kryptonGallery1.PreferredItemSize with { Width = Convert.ToInt32(numericWidth.Value) };
         }
 
         private void numericHeight_ValueChanged(object sender, EventArgs e)
         {
-            kryptonGallery1.PreferredItemSize = new Size(kryptonGallery1.PreferredItemSize.Width, Convert.ToInt32(numericHeight.Value));
+            kryptonGallery1.PreferredItemSize = kryptonGallery1.PreferredItemSize with { Height = Convert.ToInt32(numericHeight.Value) };
         }
 
         private void checkBoxGroupImages_CheckedChanged(object sender, EventArgs e)

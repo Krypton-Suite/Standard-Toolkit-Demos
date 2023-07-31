@@ -173,6 +173,7 @@ namespace RibbonToolTips
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
             this.pasteToolStripMenuItem.Text = "Paste";
+            this.pasteToolStripMenuItem.ToolTipText = "Test Tooltip";
             // 
             // pasteSpecialToolStripMenuItem
             // 

@@ -35,7 +35,9 @@ namespace ContextualTabs
         {
             // Pressing enter in text box is same as pressing the apply button
             if (e.KeyCode == Keys.Enter)
+            {
                 buttonSelectedApply_Click(buttonSelectedApply, EventArgs.Empty);
+            }
         }
 
         private void buttonEditColor_Click(object sender, EventArgs e)
@@ -81,67 +83,89 @@ namespace ContextualTabs
         private void radioOffice2010Blue_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2010Blue.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
+            }
         }
 
         private void radioOffice2010Silver_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2010Silver.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
+            }
         }
 
         private void radioOffice2010Black_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2010Black.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
+            }
         }
 
         private void radioOffice2007Blue_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2007Blue.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
+            }
         }
 
         private void radioOffice2007Silver_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2007Silver.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
+            }
         }
 
         private void radioOffice2007Black_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2007Black.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
+            }
         }
 
         private void radioOffice2003_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2003.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
+            }
         }
 
         private void radioSparkleBlue_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSparkleBlue.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
+            }
         }
 
         private void radioSparkleOrange_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSparkleOrange.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.SparkleOrange;
+            }
         }
 
         private void radioSparklePurple_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSparklePurple.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.SparklePurple;
+            }
         }
 
         private void radioSystem_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSystem.Checked)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
+            }
         }
 
         private void appMenu_Click(object sender, EventArgs e)

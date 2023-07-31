@@ -44,14 +44,18 @@ namespace MDIRibbon
         {
             // Close just the active child
             if (ActiveMdiChild != null)
+            {
                 ActiveMdiChild.Close();
+            }
         }
 
         private void buttonCloseAllWindows_Click(object sender, EventArgs e)
         {
             // Keep closing active children until all gone
             while (ActiveMdiChild != null)
+            {
                 ActiveMdiChild.Close();
+            }
         }
 
         private void buttonCascade_Click(object sender, EventArgs e)

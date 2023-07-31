@@ -9,6 +9,12 @@
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <UseWindowsForms>true</UseWindowsForms>
         <PlatformTarget>AnyCPU</PlatformTarget>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <NeutralLanguage>en</NeutralLanguage>
+        <LangVersion>preview</LangVersion>
+        <Nullable>enable</Nullable>
+        <WarningLevel>6</WarningLevel>
+        <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
     </PropertyGroup>
     <ItemGroup>
         <Content Include="Krypton.ico" />
