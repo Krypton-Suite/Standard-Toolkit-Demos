@@ -1,5 +1,8 @@
 # <img src="https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png?raw=true"> Standard Toolkit Demos - ChangeLog
 
+## 2023-07-31 - Build 2311 - November 2023
+* Update the `KryptonContextMenu Examples` to showcase tooltips: [#143](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/143)
+
 ## 2023-06-26 - Build 2306 - June 2023
 * Upgraded installer projects to WIX 4
 

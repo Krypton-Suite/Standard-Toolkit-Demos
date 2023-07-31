@@ -178,17 +178,29 @@ namespace RibbonAndNavigatorAndWorkspace
             NavigatorMode newMode = NavigatorMode.BarTabGroup;
 
             if (checkSetDocMode.CheckedButton == buttonTabs)
+            {
                 newMode = NavigatorMode.BarTabGroup;
+            }
             else if (checkSetDocMode.CheckedButton == buttonRibbonTabs)
+            {
                 newMode = NavigatorMode.BarRibbonTabGroup;
+            }
             else if (checkSetDocMode.CheckedButton == buttonCheckButtons)
+            {
                 newMode = NavigatorMode.BarCheckButtonGroupOutside;
+            }
             else if (checkSetDocMode.CheckedButton == buttonHeaderGroup)
+            {
                 newMode = NavigatorMode.HeaderGroup;
+            }
             else if (checkSetDocMode.CheckedButton == buttonHeaderBar)
+            {
                 newMode = NavigatorMode.HeaderBarCheckButtonHeaderGroup;
+            }
             else if (checkSetDocMode.CheckedButton == buttonStack)
+            {
                 newMode = NavigatorMode.StackCheckButtonGroup;
+            }
 
             cell.NavigatorMode = newMode;
 

@@ -33,29 +33,53 @@ namespace KeyTipsAndKeyboardAccess
         private void checkSetPalette_CheckedButtonChanged(object sender, EventArgs e)
         {
             if (checkSetPalette.CheckedButton == buttonOffice2007Blue)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
+            }
             else if (checkSetPalette.CheckedButton == buttonOffice2007Silver)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
+            }
             else if (checkSetPalette.CheckedButton == buttonOffice2007Black)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
+            }
             else if (checkSetPalette.CheckedButton == buttonProfessional2003)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
+            }
             else if (checkSetPalette.CheckedButton == buttonProfessionalSystem)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
+            }
             else if (checkSetPalette.CheckedButton == buttonSparkleBlue)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
+            }
             else if (checkSetPalette.CheckedButton == buttonSparkleOrange)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.SparkleOrange;
+            }
             else if (checkSetPalette.CheckedButton == buttonSparklePurple)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.SparklePurple;
+            }
             else if (checkSetPalette.CheckedButton == buttonOffice2010Blue)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
+            }
             else if (checkSetPalette.CheckedButton == buttonOffice2010Silver)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
+            }
             else if (checkSetPalette.CheckedButton == buttonOffice2010Black)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
+            }
             else if (checkSetPalette.CheckedButton == buttonOffice365Black)
+            {
                 kryptonManager.GlobalPaletteMode = PaletteMode.Microsoft365Black;
+            }
         }
 
         private void OnDialogBoxLauncherClick(object sender, EventArgs e)
@@ -82,7 +106,9 @@ namespace KeyTipsAndKeyboardAccess
 
             var text = button.TextLine1;
             if (!string.IsNullOrEmpty(button.TextLine2))
+            {
                 text += " " + button.TextLine2;
+            }
 
             MessageBox.Show(this,
                             "You selected the '" + text + "' button.",

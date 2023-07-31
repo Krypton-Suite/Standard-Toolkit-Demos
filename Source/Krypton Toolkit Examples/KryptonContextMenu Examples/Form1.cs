@@ -25,10 +25,10 @@ namespace KryptonContextMenuExamples
         {
             comboBoxH.SelectedIndex = 2;
             comboBoxV.SelectedIndex = 1;
-            kryptonThemeComboBox1.Items.Remove(kryptonThemeComboBox1.Items.Count-1);    // Remove the "Custom" option
+            kryptonThemeComboBox1.Items.Remove(kryptonThemeComboBox1.Items.Count - 1);    // Remove the "Custom" option
             kryptonThemeComboBox1.SelectedIndex = 4;
         }
-        
+
         private void buttonShowHeadingsClick(object sender, EventArgs e) => ShowMenu(buttonShowHeadings, kcmHeadings);
 
         private void buttonShowSeparatorsClick(object sender, EventArgs e) => ShowMenu(buttonShowSeparators, kcmSeparators);
