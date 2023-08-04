@@ -11,6 +11,8 @@
 #endregion
 
 using System;
+using System.IO;
+using System.Windows.Forms;
 
 using Krypton.Toolkit;
 
@@ -53,12 +55,44 @@ namespace KryptonPaletteExamples
             }
             else
             {
-                selectedPalette = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
+                selectedPalette = new KryptonCustomPaletteBase(components);
                 selectedPalette.BasePaletteMode = kryptonThemeComboBox1.Manager.GlobalPaletteMode;
             }
 
             propertyGrid.SelectedObject = selectedPalette;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Simulate loading from Stream (i.e. from application resource) by acquiring filename first
+                using var kofd = new KryptonOpenFileDialog 
+                {
+                    CheckFileExists = true,
+                    CheckPathExists = true,
+                    DefaultExt = @"xml",
+                    Filter = @"Palette files (*.xml)|*.xml|All files (*.*)|(*.*)",
+                    Title = @"Load Custom Palette"
+                };
+
+                string paletteFileName = (kofd.ShowDialog() == DialogResult.OK)
+                    ? kofd.FileName
+                    : string.Empty;
+                if (string.IsNullOrWhiteSpace(paletteFileName))
+                {
+                    return;
+                }
+                kryptonPaletteCustom.ImportWithUpgrade(File.OpenRead(paletteFileName));
+
+                kryptonThemeComboBox1.Manager.GlobalPalette = kryptonPaletteCustom;
+
+                kryptonThemeComboBox1.Manager.GlobalPaletteMode = PaletteMode.Custom;
+            }
+            catch (Exception exc)
+            {
+                KryptonMessageBox.Show(this, exc.ToString());
+            }
+        }
     }
 }
