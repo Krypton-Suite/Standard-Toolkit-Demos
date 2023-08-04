@@ -187,7 +187,7 @@ There are 2 set of solutions in these projects:
 ## KryptonOpenFileDialog
 ![KryptonOpenFileDialog Example](KryptonOpenFileDialog%20Example/example.png)
 ## KryptonPalette
-![KryptonPalette Examples](KryptonPalette%20Examples/example.png)
+![KryptonPalette Examples](KryptonPalette%20Examples/example.gif)
 ## KryptonPanel
 ![KryptonPanel Examples](KryptonPanel%20Examples/example.png)
 ## KryptonPrintDialog
