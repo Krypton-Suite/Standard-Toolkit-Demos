@@ -79,7 +79,7 @@ namespace KryptonBorderEdgeExamples
 
         [Category("Visuals")]
         [Description("Button style.")]
-        [DefaultValue(typeof(ButtonStyle), "Standalone")]
+        [DefaultValue(typeof(ButtonStyle), ButtonStyleStrings.DEFAULT_BUTTON_SPEC_STYLE_STANDALONE)]
         public ButtonStyle ButtonStyle
         {
             get => _button.ButtonStyle;
