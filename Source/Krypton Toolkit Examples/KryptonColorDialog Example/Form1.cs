@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
@@ -41,13 +42,24 @@ namespace KryptonFontDialog_Example_2019
                 CustomColors = customColors,
                 Title = @"Test Colour Dialog being set",
                 ShowIcon = chkShowIcon.Checked,
-                //Icon = Icon
+                //Icon = Icon,
+                ShowAlphaSlider = chkShowAlphaSlider.Checked
             };
             if (kfd.ShowDialog(this) == DialogResult.OK)
             {
                 KryptonMessageBox.Show(this, kfd.Color.ToString(), @"Color chosen is");
                 customColors = kfd.CustomColors;
             }
+        }
+
+        private void kryptonTrackBar1_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+        }
+
+        private void kryptonTrackBar1_ValueChanged(object sender, EventArgs e)
+        {
+            kryptonLabel1.Text = kryptonTrackBar1.Value.ToString(CultureInfo.InvariantCulture);
+            //kryptonTrackBar1.ToolTipManager
         }
     }
 }
