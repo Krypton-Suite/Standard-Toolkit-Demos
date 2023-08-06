@@ -6,10 +6,12 @@
         <AssemblyName>Krypton Color Dialog Example</AssemblyName>
         <UseWindowsForms>true</UseWindowsForms>
         <NeutralLanguage>en</NeutralLanguage>
-        <NeutralLanguage>en</NeutralLanguage>
-        <LangVersion>preview</LangVersion>
+        <NeutralLanguage>en</NeutralLanguage>        <LangVersion>preview</LangVersion>
+        <Nullable>enable</Nullable>
+        <WarningLevel>6</WarningLevel>
+        <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
     </PropertyGroup>
-    <Choose>
+<Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
                 <PackageReference Include="Krypton.Toolkit.Canary" Version="80.22.12.356-beta" />

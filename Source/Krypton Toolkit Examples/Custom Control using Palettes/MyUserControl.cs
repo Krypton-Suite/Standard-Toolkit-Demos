@@ -14,6 +14,7 @@ using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
+
 using Krypton.Toolkit;
 
 namespace CustomControlUsingPalettes
@@ -22,7 +23,7 @@ namespace CustomControlUsingPalettes
     {
         private bool _mouseOver;
         private bool _mouseDown;
-        private PaletteBase _palette;
+        private PaletteBase? _palette;
 
         public MyUserControl()
         {
@@ -135,25 +136,25 @@ namespace CustomControlUsingPalettes
                     e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
                     // Fill the entire background in the control background color
-                    using (Brush backBrush = new LinearGradientBrush(ClientRectangle, backColor1, backColor2, backColorAngle))
+                    using (var backBrush = new LinearGradientBrush(ClientRectangle, backColor1, backColor2, backColorAngle))
                     {
                         e.Graphics.FillRectangle(backBrush, e.ClipRectangle);
                     }
 
                     // Fill the entire fish background using a gradient
-                    using (Brush fillBrush = new LinearGradientBrush(ClientRectangle, fillColor1, fillColor2, fillColorAngle))
+                    using (var fillBrush = new LinearGradientBrush(ClientRectangle, fillColor1, fillColor2, fillColorAngle))
                     {
                         e.Graphics.FillPath(fillBrush, path);
                     }
 
                     // Draw the fish border using a single color
-                    using (Pen borderPen = new Pen(borderColor))
+                    using (var borderPen = new Pen(borderColor))
                     {
                         e.Graphics.DrawPath(borderPen, path);
                     }
 
                     // Draw the text in about the center of the control
-                    using (Brush textBrush = new SolidBrush(textColor))
+                    using (var textBrush = new SolidBrush(textColor))
                     {
                         e.Graphics.DrawString("Click me!", textFont, textBrush, Width / 2 - 10, Height / 2 - 5);
                     }
@@ -166,25 +167,15 @@ namespace CustomControlUsingPalettes
             base.OnPaint(e);
         }
 
-        private PaletteState GetButtonState()
-        {
-            // Find the correct state when getting button values
-            if (!Enabled)
-            {
-                return PaletteState.Disabled;
-            }
-            else
-            {
-                if (_mouseOver)
-                {
-                    return _mouseDown ? PaletteState.Pressed : PaletteState.Tracking;
-                }
-                else
-                {
-                    return PaletteState.Normal;
-                }
-            }
-        }
+        // Find the correct state when getting button values
+        private PaletteState GetButtonState() =>
+            !Enabled
+                ? PaletteState.Disabled
+                : _mouseOver
+                    ? _mouseDown
+                        ? PaletteState.Pressed
+                        : PaletteState.Tracking
+                    : PaletteState.Normal;
 
         private GraphicsPath CreateFishPath()
         {
@@ -198,7 +189,7 @@ namespace CustomControlUsingPalettes
             int h2 = Height / 2;
             int h4 = Height / 4;
 
-            GraphicsPath fishPath = new GraphicsPath();
+            var fishPath = new GraphicsPath();
 
             // Create the tail of the fish
             fishPath.AddLine(fishRect.Left + w6, fishRect.Bottom - h4, fishRect.Left, fishRect.Bottom);
@@ -207,8 +198,8 @@ namespace CustomControlUsingPalettes
 
             // Create the curving body of the fish
             fishPath.AddCurve(new Point[]{ new Point(fishRect.Left + w6, fishRect.Top + h4),
-                                           new Point(fishRect.Right - w3, fishRect.Top), 
-                                           new Point(fishRect.Right, fishRect.Top + h2), 
+                                           new Point(fishRect.Right - w3, fishRect.Top),
+                                           new Point(fishRect.Right, fishRect.Top + h2),
                                            new Point(fishRect.Right - w3, fishRect.Bottom),
                                            new Point(fishRect.Left + w6, fishRect.Bottom - h4)}, 0.8f);
 

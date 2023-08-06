@@ -1,6 +1,8 @@
 # <img src="https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png?raw=true"> Standard Toolkit Demos - ChangeLog
 
 ## 2023-11-## - Build 2311 - November 2023
+* Addition of new example for Progress Bars
+* Update KryptonColour Example to show usage of Alpha colour selection
 * Update Palette Example to show in memory xml stream upgrade: [#1050](https://github.com/Krypton-Suite/Standard-Toolkit/issues/1050)
 * Update the `KryptonContextMenu Examples` to showcase tooltips: [#143](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/143)
 

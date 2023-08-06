@@ -50,6 +50,7 @@
 	* [KryptonPalette](#kryptonpalette)
 	* [KryptonPanel](#kryptonpanel)
 	* [KryptonPrintDialog](#kryptonprintdialog)
+	* [KryptonProgressBar](#kryptonprogressbar)
 	* [KryptonPropertyGrid](#kryptonpropertygrid)
 	* [KryptonRadioButton](#kryptonradiobutton)
 	* [KryptonRichTextBox](#kryptonrichtextbox)
@@ -192,6 +193,8 @@ There are 2 set of solutions in these projects:
 ![KryptonPanel Examples](KryptonPanel%20Examples/example.png)
 ## KryptonPrintDialog
 ![KryptonPrintDialog Example](KryptonPrintDialog%20Example/example.png)
+## KryptonProgressBar
+![KryptonProgressBar Examples](KryptonProgressBar%20Examples/example.gif)
 ## KryptonPropertyGrid
 ![KryptonPropertyGridExample](KryptonPropertyGridExample/example.gif)
 ## KryptonRadioButton

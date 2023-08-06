@@ -25,14 +25,14 @@ namespace CustomControlUsingRenderers
         private VisualOrientation _orientation;
         private bool _mouseOver;
         private bool _mouseDown;
-        private PaletteBase _palette;
+        private PaletteBase? _palette;
         private readonly PaletteRedirect _paletteRedirect;
         private readonly PaletteBackInheritRedirect _paletteBack;
         private readonly PaletteBorderInheritRedirect _paletteBorder;
         private readonly PaletteContentInheritRedirect _paletteContent;
-        private IDisposable _mementoContent;
-        private IDisposable _mementoBack1;
-        private IDisposable _mementoBack2;
+        private IDisposable? _mementoContent;
+        private IDisposable? _mementoBack1;
+        private IDisposable? _mementoBack2;
 
         public MyUserControl()
         {
@@ -140,6 +140,7 @@ namespace CustomControlUsingRenderers
             Invalidate();
             base.OnMouseLeave(e);
         }
+
         protected override void OnLayout(LayoutEventArgs e)
         {
             if (_palette != null)
@@ -154,10 +155,10 @@ namespace CustomControlUsingRenderers
                 innerRect.Inflate(-20, -20);
 
                 // Get the renderer associated with this palette
-                IRenderer renderer = _palette.GetRenderer();
+                IRenderer? renderer = _palette.GetRenderer();
 
                 // Create a layout context used to allow the renderer to layout the content
-                using ViewLayoutContext viewContext = new ViewLayoutContext(this, renderer);
+                using var viewContext = new ViewLayoutContext(this, renderer);
                 // Setup the appropriate style for the content
                 _paletteContent.Style = PaletteContentStyle.ButtonStandalone;
 
@@ -178,10 +179,10 @@ namespace CustomControlUsingRenderers
             if (_palette != null)
             {
                 // Get the renderer associated with this palette
-                IRenderer renderer = _palette.GetRenderer();
+                IRenderer? renderer = _palette.GetRenderer();
 
                 // Create the rendering context that is passed into all renderer calls
-                using RenderContext renderContext = new RenderContext(this, e.Graphics, e.ClipRectangle, renderer);
+                using var renderContext = new RenderContext(this, e.Graphics, e.ClipRectangle, renderer);
                 /////////////////////////////////////////////////////////////////////////////////
                 // We want to draw the background of the entire control over the entire client //
                 // area. In this example we are using a background style of HeaderPrimary      //
@@ -248,29 +249,19 @@ namespace CustomControlUsingRenderers
             base.OnPaint(e);
         }
 
-        private PaletteState GetButtonState()
-        {
-            // Find the correct state when getting button values
-            if (!Enabled)
-            {
-                return PaletteState.Disabled;
-            }
-            else
-            {
-                if (_mouseOver)
-                {
-                    return _mouseDown ? PaletteState.Pressed : PaletteState.Tracking;
-                }
-                else
-                {
-                    return PaletteState.Normal;
-                }
-            }
-        }
+        // Find the correct state when getting button values
+        private PaletteState GetButtonState() =>
+            !Enabled 
+                ? PaletteState.Disabled 
+                : _mouseOver 
+                    ? _mouseDown 
+                        ? PaletteState.Pressed 
+                        : PaletteState.Tracking 
+                    : PaletteState.Normal;
 
         private GraphicsPath CreateRectGraphicsPath(Rectangle rect)
         {
-            GraphicsPath path = new GraphicsPath();
+            var path = new GraphicsPath();
             path.AddRectangle(rect);
             return path;
         }
@@ -297,9 +288,8 @@ namespace CustomControlUsingRenderers
             Invalidate();
         }
 
-        private void OnPalettePaint(object sender, PaletteLayoutEventArgs e) =>
-            // Palette indicates we might need to repaint, so lets do it
-            Invalidate();
+        // Palette indicates we might need to repaint, so lets do it
+        private void OnPalettePaint(object sender, PaletteLayoutEventArgs e) => Invalidate();
 
         #region IContentValues
         public Image GetImage(PaletteState state) => global::CustomControlUsingRenderers.Properties.Resources.wizard;

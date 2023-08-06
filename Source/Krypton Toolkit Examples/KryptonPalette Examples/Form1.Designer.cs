@@ -187,7 +187,6 @@ namespace KryptonPaletteExamples
             this.kryptonProgressBar1.Size = new System.Drawing.Size(159, 23);
             this.kryptonProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.kryptonProgressBar1.TabIndex = 19;
-            this.kryptonProgressBar1.UseKrypton = true;
             // 
             // kryptonCheckBox1
             // 
