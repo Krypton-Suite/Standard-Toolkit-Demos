@@ -7,11 +7,12 @@
         <AssemblyName>Krypton ListView Examples</AssemblyName>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <PlatformTarget>AnyCPU</PlatformTarget>
-        <NeutralLanguage>en</NeutralLanguage>
-        <LangVersion>preview</LangVersion>
+        <NeutralLanguage>en</NeutralLanguage>        <LangVersion>preview</LangVersion>
+        <Nullable>enable</Nullable>
+        <WarningLevel>6</WarningLevel>
+        <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
     </PropertyGroup>
-
-    <ItemGroup>
+<ItemGroup>
         <Content Include="Krypton.ico" />
     </ItemGroup>
 
