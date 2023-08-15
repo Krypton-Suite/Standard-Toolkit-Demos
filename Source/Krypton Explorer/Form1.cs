@@ -32,7 +32,7 @@ namespace KryptonExplorer
 
         private Settings _settings = new();
 
-        private string _documentationDownladLocation;
+        private string _documentationDownloadLocation;
 
         #endregion
 
@@ -536,13 +536,13 @@ namespace KryptonExplorer
             {
                 WebClient client = new();
 
-                _documentationDownladLocation = Path.GetFullPath(sfd.FileName);
+                _documentationDownloadLocation = Path.GetFullPath(sfd.FileName);
 
                 tspbDownloadStatus.Visible = true;
 
-                client.DownloadFile(@"https://tinyurl.com/mvksw89c", _documentationDownladLocation);
+                client.DownloadFile(@"https://tinyurl.com/mvksw89c", _documentationDownloadLocation);
 
-                tspbDownloadStatus.Text = $@"Downloading: {Path.GetFileName(_documentationDownladLocation)}";
+                tspbDownloadStatus.Text = $@"Downloading: {Path.GetFileName(_documentationDownloadLocation)}";
 
                 client.DownloadProgressChanged += DownloadProgressChanged;
 
@@ -560,7 +560,7 @@ namespace KryptonExplorer
 
                 if (result == DialogResult.Yes)
                 {
-                    Process.Start(_documentationDownladLocation);
+                    Process.Start(_documentationDownloadLocation);
                 }
             }
             catch (Exception exception)
@@ -582,9 +582,9 @@ namespace KryptonExplorer
 
             WebClient client = new();
 
-            tspbDownloadStatus.Text = $@"Downloading: {Path.GetFileName(_documentationDownladLocation)}";
+            tspbDownloadStatus.Text = $@"Downloading: {Path.GetFileName(_documentationDownloadLocation)}";
 
-            if (!string.IsNullOrEmpty(_documentationDownladLocation))
+            if (!string.IsNullOrEmpty(_documentationDownloadLocation))
             {
                 //var downladContent = await client.GetStreamAsync(@"https://tinyurl.com/mvksw89c");
 
@@ -593,7 +593,7 @@ namespace KryptonExplorer
                 //    downladContent.CopyTo(fs);
                 //}
 
-                client.DownloadFile(@"https://tinyurl.com/mvksw89c", _documentationDownladLocation);
+                client.DownloadFile(@"https://tinyurl.com/mvksw89c", _documentationDownloadLocation);
             }
         }
 
@@ -607,7 +607,7 @@ namespace KryptonExplorer
 
             if (result == DialogResult.Yes)
             {
-                Process.Start(_documentationDownladLocation);
+                Process.Start(_documentationDownloadLocation);
             }
         }
 
