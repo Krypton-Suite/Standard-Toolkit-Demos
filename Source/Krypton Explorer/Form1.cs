@@ -425,7 +425,7 @@ namespace KryptonExplorer
             }
             catch (Exception ex)
             {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", KryptonMessageBoxButtons.OK,
+                KryptonMessageBox.Show(this, $@"Error: {ex.Message}", @"Explorer", KryptonMessageBoxButtons.OK,
                     KryptonMessageBoxIcon.Error);
             }
             finally
@@ -645,5 +645,9 @@ namespace KryptonExplorer
         private void kllPropertyGrid_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Property Grid Example");
 
         private void kllblIntegratedToolbar_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Integrated Toolbar Example");
+
+        private void kllProgressBar_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton ProgressBar Examples");
+
+        private void kllKryptonThemeSelector_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Theme Selector");
     }
 }
