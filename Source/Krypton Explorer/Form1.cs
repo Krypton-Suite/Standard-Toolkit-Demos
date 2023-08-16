@@ -28,11 +28,11 @@ namespace KryptonExplorer
     {
         #region Variables
 
-        private Version _currentVersion = new(80, int.Parse(DateTime.Now.ToString("yy")), 03, 84);
+        private Version _currentVersion = new(80, int.Parse(DateTime.Now.ToString("yy")), 08, 233);
 
         private Settings _settings = new();
 
-        private string _documentationDownladLocation;
+        private string _documentationDownloadLocation;
 
         #endregion
 
@@ -425,7 +425,7 @@ namespace KryptonExplorer
             }
             catch (Exception ex)
             {
-                KryptonMessageBox.Show(this, ex.Message, @"Explorer", KryptonMessageBoxButtons.OK,
+                KryptonMessageBox.Show(this, $@"Error: {ex.Message}", @"Explorer", KryptonMessageBoxButtons.OK,
                     KryptonMessageBoxIcon.Error);
             }
             finally
@@ -536,13 +536,13 @@ namespace KryptonExplorer
             {
                 WebClient client = new();
 
-                _documentationDownladLocation = Path.GetFullPath(sfd.FileName);
+                _documentationDownloadLocation = Path.GetFullPath(sfd.FileName);
 
                 tspbDownloadStatus.Visible = true;
 
-                client.DownloadFile(@"https://tinyurl.com/mvksw89c", _documentationDownladLocation);
+                client.DownloadFile(@"https://tinyurl.com/mvksw89c", _documentationDownloadLocation);
 
-                tspbDownloadStatus.Text = $@"Downloading: {Path.GetFileName(_documentationDownladLocation)}";
+                tspbDownloadStatus.Text = $@"Downloading: {Path.GetFileName(_documentationDownloadLocation)}";
 
                 client.DownloadProgressChanged += DownloadProgressChanged;
 
@@ -560,7 +560,7 @@ namespace KryptonExplorer
 
                 if (result == DialogResult.Yes)
                 {
-                    Process.Start(_documentationDownladLocation);
+                    Process.Start(_documentationDownloadLocation);
                 }
             }
             catch (Exception exception)
@@ -582,9 +582,9 @@ namespace KryptonExplorer
 
             WebClient client = new();
 
-            tspbDownloadStatus.Text = $@"Downloading: {Path.GetFileName(_documentationDownladLocation)}";
+            tspbDownloadStatus.Text = $@"Downloading: {Path.GetFileName(_documentationDownloadLocation)}";
 
-            if (!string.IsNullOrEmpty(_documentationDownladLocation))
+            if (!string.IsNullOrEmpty(_documentationDownloadLocation))
             {
                 //var downladContent = await client.GetStreamAsync(@"https://tinyurl.com/mvksw89c");
 
@@ -593,7 +593,7 @@ namespace KryptonExplorer
                 //    downladContent.CopyTo(fs);
                 //}
 
-                client.DownloadFile(@"https://tinyurl.com/mvksw89c", _documentationDownladLocation);
+                client.DownloadFile(@"https://tinyurl.com/mvksw89c", _documentationDownloadLocation);
             }
         }
 
@@ -607,7 +607,7 @@ namespace KryptonExplorer
 
             if (result == DialogResult.Yes)
             {
-                Process.Start(_documentationDownladLocation);
+                Process.Start(_documentationDownloadLocation);
             }
         }
 
@@ -645,5 +645,9 @@ namespace KryptonExplorer
         private void kllPropertyGrid_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Property Grid Example");
 
         private void kllblIntegratedToolbar_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Integrated Toolbar Example");
+
+        private void kllProgressBar_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton ProgressBar Examples");
+
+        private void kllKryptonThemeSelector_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Theme Selector");
     }
 }
