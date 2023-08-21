@@ -353,3 +353,5 @@ MigrationBackup/
 /Source/WixInstaller/WixInstaller.net48/BasePath48.wxs
 /Source/WixInstaller/WixInstaller.net60/BasePath60.wxs
 Source/Krypton Toolkit Examples/Temp.txt
+*.msi
+*.wixpdb
