@@ -1,47 +1,48 @@
 ﻿<Project>
-	<Import Project="Sdk.props" Sdk="WixToolset.Sdk" Version="4.0.1" />
-	<PropertyGroup>
-		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-	</PropertyGroup>
-	<PropertyGroup>
-		<OutputName>Samples.v80.23.3.84-beta.Net48</OutputName>
-		<Name>WixInstaller.net48</Name>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-		<DefineConstants>Debug</DefineConstants>
-		<SuppressAllWarnings>False</SuppressAllWarnings>
-		<Pedantic>True</Pedantic>
-		<VerboseOutput>True</VerboseOutput>
-		<SuppressPdbOutput>True</SuppressPdbOutput>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-		<SuppressAllWarnings>False</SuppressAllWarnings>
-		<Pedantic>True</Pedantic>
-		<VerboseOutput>True</VerboseOutput>
-		<SuppressPdbOutput>True</SuppressPdbOutput>
-	</PropertyGroup>
-	<ItemGroup>
-		<Compile Include="BasePath48.wxs" />
-		<Compile Include="CheckFor.Net.wxs" />
-		<Compile Include="KryptonToolkitDemos.wxs" />
-		<Compile Include="Product.wxs" />
-	</ItemGroup>
-	<ItemGroup>
-		<Content Include="License.rtf" />
-		<Content Include="WixInstaller.net48.wax" />
-	</ItemGroup>
-	<ItemGroup>
-		<PackageReference Include="WixToolset.Util.wixext" Version="4.0.1" />
-		<PackageReference Include="WixToolset.UI.wixext" Version="4.0.1" />
-		<PackageReference Include="WixToolset.NetFx.wixext" Version="4.0.1" />
-		<PackageReference Include="WixToolset.Heat" Version="4.0.1" />
-	</ItemGroup>
-	<Import Project="Sdk.targets" Sdk="WixToolset.Sdk" Version="4.0.1" />
-	<Target Name="BeforeBuild">
-		<PropertyGroup>
-			<LinkerBaseInputPaths>..\..\..\Binaries\Krypton Demos\Release\net48</LinkerBaseInputPaths>
-			<DefineConstants>BasePath48=..\..\..\Binaries\Krypton Demos\Release\net48</DefineConstants>
-		</PropertyGroup>
-		<HeatDirectory OutputFile="BasePath48.wxs" DirectoryRefId="KryptonToolkitDemosDir" ComponentGroupName="BasePath48" SuppressCom="true" Directory="..\..\..\Binaries\Krypton Demos\Release\net48" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="true" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.BasePath48" Transforms="..\RemovePdbs.xslt" />
-	</Target>
+  <Import Project="Sdk.props" Sdk="WixToolset.Sdk" Version="4.0.1" />
+  <PropertyGroup>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputName>Samples.v80.23.8.233-beta.Net48</OutputName>
+    <Name>WixInstaller.net48</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DefineConstants>Debug</DefineConstants>
+    <SuppressAllWarnings>False</SuppressAllWarnings>
+    <Pedantic>True</Pedantic>
+    <VerboseOutput>True</VerboseOutput>
+    <SuppressPdbOutput>True</SuppressPdbOutput>
+    <OutputPath>..\..\..\Binaries\Installers</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <SuppressAllWarnings>False</SuppressAllWarnings>
+    <Pedantic>True</Pedantic>
+    <VerboseOutput>True</VerboseOutput>
+    <SuppressPdbOutput>True</SuppressPdbOutput>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BasePath48.wxs" />
+    <Compile Include="CheckFor.Net.wxs" />
+    <Compile Include="KryptonToolkitDemos.wxs" />
+    <Compile Include="Product.wxs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License.rtf" />
+    <Content Include="WixInstaller.net48.wax" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="WixToolset.Util.wixext" Version="4.0.1" />
+    <PackageReference Include="WixToolset.UI.wixext" Version="4.0.1" />
+    <PackageReference Include="WixToolset.NetFx.wixext" Version="4.0.1" />
+    <PackageReference Include="WixToolset.Heat" Version="4.0.1" />
+  </ItemGroup>
+  <Import Project="Sdk.targets" Sdk="WixToolset.Sdk" Version="4.0.1" />
+  <Target Name="BeforeBuild">
+    <PropertyGroup>
+      <LinkerBaseInputPaths>..\..\..\Binaries\Krypton Demos\Release\net48</LinkerBaseInputPaths>
+      <DefineConstants>BasePath48=..\..\..\Binaries\Krypton Demos\Release\net48</DefineConstants>
+    </PropertyGroup>
+    <HeatDirectory OutputFile="BasePath48.wxs" DirectoryRefId="KryptonToolkitDemosDir" ComponentGroupName="BasePath48" SuppressCom="true" Directory="..\..\..\Binaries\Krypton Demos\Release\net48" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="true" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.BasePath48" Transforms="..\RemovePdbs.xslt" />
+  </Target>
 </Project>

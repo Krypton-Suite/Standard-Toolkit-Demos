@@ -1,11 +1,11 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
 	<!-- do not change this ever !-->
-	<?define UpgradeCode = "38FC3474-F06B-4C57-8869-15B23AEBFB10" ?>
+	<?define UpgradeCode = "38FC3474-F06B-4C57-8869-15B23AEBFB60" ?>
 
-	<?define Version = "80.23.8.233" ?>
+	<?define Version = "80.23.4.180" ?>
 	<!--"!(bind.FileVersion.Krypton.Toolkit.dll)" -->
 
-	<?define ProductName = "Krypton Toolkit Demo Net48 Apps"?>
+	<?define ProductName = "Krypton Toolkit Demo Net80 Apps"?>
 
 	<Package Version="$(var.Version)" UpgradeCode="$(var.UpgradeCode)" Name="$(var.ProductName)" Language="1033" Manufacturer="https://github.com/Krypton-Suite" Scope="perUser">
 		<SummaryInformation Keywords="Installer" Description="$(var.ProductName)" />
@@ -19,13 +19,6 @@
 
 		<!-- This property enables verbose logging in WiX custom actions. It writes extra entries to the MSI log. -->
 		<Property Id="LOGVERBOSE" Value="1" />
-
-		<PropertyRef Id="NETFRAMEWORK45" />
-		<!-- Pull in the checks for .Net 4.x-->
-		<PropertyRef Id="WIX_IS_NETFRAMEWORK_480_OR_LATER_INSTALLED" />
-
-		<!-- Taken from https://github.com/wixtoolset/issues/issues/5977 -->
-		<Launch Condition="Installed OR WIX_IS_NETFRAMEWORK_480_OR_LATER_INSTALLED" Message="[ProductName] Requires .NET Framework 4.8.0 or later to be installed. Please install from the `Pre-Reqs` folder." />
 
 		<InstallExecuteSequence>
 			<!-- This disables removing shortcuts except on uninstall. -->
@@ -49,7 +42,7 @@
 
 		<Feature Id="ProductFeature" Title="KryptonToolkitDemos_Setup" Level="1">
 			<ComponentGroupRef Id="KryptonToolkitDemos" />
-			<ComponentGroupRef Id="BasePath48" />
+			<ComponentGroupRef Id="BasePath80" />
 			<ComponentRef Id="ProgramMenuDir2" />
 		</Feature>
 
@@ -65,7 +58,7 @@
 			<Directory Id="ProgramMenuDir" Name="Krypton Toolkit Demos" />
 		</StandardDirectory>
 		<StandardDirectory Id="CommonAppDataFolder">
-			<Directory Id="KryptonToolkitDemosDir" Name="Krypton Toolkit Demos net48" />
+			<Directory Id="KryptonToolkitDemosDir" Name="Krypton Toolkit Demos Net80" />
 		</StandardDirectory>
 	</Package>
 
