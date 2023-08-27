@@ -106,7 +106,7 @@ namespace KryptonBreadCrumbExamples
 
         [Category("Visuals")]
         [Description("Palette applied to drawing.")]
-        [DefaultValue(typeof(PaletteMode), "Global")]
+        [DefaultValue(PaletteMode.Global)]
         public PaletteMode PaletteMode
         {
             get => _breadCrumb.PaletteMode;

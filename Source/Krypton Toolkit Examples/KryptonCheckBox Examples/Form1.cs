@@ -109,7 +109,7 @@ namespace KryptonCheckBoxExamples
 
         [Category("Visuals")]
         [Description("Visual orientation of the control.")]
-        [DefaultValue(typeof(VisualOrientation), "Top")]
+        [DefaultValue(VisualOrientation.Top)]
         public VisualOrientation Orientation
         {
             get => _checkBox.Orientation;
@@ -118,7 +118,7 @@ namespace KryptonCheckBoxExamples
 
         [Category("Visuals")]
         [Description("Palette applied to drawing.")]
-        [DefaultValue(typeof(PaletteMode), "Global")]
+        [DefaultValue(PaletteMode.Global)]
         public PaletteMode PaletteMode
         {
             get => _checkBox.PaletteMode;
@@ -136,7 +136,7 @@ namespace KryptonCheckBoxExamples
 
         [Category("Layout")]
         [Description("Specifies if the control grows and shrinks to fit the contents exactly.")]
-        [DefaultValue(typeof(AutoSizeMode), "GrowOnly")]
+        [DefaultValue(AutoSizeMode.GrowOnly)]
         public AutoSizeMode AutoSizeMode
         {
             get => _checkBox.AutoSizeMode;

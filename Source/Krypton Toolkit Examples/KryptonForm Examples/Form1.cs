@@ -131,7 +131,7 @@ namespace KryptonFormExamples
 
         [Category("Visuals")]
         [Description("Header style for a main form.")]
-        [DefaultValue(typeof(HeaderStyle), "Form")]
+        [DefaultValue(HeaderStyle.Form)]
         public HeaderStyle HeaderStyle
         {
             get => _form.HeaderStyle;
@@ -140,7 +140,7 @@ namespace KryptonFormExamples
         [Category(@"Visuals")]
         [Description(@"The Form Title position, relative to available space")]
         [RefreshProperties(RefreshProperties.All)]
-        [DefaultValue(typeof(PaletteRelativeAlign), "Near")]
+        [DefaultValue(PaletteRelativeAlign.Near)]
         public PaletteRelativeAlign FormTitleAlign
         {
             get => _form.FormTitleAlign;
@@ -150,7 +150,7 @@ namespace KryptonFormExamples
 
         [Category("Visuals")]
         [Description("Chrome group border style.")]
-        [DefaultValue(typeof(PaletteBorderStyle), "FormMain")]
+        [DefaultValue(PaletteBorderStyle.FormMain)]
         public PaletteBorderStyle GroupBorderStyle
         {
             get => _form.GroupBorderStyle;
@@ -159,7 +159,7 @@ namespace KryptonFormExamples
 
         [Category("Visuals")]
         [Description("Chrome group background style.")]
-        [DefaultValue(typeof(PaletteBackStyle), "FormMain")]
+        [DefaultValue(PaletteBackStyle.FormMain)]
         public PaletteBackStyle GroupBackStyle
         {
             get => _form.GroupBackStyle;

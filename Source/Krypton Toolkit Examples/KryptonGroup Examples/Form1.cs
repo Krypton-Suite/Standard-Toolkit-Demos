@@ -49,7 +49,7 @@ namespace KryptonGroupExamples
 
         [Category("Visuals")]
         [Description("Border style.")]
-        [DefaultValue(typeof(PaletteBorderStyle), "Control - Client")]
+        [DefaultValue(PaletteBorderStyle.ControlClient)]
         public PaletteBorderStyle GroupBorderStyle
         {
             get => _group.GroupBorderStyle;
@@ -58,7 +58,7 @@ namespace KryptonGroupExamples
 
         [Category("Visuals")]
         [Description("Background style.")]
-        [DefaultValue(typeof(PaletteBackStyle), "Control - Client")]
+        [DefaultValue(PaletteBackStyle.ControlClient)]
         public PaletteBackStyle GroupBackStyle
         {
             get => _group.GroupBackStyle;
@@ -79,7 +79,7 @@ namespace KryptonGroupExamples
 
         [Category("Visuals")]
         [Description("Palette applied to drawing.")]
-        [DefaultValue(typeof(PaletteMode), "Global")]
+        [DefaultValue(PaletteMode.Global)]
         public PaletteMode PaletteMode
         {
             get => _group.PaletteMode;

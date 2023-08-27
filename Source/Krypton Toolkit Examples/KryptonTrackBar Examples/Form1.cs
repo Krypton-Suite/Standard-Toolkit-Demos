@@ -114,7 +114,7 @@ namespace KryptonTrackBarExamples
         /// </summary>
         [Category("Appearance")]
         [Description("Determines size of the track bar elements.")]
-        [DefaultValue(typeof(PaletteTrackBarSize), "Medium")]
+        [DefaultValue(PaletteTrackBarSize.Medium)]
         public PaletteTrackBarSize TrackBarSize
         {
             get => _trackBar.TrackBarSize;
@@ -126,7 +126,7 @@ namespace KryptonTrackBarExamples
         /// </summary>
         [Category("Appearance")]
         [Description("Determines where tick marks are displayed.")]
-        [DefaultValue(typeof(TickStyle), "BottomRight")]
+        [DefaultValue(TickStyle.BottomRight)]
         [RefreshProperties(RefreshProperties.All)]
         public TickStyle TickStyle
         {
@@ -151,7 +151,7 @@ namespace KryptonTrackBarExamples
         /// </summary>
         [Category("Appearance")]
         [Description("Background style.")]
-        [DefaultValue(typeof(Orientation), "Horizontal")]
+        [DefaultValue(Orientation.Horizontal)]
         public Orientation Orientation
         {
             get => _trackBar.Orientation;

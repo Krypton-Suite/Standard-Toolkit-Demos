@@ -36,6 +36,7 @@ namespace KryptonPaletteExamples
                 kryptonPaletteCustom.Import();
 
                 kryptonThemeComboBox1.Manager.GlobalPalette = kryptonPaletteCustom;
+                propertyGrid.SelectedObject = kryptonPaletteCustom;
 
                 kryptonThemeComboBox1.Manager.GlobalPaletteMode = PaletteMode.Custom;
             }
@@ -48,18 +49,17 @@ namespace KryptonPaletteExamples
         private void kryptonThemeComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             btnExport.Enabled = (kryptonThemeComboBox1.Text == @"Custom");
-            KryptonCustomPaletteBase selectedPalette;
             if (btnExport.Enabled)
             {
-                selectedPalette = kryptonPaletteCustom;
+                propertyGrid.SelectedObject = kryptonPaletteCustom;
             }
             else
             {
-                selectedPalette = new KryptonCustomPaletteBase(components);
-                selectedPalette.BasePaletteMode = kryptonThemeComboBox1.Manager.GlobalPaletteMode;
+                propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components)
+                {
+                    BasePaletteMode = kryptonThemeComboBox1.Manager.GlobalPaletteMode
+                };
             }
-
-            propertyGrid.SelectedObject = selectedPalette;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -86,7 +86,9 @@ namespace KryptonPaletteExamples
                 kryptonPaletteCustom.ImportWithUpgrade(File.OpenRead(paletteFileName));
 
                 kryptonThemeComboBox1.Manager.GlobalPalette = kryptonPaletteCustom;
-
+                propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components) {
+                    BasePaletteMode = kryptonThemeComboBox1.Manager.GlobalPaletteMode
+                };
                 kryptonThemeComboBox1.Manager.GlobalPaletteMode = PaletteMode.Custom;
             }
             catch (Exception exc)
@@ -94,5 +96,11 @@ namespace KryptonPaletteExamples
                 KryptonMessageBox.Show(this, exc.ToString());
             }
         }
+
+        private void Form1_OnShown(object sender, EventArgs e) =>
+            propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components) 
+            {
+                BasePaletteMode = kryptonThemeComboBox1.Manager.GlobalPaletteMode
+            };
     }
 }
