@@ -178,7 +178,6 @@
             this.dud12.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.dud12.TabIndex = 5;
             this.dud12.Text = "sixth";
-            this.dud12.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.dud12.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.dud12.Enter += new System.EventHandler(this.dud_Enter);
             // 
@@ -208,7 +207,6 @@
             // 
             this.kryptonContextMenuHeading1.ExtraText = "";
             this.kryptonContextMenuHeading1.Text = "Options";
-            this.kryptonContextMenuHeading1.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             // 
             // kryptonContextMenuItems3
             // 
@@ -219,42 +217,35 @@
             this.kryptonContextMenuItem9,
             this.kryptonContextMenuItem10,
             this.kryptonContextMenuItem11});
-            this.kryptonContextMenuItems3.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             // 
             // kryptonContextMenuItem6
             // 
             this.kryptonContextMenuItem6.Text = "first";
-            this.kryptonContextMenuItem6.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.kryptonContextMenuItem6.Click += new System.EventHandler(this.contextMenuClicked);
             // 
             // kryptonContextMenuItem7
             // 
             this.kryptonContextMenuItem7.Text = "second";
-            this.kryptonContextMenuItem7.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.kryptonContextMenuItem7.Click += new System.EventHandler(this.contextMenuClicked);
             // 
             // kryptonContextMenuItem8
             // 
             this.kryptonContextMenuItem8.Text = "third";
-            this.kryptonContextMenuItem8.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.kryptonContextMenuItem8.Click += new System.EventHandler(this.contextMenuClicked);
             // 
             // kryptonContextMenuItem9
             // 
             this.kryptonContextMenuItem9.Text = "fourth";
-            this.kryptonContextMenuItem9.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.kryptonContextMenuItem9.Click += new System.EventHandler(this.contextMenuClicked);
             // 
             // kryptonContextMenuItem10
             // 
             this.kryptonContextMenuItem10.Text = "fifth";
-            this.kryptonContextMenuItem10.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.kryptonContextMenuItem10.Click += new System.EventHandler(this.contextMenuClicked);
             // 
             // kryptonContextMenuItem11
             // 
             this.kryptonContextMenuItem11.Text = "sixth";
-            this.kryptonContextMenuItem11.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.kryptonContextMenuItem11.Click += new System.EventHandler(this.contextMenuClicked);
             // 
             // dud8
@@ -273,7 +264,6 @@
             this.dud8.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.dud8.TabIndex = 1;
             this.dud8.Text = "second";
-            this.dud8.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.dud8.Enter += new System.EventHandler(this.dud_Enter);
             // 
             // dud11
@@ -293,7 +283,6 @@
             this.dud11.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.dud11.TabIndex = 4;
             this.dud11.Text = "fifth";
-            this.dud11.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.dud11.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.dud11.Enter += new System.EventHandler(this.dud_Enter);
             // 
@@ -321,7 +310,6 @@
             this.dud9.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.dud9.TabIndex = 2;
             this.dud9.Text = "third";
-            this.dud9.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.dud9.Enter += new System.EventHandler(this.dud_Enter);
             // 
             // dud10
@@ -339,7 +327,6 @@
             this.dud10.Size = new System.Drawing.Size(96, 26);
             this.dud10.TabIndex = 3;
             this.dud10.Text = "fourth";
-            this.dud10.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.dud10.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.dud10.Enter += new System.EventHandler(this.dud_Enter);
             // 
@@ -371,7 +358,6 @@
             this.dud1.Size = new System.Drawing.Size(96, 26);
             this.dud1.TabIndex = 0;
             this.dud1.Text = "first";
-            this.dud1.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.dud1.Enter += new System.EventHandler(this.dud_Enter);
             // 
             // dud6
@@ -390,7 +376,6 @@
             this.dud6.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.dud6.TabIndex = 5;
             this.dud6.Text = "sixth";
-            this.dud6.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.dud6.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.dud6.Enter += new System.EventHandler(this.dud_Enter);
             // 
@@ -424,7 +409,6 @@
             this.dud2.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.dud2.TabIndex = 1;
             this.dud2.Text = "second";
-            this.dud2.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.dud2.Enter += new System.EventHandler(this.dud_Enter);
             // 
             // dud5
@@ -442,7 +426,6 @@
             this.dud5.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.dud5.TabIndex = 4;
             this.dud5.Text = "fifth";
-            this.dud5.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.dud5.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.dud5.Enter += new System.EventHandler(this.dud_Enter);
             // 
@@ -468,7 +451,6 @@
             this.dud3.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.dud3.TabIndex = 2;
             this.dud3.Text = "third";
-            this.dud3.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.dud3.Enter += new System.EventHandler(this.dud_Enter);
             // 
             // dud4
@@ -484,7 +466,6 @@
             this.dud4.Size = new System.Drawing.Size(96, 26);
             this.dud4.TabIndex = 3;
             this.dud4.Text = "fourth";
-            this.dud4.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Absolute;
             this.dud4.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.dud4.Enter += new System.EventHandler(this.dud_Enter);
             // 

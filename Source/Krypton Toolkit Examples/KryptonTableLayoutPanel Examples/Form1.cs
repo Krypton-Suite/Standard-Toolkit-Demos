@@ -41,7 +41,7 @@ namespace KryptonTableLayoutPanelExamples
 
         [Category("Visuals")]
         [Description("Panel style.")]
-        [DefaultValue(typeof(PaletteBackStyle), "PanelClient")]
+        [DefaultValue(PaletteBackStyle.PanelClient)]
         public PaletteBackStyle PanelBackStyle
         {
             get => _panel.PanelBackStyle;
@@ -62,7 +62,7 @@ namespace KryptonTableLayoutPanelExamples
 
         [Category("Visuals")]
         [Description("Palette applied to drawing.")]
-        [DefaultValue(typeof(PaletteMode), "Global")]
+        [DefaultValue(PaletteMode.Global)]
         public PaletteMode PaletteMode
         {
             get => _panel.PaletteMode;

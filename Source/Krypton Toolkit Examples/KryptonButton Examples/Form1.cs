@@ -46,7 +46,7 @@ namespace KryptonButtonExamples
 
         [Category("Visuals")]
         [Description("Button style.")]
-        [DefaultValue(typeof(ButtonStyle), "Standalone")]
+        [DefaultValue(ButtonStyle.Standalone)]
         public ButtonStyle ButtonStyle
         {
             get => _button.ButtonStyle;
@@ -87,7 +87,7 @@ namespace KryptonButtonExamples
 
         [Category("Visuals")]
         [Description("Visual orientation of the control.")]
-        [DefaultValue(typeof(VisualOrientation), "Top")]
+        [DefaultValue(VisualOrientation.Top)]
         public VisualOrientation Orientation
         {
             get => _button.Orientation;
@@ -96,7 +96,7 @@ namespace KryptonButtonExamples
 
         [Category("Visuals")]
         [Description("Palette applied to drawing.")]
-        [DefaultValue(typeof(PaletteMode), "Global")]
+        [DefaultValue(PaletteMode.Global)]
         public PaletteMode PaletteMode
         {
             get => _button.PaletteMode;
@@ -114,7 +114,7 @@ namespace KryptonButtonExamples
 
         [Category("Layout")]
         [Description("Specifies if the control grows and shrinks to fit the contents exactly.")]
-        [DefaultValue(typeof(AutoSizeMode), "GrowOnly")]
+        [DefaultValue(AutoSizeMode.GrowOnly)]
         public AutoSizeMode AutoSizeMode
         {
             get => _button.AutoSizeMode;

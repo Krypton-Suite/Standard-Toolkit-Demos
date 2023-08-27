@@ -125,7 +125,7 @@ namespace KryptonGroupBoxExamples
 
         [Category("Visuals")]
         [Description("Palette applied to drawing.")]
-        [DefaultValue(typeof(PaletteMode), "Global")]
+        [DefaultValue(PaletteMode.Global)]
         public PaletteMode PaletteMode
         {
             get => _groupBox.PaletteMode;

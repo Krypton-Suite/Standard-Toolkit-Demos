@@ -50,7 +50,7 @@ namespace KryptonHeaderExamples
 
         [Category("Visuals")]
         [Description("Header style.")]
-        [DefaultValue(typeof(HeaderStyle), "Primary")]
+        [DefaultValue(HeaderStyle.Primary)]
         public HeaderStyle HeaderStyle
         {
             get => _header.HeaderStyle;
@@ -79,7 +79,7 @@ namespace KryptonHeaderExamples
 
         [Category("Visuals")]
         [Description("Visual orientation of the control.")]
-        [DefaultValue(typeof(VisualOrientation), "Top")]
+        [DefaultValue(VisualOrientation.Top)]
         public VisualOrientation Orientation
         {
             get => _header.Orientation;
@@ -88,7 +88,7 @@ namespace KryptonHeaderExamples
 
         [Category("Visuals")]
         [Description("Palette applied to drawing.")]
-        [DefaultValue(typeof(PaletteMode), "Global")]
+        [DefaultValue(PaletteMode.Global)]
         public PaletteMode PaletteMode
         {
             get => _header.PaletteMode;
@@ -106,7 +106,7 @@ namespace KryptonHeaderExamples
 
         [Category("Layout")]
         [Description("Specifies if the control grows and shrinks to fit the contents exactly.")]
-        [DefaultValue(typeof(AutoSizeMode), "GrowOnly")]
+        [DefaultValue(AutoSizeMode.GrowOnly)]
         public AutoSizeMode AutoSizeMode
         {
             get => _header.AutoSizeMode;

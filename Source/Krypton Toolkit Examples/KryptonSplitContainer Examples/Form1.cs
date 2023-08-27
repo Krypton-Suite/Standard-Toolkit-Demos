@@ -67,7 +67,7 @@ namespace KryptonSplitContainerExamples
 
         [Category("Visuals")]
         [Description("Container background style.")]
-        [DefaultValue(typeof(PaletteBackStyle), "PanelClient")]
+        [DefaultValue(PaletteBackStyle.PanelClient)]
         public PaletteBackStyle ContainerBackStyle
         {
             get => _splitContainer.ContainerBackStyle;
@@ -76,7 +76,7 @@ namespace KryptonSplitContainerExamples
 
         [Category("Visuals")]
         [Description("Separator style.")]
-        [DefaultValue(typeof(SeparatorStyle), "LowProfile")]
+        [DefaultValue(SeparatorStyle.LowProfile)]
         public SeparatorStyle SeparatorStyle
         {
             get => _splitContainer.SeparatorStyle;
@@ -106,7 +106,7 @@ namespace KryptonSplitContainerExamples
         [Category("Layout")]
         [Description("Determines the minimum distance of pixels of the splitter from the left or top edge of Panel1.")]
         [Localizable(true)]
-        [DefaultValue(typeof(int), "25")]
+        [DefaultValue(25)]
         public int Panel1MinSize
         {
             get => _splitContainer.Panel1MinSize;
@@ -125,7 +125,7 @@ namespace KryptonSplitContainerExamples
         [Category("Layout")]
         [Description("Determines the minimum distance of pixels of the splitter from the right or bottom edge of Panel2.")]
         [Localizable(true)]
-        [DefaultValue(typeof(int), "25")]
+        [DefaultValue(25)]
         public int Panel2MinSize
         {
             get => _splitContainer.Panel2MinSize;
@@ -153,7 +153,7 @@ namespace KryptonSplitContainerExamples
 
         [Category("Layout")]
         [Description("Indicates the panel to keep the same size when resizing.")]
-        [DefaultValue(typeof(FixedPanel), "None")]
+        [DefaultValue(FixedPanel.None)]
         public FixedPanel FixedPanel
         {
             get => _splitContainer.FixedPanel;
@@ -164,7 +164,7 @@ namespace KryptonSplitContainerExamples
         [Description("Determines pixel distance of the splitter from the left or top edge.")]
         [Localizable(true)]
         [SettingsBindable(true)]
-        [DefaultValue(typeof(int), "50")]
+        [DefaultValue(50)]
         public int SplitterDistance
         {
             get => _splitContainer.SplitterDistance;
@@ -174,7 +174,7 @@ namespace KryptonSplitContainerExamples
         [Category("Layout")]
         [Description("Determines the thickness of the splitter.")]
         [Localizable(true)]
-        [DefaultValue(typeof(int), "4")]
+        [DefaultValue(4)]
         public int SplitterWidth
         {
             get => _splitContainer.SplitterWidth;
@@ -184,7 +184,7 @@ namespace KryptonSplitContainerExamples
         [Category("Layout")]
         [Description("Determines the number of pixels the splitter moves in increments.")]
         [Localizable(true)]
-        [DefaultValue(typeof(int), "1")]
+        [DefaultValue(1)]
         public int SplitterIncrement
         {
             get => _splitContainer.SplitterIncrement;
@@ -194,7 +194,7 @@ namespace KryptonSplitContainerExamples
         [Category("Behavior")]
         [Description("Determines if the splitter is vertical or horizontal.")]
         [Localizable(true)]
-        [DefaultValue(typeof(Orientation), "Vertical")]
+        [DefaultValue(Orientation.Vertical)]
         public Orientation Orientation
         {
             get => _splitContainer.Orientation;
@@ -203,7 +203,7 @@ namespace KryptonSplitContainerExamples
 
         [Category("Visuals")]
         [Description("Palette applied to drawing.")]
-        [DefaultValue(typeof(PaletteMode), "Global")]
+        [DefaultValue(PaletteMode.Global)]
         public PaletteMode PaletteMode
         {
             get => _splitContainer.PaletteMode;
