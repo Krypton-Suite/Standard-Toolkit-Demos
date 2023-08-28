@@ -8,81 +8,53 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace KryptonExplorer.Properties
-{
-
-
+namespace KryptonExplorer.Properties {
+    
+    
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.7.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
-    {
-
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.8.0.0")]
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
-
-        public static Settings Default
-        {
-            get
-            {
+        
+        public static Settings Default {
+            get {
                 return defaultInstance;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("22")]
-        public int ThemeSelectedIndex
-        {
-            get
-            {
+        [global::System.Configuration.DefaultSettingValueAttribute("33")]
+        public int ThemeSelectedIndex {
+            get {
                 return ((int)(this["ThemeSelectedIndex"]));
             }
-            set
-            {
+            set {
                 this["ThemeSelectedIndex"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Microsoft 365 - Blue")]
-        public global::Krypton.Toolkit.PaletteMode Theme
-        {
-            get
-            {
-                return ((global::Krypton.Toolkit.PaletteMode)(this["Theme"]));
-            }
-            set
-            {
-                this["Theme"] = value;
-            }
-        }
-
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2023-08-21")]
-        public global::System.DateTime BuildDate
-        {
-            get
-            {
+        [global::System.Configuration.DefaultSettingValueAttribute("2023-08-28")]
+        public global::System.DateTime BuildDate {
+            get {
                 return ((global::System.DateTime)(this["BuildDate"]));
             }
-            set
-            {
+            set {
                 this["BuildDate"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string HelpFileLocation
-        {
-            get
-            {
+        public string HelpFileLocation {
+            get {
                 return ((string)(this["HelpFileLocation"]));
             }
-            set
-            {
+            set {
                 this["HelpFileLocation"] = value;
             }
         }

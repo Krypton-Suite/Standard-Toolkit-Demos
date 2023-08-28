@@ -21,7 +21,9 @@ namespace KryptonPropertyGridExample
         private static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            // See https://github.com/Krypton-Suite/Standard-Toolkit/issues/1109#issuecomment-1695481549:
+            // Setting the following to `true` will generate "Jagged Text" in the control
+            Application.SetCompatibleTextRenderingDefault(true);
             Application.Run(new Form1());
         }
     }
