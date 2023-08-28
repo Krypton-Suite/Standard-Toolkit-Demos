@@ -3,13 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="ThemeSelectedIndex" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">22</Value>
-    </Setting>
-    <Setting Name="Theme" Type="Krypton.Toolkit.PaletteModeManager" Scope="User">
-      <Value Profile="(Default)">Microsoft 365 - Blue</Value>
+      <Value Profile="(Default)">33</Value>
     </Setting>
     <Setting Name="BuildDate" Type="System.DateTime" Scope="User">
-      <Value Profile="(Default)">2023-08-21</Value>
+      <Value Profile="(Default)">2023-08-28</Value>
     </Setting>
     <Setting Name="HelpFileLocation" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

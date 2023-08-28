@@ -387,12 +387,7 @@ namespace KryptonExplorer
                 FileVersionInfo.GetVersionInfo(
                     $@"{Path.GetDirectoryName(Application.ExecutablePath)}\Krypton.Toolkit.dll");
 
-            kryptonManager1.GlobalPaletteMode = _settings.Theme;
-
-
             kcmbTheme.SelectedIndex = _settings.ThemeSelectedIndex;
-
-            kcmbTheme.Text = ThemeManager.ReturnPaletteModeAsString(_settings.Theme);
 
             //tsslBuildDate.Text = $"Build Date: {GeneralToolkitUtilities.GetLinkerTimestampUtc(Assembly.GetExecutingAssembly())} ";
 
@@ -412,9 +407,6 @@ namespace KryptonExplorer
 
         private void kllKryptonHelpIcon_LinkClicked(object sender, EventArgs e) =>
             LaunchApplication(@"Krypton Help Icon Examples");
-
-        private void kllColourDialog_LinkClicked(object sender, EventArgs e) =>
-            LaunchApplication(@"Krypton Color Dialog Example");
 
         private void LaunchApplication(string exampleName)
         {
@@ -446,7 +438,7 @@ namespace KryptonExplorer
                 }
                 else
                 {
-                    KryptonMessageBox.Show(
+                    KryptonMessageBox.Show(this,
                         "The Palette Designer is not currently installed. Please download the latest installation package from:\nhttps://github.com/Krypton-Suite/Theme-Palettes/releases",
                         @"Application Not Installed", KryptonMessageBoxButtons.OK, KryptonMessageBoxIcon.Information);
                 }
@@ -473,7 +465,7 @@ namespace KryptonExplorer
                 }
                 else
                 {
-                    KryptonMessageBox.Show(
+                    KryptonMessageBox.Show(this,
                         "The Palette Upgrade Tool is not currently installed. Please download the latest installation package from:\nhttps://github.com/Krypton-Suite/Theme-Palettes/releases",
                         @"Application Not Installed", KryptonMessageBoxButtons.OK, KryptonMessageBoxIcon.Information);
                 }
@@ -488,14 +480,9 @@ namespace KryptonExplorer
             }
         }
 
-        private void kllFontDialog_LinkClicked(object sender, EventArgs e) =>
-            LaunchApplication(@"Krypton Font Dialog Example");
-
         private void kcmbTheme_SelectedIndexChanged(object sender, EventArgs e)
         {
             _settings.ThemeSelectedIndex = kcmbTheme.SelectedIndex;
-
-            _settings.Theme = ThemeManager.GetPaletteMode(kcmbTheme.Manager);
 
             _settings.Save();
         }
@@ -504,15 +491,10 @@ namespace KryptonExplorer
         {
             kcmbTheme.SelectedIndex = 33;
 
-            _settings.Theme = PaletteMode.Microsoft365Blue;
-
             _settings.HelpFileLocation = @"";
 
             _settings.Save();
         }
-
-        private void klblPrintDialog_LinkClicked(object sender, EventArgs e) =>
-            LaunchApplication(@"Krypton Print Dialog Example");
 
         private void kbtnKryptonToolkitPackage_Click(object sender, EventArgs e) =>
             Process.Start(@"https://www.nuget.org/profiles/Krypton_Suite");
@@ -554,7 +536,7 @@ namespace KryptonExplorer
         {
             try
             {
-                DialogResult result = KryptonMessageBox.Show(@"Download completed. Install now?",
+                DialogResult result = KryptonMessageBox.Show(this, @"Download completed. Install now?",
                     @"Download Successful",
                     KryptonMessageBoxButtons.YesNo, KryptonMessageBoxIcon.Information);
 
@@ -602,7 +584,7 @@ namespace KryptonExplorer
 
         private void bgwDownloadDocumentation_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            DialogResult result = KryptonMessageBox.Show(@"Download completed. Install now?", @"Download Successful",
+            DialogResult result = KryptonMessageBox.Show(this, @"Download completed. Install now?", @"Download Successful",
                 KryptonMessageBoxButtons.YesNo, KryptonMessageBoxIcon.Information);
 
             if (result == DialogResult.Yes)
@@ -623,21 +605,21 @@ namespace KryptonExplorer
                     }
                     else
                     {
-                        HelpFileLocator locator = new HelpFileLocator();
+                        var locator = new HelpFileLocator();
 
                         locator.Show();
                     }
                 }
                 else
                 {
-                    HelpFileLocator locator = new HelpFileLocator();
+                    var locator = new HelpFileLocator();
 
                     locator.Show();
                 }
             }
             catch (Exception exc)
             {
-                KryptonMessageBox.Show($@"Error: {exc}", @"Unexpected Error", KryptonMessageBoxButtons.OK,
+                KryptonMessageBox.Show(this, $@"Error: {exc}", @"Unexpected Error", KryptonMessageBoxButtons.OK,
                     KryptonMessageBoxIcon.Error);
             }
         }
@@ -649,5 +631,24 @@ namespace KryptonExplorer
         private void kllProgressBar_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton ProgressBar Examples");
 
         private void kllKryptonThemeSelector_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Theme Selector");
+
+
+        private void linkKryptonColorDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Color Dialog Example");
+
+        private void linkKryptonFolderBrowser_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"KryptonFolderBrowserDialog Example");
+
+        private void linkKryptonFontDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Font Dialog Example");
+
+        private void linkKryptonListView_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton ListView Examples");
+
+        private void linkKryptonOpenFileDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"KryptonOpenFileDialog Example");
+
+        private void linkKryptonPrintDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Print Dialog Example");
+
+        private void linkKryptonSaveFileDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"KryptonSaveFileDialog Example");
+
+        private void linkKryptonStringCollector_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton String Collection Editor Examples");
+
+        private void linkKryptonTableLayout_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton TableLayoutPanel Examples");
     }
 }
