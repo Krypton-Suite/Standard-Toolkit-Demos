@@ -75,6 +75,9 @@ namespace KryptonScrollbarExamples
             this.kryptonProgressBar2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.kryptonProgressBar2.Size = new System.Drawing.Size(353, 23);
             this.kryptonProgressBar2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.kryptonProgressBar2.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonProgressBar2.StateCommon.Border.Rounding = 10F;
             this.kryptonProgressBar2.TabIndex = 12;
             this.kryptonProgressBar2.Text = "Disabled";
@@ -85,7 +88,7 @@ namespace KryptonScrollbarExamples
             // 
             this.kryptonButton1.CornerRoundingRadius = 10F;
             this.kryptonButton1.Location = new System.Drawing.Point(39, 255);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.Size = new System.Drawing.Size(353, 20);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -102,7 +105,7 @@ namespace KryptonScrollbarExamples
             this.kryptonThemeComboBox1.DropDownWidth = 321;
             this.kryptonThemeComboBox1.IntegralHeight = false;
             this.kryptonThemeComboBox1.Location = new System.Drawing.Point(161, 3);
-            this.kryptonThemeComboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonThemeComboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonThemeComboBox1.Name = "kryptonThemeComboBox1";
             this.kryptonThemeComboBox1.Size = new System.Drawing.Size(241, 21);
             this.kryptonThemeComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
@@ -112,7 +115,7 @@ namespace KryptonScrollbarExamples
             // kryptonProgressBar1
             // 
             this.kryptonProgressBar1.Location = new System.Drawing.Point(10, 10);
-            this.kryptonProgressBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonProgressBar1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonProgressBar1.Name = "kryptonProgressBar1";
             this.kryptonProgressBar1.Orientation = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonProgressBar1.Size = new System.Drawing.Size(24, 266);
@@ -200,21 +203,22 @@ namespace KryptonScrollbarExamples
             this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.kryptonProgressBarToolStripItem1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 291);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 295);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.statusStrip1.Size = new System.Drawing.Size(404, 28);
+            this.statusStrip1.Size = new System.Drawing.Size(404, 24);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // kryptonProgressBarToolStripItem1
             // 
             this.kryptonProgressBarToolStripItem1.Name = "kryptonProgressBarToolStripItem1";
-            this.kryptonProgressBarToolStripItem1.Size = new System.Drawing.Size(100, 26);
             this.kryptonProgressBarToolStripItem1.StateCommon.Back.Color1 = System.Drawing.Color.Green;
             this.kryptonProgressBarToolStripItem1.StateDisabled.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.OneNote;
             this.kryptonProgressBarToolStripItem1.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.OneNote;
-            this.kryptonProgressBarToolStripItem1.Values.Text = "";
+            this.kryptonProgressBarToolStripItem1.Text = "0%";
+            this.kryptonProgressBarToolStripItem1.UseValueAsText = true;
+            this.kryptonProgressBarToolStripItem1.Values.Text = "0%";
             // 
             // Form1
             // 

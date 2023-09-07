@@ -55,8 +55,7 @@ namespace KryptonPaletteExamples
             }
             else
             {
-                propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components)
-                {
+                propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components) {
                     BasePaletteMode = kryptonThemeComboBox1.Manager.GlobalPaletteMode
                 };
             }
@@ -67,8 +66,7 @@ namespace KryptonPaletteExamples
             try
             {
                 // Simulate loading from Stream (i.e. from application resource) by acquiring filename first
-                using var kofd = new KryptonOpenFileDialog 
-                {
+                using var kofd = new KryptonOpenFileDialog {
                     CheckFileExists = true,
                     CheckPathExists = true,
                     DefaultExt = @"xml",
@@ -98,9 +96,13 @@ namespace KryptonPaletteExamples
         }
 
         private void Form1_OnShown(object sender, EventArgs e) =>
-            propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components) 
-            {
+            propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components) {
                 BasePaletteMode = kryptonThemeComboBox1.Manager.GlobalPaletteMode
             };
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
