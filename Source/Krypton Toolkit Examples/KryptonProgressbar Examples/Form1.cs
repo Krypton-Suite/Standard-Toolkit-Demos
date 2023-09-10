@@ -15,6 +15,7 @@ namespace KryptonScrollbarExamples
             pbVertical.Value = (int)knudHorizontal.Value;
             kryptonProgressBar1.Value = (int)knudHorizontal.Value;
             kryptonProgressBar2.Value = (int)knudHorizontal.Value;
+            kryptonProgressBarToolStripItem1.Value = (int)knudHorizontal.Value;
         }
     }
 }
