@@ -441,6 +441,8 @@ namespace OutlookMailClone
             this.customToolStripMenuItem = new Krypton.Toolkit.KryptonContextMenuItem();
             this.addReminderToolStripMenuItem = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonRibbonGroupCustomControl1 = new Krypton.Ribbon.KryptonRibbonGroupCustomControl();
+            this.kryptonRibbonGroupThemeComboBox1 = new Krypton.Ribbon.KryptonRibbonGroupThemeComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.panelFill)).BeginInit();
             this.panelFill.SuspendLayout();
             this.tableLayout.SuspendLayout();
@@ -489,7 +491,6 @@ namespace OutlookMailClone
             // kryptonLabel1
             // 
             this.kryptonLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel1.Location = new System.Drawing.Point(3, 65);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(53, 21);
@@ -1307,8 +1308,7 @@ namespace OutlookMailClone
             // kryptonRibbon
             // 
             this.kryptonRibbon.AllowFormIntegrate = true;
-            this.kryptonRibbon.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
-            this.buttonSpecHelp});
+            this.kryptonRibbon.ButtonSpecs.Add(this.buttonSpecHelp);
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
             this.kryptonRibbon.QATButtons.AddRange(new System.ComponentModel.Component[] {
@@ -1342,8 +1342,7 @@ namespace OutlookMailClone
             this.kryptonRibbonRecentDoc6,
             this.kryptonRibbonRecentDoc7,
             this.kryptonRibbonRecentDoc8});
-            this.kryptonRibbon.RibbonAppButton.AppButtonSpecs.AddRange(new Krypton.Ribbon.ButtonSpecAppMenu[] {
-            this.buttonSpecAppMenu1});
+            this.kryptonRibbon.RibbonAppButton.AppButtonSpecs.Add(this.buttonSpecAppMenu1);
             this.kryptonRibbon.RibbonStrings.RecentDocuments = "Create New Outlook Item";
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabMessage,
@@ -1351,7 +1350,7 @@ namespace OutlookMailClone
             this.tabOptions,
             this.tabFormatText,
             this.tabDeveloper});
-            this.kryptonRibbon.SelectedTab = this.tabInsert;
+            this.kryptonRibbon.SelectedTab = this.tabOptions;
             this.kryptonRibbon.Size = new System.Drawing.Size(782, 115);
             this.kryptonRibbon.TabIndex = 0;
             // 
@@ -2301,7 +2300,8 @@ namespace OutlookMailClone
             // kryptonRibbonGroupTriple12
             // 
             this.kryptonRibbonGroupTriple12.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
-            this.themesPageColor});
+            this.themesPageColor,
+            this.kryptonRibbonGroupThemeComboBox1});
             this.kryptonRibbonGroupTriple12.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // themesPageColor
@@ -2991,6 +2991,69 @@ namespace OutlookMailClone
             this.addReminderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.OptionsReminder;
             this.addReminderToolStripMenuItem.Text = "Add Reminder...";
             // 
+            // kryptonRibbonGroupCustomControl1
+            // 
+            this.kryptonRibbonGroupCustomControl1.CustomControl = null;
+            // 
+            // kryptonRibbonGroupThemeComboBox1
+            // 
+            this.kryptonRibbonGroupThemeComboBox1.DisplayMember = "Key";
+            this.kryptonRibbonGroupThemeComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.kryptonRibbonGroupThemeComboBox1.DropDownWidth = 121;
+            this.kryptonRibbonGroupThemeComboBox1.FormattingEnabled = false;
+            this.kryptonRibbonGroupThemeComboBox1.ItemHeight = 15;
+            this.kryptonRibbonGroupThemeComboBox1.Items.AddRange(new object[] {
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items1"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items2"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items3"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items4"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items5"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items6"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items7"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items8"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items9"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items10"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items11"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items12"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items13"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items14"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items15"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items16"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items17"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items18"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items19"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items20"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items21"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items22"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items23"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items24"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items25"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items26"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items27"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items28"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items29"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items30"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items31"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items32"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items33"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items34"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items35"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items36"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items37"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items38"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items39"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items40"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items41"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items42"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items43"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items44"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items45"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items46"))),
+            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items47")))});
+            this.kryptonRibbonGroupThemeComboBox1.Text = "Microsoft 365 - Blue";
+            this.kryptonRibbonGroupThemeComboBox1.ValueMember = "Value";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2998,6 +3061,7 @@ namespace OutlookMailClone
             this.ClientSize = new System.Drawing.Size(782, 506);
             this.Controls.Add(this.panelFill);
             this.Controls.Add(this.kryptonRibbon);
+            this.CustomCaptionArea = new System.Drawing.Rectangle(457, 0, 281, 26);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -3428,7 +3492,8 @@ namespace OutlookMailClone
         private Krypton.Toolkit.KryptonButton kryptonButton1;
         private Krypton.Ribbon.KryptonRibbonGroupButton optionsHighImportance;
         private Krypton.Ribbon.KryptonRibbonGroupButton optionsLowImportance;
-
+        private Krypton.Ribbon.KryptonRibbonGroupCustomControl kryptonRibbonGroupCustomControl1;
+        private Krypton.Ribbon.KryptonRibbonGroupThemeComboBox kryptonRibbonGroupThemeComboBox1;
     }
 }
 
