@@ -20,7 +20,7 @@ namespace TestMessageBoxClipping
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2021. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2023. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
 //  Version 4.7.0.0  www.ComponentFactory.com
 // *****************************************************************************
 ";

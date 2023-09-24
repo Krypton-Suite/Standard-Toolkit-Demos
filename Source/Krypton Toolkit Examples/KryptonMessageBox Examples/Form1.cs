@@ -18,16 +18,29 @@ using System.Windows.Forms;
 
 using Krypton.Toolkit;
 
-
 namespace KryptonMessageBoxExamples
 {
     public partial class Form1 : KryptonForm
     {
+        private const string SEED_TEXT =
+            @"// *****************************************************************************
+// BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
+//  © Component Factory Pty Ltd, 2006-2016, All rights reserved.
+// The software and associated documentation supplied hereunder are the 
+//  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
+//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+// 
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2023. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  Version 4.7.0.0  www.ComponentFactory.com
+// *****************************************************************************
+";
+
         private MessageBoxIcon _mbIcon = MessageBoxIcon.Warning;
         private KryptonMessageBoxIcon _kmbIcon = KryptonMessageBoxIcon.Warning;
         private KryptonMessageBoxButtons _mbButtons = KryptonMessageBoxButtons.OKCancel;
         private MessageBoxOptions _options = 0;
         private MessageBoxContentAreaType _contentAreaType = MessageBoxContentAreaType.Normal;
+        private ContentAlignment _messageTextAlignment = ContentAlignment.MiddleLeft;
 
         public Form1()
         {
@@ -156,7 +169,8 @@ namespace KryptonMessageBoxExamples
                 showHelpButton: chkShowHelp.Checked, contentAreaType: _contentAreaType,
                 linkAreaStart: decimal.ToInt32(knudLinkAreaStart.Value),
                 linkAreaEnd: decimal.ToInt32(knudLinkAreaEnd.Value),
-                linkAreaCommand: kcmdTest);
+                linkAreaCommand: kcmdTest,
+                messageTextAlignment: _messageTextAlignment);
 
             textBoxMessage.Text = $@"Krypton DialogResult = {res}";
         }
@@ -213,11 +227,20 @@ namespace KryptonMessageBoxExamples
                 kcmbContentAreaType.Items.Add(value);
             }
 
+            foreach (string value in Enum.GetNames(typeof(ContentAlignment)))
+            {
+                kcmbMessageTextAlignment.Items.Add(value);
+            }
+
             knudLinkAreaStart.Maximum = textBoxMessage.Text.Length;
 
             knudLinkAreaEnd.Maximum = textBoxMessage.Text.Length;
 
             knudLinkAreaEnd.Value = textBoxMessage.Text.Length;
+
+            kcmbContentAreaType.SelectedIndex = 0;
+
+            kcmbMessageTextAlignment.SelectedIndex = 3;
         }
 
         private void textBoxMessage_TextChanged(object sender, EventArgs e)
@@ -283,6 +306,18 @@ namespace KryptonMessageBoxExamples
             knudLinkAreaEnd.Enabled = enabled;
 
             ktxtResourcePath.Enabled = enabled;
+        }
+
+        private void kcmbMessageTextAlignment_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _messageTextAlignment = (ContentAlignment)Enum.Parse(typeof(ContentAlignment), kcmbMessageTextAlignment.Text);
+        }
+
+        private void kbtnDummyText_Click(object sender, EventArgs e)
+        {
+            textBoxMessage.Text = string.Empty;
+
+            textBoxMessage.Text = SEED_TEXT;
         }
     }
 }
