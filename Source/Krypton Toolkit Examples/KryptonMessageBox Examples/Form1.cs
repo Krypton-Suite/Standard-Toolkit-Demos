@@ -167,8 +167,7 @@ namespace KryptonMessageBoxExamples
                 _kmbIcon,
                 options: _options,
                 showHelpButton: chkShowHelp.Checked, contentAreaType: _contentAreaType,
-                linkAreaStart: decimal.ToInt32(knudLinkAreaStart.Value),
-                linkAreaEnd: decimal.ToInt32(knudLinkAreaEnd.Value),
+                contentLinkArea: new LinkArea(decimal.ToInt32(knudLinkAreaStart.Value), decimal.ToInt32(knudLinkAreaEnd.Value)),
                 linkAreaCommand: kcmdTest,
                 messageTextAlignment: _messageTextAlignment);
 
