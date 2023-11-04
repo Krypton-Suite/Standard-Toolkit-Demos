@@ -1,3 +1,4 @@
+using System;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
@@ -15,12 +16,12 @@ namespace KryptonAboutToolkitExample
             _toolkitType = ToolkitType.Stable;
         }
 
-        private void kbtnCancel_Click(object sender, System.EventArgs e)
+        private void kbtnCancel_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void kbtnShow_Click(object sender, System.EventArgs e)
+        private void kbtnShow_Click(object sender, EventArgs e)
         {
             KryptonAboutToolkitData data = new KryptonAboutToolkitData();
 
@@ -81,7 +82,7 @@ namespace KryptonAboutToolkitExample
             KryptonAboutToolkit.Show(data);
         }
 
-        private void ToolkitType_CheckedChanged(object sender, System.EventArgs e)
+        private void ToolkitType_CheckedChanged(object sender, EventArgs e)
         {
             if (krbCanary.Checked)
             {
