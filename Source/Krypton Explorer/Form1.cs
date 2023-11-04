@@ -397,7 +397,7 @@ namespace KryptonExplorer
         }
 
         private void kbtnOpenApplicationPath_Click(object sender, EventArgs e) =>
-            Process.Start(Application.ExecutablePath); //@"explorer.exe", @"\{Application.ExecutablePath}");
+            GlobalToolkitUtilities.LaunchProcess(Application.ExecutablePath); //@"explorer.exe", @"\{Application.ExecutablePath}");
 
         private void kllKryptonScrollBars_LinkClicked(object sender, EventArgs e) =>
             LaunchApplication(@"Krypton Scrollbar Examples");
@@ -413,7 +413,7 @@ namespace KryptonExplorer
             try
             {
                 Cursor = Cursors.AppStarting;
-                Process.Start($@".\{exampleName}.exe");
+                GlobalToolkitUtilities.LaunchProcess($@".\{exampleName}.exe");
             }
             catch (Exception ex)
             {
@@ -650,5 +650,7 @@ namespace KryptonExplorer
         private void linkKryptonStringCollector_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton String Collection Editor Examples");
 
         private void linkKryptonTableLayout_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton TableLayoutPanel Examples");
+
+        private void klblKryptonAboutToolkit_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton About Toolkit Example");
     }
 }

@@ -16,6 +16,7 @@
 	* [[KryptonBreadCrumb Examples](#kryptonbreadcrumb-examples)
 	* [KryptonButton Examples](#kryptonbutton-examples)
 	* [Krypton UAC Button](#krypton-uac-button)
+	* [KryptonAboutToolkit Example](#krypton-about-toolkit-example)
 	* [KryptonCheckBox Examples](#kryptoncheckbox-examples)
 	* [KryptonCheckButton Examples](#kryptoncheckbutton-examples)
 	* [KryptonCheckedListBox Examples](#kryptoncheckedlistbox-examples)
@@ -121,6 +122,8 @@ There are 2 set of solutions in these projects:
 ![KryptonSplitButton](KryptonButton%20Examples/KryptonSplitButtonDemo.gif)
 ## Krypton UAC Button
 ![Krypton UAC Button](Krypton%20UAC%20Button/UACButtonUsage.gif)
+## Krypton About Toolkit Example
+![Krypton About Toolkit Example](KryptonAboutToolkit%20Example/Example.gif)
 ## KryptonCheckBox Examples
 ![KryptonCheckBox Examples](KryptonCheckBox%20Examples/example.png)
 ## KryptonCheckButton Examples

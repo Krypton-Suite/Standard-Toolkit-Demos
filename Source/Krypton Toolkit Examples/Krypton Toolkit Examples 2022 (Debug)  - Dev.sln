@@ -160,6 +160,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonSaveFileDialog Examp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonProgressbar Examples 2022", "KryptonProgressbar Examples\KryptonProgressbar Examples 2022.csproj", "{ECC6CC1B-9D9B-40E4-BE04-1B58FD6D3ECE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonAboutToolkit Example 2022", "KryptonAboutToolkit Example\KryptonAboutToolkit Example 2022.csproj", "{D8B66F12-1C27-4EB4-ACAE-1412E567372A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -466,6 +468,10 @@ Global
 		{ECC6CC1B-9D9B-40E4-BE04-1B58FD6D3ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECC6CC1B-9D9B-40E4-BE04-1B58FD6D3ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECC6CC1B-9D9B-40E4-BE04-1B58FD6D3ECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B66F12-1C27-4EB4-ACAE-1412E567372A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B66F12-1C27-4EB4-ACAE-1412E567372A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B66F12-1C27-4EB4-ACAE-1412E567372A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B66F12-1C27-4EB4-ACAE-1412E567372A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
