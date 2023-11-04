@@ -23,7 +23,7 @@ namespace KryptonAboutToolkitExample
 
         private void kbtnShow_Click(object sender, EventArgs e)
         {
-            KryptonAboutToolkitData data = new KryptonAboutToolkitData();
+            KryptonAboutToolkitData data;
 
             data.CurrentThemeText = ktxtCurrentThemeText.Text;
 
