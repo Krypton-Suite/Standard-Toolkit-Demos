@@ -28,7 +28,7 @@ namespace KryptonExplorer
     {
         #region Variables
 
-        private Version _currentVersion = new(80, int.Parse(DateTime.Now.ToString("yy")), 08, 233);
+        private Version _currentVersion = new(80, int.Parse(DateTime.Now.ToString("yy")), int.Parse(DateTime.Now.ToString("MM")), 318);
 
         private Settings _settings = new();
 
