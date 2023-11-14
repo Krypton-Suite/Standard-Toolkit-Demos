@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -44,14 +44,18 @@ namespace MDIRibbon
         {
             // Close just the active child
             if (ActiveMdiChild != null)
+            {
                 ActiveMdiChild.Close();
+            }
         }
 
         private void buttonCloseAllWindows_Click(object sender, EventArgs e)
         {
             // Keep closing active children until all gone
             while (ActiveMdiChild != null)
+            {
                 ActiveMdiChild.Close();
+            }
         }
 
         private void buttonCascade_Click(object sender, EventArgs e)

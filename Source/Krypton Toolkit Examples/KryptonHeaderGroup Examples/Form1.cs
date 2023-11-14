@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -84,7 +84,7 @@ namespace KryptonHeaderGroupExamples
 
         [Category("Visuals")]
         [Description("Specifies how to collapsed the appearance when entering collapse mode.")]
-        [DefaultValue(typeof(HeaderGroupCollapsedTarget), "Collapse to Primary Header")]
+        [DefaultValue(HeaderGroupCollapsedTarget.CollapsedToPrimary)]
         public HeaderGroupCollapsedTarget CollapseTarget
         {
             get => _headerGroup.CollapseTarget;
@@ -93,7 +93,7 @@ namespace KryptonHeaderGroupExamples
 
 		[Category("Visuals")]
 		[Description("Border style.")]
-		[DefaultValue(typeof(PaletteBorderStyle), "Control - Client")]
+		[DefaultValue(PaletteBorderStyle.ControlClient)]
 		public PaletteBorderStyle GroupBorderStyle
 		{
 			get => _headerGroup.GroupBorderStyle;
@@ -105,7 +105,7 @@ namespace KryptonHeaderGroupExamples
 		/// </summary>
         [Category("Visuals")]
         [Description("Background style.")]
-        [DefaultValue(typeof(PaletteBackStyle), "Control - Client")]
+        [DefaultValue(PaletteBackStyle.ControlClient)]
         public PaletteBackStyle GroupBackStyle
         {
             get => _headerGroup.GroupBackStyle;
@@ -114,7 +114,7 @@ namespace KryptonHeaderGroupExamples
 
 		[Category("Visuals")]
 		[Description("Primary header style.")]
-		[DefaultValue(typeof(HeaderStyle), "Primary")]
+		[DefaultValue(HeaderStyle.Primary)]
 		public HeaderStyle HeaderStylePrimary
 		{
 			get => _headerGroup.HeaderStylePrimary;
@@ -123,7 +123,7 @@ namespace KryptonHeaderGroupExamples
 
 		[Category("Visuals")]
 		[Description("Secondary header style.")]
-		[DefaultValue(typeof(HeaderStyle), "Secondary")]
+		[DefaultValue(HeaderStyle.Secondary)]
 		public HeaderStyle HeaderStyleSecondary
 		{
             get => _headerGroup.HeaderStyleSecondary;
@@ -132,7 +132,7 @@ namespace KryptonHeaderGroupExamples
 
 		[Category("Visuals")]
 		[Description("Edge position of the primary header.")]
-		[DefaultValue(typeof(VisualOrientation), "Top")]
+		[DefaultValue(VisualOrientation.Top)]
 		public VisualOrientation HeaderPositionPrimary
 		{
 			get => _headerGroup.HeaderPositionPrimary;
@@ -141,7 +141,7 @@ namespace KryptonHeaderGroupExamples
 
         [Category("Visuals")]
         [Description("Edge position of the secondary header.")]
-        [DefaultValue(typeof(VisualOrientation), "Bottom")]
+        [DefaultValue(VisualOrientation.Bottom)]
         public VisualOrientation HeaderPositionSecondary
         {
             get => _headerGroup.HeaderPositionSecondary;
@@ -192,7 +192,7 @@ namespace KryptonHeaderGroupExamples
 
         [Category("Visuals")]
         [Description("Palette applied to drawing.")]
-        [DefaultValue(typeof(PaletteMode), "Global")]
+        [DefaultValue(PaletteMode.Global)]
         public PaletteMode PaletteMode
         {
             get => _headerGroup.PaletteMode;

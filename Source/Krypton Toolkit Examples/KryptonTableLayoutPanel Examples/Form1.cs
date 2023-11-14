@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -41,7 +41,7 @@ namespace KryptonTableLayoutPanelExamples
 
         [Category("Visuals")]
         [Description("Panel style.")]
-        [DefaultValue(typeof(PaletteBackStyle), "PanelClient")]
+        [DefaultValue(PaletteBackStyle.PanelClient)]
         public PaletteBackStyle PanelBackStyle
         {
             get => _panel.PanelBackStyle;
@@ -62,7 +62,7 @@ namespace KryptonTableLayoutPanelExamples
 
         [Category("Visuals")]
         [Description("Palette applied to drawing.")]
-        [DefaultValue(typeof(PaletteMode), "Global")]
+        [DefaultValue(PaletteMode.Global)]
         public PaletteMode PaletteMode
         {
             get => _panel.PaletteMode;

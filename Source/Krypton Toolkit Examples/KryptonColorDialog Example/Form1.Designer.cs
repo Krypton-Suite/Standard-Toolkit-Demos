@@ -40,6 +40,7 @@ namespace KryptonFontDialog_Example_2019
             this.buttonShowFontDialog = new Krypton.Toolkit.KryptonButton();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
+            this.chkShowAlphaSlider = new Krypton.Toolkit.KryptonCheckBox();
             this.chkShowIcon = new Krypton.Toolkit.KryptonCheckBox();
             this.chkSolidColorOnly = new Krypton.Toolkit.KryptonCheckBox();
             this.chkFullOPen = new Krypton.Toolkit.KryptonCheckBox();
@@ -47,6 +48,8 @@ namespace KryptonFontDialog_Example_2019
             this.chkAllowFullOpen = new Krypton.Toolkit.KryptonCheckBox();
             this.chkShowHelp = new Krypton.Toolkit.KryptonCheckBox();
             this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonTrackBar1 = new Krypton.Toolkit.KryptonTrackBar();
             this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonNumericUpDown1 = new Krypton.Toolkit.KryptonNumericUpDown();
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
@@ -187,6 +190,7 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonGroupBox2.Panel
             // 
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowAlphaSlider);
             this.kryptonGroupBox2.Panel.Controls.Add(this.chkShowIcon);
             this.kryptonGroupBox2.Panel.Controls.Add(this.chkSolidColorOnly);
             this.kryptonGroupBox2.Panel.Controls.Add(this.chkFullOPen);
@@ -196,6 +200,15 @@ namespace KryptonFontDialog_Example_2019
             this.kryptonGroupBox2.Size = new System.Drawing.Size(199, 289);
             this.kryptonGroupBox2.TabIndex = 21;
             this.kryptonGroupBox2.Values.Heading = "Options:";
+            // 
+            // chkShowAlphaSlider
+            // 
+            this.chkShowAlphaSlider.Location = new System.Drawing.Point(7, 177);
+            this.chkShowAlphaSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkShowAlphaSlider.Name = "chkShowAlphaSlider";
+            this.chkShowAlphaSlider.Size = new System.Drawing.Size(148, 24);
+            this.chkShowAlphaSlider.TabIndex = 6;
+            this.chkShowAlphaSlider.Values.Text = "Show Alpha Slider";
             // 
             // chkShowIcon
             // 
@@ -264,6 +277,8 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonGroupBox1.Panel
             // 
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel1);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonTrackBar1);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonTextBox1);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonNumericUpDown1);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonButton1);
@@ -273,6 +288,36 @@ namespace KryptonFontDialog_Example_2019
             this.kryptonGroupBox1.Size = new System.Drawing.Size(348, 164);
             this.kryptonGroupBox1.TabIndex = 20;
             this.kryptonGroupBox1.Values.Heading = "Style to match:";
+            // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.kryptonLabel1.Location = new System.Drawing.Point(288, 97);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Orientation = Krypton.Toolkit.VisualOrientation.Left;
+            this.kryptonLabel1.Size = new System.Drawing.Size(24, 36);
+            this.kryptonLabel1.TabIndex = 23;
+            this.kryptonLabel1.Values.Text = "255";
+            // 
+            // kryptonTrackBar1
+            // 
+            this.kryptonTrackBar1.AutoSize = false;
+            this.kryptonTrackBar1.Location = new System.Drawing.Point(318, 69);
+            this.kryptonTrackBar1.Maximum = 255;
+            this.kryptonTrackBar1.Name = "kryptonTrackBar1";
+            this.kryptonTrackBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.kryptonTrackBar1.Size = new System.Drawing.Size(23, 57);
+            this.kryptonTrackBar1.TabIndex = 22;
+            this.kryptonTrackBar1.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.kryptonTrackBar1.ToolTipValues.Description = "Alpha";
+            this.kryptonTrackBar1.ToolTipValues.EnableToolTips = true;
+            this.kryptonTrackBar1.ToolTipValues.Heading = "";
+            this.kryptonTrackBar1.ToolTipValues.ShowIntervalDelay = 250;
+            this.kryptonTrackBar1.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Top;
+            this.kryptonTrackBar1.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            this.kryptonTrackBar1.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Large;
+            this.kryptonTrackBar1.VolumeControl = true;
+            this.kryptonTrackBar1.ValueChanged += new System.EventHandler(this.kryptonTrackBar1_ValueChanged);
             // 
             // kryptonTextBox1
             // 
@@ -323,7 +368,6 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonComboBox1
             // 
-            this.kryptonComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.kryptonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.kryptonComboBox1.DropDownWidth = 121;
             this.kryptonComboBox1.IntegralHeight = false;
@@ -396,6 +440,9 @@ namespace KryptonFontDialog_Example_2019
         private Krypton.Toolkit.KryptonCheckBox chkAnyColor;
         private Krypton.Toolkit.KryptonManager kryptonManager;
         private Krypton.Toolkit.KryptonCheckBox chkShowIcon;
+        private Krypton.Toolkit.KryptonCheckBox chkShowAlphaSlider;
+        private Krypton.Toolkit.KryptonTrackBar kryptonTrackBar1;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel1;
     }
 }
 

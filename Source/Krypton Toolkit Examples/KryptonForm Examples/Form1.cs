@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -20,7 +20,12 @@ namespace KryptonFormExamples
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1() => InitializeComponent();
+        public Form1()
+        {
+            InitializeComponent();
+            //ButtonSpecClose.Enabled = false;
+            ButtonSpecClose.ToolTipShadow = false;
+        }
 
         private void kryptonCheckSetPalettes_CheckedButtonChanged(object sender, EventArgs e)
         {
@@ -28,17 +33,17 @@ namespace KryptonFormExamples
             RecalcNonClient();
 
             kryptonManager.GlobalPaletteMode = kryptonCheckSetPalettes.CheckedIndex switch {
-                0 => PaletteModeManager.Microsoft365Blue,
-                1 => PaletteModeManager.ProfessionalSystem,
-                2 => PaletteModeManager.Office2007Black,
-                3 => PaletteModeManager.Office2007Silver,
-                4 => PaletteModeManager.Office2007Blue,
-                5 => PaletteModeManager.ProfessionalOffice2003,
-                6 => PaletteModeManager.SparkleBlue,
-                7 => PaletteModeManager.SparkleOrange,
-                8 => PaletteModeManager.Office2010Black,
-                9 => PaletteModeManager.Office2010Silver,
-                10 => PaletteModeManager.Office2010Blue,
+                0 => PaletteMode.Microsoft365Blue,
+                1 => PaletteMode.ProfessionalSystem,
+                2 => PaletteMode.Office2007Black,
+                3 => PaletteMode.Office2007Silver,
+                4 => PaletteMode.Office2007Blue,
+                5 => PaletteMode.ProfessionalOffice2003,
+                6 => PaletteMode.SparkleBlue,
+                7 => PaletteMode.SparkleOrange,
+                8 => PaletteMode.Office2010Black,
+                9 => PaletteMode.Office2010Silver,
+                10 => PaletteMode.Office2010Blue,
                 _ => kryptonManager.GlobalPaletteMode
             };
         }
@@ -126,7 +131,7 @@ namespace KryptonFormExamples
 
         [Category("Visuals")]
         [Description("Header style for a main form.")]
-        [DefaultValue(typeof(HeaderStyle), "Form")]
+        [DefaultValue(HeaderStyle.Form)]
         public HeaderStyle HeaderStyle
         {
             get => _form.HeaderStyle;
@@ -135,7 +140,7 @@ namespace KryptonFormExamples
         [Category(@"Visuals")]
         [Description(@"The Form Title position, relative to available space")]
         [RefreshProperties(RefreshProperties.All)]
-        [DefaultValue(typeof(PaletteRelativeAlign), "Near")]
+        [DefaultValue(PaletteRelativeAlign.Near)]
         public PaletteRelativeAlign FormTitleAlign
         {
             get => _form.FormTitleAlign;
@@ -145,7 +150,7 @@ namespace KryptonFormExamples
 
         [Category("Visuals")]
         [Description("Chrome group border style.")]
-        [DefaultValue(typeof(PaletteBorderStyle), "FormMain")]
+        [DefaultValue(PaletteBorderStyle.FormMain)]
         public PaletteBorderStyle GroupBorderStyle
         {
             get => _form.GroupBorderStyle;
@@ -154,7 +159,7 @@ namespace KryptonFormExamples
 
         [Category("Visuals")]
         [Description("Chrome group background style.")]
-        [DefaultValue(typeof(PaletteBackStyle), "FormMain")]
+        [DefaultValue(PaletteBackStyle.FormMain)]
         public PaletteBackStyle GroupBackStyle
         {
             get => _form.GroupBackStyle;

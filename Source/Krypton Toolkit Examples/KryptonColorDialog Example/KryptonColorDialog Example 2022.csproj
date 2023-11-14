@@ -1,18 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net48;net6.0-windows;net7.0-windows</TargetFrameworks>
+        <TargetFrameworks>net48;net6.0-windows;net7.0-windows;net8.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
         <RootNamespace>KryptonColorDialog</RootNamespace>
         <AssemblyName>Krypton Color Dialog Example</AssemblyName>
         <UseWindowsForms>true</UseWindowsForms>
         <NeutralLanguage>en</NeutralLanguage>
-        <NeutralLanguage>en</NeutralLanguage>
-        <LangVersion>preview</LangVersion>
+        <NeutralLanguage>en</NeutralLanguage>        <LangVersion>preview</LangVersion>
+        <Nullable>enable</Nullable>
+        <WarningLevel>6</WarningLevel>
+        <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
     </PropertyGroup>
-    <Choose>
+<Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
-                <PackageReference Include="Krypton.Toolkit.Canary" Version="65.22.3.89-beta" />
+                <PackageReference Include="Krypton.Toolkit.Canary" Version="80.23.8.233-beta" />
             </ItemGroup>
         </When>
         <Otherwise>
@@ -24,6 +26,7 @@
     <PropertyGroup>
         <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
         <ApplicationManifest>app.manifest</ApplicationManifest>
+        <ApplicationIcon>Krypton.ico</ApplicationIcon>
     </PropertyGroup>
     <ItemGroup>
         <None Remove="Krypton.ico" />

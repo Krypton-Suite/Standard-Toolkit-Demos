@@ -233,7 +233,7 @@
             this.kryptonBreadCrumbItem40 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonBreadCrumbItem41 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
-            this.kryptonPaletteOffice2007Blue = new Krypton.Toolkit.KryptonPalette(this.components);
+            this.kryptonPaletteOffice2007Blue = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -487,8 +487,7 @@
             // kryptonBreadCrumb3
             // 
             this.kryptonBreadCrumb3.AutoSize = false;
-            this.kryptonBreadCrumb3.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
-            this.buttonSpecAny2});
+            this.kryptonBreadCrumb3.ButtonSpecs.Add(this.buttonSpecAny2);
             this.kryptonBreadCrumb3.ControlBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
             this.kryptonBreadCrumb3.Location = new System.Drawing.Point(20, 101);
             this.kryptonBreadCrumb3.Name = "kryptonBreadCrumb3";
@@ -765,8 +764,7 @@
             // kryptonBreadCrumb2
             // 
             this.kryptonBreadCrumb2.AutoSize = false;
-            this.kryptonBreadCrumb2.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
-            this.buttonSpecAny1});
+            this.kryptonBreadCrumb2.ButtonSpecs.Add(this.buttonSpecAny1);
             this.kryptonBreadCrumb2.ControlBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
             this.kryptonBreadCrumb2.Location = new System.Drawing.Point(20, 64);
             this.kryptonBreadCrumb2.Name = "kryptonBreadCrumb2";
@@ -790,9 +788,11 @@
             // 
             // buttonSpecAny1
             // 
-            this.buttonSpecAny1.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
+            this.buttonSpecAny1.KryptonContextMenu = this.kryptonContextMenu1;
+            this.buttonSpecAny1.ShowDrop = true;
+            this.buttonSpecAny1.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
             this.buttonSpecAny1.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
-            this.buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
+            this.buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Undo;
             this.buttonSpecAny1.UniqueName = "DD50F0F9917A4145DD50F0F9917A4145";
             this.buttonSpecAny1.Click += new System.EventHandler(this.buttonSpecAny1_Click);
             // 
@@ -1250,11 +1250,15 @@
             // kryptonManager1
             // 
             this.kryptonManager1.GlobalPalette = this.kryptonPaletteOffice2007Blue;
-            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Custom;
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             // 
             // kryptonPaletteOffice2007Blue
             // 
+            this.kryptonPaletteOffice2007Blue.BaseFont = new System.Drawing.Font("Segoe UI", 9F);
+            this.kryptonPaletteOffice2007Blue.BaseFontSize = 9F;
             this.kryptonPaletteOffice2007Blue.BasePaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Blue;
+            this.kryptonPaletteOffice2007Blue.BasePaletteType = Krypton.Toolkit.BasePaletteType.Custom;
+            this.kryptonPaletteOffice2007Blue.ThemeName = null;
             // 
             // Form1
             // 
@@ -1298,7 +1302,7 @@
         private Krypton.Toolkit.KryptonContextMenuItem menuSpider;
         private Krypton.Toolkit.KryptonContextMenuItem menuKangeroo;
         private Krypton.Toolkit.KryptonContextMenuItem menuFern;
-        private Krypton.Toolkit.KryptonPalette kryptonPaletteOffice2007Blue;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteOffice2007Blue;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.PropertyGrid propertyGrid;
         private System.Windows.Forms.Button buttonClose;

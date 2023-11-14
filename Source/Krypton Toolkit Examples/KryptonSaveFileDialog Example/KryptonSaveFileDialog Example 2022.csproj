@@ -1,15 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net48;net6.0-windows;net7.0-windows</TargetFrameworks>
+        <TargetFrameworks>net48</TargetFrameworks>
         <OutputType>WinExe</OutputType>
-        <RootNamespace>KryptonFontDialog</RootNamespace>
-        <AssemblyName>KryptonFontDialog Example</AssemblyName>
+        <RootNamespace>KryptonSaveFileDialog</RootNamespace>
+        <AssemblyName>KryptonSaveFileDialog Example</AssemblyName>
         <UseWindowsForms>true</UseWindowsForms>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <NeutralLanguage>en</NeutralLanguage>        <LangVersion>preview</LangVersion>
+        <Nullable>enable</Nullable>
+        <WarningLevel>6</WarningLevel>
+        <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
     </PropertyGroup>
-    <Choose>
+<Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
-                <PackageReference Include="Krypton.Toolkit.Canary" Version="65.22.3.89-beta" />
+                <PackageReference Include="Krypton.Toolkit.Canary" Version="80.22.12.356-beta" />
             </ItemGroup>
         </When>
         <Otherwise>
@@ -21,5 +26,6 @@
     <PropertyGroup>
         <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
         <ApplicationManifest>app.manifest</ApplicationManifest>
+        <LangVersion>latest</LangVersion>
     </PropertyGroup>
 </Project>

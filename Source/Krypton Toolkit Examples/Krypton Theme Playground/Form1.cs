@@ -13,9 +13,6 @@ namespace KryptonThemePlayground
 
         }
 
-        private void kryptonCheckedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            kpg.SelectedObject = kryptonCheckedListBox1;
-        }
+        private void kryptonCheckedListBox1_SelectedIndexChanged(object sender, EventArgs e) => kpg.SelectedObject = kryptonCheckedListBox1;
     }
 }

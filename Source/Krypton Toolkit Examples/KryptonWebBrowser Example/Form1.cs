@@ -16,7 +16,7 @@ namespace KryptonWebBrowserExample
             webBrowser2.DocumentText = @"<div contenteditable=""true"">Krypton WebBrowser.<br/> This is in Editable mode with a Krypton context menu</div>";
 
             ThemeManager.PropagateThemeSelector(kcmbTheme);
-            kcmbTheme.Text = ThemeManager.ReturnPaletteModeManagerAsString(kryptonManager1.GlobalPaletteMode);
+            kcmbTheme.Text = ThemeManager.ReturnPaletteModeAsString(kryptonManager1.GlobalPaletteMode);
         }
 
         private void KcmbTheme_SelectedValueChanged(object sender, System.EventArgs e) => ThemeManager.SetTheme(kcmbTheme.Text, kryptonManager1);

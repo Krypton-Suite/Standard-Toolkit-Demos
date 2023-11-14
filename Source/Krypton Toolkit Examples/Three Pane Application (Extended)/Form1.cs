@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -72,7 +72,7 @@ namespace ThreePaneApplication
         {
             if (!toolStripOffice2010Blue.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
                 toolStripOffice2010Blue.Checked = office2010BlueToolStripMenuItem.Checked = true;
                 toolStripOffice2010Silver.Checked = office2010SilverToolStripMenuItem.Checked = false;
                 toolStripOffice2010Black.Checked = office2010BlackToolStripMenuItem.Checked = false;
@@ -92,7 +92,7 @@ namespace ThreePaneApplication
         {
             if (!toolStripOffice2010Silver.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
                 toolStripOffice2010Blue.Checked = office2010BlueToolStripMenuItem.Checked = false;
                 toolStripOffice2010Silver.Checked = office2010SilverToolStripMenuItem.Checked = true;
                 toolStripOffice2010Black.Checked = office2010BlackToolStripMenuItem.Checked = false;
@@ -112,7 +112,7 @@ namespace ThreePaneApplication
         {
             if (!toolStripOffice2010Black.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
                 toolStripOffice2010Blue.Checked = office2010BlueToolStripMenuItem.Checked = false;
                 toolStripOffice2010Silver.Checked = office2010SilverToolStripMenuItem.Checked = false;
                 toolStripOffice2010Black.Checked = office2010BlackToolStripMenuItem.Checked = true;
@@ -132,7 +132,7 @@ namespace ThreePaneApplication
         {
             if (!toolStripOffice2007Blue.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
                 toolStripOffice2010Blue.Checked = office2010BlueToolStripMenuItem.Checked = false;
                 toolStripOffice2010Silver.Checked = office2010SilverToolStripMenuItem.Checked = false;
                 toolStripOffice2010Black.Checked = office2010BlackToolStripMenuItem.Checked = false;
@@ -152,7 +152,7 @@ namespace ThreePaneApplication
         {
             if (!toolStripOffice2007Silver.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
                 toolStripOffice2010Blue.Checked = office2010BlueToolStripMenuItem.Checked = false;
                 toolStripOffice2010Silver.Checked = office2010SilverToolStripMenuItem.Checked = false;
                 toolStripOffice2010Black.Checked = office2010BlackToolStripMenuItem.Checked = false;
@@ -172,7 +172,7 @@ namespace ThreePaneApplication
         {
             if (!toolStripOffice2007Black.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
                 toolStripOffice2010Blue.Checked = office2010BlueToolStripMenuItem.Checked = false;
                 toolStripOffice2010Silver.Checked = office2010SilverToolStripMenuItem.Checked = false;
                 toolStripOffice2010Black.Checked = office2010BlackToolStripMenuItem.Checked = false;
@@ -192,7 +192,7 @@ namespace ThreePaneApplication
         {
             if (!toolStripSparkleBlue.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
                 toolStripOffice2010Blue.Checked = office2010BlueToolStripMenuItem.Checked = false;
                 toolStripOffice2010Silver.Checked = office2010SilverToolStripMenuItem.Checked = false;
                 toolStripOffice2010Black.Checked = office2010BlackToolStripMenuItem.Checked = false;
@@ -212,7 +212,7 @@ namespace ThreePaneApplication
         {
             if (!toolStripSparkleOrange.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleOrange;
                 toolStripOffice2010Blue.Checked = office2010BlueToolStripMenuItem.Checked = false;
                 toolStripOffice2010Silver.Checked = office2010SilverToolStripMenuItem.Checked = false;
                 toolStripOffice2010Black.Checked = office2010BlackToolStripMenuItem.Checked = false;
@@ -232,7 +232,7 @@ namespace ThreePaneApplication
         {
             if (!toolStripSparklePurple.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparklePurple;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparklePurple;
                 toolStripOffice2010Blue.Checked = office2010BlueToolStripMenuItem.Checked = false;
                 toolStripOffice2010Silver.Checked = office2010SilverToolStripMenuItem.Checked = false;
                 toolStripOffice2010Black.Checked = office2010BlackToolStripMenuItem.Checked = false;
@@ -252,7 +252,7 @@ namespace ThreePaneApplication
         {
             if (!toolStripSystem.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
                 toolStripOffice2010Blue.Checked = office2010BlueToolStripMenuItem.Checked = false;
                 toolStripOffice2010Silver.Checked = office2010SilverToolStripMenuItem.Checked = false;
                 toolStripOffice2010Black.Checked = office2010BlackToolStripMenuItem.Checked = false;
@@ -341,7 +341,7 @@ namespace ThreePaneApplication
         private void loadPaletteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Create a new palette for the importing
-            KryptonPalette newPalette = new KryptonPalette();
+            KryptonCustomPaletteBase newPalette = new KryptonCustomPaletteBase();
 
             // If the user managed to load a palette file
             if (newPalette.Import().Length > 0)

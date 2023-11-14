@@ -74,12 +74,12 @@ namespace KryptonBorderEdgeExamples
             this.buttonSparkle = new System.Windows.Forms.Button();
             this.buttonCustom = new System.Windows.Forms.Button();
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
-            this.kryptonPaletteOffice2007Blue = new Krypton.Toolkit.KryptonPalette();
-            this.kryptonPaletteOffice2010Blue = new Krypton.Toolkit.KryptonPalette(this.components);
-            this.kryptonPaletteOffice2007Blue = new Krypton.Toolkit.KryptonPalette(this.components);
-            this.kryptonPaletteCustom = new Krypton.Toolkit.KryptonPalette(this.components);
-            this.kryptonPaletteSparkle = new Krypton.Toolkit.KryptonPalette(this.components);
-            this.kryptonPaletteSystem = new Krypton.Toolkit.KryptonPalette(this.components);
+            this.kryptonPaletteOffice2007Blue = new Krypton.Toolkit.KryptonCustomPaletteBase();
+            this.kryptonPaletteOffice2010Blue = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
+            this.kryptonPaletteOffice2007Blue = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
+            this.kryptonPaletteCustom = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
+            this.kryptonPaletteSparkle = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
+            this.kryptonPaletteSystem = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.panelButtonHost.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonCheckSet)).BeginInit();
             this.groupBoxBorderEdge.SuspendLayout();
@@ -787,7 +787,7 @@ namespace KryptonBorderEdgeExamples
             // 
             this.kryptonPaletteOffice2007Blue.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
             this.kryptonManager.GlobalPalette = this.kryptonPaletteOffice2007Blue;
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Custom;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             // 
             // kryptonPaletteOffice2010Blue
             // 
@@ -1608,17 +1608,17 @@ namespace KryptonBorderEdgeExamples
         private System.Windows.Forms.Button buttonSystem;
         private System.Windows.Forms.Button buttonSparkle;
         private Krypton.Toolkit.KryptonManager kryptonManager;
-        private Krypton.Toolkit.KryptonPalette kryptonPaletteCustom;
-        private Krypton.Toolkit.KryptonPalette kryptonPaletteSparkle;
-        private Krypton.Toolkit.KryptonPalette kryptonPaletteSystem;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteCustom;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteSparkle;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteSystem;
         private System.Windows.Forms.Button buttonOffice2010Blue;
-        private Krypton.Toolkit.KryptonPalette kryptonPaletteOffice2007Blue;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteOffice2007Blue;
         private Krypton.Toolkit.KryptonBorderEdge kryptonBorderEdge4;
         private Krypton.Toolkit.KryptonBorderEdge kryptonBorderEdge3;
         private Krypton.Toolkit.KryptonBorderEdge kryptonBorderEdge2;
         private Krypton.Toolkit.KryptonBorderEdge kryptonBorderEdge1;
         private System.Windows.Forms.Button buttonOffice2007Blue;
-        private Krypton.Toolkit.KryptonPalette kryptonPaletteOffice2010Blue;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteOffice2010Blue;
     }
 }
 

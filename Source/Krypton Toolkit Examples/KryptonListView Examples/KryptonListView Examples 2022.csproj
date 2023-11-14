@@ -7,18 +7,19 @@
         <AssemblyName>Krypton ListView Examples</AssemblyName>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <PlatformTarget>AnyCPU</PlatformTarget>
-        <NeutralLanguage>en</NeutralLanguage>
-        <LangVersion>preview</LangVersion>
+        <NeutralLanguage>en</NeutralLanguage>        <LangVersion>preview</LangVersion>
+        <Nullable>enable</Nullable>
+        <WarningLevel>6</WarningLevel>
+        <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
     </PropertyGroup>
-
-    <ItemGroup>
+<ItemGroup>
         <Content Include="Krypton.ico" />
     </ItemGroup>
 
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
-                <PackageReference Include="Krypton.Toolkit.Canary" Version="65.22.3.89-beta" />
+                <PackageReference Include="Krypton.Toolkit.Canary" Version="80.23.8.233-beta" />
             </ItemGroup>
         </When>
         <Otherwise>

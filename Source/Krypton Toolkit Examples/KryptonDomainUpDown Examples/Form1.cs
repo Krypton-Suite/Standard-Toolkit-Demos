@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -30,13 +30,13 @@ namespace KryptonDomainUpDownExamples
             // Setup the property grid to edit this domain upo-down control
             propertyGrid.SelectedObject = new KryptonDomainUpDownProxy(sender as KryptonDomainUpDown);
 
-        private void buttonOffice2010Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+        private void buttonOffice2010Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
 
-        private void buttonOffice2007Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+        private void buttonOffice2007Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Blue;
 
-        private void buttonSystem_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+        private void buttonSystem_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
 
-        private void buttonSparkleBlue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+        private void buttonSparkleBlue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.SparkleBlue;
 
         private void buttonSpecAny1_Click(object sender, EventArgs e) => dud5.Text = string.Empty;
 

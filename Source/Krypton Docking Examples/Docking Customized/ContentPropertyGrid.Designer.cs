@@ -15,7 +15,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
+            this.propertyGrid1 = new Krypton.Toolkit.KryptonPropertyGrid();
             this.kryptonPanel = new Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.kryptonPanel.SuspendLayout();
@@ -60,7 +60,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PropertyGrid propertyGrid1;
+        private Krypton.Toolkit.KryptonPropertyGrid propertyGrid1;
         private Krypton.Toolkit.KryptonPanel kryptonPanel;
     }
 }

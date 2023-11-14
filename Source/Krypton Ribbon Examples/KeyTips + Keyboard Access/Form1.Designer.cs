@@ -885,7 +885,7 @@ namespace KeyTipsAndKeyboardAccess
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2010Black;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2010Black;
             // 
             // Form1
             // 

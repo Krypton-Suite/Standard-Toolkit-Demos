@@ -34,7 +34,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
             this.panelFill = new Krypton.Toolkit.KryptonPanel();
             this.kryptonWorkspace = new Krypton.Workspace.KryptonWorkspace();
-            this.kryptonWorkspaceCell1 = new Krypton.Workspace.KryptonWorkspaceCell();
             this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLinkLabel1 = new Krypton.Toolkit.KryptonLinkLabel();
@@ -43,6 +42,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRadioButton3 = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton2 = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton1 = new Krypton.Toolkit.KryptonRadioButton();
+            this.kryptonWorkspaceCell1 = new Krypton.Workspace.KryptonWorkspaceCell();
             this.kryptonPage3 = new Krypton.Navigator.KryptonPage();
             this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
             this.kryptonPage7 = new Krypton.Navigator.KryptonPage();
@@ -142,20 +142,17 @@ namespace RibbonAndNavigatorAndWorkspace
             this.panelFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspace)).BeginInit();
             this.kryptonWorkspace.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspaceCell1)).BeginInit();
-            this.kryptonWorkspaceCell1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage1)).BeginInit();
             this.kryptonPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspaceCell1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspaceCell3)).BeginInit();
-            this.kryptonWorkspaceCell3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspaceCell4)).BeginInit();
-            this.kryptonWorkspaceCell4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
@@ -173,18 +170,17 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // radioSparkleOrange
             // 
-            this.radioSparkleOrange.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.radioSparkleOrange.Location = new System.Drawing.Point(13, 205);
+            this.radioSparkleOrange.Location = new System.Drawing.Point(17, 252);
+            this.radioSparkleOrange.Margin = new System.Windows.Forms.Padding(4);
             this.radioSparkleOrange.Name = "radioSparkleOrange";
-            this.radioSparkleOrange.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioSparkleOrange.Size = new System.Drawing.Size(115, 20);
+            this.radioSparkleOrange.Size = new System.Drawing.Size(139, 24);
             this.radioSparkleOrange.TabIndex = 8;
             this.radioSparkleOrange.Values.Text = "Sparkle - Orange";
             this.radioSparkleOrange.CheckedChanged += new System.EventHandler(this.radioSparkleOrange_CheckedChanged);
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2007Blue;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
             // 
             // panelFill
             // 
@@ -192,11 +188,11 @@ namespace RibbonAndNavigatorAndWorkspace
             this.panelFill.Controls.Add(this.kryptonPanel1);
             this.panelFill.Controls.Add(this.navigatorOutlook);
             this.panelFill.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFill.Location = new System.Drawing.Point(0, 142);
-            this.panelFill.Margin = new System.Windows.Forms.Padding(7);
+            this.panelFill.Location = new System.Drawing.Point(0, 169);
+            this.panelFill.Margin = new System.Windows.Forms.Padding(9);
             this.panelFill.Name = "panelFill";
-            this.panelFill.Padding = new System.Windows.Forms.Padding(7);
-            this.panelFill.Size = new System.Drawing.Size(638, 453);
+            this.panelFill.Padding = new System.Windows.Forms.Padding(9);
+            this.panelFill.Size = new System.Drawing.Size(851, 563);
             this.panelFill.TabIndex = 1;
             // 
             // kryptonWorkspace
@@ -207,7 +203,8 @@ namespace RibbonAndNavigatorAndWorkspace
             | Krypton.Workspace.CompactFlags.AtLeastOneVisibleCell)));
             this.kryptonWorkspace.ContainerBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonWorkspace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonWorkspace.Location = new System.Drawing.Point(168, 7);
+            this.kryptonWorkspace.Location = new System.Drawing.Point(213, 9);
+            this.kryptonWorkspace.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonWorkspace.Name = "kryptonWorkspace";
             // 
             // 
@@ -219,47 +216,11 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonWorkspace.Root.UniqueName = "03CE3DB6856D4BE671B66A4FB4EF68C3";
             this.kryptonWorkspace.Root.WorkspaceControl = this.kryptonWorkspace;
             this.kryptonWorkspace.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.HighProfile;
-            this.kryptonWorkspace.Size = new System.Drawing.Size(463, 439);
+            this.kryptonWorkspace.Size = new System.Drawing.Size(629, 545);
             this.kryptonWorkspace.SplitterWidth = 5;
             this.kryptonWorkspace.TabIndex = 3;
             this.kryptonWorkspace.TabStop = true;
             this.kryptonWorkspace.WorkspaceCellAdding += new System.EventHandler<Krypton.Workspace.WorkspaceCellEventArgs>(this.OnWorkspaceCellAdding);
-            // 
-            // kryptonWorkspaceCell1
-            // 
-            this.kryptonWorkspaceCell1.AllowPageDrag = true;
-            this.kryptonWorkspaceCell1.AllowTabFocus = false;
-            this.kryptonWorkspaceCell1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonWorkspaceCell1.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.Context;
-            this.kryptonWorkspaceCell1.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
-            this.kryptonWorkspaceCell1.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
-            this.kryptonWorkspaceCell1.Button.ContextButtonAction = Krypton.Navigator.ContextButtonAction.SelectPage;
-            this.kryptonWorkspaceCell1.Button.ContextButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
-            this.kryptonWorkspaceCell1.Button.ContextMenuMapImage = Krypton.Navigator.MapKryptonPageImage.Small;
-            this.kryptonWorkspaceCell1.Button.ContextMenuMapText = Krypton.Navigator.MapKryptonPageText.TextTitle;
-            this.kryptonWorkspaceCell1.Button.NextButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
-            this.kryptonWorkspaceCell1.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
-            this.kryptonWorkspaceCell1.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
-            this.kryptonWorkspaceCell1.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
-            this.kryptonWorkspaceCell1.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.kryptonWorkspaceCell1.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
-            this.kryptonWorkspaceCell1.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonWorkspaceCell1.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonWorkspaceCell1.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
-            this.kryptonWorkspaceCell1.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
-            this.kryptonWorkspaceCell1.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
-            this.kryptonWorkspaceCell1.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
-            this.kryptonWorkspaceCell1.Name = "kryptonWorkspaceCell1";
-            this.kryptonWorkspaceCell1.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
-            this.kryptonWorkspaceCell1.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.kryptonWorkspaceCell1.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
-            this.kryptonPage1,
-            this.kryptonPage3,
-            this.kryptonPage2,
-            this.kryptonPage7});
-            this.kryptonWorkspaceCell1.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
-            this.kryptonWorkspaceCell1.SelectedIndex = 0;
-            this.kryptonWorkspaceCell1.UniqueName = "B6BB7B2230CD4B6CDBB3C3D3ECA3CE84";
             // 
             // kryptonPage1
             // 
@@ -273,9 +234,10 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonPage1.Controls.Add(this.kryptonRadioButton1);
             this.kryptonPage1.Flags = 65534;
             this.kryptonPage1.LastVisibleSet = true;
-            this.kryptonPage1.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPage1.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPage1.MinimumSize = new System.Drawing.Size(67, 62);
             this.kryptonPage1.Name = "kryptonPage1";
-            this.kryptonPage1.Size = new System.Drawing.Size(461, 190);
+            this.kryptonPage1.Size = new System.Drawing.Size(627, 239);
             this.kryptonPage1.Text = "Page 1";
             this.kryptonPage1.TextDescription = "Page 1 Description";
             this.kryptonPage1.TextTitle = "Page 1 Title";
@@ -284,80 +246,103 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(180, 87);
+            this.kryptonLabel1.Location = new System.Drawing.Point(240, 107);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(66, 20);
+            this.kryptonLabel1.Size = new System.Drawing.Size(80, 24);
             this.kryptonLabel1.TabIndex = 6;
             this.kryptonLabel1.Values.Text = "Label Text";
             // 
             // kryptonLinkLabel1
             // 
-            this.kryptonLinkLabel1.Location = new System.Drawing.Point(180, 63);
+            this.kryptonLinkLabel1.Location = new System.Drawing.Point(240, 78);
+            this.kryptonLinkLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLinkLabel1.Name = "kryptonLinkLabel1";
-            this.kryptonLinkLabel1.Size = new System.Drawing.Size(65, 20);
+            this.kryptonLinkLabel1.Size = new System.Drawing.Size(79, 24);
             this.kryptonLinkLabel1.TabIndex = 5;
             this.kryptonLinkLabel1.Values.Text = "Link Label";
             // 
             // kryptonCheckBox2
             // 
-            this.kryptonCheckBox2.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.kryptonCheckBox2.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.kryptonCheckBox2.Location = new System.Drawing.Point(185, 15);
+            this.kryptonCheckBox2.Location = new System.Drawing.Point(247, 18);
+            this.kryptonCheckBox2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonCheckBox2.Name = "kryptonCheckBox2";
-            this.kryptonCheckBox2.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonCheckBox2.Size = new System.Drawing.Size(87, 20);
+            this.kryptonCheckBox2.Size = new System.Drawing.Size(103, 24);
             this.kryptonCheckBox2.TabIndex = 3;
             this.kryptonCheckBox2.Values.Text = "CheckBox 1";
             // 
             // kryptonCheckBox1
             // 
-            this.kryptonCheckBox1.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.kryptonCheckBox1.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.kryptonCheckBox1.Location = new System.Drawing.Point(185, 39);
+            this.kryptonCheckBox1.Location = new System.Drawing.Point(247, 48);
+            this.kryptonCheckBox1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonCheckBox1.Name = "kryptonCheckBox1";
-            this.kryptonCheckBox1.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonCheckBox1.Size = new System.Drawing.Size(87, 20);
+            this.kryptonCheckBox1.Size = new System.Drawing.Size(103, 24);
             this.kryptonCheckBox1.TabIndex = 4;
             this.kryptonCheckBox1.Values.Text = "CheckBox 2";
             // 
             // kryptonRadioButton3
             // 
-            this.kryptonRadioButton3.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.kryptonRadioButton3.Location = new System.Drawing.Point(18, 63);
+            this.kryptonRadioButton3.Location = new System.Drawing.Point(24, 78);
+            this.kryptonRadioButton3.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonRadioButton3.Name = "kryptonRadioButton3";
-            this.kryptonRadioButton3.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonRadioButton3.Size = new System.Drawing.Size(104, 20);
+            this.kryptonRadioButton3.Size = new System.Drawing.Size(125, 24);
             this.kryptonRadioButton3.TabIndex = 2;
             this.kryptonRadioButton3.Values.Text = "Radio Button 3";
             // 
             // kryptonRadioButton2
             // 
-            this.kryptonRadioButton2.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.kryptonRadioButton2.Location = new System.Drawing.Point(18, 39);
+            this.kryptonRadioButton2.Location = new System.Drawing.Point(24, 48);
+            this.kryptonRadioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonRadioButton2.Name = "kryptonRadioButton2";
-            this.kryptonRadioButton2.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonRadioButton2.Size = new System.Drawing.Size(104, 20);
+            this.kryptonRadioButton2.Size = new System.Drawing.Size(125, 24);
             this.kryptonRadioButton2.TabIndex = 1;
             this.kryptonRadioButton2.Values.Text = "Radio Button 2";
             // 
             // kryptonRadioButton1
             // 
-            this.kryptonRadioButton1.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.kryptonRadioButton1.Location = new System.Drawing.Point(18, 15);
+            this.kryptonRadioButton1.Location = new System.Drawing.Point(24, 18);
+            this.kryptonRadioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonRadioButton1.Name = "kryptonRadioButton1";
-            this.kryptonRadioButton1.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonRadioButton1.Size = new System.Drawing.Size(104, 20);
+            this.kryptonRadioButton1.Size = new System.Drawing.Size(125, 24);
             this.kryptonRadioButton1.TabIndex = 0;
             this.kryptonRadioButton1.Values.Text = "Radio Button 1";
+            // 
+            // kryptonWorkspaceCell1
+            // 
+            this.kryptonWorkspaceCell1.AllowPageDrag = true;
+            this.kryptonWorkspaceCell1.AllowTabFocus = false;
+            this.kryptonWorkspaceCell1.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.Context;
+            this.kryptonWorkspaceCell1.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
+            this.kryptonWorkspaceCell1.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
+            this.kryptonWorkspaceCell1.Button.ContextButtonAction = Krypton.Navigator.ContextButtonAction.SelectPage;
+            this.kryptonWorkspaceCell1.Button.ContextButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
+            this.kryptonWorkspaceCell1.Button.ContextMenuMapImage = Krypton.Navigator.MapKryptonPageImage.Small;
+            this.kryptonWorkspaceCell1.Button.ContextMenuMapText = Krypton.Navigator.MapKryptonPageText.TextTitle;
+            this.kryptonWorkspaceCell1.Button.NextButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.kryptonWorkspaceCell1.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonWorkspaceCell1.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
+            this.kryptonWorkspaceCell1.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonWorkspaceCell1.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonWorkspaceCell1.Name = "kryptonWorkspaceCell1";
+            this.kryptonWorkspaceCell1.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
+            this.kryptonWorkspaceCell1.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
+            this.kryptonWorkspaceCell1.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
+            this.kryptonPage1,
+            this.kryptonPage3,
+            this.kryptonPage2,
+            this.kryptonPage7});
+            this.kryptonWorkspaceCell1.SelectedIndex = 0;
+            this.kryptonWorkspaceCell1.UniqueName = "B6BB7B2230CD4B6CDBB3C3D3ECA3CE84";
             // 
             // kryptonPage3
             // 
             this.kryptonPage3.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage3.Flags = 65534;
             this.kryptonPage3.LastVisibleSet = true;
-            this.kryptonPage3.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPage3.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPage3.MinimumSize = new System.Drawing.Size(67, 62);
             this.kryptonPage3.Name = "kryptonPage3";
-            this.kryptonPage3.Size = new System.Drawing.Size(392, 147);
+            this.kryptonPage3.Size = new System.Drawing.Size(523, 181);
             this.kryptonPage3.Text = "Page 2";
             this.kryptonPage3.TextDescription = "Page 2 Description";
             this.kryptonPage3.TextTitle = "Page 2 Title";
@@ -369,9 +354,10 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonPage2.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage2.Flags = 65534;
             this.kryptonPage2.LastVisibleSet = true;
-            this.kryptonPage2.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPage2.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPage2.MinimumSize = new System.Drawing.Size(67, 62);
             this.kryptonPage2.Name = "kryptonPage2";
-            this.kryptonPage2.Size = new System.Drawing.Size(100, 100);
+            this.kryptonPage2.Size = new System.Drawing.Size(133, 123);
             this.kryptonPage2.Text = "Page 3";
             this.kryptonPage2.TextDescription = "Page 3 Description";
             this.kryptonPage2.TextTitle = "Page 3 Title";
@@ -383,9 +369,10 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonPage7.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage7.Flags = 65534;
             this.kryptonPage7.LastVisibleSet = true;
-            this.kryptonPage7.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPage7.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPage7.MinimumSize = new System.Drawing.Size(67, 62);
             this.kryptonPage7.Name = "kryptonPage7";
-            this.kryptonPage7.Size = new System.Drawing.Size(100, 100);
+            this.kryptonPage7.Size = new System.Drawing.Size(133, 123);
             this.kryptonPage7.Text = "Page 4";
             this.kryptonPage7.TextDescription = "Page 4 Description";
             this.kryptonPage7.TextTitle = "Page 4 Title";
@@ -397,7 +384,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonWorkspaceSequence1.Children.AddRange(new System.ComponentModel.Component[] {
             this.kryptonWorkspaceCell3,
             this.kryptonWorkspaceCell4});
-            this.kryptonWorkspaceSequence1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.kryptonWorkspaceSequence1.UniqueName = "E0BD868474F749821686DA2047A1B41C";
             this.kryptonWorkspaceSequence1.WorkspaceControl = null;
             // 
@@ -405,7 +391,6 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             this.kryptonWorkspaceCell3.AllowPageDrag = true;
             this.kryptonWorkspaceCell3.AllowTabFocus = false;
-            this.kryptonWorkspaceCell3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonWorkspaceCell3.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.Context;
             this.kryptonWorkspaceCell3.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
             this.kryptonWorkspaceCell3.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
@@ -417,14 +402,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonWorkspaceCell3.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
             this.kryptonWorkspaceCell3.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
             this.kryptonWorkspaceCell3.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
-            this.kryptonWorkspaceCell3.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.kryptonWorkspaceCell3.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
-            this.kryptonWorkspaceCell3.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonWorkspaceCell3.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonWorkspaceCell3.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
-            this.kryptonWorkspaceCell3.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
-            this.kryptonWorkspaceCell3.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
-            this.kryptonWorkspaceCell3.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
+            this.kryptonWorkspaceCell3.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonWorkspaceCell3.Name = "kryptonWorkspaceCell3";
             this.kryptonWorkspaceCell3.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
             this.kryptonWorkspaceCell3.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
@@ -432,7 +410,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonPage4,
             this.kryptonPage5,
             this.kryptonPage10});
-            this.kryptonWorkspaceCell3.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonWorkspaceCell3.SelectedIndex = 0;
             this.kryptonWorkspaceCell3.UniqueName = "D6C2C815C07F40DA9786E81899BDF116";
             // 
@@ -441,9 +418,10 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonPage4.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage4.Flags = 65534;
             this.kryptonPage4.LastVisibleSet = true;
-            this.kryptonPage4.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPage4.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPage4.MinimumSize = new System.Drawing.Size(67, 62);
             this.kryptonPage4.Name = "kryptonPage4";
-            this.kryptonPage4.Size = new System.Drawing.Size(227, 190);
+            this.kryptonPage4.Size = new System.Drawing.Size(310, 239);
             this.kryptonPage4.Text = "Page 5";
             this.kryptonPage4.TextDescription = "Page 5 Description";
             this.kryptonPage4.TextTitle = "Page 5 Title";
@@ -455,9 +433,10 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonPage5.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage5.Flags = 65534;
             this.kryptonPage5.LastVisibleSet = true;
-            this.kryptonPage5.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPage5.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPage5.MinimumSize = new System.Drawing.Size(67, 62);
             this.kryptonPage5.Name = "kryptonPage5";
-            this.kryptonPage5.Size = new System.Drawing.Size(192, 148);
+            this.kryptonPage5.Size = new System.Drawing.Size(256, 182);
             this.kryptonPage5.Text = "Page 6";
             this.kryptonPage5.TextDescription = "Page 6 Description";
             this.kryptonPage5.TextTitle = "Page 6 Title";
@@ -469,9 +448,10 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonPage10.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage10.Flags = 65534;
             this.kryptonPage10.LastVisibleSet = true;
-            this.kryptonPage10.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPage10.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPage10.MinimumSize = new System.Drawing.Size(67, 62);
             this.kryptonPage10.Name = "kryptonPage10";
-            this.kryptonPage10.Size = new System.Drawing.Size(100, 100);
+            this.kryptonPage10.Size = new System.Drawing.Size(133, 123);
             this.kryptonPage10.Text = "Page 7";
             this.kryptonPage10.TextDescription = "Page 7 Description";
             this.kryptonPage10.TextTitle = "Page 7 Title";
@@ -482,7 +462,6 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             this.kryptonWorkspaceCell4.AllowPageDrag = true;
             this.kryptonWorkspaceCell4.AllowTabFocus = false;
-            this.kryptonWorkspaceCell4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonWorkspaceCell4.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.Context;
             this.kryptonWorkspaceCell4.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
             this.kryptonWorkspaceCell4.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
@@ -494,21 +473,13 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonWorkspaceCell4.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
             this.kryptonWorkspaceCell4.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
             this.kryptonWorkspaceCell4.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
-            this.kryptonWorkspaceCell4.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.kryptonWorkspaceCell4.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
-            this.kryptonWorkspaceCell4.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonWorkspaceCell4.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonWorkspaceCell4.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
-            this.kryptonWorkspaceCell4.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
-            this.kryptonWorkspaceCell4.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
-            this.kryptonWorkspaceCell4.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
+            this.kryptonWorkspaceCell4.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonWorkspaceCell4.Name = "kryptonWorkspaceCell4";
             this.kryptonWorkspaceCell4.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
             this.kryptonWorkspaceCell4.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.kryptonWorkspaceCell4.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage6,
             this.kryptonPage11});
-            this.kryptonWorkspaceCell4.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonWorkspaceCell4.SelectedIndex = 0;
             this.kryptonWorkspaceCell4.UniqueName = "60088AB11A8D41DC5DA877C07264119D";
             // 
@@ -517,9 +488,10 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonPage6.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage6.Flags = 65534;
             this.kryptonPage6.LastVisibleSet = true;
-            this.kryptonPage6.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPage6.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPage6.MinimumSize = new System.Drawing.Size(67, 62);
             this.kryptonPage6.Name = "kryptonPage6";
-            this.kryptonPage6.Size = new System.Drawing.Size(227, 190);
+            this.kryptonPage6.Size = new System.Drawing.Size(310, 239);
             this.kryptonPage6.Text = "Page 8";
             this.kryptonPage6.TextDescription = "Page 8 Description";
             this.kryptonPage6.TextTitle = "Page 8 Title";
@@ -531,9 +503,10 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonPage11.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
             this.kryptonPage11.Flags = 65534;
             this.kryptonPage11.LastVisibleSet = true;
-            this.kryptonPage11.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPage11.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPage11.MinimumSize = new System.Drawing.Size(67, 62);
             this.kryptonPage11.Name = "kryptonPage11";
-            this.kryptonPage11.Size = new System.Drawing.Size(100, 100);
+            this.kryptonPage11.Size = new System.Drawing.Size(133, 123);
             this.kryptonPage11.Text = "Page 9";
             this.kryptonPage11.TextDescription = "Page 9 Description";
             this.kryptonPage11.TextTitle = "Page 9 Title";
@@ -543,9 +516,10 @@ namespace RibbonAndNavigatorAndWorkspace
             // kryptonPanel1
             // 
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.kryptonPanel1.Location = new System.Drawing.Point(161, 7);
+            this.kryptonPanel1.Location = new System.Drawing.Point(204, 9);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(7, 439);
+            this.kryptonPanel1.Size = new System.Drawing.Size(9, 545);
             this.kryptonPanel1.TabIndex = 2;
             // 
             // navigatorOutlook
@@ -566,8 +540,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.navigatorOutlook.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
             this.navigatorOutlook.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
             this.navigatorOutlook.Dock = System.Windows.Forms.DockStyle.Left;
-            this.navigatorOutlook.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.navigatorOutlook.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
             this.navigatorOutlook.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
             this.navigatorOutlook.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
             this.navigatorOutlook.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
@@ -577,16 +549,16 @@ namespace RibbonAndNavigatorAndWorkspace
             this.navigatorOutlook.Header.HeaderValuesPrimary.MapDescription = Krypton.Navigator.MapKryptonPageText.None;
             this.navigatorOutlook.Header.HeaderValuesPrimary.MapHeading = Krypton.Navigator.MapKryptonPageText.TitleText;
             this.navigatorOutlook.Header.HeaderValuesPrimary.MapImage = Krypton.Navigator.MapKryptonPageImage.None;
-            this.navigatorOutlook.Location = new System.Drawing.Point(7, 7);
+            this.navigatorOutlook.Location = new System.Drawing.Point(9, 9);
+            this.navigatorOutlook.Margin = new System.Windows.Forms.Padding(4);
             this.navigatorOutlook.Name = "navigatorOutlook";
             this.navigatorOutlook.NavigatorMode = Krypton.Navigator.NavigatorMode.OutlookFull;
             this.navigatorOutlook.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.navigatorOutlook.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.pageGlobalPalettes,
             this.kryptonDisplayMode});
-            this.navigatorOutlook.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.navigatorOutlook.SelectedIndex = 0;
-            this.navigatorOutlook.Size = new System.Drawing.Size(154, 439);
+            this.navigatorOutlook.Size = new System.Drawing.Size(195, 545);
             this.navigatorOutlook.TabIndex = 0;
             this.navigatorOutlook.Text = "kryptonNavigator1";
             // 
@@ -614,10 +586,11 @@ namespace RibbonAndNavigatorAndWorkspace
             this.pageGlobalPalettes.Flags = 65534;
             this.pageGlobalPalettes.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("pageGlobalPalettes.ImageSmall")));
             this.pageGlobalPalettes.LastVisibleSet = true;
-            this.pageGlobalPalettes.MinimumSize = new System.Drawing.Size(145, 50);
+            this.pageGlobalPalettes.Margin = new System.Windows.Forms.Padding(4);
+            this.pageGlobalPalettes.MinimumSize = new System.Drawing.Size(193, 62);
             this.pageGlobalPalettes.Name = "pageGlobalPalettes";
-            this.pageGlobalPalettes.Padding = new System.Windows.Forms.Padding(10);
-            this.pageGlobalPalettes.Size = new System.Drawing.Size(152, 332);
+            this.pageGlobalPalettes.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.pageGlobalPalettes.Size = new System.Drawing.Size(193, 424);
             this.pageGlobalPalettes.Text = "Palettes";
             this.pageGlobalPalettes.TextDescription = "Palettes";
             this.pageGlobalPalettes.TextTitle = "Palettes";
@@ -626,22 +599,20 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // radioOffice2010Black
             // 
-            this.radioOffice2010Black.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.radioOffice2010Black.Location = new System.Drawing.Point(13, 61);
+            this.radioOffice2010Black.Location = new System.Drawing.Point(17, 75);
+            this.radioOffice2010Black.Margin = new System.Windows.Forms.Padding(4);
             this.radioOffice2010Black.Name = "radioOffice2010Black";
-            this.radioOffice2010Black.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioOffice2010Black.Size = new System.Drawing.Size(125, 20);
+            this.radioOffice2010Black.Size = new System.Drawing.Size(151, 24);
             this.radioOffice2010Black.TabIndex = 2;
             this.radioOffice2010Black.Values.Text = "Office 2010 - Black";
             this.radioOffice2010Black.CheckedChanged += new System.EventHandler(this.radioOffice2010Black_CheckedChanged);
             // 
             // radioSparklePurple
             // 
-            this.radioSparklePurple.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.radioSparklePurple.Location = new System.Drawing.Point(13, 229);
+            this.radioSparklePurple.Location = new System.Drawing.Point(17, 282);
+            this.radioSparklePurple.Margin = new System.Windows.Forms.Padding(4);
             this.radioSparklePurple.Name = "radioSparklePurple";
-            this.radioSparklePurple.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioSparklePurple.Size = new System.Drawing.Size(109, 20);
+            this.radioSparklePurple.Size = new System.Drawing.Size(132, 24);
             this.radioSparklePurple.TabIndex = 9;
             this.radioSparklePurple.Values.Text = "Sparkle - Purple";
             this.radioSparklePurple.CheckedChanged += new System.EventHandler(this.radioSparklePurple_CheckedChanged);
@@ -649,88 +620,80 @@ namespace RibbonAndNavigatorAndWorkspace
             // radioOffice2010Blue
             // 
             this.radioOffice2010Blue.Checked = true;
-            this.radioOffice2010Blue.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.radioOffice2010Blue.Location = new System.Drawing.Point(13, 13);
+            this.radioOffice2010Blue.Location = new System.Drawing.Point(17, 16);
+            this.radioOffice2010Blue.Margin = new System.Windows.Forms.Padding(4);
             this.radioOffice2010Blue.Name = "radioOffice2010Blue";
-            this.radioOffice2010Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioOffice2010Blue.Size = new System.Drawing.Size(120, 20);
+            this.radioOffice2010Blue.Size = new System.Drawing.Size(145, 24);
             this.radioOffice2010Blue.TabIndex = 0;
             this.radioOffice2010Blue.Values.Text = "Office 2010 - Blue";
             this.radioOffice2010Blue.CheckedChanged += new System.EventHandler(this.radioOffice2010Blue_CheckedChanged);
             // 
             // radioOffice2010Silver
             // 
-            this.radioOffice2010Silver.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.radioOffice2010Silver.Location = new System.Drawing.Point(13, 37);
+            this.radioOffice2010Silver.Location = new System.Drawing.Point(17, 46);
+            this.radioOffice2010Silver.Margin = new System.Windows.Forms.Padding(4);
             this.radioOffice2010Silver.Name = "radioOffice2010Silver";
-            this.radioOffice2010Silver.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioOffice2010Silver.Size = new System.Drawing.Size(126, 20);
+            this.radioOffice2010Silver.Size = new System.Drawing.Size(153, 24);
             this.radioOffice2010Silver.TabIndex = 1;
             this.radioOffice2010Silver.Values.Text = "Office 2010 - Silver";
             this.radioOffice2010Silver.CheckedChanged += new System.EventHandler(this.radioOffice2010Silver_CheckedChanged);
             // 
             // radioSparkleBlue
             // 
-            this.radioSparkleBlue.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.radioSparkleBlue.Location = new System.Drawing.Point(13, 181);
+            this.radioSparkleBlue.Location = new System.Drawing.Point(17, 223);
+            this.radioSparkleBlue.Margin = new System.Windows.Forms.Padding(4);
             this.radioSparkleBlue.Name = "radioSparkleBlue";
-            this.radioSparkleBlue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioSparkleBlue.Size = new System.Drawing.Size(98, 20);
+            this.radioSparkleBlue.Size = new System.Drawing.Size(118, 24);
             this.radioSparkleBlue.TabIndex = 7;
             this.radioSparkleBlue.Values.Text = "Sparkle - Blue";
             this.radioSparkleBlue.CheckedChanged += new System.EventHandler(this.radioSparkleBlue_CheckedChanged);
             // 
             // radioSystem
             // 
-            this.radioSystem.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.radioSystem.Location = new System.Drawing.Point(13, 253);
+            this.radioSystem.Location = new System.Drawing.Point(17, 311);
+            this.radioSystem.Margin = new System.Windows.Forms.Padding(4);
             this.radioSystem.Name = "radioSystem";
-            this.radioSystem.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioSystem.Size = new System.Drawing.Size(62, 20);
+            this.radioSystem.Size = new System.Drawing.Size(72, 24);
             this.radioSystem.TabIndex = 10;
             this.radioSystem.Values.Text = "System";
             this.radioSystem.CheckedChanged += new System.EventHandler(this.radioSystem_CheckedChanged);
             // 
             // radioOffice2003
             // 
-            this.radioOffice2003.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.radioOffice2003.Location = new System.Drawing.Point(13, 157);
+            this.radioOffice2003.Location = new System.Drawing.Point(17, 193);
+            this.radioOffice2003.Margin = new System.Windows.Forms.Padding(4);
             this.radioOffice2003.Name = "radioOffice2003";
-            this.radioOffice2003.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioOffice2003.Size = new System.Drawing.Size(85, 20);
+            this.radioOffice2003.Size = new System.Drawing.Size(101, 24);
             this.radioOffice2003.TabIndex = 6;
             this.radioOffice2003.Values.Text = "Office 2003";
             this.radioOffice2003.CheckedChanged += new System.EventHandler(this.radioOffice2003_CheckedChanged);
             // 
             // radioOffice2007Black
             // 
-            this.radioOffice2007Black.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.radioOffice2007Black.Location = new System.Drawing.Point(13, 133);
+            this.radioOffice2007Black.Location = new System.Drawing.Point(17, 164);
+            this.radioOffice2007Black.Margin = new System.Windows.Forms.Padding(4);
             this.radioOffice2007Black.Name = "radioOffice2007Black";
-            this.radioOffice2007Black.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioOffice2007Black.Size = new System.Drawing.Size(125, 20);
+            this.radioOffice2007Black.Size = new System.Drawing.Size(151, 24);
             this.radioOffice2007Black.TabIndex = 5;
             this.radioOffice2007Black.Values.Text = "Office 2007 - Black";
             this.radioOffice2007Black.CheckedChanged += new System.EventHandler(this.radioOffice2007Black_CheckedChanged);
             // 
             // radioOffice2007Silver
             // 
-            this.radioOffice2007Silver.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.radioOffice2007Silver.Location = new System.Drawing.Point(13, 109);
+            this.radioOffice2007Silver.Location = new System.Drawing.Point(17, 134);
+            this.radioOffice2007Silver.Margin = new System.Windows.Forms.Padding(4);
             this.radioOffice2007Silver.Name = "radioOffice2007Silver";
-            this.radioOffice2007Silver.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioOffice2007Silver.Size = new System.Drawing.Size(126, 20);
+            this.radioOffice2007Silver.Size = new System.Drawing.Size(153, 24);
             this.radioOffice2007Silver.TabIndex = 4;
             this.radioOffice2007Silver.Values.Text = "Office 2007 - Silver";
             this.radioOffice2007Silver.CheckedChanged += new System.EventHandler(this.radioOffice2007Silver_CheckedChanged);
             // 
             // radioOffice2007Blue
             // 
-            this.radioOffice2007Blue.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.radioOffice2007Blue.Location = new System.Drawing.Point(13, 85);
+            this.radioOffice2007Blue.Location = new System.Drawing.Point(17, 105);
+            this.radioOffice2007Blue.Margin = new System.Windows.Forms.Padding(4);
             this.radioOffice2007Blue.Name = "radioOffice2007Blue";
-            this.radioOffice2007Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioOffice2007Blue.Size = new System.Drawing.Size(120, 20);
+            this.radioOffice2007Blue.Size = new System.Drawing.Size(145, 24);
             this.radioOffice2007Blue.TabIndex = 3;
             this.radioOffice2007Blue.Values.Text = "Office 2007 - Blue";
             this.radioOffice2007Blue.CheckedChanged += new System.EventHandler(this.radioOffice2007Blue_CheckedChanged);
@@ -747,10 +710,11 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonDisplayMode.Flags = 65534;
             this.kryptonDisplayMode.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonDisplayMode.ImageSmall")));
             this.kryptonDisplayMode.LastVisibleSet = true;
-            this.kryptonDisplayMode.MinimumSize = new System.Drawing.Size(145, 50);
+            this.kryptonDisplayMode.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonDisplayMode.MinimumSize = new System.Drawing.Size(193, 62);
             this.kryptonDisplayMode.Name = "kryptonDisplayMode";
-            this.kryptonDisplayMode.Padding = new System.Windows.Forms.Padding(10);
-            this.kryptonDisplayMode.Size = new System.Drawing.Size(151, 247);
+            this.kryptonDisplayMode.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.kryptonDisplayMode.Size = new System.Drawing.Size(201, 304);
             this.kryptonDisplayMode.Text = "Display Mode";
             this.kryptonDisplayMode.TextDescription = "Display Mode";
             this.kryptonDisplayMode.TextTitle = "Display Mode";
@@ -759,68 +723,62 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // buttonRibbonTabs
             // 
-            this.buttonRibbonTabs.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.buttonRibbonTabs.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonRibbonTabs.Location = new System.Drawing.Point(19, 41);
+            this.buttonRibbonTabs.CornerRoundingRadius = -1F;
+            this.buttonRibbonTabs.Location = new System.Drawing.Point(25, 50);
+            this.buttonRibbonTabs.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRibbonTabs.Name = "buttonRibbonTabs";
-            this.buttonRibbonTabs.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonRibbonTabs.Size = new System.Drawing.Size(108, 25);
+            this.buttonRibbonTabs.Size = new System.Drawing.Size(144, 31);
             this.buttonRibbonTabs.TabIndex = 14;
             this.buttonRibbonTabs.Values.Text = "RibbonTabs";
             // 
             // buttonStack
             // 
-            this.buttonStack.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.buttonStack.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonStack.Location = new System.Drawing.Point(19, 165);
+            this.buttonStack.CornerRoundingRadius = -1F;
+            this.buttonStack.Location = new System.Drawing.Point(25, 203);
+            this.buttonStack.Margin = new System.Windows.Forms.Padding(4);
             this.buttonStack.Name = "buttonStack";
-            this.buttonStack.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonStack.Size = new System.Drawing.Size(108, 25);
+            this.buttonStack.Size = new System.Drawing.Size(144, 31);
             this.buttonStack.TabIndex = 13;
             this.buttonStack.Values.Text = "Stack";
             // 
             // buttonHeaderBar
             // 
-            this.buttonHeaderBar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.buttonHeaderBar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonHeaderBar.Location = new System.Drawing.Point(19, 134);
+            this.buttonHeaderBar.CornerRoundingRadius = -1F;
+            this.buttonHeaderBar.Location = new System.Drawing.Point(25, 165);
+            this.buttonHeaderBar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonHeaderBar.Name = "buttonHeaderBar";
-            this.buttonHeaderBar.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonHeaderBar.Size = new System.Drawing.Size(108, 25);
+            this.buttonHeaderBar.Size = new System.Drawing.Size(144, 31);
             this.buttonHeaderBar.TabIndex = 12;
             this.buttonHeaderBar.Values.Text = "HeaderBar";
             // 
             // buttonHeaderGroup
             // 
-            this.buttonHeaderGroup.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.buttonHeaderGroup.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonHeaderGroup.Location = new System.Drawing.Point(19, 103);
+            this.buttonHeaderGroup.CornerRoundingRadius = -1F;
+            this.buttonHeaderGroup.Location = new System.Drawing.Point(25, 127);
+            this.buttonHeaderGroup.Margin = new System.Windows.Forms.Padding(4);
             this.buttonHeaderGroup.Name = "buttonHeaderGroup";
-            this.buttonHeaderGroup.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonHeaderGroup.Size = new System.Drawing.Size(108, 25);
+            this.buttonHeaderGroup.Size = new System.Drawing.Size(144, 31);
             this.buttonHeaderGroup.TabIndex = 11;
             this.buttonHeaderGroup.Values.Text = "HeaderGroup";
             // 
             // buttonCheckButtons
             // 
-            this.buttonCheckButtons.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.buttonCheckButtons.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonCheckButtons.Location = new System.Drawing.Point(19, 72);
+            this.buttonCheckButtons.CornerRoundingRadius = -1F;
+            this.buttonCheckButtons.Location = new System.Drawing.Point(25, 89);
+            this.buttonCheckButtons.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCheckButtons.Name = "buttonCheckButtons";
-            this.buttonCheckButtons.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonCheckButtons.Size = new System.Drawing.Size(108, 25);
+            this.buttonCheckButtons.Size = new System.Drawing.Size(144, 31);
             this.buttonCheckButtons.TabIndex = 10;
             this.buttonCheckButtons.Values.Text = "CheckButtons";
             // 
             // buttonTabs
             // 
-            this.buttonTabs.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.buttonTabs.Checked = true;
-            this.buttonTabs.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonTabs.Location = new System.Drawing.Point(19, 10);
+            this.buttonTabs.CornerRoundingRadius = -1F;
+            this.buttonTabs.Location = new System.Drawing.Point(25, 12);
+            this.buttonTabs.Margin = new System.Windows.Forms.Padding(4);
             this.buttonTabs.Name = "buttonTabs";
-            this.buttonTabs.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonTabs.Size = new System.Drawing.Size(108, 25);
+            this.buttonTabs.Size = new System.Drawing.Size(144, 31);
             this.buttonTabs.TabIndex = 9;
             this.buttonTabs.Values.Text = "Tabs";
             // 
@@ -838,7 +796,6 @@ namespace RibbonAndNavigatorAndWorkspace
             // kryptonRibbon
             // 
             this.kryptonRibbon.AllowFormIntegrate = true;
-            this.kryptonRibbon.HideRibbonSize = new System.Drawing.Size(300, 250);
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
             this.kryptonRibbon.QATButtons.AddRange(new System.ComponentModel.Component[] {
@@ -856,103 +813,84 @@ namespace RibbonAndNavigatorAndWorkspace
             this.qatPanama,
             this.qatQatar});
             this.kryptonRibbon.QATLocation = Krypton.Ribbon.QATLocation.Below;
-            this.kryptonRibbon.RibbonAppButton.AppButtonMaxRecentSize = new System.Drawing.Size(350, 350);
             this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
-            this.kryptonRibbon.RibbonAppButton.AppButtonMinRecentSize = new System.Drawing.Size(250, 250);
             this.kryptonRibbon.RibbonAppButton.AppButtonShowRecentDocs = false;
-            this.kryptonRibbon.RibbonAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.kryptonRibbonTab1,
             this.kryptonRibbonTab2});
-            this.kryptonRibbon.SelectedContext = null;
             this.kryptonRibbon.SelectedTab = this.kryptonRibbonTab1;
-            this.kryptonRibbon.Size = new System.Drawing.Size(638, 142);
+            this.kryptonRibbon.Size = new System.Drawing.Size(851, 169);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // qatAlbania
             // 
             this.qatAlbania.Image = ((System.Drawing.Image)(resources.GetObject("qatAlbania.Image")));
             this.qatAlbania.Text = "Albania";
-            this.qatAlbania.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatAruba
             // 
             this.qatAruba.Image = ((System.Drawing.Image)(resources.GetObject("qatAruba.Image")));
             this.qatAruba.Text = "Aruba";
-            this.qatAruba.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatBenin
             // 
             this.qatBenin.Image = ((System.Drawing.Image)(resources.GetObject("qatBenin.Image")));
             this.qatBenin.Text = "Benin";
-            this.qatBenin.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatBrunei
             // 
             this.qatBrunei.Image = ((System.Drawing.Image)(resources.GetObject("qatBrunei.Image")));
             this.qatBrunei.Text = "Brunei";
-            this.qatBrunei.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatCapeVerde
             // 
             this.qatCapeVerde.Image = ((System.Drawing.Image)(resources.GetObject("qatCapeVerde.Image")));
             this.qatCapeVerde.Text = "Cape Verde";
-            this.qatCapeVerde.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatEthiopia
             // 
             this.qatEthiopia.Image = ((System.Drawing.Image)(resources.GetObject("qatEthiopia.Image")));
             this.qatEthiopia.Text = "Ethiopia";
-            this.qatEthiopia.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatGuam
             // 
             this.qatGuam.Image = ((System.Drawing.Image)(resources.GetObject("qatGuam.Image")));
             this.qatGuam.Text = "Guam";
-            this.qatGuam.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatHaiti
             // 
             this.qatHaiti.Image = ((System.Drawing.Image)(resources.GetObject("qatHaiti.Image")));
             this.qatHaiti.Text = "Haiti";
-            this.qatHaiti.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatLaos
             // 
             this.qatLaos.Image = ((System.Drawing.Image)(resources.GetObject("qatLaos.Image")));
             this.qatLaos.Text = "Laos";
-            this.qatLaos.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatMali
             // 
             this.qatMali.Image = ((System.Drawing.Image)(resources.GetObject("qatMali.Image")));
             this.qatMali.Text = "Mali";
-            this.qatMali.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatMozambique
             // 
             this.qatMozambique.Image = ((System.Drawing.Image)(resources.GetObject("qatMozambique.Image")));
             this.qatMozambique.Text = "Mozambique";
-            this.qatMozambique.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatPanama
             // 
             this.qatPanama.Image = ((System.Drawing.Image)(resources.GetObject("qatPanama.Image")));
             this.qatPanama.Text = "Panama";
-            this.qatPanama.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatQatar
             // 
             this.qatQatar.Image = ((System.Drawing.Image)(resources.GetObject("qatQatar.Image")));
             this.qatQatar.Text = "Qatar";
-            this.qatQatar.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // kryptonContextMenuItem1
             // 
-            this.kryptonContextMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("kryptonContextMenuItem1.Image")));
-            this.kryptonContextMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem1.Text = "E&xit";
             this.kryptonContextMenuItem1.Click += new System.EventHandler(this.OnExit);
             // 
@@ -976,15 +914,12 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupTriple1
             // 
-            this.kryptonRibbonGroupTriple1.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton1});
-            this.kryptonRibbonGroupTriple1.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple1.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // kryptonRibbonGroupButton1
             // 
-            this.kryptonRibbonGroupButton1.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton1.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton1.ImageLarge")));
             this.kryptonRibbonGroupButton1.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton1.ImageSmall")));
             this.kryptonRibbonGroupButton1.KeyTip = "BM";
@@ -992,17 +927,14 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupTriple4
             // 
-            this.kryptonRibbonGroupTriple4.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton2,
             this.kryptonRibbonGroupButton3,
             this.kryptonRibbonGroupButton10});
             this.kryptonRibbonGroupTriple4.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
-            this.kryptonRibbonGroupTriple4.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // kryptonRibbonGroupButton2
             // 
-            this.kryptonRibbonGroupButton2.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton2.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton2.ImageLarge")));
             this.kryptonRibbonGroupButton2.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton2.ImageSmall")));
             this.kryptonRibbonGroupButton2.KeyTip = "BA";
@@ -1010,7 +942,6 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupButton3
             // 
-            this.kryptonRibbonGroupButton3.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton3.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton3.ImageLarge")));
             this.kryptonRibbonGroupButton3.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton3.ImageSmall")));
             this.kryptonRibbonGroupButton3.KeyTip = "BD";
@@ -1018,7 +949,6 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupButton10
             // 
-            this.kryptonRibbonGroupButton10.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton10.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton10.ImageLarge")));
             this.kryptonRibbonGroupButton10.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton10.ImageSmall")));
             this.kryptonRibbonGroupButton10.KeyTip = "BP";
@@ -1037,17 +967,13 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupTriple2
             // 
-            this.kryptonRibbonGroupTriple2.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton4,
             this.kryptonRibbonGroupButton5,
             this.kryptonRibbonGroupButton6});
-            this.kryptonRibbonGroupTriple2.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
-            this.kryptonRibbonGroupTriple2.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // kryptonRibbonGroupButton4
             // 
-            this.kryptonRibbonGroupButton4.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton4.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton4.ImageLarge")));
             this.kryptonRibbonGroupButton4.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton4.ImageSmall")));
             this.kryptonRibbonGroupButton4.KeyTip = "DC";
@@ -1056,7 +982,6 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupButton5
             // 
-            this.kryptonRibbonGroupButton5.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton5.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton5.ImageLarge")));
             this.kryptonRibbonGroupButton5.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton5.ImageSmall")));
             this.kryptonRibbonGroupButton5.KeyTip = "DA";
@@ -1065,7 +990,6 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupButton6
             // 
-            this.kryptonRibbonGroupButton6.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton6.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton6.ImageLarge")));
             this.kryptonRibbonGroupButton6.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton6.ImageSmall")));
             this.kryptonRibbonGroupButton6.KeyTip = "DD";
@@ -1074,17 +998,13 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupTriple3
             // 
-            this.kryptonRibbonGroupTriple3.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton7,
             this.kryptonRibbonGroupButton8,
             this.kryptonRibbonGroupButton9});
-            this.kryptonRibbonGroupTriple3.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
-            this.kryptonRibbonGroupTriple3.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // kryptonRibbonGroupButton7
             // 
-            this.kryptonRibbonGroupButton7.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton7.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton7.ImageLarge")));
             this.kryptonRibbonGroupButton7.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton7.ImageSmall")));
             this.kryptonRibbonGroupButton7.KeyTip = "DF";
@@ -1093,7 +1013,6 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupButton8
             // 
-            this.kryptonRibbonGroupButton8.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton8.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton8.ImageLarge")));
             this.kryptonRibbonGroupButton8.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton8.ImageSmall")));
             this.kryptonRibbonGroupButton8.KeyTip = "DE";
@@ -1130,17 +1049,13 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupTriple5
             // 
-            this.kryptonRibbonGroupTriple5.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple5.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton11,
             this.kryptonRibbonGroupButton12,
             this.kryptonRibbonGroupButton13});
-            this.kryptonRibbonGroupTriple5.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
-            this.kryptonRibbonGroupTriple5.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // kryptonRibbonGroupButton11
             // 
-            this.kryptonRibbonGroupButton11.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton11.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton11.ImageLarge")));
             this.kryptonRibbonGroupButton11.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton11.ImageSmall")));
             this.kryptonRibbonGroupButton11.KeyTip = "DG";
@@ -1148,7 +1063,6 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupButton12
             // 
-            this.kryptonRibbonGroupButton12.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton12.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton12.ImageLarge")));
             this.kryptonRibbonGroupButton12.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton12.ImageSmall")));
             this.kryptonRibbonGroupButton12.KeyTip = "DR";
@@ -1156,7 +1070,6 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupButton13
             // 
-            this.kryptonRibbonGroupButton13.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton13.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton13.ImageLarge")));
             this.kryptonRibbonGroupButton13.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton13.ImageSmall")));
             this.kryptonRibbonGroupButton13.KeyTip = "DY";
@@ -1174,15 +1087,12 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupTriple8
             // 
-            this.kryptonRibbonGroupTriple8.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple8.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton18});
-            this.kryptonRibbonGroupTriple8.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple8.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // kryptonRibbonGroupButton18
             // 
-            this.kryptonRibbonGroupButton18.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton18.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton18.ImageLarge")));
             this.kryptonRibbonGroupButton18.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton18.ImageSmall")));
             this.kryptonRibbonGroupButton18.KeyTip = "S";
@@ -1193,12 +1103,10 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbonGroupLines1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton19,
             this.kryptonRibbonGroupButton20});
-            this.kryptonRibbonGroupLines1.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupLines1.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // kryptonRibbonGroupButton19
             // 
-            this.kryptonRibbonGroupButton19.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton19.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton19.ImageLarge")));
             this.kryptonRibbonGroupButton19.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton19.ImageSmall")));
             this.kryptonRibbonGroupButton19.TextLine1 = "Blue";
@@ -1206,7 +1114,6 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupButton20
             // 
-            this.kryptonRibbonGroupButton20.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton20.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton20.ImageLarge")));
             this.kryptonRibbonGroupButton20.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton20.ImageSmall")));
             this.kryptonRibbonGroupButton20.KeyTip = "Y";
@@ -1225,15 +1132,12 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupTriple6
             // 
-            this.kryptonRibbonGroupTriple6.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple6.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton14});
-            this.kryptonRibbonGroupTriple6.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple6.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // kryptonRibbonGroupButton14
             // 
-            this.kryptonRibbonGroupButton14.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton14.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton14.ImageLarge")));
             this.kryptonRibbonGroupButton14.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton14.ImageSmall")));
             this.kryptonRibbonGroupButton14.KeyTip = "CR";
@@ -1241,17 +1145,13 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupTriple7
             // 
-            this.kryptonRibbonGroupTriple7.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple7.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton15,
             this.kryptonRibbonGroupButton16,
             this.kryptonRibbonGroupButton17});
-            this.kryptonRibbonGroupTriple7.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
-            this.kryptonRibbonGroupTriple7.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // kryptonRibbonGroupButton15
             // 
-            this.kryptonRibbonGroupButton15.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton15.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton15.ImageLarge")));
             this.kryptonRibbonGroupButton15.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton15.ImageSmall")));
             this.kryptonRibbonGroupButton15.KeyTip = "CG";
@@ -1259,7 +1159,6 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupButton16
             // 
-            this.kryptonRibbonGroupButton16.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton16.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton16.ImageLarge")));
             this.kryptonRibbonGroupButton16.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton16.ImageSmall")));
             this.kryptonRibbonGroupButton16.KeyTip = "CB";
@@ -1267,7 +1166,6 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbonGroupButton17
             // 
-            this.kryptonRibbonGroupButton17.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.kryptonRibbonGroupButton17.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton17.ImageLarge")));
             this.kryptonRibbonGroupButton17.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton17.ImageSmall")));
             this.kryptonRibbonGroupButton17.KeyTip = "CY";
@@ -1297,7 +1195,7 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             this.kryptonLabel2.Location = new System.Drawing.Point(166, 44);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(80, 20);
+            this.kryptonLabel2.Size = new System.Drawing.Size(98, 24);
             this.kryptonLabel2.TabIndex = 15;
             this.kryptonLabel2.Values.Text = "Simple Label";
             // 
@@ -1305,73 +1203,60 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             this.kryptonLinkLabel2.Location = new System.Drawing.Point(166, 19);
             this.kryptonLinkLabel2.Name = "kryptonLinkLabel2";
-            this.kryptonLinkLabel2.Size = new System.Drawing.Size(65, 20);
+            this.kryptonLinkLabel2.Size = new System.Drawing.Size(79, 24);
             this.kryptonLinkLabel2.TabIndex = 14;
             this.kryptonLinkLabel2.Values.Text = "Link Label";
             // 
             // kryptonRadioButton4
             // 
-            this.kryptonRadioButton4.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton4.Location = new System.Drawing.Point(13, 165);
             this.kryptonRadioButton4.Name = "kryptonRadioButton4";
-            this.kryptonRadioButton4.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonRadioButton4.Size = new System.Drawing.Size(142, 20);
+            this.kryptonRadioButton4.Size = new System.Drawing.Size(173, 24);
             this.kryptonRadioButton4.TabIndex = 13;
             this.kryptonRadioButton4.Values.Text = "RadioButton Option 3";
             // 
             // kryptonRadioButton5
             // 
             this.kryptonRadioButton5.Checked = true;
-            this.kryptonRadioButton5.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton5.Location = new System.Drawing.Point(13, 139);
             this.kryptonRadioButton5.Name = "kryptonRadioButton5";
-            this.kryptonRadioButton5.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonRadioButton5.Size = new System.Drawing.Size(142, 20);
+            this.kryptonRadioButton5.Size = new System.Drawing.Size(173, 24);
             this.kryptonRadioButton5.TabIndex = 12;
             this.kryptonRadioButton5.Values.Text = "RadioButton Option 2";
             // 
             // kryptonRadioButton6
             // 
-            this.kryptonRadioButton6.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonRadioButton6.Location = new System.Drawing.Point(13, 113);
             this.kryptonRadioButton6.Name = "kryptonRadioButton6";
-            this.kryptonRadioButton6.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonRadioButton6.Size = new System.Drawing.Size(142, 20);
+            this.kryptonRadioButton6.Size = new System.Drawing.Size(173, 24);
             this.kryptonRadioButton6.TabIndex = 11;
             this.kryptonRadioButton6.Values.Text = "RadioButton Option 1";
             // 
             // kryptonCheckBox4
             // 
             this.kryptonCheckBox4.Checked = true;
-            this.kryptonCheckBox4.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonCheckBox4.CheckState = System.Windows.Forms.CheckState.Indeterminate;
             this.kryptonCheckBox4.Location = new System.Drawing.Point(13, 71);
             this.kryptonCheckBox4.Name = "kryptonCheckBox4";
-            this.kryptonCheckBox4.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonCheckBox4.Size = new System.Drawing.Size(128, 20);
+            this.kryptonCheckBox4.Size = new System.Drawing.Size(155, 24);
             this.kryptonCheckBox4.TabIndex = 10;
             this.kryptonCheckBox4.Values.Text = "CheckBox Option 3";
             // 
             // kryptonCheckBox5
             // 
             this.kryptonCheckBox5.Checked = true;
-            this.kryptonCheckBox5.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.kryptonCheckBox5.CheckState = System.Windows.Forms.CheckState.Checked;
             this.kryptonCheckBox5.Location = new System.Drawing.Point(13, 45);
             this.kryptonCheckBox5.Name = "kryptonCheckBox5";
-            this.kryptonCheckBox5.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonCheckBox5.Size = new System.Drawing.Size(128, 20);
+            this.kryptonCheckBox5.Size = new System.Drawing.Size(155, 24);
             this.kryptonCheckBox5.TabIndex = 9;
             this.kryptonCheckBox5.Values.Text = "CheckBox Option 2";
             // 
             // kryptonCheckBox6
             // 
-            this.kryptonCheckBox6.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.kryptonCheckBox6.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonCheckBox6.Location = new System.Drawing.Point(13, 19);
             this.kryptonCheckBox6.Name = "kryptonCheckBox6";
-            this.kryptonCheckBox6.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonCheckBox6.Size = new System.Drawing.Size(128, 20);
+            this.kryptonCheckBox6.Size = new System.Drawing.Size(155, 24);
             this.kryptonCheckBox6.TabIndex = 8;
             this.kryptonCheckBox6.Values.Text = "CheckBox Option 1";
             // 
@@ -1389,13 +1274,15 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 595);
+            this.ClientSize = new System.Drawing.Size(851, 732);
+            this.CloseBox = false;
             this.Controls.Add(this.panelFill);
             this.Controls.Add(this.kryptonRibbon);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(400, 525);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(527, 635);
             this.Name = "Form1";
             this.Text = "Ribbon + Navigator + Workspace";
             ((System.ComponentModel.ISupportInitialize)(this.panelFill)).EndInit();
@@ -1403,21 +1290,18 @@ namespace RibbonAndNavigatorAndWorkspace
             this.panelFill.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspace)).EndInit();
             this.kryptonWorkspace.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspaceCell1)).EndInit();
-            this.kryptonWorkspaceCell1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage1)).EndInit();
             this.kryptonPage1.ResumeLayout(false);
             this.kryptonPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspaceCell1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspaceCell3)).EndInit();
-            this.kryptonWorkspaceCell3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspaceCell4)).EndInit();
-            this.kryptonWorkspaceCell4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();

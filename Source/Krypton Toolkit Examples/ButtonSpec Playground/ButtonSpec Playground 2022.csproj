@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net48;net6.0-windows;net7.0-windows</TargetFrameworks>
+        <TargetFrameworks>net48;net6.0-windows;net7.0-windows;net8.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
         <RootNamespace>ButtonSpecPlayground</RootNamespace>
         <AssemblyName>Button Spec Playground</AssemblyName>
@@ -11,6 +11,9 @@
         <PlatformTarget>AnyCPU</PlatformTarget>
         <NeutralLanguage>en</NeutralLanguage>
         <LangVersion>preview</LangVersion>
+        <Nullable>enable</Nullable>
+        <WarningLevel>6</WarningLevel>
+        <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
     </PropertyGroup>
     <PropertyGroup>
         <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
@@ -25,7 +28,7 @@
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
-                <PackageReference Include="Krypton.Toolkit.Canary" Version="65.22.3.89-beta" />
+                <PackageReference Include="Krypton.Toolkit.Canary" Version="80.23.8.233-beta" />
             </ItemGroup>
         </When>
         <Otherwise>

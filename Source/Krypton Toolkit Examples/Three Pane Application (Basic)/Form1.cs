@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -23,7 +23,7 @@ namespace ThreePaneApplication
         {
             if (kryptonOffice2010Blue.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
             }
         }
 
@@ -31,7 +31,7 @@ namespace ThreePaneApplication
         {
             if (kryptonOffice2010Silver.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
             }
         }
 
@@ -39,7 +39,7 @@ namespace ThreePaneApplication
         {
             if (kryptonOffice2010Black.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
             }
         }
 
@@ -47,7 +47,7 @@ namespace ThreePaneApplication
         {
             if (kryptonOffice2007Blue.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
             }
         }
 
@@ -55,7 +55,7 @@ namespace ThreePaneApplication
         {
             if (kryptonOffice2007Silver.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
             }
         }
 
@@ -63,7 +63,7 @@ namespace ThreePaneApplication
         {
             if (kryptonOffice2007Black.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
             }
         }
 
@@ -71,7 +71,7 @@ namespace ThreePaneApplication
         {
             if (kryptonOffice2003.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalOffice2003;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
             }
         }
 
@@ -79,7 +79,7 @@ namespace ThreePaneApplication
         {
             if (kryptonSystem.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
             }
         }
 
@@ -87,7 +87,7 @@ namespace ThreePaneApplication
         {
             if (kryptonSparkleBlue.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
             }
         }
 
@@ -95,7 +95,7 @@ namespace ThreePaneApplication
         {
             if (kryptonSparkleOrange.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleOrange;
             }
         }
 
@@ -103,7 +103,7 @@ namespace ThreePaneApplication
         {
             if (kryptonSparklePurple.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparklePurple;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparklePurple;
             }
         }
 
@@ -119,7 +119,7 @@ namespace ThreePaneApplication
         {
             if (kryptonOffice2013White.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2013White;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2013White;
             }
         }
     }

@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -50,7 +50,7 @@ namespace KryptonHeaderExamples
 
         [Category("Visuals")]
         [Description("Header style.")]
-        [DefaultValue(typeof(HeaderStyle), "Primary")]
+        [DefaultValue(HeaderStyle.Primary)]
         public HeaderStyle HeaderStyle
         {
             get => _header.HeaderStyle;
@@ -79,7 +79,7 @@ namespace KryptonHeaderExamples
 
         [Category("Visuals")]
         [Description("Visual orientation of the control.")]
-        [DefaultValue(typeof(VisualOrientation), "Top")]
+        [DefaultValue(VisualOrientation.Top)]
         public VisualOrientation Orientation
         {
             get => _header.Orientation;
@@ -88,7 +88,7 @@ namespace KryptonHeaderExamples
 
         [Category("Visuals")]
         [Description("Palette applied to drawing.")]
-        [DefaultValue(typeof(PaletteMode), "Global")]
+        [DefaultValue(PaletteMode.Global)]
         public PaletteMode PaletteMode
         {
             get => _header.PaletteMode;
@@ -106,7 +106,7 @@ namespace KryptonHeaderExamples
 
         [Category("Layout")]
         [Description("Specifies if the control grows and shrinks to fit the contents exactly.")]
-        [DefaultValue(typeof(AutoSizeMode), "GrowOnly")]
+        [DefaultValue(AutoSizeMode.GrowOnly)]
         public AutoSizeMode AutoSizeMode
         {
             get => _header.AutoSizeMode;

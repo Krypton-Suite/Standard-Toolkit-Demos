@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -27,19 +27,19 @@ namespace CustomControlUsingRenderers
             switch (kryptonCheckSet.CheckedIndex)
             {
                 case 0:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+                    kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
                     break;
                 case 1:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+                    kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
                     break;
                 case 2:
                     kryptonManager.GlobalPalette = kryptonPaletteCustom;
                     break;
                 case 3:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+                    kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
                     break;
                 case 4:
-                    kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+                    kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
                     break;
             }
         }

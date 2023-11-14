@@ -53,7 +53,7 @@
             this.kryptonOffice2007Silver = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonOffice2007Blue = new Krypton.Toolkit.KryptonRadioButton();
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
-            this.kryptonPaletteCustom = new Krypton.Toolkit.KryptonPalette(this.components);
+            this.kryptonPaletteCustom = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
@@ -288,7 +288,7 @@
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2010Blue;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             // 
             // kryptonPaletteCustom
             // 
@@ -502,7 +502,7 @@
         private Krypton.Toolkit.KryptonRadioButton kryptonOffice2007Black;
         private Krypton.Toolkit.KryptonRadioButton kryptonOffice2007Silver;
         private Krypton.Toolkit.KryptonRadioButton kryptonOffice2007Blue;
-        private Krypton.Toolkit.KryptonPalette kryptonPaletteCustom;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteCustom;
         private Krypton.Toolkit.KryptonButton btnSingleLines;
         private Krypton.Toolkit.KryptonButton btnCarriageReturns;
         private Krypton.Toolkit.KryptonButton btnStackTrace;

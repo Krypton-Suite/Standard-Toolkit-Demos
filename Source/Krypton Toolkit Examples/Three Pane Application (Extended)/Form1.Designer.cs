@@ -115,7 +115,7 @@ namespace ThreePaneApplication
             this.colCategory = new System.Data.DataColumn();
             this.dataColumn1 = new System.Data.DataColumn();
             this.kryptonManager = new Krypton.Toolkit.KryptonManager();
-            this.kryptonPaletteCustom = new Krypton.Toolkit.KryptonPalette();
+            this.kryptonPaletteCustom = new Krypton.Toolkit.KryptonCustomPaletteBase();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.menuStrip.SuspendLayout();
             this.toolStripGeneral.SuspendLayout();
@@ -947,7 +947,7 @@ namespace ThreePaneApplication
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteModeManager.Office2007Blue;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
             // 
             // kryptonPaletteCustom
             // 
@@ -1601,7 +1601,7 @@ namespace ThreePaneApplication
         private Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroupDetails;
         private Krypton.Toolkit.KryptonGroup kryptonReadingGroupOuter;
         private Krypton.Toolkit.KryptonManager kryptonManager;
-        private Krypton.Toolkit.KryptonPalette kryptonPaletteCustom;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteCustom;
         private System.Windows.Forms.ImageList imageList;
         private Krypton.Toolkit.KryptonLabel kryptonReadingLabel;
         private System.Windows.Forms.ToolStripMenuItem loadPaletteToolStripMenuItem;

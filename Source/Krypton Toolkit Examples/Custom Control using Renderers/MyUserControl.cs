@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -25,14 +25,14 @@ namespace CustomControlUsingRenderers
         private VisualOrientation _orientation;
         private bool _mouseOver;
         private bool _mouseDown;
-        private IPalette _palette;
-        private PaletteRedirect _paletteRedirect;
-        private PaletteBackInheritRedirect _paletteBack;
-        private PaletteBorderInheritRedirect _paletteBorder;
-        private PaletteContentInheritRedirect _paletteContent;
-        private IDisposable _mementoContent;
-        private IDisposable _mementoBack1;
-        private IDisposable _mementoBack2;
+        private PaletteBase? _palette;
+        private readonly PaletteRedirect _paletteRedirect;
+        private readonly PaletteBackInheritRedirect _paletteBack;
+        private readonly PaletteBorderInheritRedirect _paletteBorder;
+        private readonly PaletteContentInheritRedirect _paletteContent;
+        private IDisposable? _mementoContent;
+        private IDisposable? _mementoBack1;
+        private IDisposable? _mementoBack2;
 
         public MyUserControl()
         {
@@ -47,11 +47,11 @@ namespace CustomControlUsingRenderers
             // Hook into palette events
             if (_palette != null)
             {
-                _palette.PalettePaint += new EventHandler<PaletteLayoutEventArgs>(OnPalettePaint);
+                _palette.PalettePaint += OnPalettePaint;
             }
 
             // We want to be notified whenever the global palette changes
-            KryptonManager.GlobalPaletteChanged += new EventHandler(OnGlobalPaletteChanged);
+            KryptonManager.GlobalPaletteChanged += OnGlobalPaletteChanged;
 
             // Create redirection object to the base palette
             _paletteRedirect = new PaletteRedirect(_palette);
@@ -102,12 +102,12 @@ namespace CustomControlUsingRenderers
                 // Unhook from the palette events
                 if (_palette != null)
                 {
-                    _palette.PalettePaint -= new EventHandler<PaletteLayoutEventArgs>(OnPalettePaint);
+                    _palette.PalettePaint -= OnPalettePaint;
                     _palette = null;
                 }
 
                 // Unhook from the static events, otherwise we cannot be garbage collected
-                KryptonManager.GlobalPaletteChanged -= new EventHandler(OnGlobalPaletteChanged);
+                KryptonManager.GlobalPaletteChanged -= OnGlobalPaletteChanged;
             }
 
             base.Dispose(disposing);
@@ -140,6 +140,7 @@ namespace CustomControlUsingRenderers
             Invalidate();
             base.OnMouseLeave(e);
         }
+
         protected override void OnLayout(LayoutEventArgs e)
         {
             if (_palette != null)
@@ -154,25 +155,20 @@ namespace CustomControlUsingRenderers
                 innerRect.Inflate(-20, -20);
 
                 // Get the renderer associated with this palette
-                IRenderer renderer = _palette.GetRenderer();
+                IRenderer? renderer = _palette.GetRenderer();
 
                 // Create a layout context used to allow the renderer to layout the content
-                using (ViewLayoutContext viewContext = new ViewLayoutContext(this, renderer))
-                {
-                    // Setup the appropriate style for the content
-                    _paletteContent.Style = PaletteContentStyle.ButtonStandalone;
+                using var viewContext = new ViewLayoutContext(this, renderer);
+                // Setup the appropriate style for the content
+                _paletteContent.Style = PaletteContentStyle.ButtonStandalone;
 
-                    // Cleaup resources by disposing of old memento instance
-                    if (_mementoContent != null)
-                    {
-                        _mementoContent.Dispose();
-                    }
+                // Cleanup resources by disposing of old memento instance
+                _mementoContent?.Dispose();
 
-                    // Ask the renderer to work out how the Content values will be layed out and
-                    // return a memento object that we cache for use when actually performing painting
-                    _mementoContent = renderer.RenderStandardContent.LayoutContent(viewContext, innerRect,  _paletteContent, 
-                                                                                   this, Orientation, buttonState, false, false);
-                }
+                // Ask the renderer to work out how the Content values will be laid out and
+                // return a memento object that we cache for use when actually performing painting
+                _mementoContent = renderer.RenderStandardContent.LayoutContent(viewContext, innerRect,  _paletteContent, 
+                    this, Orientation, buttonState, false, false);
             }
 
             base.OnLayout(e);
@@ -183,103 +179,89 @@ namespace CustomControlUsingRenderers
             if (_palette != null)
             {
                 // Get the renderer associated with this palette
-                IRenderer renderer = _palette.GetRenderer();
+                IRenderer? renderer = _palette.GetRenderer();
 
                 // Create the rendering context that is passed into all renderer calls
-                using (RenderContext renderContext = new RenderContext(this, e.Graphics, e.ClipRectangle, renderer))
+                using var renderContext = new RenderContext(this, e.Graphics, e.ClipRectangle, renderer);
+                /////////////////////////////////////////////////////////////////////////////////
+                // We want to draw the background of the entire control over the entire client //
+                // area. In this example we are using a background style of HeaderPrimary      //
+                /////////////////////////////////////////////////////////////////////////////////
+                using (GraphicsPath path = CreateRectGraphicsPath(ClientRectangle))
                 {
-                    /////////////////////////////////////////////////////////////////////////////////
-                    // We want to draw the background of the entire control over the entire client //
-                    // area. In this example we are using a background style of HeaderPrimary      //
-                    /////////////////////////////////////////////////////////////////////////////////
-                    using (GraphicsPath path = CreateRectGraphicsPath(ClientRectangle))
-                    {
-                        // Set the style we want picked up from the base palette
-                        _paletteBack.Style = PaletteBackStyle.HeaderPrimary;
+                    // Set the style we want picked up from the base palette
+                    _paletteBack.Style = PaletteBackStyle.HeaderPrimary;
 
-                        // Ask renderer to draw the background
-                        _mementoBack1 = renderer.RenderStandardBack.DrawBack(renderContext, ClientRectangle, path, _paletteBack, Orientation,
-                                                                             Enabled ? PaletteState.Normal : PaletteState.Disabled, _mementoBack1);
-                    }
+                    // Ask renderer to draw the background
+                    _mementoBack1 = renderer.RenderStandardBack.DrawBack(renderContext, ClientRectangle, path, _paletteBack, Orientation,
+                        Enabled ? PaletteState.Normal : PaletteState.Disabled, _mementoBack1);
+                }
 
-                    // We want the inner part of the control to act like a button, so 
-                    // we need to find the correct palette state based on if the mouse 
-                    // is over the control if the mouse button is pressed down or not.
-                    PaletteState buttonState = GetButtonState();
+                // We want the inner part of the control to act like a button, so 
+                // we need to find the correct palette state based on if the mouse 
+                // is over the control if the mouse button is pressed down or not.
+                PaletteState buttonState = GetButtonState();
 
-                    // Create a rectangle inset, this is where we will draw a button
-                    Rectangle innerRect = ClientRectangle;
-                    innerRect.Inflate(-20, -20);
+                // Create a rectangle inset, this is where we will draw a button
+                Rectangle innerRect = ClientRectangle;
+                innerRect.Inflate(-20, -20);
 
-                    // Set the style of button we want to draw
-                    _paletteBack.Style = PaletteBackStyle.ButtonStandalone;
-                    _paletteBorder.Style = PaletteBorderStyle.ButtonStandalone;
-                    _paletteContent.Style = PaletteContentStyle.ButtonStandalone;
+                // Set the style of button we want to draw
+                _paletteBack.Style = PaletteBackStyle.ButtonStandalone;
+                _paletteBorder.Style = PaletteBorderStyle.ButtonStandalone;
+                _paletteContent.Style = PaletteContentStyle.ButtonStandalone;
 
-                    // Do we need to draw the background?
-                    if (_paletteBack.GetBackDraw(buttonState) == InheritBool.True)
-                    {
-                        //////////////////////////////////////////////////////////////////////////////////
-                        // In case the border has a rounded effect we need to get the background path   //
-                        // to draw from the border part of the renderer. It will return a path that is  //
-                        // appropriate for use drawing within the border settings.                      //
-                        //////////////////////////////////////////////////////////////////////////////////
-                        using (GraphicsPath path = renderer.RenderStandardBorder.GetBackPath(renderContext,
-                                                                                             innerRect,
-                                                                                             _paletteBorder,
-                                                                                             Orientation,
-                                                                                             buttonState))
-                        {
-                            // Ask renderer to draw the background
-                            _mementoBack2 = renderer.RenderStandardBack.DrawBack(renderContext, innerRect, path, _paletteBack,
-                                                                                 Orientation, buttonState, _mementoBack2);
-                        }
-                    }
+                // Do we need to draw the background?
+                if (_paletteBack.GetBackDraw(buttonState) == InheritBool.True)
+                {
+                    //////////////////////////////////////////////////////////////////////////////////
+                    // In case the border has a rounded effect we need to get the background path   //
+                    // to draw from the border part of the renderer. It will return a path that is  //
+                    // appropriate for use drawing within the border settings.                      //
+                    //////////////////////////////////////////////////////////////////////////////////
+                    using GraphicsPath path = renderer.RenderStandardBorder.GetBackPath(renderContext,
+                        innerRect,
+                        _paletteBorder,
+                        Orientation,
+                        buttonState);
+                    // Ask renderer to draw the background
+                    _mementoBack2 = renderer.RenderStandardBack.DrawBack(renderContext, innerRect, path, _paletteBack,
+                        Orientation, buttonState, _mementoBack2);
+                }
 
-                    // Do we need to draw the border?
-                    if (_paletteBorder.GetBorderDraw(buttonState) == InheritBool.True)
-                    {
-                        // Now we draw the border of the inner area, also in ButtonStandalone style
-                        renderer.RenderStandardBorder.DrawBorder(renderContext, innerRect, _paletteBorder, Orientation, buttonState);
-                    }
+                // Do we need to draw the border?
+                if (_paletteBorder.GetBorderDraw(buttonState) == InheritBool.True)
+                {
+                    // Now we draw the border of the inner area, also in ButtonStandalone style
+                    renderer.RenderStandardBorder.DrawBorder(renderContext, innerRect, _paletteBorder, Orientation, buttonState);
+                }
 
-                    // Do we need to draw the content?
-                    if (_paletteContent.GetContentDraw(buttonState) == InheritBool.True)
-                    {
-                        // Last of all we draw the content over the top of the border and background
-                        renderer.RenderStandardContent.DrawContent(renderContext, innerRect, 
-                                                                   _paletteContent, _mementoContent, 
-                                                                   Orientation, buttonState, false, false, true);
-                    }
+                // Do we need to draw the content?
+                if (_paletteContent.GetContentDraw(buttonState) == InheritBool.True)
+                {
+                    // Last of all we draw the content over the top of the border and background
+                    renderer.RenderStandardContent.DrawContent(renderContext, innerRect, 
+                        _paletteContent, _mementoContent, 
+                        Orientation, buttonState, false, false, true);
                 }
             }
 
             base.OnPaint(e);
         }
 
-        private PaletteState GetButtonState()
-        {
-            // Find the correct state when getting button values
-            if (!Enabled)
-            {
-                return PaletteState.Disabled;
-            }
-            else
-            {
-                if (_mouseOver)
-                {
-                    return _mouseDown ? PaletteState.Pressed : PaletteState.Tracking;
-                }
-                else
-                {
-                    return PaletteState.Normal;
-                }
-            }
-        }
+        // Find the correct state when getting button values
+        private PaletteState GetButtonState() =>
+            !Enabled 
+                ? PaletteState.Disabled 
+                : _mouseOver 
+                    ? _mouseDown 
+                        ? PaletteState.Pressed 
+                        : PaletteState.Tracking 
+                    : PaletteState.Normal;
 
         private GraphicsPath CreateRectGraphicsPath(Rectangle rect)
         {
-            GraphicsPath path = new GraphicsPath();
+            var path = new GraphicsPath();
             path.AddRectangle(rect);
             return path;
         }
@@ -289,33 +271,32 @@ namespace CustomControlUsingRenderers
             // Unhook events from old palette
             if (_palette != null)
             {
-                _palette.PalettePaint -= new EventHandler<PaletteLayoutEventArgs>(OnPalettePaint);
+                _palette.PalettePaint -= OnPalettePaint;
             }
 
-            // Cache the new IPalette that is the global palette
+            // Cache the new PaletteBase that is the global palette
             _palette = KryptonManager.CurrentGlobalPalette;
             _paletteRedirect.Target = _palette;
 
             // Hook into events for the new palette
             if (_palette != null)
             {
-                _palette.PalettePaint += new EventHandler<PaletteLayoutEventArgs>(OnPalettePaint);
+                _palette.PalettePaint += OnPalettePaint;
             }
 
             // Change of palette means we should repaint to show any changes
             Invalidate();
         }
 
-        private void OnPalettePaint(object sender, PaletteLayoutEventArgs e) =>
-            // Palette indicates we might need to repaint, so lets do it
-            Invalidate();
+        // Palette indicates we might need to repaint, so lets do it
+        private void OnPalettePaint(object sender, PaletteLayoutEventArgs e) => Invalidate();
 
         #region IContentValues
         public Image GetImage(PaletteState state) => global::CustomControlUsingRenderers.Properties.Resources.wizard;
 
         public Color GetImageTransparentColor(PaletteState state) => Color.Empty;
 
-        public string GetLongText() => "Click me!";
+        public string GetLongText() => @"Click me!";
 
         public string GetShortText() => string.Empty;
 

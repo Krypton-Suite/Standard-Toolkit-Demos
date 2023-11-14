@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -56,7 +56,7 @@ namespace ApplicationMenu
             buttonSparkleOrange.Checked = false;
             buttonSparklePurple.Checked = false;
             buttonSystem.Checked = false;
-            kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+            kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
         }
 
         private void button2010Silver_Click(object sender, EventArgs e)
@@ -72,7 +72,7 @@ namespace ApplicationMenu
             buttonSparkleOrange.Checked = false;
             buttonSparklePurple.Checked = false;
             buttonSystem.Checked = false;
-            kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
+            kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Silver;
         }
 
         private void button2010Black_Click(object sender, EventArgs e)
@@ -88,7 +88,7 @@ namespace ApplicationMenu
             buttonSparkleOrange.Checked = false;
             buttonSparklePurple.Checked = false;
             buttonSystem.Checked = false;
-            kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2010Black;
+            kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Black;
         }
 
 
@@ -105,7 +105,7 @@ namespace ApplicationMenu
             buttonSparkleOrange.Checked = false;
             buttonSparklePurple.Checked = false;
             buttonSystem.Checked = false;
-            kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+            kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Blue;
         }
 
         private void buttonSilver_Click(object sender, EventArgs e)
@@ -121,7 +121,7 @@ namespace ApplicationMenu
             buttonSparkleOrange.Checked = false;
             buttonSparklePurple.Checked = false;
             buttonSystem.Checked = false;
-            kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
+            kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Silver;
         }
 
         private void buttonBlack_Click(object sender, EventArgs e)
@@ -137,7 +137,7 @@ namespace ApplicationMenu
             buttonSparkleOrange.Checked = false;
             buttonSparklePurple.Checked = false;
             buttonSystem.Checked = false;
-            kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2007Black;
+            kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Black;
         }
 
         private void button2003_Click(object sender, EventArgs e)
@@ -153,7 +153,7 @@ namespace ApplicationMenu
             buttonSparkleOrange.Checked = false;
             buttonSparklePurple.Checked = false;
             buttonSystem.Checked = false;
-            kryptonManager1.GlobalPaletteMode = PaletteModeManager.ProfessionalOffice2003;
+            kryptonManager1.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
         }
 
         private void buttonSparkleBlue_Click(object sender, EventArgs e)
@@ -169,7 +169,7 @@ namespace ApplicationMenu
             buttonSparkleOrange.Checked = false;
             buttonSparklePurple.Checked = false;
             buttonSystem.Checked = false;
-            kryptonManager1.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+            kryptonManager1.GlobalPaletteMode = PaletteMode.SparkleBlue;
         }
 
         private void buttonSparkleOrange_Click(object sender, EventArgs e)
@@ -185,7 +185,7 @@ namespace ApplicationMenu
             buttonSparkleOrange.Checked = true;
             buttonSparklePurple.Checked = false;
             buttonSystem.Checked = false;
-            kryptonManager1.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
+            kryptonManager1.GlobalPaletteMode = PaletteMode.SparkleOrange;
         }
 
         private void buttonSparklePurple_Click(object sender, EventArgs e)
@@ -201,7 +201,7 @@ namespace ApplicationMenu
             buttonSparkleOrange.Checked = false;
             buttonSparklePurple.Checked = true;
             buttonSystem.Checked = false;
-            kryptonManager1.GlobalPaletteMode = PaletteModeManager.SparklePurple;
+            kryptonManager1.GlobalPaletteMode = PaletteMode.SparklePurple;
         }
 
         private void buttonSystem_Click(object sender, EventArgs e)
@@ -214,7 +214,7 @@ namespace ApplicationMenu
             buttonSparkleOrange.Checked = false;
             buttonSparklePurple.Checked = false;
             buttonSystem.Checked = true;
-            kryptonManager1.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+            kryptonManager1.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
         }
     }
 }

@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -29,29 +29,35 @@ namespace KryptonGalleryExamples
         private void radioSmallList_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSmallList.Checked)
+            {
                 kryptonGallery1.ImageList = imageListSmall;
+            }
         }
 
         private void radioMediumList_CheckedChanged(object sender, EventArgs e)
         {
             if (radioMediumList.Checked)
+            {
                 kryptonGallery1.ImageList = imageListMedium;
+            }
         }
 
         private void radioLargeList_CheckedChanged(object sender, EventArgs e)
         {
             if (radioLargeList.Checked)
+            {
                 kryptonGallery1.ImageList = imageListLarge;
+            }
         }
 
         private void numericWidth_ValueChanged(object sender, EventArgs e)
         {
-            kryptonGallery1.PreferredItemSize = new Size(Convert.ToInt32(numericWidth.Value), kryptonGallery1.PreferredItemSize.Height);
+            kryptonGallery1.PreferredItemSize = kryptonGallery1.PreferredItemSize with { Width = Convert.ToInt32(numericWidth.Value) };
         }
 
         private void numericHeight_ValueChanged(object sender, EventArgs e)
         {
-            kryptonGallery1.PreferredItemSize = new Size(kryptonGallery1.PreferredItemSize.Width, Convert.ToInt32(numericHeight.Value));
+            kryptonGallery1.PreferredItemSize = kryptonGallery1.PreferredItemSize with { Height = Convert.ToInt32(numericHeight.Value) };
         }
 
         private void checkBoxGroupImages_CheckedChanged(object sender, EventArgs e)

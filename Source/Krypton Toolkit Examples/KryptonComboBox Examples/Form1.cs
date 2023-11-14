@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -65,7 +65,8 @@ namespace KryptonComboBoxExamples
         private void kryptonComboBox1Blue_DoubleClick(object sender, EventArgs e) => InvokeDoubleClick();
 
         private void InvokeDoubleClick() =>
-            KryptonMessageBox.Show("You've invoked the double click event.", "Double Click", MessageBoxButtons.OK,
+            KryptonMessageBox.Show("You've invoked the double click event.", "Double Click", 
+                KryptonMessageBoxButtons.OK,
                 KryptonMessageBoxIcon.Information);
 
         private void kryptonComboBox2Blue_DoubleClick(object sender, EventArgs e) => InvokeDoubleClick();

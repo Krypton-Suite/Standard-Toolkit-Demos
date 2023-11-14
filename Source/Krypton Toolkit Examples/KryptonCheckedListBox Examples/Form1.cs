@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -102,19 +102,19 @@ namespace KryptonCheckedListBoxExamples
         {
             if (kryptonCheckSet.CheckedButton == check2007Blue)
             {
-                kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+                kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Blue;
             }
             else if (kryptonCheckSet.CheckedButton == check2010Blue)
             {
-                kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+                kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
             }
             else if (kryptonCheckSet.CheckedButton == checkSparkle)
             {
-                kryptonManager1.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+                kryptonManager1.GlobalPaletteMode = PaletteMode.SparkleBlue;
             }
             else if (kryptonCheckSet.CheckedButton == checkSystem)
             {
-                kryptonManager1.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+                kryptonManager1.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
             }
         }
 

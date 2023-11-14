@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -27,10 +27,7 @@ namespace MDIApplication
                 // this object cannot be garbage collected later on
                 KryptonManager.GlobalPaletteChanged -= new EventHandler(OnPaletteChanged);
 
-                if (components != null)
-                {
-                    components.Dispose();
-                }
+                components?.Dispose();
             }
             base.Dispose(disposing);
         }
@@ -48,7 +45,7 @@ namespace MDIApplication
         {
             if (radio2010Blue.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
             }
         }
 
@@ -56,7 +53,7 @@ namespace MDIApplication
         {
             if (radio2010Silver.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
             }
         }
 
@@ -64,7 +61,7 @@ namespace MDIApplication
         {
             if (radio2010Black.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
             }
         }
 
@@ -72,7 +69,7 @@ namespace MDIApplication
         {
             if (radio2007Blue.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
             }
         }
 
@@ -80,7 +77,7 @@ namespace MDIApplication
         {
             if (radio2007Silver.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
             }
         }
 
@@ -88,7 +85,7 @@ namespace MDIApplication
         {
             if (radio2007Black.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
             }
         }
 
@@ -96,7 +93,7 @@ namespace MDIApplication
         {
             if (radioSparkleBlue.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
             }
         }
 
@@ -104,7 +101,7 @@ namespace MDIApplication
         {
             if (radioSparkleOrange.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleOrange;
             }
         }
 
@@ -112,7 +109,7 @@ namespace MDIApplication
         {
             if (radioSparklePurple.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparklePurple;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparklePurple;
             }
         }
 
@@ -120,7 +117,7 @@ namespace MDIApplication
         {
             if (radioOffice2003.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalOffice2003;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
             }
         }
 
@@ -128,7 +125,7 @@ namespace MDIApplication
         {
             if (radioSystem.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
             }
         }
 
@@ -140,37 +137,37 @@ namespace MDIApplication
         {
             switch (kryptonManager.GlobalPaletteMode)
             {
-                case PaletteModeManager.Office2010Blue:
+                case PaletteMode.Office2010Blue:
                     radio2010Blue.Checked = true;
                     break;
-                case PaletteModeManager.Office2010Silver:
+                case PaletteMode.Office2010Silver:
                     radio2010Silver.Checked = true;
                     break;
-                case PaletteModeManager.Office2010Black:
+                case PaletteMode.Office2010Black:
                     radio2010Black.Checked = true;
                     break;
-                case PaletteModeManager.Office2007Blue:
+                case PaletteMode.Office2007Blue:
                     radio2007Blue.Checked = true;
                     break;
-                case PaletteModeManager.Office2007Silver:
+                case PaletteMode.Office2007Silver:
                     radio2007Silver.Checked = true;
                     break;
-                case PaletteModeManager.Office2007Black:
+                case PaletteMode.Office2007Black:
                     radio2007Black.Checked = true;
                     break;
-                case PaletteModeManager.SparkleBlue:
+                case PaletteMode.SparkleBlue:
                     radioSparkleBlue.Checked = true;
                     break;
-                case PaletteModeManager.SparkleOrange:
+                case PaletteMode.SparkleOrange:
                     radioSparkleOrange.Checked = true;
                     break;
-                case PaletteModeManager.SparklePurple:
+                case PaletteMode.SparklePurple:
                     radioSparklePurple.Checked = true;
                     break;
-                case PaletteModeManager.ProfessionalOffice2003:
+                case PaletteMode.ProfessionalOffice2003:
                     radioOffice2003.Checked = true;
                     break;
-                case PaletteModeManager.ProfessionalSystem:
+                case PaletteMode.ProfessionalSystem:
                     radioSystem.Checked = true;
                     break;
             }

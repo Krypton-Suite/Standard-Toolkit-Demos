@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -23,6 +23,7 @@ namespace RibbonAndNavigatorAndWorkspace
         public Form1()
         {
             InitializeComponent();
+            ButtonSpecClose.Enabled = false;
         }
 
         private void buttonSpecExpandCollapse_Click(object sender, EventArgs e)
@@ -48,7 +49,7 @@ namespace RibbonAndNavigatorAndWorkspace
             if (radioOffice2010Blue.Checked)
             {
                 navigatorOutlook.DismissPopups();
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
             }
         }
 
@@ -57,7 +58,7 @@ namespace RibbonAndNavigatorAndWorkspace
             if (radioOffice2010Silver.Checked)
             {
                 navigatorOutlook.DismissPopups();
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
             }
         }
 
@@ -66,7 +67,7 @@ namespace RibbonAndNavigatorAndWorkspace
             if (radioOffice2010Black.Checked)
             {
                 navigatorOutlook.DismissPopups();
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
             }
         }
 
@@ -75,7 +76,7 @@ namespace RibbonAndNavigatorAndWorkspace
             if (radioOffice2007Blue.Checked)
             {
                 navigatorOutlook.DismissPopups();
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
             }
         }
 
@@ -84,7 +85,7 @@ namespace RibbonAndNavigatorAndWorkspace
             if (radioOffice2007Silver.Checked)
             {
                 navigatorOutlook.DismissPopups();
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
             }
         }
 
@@ -93,7 +94,7 @@ namespace RibbonAndNavigatorAndWorkspace
             if (radioOffice2007Black.Checked)
             {
                 navigatorOutlook.DismissPopups();
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
             }
         }
 
@@ -102,7 +103,7 @@ namespace RibbonAndNavigatorAndWorkspace
             if (radioOffice2003.Checked)
             {
                 navigatorOutlook.DismissPopups();
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalOffice2003;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
             }
         }
 
@@ -111,7 +112,7 @@ namespace RibbonAndNavigatorAndWorkspace
             if (radioSparkleBlue.Checked)
             {
                 navigatorOutlook.DismissPopups();
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
             }
         }
 
@@ -120,7 +121,7 @@ namespace RibbonAndNavigatorAndWorkspace
             if (radioSparkleOrange.Checked)
             {
                 navigatorOutlook.DismissPopups();
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleOrange;
             }
         }
 
@@ -129,7 +130,7 @@ namespace RibbonAndNavigatorAndWorkspace
             if (radioSparklePurple.Checked)
             {
                 navigatorOutlook.DismissPopups();
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparklePurple;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparklePurple;
             }
         }
 
@@ -138,7 +139,7 @@ namespace RibbonAndNavigatorAndWorkspace
             if (radioSystem.Checked)
             {
                 navigatorOutlook.DismissPopups();
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
             }
         }
 
@@ -177,17 +178,29 @@ namespace RibbonAndNavigatorAndWorkspace
             NavigatorMode newMode = NavigatorMode.BarTabGroup;
 
             if (checkSetDocMode.CheckedButton == buttonTabs)
+            {
                 newMode = NavigatorMode.BarTabGroup;
+            }
             else if (checkSetDocMode.CheckedButton == buttonRibbonTabs)
+            {
                 newMode = NavigatorMode.BarRibbonTabGroup;
+            }
             else if (checkSetDocMode.CheckedButton == buttonCheckButtons)
+            {
                 newMode = NavigatorMode.BarCheckButtonGroupOutside;
+            }
             else if (checkSetDocMode.CheckedButton == buttonHeaderGroup)
+            {
                 newMode = NavigatorMode.HeaderGroup;
+            }
             else if (checkSetDocMode.CheckedButton == buttonHeaderBar)
+            {
                 newMode = NavigatorMode.HeaderBarCheckButtonHeaderGroup;
+            }
             else if (checkSetDocMode.CheckedButton == buttonStack)
+            {
                 newMode = NavigatorMode.StackCheckButtonGroup;
+            }
 
             cell.NavigatorMode = newMode;
 

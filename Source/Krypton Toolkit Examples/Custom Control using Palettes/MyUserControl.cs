@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -14,6 +14,7 @@ using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
+
 using Krypton.Toolkit;
 
 namespace CustomControlUsingPalettes
@@ -22,7 +23,7 @@ namespace CustomControlUsingPalettes
     {
         private bool _mouseOver;
         private bool _mouseDown;
-        private IPalette _palette;
+        private PaletteBase? _palette;
 
         public MyUserControl()
         {
@@ -37,11 +38,11 @@ namespace CustomControlUsingPalettes
             // Hook into palette events
             if (_palette != null)
             {
-                _palette.PalettePaint += new EventHandler<PaletteLayoutEventArgs>(OnPalettePaint);
+                _palette.PalettePaint += OnPalettePaint;
             }
 
             // We want to be notified whenever the global palette changes
-            KryptonManager.GlobalPaletteChanged += new EventHandler(OnGlobalPaletteChanged);
+            KryptonManager.GlobalPaletteChanged += OnGlobalPaletteChanged;
         }
 
         protected override void Dispose(bool disposing)
@@ -51,12 +52,12 @@ namespace CustomControlUsingPalettes
                 // Unhook from the palette events
                 if (_palette != null)
                 {
-                    _palette.PalettePaint -= new EventHandler<PaletteLayoutEventArgs>(OnPalettePaint);
+                    _palette.PalettePaint -= OnPalettePaint;
                     _palette = null;
                 }
 
                 // Unhook from the static events, otherwise we cannot be garbage collected
-                KryptonManager.GlobalPaletteChanged -= new EventHandler(OnGlobalPaletteChanged);
+                KryptonManager.GlobalPaletteChanged -= OnGlobalPaletteChanged;
             }
 
             base.Dispose(disposing);
@@ -135,25 +136,25 @@ namespace CustomControlUsingPalettes
                     e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
                     // Fill the entire background in the control background color
-                    using (Brush backBrush = new LinearGradientBrush(ClientRectangle, backColor1, backColor2, backColorAngle))
+                    using (var backBrush = new LinearGradientBrush(ClientRectangle, backColor1, backColor2, backColorAngle))
                     {
                         e.Graphics.FillRectangle(backBrush, e.ClipRectangle);
                     }
 
                     // Fill the entire fish background using a gradient
-                    using (Brush fillBrush = new LinearGradientBrush(ClientRectangle, fillColor1, fillColor2, fillColorAngle))
+                    using (var fillBrush = new LinearGradientBrush(ClientRectangle, fillColor1, fillColor2, fillColorAngle))
                     {
                         e.Graphics.FillPath(fillBrush, path);
                     }
 
                     // Draw the fish border using a single color
-                    using (Pen borderPen = new Pen(borderColor))
+                    using (var borderPen = new Pen(borderColor))
                     {
                         e.Graphics.DrawPath(borderPen, path);
                     }
 
                     // Draw the text in about the center of the control
-                    using (Brush textBrush = new SolidBrush(textColor))
+                    using (var textBrush = new SolidBrush(textColor))
                     {
                         e.Graphics.DrawString("Click me!", textFont, textBrush, Width / 2 - 10, Height / 2 - 5);
                     }
@@ -166,25 +167,15 @@ namespace CustomControlUsingPalettes
             base.OnPaint(e);
         }
 
-        private PaletteState GetButtonState()
-        {
-            // Find the correct state when getting button values
-            if (!Enabled)
-            {
-                return PaletteState.Disabled;
-            }
-            else
-            {
-                if (_mouseOver)
-                {
-                    return _mouseDown ? PaletteState.Pressed : PaletteState.Tracking;
-                }
-                else
-                {
-                    return PaletteState.Normal;
-                }
-            }
-        }
+        // Find the correct state when getting button values
+        private PaletteState GetButtonState() =>
+            !Enabled
+                ? PaletteState.Disabled
+                : _mouseOver
+                    ? _mouseDown
+                        ? PaletteState.Pressed
+                        : PaletteState.Tracking
+                    : PaletteState.Normal;
 
         private GraphicsPath CreateFishPath()
         {
@@ -198,7 +189,7 @@ namespace CustomControlUsingPalettes
             int h2 = Height / 2;
             int h4 = Height / 4;
 
-            GraphicsPath fishPath = new GraphicsPath();
+            var fishPath = new GraphicsPath();
 
             // Create the tail of the fish
             fishPath.AddLine(fishRect.Left + w6, fishRect.Bottom - h4, fishRect.Left, fishRect.Bottom);
@@ -207,8 +198,8 @@ namespace CustomControlUsingPalettes
 
             // Create the curving body of the fish
             fishPath.AddCurve(new Point[]{ new Point(fishRect.Left + w6, fishRect.Top + h4),
-                                           new Point(fishRect.Right - w3, fishRect.Top), 
-                                           new Point(fishRect.Right, fishRect.Top + h2), 
+                                           new Point(fishRect.Right - w3, fishRect.Top),
+                                           new Point(fishRect.Right, fishRect.Top + h2),
                                            new Point(fishRect.Right - w3, fishRect.Bottom),
                                            new Point(fishRect.Left + w6, fishRect.Bottom - h4)}, 0.8f);
 
@@ -220,16 +211,16 @@ namespace CustomControlUsingPalettes
             // Unhook events from old palette
             if (_palette != null)
             {
-                _palette.PalettePaint -= new EventHandler<PaletteLayoutEventArgs>(OnPalettePaint);
+                _palette.PalettePaint -= OnPalettePaint;
             }
 
-            // Cache the new IPalette that is the global palette
+            // Cache the new PaletteBase that is the global palette
             _palette = KryptonManager.CurrentGlobalPalette;
 
             // Hook into events for the new palette
             if (_palette != null)
             {
-                _palette.PalettePaint += new EventHandler<PaletteLayoutEventArgs>(OnPalettePaint);
+                _palette.PalettePaint += OnPalettePaint;
             }
 
             // Change of palette means we should repaint to show any changes

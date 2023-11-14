@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -234,61 +234,61 @@ namespace StandardDocking
 
         private void button2010Blue_Click(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
             UpdatePaletteButtons();
         }
 
         private void button2010Silver_Click(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
             UpdatePaletteButtons();
         }
 
         private void button2010Black_Click(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
             UpdatePaletteButtons();
         }
 
         private void button2007Blue_Click(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
             UpdatePaletteButtons();
         }
 
         private void button2007Silver_Click(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
             UpdatePaletteButtons();
         }
 
         private void button2007Black_Click(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Black;
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
             UpdatePaletteButtons();
         }
 
         private void buttonSparkleBlue_Click(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+            kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
             UpdatePaletteButtons();
         }
 
         private void buttonSparkleOrange_Click(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
+            kryptonManager.GlobalPaletteMode = PaletteMode.SparkleOrange;
             UpdatePaletteButtons();
         }
 
         private void buttonSparklePurple_Click(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.SparklePurple;
+            kryptonManager.GlobalPaletteMode = PaletteMode.SparklePurple;
             UpdatePaletteButtons();
         }
 
         private void buttonSystem_Click(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+            kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
             UpdatePaletteButtons();
         }
 
@@ -301,16 +301,16 @@ namespace StandardDocking
 
         private void UpdatePaletteButtons()
         {
-            button2010Blue.Checked = (kryptonManager.GlobalPaletteMode == PaletteModeManager.Office2010Blue);
-            button2010Silver.Checked = (kryptonManager.GlobalPaletteMode == PaletteModeManager.Office2010Silver);
-            button2010Black.Checked = (kryptonManager.GlobalPaletteMode == PaletteModeManager.Office2010Black);
-            button2007Blue.Checked = (kryptonManager.GlobalPaletteMode == PaletteModeManager.Office2007Blue);
-            button2007Silver.Checked = (kryptonManager.GlobalPaletteMode == PaletteModeManager.Office2007Silver);
-            button2007Black.Checked = (kryptonManager.GlobalPaletteMode == PaletteModeManager.Office2007Black);
-            buttonSparkleBlue.Checked = (kryptonManager.GlobalPaletteMode == PaletteModeManager.SparkleBlue);
-            buttonSparkleOrange.Checked = (kryptonManager.GlobalPaletteMode == PaletteModeManager.SparkleOrange);
-            buttonSparklePurple.Checked = (kryptonManager.GlobalPaletteMode == PaletteModeManager.SparklePurple);
-            buttonSystem.Checked = (kryptonManager.GlobalPaletteMode == PaletteModeManager.ProfessionalSystem);
+            button2010Blue.Checked = (kryptonManager.GlobalPaletteMode == PaletteMode.Office2010Blue);
+            button2010Silver.Checked = (kryptonManager.GlobalPaletteMode == PaletteMode.Office2010Silver);
+            button2010Black.Checked = (kryptonManager.GlobalPaletteMode == PaletteMode.Office2010Black);
+            button2007Blue.Checked = (kryptonManager.GlobalPaletteMode == PaletteMode.Office2007Blue);
+            button2007Silver.Checked = (kryptonManager.GlobalPaletteMode == PaletteMode.Office2007Silver);
+            button2007Black.Checked = (kryptonManager.GlobalPaletteMode == PaletteMode.Office2007Black);
+            buttonSparkleBlue.Checked = (kryptonManager.GlobalPaletteMode == PaletteMode.SparkleBlue);
+            buttonSparkleOrange.Checked = (kryptonManager.GlobalPaletteMode == PaletteMode.SparkleOrange);
+            buttonSparklePurple.Checked = (kryptonManager.GlobalPaletteMode == PaletteMode.SparklePurple);
+            buttonSystem.Checked = (kryptonManager.GlobalPaletteMode == PaletteMode.ProfessionalSystem);
         }
 
         private void ribbonAppButtonExit_Click(object sender, EventArgs e) => Close();

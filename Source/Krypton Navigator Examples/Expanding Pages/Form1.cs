@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -80,31 +80,31 @@ namespace ExpandingPages
             switch (kryptonPalettes.CheckedIndex)
             {
                 case 0:
-                    kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+                    kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Blue;
                     break;
                 case 1:
-                    kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
+                    kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Silver;
                     break;
                 case 2:
-                    kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2007Black;
+                    kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Black;
                     break;
                 case 3:
-                    kryptonManager1.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+                    kryptonManager1.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
                     break;
                 case 4:
-                    kryptonManager1.GlobalPaletteMode = PaletteModeManager.ProfessionalOffice2003;
+                    kryptonManager1.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
                     break;
                 case 5:
-                    kryptonManager1.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+                    kryptonManager1.GlobalPaletteMode = PaletteMode.SparkleBlue;
                     break;
                 case 6:
-                    kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2010Black;
+                    kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Black;
                     break;
                 case 7:
-                    kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
+                    kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Silver;
                     break;
                 case 8:
-                    kryptonManager1.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+                    kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
                     break;
 
             }

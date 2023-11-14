@@ -20,7 +20,7 @@ namespace TestMessageBoxClipping
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2021. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2023. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
 //  Version 4.7.0.0  www.ComponentFactory.com
 // *****************************************************************************
 ";
@@ -30,7 +30,7 @@ namespace TestMessageBoxClipping
         {
             if (kryptonOffice2010Silver.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
             }
         }
 
@@ -38,7 +38,7 @@ namespace TestMessageBoxClipping
         {
             if (kryptonOffice2010Black.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
             }
         }
 
@@ -46,7 +46,7 @@ namespace TestMessageBoxClipping
         {
             if (kryptonOffice2007Blue.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
             }
         }
 
@@ -54,7 +54,7 @@ namespace TestMessageBoxClipping
         {
             if (kryptonOffice2007Silver.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
             }
         }
 
@@ -62,7 +62,7 @@ namespace TestMessageBoxClipping
         {
             if (kryptonOffice2007Black.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
             }
         }
 
@@ -70,7 +70,7 @@ namespace TestMessageBoxClipping
         {
             if (kryptonSparkleBlue.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
             }
         }
 
@@ -78,7 +78,7 @@ namespace TestMessageBoxClipping
         {
             if (kryptonSparkleOrange.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleOrange;
             }
         }
 
@@ -86,7 +86,7 @@ namespace TestMessageBoxClipping
         {
             if (kryptonSparklePurple.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparklePurple;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparklePurple;
             }
         }
 
@@ -94,7 +94,7 @@ namespace TestMessageBoxClipping
         {
             if (kryptonOffice2003.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalOffice2003;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
             }
         }
 
@@ -102,7 +102,7 @@ namespace TestMessageBoxClipping
         {
             if (kryptonSystem.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
             }
         }
 
@@ -118,7 +118,7 @@ namespace TestMessageBoxClipping
         {
             if (kryptonOffice2013White.Checked)
             {
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2013White;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2013White;
             }
         }
 
@@ -183,7 +183,7 @@ namespace TestMessageBoxClipping
             catch (Exception ex)
             {
                 MessageBox.Show(this, ex.StackTrace, "ex.Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                KryptonMessageBox.Show(this, ex.StackTrace, "ex.Message", MessageBoxButtons.OK, KryptonMessageBoxIcon.Stop);
+                KryptonMessageBox.Show(this, ex.StackTrace, "ex.Message", KryptonMessageBoxButtons.OK, KryptonMessageBoxIcon.Stop);
             }
         }
 
@@ -209,7 +209,7 @@ namespace TestMessageBoxClipping
             catch (Exception ex)
             {
                 MessageBox.Show(ex.StackTrace, "ex.Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                KryptonMessageBox.Show(ex.StackTrace, "ex.Message", MessageBoxButtons.OK, KryptonMessageBoxIcon.Stop);
+                KryptonMessageBox.Show(ex.StackTrace, "ex.Message", KryptonMessageBoxButtons.OK, KryptonMessageBoxIcon.Stop);
             }
         }
     }

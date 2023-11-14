@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -38,10 +38,26 @@ namespace KryptonColorButtonExamples
             if (KryptonMessageBox.Show(this,
                 @"Do you want to perform the normal colourButtonAction ?",
                 @"Launch what you want",
-                MessageBoxButtons.YesNo, KryptonMessageBoxIcon.Question) == DialogResult.Yes)
+                KryptonMessageBoxButtons.YesNo, KryptonMessageBoxIcon.Question) == DialogResult.Yes)
             {
                 kryptonColorButton5.PerformDropDown();
             }
+        }
+
+        private void blueRight_Click(object sender, EventArgs e)
+        {
+            blueRight.AddUpdateRecentColors(new[] 
+                { 
+                    Color.Yellow, 
+                    Color.YellowGreen, 
+                    Color.GreenYellow, 
+                    Color.LightGoldenrodYellow, 
+                    Color.LightYellow, 
+                    Color.PaleGoldenrod, 
+                    Color.Gold, 
+                    Color.Goldenrod 
+                });
+            blueRight.PerformDropDown();
         }
     }
 

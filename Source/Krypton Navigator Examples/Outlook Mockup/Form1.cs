@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2021. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
  *  
  */
 #endregion
@@ -184,55 +184,55 @@ namespace OutlookMockup
         private void radioOffice2010Blue_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2010Blue.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
         }
 
         private void radioOffice2010Silver_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2010Silver.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
         }
 
         private void radioOffice2010Black_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2010Black.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
         }
 
         private void radioOffice2007Blue_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2007Blue.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
         }
 
         private void radioOffice2007Silver_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2007Silver.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Silver;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
         }
 
         private void radioOffice2007Black_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2007Black.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Black;
+                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
         }
 
         private void radioOffice2003_CheckedChanged(object sender, EventArgs e)
         {
             if (radioOffice2003.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalOffice2003;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
         }
 
         private void radioSystem_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSystem.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
+                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
         }
 
         private void radioSparkle_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSparkle.Checked)
-                kryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleBlue;
+                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Test_Combo_Domain_Numeric
+﻿namespace TestComboDomainNumeric
 {
     partial class Form1
     {

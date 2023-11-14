@@ -49,7 +49,7 @@
             this.groupBoxNormal = new System.Windows.Forms.GroupBox();
             this.dtpRibbonTime = new Krypton.Toolkit.KryptonDateTimePicker();
             this.buttonSpecAny2 = new Krypton.Toolkit.ButtonSpecAny();
-            this.kryptonPalette = new Krypton.Toolkit.KryptonPalette(this.components);
+            this.kryptonPalette = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.dtpRibbonShort = new Krypton.Toolkit.KryptonDateTimePicker();
             this.dtpRibbonLong = new Krypton.Toolkit.KryptonDateTimePicker();
             this.dtpNormalTime = new Krypton.Toolkit.KryptonDateTimePicker();
@@ -405,7 +405,7 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.PropertyGrid propertyGrid;
         private System.Windows.Forms.Button buttonClose;
-        private Krypton.Toolkit.KryptonPalette kryptonPalette;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPalette;
         private System.Windows.Forms.GroupBox groupBoxRibbon;
         private System.Windows.Forms.GroupBox groupBoxNormal;
         private Krypton.Toolkit.KryptonDateTimePicker dtpRibbonTime;
