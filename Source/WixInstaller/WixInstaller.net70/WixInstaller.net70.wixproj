@@ -1,29 +1,29 @@
 ﻿<Project>
-	<Import Project="Sdk.props" Sdk="WixToolset.Sdk" Version="4.0.1" />
-	<PropertyGroup>
-		<OutputName>Samples.v80.23.8.233-beta.Net70</OutputName>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-		<DefineConstants>Debug</DefineConstants>
-		<OutputPath>..\..\..\Binaries\Installers\</OutputPath>
-	</PropertyGroup>
-	<ItemGroup>
-		<Content Include="License.rtf" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="WixInstaller.net70.wax" />
-	</ItemGroup>
-	<ItemGroup>
-		<PackageReference Include="WixToolset.Util.wixext" Version="4.0.1" />
-		<PackageReference Include="WixToolset.UI.wixext" Version="4.0.1" />
-		<PackageReference Include="WixToolset.Heat" Version="4.0.1" />
-	</ItemGroup>
-	<Import Project="Sdk.targets" Sdk="WixToolset.Sdk" Version="4.0.1" />
-	<Target Name="BeforeBuild">
-		<PropertyGroup>
-			<LinkerBaseInputPaths>..\..\..\Binaries\Krypton Demos\Release\net7.0-windows</LinkerBaseInputPaths>
-			<DefineConstants>BasePath70=..\..\..\Binaries\Krypton Demos\Release\net7.0-windows</DefineConstants>
-		</PropertyGroup>
-		<HeatDirectory OutputFile="BasePath70.wxs" DirectoryRefId="KryptonToolkitDemosDir" ComponentGroupName="BasePath70" SuppressCom="true" Directory="..\..\..\Binaries\Krypton Demos\Release\net6.0-windows" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="true" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.BasePath70" Transforms="..\RemovePdbs.xslt" />
-	</Target>
+  <Import Project="Sdk.props" Sdk="WixToolset.Sdk" Version="4.0.1" />
+  <PropertyGroup>
+    <OutputName>Samples.v80.23.8.11.318.Net70</OutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DefineConstants>Debug</DefineConstants>
+    <OutputPath>..\..\..\Binaries\Installers\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="License.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WixInstaller.net70.wax" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="WixToolset.Util.wixext" Version="4.0.3" />
+    <PackageReference Include="WixToolset.UI.wixext" Version="4.0.3" />
+    <PackageReference Include="WixToolset.Heat" Version="4.0.3" />
+  </ItemGroup>
+  <Import Project="Sdk.targets" Sdk="WixToolset.Sdk" Version="4.0.1" />
+  <Target Name="BeforeBuild">
+    <PropertyGroup>
+      <LinkerBaseInputPaths>..\..\..\Binaries\Krypton Demos\Release\net7.0-windows</LinkerBaseInputPaths>
+      <DefineConstants>BasePath70=..\..\..\Binaries\Krypton Demos\Release\net7.0-windows</DefineConstants>
+    </PropertyGroup>
+    <HeatDirectory OutputFile="BasePath70.wxs" DirectoryRefId="KryptonToolkitDemosDir" ComponentGroupName="BasePath70" SuppressCom="true" Directory="..\..\..\Binaries\Krypton Demos\Release\net6.0-windows" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="true" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.BasePath70" Transforms="..\RemovePdbs.xslt" />
+  </Target>
 </Project>
