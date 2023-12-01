@@ -35,6 +35,7 @@
             this.kryptonPageToolkit = new Krypton.Navigator.KryptonPage();
             this.kryptonNavigatorToolkit = new Krypton.Navigator.KryptonNavigator();
             this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
+            this.klblKryptonAboutToolkit = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonTableLayout = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonStringCollector = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonSaveFileDialog = new Krypton.Toolkit.KryptonLinkLabel();
@@ -201,7 +202,7 @@
             this.tslVersion = new System.Windows.Forms.ToolStripStatusLabel();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
             this.bgwDownloadDocumentation = new System.ComponentModel.BackgroundWorker();
-            this.klblKryptonAboutToolkit = new Krypton.Toolkit.KryptonLinkLabel();
+            this.linkKryptonCommandLinkButton = new Krypton.Toolkit.KryptonLinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelFill)).BeginInit();
             this.kryptonPanelFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator)).BeginInit();
@@ -356,6 +357,7 @@
             // kryptonPage1
             // 
             this.kryptonPage1.AutoHiddenSlideSize = new System.Drawing.Size(150, 150);
+            this.kryptonPage1.Controls.Add(this.linkKryptonCommandLinkButton);
             this.kryptonPage1.Controls.Add(this.klblKryptonAboutToolkit);
             this.kryptonPage1.Controls.Add(this.linkKryptonTableLayout);
             this.kryptonPage1.Controls.Add(this.linkKryptonStringCollector);
@@ -421,9 +423,21 @@
             this.kryptonPage1.ToolTipTitle = "Page ToolTip";
             this.kryptonPage1.UniqueName = "11B6F5673ADC4D0611B6F5673ADC4D06";
             // 
+            // klblKryptonAboutToolkit
+            // 
+            this.klblKryptonAboutToolkit.Location = new System.Drawing.Point(6, 16);
+            this.klblKryptonAboutToolkit.Name = "klblKryptonAboutToolkit";
+            this.klblKryptonAboutToolkit.Size = new System.Drawing.Size(146, 20);
+            this.klblKryptonAboutToolkit.StateCommon.AdjacentGap = 5;
+            this.klblKryptonAboutToolkit.TabIndex = 56;
+            this.klblKryptonAboutToolkit.Values.Image = ((System.Drawing.Image)(resources.GetObject("klblKryptonAboutToolkit.Values.Image")));
+            this.klblKryptonAboutToolkit.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.klblKryptonAboutToolkit.Values.Text = "KryptonAboutToolkit";
+            this.klblKryptonAboutToolkit.LinkClicked += new System.EventHandler(this.klblKryptonAboutToolkit_LinkClicked);
+            // 
             // linkKryptonTableLayout
             // 
-            this.linkKryptonTableLayout.Location = new System.Drawing.Point(1069, 16);
+            this.linkKryptonTableLayout.Location = new System.Drawing.Point(1069, 50);
             this.linkKryptonTableLayout.Name = "linkKryptonTableLayout";
             this.linkKryptonTableLayout.Size = new System.Drawing.Size(147, 20);
             this.linkKryptonTableLayout.StateCommon.AdjacentGap = 5;
@@ -434,7 +448,7 @@
             // 
             // linkKryptonStringCollector
             // 
-            this.linkKryptonStringCollector.Location = new System.Drawing.Point(810, 357);
+            this.linkKryptonStringCollector.Location = new System.Drawing.Point(1069, 11);
             this.linkKryptonStringCollector.Name = "linkKryptonStringCollector";
             this.linkKryptonStringCollector.Size = new System.Drawing.Size(200, 20);
             this.linkKryptonStringCollector.StateCommon.AdjacentGap = 5;
@@ -445,7 +459,7 @@
             // 
             // linkKryptonSaveFileDialog
             // 
-            this.linkKryptonSaveFileDialog.Location = new System.Drawing.Point(810, 233);
+            this.linkKryptonSaveFileDialog.Location = new System.Drawing.Point(809, 259);
             this.linkKryptonSaveFileDialog.Name = "linkKryptonSaveFileDialog";
             this.linkKryptonSaveFileDialog.Size = new System.Drawing.Size(161, 20);
             this.linkKryptonSaveFileDialog.StateCommon.AdjacentGap = 5;
@@ -456,7 +470,7 @@
             // 
             // linkKryptonPrintDialog
             // 
-            this.linkKryptonPrintDialog.Location = new System.Drawing.Point(810, 78);
+            this.linkKryptonPrintDialog.Location = new System.Drawing.Point(809, 104);
             this.linkKryptonPrintDialog.Name = "linkKryptonPrintDialog";
             this.linkKryptonPrintDialog.Size = new System.Drawing.Size(142, 20);
             this.linkKryptonPrintDialog.StateCommon.AdjacentGap = 5;
@@ -467,7 +481,7 @@
             // 
             // linkKryptonOpenFileDialog
             // 
-            this.linkKryptonOpenFileDialog.Location = new System.Drawing.Point(549, 356);
+            this.linkKryptonOpenFileDialog.Location = new System.Drawing.Point(809, 11);
             this.linkKryptonOpenFileDialog.Name = "linkKryptonOpenFileDialog";
             this.linkKryptonOpenFileDialog.Size = new System.Drawing.Size(165, 20);
             this.linkKryptonOpenFileDialog.StateCommon.AdjacentGap = 5;
@@ -478,7 +492,7 @@
             // 
             // linkKryptonListView
             // 
-            this.linkKryptonListView.Location = new System.Drawing.Point(549, 186);
+            this.linkKryptonListView.Location = new System.Drawing.Point(549, 216);
             this.linkKryptonListView.Name = "linkKryptonListView";
             this.linkKryptonListView.Size = new System.Drawing.Size(126, 20);
             this.linkKryptonListView.StateCommon.AdjacentGap = 5;
@@ -489,7 +503,7 @@
             // 
             // linkKryptonFontDialog
             // 
-            this.linkKryptonFontDialog.Location = new System.Drawing.Point(268, 176);
+            this.linkKryptonFontDialog.Location = new System.Drawing.Point(268, 192);
             this.linkKryptonFontDialog.Name = "linkKryptonFontDialog";
             this.linkKryptonFontDialog.Size = new System.Drawing.Size(141, 20);
             this.linkKryptonFontDialog.StateCommon.AdjacentGap = 5;
@@ -500,7 +514,7 @@
             // 
             // linkKryptonFolderBrowser
             // 
-            this.linkKryptonFolderBrowser.Location = new System.Drawing.Point(268, 144);
+            this.linkKryptonFolderBrowser.Location = new System.Drawing.Point(268, 160);
             this.linkKryptonFolderBrowser.Name = "linkKryptonFolderBrowser";
             this.linkKryptonFolderBrowser.Size = new System.Drawing.Size(159, 20);
             this.linkKryptonFolderBrowser.StateCommon.AdjacentGap = 5;
@@ -511,7 +525,7 @@
             // 
             // kllblIntegratedToolbar
             // 
-            this.kllblIntegratedToolbar.Location = new System.Drawing.Point(549, 50);
+            this.kllblIntegratedToolbar.Location = new System.Drawing.Point(549, 80);
             this.kllblIntegratedToolbar.Name = "kllblIntegratedToolbar";
             this.kllblIntegratedToolbar.Size = new System.Drawing.Size(126, 20);
             this.kllblIntegratedToolbar.TabIndex = 44;
@@ -532,7 +546,7 @@
             // 
             // kllKryptonThemeSelector
             // 
-            this.kllKryptonThemeSelector.Location = new System.Drawing.Point(1069, 121);
+            this.kllKryptonThemeSelector.Location = new System.Drawing.Point(1069, 155);
             this.kllKryptonThemeSelector.Name = "kllKryptonThemeSelector";
             this.kllKryptonThemeSelector.Size = new System.Drawing.Size(152, 20);
             this.kllKryptonThemeSelector.TabIndex = 46;
@@ -542,7 +556,7 @@
             // 
             // kllProgressBar
             // 
-            this.kllProgressBar.Location = new System.Drawing.Point(810, 109);
+            this.kllProgressBar.Location = new System.Drawing.Point(809, 135);
             this.kllProgressBar.Name = "kllProgressBar";
             this.kllProgressBar.Size = new System.Drawing.Size(135, 20);
             this.kllProgressBar.TabIndex = 45;
@@ -552,7 +566,7 @@
             // 
             // kllPropertyGrid
             // 
-            this.kllPropertyGrid.Location = new System.Drawing.Point(810, 140);
+            this.kllPropertyGrid.Location = new System.Drawing.Point(809, 166);
             this.kllPropertyGrid.Name = "kllPropertyGrid";
             this.kllPropertyGrid.Size = new System.Drawing.Size(140, 20);
             this.kllPropertyGrid.TabIndex = 43;
@@ -562,7 +576,7 @@
             // 
             // kllKryptonScrollBars
             // 
-            this.kllKryptonScrollBars.Location = new System.Drawing.Point(810, 264);
+            this.kllKryptonScrollBars.Location = new System.Drawing.Point(809, 290);
             this.kllKryptonScrollBars.Name = "kllKryptonScrollBars";
             this.kllKryptonScrollBars.Size = new System.Drawing.Size(123, 20);
             this.kllKryptonScrollBars.TabIndex = 42;
@@ -571,7 +585,7 @@
             // 
             // kllKryptonHelpIcon
             // 
-            this.kllKryptonHelpIcon.Location = new System.Drawing.Point(268, 368);
+            this.kllKryptonHelpIcon.Location = new System.Drawing.Point(549, 11);
             this.kllKryptonHelpIcon.Name = "kllKryptonHelpIcon";
             this.kllKryptonHelpIcon.Size = new System.Drawing.Size(119, 20);
             this.kllKryptonHelpIcon.TabIndex = 41;
@@ -580,7 +594,7 @@
             // 
             // kllKryptonWebBrowser
             // 
-            this.kllKryptonWebBrowser.Location = new System.Drawing.Point(1069, 226);
+            this.kllKryptonWebBrowser.Location = new System.Drawing.Point(1069, 260);
             this.kllKryptonWebBrowser.Name = "kllKryptonWebBrowser";
             this.kllKryptonWebBrowser.Size = new System.Drawing.Size(139, 20);
             this.kllKryptonWebBrowser.TabIndex = 40;
@@ -589,7 +603,7 @@
             // 
             // linkKryptonTreeView
             // 
-            this.linkKryptonTreeView.Location = new System.Drawing.Point(1069, 191);
+            this.linkKryptonTreeView.Location = new System.Drawing.Point(1069, 225);
             this.linkKryptonTreeView.Name = "linkKryptonTreeView";
             this.linkKryptonTreeView.Size = new System.Drawing.Size(124, 20);
             this.linkKryptonTreeView.StateCommon.AdjacentGap = 5;
@@ -600,7 +614,7 @@
             // 
             // linkKryptonInputBox
             // 
-            this.linkKryptonInputBox.Location = new System.Drawing.Point(549, 16);
+            this.linkKryptonInputBox.Location = new System.Drawing.Point(549, 46);
             this.linkKryptonInputBox.Name = "linkKryptonInputBox";
             this.linkKryptonInputBox.Size = new System.Drawing.Size(123, 20);
             this.linkKryptonInputBox.StateCommon.AdjacentGap = 5;
@@ -611,7 +625,7 @@
             // 
             // linkKryptonTaskDialog
             // 
-            this.linkKryptonTaskDialog.Location = new System.Drawing.Point(1069, 51);
+            this.linkKryptonTaskDialog.Location = new System.Drawing.Point(1069, 85);
             this.linkKryptonTaskDialog.Name = "linkKryptonTaskDialog";
             this.linkKryptonTaskDialog.Size = new System.Drawing.Size(134, 20);
             this.linkKryptonTaskDialog.StateCommon.AdjacentGap = 5;
@@ -622,7 +636,7 @@
             // 
             // linkKryptonMessageBox
             // 
-            this.linkKryptonMessageBox.Location = new System.Drawing.Point(549, 254);
+            this.linkKryptonMessageBox.Location = new System.Drawing.Point(549, 284);
             this.linkKryptonMessageBox.Name = "linkKryptonMessageBox";
             this.linkKryptonMessageBox.Size = new System.Drawing.Size(143, 20);
             this.linkKryptonMessageBox.StateCommon.AdjacentGap = 5;
@@ -633,7 +647,7 @@
             // 
             // linkKryptobTrackBar
             // 
-            this.linkKryptobTrackBar.Location = new System.Drawing.Point(1069, 156);
+            this.linkKryptobTrackBar.Location = new System.Drawing.Point(1069, 190);
             this.linkKryptobTrackBar.Name = "linkKryptobTrackBar";
             this.linkKryptobTrackBar.Size = new System.Drawing.Size(121, 20);
             this.linkKryptobTrackBar.StateCommon.AdjacentGap = 5;
@@ -644,7 +658,7 @@
             // 
             // linkKryptonGroupBox
             // 
-            this.linkKryptonGroupBox.Location = new System.Drawing.Point(268, 272);
+            this.linkKryptonGroupBox.Location = new System.Drawing.Point(268, 288);
             this.linkKryptonGroupBox.Name = "linkKryptonGroupBox";
             this.linkKryptonGroupBox.Size = new System.Drawing.Size(129, 20);
             this.linkKryptonGroupBox.StateCommon.AdjacentGap = 5;
@@ -655,7 +669,7 @@
             // 
             // linkKryptonWrapLabel
             // 
-            this.linkKryptonWrapLabel.Location = new System.Drawing.Point(1069, 261);
+            this.linkKryptonWrapLabel.Location = new System.Drawing.Point(1069, 295);
             this.linkKryptonWrapLabel.Name = "linkKryptonWrapLabel";
             this.linkKryptonWrapLabel.Size = new System.Drawing.Size(133, 20);
             this.linkKryptonWrapLabel.StateCommon.AdjacentGap = 5;
@@ -666,7 +680,7 @@
             // 
             // linkKryptonSeparator
             // 
-            this.linkKryptonSeparator.Location = new System.Drawing.Point(810, 295);
+            this.linkKryptonSeparator.Location = new System.Drawing.Point(809, 321);
             this.linkKryptonSeparator.Name = "linkKryptonSeparator";
             this.linkKryptonSeparator.Size = new System.Drawing.Size(128, 20);
             this.linkKryptonSeparator.StateCommon.AdjacentGap = 5;
@@ -677,7 +691,7 @@
             // 
             // kryptonLinkLabel2
             // 
-            this.kryptonLinkLabel2.Location = new System.Drawing.Point(549, 288);
+            this.kryptonLinkLabel2.Location = new System.Drawing.Point(549, 318);
             this.kryptonLinkLabel2.Name = "kryptonLinkLabel2";
             this.kryptonLinkLabel2.Size = new System.Drawing.Size(159, 20);
             this.kryptonLinkLabel2.StateCommon.AdjacentGap = 5;
@@ -688,7 +702,7 @@
             // 
             // kryptonLinkLabel1
             // 
-            this.kryptonLinkLabel1.Location = new System.Drawing.Point(268, 48);
+            this.kryptonLinkLabel1.Location = new System.Drawing.Point(268, 64);
             this.kryptonLinkLabel1.Name = "kryptonLinkLabel1";
             this.kryptonLinkLabel1.Size = new System.Drawing.Size(159, 20);
             this.kryptonLinkLabel1.StateCommon.AdjacentGap = 5;
@@ -699,7 +713,7 @@
             // 
             // linkKryptonDomainUpDown
             // 
-            this.linkKryptonDomainUpDown.Location = new System.Drawing.Point(268, 80);
+            this.linkKryptonDomainUpDown.Location = new System.Drawing.Point(268, 96);
             this.linkKryptonDomainUpDown.Name = "linkKryptonDomainUpDown";
             this.linkKryptonDomainUpDown.Size = new System.Drawing.Size(165, 20);
             this.linkKryptonDomainUpDown.StateCommon.AdjacentGap = 5;
@@ -721,7 +735,7 @@
             // 
             // linkKryptonNumericUpDown
             // 
-            this.linkKryptonNumericUpDown.Location = new System.Drawing.Point(549, 322);
+            this.linkKryptonNumericUpDown.Location = new System.Drawing.Point(549, 352);
             this.linkKryptonNumericUpDown.Name = "linkKryptonNumericUpDown";
             this.linkKryptonNumericUpDown.Size = new System.Drawing.Size(169, 20);
             this.linkKryptonNumericUpDown.StateCommon.AdjacentGap = 5;
@@ -754,7 +768,7 @@
             // 
             // linkKryptonListBox
             // 
-            this.linkKryptonListBox.Location = new System.Drawing.Point(549, 152);
+            this.linkKryptonListBox.Location = new System.Drawing.Point(549, 182);
             this.linkKryptonListBox.Name = "linkKryptonListBox";
             this.linkKryptonListBox.Size = new System.Drawing.Size(113, 20);
             this.linkKryptonListBox.StateCommon.AdjacentGap = 5;
@@ -776,7 +790,7 @@
             // 
             // linkKryptonDropButton
             // 
-            this.linkKryptonDropButton.Location = new System.Drawing.Point(268, 112);
+            this.linkKryptonDropButton.Location = new System.Drawing.Point(268, 128);
             this.linkKryptonDropButton.Name = "linkKryptonDropButton";
             this.linkKryptonDropButton.Size = new System.Drawing.Size(139, 20);
             this.linkKryptonDropButton.StateCommon.AdjacentGap = 5;
@@ -787,7 +801,7 @@
             // 
             // linkKryptonMaskedTextBox
             // 
-            this.linkKryptonMaskedTextBox.Location = new System.Drawing.Point(549, 220);
+            this.linkKryptonMaskedTextBox.Location = new System.Drawing.Point(549, 250);
             this.linkKryptonMaskedTextBox.Name = "linkKryptonMaskedTextBox";
             this.linkKryptonMaskedTextBox.Size = new System.Drawing.Size(160, 20);
             this.linkKryptonMaskedTextBox.StateCommon.AdjacentGap = 5;
@@ -798,7 +812,7 @@
             // 
             // linkKryptonContextMenu
             // 
-            this.linkKryptonContextMenu.Location = new System.Drawing.Point(3, 364);
+            this.linkKryptonContextMenu.Location = new System.Drawing.Point(268, 11);
             this.linkKryptonContextMenu.Name = "linkKryptonContextMenu";
             this.linkKryptonContextMenu.Size = new System.Drawing.Size(149, 20);
             this.linkKryptonContextMenu.StateCommon.AdjacentGap = 5;
@@ -809,7 +823,7 @@
             // 
             // linkKryptonRichTextBox
             // 
-            this.linkKryptonRichTextBox.Location = new System.Drawing.Point(810, 202);
+            this.linkKryptonRichTextBox.Location = new System.Drawing.Point(809, 228);
             this.linkKryptonRichTextBox.Name = "linkKryptonRichTextBox";
             this.linkKryptonRichTextBox.Size = new System.Drawing.Size(141, 20);
             this.linkKryptonRichTextBox.StateCommon.AdjacentGap = 5;
@@ -831,7 +845,7 @@
             // 
             // linkKryptonTextBox
             // 
-            this.linkKryptonTextBox.Location = new System.Drawing.Point(1069, 86);
+            this.linkKryptonTextBox.Location = new System.Drawing.Point(1069, 120);
             this.linkKryptonTextBox.Name = "linkKryptonTextBox";
             this.linkKryptonTextBox.Size = new System.Drawing.Size(117, 20);
             this.linkKryptonTextBox.StateCommon.AdjacentGap = 5;
@@ -842,7 +856,7 @@
             // 
             // linkKryptonDataGridView
             // 
-            this.linkKryptonDataGridView.Location = new System.Drawing.Point(268, 16);
+            this.linkKryptonDataGridView.Location = new System.Drawing.Point(268, 32);
             this.linkKryptonDataGridView.Name = "linkKryptonDataGridView";
             this.linkKryptonDataGridView.Size = new System.Drawing.Size(149, 20);
             this.linkKryptonDataGridView.StateCommon.AdjacentGap = 5;
@@ -853,7 +867,7 @@
             // 
             // linkKryptonRadioButton
             // 
-            this.linkKryptonRadioButton.Location = new System.Drawing.Point(810, 171);
+            this.linkKryptonRadioButton.Location = new System.Drawing.Point(809, 197);
             this.linkKryptonRadioButton.Name = "linkKryptonRadioButton";
             this.linkKryptonRadioButton.Size = new System.Drawing.Size(143, 20);
             this.linkKryptonRadioButton.StateCommon.AdjacentGap = 5;
@@ -886,7 +900,7 @@
             // 
             // linkKryptonForm
             // 
-            this.linkKryptonForm.Location = new System.Drawing.Point(268, 208);
+            this.linkKryptonForm.Location = new System.Drawing.Point(268, 224);
             this.linkKryptonForm.Name = "linkKryptonForm";
             this.linkKryptonForm.Size = new System.Drawing.Size(103, 20);
             this.linkKryptonForm.StateCommon.AdjacentGap = 5;
@@ -919,7 +933,7 @@
             // 
             // linkKryptonLinkLabel
             // 
-            this.linkKryptonLinkLabel.Location = new System.Drawing.Point(549, 118);
+            this.linkKryptonLinkLabel.Location = new System.Drawing.Point(549, 148);
             this.linkKryptonLinkLabel.Name = "linkKryptonLinkLabel";
             this.linkKryptonLinkLabel.Size = new System.Drawing.Size(125, 20);
             this.linkKryptonLinkLabel.StateCommon.AdjacentGap = 5;
@@ -930,7 +944,7 @@
             // 
             // linkKryptonSplitContainer
             // 
-            this.linkKryptonSplitContainer.Location = new System.Drawing.Point(810, 326);
+            this.linkKryptonSplitContainer.Location = new System.Drawing.Point(809, 352);
             this.linkKryptonSplitContainer.Name = "linkKryptonSplitContainer";
             this.linkKryptonSplitContainer.Size = new System.Drawing.Size(152, 20);
             this.linkKryptonSplitContainer.StateCommon.AdjacentGap = 5;
@@ -941,7 +955,7 @@
             // 
             // linkKryptonPanel
             // 
-            this.linkKryptonPanel.Location = new System.Drawing.Point(810, 47);
+            this.linkKryptonPanel.Location = new System.Drawing.Point(809, 73);
             this.linkKryptonPanel.Name = "linkKryptonPanel";
             this.linkKryptonPanel.Size = new System.Drawing.Size(104, 20);
             this.linkKryptonPanel.StateCommon.AdjacentGap = 5;
@@ -952,7 +966,7 @@
             // 
             // linkKryptonPalette
             // 
-            this.linkKryptonPalette.Location = new System.Drawing.Point(810, 16);
+            this.linkKryptonPalette.Location = new System.Drawing.Point(809, 42);
             this.linkKryptonPalette.Name = "linkKryptonPalette";
             this.linkKryptonPalette.Size = new System.Drawing.Size(112, 20);
             this.linkKryptonPalette.StateCommon.AdjacentGap = 5;
@@ -974,7 +988,7 @@
             // 
             // linkKryptonLabel
             // 
-            this.linkKryptonLabel.Location = new System.Drawing.Point(549, 84);
+            this.linkKryptonLabel.Location = new System.Drawing.Point(549, 114);
             this.linkKryptonLabel.Name = "linkKryptonLabel";
             this.linkKryptonLabel.Size = new System.Drawing.Size(103, 20);
             this.linkKryptonLabel.StateCommon.AdjacentGap = 5;
@@ -985,7 +999,7 @@
             // 
             // linkKryptonGroup
             // 
-            this.linkKryptonGroup.Location = new System.Drawing.Point(268, 240);
+            this.linkKryptonGroup.Location = new System.Drawing.Point(268, 256);
             this.linkKryptonGroup.Name = "linkKryptonGroup";
             this.linkKryptonGroup.Size = new System.Drawing.Size(109, 20);
             this.linkKryptonGroup.StateCommon.AdjacentGap = 5;
@@ -996,7 +1010,7 @@
             // 
             // linkKryptonHeaderGroup
             // 
-            this.linkKryptonHeaderGroup.Location = new System.Drawing.Point(268, 336);
+            this.linkKryptonHeaderGroup.Location = new System.Drawing.Point(268, 352);
             this.linkKryptonHeaderGroup.Name = "linkKryptonHeaderGroup";
             this.linkKryptonHeaderGroup.Size = new System.Drawing.Size(148, 20);
             this.linkKryptonHeaderGroup.StateCommon.AdjacentGap = 5;
@@ -1007,7 +1021,7 @@
             // 
             // linkKryptonHeader
             // 
-            this.linkKryptonHeader.Location = new System.Drawing.Point(268, 304);
+            this.linkKryptonHeader.Location = new System.Drawing.Point(268, 320);
             this.linkKryptonHeader.Name = "linkKryptonHeader";
             this.linkKryptonHeader.Size = new System.Drawing.Size(114, 20);
             this.linkKryptonHeader.StateCommon.AdjacentGap = 5;
@@ -2122,17 +2136,17 @@
             this.bgwDownloadDocumentation.WorkerReportsProgress = true;
             this.bgwDownloadDocumentation.WorkerSupportsCancellation = true;
             // 
-            // klblKryptonAboutToolkit
+            // linkKryptonCommandLinkButton
             // 
-            this.klblKryptonAboutToolkit.Location = new System.Drawing.Point(6, 16);
-            this.klblKryptonAboutToolkit.Name = "klblKryptonAboutToolkit";
-            this.klblKryptonAboutToolkit.Size = new System.Drawing.Size(146, 20);
-            this.klblKryptonAboutToolkit.StateCommon.AdjacentGap = 5;
-            this.klblKryptonAboutToolkit.TabIndex = 56;
-            this.klblKryptonAboutToolkit.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonLinkLabel3.Values.Image")));
-            this.klblKryptonAboutToolkit.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.klblKryptonAboutToolkit.Values.Text = "KryptonAboutToolkit";
-            this.klblKryptonAboutToolkit.LinkClicked += new System.EventHandler(this.klblKryptonAboutToolkit_LinkClicked);
+            this.linkKryptonCommandLinkButton.Location = new System.Drawing.Point(3, 361);
+            this.linkKryptonCommandLinkButton.Name = "linkKryptonCommandLinkButton";
+            this.linkKryptonCommandLinkButton.Size = new System.Drawing.Size(190, 20);
+            this.linkKryptonCommandLinkButton.StateCommon.AdjacentGap = 5;
+            this.linkKryptonCommandLinkButton.TabIndex = 57;
+            this.linkKryptonCommandLinkButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonLinkLabel3.Values.Image")));
+            this.linkKryptonCommandLinkButton.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.linkKryptonCommandLinkButton.Values.Text = "KryptonCommandLinkButton";
+            this.linkKryptonCommandLinkButton.LinkClicked += new System.EventHandler(this.linkKryptonCommandLinkButton_LinkClicked);
             // 
             // Form1
             // 
@@ -2378,6 +2392,7 @@
         private Krypton.Toolkit.KryptonLinkLabel linkKryptonStringCollector;
         private Krypton.Toolkit.KryptonLinkLabel linkKryptonSaveFileDialog;
         private Krypton.Toolkit.KryptonLinkLabel klblKryptonAboutToolkit;
+        private Krypton.Toolkit.KryptonLinkLabel linkKryptonCommandLinkButton;
     }
 }
 

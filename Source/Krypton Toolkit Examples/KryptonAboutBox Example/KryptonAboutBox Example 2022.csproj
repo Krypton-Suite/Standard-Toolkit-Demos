@@ -1,26 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
     <PropertyGroup>
         <TargetFrameworks>net48;net6.0-windows;net7.0-windows;net8.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
-        <RootNamespace>KryptonTaskDialogExamples</RootNamespace>
-        <AssemblyName>Krypton TaskDialog Examples</AssemblyName>
+        <RootNamespace>KryptonAboutBoxExample</RootNamespace>
+        <AssemblyName>Krypton About Box Example</AssemblyName>
+        <ApplicationIcon>Krypton.ico</ApplicationIcon>
+        <UseApplicationTrust>false</UseApplicationTrust>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <UseWindowsForms>true</UseWindowsForms>
+        <PlatformTarget>AnyCPU</PlatformTarget>
         <NeutralLanguage>en</NeutralLanguage>
         <LangVersion>preview</LangVersion>
         <Nullable>enable</Nullable>
         <WarningLevel>6</WarningLevel>
         <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
     </PropertyGroup>
-    <PropertyGroup>
-        <ApplicationIcon>Krypton.ico</ApplicationIcon>
-    </PropertyGroup>
-    <ItemGroup>
-        <None Remove="Krypton.ico" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="Krypton.ico" />
-    </ItemGroup>
+
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
@@ -33,8 +29,17 @@
             </ItemGroup>
         </Otherwise>
     </Choose>
+
+    <ItemGroup>
+        <None Remove="Krypton.ico" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="Krypton.ico" />
+    </ItemGroup>
+
     <PropertyGroup>
         <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
-        <ApplicationManifest>app.manifest</ApplicationManifest>
     </PropertyGroup>
+
 </Project>

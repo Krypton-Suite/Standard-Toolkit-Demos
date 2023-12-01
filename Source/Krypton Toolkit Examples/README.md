@@ -25,6 +25,7 @@
 	* [KryptonColorDialog](#kryptoncolordialog)
 	* [KryptonComboBox](#kryptoncombobox)
 	* [KryptonCommand](#kryptoncommand)
+	* [KryptonCommandLinkButton](#kryptoncommandlinkbutton)
 	* [KryptonContextMenu](#kryptoncontextmenu)
 	* [KryptonDataGridView](#kryptondatagridview)
 	* [KryptonDateTimePicker](#kryptondatetimepicker)
@@ -115,7 +116,7 @@ There are 2 set of solutions in these projects:
 
 ## KryptonBorderEdge Examples
 ![KryptonBorderEdge Examples](KryptonBorderEdge%20Examples/example.png)
-## [KryptonBreadCrumb Examples
+## KryptonBreadCrumb Examples
 ![KryptonBreadCrumb Examples](KryptonBreadCrumb%20Examples/example.png)
 ## KryptonButton Examples
 ![KryptonButton Examples](KryptonButton%20Examples/example.png)
@@ -140,6 +141,8 @@ There are 2 set of solutions in these projects:
 ![KryptonComboBox Examples](KryptonComboBox%20Examples/example.png)
 ## KryptonCommand
 ![KryptonCommand Examples](KryptonCommand%20Examples/example.png)
+## KryptonCommandLinkButton
+![KryptonCommandLinkButton Examples](KryptonCommandLinkButton%20Examples/Example.png)
 ## KryptonContextMenu
 ![KryptonContextMenu Examples](KryptonContextMenu%20Examples/example.png)
 ## KryptonDataGridView

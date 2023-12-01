@@ -163,7 +163,7 @@ namespace KryptonDateTimePickerExamples
         /// </summary>
         [Category("Visuals - MonthCalendar")]
         [Description("Today's date.")]
-        public DateTime CalendarTodayDate
+        public DateTime? CalendarTodayDate
         {
             get => _dateTimePicker.CalendarTodayDate;
             set => _dateTimePicker.CalendarTodayDate = value;
