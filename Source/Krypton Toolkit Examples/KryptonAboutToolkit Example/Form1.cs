@@ -79,7 +79,7 @@ namespace KryptonAboutToolkitExample
 
             data.RepositoryInformationLinkArea = new LinkArea((int)knumLinkAreaRepositoryInformationStart.Value, (int)knumLinkAreaRepositoryInformationEnd.Value);
 
-            KryptonAboutToolkit.Show(data);
+            //KryptonAboutBox.Show(data);
         }
 
         private void ToolkitType_CheckedChanged(object sender, EventArgs e)

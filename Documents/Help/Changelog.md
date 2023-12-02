@@ -1,6 +1,7 @@
 # <img src="https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png?raw=true"> Standard Toolkit Demos - ChangeLog
 
 ## 2024-11-xx - Build 2311 - November 2024
+* Add `KryptonCommandLinkButton` example
 * Add `KryptonAboutToolkit` example
 * Removed support for .NET 7
 * Add support for .NET 9

@@ -28,7 +28,7 @@ namespace KryptonExplorer
     {
         #region Variables
 
-        private Version _currentVersion = new(80, int.Parse(DateTime.Now.ToString("yy")), 08, 233);
+        private Version _currentVersion = new(80, int.Parse(DateTime.Now.ToString("yy")), 08, DateTime.Now.DayOfYear);
 
         private Settings _settings = new();
 
@@ -652,5 +652,32 @@ namespace KryptonExplorer
         private void linkKryptonTableLayout_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton TableLayoutPanel Examples");
 
         private void klblKryptonAboutToolkit_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton About Toolkit Example");
+
+        private void linkKryptonCommandLinkButton_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Command Link Button Examples");
+
+        private void linkWorkspaceMemoEditor_LinkClicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkNavigatorModes_LinkClicked_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkDateTimePicker_LinkClicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkExpandingHeaderGroupsSplitters_LinkClicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkExpandingHeaderGroupsDockStyle_LinkClicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

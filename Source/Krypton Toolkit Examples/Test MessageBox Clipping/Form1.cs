@@ -157,7 +157,7 @@ namespace TestMessageBoxClipping
                 MessageBox.Show(this, ex.StackTrace, ex.Message);
                 KryptonMessageBox.Show(this, ex.StackTrace, ex.Message);
                 KryptonTaskDialog.Show(ex.Message, "MinInstruction", ex.StackTrace, KryptonMessageBoxIcon.Stop,
-                    TaskDialogButtons.Close);
+                    TaskDialogButtons.Close, null);
             }
         }
 

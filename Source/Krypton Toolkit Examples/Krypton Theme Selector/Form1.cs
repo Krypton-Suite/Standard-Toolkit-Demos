@@ -8,9 +8,7 @@ namespace KryptonThemeSelector
 
         private void kbtnUseListBox_Click(object sender, System.EventArgs e)
         {
-            KryptonThemeBrowserForm themeBrowser = new KryptonThemeBrowserForm();
-
-            themeBrowser.ShowDialog();
+            KryptonThemeBrowser.Show();
         }
     }
 }

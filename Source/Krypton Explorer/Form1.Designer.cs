@@ -35,6 +35,8 @@
             this.kryptonPageToolkit = new Krypton.Navigator.KryptonPage();
             this.kryptonNavigatorToolkit = new Krypton.Navigator.KryptonNavigator();
             this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
+            this.linkKryptonCommandLinkButton = new Krypton.Toolkit.KryptonLinkLabel();
+            this.klblKryptonAboutToolkit = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonTableLayout = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonStringCollector = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonSaveFileDialog = new Krypton.Toolkit.KryptonLinkLabel();
@@ -59,8 +61,8 @@
             this.linkKryptonGroupBox = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonWrapLabel = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonSeparator = new Krypton.Toolkit.KryptonLinkLabel();
-            this.kryptonLinkLabel2 = new Krypton.Toolkit.KryptonLinkLabel();
-            this.kryptonLinkLabel1 = new Krypton.Toolkit.KryptonLinkLabel();
+            this.linkMonthCalendar = new Krypton.Toolkit.KryptonLinkLabel();
+            this.linkDateTimePicker = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonDomainUpDown = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonBreadCrumb = new Krypton.Toolkit.KryptonLinkLabel();
             this.linkKryptonNumericUpDown = new Krypton.Toolkit.KryptonLinkLabel();
@@ -201,7 +203,6 @@
             this.tslVersion = new System.Windows.Forms.ToolStripStatusLabel();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
             this.bgwDownloadDocumentation = new System.ComponentModel.BackgroundWorker();
-            this.klblKryptonAboutToolkit = new Krypton.Toolkit.KryptonLinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelFill)).BeginInit();
             this.kryptonPanelFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator)).BeginInit();
@@ -293,7 +294,7 @@
             this.kryptonPageReleases,
             this.kpChangeLog});
             this.kryptonNavigator.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
-            this.kryptonNavigator.SelectedIndex = 0;
+            this.kryptonNavigator.SelectedIndex = 1;
             this.kryptonNavigator.Size = new System.Drawing.Size(1443, 488);
             this.kryptonNavigator.StateCommon.Bar.BarPaddingInside = new System.Windows.Forms.Padding(-1);
             this.kryptonNavigator.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(-1);
@@ -347,7 +348,7 @@
             this.kryptonNavigatorToolkit.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2});
-            this.kryptonNavigatorToolkit.SelectedIndex = 0;
+            this.kryptonNavigatorToolkit.SelectedIndex = 1;
             this.kryptonNavigatorToolkit.Size = new System.Drawing.Size(1292, 419);
             this.kryptonNavigatorToolkit.StateCommon.HeaderGroup.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
             this.kryptonNavigatorToolkit.TabIndex = 0;
@@ -356,6 +357,7 @@
             // kryptonPage1
             // 
             this.kryptonPage1.AutoHiddenSlideSize = new System.Drawing.Size(150, 150);
+            this.kryptonPage1.Controls.Add(this.linkKryptonCommandLinkButton);
             this.kryptonPage1.Controls.Add(this.klblKryptonAboutToolkit);
             this.kryptonPage1.Controls.Add(this.linkKryptonTableLayout);
             this.kryptonPage1.Controls.Add(this.linkKryptonStringCollector);
@@ -381,8 +383,8 @@
             this.kryptonPage1.Controls.Add(this.linkKryptonGroupBox);
             this.kryptonPage1.Controls.Add(this.linkKryptonWrapLabel);
             this.kryptonPage1.Controls.Add(this.linkKryptonSeparator);
-            this.kryptonPage1.Controls.Add(this.kryptonLinkLabel2);
-            this.kryptonPage1.Controls.Add(this.kryptonLinkLabel1);
+            this.kryptonPage1.Controls.Add(this.linkMonthCalendar);
+            this.kryptonPage1.Controls.Add(this.linkDateTimePicker);
             this.kryptonPage1.Controls.Add(this.linkKryptonDomainUpDown);
             this.kryptonPage1.Controls.Add(this.linkKryptonBreadCrumb);
             this.kryptonPage1.Controls.Add(this.linkKryptonNumericUpDown);
@@ -421,9 +423,33 @@
             this.kryptonPage1.ToolTipTitle = "Page ToolTip";
             this.kryptonPage1.UniqueName = "11B6F5673ADC4D0611B6F5673ADC4D06";
             // 
+            // linkKryptonCommandLinkButton
+            // 
+            this.linkKryptonCommandLinkButton.Location = new System.Drawing.Point(3, 361);
+            this.linkKryptonCommandLinkButton.Name = "linkKryptonCommandLinkButton";
+            this.linkKryptonCommandLinkButton.Size = new System.Drawing.Size(190, 20);
+            this.linkKryptonCommandLinkButton.StateCommon.AdjacentGap = 5;
+            this.linkKryptonCommandLinkButton.TabIndex = 57;
+            this.linkKryptonCommandLinkButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonCommandLinkButton.Values.Image")));
+            this.linkKryptonCommandLinkButton.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.linkKryptonCommandLinkButton.Values.Text = "KryptonCommandLinkButton";
+            this.linkKryptonCommandLinkButton.LinkClicked += new System.EventHandler(this.linkKryptonCommandLinkButton_LinkClicked);
+            // 
+            // klblKryptonAboutToolkit
+            // 
+            this.klblKryptonAboutToolkit.Location = new System.Drawing.Point(6, 16);
+            this.klblKryptonAboutToolkit.Name = "klblKryptonAboutToolkit";
+            this.klblKryptonAboutToolkit.Size = new System.Drawing.Size(146, 20);
+            this.klblKryptonAboutToolkit.StateCommon.AdjacentGap = 5;
+            this.klblKryptonAboutToolkit.TabIndex = 56;
+            this.klblKryptonAboutToolkit.Values.Image = ((System.Drawing.Image)(resources.GetObject("klblKryptonAboutToolkit.Values.Image")));
+            this.klblKryptonAboutToolkit.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.klblKryptonAboutToolkit.Values.Text = "KryptonAboutToolkit";
+            this.klblKryptonAboutToolkit.LinkClicked += new System.EventHandler(this.klblKryptonAboutToolkit_LinkClicked);
+            // 
             // linkKryptonTableLayout
             // 
-            this.linkKryptonTableLayout.Location = new System.Drawing.Point(1069, 16);
+            this.linkKryptonTableLayout.Location = new System.Drawing.Point(1069, 50);
             this.linkKryptonTableLayout.Name = "linkKryptonTableLayout";
             this.linkKryptonTableLayout.Size = new System.Drawing.Size(147, 20);
             this.linkKryptonTableLayout.StateCommon.AdjacentGap = 5;
@@ -431,10 +457,11 @@
             this.linkKryptonTableLayout.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonTableLayout.Values.Image")));
             this.linkKryptonTableLayout.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonTableLayout.Values.Text = "Krypton Table Layout";
+            this.linkKryptonTableLayout.LinkClicked += new System.EventHandler(this.linkKryptonTableLayout_LinkClicked);
             // 
             // linkKryptonStringCollector
             // 
-            this.linkKryptonStringCollector.Location = new System.Drawing.Point(810, 357);
+            this.linkKryptonStringCollector.Location = new System.Drawing.Point(1069, 11);
             this.linkKryptonStringCollector.Name = "linkKryptonStringCollector";
             this.linkKryptonStringCollector.Size = new System.Drawing.Size(200, 20);
             this.linkKryptonStringCollector.StateCommon.AdjacentGap = 5;
@@ -442,10 +469,11 @@
             this.linkKryptonStringCollector.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonStringCollector.Values.Image")));
             this.linkKryptonStringCollector.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonStringCollector.Values.Text = "Krypton StringCollection Editor";
+            this.linkKryptonStringCollector.LinkClicked += new System.EventHandler(this.linkKryptonStringCollector_LinkClicked);
             // 
             // linkKryptonSaveFileDialog
             // 
-            this.linkKryptonSaveFileDialog.Location = new System.Drawing.Point(810, 233);
+            this.linkKryptonSaveFileDialog.Location = new System.Drawing.Point(809, 259);
             this.linkKryptonSaveFileDialog.Name = "linkKryptonSaveFileDialog";
             this.linkKryptonSaveFileDialog.Size = new System.Drawing.Size(161, 20);
             this.linkKryptonSaveFileDialog.StateCommon.AdjacentGap = 5;
@@ -453,10 +481,11 @@
             this.linkKryptonSaveFileDialog.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonSaveFileDialog.Values.Image")));
             this.linkKryptonSaveFileDialog.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonSaveFileDialog.Values.Text = "Krypton SaveFile Dialog";
+            this.linkKryptonSaveFileDialog.LinkClicked += new System.EventHandler(this.linkKryptonSaveFileDialog_LinkClicked);
             // 
             // linkKryptonPrintDialog
             // 
-            this.linkKryptonPrintDialog.Location = new System.Drawing.Point(810, 78);
+            this.linkKryptonPrintDialog.Location = new System.Drawing.Point(809, 104);
             this.linkKryptonPrintDialog.Name = "linkKryptonPrintDialog";
             this.linkKryptonPrintDialog.Size = new System.Drawing.Size(142, 20);
             this.linkKryptonPrintDialog.StateCommon.AdjacentGap = 5;
@@ -464,10 +493,11 @@
             this.linkKryptonPrintDialog.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonPrintDialog.Values.Image")));
             this.linkKryptonPrintDialog.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonPrintDialog.Values.Text = "Krypton Print Dialog";
+            this.linkKryptonPrintDialog.LinkClicked += new System.EventHandler(this.linkKryptonPrintDialog_LinkClicked);
             // 
             // linkKryptonOpenFileDialog
             // 
-            this.linkKryptonOpenFileDialog.Location = new System.Drawing.Point(549, 356);
+            this.linkKryptonOpenFileDialog.Location = new System.Drawing.Point(809, 11);
             this.linkKryptonOpenFileDialog.Name = "linkKryptonOpenFileDialog";
             this.linkKryptonOpenFileDialog.Size = new System.Drawing.Size(165, 20);
             this.linkKryptonOpenFileDialog.StateCommon.AdjacentGap = 5;
@@ -475,10 +505,11 @@
             this.linkKryptonOpenFileDialog.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonOpenFileDialog.Values.Image")));
             this.linkKryptonOpenFileDialog.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonOpenFileDialog.Values.Text = "Krypton OpenFile Dialog";
+            this.linkKryptonOpenFileDialog.LinkClicked += new System.EventHandler(this.linkKryptonOpenFileDialog_LinkClicked);
             // 
             // linkKryptonListView
             // 
-            this.linkKryptonListView.Location = new System.Drawing.Point(549, 186);
+            this.linkKryptonListView.Location = new System.Drawing.Point(549, 216);
             this.linkKryptonListView.Name = "linkKryptonListView";
             this.linkKryptonListView.Size = new System.Drawing.Size(126, 20);
             this.linkKryptonListView.StateCommon.AdjacentGap = 5;
@@ -486,10 +517,11 @@
             this.linkKryptonListView.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonListView.Values.Image")));
             this.linkKryptonListView.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonListView.Values.Text = "Krypton List View";
+            this.linkKryptonListView.LinkClicked += new System.EventHandler(this.linkKryptonListView_LinkClicked);
             // 
             // linkKryptonFontDialog
             // 
-            this.linkKryptonFontDialog.Location = new System.Drawing.Point(268, 176);
+            this.linkKryptonFontDialog.Location = new System.Drawing.Point(268, 192);
             this.linkKryptonFontDialog.Name = "linkKryptonFontDialog";
             this.linkKryptonFontDialog.Size = new System.Drawing.Size(141, 20);
             this.linkKryptonFontDialog.StateCommon.AdjacentGap = 5;
@@ -497,10 +529,11 @@
             this.linkKryptonFontDialog.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonFontDialog.Values.Image")));
             this.linkKryptonFontDialog.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonFontDialog.Values.Text = "Krypton Font Dialog";
+            this.linkKryptonFontDialog.LinkClicked += new System.EventHandler(this.linkKryptonFontDialog_LinkClicked);
             // 
             // linkKryptonFolderBrowser
             // 
-            this.linkKryptonFolderBrowser.Location = new System.Drawing.Point(268, 144);
+            this.linkKryptonFolderBrowser.Location = new System.Drawing.Point(268, 160);
             this.linkKryptonFolderBrowser.Name = "linkKryptonFolderBrowser";
             this.linkKryptonFolderBrowser.Size = new System.Drawing.Size(159, 20);
             this.linkKryptonFolderBrowser.StateCommon.AdjacentGap = 5;
@@ -508,16 +541,18 @@
             this.linkKryptonFolderBrowser.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonFolderBrowser.Values.Image")));
             this.linkKryptonFolderBrowser.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonFolderBrowser.Values.Text = "Krypton Folder Browser";
+            this.linkKryptonFolderBrowser.LinkClicked += new System.EventHandler(this.linkKryptonFolderBrowser_LinkClicked);
             // 
             // kllblIntegratedToolbar
             // 
-            this.kllblIntegratedToolbar.Location = new System.Drawing.Point(549, 50);
+            this.kllblIntegratedToolbar.Location = new System.Drawing.Point(549, 80);
             this.kllblIntegratedToolbar.Name = "kllblIntegratedToolbar";
             this.kllblIntegratedToolbar.Size = new System.Drawing.Size(126, 20);
             this.kllblIntegratedToolbar.TabIndex = 44;
             this.kllblIntegratedToolbar.Values.Image = ((System.Drawing.Image)(resources.GetObject("kllblIntegratedToolbar.Values.Image")));
             this.kllblIntegratedToolbar.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.kllblIntegratedToolbar.Values.Text = "IntegratedToolbar";
+            this.kllblIntegratedToolbar.LinkClicked += new System.EventHandler(this.kllblIntegratedToolbar_LinkClicked);
             // 
             // linkKryptonColorDialog
             // 
@@ -529,67 +564,74 @@
             this.linkKryptonColorDialog.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonColorDialog.Values.Image")));
             this.linkKryptonColorDialog.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonColorDialog.Values.Text = "Krypton Color Dialog";
+            this.linkKryptonColorDialog.LinkClicked += new System.EventHandler(this.linkKryptonColorDialog_LinkClicked);
             // 
             // kllKryptonThemeSelector
             // 
-            this.kllKryptonThemeSelector.Location = new System.Drawing.Point(1069, 121);
+            this.kllKryptonThemeSelector.Location = new System.Drawing.Point(1069, 155);
             this.kllKryptonThemeSelector.Name = "kllKryptonThemeSelector";
             this.kllKryptonThemeSelector.Size = new System.Drawing.Size(152, 20);
             this.kllKryptonThemeSelector.TabIndex = 46;
             this.kllKryptonThemeSelector.Values.Image = ((System.Drawing.Image)(resources.GetObject("kllKryptonThemeSelector.Values.Image")));
             this.kllKryptonThemeSelector.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.kllKryptonThemeSelector.Values.Text = "KryptonThemeSelector";
+            this.kllKryptonThemeSelector.LinkClicked += new System.EventHandler(this.kllKryptonThemeSelector_LinkClicked);
             // 
             // kllProgressBar
             // 
-            this.kllProgressBar.Location = new System.Drawing.Point(810, 109);
+            this.kllProgressBar.Location = new System.Drawing.Point(809, 135);
             this.kllProgressBar.Name = "kllProgressBar";
             this.kllProgressBar.Size = new System.Drawing.Size(135, 20);
             this.kllProgressBar.TabIndex = 45;
             this.kllProgressBar.Values.Image = ((System.Drawing.Image)(resources.GetObject("kllProgressBar.Values.Image")));
             this.kllProgressBar.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.kllProgressBar.Values.Text = "KryptonProgressBar";
+            this.kllProgressBar.LinkClicked += new System.EventHandler(this.kllProgressBar_LinkClicked);
             // 
             // kllPropertyGrid
             // 
-            this.kllPropertyGrid.Location = new System.Drawing.Point(810, 140);
+            this.kllPropertyGrid.Location = new System.Drawing.Point(809, 166);
             this.kllPropertyGrid.Name = "kllPropertyGrid";
             this.kllPropertyGrid.Size = new System.Drawing.Size(140, 20);
             this.kllPropertyGrid.TabIndex = 43;
             this.kllPropertyGrid.Values.Image = ((System.Drawing.Image)(resources.GetObject("kllPropertyGrid.Values.Image")));
             this.kllPropertyGrid.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.kllPropertyGrid.Values.Text = "KryptonPropertyGrid";
+            this.kllPropertyGrid.LinkClicked += new System.EventHandler(this.kllPropertyGrid_LinkClicked);
             // 
             // kllKryptonScrollBars
             // 
-            this.kllKryptonScrollBars.Location = new System.Drawing.Point(810, 264);
+            this.kllKryptonScrollBars.Location = new System.Drawing.Point(809, 290);
             this.kllKryptonScrollBars.Name = "kllKryptonScrollBars";
             this.kllKryptonScrollBars.Size = new System.Drawing.Size(123, 20);
             this.kllKryptonScrollBars.TabIndex = 42;
             this.kllKryptonScrollBars.Values.Image = ((System.Drawing.Image)(resources.GetObject("kllKryptonScrollBars.Values.Image")));
             this.kllKryptonScrollBars.Values.Text = "KryptonScrollBars";
+            this.kllKryptonScrollBars.LinkClicked += new System.EventHandler(this.kllKryptonScrollBars_LinkClicked);
             // 
             // kllKryptonHelpIcon
             // 
-            this.kllKryptonHelpIcon.Location = new System.Drawing.Point(268, 368);
+            this.kllKryptonHelpIcon.Location = new System.Drawing.Point(549, 11);
             this.kllKryptonHelpIcon.Name = "kllKryptonHelpIcon";
             this.kllKryptonHelpIcon.Size = new System.Drawing.Size(119, 20);
             this.kllKryptonHelpIcon.TabIndex = 41;
             this.kllKryptonHelpIcon.Values.Image = ((System.Drawing.Image)(resources.GetObject("kllKryptonHelpIcon.Values.Image")));
             this.kllKryptonHelpIcon.Values.Text = "KryptonHelpIcon";
+            this.kllKryptonHelpIcon.LinkClicked += new System.EventHandler(this.kllKryptonHelpIcon_LinkClicked);
             // 
             // kllKryptonWebBrowser
             // 
-            this.kllKryptonWebBrowser.Location = new System.Drawing.Point(1069, 226);
+            this.kllKryptonWebBrowser.Location = new System.Drawing.Point(1069, 260);
             this.kllKryptonWebBrowser.Name = "kllKryptonWebBrowser";
             this.kllKryptonWebBrowser.Size = new System.Drawing.Size(139, 20);
             this.kllKryptonWebBrowser.TabIndex = 40;
             this.kllKryptonWebBrowser.Values.Image = ((System.Drawing.Image)(resources.GetObject("kllKryptonWebBrowser.Values.Image")));
             this.kllKryptonWebBrowser.Values.Text = "KryptonWebBrowser";
+            this.kllKryptonWebBrowser.LinkClicked += new System.EventHandler(this.kllKryptonWebBrowser_LinkClicked);
             // 
             // linkKryptonTreeView
             // 
-            this.linkKryptonTreeView.Location = new System.Drawing.Point(1069, 191);
+            this.linkKryptonTreeView.Location = new System.Drawing.Point(1069, 225);
             this.linkKryptonTreeView.Name = "linkKryptonTreeView";
             this.linkKryptonTreeView.Size = new System.Drawing.Size(124, 20);
             this.linkKryptonTreeView.StateCommon.AdjacentGap = 5;
@@ -597,10 +639,11 @@
             this.linkKryptonTreeView.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonTreeView.Values.Image")));
             this.linkKryptonTreeView.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonTreeView.Values.Text = "KryptonTreeView";
+            this.linkKryptonTreeView.LinkClicked += new System.EventHandler(this.linkKryptonTreeView_LinkClicked);
             // 
             // linkKryptonInputBox
             // 
-            this.linkKryptonInputBox.Location = new System.Drawing.Point(549, 16);
+            this.linkKryptonInputBox.Location = new System.Drawing.Point(549, 46);
             this.linkKryptonInputBox.Name = "linkKryptonInputBox";
             this.linkKryptonInputBox.Size = new System.Drawing.Size(123, 20);
             this.linkKryptonInputBox.StateCommon.AdjacentGap = 5;
@@ -608,10 +651,11 @@
             this.linkKryptonInputBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonInputBox.Values.Image")));
             this.linkKryptonInputBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonInputBox.Values.Text = "KryptonInputBox";
+            this.linkKryptonInputBox.LinkClicked += new System.EventHandler(this.linkKryptonInputBox_LinkClicked);
             // 
             // linkKryptonTaskDialog
             // 
-            this.linkKryptonTaskDialog.Location = new System.Drawing.Point(1069, 51);
+            this.linkKryptonTaskDialog.Location = new System.Drawing.Point(1069, 85);
             this.linkKryptonTaskDialog.Name = "linkKryptonTaskDialog";
             this.linkKryptonTaskDialog.Size = new System.Drawing.Size(134, 20);
             this.linkKryptonTaskDialog.StateCommon.AdjacentGap = 5;
@@ -619,10 +663,11 @@
             this.linkKryptonTaskDialog.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonTaskDialog.Values.Image")));
             this.linkKryptonTaskDialog.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonTaskDialog.Values.Text = "KryptonTaskDialog";
+            this.linkKryptonTaskDialog.LinkClicked += new System.EventHandler(this.linkKryptonTaskDialog_LinkClicked);
             // 
             // linkKryptonMessageBox
             // 
-            this.linkKryptonMessageBox.Location = new System.Drawing.Point(549, 254);
+            this.linkKryptonMessageBox.Location = new System.Drawing.Point(549, 284);
             this.linkKryptonMessageBox.Name = "linkKryptonMessageBox";
             this.linkKryptonMessageBox.Size = new System.Drawing.Size(143, 20);
             this.linkKryptonMessageBox.StateCommon.AdjacentGap = 5;
@@ -630,10 +675,11 @@
             this.linkKryptonMessageBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonMessageBox.Values.Image")));
             this.linkKryptonMessageBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonMessageBox.Values.Text = "KryptonMessageBox";
+            this.linkKryptonMessageBox.LinkClicked += new System.EventHandler(this.linkKryptonMessageBox_LinkClicked);
             // 
             // linkKryptobTrackBar
             // 
-            this.linkKryptobTrackBar.Location = new System.Drawing.Point(1069, 156);
+            this.linkKryptobTrackBar.Location = new System.Drawing.Point(1069, 190);
             this.linkKryptobTrackBar.Name = "linkKryptobTrackBar";
             this.linkKryptobTrackBar.Size = new System.Drawing.Size(121, 20);
             this.linkKryptobTrackBar.StateCommon.AdjacentGap = 5;
@@ -641,10 +687,11 @@
             this.linkKryptobTrackBar.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptobTrackBar.Values.Image")));
             this.linkKryptobTrackBar.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptobTrackBar.Values.Text = "KryptonTrackBar";
+            this.linkKryptobTrackBar.LinkClicked += new System.EventHandler(this.linkKryptonTrackBar_LinkClicked);
             // 
             // linkKryptonGroupBox
             // 
-            this.linkKryptonGroupBox.Location = new System.Drawing.Point(268, 272);
+            this.linkKryptonGroupBox.Location = new System.Drawing.Point(268, 288);
             this.linkKryptonGroupBox.Name = "linkKryptonGroupBox";
             this.linkKryptonGroupBox.Size = new System.Drawing.Size(129, 20);
             this.linkKryptonGroupBox.StateCommon.AdjacentGap = 5;
@@ -652,10 +699,11 @@
             this.linkKryptonGroupBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonGroupBox.Values.Image")));
             this.linkKryptonGroupBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonGroupBox.Values.Text = "KryptonGroupBox";
+            this.linkKryptonGroupBox.LinkClicked += new System.EventHandler(this.linkKryptonGroupBox_LinkClicked);
             // 
             // linkKryptonWrapLabel
             // 
-            this.linkKryptonWrapLabel.Location = new System.Drawing.Point(1069, 261);
+            this.linkKryptonWrapLabel.Location = new System.Drawing.Point(1069, 295);
             this.linkKryptonWrapLabel.Name = "linkKryptonWrapLabel";
             this.linkKryptonWrapLabel.Size = new System.Drawing.Size(133, 20);
             this.linkKryptonWrapLabel.StateCommon.AdjacentGap = 5;
@@ -663,10 +711,11 @@
             this.linkKryptonWrapLabel.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonWrapLabel.Values.Image")));
             this.linkKryptonWrapLabel.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonWrapLabel.Values.Text = "KryptonWrapLabel";
+            this.linkKryptonWrapLabel.LinkClicked += new System.EventHandler(this.linkKryptonWrapLabel_LinkClicked);
             // 
             // linkKryptonSeparator
             // 
-            this.linkKryptonSeparator.Location = new System.Drawing.Point(810, 295);
+            this.linkKryptonSeparator.Location = new System.Drawing.Point(809, 321);
             this.linkKryptonSeparator.Name = "linkKryptonSeparator";
             this.linkKryptonSeparator.Size = new System.Drawing.Size(128, 20);
             this.linkKryptonSeparator.StateCommon.AdjacentGap = 5;
@@ -674,32 +723,34 @@
             this.linkKryptonSeparator.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonSeparator.Values.Image")));
             this.linkKryptonSeparator.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonSeparator.Values.Text = "KryptonSeparator";
+            this.linkKryptonSeparator.LinkClicked += new System.EventHandler(this.linkKryptonSeparator_LinkClicked);
             // 
-            // kryptonLinkLabel2
+            // linkMonthCalendar
             // 
-            this.kryptonLinkLabel2.Location = new System.Drawing.Point(549, 288);
-            this.kryptonLinkLabel2.Name = "kryptonLinkLabel2";
-            this.kryptonLinkLabel2.Size = new System.Drawing.Size(159, 20);
-            this.kryptonLinkLabel2.StateCommon.AdjacentGap = 5;
-            this.kryptonLinkLabel2.TabIndex = 23;
-            this.kryptonLinkLabel2.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonLinkLabel2.Values.Image")));
-            this.kryptonLinkLabel2.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.kryptonLinkLabel2.Values.Text = "KryptonMonthCalendar";
+            this.linkMonthCalendar.Location = new System.Drawing.Point(549, 318);
+            this.linkMonthCalendar.Name = "linkMonthCalendar";
+            this.linkMonthCalendar.Size = new System.Drawing.Size(159, 20);
+            this.linkMonthCalendar.StateCommon.AdjacentGap = 5;
+            this.linkMonthCalendar.TabIndex = 23;
+            this.linkMonthCalendar.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkMonthCalendar.Values.Image")));
+            this.linkMonthCalendar.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.linkMonthCalendar.Values.Text = "KryptonMonthCalendar";
             // 
-            // kryptonLinkLabel1
+            // linkDateTimePicker
             // 
-            this.kryptonLinkLabel1.Location = new System.Drawing.Point(268, 48);
-            this.kryptonLinkLabel1.Name = "kryptonLinkLabel1";
-            this.kryptonLinkLabel1.Size = new System.Drawing.Size(159, 20);
-            this.kryptonLinkLabel1.StateCommon.AdjacentGap = 5;
-            this.kryptonLinkLabel1.TabIndex = 22;
-            this.kryptonLinkLabel1.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonLinkLabel1.Values.Image")));
-            this.kryptonLinkLabel1.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.kryptonLinkLabel1.Values.Text = "KryptonDateTimePicker";
+            this.linkDateTimePicker.Location = new System.Drawing.Point(268, 64);
+            this.linkDateTimePicker.Name = "linkDateTimePicker";
+            this.linkDateTimePicker.Size = new System.Drawing.Size(159, 20);
+            this.linkDateTimePicker.StateCommon.AdjacentGap = 5;
+            this.linkDateTimePicker.TabIndex = 22;
+            this.linkDateTimePicker.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonLinkLabel1.Values.Image")));
+            this.linkDateTimePicker.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.linkDateTimePicker.Values.Text = "KryptonDateTimePicker";
+            this.linkDateTimePicker.LinkClicked += new System.EventHandler(this.linkDateTimePicker_LinkClicked);
             // 
             // linkKryptonDomainUpDown
             // 
-            this.linkKryptonDomainUpDown.Location = new System.Drawing.Point(268, 80);
+            this.linkKryptonDomainUpDown.Location = new System.Drawing.Point(268, 96);
             this.linkKryptonDomainUpDown.Name = "linkKryptonDomainUpDown";
             this.linkKryptonDomainUpDown.Size = new System.Drawing.Size(165, 20);
             this.linkKryptonDomainUpDown.StateCommon.AdjacentGap = 5;
@@ -707,6 +758,7 @@
             this.linkKryptonDomainUpDown.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonDomainUpDown.Values.Image")));
             this.linkKryptonDomainUpDown.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonDomainUpDown.Values.Text = "KryptonDomainUpDown";
+            this.linkKryptonDomainUpDown.LinkClicked += new System.EventHandler(this.linkKryptonDomainUpDown_LinkClicked);
             // 
             // linkKryptonBreadCrumb
             // 
@@ -718,10 +770,11 @@
             this.linkKryptonBreadCrumb.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonBreadCrumb.Values.Image")));
             this.linkKryptonBreadCrumb.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonBreadCrumb.Values.Text = "KryptonBreadCrumb";
+            this.linkKryptonBreadCrumb.LinkClicked += new System.EventHandler(this.linkKryptonBreadCrumb_LinkClicked);
             // 
             // linkKryptonNumericUpDown
             // 
-            this.linkKryptonNumericUpDown.Location = new System.Drawing.Point(549, 322);
+            this.linkKryptonNumericUpDown.Location = new System.Drawing.Point(549, 352);
             this.linkKryptonNumericUpDown.Name = "linkKryptonNumericUpDown";
             this.linkKryptonNumericUpDown.Size = new System.Drawing.Size(169, 20);
             this.linkKryptonNumericUpDown.StateCommon.AdjacentGap = 5;
@@ -729,6 +782,7 @@
             this.linkKryptonNumericUpDown.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonNumericUpDown.Values.Image")));
             this.linkKryptonNumericUpDown.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonNumericUpDown.Values.Text = "KryptonNumericUpDown";
+            this.linkKryptonNumericUpDown.LinkClicked += new System.EventHandler(this.linkKryptonNumericUpDown_LinkClicked);
             // 
             // linkKryptonCommand
             // 
@@ -740,6 +794,7 @@
             this.linkKryptonCommand.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonCommand.Values.Image")));
             this.linkKryptonCommand.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonCommand.Values.Text = "KryptonCommand";
+            this.linkKryptonCommand.LinkClicked += new System.EventHandler(this.linkKryptonCommand_LinkClicked);
             // 
             // linkKryptonCheckedListBox
             // 
@@ -751,10 +806,11 @@
             this.linkKryptonCheckedListBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonCheckedListBox.Values.Image")));
             this.linkKryptonCheckedListBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonCheckedListBox.Values.Text = "KryptonCheckedListBox";
+            this.linkKryptonCheckedListBox.LinkClicked += new System.EventHandler(this.linkKryptonCheckedListBox_LinkClicked);
             // 
             // linkKryptonListBox
             // 
-            this.linkKryptonListBox.Location = new System.Drawing.Point(549, 152);
+            this.linkKryptonListBox.Location = new System.Drawing.Point(549, 182);
             this.linkKryptonListBox.Name = "linkKryptonListBox";
             this.linkKryptonListBox.Size = new System.Drawing.Size(113, 20);
             this.linkKryptonListBox.StateCommon.AdjacentGap = 5;
@@ -762,6 +818,7 @@
             this.linkKryptonListBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonListBox.Values.Image")));
             this.linkKryptonListBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonListBox.Values.Text = "KryptonListBox";
+            this.linkKryptonListBox.LinkClicked += new System.EventHandler(this.linkKryptonListBox_LinkClicked);
             // 
             // linkKryptonColorButton
             // 
@@ -773,10 +830,11 @@
             this.linkKryptonColorButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonColorButton.Values.Image")));
             this.linkKryptonColorButton.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonColorButton.Values.Text = "KryptonColorButton";
+            this.linkKryptonColorButton.LinkClicked += new System.EventHandler(this.linkKryptonColorButton_LinkClicked);
             // 
             // linkKryptonDropButton
             // 
-            this.linkKryptonDropButton.Location = new System.Drawing.Point(268, 112);
+            this.linkKryptonDropButton.Location = new System.Drawing.Point(268, 128);
             this.linkKryptonDropButton.Name = "linkKryptonDropButton";
             this.linkKryptonDropButton.Size = new System.Drawing.Size(139, 20);
             this.linkKryptonDropButton.StateCommon.AdjacentGap = 5;
@@ -784,10 +842,11 @@
             this.linkKryptonDropButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonDropButton.Values.Image")));
             this.linkKryptonDropButton.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonDropButton.Values.Text = "KryptonDropButton";
+            this.linkKryptonDropButton.LinkClicked += new System.EventHandler(this.linkKryptonDropButton_LinkClicked);
             // 
             // linkKryptonMaskedTextBox
             // 
-            this.linkKryptonMaskedTextBox.Location = new System.Drawing.Point(549, 220);
+            this.linkKryptonMaskedTextBox.Location = new System.Drawing.Point(549, 250);
             this.linkKryptonMaskedTextBox.Name = "linkKryptonMaskedTextBox";
             this.linkKryptonMaskedTextBox.Size = new System.Drawing.Size(160, 20);
             this.linkKryptonMaskedTextBox.StateCommon.AdjacentGap = 5;
@@ -795,10 +854,11 @@
             this.linkKryptonMaskedTextBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonMaskedTextBox.Values.Image")));
             this.linkKryptonMaskedTextBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonMaskedTextBox.Values.Text = "KryptonMaskedTextBox";
+            this.linkKryptonMaskedTextBox.LinkClicked += new System.EventHandler(this.linkKryptonMaskedTextBox_LinkClicked);
             // 
             // linkKryptonContextMenu
             // 
-            this.linkKryptonContextMenu.Location = new System.Drawing.Point(3, 364);
+            this.linkKryptonContextMenu.Location = new System.Drawing.Point(268, 11);
             this.linkKryptonContextMenu.Name = "linkKryptonContextMenu";
             this.linkKryptonContextMenu.Size = new System.Drawing.Size(149, 20);
             this.linkKryptonContextMenu.StateCommon.AdjacentGap = 5;
@@ -806,10 +866,11 @@
             this.linkKryptonContextMenu.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonContextMenu.Values.Image")));
             this.linkKryptonContextMenu.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonContextMenu.Values.Text = "KryptonContextMenu";
+            this.linkKryptonContextMenu.LinkClicked += new System.EventHandler(this.linkKryptonContextMenu_LinkClicked);
             // 
             // linkKryptonRichTextBox
             // 
-            this.linkKryptonRichTextBox.Location = new System.Drawing.Point(810, 202);
+            this.linkKryptonRichTextBox.Location = new System.Drawing.Point(809, 228);
             this.linkKryptonRichTextBox.Name = "linkKryptonRichTextBox";
             this.linkKryptonRichTextBox.Size = new System.Drawing.Size(141, 20);
             this.linkKryptonRichTextBox.StateCommon.AdjacentGap = 5;
@@ -817,6 +878,7 @@
             this.linkKryptonRichTextBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonRichTextBox.Values.Image")));
             this.linkKryptonRichTextBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonRichTextBox.Values.Text = "KryptonRichTextBox";
+            this.linkKryptonRichTextBox.LinkClicked += new System.EventHandler(this.linkKryptonRichTextBox_LinkClicked);
             // 
             // linkKryptonComboBox
             // 
@@ -828,10 +890,11 @@
             this.linkKryptonComboBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonComboBox.Values.Image")));
             this.linkKryptonComboBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonComboBox.Values.Text = "KryptonComboBox";
+            this.linkKryptonComboBox.LinkClicked += new System.EventHandler(this.linkKryptonComboBox_LinkClicked);
             // 
             // linkKryptonTextBox
             // 
-            this.linkKryptonTextBox.Location = new System.Drawing.Point(1069, 86);
+            this.linkKryptonTextBox.Location = new System.Drawing.Point(1069, 120);
             this.linkKryptonTextBox.Name = "linkKryptonTextBox";
             this.linkKryptonTextBox.Size = new System.Drawing.Size(117, 20);
             this.linkKryptonTextBox.StateCommon.AdjacentGap = 5;
@@ -839,10 +902,11 @@
             this.linkKryptonTextBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonTextBox.Values.Image")));
             this.linkKryptonTextBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonTextBox.Values.Text = "KryptonTextBox";
+            this.linkKryptonTextBox.LinkClicked += new System.EventHandler(this.linkKryptonTextBox_LinkClicked);
             // 
             // linkKryptonDataGridView
             // 
-            this.linkKryptonDataGridView.Location = new System.Drawing.Point(268, 16);
+            this.linkKryptonDataGridView.Location = new System.Drawing.Point(268, 32);
             this.linkKryptonDataGridView.Name = "linkKryptonDataGridView";
             this.linkKryptonDataGridView.Size = new System.Drawing.Size(149, 20);
             this.linkKryptonDataGridView.StateCommon.AdjacentGap = 5;
@@ -850,10 +914,11 @@
             this.linkKryptonDataGridView.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonDataGridView.Values.Image")));
             this.linkKryptonDataGridView.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonDataGridView.Values.Text = "KryptonDataGridView";
+            this.linkKryptonDataGridView.LinkClicked += new System.EventHandler(this.linkKryptonDataGridView_LinkClicked);
             // 
             // linkKryptonRadioButton
             // 
-            this.linkKryptonRadioButton.Location = new System.Drawing.Point(810, 171);
+            this.linkKryptonRadioButton.Location = new System.Drawing.Point(809, 197);
             this.linkKryptonRadioButton.Name = "linkKryptonRadioButton";
             this.linkKryptonRadioButton.Size = new System.Drawing.Size(143, 20);
             this.linkKryptonRadioButton.StateCommon.AdjacentGap = 5;
@@ -861,6 +926,7 @@
             this.linkKryptonRadioButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonRadioButton.Values.Image")));
             this.linkKryptonRadioButton.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonRadioButton.Values.Text = "KryptonRadioButton";
+            this.linkKryptonRadioButton.LinkClicked += new System.EventHandler(this.linkKryptonRadioButton_LinkClicked);
             // 
             // linkKryptonCheckBox
             // 
@@ -872,6 +938,7 @@
             this.linkKryptonCheckBox.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonCheckBox.Values.Image")));
             this.linkKryptonCheckBox.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonCheckBox.Values.Text = "KryptonCheckBox";
+            this.linkKryptonCheckBox.LinkClicked += new System.EventHandler(this.linkKryptonCheckBox_LinkClicked);
             // 
             // linkKryptonBorderEdge
             // 
@@ -883,10 +950,11 @@
             this.linkKryptonBorderEdge.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonBorderEdge.Values.Image")));
             this.linkKryptonBorderEdge.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonBorderEdge.Values.Text = "KryptonBorderEdge";
+            this.linkKryptonBorderEdge.LinkClicked += new System.EventHandler(this.linkKryptonBorderEdge_LinkClicked);
             // 
             // linkKryptonForm
             // 
-            this.linkKryptonForm.Location = new System.Drawing.Point(268, 208);
+            this.linkKryptonForm.Location = new System.Drawing.Point(268, 224);
             this.linkKryptonForm.Name = "linkKryptonForm";
             this.linkKryptonForm.Size = new System.Drawing.Size(103, 20);
             this.linkKryptonForm.StateCommon.AdjacentGap = 5;
@@ -894,6 +962,7 @@
             this.linkKryptonForm.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonForm.Values.Image")));
             this.linkKryptonForm.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonForm.Values.Text = "KryptonForm";
+            this.linkKryptonForm.LinkClicked += new System.EventHandler(this.linkKryptonForm_LinkClicked);
             // 
             // linkKryptonCheckSet
             // 
@@ -905,6 +974,7 @@
             this.linkKryptonCheckSet.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonCheckSet.Values.Image")));
             this.linkKryptonCheckSet.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonCheckSet.Values.Text = "KryptonCheckSet";
+            this.linkKryptonCheckSet.LinkClicked += new System.EventHandler(this.linkKryptonCheckSet_LinkClicked);
             // 
             // linkKryptonCheckButton
             // 
@@ -916,10 +986,11 @@
             this.linkKryptonCheckButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonCheckButton.Values.Image")));
             this.linkKryptonCheckButton.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonCheckButton.Values.Text = "KryptonCheckButton";
+            this.linkKryptonCheckButton.LinkClicked += new System.EventHandler(this.linkKryptonCheckButton_LinkClicked);
             // 
             // linkKryptonLinkLabel
             // 
-            this.linkKryptonLinkLabel.Location = new System.Drawing.Point(549, 118);
+            this.linkKryptonLinkLabel.Location = new System.Drawing.Point(549, 148);
             this.linkKryptonLinkLabel.Name = "linkKryptonLinkLabel";
             this.linkKryptonLinkLabel.Size = new System.Drawing.Size(125, 20);
             this.linkKryptonLinkLabel.StateCommon.AdjacentGap = 5;
@@ -927,10 +998,11 @@
             this.linkKryptonLinkLabel.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonLinkLabel.Values.Image")));
             this.linkKryptonLinkLabel.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonLinkLabel.Values.Text = "KryptonLinkLabel";
+            this.linkKryptonLinkLabel.LinkClicked += new System.EventHandler(this.linkKryptonLinkLabel_LinkClicked);
             // 
             // linkKryptonSplitContainer
             // 
-            this.linkKryptonSplitContainer.Location = new System.Drawing.Point(810, 326);
+            this.linkKryptonSplitContainer.Location = new System.Drawing.Point(809, 352);
             this.linkKryptonSplitContainer.Name = "linkKryptonSplitContainer";
             this.linkKryptonSplitContainer.Size = new System.Drawing.Size(152, 20);
             this.linkKryptonSplitContainer.StateCommon.AdjacentGap = 5;
@@ -938,10 +1010,11 @@
             this.linkKryptonSplitContainer.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonSplitContainer.Values.Image")));
             this.linkKryptonSplitContainer.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonSplitContainer.Values.Text = "KryptonSplitContainer";
+            this.linkKryptonSplitContainer.LinkClicked += new System.EventHandler(this.linkKryptonSplitContainer_LinkClicked);
             // 
             // linkKryptonPanel
             // 
-            this.linkKryptonPanel.Location = new System.Drawing.Point(810, 47);
+            this.linkKryptonPanel.Location = new System.Drawing.Point(809, 73);
             this.linkKryptonPanel.Name = "linkKryptonPanel";
             this.linkKryptonPanel.Size = new System.Drawing.Size(104, 20);
             this.linkKryptonPanel.StateCommon.AdjacentGap = 5;
@@ -949,10 +1022,11 @@
             this.linkKryptonPanel.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonPanel.Values.Image")));
             this.linkKryptonPanel.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonPanel.Values.Text = "KryptonPanel";
+            this.linkKryptonPanel.LinkClicked += new System.EventHandler(this.linkKryptonPanel_LinkClicked);
             // 
             // linkKryptonPalette
             // 
-            this.linkKryptonPalette.Location = new System.Drawing.Point(810, 16);
+            this.linkKryptonPalette.Location = new System.Drawing.Point(809, 42);
             this.linkKryptonPalette.Name = "linkKryptonPalette";
             this.linkKryptonPalette.Size = new System.Drawing.Size(112, 20);
             this.linkKryptonPalette.StateCommon.AdjacentGap = 5;
@@ -960,6 +1034,7 @@
             this.linkKryptonPalette.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonPalette.Values.Image")));
             this.linkKryptonPalette.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonPalette.Values.Text = "KryptonPalette";
+            this.linkKryptonPalette.LinkClicked += new System.EventHandler(this.linkKryptonPalette_LinkClicked);
             // 
             // linkKryptonButton
             // 
@@ -971,10 +1046,11 @@
             this.linkKryptonButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonButton.Values.Image")));
             this.linkKryptonButton.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonButton.Values.Text = "KryptonButton";
+            this.linkKryptonButton.LinkClicked += new System.EventHandler(this.linkKryptonButton_LinkClicked);
             // 
             // linkKryptonLabel
             // 
-            this.linkKryptonLabel.Location = new System.Drawing.Point(549, 84);
+            this.linkKryptonLabel.Location = new System.Drawing.Point(549, 114);
             this.linkKryptonLabel.Name = "linkKryptonLabel";
             this.linkKryptonLabel.Size = new System.Drawing.Size(103, 20);
             this.linkKryptonLabel.StateCommon.AdjacentGap = 5;
@@ -982,10 +1058,11 @@
             this.linkKryptonLabel.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonLabel.Values.Image")));
             this.linkKryptonLabel.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonLabel.Values.Text = "KryptonLabel";
+            this.linkKryptonLabel.LinkClicked += new System.EventHandler(this.linkKryptonLabel_LinkClicked);
             // 
             // linkKryptonGroup
             // 
-            this.linkKryptonGroup.Location = new System.Drawing.Point(268, 240);
+            this.linkKryptonGroup.Location = new System.Drawing.Point(268, 256);
             this.linkKryptonGroup.Name = "linkKryptonGroup";
             this.linkKryptonGroup.Size = new System.Drawing.Size(109, 20);
             this.linkKryptonGroup.StateCommon.AdjacentGap = 5;
@@ -993,10 +1070,11 @@
             this.linkKryptonGroup.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonGroup.Values.Image")));
             this.linkKryptonGroup.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonGroup.Values.Text = "KryptonGroup";
+            this.linkKryptonGroup.LinkClicked += new System.EventHandler(this.linkKryptonGroup_LinkClicked);
             // 
             // linkKryptonHeaderGroup
             // 
-            this.linkKryptonHeaderGroup.Location = new System.Drawing.Point(268, 336);
+            this.linkKryptonHeaderGroup.Location = new System.Drawing.Point(268, 352);
             this.linkKryptonHeaderGroup.Name = "linkKryptonHeaderGroup";
             this.linkKryptonHeaderGroup.Size = new System.Drawing.Size(148, 20);
             this.linkKryptonHeaderGroup.StateCommon.AdjacentGap = 5;
@@ -1004,10 +1082,11 @@
             this.linkKryptonHeaderGroup.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonHeaderGroup.Values.Image")));
             this.linkKryptonHeaderGroup.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonHeaderGroup.Values.Text = "KryptonHeaderGroup";
+            this.linkKryptonHeaderGroup.LinkClicked += new System.EventHandler(this.linkKryptonHeaderGroup_LinkClicked);
             // 
             // linkKryptonHeader
             // 
-            this.linkKryptonHeader.Location = new System.Drawing.Point(268, 304);
+            this.linkKryptonHeader.Location = new System.Drawing.Point(268, 320);
             this.linkKryptonHeader.Name = "linkKryptonHeader";
             this.linkKryptonHeader.Size = new System.Drawing.Size(114, 20);
             this.linkKryptonHeader.StateCommon.AdjacentGap = 5;
@@ -1015,6 +1094,7 @@
             this.linkKryptonHeader.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonHeader.Values.Image")));
             this.linkKryptonHeader.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.linkKryptonHeader.Values.Text = "KryptonHeader";
+            this.linkKryptonHeader.LinkClicked += new System.EventHandler(this.linkKryptonHeader_LinkClicked);
             // 
             // kryptonPage2
             // 
@@ -1034,7 +1114,7 @@
             this.kryptonPage2.LastVisibleSet = true;
             this.kryptonPage2.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage2.Name = "kryptonPage2";
-            this.kryptonPage2.Size = new System.Drawing.Size(532, 311);
+            this.kryptonPage2.Size = new System.Drawing.Size(1292, 394);
             this.kryptonPage2.Text = "Application Examples";
             this.kryptonPage2.ToolTipTitle = "Page ToolTip";
             this.kryptonPage2.UniqueName = "4722B7548CB44C0C4722B7548CB44C0C";
@@ -1046,6 +1126,7 @@
             this.linkInputForm.Size = new System.Drawing.Size(71, 20);
             this.linkInputForm.TabIndex = 0;
             this.linkInputForm.Values.Text = "Input Form";
+            this.linkInputForm.LinkClicked += new System.EventHandler(this.linkInputForm_LinkClicked);
             // 
             // linkMDIApplication
             // 
@@ -1054,6 +1135,7 @@
             this.linkMDIApplication.Size = new System.Drawing.Size(99, 20);
             this.linkMDIApplication.TabIndex = 6;
             this.linkMDIApplication.Values.Text = "MDI Application";
+            this.linkMDIApplication.LinkClicked += new System.EventHandler(this.linkMDIApplication_LinkClicked);
             // 
             // linkThreePaneApplicationBasic
             // 
@@ -1062,6 +1144,7 @@
             this.linkThreePaneApplicationBasic.Size = new System.Drawing.Size(175, 20);
             this.linkThreePaneApplicationBasic.TabIndex = 1;
             this.linkThreePaneApplicationBasic.Values.Text = "Three Pane Application (Basic)";
+            this.linkThreePaneApplicationBasic.LinkClicked += new System.EventHandler(this.linkThreePaneApplicationBasic_LinkClicked);
             // 
             // linkThreePaneApplicationExtended
             // 
@@ -1070,6 +1153,7 @@
             this.linkThreePaneApplicationExtended.Size = new System.Drawing.Size(198, 20);
             this.linkThreePaneApplicationExtended.TabIndex = 2;
             this.linkThreePaneApplicationExtended.Values.Text = "Three Pane Application (Extended)";
+            this.linkThreePaneApplicationExtended.LinkClicked += new System.EventHandler(this.linkThreePaneApplicationExtended_LinkClicked);
             // 
             // linkCustomControlUsingRenderers
             // 
@@ -1078,6 +1162,7 @@
             this.linkCustomControlUsingRenderers.Size = new System.Drawing.Size(188, 20);
             this.linkCustomControlUsingRenderers.TabIndex = 10;
             this.linkCustomControlUsingRenderers.Values.Text = "Custom Control using Renderers";
+            this.linkCustomControlUsingRenderers.LinkClicked += new System.EventHandler(this.linkCustomControlUsingRenderers_LinkClicked);
             // 
             // linkExpandingHeaderGroupsSplitters
             // 
@@ -1086,6 +1171,7 @@
             this.linkExpandingHeaderGroupsSplitters.Size = new System.Drawing.Size(205, 20);
             this.linkExpandingHeaderGroupsSplitters.TabIndex = 3;
             this.linkExpandingHeaderGroupsSplitters.Values.Text = "Expanding HeaderGroups (Splitters)";
+            this.linkExpandingHeaderGroupsSplitters.LinkClicked += new System.EventHandler(this.linkExpandingHeaderGroupsSplitters_LinkClicked);
             // 
             // linkCustomControlUsingPalettes
             // 
@@ -1094,6 +1180,7 @@
             this.linkCustomControlUsingPalettes.Size = new System.Drawing.Size(175, 20);
             this.linkCustomControlUsingPalettes.TabIndex = 9;
             this.linkCustomControlUsingPalettes.Values.Text = "Custom Control using Palettes";
+            this.linkCustomControlUsingPalettes.LinkClicked += new System.EventHandler(this.linkCustomControlUsingPalettes_LinkClicked);
             // 
             // linkLabelButtonSpecPlayground
             // 
@@ -1102,6 +1189,7 @@
             this.linkLabelButtonSpecPlayground.Size = new System.Drawing.Size(139, 20);
             this.linkLabelButtonSpecPlayground.TabIndex = 8;
             this.linkLabelButtonSpecPlayground.Values.Text = "ButtonSpec Playground";
+            this.linkLabelButtonSpecPlayground.LinkClicked += new System.EventHandler(this.linkLabelButtonSpecPlayground_LinkClicked);
             // 
             // linkExpandingHeaderGroupsDockStyle
             // 
@@ -1110,6 +1198,7 @@
             this.linkExpandingHeaderGroupsDockStyle.Size = new System.Drawing.Size(215, 20);
             this.linkExpandingHeaderGroupsDockStyle.TabIndex = 4;
             this.linkExpandingHeaderGroupsDockStyle.Values.Text = "Expanding HeaderGroups (DockStyle)";
+            this.linkExpandingHeaderGroupsDockStyle.LinkClicked += new System.EventHandler(this.linkExpandingHeaderGroupsDockStyle_LinkClicked);
             // 
             // linkChildControlStack
             // 
@@ -1118,6 +1207,7 @@
             this.linkChildControlStack.Size = new System.Drawing.Size(115, 20);
             this.linkChildControlStack.TabIndex = 7;
             this.linkChildControlStack.Values.Text = "Child Control Stack";
+            this.linkChildControlStack.LinkClicked += new System.EventHandler(this.linkChildControlStack_LinkClicked);
             // 
             // linkExpandingHeaderStack
             // 
@@ -1126,6 +1216,7 @@
             this.linkExpandingHeaderStack.Size = new System.Drawing.Size(190, 20);
             this.linkExpandingHeaderStack.TabIndex = 5;
             this.linkExpandingHeaderStack.Values.Text = "Expanding HeaderGroups (Stack)";
+            this.linkExpandingHeaderStack.LinkClicked += new System.EventHandler(this.linkExpandingHeaderStack_LinkClicked);
             // 
             // labeToolkitPage
             // 
@@ -1154,7 +1245,7 @@
             this.kryptonPageDocking.LastVisibleSet = true;
             this.kryptonPageDocking.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageDocking.Name = "kryptonPageDocking";
-            this.kryptonPageDocking.Size = new System.Drawing.Size(568, 403);
+            this.kryptonPageDocking.Size = new System.Drawing.Size(1328, 486);
             this.kryptonPageDocking.Text = "Docking";
             this.kryptonPageDocking.TextDescription = "";
             this.kryptonPageDocking.TextTitle = "";
@@ -1168,6 +1259,7 @@
             this.linkExternalDragToDocking.Size = new System.Drawing.Size(149, 20);
             this.linkExternalDragToDocking.TabIndex = 5;
             this.linkExternalDragToDocking.Values.Text = "External Drag To Docking";
+            this.linkExternalDragToDocking.LinkClicked += new System.EventHandler(this.linkExternalDragToDocking_LinkClicked);
             // 
             // linkNavigatorAndFloatingWindows
             // 
@@ -1176,6 +1268,7 @@
             this.linkNavigatorAndFloatingWindows.Size = new System.Drawing.Size(174, 20);
             this.linkNavigatorAndFloatingWindows.TabIndex = 7;
             this.linkNavigatorAndFloatingWindows.Values.Text = "Navigator + FloatingWindows";
+            this.linkNavigatorAndFloatingWindows.LinkClicked += new System.EventHandler(this.linkNavigatorAndFloatingWindows_LinkClicked);
             // 
             // linkDockingCustomized
             // 
@@ -1184,6 +1277,7 @@
             this.linkDockingCustomized.Size = new System.Drawing.Size(123, 20);
             this.linkDockingCustomized.TabIndex = 1;
             this.linkDockingCustomized.Values.Text = "Docking Customized";
+            this.linkDockingCustomized.LinkClicked += new System.EventHandler(this.linkDockingCustomized_LinkClicked);
             // 
             // linkDockingFlags
             // 
@@ -1192,6 +1286,7 @@
             this.linkDockingFlags.Size = new System.Drawing.Size(87, 20);
             this.linkDockingFlags.TabIndex = 3;
             this.linkDockingFlags.Values.Text = "Docking Flags";
+            this.linkDockingFlags.LinkClicked += new System.EventHandler(this.linkDockingFlags_LinkClicked);
             // 
             // linkDockingPersistence
             // 
@@ -1200,6 +1295,7 @@
             this.linkDockingPersistence.Size = new System.Drawing.Size(120, 20);
             this.linkDockingPersistence.TabIndex = 2;
             this.linkDockingPersistence.Values.Text = "Docking Persistence";
+            this.linkDockingPersistence.LinkClicked += new System.EventHandler(this.linkDockingPersistence_LinkClicked);
             // 
             // linkMultiControlDocking
             // 
@@ -1208,6 +1304,7 @@
             this.linkMultiControlDocking.Size = new System.Drawing.Size(131, 20);
             this.linkMultiControlDocking.TabIndex = 4;
             this.linkMultiControlDocking.Values.Text = "Multi Control Docking";
+            this.linkMultiControlDocking.LinkClicked += new System.EventHandler(this.linkMultiControlDocking_LinkClicked);
             // 
             // linkStandardDocking
             // 
@@ -1216,6 +1313,7 @@
             this.linkStandardDocking.Size = new System.Drawing.Size(108, 20);
             this.linkStandardDocking.TabIndex = 6;
             this.linkStandardDocking.Values.Text = "Standard Docking";
+            this.linkStandardDocking.LinkClicked += new System.EventHandler(this.linkStandardDocking_LinkClicked);
             // 
             // kryptonLabel2
             // 
@@ -1265,7 +1363,7 @@
             this.kryptonPageWorkspace.LastVisibleSet = true;
             this.kryptonPageWorkspace.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageWorkspace.Name = "kryptonPageWorkspace";
-            this.kryptonPageWorkspace.Size = new System.Drawing.Size(527, 384);
+            this.kryptonPageWorkspace.Size = new System.Drawing.Size(1328, 486);
             this.kryptonPageWorkspace.Text = "Workspace";
             this.kryptonPageWorkspace.TextTitle = "";
             this.kryptonPageWorkspace.ToolTipTitle = "Page ToolTip";
@@ -1278,6 +1376,7 @@
             this.linkCellMaximizeAndRestore.Size = new System.Drawing.Size(142, 20);
             this.linkCellMaximizeAndRestore.TabIndex = 4;
             this.linkCellMaximizeAndRestore.Values.Text = "Cell Maximize + Restore";
+            this.linkCellMaximizeAndRestore.LinkClicked += new System.EventHandler(this.linkCellMaximizeAndRestore_LinkClicked);
             // 
             // linkWorkspacePersistence
             // 
@@ -1286,6 +1385,7 @@
             this.linkWorkspacePersistence.Size = new System.Drawing.Size(135, 20);
             this.linkWorkspacePersistence.TabIndex = 3;
             this.linkWorkspacePersistence.Values.Text = "Workspace Persistence";
+            this.linkWorkspacePersistence.LinkClicked += new System.EventHandler(this.linkWorkspacePersistence_LinkClicked);
             // 
             // linkWorkspaceMemoEditor
             // 
@@ -1294,6 +1394,7 @@
             this.linkWorkspaceMemoEditor.Size = new System.Drawing.Size(82, 20);
             this.linkWorkspaceMemoEditor.TabIndex = 8;
             this.linkWorkspaceMemoEditor.Values.Text = "Memo Editor";
+            this.linkWorkspaceMemoEditor.LinkClicked += new System.EventHandler(this.linkWorkspaceMemoEditor_LinkClicked);
             // 
             // kryptonWorkspaceRibbonNavigator
             // 
@@ -1310,6 +1411,7 @@
             this.linkAdvancedPageDragAndDrop.Size = new System.Drawing.Size(167, 20);
             this.linkAdvancedPageDragAndDrop.TabIndex = 6;
             this.linkAdvancedPageDragAndDrop.Values.Text = "Advanced Page Drag + Drop";
+            this.linkAdvancedPageDragAndDrop.LinkClicked += new System.EventHandler(this.linkAdvancedPageDragAndDrop_LinkClicked);
             // 
             // linkBasicPageDragAndDrop
             // 
@@ -1318,6 +1420,7 @@
             this.linkBasicPageDragAndDrop.Size = new System.Drawing.Size(141, 20);
             this.linkBasicPageDragAndDrop.TabIndex = 5;
             this.linkBasicPageDragAndDrop.Values.Text = "Basic Page Drag + Drop";
+            this.linkBasicPageDragAndDrop.LinkClicked += new System.EventHandler(this.linkBasicPageDragAndDrop_LinkClicked);
             // 
             // linkWorkspaceCellLayout
             // 
@@ -1326,6 +1429,7 @@
             this.linkWorkspaceCellLayout.Size = new System.Drawing.Size(134, 20);
             this.linkWorkspaceCellLayout.TabIndex = 2;
             this.linkWorkspaceCellLayout.Values.Text = "Workspace Cell Layout";
+            this.linkWorkspaceCellLayout.LinkClicked += new System.EventHandler(this.linkWorkspaceCellLayout_LinkClicked);
             // 
             // linkWorkspaceCellModes
             // 
@@ -1334,6 +1438,7 @@
             this.linkWorkspaceCellModes.Size = new System.Drawing.Size(135, 20);
             this.linkWorkspaceCellModes.TabIndex = 1;
             this.linkWorkspaceCellModes.Values.Text = "Workspace Cell Modes";
+            this.linkWorkspaceCellModes.LinkClicked += new System.EventHandler(this.linkWorkspaceCellModes_LinkClicked);
             // 
             // labelWorkspaceUsageExamples
             // 
@@ -1394,7 +1499,7 @@
             this.kryptonPageNavigator.LastVisibleSet = true;
             this.kryptonPageNavigator.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageNavigator.Name = "kryptonPageNavigator";
-            this.kryptonPageNavigator.Size = new System.Drawing.Size(527, 384);
+            this.kryptonPageNavigator.Size = new System.Drawing.Size(1328, 486);
             this.kryptonPageNavigator.Text = "Navigator";
             this.kryptonPageNavigator.TextTitle = "";
             this.kryptonPageNavigator.ToolTipTitle = "Page ToolTip";
@@ -1561,6 +1666,7 @@
             this.linkNavigatorModes.Size = new System.Drawing.Size(105, 20);
             this.linkNavigatorModes.TabIndex = 1;
             this.linkNavigatorModes.Values.Text = "Navigator Modes";
+            this.linkNavigatorModes.LinkClicked += new System.EventHandler(this.linkNavigatorModes_LinkClicked);
             // 
             // labelNavigatorFeatureExamples
             // 
@@ -2117,22 +2223,14 @@
             this.tslVersion.Text = "Version: {0}";
             this.tslVersion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // kryptonManager1
+            // 
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
+            // 
             // bgwDownloadDocumentation
             // 
             this.bgwDownloadDocumentation.WorkerReportsProgress = true;
             this.bgwDownloadDocumentation.WorkerSupportsCancellation = true;
-            // 
-            // klblKryptonAboutToolkit
-            // 
-            this.klblKryptonAboutToolkit.Location = new System.Drawing.Point(6, 16);
-            this.klblKryptonAboutToolkit.Name = "klblKryptonAboutToolkit";
-            this.klblKryptonAboutToolkit.Size = new System.Drawing.Size(146, 20);
-            this.klblKryptonAboutToolkit.StateCommon.AdjacentGap = 5;
-            this.klblKryptonAboutToolkit.TabIndex = 56;
-            this.klblKryptonAboutToolkit.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonLinkLabel3.Values.Image")));
-            this.klblKryptonAboutToolkit.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.klblKryptonAboutToolkit.Values.Text = "KryptonAboutToolkit";
-            this.klblKryptonAboutToolkit.LinkClicked += new System.EventHandler(this.klblKryptonAboutToolkit_LinkClicked);
             // 
             // Form1
             // 
@@ -2145,6 +2243,8 @@
             this.Controls.Add(this.kryptonPanelBottom);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.FormMain;
+            this.HeaderStyle = Krypton.Toolkit.HeaderStyle.Form;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -2313,8 +2413,8 @@
         private Krypton.Toolkit.KryptonLinkLabel linkRibbonMemoEditor;
         private Krypton.Toolkit.KryptonLinkLabel linkWorkspaceMemoEditor;
         private Krypton.Toolkit.KryptonLinkLabel linkKryptonDomainUpDown;
-        private Krypton.Toolkit.KryptonLinkLabel kryptonLinkLabel2;
-        private Krypton.Toolkit.KryptonLinkLabel kryptonLinkLabel1;
+        private Krypton.Toolkit.KryptonLinkLabel linkMonthCalendar;
+        private Krypton.Toolkit.KryptonLinkLabel linkDateTimePicker;
         private Krypton.Toolkit.KryptonLinkLabel linkNavigatorPerTabButtons;
         private Krypton.Toolkit.KryptonLinkLabel linkWorkspacePersistence;
         private Krypton.Toolkit.KryptonLinkLabel linkCellMaximizeAndRestore;
@@ -2378,6 +2478,7 @@
         private Krypton.Toolkit.KryptonLinkLabel linkKryptonStringCollector;
         private Krypton.Toolkit.KryptonLinkLabel linkKryptonSaveFileDialog;
         private Krypton.Toolkit.KryptonLinkLabel klblKryptonAboutToolkit;
+        private Krypton.Toolkit.KryptonLinkLabel linkKryptonCommandLinkButton;
     }
 }
 

@@ -160,7 +160,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonSaveFileDialog Examp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonProgressbar Examples 2022", "KryptonProgressbar Examples\KryptonProgressbar Examples 2022.csproj", "{ECC6CC1B-9D9B-40E4-BE04-1B58FD6D3ECE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonAboutToolkit Example 2022", "KryptonAboutToolkit Example\KryptonAboutToolkit Example 2022.csproj", "{D8B66F12-1C27-4EB4-ACAE-1412E567372A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonAboutToolkit Example 2022", "KryptonAboutToolkit Example\KryptonAboutToolkit Example 2022.csproj", "{D8B66F12-1C27-4EB4-ACAE-1412E567372A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonAboutBox Example 2022", "KryptonAboutBox Example\KryptonAboutBox Example 2022.csproj", "{468CC6FC-41EC-47C1-A8CE-51B85EB64B41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonCommandLinkButton Examples 2022", "KryptonCommandLinkButton Examples\KryptonCommandLinkButton Examples 2022.csproj", "{6443A6A2-F669-4E4C-AAB5-6F3CC6D709D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -472,6 +476,14 @@ Global
 		{D8B66F12-1C27-4EB4-ACAE-1412E567372A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8B66F12-1C27-4EB4-ACAE-1412E567372A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8B66F12-1C27-4EB4-ACAE-1412E567372A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{468CC6FC-41EC-47C1-A8CE-51B85EB64B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{468CC6FC-41EC-47C1-A8CE-51B85EB64B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{468CC6FC-41EC-47C1-A8CE-51B85EB64B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{468CC6FC-41EC-47C1-A8CE-51B85EB64B41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6443A6A2-F669-4E4C-AAB5-6F3CC6D709D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6443A6A2-F669-4E4C-AAB5-6F3CC6D709D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6443A6A2-F669-4E4C-AAB5-6F3CC6D709D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6443A6A2-F669-4E4C-AAB5-6F3CC6D709D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
