@@ -509,7 +509,6 @@
             // kryptonPalette
             // 
             this.kryptonPalette.BaseFont = new System.Drawing.Font("Segoe UI", 9F);
-            this.kryptonPalette.BaseFontSize = 9F;
             this.kryptonPalette.BasePaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Blue;
             this.kryptonPalette.BasePaletteType = Krypton.Toolkit.BasePaletteType.Custom;
             this.kryptonPalette.GridStyles.GridCustom1.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
