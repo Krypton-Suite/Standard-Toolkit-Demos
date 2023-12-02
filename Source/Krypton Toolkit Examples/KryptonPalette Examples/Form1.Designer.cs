@@ -222,7 +222,6 @@ namespace KryptonPaletteExamples
             // 
             this.kryptonPaletteCustom.AllowFormChrome = Krypton.Toolkit.InheritBool.False;
             this.kryptonPaletteCustom.BaseFont = new System.Drawing.Font("Segoe UI", 9F);
-            this.kryptonPaletteCustom.BaseFontSize = 9F;
             this.kryptonPaletteCustom.BasePaletteType = Krypton.Toolkit.BasePaletteType.Custom;
             this.kryptonPaletteCustom.ButtonStyles.ButtonButtonSpec.StateDisabled.Border.Draw = Krypton.Toolkit.InheritBool.False;
             this.kryptonPaletteCustom.ButtonStyles.ButtonButtonSpec.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
