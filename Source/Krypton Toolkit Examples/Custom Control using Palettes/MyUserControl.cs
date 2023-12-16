@@ -123,7 +123,7 @@ namespace CustomControlUsingPalettes
 
                 // Get the color and font used to draw the text
                 Color textColor = _palette.GetContentShortTextColor1(PaletteContentStyle.ButtonStandalone, buttonState);
-                Font textFont = _palette.GetContentShortTextFont(PaletteContentStyle.ButtonStandalone, buttonState);
+                Font? textFont = _palette.GetContentShortTextFont(PaletteContentStyle.ButtonStandalone, buttonState);
 
                 /////////////////////////////////////////////////////
                 // Perform actual drawing using the palette values //

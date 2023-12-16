@@ -274,7 +274,7 @@ namespace NavigatorPalettes
                 radioSparkleOrange.Checked = false;
                 radioSparklePurple.Checked = false;
                 radioLightweight.Checked = false;
-                kryptonNavigator1.Palette = kryptonPaletteBlogger;
+                kryptonNavigator1.LocalCustomPalette = kryptonPaletteBlogger;
                 UpdateFromNavigator();
             }
         }
@@ -294,7 +294,7 @@ namespace NavigatorPalettes
                 radioSparkleOrange.Checked = false;
                 radioSparklePurple.Checked = false;
                 radioBlogger.Checked = false;
-                kryptonNavigator1.Palette = kryptonPaletteLightweight;
+                kryptonNavigator1.LocalCustomPalette = kryptonPaletteLightweight;
                 UpdateFromNavigator();
             }
         }
@@ -316,9 +316,9 @@ namespace NavigatorPalettes
                     radioOffice2003.Checked = true;
                     break;
                 case PaletteMode.Custom:
-                    if (kryptonNavigator1.Palette == kryptonPaletteBlogger)
+                    if (kryptonNavigator1.LocalCustomPalette == kryptonPaletteBlogger)
                         radioBlogger.Checked = true;
-                    else if (kryptonNavigator1.Palette == kryptonPaletteLightweight)
+                    else if (kryptonNavigator1.LocalCustomPalette == kryptonPaletteLightweight)
                         radioLightweight.Checked = true;
                     break;
             }
