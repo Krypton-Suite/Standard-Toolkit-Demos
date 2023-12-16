@@ -357,8 +357,7 @@ namespace NavigatorPalettes
             // kryptonPaletteBlogger
             // 
             this.kryptonPaletteBlogger.AllowFormChrome = Krypton.Toolkit.InheritBool.False;
-            this.kryptonPaletteBlogger.BasePaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
-            this.kryptonPaletteBlogger.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
+            this.kryptonPaletteBlogger.BaseRenderMode = Krypton.Toolkit.RendererMode.Professional;
             this.kryptonPaletteBlogger.ButtonStyles.ButtonButtonSpec.StateDisabled.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPaletteBlogger.ButtonStyles.ButtonButtonSpec.StateDisabled.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kryptonPaletteBlogger.ButtonStyles.ButtonButtonSpec.StateDisabled.Border.Draw = Krypton.Toolkit.InheritBool.False;
@@ -1085,8 +1084,7 @@ namespace NavigatorPalettes
             // kryptonPaletteLightweight
             // 
             this.kryptonPaletteLightweight.AllowFormChrome = Krypton.Toolkit.InheritBool.False;
-            this.kryptonPaletteLightweight.BasePaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonPaletteLightweight.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
+            this.kryptonPaletteLightweight.BaseRenderMode = Krypton.Toolkit.RendererMode.Professional;
             this.kryptonPaletteLightweight.ButtonStyles.ButtonCommon.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPaletteLightweight.ButtonStyles.ButtonCommon.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
             this.kryptonPaletteLightweight.ButtonStyles.ButtonCommon.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
