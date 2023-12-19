@@ -274,7 +274,6 @@
             this.dtpRibbonTime.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.dtpRibbonTime.Location = new System.Drawing.Point(24, 92);
             this.dtpRibbonTime.Name = "dtpRibbonTime";
-            this.dtpRibbonTime.Palette = this.kryptonPalette;
             this.dtpRibbonTime.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.dtpRibbonTime.ShowUpDown = true;
             this.dtpRibbonTime.Size = new System.Drawing.Size(204, 25);
@@ -291,7 +290,7 @@
             // 
             // kryptonPalette
             // 
-            this.kryptonPalette.BasePaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Blue;
+            this.kryptonPalette.BasePaletteType = Krypton.Toolkit.BasePaletteType.Microsoft365;
             // 
             // dtpRibbonShort
             // 
@@ -300,7 +299,6 @@
             this.dtpRibbonShort.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.dtpRibbonShort.Location = new System.Drawing.Point(24, 63);
             this.dtpRibbonShort.Name = "dtpRibbonShort";
-            this.dtpRibbonShort.Palette = this.kryptonPalette;
             this.dtpRibbonShort.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.dtpRibbonShort.Size = new System.Drawing.Size(204, 25);
             this.dtpRibbonShort.TabIndex = 1;
@@ -313,7 +311,6 @@
             this.dtpRibbonLong.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.dtpRibbonLong.Location = new System.Drawing.Point(24, 34);
             this.dtpRibbonLong.Name = "dtpRibbonLong";
-            this.dtpRibbonLong.Palette = this.kryptonPalette;
             this.dtpRibbonLong.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.dtpRibbonLong.ShowCheckBox = true;
             this.dtpRibbonLong.Size = new System.Drawing.Size(204, 25);
@@ -327,7 +324,6 @@
             this.dtpNormalTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpNormalTime.Location = new System.Drawing.Point(24, 93);
             this.dtpNormalTime.Name = "dtpNormalTime";
-            this.dtpNormalTime.Palette = this.kryptonPalette;
             this.dtpNormalTime.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.dtpNormalTime.ShowUpDown = true;
             this.dtpNormalTime.Size = new System.Drawing.Size(204, 25);
@@ -347,7 +343,6 @@
             this.dtpNormalShort.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNormalShort.Location = new System.Drawing.Point(24, 64);
             this.dtpNormalShort.Name = "dtpNormalShort";
-            this.dtpNormalShort.Palette = this.kryptonPalette;
             this.dtpNormalShort.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.dtpNormalShort.Size = new System.Drawing.Size(204, 25);
             this.dtpNormalShort.TabIndex = 1;
@@ -358,7 +353,6 @@
             this.dtpNormalLong.CustomNullText = "<Custom Text When Null>";
             this.dtpNormalLong.Location = new System.Drawing.Point(24, 35);
             this.dtpNormalLong.Name = "dtpNormalLong";
-            this.dtpNormalLong.Palette = this.kryptonPalette;
             this.dtpNormalLong.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.dtpNormalLong.ShowCheckBox = true;
             this.dtpNormalLong.Size = new System.Drawing.Size(204, 25);
