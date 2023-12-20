@@ -110,7 +110,7 @@ namespace TestMessageBoxClipping
         {
             if (kryptonCustom.Checked)
             {
-                kryptonManager.GlobalPalette = kryptonPaletteCustom;
+                kryptonManager.GlobalCustomPalette = kryptonPaletteCustom;
             }
         }
 
