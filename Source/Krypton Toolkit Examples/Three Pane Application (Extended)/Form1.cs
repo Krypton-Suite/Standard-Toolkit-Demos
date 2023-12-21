@@ -272,7 +272,7 @@ namespace ThreePaneApplication
         {
             if (!toolStripCustom.Checked)
             {
-                kryptonManager.GlobalPalette = kryptonPaletteCustom;
+                kryptonManager.GlobalCustomPalette = kryptonPaletteCustom;
                 toolStripOffice2010Blue.Checked = office2010BlueToolStripMenuItem.Checked = false;
                 toolStripOffice2010Silver.Checked = office2010SilverToolStripMenuItem.Checked = false;
                 toolStripOffice2010Black.Checked = office2010BlackToolStripMenuItem.Checked = false;
@@ -357,7 +357,7 @@ namespace ThreePaneApplication
                 else
                 {
                     // Use the custom palette
-                    kryptonManager.GlobalPalette = kryptonPaletteCustom;
+                    kryptonManager.GlobalCustomPalette = kryptonPaletteCustom;
                     UpdateOnPaletteChanged();
                 }
 
@@ -448,12 +448,12 @@ namespace ThreePaneApplication
 
         private void UpdateOnPaletteChanged()
         {
-            // Get the new control background color
+            /*/// Get the new control background color
             Color backColor = kryptonManager.GlobalPalette.GetBackColor1(PaletteBackStyle.ControlClient,
                                                                          PaletteState.Normal);
 
             // Update the tree and listview controls with new color
-            treeView.BackColor = backColor;
+            treeView.BackColor = backColor;*/
         }
     }
 }
