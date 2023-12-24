@@ -951,8 +951,8 @@ namespace ThreePaneApplication
             // 
             // kryptonPaletteCustom
             // 
-            this.kryptonPaletteCustom.AllowFormChrome = Krypton.Toolkit.InheritBool.False;
-            this.kryptonPaletteCustom.BasePaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.kryptonPaletteCustom.UseThemeFormChromeBorderWidth = Krypton.Toolkit.InheritBool.False;
+            this.kryptonPaletteCustom.BasePaletteType = Krypton.Toolkit.BasePaletteType.Office2007;
             this.kryptonPaletteCustom.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
             this.kryptonPaletteCustom.ButtonStyles.ButtonButtonSpec.StateDisabled.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPaletteCustom.ButtonStyles.ButtonButtonSpec.StateDisabled.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;

@@ -35,7 +35,7 @@ namespace KryptonPaletteExamples
             {
                 kryptonPaletteCustom.Import();
 
-                kryptonThemeComboBox1.Manager.GlobalPalette = kryptonPaletteCustom;
+                kryptonThemeComboBox1.Manager.GlobalCustomPalette = kryptonPaletteCustom;
                 propertyGrid.SelectedObject = kryptonPaletteCustom;
 
                 kryptonThemeComboBox1.Manager.GlobalPaletteMode = PaletteMode.Custom;
@@ -55,9 +55,7 @@ namespace KryptonPaletteExamples
             }
             else
             {
-                propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components) {
-                    BasePaletteMode = kryptonThemeComboBox1.Manager.GlobalPaletteMode
-                };
+                propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components);
             }
         }
 
@@ -83,10 +81,8 @@ namespace KryptonPaletteExamples
                 }
                 kryptonPaletteCustom.ImportWithUpgrade(File.OpenRead(paletteFileName));
 
-                kryptonThemeComboBox1.Manager.GlobalPalette = kryptonPaletteCustom;
-                propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components) {
-                    BasePaletteMode = kryptonThemeComboBox1.Manager.GlobalPaletteMode
-                };
+                kryptonThemeComboBox1.Manager.GlobalCustomPalette = kryptonPaletteCustom;
+                propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components);
                 kryptonThemeComboBox1.Manager.GlobalPaletteMode = PaletteMode.Custom;
             }
             catch (Exception exc)
@@ -96,9 +92,7 @@ namespace KryptonPaletteExamples
         }
 
         private void Form1_OnShown(object sender, EventArgs e) =>
-            propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components) {
-                BasePaletteMode = kryptonThemeComboBox1.Manager.GlobalPaletteMode
-            };
+            propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components);
 
         private void button1_Click_1(object sender, EventArgs e)
         {

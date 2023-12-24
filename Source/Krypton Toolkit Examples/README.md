@@ -158,7 +158,7 @@ There are 2 set of solutions in these projects:
 ## KryptonFontDialog
 ![KryptonFontDialog Example](KryptonFontDialog%20Example/example.png)
 ## KryptonForm
-![KryptonForm Examples](KryptonForm%20Examples/example.png)
+![KryptonForm Examples](KryptonForm%20Examples/example.gif)
 ## KryptonGroup
 ![KryptonGroup Examples](KryptonGroup%20Examples/example.png)
 ## KryptonGroupBox

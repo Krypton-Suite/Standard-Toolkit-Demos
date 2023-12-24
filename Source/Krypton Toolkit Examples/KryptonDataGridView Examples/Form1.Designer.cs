@@ -200,7 +200,7 @@ namespace KryptonDataGridViewExamples
             this.rbOffice2010Blue.TabStop = true;
             this.rbOffice2010Blue.Text = "Office 2010 - Blue";
             this.rbOffice2010Blue.UseVisualStyleBackColor = true;
-            this.rbOffice2010Blue.CheckedChanged += new System.EventHandler(this.rbOffice2010Blue_CheckedChanged);
+            //this.rbOffice2010Blue.CheckedChanged += new System.EventHandler(this.rbOffice2010Blue_CheckedChanged);
             // 
             // rbSparkle
             // 
@@ -211,7 +211,7 @@ namespace KryptonDataGridViewExamples
             this.rbSparkle.TabIndex = 4;
             this.rbSparkle.Text = "Sparkle - Blue";
             this.rbSparkle.UseVisualStyleBackColor = true;
-            this.rbSparkle.CheckedChanged += new System.EventHandler(this.rbSparkle_CheckedChanged);
+            //this.rbSparkle.CheckedChanged += new System.EventHandler(this.rbSparkle_CheckedChanged);
             // 
             // rbSystem
             // 
@@ -222,7 +222,7 @@ namespace KryptonDataGridViewExamples
             this.rbSystem.TabIndex = 5;
             this.rbSystem.Text = "System";
             this.rbSystem.UseVisualStyleBackColor = true;
-            this.rbSystem.CheckedChanged += new System.EventHandler(this.rbSystem_CheckedChanged);
+            //this.rbSystem.CheckedChanged += new System.EventHandler(this.rbSystem_CheckedChanged);
             // 
             // rbOffice2003
             // 
@@ -233,7 +233,7 @@ namespace KryptonDataGridViewExamples
             this.rbOffice2003.TabIndex = 3;
             this.rbOffice2003.Text = "Office 2003";
             this.rbOffice2003.UseVisualStyleBackColor = true;
-            this.rbOffice2003.CheckedChanged += new System.EventHandler(this.rbOffice2003_CheckedChanged);
+            //this.rbOffice2003.CheckedChanged += new System.EventHandler(this.rbOffice2003_CheckedChanged);
             // 
             // rbOffice2007Black
             // 
@@ -244,7 +244,7 @@ namespace KryptonDataGridViewExamples
             this.rbOffice2007Black.TabIndex = 2;
             this.rbOffice2007Black.Text = "Office 2007 - Black";
             this.rbOffice2007Black.UseVisualStyleBackColor = true;
-            this.rbOffice2007Black.CheckedChanged += new System.EventHandler(this.rbOffice2007Black_CheckedChanged);
+            //this.rbOffice2007Black.CheckedChanged += new System.EventHandler(this.rbOffice2007Black_CheckedChanged);
             // 
             // rbOffice2007Blue
             // 
@@ -255,7 +255,7 @@ namespace KryptonDataGridViewExamples
             this.rbOffice2007Blue.TabIndex = 0;
             this.rbOffice2007Blue.Text = "Office 2007 - Blue";
             this.rbOffice2007Blue.UseVisualStyleBackColor = true;
-            this.rbOffice2007Blue.CheckedChanged += new System.EventHandler(this.rbOffice2007Blue_CheckedChanged);
+            //this.rbOffice2007Blue.CheckedChanged += new System.EventHandler(this.rbOffice2007Blue_CheckedChanged);
             // 
             // rbStyleList
             // 
@@ -427,7 +427,7 @@ namespace KryptonDataGridViewExamples
             // 
             // kryptonPalette
             // 
-            this.kryptonPalette.BasePaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Blue;
+            this.kryptonPalette.BasePaletteType = Krypton.Toolkit.BasePaletteType.Microsoft365;
             this.kryptonPalette.GridStyles.GridCustom1.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonPalette.GridStyles.GridCustom1.StateCommon.Background.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
             this.kryptonPalette.GridStyles.GridCustom1.StateCommon.Background.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
@@ -554,7 +554,7 @@ namespace KryptonDataGridViewExamples
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPalette = this.kryptonPalette;
+            this.kryptonManager.GlobalCustomPalette = this.kryptonPalette;
             this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             // 
             // colDateTime

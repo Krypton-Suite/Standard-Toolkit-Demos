@@ -95,6 +95,7 @@ namespace ContextualTabs
             this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
             this.kryptonRibbon.RibbonAppButton.AppButtonShowRecentDocs = false;
+            this.kryptonRibbon.RibbonAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbon.RibbonContexts.AddRange(new Krypton.Ribbon.KryptonRibbonContext[] {
             this.contextDefRed,
             this.contextDefGreen});
@@ -105,7 +106,7 @@ namespace ContextualTabs
             this.contextGreen2});
             this.kryptonRibbon.SelectedContext = "Red,Green";
             this.kryptonRibbon.SelectedTab = this.contextGreen1;
-            this.kryptonRibbon.Size = new System.Drawing.Size(649, 135);
+            this.kryptonRibbon.Size = new System.Drawing.Size(649, 136);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // kryptonContextMenuItem1
@@ -150,9 +151,9 @@ namespace ContextualTabs
             this.labelOffice2007Styles.Controls.Add(this.groupAddContext);
             this.labelOffice2007Styles.Controls.Add(this.groupSelectedContexts);
             this.labelOffice2007Styles.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelOffice2007Styles.Location = new System.Drawing.Point(0, 135);
+            this.labelOffice2007Styles.Location = new System.Drawing.Point(0, 136);
             this.labelOffice2007Styles.Name = "labelOffice2007Styles";
-            this.labelOffice2007Styles.Size = new System.Drawing.Size(649, 353);
+            this.labelOffice2007Styles.Size = new System.Drawing.Size(649, 352);
             this.labelOffice2007Styles.TabIndex = 1;
             // 
             // groupOffice2007Styles
@@ -469,7 +470,7 @@ namespace ContextualTabs
             this.StateCommon.Header.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.StateCommon.Header.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.Text = "Contextual Tabs";
-            this.UseDropShadow = false;
+            this.UseThemeFormChromeBorderWidth = false;
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.labelOffice2007Styles)).EndInit();
             this.labelOffice2007Styles.ResumeLayout(false);

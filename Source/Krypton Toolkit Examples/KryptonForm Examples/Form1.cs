@@ -76,6 +76,11 @@ namespace KryptonFormExamples
             // Setup the property grid to edit this form
             propertyGrid.SelectedObject = new KryptonFormProxy(this);
         }
+
+        private void btnUseThemeWidths_Click(object sender, EventArgs e)
+        {
+            UseThemeFormChromeBorderWidth = btnUseThemeWidths.Checked;
+        }
     }
 
     public class KryptonFormProxy
@@ -114,10 +119,10 @@ namespace KryptonFormExamples
         [Category("Visuals")]
         [Description("Should custom chrome be allowed for this KryptonForm instance.")]
         [DefaultValue(true)]
-        public bool AllowFormChrome
+        public bool UseThemeFormChromeBorderWidth
         {
-            get => _form.AllowFormChrome;
-            set => _form.AllowFormChrome = value;
+            get => _form.UseThemeFormChromeBorderWidth;
+            set => _form.UseThemeFormChromeBorderWidth = value;
         }
 
         [Category("Visuals")]

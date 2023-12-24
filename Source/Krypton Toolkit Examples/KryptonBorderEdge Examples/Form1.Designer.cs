@@ -786,7 +786,7 @@ namespace KryptonBorderEdgeExamples
             // kryptonPaletteOffice2007Blue
             // 
             this.kryptonPaletteOffice2007Blue.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
-            this.kryptonManager.GlobalPalette = this.kryptonPaletteOffice2007Blue;
+            this.kryptonManager.GlobalCustomPalette= this.kryptonPaletteOffice2007Blue;
             this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             // 
             // kryptonPaletteOffice2010Blue
@@ -795,12 +795,12 @@ namespace KryptonBorderEdgeExamples
             // 
             // kryptonPaletteOffice2007Blue
             // 
-            this.kryptonPaletteOffice2007Blue.BasePaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.kryptonPaletteOffice2007Blue.BasePaletteType = Krypton.Toolkit.BasePaletteType.Office2007;
             this.kryptonPaletteOffice2007Blue.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
             // 
             // kryptonPaletteCustom
             // 
-            this.kryptonPaletteCustom.AllowFormChrome = Krypton.Toolkit.InheritBool.False;
+            this.kryptonPaletteCustom.UseThemeFormChromeBorderWidth = Krypton.Toolkit.InheritBool.False;
             this.kryptonPaletteCustom.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
             this.kryptonPaletteCustom.ButtonStyles.ButtonButtonSpec.StateDisabled.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonPaletteCustom.ButtonStyles.ButtonButtonSpec.StateDisabled.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
@@ -1527,12 +1527,12 @@ namespace KryptonBorderEdgeExamples
             // 
             // kryptonPaletteSparkle
             // 
-            this.kryptonPaletteSparkle.BasePaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
+            this.kryptonPaletteSparkle.BasePaletteType = Krypton.Toolkit.BasePaletteType.Sparkle;
             this.kryptonPaletteSparkle.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
             // 
             // kryptonPaletteSystem
             // 
-            this.kryptonPaletteSystem.BasePaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonPaletteSystem.BasePaletteType = Krypton.Toolkit.BasePaletteType.Professional;
             this.kryptonPaletteSystem.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
             // 
             // Form1

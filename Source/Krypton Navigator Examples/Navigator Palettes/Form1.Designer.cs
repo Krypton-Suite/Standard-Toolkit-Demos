@@ -356,7 +356,7 @@ namespace NavigatorPalettes
             // 
             // kryptonPaletteBlogger
             // 
-            this.kryptonPaletteBlogger.AllowFormChrome = Krypton.Toolkit.InheritBool.False;
+            this.kryptonPaletteBlogger.UseThemeFormChromeBorderWidth = Krypton.Toolkit.InheritBool.False;
             this.kryptonPaletteBlogger.BasePaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
             this.kryptonPaletteBlogger.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
             this.kryptonPaletteBlogger.ButtonStyles.ButtonButtonSpec.StateDisabled.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
@@ -1084,7 +1084,7 @@ namespace NavigatorPalettes
             // 
             // kryptonPaletteLightweight
             // 
-            this.kryptonPaletteLightweight.AllowFormChrome = Krypton.Toolkit.InheritBool.False;
+            this.kryptonPaletteLightweight.UseThemeFormChromeBorderWidth = Krypton.Toolkit.InheritBool.False;
             this.kryptonPaletteLightweight.BasePaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonPaletteLightweight.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
             this.kryptonPaletteLightweight.ButtonStyles.ButtonCommon.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;

@@ -33,7 +33,7 @@ namespace CustomControlUsingRenderers
                     kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
                     break;
                 case 2:
-                    kryptonManager.GlobalPalette = kryptonPaletteCustom;
+                    kryptonManager.GlobalCustomPalette = kryptonPaletteCustom;
                     break;
                 case 3:
                     kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;

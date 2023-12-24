@@ -91,7 +91,7 @@
             this.rbOffice2010Black.TabIndex = 2;
             this.rbOffice2010Black.Text = "Office 2010 - Black";
             this.rbOffice2010Black.UseVisualStyleBackColor = true;
-            this.rbOffice2010Black.CheckedChanged += new System.EventHandler(this.rbOffice2010Black_CheckedChanged);
+            //this.rbOffice2010Black.CheckedChanged += new System.EventHandler(this.rbOffice2010Black_CheckedChanged);
             // 
             // rbOffice2010Silver
             // 
@@ -102,7 +102,7 @@
             this.rbOffice2010Silver.TabIndex = 1;
             this.rbOffice2010Silver.Text = "Office 2010 - Silver";
             this.rbOffice2010Silver.UseVisualStyleBackColor = true;
-            this.rbOffice2010Silver.CheckedChanged += new System.EventHandler(this.rbOffice2010Silver_CheckedChanged);
+            //this.rbOffice2010Silver.CheckedChanged += new System.EventHandler(this.rbOffice2010Silver_CheckedChanged);
             // 
             // rbOffice2010Blue
             // 
@@ -115,7 +115,7 @@
             this.rbOffice2010Blue.TabStop = true;
             this.rbOffice2010Blue.Text = "Office 2010 - Blue";
             this.rbOffice2010Blue.UseVisualStyleBackColor = true;
-            this.rbOffice2010Blue.CheckedChanged += new System.EventHandler(this.rbOffice2010Blue_CheckedChanged);
+            //this.rbOffice2010Blue.CheckedChanged += new System.EventHandler(this.rbOffice2010Blue_CheckedChanged);
             // 
             // rbSparklePurple
             // 
@@ -126,7 +126,7 @@
             this.rbSparklePurple.TabIndex = 8;
             this.rbSparklePurple.Text = "Sparkle - Purple";
             this.rbSparklePurple.UseVisualStyleBackColor = true;
-            this.rbSparklePurple.CheckedChanged += new System.EventHandler(this.rbSparklePurple_CheckedChanged);
+            //this.rbSparklePurple.CheckedChanged += new System.EventHandler(this.rbSparklePurple_CheckedChanged);
             // 
             // rbSparkleOrange
             // 
@@ -137,7 +137,7 @@
             this.rbSparkleOrange.TabIndex = 7;
             this.rbSparkleOrange.Text = "Sparkle - Orange";
             this.rbSparkleOrange.UseVisualStyleBackColor = true;
-            this.rbSparkleOrange.CheckedChanged += new System.EventHandler(this.rbSparkleOrange_CheckedChanged);
+            //this.rbSparkleOrange.CheckedChanged += new System.EventHandler(this.rbSparkleOrange_CheckedChanged);
             // 
             // rbSparkleBlue
             // 
@@ -148,7 +148,7 @@
             this.rbSparkleBlue.TabIndex = 6;
             this.rbSparkleBlue.Text = "Sparkle - Blue";
             this.rbSparkleBlue.UseVisualStyleBackColor = true;
-            this.rbSparkleBlue.CheckedChanged += new System.EventHandler(this.rbSparkleBlue_CheckedChanged);
+            //this.rbSparkleBlue.CheckedChanged += new System.EventHandler(this.rbSparkleBlue_CheckedChanged);
             // 
             // rbSystem
             // 
@@ -159,7 +159,7 @@
             this.rbSystem.TabIndex = 10;
             this.rbSystem.Text = "System";
             this.rbSystem.UseVisualStyleBackColor = true;
-            this.rbSystem.CheckedChanged += new System.EventHandler(this.rbSystem_CheckedChanged);
+            //this.rbSystem.CheckedChanged += new System.EventHandler(this.rbSystem_CheckedChanged);
             // 
             // rbOffice2003
             // 
@@ -170,7 +170,7 @@
             this.rbOffice2003.TabIndex = 9;
             this.rbOffice2003.Text = "Office 2003";
             this.rbOffice2003.UseVisualStyleBackColor = true;
-            this.rbOffice2003.CheckedChanged += new System.EventHandler(this.rbOffice2003_CheckedChanged);
+            //this.rbOffice2003.CheckedChanged += new System.EventHandler(this.rbOffice2003_CheckedChanged);
             // 
             // rbOffice2007Black
             // 
@@ -181,7 +181,7 @@
             this.rbOffice2007Black.TabIndex = 5;
             this.rbOffice2007Black.Text = "Office 2007 - Black";
             this.rbOffice2007Black.UseVisualStyleBackColor = true;
-            this.rbOffice2007Black.CheckedChanged += new System.EventHandler(this.rbOffice2007Black_CheckedChanged);
+            //this.rbOffice2007Black.CheckedChanged += new System.EventHandler(this.rbOffice2007Black_CheckedChanged);
             // 
             // rbOffice2007Silver
             // 
@@ -192,7 +192,7 @@
             this.rbOffice2007Silver.TabIndex = 4;
             this.rbOffice2007Silver.Text = "Office 2007 - Silver";
             this.rbOffice2007Silver.UseVisualStyleBackColor = true;
-            this.rbOffice2007Silver.CheckedChanged += new System.EventHandler(this.rbOffice2007Silver_CheckedChanged);
+            //this.rbOffice2007Silver.CheckedChanged += new System.EventHandler(this.rbOffice2007Silver_CheckedChanged);
             // 
             // rbOffice2007Blue
             // 
@@ -203,7 +203,7 @@
             this.rbOffice2007Blue.TabIndex = 3;
             this.rbOffice2007Blue.Text = "Office 2007 - Blue";
             this.rbOffice2007Blue.UseVisualStyleBackColor = true;
-            this.rbOffice2007Blue.CheckedChanged += new System.EventHandler(this.rbOffice2007Blue_CheckedChanged);
+            //this.rbOffice2007Blue.CheckedChanged += new System.EventHandler(this.rbOffice2007Blue_CheckedChanged);
             // 
             // groupBox4
             // 
@@ -274,7 +274,7 @@
             this.dtpRibbonTime.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.dtpRibbonTime.Location = new System.Drawing.Point(24, 92);
             this.dtpRibbonTime.Name = "dtpRibbonTime";
-            this.dtpRibbonTime.Palette = this.kryptonPalette;
+            this.dtpRibbonTime.LocalCustomPalette = this.kryptonPalette;
             this.dtpRibbonTime.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.dtpRibbonTime.ShowUpDown = true;
             this.dtpRibbonTime.Size = new System.Drawing.Size(204, 25);
@@ -291,7 +291,7 @@
             // 
             // kryptonPalette
             // 
-            this.kryptonPalette.BasePaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Blue;
+            this.kryptonPalette.BasePaletteType = Krypton.Toolkit.BasePaletteType.Microsoft365;
             // 
             // dtpRibbonShort
             // 
@@ -300,7 +300,7 @@
             this.dtpRibbonShort.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.dtpRibbonShort.Location = new System.Drawing.Point(24, 63);
             this.dtpRibbonShort.Name = "dtpRibbonShort";
-            this.dtpRibbonShort.Palette = this.kryptonPalette;
+            this.dtpRibbonShort.LocalCustomPalette = this.kryptonPalette;
             this.dtpRibbonShort.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.dtpRibbonShort.Size = new System.Drawing.Size(204, 25);
             this.dtpRibbonShort.TabIndex = 1;
@@ -313,7 +313,7 @@
             this.dtpRibbonLong.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.dtpRibbonLong.Location = new System.Drawing.Point(24, 34);
             this.dtpRibbonLong.Name = "dtpRibbonLong";
-            this.dtpRibbonLong.Palette = this.kryptonPalette;
+            this.dtpRibbonLong.LocalCustomPalette = this.kryptonPalette;
             this.dtpRibbonLong.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.dtpRibbonLong.ShowCheckBox = true;
             this.dtpRibbonLong.Size = new System.Drawing.Size(204, 25);
@@ -327,7 +327,7 @@
             this.dtpNormalTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpNormalTime.Location = new System.Drawing.Point(24, 93);
             this.dtpNormalTime.Name = "dtpNormalTime";
-            this.dtpNormalTime.Palette = this.kryptonPalette;
+            this.dtpNormalTime.LocalCustomPalette = this.kryptonPalette;
             this.dtpNormalTime.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.dtpNormalTime.ShowUpDown = true;
             this.dtpNormalTime.Size = new System.Drawing.Size(204, 25);
@@ -347,7 +347,7 @@
             this.dtpNormalShort.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNormalShort.Location = new System.Drawing.Point(24, 64);
             this.dtpNormalShort.Name = "dtpNormalShort";
-            this.dtpNormalShort.Palette = this.kryptonPalette;
+            this.dtpNormalShort.LocalCustomPalette = this.kryptonPalette;
             this.dtpNormalShort.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.dtpNormalShort.Size = new System.Drawing.Size(204, 25);
             this.dtpNormalShort.TabIndex = 1;
@@ -358,7 +358,7 @@
             this.dtpNormalLong.CustomNullText = "<Custom Text When Null>";
             this.dtpNormalLong.Location = new System.Drawing.Point(24, 35);
             this.dtpNormalLong.Name = "dtpNormalLong";
-            this.dtpNormalLong.Palette = this.kryptonPalette;
+            this.dtpNormalLong.LocalCustomPalette = this.kryptonPalette;
             this.dtpNormalLong.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.dtpNormalLong.ShowCheckBox = true;
             this.dtpNormalLong.Size = new System.Drawing.Size(204, 25);
