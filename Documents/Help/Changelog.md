@@ -1,6 +1,7 @@
 # <img src="https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png?raw=true"> Standard Toolkit Demos - ChangeLog
 
-## 2024-11-xx - Build 2311 - November 2024
+## 2024-11-xx - Build 2311 - November 
+* Add `KryptonFormFading` example
 * Resolved [#168](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/168), Recent changes in the Alpha toolkit have not been retrofitted into the Toolkit Examples
 * Add `KryptonCommandLinkButton` example
 * Add `KryptonAboutToolkit` example

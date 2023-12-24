@@ -1,3 +1,5 @@
+using Krypton.Toolkit;
+
 namespace KryptonPaletteExamples
 {
     partial class Form1
@@ -28,128 +30,122 @@ namespace KryptonPaletteExamples
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.propertyGrid = new System.Windows.Forms.PropertyGrid();
-            this.groupBox1 = new Krypton.Toolkit.KryptonGroupBox();
-            this.kryptonProgressBar1 = new Krypton.Toolkit.KryptonProgressBar();
-            this.kryptonCheckBox1 = new Krypton.Toolkit.KryptonCheckBox();
-            this.kryptonRadioButton1 = new Krypton.Toolkit.KryptonRadioButton();
-            this.kryptonThemeComboBox1 = new Krypton.Toolkit.KryptonThemeComboBox();
-            this.kryptonPaletteCustom = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
-            this.kryptonTrackBar2 = new Krypton.Toolkit.KryptonTrackBar();
-            this.kryptonMonthCalendar1 = new Krypton.Toolkit.KryptonMonthCalendar();
-            this.kryptonNumericUpDown1 = new Krypton.Toolkit.KryptonNumericUpDown();
-            this.kryptonTrackBar1 = new Krypton.Toolkit.KryptonTrackBar();
-            this.kryptonCheckButton1 = new Krypton.Toolkit.KryptonCheckButton();
-            this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.printToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.cutToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.copyToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.pasteToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
-            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonButton2 = new Krypton.Toolkit.KryptonButton();
-            this.kryptonHeader2 = new Krypton.Toolkit.KryptonHeader();
-            this.kryptonHeader1 = new Krypton.Toolkit.KryptonHeader();
-            this.kryptonSplitContainer1 = new Krypton.Toolkit.KryptonSplitContainer();
-            this.kryptonHeaderGroup1 = new Krypton.Toolkit.KryptonHeaderGroup();
-            this.kryptonSplitContainer2 = new Krypton.Toolkit.KryptonSplitContainer();
-            this.kryptonHeaderGroup2 = new Krypton.Toolkit.KryptonHeaderGroup();
-            this.kryptonGroup1 = new Krypton.Toolkit.KryptonGroup();
-            this.btnImportCustomPalette = new System.Windows.Forms.Button();
-            this.btnExport = new System.Windows.Forms.Button();
-            this.button1 = new Krypton.Toolkit.KryptonButton();
-            this.kryptonIntegratedToolbarCopyCommand1 = new Krypton.Toolkit.KryptonIntegratedToolbarCopyCommand();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupBox1.Panel)).BeginInit();
-            this.groupBox1.Panel.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
-            this.kryptonPanel1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer1.Panel1)).BeginInit();
-            this.kryptonSplitContainer1.Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer1.Panel2)).BeginInit();
-            this.kryptonSplitContainer1.Panel2.SuspendLayout();
-            this.kryptonSplitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).BeginInit();
-            this.kryptonHeaderGroup1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer2.Panel1)).BeginInit();
-            this.kryptonSplitContainer2.Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer2.Panel2)).BeginInit();
-            this.kryptonSplitContainer2.Panel2.SuspendLayout();
-            this.kryptonSplitContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2.Panel)).BeginInit();
-            this.kryptonHeaderGroup2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
-            this.kryptonGroup1.SuspendLayout();
-            this.SuspendLayout();
+            groupBox4 = new System.Windows.Forms.GroupBox();
+            propertyGrid = new System.Windows.Forms.PropertyGrid();
+            groupBox1 = new Krypton.Toolkit.KryptonGroupBox();
+            kryptonProgressBar1 = new Krypton.Toolkit.KryptonProgressBar();
+            kryptonCheckBox1 = new Krypton.Toolkit.KryptonCheckBox();
+            kryptonRadioButton1 = new Krypton.Toolkit.KryptonRadioButton();
+            kryptonThemeComboBox1 = new Krypton.Toolkit.KryptonThemeComboBox();
+            kryptonPaletteCustom = new Krypton.Toolkit.KryptonCustomPaletteBase(components);
+            kryptonTrackBar2 = new Krypton.Toolkit.KryptonTrackBar();
+            kryptonMonthCalendar1 = new Krypton.Toolkit.KryptonMonthCalendar();
+            kryptonNumericUpDown1 = new Krypton.Toolkit.KryptonNumericUpDown();
+            kryptonTrackBar1 = new Krypton.Toolkit.KryptonTrackBar();
+            kryptonCheckButton1 = new Krypton.Toolkit.KryptonCheckButton();
+            kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            toolStrip1 = new System.Windows.Forms.ToolStrip();
+            newToolStripButton = new System.Windows.Forms.ToolStripButton();
+            openToolStripButton = new System.Windows.Forms.ToolStripButton();
+            saveToolStripButton = new System.Windows.Forms.ToolStripButton();
+            printToolStripButton = new System.Windows.Forms.ToolStripButton();
+            toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            cutToolStripButton = new System.Windows.Forms.ToolStripButton();
+            copyToolStripButton = new System.Windows.Forms.ToolStripButton();
+            pasteToolStripButton = new System.Windows.Forms.ToolStripButton();
+            toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            helpToolStripButton = new System.Windows.Forms.ToolStripButton();
+            toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            menuStrip1 = new System.Windows.Forms.MenuStrip();
+            fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
+            kryptonButton1 = new Krypton.Toolkit.KryptonButton();
+            kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            kryptonButton2 = new Krypton.Toolkit.KryptonButton();
+            kryptonHeader2 = new Krypton.Toolkit.KryptonHeader();
+            kryptonHeader1 = new Krypton.Toolkit.KryptonHeader();
+            kryptonSplitContainer1 = new Krypton.Toolkit.KryptonSplitContainer();
+            kryptonHeaderGroup1 = new Krypton.Toolkit.KryptonHeaderGroup();
+            kryptonSplitContainer2 = new Krypton.Toolkit.KryptonSplitContainer();
+            kryptonHeaderGroup2 = new Krypton.Toolkit.KryptonHeaderGroup();
+            kryptonGroup1 = new Krypton.Toolkit.KryptonGroup();
+            btnImportCustomPalette = new System.Windows.Forms.Button();
+            btnExport = new System.Windows.Forms.Button();
+            button1 = new Krypton.Toolkit.KryptonButton();
+            kryptonIntegratedToolbarCopyCommand1 = new Krypton.Toolkit.KryptonIntegratedToolbarCopyCommand();
+            groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)groupBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)groupBox1.Panel).BeginInit();
+            groupBox1.Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)kryptonThemeComboBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)kryptonPanel1).BeginInit();
+            kryptonPanel1.SuspendLayout();
+            toolStrip1.SuspendLayout();
+            menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)kryptonSplitContainer1).BeginInit();
+            kryptonSplitContainer1.Panel1.BeginInit();
+            kryptonSplitContainer1.Panel1.SuspendLayout();
+            kryptonSplitContainer1.Panel2.BeginInit();
+            kryptonSplitContainer1.Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)kryptonHeaderGroup1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)kryptonHeaderGroup1.Panel).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)kryptonSplitContainer2).BeginInit();
+            kryptonSplitContainer2.Panel1.BeginInit();
+            kryptonSplitContainer2.Panel1.SuspendLayout();
+            kryptonSplitContainer2.Panel2.BeginInit();
+            kryptonSplitContainer2.Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)kryptonHeaderGroup2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)kryptonHeaderGroup2.Panel).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)kryptonGroup1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)kryptonGroup1.Panel).BeginInit();
+            SuspendLayout();
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.propertyGrid);
-            this.groupBox4.Location = new System.Drawing.Point(513, 8);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(353, 550);
-            this.groupBox4.TabIndex = 8;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Properties for Selected KryptonPalette";
+            groupBox4.Controls.Add(propertyGrid);
+            groupBox4.Location = new System.Drawing.Point(513, 8);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new System.Drawing.Size(353, 550);
+            groupBox4.TabIndex = 8;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Properties for Selected KryptonPalette";
             // 
             // propertyGrid
             // 
-            this.propertyGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.propertyGrid.Location = new System.Drawing.Point(3, 17);
-            this.propertyGrid.Name = "propertyGrid";
-            this.propertyGrid.Size = new System.Drawing.Size(347, 530);
-            this.propertyGrid.TabIndex = 3;
-            this.propertyGrid.ToolbarVisible = false;
+            propertyGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            propertyGrid.Location = new System.Drawing.Point(3, 20);
+            propertyGrid.Name = "propertyGrid";
+            propertyGrid.Size = new System.Drawing.Size(347, 527);
+            propertyGrid.TabIndex = 3;
+            propertyGrid.ToolbarVisible = false;
             // 
             // groupBox1
             // 
@@ -159,37 +155,37 @@ namespace KryptonPaletteExamples
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             // 
-            // groupBox1.Panel
             // 
-            this.groupBox1.Panel.Controls.Add(this.kryptonProgressBar1);
-            this.groupBox1.Panel.Controls.Add(this.kryptonCheckBox1);
-            this.groupBox1.Panel.Controls.Add(this.kryptonRadioButton1);
-            this.groupBox1.Panel.Controls.Add(this.kryptonThemeComboBox1);
-            this.groupBox1.Panel.Controls.Add(this.kryptonTrackBar2);
-            this.groupBox1.Panel.Controls.Add(this.kryptonMonthCalendar1);
-            this.groupBox1.Panel.Controls.Add(this.kryptonNumericUpDown1);
-            this.groupBox1.Panel.Controls.Add(this.kryptonTrackBar1);
-            this.groupBox1.Panel.Controls.Add(this.kryptonCheckButton1);
-            this.groupBox1.Panel.Controls.Add(this.kryptonPanel1);
-            this.groupBox1.Panel.Controls.Add(this.kryptonLabel2);
-            this.groupBox1.Panel.Controls.Add(this.kryptonLabel1);
-            this.groupBox1.Panel.Controls.Add(this.kryptonButton2);
-            this.groupBox1.Panel.Controls.Add(this.kryptonButton1);
-            this.groupBox1.Panel.Controls.Add(this.kryptonHeader2);
-            this.groupBox1.Panel.Controls.Add(this.kryptonHeader1);
-            this.groupBox1.Panel.Controls.Add(this.kryptonSplitContainer1);
-            this.groupBox1.Size = new System.Drawing.Size(494, 592);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.Values.Heading = "MenuStrip, ToolStrip and Krypton Toolkit Controls";
+            // 
+            groupBox1.Panel.Controls.Add(kryptonProgressBar1);
+            groupBox1.Panel.Controls.Add(kryptonCheckBox1);
+            groupBox1.Panel.Controls.Add(kryptonRadioButton1);
+            groupBox1.Panel.Controls.Add(kryptonThemeComboBox1);
+            groupBox1.Panel.Controls.Add(kryptonTrackBar2);
+            groupBox1.Panel.Controls.Add(kryptonMonthCalendar1);
+            groupBox1.Panel.Controls.Add(kryptonNumericUpDown1);
+            groupBox1.Panel.Controls.Add(kryptonTrackBar1);
+            groupBox1.Panel.Controls.Add(kryptonCheckButton1);
+            groupBox1.Panel.Controls.Add(kryptonPanel1);
+            groupBox1.Panel.Controls.Add(kryptonLabel2);
+            groupBox1.Panel.Controls.Add(kryptonLabel1);
+            groupBox1.Panel.Controls.Add(kryptonButton2);
+            groupBox1.Panel.Controls.Add(kryptonButton1);
+            groupBox1.Panel.Controls.Add(kryptonHeader2);
+            groupBox1.Panel.Controls.Add(kryptonHeader1);
+            groupBox1.Panel.Controls.Add(kryptonSplitContainer1);
+            groupBox1.Size = new System.Drawing.Size(494, 592);
+            groupBox1.TabIndex = 10;
+            groupBox1.Values.Heading = "MenuStrip, ToolStrip and Krypton Toolkit Controls";
             // 
             // kryptonProgressBar1
             // 
-            this.kryptonProgressBar1.Location = new System.Drawing.Point(320, 523);
-            this.kryptonProgressBar1.Name = "kryptonProgressBar1";
-            this.kryptonProgressBar1.Size = new System.Drawing.Size(159, 23);
-            this.kryptonProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.kryptonProgressBar1.TabIndex = 19;
-            this.kryptonProgressBar1.Text = "Label";
+            kryptonProgressBar1.Location = new System.Drawing.Point(320, 523);
+            kryptonProgressBar1.Name = "kryptonProgressBar1";
+            kryptonProgressBar1.Size = new System.Drawing.Size(159, 23);
+            kryptonProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            kryptonProgressBar1.TabIndex = 19;
+            kryptonProgressBar1.Text = "Label";
             // 
             // kryptonCheckBox1
             // 
@@ -392,14 +388,14 @@ namespace KryptonPaletteExamples
             // 
             // kryptonTrackBar2
             // 
-            this.kryptonTrackBar2.Location = new System.Drawing.Point(320, 293);
-            this.kryptonTrackBar2.Name = "kryptonTrackBar2";
-            this.kryptonTrackBar2.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.kryptonTrackBar2.Size = new System.Drawing.Size(34, 220);
-            this.kryptonTrackBar2.TabIndex = 12;
-            this.kryptonTrackBar2.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.kryptonTrackBar2.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Large;
-            this.kryptonTrackBar2.VolumeControl = true;
+            kryptonTrackBar2.Location = new System.Drawing.Point(320, 293);
+            kryptonTrackBar2.Name = "kryptonTrackBar2";
+            kryptonTrackBar2.Orientation = System.Windows.Forms.Orientation.Vertical;
+            kryptonTrackBar2.Size = new System.Drawing.Size(34, 220);
+            kryptonTrackBar2.TabIndex = 12;
+            kryptonTrackBar2.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            kryptonTrackBar2.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Large;
+            kryptonTrackBar2.VolumeControl = true;
             // 
             // kryptonMonthCalendar1
             // 
@@ -437,31 +433,31 @@ namespace KryptonPaletteExamples
             // 
             // kryptonTrackBar1
             // 
-            this.kryptonTrackBar1.Location = new System.Drawing.Point(360, 293);
-            this.kryptonTrackBar1.Name = "kryptonTrackBar1";
-            this.kryptonTrackBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.kryptonTrackBar1.Size = new System.Drawing.Size(34, 220);
-            this.kryptonTrackBar1.TabIndex = 9;
-            this.kryptonTrackBar1.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Large;
+            kryptonTrackBar1.Location = new System.Drawing.Point(360, 293);
+            kryptonTrackBar1.Name = "kryptonTrackBar1";
+            kryptonTrackBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
+            kryptonTrackBar1.Size = new System.Drawing.Size(34, 220);
+            kryptonTrackBar1.TabIndex = 9;
+            kryptonTrackBar1.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Large;
             // 
             // kryptonCheckButton1
             // 
-            this.kryptonCheckButton1.AutoSize = true;
-            this.kryptonCheckButton1.Checked = true;
-            this.kryptonCheckButton1.Location = new System.Drawing.Point(255, 69);
-            this.kryptonCheckButton1.Name = "kryptonCheckButton1";
-            this.kryptonCheckButton1.Size = new System.Drawing.Size(70, 28);
-            this.kryptonCheckButton1.TabIndex = 8;
-            this.kryptonCheckButton1.Values.Text = "Checked";
+            kryptonCheckButton1.AutoSize = true;
+            kryptonCheckButton1.Checked = true;
+            kryptonCheckButton1.Location = new System.Drawing.Point(255, 69);
+            kryptonCheckButton1.Name = "kryptonCheckButton1";
+            kryptonCheckButton1.Size = new System.Drawing.Size(70, 28);
+            kryptonCheckButton1.TabIndex = 8;
+            kryptonCheckButton1.Values.Text = "Checked";
             // 
             // kryptonPanel1
             // 
-            this.kryptonPanel1.Controls.Add(this.toolStrip1);
-            this.kryptonPanel1.Controls.Add(this.menuStrip1);
-            this.kryptonPanel1.Location = new System.Drawing.Point(6, 1);
-            this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(231, 90);
-            this.kryptonPanel1.TabIndex = 7;
+            kryptonPanel1.Controls.Add(toolStrip1);
+            kryptonPanel1.Controls.Add(menuStrip1);
+            kryptonPanel1.Location = new System.Drawing.Point(6, 1);
+            kryptonPanel1.Name = "kryptonPanel1";
+            kryptonPanel1.Size = new System.Drawing.Size(231, 90);
+            kryptonPanel1.TabIndex = 7;
             // 
             // toolStrip1
             // 
@@ -524,8 +520,8 @@ namespace KryptonPaletteExamples
             // 
             // toolStripSeparator6
             // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 27);
+            toolStripSeparator6.Name = "toolStripSeparator6";
+            toolStripSeparator6.Size = new System.Drawing.Size(6, 27);
             // 
             // cutToolStripButton
             // 
@@ -556,8 +552,8 @@ namespace KryptonPaletteExamples
             // 
             // toolStripSeparator7
             // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 27);
+            toolStripSeparator7.Name = "toolStripSeparator7";
+            toolStripSeparator7.Size = new System.Drawing.Size(6, 27);
             // 
             // helpToolStripButton
             // 
@@ -812,12 +808,12 @@ namespace KryptonPaletteExamples
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.AutoSize = true;
-            this.kryptonButton1.Location = new System.Drawing.Point(255, 35);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(70, 28);
-            this.kryptonButton1.TabIndex = 3;
-            this.kryptonButton1.Values.Text = "OK";
+            kryptonButton1.AutoSize = true;
+            kryptonButton1.Location = new System.Drawing.Point(255, 35);
+            kryptonButton1.Name = "kryptonButton1";
+            kryptonButton1.Size = new System.Drawing.Size(70, 28);
+            kryptonButton1.TabIndex = 3;
+            kryptonButton1.Values.Text = "OK";
             // 
             // kryptonLabel1
             // 
@@ -830,12 +826,12 @@ namespace KryptonPaletteExamples
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.AutoSize = true;
-            this.kryptonButton2.Location = new System.Drawing.Point(255, 139);
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(70, 28);
-            this.kryptonButton2.TabIndex = 4;
-            this.kryptonButton2.Values.Text = "Cancel";
+            kryptonButton2.AutoSize = true;
+            kryptonButton2.Location = new System.Drawing.Point(255, 139);
+            kryptonButton2.Name = "kryptonButton2";
+            kryptonButton2.Size = new System.Drawing.Size(70, 28);
+            kryptonButton2.TabIndex = 4;
+            kryptonButton2.Values.Text = "Cancel";
             // 
             // kryptonHeader2
             // 
@@ -856,90 +852,92 @@ namespace KryptonPaletteExamples
             // 
             // kryptonSplitContainer1
             // 
-            this.kryptonSplitContainer1.Location = new System.Drawing.Point(6, 107);
-            this.kryptonSplitContainer1.Name = "kryptonSplitContainer1";
+            kryptonSplitContainer1.Location = new System.Drawing.Point(6, 107);
+            kryptonSplitContainer1.Name = "kryptonSplitContainer1";
             // 
-            // kryptonSplitContainer1.Panel1
             // 
-            this.kryptonSplitContainer1.Panel1.Controls.Add(this.kryptonHeaderGroup1);
             // 
-            // kryptonSplitContainer1.Panel2
+            kryptonSplitContainer1.Panel1.Controls.Add(kryptonHeaderGroup1);
             // 
-            this.kryptonSplitContainer1.Panel2.Controls.Add(this.kryptonSplitContainer2);
-            this.kryptonSplitContainer1.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.HighProfile;
-            this.kryptonSplitContainer1.Size = new System.Drawing.Size(231, 138);
-            this.kryptonSplitContainer1.SplitterDistance = 90;
-            this.kryptonSplitContainer1.TabIndex = 0;
+            // 
+            // 
+            kryptonSplitContainer1.Panel2.Controls.Add(kryptonSplitContainer2);
+            kryptonSplitContainer1.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.HighProfile;
+            kryptonSplitContainer1.Size = new System.Drawing.Size(231, 138);
+            kryptonSplitContainer1.SplitterDistance = 90;
+            kryptonSplitContainer1.TabIndex = 0;
             // 
             // kryptonHeaderGroup1
             // 
-            this.kryptonHeaderGroup1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonHeaderGroup1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonHeaderGroup1.Name = "kryptonHeaderGroup1";
-            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(90, 138);
-            this.kryptonHeaderGroup1.TabIndex = 0;
-            this.kryptonHeaderGroup1.ValuesPrimary.Heading = "Example";
-            this.kryptonHeaderGroup1.ValuesPrimary.Image = null;
+            kryptonHeaderGroup1.Dock = System.Windows.Forms.DockStyle.Fill;
+            kryptonHeaderGroup1.Location = new System.Drawing.Point(0, 0);
+            kryptonHeaderGroup1.Name = "kryptonHeaderGroup1";
+            kryptonHeaderGroup1.Size = new System.Drawing.Size(90, 138);
+            kryptonHeaderGroup1.TabIndex = 0;
+            kryptonHeaderGroup1.ValuesPrimary.Heading = "Example";
+            kryptonHeaderGroup1.ValuesPrimary.Image = null;
             // 
             // kryptonSplitContainer2
             // 
-            this.kryptonSplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonSplitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.kryptonSplitContainer2.Name = "kryptonSplitContainer2";
-            this.kryptonSplitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            kryptonSplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            kryptonSplitContainer2.Location = new System.Drawing.Point(0, 0);
+            kryptonSplitContainer2.Name = "kryptonSplitContainer2";
+            kryptonSplitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // kryptonSplitContainer2.Panel1
             // 
-            this.kryptonSplitContainer2.Panel1.Controls.Add(this.kryptonHeaderGroup2);
             // 
-            // kryptonSplitContainer2.Panel2
+            kryptonSplitContainer2.Panel1.Controls.Add(kryptonHeaderGroup2);
             // 
-            this.kryptonSplitContainer2.Panel2.Controls.Add(this.kryptonGroup1);
-            this.kryptonSplitContainer2.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.HighInternalProfile;
-            this.kryptonSplitContainer2.Size = new System.Drawing.Size(136, 138);
-            this.kryptonSplitContainer2.SplitterDistance = 80;
-            this.kryptonSplitContainer2.TabIndex = 0;
+            // 
+            // 
+            kryptonSplitContainer2.Panel2.Controls.Add(kryptonGroup1);
+            kryptonSplitContainer2.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.HighInternalProfile;
+            kryptonSplitContainer2.Size = new System.Drawing.Size(136, 138);
+            kryptonSplitContainer2.SplitterDistance = 80;
+            kryptonSplitContainer2.TabIndex = 0;
             // 
             // kryptonHeaderGroup2
             // 
-            this.kryptonHeaderGroup2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonHeaderGroup2.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup2.Location = new System.Drawing.Point(0, 0);
-            this.kryptonHeaderGroup2.Name = "kryptonHeaderGroup2";
-            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(136, 80);
-            this.kryptonHeaderGroup2.StateNormal.HeaderPrimary.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.kryptonHeaderGroup2.TabIndex = 0;
-            this.kryptonHeaderGroup2.ValuesPrimary.Heading = "Calendar";
-            this.kryptonHeaderGroup2.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("kryptonHeaderGroup2.ValuesPrimary.Image")));
+            kryptonHeaderGroup2.Dock = System.Windows.Forms.DockStyle.Fill;
+            kryptonHeaderGroup2.HeaderVisibleSecondary = false;
+            kryptonHeaderGroup2.Location = new System.Drawing.Point(0, 0);
+            kryptonHeaderGroup2.Name = "kryptonHeaderGroup2";
+            kryptonHeaderGroup2.Size = new System.Drawing.Size(136, 80);
+            kryptonHeaderGroup2.StateNormal.HeaderPrimary.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            kryptonHeaderGroup2.TabIndex = 0;
+            kryptonHeaderGroup2.ValuesPrimary.Heading = "Calendar";
+            kryptonHeaderGroup2.ValuesPrimary.Image = (System.Drawing.Image)resources.GetObject("kryptonHeaderGroup2.ValuesPrimary.Image");
             // 
             // kryptonGroup1
             // 
-            this.kryptonGroup1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonGroup1.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlAlternate;
-            this.kryptonGroup1.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlAlternate;
-            this.kryptonGroup1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonGroup1.Name = "kryptonGroup1";
-            this.kryptonGroup1.Size = new System.Drawing.Size(136, 53);
-            this.kryptonGroup1.TabIndex = 0;
+            kryptonGroup1.Dock = System.Windows.Forms.DockStyle.Fill;
+            kryptonGroup1.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlAlternate;
+            kryptonGroup1.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlAlternate;
+            kryptonGroup1.Location = new System.Drawing.Point(0, 0);
+            kryptonGroup1.Name = "kryptonGroup1";
+            kryptonGroup1.Size = new System.Drawing.Size(136, 53);
+            kryptonGroup1.TabIndex = 0;
             // 
             // btnImportCustomPalette
             // 
-            this.btnImportCustomPalette.Location = new System.Drawing.Point(632, 561);
-            this.btnImportCustomPalette.Name = "btnImportCustomPalette";
-            this.btnImportCustomPalette.Size = new System.Drawing.Size(114, 43);
-            this.btnImportCustomPalette.TabIndex = 1;
-            this.btnImportCustomPalette.Text = "&Import Custom Palette";
-            this.btnImportCustomPalette.UseVisualStyleBackColor = true;
+            btnImportCustomPalette.Location = new System.Drawing.Point(632, 561);
+            btnImportCustomPalette.Name = "btnImportCustomPalette";
+            btnImportCustomPalette.Size = new System.Drawing.Size(114, 43);
+            btnImportCustomPalette.TabIndex = 1;
+            btnImportCustomPalette.Text = "&Import Custom Palette";
+            btnImportCustomPalette.UseVisualStyleBackColor = true;
+            btnImportCustomPalette.Click += btnImportCustomPalette_Click;
             // 
             // btnExport
             // 
-            this.btnExport.Enabled = false;
-            this.btnExport.Location = new System.Drawing.Point(752, 561);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(114, 43);
-            this.btnExport.TabIndex = 2;
-            this.btnExport.Text = "&Export Custom Palette";
-            this.btnExport.UseVisualStyleBackColor = true;
+            btnExport.Enabled = false;
+            btnExport.Location = new System.Drawing.Point(752, 561);
+            btnExport.Name = "btnExport";
+            btnExport.Size = new System.Drawing.Size(114, 43);
+            btnExport.TabIndex = 2;
+            btnExport.Text = "&Export Custom Palette";
+            btnExport.UseVisualStyleBackColor = true;
+            btnExport.Click += btnExport_Click;
             // 
             // button1
             // 
@@ -965,7 +963,7 @@ namespace KryptonPaletteExamples
             // 
             // kryptonIntegratedToolbarCopyCommand1
             // 
-            this.kryptonIntegratedToolbarCopyCommand1.Text = "Copy";
+            kryptonIntegratedToolbarCopyCommand1.Text = "Copy";
             // 
             // Form1
             // 

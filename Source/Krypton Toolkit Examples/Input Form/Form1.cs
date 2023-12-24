@@ -74,5 +74,12 @@ namespace InputForm
         private void clearTelephone_Click(object sender, EventArgs e) => maskedTextBoxTelephone.Text = string.Empty;
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e) => Close();
+
+        private void buttonOK_Click(object sender, EventArgs e)
+        {
+            KryptonInputBoxData data = new KryptonInputBoxData() { Caption = textBoxName.Text };
+
+            KryptonInputBox.Show(data);
+        }
     }
 }

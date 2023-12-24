@@ -38,7 +38,7 @@ namespace KryptonPaletteExamples
                 kryptonThemeComboBox1.Manager.GlobalCustomPalette = kryptonPaletteCustom;
                 propertyGrid.SelectedObject = kryptonPaletteCustom;
 
-                kryptonThemeComboBox1.Manager.GlobalPaletteMode = PaletteMode.Custom;
+                //kryptonThemeComboBox1.Manager.GlobalPaletteMode = PaletteMode.Custom;
             }
             catch (Exception exc)
             {
@@ -55,7 +55,10 @@ namespace KryptonPaletteExamples
             }
             else
             {
-                propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components);
+                //propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components) {
+                //    BasePaletteMode = kryptonThemeComboBox1.Manager.GlobalPaletteMode
+                //};
+                propertyGrid.SelectedObject = kryptonThemeComboBox1.Manager.GlobalPaletteMode;
             }
         }
 

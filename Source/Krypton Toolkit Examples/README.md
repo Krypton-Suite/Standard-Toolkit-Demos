@@ -34,6 +34,7 @@
 	* [KryptonFolderBrowserDialog](#kryptonfolderbrowserdialog)
 	* [KryptonFontDialog](#kryptonfontdialog)
 	* [KryptonForm](#kryptonform)
+	* [KryptonFormFading](#kryptonformfading)
 	* [KryptonGroup](#kryptongroup)
 	* [KryptonGroupBox](#kryptongroupbox)
 	* [KryptonHeader](#kryptonheader)
@@ -159,6 +160,8 @@ There are 2 set of solutions in these projects:
 ![KryptonFontDialog Example](KryptonFontDialog%20Example/example.png)
 ## KryptonForm
 ![KryptonForm Examples](KryptonForm%20Examples/example.gif)
+## KryptonFormFading
+![KryptonFormFading Example](KryptonFormFading%20Example/Example.gif)
 ## KryptonGroup
 ![KryptonGroup Examples](KryptonGroup%20Examples/example.png)
 ## KryptonGroupBox

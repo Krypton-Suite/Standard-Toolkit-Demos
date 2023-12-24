@@ -46,7 +46,6 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.propertyGrid = new System.Windows.Forms.PropertyGrid();
             this.kryptonMonthCalendar1 = new Krypton.Toolkit.KryptonMonthCalendar();
-            this.kryptonPalette = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
             this.groupBoxPalette.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -81,7 +80,7 @@
             this.rbOffice2010Black.TabIndex = 2;
             this.rbOffice2010Black.Text = "Office 2010 - Black";
             this.rbOffice2010Black.UseVisualStyleBackColor = true;
-            //this.rbOffice2010Black.CheckedChanged += new System.EventHandler(this.rbOffice2010Black_CheckedChanged);
+            this.rbOffice2010Black.CheckedChanged += new System.EventHandler(this.rbOffice2010Black_CheckedChanged);
             // 
             // rbOffice2010Silver
             // 
@@ -92,7 +91,7 @@
             this.rbOffice2010Silver.TabIndex = 1;
             this.rbOffice2010Silver.Text = "Office 2010 - Silver";
             this.rbOffice2010Silver.UseVisualStyleBackColor = true;
-            //this.rbOffice2010Silver.CheckedChanged += new System.EventHandler(this.rbOffice2010Silver_CheckedChanged);
+            this.rbOffice2010Silver.CheckedChanged += new System.EventHandler(this.rbOffice2010Silver_CheckedChanged);
             // 
             // rbOffice2010Blue
             // 
@@ -105,7 +104,7 @@
             this.rbOffice2010Blue.TabStop = true;
             this.rbOffice2010Blue.Text = "Office 2010 - Blue";
             this.rbOffice2010Blue.UseVisualStyleBackColor = true;
-            //this.rbOffice2010Blue.CheckedChanged += new System.EventHandler(this.rbOffice2010Blue_CheckedChanged);
+            this.rbOffice2010Blue.CheckedChanged += new System.EventHandler(this.rbOffice2010Blue_CheckedChanged);
             // 
             // rbSparklePurple
             // 
@@ -116,7 +115,7 @@
             this.rbSparklePurple.TabIndex = 8;
             this.rbSparklePurple.Text = "Sparkle - Purple";
             this.rbSparklePurple.UseVisualStyleBackColor = true;
-            //this.rbSparklePurple.CheckedChanged += new System.EventHandler(this.rbSparklePurple_CheckedChanged);
+            this.rbSparklePurple.CheckedChanged += new System.EventHandler(this.rbSparklePurple_CheckedChanged);
             // 
             // rbSparkleOrange
             // 
@@ -127,7 +126,7 @@
             this.rbSparkleOrange.TabIndex = 7;
             this.rbSparkleOrange.Text = "Sparkle - Orange";
             this.rbSparkleOrange.UseVisualStyleBackColor = true;
-            //this.rbSparkleOrange.CheckedChanged += new System.EventHandler(this.rbSparkleOrange_CheckedChanged);
+            this.rbSparkleOrange.CheckedChanged += new System.EventHandler(this.rbSparkleOrange_CheckedChanged);
             // 
             // rbSparkleBlue
             // 
@@ -138,7 +137,7 @@
             this.rbSparkleBlue.TabIndex = 6;
             this.rbSparkleBlue.Text = "Sparkle - Blue";
             this.rbSparkleBlue.UseVisualStyleBackColor = true;
-            //this.rbSparkleBlue.CheckedChanged += new System.EventHandler(this.rbSparkleBlue_CheckedChanged);
+            this.rbSparkleBlue.CheckedChanged += new System.EventHandler(this.rbSparkleBlue_CheckedChanged);
             // 
             // rbSystem
             // 
@@ -149,7 +148,7 @@
             this.rbSystem.TabIndex = 10;
             this.rbSystem.Text = "System";
             this.rbSystem.UseVisualStyleBackColor = true;
-            //this.rbSystem.CheckedChanged += new System.EventHandler(this.rbSystem_CheckedChanged);
+            this.rbSystem.CheckedChanged += new System.EventHandler(this.rbSystem_CheckedChanged);
             // 
             // rbOffice2003
             // 
@@ -160,7 +159,7 @@
             this.rbOffice2003.TabIndex = 9;
             this.rbOffice2003.Text = "Office 2003";
             this.rbOffice2003.UseVisualStyleBackColor = true;
-            //this.rbOffice2003.CheckedChanged += new System.EventHandler(this.rbOffice2003_CheckedChanged);
+            this.rbOffice2003.CheckedChanged += new System.EventHandler(this.rbOffice2003_CheckedChanged);
             // 
             // rbOffice2007Black
             // 
@@ -171,7 +170,7 @@
             this.rbOffice2007Black.TabIndex = 5;
             this.rbOffice2007Black.Text = "Office 2007 - Black";
             this.rbOffice2007Black.UseVisualStyleBackColor = true;
-            //this.rbOffice2007Black.CheckedChanged += new System.EventHandler(this.rbOffice2007Black_CheckedChanged);
+            this.rbOffice2007Black.CheckedChanged += new System.EventHandler(this.rbOffice2007Black_CheckedChanged);
             // 
             // rbOffice2007Silver
             // 
@@ -182,7 +181,7 @@
             this.rbOffice2007Silver.TabIndex = 4;
             this.rbOffice2007Silver.Text = "Office 2007 - Silver";
             this.rbOffice2007Silver.UseVisualStyleBackColor = true;
-            //this.rbOffice2007Silver.CheckedChanged += new System.EventHandler(this.rbOffice2007Silver_CheckedChanged);
+            this.rbOffice2007Silver.CheckedChanged += new System.EventHandler(this.rbOffice2007Silver_CheckedChanged);
             // 
             // rbOffice2007Blue
             // 
@@ -193,7 +192,7 @@
             this.rbOffice2007Blue.TabIndex = 3;
             this.rbOffice2007Blue.Text = "Office 2007 - Blue";
             this.rbOffice2007Blue.UseVisualStyleBackColor = true;
-            //this.rbOffice2007Blue.CheckedChanged += new System.EventHandler(this.rbOffice2007Blue_CheckedChanged);
+            this.rbOffice2007Blue.CheckedChanged += new System.EventHandler(this.rbOffice2007Blue_CheckedChanged);
             // 
             // buttonClose
             // 
