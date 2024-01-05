@@ -41,26 +41,23 @@ namespace KryptonTreeViewExamples
         {
             KryptonTreeNode item = new KryptonTreeNode
             {
-                Text = $"Item {(_next++)}",
+                Text = $@"Item {_next++}",
                 ImageIndex = _rand.Next(imageList.Images.Count - 1)
             };
             item.SelectedImageIndex = item.ImageIndex;
             return item;
         }
 
-        private void buttonAppend_Click(object sender, EventArgs e)
+        private void buttonAppend_Click(object? sender, EventArgs e)
         {
             TreeNode node = CreateNewItem();
             kryptonTreeView.Nodes.Add(node);
 
             // If nothing currently selected, then select the new one
-            if (kryptonTreeView.SelectedNode == null)
-            {
-                kryptonTreeView.SelectedNode = node;
-            }
+            kryptonTreeView.SelectedNode = node;
         }
 
-        private void buttonInsert_Click(object sender, EventArgs e)
+        private void buttonInsert_Click(object? sender, EventArgs e)
         {
             // Can only insert if something is already selected
             if (kryptonTreeView.SelectedNode != null)
@@ -74,7 +71,7 @@ namespace KryptonTreeViewExamples
             }
         }
 
-        private void buttonRemove_Click(object sender, EventArgs e)
+        private void buttonRemove_Click(object? sender, EventArgs e)
         {
             // Can only remove if something is selected
             if (kryptonTreeView.SelectedNode != null)
@@ -90,9 +87,9 @@ namespace KryptonTreeViewExamples
             }
         }
         
-        private void buttonClear_Click(object sender, EventArgs e) => kryptonTreeView.Nodes.Clear();
+        private void buttonClear_Click(object? sender, EventArgs e) => kryptonTreeView.Nodes.Clear();
 
-        private void kryptonCheckSet_CheckedButtonChanged(object sender, EventArgs e)
+        private void kryptonCheckSet_CheckedButtonChanged(object? sender, EventArgs e)
         {
             if (kryptonCheckSet.CheckedButton == check2007Blue)
             {
@@ -112,7 +109,7 @@ namespace KryptonTreeViewExamples
             }
         }
 
-        private void buttonClose_Click(object sender, EventArgs e) => Close();
+        private void buttonClose_Click(object? sender, EventArgs e) => Close();
 
         private void BtnToggleNodeCheckBox_Click(object sender, EventArgs e)
         {
@@ -122,7 +119,7 @@ namespace KryptonTreeViewExamples
             }
         }
 
-        private void KryptonTreeView_BeforeCheck(object sender, TreeViewCancelEventArgs e)
+        private void KryptonTreeView_BeforeCheck(object? sender, TreeViewCancelEventArgs e)
         {
             if (kryptonTreeView.SelectedNode is KryptonTreeNode kryptonNode)
             {

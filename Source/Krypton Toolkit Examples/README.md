@@ -227,7 +227,7 @@ There are 2 set of solutions in these projects:
 ## KryptonTrackBar
 ![KryptonTrackBar Examples](KryptonTrackBar%20Examples/example.png)
 ## KryptonTreeView
-![KryptonTreeView Examples](KryptonTreeView%20Examples/example.png)
+![KryptonTreeView Examples](KryptonTreeView%20Examples/example.gif)
 ## KryptonWebBrowser
 ![KryptonWebBrowser Examples](KryptonWebBrowser%20Example/example.png)
 ## KryptonWrapLabel
