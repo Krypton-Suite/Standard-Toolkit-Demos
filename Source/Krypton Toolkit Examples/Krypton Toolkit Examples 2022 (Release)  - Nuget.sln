@@ -113,20 +113,35 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test MessageBox Clipping 20
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test Text Clipping 2022", "Test Text Clipping\Test Text Clipping 2022.csproj", "{0AAC58AA-1697-4AB9-878F-63EA1187A9CB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CE7E07CC-8204-402B-9341-5680F8EA7358}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonWebBrowser Example 2022", "KryptonWebBrowser Example\KryptonWebBrowser Example 2022.csproj", "{4F8B9315-2C38-4573-9423-0A1BE40D89C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A29D55C7-11C8-4FBE-8F12-B5CF2C62702F}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonListView Examples 2022", "KryptonListView Examples\KryptonListView Examples 2022.csproj", "{9AB9A02E-574D-401D-9D67-C16A11D4FC4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton Theme Playground 2022", "Krypton Theme Playground\Krypton Theme Playground 2022.csproj", "{9045540F-D0C2-4D24-AE30-C633FE4F08F5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton Theme Selector 2022", "Krypton Theme Selector\Krypton Theme Selector 2022.csproj", "{A11AF073-3180-4AE9-85DA-A36C1693FA17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton UAC Button 2022", "Krypton UAC Button\Krypton UAC Button 2022.csproj", "{31ECCF66-0997-46BA-97C1-F4FEA3524971}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton Scrollbars 2022", "Krypton Scrollbars\Krypton Scrollbars 2022.csproj", "{D4F4B9F2-3078-4442-A66A-526ACEAB4F55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonFontDialog Example 2022", "KryptonFontDialog Example\KryptonFontDialog Example 2022.csproj", "{BD46345C-333F-4DA6-8145-274883F5388A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton Theme Playground 2022", "Krypton Theme Playground\Krypton Theme Playground 2022.csproj", "{71750C4E-8B92-4475-B132-4672F02BB817}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonColorDialog Example 2022", "KryptonColorDialog Example\KryptonColorDialog Example 2022.csproj", "{8A3E3D87-FD92-4CD4-9C22-1E61057BEBA8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton UAC Button 2022", "Krypton UAC Button\Krypton UAC Button 2022.csproj", "{22332A5F-8A0D-45F1-A07C-57D6522E87F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonPrintDialog Example 2022", "KryptonPrintDialog Example\KryptonPrintDialog Example 2022.csproj", "{27C591CF-E471-4170-B65B-8C2E985ECACC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonHelpIcon Examples 2022", "KryptonHelpIcon Examples\KryptonHelpIcon Examples 2022.csproj", "{0743C17D-54F5-4A49-91A6-06E337B74901}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonScrollbar Examples 2022", "KryptonScrollbar Examples\KryptonScrollbar Examples 2022.csproj", "{7F8CC554-E1B1-4DBE-B659-9E548940C730}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton Scrollbars 2022", "Krypton Scrollbars\Krypton Scrollbars 2022.csproj", "{AD90A17D-8D5E-4EA8-9ED4-3E588A3146DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonTableLayoutPanel Examples 2022", "KryptonTableLayoutPanel Examples\KryptonTableLayoutPanel Examples 2022.csproj", "{B983A191-2661-4C00-8238-7D0D7E8264A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonListView Examples 2022", "KryptonListView Examples\KryptonListView Examples 2022.csproj", "{7280F80E-BFA2-4EBC-842D-D9B7EAA864A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton Theme Selector 2022", "Krypton Theme Selector\Krypton Theme Selector 2022.csproj", "{D0610E53-93C4-41AE-9787-E537ECC86307}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -354,26 +369,54 @@ Global
 		{0AAC58AA-1697-4AB9-878F-63EA1187A9CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AAC58AA-1697-4AB9-878F-63EA1187A9CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AAC58AA-1697-4AB9-878F-63EA1187A9CB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9AB9A02E-574D-401D-9D67-C16A11D4FC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9AB9A02E-574D-401D-9D67-C16A11D4FC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9AB9A02E-574D-401D-9D67-C16A11D4FC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9AB9A02E-574D-401D-9D67-C16A11D4FC4D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A11AF073-3180-4AE9-85DA-A36C1693FA17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A11AF073-3180-4AE9-85DA-A36C1693FA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A11AF073-3180-4AE9-85DA-A36C1693FA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A11AF073-3180-4AE9-85DA-A36C1693FA17}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D4F4B9F2-3078-4442-A66A-526ACEAB4F55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D4F4B9F2-3078-4442-A66A-526ACEAB4F55}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D4F4B9F2-3078-4442-A66A-526ACEAB4F55}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D4F4B9F2-3078-4442-A66A-526ACEAB4F55}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71750C4E-8B92-4475-B132-4672F02BB817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71750C4E-8B92-4475-B132-4672F02BB817}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71750C4E-8B92-4475-B132-4672F02BB817}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71750C4E-8B92-4475-B132-4672F02BB817}.Release|Any CPU.Build.0 = Release|Any CPU
-		{22332A5F-8A0D-45F1-A07C-57D6522E87F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{22332A5F-8A0D-45F1-A07C-57D6522E87F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{22332A5F-8A0D-45F1-A07C-57D6522E87F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{22332A5F-8A0D-45F1-A07C-57D6522E87F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F8B9315-2C38-4573-9423-0A1BE40D89C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F8B9315-2C38-4573-9423-0A1BE40D89C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F8B9315-2C38-4573-9423-0A1BE40D89C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F8B9315-2C38-4573-9423-0A1BE40D89C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9045540F-D0C2-4D24-AE30-C633FE4F08F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9045540F-D0C2-4D24-AE30-C633FE4F08F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9045540F-D0C2-4D24-AE30-C633FE4F08F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9045540F-D0C2-4D24-AE30-C633FE4F08F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31ECCF66-0997-46BA-97C1-F4FEA3524971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31ECCF66-0997-46BA-97C1-F4FEA3524971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31ECCF66-0997-46BA-97C1-F4FEA3524971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31ECCF66-0997-46BA-97C1-F4FEA3524971}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD46345C-333F-4DA6-8145-274883F5388A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD46345C-333F-4DA6-8145-274883F5388A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD46345C-333F-4DA6-8145-274883F5388A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD46345C-333F-4DA6-8145-274883F5388A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A3E3D87-FD92-4CD4-9C22-1E61057BEBA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A3E3D87-FD92-4CD4-9C22-1E61057BEBA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A3E3D87-FD92-4CD4-9C22-1E61057BEBA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A3E3D87-FD92-4CD4-9C22-1E61057BEBA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27C591CF-E471-4170-B65B-8C2E985ECACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27C591CF-E471-4170-B65B-8C2E985ECACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27C591CF-E471-4170-B65B-8C2E985ECACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27C591CF-E471-4170-B65B-8C2E985ECACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0743C17D-54F5-4A49-91A6-06E337B74901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0743C17D-54F5-4A49-91A6-06E337B74901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0743C17D-54F5-4A49-91A6-06E337B74901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0743C17D-54F5-4A49-91A6-06E337B74901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F8CC554-E1B1-4DBE-B659-9E548940C730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F8CC554-E1B1-4DBE-B659-9E548940C730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F8CC554-E1B1-4DBE-B659-9E548940C730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F8CC554-E1B1-4DBE-B659-9E548940C730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD90A17D-8D5E-4EA8-9ED4-3E588A3146DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD90A17D-8D5E-4EA8-9ED4-3E588A3146DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD90A17D-8D5E-4EA8-9ED4-3E588A3146DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD90A17D-8D5E-4EA8-9ED4-3E588A3146DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B983A191-2661-4C00-8238-7D0D7E8264A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B983A191-2661-4C00-8238-7D0D7E8264A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B983A191-2661-4C00-8238-7D0D7E8264A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B983A191-2661-4C00-8238-7D0D7E8264A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7280F80E-BFA2-4EBC-842D-D9B7EAA864A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7280F80E-BFA2-4EBC-842D-D9B7EAA864A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7280F80E-BFA2-4EBC-842D-D9B7EAA864A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7280F80E-BFA2-4EBC-842D-D9B7EAA864A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0610E53-93C4-41AE-9787-E537ECC86307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0610E53-93C4-41AE-9787-E537ECC86307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0610E53-93C4-41AE-9787-E537ECC86307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0610E53-93C4-41AE-9787-E537ECC86307}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
