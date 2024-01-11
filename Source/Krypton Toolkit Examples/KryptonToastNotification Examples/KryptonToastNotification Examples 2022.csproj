@@ -1,21 +1,22 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
     <PropertyGroup>
         <TargetFrameworks>net48;net6.0-windows;net7.0-windows;net8.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
-        <RootNamespace>KryptonTextBoxExamples</RootNamespace>
-        <AssemblyName>Krypton TextBox Examples</AssemblyName>
+        <RootNamespace>KryptonToastNotificationExamples</RootNamespace>
+        <AssemblyName>Krypton Toast Notification Examples</AssemblyName>
         <ApplicationIcon>Krypton.ico</ApplicationIcon>
         <UseApplicationTrust>false</UseApplicationTrust>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <UseWindowsForms>true</UseWindowsForms>
         <PlatformTarget>AnyCPU</PlatformTarget>
-        <NeutralLanguage>en</NeutralLanguage>      
+        <NeutralLanguage>en</NeutralLanguage>
         <LangVersion>preview</LangVersion>
         <Nullable>enable</Nullable>
         <WarningLevel>6</WarningLevel>
         <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
     </PropertyGroup>
-<ItemGroup>
+    <ItemGroup>
         <None Remove="Krypton.ico" />
     </ItemGroup>
     <ItemGroup>
@@ -35,6 +36,6 @@
     </Choose>
     <PropertyGroup>
         <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
-        <ApplicationManifest>app.manifest</ApplicationManifest>
     </PropertyGroup>
+
 </Project>
