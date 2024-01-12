@@ -64,6 +64,7 @@
 	* [KryptonTableLayoutPanel](#kryptontablelayoutpanel)
 	* [KryptonTaskDialog](#kryptontaskdialog)
 	* [KryptonTextBox](#kryptontextbox)
+	* [KryptonToastNotification](#kryptontoastnotification)
 	* [KryptonTrackBar](#kryptontrackbar)
 	* [KryptonTreeView](#kryptontreeview)
 	* [KryptonWebBrowser](#kryptonwebbrowser)
@@ -224,6 +225,8 @@ There are 2 set of solutions in these projects:
 ![KryptonTaskDialog Examples](KryptonTaskDialog%20Examples/example.png)
 ## KryptonTextBox
 ![KryptonTextBox Examples](KryptonTextBox%20Examples/example.png)
+## KryptonToastNotification
+![KryptonToastNotification Examples](KryptonToastNotification%20Examples/ToastNotificationExample.gif)
 ## KryptonTrackBar
 ![KryptonTrackBar Examples](KryptonTrackBar%20Examples/example.png)
 ## KryptonTreeView
