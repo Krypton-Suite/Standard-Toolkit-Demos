@@ -68,7 +68,6 @@ namespace KryptonScrollbarExamples
             // 
             // kryptonProgressBar2
             // 
-            this.kryptonProgressBar2.CornerRoundingRadius = 10F;
             this.kryptonProgressBar2.Enabled = false;
             this.kryptonProgressBar2.Location = new System.Drawing.Point(39, 203);
             this.kryptonProgressBar2.Name = "kryptonProgressBar2";
@@ -86,7 +85,6 @@ namespace KryptonScrollbarExamples
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.CornerRoundingRadius = 10F;
             this.kryptonButton1.Location = new System.Drawing.Point(39, 255);
             this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButton1.Name = "kryptonButton1";
@@ -125,7 +123,6 @@ namespace KryptonScrollbarExamples
             // 
             // progressBar1
             // 
-            this.progressBar1.CornerRoundingRadius = 10F;
             this.progressBar1.Location = new System.Drawing.Point(39, 159);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(353, 23);

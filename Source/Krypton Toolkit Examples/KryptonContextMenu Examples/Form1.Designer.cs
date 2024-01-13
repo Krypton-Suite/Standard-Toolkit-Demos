@@ -342,7 +342,6 @@ namespace KryptonContextMenuExamples
             // 
             // kryptonThemeComboBox1
             // 
-            kryptonThemeComboBox1.CornerRoundingRadius = 1F;
             kryptonThemeComboBox1.DropDownWidth = 367;
             kryptonThemeComboBox1.IntegralHeight = false;
             kryptonThemeComboBox1.Location = new System.Drawing.Point(12, 23);
