@@ -5,8 +5,6 @@ VisualStudioVersion = 17.0.31825.309
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton Explorer 2022", "Krypton Explorer 2022.csproj", "{04CD6851-B923-4AB3-91E7-A1D8477AFE0E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DE2F68FA-A1B6-4FCF-A89A-F47FEC3FF9C9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,8 +12,8 @@ Global
 		ReleaseCS|Any CPU = ReleaseCS|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{04CD6851-B923-4AB3-91E7-A1D8477AFE0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{04CD6851-B923-4AB3-91E7-A1D8477AFE0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04CD6851-B923-4AB3-91E7-A1D8477AFE0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04CD6851-B923-4AB3-91E7-A1D8477AFE0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04CD6851-B923-4AB3-91E7-A1D8477AFE0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04CD6851-B923-4AB3-91E7-A1D8477AFE0E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{04CD6851-B923-4AB3-91E7-A1D8477AFE0E}.ReleaseCS|Any CPU.ActiveCfg = Release|Any CPU
