@@ -63,7 +63,6 @@ namespace RibbonGallery
             // 
             // kryptonRibbon
             // 
-            this.kryptonRibbon.AllowFormIntegrate = true;
             this.kryptonRibbon.HideRibbonSize = new System.Drawing.Size(100, 100);
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";

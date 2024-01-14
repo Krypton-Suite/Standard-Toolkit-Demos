@@ -362,7 +362,6 @@ namespace KeyTipsAndKeyboardAccess
             // 
             // kryptonRibbon
             // 
-            this.kryptonRibbon.AllowFormIntegrate = true;
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
             this.kryptonRibbon.QATButtons.AddRange(new System.ComponentModel.Component[] {

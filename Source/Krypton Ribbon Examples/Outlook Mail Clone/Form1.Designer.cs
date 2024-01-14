@@ -1307,7 +1307,6 @@ namespace OutlookMailClone
             // 
             // kryptonRibbon
             // 
-            this.kryptonRibbon.AllowFormIntegrate = true;
             this.kryptonRibbon.ButtonSpecs.Add(this.buttonSpecHelp);
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";

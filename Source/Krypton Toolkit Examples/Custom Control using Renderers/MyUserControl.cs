@@ -242,7 +242,7 @@ namespace CustomControlUsingRenderers
                     // Last of all we draw the content over the top of the border and background
                     renderer.RenderStandardContent.DrawContent(renderContext, innerRect, 
                         _paletteContent, _mementoContent, 
-                        Orientation, buttonState, false, false, true);
+                        Orientation, buttonState, true);
                 }
             }
 

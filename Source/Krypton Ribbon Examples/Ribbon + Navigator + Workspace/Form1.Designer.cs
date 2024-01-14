@@ -195,7 +195,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.panelFill.Margin = new System.Windows.Forms.Padding(9);
             this.panelFill.Name = "panelFill";
             this.panelFill.Padding = new System.Windows.Forms.Padding(9);
-            this.panelFill.Size = new System.Drawing.Size(887, 581);
+            this.panelFill.Size = new System.Drawing.Size(873, 567);
             this.panelFill.TabIndex = 1;
             // 
             // kryptonWorkspace
@@ -219,7 +219,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonWorkspace.Root.UniqueName = "03CE3DB6856D4BE671B66A4FB4EF68C3";
             this.kryptonWorkspace.Root.WorkspaceControl = this.kryptonWorkspace;
             this.kryptonWorkspace.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.HighProfile;
-            this.kryptonWorkspace.Size = new System.Drawing.Size(665, 563);
+            this.kryptonWorkspace.Size = new System.Drawing.Size(651, 549);
             this.kryptonWorkspace.SplitterWidth = 5;
             this.kryptonWorkspace.TabIndex = 3;
             this.kryptonWorkspace.TabStop = true;
@@ -240,7 +240,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonPage1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPage1.MinimumSize = new System.Drawing.Size(67, 62);
             this.kryptonPage1.Name = "kryptonPage1";
-            this.kryptonPage1.Size = new System.Drawing.Size(663, 248);
+            this.kryptonPage1.Size = new System.Drawing.Size(649, 241);
             this.kryptonPage1.Text = "Page 1";
             this.kryptonPage1.TextDescription = "Page 1 Description";
             this.kryptonPage1.TextTitle = "Page 1 Title";
@@ -428,7 +428,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonPage4.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPage4.MinimumSize = new System.Drawing.Size(67, 62);
             this.kryptonPage4.Name = "kryptonPage4";
-            this.kryptonPage4.Size = new System.Drawing.Size(328, 248);
+            this.kryptonPage4.Size = new System.Drawing.Size(321, 241);
             this.kryptonPage4.Text = "Page 5";
             this.kryptonPage4.TextDescription = "Page 5 Description";
             this.kryptonPage4.TextTitle = "Page 5 Title";
@@ -500,7 +500,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonPage6.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPage6.MinimumSize = new System.Drawing.Size(67, 62);
             this.kryptonPage6.Name = "kryptonPage6";
-            this.kryptonPage6.Size = new System.Drawing.Size(328, 248);
+            this.kryptonPage6.Size = new System.Drawing.Size(321, 241);
             this.kryptonPage6.Text = "Page 8";
             this.kryptonPage6.TextDescription = "Page 8 Description";
             this.kryptonPage6.TextTitle = "Page 8 Title";
@@ -528,7 +528,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonPanel1.Location = new System.Drawing.Point(204, 9);
             this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(9, 563);
+            this.kryptonPanel1.Size = new System.Drawing.Size(9, 549);
             this.kryptonPanel1.TabIndex = 2;
             // 
             // navigatorOutlook
@@ -568,7 +568,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.pageGlobalPalettes,
             this.kryptonDisplayMode});
             this.navigatorOutlook.SelectedIndex = 0;
-            this.navigatorOutlook.Size = new System.Drawing.Size(195, 563);
+            this.navigatorOutlook.Size = new System.Drawing.Size(195, 549);
             this.navigatorOutlook.TabIndex = 0;
             this.navigatorOutlook.Text = "kryptonNavigator1";
             // 
@@ -600,7 +600,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.pageGlobalPalettes.MinimumSize = new System.Drawing.Size(193, 62);
             this.pageGlobalPalettes.Name = "pageGlobalPalettes";
             this.pageGlobalPalettes.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.pageGlobalPalettes.Size = new System.Drawing.Size(193, 442);
+            this.pageGlobalPalettes.Size = new System.Drawing.Size(193, 428);
             this.pageGlobalPalettes.Text = "Palettes";
             this.pageGlobalPalettes.TextDescription = "Palettes";
             this.pageGlobalPalettes.TextTitle = "Palettes";
@@ -799,7 +799,6 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             // kryptonRibbon
             // 
-            this.kryptonRibbon.AllowFormIntegrate = true;
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
             this.kryptonRibbon.QATButtons.AddRange(new System.ComponentModel.Component[] {
@@ -820,92 +819,77 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
             this.kryptonRibbon.RibbonAppButton.AppButtonShowRecentDocs = false;
-            this.kryptonRibbon.RibbonAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.kryptonRibbonTab1,
             this.kryptonRibbonTab2});
-            this.kryptonRibbon.SelectedContext = null;
             this.kryptonRibbon.SelectedTab = this.kryptonRibbonTab1;
-            this.kryptonRibbon.Size = new System.Drawing.Size(887, 169);
+            this.kryptonRibbon.Size = new System.Drawing.Size(873, 169);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // qatAlbania
             // 
             this.qatAlbania.Image = ((System.Drawing.Image)(resources.GetObject("qatAlbania.Image")));
             this.qatAlbania.Text = "Albania";
-            this.qatAlbania.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatAruba
             // 
             this.qatAruba.Image = ((System.Drawing.Image)(resources.GetObject("qatAruba.Image")));
             this.qatAruba.Text = "Aruba";
-            this.qatAruba.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatBenin
             // 
             this.qatBenin.Image = ((System.Drawing.Image)(resources.GetObject("qatBenin.Image")));
             this.qatBenin.Text = "Benin";
-            this.qatBenin.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatBrunei
             // 
             this.qatBrunei.Image = ((System.Drawing.Image)(resources.GetObject("qatBrunei.Image")));
             this.qatBrunei.Text = "Brunei";
-            this.qatBrunei.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatCapeVerde
             // 
             this.qatCapeVerde.Image = ((System.Drawing.Image)(resources.GetObject("qatCapeVerde.Image")));
             this.qatCapeVerde.Text = "Cape Verde";
-            this.qatCapeVerde.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatEthiopia
             // 
             this.qatEthiopia.Image = ((System.Drawing.Image)(resources.GetObject("qatEthiopia.Image")));
             this.qatEthiopia.Text = "Ethiopia";
-            this.qatEthiopia.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatGuam
             // 
             this.qatGuam.Image = ((System.Drawing.Image)(resources.GetObject("qatGuam.Image")));
             this.qatGuam.Text = "Guam";
-            this.qatGuam.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatHaiti
             // 
             this.qatHaiti.Image = ((System.Drawing.Image)(resources.GetObject("qatHaiti.Image")));
             this.qatHaiti.Text = "Haiti";
-            this.qatHaiti.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatLaos
             // 
             this.qatLaos.Image = ((System.Drawing.Image)(resources.GetObject("qatLaos.Image")));
             this.qatLaos.Text = "Laos";
-            this.qatLaos.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatMali
             // 
             this.qatMali.Image = ((System.Drawing.Image)(resources.GetObject("qatMali.Image")));
             this.qatMali.Text = "Mali";
-            this.qatMali.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatMozambique
             // 
             this.qatMozambique.Image = ((System.Drawing.Image)(resources.GetObject("qatMozambique.Image")));
             this.qatMozambique.Text = "Mozambique";
-            this.qatMozambique.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatPanama
             // 
             this.qatPanama.Image = ((System.Drawing.Image)(resources.GetObject("qatPanama.Image")));
             this.qatPanama.Text = "Panama";
-            this.qatPanama.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatQatar
             // 
             this.qatQatar.Image = ((System.Drawing.Image)(resources.GetObject("qatQatar.Image")));
             this.qatQatar.Text = "Qatar";
-            this.qatQatar.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // kryptonContextMenuItem1
             // 
@@ -1295,7 +1279,7 @@ namespace RibbonAndNavigatorAndWorkspace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(887, 750);
+            this.ClientSize = new System.Drawing.Size(873, 736);
             this.CloseBox = false;
             this.Controls.Add(this.panelFill);
             this.Controls.Add(this.kryptonRibbon);
@@ -1306,7 +1290,7 @@ namespace RibbonAndNavigatorAndWorkspace
             this.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.StateCommon.Border.Width = 20;
+            this.StateCommon.Border.Width = 4;
             this.Text = "Ribbon + Navigator + Workspace";
             this.UseThemeFormChromeBorderWidth = false;
             ((System.ComponentModel.ISupportInitialize)(this.panelFill)).EndInit();

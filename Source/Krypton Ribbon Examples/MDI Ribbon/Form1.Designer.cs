@@ -52,7 +52,6 @@ namespace MDIRibbon
             // 
             // ribbon
             // 
-            this.ribbon.AllowFormIntegrate = true;
             this.ribbon.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecHelp});
             this.ribbon.HideRibbonSize = new System.Drawing.Size(300, 250);
