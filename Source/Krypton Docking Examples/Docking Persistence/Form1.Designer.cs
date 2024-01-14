@@ -84,7 +84,6 @@
             // 
             // kryptonRibbon
             // 
-            this.kryptonRibbon.AllowFormIntegrate = true;
             this.kryptonRibbon.HideRibbonSize = new System.Drawing.Size(300, 250);
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";

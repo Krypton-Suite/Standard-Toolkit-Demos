@@ -89,7 +89,6 @@ namespace ContextualTabs
             // 
             // kryptonRibbon
             // 
-            this.kryptonRibbon.AllowFormIntegrate = true;
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
             this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {

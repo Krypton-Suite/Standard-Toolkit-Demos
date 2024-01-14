@@ -91,7 +91,6 @@ namespace RibbonControls
             // 
             // kryptonRibbon
             // 
-            kryptonRibbon.AllowFormIntegrate = true;
             kryptonRibbon.InDesignHelperMode = true;
             kryptonRibbon.Name = "kryptonRibbon";
             kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] { kryptonContextMenuItem1 });
