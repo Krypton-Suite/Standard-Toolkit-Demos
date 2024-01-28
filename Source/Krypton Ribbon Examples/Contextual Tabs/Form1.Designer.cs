@@ -28,7 +28,6 @@ namespace ContextualTabs
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kryptonRibbon = new Krypton.Ribbon.KryptonRibbon();
             this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
@@ -68,7 +67,7 @@ namespace ContextualTabs
             this.textBoxSelectedContexts = new Krypton.Toolkit.KryptonTextBox();
             this.labelContextsInstructions = new Krypton.Toolkit.KryptonLabel();
             this.colorDialog = new System.Windows.Forms.ColorDialog();
-            this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonManager = new Krypton.Toolkit.KryptonManager();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.labelOffice2007Styles)).BeginInit();
             this.labelOffice2007Styles.SuspendLayout();
@@ -94,7 +93,6 @@ namespace ContextualTabs
             this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
             this.kryptonRibbon.RibbonAppButton.AppButtonShowRecentDocs = false;
-            this.kryptonRibbon.RibbonAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbon.RibbonContexts.AddRange(new Krypton.Ribbon.KryptonRibbonContext[] {
             this.contextDefRed,
             this.contextDefGreen});
@@ -105,7 +103,7 @@ namespace ContextualTabs
             this.contextGreen2});
             this.kryptonRibbon.SelectedContext = "Red,Green";
             this.kryptonRibbon.SelectedTab = this.contextGreen1;
-            this.kryptonRibbon.Size = new System.Drawing.Size(649, 136);
+            this.kryptonRibbon.Size = new System.Drawing.Size(617, 136);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // kryptonContextMenuItem1
@@ -152,7 +150,7 @@ namespace ContextualTabs
             this.labelOffice2007Styles.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelOffice2007Styles.Location = new System.Drawing.Point(0, 136);
             this.labelOffice2007Styles.Name = "labelOffice2007Styles";
-            this.labelOffice2007Styles.Size = new System.Drawing.Size(649, 352);
+            this.labelOffice2007Styles.Size = new System.Drawing.Size(617, 320);
             this.labelOffice2007Styles.TabIndex = 1;
             // 
             // groupOffice2007Styles
@@ -262,6 +260,7 @@ namespace ContextualTabs
             // 
             // radioOffice2007Silver
             // 
+            this.radioOffice2007Silver.Checked = true;
             this.radioOffice2007Silver.Location = new System.Drawing.Point(20, 130);
             this.radioOffice2007Silver.Name = "radioOffice2007Silver";
             this.radioOffice2007Silver.Size = new System.Drawing.Size(153, 24);
@@ -453,13 +452,13 @@ namespace ContextualTabs
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 488);
+            this.ClientSize = new System.Drawing.Size(617, 456);
             this.Controls.Add(this.labelOffice2007Styles);
             this.Controls.Add(this.kryptonRibbon);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
