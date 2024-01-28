@@ -144,10 +144,10 @@ namespace KeyTipsAndKeyboardAccess
             this.panelFill.Controls.Add(this.groupKeyTipsInfo);
             this.panelFill.Controls.Add(this.groupOffice2007Styles);
             this.panelFill.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFill.Location = new System.Drawing.Point(0, 135);
+            this.panelFill.Location = new System.Drawing.Point(0, 136);
             this.panelFill.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panelFill.Name = "panelFill";
-            this.panelFill.Size = new System.Drawing.Size(637, 519);
+            this.panelFill.Size = new System.Drawing.Size(645, 526);
             this.panelFill.TabIndex = 1;
             // 
             // groupKeyboardInfo
@@ -334,6 +334,7 @@ namespace KeyTipsAndKeyboardAccess
             // 
             // buttonOffice2007Silver
             // 
+            this.buttonOffice2007Silver.Checked = true;
             this.buttonOffice2007Silver.Location = new System.Drawing.Point(32, 188);
             this.buttonOffice2007Silver.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.buttonOffice2007Silver.Name = "buttonOffice2007Silver";
@@ -391,7 +392,7 @@ namespace KeyTipsAndKeyboardAccess
             this.kryptonRibbonTab4});
             this.kryptonRibbon.SelectedContext = null;
             this.kryptonRibbon.SelectedTab = this.tabHome;
-            this.kryptonRibbon.Size = new System.Drawing.Size(637, 135);
+            this.kryptonRibbon.Size = new System.Drawing.Size(645, 136);
             this.kryptonRibbon.StateTracking.RibbonGroupArea.BackColor1 = System.Drawing.Color.Lime;
             this.kryptonRibbon.StateTracking.RibbonGroupArea.BackColor2 = System.Drawing.Color.Lime;
             this.kryptonRibbon.StateTracking.RibbonGroupArea.BackColor3 = System.Drawing.Color.Lime;
@@ -879,18 +880,18 @@ namespace KeyTipsAndKeyboardAccess
             this.checkSetPalette.CheckButtons.Add(this.buttonOffice2010Silver);
             this.checkSetPalette.CheckButtons.Add(this.buttonOffice2010Blue);
             this.checkSetPalette.CheckButtons.Add(this.buttonOffice365Black);
-            this.checkSetPalette.CheckedButton = this.buttonOffice2010Black;
+            this.checkSetPalette.CheckedButton = this.buttonOffice2007Silver;
             this.checkSetPalette.CheckedButtonChanged += new System.EventHandler(this.checkSetPalette_CheckedButtonChanged);
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2010Black;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Black;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(637, 654);
+            this.ClientSize = new System.Drawing.Size(645, 662);
             this.Controls.Add(this.panelFill);
             this.Controls.Add(this.kryptonRibbon);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -898,7 +899,6 @@ namespace KeyTipsAndKeyboardAccess
             this.MinimumSize = new System.Drawing.Size(642, 693);
             this.Name = "Form1";
             this.Text = "KeyTips + KeyboardAccess";
-            this.UseDropShadow = false;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelFill)).EndInit();
             this.panelFill.ResumeLayout(false);
