@@ -76,7 +76,6 @@
             // kbtnOk
             // 
             this.kbtnOk.AutoSize = true;
-            this.kbtnOk.CornerRoundingRadius = -1F;
             this.kbtnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.kbtnOk.Location = new System.Drawing.Point(361, 13);
             this.kbtnOk.Name = "kbtnOk";
