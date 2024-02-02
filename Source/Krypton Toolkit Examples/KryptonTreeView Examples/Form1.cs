@@ -91,7 +91,11 @@ namespace KryptonTreeViewExamples
 
         private void kryptonCheckSet_CheckedButtonChanged(object? sender, EventArgs e)
         {
-            if (kryptonCheckSet.CheckedButton == check2007Blue)
+            if (kryptonCheckSet.CheckedButton == check365Black)
+            {
+                kryptonManager1.GlobalPaletteMode = PaletteMode.Microsoft365Black;
+            }
+            else if (kryptonCheckSet.CheckedButton == check2007Blue)
             {
                 kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Blue;
             }

@@ -67,6 +67,7 @@
             this.kryptonCheckSet = new Krypton.Toolkit.KryptonCheckSet(this.components);
             this.kryptonContextMenuItem2 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.btnToggleNodeCheckBox = new Krypton.Toolkit.KryptonButton();
+            this.check365Black = new Krypton.Toolkit.KryptonCheckButton();
             this.groupBox.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -75,8 +76,9 @@
             // 
             // buttonClose
             // 
+            this.buttonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonClose.Location = new System.Drawing.Point(667, 631);
+            this.buttonClose.Location = new System.Drawing.Point(659, 640);
             this.buttonClose.Margin = new System.Windows.Forms.Padding(4);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(100, 28);
@@ -87,12 +89,14 @@
             // 
             // groupBox
             // 
+            this.groupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox.Controls.Add(this.propertyGrid);
             this.groupBox.Location = new System.Drawing.Point(380, 15);
             this.groupBox.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox.Name = "groupBox";
             this.groupBox.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox.Size = new System.Drawing.Size(387, 609);
+            this.groupBox.Size = new System.Drawing.Size(403, 612);
             this.groupBox.TabIndex = 4;
             this.groupBox.TabStop = false;
             this.groupBox.Text = "Properties for Selected KryptonTreeView";
@@ -102,16 +106,19 @@
             this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.propertyGrid.Location = new System.Drawing.Point(8, 23);
+            this.propertyGrid.Location = new System.Drawing.Point(8, 20);
             this.propertyGrid.Margin = new System.Windows.Forms.Padding(4);
             this.propertyGrid.Name = "propertyGrid";
             this.propertyGrid.SelectedObject = this.kryptonTreeView;
-            this.propertyGrid.Size = new System.Drawing.Size(371, 581);
+            this.propertyGrid.Size = new System.Drawing.Size(387, 584);
             this.propertyGrid.TabIndex = 0;
             this.propertyGrid.ToolbarVisible = false;
             // 
             // kryptonTreeView
             // 
+            this.kryptonTreeView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonTreeView.CheckBoxes = true;
             this.kryptonTreeView.HideSelection = false;
             this.kryptonTreeView.HotTracking = true;
@@ -123,12 +130,8 @@
             this.kryptonTreeView.MultiSelect = true;
             this.kryptonTreeView.Name = "kryptonTreeView";
             this.kryptonTreeView.SelectedImageIndex = 3;
-            this.kryptonTreeView.Size = new System.Drawing.Size(340, 319);
+            this.kryptonTreeView.Size = new System.Drawing.Size(355, 322);
             this.kryptonTreeView.StateCheckedMultiSelect.Node.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.kryptonTreeView.StateCommon.Node.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTreeView.StateCommon.Node.Border.Rounding = -10F;
             this.kryptonTreeView.TabIndex = 6;
             this.kryptonTreeView.BeforeCheck += new System.Windows.Forms.TreeViewCancelEventHandler(this.KryptonTreeView_BeforeCheck);
             // 
@@ -246,6 +249,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox1.Controls.Add(this.check365Black);
             this.groupBox1.Controls.Add(this.checkSystem);
             this.groupBox1.Controls.Add(this.checkSparkle);
             this.groupBox1.Controls.Add(this.check2010Blue);
@@ -254,11 +259,11 @@
             this.groupBox1.Controls.Add(this.buttonInsert);
             this.groupBox1.Controls.Add(this.buttonClear);
             this.groupBox1.Controls.Add(this.buttonRemove);
-            this.groupBox1.Location = new System.Drawing.Point(17, 417);
+            this.groupBox1.Location = new System.Drawing.Point(17, 420);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(340, 207);
+            this.groupBox1.Size = new System.Drawing.Size(355, 256);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Actions";
@@ -266,20 +271,20 @@
             // checkSystem
             // 
             this.checkSystem.AutoSize = true;
-            this.checkSystem.Location = new System.Drawing.Point(167, 155);
+            this.checkSystem.Location = new System.Drawing.Point(153, 214);
             this.checkSystem.Margin = new System.Windows.Forms.Padding(4);
             this.checkSystem.Name = "checkSystem";
-            this.checkSystem.Size = new System.Drawing.Size(151, 34);
+            this.checkSystem.Size = new System.Drawing.Size(177, 34);
             this.checkSystem.TabIndex = 7;
             this.checkSystem.Values.Text = "System";
             // 
             // checkSparkle
             // 
             this.checkSparkle.AutoSize = true;
-            this.checkSparkle.Location = new System.Drawing.Point(167, 114);
+            this.checkSparkle.Location = new System.Drawing.Point(153, 107);
             this.checkSparkle.Margin = new System.Windows.Forms.Padding(4);
             this.checkSparkle.Name = "checkSparkle";
-            this.checkSparkle.Size = new System.Drawing.Size(151, 34);
+            this.checkSparkle.Size = new System.Drawing.Size(177, 34);
             this.checkSparkle.TabIndex = 6;
             this.checkSparkle.Values.Text = "Sparkle - Blue";
             // 
@@ -287,7 +292,7 @@
             // 
             this.check2010Blue.AutoSize = true;
             this.check2010Blue.Checked = true;
-            this.check2010Blue.Location = new System.Drawing.Point(167, 38);
+            this.check2010Blue.Location = new System.Drawing.Point(153, 23);
             this.check2010Blue.Margin = new System.Windows.Forms.Padding(4);
             this.check2010Blue.Name = "check2010Blue";
             this.check2010Blue.Size = new System.Drawing.Size(177, 34);
@@ -297,7 +302,7 @@
             // check2007Blue
             // 
             this.check2007Blue.AutoSize = true;
-            this.check2007Blue.Location = new System.Drawing.Point(167, 76);
+            this.check2007Blue.Location = new System.Drawing.Point(153, 65);
             this.check2007Blue.Margin = new System.Windows.Forms.Padding(4);
             this.check2007Blue.Name = "check2007Blue";
             this.check2007Blue.Size = new System.Drawing.Size(177, 34);
@@ -307,7 +312,7 @@
             // buttonAppend
             // 
             this.buttonAppend.AutoSize = true;
-            this.buttonAppend.Location = new System.Drawing.Point(25, 37);
+            this.buttonAppend.Location = new System.Drawing.Point(8, 23);
             this.buttonAppend.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAppend.Name = "buttonAppend";
             this.buttonAppend.Size = new System.Drawing.Size(120, 34);
@@ -318,7 +323,7 @@
             // buttonInsert
             // 
             this.buttonInsert.AutoSize = true;
-            this.buttonInsert.Location = new System.Drawing.Point(25, 76);
+            this.buttonInsert.Location = new System.Drawing.Point(8, 65);
             this.buttonInsert.Margin = new System.Windows.Forms.Padding(4);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(120, 34);
@@ -329,7 +334,7 @@
             // buttonClear
             // 
             this.buttonClear.AutoSize = true;
-            this.buttonClear.Location = new System.Drawing.Point(25, 155);
+            this.buttonClear.Location = new System.Drawing.Point(8, 149);
             this.buttonClear.Margin = new System.Windows.Forms.Padding(4);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(120, 34);
@@ -340,7 +345,7 @@
             // buttonRemove
             // 
             this.buttonRemove.AutoSize = true;
-            this.buttonRemove.Location = new System.Drawing.Point(25, 116);
+            this.buttonRemove.Location = new System.Drawing.Point(8, 107);
             this.buttonRemove.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRemove.Name = "buttonRemove";
             this.buttonRemove.Size = new System.Drawing.Size(120, 34);
@@ -358,6 +363,7 @@
             this.kryptonCheckSet.CheckButtons.Add(this.checkSparkle);
             this.kryptonCheckSet.CheckButtons.Add(this.check2010Blue);
             this.kryptonCheckSet.CheckButtons.Add(this.check2007Blue);
+            this.kryptonCheckSet.CheckButtons.Add(this.check365Black);
             this.kryptonCheckSet.CheckedButton = this.check2010Blue;
             this.kryptonCheckSet.CheckedButtonChanged += new System.EventHandler(this.kryptonCheckSet_CheckedButtonChanged);
             // 
@@ -367,8 +373,9 @@
             // 
             // btnToggleNodeCheckBox
             // 
+            this.btnToggleNodeCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnToggleNodeCheckBox.AutoSize = true;
-            this.btnToggleNodeCheckBox.Location = new System.Drawing.Point(17, 379);
+            this.btnToggleNodeCheckBox.Location = new System.Drawing.Point(110, 368);
             this.btnToggleNodeCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.btnToggleNodeCheckBox.Name = "btnToggleNodeCheckBox";
             this.btnToggleNodeCheckBox.Size = new System.Drawing.Size(184, 31);
@@ -376,21 +383,32 @@
             this.btnToggleNodeCheckBox.Values.Text = "Toggle Node CheckBox";
             this.btnToggleNodeCheckBox.Click += new System.EventHandler(this.BtnToggleNodeCheckBox_Click);
             // 
+            // check365Black
+            // 
+            this.check365Black.AutoSize = true;
+            this.check365Black.Checked = true;
+            this.check365Black.Location = new System.Drawing.Point(153, 149);
+            this.check365Black.Margin = new System.Windows.Forms.Padding(4);
+            this.check365Black.Name = "check365Black";
+            this.check365Black.Size = new System.Drawing.Size(177, 34);
+            this.check365Black.TabIndex = 8;
+            this.check365Black.Values.Text = "Office 365 - Black";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 682);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(796, 689);
             this.Controls.Add(this.btnToggleNodeCheckBox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.kryptonTreeView);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.groupBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(800, 700);
             this.Name = "Form1";
             this.Text = "KryptonTreeView Examples";
             this.groupBox.ResumeLayout(false);
@@ -442,6 +460,7 @@
         private Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem2;
         private Krypton.Toolkit.KryptonContextMenuMonthCalendar kryptonContextMenuMonthCalendar1;
         private Krypton.Toolkit.KryptonButton btnToggleNodeCheckBox;
+        private Krypton.Toolkit.KryptonCheckButton check365Black;
     }
 }
 
