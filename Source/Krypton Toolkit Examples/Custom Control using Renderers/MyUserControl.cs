@@ -167,7 +167,7 @@ namespace CustomControlUsingRenderers
 
                 // Ask the renderer to work out how the Content values will be laid out and
                 // return a memento object that we cache for use when actually performing painting
-                _mementoContent = renderer.RenderStandardContent.LayoutContent(viewContext, innerRect, _paletteContent,
+                _mementoContent = renderer.RenderStandardContent.LayoutContent(viewContext, innerRect,  _paletteContent, 
                     this, Orientation, buttonState);
             }
 

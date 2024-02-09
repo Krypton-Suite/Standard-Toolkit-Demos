@@ -76,8 +76,6 @@ namespace RibbonToolTips
             // 
             this.kryptonRibbon1.HideRibbonSize = new System.Drawing.Size(300, 150);
             this.kryptonRibbon1.InDesignHelperMode = true;
-            this.kryptonRibbon1.IsInitialized = true;
-            this.kryptonRibbon1.IsInitializing = false;
             this.kryptonRibbon1.Name = "kryptonRibbon1";
             this.kryptonRibbon1.QATButtons.AddRange(new System.ComponentModel.Component[] {
             this.qatSave,
@@ -91,9 +89,8 @@ namespace RibbonToolTips
             this.kryptonRibbon1.RibbonAppButton.AppButtonToolTipTitle = "Office Button";
             this.kryptonRibbon1.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome});
-            this.kryptonRibbon1.SelectedContext = null;
             this.kryptonRibbon1.SelectedTab = this.tabHome;
-            this.kryptonRibbon1.Size = new System.Drawing.Size(993, 135);
+            this.kryptonRibbon1.Size = new System.Drawing.Size(1005, 136);
             this.kryptonRibbon1.TabIndex = 0;
             // 
             // qatSave
@@ -366,10 +363,10 @@ namespace RibbonToolTips
             // 
             this.kryptonPanel.Controls.Add(this.kryptonLabel);
             this.kryptonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel.Location = new System.Drawing.Point(0, 135);
+            this.kryptonPanel.Location = new System.Drawing.Point(0, 136);
             this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel.Name = "kryptonPanel";
-            this.kryptonPanel.Size = new System.Drawing.Size(993, 227);
+            this.kryptonPanel.Size = new System.Drawing.Size(1005, 238);
             this.kryptonPanel.TabIndex = 1;
             // 
             // kryptonLabel
@@ -383,13 +380,13 @@ namespace RibbonToolTips
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Black;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(993, 362);
+            this.ClientSize = new System.Drawing.Size(1005, 374);
             this.Controls.Add(this.kryptonPanel);
             this.Controls.Add(this.kryptonRibbon1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
