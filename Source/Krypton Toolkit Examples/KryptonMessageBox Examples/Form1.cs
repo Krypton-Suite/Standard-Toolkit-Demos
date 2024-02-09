@@ -258,18 +258,21 @@ namespace KryptonMessageBoxExamples
 
         private void kcmbContentAreaType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (kcmbContentAreaType.SelectedIndex == 0)
-            {
-                _contentAreaType = MessageBoxContentAreaType.Normal;
+            _contentAreaType =
+                (MessageBoxContentAreaType)Enum.Parse(typeof(MessageBoxContentAreaType), kcmbContentAreaType.Text);
 
-                ToggleContentAreaControls(false);
-            }
-            else
-            {
-                _contentAreaType = MessageBoxContentAreaType.LinkLabel;
+            //if (kcmbContentAreaType.SelectedIndex == 0)
+            //{
+            //    _contentAreaType = MessageBoxContentAreaType.Normal;
 
-                ToggleContentAreaControls(true);
-            }
+            //    ToggleContentAreaControls(false);
+            //}
+            //else
+            //{
+            //    _contentAreaType = MessageBoxContentAreaType.LinkLabel;
+
+            //    ToggleContentAreaControls(true);
+            //}
         }
 
         private void kcmdTest_Execute(object sender, EventArgs e)

@@ -50,6 +50,7 @@
 	* [KryptonMonthCalendar](#kryptonmonthcalendar)
 	* [KryptonNumericUpDown](#kryptonnumericupdown)
 	* [KryptonOpenFileDialog](#kryptonopenfiledialog)
+	* [KryptonOutlookGrid](#kryptonoutlookgrid)
 	* [KryptonPalette](#kryptonpalette)
 	* [KryptonPanel](#kryptonpanel)
 	* [KryptonPrintDialog](#kryptonprintdialog)
@@ -197,6 +198,8 @@ There are 2 set of solutions in these projects:
 ![KryptonNumericUpDown Examples](KryptonNumericUpDown%20Examples/example.png)
 ## KryptonOpenFileDialog
 ![KryptonOpenFileDialog Example](KryptonOpenFileDialog%20Example/example.png)
+## KryptonOutlookGrid
+![KryptonOutlookGrid Example](KryptonOutlookGrid%20Example/KryptonOutlookGridExample.png)
 ## KryptonPalette
 ![KryptonPalette Examples](KryptonPalette%20Examples/example.gif)
 ## KryptonPanel

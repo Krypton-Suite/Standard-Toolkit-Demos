@@ -43,10 +43,14 @@ namespace ContextualTabs
         private void buttonEditColor_Click(object sender, EventArgs e)
         {
             // Let user change the color definition
-            if (colorDialog.ShowDialog() == DialogResult.OK)
+            KryptonColorDialog kcd = new KryptonColorDialog();
+            
+            kcd.AllowFullOpen = true;
+            
+            if (kcd.ShowDialog() == DialogResult.OK)
             {
                 // Update the Displayed color feedback
-                panelContextColor.StateCommon.Color1 = colorDialog.Color;
+                panelContextColor.StateCommon.Color1 = kcd.Color;
             }
         }
 
