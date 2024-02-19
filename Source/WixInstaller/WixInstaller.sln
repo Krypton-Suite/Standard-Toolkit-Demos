@@ -18,6 +18,8 @@ Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "WixInstaller.net80", "WixIn
 EndProject
 Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "WixInstaller.net70", "WixInstaller.net70\WixInstaller.net70.wixproj", "{3898BA4F-A5F6-4BAB-B6BF-931B2DFB14F4}"
 EndProject
+Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "WixInstaller.net90", "WixInstaller.net90\WixInstaller.net90.wixproj", "{196EEA81-FD87-4A46-B370-33268766E2B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -76,6 +78,18 @@ Global
 		{3898BA4F-A5F6-4BAB-B6BF-931B2DFB14F4}.Release|x64.Build.0 = Release|x64
 		{3898BA4F-A5F6-4BAB-B6BF-931B2DFB14F4}.Release|x86.ActiveCfg = Release|x86
 		{3898BA4F-A5F6-4BAB-B6BF-931B2DFB14F4}.Release|x86.Build.0 = Release|x86
+		{196EEA81-FD87-4A46-B370-33268766E2B6}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{196EEA81-FD87-4A46-B370-33268766E2B6}.Debug|ARM64.Build.0 = Debug|ARM64
+		{196EEA81-FD87-4A46-B370-33268766E2B6}.Debug|x64.ActiveCfg = Debug|x64
+		{196EEA81-FD87-4A46-B370-33268766E2B6}.Debug|x64.Build.0 = Debug|x64
+		{196EEA81-FD87-4A46-B370-33268766E2B6}.Debug|x86.ActiveCfg = Debug|x86
+		{196EEA81-FD87-4A46-B370-33268766E2B6}.Debug|x86.Build.0 = Debug|x86
+		{196EEA81-FD87-4A46-B370-33268766E2B6}.Release|ARM64.ActiveCfg = Release|ARM64
+		{196EEA81-FD87-4A46-B370-33268766E2B6}.Release|ARM64.Build.0 = Release|ARM64
+		{196EEA81-FD87-4A46-B370-33268766E2B6}.Release|x64.ActiveCfg = Release|x64
+		{196EEA81-FD87-4A46-B370-33268766E2B6}.Release|x64.Build.0 = Release|x64
+		{196EEA81-FD87-4A46-B370-33268766E2B6}.Release|x86.ActiveCfg = Release|x86
+		{196EEA81-FD87-4A46-B370-33268766E2B6}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
