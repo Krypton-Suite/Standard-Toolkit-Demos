@@ -1,6 +1,6 @@
 # <img src="https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png?raw=true"> Standard Toolkit Demos - ChangeLog
 
-## 2024-11-xx - Build 2311 - November 
+## 2024-11-xx - Build 2411 - November 
 * Add `KryptonOutlookGrid` example
 * Add `KryptonToastNotification` examples
 * Add `KryptonFormFading` example
@@ -11,7 +11,7 @@
 * Add support for .NET 9
 
 ## 2023-11-14 - Build 2311 - November 2023
-* Relayout in alphabetical order the Compnents view in the Launch Explorer
+* Relayout in alphabetical order the Components view in the Launch Explorer
 * Add missing Examples to launcher
 * Addition of new example for Progress Bars
 * Update KryptonColour Example to show usage of Alpha colour selection
