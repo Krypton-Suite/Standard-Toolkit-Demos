@@ -20,7 +20,11 @@ namespace KryptonDateTimePickerExamples
 {
     public partial class Form1 : Form
     {
-        public Form1() => InitializeComponent();
+        public Form1()
+        {
+            InitializeComponent();
+            _ = dtpNormalLong.ViewManager;
+        }
 
         private void Form1_Load(object sender, EventArgs e) =>
             // Setup the property grid to edit this date time picker control

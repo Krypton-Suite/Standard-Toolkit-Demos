@@ -1342,7 +1342,6 @@ namespace OutlookMailClone
             this.kryptonRibbonRecentDoc7,
             this.kryptonRibbonRecentDoc8});
             this.kryptonRibbon.RibbonAppButton.AppButtonSpecs.Add(this.buttonSpecAppMenu1);
-            this.kryptonRibbon.RibbonStrings.RecentDocuments = "Create New Outlook Item";
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabMessage,
             this.tabInsert,

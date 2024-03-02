@@ -28,7 +28,7 @@ namespace ApplicationMenu
         private void Form1_Load(object sender, EventArgs e)
         {
             checkBoxShowRecentDocs.Checked = kryptonRibbon1.RibbonAppButton.AppButtonShowRecentDocs;
-            textBoxDocsTitle.Text = kryptonRibbon1.RibbonStrings.RecentDocuments;
+            textBoxDocsTitle.Text = KryptonManager.Strings.RibbonStrings.RecentDocuments;
             textBoxMinWidth.Text = kryptonRibbon1.RibbonAppButton.AppButtonMinRecentSize.Width.ToString();
             textBoxMinHeight.Text = kryptonRibbon1.RibbonAppButton.AppButtonMinRecentSize.Height.ToString();
         }
@@ -36,7 +36,7 @@ namespace ApplicationMenu
         private void kryptonRibbon1_AppButtonMenuOpening(object sender, CancelEventArgs e)
         {
             kryptonRibbon1.RibbonAppButton.AppButtonShowRecentDocs = checkBoxShowRecentDocs.Checked;
-            kryptonRibbon1.RibbonStrings.RecentDocuments = textBoxDocsTitle.Text;
+            KryptonManager.Strings.RibbonStrings.RecentDocuments = textBoxDocsTitle.Text;
 
             var minWidth = int.Parse(textBoxMinWidth.Text);
             var minHeight = int.Parse(textBoxMinHeight.Text);
