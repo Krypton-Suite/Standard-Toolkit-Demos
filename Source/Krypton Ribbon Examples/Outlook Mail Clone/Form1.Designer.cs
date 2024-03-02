@@ -29,6 +29,7 @@ namespace OutlookMailClone
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Krypton.Toolkit.ToolBarImageStorage toolBarImageStorage1 = new Krypton.Toolkit.ToolBarImageStorage();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelFill = new Krypton.Toolkit.KryptonPanel();
             this.tableLayout = new System.Windows.Forms.TableLayoutPanel();
@@ -456,7 +457,7 @@ namespace OutlookMailClone
             this.panelFill.Location = new System.Drawing.Point(0, 136);
             this.panelFill.Name = "panelFill";
             this.panelFill.Padding = new System.Windows.Forms.Padding(7);
-            this.panelFill.Size = new System.Drawing.Size(786, 374);
+            this.panelFill.Size = new System.Drawing.Size(865, 406);
             this.panelFill.TabIndex = 0;
             // 
             // tableLayout
@@ -485,7 +486,7 @@ namespace OutlookMailClone
             this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 200F));
-            this.tableLayout.Size = new System.Drawing.Size(772, 360);
+            this.tableLayout.Size = new System.Drawing.Size(851, 392);
             this.tableLayout.TabIndex = 0;
             // 
             // kryptonLabel1
@@ -514,7 +515,7 @@ namespace OutlookMailClone
             this.richTextBoxMessage.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBoxMessage.Location = new System.Drawing.Point(3, 95);
             this.richTextBoxMessage.Name = "richTextBoxMessage";
-            this.richTextBoxMessage.Size = new System.Drawing.Size(766, 262);
+            this.richTextBoxMessage.Size = new System.Drawing.Size(845, 294);
             this.richTextBoxMessage.TabIndex = 6;
             this.richTextBoxMessage.Text = "";
             // 
@@ -526,7 +527,7 @@ namespace OutlookMailClone
             this.richTextBoxSubject.Location = new System.Drawing.Point(74, 65);
             this.richTextBoxSubject.Multiline = false;
             this.richTextBoxSubject.Name = "richTextBoxSubject";
-            this.richTextBoxSubject.Size = new System.Drawing.Size(695, 24);
+            this.richTextBoxSubject.Size = new System.Drawing.Size(774, 24);
             this.richTextBoxSubject.TabIndex = 5;
             this.richTextBoxSubject.Text = "Outlook Mail Clone";
             // 
@@ -538,7 +539,7 @@ namespace OutlookMailClone
             this.richTextBoxCc.Location = new System.Drawing.Point(74, 34);
             this.richTextBoxCc.Multiline = false;
             this.richTextBoxCc.Name = "richTextBoxCc";
-            this.richTextBoxCc.Size = new System.Drawing.Size(695, 25);
+            this.richTextBoxCc.Size = new System.Drawing.Size(774, 25);
             this.richTextBoxCc.TabIndex = 4;
             this.richTextBoxCc.Text = "";
             // 
@@ -550,7 +551,7 @@ namespace OutlookMailClone
             this.richTextBoxTo.Location = new System.Drawing.Point(74, 3);
             this.richTextBoxTo.Multiline = false;
             this.richTextBoxTo.Name = "richTextBoxTo";
-            this.richTextBoxTo.Size = new System.Drawing.Size(695, 25);
+            this.richTextBoxTo.Size = new System.Drawing.Size(774, 25);
             this.richTextBoxTo.TabIndex = 3;
             this.richTextBoxTo.Text = "friend@megacorp.com";
             // 
@@ -601,7 +602,6 @@ namespace OutlookMailClone
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
             // cmsBusinessCards
             // 
@@ -1343,6 +1343,7 @@ namespace OutlookMailClone
             this.kryptonRibbonRecentDoc7,
             this.kryptonRibbonRecentDoc8});
             this.kryptonRibbon.RibbonAppButton.AppButtonSpecs.Add(this.buttonSpecAppMenu1);
+            this.kryptonRibbon.RibbonAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbon.RibbonAppButton.FormCloseBoxVisible = true;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabMessage,
@@ -1351,6 +1352,7 @@ namespace OutlookMailClone
             this.tabFormatText,
             this.tabDeveloper});
             this.kryptonRibbon.SelectedTab = this.tabOptions;
+            this.kryptonRibbon.Size = new System.Drawing.Size(865, 136);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // buttonSpecHelp
@@ -1362,32 +1364,38 @@ namespace OutlookMailClone
             // 
             this.qatSave.Image = global::OutlookMailClone.Properties.Resources.QATSaveSmall;
             this.qatSave.Text = "Save";
+            this.qatSave.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatUndo
             // 
             this.qatUndo.Image = global::OutlookMailClone.Properties.Resources.QATUndoSmall;
             this.qatUndo.Text = "Undo";
+            this.qatUndo.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatRedo
             // 
             this.qatRedo.Image = global::OutlookMailClone.Properties.Resources.QATRedoSmall;
             this.qatRedo.Text = "Redo";
+            this.qatRedo.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatQuickPrint
             // 
             this.qatQuickPrint.Image = global::OutlookMailClone.Properties.Resources.QATQuickPrintSmall;
             this.qatQuickPrint.Text = "Quick Print";
+            this.qatQuickPrint.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             // 
             // qatForward
             // 
             this.qatForward.Image = global::OutlookMailClone.Properties.Resources.QATForwardSmall;
             this.qatForward.Text = "Forward";
+            this.qatForward.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.qatForward.Visible = false;
             // 
             // qatDelete
             // 
             this.qatDelete.Image = global::OutlookMailClone.Properties.Resources.QATDeleteSmall;
             this.qatDelete.Text = "Delete";
+            this.qatDelete.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             this.qatDelete.Visible = false;
             // 
             // kryptonContextMenuItem1
@@ -2316,7 +2324,8 @@ namespace OutlookMailClone
             // kryptonRibbonGroupThemeComboBox1
             // 
             this.kryptonRibbonGroupThemeComboBox1.DisplayMember = "Key";
-            this.kryptonRibbonGroupThemeComboBox1.DropDownWidth = 121;
+            this.kryptonRibbonGroupThemeComboBox1.DropDownHeight = 300;
+            this.kryptonRibbonGroupThemeComboBox1.DropDownWidth = 350;
             this.kryptonRibbonGroupThemeComboBox1.FormattingEnabled = false;
             this.kryptonRibbonGroupThemeComboBox1.ItemHeight = 19;
             this.kryptonRibbonGroupThemeComboBox1.ValueMember = "Value";
@@ -2998,6 +3007,10 @@ namespace OutlookMailClone
             this.addReminderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.OptionsReminder;
             this.addReminderToolStripMenuItem.Text = "Add Reminder...";
             // 
+            // kryptonManager1
+            // 
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.SparkleOrangeDarkMode;
+            // 
             // kryptonRibbonGroupCustomControl1
             // 
             this.kryptonRibbonGroupCustomControl1.CustomControl = null;
@@ -3006,7 +3019,7 @@ namespace OutlookMailClone
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(786, 510);
+            this.ClientSize = new System.Drawing.Size(865, 542);
             this.Controls.Add(this.panelFill);
             this.Controls.Add(this.kryptonRibbon);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
