@@ -783,7 +783,6 @@ namespace RibbonAndNavigatorAndWorkspace
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.kryptonRibbonTab1,
             this.kryptonRibbonTab2});
-            this.kryptonRibbon.SelectedContext = null;
             this.kryptonRibbon.SelectedTab = this.kryptonRibbonTab1;
             this.kryptonRibbon.Size = new System.Drawing.Size(859, 169);
             this.kryptonRibbon.TabIndex = 0;

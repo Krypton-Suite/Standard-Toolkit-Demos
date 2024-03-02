@@ -97,7 +97,6 @@ namespace RibbonControls
             kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] { kryptonContextMenuItem1 });
             kryptonRibbon.RibbonAppButton.AppButtonShowRecentDocs = false;
             kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] { ribbonTab });
-            kryptonRibbon.SelectedContext = null;
             kryptonRibbon.SelectedTab = ribbonTab;
             kryptonRibbon.Size = new System.Drawing.Size(2040, 136);
             kryptonRibbon.TabIndex = 0;

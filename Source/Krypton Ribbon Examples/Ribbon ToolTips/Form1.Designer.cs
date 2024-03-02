@@ -91,7 +91,6 @@ namespace RibbonToolTips
             this.kryptonRibbon1.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome,
             this.kryptonRibbonTab1});
-            this.kryptonRibbon1.SelectedContext = null;
             this.kryptonRibbon1.SelectedTab = this.tabHome;
             this.kryptonRibbon1.Size = new System.Drawing.Size(1009, 136);
             this.kryptonRibbon1.StateContextTracking.RibbonGroupArea.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));

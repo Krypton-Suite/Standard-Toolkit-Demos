@@ -390,7 +390,6 @@ namespace KeyTipsAndKeyboardAccess
             this.kryptonRibbonTab2,
             this.kryptonRibbonTab3,
             this.kryptonRibbonTab4});
-            this.kryptonRibbon.SelectedContext = null;
             this.kryptonRibbon.SelectedTab = this.tabHome;
             this.kryptonRibbon.Size = new System.Drawing.Size(645, 136);
             this.kryptonRibbon.StateTracking.RibbonGroupArea.BackColor1 = System.Drawing.Color.Lime;

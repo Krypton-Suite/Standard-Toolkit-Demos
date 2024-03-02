@@ -61,7 +61,6 @@ namespace MDIRibbon
             this.ribbon.RibbonAppButton.AppButtonShowRecentDocs = false;
             this.ribbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome});
-            this.ribbon.SelectedContext = null;
             this.ribbon.SelectedTab = this.tabHome;
             this.ribbon.Size = new System.Drawing.Size(927, 136);
             this.ribbon.TabIndex = 0;
