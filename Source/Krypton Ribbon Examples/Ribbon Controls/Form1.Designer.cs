@@ -93,11 +93,12 @@ namespace RibbonControls
             // 
             kryptonRibbon.InDesignHelperMode = true;
             kryptonRibbon.Name = "kryptonRibbon";
+            kryptonRibbon.RibbonAppButton.AppButtonBaseColorDark = System.Drawing.Color.FromArgb(255, 128, 128);
             kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] { kryptonContextMenuItem1 });
             kryptonRibbon.RibbonAppButton.AppButtonShowRecentDocs = false;
             kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] { ribbonTab });
             kryptonRibbon.SelectedTab = ribbonTab;
-            kryptonRibbon.Size = new System.Drawing.Size(2036, 136);
+            kryptonRibbon.Size = new System.Drawing.Size(2040, 136);
             kryptonRibbon.TabIndex = 0;
             // 
             // kryptonContextMenuItem1
@@ -163,7 +164,6 @@ namespace RibbonControls
             // buttonSpecAny1
             // 
             buttonSpecAny1.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
-            buttonSpecAny1.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
             buttonSpecAny1.UniqueName = "F5915CE07E32464DF5915CE07E32464D";
             // 
@@ -187,7 +187,7 @@ namespace RibbonControls
             // 
             maskedTextBox1.Mask = "00/00/0000";
             maskedTextBox1.PromptChar = '_';
-            maskedTextBox1.Text = "00/00/0000";
+            maskedTextBox1.Text = "00-00-0000";
             // 
             // maskedTextBox2
             // 
@@ -200,12 +200,11 @@ namespace RibbonControls
             maskedTextBox3.ButtonSpecs.Add(buttonSpecAny3);
             maskedTextBox3.Mask = "00/00/0000";
             maskedTextBox3.PromptChar = '-';
-            maskedTextBox3.Text = "  /  /";
+            maskedTextBox3.Text = "  -  -";
             // 
             // buttonSpecAny3
             // 
             buttonSpecAny3.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
-            buttonSpecAny3.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             buttonSpecAny3.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
             buttonSpecAny3.UniqueName = "7D57C7BA2BC2411E7D57C7BA2BC2411E";
             // 
@@ -247,7 +246,6 @@ namespace RibbonControls
             // buttonSpecAny5
             // 
             buttonSpecAny5.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
-            buttonSpecAny5.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             buttonSpecAny5.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
             buttonSpecAny5.UniqueName = "EF28ACF080BA46F8EF28ACF080BA46F8";
             // 
@@ -296,7 +294,6 @@ namespace RibbonControls
             // buttonSpecAny2
             // 
             buttonSpecAny2.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
-            buttonSpecAny2.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             buttonSpecAny2.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
             buttonSpecAny2.UniqueName = "62AE2B46B4464BC562AE2B46B4464BC5";
             // 
@@ -334,7 +331,6 @@ namespace RibbonControls
             // buttonSpecAny4
             // 
             buttonSpecAny4.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
-            buttonSpecAny4.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
             buttonSpecAny4.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
             buttonSpecAny4.UniqueName = "08C840ABEE6B446808C840ABEE6B4468";
             // 
@@ -419,15 +415,12 @@ namespace RibbonControls
             // miscCmbTheme
             // 
             miscCmbTheme.DisplayMember = "Key";
-            miscCmbTheme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             miscCmbTheme.DropDownWidth = 300;
             miscCmbTheme.FormattingEnabled = false;
             miscCmbTheme.ItemHeight = 19;
-            miscCmbTheme.Items.AddRange(new object[] { resources.GetObject("miscCmbTheme.Items"), resources.GetObject("miscCmbTheme.Items1"), resources.GetObject("miscCmbTheme.Items2"), resources.GetObject("miscCmbTheme.Items3"), resources.GetObject("miscCmbTheme.Items4"), resources.GetObject("miscCmbTheme.Items5"), resources.GetObject("miscCmbTheme.Items6"), resources.GetObject("miscCmbTheme.Items7"), resources.GetObject("miscCmbTheme.Items8"), resources.GetObject("miscCmbTheme.Items9"), resources.GetObject("miscCmbTheme.Items10"), resources.GetObject("miscCmbTheme.Items11"), resources.GetObject("miscCmbTheme.Items12"), resources.GetObject("miscCmbTheme.Items13"), resources.GetObject("miscCmbTheme.Items14"), resources.GetObject("miscCmbTheme.Items15"), resources.GetObject("miscCmbTheme.Items16"), resources.GetObject("miscCmbTheme.Items17"), resources.GetObject("miscCmbTheme.Items18"), resources.GetObject("miscCmbTheme.Items19"), resources.GetObject("miscCmbTheme.Items20"), resources.GetObject("miscCmbTheme.Items21"), resources.GetObject("miscCmbTheme.Items22"), resources.GetObject("miscCmbTheme.Items23"), resources.GetObject("miscCmbTheme.Items24"), resources.GetObject("miscCmbTheme.Items25"), resources.GetObject("miscCmbTheme.Items26"), resources.GetObject("miscCmbTheme.Items27"), resources.GetObject("miscCmbTheme.Items28"), resources.GetObject("miscCmbTheme.Items29"), resources.GetObject("miscCmbTheme.Items30"), resources.GetObject("miscCmbTheme.Items31"), resources.GetObject("miscCmbTheme.Items32"), resources.GetObject("miscCmbTheme.Items33"), resources.GetObject("miscCmbTheme.Items34"), resources.GetObject("miscCmbTheme.Items35"), resources.GetObject("miscCmbTheme.Items36"), resources.GetObject("miscCmbTheme.Items37"), resources.GetObject("miscCmbTheme.Items38"), resources.GetObject("miscCmbTheme.Items39"), resources.GetObject("miscCmbTheme.Items40"), resources.GetObject("miscCmbTheme.Items41"), resources.GetObject("miscCmbTheme.Items42"), resources.GetObject("miscCmbTheme.Items43"), resources.GetObject("miscCmbTheme.Items44"), resources.GetObject("miscCmbTheme.Items45"), resources.GetObject("miscCmbTheme.Items46"), resources.GetObject("miscCmbTheme.Items47"), resources.GetObject("miscCmbTheme.Items48"), resources.GetObject("miscCmbTheme.Items49"), resources.GetObject("miscCmbTheme.Items50"), resources.GetObject("miscCmbTheme.Items51"), resources.GetObject("miscCmbTheme.Items52"), resources.GetObject("miscCmbTheme.Items53"), resources.GetObject("miscCmbTheme.Items54"), resources.GetObject("miscCmbTheme.Items55"), resources.GetObject("miscCmbTheme.Items56"), resources.GetObject("miscCmbTheme.Items57"), resources.GetObject("miscCmbTheme.Items58"), resources.GetObject("miscCmbTheme.Items59"), resources.GetObject("miscCmbTheme.Items60"), resources.GetObject("miscCmbTheme.Items61"), resources.GetObject("miscCmbTheme.Items62"), resources.GetObject("miscCmbTheme.Items63"), resources.GetObject("miscCmbTheme.Items64"), resources.GetObject("miscCmbTheme.Items65"), resources.GetObject("miscCmbTheme.Items66"), resources.GetObject("miscCmbTheme.Items67"), resources.GetObject("miscCmbTheme.Items68"), resources.GetObject("miscCmbTheme.Items69"), resources.GetObject("miscCmbTheme.Items70"), resources.GetObject("miscCmbTheme.Items71"), resources.GetObject("miscCmbTheme.Items72"), resources.GetObject("miscCmbTheme.Items73"), resources.GetObject("miscCmbTheme.Items74"), resources.GetObject("miscCmbTheme.Items75"), resources.GetObject("miscCmbTheme.Items76"), resources.GetObject("miscCmbTheme.Items77"), resources.GetObject("miscCmbTheme.Items78"), resources.GetObject("miscCmbTheme.Items79"), resources.GetObject("miscCmbTheme.Items80"), resources.GetObject("miscCmbTheme.Items81"), resources.GetObject("miscCmbTheme.Items82"), resources.GetObject("miscCmbTheme.Items83"), resources.GetObject("miscCmbTheme.Items84"), resources.GetObject("miscCmbTheme.Items85"), resources.GetObject("miscCmbTheme.Items86"), resources.GetObject("miscCmbTheme.Items87") });
             miscCmbTheme.MaxDropDownItems = 16;
             miscCmbTheme.MaximumSize = new System.Drawing.Size(300, 0);
             miscCmbTheme.MinimumSize = new System.Drawing.Size(300, 0);
-            miscCmbTheme.Text = "Microsoft 365 - Blue";
             miscCmbTheme.ValueMember = "Value";
             // 
             // kryptonRibbonGroupColorButton1
@@ -439,14 +432,15 @@ namespace RibbonControls
             kryptonPanel.Location = new System.Drawing.Point(0, 136);
             kryptonPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             kryptonPanel.Name = "kryptonPanel";
-            kryptonPanel.Size = new System.Drawing.Size(2036, 149);
+            kryptonPanel.Size = new System.Drawing.Size(2040, 153);
             kryptonPanel.TabIndex = 1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(2036, 285);
+            ClientSize = new System.Drawing.Size(2040, 289);
+            CloseBox = false;
             Controls.Add(kryptonPanel);
             Controls.Add(kryptonRibbon);
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");

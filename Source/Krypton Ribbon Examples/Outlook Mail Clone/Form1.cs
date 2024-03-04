@@ -21,6 +21,7 @@ namespace OutlookMailClone
         public Form1()
         {
             InitializeComponent();
+            KryptonManager.Strings.RibbonStrings.RecentDocuments = "Create New Outlook Item";
         }
 
         private void formatPlainText_Click(object sender, EventArgs e)
