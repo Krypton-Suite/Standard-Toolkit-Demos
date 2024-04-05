@@ -82,12 +82,12 @@ namespace RibbonToolTips
             this.qatSave,
             this.qatUndo,
             this.qatRedo});
-            this.kryptonRibbon1.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
-            this.kryptonRibbon1.RibbonAppButton.AppButtonShowRecentDocs = false;
-            this.kryptonRibbon1.RibbonAppButton.AppButtonToolTipBody = "  Click here to open, save, or print,\r\n  and to see everything else you can\r\n  do" +
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonShowRecentDocs = false;
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonToolTipBody = "  Click here to open, save, or print,\r\n  and to see everything else you can\r\n  do" +
     " with your document.";
-            this.kryptonRibbon1.RibbonAppButton.AppButtonToolTipTitle = "Office Button";
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonToolTipTitle = "Office Button";
             this.kryptonRibbon1.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome,
             this.kryptonRibbonTab1});

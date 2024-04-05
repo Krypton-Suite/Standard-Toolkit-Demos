@@ -24,20 +24,20 @@ namespace KryptonLinkLabelExamples
 
         private void Form1_Load(object sender, EventArgs e) =>
             // Setup the property grid to edit this label
-            propertyGrid.SelectedObject = new KryptonLabelProxy(label2Professional);
+            propertyGrid.SelectedObject = new KryptonLinkLabelProxy(label2Professional);
 
         private void kryptonLabel_MouseDown(object sender, MouseEventArgs e) =>
             // Setup the property grid to edit this label
-            propertyGrid.SelectedObject = new KryptonLabelProxy(sender as KryptonLabel);
+            propertyGrid.SelectedObject = new KryptonLinkLabelProxy(sender as KryptonLinkLabel);
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
 
-    public class KryptonLabelProxy
+    public class KryptonLinkLabelProxy
     {
-        private KryptonLabel _label;
+        private KryptonLinkLabel _label;
 
-        public KryptonLabelProxy(KryptonLabel label) => _label = label;
+        public KryptonLinkLabelProxy(KryptonLinkLabel label) => _label = label;
 
         [Category("Visuals")]
         [Description("Label style.")]

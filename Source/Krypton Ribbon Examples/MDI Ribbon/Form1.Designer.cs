@@ -56,9 +56,9 @@ namespace MDIRibbon
             this.ribbon.InDesignHelperMode = true;
             this.ribbon.Name = "ribbon";
             this.ribbon.QATLocation = Krypton.Ribbon.QATLocation.Hidden;
-            this.ribbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.ribbon.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
-            this.ribbon.RibbonAppButton.AppButtonShowRecentDocs = false;
+            this.ribbon.RibbonFileAppButton.AppButtonShowRecentDocs = false;
             this.ribbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome});
             this.ribbon.SelectedTab = this.tabHome;

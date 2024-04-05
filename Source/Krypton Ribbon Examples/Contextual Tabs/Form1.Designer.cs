@@ -28,6 +28,7 @@ namespace ContextualTabs
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kryptonRibbon = new Krypton.Ribbon.KryptonRibbon();
             this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
@@ -67,7 +68,7 @@ namespace ContextualTabs
             this.textBoxSelectedContexts = new Krypton.Toolkit.KryptonTextBox();
             this.labelContextsInstructions = new Krypton.Toolkit.KryptonLabel();
             this.colorDialog = new System.Windows.Forms.ColorDialog();
-            this.kryptonManager = new Krypton.Toolkit.KryptonManager();
+            this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.labelOffice2007Styles)).BeginInit();
             this.labelOffice2007Styles.SuspendLayout();
@@ -90,12 +91,12 @@ namespace ContextualTabs
             // 
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
-            this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
-            this.kryptonContextMenuItem1});
-            this.kryptonRibbon.RibbonAppButton.AppButtonShowRecentDocs = false;
             this.kryptonRibbon.RibbonContexts.AddRange(new Krypton.Ribbon.KryptonRibbonContext[] {
             this.contextDefRed,
             this.contextDefGreen});
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonContextMenuItem1});
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonShowRecentDocs = false;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome,
             this.contextRed,
@@ -103,7 +104,12 @@ namespace ContextualTabs
             this.contextGreen2});
             this.kryptonRibbon.SelectedContext = "Red,Green";
             this.kryptonRibbon.SelectedTab = this.contextGreen1;
-            this.kryptonRibbon.Size = new System.Drawing.Size(617, 136);
+            this.kryptonRibbon.Size = new System.Drawing.Size(576, 136);
+            this.kryptonRibbon.StateCommon.RibbonAppButton.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.kryptonRibbon.StateCommon.RibbonAppButton.BackColor2 = System.Drawing.Color.Yellow;
+            this.kryptonRibbon.StateCommon.RibbonAppButton.BackColor3 = System.Drawing.Color.Lime;
+            this.kryptonRibbon.StateCommon.RibbonAppButton.BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.kryptonRibbon.StateCommon.RibbonAppButton.BackColor5 = System.Drawing.Color.Fuchsia;
             this.kryptonRibbon.TabIndex = 0;
             // 
             // kryptonContextMenuItem1
@@ -148,9 +154,9 @@ namespace ContextualTabs
             this.labelOffice2007Styles.Controls.Add(this.groupAddContext);
             this.labelOffice2007Styles.Controls.Add(this.groupSelectedContexts);
             this.labelOffice2007Styles.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelOffice2007Styles.Location = new System.Drawing.Point(0, 115);
+            this.labelOffice2007Styles.Location = new System.Drawing.Point(0, 136);
             this.labelOffice2007Styles.Name = "labelOffice2007Styles";
-            this.labelOffice2007Styles.Size = new System.Drawing.Size(617, 320);
+            this.labelOffice2007Styles.Size = new System.Drawing.Size(576, 320);
             this.labelOffice2007Styles.TabIndex = 1;
             // 
             // groupOffice2007Styles
@@ -180,7 +186,7 @@ namespace ContextualTabs
             // 
             this.radioOffice2010Black.Location = new System.Drawing.Point(20, 84);
             this.radioOffice2010Black.Name = "radioOffice2010Black";
-            this.radioOffice2010Black.Size = new System.Drawing.Size(125, 20);
+            this.radioOffice2010Black.Size = new System.Drawing.Size(151, 24);
             this.radioOffice2010Black.TabIndex = 3;
             this.radioOffice2010Black.Values.Text = "Office 2010 - Black";
             this.radioOffice2010Black.CheckedChanged += new System.EventHandler(this.radioOffice2010Black_CheckedChanged);
@@ -189,17 +195,16 @@ namespace ContextualTabs
             // 
             this.radioOffice2010Silver.Location = new System.Drawing.Point(20, 61);
             this.radioOffice2010Silver.Name = "radioOffice2010Silver";
-            this.radioOffice2010Silver.Size = new System.Drawing.Size(126, 20);
+            this.radioOffice2010Silver.Size = new System.Drawing.Size(153, 24);
             this.radioOffice2010Silver.TabIndex = 2;
             this.radioOffice2010Silver.Values.Text = "Office 2010 - Silver";
             this.radioOffice2010Silver.CheckedChanged += new System.EventHandler(this.radioOffice2010Silver_CheckedChanged);
             // 
             // radioOffice2010Blue
             // 
-            this.radioOffice2010Blue.Checked = true;
             this.radioOffice2010Blue.Location = new System.Drawing.Point(20, 38);
             this.radioOffice2010Blue.Name = "radioOffice2010Blue";
-            this.radioOffice2010Blue.Size = new System.Drawing.Size(120, 20);
+            this.radioOffice2010Blue.Size = new System.Drawing.Size(145, 24);
             this.radioOffice2010Blue.TabIndex = 1;
             this.radioOffice2010Blue.Values.Text = "Office 2010 - Blue";
             this.radioOffice2010Blue.CheckedChanged += new System.EventHandler(this.radioOffice2010Blue_CheckedChanged);
@@ -208,7 +213,7 @@ namespace ContextualTabs
             // 
             this.radioSparkleOrange.Location = new System.Drawing.Point(20, 222);
             this.radioSparkleOrange.Name = "radioSparkleOrange";
-            this.radioSparkleOrange.Size = new System.Drawing.Size(115, 20);
+            this.radioSparkleOrange.Size = new System.Drawing.Size(139, 24);
             this.radioSparkleOrange.TabIndex = 9;
             this.radioSparkleOrange.Values.Text = "Sparkle - Orange";
             this.radioSparkleOrange.CheckedChanged += new System.EventHandler(this.radioSparkleOrange_CheckedChanged);
@@ -217,7 +222,7 @@ namespace ContextualTabs
             // 
             this.radioSparklePurple.Location = new System.Drawing.Point(20, 245);
             this.radioSparklePurple.Name = "radioSparklePurple";
-            this.radioSparklePurple.Size = new System.Drawing.Size(109, 20);
+            this.radioSparklePurple.Size = new System.Drawing.Size(132, 24);
             this.radioSparklePurple.TabIndex = 10;
             this.radioSparklePurple.Values.Text = "Sparkle - Purple";
             this.radioSparklePurple.CheckedChanged += new System.EventHandler(this.radioSparklePurple_CheckedChanged);
@@ -226,7 +231,7 @@ namespace ContextualTabs
             // 
             this.radioSparkleBlue.Location = new System.Drawing.Point(20, 199);
             this.radioSparkleBlue.Name = "radioSparkleBlue";
-            this.radioSparkleBlue.Size = new System.Drawing.Size(98, 20);
+            this.radioSparkleBlue.Size = new System.Drawing.Size(118, 24);
             this.radioSparkleBlue.TabIndex = 8;
             this.radioSparkleBlue.Values.Text = "Sparkle - Blue";
             this.radioSparkleBlue.CheckedChanged += new System.EventHandler(this.radioSparkleBlue_CheckedChanged);
@@ -235,7 +240,7 @@ namespace ContextualTabs
             // 
             this.radioSystem.Location = new System.Drawing.Point(21, 268);
             this.radioSystem.Name = "radioSystem";
-            this.radioSystem.Size = new System.Drawing.Size(62, 20);
+            this.radioSystem.Size = new System.Drawing.Size(72, 24);
             this.radioSystem.TabIndex = 11;
             this.radioSystem.Values.Text = "System";
             this.radioSystem.CheckedChanged += new System.EventHandler(this.radioSystem_CheckedChanged);
@@ -244,7 +249,7 @@ namespace ContextualTabs
             // 
             this.radioOffice2003.Location = new System.Drawing.Point(20, 176);
             this.radioOffice2003.Name = "radioOffice2003";
-            this.radioOffice2003.Size = new System.Drawing.Size(85, 20);
+            this.radioOffice2003.Size = new System.Drawing.Size(101, 24);
             this.radioOffice2003.TabIndex = 7;
             this.radioOffice2003.Values.Text = "Office 2003";
             this.radioOffice2003.CheckedChanged += new System.EventHandler(this.radioOffice2003_CheckedChanged);
@@ -253,7 +258,7 @@ namespace ContextualTabs
             // 
             this.radioOffice2007Black.Location = new System.Drawing.Point(20, 153);
             this.radioOffice2007Black.Name = "radioOffice2007Black";
-            this.radioOffice2007Black.Size = new System.Drawing.Size(125, 20);
+            this.radioOffice2007Black.Size = new System.Drawing.Size(151, 24);
             this.radioOffice2007Black.TabIndex = 6;
             this.radioOffice2007Black.Values.Text = "Office 2007 - Black";
             this.radioOffice2007Black.CheckedChanged += new System.EventHandler(this.radioOffice2007Black_CheckedChanged);
@@ -263,7 +268,7 @@ namespace ContextualTabs
             this.radioOffice2007Silver.Checked = true;
             this.radioOffice2007Silver.Location = new System.Drawing.Point(20, 130);
             this.radioOffice2007Silver.Name = "radioOffice2007Silver";
-            this.radioOffice2007Silver.Size = new System.Drawing.Size(126, 20);
+            this.radioOffice2007Silver.Size = new System.Drawing.Size(153, 24);
             this.radioOffice2007Silver.TabIndex = 5;
             this.radioOffice2007Silver.Values.Text = "Office 2007 - Silver";
             this.radioOffice2007Silver.CheckedChanged += new System.EventHandler(this.radioOffice2007Silver_CheckedChanged);
@@ -272,7 +277,7 @@ namespace ContextualTabs
             // 
             this.radioOffice2007Blue.Location = new System.Drawing.Point(20, 107);
             this.radioOffice2007Blue.Name = "radioOffice2007Blue";
-            this.radioOffice2007Blue.Size = new System.Drawing.Size(120, 20);
+            this.radioOffice2007Blue.Size = new System.Drawing.Size(145, 24);
             this.radioOffice2007Blue.TabIndex = 4;
             this.radioOffice2007Blue.Values.Text = "Office 2007 - Blue";
             this.radioOffice2007Blue.CheckedChanged += new System.EventHandler(this.radioOffice2007Blue_CheckedChanged);
@@ -282,7 +287,7 @@ namespace ContextualTabs
             this.kryptonLabel2.LabelStyle = Krypton.Toolkit.LabelStyle.TitlePanel;
             this.kryptonLabel2.Location = new System.Drawing.Point(4, 4);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(135, 29);
+            this.kryptonLabel2.Size = new System.Drawing.Size(167, 35);
             this.kryptonLabel2.TabIndex = 0;
             this.kryptonLabel2.Values.Text = "Global Palette";
             // 
@@ -330,7 +335,7 @@ namespace ContextualTabs
             this.buttonEditColor.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.buttonEditColor.Location = new System.Drawing.Point(231, 81);
             this.buttonEditColor.Name = "buttonEditColor";
-            this.buttonEditColor.Size = new System.Drawing.Size(79, 24);
+            this.buttonEditColor.Size = new System.Drawing.Size(97, 28);
             this.buttonEditColor.TabIndex = 8;
             this.buttonEditColor.Values.Text = "Define Color";
             this.buttonEditColor.Click += new System.EventHandler(this.buttonEditColor_Click);
@@ -349,7 +354,7 @@ namespace ContextualTabs
             // 
             this.textBoxContextTitle.Location = new System.Drawing.Point(130, 58);
             this.textBoxContextTitle.Name = "textBoxContextTitle";
-            this.textBoxContextTitle.Size = new System.Drawing.Size(95, 23);
+            this.textBoxContextTitle.Size = new System.Drawing.Size(95, 27);
             this.textBoxContextTitle.TabIndex = 6;
             this.textBoxContextTitle.Text = "Tools";
             // 
@@ -377,7 +382,7 @@ namespace ContextualTabs
             // 
             this.textBoxContextName.Location = new System.Drawing.Point(130, 33);
             this.textBoxContextName.Name = "textBoxContextName";
-            this.textBoxContextName.Size = new System.Drawing.Size(95, 23);
+            this.textBoxContextName.Size = new System.Drawing.Size(95, 27);
             this.textBoxContextName.TabIndex = 3;
             this.textBoxContextName.Text = "Blue";
             // 
@@ -386,7 +391,7 @@ namespace ContextualTabs
             this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.TitlePanel;
             this.kryptonLabel1.Location = new System.Drawing.Point(4, 2);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(122, 29);
+            this.kryptonLabel1.Size = new System.Drawing.Size(151, 35);
             this.kryptonLabel1.TabIndex = 2;
             this.kryptonLabel1.Values.Text = "Add Context";
             // 
@@ -410,7 +415,7 @@ namespace ContextualTabs
             this.labelSelectedContexts.LabelStyle = Krypton.Toolkit.LabelStyle.TitlePanel;
             this.labelSelectedContexts.Location = new System.Drawing.Point(4, 2);
             this.labelSelectedContexts.Name = "labelSelectedContexts";
-            this.labelSelectedContexts.Size = new System.Drawing.Size(168, 29);
+            this.labelSelectedContexts.Size = new System.Drawing.Size(208, 35);
             this.labelSelectedContexts.TabIndex = 1;
             this.labelSelectedContexts.Values.Text = "Selected Contexts";
             // 
@@ -420,7 +425,7 @@ namespace ContextualTabs
             this.buttonSelectedApply.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.buttonSelectedApply.Location = new System.Drawing.Point(311, 35);
             this.buttonSelectedApply.Name = "buttonSelectedApply";
-            this.buttonSelectedApply.Size = new System.Drawing.Size(42, 24);
+            this.buttonSelectedApply.Size = new System.Drawing.Size(51, 28);
             this.buttonSelectedApply.TabIndex = 3;
             this.buttonSelectedApply.Values.Text = "Apply";
             this.buttonSelectedApply.Click += new System.EventHandler(this.buttonSelectedApply_Click);
@@ -429,7 +434,7 @@ namespace ContextualTabs
             // 
             this.textBoxSelectedContexts.Location = new System.Drawing.Point(9, 36);
             this.textBoxSelectedContexts.Name = "textBoxSelectedContexts";
-            this.textBoxSelectedContexts.Size = new System.Drawing.Size(296, 23);
+            this.textBoxSelectedContexts.Size = new System.Drawing.Size(296, 27);
             this.textBoxSelectedContexts.TabIndex = 0;
             this.textBoxSelectedContexts.Text = "Red,Green";
             this.textBoxSelectedContexts.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxSelectedContexts_KeyDown);
@@ -438,7 +443,7 @@ namespace ContextualTabs
             // 
             this.labelContextsInstructions.Location = new System.Drawing.Point(5, 64);
             this.labelContextsInstructions.Name = "labelContextsInstructions";
-            this.labelContextsInstructions.Size = new System.Drawing.Size(318, 52);
+            this.labelContextsInstructions.Size = new System.Drawing.Size(395, 64);
             this.labelContextsInstructions.TabIndex = 2;
             this.labelContextsInstructions.Values.Text = "Use a common separated list of context names and then\r\npress the \'Apply\' button. " +
     "To remove all contextual tabs\r\njust remove all the text and press \'Apply\'.";
@@ -453,22 +458,37 @@ namespace ContextualTabs
             // kryptonManager
             // 
             this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
+            this.kryptonManager.ToolkitImages.ToolbarImages.Copy = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.Copy")));
+            this.kryptonManager.ToolkitImages.ToolbarImages.Cut = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.Cut")));
+            this.kryptonManager.ToolkitImages.ToolbarImages.New = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.New")));
+            this.kryptonManager.ToolkitImages.ToolbarImages.Open = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.Open")));
+            this.kryptonManager.ToolkitImages.ToolbarImages.PageSetup = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.PageSetup")));
+            this.kryptonManager.ToolkitImages.ToolbarImages.Paste = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.Paste")));
+            this.kryptonManager.ToolkitImages.ToolbarImages.Print = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.Print")));
+            this.kryptonManager.ToolkitImages.ToolbarImages.PrintPreview = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.PrintPreview")));
+            this.kryptonManager.ToolkitImages.ToolbarImages.QuickPrint = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.QuickPrint")));
+            this.kryptonManager.ToolkitImages.ToolbarImages.Redo = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.Redo")));
+            this.kryptonManager.ToolkitImages.ToolbarImages.Save = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.Save")));
+            this.kryptonManager.ToolkitImages.ToolbarImages.SaveAll = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.SaveAll")));
+            this.kryptonManager.ToolkitImages.ToolbarImages.SaveAs = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.SaveAs")));
+            this.kryptonManager.ToolkitImages.ToolbarImages.Undo = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.Undo")));
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 456);
+            this.ClientSize = new System.Drawing.Size(576, 456);
+            this.CloseBox = false;
             this.Controls.Add(this.labelOffice2007Styles);
             this.Controls.Add(this.kryptonRibbon);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(602, 511);
             this.Name = "Form1";
+            this.StateCommon.Border.Width = 4;
             this.StateCommon.Header.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.StateCommon.Header.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.Text = "Contextual Tabs";
-            this.UseThemeFormChromeBorderWidth = false;
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.labelOffice2007Styles)).EndInit();
             this.labelOffice2007Styles.ResumeLayout(false);
