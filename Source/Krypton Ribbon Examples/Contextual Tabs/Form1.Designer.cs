@@ -31,9 +31,9 @@ namespace ContextualTabs
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kryptonRibbon = new Krypton.Ribbon.KryptonRibbon();
-            this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.contextDefRed = new Krypton.Ribbon.KryptonRibbonContext();
             this.contextDefGreen = new Krypton.Ribbon.KryptonRibbonContext();
+            this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.tabHome = new Krypton.Ribbon.KryptonRibbonTab();
             this.contextRed = new Krypton.Ribbon.KryptonRibbonTab();
             this.contextGreen1 = new Krypton.Ribbon.KryptonRibbonTab();
@@ -97,6 +97,7 @@ namespace ContextualTabs
             this.kryptonRibbon.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
             this.kryptonRibbon.RibbonFileAppButton.AppButtonShowRecentDocs = false;
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome,
             this.contextRed,
@@ -112,12 +113,6 @@ namespace ContextualTabs
             this.kryptonRibbon.StateCommon.RibbonAppButton.BackColor5 = System.Drawing.Color.Fuchsia;
             this.kryptonRibbon.TabIndex = 0;
             // 
-            // kryptonContextMenuItem1
-            // 
-            this.kryptonContextMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("kryptonContextMenuItem1.Image")));
-            this.kryptonContextMenuItem1.Text = "E&xit";
-            this.kryptonContextMenuItem1.Click += new System.EventHandler(this.appMenu_Click);
-            // 
             // contextDefRed
             // 
             this.contextDefRed.ContextName = "Red";
@@ -128,6 +123,12 @@ namespace ContextualTabs
             this.contextDefGreen.ContextColor = System.Drawing.Color.LimeGreen;
             this.contextDefGreen.ContextName = "Green";
             this.contextDefGreen.ContextTitle = "Green";
+            // 
+            // kryptonContextMenuItem1
+            // 
+            this.kryptonContextMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("kryptonContextMenuItem1.Image")));
+            this.kryptonContextMenuItem1.Text = "E&xit";
+            this.kryptonContextMenuItem1.Click += new System.EventHandler(this.appMenu_Click);
             // 
             // tabHome
             // 
