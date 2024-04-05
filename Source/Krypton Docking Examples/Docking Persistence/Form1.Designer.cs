@@ -88,12 +88,12 @@
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
             this.kryptonRibbon.QATLocation = Krypton.Ribbon.QATLocation.Above;
-            this.kryptonRibbon.RibbonAppButton.AppButtonImage = ((System.Drawing.Image)(resources.GetObject("kryptonRibbon.RibbonAppButton.AppButtonImage")));
-            this.kryptonRibbon.RibbonAppButton.AppButtonMaxRecentSize = new System.Drawing.Size(350, 350);
-            this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonImage = ((System.Drawing.Image)(resources.GetObject("kryptonRibbon.RibbonFileAppButton.AppButtonImage")));
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonMaxRecentSize = new System.Drawing.Size(350, 350);
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
-            this.kryptonRibbon.RibbonAppButton.AppButtonMinRecentSize = new System.Drawing.Size(250, 250);
-            this.kryptonRibbon.RibbonAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonMinRecentSize = new System.Drawing.Size(250, 250);
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabPersistence});
             this.kryptonRibbon.SelectedContext = null;
