@@ -119,7 +119,7 @@ namespace KryptonFormExamples
             this.menu3ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(629, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(622, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -310,10 +310,10 @@ namespace KryptonFormExamples
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 537);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 529);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.statusStrip1.Size = new System.Drawing.Size(629, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(622, 26);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -332,11 +332,11 @@ namespace KryptonFormExamples
             this.toolStripContainer1.ContentPanel.Controls.Add(this.kryptonHeaderGroup2);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.kryptonHeaderGroup1);
             this.toolStripContainer1.ContentPanel.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(629, 482);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(622, 474);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 28);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(629, 509);
+            this.toolStripContainer1.Size = new System.Drawing.Size(622, 501);
             this.toolStripContainer1.TabIndex = 3;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -356,7 +356,7 @@ namespace KryptonFormExamples
             // kryptonHeaderGroup3.Panel
             // 
             this.kryptonHeaderGroup3.Panel.Controls.Add(this.propertyGrid);
-            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(218, 467);
+            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(211, 459);
             this.kryptonHeaderGroup3.TabIndex = 2;
             this.kryptonHeaderGroup3.ValuesPrimary.Heading = "Form Properties";
             this.kryptonHeaderGroup3.ValuesPrimary.Image = null;
@@ -367,7 +367,7 @@ namespace KryptonFormExamples
             this.propertyGrid.HelpVisible = false;
             this.propertyGrid.Location = new System.Drawing.Point(0, 0);
             this.propertyGrid.Name = "propertyGrid";
-            this.propertyGrid.Size = new System.Drawing.Size(216, 429);
+            this.propertyGrid.Size = new System.Drawing.Size(209, 421);
             this.propertyGrid.TabIndex = 0;
             this.propertyGrid.ToolbarVisible = false;
             // 
@@ -389,7 +389,7 @@ namespace KryptonFormExamples
             this.kryptonHeaderGroup2.Panel.Controls.Add(this.kryptonSizeableToolWindow);
             this.kryptonHeaderGroup2.Panel.Controls.Add(this.kryptonFixedToolWindow);
             this.kryptonHeaderGroup2.Panel.Controls.Add(this.kryptonSizable);
-            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(191, 466);
+            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(191, 458);
             this.kryptonHeaderGroup2.TabIndex = 1;
             this.kryptonHeaderGroup2.ValuesPrimary.Heading = "Form Border Styles";
             this.kryptonHeaderGroup2.ValuesPrimary.Image = null;
@@ -490,7 +490,7 @@ namespace KryptonFormExamples
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.kryptonOffice2007Black);
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.kryptonOffice2007Silver);
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.kryptonOffice2007Blue);
-            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(166, 466);
+            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(166, 458);
             this.kryptonHeaderGroup1.TabIndex = 0;
             this.kryptonHeaderGroup1.ValuesPrimary.Heading = "Palettes";
             this.kryptonHeaderGroup1.ValuesPrimary.Image = null;
@@ -661,7 +661,7 @@ namespace KryptonFormExamples
             this.ButtonSpecs.Add(this.buttonSpecAny4);
             this.ButtonSpecs.Add(this.buttonSpecAny1);
             this.ButtonSpecs.Add(this.leftButtonSpec);
-            this.ClientSize = new System.Drawing.Size(629, 563);
+            this.ClientSize = new System.Drawing.Size(622, 555);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -672,7 +672,6 @@ namespace KryptonFormExamples
             this.Name = "Form1";
             this.Text = "KryptonForm Examples";
             this.TextExtra = "(ExtraText)";
-            this.UseThemeFormChromeBorderWidth = false;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

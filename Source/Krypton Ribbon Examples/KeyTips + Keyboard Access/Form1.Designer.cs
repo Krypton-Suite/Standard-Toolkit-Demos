@@ -383,7 +383,7 @@ namespace KeyTipsAndKeyboardAccess
             this.qatKenya,
             this.qatArgentina,
             this.qatBrazil});
-            this.kryptonRibbon.RibbonAppButton.AppButtonShowRecentDocs = false;
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonShowRecentDocs = false;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome,
             this.kryptonRibbonTab1,

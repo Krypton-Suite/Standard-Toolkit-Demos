@@ -43,7 +43,7 @@ namespace ContextualTabs
         private void buttonEditColor_Click(object sender, EventArgs e)
         {
             // Let user change the color definition
-            KryptonColorDialog kcd = new KryptonColorDialog();
+            using var kcd = new KryptonColorDialog();
             
             kcd.AllowFullOpen = true;
             
@@ -57,7 +57,7 @@ namespace ContextualTabs
         private void buttonAddContext_Click(object sender, EventArgs e)
         {
             // Create a new context that uses the information specified
-            KryptonRibbonContext newContext = new KryptonRibbonContext
+            var newContext = new KryptonRibbonContext
             {
                 ContextName = textBoxContextName.Text,
                 ContextTitle = textBoxContextTitle.Text,

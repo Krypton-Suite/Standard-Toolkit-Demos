@@ -90,22 +90,22 @@ namespace ApplicationMenu
             // 
             this.kryptonRibbon1.InDesignHelperMode = true;
             this.kryptonRibbon1.Name = "kryptonRibbon1";
-            this.kryptonRibbon1.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1,
             this.kryptonContextMenuItem2,
             this.kryptonContextMenuItem3,
             this.kryptonContextMenuItem4,
             this.kryptonContextMenuSeparator1,
             this.kryptonContextMenuItem5});
-            this.kryptonRibbon1.RibbonAppButton.AppButtonMinRecentSize = new System.Drawing.Size(150, 150);
-            this.kryptonRibbon1.RibbonAppButton.AppButtonRecentDocs.AddRange(new Krypton.Ribbon.KryptonRibbonRecentDoc[] {
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonMinRecentSize = new System.Drawing.Size(150, 150);
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonRecentDocs.AddRange(new Krypton.Ribbon.KryptonRibbonRecentDoc[] {
             this.kryptonRibbonRecentDoc1,
             this.kryptonRibbonRecentDoc2,
             this.kryptonRibbonRecentDoc3,
             this.kryptonRibbonRecentDoc4});
-            this.kryptonRibbon1.RibbonAppButton.AppButtonSpecs.Add(this.buttonSpecAppMenu1);
-            this.kryptonRibbon1.RibbonAppButton.AppButtonSpecs.Add(this.buttonSpecAppMenu2);
-            this.kryptonRibbon1.RibbonAppButton.IgnoreDoubleClickClose = true;
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonSpecs.Add(this.buttonSpecAppMenu1);
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonSpecs.Add(this.buttonSpecAppMenu2);
+            this.kryptonRibbon1.RibbonFileAppButton.IgnoreDoubleClickClose = true;
             this.kryptonRibbon1.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.kryptonRibbonTab1});
             this.kryptonRibbon1.SelectedTab = this.kryptonRibbonTab1;

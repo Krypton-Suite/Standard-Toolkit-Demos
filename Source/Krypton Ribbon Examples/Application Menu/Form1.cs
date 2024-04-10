@@ -27,20 +27,20 @@ namespace ApplicationMenu
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            checkBoxShowRecentDocs.Checked = kryptonRibbon1.RibbonAppButton.AppButtonShowRecentDocs;
+            checkBoxShowRecentDocs.Checked = kryptonRibbon1.RibbonFileAppButton.AppButtonShowRecentDocs;
             textBoxDocsTitle.Text = KryptonManager.Strings.RibbonStrings.RecentDocuments;
-            textBoxMinWidth.Text = kryptonRibbon1.RibbonAppButton.AppButtonMinRecentSize.Width.ToString();
-            textBoxMinHeight.Text = kryptonRibbon1.RibbonAppButton.AppButtonMinRecentSize.Height.ToString();
+            textBoxMinWidth.Text = kryptonRibbon1.RibbonFileAppButton.AppButtonMinRecentSize.Width.ToString();
+            textBoxMinHeight.Text = kryptonRibbon1.RibbonFileAppButton.AppButtonMinRecentSize.Height.ToString();
         }
 
         private void kryptonRibbon1_AppButtonMenuOpening(object sender, CancelEventArgs e)
         {
-            kryptonRibbon1.RibbonAppButton.AppButtonShowRecentDocs = checkBoxShowRecentDocs.Checked;
+            kryptonRibbon1.RibbonFileAppButton.AppButtonShowRecentDocs = checkBoxShowRecentDocs.Checked;
             KryptonManager.Strings.RibbonStrings.RecentDocuments = textBoxDocsTitle.Text;
 
             var minWidth = int.Parse(textBoxMinWidth.Text);
             var minHeight = int.Parse(textBoxMinHeight.Text);
-            kryptonRibbon1.RibbonAppButton.AppButtonMinRecentSize = new Size(minWidth, minHeight);
+            kryptonRibbon1.RibbonFileAppButton.AppButtonMinRecentSize = new Size(minWidth, minHeight);
         }
 
         private void button2010Blue_Click(object sender, EventArgs e)

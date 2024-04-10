@@ -1318,8 +1318,8 @@ namespace OutlookMailClone
             this.qatQuickPrint,
             this.qatForward,
             this.qatDelete});
-            this.kryptonRibbon.RibbonAppButton.AppButtonImage = global::OutlookMailClone.Properties.Resources.Main_Icon_64_x_64;
-            this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonImage = global::OutlookMailClone.Properties.Resources.Main_Icon_64_x_64;
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1,
             this.kryptonContextMenuItem2,
             this.kryptonContextMenuSeparator11,
@@ -1332,8 +1332,8 @@ namespace OutlookMailClone
             this.kryptonContextMenuSeparator12,
             this.kryptonContextMenuItem8,
             this.kryptonContextMenuItem9});
-            this.kryptonRibbon.RibbonAppButton.AppButtonMinRecentSize = new System.Drawing.Size(300, 250);
-            this.kryptonRibbon.RibbonAppButton.AppButtonRecentDocs.AddRange(new Krypton.Ribbon.KryptonRibbonRecentDoc[] {
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonMinRecentSize = new System.Drawing.Size(300, 250);
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.AddRange(new Krypton.Ribbon.KryptonRibbonRecentDoc[] {
             this.kryptonRibbonRecentDoc1,
             this.kryptonRibbonRecentDoc2,
             this.kryptonRibbonRecentDoc3,
@@ -1342,9 +1342,9 @@ namespace OutlookMailClone
             this.kryptonRibbonRecentDoc6,
             this.kryptonRibbonRecentDoc7,
             this.kryptonRibbonRecentDoc8});
-            this.kryptonRibbon.RibbonAppButton.AppButtonSpecs.Add(this.buttonSpecAppMenu1);
-            this.kryptonRibbon.RibbonAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
-            this.kryptonRibbon.RibbonAppButton.FormCloseBoxVisible = true;
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonSpecs.Add(this.buttonSpecAppMenu1);
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            this.kryptonRibbon.RibbonFileAppButton.FormCloseBoxVisible = true;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabMessage,
             this.tabInsert,

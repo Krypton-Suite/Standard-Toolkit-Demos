@@ -93,9 +93,8 @@ namespace RibbonControls
             // 
             kryptonRibbon.InDesignHelperMode = true;
             kryptonRibbon.Name = "kryptonRibbon";
-            kryptonRibbon.RibbonAppButton.AppButtonBaseColorDark = System.Drawing.Color.FromArgb(255, 128, 128);
-            kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] { kryptonContextMenuItem1 });
-            kryptonRibbon.RibbonAppButton.AppButtonShowRecentDocs = false;
+            kryptonRibbon.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] { kryptonContextMenuItem1 });
+            kryptonRibbon.RibbonFileAppButton.AppButtonShowRecentDocs = false;
             kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] { ribbonTab });
             kryptonRibbon.SelectedTab = ribbonTab;
             kryptonRibbon.Size = new System.Drawing.Size(2040, 136);
