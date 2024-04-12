@@ -121,79 +121,79 @@
     <value>17, 17</value>
   </metadata>
   <metadata name="cmsBusinessCards.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1465, 58</value>
+    <value>755, 91</value>
   </metadata>
   <metadata name="cmsSignatures.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1310, 58</value>
+    <value>624, 91</value>
   </metadata>
   <metadata name="cmsFollowUp.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1161, 58</value>
+    <value>498, 91</value>
   </metadata>
   <metadata name="cmsSpelling.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1021, 58</value>
+    <value>380, 91</value>
   </metadata>
   <metadata name="cmsFormPublish.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>854, 58</value>
+    <value>237, 91</value>
   </metadata>
   <metadata name="cmsTable.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>733, 58</value>
+    <value>134, 91</value>
   </metadata>
   <metadata name="cmsTextBox.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>595, 58</value>
+    <value>17, 91</value>
   </metadata>
   <metadata name="cmsDropCap.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>449, 58</value>
+    <value>911, 54</value>
   </metadata>
   <metadata name="cmsEquation.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>304, 58</value>
+    <value>788, 54</value>
   </metadata>
   <metadata name="cmsQuickParts.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>150, 58</value>
+    <value>655, 54</value>
   </metadata>
   <metadata name="cmsSymbol.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1643, 58</value>
+    <value>906, 91</value>
   </metadata>
   <metadata name="cmsShapes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 58</value>
+    <value>542, 54</value>
   </metadata>
   <metadata name="cmsThemes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1606, 17</value>
+    <value>318, 54</value>
   </metadata>
   <metadata name="cmsPageColor.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1452, 17</value>
+    <value>187, 54</value>
   </metadata>
   <metadata name="cmsUseVotingButtons.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1249, 17</value>
+    <value>17, 54</value>
   </metadata>
   <metadata name="cmsSaveSentItem.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1073, 17</value>
+    <value>915, 17</value>
   </metadata>
   <metadata name="cmsChangeCase.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>906, 17</value>
+    <value>773, 17</value>
   </metadata>
   <metadata name="cmsSpacing.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>767, 17</value>
+    <value>655, 17</value>
   </metadata>
   <metadata name="cmsBottomBorder.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>586, 17</value>
+    <value>504, 17</value>
   </metadata>
   <metadata name="cmsChangeStyles.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>412, 17</value>
+    <value>357, 17</value>
   </metadata>
   <metadata name="cmsQuickStyles.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>251, 17</value>
+    <value>220, 17</value>
   </metadata>
   <metadata name="cmsFind.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>137, 17</value>
+    <value>121, 17</value>
   </metadata>
   <metadata name="cmsSelect.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1743, 17</value>
+    <value>435, 54</value>
   </metadata>
   <metadata name="kryptonManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1779, 58</value>
+    <value>17, 128</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="toolBarImageStorage1.Copy" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="kryptonManager1.ToolkitImages.ToolbarImages.Copy" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wQAADsEBuJFr7QAAATtJREFUOE/NkSFvwzAQhfNT8hPyEwIDAwcDBw0HDQcNAw0KiirDTBqwhqIhw6DJ
@@ -204,7 +204,7 @@
         7M3jzvbSzIcv6w1Arfzi4mJKFVNzWev7gG0VxQky5eVlJ9/OAAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="toolBarImageStorage1.Cut" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="kryptonManager1.ToolkitImages.ToolbarImages.Cut" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wQAADsEBuJFr7QAAAWVJREFUOE+1kLFLw0AUxvP31KWDi7iETh0cstUxIoSAS6YgKCUKWukgWTSFWi0t
@@ -216,7 +216,7 @@
         TrJAbK2H+e/iuG/rD/E6IQAhBAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="toolBarImageStorage1.New" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="kryptonManager1.ToolkitImages.ToolbarImages.New" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wQAADsEBuJFr7QAAALJJREFUOE+tkC0OwzAMRnOkHWPH2JF6hMDBaGjQ0kihYdkCBwPHPH+VU60/SVqp
@@ -225,7 +225,7 @@
         t1ZVAZp7yiJn4NwPO1P0n2FdkZYAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="toolBarImageStorage1.Open" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="kryptonManager1.ToolkitImages.ToolbarImages.Open" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wQAADsEBuJFr7QAAAYJJREFUOE+9kTFLw0AYhvMTMjreT8jomLE4ZXQ8Jx0DInS8MYKUw6kgwi1it14X
@@ -237,7 +237,7 @@
         OR+1A6TgEF0iTZDyBHw7RtKJEW9GiCKGiDGwjRBhGIIRtfoXKwi+AUiD+AxF5d4DAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="toolBarImageStorage1.PageSetup" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="kryptonManager1.ToolkitImages.ToolbarImages.PageSetup" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wQAADsEBuJFr7QAAAU9JREFUOE/Nkr9LxDAUx/vnONZJcLrRsaNjRxeh4y1CN2+MeIMuEgSPEx2CggiC
@@ -249,7 +249,7 @@
         AElFTkSuQmCC
 </value>
   </data>
-  <data name="toolBarImageStorage1.Paste" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="kryptonManager1.ToolkitImages.ToolbarImages.Paste" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wQAADsEBuJFr7QAAAZFJREFUOE+1kq1uIzEUhecR8gh5hMBCw0LDQMOSSoYllQwDDQcaBhpGVaU1yg60
@@ -262,7 +262,7 @@
         3+FoAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="toolBarImageStorage1.Print" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="kryptonManager1.ToolkitImages.ToolbarImages.Print" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wQAADsEBuJFr7QAAAT5JREFUOE+lkrFqwzAQQPVZHTN21NjRY5eCoFBMoaB2CoGCoJRmKXjokEKgWgrd
@@ -273,7 +273,7 @@
         HNVQLTU/LJ7HX6UIOLKXmNLHw8xxvhJPhU05KZ2FUr9/UTSyKM0qpAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="toolBarImageStorage1.PrintPreview" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="kryptonManager1.ToolkitImages.ToolbarImages.PrintPreview" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wQAADsEBuJFr7QAAAV1JREFUOE+tkrFLw0AYxfun+CfkT7ix442CyyEIFRxu7BgX6SIcKBhB4RCkpSAe
@@ -285,7 +285,7 @@
         o9E3SA4qy0sPAMwAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="toolBarImageStorage1.QuickPrint" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="kryptonManager1.ToolkitImages.ToolbarImages.QuickPrint" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wQAADsEBuJFr7QAAAYVJREFUOE+NkzFLAzEUx++j+BG6KU4BF8eMjsGpY8DlOggPp1IRsohdhAyCJyhm
@@ -298,7 +298,7 @@
         QmCC
 </value>
   </data>
-  <data name="toolBarImageStorage1.Redo" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="kryptonManager1.ToolkitImages.ToolbarImages.Redo" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wQAADsEBuJFr7QAAAWlJREFUOE/NUM9LAlEY9E/y2s1jBw97a7stHcI6LRjhocSDgUnBYpBBHZbYsBJ0
@@ -310,7 +310,7 @@
         K2ufD53judvfnf8QodA3s2Q1tVcGEI0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="toolBarImageStorage1.Save" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="kryptonManager1.ToolkitImages.ToolbarImages.Save" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wQAADsEBuJFr7QAAAWlJREFUOE+tkqFywzAQRPMJ/YR8gqGhYKBgoGChYKBgoGGgYFgFUyZYaFgoGChY
@@ -322,7 +322,7 @@
         GJYKLfPWSeiwBfy9Nptvdck8ZFZUmlQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="toolBarImageStorage1.SaveAll" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="kryptonManager1.ToolkitImages.ToolbarImages.SaveAll" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wQAADsEBuJFr7QAAATpJREFUOE+1kqFuxDAQRPMp/YTCQsNAw6LKoKDQMNCwqAostIoOrlRy0J9gWBUZ
@@ -333,7 +333,7 @@
         jkK22+Q+L2+f/Pjwzg4lSVHauGbG7pH/PsPwA+vp0kObNOe8AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="toolBarImageStorage1.SaveAs" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="kryptonManager1.ToolkitImages.ToolbarImages.SaveAs" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wQAADsEBuJFr7QAAAZJJREFUOE+lkiFPBDEQhfen3E9Yiaw8Wbmy8mTlycqVTTArq8gaSIPhDEkFAlmJ
@@ -346,7 +346,7 @@
         CgAKJAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="toolBarImageStorage1.Undo" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="kryptonManager1.ToolkitImages.ToolbarImages.Undo" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wQAADsEBuJFr7QAAAWVJREFUOE/Nkc9LAlEQx/2TvHrbo8c9Zd3erY57UURQ9pC1F2OJJCMLIw2xH4hs
@@ -358,4 +358,7 @@
         XNy//233yQqFPgHqlADfmnOvBAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>233</value>
+  </metadata>
 </root>
