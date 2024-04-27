@@ -40,7 +40,6 @@ namespace KryptonMessageBoxExamples
         private KryptonMessageBoxButtons _mbButtons = KryptonMessageBoxButtons.OKCancel;
         private MessageBoxOptions _options = 0;
         private MessageBoxContentAreaType _contentAreaType = MessageBoxContentAreaType.Normal;
-        private ContentAlignment _messageTextAlignment = ContentAlignment.MiddleLeft;
 
         public Form1()
         {
@@ -168,8 +167,7 @@ namespace KryptonMessageBoxExamples
                 options: _options,
                 showHelpButton: chkShowHelp.Checked, contentAreaType: _contentAreaType,
                 contentLinkArea: new LinkArea(decimal.ToInt32(knudLinkAreaStart.Value), decimal.ToInt32(knudLinkAreaEnd.Value)),
-                linkAreaCommand: kcmdTest,
-                messageTextAlignment: _messageTextAlignment);
+                linkAreaCommand: kcmdTest);
 
             textBoxMessage.Text = $@"Krypton DialogResult = {res}";
         }
@@ -226,11 +224,6 @@ namespace KryptonMessageBoxExamples
                 kcmbContentAreaType.Items.Add(value);
             }
 
-            foreach (string value in Enum.GetNames(typeof(ContentAlignment)))
-            {
-                kcmbMessageTextAlignment.Items.Add(value);
-            }
-
             knudLinkAreaStart.Maximum = textBoxMessage.Text.Length;
 
             knudLinkAreaEnd.Maximum = textBoxMessage.Text.Length;
@@ -238,8 +231,6 @@ namespace KryptonMessageBoxExamples
             knudLinkAreaEnd.Value = textBoxMessage.Text.Length;
 
             kcmbContentAreaType.SelectedIndex = 0;
-
-            kcmbMessageTextAlignment.SelectedIndex = 3;
         }
 
         private void textBoxMessage_TextChanged(object sender, EventArgs e)
@@ -308,11 +299,6 @@ namespace KryptonMessageBoxExamples
             knudLinkAreaEnd.Enabled = enabled;
 
             ktxtResourcePath.Enabled = enabled;
-        }
-
-        private void kcmbMessageTextAlignment_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            _messageTextAlignment = (ContentAlignment)Enum.Parse(typeof(ContentAlignment), kcmbMessageTextAlignment.Text);
         }
 
         private void kbtnDummyText_Click(object sender, EventArgs e)
