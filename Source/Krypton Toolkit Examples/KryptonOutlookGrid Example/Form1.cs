@@ -38,7 +38,7 @@ namespace KryptonOutlookGrid
             List<OutlookGridRow> l = new List<OutlookGridRow>();
             kogExample.SuspendLayout();
             kogExample.ClearInternalRows();
-            kogExample.FillMode = FillMode.GroupsAndNodes;
+            kogExample.FillMode = GridFillMode.GroupsAndNodes;
 
             List<Token> tokensList = new List<Token>();
             tokensList.Add(new Token("Best seller", Color.Orange, Color.Black));
