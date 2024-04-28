@@ -73,7 +73,7 @@ namespace KryptonOutlookGrid
             grid.GroupBox!.Visible = true;
             grid.HideColumnOnGrouping = false;
 
-            grid.FillMode = FillMode.GroupsAndNodes; //treemode enabled;
+            grid.FillMode = GridFillMode.GroupsAndNodes; //treemode enabled;
             grid.ShowLines = true;
 
             _activeColumns = new SandBoxGridColumn[] {
@@ -178,7 +178,7 @@ namespace KryptonOutlookGrid
                     group.SortBySummaryCount = CommonHelper.StringToBool(node2?.Element("SortBySummaryCount")?.Value!);
                     if (!string.IsNullOrEmpty(node2?.Element("ItemsComparer")?.Value))
                     {
-                        object comparer = Activator.CreateInstance(Type.GetType(TypeConverter.ProcessType(node2?.Element("ItemsComparer")?.Value)!, true)!);
+                        object comparer = Activator.CreateInstance(Type.GetType(TypeConverter.ProcessType(node2?.Element("ItemsComparer")?.Value)!, true)!)!;
                         group.ItemsComparer = (IComparer)comparer;
                     }
                     if (node2!.Element("Name")!.Value.Contains("OutlookGridDateTimeGroup"))
@@ -216,7 +216,7 @@ namespace KryptonOutlookGrid
                         break;
                     default:
                         conditionFormatParams = null;
-                        //will never happened but who knows ? throw exception ?
+                        //will never happen but who knows ? throw exception ?
                         break;
                 }
                 grid.ConditionalFormatting.Add(new ConditionalFormatting(node.Element("ColumnName")?.Value!, conditionFormatType, conditionFormatParams));

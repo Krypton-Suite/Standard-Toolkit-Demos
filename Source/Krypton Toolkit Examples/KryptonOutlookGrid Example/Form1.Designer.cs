@@ -1,4 +1,6 @@
-﻿namespace KryptonOutlookGrid
+﻿using Krypton.Toolkit;
+
+namespace KryptonOutlookGrid
 {
     partial class Form1
     {
@@ -133,7 +135,7 @@
             // 
             this.kogExample.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.kogExample.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kogExample.FillMode = Krypton.Toolkit.FillMode.GroupsOnly;
+            this.kogExample.FillMode = GridFillMode.GroupsOnly;
             this.kogExample.GroupCollection = outlookGridGroupCollection1;
             this.kogExample.Location = new System.Drawing.Point(0, 46);
             this.kogExample.Name = "kogExample";
