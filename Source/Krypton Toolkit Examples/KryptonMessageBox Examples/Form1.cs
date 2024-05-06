@@ -39,7 +39,6 @@ namespace KryptonMessageBoxExamples
         private KryptonMessageBoxIcon _kmbIcon = KryptonMessageBoxIcon.Warning;
         private KryptonMessageBoxButtons _mbButtons = KryptonMessageBoxButtons.OKCancel;
         private MessageBoxOptions _options = 0;
-        private MessageBoxContentAreaType _contentAreaType = MessageBoxContentAreaType.Normal;
 
         public Form1()
         {
@@ -154,20 +153,28 @@ namespace KryptonMessageBoxExamples
 #endif
                )
             {
-                MessageBox.Show(textBoxMessage.Text, textBoxCaption.Text,
-                    (MessageBoxButtons)_mbButtons,
-                    _mbIcon, MessageBoxDefaultButton.Button1,
-                    _options,
-                    chkShowHelp.Checked);
+                if (chkShowHelp.Checked)
+                {
+                    MessageBox.Show(textBoxMessage.Text, textBoxCaption.Text,
+                        (MessageBoxButtons)_mbButtons,
+                        _mbIcon, MessageBoxDefaultButton.Button1,
+                        _options,
+                        chkShowHelp.Checked);
+                }
+                else
+                {
+                    MessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text,
+                        (MessageBoxButtons)_mbButtons,
+                        _mbIcon, MessageBoxDefaultButton.Button1,
+                        _options);
+                }
             }
 
             var res = KryptonMessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text,
-                _mbButtons,
-                _kmbIcon,
-                options: _options,
-                showHelpButton: chkShowHelp.Checked, contentAreaType: _contentAreaType,
-                contentLinkArea: new LinkArea(decimal.ToInt32(knudLinkAreaStart.Value), decimal.ToInt32(knudLinkAreaEnd.Value)),
-                linkAreaCommand: kcmdTest);
+                        _mbButtons,
+                        displayHelpButton: chkShowHelp.Checked,
+                        _kmbIcon, KryptonMessageBoxDefaultButton.Button1,
+                        options: _options);
 
             textBoxMessage.Text = $@"Krypton DialogResult = {res}";
         }
@@ -199,7 +206,7 @@ namespace KryptonMessageBoxExamples
             // The parameter must be cast to the Control type to get the Tag property.
             Control senderControl = sender as Control;
 
-            helpLabel.Text = $@"Help information shown in response to user action on the '{(string)senderControl.Tag}' message.";
+            helpLabel.Text = $@"Help information shown in response to user action on the '{(string?)senderControl!.Tag}' message.";
 
             // Set the Help form to be owned by the main form. This helps
             // to ensure that the Help form is disposed of.
@@ -218,88 +225,9 @@ namespace KryptonMessageBoxExamples
             {
                 kcmbIcons.Items.Add(value);
             }
-
-            foreach (string value in Enum.GetNames(typeof(MessageBoxContentAreaType)))
-            {
-                kcmbContentAreaType.Items.Add(value);
-            }
-
-            knudLinkAreaStart.Maximum = textBoxMessage.Text.Length;
-
-            knudLinkAreaEnd.Maximum = textBoxMessage.Text.Length;
-
-            knudLinkAreaEnd.Value = textBoxMessage.Text.Length;
-
-            kcmbContentAreaType.SelectedIndex = 0;
         }
 
-        private void textBoxMessage_TextChanged(object sender, EventArgs e)
-        {
-            knudLinkAreaStart.Maximum = textBoxMessage.Text.Length;
-
-            knudLinkAreaEnd.Maximum = textBoxMessage.Text.Length;
-
-            knudLinkAreaEnd.Value = textBoxMessage.Text.Length;
-        }
-
-        private void kcmbIcons_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            _kmbIcon = (KryptonMessageBoxIcon)Enum.Parse(typeof(KryptonMessageBoxIcon), kcmbIcons.Text);
-        }
-
-        private void kcmbContentAreaType_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            _contentAreaType =
-                (MessageBoxContentAreaType)Enum.Parse(typeof(MessageBoxContentAreaType), kcmbContentAreaType.Text);
-
-            //if (kcmbContentAreaType.SelectedIndex == 0)
-            //{
-            //    _contentAreaType = MessageBoxContentAreaType.Normal;
-
-            //    ToggleContentAreaControls(false);
-            //}
-            //else
-            //{
-            //    _contentAreaType = MessageBoxContentAreaType.LinkLabel;
-
-            //    ToggleContentAreaControls(true);
-            //}
-        }
-
-        private void kcmdTest_Execute(object sender, EventArgs e)
-        {
-            try
-            {
-                Process.Start(ktxtResourcePath.Text);
-            }
-            catch (Exception exception)
-            {
-                KryptonMessageBox.Show(exception.Message);
-            }
-        }
-
-        private void bsaBrowse_Click(object sender, EventArgs e)
-        {
-            KryptonOpenFileDialog ofd = new() { Title = @"Browse for file:" };
-
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                ktxtResourcePath.Text = Path.GetFullPath(ofd.FileName);
-            }
-        }
-
-        private void ToggleContentAreaControls(bool enabled)
-        {
-            klblLinkAreaStart.Enabled = enabled;
-
-            klblLinkAreaEnd.Enabled = enabled;
-
-            knudLinkAreaStart.Enabled = enabled;
-
-            knudLinkAreaEnd.Enabled = enabled;
-
-            ktxtResourcePath.Enabled = enabled;
-        }
+        private void kcmbIcons_SelectedIndexChanged(object sender, EventArgs e) => _kmbIcon = (KryptonMessageBoxIcon)Enum.Parse(typeof(KryptonMessageBoxIcon), kcmbIcons.Text);
 
         private void kbtnDummyText_Click(object sender, EventArgs e)
         {

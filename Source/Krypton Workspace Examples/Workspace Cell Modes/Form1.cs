@@ -59,31 +59,57 @@ namespace WorkspaceCellModes
 
             // Work out the new mode we want
             if (radioBarTabGroup.Checked)
+            {
                 mode = NavigatorMode.BarTabGroup;
+            }
             else if (radioBarRibbonTabGroup.Checked)
+            {
                 mode = NavigatorMode.BarRibbonTabGroup;
+            }
             else if (radioBarCheckButtonGroupInside.Checked)
+            {
                 mode = NavigatorMode.BarCheckButtonGroupInside;
+            }
             else if (radioBarCheckButtonGroupOutside.Checked)
+            {
                 mode = NavigatorMode.BarCheckButtonGroupOutside;
+            }
             else if (radioHeaderBarCheckButtonGroup.Checked)
+            {
                 mode = NavigatorMode.HeaderBarCheckButtonGroup;
+            }
             else if (radioHeaderBarCheckButtonHeaderGroup.Checked)
+            {
                 mode = NavigatorMode.HeaderBarCheckButtonHeaderGroup;
+            }
             else if (radioStackCheckButtonGroup.Checked)
+            {
                 mode = NavigatorMode.StackCheckButtonGroup;
+            }
             else if (radioStackCheckButtonHeaderGroup.Checked)
+            {
                 mode = NavigatorMode.StackCheckButtonHeaderGroup;
+            }
             else if (radioOutlookFull.Checked)
+            {
                 mode = NavigatorMode.OutlookFull;
+            }
             else if (radioOutlookMini.Checked)
+            {
                 mode = NavigatorMode.OutlookMini;
+            }
             else if (radioHeaderGroup.Checked)
+            {
                 mode = NavigatorMode.HeaderGroup;
+            }
             else if (radioGroup.Checked)
+            {
                 mode = NavigatorMode.Group;
+            }
             else if (radioPanel.Checked)
+            {
                 mode = NavigatorMode.Panel;
+            }
 
             UpdateCellMode(mode);
         }

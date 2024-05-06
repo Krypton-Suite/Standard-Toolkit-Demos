@@ -77,7 +77,7 @@ namespace MemoEditor
                             recentDoc.Text = filename;
 
                             // Add to end of the recent docs collection
-                            kryptonRibbon.RibbonAppButton.AppButtonRecentDocs.Add(recentDoc);
+                            kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Add(recentDoc);
                         }
                     }
                 }
@@ -93,7 +93,9 @@ namespace MemoEditor
                     // Restore the cell mode selected previously
                     string cellMode = memoEditorSettings.GetValue("CellMode") as string;
                     if (!string.IsNullOrEmpty(cellMode))
+                    {
                         _cellMode = (NavigatorMode)Enum.Parse(typeof(NavigatorMode), cellMode);
+                    }
                 }
                 catch { };
 
@@ -128,12 +130,14 @@ namespace MemoEditor
             {
                 // Close each page within the cell (unless it returns the operation has been cancelled)
                 for (int i = cell.Pages.Count - 1; i >= 0; i--)
+                {
                     if (CloseMemoPage(cell.Pages[i]))
                     {
                         kryptonWorkspace.ResumeLayout();
                         e.Cancel = true;
                         return;
                     }
+                }
 
                 cell = kryptonWorkspace.NextCell(cell);
             }
@@ -148,18 +152,24 @@ namespace MemoEditor
 
             // If it does not already exist then create it now
             if (memoEditorSettings == null)
+            {
                 memoEditorSettings = Registry.CurrentUser.CreateSubKey(_memoEditorPath);
+            }
 
             // If we managed to get hold of a valid registry key...
             if (memoEditorSettings != null)
             {
                 // Clear out the existing recent docs contents
                 for (int i = 1; i <= _maxRecentDocs; i++)
+                {
                     memoEditorSettings.SetValue(i.ToString(), string.Empty, RegistryValueKind.String);
+                }
 
                 // Set the value for each existing entry
-                for (int i = 0; i < kryptonRibbon.RibbonAppButton.AppButtonRecentDocs.Count; i++)
-                    memoEditorSettings.SetValue((i + 1).ToString(), kryptonRibbon.RibbonAppButton.AppButtonRecentDocs[i].Text, RegistryValueKind.String);
+                for (int i = 0; i < kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Count; i++)
+                {
+                    memoEditorSettings.SetValue((i + 1).ToString(), kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs[i].Text, RegistryValueKind.String);
+                }
 
                 // Save the global palette setting and cell mode
                 memoEditorSettings.SetValue("GlobalPalette", kryptonManager.GlobalPaletteMode.ToString(), RegistryValueKind.String);
@@ -192,8 +202,10 @@ namespace MemoEditor
                         // Load the file contents and add as a new tab
                         FileInfo fileInfo = new FileInfo(file);
                         if (fileInfo.Exists)
+                        {
                             using (StreamReader reader = new StreamReader(file))
                                 AddNewMemo(fileInfo.Name, fileInfo.FullName, reader.ReadToEnd());
+                        }
                     }
                 }
             }
@@ -203,14 +215,18 @@ namespace MemoEditor
         {
             // Save memo at the current page
             if (kryptonWorkspace.ActivePage != null)
+            {
                 SaveMemoPage(kryptonWorkspace.ActivePage);
+            }
         }
 
         private void buttonSaveAsMemo_Click(object sender, EventArgs e)
         {
             // 'Save As' memo at the current page
             if (kryptonWorkspace.ActivePage != null)
+            {
                 SaveAsMemoPage(kryptonWorkspace.ActivePage);
+            }
         }
 
         private void buttonSaveAllMemo_Click(object sender, EventArgs e)
@@ -234,7 +250,9 @@ namespace MemoEditor
         {
             // Close memo at the current page
             if (kryptonWorkspace.ActivePage != null)
+            {
                 CloseMemoPage(kryptonWorkspace.ActivePage);
+            }
         }
 
         private void buttonCloseAllMemo_Click(object sender, EventArgs e)
@@ -247,11 +265,13 @@ namespace MemoEditor
             {
                 // Close each page within the cell (unless it returns the operation has been cancelled)
                 for (int i = cell.Pages.Count - 1; i >= 0; i--)
+                {
                     if (CloseMemoPage(cell.Pages[i]))
                     {
                         kryptonWorkspace.ResumeLayout();
                         return;
                     }
+                }
 
                 cell = kryptonWorkspace.NextCell(cell);
             }
@@ -366,14 +386,14 @@ namespace MemoEditor
         {
             // Always remove the selected entry, we only put it back if we find it is valid
             KryptonRibbonRecentDoc recentDoc = (KryptonRibbonRecentDoc)sender;
-            kryptonRibbon.RibbonAppButton.AppButtonRecentDocs.Remove(recentDoc);
+            kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Remove(recentDoc);
 
             // Get the existing page that contains the selected filename
             KryptonPage page = GetPageForFilename(recentDoc.Text);
             if (page != null)
             {
                 // Make this the top most 'recent doc' entry
-                kryptonRibbon.RibbonAppButton.AppButtonRecentDocs.Insert(0, recentDoc);
+                kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Insert(0, recentDoc);
 
                 // Select the page and we are done
                 KryptonWorkspaceCell cell = kryptonWorkspace.CellForPage(page);
@@ -389,7 +409,7 @@ namespace MemoEditor
                 using (StreamReader reader = new StreamReader(fileInfo.FullName))
                 {
                     // Make this the top most 'recent doc' entry
-                    kryptonRibbon.RibbonAppButton.AppButtonRecentDocs.Insert(0, recentDoc);
+                    kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Insert(0, recentDoc);
 
                     // Add contents of the file as a new page associated with the file
                     AddNewMemo(fileInfo.Name, fileInfo.FullName, reader.ReadToEnd());
@@ -429,13 +449,18 @@ namespace MemoEditor
             while (cell != null)
             {
                 if (e.NewCell != cell)
+                {
                     cell.Bar.TabStyle = TabStyle.StandardProfile;
+                }
+
                 cell = kryptonWorkspace.NextCell(cell);
             }
 
             // Ensure the newly selected cell has a higher profile appearance
             if (e.NewCell != null)
+            {
                 e.NewCell.Bar.TabStyle = TabStyle.HighProfile;
+            }
         }
 
         private void kryptonCell_PageCloseAction(object sender, CloseActionEventArgs e)
@@ -562,7 +587,9 @@ namespace MemoEditor
 
             // Is the new memo loaded from a file?
             if (loaded)
+            {
                 AddRecentFile(path);
+            }
         }
 
         private void SaveMemoPage(KryptonPage page)
@@ -572,7 +599,9 @@ namespace MemoEditor
             {
                 // If the page is not associated with a file then 'Save As'
                 if (!(bool)page.Tag)
+                {
                     SaveAsMemoPage(page);
+                }
                 else
                 {
                     // The page must be dirty and so in need of saving
@@ -608,7 +637,9 @@ namespace MemoEditor
                 FileInfo extractInfo = new FileInfo(page.TextDescription.TrimEnd('*'));
                 saveFileDialog.FileName = extractInfo.Name;
                 if (string.IsNullOrEmpty(extractInfo.DirectoryName))
+                {
                     saveFileDialog.InitialDirectory = extractInfo.DirectoryName;
+                }
 
                 // If the user entered a valid filename for saving
                 if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
@@ -687,7 +718,9 @@ namespace MemoEditor
                 {
                     // If the contents come from a file
                     if ((bool)page.Tag)
+                    {
                         filenames.Add(page.TextDescription.TrimEnd('*'));
+                    }
                 }
 
                 cell = kryptonWorkspace.NextCell(cell);
@@ -707,7 +740,9 @@ namespace MemoEditor
                 {
                     // Look for the matching filename
                     if (page.TextDescription.TrimEnd('*').Equals(filename))
+                    {
                         return page;
+                    }
                 }
 
                 cell = kryptonWorkspace.NextCell(cell);
@@ -720,12 +755,14 @@ namespace MemoEditor
         {
             // Search for an existing entry for that filename
             KryptonRibbonRecentDoc recentDoc = null;
-            foreach(KryptonRibbonRecentDoc entry in kryptonRibbon.RibbonAppButton.AppButtonRecentDocs)
+            foreach(KryptonRibbonRecentDoc entry in kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs)
+            {
                 if (entry.Text.Equals(filename))
                 {
                     recentDoc = entry;
                     break;
                 }
+            }
 
             // If no existing entry then create a new one
             if (recentDoc == null)
@@ -736,13 +773,17 @@ namespace MemoEditor
             }
 
             // Remove entry from current list and insert at the top
-            kryptonRibbon.RibbonAppButton.AppButtonRecentDocs.Remove(recentDoc);
-            kryptonRibbon.RibbonAppButton.AppButtonRecentDocs.Insert(0, recentDoc);
+            kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Remove(recentDoc);
+            kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Insert(0, recentDoc);
 
             // Restrict list to just 9 entries
-            if (kryptonRibbon.RibbonAppButton.AppButtonRecentDocs.Count > _maxRecentDocs)
-                for (int i = kryptonRibbon.RibbonAppButton.AppButtonRecentDocs.Count; i > _maxRecentDocs; i--)
-                    kryptonRibbon.RibbonAppButton.AppButtonRecentDocs.RemoveAt(kryptonRibbon.RibbonAppButton.AppButtonRecentDocs.Count - 1);
+            if (kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Count > _maxRecentDocs)
+            {
+                for (int i = kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Count; i > _maxRecentDocs; i--)
+                {
+                    kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.RemoveAt(kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Count - 1);
+                }
+            }
         }
 
         private void UpdateCellsFromGrouping()
@@ -762,7 +803,9 @@ namespace MemoEditor
 
             // Check the palette button that matches the cell mode
             foreach (KryptonRibbonGroupButton button in _groupingButtons)
+            {
                 button.Checked = (button.Tag.ToString().Equals(cellMode));
+            }
         }
 
         private void UpdateButtonsFromPalette()
@@ -772,7 +815,9 @@ namespace MemoEditor
 
             // Check the palette button that matches the global palette
             foreach(KryptonRibbonGroupButton button in _paletteButtons)
+            {
                 button.Checked = (button.Tag.ToString().Equals(mode));
+            }
         }
 
         private void UpdateApplicationTitle()
@@ -782,7 +827,9 @@ namespace MemoEditor
 
             // If we have an active page then append that memo name
             if (kryptonWorkspace.ActivePage != null)
+            {
                 title += " - " + kryptonWorkspace.ActivePage.TextDescription;
+            }
 
             Text = title;
         }

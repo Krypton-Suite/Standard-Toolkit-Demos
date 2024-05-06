@@ -78,19 +78,25 @@ namespace BasicPageDragAndDrop
         private void radioBlock_CheckedChanged(object sender, EventArgs e)
         {
             if (radioBlock.Checked)
+            {
                 _dm.StateCommon.Feedback = PaletteDragFeedback.Block;
+            }
         }
 
         private void radioSquares_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSquares.Checked)
+            {
                 _dm.StateCommon.Feedback = PaletteDragFeedback.Square;
+            }
         }
 
         private void radioRounded_CheckedChanged(object sender, EventArgs e)
         {
             if (radioRounded.Checked)
+            {
                 _dm.StateCommon.Feedback = PaletteDragFeedback.Rounded;
+            }
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
@@ -115,11 +121,15 @@ namespace BasicPageDragAndDrop
 
             // Do we need to set the star sizing value?
             if (!string.IsNullOrEmpty(starSize))
+            {
                 cell.StarSize = starSize;
+            }
 
             // Add requested number of pages
             for (int i = 0; i < numPages; i++)
+            {
                 cell.Pages.Add(CreatePage());
+            }
 
             return cell;
         }

@@ -153,11 +153,15 @@ namespace WorkspaceCellLayout
 
             // Do we need to set the star sizing value?
             if (!string.IsNullOrEmpty(starSize))
+            {
                 cell.StarSize = starSize;
+            }
 
             // Add requested number of pages
             for(int i=0; i<numPages; i++)
+            {
                 cell.Pages.Add(CreatePage());
+            }
 
             return cell;
         }
