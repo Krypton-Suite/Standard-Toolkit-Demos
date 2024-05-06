@@ -56,7 +56,9 @@ namespace AdvancedPageDragAndDrop
             protected override void Dispose(bool disposing)
             {
                 if (disposing)
+                {
                     _treeView = null;
+                }
 
                 base.Dispose(disposing);
             }
@@ -75,9 +77,13 @@ namespace AdvancedPageDragAndDrop
                 if ((dragEndData.Source != null) && 
                     (dragEndData.Source is PageDragTreeView) && 
                     (dragEndData.Source == _treeView))
+                {
                     return false;
+                }
                 else
+                {
                     return base.IsMatch(screenPt, dragEndData);
+                }
             }
 
             /// <summary>
@@ -187,7 +193,9 @@ namespace AdvancedPageDragAndDrop
 
             // Try and ensure the node is selected on the mouse down
             if ((nodeDown != null) && (SelectedNode != nodeDown))
+            {
                 SelectedNode = nodeDown;
+            }
 
             // Mouse down could be a prelude to a drag operation
             if (e.Button == MouseButtons.Left)
@@ -216,9 +224,13 @@ namespace AdvancedPageDragAndDrop
             {
                 // If currently dragging
                 if (Capture && _dragging)
+                {
                     PageDragMove(pt);
+                }
                 else if (!_dragRect.Contains(pt))
+                {
                     PageDragStart(pt);
+                }
             }
 
             base.OnMouseMove(e);
@@ -233,9 +245,13 @@ namespace AdvancedPageDragAndDrop
             if (_dragging)
             {
                 if (e.Button == MouseButtons.Left)
+                {
                     PageDragEnd(new Point(e.X, e.Y));
+                }
                 else
+                {
                     PageDragQuit();
+                }
             }
 
             // Any released mouse menas we have ended drag monitoring
@@ -289,7 +305,9 @@ namespace AdvancedPageDragAndDrop
         private void PageDragMove(Point pt)
         {
             if (DragPageNotify != null)
+            {
                 DragPageNotify.PageDragMove(this, new PointEventArgs(PointToScreen(pt)));
+            }
         }
 
         private void PageDragEnd(Point pt)
@@ -301,7 +319,9 @@ namespace AdvancedPageDragAndDrop
                 {
                     // Should we remove the page that can been transferred
                     if (RemovePages)
+                    {
                         Nodes.Remove(_dragNode);
+                    }
                 }
 
                 // Transfered the page to the target, so do not dispose it

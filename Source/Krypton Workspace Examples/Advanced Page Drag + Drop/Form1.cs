@@ -53,19 +53,25 @@ namespace AdvancedPageDragAndDrop
         private void radioBlock_CheckedChanged(object sender, EventArgs e)
         {
             if (radioBlock.Checked)
+            {
                 _dm.StateCommon.Feedback = PaletteDragFeedback.Block;
+            }
         }
 
         private void radioSquares_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSquares.Checked)
+            {
                 _dm.StateCommon.Feedback = PaletteDragFeedback.Square;
+            }
         }
 
         private void radioRounded_CheckedChanged(object sender, EventArgs e)
         {
             if (radioRounded.Checked)
+            {
                 _dm.StateCommon.Feedback = PaletteDragFeedback.Rounded;
+            }
         }
 
         private void workspaceCellAdding(object sender, WorkspaceCellEventArgs e)

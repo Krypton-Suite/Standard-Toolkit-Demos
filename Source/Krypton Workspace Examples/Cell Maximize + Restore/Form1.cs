@@ -68,10 +68,14 @@ A custom \i ButtonSpec \i0 has been added to the tabs area that can be clicked t
         private void kryptonWorkspace_ActiveCellChanged(object sender, ActiveCellChangedEventArgs e)
         {
             if (e.OldCell != null)
+            {
                 e.OldCell.Bar.TabStyle = TabStyle.OneNote;
+            }
 
             if (e.NewCell != null)
+            {
                 e.NewCell.Bar.TabStyle = TabStyle.HighProfile;
+            }
         }
 
         private void OnTabDoubleClicked(object sender, KryptonPageEventArgs e)
@@ -81,9 +85,13 @@ A custom \i ButtonSpec \i0 has been added to the tabs area that can be clicked t
 
             // Toggle maximized state
             if (kryptonWorkspace.MaximizedCell == null)
+            {
                 kryptonWorkspace.MaximizedCell = cell;
+            }
             else
+            {
                 kryptonWorkspace.MaximizedCell = null;
+            }
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
