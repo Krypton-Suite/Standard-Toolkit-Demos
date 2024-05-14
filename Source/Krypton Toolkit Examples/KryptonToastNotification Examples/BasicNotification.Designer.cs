@@ -1,6 +1,6 @@
 ﻿namespace KryptonToastNotificationExamples
 {
-    partial class Form1
+    partial class BasicNotification
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BasicNotification));
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kbtnShow = new Krypton.Toolkit.KryptonButton();
             this.kryptonBorderEdge1 = new Krypton.Toolkit.KryptonBorderEdge();
@@ -257,9 +257,10 @@
             // 
             // kryptonLabel5
             // 
+            this.kryptonLabel5.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
             this.kryptonLabel5.Location = new System.Drawing.Point(13, 289);
             this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(126, 20);
+            this.kryptonLabel5.Size = new System.Drawing.Size(133, 20);
             this.kryptonLabel5.TabIndex = 14;
             this.kryptonLabel5.Values.Text = "Countdown Seconds:";
             // 
@@ -285,9 +286,10 @@
             // 
             // kryptonLabel4
             // 
+            this.kryptonLabel4.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
             this.kryptonLabel4.Location = new System.Drawing.Point(13, 221);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(96, 20);
+            this.kryptonLabel4.Size = new System.Drawing.Size(104, 20);
             this.kryptonLabel4.TabIndex = 10;
             this.kryptonLabel4.Values.Text = "Title Alignment:";
             // 
@@ -314,9 +316,10 @@
             // 
             // kryptonLabel3
             // 
+            this.kryptonLabel3.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
             this.kryptonLabel3.Location = new System.Drawing.Point(13, 165);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(36, 20);
+            this.kryptonLabel3.Size = new System.Drawing.Size(39, 20);
             this.kryptonLabel3.TabIndex = 4;
             this.kryptonLabel3.Values.Text = "Icon:";
             // 
@@ -341,21 +344,23 @@
             // 
             // kryptonLabel2
             // 
+            this.kryptonLabel2.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
             this.kryptonLabel2.Location = new System.Drawing.Point(13, 39);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(36, 20);
+            this.kryptonLabel2.Size = new System.Drawing.Size(39, 20);
             this.kryptonLabel2.TabIndex = 1;
             this.kryptonLabel2.Values.Text = "Text:";
             // 
             // kryptonLabel1
             // 
+            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
             this.kryptonLabel1.Location = new System.Drawing.Point(13, 13);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(36, 20);
+            this.kryptonLabel1.Size = new System.Drawing.Size(40, 20);
             this.kryptonLabel1.TabIndex = 0;
             this.kryptonLabel1.Values.Text = "Title:";
             // 
-            // Form1
+            // BasicNotification
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -366,7 +371,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "BasicNotification";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Krypton Toast Notification";
             this.Load += new System.EventHandler(this.Form1_Load);
