@@ -12,7 +12,7 @@ using Krypton.Toolkit;
 
 namespace KryptonToastNotificationExamples
 {
-    public partial class Form1 : KryptonForm
+    public partial class BasicNotification : KryptonForm
     {
         #region Instance Fields
 
@@ -32,7 +32,7 @@ namespace KryptonToastNotificationExamples
 
         #endregion
         
-        public Form1()
+        public BasicNotification()
         {
             InitializeComponent();
         }
