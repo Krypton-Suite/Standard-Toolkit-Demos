@@ -346,7 +346,6 @@ namespace KryptonContextMenuExamples
             this.kryptonThemeComboBox1.Location = new System.Drawing.Point(12, 23);
             this.kryptonThemeComboBox1.MaxDropDownItems = 12;
             this.kryptonThemeComboBox1.Name = "kryptonThemeComboBox1";
-            this.kryptonThemeComboBox1.ReportSelectedThemeIndex = true;
             this.kryptonThemeComboBox1.Size = new System.Drawing.Size(367, 25);
             this.kryptonThemeComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
