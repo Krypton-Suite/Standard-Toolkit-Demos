@@ -25,10 +25,6 @@ namespace RibbonControls
         public Form1()
         {
             InitializeComponent();
-            miscCmbTheme.ComboBox.StateCommon.ComboBox.Content.Font =
-                new Font(@"Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            miscCmbTheme.ComboBox.StateCommon.Item.Content.ShortText.Font =
-                miscCmbTheme.ComboBox.StateCommon.ComboBox.Content.Font;
         }
 
         private LinkLabel CreateLinkLabel(string text)
