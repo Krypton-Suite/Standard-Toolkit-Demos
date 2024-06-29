@@ -18,17 +18,17 @@ namespace KryptonListViewExamples
             InitializeComponent();
         }
 
-        private void CmbTheme_SelectedIndexChanged(object sender, System.EventArgs e) => ThemeManager.SetTheme(cmbTheme.Text, kryptonManager1);
+        private void CmbTheme_SelectedIndexChanged(object sender, System.EventArgs e) => ThemeManager.ApplyTheme(cmbTheme.Text, kryptonManager1);
 
         private void ViewTypeChanged(object sender, System.EventArgs e)
         {
-            var rb = sender as RadioButton;
+            RadioButton? rb = sender as RadioButton;
             if (!rb.Checked)
             {
                 return;
             }
 
-            var view = View.Details;
+            View view = View.Details;
             viewCheckBox.Enabled = true;
             switch (rb.Text)
             {
@@ -68,9 +68,10 @@ namespace KryptonListViewExamples
             listKrypton.CheckBoxes = viewCheckBox.Checked;
         }
 
-        private void GroupBox3_Panel_Paint(object sender, PaintEventArgs e)
+        private void chkDisabled_CheckStateChanged(object sender, EventArgs e)
         {
-
+            listWinform.Enabled = !chkDisabled.Checked;
+            listKrypton.Enabled = !chkDisabled.Checked;
         }
     }
 }
