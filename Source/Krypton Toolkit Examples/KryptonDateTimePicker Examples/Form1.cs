@@ -170,7 +170,7 @@ namespace KryptonDateTimePickerExamples
         public DateTime? CalendarTodayDate
         {
             get => _dateTimePicker.CalendarTodayDate;
-            set => _dateTimePicker.CalendarTodayDate = value;
+            set => _dateTimePicker.CalendarTodayDate = (DateTime)value!;
         }
 
         /// <summary>
