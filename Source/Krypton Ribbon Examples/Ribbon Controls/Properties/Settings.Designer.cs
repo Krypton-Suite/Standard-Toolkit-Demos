@@ -12,7 +12,7 @@ namespace RibbonControls.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.11.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -28,10 +28,10 @@ namespace RibbonControls.Properties {
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool RibbonCheckBox {
             get {
-                return ((bool)(this[@"RibbonCheckBox"]));
+                return ((bool)(this["RibbonCheckBox"]));
             }
             set {
-                this[@"RibbonCheckBox"] = value;
+                this["RibbonCheckBox"] = value;
             }
         }
         
@@ -40,10 +40,10 @@ namespace RibbonControls.Properties {
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool CheckBox {
             get {
-                return ((bool)(this[@"CheckBox"]));
+                return ((bool)(this["CheckBox"]));
             }
             set {
-                this[@"CheckBox"] = value;
+                this["CheckBox"] = value;
             }
         }
         
@@ -52,10 +52,10 @@ namespace RibbonControls.Properties {
         [global::System.Configuration.DefaultSettingValueAttribute("2018-01-01")]
         public global::System.DateTime DateTimePicker1 {
             get {
-                return ((global::System.DateTime)(this[@"DateTimePicker1"]));
+                return ((global::System.DateTime)(this["DateTimePicker1"]));
             }
             set {
-                this[@"DateTimePicker1"] = value;
+                this["DateTimePicker1"] = value;
             }
         }
     }

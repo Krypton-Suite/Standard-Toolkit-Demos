@@ -11,9 +11,7 @@
 #endregion
 
 using System;
-using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
@@ -187,7 +185,7 @@ namespace KryptonMessageBoxExamples
         private void Form1_HelpRequested(object sender, HelpEventArgs hlpEvent)
         {
             // Create a custom Help window in response to the HelpRequested event.
-            using Form helpForm = new() {
+            using var helpForm = new Form {
                 // Set up the form position, size, and title caption.
                 StartPosition = FormStartPosition.Manual,
                 Size = new Size(200, 400),
