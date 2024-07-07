@@ -1,6 +1,7 @@
 # <img src="https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png?raw=true"> Standard Toolkit Demos - ChangeLog
 
 ## 2024-11-xx - Build 2411 - November
+* Resolved [#199](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/199), ListView example Theme combo box does not work
 * Resolved [#196](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/196), Demo apps are broken due to **[Breaking Changes]** due to them usage, not fixed
 * Add `KryptonOutlookGrid` example
 * Add `KryptonToastNotification` examples
