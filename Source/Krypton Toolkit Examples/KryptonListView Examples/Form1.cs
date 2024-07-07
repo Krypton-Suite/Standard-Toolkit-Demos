@@ -1,8 +1,7 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2021 - 2021. All rights reserved.
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2021 - 2024. All rights reserved.
 // *****************************************************************************
-
 
 using System;
 using System.Windows.Forms;
@@ -18,11 +17,9 @@ namespace KryptonListViewExamples
             InitializeComponent();
         }
 
-        private void CmbTheme_SelectedIndexChanged(object sender, System.EventArgs e) => ThemeManager.ApplyTheme(cmbTheme.Text, kryptonManager1);
-
         private void ViewTypeChanged(object sender, System.EventArgs e)
         {
-            RadioButton? rb = sender as RadioButton;
+            RadioButton? rb = (RadioButton)sender;
             if (!rb.Checked)
             {
                 return;
@@ -72,6 +69,7 @@ namespace KryptonListViewExamples
         {
             listWinform.Enabled = !chkDisabled.Checked;
             listKrypton.Enabled = !chkDisabled.Checked;
+            kryptonTextBox1.Enabled = !chkDisabled.Checked;
         }
     }
 }

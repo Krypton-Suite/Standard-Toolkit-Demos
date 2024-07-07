@@ -10,14 +10,10 @@
  */
 #endregion
 using System;
-using System.Text;
-using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Diagnostics;
-using Krypton.Toolkit;
+
 using Krypton.Navigator;
+using Krypton.Toolkit;
 
 namespace PerTabButtons
 {
@@ -120,6 +116,7 @@ namespace PerTabButtons
                 bsa.Style = PaletteButtonStyle.Standalone;
                 bsa.KryptonContextMenu = kryptonContextMenu;
                 bsa.Tag = kryptonNavigator.SelectedPage;
+                bsa.Orientation = PaletteButtonOrientation.FixedLeft;
                 kryptonNavigator.SelectedPage.ButtonSpecs.Add(bsa);
             }
         }
