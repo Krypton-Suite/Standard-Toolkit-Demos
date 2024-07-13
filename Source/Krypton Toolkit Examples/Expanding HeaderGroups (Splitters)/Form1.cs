@@ -26,8 +26,8 @@ namespace ExpandingHeaderGroupsSplitters
             InitializeComponent();
 
             // Hook into the click events on the header buttons
-            kryptonHeaderGroupRightBottom.ButtonSpecs[0].Click += new EventHandler(OnUpDown);
-            kryptonHeaderGroupLeft.ButtonSpecs[0].Click += new EventHandler(OnLeftRight);
+            kryptonHeaderGroupRightBottom.ButtonSpecs[0].Click += OnUpDown;
+            kryptonHeaderGroupLeft.ButtonSpecs[0].Click += OnLeftRight;
         }
 
         private void Form1_Load(object sender, EventArgs e)

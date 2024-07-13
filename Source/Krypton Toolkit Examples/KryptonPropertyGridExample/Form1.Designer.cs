@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            kryptonPropertyGrid1 = new Krypton.Toolkit.KryptonPropertyGrid();
-            kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonPropertyGrid1 = new Krypton.Toolkit.KryptonPropertyGrid();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             kryptonThemeComboBox1 = new Krypton.Toolkit.KryptonThemeComboBox();
             kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             kryptonCheckBox1 = new Krypton.Toolkit.KryptonCheckBox();
@@ -39,36 +39,26 @@
             kryptonMonthCalendar1 = new Krypton.Toolkit.KryptonMonthCalendar();
             kryptonPropertyGrid2 = new System.Windows.Forms.PropertyGrid();
             ((System.ComponentModel.ISupportInitialize)kryptonThemeComboBox1).BeginInit();
-            SuspendLayout();
+            this.SuspendLayout();
             // 
             // kryptonPropertyGrid1
             // 
-            kryptonPropertyGrid1.BackColor = System.Drawing.Color.FromArgb(240, 240, 240);
-            kryptonPropertyGrid1.CategoryForeColor = System.Drawing.Color.White;
-            kryptonPropertyGrid1.CommandsBackColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            kryptonPropertyGrid1.CommandsForeColor = System.Drawing.Color.Black;
-            kryptonPropertyGrid1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            kryptonPropertyGrid1.HelpBackColor = System.Drawing.Color.FromArgb(99, 108, 135);
-            kryptonPropertyGrid1.HelpForeColor = System.Drawing.Color.White;
-            kryptonPropertyGrid1.LineColor = System.Drawing.Color.FromArgb(99, 108, 135);
-            kryptonPropertyGrid1.Location = new System.Drawing.Point(17, 16);
-            kryptonPropertyGrid1.Margin = new System.Windows.Forms.Padding(4);
-            kryptonPropertyGrid1.Name = "kryptonPropertyGrid1";
-            kryptonPropertyGrid1.SelectedObject = this;
-            kryptonPropertyGrid1.Size = new System.Drawing.Size(475, 502);
-            kryptonPropertyGrid1.TabIndex = 0;
-            kryptonPropertyGrid1.ViewBackColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            kryptonPropertyGrid1.ViewForeColor = System.Drawing.Color.Black;
+            this.kryptonPropertyGrid1.Location = new System.Drawing.Point(17, 16);
+            this.kryptonPropertyGrid1.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPropertyGrid1.Name = "kryptonPropertyGrid1";
+            this.kryptonPropertyGrid1.SelectedObject = this;
+            this.kryptonPropertyGrid1.Size = new System.Drawing.Size(475, 502);
+            this.kryptonPropertyGrid1.TabIndex = 0;
             // 
             // kryptonLabel1
             // 
-            kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.BoldControl;
-            kryptonLabel1.Location = new System.Drawing.Point(17, 527);
-            kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
-            kryptonLabel1.Name = "kryptonLabel1";
-            kryptonLabel1.Size = new System.Drawing.Size(65, 24);
-            kryptonLabel1.TabIndex = 1;
-            kryptonLabel1.Values.Text = "Theme:";
+            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.BoldControl;
+            this.kryptonLabel1.Location = new System.Drawing.Point(17, 527);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(65, 26);
+            this.kryptonLabel1.TabIndex = 1;
+            this.kryptonLabel1.Values.Text = "Theme:";
             // 
             // kryptonThemeComboBox1
             // 
@@ -133,34 +123,34 @@
             // 
             // kryptonPropertyGrid2
             // 
-            kryptonPropertyGrid2.BackColor = System.Drawing.Color.FromArgb(240, 240, 240);
-            kryptonPropertyGrid2.CategoryForeColor = System.Drawing.Color.White;
-            kryptonPropertyGrid2.CommandsBackColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            kryptonPropertyGrid2.CommandsForeColor = System.Drawing.Color.Black;
-            kryptonPropertyGrid2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            kryptonPropertyGrid2.HelpBackColor = System.Drawing.Color.FromArgb(99, 108, 135);
-            kryptonPropertyGrid2.HelpForeColor = System.Drawing.Color.White;
-            kryptonPropertyGrid2.LineColor = System.Drawing.Color.FromArgb(99, 108, 135);
-            kryptonPropertyGrid2.Location = new System.Drawing.Point(500, 281);
-            kryptonPropertyGrid2.Margin = new System.Windows.Forms.Padding(4);
-            kryptonPropertyGrid2.Name = "kryptonPropertyGrid2";
-            kryptonPropertyGrid2.SelectedObject = this;
-            kryptonPropertyGrid2.Size = new System.Drawing.Size(510, 291);
-            kryptonPropertyGrid2.TabIndex = 9;
-            kryptonPropertyGrid2.ViewBackColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            kryptonPropertyGrid2.ViewForeColor = System.Drawing.Color.Black;
+            this.kryptonPropertyGrid2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.kryptonPropertyGrid2.CategoryForeColor = System.Drawing.Color.White;
+            this.kryptonPropertyGrid2.CommandsBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.kryptonPropertyGrid2.CommandsForeColor = System.Drawing.Color.Black;
+            this.kryptonPropertyGrid2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.kryptonPropertyGrid2.HelpBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(108)))), ((int)(((byte)(135)))));
+            this.kryptonPropertyGrid2.HelpForeColor = System.Drawing.Color.White;
+            this.kryptonPropertyGrid2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(108)))), ((int)(((byte)(135)))));
+            this.kryptonPropertyGrid2.Location = new System.Drawing.Point(500, 281);
+            this.kryptonPropertyGrid2.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPropertyGrid2.Name = "kryptonPropertyGrid2";
+            this.kryptonPropertyGrid2.SelectedObject = this;
+            this.kryptonPropertyGrid2.Size = new System.Drawing.Size(510, 291);
+            this.kryptonPropertyGrid2.TabIndex = 9;
+            this.kryptonPropertyGrid2.ViewBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.kryptonPropertyGrid2.ViewForeColor = System.Drawing.Color.Black;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1067, 576);
-            Controls.Add(kryptonPropertyGrid2);
-            Controls.Add(kryptonMonthCalendar1);
-            Controls.Add(kryptonDateTimePicker1);
-            Controls.Add(kryptonCheckedListBox1);
-            Controls.Add(kryptonCheckBox1);
-            Controls.Add(kryptonButton1);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1067, 576);
+            this.Controls.Add(this.kryptonPropertyGrid2);
+            this.Controls.Add(this.kryptonMonthCalendar1);
+            this.Controls.Add(this.kryptonDateTimePicker1);
+            this.Controls.Add(this.kryptonCheckedListBox1);
+            this.Controls.Add(this.kryptonCheckBox1);
+            this.Controls.Add(this.kryptonButton1);
             Controls.Add(kryptonThemeComboBox1);
             Controls.Add(kryptonLabel1);
             Controls.Add(kryptonPropertyGrid1);

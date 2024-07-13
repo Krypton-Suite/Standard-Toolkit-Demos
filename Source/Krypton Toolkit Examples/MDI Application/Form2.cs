@@ -25,7 +25,7 @@ namespace MDIApplication
             {
                 // Remember to unhook from static event, otherwise 
                 // this object cannot be garbage collected later on
-                KryptonManager.GlobalPaletteChanged -= new EventHandler(OnPaletteChanged);
+                KryptonManager.GlobalPaletteChanged -= OnPaletteChanged;
 
                 components?.Dispose();
             }
@@ -38,7 +38,7 @@ namespace MDIApplication
             UpdateRadioButtons();
 
             // Hook into changes in the global palette
-            KryptonManager.GlobalPaletteChanged += new EventHandler(OnPaletteChanged);
+            KryptonManager.GlobalPaletteChanged += OnPaletteChanged;
         }
 
         private void radio2010Blue_CheckedChanged(object sender, EventArgs e)
