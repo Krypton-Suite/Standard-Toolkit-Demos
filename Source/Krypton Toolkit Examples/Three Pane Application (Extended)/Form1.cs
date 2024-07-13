@@ -56,8 +56,8 @@ namespace ThreePaneApplication
             }
 
             // Hook into the up and down buttons on the details heading
-            kryptonHeaderGroupDetails.ButtonSpecs[0].Click += new EventHandler(OnPrevious);
-            kryptonHeaderGroupDetails.ButtonSpecs[1].Click += new EventHandler(OnNext);
+            kryptonHeaderGroupDetails.ButtonSpecs[0].Click += OnPrevious!;
+            kryptonHeaderGroupDetails.ButtonSpecs[1].Click += OnNext!;
         }
 
         private void Form1_SystemColorsChanged(object sender, EventArgs e) =>
@@ -329,7 +329,7 @@ namespace ThreePaneApplication
         {
             if (kryptonDataGridView.SelectedRows.Count == 1)
             {
-                string details = (string)kryptonDataGridView.SelectedRows[0].Cells[2].Value;
+                string? details = kryptonDataGridView.SelectedRows[0].Cells[2].Value as string;
                 kryptonReadingLabel.Values.Text = details;
             }
             else
@@ -352,7 +352,7 @@ namespace ThreePaneApplication
                 if (!toolStripCustom.Checked)
                 {
                     // Then use existing method to switch to using the custom palette
-                    toolStripCustom_Click(null, EventArgs.Empty);
+                    toolStripCustom_Click(sender, EventArgs.Empty);
                 }
                 else
                 {
