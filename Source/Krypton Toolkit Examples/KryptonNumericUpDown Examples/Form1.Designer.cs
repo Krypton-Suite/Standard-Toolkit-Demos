@@ -79,9 +79,11 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.propertyGrid);
-            this.groupBox4.Location = new System.Drawing.Point(303, 12);
+            this.groupBox4.Location = new System.Drawing.Point(303, 14);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(322, 362);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox4.Size = new System.Drawing.Size(322, 426);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Properties for Selected KryptonNumericUpDown";
@@ -91,18 +93,20 @@
             this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.propertyGrid.Location = new System.Drawing.Point(6, 19);
+            this.propertyGrid.Location = new System.Drawing.Point(6, 22);
+            this.propertyGrid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.propertyGrid.Name = "propertyGrid";
-            this.propertyGrid.Size = new System.Drawing.Size(310, 337);
+            this.propertyGrid.Size = new System.Drawing.Size(310, 396);
             this.propertyGrid.TabIndex = 0;
             this.propertyGrid.ToolbarVisible = false;
             // 
             // buttonClose
             // 
             this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonClose.Location = new System.Drawing.Point(550, 380);
+            this.buttonClose.Location = new System.Drawing.Point(550, 448);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(75, 23);
+            this.buttonClose.Size = new System.Drawing.Size(75, 28);
             this.buttonClose.TabIndex = 4;
             this.buttonClose.Text = "&Close";
             this.buttonClose.UseVisualStyleBackColor = true;
@@ -116,13 +120,20 @@
             0,
             0});
             this.nud1.Location = new System.Drawing.Point(21, 31);
+            this.nud1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nud1.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
+            this.nud1.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud1.Name = "nud1";
-            this.nud1.Size = new System.Drawing.Size(76, 26);
+            this.nud1.Size = new System.Drawing.Size(76, 33);
+            this.nud1.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud1.TabIndex = 0;
             this.nud1.ThousandsSeparator = true;
             this.nud1.Value = new decimal(new int[] {
@@ -139,14 +150,21 @@
             0,
             0,
             0});
-            this.nud2.Location = new System.Drawing.Point(21, 59);
+            this.nud2.Location = new System.Drawing.Point(21, 69);
+            this.nud2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nud2.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
+            this.nud2.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.nud2.MinimumSize = new System.Drawing.Size(0, 30);
             this.nud2.Name = "nud2";
-            this.nud2.Size = new System.Drawing.Size(76, 26);
+            this.nud2.Size = new System.Drawing.Size(76, 30);
             this.nud2.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.nud2.TabIndex = 1;
             this.nud2.ThousandsSeparator = true;
@@ -164,9 +182,15 @@
             0,
             0,
             0});
-            this.nud3.Location = new System.Drawing.Point(21, 87);
+            this.nud3.Location = new System.Drawing.Point(21, 108);
+            this.nud3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nud3.Maximum = new decimal(new int[] {
             10000,
+            0,
+            0,
+            0});
+            this.nud3.Minimum = new decimal(new int[] {
+            0,
             0,
             0,
             0});
@@ -192,6 +216,17 @@
             0,
             65536});
             this.nud4.Location = new System.Drawing.Point(138, 31);
+            this.nud4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.nud4.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.nud4.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud4.Name = "nud4";
             this.nud4.Size = new System.Drawing.Size(76, 26);
             this.nud4.TabIndex = 3;
@@ -207,19 +242,43 @@
             // kryptonManager1
             // 
             this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.kryptonManager1.ToolkitImages.ToolbarImages.Copy = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.Copy")));
+            this.kryptonManager1.ToolkitImages.ToolbarImages.Cut = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.Cut")));
+            this.kryptonManager1.ToolkitImages.ToolbarImages.New = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.New")));
+            this.kryptonManager1.ToolkitImages.ToolbarImages.Open = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.Open")));
+            this.kryptonManager1.ToolkitImages.ToolbarImages.PageSetup = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.PageSetup")));
+            this.kryptonManager1.ToolkitImages.ToolbarImages.Paste = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.Paste")));
+            this.kryptonManager1.ToolkitImages.ToolbarImages.Print = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.Print")));
+            this.kryptonManager1.ToolkitImages.ToolbarImages.PrintPreview = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.PrintPreview")));
+            this.kryptonManager1.ToolkitImages.ToolbarImages.QuickPrint = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.QuickPrint")));
+            this.kryptonManager1.ToolkitImages.ToolbarImages.Redo = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.Redo")));
+            this.kryptonManager1.ToolkitImages.ToolbarImages.Save = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.Save")));
+            this.kryptonManager1.ToolkitImages.ToolbarImages.SaveAll = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.SaveAll")));
+            this.kryptonManager1.ToolkitImages.ToolbarImages.SaveAs = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.SaveAs")));
+            this.kryptonManager1.ToolkitImages.ToolbarImages.Undo = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.Undo")));
             // 
             // nud5
             // 
             this.nud5.AllowDecimals = true;
-            this.nud5.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
-            this.buttonSpecAny1});
+            this.nud5.ButtonSpecs.Add(this.buttonSpecAny1);
             this.nud5.DecimalPlaces = 3;
             this.nud5.Increment = new decimal(new int[] {
             5,
             0,
             0,
             65536});
-            this.nud5.Location = new System.Drawing.Point(138, 59);
+            this.nud5.Location = new System.Drawing.Point(138, 69);
+            this.nud5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.nud5.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.nud5.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud5.Name = "nud5";
             this.nud5.Size = new System.Drawing.Size(102, 26);
             this.nud5.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
@@ -245,16 +304,26 @@
             // nud6
             // 
             this.nud6.AllowDecimals = true;
-            this.nud6.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
-            this.buttonSpecAny2,
-            this.buttonSpecAny3});
+            this.nud6.ButtonSpecs.Add(this.buttonSpecAny2);
+            this.nud6.ButtonSpecs.Add(this.buttonSpecAny3);
             this.nud6.DecimalPlaces = 4;
             this.nud6.Increment = new decimal(new int[] {
             5,
             0,
             0,
             65536});
-            this.nud6.Location = new System.Drawing.Point(138, 87);
+            this.nud6.Location = new System.Drawing.Point(138, 108);
+            this.nud6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.nud6.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.nud6.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud6.Name = "nud6";
             this.nud6.Size = new System.Drawing.Size(127, 26);
             this.nud6.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
@@ -347,9 +416,11 @@
             this.groupBox1.Controls.Add(this.nud5);
             this.groupBox1.Controls.Add(this.nud3);
             this.groupBox1.Controls.Add(this.nud4);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 14);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(285, 130);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(285, 152);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Normal Style";
@@ -362,9 +433,11 @@
             this.groupBox2.Controls.Add(this.nud11);
             this.groupBox2.Controls.Add(this.nud9);
             this.groupBox2.Controls.Add(this.nud10);
-            this.groupBox2.Location = new System.Drawing.Point(12, 148);
+            this.groupBox2.Location = new System.Drawing.Point(12, 174);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(285, 130);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Size = new System.Drawing.Size(285, 152);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ribbon Style";
@@ -379,8 +452,14 @@
             0});
             this.nud7.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.nud7.Location = new System.Drawing.Point(21, 31);
+            this.nud7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nud7.Maximum = new decimal(new int[] {
             10000,
+            0,
+            0,
+            0});
+            this.nud7.Minimum = new decimal(new int[] {
+            0,
             0,
             0,
             0});
@@ -399,9 +478,8 @@
             // 
             this.nud12.AllowDecimals = true;
             this.nud12.AlwaysActive = false;
-            this.nud12.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
-            this.buttonSpecAny4,
-            this.buttonSpecAny5});
+            this.nud12.ButtonSpecs.Add(this.buttonSpecAny4);
+            this.nud12.ButtonSpecs.Add(this.buttonSpecAny5);
             this.nud12.DecimalPlaces = 4;
             this.nud12.Increment = new decimal(new int[] {
             5,
@@ -409,7 +487,18 @@
             0,
             65536});
             this.nud12.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.nud12.Location = new System.Drawing.Point(138, 87);
+            this.nud12.Location = new System.Drawing.Point(138, 108);
+            this.nud12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.nud12.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.nud12.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud12.Name = "nud12";
             this.nud12.Size = new System.Drawing.Size(127, 26);
             this.nud12.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
@@ -446,9 +535,15 @@
             0,
             0});
             this.nud8.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.nud8.Location = new System.Drawing.Point(21, 59);
+            this.nud8.Location = new System.Drawing.Point(21, 69);
+            this.nud8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nud8.Maximum = new decimal(new int[] {
             10000,
+            0,
+            0,
+            0});
+            this.nud8.Minimum = new decimal(new int[] {
+            0,
             0,
             0,
             0});
@@ -468,8 +563,7 @@
             // 
             this.nud11.AllowDecimals = true;
             this.nud11.AlwaysActive = false;
-            this.nud11.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
-            this.buttonSpecAny6});
+            this.nud11.ButtonSpecs.Add(this.buttonSpecAny6);
             this.nud11.DecimalPlaces = 3;
             this.nud11.Increment = new decimal(new int[] {
             5,
@@ -477,7 +571,18 @@
             0,
             65536});
             this.nud11.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.nud11.Location = new System.Drawing.Point(138, 59);
+            this.nud11.Location = new System.Drawing.Point(138, 69);
+            this.nud11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.nud11.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.nud11.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud11.Name = "nud11";
             this.nud11.Size = new System.Drawing.Size(102, 26);
             this.nud11.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
@@ -507,9 +612,15 @@
             0,
             0});
             this.nud9.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.nud9.Location = new System.Drawing.Point(21, 87);
+            this.nud9.Location = new System.Drawing.Point(21, 108);
+            this.nud9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nud9.Maximum = new decimal(new int[] {
             10000,
+            0,
+            0,
+            0});
+            this.nud9.Minimum = new decimal(new int[] {
+            0,
             0,
             0,
             0});
@@ -537,6 +648,17 @@
             65536});
             this.nud10.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
             this.nud10.Location = new System.Drawing.Point(138, 31);
+            this.nud10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.nud10.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.nud10.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nud10.Name = "nud10";
             this.nud10.Size = new System.Drawing.Size(76, 26);
             this.nud10.TabIndex = 3;
@@ -555,18 +677,21 @@
             this.groupBox3.Controls.Add(this.buttonOffice2007Blue);
             this.groupBox3.Controls.Add(this.buttonSparkleBlue);
             this.groupBox3.Controls.Add(this.buttonOffice2010Blue);
-            this.groupBox3.Location = new System.Drawing.Point(12, 284);
+            this.groupBox3.Location = new System.Drawing.Point(12, 334);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(285, 90);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox3.Size = new System.Drawing.Size(285, 106);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Palettes";
             // 
             // buttonSystem
             // 
-            this.buttonSystem.Location = new System.Drawing.Point(149, 53);
+            this.buttonSystem.Location = new System.Drawing.Point(149, 62);
+            this.buttonSystem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonSystem.Name = "buttonSystem";
-            this.buttonSystem.Size = new System.Drawing.Size(117, 25);
+            this.buttonSystem.Size = new System.Drawing.Size(137, 29);
             this.buttonSystem.TabIndex = 3;
             this.buttonSystem.Text = "System";
             this.buttonSystem.UseVisualStyleBackColor = true;
@@ -574,9 +699,10 @@
             // 
             // buttonOffice2007Blue
             // 
-            this.buttonOffice2007Blue.Location = new System.Drawing.Point(21, 53);
+            this.buttonOffice2007Blue.Location = new System.Drawing.Point(3, 62);
+            this.buttonOffice2007Blue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonOffice2007Blue.Name = "buttonOffice2007Blue";
-            this.buttonOffice2007Blue.Size = new System.Drawing.Size(117, 25);
+            this.buttonOffice2007Blue.Size = new System.Drawing.Size(137, 29);
             this.buttonOffice2007Blue.TabIndex = 1;
             this.buttonOffice2007Blue.Text = "Office 2007 - Blue";
             this.buttonOffice2007Blue.UseVisualStyleBackColor = true;
@@ -584,9 +710,10 @@
             // 
             // buttonSparkleBlue
             // 
-            this.buttonSparkleBlue.Location = new System.Drawing.Point(149, 24);
+            this.buttonSparkleBlue.Location = new System.Drawing.Point(149, 29);
+            this.buttonSparkleBlue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonSparkleBlue.Name = "buttonSparkleBlue";
-            this.buttonSparkleBlue.Size = new System.Drawing.Size(117, 25);
+            this.buttonSparkleBlue.Size = new System.Drawing.Size(137, 29);
             this.buttonSparkleBlue.TabIndex = 2;
             this.buttonSparkleBlue.Text = "Sparkle - Blue";
             this.buttonSparkleBlue.UseVisualStyleBackColor = true;
@@ -594,9 +721,10 @@
             // 
             // buttonOffice2010Blue
             // 
-            this.buttonOffice2010Blue.Location = new System.Drawing.Point(21, 24);
+            this.buttonOffice2010Blue.Location = new System.Drawing.Point(3, 29);
+            this.buttonOffice2010Blue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonOffice2010Blue.Name = "buttonOffice2010Blue";
-            this.buttonOffice2010Blue.Size = new System.Drawing.Size(117, 25);
+            this.buttonOffice2010Blue.Size = new System.Drawing.Size(137, 29);
             this.buttonOffice2010Blue.TabIndex = 0;
             this.buttonOffice2010Blue.Text = "Office 2010 - Blue";
             this.buttonOffice2010Blue.UseVisualStyleBackColor = true;
@@ -604,17 +732,18 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 416);
+            this.ClientSize = new System.Drawing.Size(636, 489);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.groupBox4);
-            this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";

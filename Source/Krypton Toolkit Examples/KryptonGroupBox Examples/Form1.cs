@@ -28,13 +28,13 @@ namespace KryptonGroupBoxExamples
 
         private void groupBox_MouseDown(object sender, MouseEventArgs e) =>
             // Setup the property grid to edit this header group
-            propertyGrid.SelectedObject = new KryptonGroupBoxProxy(sender as KryptonGroupBox);
+            propertyGrid.SelectedObject = new KryptonGroupBoxProxy((KryptonGroupBox)sender);
 
         private void panel_MouseDown(object sender, MouseEventArgs e)
         {
             // Setup the property grid to edit this panel parent header group
-            Control c = sender as Control;
-            propertyGrid.SelectedObject = new KryptonGroupBoxProxy(c.Parent as KryptonGroupBox);
+            Control c = (Control)sender;
+            propertyGrid.SelectedObject = new KryptonGroupBoxProxy((KryptonGroupBox)c.Parent);
         }
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();

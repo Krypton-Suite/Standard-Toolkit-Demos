@@ -11,9 +11,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonHeaderGroupExamples
@@ -28,22 +29,22 @@ namespace KryptonHeaderGroupExamples
 
         private void headerGroup_MouseDown(object sender, MouseEventArgs e) =>
             // Setup the property grid to edit this header group
-            propertyGrid.SelectedObject = new KryptonHeaderGroupProxy(sender as KryptonHeaderGroup);
+            propertyGrid.SelectedObject = new KryptonHeaderGroupProxy((KryptonHeaderGroup)sender);
 
         private void panel_MouseDown(object sender, MouseEventArgs e)
         {
-            Control c = sender as Control;
+            Control c = (Control)sender;
 
             // Setup the property grid to edit this panel parent header group
-            propertyGrid.SelectedObject = new KryptonHeaderGroupProxy(c.Parent as KryptonHeaderGroup);
+            propertyGrid.SelectedObject = new KryptonHeaderGroupProxy((KryptonHeaderGroup)c.Parent!);
         }
 
         private void rtb_MouseDown(object sender, MouseEventArgs e)
         {
-            Control c = sender as Control;
+            Control c = (Control)sender;
 
             // Setup the property grid to edit this richt text box parent header group
-            propertyGrid.SelectedObject = new KryptonHeaderGroupProxy(c.Parent.Parent as KryptonHeaderGroup);
+            propertyGrid.SelectedObject = new KryptonHeaderGroupProxy((KryptonHeaderGroup)c.Parent!.Parent!);
         }
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
@@ -91,18 +92,18 @@ namespace KryptonHeaderGroupExamples
             set => _headerGroup.CollapseTarget = value;
         }
 
-		[Category("Visuals")]
-		[Description("Border style.")]
-		[DefaultValue(PaletteBorderStyle.ControlClient)]
-		public PaletteBorderStyle GroupBorderStyle
-		{
-			get => _headerGroup.GroupBorderStyle;
+        [Category("Visuals")]
+        [Description("Border style.")]
+        [DefaultValue(PaletteBorderStyle.ControlClient)]
+        public PaletteBorderStyle GroupBorderStyle
+        {
+            get => _headerGroup.GroupBorderStyle;
             set => _headerGroup.GroupBorderStyle = value;
         }
 
-		/// <summary>
-		/// Gets and sets the background style.
-		/// </summary>
+        /// <summary>
+        /// Gets and sets the background style.
+        /// </summary>
         [Category("Visuals")]
         [Description("Background style.")]
         [DefaultValue(PaletteBackStyle.ControlClient)]
@@ -112,30 +113,30 @@ namespace KryptonHeaderGroupExamples
             set => _headerGroup.GroupBackStyle = value;
         }
 
-		[Category("Visuals")]
-		[Description("Primary header style.")]
-		[DefaultValue(HeaderStyle.Primary)]
-		public HeaderStyle HeaderStylePrimary
-		{
-			get => _headerGroup.HeaderStylePrimary;
+        [Category("Visuals")]
+        [Description("Primary header style.")]
+        [DefaultValue(HeaderStyle.Primary)]
+        public HeaderStyle HeaderStylePrimary
+        {
+            get => _headerGroup.HeaderStylePrimary;
             set => _headerGroup.HeaderStylePrimary = value;
         }
 
-		[Category("Visuals")]
-		[Description("Secondary header style.")]
-		[DefaultValue(HeaderStyle.Secondary)]
-		public HeaderStyle HeaderStyleSecondary
-		{
+        [Category("Visuals")]
+        [Description("Secondary header style.")]
+        [DefaultValue(HeaderStyle.Secondary)]
+        public HeaderStyle HeaderStyleSecondary
+        {
             get => _headerGroup.HeaderStyleSecondary;
             set => _headerGroup.HeaderStyleSecondary = value;
         }
 
-		[Category("Visuals")]
-		[Description("Edge position of the primary header.")]
-		[DefaultValue(VisualOrientation.Top)]
-		public VisualOrientation HeaderPositionPrimary
-		{
-			get => _headerGroup.HeaderPositionPrimary;
+        [Category("Visuals")]
+        [Description("Edge position of the primary header.")]
+        [DefaultValue(VisualOrientation.Top)]
+        public VisualOrientation HeaderPositionPrimary
+        {
+            get => _headerGroup.HeaderPositionPrimary;
             set => _headerGroup.HeaderPositionPrimary = value;
         }
 
@@ -183,11 +184,11 @@ namespace KryptonHeaderGroupExamples
         public KryptonHeaderGroup.HeaderGroupButtonSpecCollection ButtonSpecs => _headerGroup.ButtonSpecs;
 
         [Category("Visuals")]
-		[Description("Primary header values")]
+        [Description("Primary header values")]
         public HeaderGroupValuesPrimary ValuesPrimary => _headerGroup.ValuesPrimary;
 
         [Category("Visuals")]
-		[Description("Secondary header values")]
+        [Description("Secondary header values")]
         public HeaderGroupValuesSecondary ValuesSecondary => _headerGroup.ValuesSecondary;
 
         [Category("Visuals")]

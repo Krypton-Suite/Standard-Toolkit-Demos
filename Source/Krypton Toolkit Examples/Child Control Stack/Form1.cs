@@ -29,7 +29,7 @@ namespace ChildControlStack
 
         private void kryptonCheckSet_CheckedButtonChanged(object sender, EventArgs e) =>
             // Put the name for the checkbutton into the header
-            kryptonHeader.Values.Heading = kryptonCheckSet.CheckedButton.Values.Text;
+            kryptonHeader.Values.Heading = kryptonCheckSet.CheckedButton?.Values.Text;
 
         private void toolOffice2010_Click(object sender, EventArgs e)
         {
