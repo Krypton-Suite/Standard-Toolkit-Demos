@@ -37,7 +37,7 @@ namespace KryptonBreadCrumbExamples
 
         private void breadCrumb_MouseDown(object sender, MouseEventArgs e) =>
             // Setup the property grid to edit this bread crumb
-            propertyGrid.SelectedObject = new KryptonBreadCrumbProxy(sender as KryptonBreadCrumb);
+            propertyGrid.SelectedObject = new KryptonBreadCrumbProxy((KryptonBreadCrumb)sender);
 
         private void buttonSpecAny1_Click(object sender, EventArgs e) => kryptonBreadCrumb2.SelectedItem = kryptonBreadCrumb2.RootItem;
 
@@ -52,8 +52,8 @@ namespace KryptonBreadCrumbExamples
             Stack<int> indexes = new Stack<int>();
 
             // Walk up the tree and stack the node indexes as we go
-            TreeNode node = e.Node;
-            while (node.Parent != null)
+            TreeNode? node = e.Node;
+            while (node?.Parent != null)
             {
                 indexes.Push(node.Index);
                 node = node.Parent;
@@ -76,8 +76,8 @@ namespace KryptonBreadCrumbExamples
             Stack<int> indexes = new Stack<int>();
 
             // Walk up the tree and stack the crumb indexes as we go
-            KryptonBreadCrumbItem crumb = kryptonBreadCrumb4.SelectedItem;
-            while (crumb.Parent != null)
+            KryptonBreadCrumbItem? crumb = kryptonBreadCrumb4.SelectedItem;
+            while (crumb?.Parent != null)
             {
                 indexes.Push(crumb.Parent.Items.IndexOf(crumb));
                 crumb = crumb.Parent;

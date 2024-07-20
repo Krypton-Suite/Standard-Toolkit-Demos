@@ -43,7 +43,6 @@ namespace KryptonComboBoxExamples
             this.buttonSpecAny2 = new Krypton.Toolkit.ButtonSpecAny();
             this.kryptonComboBox4System = new Krypton.Toolkit.KryptonComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.kryptonComboBox8Custom = new Krypton.Toolkit.KryptonComboBox();
             this.buttonSpecAny3 = new Krypton.Toolkit.ButtonSpecAny();
             this.buttonSpecAny4 = new Krypton.Toolkit.ButtonSpecAny();
@@ -300,7 +299,6 @@ namespace KryptonComboBoxExamples
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.domainUpDown1);
             this.groupBox3.Controls.Add(this.kryptonComboBox8Custom);
             this.groupBox3.Controls.Add(this.kryptonComboBox7Custom);
             this.groupBox3.Location = new System.Drawing.Point(12, 276);
@@ -309,14 +307,6 @@ namespace KryptonComboBoxExamples
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Custom Settings";
-            // 
-            // domainUpDown1
-            // 
-            this.domainUpDown1.Location = new System.Drawing.Point(28, 102);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.Size = new System.Drawing.Size(125, 24);
-            this.domainUpDown1.TabIndex = 1;
-            this.domainUpDown1.Text = "domainUpDown1";
             // 
             // kryptonComboBox8Custom
             // 
@@ -446,7 +436,6 @@ namespace KryptonComboBoxExamples
         private Krypton.Toolkit.KryptonComboBox kryptonComboBox8Custom;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny3;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny4;
-        private System.Windows.Forms.DomainUpDown domainUpDown1;
     }
 }
 

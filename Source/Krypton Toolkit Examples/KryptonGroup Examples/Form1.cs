@@ -28,14 +28,14 @@ namespace KryptonGroupExamples
 
         private void group_MouseDown(object sender, MouseEventArgs e) =>
             // Setup the property grid to edit this group
-            propertyGrid.SelectedObject = new KryptonGroupProxy(sender as KryptonGroup);
+            propertyGrid.SelectedObject = new KryptonGroupProxy((KryptonGroup)sender);
 
         private void panel_MouseDown(object sender, MouseEventArgs e)
         {
-            Control c = sender as Control;
+            Control c = (Control)sender;
 
             // Setup the property grid to edit this panel parent group
-            propertyGrid.SelectedObject = new KryptonGroupProxy(c.Parent as KryptonGroup);
+            propertyGrid.SelectedObject = new KryptonGroupProxy((KryptonGroup)c.Parent!);
         }
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();

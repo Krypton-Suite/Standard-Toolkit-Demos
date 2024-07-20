@@ -21,7 +21,7 @@ namespace TestMessageBoxClipping
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             KryptonMessageBox.Show("Test without an owner,\nand before KyptonManager has Loaded");
-            KryptonMessageBox.Show((string)null, "Test without no Text");
+            KryptonMessageBox.Show(text: null, "Test without no Text");
             Application.Run(new Form1());
         }
     }

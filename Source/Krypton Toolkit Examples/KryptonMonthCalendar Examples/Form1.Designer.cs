@@ -208,8 +208,8 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.propertyGrid);
             this.groupBox4.Location = new System.Drawing.Point(535, 12);
@@ -221,8 +221,8 @@
             // 
             // propertyGrid
             // 
-            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.propertyGrid.Location = new System.Drawing.Point(6, 19);
             this.propertyGrid.Name = "propertyGrid";
@@ -237,20 +237,8 @@
             this.kryptonMonthCalendar1.FirstDayOfWeek = System.Windows.Forms.Day.Default;
             this.kryptonMonthCalendar1.Location = new System.Drawing.Point(15, 18);
             this.kryptonMonthCalendar1.Name = "kryptonMonthCalendar1";
-            this.kryptonMonthCalendar1.LocalCustomPalette = this.kryptonPalette;
-            this.kryptonMonthCalendar1.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.kryptonMonthCalendar1.Size = new System.Drawing.Size(230, 338);
             this.kryptonMonthCalendar1.TabIndex = 0;
-            // 
-            // kryptonPalette
-            // 
-            this.kryptonPalette.BasePaletteType = Krypton.Toolkit.BasePaletteType.Microsoft365;
-            this.kryptonPalette.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
-            // 
-            // kryptonManager1
-            // 
-            this.kryptonManager1.GlobalCustomPalette = this.kryptonPalette;
-            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             // 
             // Form1
             // 
@@ -290,7 +278,6 @@
         private System.Windows.Forms.RadioButton rbSparklePurple;
         private System.Windows.Forms.RadioButton rbSparkleOrange;
         private Krypton.Toolkit.KryptonMonthCalendar kryptonMonthCalendar1;
-        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPalette;
         private System.Windows.Forms.RadioButton rbOffice2010Black;
         private System.Windows.Forms.RadioButton rbOffice2010Silver;
         private System.Windows.Forms.RadioButton rbOffice2010Blue;

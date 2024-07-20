@@ -28,14 +28,14 @@ namespace KryptonSplitContainerExamples
 
         private void splitContainer_MouseDown(object sender, MouseEventArgs e) =>
             // Setup the property grid to edit this split container
-            propertyGrid.SelectedObject = new KryptonSplitContainerProxy(sender as KryptonSplitContainer);
+            propertyGrid.SelectedObject = new KryptonSplitContainerProxy((KryptonSplitContainer)sender);
 
         private void splitContainerPanel_MouseDown(object sender, MouseEventArgs e)
         {
             KryptonPanel panel = (KryptonPanel)sender;
 
             // Setup the property grid to edit this panels parent split container
-            propertyGrid.SelectedObject = new KryptonSplitContainerProxy(panel.Parent as KryptonSplitContainer);
+            propertyGrid.SelectedObject = new KryptonSplitContainerProxy((KryptonSplitContainer)panel.Parent);
         }
 
         private void splitContainerLabel_MouseDown(object sender, MouseEventArgs e)
@@ -44,7 +44,7 @@ namespace KryptonSplitContainerExamples
             KryptonPanel panel = (KryptonPanel)label.Parent;
 
             // Setup the property grid to edit this panels parent split container
-            propertyGrid.SelectedObject = new KryptonSplitContainerProxy(panel.Parent as KryptonSplitContainer);
+            propertyGrid.SelectedObject = new KryptonSplitContainerProxy((KryptonSplitContainer)panel.Parent);
         }
 
         private void splitContainerGroupLabel_MouseDown(object sender, MouseEventArgs e)

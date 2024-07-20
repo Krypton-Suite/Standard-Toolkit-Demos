@@ -22,6 +22,9 @@ dotnet_diagnostic.IDE0079.severity = silent
 # CS1591: Missing XML comment for publicly visible type or member
 dotnet_diagnostic.CS1591.severity = silent
 
-
 #warning CA1416: This call site is reachable on all platforms. 'KryptonRibbonGroupButton.Checked' is only supported on: 'Windows' 7.0 and later.
 dotnet_diagnostic.CA1416.severity = None
+
+#Warning	CS8622	Nullability of reference types in type of parameter 'sender' of ####
+dotnet_diagnostic.CS8622.severity = Warning
+
