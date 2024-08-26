@@ -150,7 +150,7 @@ namespace CustomControlUsingRenderers
                 // is over the control and currently being pressed down or not.
                 PaletteState buttonState = GetButtonState();
 
-                // Create a rectangle inset, this is where we will draw a button
+                // Create a Rectangle inset, this is where we will draw a button
                 Rectangle innerRect = ClientRectangle;
                 innerRect.Inflate(-20, -20);
 
@@ -202,7 +202,7 @@ namespace CustomControlUsingRenderers
                 // is over the control if the mouse button is pressed down or not.
                 PaletteState buttonState = GetButtonState();
 
-                // Create a rectangle inset, this is where we will draw a button
+                // Create a Rectangle inset, this is where we will draw a button
                 Rectangle innerRect = ClientRectangle;
                 innerRect.Inflate(-20, -20);
 
