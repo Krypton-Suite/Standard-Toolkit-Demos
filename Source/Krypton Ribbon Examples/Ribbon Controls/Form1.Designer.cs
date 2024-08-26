@@ -517,20 +517,6 @@ namespace RibbonControls
             // kryptonManager
             // 
             this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonManager.ToolkitImages.ToolbarImages.Copy = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.Copy")));
-            this.kryptonManager.ToolkitImages.ToolbarImages.Cut = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.Cut")));
-            this.kryptonManager.ToolkitImages.ToolbarImages.New = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.New")));
-            this.kryptonManager.ToolkitImages.ToolbarImages.Open = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.Open")));
-            this.kryptonManager.ToolkitImages.ToolbarImages.PageSetup = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.PageSetup")));
-            this.kryptonManager.ToolkitImages.ToolbarImages.Paste = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.Paste")));
-            this.kryptonManager.ToolkitImages.ToolbarImages.Print = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.Print")));
-            this.kryptonManager.ToolkitImages.ToolbarImages.PrintPreview = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.PrintPreview")));
-            this.kryptonManager.ToolkitImages.ToolbarImages.QuickPrint = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.QuickPrint")));
-            this.kryptonManager.ToolkitImages.ToolbarImages.Redo = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.Redo")));
-            this.kryptonManager.ToolkitImages.ToolbarImages.Save = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.Save")));
-            this.kryptonManager.ToolkitImages.ToolbarImages.SaveAll = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.SaveAll")));
-            this.kryptonManager.ToolkitImages.ToolbarImages.SaveAs = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.SaveAs")));
-            this.kryptonManager.ToolkitImages.ToolbarImages.Undo = ((System.Drawing.Image)(resources.GetObject("kryptonManager.ToolkitImages.ToolbarImages.Undo")));
             // 
             // Form1
             // 

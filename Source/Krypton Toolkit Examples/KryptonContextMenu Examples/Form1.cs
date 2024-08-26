@@ -23,6 +23,8 @@ namespace KryptonContextMenuExamples
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            KryptonContextMenuItemBase item = kryptonContextMenuItems1[0];
+            var name = item.Text;
             comboBoxH.SelectedIndex = 2;
             comboBoxV.SelectedIndex = 1;
             kryptonThemeComboBox1.Items.Remove(kryptonThemeComboBox1.Items.Count - 1);    // Remove the "Custom" option

@@ -156,7 +156,7 @@ namespace CustomControlUsingPalettes
                     // Draw the text in about the center of the control
                     using (var textBrush = new SolidBrush(textColor))
                     {
-                        e.Graphics.DrawString("Click me!", textFont, textBrush, Width / 2 - 10, Height / 2 - 5);
+                        e.Graphics.DrawString("Click me!", textFont, textBrush, Width / 2.0f - 10, Height / 2.0f - 5);
                     }
                 }
 
@@ -197,7 +197,7 @@ namespace CustomControlUsingPalettes
             fishPath.AddLine(fishRect.Left, fishRect.Top, fishRect.Left + w6, fishRect.Top + h4);
 
             // Create the curving body of the fish
-            fishPath.AddCurve(new Point[]{ new Point(fishRect.Left + w6, fishRect.Top + h4),
+            fishPath.AddCurve(new[]{ new Point(fishRect.Left + w6, fishRect.Top + h4),
                                            new Point(fishRect.Right - w3, fishRect.Top),
                                            new Point(fishRect.Right, fishRect.Top + h2),
                                            new Point(fishRect.Right - w3, fishRect.Bottom),
