@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net462;net47;net471;net472;net48;net481;net8.0-windows;net9.0-windows</TargetFrameworks>
+        <OutputType>WinExe</OutputType>
+        <RootNamespace>KryptonCommandLinkButtonExamples</RootNamespace>
+        <AssemblyName>Krypton Command Link Button Examples</AssemblyName>
+        <ApplicationIcon>Krypton.ico</ApplicationIcon>
+        <UseApplicationTrust>false</UseApplicationTrust>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <UseWindowsForms>true</UseWindowsForms>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <NeutralLanguage>en</NeutralLanguage>
+        <LangVersion>preview</LangVersion>
+        <Nullable>enable</Nullable>
+        <WarningLevel>6</WarningLevel>
+        <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="Krypton.ico" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="Krypton.ico" />
+    </ItemGroup>
+
+    <Choose>
+        <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
+            <ItemGroup>
+                <PackageReference Include="Krypton.Toolkit.Canary" Version="90.23.12.352-beta" />
+            </ItemGroup>
+        </When>
+        <Otherwise>
+            <ItemGroup>
+                <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2022.csproj" />
+            </ItemGroup>
+        </Otherwise>
+    </Choose>
+
+    <PropertyGroup>
+        <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+    </PropertyGroup>
+
+</Project>

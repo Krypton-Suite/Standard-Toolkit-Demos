@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
     <PropertyGroup>
-        <TargetFrameworks>net48;net6.0-windows;net7.0-windows;net8.0-windows</TargetFrameworks>
+        <TargetFrameworks>net462;net47;net471;net472;net48;net481;net8.0-windows;net9.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
         <RootNamespace>KryptonBorderEdgeExamples</RootNamespace>
         <AssemblyName>Krypton Border Edge Examples</AssemblyName>
@@ -23,7 +23,7 @@
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
-                <PackageReference Include="Krypton.Toolkit.Canary" Version="80.23.8.233-beta" />
+                <PackageReference Include="Krypton.Toolkit.Canary" Version="90.23.12.352-beta" />
             </ItemGroup>
         </When>
         <Otherwise>

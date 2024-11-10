@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -26,12 +26,12 @@ namespace ButtonSpecPlayground
         private void kryptonButtonAdd_Click(object sender, EventArgs e)
         {
             // Create a new button spec entry
-            ButtonSpecHeaderGroup spec = new ButtonSpecHeaderGroup();
+            var spec = new ButtonSpecHeaderGroup();
             spec.Type = PaletteButtonSpecStyle.Close;
 
             // Need to know when button is selected
-            spec.Click += new EventHandler(OnButtonSelected);
-            
+            spec.Click += OnButtonSelected!;
+
             // Add to end of the collection of button specs
             kryptonHeaderGroup1.ButtonSpecs.Add(spec);
 
@@ -44,15 +44,16 @@ namespace ButtonSpecPlayground
         private void kryptonButtonRemove_Click(object sender, EventArgs e)
         {
             // Get access to the selected button spec
-            ButtonSpecHeaderGroup spec = (ButtonSpecHeaderGroup)propertyGrid.SelectedObject;
+            if (propertyGrid.SelectedObject is ButtonSpecHeaderGroup spec)
+            {
+                // Remove just the selected button spec
+                kryptonHeaderGroup1.ButtonSpecs.Remove(spec);
 
-            // Remove just the selected button spec
-            kryptonHeaderGroup1.ButtonSpecs.Remove(spec);
+                // Nothing selected in the property grid
+                propertyGrid.SelectedObject = null;
 
-            // Nothing selected in the property grid
-            propertyGrid.SelectedObject = null;
-
-            UpdateActionButtons();
+                UpdateActionButtons();
+            }
         }
 
         private void kryptonButtonClear_Click(object sender, EventArgs e)
@@ -85,14 +86,14 @@ namespace ButtonSpecPlayground
         private void OnButtonSelected(object sender, EventArgs e)
         {
             // Cast to correct type
-            ButtonSpecHeaderGroup spec = (ButtonSpecHeaderGroup)sender;
+            var spec = (ButtonSpecHeaderGroup)sender;
 
             // Make it the selected button spec
             propertyGrid.SelectedObject = spec;
 
             UpdateActionButtons();
         }
-        
+
         private void UpdateActionButtons()
         {
             kryptonButtonRemove.Enabled = (propertyGrid.SelectedObject != null);

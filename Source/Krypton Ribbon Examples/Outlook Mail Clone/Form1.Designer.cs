@@ -343,6 +343,7 @@ namespace OutlookMailClone
             this.kryptonRibbonGroupSeparator1 = new Krypton.Ribbon.KryptonRibbonGroupSeparator();
             this.kryptonRibbonGroupTriple12 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.themesPageColor = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupThemeComboBox1 = new Krypton.Ribbon.KryptonRibbonGroupThemeComboBox();
             this.groupFields = new Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupTriple13 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.fieldsShowBcc = new Krypton.Ribbon.KryptonRibbonGroupButton();
@@ -442,7 +443,6 @@ namespace OutlookMailClone
             this.addReminderToolStripMenuItem = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
             this.kryptonRibbonGroupCustomControl1 = new Krypton.Ribbon.KryptonRibbonGroupCustomControl();
-            this.kryptonRibbonGroupThemeComboBox1 = new Krypton.Ribbon.KryptonRibbonGroupThemeComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.panelFill)).BeginInit();
             this.panelFill.SuspendLayout();
             this.tableLayout.SuspendLayout();
@@ -456,7 +456,7 @@ namespace OutlookMailClone
             this.panelFill.Location = new System.Drawing.Point(0, 115);
             this.panelFill.Name = "panelFill";
             this.panelFill.Padding = new System.Windows.Forms.Padding(7);
-            this.panelFill.Size = new System.Drawing.Size(782, 391);
+            this.panelFill.Size = new System.Drawing.Size(865, 427);
             this.panelFill.TabIndex = 0;
             // 
             // tableLayout
@@ -485,7 +485,7 @@ namespace OutlookMailClone
             this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 200F));
-            this.tableLayout.Size = new System.Drawing.Size(768, 377);
+            this.tableLayout.Size = new System.Drawing.Size(851, 413);
             this.tableLayout.TabIndex = 0;
             // 
             // kryptonLabel1
@@ -493,7 +493,7 @@ namespace OutlookMailClone
             this.kryptonLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonLabel1.Location = new System.Drawing.Point(3, 65);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(53, 21);
+            this.kryptonLabel1.Size = new System.Drawing.Size(53, 24);
             this.kryptonLabel1.TabIndex = 2;
             this.kryptonLabel1.Values.Text = "Subject:";
             // 
@@ -512,11 +512,11 @@ namespace OutlookMailClone
             this.tableLayout.SetColumnSpan(this.richTextBoxMessage, 2);
             this.richTextBoxMessage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxMessage.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxMessage.Location = new System.Drawing.Point(3, 92);
+            this.richTextBoxMessage.Location = new System.Drawing.Point(3, 95);
             this.richTextBoxMessage.Name = "richTextBoxMessage";
-            this.richTextBoxMessage.Size = new System.Drawing.Size(762, 282);
+            this.richTextBoxMessage.Size = new System.Drawing.Size(845, 315);
             this.richTextBoxMessage.TabIndex = 6;
-            this.richTextBoxMessage.Text = resources.GetString("richTextBoxMessage.Text");
+            this.richTextBoxMessage.Text = "";
             // 
             // richTextBoxSubject
             // 
@@ -526,7 +526,7 @@ namespace OutlookMailClone
             this.richTextBoxSubject.Location = new System.Drawing.Point(62, 65);
             this.richTextBoxSubject.Multiline = false;
             this.richTextBoxSubject.Name = "richTextBoxSubject";
-            this.richTextBoxSubject.Size = new System.Drawing.Size(703, 21);
+            this.richTextBoxSubject.Size = new System.Drawing.Size(786, 24);
             this.richTextBoxSubject.TabIndex = 5;
             this.richTextBoxSubject.Text = "Outlook Mail Clone";
             // 
@@ -538,7 +538,7 @@ namespace OutlookMailClone
             this.richTextBoxCc.Location = new System.Drawing.Point(62, 34);
             this.richTextBoxCc.Multiline = false;
             this.richTextBoxCc.Name = "richTextBoxCc";
-            this.richTextBoxCc.Size = new System.Drawing.Size(703, 25);
+            this.richTextBoxCc.Size = new System.Drawing.Size(786, 25);
             this.richTextBoxCc.TabIndex = 4;
             this.richTextBoxCc.Text = "";
             // 
@@ -550,7 +550,7 @@ namespace OutlookMailClone
             this.richTextBoxTo.Location = new System.Drawing.Point(62, 3);
             this.richTextBoxTo.Multiline = false;
             this.richTextBoxTo.Name = "richTextBoxTo";
-            this.richTextBoxTo.Size = new System.Drawing.Size(703, 25);
+            this.richTextBoxTo.Size = new System.Drawing.Size(786, 25);
             this.richTextBoxTo.TabIndex = 3;
             this.richTextBoxTo.Text = "friend@megacorp.com";
             // 
@@ -1307,7 +1307,6 @@ namespace OutlookMailClone
             // 
             // kryptonRibbon
             // 
-            this.kryptonRibbon.AllowFormIntegrate = true;
             this.kryptonRibbon.ButtonSpecs.Add(this.buttonSpecHelp);
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
@@ -1318,8 +1317,8 @@ namespace OutlookMailClone
             this.qatQuickPrint,
             this.qatForward,
             this.qatDelete});
-            this.kryptonRibbon.RibbonAppButton.AppButtonImage = global::OutlookMailClone.Properties.Resources.Main_Icon_64_x_64;
-            this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonImage = global::OutlookMailClone.Properties.Resources.Main_Icon_64_x_64;
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1,
             this.kryptonContextMenuItem2,
             this.kryptonContextMenuSeparator11,
@@ -1332,8 +1331,8 @@ namespace OutlookMailClone
             this.kryptonContextMenuSeparator12,
             this.kryptonContextMenuItem8,
             this.kryptonContextMenuItem9});
-            this.kryptonRibbon.RibbonAppButton.AppButtonMinRecentSize = new System.Drawing.Size(300, 250);
-            this.kryptonRibbon.RibbonAppButton.AppButtonRecentDocs.AddRange(new Krypton.Ribbon.KryptonRibbonRecentDoc[] {
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonMinRecentSize = new System.Drawing.Size(300, 250);
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.AddRange(new Krypton.Ribbon.KryptonRibbonRecentDoc[] {
             this.kryptonRibbonRecentDoc1,
             this.kryptonRibbonRecentDoc2,
             this.kryptonRibbonRecentDoc3,
@@ -1342,8 +1341,8 @@ namespace OutlookMailClone
             this.kryptonRibbonRecentDoc6,
             this.kryptonRibbonRecentDoc7,
             this.kryptonRibbonRecentDoc8});
-            this.kryptonRibbon.RibbonAppButton.AppButtonSpecs.Add(this.buttonSpecAppMenu1);
-            this.kryptonRibbon.RibbonStrings.RecentDocuments = "Create New Outlook Item";
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonSpecs.Add(this.buttonSpecAppMenu1);
+            this.kryptonRibbon.RibbonFileAppButton.FormCloseBoxVisible = true;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabMessage,
             this.tabInsert,
@@ -1351,7 +1350,7 @@ namespace OutlookMailClone
             this.tabFormatText,
             this.tabDeveloper});
             this.kryptonRibbon.SelectedTab = this.tabOptions;
-            this.kryptonRibbon.Size = new System.Drawing.Size(782, 115);
+            this.kryptonRibbon.Size = new System.Drawing.Size(865, 115);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // buttonSpecHelp
@@ -1574,7 +1573,7 @@ namespace OutlookMailClone
             // groupClipboard
             // 
             this.groupClipboard.AllowCollapsed = false;
-            this.groupClipboard.Image = ((System.Drawing.Image)(resources.GetObject("groupClipboard.Image")));
+            this.groupClipboard.Image = null;
             this.groupClipboard.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.clipboard1,
             this.clipboard2});
@@ -1591,7 +1590,7 @@ namespace OutlookMailClone
             // 
             this.clipboardPaste.ButtonType = Krypton.Ribbon.GroupButtonType.Split;
             this.clipboardPaste.ImageLarge = global::OutlookMailClone.Properties.Resources.ClipboardPaste;
-            this.clipboardPaste.ImageSmall = ((System.Drawing.Image)(resources.GetObject("clipboardPaste.ImageSmall")));
+            this.clipboardPaste.ImageSmall = null;
             this.clipboardPaste.KeyTip = "V";
             this.clipboardPaste.KryptonContextMenu = this.cmsPaste;
             this.clipboardPaste.TextLine1 = "Paste";
@@ -1606,21 +1605,21 @@ namespace OutlookMailClone
             // 
             // clipboardCut
             // 
-            this.clipboardCut.ImageLarge = ((System.Drawing.Image)(resources.GetObject("clipboardCut.ImageLarge")));
+            this.clipboardCut.ImageLarge = null;
             this.clipboardCut.ImageSmall = global::OutlookMailClone.Properties.Resources.ClipboardCut;
             this.clipboardCut.KeyTip = "X";
             this.clipboardCut.TextLine1 = "Cut";
             // 
             // clipboardCopy
             // 
-            this.clipboardCopy.ImageLarge = ((System.Drawing.Image)(resources.GetObject("clipboardCopy.ImageLarge")));
+            this.clipboardCopy.ImageLarge = null;
             this.clipboardCopy.ImageSmall = global::OutlookMailClone.Properties.Resources.ClipboardCopy;
             this.clipboardCopy.KeyTip = "C";
             this.clipboardCopy.TextLine1 = "Copy";
             // 
             // clipboardFormatPainter
             // 
-            this.clipboardFormatPainter.ImageLarge = ((System.Drawing.Image)(resources.GetObject("clipboardFormatPainter.ImageLarge")));
+            this.clipboardFormatPainter.ImageLarge = null;
             this.clipboardFormatPainter.ImageSmall = global::OutlookMailClone.Properties.Resources.ClipboardFormatPainter;
             this.clipboardFormatPainter.KeyTip = "FP";
             this.clipboardFormatPainter.TextLine1 = "Format";
@@ -1810,7 +1809,7 @@ namespace OutlookMailClone
             // 
             // groupMessageInclude
             // 
-            this.groupMessageInclude.Image = ((System.Drawing.Image)(resources.GetObject("groupMessageInclude.Image")));
+            this.groupMessageInclude.Image = null;
             this.groupMessageInclude.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.includeTriple1,
             this.includeTriple2});
@@ -1880,7 +1879,7 @@ namespace OutlookMailClone
             // 
             // optionsHighImportance
             // 
-            this.optionsHighImportance.ImageLarge = ((System.Drawing.Image)(resources.GetObject("optionsHighImportance.ImageLarge")));
+            this.optionsHighImportance.ImageLarge = null;
             this.optionsHighImportance.ImageSmall = global::OutlookMailClone.Properties.Resources.OptionsHighImportance;
             this.optionsHighImportance.KeyTip = "H";
             this.optionsHighImportance.TextLine1 = "High";
@@ -1888,7 +1887,7 @@ namespace OutlookMailClone
             // 
             // optionsLowImportance
             // 
-            this.optionsLowImportance.ImageLarge = ((System.Drawing.Image)(resources.GetObject("optionsLowImportance.ImageLarge")));
+            this.optionsLowImportance.ImageLarge = null;
             this.optionsLowImportance.ImageSmall = global::OutlookMailClone.Properties.Resources.OptionsLowImportance;
             this.optionsLowImportance.KeyTip = "L";
             this.optionsLowImportance.TextLine1 = "Low";
@@ -1898,7 +1897,7 @@ namespace OutlookMailClone
             // 
             this.groupZoom.AllowCollapsed = false;
             this.groupZoom.DialogBoxLauncher = false;
-            this.groupZoom.Image = ((System.Drawing.Image)(resources.GetObject("groupZoom.Image")));
+            this.groupZoom.Image = null;
             this.groupZoom.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.proofingTriple});
             this.groupZoom.KeyTipGroup = "Q";
@@ -1913,7 +1912,7 @@ namespace OutlookMailClone
             // zoomMessageZoom
             // 
             this.zoomMessageZoom.ImageLarge = global::OutlookMailClone.Properties.Resources.ZoomLarge;
-            this.zoomMessageZoom.ImageSmall = ((System.Drawing.Image)(resources.GetObject("zoomMessageZoom.ImageSmall")));
+            this.zoomMessageZoom.ImageSmall = null;
             this.zoomMessageZoom.KeyTip = "Q";
             this.zoomMessageZoom.TextLine1 = "Zoom";
             // 
@@ -1932,7 +1931,7 @@ namespace OutlookMailClone
             // groupInsertInclude
             // 
             this.groupInsertInclude.AllowCollapsed = false;
-            this.groupInsertInclude.Image = ((System.Drawing.Image)(resources.GetObject("groupInsertInclude.Image")));
+            this.groupInsertInclude.Image = null;
             this.groupInsertInclude.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple4,
             this.kryptonRibbonGroupTriple5});
@@ -1998,7 +1997,7 @@ namespace OutlookMailClone
             // 
             this.groupTables.AllowCollapsed = false;
             this.groupTables.DialogBoxLauncher = false;
-            this.groupTables.Image = ((System.Drawing.Image)(resources.GetObject("groupTables.Image")));
+            this.groupTables.Image = null;
             this.groupTables.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple3});
             this.groupTables.TextLine1 = "Tables";
@@ -2013,7 +2012,7 @@ namespace OutlookMailClone
             // 
             this.tablesTable.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.tablesTable.ImageLarge = global::OutlookMailClone.Properties.Resources.TablesLarge;
-            this.tablesTable.ImageSmall = ((System.Drawing.Image)(resources.GetObject("tablesTable.ImageSmall")));
+            this.tablesTable.ImageSmall = null;
             this.tablesTable.KryptonContextMenu = this.cmsTable;
             this.tablesTable.TextLine1 = "Table";
             // 
@@ -2021,7 +2020,7 @@ namespace OutlookMailClone
             // 
             this.groupInsertIllustrations.AllowCollapsed = false;
             this.groupInsertIllustrations.DialogBoxLauncher = false;
-            this.groupInsertIllustrations.Image = ((System.Drawing.Image)(resources.GetObject("groupInsertIllustrations.Image")));
+            this.groupInsertIllustrations.Image = null;
             this.groupInsertIllustrations.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple6,
             this.kryptonRibbonGroupTriple7});
@@ -2037,7 +2036,7 @@ namespace OutlookMailClone
             // illustrationsPicture
             // 
             this.illustrationsPicture.ImageLarge = global::OutlookMailClone.Properties.Resources.PicturesLarge;
-            this.illustrationsPicture.ImageSmall = ((System.Drawing.Image)(resources.GetObject("illustrationsPicture.ImageSmall")));
+            this.illustrationsPicture.ImageSmall = null;
             this.illustrationsPicture.KeyTip = "P";
             this.illustrationsPicture.TextLine1 = "Picture";
             // 
@@ -2165,7 +2164,7 @@ namespace OutlookMailClone
             // textDropCap
             // 
             this.textDropCap.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
-            this.textDropCap.ImageLarge = ((System.Drawing.Image)(resources.GetObject("textDropCap.ImageLarge")));
+            this.textDropCap.ImageLarge = null;
             this.textDropCap.ImageSmall = global::OutlookMailClone.Properties.Resources.DropCapSmall;
             this.textDropCap.KeyTip = "RC";
             this.textDropCap.KryptonContextMenu = this.cmsDropCap;
@@ -2174,7 +2173,7 @@ namespace OutlookMailClone
             // 
             // textDateAndTime
             // 
-            this.textDateAndTime.ImageLarge = ((System.Drawing.Image)(resources.GetObject("textDateAndTime.ImageLarge")));
+            this.textDateAndTime.ImageLarge = null;
             this.textDateAndTime.ImageSmall = global::OutlookMailClone.Properties.Resources.DateTimeSmall;
             this.textDateAndTime.KeyTip = "D";
             this.textDateAndTime.TextLine1 = "Date &";
@@ -2182,7 +2181,7 @@ namespace OutlookMailClone
             // 
             // textObject
             // 
-            this.textObject.ImageLarge = ((System.Drawing.Image)(resources.GetObject("textObject.ImageLarge")));
+            this.textObject.ImageLarge = null;
             this.textObject.ImageSmall = global::OutlookMailClone.Properties.Resources.ObjectSmall;
             this.textObject.KeyTip = "J";
             this.textObject.TextLine1 = "Object";
@@ -2263,7 +2262,7 @@ namespace OutlookMailClone
             // 
             this.themesTheme.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.themesTheme.ImageLarge = global::OutlookMailClone.Properties.Resources.ThemesLarge;
-            this.themesTheme.ImageSmall = ((System.Drawing.Image)(resources.GetObject("themesTheme.ImageSmall")));
+            this.themesTheme.ImageSmall = null;
             this.themesTheme.KeyTip = "TH";
             this.themesTheme.KryptonContextMenu = this.cmsThemes;
             this.themesTheme.TextLine1 = "Themes";
@@ -2278,21 +2277,21 @@ namespace OutlookMailClone
             // 
             // themesColors
             // 
-            this.themesColors.ImageLarge = ((System.Drawing.Image)(resources.GetObject("themesColors.ImageLarge")));
+            this.themesColors.ImageLarge = null;
             this.themesColors.ImageSmall = global::OutlookMailClone.Properties.Resources.ColorsSmall;
             this.themesColors.KeyTip = "TC";
             this.themesColors.TextLine1 = "Colors";
             // 
             // themesFonts
             // 
-            this.themesFonts.ImageLarge = ((System.Drawing.Image)(resources.GetObject("themesFonts.ImageLarge")));
+            this.themesFonts.ImageLarge = null;
             this.themesFonts.ImageSmall = global::OutlookMailClone.Properties.Resources.FontsSmall;
             this.themesFonts.KeyTip = "TF";
             this.themesFonts.TextLine1 = "Fonts";
             // 
             // themesEffects
             // 
-            this.themesEffects.ImageLarge = ((System.Drawing.Image)(resources.GetObject("themesEffects.ImageLarge")));
+            this.themesEffects.ImageLarge = null;
             this.themesEffects.ImageSmall = global::OutlookMailClone.Properties.Resources.EffectsSmall;
             this.themesEffects.KeyTip = "TE";
             this.themesEffects.TextLine1 = "Effects";
@@ -2308,11 +2307,20 @@ namespace OutlookMailClone
             // 
             this.themesPageColor.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.themesPageColor.ImageLarge = global::OutlookMailClone.Properties.Resources.PageColorLarge;
-            this.themesPageColor.ImageSmall = ((System.Drawing.Image)(resources.GetObject("themesPageColor.ImageSmall")));
+            this.themesPageColor.ImageSmall = null;
             this.themesPageColor.KeyTip = "PC";
             this.themesPageColor.KryptonContextMenu = this.cmsPageColor;
             this.themesPageColor.TextLine1 = "Page";
             this.themesPageColor.TextLine2 = "Color";
+            // 
+            // kryptonRibbonGroupThemeComboBox1
+            // 
+            this.kryptonRibbonGroupThemeComboBox1.DisplayMember = "Key";
+            this.kryptonRibbonGroupThemeComboBox1.DropDownHeight = 300;
+            this.kryptonRibbonGroupThemeComboBox1.DropDownWidth = 350;
+            this.kryptonRibbonGroupThemeComboBox1.FormattingEnabled = false;
+            this.kryptonRibbonGroupThemeComboBox1.ItemHeight = 15;
+            this.kryptonRibbonGroupThemeComboBox1.ValueMember = "Value";
             // 
             // groupFields
             // 
@@ -2341,7 +2349,7 @@ namespace OutlookMailClone
             // 
             this.fieldsShowFrom.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.fieldsShowFrom.ImageLarge = global::OutlookMailClone.Properties.Resources.ShowFromLarge;
-            this.fieldsShowFrom.ImageSmall = ((System.Drawing.Image)(resources.GetObject("fieldsShowFrom.ImageSmall")));
+            this.fieldsShowFrom.ImageSmall = null;
             this.fieldsShowFrom.KeyTip = "F";
             this.fieldsShowFrom.TextLine1 = "From";
             // 
@@ -2349,7 +2357,7 @@ namespace OutlookMailClone
             // 
             this.groupFormat.AllowCollapsed = false;
             this.groupFormat.DialogBoxLauncher = false;
-            this.groupFormat.Image = ((System.Drawing.Image)(resources.GetObject("groupFormat.Image")));
+            this.groupFormat.Image = null;
             this.groupFormat.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple14});
             this.groupFormat.TextLine1 = "Format";
@@ -2366,7 +2374,7 @@ namespace OutlookMailClone
             // formatPlainText
             // 
             this.formatPlainText.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            this.formatPlainText.ImageLarge = ((System.Drawing.Image)(resources.GetObject("formatPlainText.ImageLarge")));
+            this.formatPlainText.ImageLarge = null;
             this.formatPlainText.ImageSmall = global::OutlookMailClone.Properties.Resources.PlainTextSmall;
             this.formatPlainText.KeyTip = "L";
             this.formatPlainText.TextLine1 = "Plain";
@@ -2376,7 +2384,7 @@ namespace OutlookMailClone
             // 
             this.formatHTML.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
             this.formatHTML.Checked = true;
-            this.formatHTML.ImageLarge = ((System.Drawing.Image)(resources.GetObject("formatHTML.ImageLarge")));
+            this.formatHTML.ImageLarge = null;
             this.formatHTML.ImageSmall = global::OutlookMailClone.Properties.Resources.HTMLSmall;
             this.formatHTML.KeyTip = "H";
             this.formatHTML.TextLine1 = "HTML";
@@ -2384,7 +2392,7 @@ namespace OutlookMailClone
             // formatRichText
             // 
             this.formatRichText.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            this.formatRichText.ImageLarge = ((System.Drawing.Image)(resources.GetObject("formatRichText.ImageLarge")));
+            this.formatRichText.ImageLarge = null;
             this.formatRichText.ImageSmall = global::OutlookMailClone.Properties.Resources.RichTextSmall;
             this.formatRichText.KeyTip = "R";
             this.formatRichText.TextLine1 = "Rich";
@@ -2509,7 +2517,7 @@ namespace OutlookMailClone
             // 
             this.formatClipboardPaste.ButtonType = Krypton.Ribbon.GroupButtonType.Split;
             this.formatClipboardPaste.ImageLarge = global::OutlookMailClone.Properties.Resources.ClipboardPaste;
-            this.formatClipboardPaste.ImageSmall = ((System.Drawing.Image)(resources.GetObject("formatClipboardPaste.ImageSmall")));
+            this.formatClipboardPaste.ImageSmall = null;
             this.formatClipboardPaste.KeyTip = "V";
             this.formatClipboardPaste.KryptonContextMenu = this.cmsPaste;
             this.formatClipboardPaste.TextLine1 = "Paste";
@@ -2524,21 +2532,21 @@ namespace OutlookMailClone
             // 
             // formatClipboardCut
             // 
-            this.formatClipboardCut.ImageLarge = ((System.Drawing.Image)(resources.GetObject("formatClipboardCut.ImageLarge")));
+            this.formatClipboardCut.ImageLarge = null;
             this.formatClipboardCut.ImageSmall = global::OutlookMailClone.Properties.Resources.ClipboardCut;
             this.formatClipboardCut.KeyTip = "X";
             this.formatClipboardCut.TextLine1 = "Cut";
             // 
             // formatClipboardCopy
             // 
-            this.formatClipboardCopy.ImageLarge = ((System.Drawing.Image)(resources.GetObject("formatClipboardCopy.ImageLarge")));
+            this.formatClipboardCopy.ImageLarge = null;
             this.formatClipboardCopy.ImageSmall = global::OutlookMailClone.Properties.Resources.ClipboardCopy;
             this.formatClipboardCopy.KeyTip = "C";
             this.formatClipboardCopy.TextLine1 = "Copy";
             // 
             // formatClipboardFormatPainter
             // 
-            this.formatClipboardFormatPainter.ImageLarge = ((System.Drawing.Image)(resources.GetObject("formatClipboardFormatPainter.ImageLarge")));
+            this.formatClipboardFormatPainter.ImageLarge = null;
             this.formatClipboardFormatPainter.ImageSmall = global::OutlookMailClone.Properties.Resources.ClipboardFormatPainter;
             this.formatClipboardFormatPainter.KeyTip = "FP";
             this.formatClipboardFormatPainter.TextLine1 = "Format";
@@ -2789,7 +2797,7 @@ namespace OutlookMailClone
             // groupFormatStyles
             // 
             this.groupFormatStyles.AllowCollapsed = false;
-            this.groupFormatStyles.Image = ((System.Drawing.Image)(resources.GetObject("groupFormatStyles.Image")));
+            this.groupFormatStyles.Image = null;
             this.groupFormatStyles.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple19});
             this.groupFormatStyles.KeyTipDialogLauncher = "FY";
@@ -2805,7 +2813,7 @@ namespace OutlookMailClone
             // 
             this.stylesChangeStyles.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.stylesChangeStyles.ImageLarge = global::OutlookMailClone.Properties.Resources.ChangeStyles;
-            this.stylesChangeStyles.ImageSmall = ((System.Drawing.Image)(resources.GetObject("stylesChangeStyles.ImageSmall")));
+            this.stylesChangeStyles.ImageSmall = null;
             this.stylesChangeStyles.KeyTip = "G";
             this.stylesChangeStyles.KryptonContextMenu = this.cmsChangeStyles;
             this.stylesChangeStyles.TextLine1 = "Change";
@@ -2815,7 +2823,7 @@ namespace OutlookMailClone
             // 
             this.groupFormatZoom.AllowCollapsed = false;
             this.groupFormatZoom.DialogBoxLauncher = false;
-            this.groupFormatZoom.Image = ((System.Drawing.Image)(resources.GetObject("groupFormatZoom.Image")));
+            this.groupFormatZoom.Image = null;
             this.groupFormatZoom.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple20});
             this.groupFormatZoom.TextLine1 = "Zoom";
@@ -2829,7 +2837,7 @@ namespace OutlookMailClone
             // zoomZoom
             // 
             this.zoomZoom.ImageLarge = global::OutlookMailClone.Properties.Resources.ZoomLarge;
-            this.zoomZoom.ImageSmall = ((System.Drawing.Image)(resources.GetObject("zoomZoom.ImageSmall")));
+            this.zoomZoom.ImageSmall = null;
             this.zoomZoom.KeyTip = "Q";
             this.zoomZoom.TextLine1 = "Zoom";
             // 
@@ -2854,7 +2862,7 @@ namespace OutlookMailClone
             // kryptonRibbonGroupButton4
             // 
             this.kryptonRibbonGroupButton4.ButtonType = Krypton.Ribbon.GroupButtonType.Split;
-            this.kryptonRibbonGroupButton4.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton4.ImageLarge")));
+            this.kryptonRibbonGroupButton4.ImageLarge = null;
             this.kryptonRibbonGroupButton4.ImageSmall = global::OutlookMailClone.Properties.Resources.FindSmall;
             this.kryptonRibbonGroupButton4.KeyTip = "FD";
             this.kryptonRibbonGroupButton4.KryptonContextMenu = this.cmsFind;
@@ -2862,7 +2870,7 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupButton5
             // 
-            this.kryptonRibbonGroupButton5.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton5.ImageLarge")));
+            this.kryptonRibbonGroupButton5.ImageLarge = null;
             this.kryptonRibbonGroupButton5.ImageSmall = global::OutlookMailClone.Properties.Resources.FindReplaceSmall;
             this.kryptonRibbonGroupButton5.KeyTip = "R";
             this.kryptonRibbonGroupButton5.TextLine1 = "Replace";
@@ -2870,7 +2878,7 @@ namespace OutlookMailClone
             // kryptonRibbonGroupButton6
             // 
             this.kryptonRibbonGroupButton6.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
-            this.kryptonRibbonGroupButton6.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton6.ImageLarge")));
+            this.kryptonRibbonGroupButton6.ImageLarge = null;
             this.kryptonRibbonGroupButton6.ImageSmall = global::OutlookMailClone.Properties.Resources.SelectSmall;
             this.kryptonRibbonGroupButton6.KeyTip = "SL";
             this.kryptonRibbonGroupButton6.KryptonContextMenu = this.cmsSelect;
@@ -2888,7 +2896,7 @@ namespace OutlookMailClone
             // 
             this.developerCode.AllowCollapsed = false;
             this.developerCode.DialogBoxLauncher = false;
-            this.developerCode.Image = ((System.Drawing.Image)(resources.GetObject("developerCode.Image")));
+            this.developerCode.Image = null;
             this.developerCode.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.developerCodeTriple});
             this.developerCode.TextLine1 = "Code";
@@ -2903,7 +2911,7 @@ namespace OutlookMailClone
             // developerCodeVB
             // 
             this.developerCodeVB.ImageLarge = global::OutlookMailClone.Properties.Resources.CodeVisualBasic;
-            this.developerCodeVB.ImageSmall = ((System.Drawing.Image)(resources.GetObject("developerCodeVB.ImageSmall")));
+            this.developerCodeVB.ImageSmall = null;
             this.developerCodeVB.KeyTip = "V";
             this.developerCodeVB.TextLine1 = "Visual";
             this.developerCodeVB.TextLine2 = "Basic";
@@ -2911,7 +2919,7 @@ namespace OutlookMailClone
             // developerCodeMacros
             // 
             this.developerCodeMacros.ImageLarge = global::OutlookMailClone.Properties.Resources.CodeMacros;
-            this.developerCodeMacros.ImageSmall = ((System.Drawing.Image)(resources.GetObject("developerCodeMacros.ImageSmall")));
+            this.developerCodeMacros.ImageSmall = null;
             this.developerCodeMacros.KeyTip = "PM";
             this.developerCodeMacros.TextLine1 = "Macros";
             // 
@@ -2919,7 +2927,7 @@ namespace OutlookMailClone
             // 
             this.developerForm.AllowCollapsed = false;
             this.developerForm.DialogBoxLauncher = false;
-            this.developerForm.Image = ((System.Drawing.Image)(resources.GetObject("developerForm.Image")));
+            this.developerForm.Image = null;
             this.developerForm.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.developerFormTriple});
             this.developerForm.TextLine1 = "Form";
@@ -2935,7 +2943,7 @@ namespace OutlookMailClone
             // developerFormDesignThis
             // 
             this.developerFormDesignThis.ImageLarge = global::OutlookMailClone.Properties.Resources.FormDesignThisForm;
-            this.developerFormDesignThis.ImageSmall = ((System.Drawing.Image)(resources.GetObject("developerFormDesignThis.ImageSmall")));
+            this.developerFormDesignThis.ImageSmall = null;
             this.developerFormDesignThis.KeyTip = "D";
             this.developerFormDesignThis.TextLine1 = "Design";
             this.developerFormDesignThis.TextLine2 = "This Form";
@@ -2943,7 +2951,7 @@ namespace OutlookMailClone
             // developerFormDesignA
             // 
             this.developerFormDesignA.ImageLarge = global::OutlookMailClone.Properties.Resources.FormDesignAForm;
-            this.developerFormDesignA.ImageSmall = ((System.Drawing.Image)(resources.GetObject("developerFormDesignA.ImageSmall")));
+            this.developerFormDesignA.ImageSmall = null;
             this.developerFormDesignA.KeyTip = "O";
             this.developerFormDesignA.TextLine1 = "Design";
             this.developerFormDesignA.TextLine2 = "a Form";
@@ -2952,7 +2960,7 @@ namespace OutlookMailClone
             // 
             this.developerFormPublish.ButtonType = Krypton.Ribbon.GroupButtonType.DropDown;
             this.developerFormPublish.ImageLarge = global::OutlookMailClone.Properties.Resources.FormPublish;
-            this.developerFormPublish.ImageSmall = ((System.Drawing.Image)(resources.GetObject("developerFormPublish.ImageSmall")));
+            this.developerFormPublish.ImageSmall = null;
             this.developerFormPublish.KryptonContextMenu = this.cmsFormPublish;
             this.developerFormPublish.TextLine1 = "Publish";
             // 
@@ -2995,75 +3003,14 @@ namespace OutlookMailClone
             // 
             this.kryptonRibbonGroupCustomControl1.CustomControl = null;
             // 
-            // kryptonRibbonGroupThemeComboBox1
-            // 
-            this.kryptonRibbonGroupThemeComboBox1.DisplayMember = "Key";
-            this.kryptonRibbonGroupThemeComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kryptonRibbonGroupThemeComboBox1.DropDownWidth = 121;
-            this.kryptonRibbonGroupThemeComboBox1.FormattingEnabled = false;
-            this.kryptonRibbonGroupThemeComboBox1.ItemHeight = 15;
-            this.kryptonRibbonGroupThemeComboBox1.Items.AddRange(new object[] {
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items1"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items2"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items3"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items4"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items5"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items6"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items7"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items8"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items9"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items10"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items11"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items12"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items13"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items14"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items15"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items16"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items17"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items18"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items19"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items20"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items21"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items22"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items23"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items24"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items25"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items26"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items27"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items28"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items29"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items30"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items31"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items32"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items33"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items34"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items35"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items36"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items37"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items38"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items39"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items40"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items41"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items42"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items43"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items44"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items45"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items46"))),
-            ((object)(resources.GetObject("kryptonRibbonGroupThemeComboBox1.Items47")))});
-            this.kryptonRibbonGroupThemeComboBox1.Text = "Microsoft 365 - Blue";
-            this.kryptonRibbonGroupThemeComboBox1.ValueMember = "Value";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 506);
+            this.ClientSize = new System.Drawing.Size(865, 542);
             this.Controls.Add(this.panelFill);
             this.Controls.Add(this.kryptonRibbon);
-            this.CustomCaptionArea = new System.Drawing.Rectangle(457, 0, 281, 26);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StateCommon.Header.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.StateCommon.Header.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;

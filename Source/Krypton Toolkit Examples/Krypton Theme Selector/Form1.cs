@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 using Krypton.Toolkit;
 
 namespace KryptonThemeSelector
@@ -8,9 +10,15 @@ namespace KryptonThemeSelector
 
         private void kbtnUseListBox_Click(object sender, System.EventArgs e)
         {
-            KryptonThemeBrowserForm themeBrowser = new KryptonThemeBrowserForm();
+            KryptonThemeBrowserData themeBrowserData = new KryptonThemeBrowserData() {
+                ShowImportButton = true,
+                ShowSilentOption = true,
+                StartIndex = 0,
+                StartPosition = FormStartPosition.CenterScreen,
+                WindowTitle = string.Empty
+            };
 
-            themeBrowser.ShowDialog();
+            KryptonThemeBrowser.Show(themeBrowserData);
         }
     }
 }

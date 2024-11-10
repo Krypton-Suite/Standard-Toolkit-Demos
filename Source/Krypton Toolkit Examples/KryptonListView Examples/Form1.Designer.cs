@@ -45,9 +45,10 @@ namespace KryptonListViewExamples
             System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("Dog", 2);
             System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Mouse", 3);
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.chkDisabled = new Krypton.Toolkit.KryptonCheckBox();
             this.viewCheckBox = new Krypton.Toolkit.KryptonCheckBox();
-            this.cmbTheme = new Krypton.Toolkit.KryptonComboBox();
             this.groupBox3 = new Krypton.Toolkit.KryptonGroupBox();
+            this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
             this.listKrypton = new Krypton.Toolkit.KryptonListView();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -59,89 +60,83 @@ namespace KryptonListViewExamples
             this.rbLargIcon = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.listWinform = new System.Windows.Forms.ListView();
-            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonThemeComboBox1 = new Krypton.Toolkit.KryptonThemeComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbTheme)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupBox3.Panel)).BeginInit();
             this.groupBox3.Panel.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.Controls.Add(this.kryptonThemeComboBox1);
+            this.kryptonPanel1.Controls.Add(this.chkDisabled);
             this.kryptonPanel1.Controls.Add(this.viewCheckBox);
-            this.kryptonPanel1.Controls.Add(this.cmbTheme);
             this.kryptonPanel1.Controls.Add(this.groupBox3);
             this.kryptonPanel1.Controls.Add(this.groupBox2);
             this.kryptonPanel1.Controls.Add(this.groupBox1);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(720, 365);
+            this.kryptonPanel1.Size = new System.Drawing.Size(960, 449);
             this.kryptonPanel1.TabIndex = 0;
+            // 
+            // chkDisabled
+            // 
+            this.chkDisabled.Location = new System.Drawing.Point(652, 421);
+            this.chkDisabled.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkDisabled.Name = "chkDisabled";
+            this.chkDisabled.Size = new System.Drawing.Size(86, 26);
+            this.chkDisabled.TabIndex = 7;
+            this.chkDisabled.Values.Text = "Disabled";
+            this.chkDisabled.CheckStateChanged += new System.EventHandler(this.chkDisabled_CheckStateChanged);
             // 
             // viewCheckBox
             // 
-            this.viewCheckBox.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
-            this.viewCheckBox.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.viewCheckBox.Location = new System.Drawing.Point(463, 342);
-            this.viewCheckBox.Margin = new System.Windows.Forms.Padding(2);
+            this.viewCheckBox.Location = new System.Drawing.Point(552, 421);
+            this.viewCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.viewCheckBox.Name = "viewCheckBox";
-            this.viewCheckBox.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.viewCheckBox.Size = new System.Drawing.Size(76, 20);
+            this.viewCheckBox.Size = new System.Drawing.Size(94, 26);
             this.viewCheckBox.TabIndex = 6;
             this.viewCheckBox.Values.Text = "CheckBox";
             this.viewCheckBox.CheckedChanged += new System.EventHandler(this.ViewCheckBox_CheckedChanged);
-            // 
-            // cmbTheme
-            // 
-            this.cmbTheme.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.cmbTheme.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.cmbTheme.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cmbTheme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cmbTheme.DropDownWidth = 199;
-            this.cmbTheme.IntegralHeight = false;
-            this.cmbTheme.Location = new System.Drawing.Point(562, 342);
-            this.cmbTheme.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbTheme.Name = "cmbTheme";
-            this.cmbTheme.Size = new System.Drawing.Size(149, 21);
-            this.cmbTheme.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.cmbTheme.TabIndex = 5;
-            this.cmbTheme.Text = "Office 2010 - Blue";
-            this.cmbTheme.SelectedIndexChanged += new System.EventHandler(this.CmbTheme_SelectedIndexChanged);
             // 
             // groupBox3
             // 
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.groupBox3.CaptionEdge = Krypton.Toolkit.VisualOrientation.Top;
-            this.groupBox3.CaptionOrientation = Krypton.Toolkit.ButtonOrientation.Auto;
-            this.groupBox3.Location = new System.Drawing.Point(378, 4);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Location = new System.Drawing.Point(504, 5);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
             // 
             // groupBox3.Panel
             // 
+            this.groupBox3.Panel.Controls.Add(this.kryptonTextBox1);
             this.groupBox3.Panel.Controls.Add(this.listKrypton);
-            this.groupBox3.Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.GroupBox3_Panel_Paint);
-            this.groupBox3.Size = new System.Drawing.Size(340, 326);
+            this.groupBox3.Size = new System.Drawing.Size(453, 401);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.Values.Heading = "Krypton ListView";
+            // 
+            // kryptonTextBox1
+            // 
+            this.kryptonTextBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.kryptonTextBox1.Location = new System.Drawing.Point(0, 346);
+            this.kryptonTextBox1.Name = "kryptonTextBox1";
+            this.kryptonTextBox1.Size = new System.Drawing.Size(449, 27);
+            this.kryptonTextBox1.TabIndex = 1;
+            this.kryptonTextBox1.Text = "kryptonTextBox1";
             // 
             // listKrypton
             // 
             this.listKrypton.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            this.listKrypton.BackColor = System.Drawing.Color.Transparent;
             this.listKrypton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listKrypton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.listKrypton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
             this.listKrypton.FullRowSelect = true;
             this.listKrypton.GridLines = true;
             this.listKrypton.HideSelection = false;
@@ -154,29 +149,13 @@ namespace KryptonListViewExamples
             listViewItem1,
             listViewItem2,
             listViewItem3});
-            this.listKrypton.ItemStyle = Krypton.Toolkit.ButtonStyle.ListItem;
+            //this.listKrypton.ItemStyle = Krypton.Toolkit.ButtonStyle.ListItem;
             this.listKrypton.LargeImageList = this.imageList2;
             this.listKrypton.Location = new System.Drawing.Point(0, 0);
-            this.listKrypton.Margin = new System.Windows.Forms.Padding(2);
+            this.listKrypton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listKrypton.Name = "listKrypton";
-            this.listKrypton.OwnerDraw = true;
-            this.listKrypton.Size = new System.Drawing.Size(336, 302);
+            this.listKrypton.Size = new System.Drawing.Size(449, 373);
             this.listKrypton.SmallImageList = this.imageList1;
-            this.listKrypton.StateCommon.Item.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.listKrypton.StateCommon.Item.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.listKrypton.StateCommon.Item.Content.Padding = new System.Windows.Forms.Padding(-1);
-            this.listKrypton.StateCommon.Item.Content.ShortText.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.listKrypton.StateCommon.Item.Content.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.listKrypton.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listKrypton.StateCommon.Item.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.Inherit;
-            this.listKrypton.StateCommon.Item.Content.ShortText.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.listKrypton.StateCommon.Item.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.listKrypton.StateCommon.Item.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.True;
-            this.listKrypton.StateCommon.Item.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.listKrypton.StateCommon.Item.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.Inherit;
-            this.listKrypton.StateCommon.Item.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.listKrypton.StateCommon.Item.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.listKrypton.StateCommon.Item.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.listKrypton.TabIndex = 0;
             // 
             // imageList2
@@ -204,11 +183,11 @@ namespace KryptonListViewExamples
             this.groupBox2.Controls.Add(this.rbList);
             this.groupBox2.Controls.Add(this.rbSmallIcon);
             this.groupBox2.Controls.Add(this.rbLargIcon);
-            this.groupBox2.Location = new System.Drawing.Point(10, 336);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Location = new System.Drawing.Point(13, 414);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(400, 29);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(533, 36);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "View Type";
@@ -216,10 +195,10 @@ namespace KryptonListViewExamples
             // rbDetails
             // 
             this.rbDetails.AutoSize = true;
-            this.rbDetails.Location = new System.Drawing.Point(323, 10);
-            this.rbDetails.Margin = new System.Windows.Forms.Padding(2);
+            this.rbDetails.Location = new System.Drawing.Point(431, 12);
+            this.rbDetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbDetails.Name = "rbDetails";
-            this.rbDetails.Size = new System.Drawing.Size(57, 17);
+            this.rbDetails.Size = new System.Drawing.Size(70, 20);
             this.rbDetails.TabIndex = 4;
             this.rbDetails.Text = "Details";
             this.rbDetails.UseVisualStyleBackColor = true;
@@ -228,10 +207,10 @@ namespace KryptonListViewExamples
             // rbTile
             // 
             this.rbTile.AutoSize = true;
-            this.rbTile.Location = new System.Drawing.Point(266, 9);
-            this.rbTile.Margin = new System.Windows.Forms.Padding(2);
+            this.rbTile.Location = new System.Drawing.Point(355, 11);
+            this.rbTile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbTile.Name = "rbTile";
-            this.rbTile.Size = new System.Drawing.Size(42, 17);
+            this.rbTile.Size = new System.Drawing.Size(51, 20);
             this.rbTile.TabIndex = 3;
             this.rbTile.Text = "Tile";
             this.rbTile.UseVisualStyleBackColor = true;
@@ -240,10 +219,10 @@ namespace KryptonListViewExamples
             // rbList
             // 
             this.rbList.AutoSize = true;
-            this.rbList.Location = new System.Drawing.Point(179, 12);
-            this.rbList.Margin = new System.Windows.Forms.Padding(2);
+            this.rbList.Location = new System.Drawing.Point(239, 15);
+            this.rbList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbList.Name = "rbList";
-            this.rbList.Size = new System.Drawing.Size(41, 17);
+            this.rbList.Size = new System.Drawing.Size(48, 20);
             this.rbList.TabIndex = 2;
             this.rbList.Text = "List";
             this.rbList.UseVisualStyleBackColor = true;
@@ -252,10 +231,10 @@ namespace KryptonListViewExamples
             // rbSmallIcon
             // 
             this.rbSmallIcon.AutoSize = true;
-            this.rbSmallIcon.Location = new System.Drawing.Point(92, 11);
-            this.rbSmallIcon.Margin = new System.Windows.Forms.Padding(2);
+            this.rbSmallIcon.Location = new System.Drawing.Point(123, 14);
+            this.rbSmallIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbSmallIcon.Name = "rbSmallIcon";
-            this.rbSmallIcon.Size = new System.Drawing.Size(74, 17);
+            this.rbSmallIcon.Size = new System.Drawing.Size(90, 20);
             this.rbSmallIcon.TabIndex = 1;
             this.rbSmallIcon.Text = "Small Icon";
             this.rbSmallIcon.UseVisualStyleBackColor = true;
@@ -265,10 +244,10 @@ namespace KryptonListViewExamples
             // 
             this.rbLargIcon.AutoSize = true;
             this.rbLargIcon.Checked = true;
-            this.rbLargIcon.Location = new System.Drawing.Point(5, 11);
-            this.rbLargIcon.Margin = new System.Windows.Forms.Padding(2);
+            this.rbLargIcon.Location = new System.Drawing.Point(7, 14);
+            this.rbLargIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbLargIcon.Name = "rbLargIcon";
-            this.rbLargIcon.Size = new System.Drawing.Size(76, 17);
+            this.rbLargIcon.Size = new System.Drawing.Size(91, 20);
             this.rbLargIcon.TabIndex = 0;
             this.rbLargIcon.TabStop = true;
             this.rbLargIcon.Text = "Large Icon";
@@ -282,11 +261,11 @@ namespace KryptonListViewExamples
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.listWinform);
-            this.groupBox1.Location = new System.Drawing.Point(10, 11);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(13, 14);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(356, 319);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(475, 393);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Winform ListView";
@@ -309,40 +288,47 @@ namespace KryptonListViewExamples
             listViewItem5,
             listViewItem6});
             this.listWinform.LargeImageList = this.imageList2;
-            this.listWinform.Location = new System.Drawing.Point(2, 15);
-            this.listWinform.Margin = new System.Windows.Forms.Padding(2);
+            this.listWinform.Location = new System.Drawing.Point(3, 17);
+            this.listWinform.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listWinform.Name = "listWinform";
-            this.listWinform.Size = new System.Drawing.Size(352, 302);
+            this.listWinform.Size = new System.Drawing.Size(469, 374);
             this.listWinform.SmallImageList = this.imageList1;
             this.listWinform.TabIndex = 0;
             this.listWinform.UseCompatibleStateImageBehavior = false;
             // 
-            // kryptonManager1
+            // kryptonThemeComboBox1
             // 
-            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
+            this.kryptonThemeComboBox1.DefaultPalette = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonThemeComboBox1.DropDownWidth = 121;
+            this.kryptonThemeComboBox1.IntegralHeight = false;
+            this.kryptonThemeComboBox1.Location = new System.Drawing.Point(744, 420);
+            this.kryptonThemeComboBox1.Name = "kryptonThemeComboBox1";
+            this.kryptonThemeComboBox1.Size = new System.Drawing.Size(211, 26);
+            this.kryptonThemeComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonThemeComboBox1.TabIndex = 8;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 365);
+            this.ClientSize = new System.Drawing.Size(960, 449);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "ListView Example";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbTheme)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupBox3.Panel)).EndInit();
             this.groupBox3.Panel.ResumeLayout(false);
+            this.groupBox3.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupBox3)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -359,12 +345,13 @@ namespace KryptonListViewExamples
         private System.Windows.Forms.RadioButton rbList;
         private System.Windows.Forms.RadioButton rbSmallIcon;
         private System.Windows.Forms.RadioButton rbLargIcon;
-        private Krypton.Toolkit.KryptonComboBox cmbTheme;
-        private Krypton.Toolkit.KryptonManager kryptonManager1;
         private Krypton.Toolkit.KryptonCheckBox viewCheckBox;
         private System.Windows.Forms.RadioButton rbDetails;
         private Krypton.Toolkit.KryptonListView listKrypton;
         private ImageList imageList2;
+        private Krypton.Toolkit.KryptonCheckBox chkDisabled;
+        private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private Krypton.Toolkit.KryptonThemeComboBox kryptonThemeComboBox1;
     }
 }
 

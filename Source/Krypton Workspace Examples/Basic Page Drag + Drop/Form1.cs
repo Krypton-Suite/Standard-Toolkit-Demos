@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -78,19 +78,25 @@ namespace BasicPageDragAndDrop
         private void radioBlock_CheckedChanged(object sender, EventArgs e)
         {
             if (radioBlock.Checked)
+            {
                 _dm.StateCommon.Feedback = PaletteDragFeedback.Block;
+            }
         }
 
         private void radioSquares_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSquares.Checked)
+            {
                 _dm.StateCommon.Feedback = PaletteDragFeedback.Square;
+            }
         }
 
         private void radioRounded_CheckedChanged(object sender, EventArgs e)
         {
             if (radioRounded.Checked)
+            {
                 _dm.StateCommon.Feedback = PaletteDragFeedback.Rounded;
+            }
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
@@ -115,11 +121,15 @@ namespace BasicPageDragAndDrop
 
             // Do we need to set the star sizing value?
             if (!string.IsNullOrEmpty(starSize))
+            {
                 cell.StarSize = starSize;
+            }
 
             // Add requested number of pages
             for (int i = 0; i < numPages; i++)
+            {
                 cell.Pages.Add(CreatePage());
+            }
 
             return cell;
         }

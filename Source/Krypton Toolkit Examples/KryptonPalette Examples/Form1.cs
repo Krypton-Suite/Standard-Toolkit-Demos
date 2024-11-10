@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -35,10 +35,10 @@ namespace KryptonPaletteExamples
             {
                 kryptonPaletteCustom.Import();
 
-                kryptonThemeComboBox1.Manager.GlobalPalette = kryptonPaletteCustom;
+                //kryptonThemeComboBox1..Manager.GlobalCustomPalette = kryptonPaletteCustom;
                 propertyGrid.SelectedObject = kryptonPaletteCustom;
 
-                kryptonThemeComboBox1.Manager.GlobalPaletteMode = PaletteMode.Custom;
+                //kryptonThemeComboBox1.Manager.GlobalPaletteMode = PaletteMode.Custom;
             }
             catch (Exception exc)
             {
@@ -55,9 +55,10 @@ namespace KryptonPaletteExamples
             }
             else
             {
-                propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components) {
-                    BasePaletteMode = kryptonThemeComboBox1.Manager.GlobalPaletteMode
-                };
+                //propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components) {
+                //    BasePaletteMode = kryptonThemeComboBox1.Manager.GlobalPaletteMode
+                //};
+                //propertyGrid.SelectedObject = kryptonThemeComboBox1.Manager.GlobalPaletteMode;
             }
         }
 
@@ -83,11 +84,9 @@ namespace KryptonPaletteExamples
                 }
                 kryptonPaletteCustom.ImportWithUpgrade(File.OpenRead(paletteFileName));
 
-                kryptonThemeComboBox1.Manager.GlobalPalette = kryptonPaletteCustom;
-                propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components) {
-                    BasePaletteMode = kryptonThemeComboBox1.Manager.GlobalPaletteMode
-                };
-                kryptonThemeComboBox1.Manager.GlobalPaletteMode = PaletteMode.Custom;
+                //kryptonThemeComboBox1.Manager.GlobalCustomPalette = kryptonPaletteCustom;
+                propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components);
+                //kryptonThemeComboBox1.Manager.GlobalPaletteMode = PaletteMode.Custom;
             }
             catch (Exception exc)
             {
@@ -96,9 +95,7 @@ namespace KryptonPaletteExamples
         }
 
         private void Form1_OnShown(object sender, EventArgs e) =>
-            propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components) {
-                BasePaletteMode = kryptonThemeComboBox1.Manager.GlobalPaletteMode
-            };
+            propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components);
 
         private void button1_Click_1(object sender, EventArgs e)
         {

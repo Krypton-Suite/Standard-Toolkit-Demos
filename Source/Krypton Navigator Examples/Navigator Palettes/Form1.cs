@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -274,7 +274,7 @@ namespace NavigatorPalettes
                 radioSparkleOrange.Checked = false;
                 radioSparklePurple.Checked = false;
                 radioLightweight.Checked = false;
-                kryptonNavigator1.Palette = kryptonPaletteBlogger;
+                kryptonNavigator1.LocalCustomPalette = kryptonPaletteBlogger;
                 UpdateFromNavigator();
             }
         }
@@ -294,7 +294,7 @@ namespace NavigatorPalettes
                 radioSparkleOrange.Checked = false;
                 radioSparklePurple.Checked = false;
                 radioBlogger.Checked = false;
-                kryptonNavigator1.Palette = kryptonPaletteLightweight;
+                kryptonNavigator1.LocalCustomPalette = kryptonPaletteLightweight;
                 UpdateFromNavigator();
             }
         }
@@ -316,9 +316,9 @@ namespace NavigatorPalettes
                     radioOffice2003.Checked = true;
                     break;
                 case PaletteMode.Custom:
-                    if (kryptonNavigator1.Palette == kryptonPaletteBlogger)
+                    if (kryptonNavigator1.LocalCustomPalette == kryptonPaletteBlogger)
                         radioBlogger.Checked = true;
-                    else if (kryptonNavigator1.Palette == kryptonPaletteLightweight)
+                    else if (kryptonNavigator1.LocalCustomPalette == kryptonPaletteLightweight)
                         radioLightweight.Checked = true;
                     break;
             }

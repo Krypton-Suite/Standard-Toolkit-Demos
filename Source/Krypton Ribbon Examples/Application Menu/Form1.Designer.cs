@@ -90,27 +90,26 @@ namespace ApplicationMenu
             // 
             this.kryptonRibbon1.InDesignHelperMode = true;
             this.kryptonRibbon1.Name = "kryptonRibbon1";
-            this.kryptonRibbon1.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
-                this.kryptonContextMenuItem1,
-                this.kryptonContextMenuItem2,
-                this.kryptonContextMenuItem3,
-                this.kryptonContextMenuItem4,
-                this.kryptonContextMenuSeparator1,
-                this.kryptonContextMenuItem5});
-            this.kryptonRibbon1.RibbonAppButton.AppButtonMinRecentSize = new System.Drawing.Size(150, 150);
-            this.kryptonRibbon1.RibbonAppButton.AppButtonRecentDocs.AddRange(new Krypton.Ribbon.KryptonRibbonRecentDoc[] {
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonContextMenuItem1,
+            this.kryptonContextMenuItem2,
+            this.kryptonContextMenuItem3,
+            this.kryptonContextMenuItem4,
+            this.kryptonContextMenuSeparator1,
+            this.kryptonContextMenuItem5});
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonMinRecentSize = new System.Drawing.Size(150, 150);
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonRecentDocs.AddRange(new Krypton.Ribbon.KryptonRibbonRecentDoc[] {
             this.kryptonRibbonRecentDoc1,
             this.kryptonRibbonRecentDoc2,
             this.kryptonRibbonRecentDoc3,
             this.kryptonRibbonRecentDoc4});
-            this.kryptonRibbon1.RibbonAppButton.AppButtonSpecs.AddRange(new Krypton.Ribbon.ButtonSpecAppMenu[] {
-            this.buttonSpecAppMenu1,
-            this.buttonSpecAppMenu2});
-            this.kryptonRibbon1.RibbonAppButton.IgnoreDoubleClickClose = true;
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonSpecs.Add(this.buttonSpecAppMenu1);
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonSpecs.Add(this.buttonSpecAppMenu2);
+            this.kryptonRibbon1.RibbonFileAppButton.IgnoreDoubleClickClose = true;
             this.kryptonRibbon1.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.kryptonRibbonTab1});
             this.kryptonRibbon1.SelectedTab = this.kryptonRibbonTab1;
-            this.kryptonRibbon1.Size = new System.Drawing.Size(519, 171);
+            this.kryptonRibbon1.Size = new System.Drawing.Size(527, 136);
             this.kryptonRibbon1.TabIndex = 0;
             this.kryptonRibbon1.AppButtonMenuOpening += new System.ComponentModel.CancelEventHandler(this.kryptonRibbon1_AppButtonMenuOpening);
             // 
@@ -195,7 +194,6 @@ namespace ApplicationMenu
             // button2010Blue
             // 
             this.button2010Blue.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            this.button2010Blue.Checked = true;
             this.button2010Blue.ImageLarge = ((System.Drawing.Image)(resources.GetObject("button2010Blue.ImageLarge")));
             this.button2010Blue.ImageSmall = ((System.Drawing.Image)(resources.GetObject("button2010Blue.ImageSmall")));
             this.button2010Blue.TextLine1 = "2010";
@@ -240,6 +238,7 @@ namespace ApplicationMenu
             // buttonSilver
             // 
             this.buttonSilver.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
+            this.buttonSilver.Checked = true;
             this.buttonSilver.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonSilver.ImageLarge")));
             this.buttonSilver.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonSilver.ImageSmall")));
             this.buttonSilver.KeyTip = "S";
@@ -326,9 +325,9 @@ namespace ApplicationMenu
             // 
             this.kryptonPanel1.Controls.Add(this.kryptonGroup1);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, 171);
+            this.kryptonPanel1.Location = new System.Drawing.Point(0, 136);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(519, 275);
+            this.kryptonPanel1.Size = new System.Drawing.Size(527, 318);
             this.kryptonPanel1.TabIndex = 1;
             // 
             // kryptonGroup1
@@ -353,7 +352,6 @@ namespace ApplicationMenu
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel5.Location = new System.Drawing.Point(10, 167);
             this.kryptonLabel5.Name = "kryptonLabel5";
             this.kryptonLabel5.Size = new System.Drawing.Size(383, 44);
@@ -398,7 +396,6 @@ namespace ApplicationMenu
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel3.Location = new System.Drawing.Point(18, 100);
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.Size = new System.Drawing.Size(177, 24);
@@ -407,7 +404,6 @@ namespace ApplicationMenu
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel1.Location = new System.Drawing.Point(53, 50);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(129, 24);
@@ -416,7 +412,6 @@ namespace ApplicationMenu
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel2.Location = new System.Drawing.Point(21, 75);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(172, 24);
@@ -434,29 +429,22 @@ namespace ApplicationMenu
             // buttonSpecAny1
             // 
             this.buttonSpecAny1.Edge = Krypton.Toolkit.PaletteRelativeEdgeAlign.Near;
-            this.buttonSpecAny1.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
             this.buttonSpecAny1.Text = "LeftBS";
-            this.buttonSpecAny1.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
-            this.buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Generic;
             this.buttonSpecAny1.UniqueName = "9032d55c1153486497128fa04e9a4cc7";
             // 
             // buttonSpecAny2
             // 
             this.buttonSpecAny2.Edge = Krypton.Toolkit.PaletteRelativeEdgeAlign.Far;
-            this.buttonSpecAny2.Style = Krypton.Toolkit.PaletteButtonStyle.Inherit;
             this.buttonSpecAny2.Text = "RightBS";
-            this.buttonSpecAny2.ToolTipStyle = Krypton.Toolkit.LabelStyle.ToolTip;
-            this.buttonSpecAny2.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Generic;
             this.buttonSpecAny2.UniqueName = "2dec0bdfa0a643b6843b1b4f21405ca2";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
-            this.buttonSpecAny1,
-            this.buttonSpecAny2});
-            this.ClientSize = new System.Drawing.Size(519, 446);
+            this.ButtonSpecs.Add(this.buttonSpecAny1);
+            this.ButtonSpecs.Add(this.buttonSpecAny2);
+            this.ClientSize = new System.Drawing.Size(527, 454);
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.kryptonRibbon1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

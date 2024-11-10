@@ -4,7 +4,7 @@
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
   <PropertyGroup>
-    <OutputName>Samples.v80.23.11.318.Net48</OutputName>
+    <OutputName>Samples.v80.23.8.233-beta.Net48</OutputName>
     <Name>WixInstaller.net48</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -32,10 +32,10 @@
     <Content Include="WixInstaller.net48.wax" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="WixToolset.Util.wixext" Version="4.0.3" />
-    <PackageReference Include="WixToolset.UI.wixext" Version="4.0.3" />
-    <PackageReference Include="WixToolset.NetFx.wixext" Version="4.0.3" />
-    <PackageReference Include="WixToolset.Heat" Version="4.0.3" />
+    <PackageReference Include="WixToolset.Util.wixext" Version="5.0.0" />
+    <PackageReference Include="WixToolset.UI.wixext" Version="5.0.0" />
+    <PackageReference Include="WixToolset.NetFx.wixext" Version="5.0.0" />
+    <PackageReference Include="WixToolset.Heat" Version="5.0.0" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="WixToolset.Sdk" Version="4.0.1" />
   <Target Name="BeforeBuild">

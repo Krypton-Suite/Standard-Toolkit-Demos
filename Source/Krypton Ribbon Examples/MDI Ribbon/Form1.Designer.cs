@@ -52,23 +52,17 @@ namespace MDIRibbon
             // 
             // ribbon
             // 
-            this.ribbon.AllowFormIntegrate = true;
-            this.ribbon.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
-            this.buttonSpecHelp});
-            this.ribbon.HideRibbonSize = new System.Drawing.Size(300, 250);
+            this.ribbon.ButtonSpecs.Add(this.buttonSpecHelp);
             this.ribbon.InDesignHelperMode = true;
             this.ribbon.Name = "ribbon";
             this.ribbon.QATLocation = Krypton.Ribbon.QATLocation.Hidden;
-            this.ribbon.RibbonAppButton.AppButtonMaxRecentSize = new System.Drawing.Size(350, 350);
-            this.ribbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.ribbon.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
-            this.ribbon.RibbonAppButton.AppButtonMinRecentSize = new System.Drawing.Size(250, 250);
-            this.ribbon.RibbonAppButton.AppButtonShowRecentDocs = false;
-            this.ribbon.RibbonAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            this.ribbon.RibbonFileAppButton.AppButtonShowRecentDocs = false;
             this.ribbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome});
             this.ribbon.SelectedTab = this.tabHome;
-            this.ribbon.Size = new System.Drawing.Size(692, 115);
+            this.ribbon.Size = new System.Drawing.Size(927, 136);
             this.ribbon.TabIndex = 0;
             // 
             // buttonSpecHelp
@@ -80,9 +74,7 @@ namespace MDIRibbon
             // 
             // kryptonContextMenuItem1
             // 
-            this.kryptonContextMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("kryptonContextMenuItem1.Image")));
-            this.kryptonContextMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem1.Text = "E&xit";
             this.kryptonContextMenuItem1.Click += new System.EventHandler(this.appMenu_Click);
             // 
@@ -107,15 +99,11 @@ namespace MDIRibbon
             // 
             // kryptonRibbonGroupTriple2
             // 
-            this.kryptonRibbonGroupTriple2.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonNewWindow});
-            this.kryptonRibbonGroupTriple2.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
-            this.kryptonRibbonGroupTriple2.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // buttonNewWindow
             // 
-            this.buttonNewWindow.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonNewWindow.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonNewWindow.ImageLarge")));
             this.buttonNewWindow.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonNewWindow.ImageSmall")));
             this.buttonNewWindow.KeyTip = "N";
@@ -125,16 +113,12 @@ namespace MDIRibbon
             // 
             // kryptonRibbonGroupTriple3
             // 
-            this.kryptonRibbonGroupTriple3.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonCloseWindow,
             this.buttonCloseAllWindows});
-            this.kryptonRibbonGroupTriple3.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
-            this.kryptonRibbonGroupTriple3.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // buttonCloseWindow
             // 
-            this.buttonCloseWindow.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonCloseWindow.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonCloseWindow.ImageLarge")));
             this.buttonCloseWindow.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonCloseWindow.ImageSmall")));
             this.buttonCloseWindow.KeyTip = "X";
@@ -144,7 +128,6 @@ namespace MDIRibbon
             // 
             // buttonCloseAllWindows
             // 
-            this.buttonCloseAllWindows.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonCloseAllWindows.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonCloseAllWindows.ImageLarge")));
             this.buttonCloseAllWindows.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonCloseAllWindows.ImageSmall")));
             this.buttonCloseAllWindows.KeyTip = "A";
@@ -163,17 +146,13 @@ namespace MDIRibbon
             // 
             // kryptonRibbonGroupTriple4
             // 
-            this.kryptonRibbonGroupTriple4.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonCascade,
             this.buttonTileHorizontal,
             this.buttonTileVertical});
-            this.kryptonRibbonGroupTriple4.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
-            this.kryptonRibbonGroupTriple4.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // buttonCascade
             // 
-            this.buttonCascade.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonCascade.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonCascade.ImageLarge")));
             this.buttonCascade.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonCascade.ImageSmall")));
             this.buttonCascade.KeyTip = "C";
@@ -182,7 +161,6 @@ namespace MDIRibbon
             // 
             // buttonTileHorizontal
             // 
-            this.buttonTileHorizontal.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonTileHorizontal.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonTileHorizontal.ImageLarge")));
             this.buttonTileHorizontal.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonTileHorizontal.ImageSmall")));
             this.buttonTileHorizontal.KeyTip = "H";
@@ -192,7 +170,6 @@ namespace MDIRibbon
             // 
             // buttonTileVertical
             // 
-            this.buttonTileVertical.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonTileVertical.ImageLarge = ((System.Drawing.Image)(resources.GetObject("buttonTileVertical.ImageLarge")));
             this.buttonTileVertical.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonTileVertical.ImageSmall")));
             this.buttonTileVertical.KeyTip = "V";
@@ -206,13 +183,14 @@ namespace MDIRibbon
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(692, 516);
+            this.ClientSize = new System.Drawing.Size(927, 639);
             this.Controls.Add(this.ribbon);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.MinimumSize = new System.Drawing.Size(350, 350);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(461, 420);
             this.Name = "Form1";
             this.Text = "MDI Ribbon";
             this.Load += new System.EventHandler(this.Form1_Load);

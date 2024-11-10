@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -43,17 +43,21 @@ namespace ContextualTabs
         private void buttonEditColor_Click(object sender, EventArgs e)
         {
             // Let user change the color definition
-            if (colorDialog.ShowDialog() == DialogResult.OK)
+            using var kcd = new KryptonColorDialog();
+            
+            kcd.AllowFullOpen = true;
+            
+            if (kcd.ShowDialog() == DialogResult.OK)
             {
                 // Update the Displayed color feedback
-                panelContextColor.StateCommon.Color1 = colorDialog.Color;
+                panelContextColor.StateCommon.Color1 = kcd.Color;
             }
         }
 
         private void buttonAddContext_Click(object sender, EventArgs e)
         {
             // Create a new context that uses the information specified
-            KryptonRibbonContext newContext = new KryptonRibbonContext
+            var newContext = new KryptonRibbonContext
             {
                 ContextName = textBoxContextName.Text,
                 ContextTitle = textBoxContextTitle.Text,

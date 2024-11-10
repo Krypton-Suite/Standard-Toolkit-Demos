@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -76,6 +76,11 @@ namespace KryptonFormExamples
             // Setup the property grid to edit this form
             propertyGrid.SelectedObject = new KryptonFormProxy(this);
         }
+
+        private void btnUseThemeWidths_Click(object sender, EventArgs e)
+        {
+            UseThemeFormChromeBorderWidth = btnUseThemeWidths.Checked;
+        }
     }
 
     public class KryptonFormProxy
@@ -114,10 +119,10 @@ namespace KryptonFormExamples
         [Category("Visuals")]
         [Description("Should custom chrome be allowed for this KryptonForm instance.")]
         [DefaultValue(true)]
-        public bool AllowFormChrome
+        public bool UseThemeFormChromeBorderWidth
         {
-            get => _form.AllowFormChrome;
-            set => _form.AllowFormChrome = value;
+            get => _form.UseThemeFormChromeBorderWidth;
+            set => _form.UseThemeFormChromeBorderWidth = value;
         }
 
         [Category("Visuals")]

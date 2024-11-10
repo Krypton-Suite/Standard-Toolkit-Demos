@@ -28,6 +28,7 @@ namespace RibbonGallery
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kryptonRibbon = new Krypton.Ribbon.KryptonRibbon();
             this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
@@ -39,7 +40,7 @@ namespace RibbonGallery
             this.kryptonRibbonGroupButton3 = new Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroup2 = new Krypton.Ribbon.KryptonRibbonGroup();
             this.galleryNormal = new Krypton.Ribbon.KryptonRibbonGroupGallery();
-            this.imageList1 = new System.Windows.Forms.ImageList();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.galleryRanges = new Krypton.Ribbon.KryptonRibbonGroupGallery();
             this.kryptonGalleryRange5 = new Krypton.Ribbon.KryptonGalleryRange();
             this.kryptonGalleryRange6 = new Krypton.Ribbon.KryptonGalleryRange();
@@ -53,7 +54,7 @@ namespace RibbonGallery
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonLabelExplain = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabelTitle = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager();
+            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonFillPanel)).BeginInit();
             this.kryptonFillPanel.SuspendLayout();
@@ -63,29 +64,21 @@ namespace RibbonGallery
             // 
             // kryptonRibbon
             // 
-            this.kryptonRibbon.AllowFormIntegrate = true;
             this.kryptonRibbon.HideRibbonSize = new System.Drawing.Size(100, 100);
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
-            this.kryptonRibbon.QATLocation = Krypton.Ribbon.QATLocation.Above;
-            this.kryptonRibbon.RibbonAppButton.AppButtonMaxRecentSize = new System.Drawing.Size(350, 350);
-            this.kryptonRibbon.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
-            this.kryptonRibbon.RibbonAppButton.AppButtonMinRecentSize = new System.Drawing.Size(250, 250);
-            this.kryptonRibbon.RibbonAppButton.AppButtonShowRecentDocs = false;
-            this.kryptonRibbon.RibbonAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonShowRecentDocs = false;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.kryptonRibbonTab1});
-            this.kryptonRibbon.SelectedContext = null;
             this.kryptonRibbon.SelectedTab = this.kryptonRibbonTab1;
-            this.kryptonRibbon.Size = new System.Drawing.Size(769, 115);
+            this.kryptonRibbon.Size = new System.Drawing.Size(793, 136);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // kryptonContextMenuItem1
             // 
-            this.kryptonContextMenuItem1.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.kryptonContextMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("kryptonContextMenuItem1.Image")));
-            this.kryptonContextMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.kryptonContextMenuItem1.Text = "E&xit";
             this.kryptonContextMenuItem1.Click += new System.EventHandler(this.kryptonContextMenuItem1_Click);
             // 
@@ -106,7 +99,6 @@ namespace RibbonGallery
             // 
             // kryptonRibbonGroupTriple1
             // 
-            this.kryptonRibbonGroupTriple1.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kryptonRibbonGroupButton1,
             this.kryptonRibbonGroupButton2,
@@ -117,7 +109,6 @@ namespace RibbonGallery
             // kryptonRibbonGroupButton1
             // 
             this.kryptonRibbonGroupButton1.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
-            this.kryptonRibbonGroupButton1.Checked = true;
             this.kryptonRibbonGroupButton1.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton1.ImageSmall")));
             this.kryptonRibbonGroupButton1.TextLine1 = "Office 2010";
             this.kryptonRibbonGroupButton1.TextLine2 = "Blue";
@@ -126,6 +117,7 @@ namespace RibbonGallery
             // kryptonRibbonGroupButton2
             // 
             this.kryptonRibbonGroupButton2.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
+            this.kryptonRibbonGroupButton2.Checked = true;
             this.kryptonRibbonGroupButton2.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton2.ImageSmall")));
             this.kryptonRibbonGroupButton2.TextLine1 = "Office 2007";
             this.kryptonRibbonGroupButton2.TextLine2 = "Silver";
@@ -152,8 +144,6 @@ namespace RibbonGallery
             this.galleryNormal.DropButtonItemWidth = 6;
             this.galleryNormal.ImageLarge = ((System.Drawing.Image)(resources.GetObject("galleryNormal.ImageLarge")));
             this.galleryNormal.ImageList = this.imageList1;
-            this.galleryNormal.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
-            this.galleryNormal.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // imageList1
             // 
@@ -186,8 +176,6 @@ namespace RibbonGallery
             this.galleryRanges.ImageLarge = ((System.Drawing.Image)(resources.GetObject("galleryRanges.ImageLarge")));
             this.galleryRanges.ImageList = this.imageList1;
             this.galleryRanges.KeyTip = "Y";
-            this.galleryRanges.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
-            this.galleryRanges.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // kryptonGalleryRange5
             // 
@@ -213,8 +201,6 @@ namespace RibbonGallery
             this.galleryCustom.ImageLarge = ((System.Drawing.Image)(resources.GetObject("galleryCustom.ImageLarge")));
             this.galleryCustom.ImageList = this.imageList1;
             this.galleryCustom.KeyTip = "Z";
-            this.galleryCustom.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
-            this.galleryCustom.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             this.galleryCustom.GalleryDropMenu += new System.EventHandler<Krypton.Ribbon.GalleryDropMenuEventArgs>(this.galleryCustom_GalleryDropMenu);
             // 
             // kryptonGalleryRange1
@@ -245,9 +231,9 @@ namespace RibbonGallery
             // 
             this.kryptonFillPanel.Controls.Add(this.kryptonPanel1);
             this.kryptonFillPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonFillPanel.Location = new System.Drawing.Point(0, 115);
+            this.kryptonFillPanel.Location = new System.Drawing.Point(0, 136);
             this.kryptonFillPanel.Name = "kryptonFillPanel";
-            this.kryptonFillPanel.Size = new System.Drawing.Size(769, 173);
+            this.kryptonFillPanel.Size = new System.Drawing.Size(793, 176);
             this.kryptonFillPanel.TabIndex = 1;
             // 
             // kryptonPanel1
@@ -257,14 +243,14 @@ namespace RibbonGallery
             this.kryptonPanel1.Location = new System.Drawing.Point(16, 16);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
-            this.kryptonPanel1.Size = new System.Drawing.Size(335, 101);
+            this.kryptonPanel1.Size = new System.Drawing.Size(476, 101);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // kryptonLabelExplain
             // 
             this.kryptonLabelExplain.Location = new System.Drawing.Point(8, 36);
             this.kryptonLabelExplain.Name = "kryptonLabelExplain";
-            this.kryptonLabelExplain.Size = new System.Drawing.Size(330, 52);
+            this.kryptonLabelExplain.Size = new System.Drawing.Size(411, 64);
             this.kryptonLabelExplain.TabIndex = 1;
             this.kryptonLabelExplain.Values.Text = "The Left gallery shows a standard drop down of all images.\r\nThe Middle gallery pr" +
     "ovides grouping in the drop down.\r\nThe Right gallery customizes the drop down me" +
@@ -275,19 +261,20 @@ namespace RibbonGallery
             this.kryptonLabelTitle.LabelStyle = Krypton.Toolkit.LabelStyle.TitlePanel;
             this.kryptonLabelTitle.Location = new System.Drawing.Point(8, 8);
             this.kryptonLabelTitle.Name = "kryptonLabelTitle";
-            this.kryptonLabelTitle.Size = new System.Drawing.Size(87, 29);
+            this.kryptonLabelTitle.Size = new System.Drawing.Size(107, 35);
             this.kryptonLabelTitle.TabIndex = 0;
             this.kryptonLabelTitle.Values.Text = "Galleries";
             // 
             // kryptonManager1
             // 
-            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(769, 288);
+            this.ClientSize = new System.Drawing.Size(793, 312);
+            this.CloseBox = false;
             this.Controls.Add(this.kryptonFillPanel);
             this.Controls.Add(this.kryptonRibbon);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

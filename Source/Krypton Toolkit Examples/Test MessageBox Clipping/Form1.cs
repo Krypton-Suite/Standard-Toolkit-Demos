@@ -20,7 +20,7 @@ namespace TestMessageBoxClipping
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2023. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2024. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
 //  Version 4.7.0.0  www.ComponentFactory.com
 // *****************************************************************************
 ";
@@ -110,7 +110,7 @@ namespace TestMessageBoxClipping
         {
             if (kryptonCustom.Checked)
             {
-                kryptonManager.GlobalPalette = kryptonPaletteCustom;
+                kryptonManager.GlobalCustomPalette = kryptonPaletteCustom;
             }
         }
 
@@ -157,7 +157,7 @@ namespace TestMessageBoxClipping
                 MessageBox.Show(this, ex.StackTrace, ex.Message);
                 KryptonMessageBox.Show(this, ex.StackTrace, ex.Message);
                 KryptonTaskDialog.Show(ex.Message, "MinInstruction", ex.StackTrace, KryptonMessageBoxIcon.Stop,
-                    TaskDialogButtons.Close);
+                    TaskDialogButtons.Close, null);
             }
         }
 

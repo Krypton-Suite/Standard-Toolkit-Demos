@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -56,8 +56,8 @@ namespace ThreePaneApplication
             }
 
             // Hook into the up and down buttons on the details heading
-            kryptonHeaderGroupDetails.ButtonSpecs[0].Click += new EventHandler(OnPrevious);
-            kryptonHeaderGroupDetails.ButtonSpecs[1].Click += new EventHandler(OnNext);
+            kryptonHeaderGroupDetails.ButtonSpecs[0].Click += OnPrevious!;
+            kryptonHeaderGroupDetails.ButtonSpecs[1].Click += OnNext!;
         }
 
         private void Form1_SystemColorsChanged(object sender, EventArgs e) =>
@@ -272,7 +272,7 @@ namespace ThreePaneApplication
         {
             if (!toolStripCustom.Checked)
             {
-                kryptonManager.GlobalPalette = kryptonPaletteCustom;
+                kryptonManager.GlobalCustomPalette = kryptonPaletteCustom;
                 toolStripOffice2010Blue.Checked = office2010BlueToolStripMenuItem.Checked = false;
                 toolStripOffice2010Silver.Checked = office2010SilverToolStripMenuItem.Checked = false;
                 toolStripOffice2010Black.Checked = office2010BlackToolStripMenuItem.Checked = false;
@@ -329,7 +329,7 @@ namespace ThreePaneApplication
         {
             if (kryptonDataGridView.SelectedRows.Count == 1)
             {
-                string details = (string)kryptonDataGridView.SelectedRows[0].Cells[2].Value;
+                string? details = kryptonDataGridView.SelectedRows[0].Cells[2].Value as string;
                 kryptonReadingLabel.Values.Text = details;
             }
             else
@@ -352,12 +352,12 @@ namespace ThreePaneApplication
                 if (!toolStripCustom.Checked)
                 {
                     // Then use existing method to switch to using the custom palette
-                    toolStripCustom_Click(null, EventArgs.Empty);
+                    toolStripCustom_Click(sender, EventArgs.Empty);
                 }
                 else
                 {
                     // Use the custom palette
-                    kryptonManager.GlobalPalette = kryptonPaletteCustom;
+                    kryptonManager.GlobalCustomPalette = kryptonPaletteCustom;
                     UpdateOnPaletteChanged();
                 }
 
@@ -449,7 +449,7 @@ namespace ThreePaneApplication
         private void UpdateOnPaletteChanged()
         {
             // Get the new control background color
-            Color backColor = kryptonManager.GlobalPalette.GetBackColor1(PaletteBackStyle.ControlClient,
+            Color backColor = kryptonManager.GlobalCustomPalette!.GetBackColor1(PaletteBackStyle.ControlClient,
                                                                          PaletteState.Normal);
 
             // Update the tree and listview controls with new color

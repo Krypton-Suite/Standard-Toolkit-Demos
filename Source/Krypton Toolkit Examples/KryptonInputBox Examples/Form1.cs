@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -41,15 +41,18 @@ namespace KryptonInputBoxExamples
 
         private void kbtnShow_Click(object sender, EventArgs e)
         {
-            var res = KryptonInputBox.Show(
-                ktxtPromptText.Text, 
-                ktxtCaptionText.Text, 
-                ktxtDefaultResponseText.Text, 
-                ktxtCueText.Text, 
-                kcbCueTextColour.SelectedColor, 
-                _cueTypeface, 
-                kchkUsePasswordOption.Checked
-                );
+            KryptonInputBoxData data = new KryptonInputBoxData() {
+                Caption = ktxtCaptionText.Text,
+                CueColor = kcbCueTextColour.SelectedColor,
+                CueText = ktxtCueText.Text,
+                CueTypeface = _cueTypeface,
+                DefaultResponse = ktxtDefaultResponseText.Text,
+                Owner = this,
+                Prompt = ktxtPromptText.Text,
+                UsePasswordOption = kchkUsePasswordOption.Checked
+            };
+
+            var res = KryptonInputBox.Show(data);
             KryptonMessageBox.Show(this, res, @"Result was :");
         }
 

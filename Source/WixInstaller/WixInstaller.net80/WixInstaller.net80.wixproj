@@ -1,7 +1,7 @@
 ﻿<Project>
   <Import Project="Sdk.props" Sdk="WixToolset.Sdk" Version="4.0.1" />
   <PropertyGroup>
-    <OutputName>Samples.v80.23.11.318.Net80</OutputName>
+    <OutputName>Samples.v80.23.8.233-beta.Net80</OutputName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DefineConstants>Debug</DefineConstants>
@@ -14,9 +14,9 @@
     <None Include="WixInstaller.net80.wax" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="WixToolset.Util.wixext" Version="4.0.3" />
-    <PackageReference Include="WixToolset.UI.wixext" Version="4.0.3" />
-    <PackageReference Include="WixToolset.Heat" Version="4.0.3" />
+    <PackageReference Include="WixToolset.Util.wixext" Version="5.0.0" />
+    <PackageReference Include="WixToolset.UI.wixext" Version="5.0.0" />
+    <PackageReference Include="WixToolset.Heat" Version="5.0.0" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="WixToolset.Sdk" Version="4.0.1" />
   <Target Name="BeforeBuild">

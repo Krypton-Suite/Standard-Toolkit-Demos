@@ -98,10 +98,10 @@ namespace KryptonLinkLabelExamples
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel1.Location = new System.Drawing.Point(164, 42);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Orientation = Krypton.Toolkit.VisualOrientation.Left;
+            this.kryptonLabel1.OverrideFocus.DrawFocus = Krypton.Toolkit.InheritBool.False;
             this.kryptonLabel1.Size = new System.Drawing.Size(24, 138);
             this.kryptonLabel1.TabIndex = 4;
             this.kryptonLabel1.Values.ExtraText = "Left";
@@ -111,7 +111,6 @@ namespace KryptonLinkLabelExamples
             // 
             // label4Professional
             // 
-            this.label4Professional.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.label4Professional.Location = new System.Drawing.Point(14, 137);
             this.label4Professional.Name = "label4Professional";
             this.label4Professional.Orientation = Krypton.Toolkit.VisualOrientation.Bottom;
@@ -124,7 +123,6 @@ namespace KryptonLinkLabelExamples
             // 
             // label3Professional
             // 
-            this.label3Professional.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.label3Professional.Location = new System.Drawing.Point(14, 110);
             this.label3Professional.Name = "label3Professional";
             this.label3Professional.Size = new System.Drawing.Size(130, 24);
@@ -136,7 +134,6 @@ namespace KryptonLinkLabelExamples
             // 
             // label5Professional
             // 
-            this.label5Professional.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.label5Professional.Location = new System.Drawing.Point(191, 42);
             this.label5Professional.Name = "label5Professional";
             this.label5Professional.Orientation = Krypton.Toolkit.VisualOrientation.Right;
@@ -159,7 +156,6 @@ namespace KryptonLinkLabelExamples
             // 
             // label1Professional
             // 
-            this.label1Professional.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.label1Professional.Location = new System.Drawing.Point(14, 62);
             this.label1Professional.Name = "label1Professional";
             this.label1Professional.Size = new System.Drawing.Size(114, 24);
@@ -181,40 +177,28 @@ namespace KryptonLinkLabelExamples
             // 
             // label3Custom
             // 
-            this.label3Custom.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.label3Custom.Location = new System.Drawing.Point(14, 125);
             this.label3Custom.Name = "label3Custom";
             this.label3Custom.OverrideNotVisited.ShortText.Color1 = System.Drawing.Color.White;
             this.label3Custom.OverrideNotVisited.ShortText.Color2 = System.Drawing.Color.Blue;
-            this.label3Custom.OverrideNotVisited.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.label3Custom.OverrideNotVisited.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.label3Custom.OverridePressed.ShortText.Color1 = System.Drawing.Color.White;
             this.label3Custom.OverridePressed.ShortText.Color2 = System.Drawing.Color.Red;
-            this.label3Custom.OverridePressed.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.label3Custom.OverridePressed.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.label3Custom.OverrideVisited.ShortText.Color1 = System.Drawing.Color.White;
             this.label3Custom.OverrideVisited.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label3Custom.OverrideVisited.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.label3Custom.OverrideVisited.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.label3Custom.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.label3Custom.Size = new System.Drawing.Size(202, 65);
-            this.label3Custom.StateNormal.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
             this.label3Custom.StateNormal.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.label3Custom.StateNormal.LongText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.label3Custom.StateNormal.LongText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label3Custom.StateNormal.LongText.ColorAngle = 45F;
             this.label3Custom.StateNormal.LongText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Sigma;
             this.label3Custom.StateNormal.LongText.Font = new System.Drawing.Font("Verdana", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3Custom.StateNormal.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.label3Custom.StateNormal.LongText.MultiLine = Krypton.Toolkit.InheritBool.True;
             this.label3Custom.StateNormal.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.label3Custom.StateNormal.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.label3Custom.StateNormal.ShortText.ColorAngle = 45F;
             this.label3Custom.StateNormal.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
             this.label3Custom.StateNormal.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3Custom.StateNormal.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.label3Custom.StateNormal.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.label3Custom.StateNormal.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.label3Custom.TabIndex = 2;
             this.label3Custom.Values.ExtraText = "Extra Text\r\nOver Multi\r\nLines";
             this.label3Custom.Values.Image = global::KryptonLinkLabelExamples.Properties.Resources.sidebar_icon;
@@ -223,7 +207,6 @@ namespace KryptonLinkLabelExamples
             // 
             // label2Custom
             // 
-            this.label2Custom.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.label2Custom.Location = new System.Drawing.Point(14, 76);
             this.label2Custom.Name = "label2Custom";
             this.label2Custom.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
@@ -232,11 +215,7 @@ namespace KryptonLinkLabelExamples
             this.label2Custom.StateNormal.LongText.Color2 = System.Drawing.Color.White;
             this.label2Custom.StateNormal.LongText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.HalfCut;
             this.label2Custom.StateNormal.LongText.Font = new System.Drawing.Font("Verdana", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2Custom.StateNormal.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.label2Custom.StateNormal.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.label2Custom.StateNormal.ShortText.Font = new System.Drawing.Font("Verdana", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2Custom.StateNormal.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.label2Custom.StateNormal.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.label2Custom.TabIndex = 1;
             this.label2Custom.Values.Image = ((System.Drawing.Image)(resources.GetObject("label2Custom.Values.Image")));
             this.label2Custom.Values.Text = "Image Text";
@@ -244,7 +223,6 @@ namespace KryptonLinkLabelExamples
             // 
             // label1Custom
             // 
-            this.label1Custom.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.label1Custom.Location = new System.Drawing.Point(14, 27);
             this.label1Custom.Name = "label1Custom";
             this.label1Custom.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
@@ -253,14 +231,10 @@ namespace KryptonLinkLabelExamples
             this.label1Custom.StateNormal.LongText.Color2 = System.Drawing.Color.White;
             this.label1Custom.StateNormal.LongText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.HalfCut;
             this.label1Custom.StateNormal.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1Custom.StateNormal.LongText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.label1Custom.StateNormal.LongText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.label1Custom.StateNormal.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1Custom.StateNormal.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label1Custom.StateNormal.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Rounded;
             this.label1Custom.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1Custom.StateNormal.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.label1Custom.StateNormal.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.label1Custom.TabIndex = 0;
             this.label1Custom.Values.ExtraText = "Extra Text";
             this.label1Custom.Values.Image = ((System.Drawing.Image)(resources.GetObject("label1Custom.Values.Image")));
@@ -269,6 +243,7 @@ namespace KryptonLinkLabelExamples
             // 
             // kryptonManager1
             // 
+            this.kryptonManager1.GlobalApplyToolstrips = false;
             this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
             // 
             // Form1

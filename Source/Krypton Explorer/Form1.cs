@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -28,7 +28,7 @@ namespace KryptonExplorer
     {
         #region Variables
 
-        private Version _currentVersion = new(80, int.Parse(DateTime.Now.ToString("yy")), int.Parse(DateTime.Now.ToString("MM")), 318);
+        private Version _currentVersion = new(80, int.Parse(DateTime.Now.ToString("yy")), 08, DateTime.Now.DayOfYear);
 
         private Settings _settings = new();
 
@@ -397,7 +397,7 @@ namespace KryptonExplorer
         }
 
         private void kbtnOpenApplicationPath_Click(object sender, EventArgs e) =>
-            Process.Start(Application.ExecutablePath); //@"explorer.exe", @"\{Application.ExecutablePath}");
+            GlobalToolkitUtilities.LaunchProcess(Application.ExecutablePath); //@"explorer.exe", @"\{Application.ExecutablePath}");
 
         private void kllKryptonScrollBars_LinkClicked(object sender, EventArgs e) =>
             LaunchApplication(@"Krypton Scrollbar Examples");
@@ -413,7 +413,7 @@ namespace KryptonExplorer
             try
             {
                 Cursor = Cursors.AppStarting;
-                Process.Start($@".\{exampleName}.exe");
+                GlobalToolkitUtilities.LaunchProcess($@".\{exampleName}.exe");
             }
             catch (Exception ex)
             {
@@ -650,5 +650,34 @@ namespace KryptonExplorer
         private void linkKryptonStringCollector_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton String Collection Editor Examples");
 
         private void linkKryptonTableLayout_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton TableLayoutPanel Examples");
+
+        private void klblKryptonAboutToolkit_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton About Toolkit Example");
+
+        private void linkKryptonCommandLinkButton_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Command Link Button Examples");
+
+        private void linkWorkspaceMemoEditor_LinkClicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkNavigatorModes_LinkClicked_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkDateTimePicker_LinkClicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkExpandingHeaderGroupsSplitters_LinkClicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkExpandingHeaderGroupsDockStyle_LinkClicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

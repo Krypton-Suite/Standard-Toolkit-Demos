@@ -232,8 +232,6 @@
             this.kryptonBreadCrumbItem39 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonBreadCrumbItem40 = new Krypton.Toolkit.KryptonBreadCrumbItem();
             this.kryptonBreadCrumbItem41 = new Krypton.Toolkit.KryptonBreadCrumbItem();
-            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
-            this.kryptonPaletteOffice2007Blue = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -1247,19 +1245,6 @@
             // 
             this.kryptonBreadCrumbItem41.ShortText = "Club Moss";
             // 
-            // kryptonManager1
-            // 
-            this.kryptonManager1.GlobalPalette = this.kryptonPaletteOffice2007Blue;
-            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            // 
-            // kryptonPaletteOffice2007Blue
-            // 
-            this.kryptonPaletteOffice2007Blue.BaseFont = new System.Drawing.Font("Segoe UI", 9F);
-            this.kryptonPaletteOffice2007Blue.BaseFontSize = 9F;
-            this.kryptonPaletteOffice2007Blue.BasePaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365Blue;
-            this.kryptonPaletteOffice2007Blue.BasePaletteType = Krypton.Toolkit.BasePaletteType.Custom;
-            this.kryptonPaletteOffice2007Blue.ThemeName = null;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -1290,7 +1275,6 @@
         #endregion
 
         private Krypton.Toolkit.KryptonBreadCrumb kryptonBreadCrumb1;
-        private Krypton.Toolkit.KryptonManager kryptonManager1;
         private System.Windows.Forms.GroupBox groupBox1;
         private Krypton.Toolkit.KryptonBreadCrumb kryptonBreadCrumb3;
         private Krypton.Toolkit.KryptonBreadCrumb kryptonBreadCrumb2;
@@ -1302,7 +1286,6 @@
         private Krypton.Toolkit.KryptonContextMenuItem menuSpider;
         private Krypton.Toolkit.KryptonContextMenuItem menuKangeroo;
         private Krypton.Toolkit.KryptonContextMenuItem menuFern;
-        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPaletteOffice2007Blue;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.PropertyGrid propertyGrid;
         private System.Windows.Forms.Button buttonClose;

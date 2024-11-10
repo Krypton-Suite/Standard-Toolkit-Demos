@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -20,7 +20,11 @@ namespace KryptonDateTimePickerExamples
 {
     public partial class Form1 : Form
     {
-        public Form1() => InitializeComponent();
+        public Form1()
+        {
+            InitializeComponent();
+            _ = dtpNormalLong.ViewManager;
+        }
 
         private void Form1_Load(object sender, EventArgs e) =>
             // Setup the property grid to edit this date time picker control
@@ -30,27 +34,27 @@ namespace KryptonDateTimePickerExamples
             // Setup the property grid to edit this date time picker control
             propertyGrid.SelectedObject = new KryptonDateTimePickerProxy(sender as KryptonDateTimePicker);
 
-        private void rbOffice2010Blue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2010Blue;
+        private void rbOffice2010Blue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BaseRenderMode = RendererMode.Microsoft365;
 
-        private void rbOffice2010Silver_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2010Silver;
+        private void rbOffice2010Silver_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BaseRenderMode = RendererMode.Office2010;
 
-        private void rbOffice2010Black_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2010Black;
+        private void rbOffice2010Black_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BaseRenderMode = RendererMode.Office2010;
 
-        private void rbOffice2007Blue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2007Blue;
+        private void rbOffice2007Blue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BaseRenderMode = RendererMode.Office2007;
 
-        private void rbOffice2007Silver_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2007Silver;
+        private void rbOffice2007Silver_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BaseRenderMode = RendererMode.Office2007;
 
-        private void rbOffice2007Black_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2007Black;
+        private void rbOffice2007Black_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BaseRenderMode = RendererMode.Office2007;
 
-        private void rbSparkleBlue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.SparkleBlue;
+        private void rbSparkleBlue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BaseRenderMode = RendererMode.Sparkle;
 
-        private void rbSparkleOrange_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.SparkleOrange;
+        private void rbSparkleOrange_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BaseRenderMode = RendererMode.Sparkle;
 
-        private void rbSparklePurple_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.SparklePurple;
+        private void rbSparklePurple_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BaseRenderMode = RendererMode.Sparkle;
 
-        private void rbOffice2003_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.ProfessionalOffice2003;
+        private void rbOffice2003_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BaseRenderMode = RendererMode.Office2007;
 
-        private void rbSystem_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.ProfessionalSystem;
+        private void rbSystem_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BaseRenderMode = RendererMode.Professional;
 
         private void buttonSpecAny1_Click(object sender, EventArgs e) => dtpNormalTime.Value = DateTime.Now;
 
@@ -163,10 +167,10 @@ namespace KryptonDateTimePickerExamples
         /// </summary>
         [Category("Visuals - MonthCalendar")]
         [Description("Today's date.")]
-        public DateTime CalendarTodayDate
+        public DateTime? CalendarTodayDate
         {
             get => _dateTimePicker.CalendarTodayDate;
-            set => _dateTimePicker.CalendarTodayDate = value;
+            set => _dateTimePicker.CalendarTodayDate = (DateTime)value!;
         }
 
         /// <summary>
@@ -397,10 +401,10 @@ namespace KryptonDateTimePickerExamples
         [Category("Visuals - DateTimePicker")]
         [Description("Custom palette applied to drawing.")]
         [DefaultValue(null)]
-        public PaletteBase Palette
+        public KryptonCustomPaletteBase Palette
         {
-            get => _dateTimePicker.Palette;
-            set => _dateTimePicker.Palette = value;
+            get => _dateTimePicker.LocalCustomPalette;
+            set => _dateTimePicker.LocalCustomPalette = value;
         }
 
         /// <summary>

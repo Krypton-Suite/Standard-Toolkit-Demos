@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -123,7 +123,7 @@ namespace CustomControlUsingPalettes
 
                 // Get the color and font used to draw the text
                 Color textColor = _palette.GetContentShortTextColor1(PaletteContentStyle.ButtonStandalone, buttonState);
-                Font textFont = _palette.GetContentShortTextFont(PaletteContentStyle.ButtonStandalone, buttonState);
+                Font? textFont = _palette.GetContentShortTextFont(PaletteContentStyle.ButtonStandalone, buttonState);
 
                 /////////////////////////////////////////////////////
                 // Perform actual drawing using the palette values //
@@ -156,7 +156,7 @@ namespace CustomControlUsingPalettes
                     // Draw the text in about the center of the control
                     using (var textBrush = new SolidBrush(textColor))
                     {
-                        e.Graphics.DrawString("Click me!", textFont, textBrush, Width / 2 - 10, Height / 2 - 5);
+                        e.Graphics.DrawString("Click me!", textFont, textBrush, Width / 2.0f - 10, Height / 2.0f - 5);
                     }
                 }
 
@@ -197,7 +197,7 @@ namespace CustomControlUsingPalettes
             fishPath.AddLine(fishRect.Left, fishRect.Top, fishRect.Left + w6, fishRect.Top + h4);
 
             // Create the curving body of the fish
-            fishPath.AddCurve(new Point[]{ new Point(fishRect.Left + w6, fishRect.Top + h4),
+            fishPath.AddCurve(new[]{ new Point(fishRect.Left + w6, fishRect.Top + h4),
                                            new Point(fishRect.Right - w3, fishRect.Top),
                                            new Point(fishRect.Right, fishRect.Top + h2),
                                            new Point(fishRect.Right - w3, fishRect.Bottom),

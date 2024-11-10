@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -38,19 +38,19 @@ namespace KryptonDataGridViewExamples
             propertyGrid.SelectedObject = new KryptonDataGridViewProxy(kryptonDataGridView1);
         }
 
-        private void rbOffice2010Blue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2010Blue;
+        private void rbOffice2010Blue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteType = BasePaletteType.Office2010;
 
-        private void rbOffice2007Blue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2007Blue;
+        private void rbOffice2007Blue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteType = BasePaletteType.Office2007;
 
-        private void rbOffice2007Silver_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2007Silver;
+        private void rbOffice2007Silver_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteType = BasePaletteType.Office2007;
 
-        private void rbOffice2007Black_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.Office2007Black;
+        private void rbOffice2007Black_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteType = BasePaletteType.Office2007;
 
-        private void rbOffice2003_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.ProfessionalOffice2003;
+        private void rbOffice2003_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteType = BasePaletteType.Professional;
 
-        private void rbSystem_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.ProfessionalSystem;
+        private void rbSystem_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteType = BasePaletteType.Professional;
 
-        private void rbSparkle_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteMode = PaletteMode.SparkleBlue;
+        private void rbSparkle_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteType = BasePaletteType.Sparkle;
 
         private void rbStyleList_CheckedChanged(object sender, EventArgs e) => kryptonDataGridView1.GridStyles.Style = DataGridViewStyle.List;
 

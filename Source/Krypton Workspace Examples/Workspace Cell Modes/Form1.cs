@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -59,31 +59,57 @@ namespace WorkspaceCellModes
 
             // Work out the new mode we want
             if (radioBarTabGroup.Checked)
+            {
                 mode = NavigatorMode.BarTabGroup;
+            }
             else if (radioBarRibbonTabGroup.Checked)
+            {
                 mode = NavigatorMode.BarRibbonTabGroup;
+            }
             else if (radioBarCheckButtonGroupInside.Checked)
+            {
                 mode = NavigatorMode.BarCheckButtonGroupInside;
+            }
             else if (radioBarCheckButtonGroupOutside.Checked)
+            {
                 mode = NavigatorMode.BarCheckButtonGroupOutside;
+            }
             else if (radioHeaderBarCheckButtonGroup.Checked)
+            {
                 mode = NavigatorMode.HeaderBarCheckButtonGroup;
+            }
             else if (radioHeaderBarCheckButtonHeaderGroup.Checked)
+            {
                 mode = NavigatorMode.HeaderBarCheckButtonHeaderGroup;
+            }
             else if (radioStackCheckButtonGroup.Checked)
+            {
                 mode = NavigatorMode.StackCheckButtonGroup;
+            }
             else if (radioStackCheckButtonHeaderGroup.Checked)
+            {
                 mode = NavigatorMode.StackCheckButtonHeaderGroup;
+            }
             else if (radioOutlookFull.Checked)
+            {
                 mode = NavigatorMode.OutlookFull;
+            }
             else if (radioOutlookMini.Checked)
+            {
                 mode = NavigatorMode.OutlookMini;
+            }
             else if (radioHeaderGroup.Checked)
+            {
                 mode = NavigatorMode.HeaderGroup;
+            }
             else if (radioGroup.Checked)
+            {
                 mode = NavigatorMode.Group;
+            }
             else if (radioPanel.Checked)
+            {
                 mode = NavigatorMode.Panel;
+            }
 
             UpdateCellMode(mode);
         }

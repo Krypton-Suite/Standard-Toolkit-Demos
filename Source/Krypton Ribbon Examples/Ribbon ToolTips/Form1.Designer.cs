@@ -64,6 +64,7 @@ namespace RibbonToolTips
             this.kryptonPanel = new Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel = new Krypton.Toolkit.KryptonLabel();
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonRibbonTab1 = new Krypton.Ribbon.KryptonRibbonTab();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).BeginInit();
             this.cmsPaste.SuspendLayout();
             this.cmsBusinessCards.SuspendLayout();
@@ -74,27 +75,47 @@ namespace RibbonToolTips
             // 
             // kryptonRibbon1
             // 
-            this.kryptonRibbon1.AllowFormIntegrate = true;
             this.kryptonRibbon1.HideRibbonSize = new System.Drawing.Size(300, 150);
             this.kryptonRibbon1.InDesignHelperMode = true;
-            this.kryptonRibbon1.IsInitialized = true;
-            this.kryptonRibbon1.IsInitializing = false;
             this.kryptonRibbon1.Name = "kryptonRibbon1";
             this.kryptonRibbon1.QATButtons.AddRange(new System.ComponentModel.Component[] {
             this.qatSave,
             this.qatUndo,
             this.qatRedo});
-            this.kryptonRibbon1.RibbonAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
-            this.kryptonRibbon1.RibbonAppButton.AppButtonShowRecentDocs = false;
-            this.kryptonRibbon1.RibbonAppButton.AppButtonToolTipBody = "  Click here to open, save, or print,\r\n  and to see everything else you can\r\n  do" +
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonShowRecentDocs = false;
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonToolTipBody = "  Click here to open, save, or print,\r\n  and to see everything else you can\r\n  do" +
     " with your document.";
-            this.kryptonRibbon1.RibbonAppButton.AppButtonToolTipTitle = "Office Button";
+            this.kryptonRibbon1.RibbonFileAppButton.AppButtonToolTipTitle = "Office Button";
             this.kryptonRibbon1.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
-            this.tabHome});
-            this.kryptonRibbon1.SelectedContext = null;
+            this.tabHome,
+            this.kryptonRibbonTab1});
             this.kryptonRibbon1.SelectedTab = this.tabHome;
-            this.kryptonRibbon1.Size = new System.Drawing.Size(993, 135);
+            this.kryptonRibbon1.Size = new System.Drawing.Size(1009, 136);
+            this.kryptonRibbon1.StateContextTracking.RibbonGroupArea.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.kryptonRibbon1.StateContextTracking.RibbonGroupArea.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.kryptonRibbon1.StateContextTracking.RibbonGroupArea.BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.kryptonRibbon1.StateContextTracking.RibbonGroupArea.BackColor4 = System.Drawing.Color.Empty;
+            this.kryptonRibbon1.StateContextTracking.RibbonGroupArea.BackColor5 = System.Drawing.Color.Empty;
+            this.kryptonRibbon1.StateContextTracking.RibbonGroupNormalTitle.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.kryptonRibbon1.StateContextTracking.RibbonGroupNormalTitle.BackColor2 = System.Drawing.Color.Empty;
+            this.kryptonRibbon1.StateContextTracking.RibbonGroupNormalTitle.BackColor3 = System.Drawing.Color.Empty;
+            this.kryptonRibbon1.StateContextTracking.RibbonGroupNormalTitle.BackColor4 = System.Drawing.Color.Empty;
+            this.kryptonRibbon1.StateContextTracking.RibbonGroupNormalTitle.BackColor5 = System.Drawing.Color.Empty;
+            this.kryptonRibbon1.StateContextTracking.RibbonGroupNormalTitle.TextColor = System.Drawing.Color.Empty;
+            this.kryptonRibbon1.StateContextTracking.RibbonTab.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.kryptonRibbon1.StateContextTracking.RibbonTab.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.kryptonRibbon1.StateContextTracking.RibbonTab.BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.kryptonRibbon1.StateContextTracking.RibbonTab.BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.kryptonRibbon1.StateContextTracking.RibbonTab.BackColor5 = System.Drawing.Color.Empty;
+            this.kryptonRibbon1.StateContextTracking.RibbonTab.TextColor = System.Drawing.Color.Empty;
+            this.kryptonRibbon1.StateTracking.RibbonGroupNormalTitle.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.kryptonRibbon1.StateTracking.RibbonGroupNormalTitle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.kryptonRibbon1.StateTracking.RibbonGroupNormalTitle.BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.kryptonRibbon1.StateTracking.RibbonGroupNormalTitle.BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.kryptonRibbon1.StateTracking.RibbonGroupNormalTitle.BackColor5 = System.Drawing.Color.Empty;
+            this.kryptonRibbon1.StateTracking.RibbonGroupNormalTitle.TextColor = System.Drawing.Color.Empty;
             this.kryptonRibbon1.TabIndex = 0;
             // 
             // qatSave
@@ -367,10 +388,10 @@ namespace RibbonToolTips
             // 
             this.kryptonPanel.Controls.Add(this.kryptonLabel);
             this.kryptonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel.Location = new System.Drawing.Point(0, 135);
+            this.kryptonPanel.Location = new System.Drawing.Point(0, 136);
             this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel.Name = "kryptonPanel";
-            this.kryptonPanel.Size = new System.Drawing.Size(993, 227);
+            this.kryptonPanel.Size = new System.Drawing.Size(1009, 242);
             this.kryptonPanel.TabIndex = 1;
             // 
             // kryptonLabel
@@ -384,13 +405,14 @@ namespace RibbonToolTips
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Black;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(993, 362);
+            this.ClientSize = new System.Drawing.Size(1009, 378);
+            this.CloseBox = false;
             this.Controls.Add(this.kryptonPanel);
             this.Controls.Add(this.kryptonRibbon1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -445,6 +467,7 @@ namespace RibbonToolTips
         private Krypton.Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines1;
         private Krypton.Ribbon.KryptonRibbonGroupNumericUpDown kryptonRibbonGroupNumericUpDown1;
         private Krypton.Ribbon.KryptonRibbonGroupComboBox kryptonRibbonGroupComboBox1;
+        private Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab1;
     }
 }
 

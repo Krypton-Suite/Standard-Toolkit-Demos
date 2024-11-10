@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -63,7 +63,9 @@ namespace WorkspacePersistence
         private void bSaveToFile_Click(object sender, EventArgs e)
         {
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
                 kryptonWorkspace.SaveLayoutToFile(saveFileDialog.FileName);
+            }
         }
 
         private void bLoadFromFile_Click(object sender, EventArgs e)
@@ -105,7 +107,9 @@ namespace WorkspacePersistence
                 e.Page.Padding = new Padding(5);
             }
             else
+            {
                 rtb = (KryptonRichTextBox)e.Page.Controls[0];
+            }
 
             // Move past the current xml element to the child CData
             e.XmlReader.Read();
@@ -122,7 +126,9 @@ namespace WorkspacePersistence
         private void kryptonWorkspace_PagesUnmatched(object sender, PagesUnmatchedEventArgs e)
         {
             foreach (KryptonPage page in e.Unmatched)
+            {
                 Console.WriteLine("Unmatched Page {0}", page.Text);
+            }
         }
 
         private void buttonAddPage_Click(object sender, EventArgs e)

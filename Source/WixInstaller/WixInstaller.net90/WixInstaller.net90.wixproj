@@ -1,0 +1,29 @@
+﻿<Project>
+  <Import Project="Sdk.props" Sdk="WixToolset.Sdk" Version="4.0.1" />
+  <PropertyGroup>
+    <OutputName>Samples.v90.24.2.52-beta.Net90</OutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DefineConstants>Debug</DefineConstants>
+    <OutputPath>..\..\..\Binaries\Installers\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="License.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WixInstaller.net90.wax" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="WixToolset.Util.wixext" Version="5.0.0" />
+    <PackageReference Include="WixToolset.UI.wixext" Version="5.0.0" />
+    <PackageReference Include="WixToolset.Heat" Version="5.0.0" />
+  </ItemGroup>
+  <Import Project="Sdk.targets" Sdk="WixToolset.Sdk" Version="4.0.1" />
+  <Target Name="BeforeBuild">
+    <PropertyGroup>
+      <LinkerBaseInputPaths>..\..\..\Binaries\Krypton Demos\Release\net9.0-windows</LinkerBaseInputPaths>
+      <DefineConstants>BasePath90=..\..\..\Binaries\Krypton Demos\Release\net9.0-windows</DefineConstants>
+    </PropertyGroup>
+    <HeatDirectory OutputFile="BasePath90.wxs" DirectoryRefId="KryptonToolkitDemosDir" ComponentGroupName="BasePath90" SuppressCom="true" Directory="..\..\..\Binaries\Krypton Demos\Release\net9.0-windows" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="true" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.BasePath90" Transforms="..\RemovePdbs.xslt" />
+  </Target>
+</Project>

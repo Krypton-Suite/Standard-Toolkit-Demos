@@ -274,7 +274,7 @@ namespace CustomControlUsingRenderers
             // 
             // kryptonPaletteCustom
             // 
-            this.kryptonPaletteCustom.BasePaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.kryptonPaletteCustom.BasePaletteType = Krypton.Toolkit.BasePaletteType.Office2007;
             this.kryptonPaletteCustom.BaseRenderMode = Krypton.Toolkit.RendererMode.Inherit;
             this.kryptonPaletteCustom.ButtonStyles.ButtonStandalone.StateCheckedNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.kryptonPaletteCustom.ButtonStyles.ButtonStandalone.StateCheckedNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));

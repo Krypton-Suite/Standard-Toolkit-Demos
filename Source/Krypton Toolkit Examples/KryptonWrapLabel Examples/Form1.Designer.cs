@@ -144,13 +144,9 @@
             // 
             // kpgLinkWrappedLabel
             // 
-            this.kpgLinkWrappedLabel.CategoryForeColor = System.Drawing.Color.White;
             this.kpgLinkWrappedLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kpgLinkWrappedLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.kpgLinkWrappedLabel.HelpBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(108)))), ((int)(((byte)(135)))));
-            this.kpgLinkWrappedLabel.HelpForeColor = System.Drawing.Color.White;
             this.kpgLinkWrappedLabel.HelpVisible = false;
-            this.kpgLinkWrappedLabel.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(108)))), ((int)(((byte)(135)))));
             this.kpgLinkWrappedLabel.Location = new System.Drawing.Point(0, 0);
             this.kpgLinkWrappedLabel.Name = "kpgLinkWrappedLabel";
             this.kpgLinkWrappedLabel.SelectedObject = this.klwlblTest;

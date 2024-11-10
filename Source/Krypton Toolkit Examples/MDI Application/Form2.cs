@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -25,7 +25,7 @@ namespace MDIApplication
             {
                 // Remember to unhook from static event, otherwise 
                 // this object cannot be garbage collected later on
-                KryptonManager.GlobalPaletteChanged -= new EventHandler(OnPaletteChanged);
+                KryptonManager.GlobalPaletteChanged -= OnPaletteChanged;
 
                 components?.Dispose();
             }
@@ -38,7 +38,7 @@ namespace MDIApplication
             UpdateRadioButtons();
 
             // Hook into changes in the global palette
-            KryptonManager.GlobalPaletteChanged += new EventHandler(OnPaletteChanged);
+            KryptonManager.GlobalPaletteChanged += OnPaletteChanged;
         }
 
         private void radio2010Blue_CheckedChanged(object sender, EventArgs e)

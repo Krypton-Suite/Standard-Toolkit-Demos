@@ -1,7 +1,19 @@
 # <img src="https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png?raw=true"> Standard Toolkit Demos - ChangeLog
 
+## 2024-11-xx - Build 2411 - November
+* Resolved [#199](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/199), ListView example Theme combo box does not work
+* Resolved [#196](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/196), Demo apps are broken due to **[Breaking Changes]** due to them usage, not fixed
+* Add `KryptonOutlookGrid` example
+* Add `KryptonToastNotification` examples
+* Add `KryptonFormFading` example
+* Resolved [#168](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/168), Recent changes in the Alpha toolkit have not been retrofitted into the Toolkit Examples
+* Add `KryptonCommandLinkButton` example
+* Add `KryptonAboutToolkit` example
+* Removed support for .NET 7
+* Add support for .NET 9
+
 ## 2023-11-14 - Build 2311 - November 2023
-* Re-layout in alphabetical order the Components view in the Launch Explorer
+* Relayout in alphabetical order the Components view in the Launch Explorer
 * Add missing Examples to launcher
 * Addition of new example for Progress Bars
 * Update KryptonColour Example to show usage of Alpha colour selection

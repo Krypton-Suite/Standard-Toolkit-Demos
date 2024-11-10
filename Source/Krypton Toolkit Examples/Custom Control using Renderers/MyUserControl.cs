@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -150,7 +150,7 @@ namespace CustomControlUsingRenderers
                 // is over the control and currently being pressed down or not.
                 PaletteState buttonState = GetButtonState();
 
-                // Create a rectangle inset, this is where we will draw a button
+                // Create a Rectangle inset, this is where we will draw a button
                 Rectangle innerRect = ClientRectangle;
                 innerRect.Inflate(-20, -20);
 
@@ -168,7 +168,7 @@ namespace CustomControlUsingRenderers
                 // Ask the renderer to work out how the Content values will be laid out and
                 // return a memento object that we cache for use when actually performing painting
                 _mementoContent = renderer.RenderStandardContent.LayoutContent(viewContext, innerRect,  _paletteContent, 
-                    this, Orientation, buttonState, false, false);
+                    this, Orientation, buttonState);
             }
 
             base.OnLayout(e);
@@ -202,7 +202,7 @@ namespace CustomControlUsingRenderers
                 // is over the control if the mouse button is pressed down or not.
                 PaletteState buttonState = GetButtonState();
 
-                // Create a rectangle inset, this is where we will draw a button
+                // Create a Rectangle inset, this is where we will draw a button
                 Rectangle innerRect = ClientRectangle;
                 innerRect.Inflate(-20, -20);
 
@@ -242,7 +242,7 @@ namespace CustomControlUsingRenderers
                     // Last of all we draw the content over the top of the border and background
                     renderer.RenderStandardContent.DrawContent(renderContext, innerRect, 
                         _paletteContent, _mementoContent, 
-                        Orientation, buttonState, false, false, true);
+                        Orientation, buttonState, true);
                 }
             }
 

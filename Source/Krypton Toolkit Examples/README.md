@@ -16,6 +16,7 @@
 	* [[KryptonBreadCrumb Examples](#kryptonbreadcrumb-examples)
 	* [KryptonButton Examples](#kryptonbutton-examples)
 	* [Krypton UAC Button](#krypton-uac-button)
+	* [KryptonAboutToolkit Example](#krypton-about-toolkit-example)
 	* [KryptonCheckBox Examples](#kryptoncheckbox-examples)
 	* [KryptonCheckButton Examples](#kryptoncheckbutton-examples)
 	* [KryptonCheckedListBox Examples](#kryptoncheckedlistbox-examples)
@@ -24,6 +25,7 @@
 	* [KryptonColorDialog](#kryptoncolordialog)
 	* [KryptonComboBox](#kryptoncombobox)
 	* [KryptonCommand](#kryptoncommand)
+	* [KryptonCommandLinkButton](#kryptoncommandlinkbutton)
 	* [KryptonContextMenu](#kryptoncontextmenu)
 	* [KryptonDataGridView](#kryptondatagridview)
 	* [KryptonDateTimePicker](#kryptondatetimepicker)
@@ -32,6 +34,7 @@
 	* [KryptonFolderBrowserDialog](#kryptonfolderbrowserdialog)
 	* [KryptonFontDialog](#kryptonfontdialog)
 	* [KryptonForm](#kryptonform)
+	* [KryptonFormFading](#kryptonformfading)
 	* [KryptonGroup](#kryptongroup)
 	* [KryptonGroupBox](#kryptongroupbox)
 	* [KryptonHeader](#kryptonheader)
@@ -47,6 +50,7 @@
 	* [KryptonMonthCalendar](#kryptonmonthcalendar)
 	* [KryptonNumericUpDown](#kryptonnumericupdown)
 	* [KryptonOpenFileDialog](#kryptonopenfiledialog)
+	* [KryptonOutlookGrid](#kryptonoutlookgrid)
 	* [KryptonPalette](#kryptonpalette)
 	* [KryptonPanel](#kryptonpanel)
 	* [KryptonPrintDialog](#kryptonprintdialog)
@@ -61,6 +65,7 @@
 	* [KryptonTableLayoutPanel](#kryptontablelayoutpanel)
 	* [KryptonTaskDialog](#kryptontaskdialog)
 	* [KryptonTextBox](#kryptontextbox)
+	* [KryptonToastNotification](#kryptontoastnotification)
 	* [KryptonTrackBar](#kryptontrackbar)
 	* [KryptonTreeView](#kryptontreeview)
 	* [KryptonWebBrowser](#kryptonwebbrowser)
@@ -114,13 +119,15 @@ There are 2 set of solutions in these projects:
 
 ## KryptonBorderEdge Examples
 ![KryptonBorderEdge Examples](KryptonBorderEdge%20Examples/example.png)
-## [KryptonBreadCrumb Examples
+## KryptonBreadCrumb Examples
 ![KryptonBreadCrumb Examples](KryptonBreadCrumb%20Examples/example.png)
 ## KryptonButton Examples
 ![KryptonButton Examples](KryptonButton%20Examples/example.png)
 ![KryptonSplitButton](KryptonButton%20Examples/KryptonSplitButtonDemo.gif)
 ## Krypton UAC Button
 ![Krypton UAC Button](Krypton%20UAC%20Button/UACButtonUsage.gif)
+## Krypton About Toolkit Example
+![Krypton About Toolkit Example](KryptonAboutToolkit%20Example/Example.gif)
 ## KryptonCheckBox Examples
 ![KryptonCheckBox Examples](KryptonCheckBox%20Examples/example.png)
 ## KryptonCheckButton Examples
@@ -137,6 +144,8 @@ There are 2 set of solutions in these projects:
 ![KryptonComboBox Examples](KryptonComboBox%20Examples/example.png)
 ## KryptonCommand
 ![KryptonCommand Examples](KryptonCommand%20Examples/example.png)
+## KryptonCommandLinkButton
+![KryptonCommandLinkButton Examples](KryptonCommandLinkButton%20Examples/Example.png)
 ## KryptonContextMenu
 ![KryptonContextMenu Examples](KryptonContextMenu%20Examples/example.png)
 ## KryptonDataGridView
@@ -152,7 +161,9 @@ There are 2 set of solutions in these projects:
 ## KryptonFontDialog
 ![KryptonFontDialog Example](KryptonFontDialog%20Example/example.png)
 ## KryptonForm
-![KryptonForm Examples](KryptonForm%20Examples/example.png)
+![KryptonForm Examples](KryptonForm%20Examples/example.gif)
+## KryptonFormFading
+![KryptonFormFading Example](KryptonFormFading%20Example/Example.gif)
 ## KryptonGroup
 ![KryptonGroup Examples](KryptonGroup%20Examples/example.png)
 ## KryptonGroupBox
@@ -187,6 +198,8 @@ There are 2 set of solutions in these projects:
 ![KryptonNumericUpDown Examples](KryptonNumericUpDown%20Examples/example.png)
 ## KryptonOpenFileDialog
 ![KryptonOpenFileDialog Example](KryptonOpenFileDialog%20Example/example.png)
+## KryptonOutlookGrid
+![KryptonOutlookGrid Example](KryptonOutlookGrid%20Example/KryptonOutlookGridExample.png)
 ## KryptonPalette
 ![KryptonPalette Examples](KryptonPalette%20Examples/example.gif)
 ## KryptonPanel
@@ -215,10 +228,12 @@ There are 2 set of solutions in these projects:
 ![KryptonTaskDialog Examples](KryptonTaskDialog%20Examples/example.png)
 ## KryptonTextBox
 ![KryptonTextBox Examples](KryptonTextBox%20Examples/example.png)
+## KryptonToastNotification
+![KryptonToastNotification Examples](KryptonToastNotification%20Examples/ToastNotificationExample.gif)
 ## KryptonTrackBar
 ![KryptonTrackBar Examples](KryptonTrackBar%20Examples/example.png)
 ## KryptonTreeView
-![KryptonTreeView Examples](KryptonTreeView%20Examples/example.png)
+![KryptonTreeView Examples](KryptonTreeView%20Examples/example.gif)
 ## KryptonWebBrowser
 ![KryptonWebBrowser Examples](KryptonWebBrowser%20Example/example.png)
 ## KryptonWrapLabel

@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net48</TargetFramework>
+        <TargetFrameworks>net462;net47;net471;net472;net48;net481;net8.0-windows;net9.0-windows</TargetFrameworks>
         <UseWindowsForms>true</UseWindowsForms>
         <OutputType>WinExe</OutputType>
         <RootNamespace>KryptonListViewExamples</RootNamespace>
@@ -19,7 +19,7 @@
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
-                <PackageReference Include="Krypton.Toolkit.Canary" Version="80.23.8.233-beta" />
+                <PackageReference Include="Krypton.Toolkit.Canary" Version="90.23.12.352-beta" />
             </ItemGroup>
         </When>
         <Otherwise>
@@ -28,26 +28,6 @@
             </ItemGroup>
         </Otherwise>
     </Choose>
-
-    <ItemGroup>
-        <Reference Include="System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Condition="$(TargetFramework.StartsWith('net4'))">
-            <SpecificVersion>True</SpecificVersion>
-            <Version>4.0.0.0</Version>
-            <TreatAsUsed>True</TreatAsUsed>
-        </Reference>
-        <Reference Include="System.Design, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Condition="$(TargetFramework.StartsWith('net5'))">
-            <SpecificVersion>True</SpecificVersion>
-            <Version>5.0.0.0</Version>
-            <TreatAsUsed>True</TreatAsUsed>
-        </Reference>
-        <Reference Include="System.Design, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Condition="$(TargetFramework.StartsWith('net6'))">
-            <SpecificVersion>True</SpecificVersion>
-            <Version>6.0.0.0</Version>
-            <TreatAsUsed>True</TreatAsUsed>
-        </Reference>
-        <Reference Include="System.Design" Condition="'$(TargetFramework)' == 'net35'" />
-        <!--TODO: Need to specify version here-->
-    </ItemGroup>
 
     <PropertyGroup>
         <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>

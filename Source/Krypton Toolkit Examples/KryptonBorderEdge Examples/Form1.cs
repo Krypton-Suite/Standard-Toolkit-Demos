@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -28,31 +28,31 @@ namespace KryptonBorderEdgeExamples
 
         private void buttonOffice2010Blue_Click(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPalette = kryptonPaletteOffice2010Blue;
+            kryptonManager.GlobalCustomPalette = kryptonPaletteOffice2010Blue;
             propertyGrid.SelectedObject = kryptonPaletteOffice2010Blue;
         }
 
         private void buttonOffice2007Blue_Click(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPalette = kryptonPaletteOffice2007Blue;
+            kryptonManager.GlobalCustomPalette = kryptonPaletteOffice2007Blue;
             propertyGrid.SelectedObject = kryptonPaletteOffice2007Blue;
         }
 
         private void buttonSparkle_Click(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPalette = kryptonPaletteSparkle;
+            kryptonManager.GlobalCustomPalette = kryptonPaletteSparkle;
             propertyGrid.SelectedObject = kryptonPaletteSparkle;
         }
 
         private void buttonSystem_Click(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPalette = kryptonPaletteSystem;
+            kryptonManager.GlobalCustomPalette = kryptonPaletteSystem;
             propertyGrid.SelectedObject = kryptonPaletteSystem;
         }
 
         private void buttonCustom_Click(object sender, EventArgs e)
         {
-            kryptonManager.GlobalPalette = kryptonPaletteCustom;
+            kryptonManager.GlobalCustomPalette = kryptonPaletteCustom;
             propertyGrid.SelectedObject = kryptonPaletteCustom;
         }
 

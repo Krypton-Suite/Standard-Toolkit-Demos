@@ -157,7 +157,6 @@ namespace KryptonFontDialog_Example_2019
             // 
             // buttonShowFontDialog
             // 
-            this.buttonShowFontDialog.CornerRoundingRadius = -1F;
             this.buttonShowFontDialog.Location = new System.Drawing.Point(198, 262);
             this.buttonShowFontDialog.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonShowFontDialog.Name = "buttonShowFontDialog";
@@ -346,7 +345,6 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.CornerRoundingRadius = -1F;
             this.kryptonButton1.Location = new System.Drawing.Point(117, 53);
             this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton1.Name = "kryptonButton1";
@@ -377,7 +375,6 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonComboBox1
             // 
-            this.kryptonComboBox1.CornerRoundingRadius = -1F;
             this.kryptonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.kryptonComboBox1.DropDownWidth = 121;
             this.kryptonComboBox1.IntegralHeight = false;

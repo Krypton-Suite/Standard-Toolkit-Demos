@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2023. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
  *  
  */
 #endregion
@@ -68,10 +68,14 @@ A custom \i ButtonSpec \i0 has been added to the tabs area that can be clicked t
         private void kryptonWorkspace_ActiveCellChanged(object sender, ActiveCellChangedEventArgs e)
         {
             if (e.OldCell != null)
+            {
                 e.OldCell.Bar.TabStyle = TabStyle.OneNote;
+            }
 
             if (e.NewCell != null)
+            {
                 e.NewCell.Bar.TabStyle = TabStyle.HighProfile;
+            }
         }
 
         private void OnTabDoubleClicked(object sender, KryptonPageEventArgs e)
@@ -81,9 +85,13 @@ A custom \i ButtonSpec \i0 has been added to the tabs area that can be clicked t
 
             // Toggle maximized state
             if (kryptonWorkspace.MaximizedCell == null)
+            {
                 kryptonWorkspace.MaximizedCell = cell;
+            }
             else
+            {
                 kryptonWorkspace.MaximizedCell = null;
+            }
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
