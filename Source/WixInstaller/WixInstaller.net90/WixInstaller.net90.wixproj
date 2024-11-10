@@ -1,7 +1,7 @@
 ﻿<Project>
   <Import Project="Sdk.props" Sdk="WixToolset.Sdk" Version="4.0.1" />
   <PropertyGroup>
-    <OutputName>Samples.v90.24.2.52-beta.Net90</OutputName>
+    <OutputName>Samples.v90.24.11.317.Net90</OutputName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DefineConstants>Debug</DefineConstants>
