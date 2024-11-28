@@ -70,10 +70,11 @@ namespace RibbonGallery
             this.kryptonRibbon.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
             this.kryptonRibbon.RibbonFileAppButton.AppButtonShowRecentDocs = false;
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.kryptonRibbonTab1});
             this.kryptonRibbon.SelectedTab = this.kryptonRibbonTab1;
-            this.kryptonRibbon.Size = new System.Drawing.Size(793, 136);
+            this.kryptonRibbon.Size = new System.Drawing.Size(797, 136);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // kryptonContextMenuItem1
@@ -233,7 +234,7 @@ namespace RibbonGallery
             this.kryptonFillPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonFillPanel.Location = new System.Drawing.Point(0, 136);
             this.kryptonFillPanel.Name = "kryptonFillPanel";
-            this.kryptonFillPanel.Size = new System.Drawing.Size(793, 176);
+            this.kryptonFillPanel.Size = new System.Drawing.Size(797, 162);
             this.kryptonFillPanel.TabIndex = 1;
             // 
             // kryptonPanel1
@@ -273,7 +274,7 @@ namespace RibbonGallery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(793, 312);
+            this.ClientSize = new System.Drawing.Size(797, 298);
             this.CloseBox = false;
             this.Controls.Add(this.kryptonFillPanel);
             this.Controls.Add(this.kryptonRibbon);
