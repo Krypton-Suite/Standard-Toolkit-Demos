@@ -247,7 +247,7 @@
             this.kryptonPanelFill.Location = new System.Drawing.Point(0, 57);
             this.kryptonPanelFill.Name = "kryptonPanelFill";
             this.kryptonPanelFill.Padding = new System.Windows.Forms.Padding(10);
-            this.kryptonPanelFill.Size = new System.Drawing.Size(1463, 508);
+            this.kryptonPanelFill.Size = new System.Drawing.Size(1467, 494);
             this.kryptonPanelFill.TabIndex = 1;
             // 
             // kryptonNavigator
@@ -279,7 +279,6 @@
             this.kryptonNavigator.ControlKryptonFormFeatures = false;
             this.kryptonNavigator.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonNavigator.Location = new System.Drawing.Point(10, 10);
-            this.kryptonNavigator.Name = "kryptonNavigator";
             this.kryptonNavigator.NavigatorMode = Krypton.Navigator.NavigatorMode.BarCheckButtonGroupOutside;
             this.kryptonNavigator.Owner = null;
             this.kryptonNavigator.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
@@ -295,7 +294,7 @@
             this.kpChangeLog});
             this.kryptonNavigator.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonNavigator.SelectedIndex = 1;
-            this.kryptonNavigator.Size = new System.Drawing.Size(1443, 488);
+            this.kryptonNavigator.Size = new System.Drawing.Size(1447, 474);
             this.kryptonNavigator.StateCommon.Bar.BarPaddingInside = new System.Windows.Forms.Padding(-1);
             this.kryptonNavigator.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(-1);
             this.kryptonNavigator.StateCommon.Bar.BarPaddingOutside = new System.Windows.Forms.Padding(0, 0, 0, 10);
@@ -341,7 +340,6 @@
             this.kryptonNavigatorToolkit.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
             this.kryptonNavigatorToolkit.ControlKryptonFormFeatures = false;
             this.kryptonNavigatorToolkit.Location = new System.Drawing.Point(18, 51);
-            this.kryptonNavigatorToolkit.Name = "kryptonNavigatorToolkit";
             this.kryptonNavigatorToolkit.NavigatorMode = Krypton.Navigator.NavigatorMode.BarCheckButtonGroupOutside;
             this.kryptonNavigatorToolkit.Owner = null;
             this.kryptonNavigatorToolkit.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
@@ -1114,7 +1112,7 @@
             this.kryptonPage2.LastVisibleSet = true;
             this.kryptonPage2.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage2.Name = "kryptonPage2";
-            this.kryptonPage2.Size = new System.Drawing.Size(1292, 390);
+            this.kryptonPage2.Size = new System.Drawing.Size(1292, 388);
             this.kryptonPage2.Text = "Application Examples";
             this.kryptonPage2.ToolTipTitle = "Page ToolTip";
             this.kryptonPage2.UniqueName = "4722B7548CB44C0C4722B7548CB44C0C";
@@ -1245,7 +1243,7 @@
             this.kryptonPageDocking.LastVisibleSet = true;
             this.kryptonPageDocking.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageDocking.Name = "kryptonPageDocking";
-            this.kryptonPageDocking.Size = new System.Drawing.Size(1303, 486);
+            this.kryptonPageDocking.Size = new System.Drawing.Size(1305, 472);
             this.kryptonPageDocking.Text = "Docking";
             this.kryptonPageDocking.TextDescription = "";
             this.kryptonPageDocking.TextTitle = "";
@@ -1926,13 +1924,13 @@
             // kcmbTheme
             // 
             this.kcmbTheme.CueHint.Padding = new System.Windows.Forms.Padding(0);
+            this.kcmbTheme.DefaultPalette = Krypton.Toolkit.PaletteMode.Microsoft365Blue;
             this.kcmbTheme.DisplayMember = "Key";
             this.kcmbTheme.DropDownWidth = 363;
             this.kcmbTheme.IntegralHeight = false;
             this.kcmbTheme.Location = new System.Drawing.Point(118, 50);
             this.kcmbTheme.Name = "kcmbTheme";
-            this.kcmbTheme.ReportSelectedThemeIndex = true;
-            this.kcmbTheme.Size = new System.Drawing.Size(363, 30);
+            this.kcmbTheme.Size = new System.Drawing.Size(363, 31);
             this.kcmbTheme.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kcmbTheme.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kcmbTheme.TabIndex = 3;
@@ -1947,6 +1945,7 @@
             this.kbtnOpenApplicationPath.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbtnOpenApplicationPath.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbtnOpenApplicationPath.TabIndex = 6;
+            this.kbtnOpenApplicationPath.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kbtnOpenApplicationPath.Values.Text = "Op&en Application Path";
             // 
             // kbtnRestoreTheme
@@ -1958,6 +1957,7 @@
             this.kbtnRestoreTheme.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbtnRestoreTheme.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbtnRestoreTheme.TabIndex = 5;
+            this.kbtnRestoreTheme.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kbtnRestoreTheme.Values.Text = "&Restore to Default";
             // 
             // kryptonLabel5
@@ -2009,6 +2009,7 @@
             this.kbtnLaunchHelp.TabIndex = 8;
             this.kbtnLaunchHelp.ToolTipValues.Description = "Get the latest toolkit binaries for your application";
             this.kbtnLaunchHelp.ToolTipValues.Image = global::KryptonExplorer.Properties.Resources.Square_Design_32_x_32_Green;
+            this.kbtnLaunchHelp.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kbtnLaunchHelp.Values.Text = "Launch &Help";
             // 
             // kbtnDownloadLatestDocumentation
@@ -2022,6 +2023,7 @@
             this.kbtnDownloadLatestDocumentation.TabIndex = 7;
             this.kbtnDownloadLatestDocumentation.ToolTipValues.Description = "Get the latest toolkit binaries for your application";
             this.kbtnDownloadLatestDocumentation.ToolTipValues.Image = global::KryptonExplorer.Properties.Resources.Square_Design_32_x_32_Green;
+            this.kbtnDownloadLatestDocumentation.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kbtnDownloadLatestDocumentation.Values.Text = "Download Latest Documentation";
             // 
             // kbtnKryptonToolkitPackage
@@ -2035,6 +2037,7 @@
             this.kbtnKryptonToolkitPackage.TabIndex = 6;
             this.kbtnKryptonToolkitPackage.ToolTipValues.Description = "Get the latest toolkit binaries for your application";
             this.kbtnKryptonToolkitPackage.ToolTipValues.Image = global::KryptonExplorer.Properties.Resources.Square_Design_32_x_32_Green;
+            this.kbtnKryptonToolkitPackage.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kbtnKryptonToolkitPackage.Values.Text = "Krypton Toolkit Packages";
             // 
             // kryptonLabel6
@@ -2073,6 +2076,7 @@
             this.kbtnViewLatestNightlyReleaseNotes.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbtnViewLatestNightlyReleaseNotes.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbtnViewLatestNightlyReleaseNotes.TabIndex = 15;
+            this.kbtnViewLatestNightlyReleaseNotes.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kbtnViewLatestNightlyReleaseNotes.Values.Text = "View Latest Ni&ghtly Release Notes";
             // 
             // kbtnViewLatestCanaryReleaseNotes
@@ -2084,6 +2088,7 @@
             this.kbtnViewLatestCanaryReleaseNotes.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbtnViewLatestCanaryReleaseNotes.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbtnViewLatestCanaryReleaseNotes.TabIndex = 14;
+            this.kbtnViewLatestCanaryReleaseNotes.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kbtnViewLatestCanaryReleaseNotes.Values.Text = "View Latest &Canary Release Notes";
             // 
             // kbtnViewLatestReleaseNotes
@@ -2095,6 +2100,7 @@
             this.kbtnViewLatestReleaseNotes.StateCommon.Content.LongText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbtnViewLatestReleaseNotes.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbtnViewLatestReleaseNotes.TabIndex = 13;
+            this.kbtnViewLatestReleaseNotes.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kbtnViewLatestReleaseNotes.Values.Text = "View Latest &Stable/Signed Release Notes";
             // 
             // kryptonLabel8
@@ -2112,10 +2118,11 @@
             this.kryptonButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonButtonClose.AutoSize = true;
             this.kryptonButtonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.kryptonButtonClose.Location = new System.Drawing.Point(1379, 12);
+            this.kryptonButtonClose.Location = new System.Drawing.Point(1383, 12);
             this.kryptonButtonClose.Name = "kryptonButtonClose";
             this.kryptonButtonClose.Size = new System.Drawing.Size(74, 28);
             this.kryptonButtonClose.TabIndex = 0;
+            this.kryptonButtonClose.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButtonClose.Values.Text = "Close";
             this.kryptonButtonClose.Click += new System.EventHandler(this.kryptonButtonClose_Click);
             // 
@@ -2127,7 +2134,7 @@
             this.kryptonPanelTop.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanelTop.Name = "kryptonPanelTop";
             this.kryptonPanelTop.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.kryptonPanelTop.Size = new System.Drawing.Size(1463, 56);
+            this.kryptonPanelTop.Size = new System.Drawing.Size(1467, 56);
             this.kryptonPanelTop.TabIndex = 0;
             // 
             // labelKryptonExplorer
@@ -2147,7 +2154,7 @@
             this.pictureBoxRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBoxRight.Image = global::KryptonExplorer.Properties.Resources.Main_Icon_64_x_64;
-            this.pictureBoxRight.Location = new System.Drawing.Point(1373, 0);
+            this.pictureBoxRight.Location = new System.Drawing.Point(1377, 0);
             this.pictureBoxRight.Name = "pictureBoxRight";
             this.pictureBoxRight.Size = new System.Drawing.Size(90, 56);
             this.pictureBoxRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -2159,7 +2166,7 @@
             this.kryptonPanelTopBorder.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanelTopBorder.Location = new System.Drawing.Point(0, 56);
             this.kryptonPanelTopBorder.Name = "kryptonPanelTopBorder";
-            this.kryptonPanelTopBorder.Size = new System.Drawing.Size(1463, 1);
+            this.kryptonPanelTopBorder.Size = new System.Drawing.Size(1467, 1);
             // 
             // kryptonPanelBottom
             // 
@@ -2167,10 +2174,10 @@
             this.kryptonPanelBottom.Controls.Add(this.ss);
             this.kryptonPanelBottom.Controls.Add(this.kryptonButtonClose);
             this.kryptonPanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonPanelBottom.Location = new System.Drawing.Point(0, 565);
+            this.kryptonPanelBottom.Location = new System.Drawing.Point(0, 551);
             this.kryptonPanelBottom.Name = "kryptonPanelBottom";
             this.kryptonPanelBottom.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
-            this.kryptonPanelBottom.Size = new System.Drawing.Size(1463, 71);
+            this.kryptonPanelBottom.Size = new System.Drawing.Size(1467, 71);
             this.kryptonPanelBottom.StateNormal.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
             this.kryptonPanelBottom.TabIndex = 2;
             // 
@@ -2180,7 +2187,7 @@
             this.kryptonBorderEdge1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonBorderEdge1.Location = new System.Drawing.Point(0, 0);
             this.kryptonBorderEdge1.Name = "kryptonBorderEdge1";
-            this.kryptonBorderEdge1.Size = new System.Drawing.Size(1463, 1);
+            this.kryptonBorderEdge1.Size = new System.Drawing.Size(1467, 1);
             this.kryptonBorderEdge1.Text = "kryptonBorderEdge1";
             // 
             // ss
@@ -2195,7 +2202,7 @@
             this.ss.Location = new System.Drawing.Point(0, 45);
             this.ss.Name = "ss";
             this.ss.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.ss.Size = new System.Drawing.Size(1463, 26);
+            this.ss.Size = new System.Drawing.Size(1467, 26);
             this.ss.SizingGrip = false;
             this.ss.TabIndex = 1;
             this.ss.Text = "statusStrip1";
@@ -2203,13 +2210,13 @@
             // tsslBuildDate
             // 
             this.tsslBuildDate.Name = "tsslBuildDate";
-            this.tsslBuildDate.Size = new System.Drawing.Size(104, 20);
+            this.tsslBuildDate.Size = new System.Drawing.Size(104, 21);
             this.tsslBuildDate.Text = "Build Date: {0}";
             // 
             // tsslDownloadStatus
             // 
             this.tsslDownloadStatus.Name = "tsslDownloadStatus";
-            this.tsslDownloadStatus.Size = new System.Drawing.Size(0, 20);
+            this.tsslDownloadStatus.Size = new System.Drawing.Size(0, 21);
             // 
             // tspbDownloadStatus
             // 
@@ -2220,7 +2227,7 @@
             // tslVersion
             // 
             this.tslVersion.Name = "tslVersion";
-            this.tslVersion.Size = new System.Drawing.Size(1344, 20);
+            this.tslVersion.Size = new System.Drawing.Size(1207, 21);
             this.tslVersion.Spring = true;
             this.tslVersion.Text = "Version: {0}";
             this.tslVersion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -2228,20 +2235,6 @@
             // kryptonManager1
             // 
             this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonManager1.ToolkitImages.ToolbarImages.Copy = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.Copy")));
-            this.kryptonManager1.ToolkitImages.ToolbarImages.Cut = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.Cut")));
-            this.kryptonManager1.ToolkitImages.ToolbarImages.New = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.New")));
-            this.kryptonManager1.ToolkitImages.ToolbarImages.Open = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.Open")));
-            this.kryptonManager1.ToolkitImages.ToolbarImages.PageSetup = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.PageSetup")));
-            this.kryptonManager1.ToolkitImages.ToolbarImages.Paste = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.Paste")));
-            this.kryptonManager1.ToolkitImages.ToolbarImages.Print = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.Print")));
-            this.kryptonManager1.ToolkitImages.ToolbarImages.PrintPreview = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.PrintPreview")));
-            this.kryptonManager1.ToolkitImages.ToolbarImages.QuickPrint = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.QuickPrint")));
-            this.kryptonManager1.ToolkitImages.ToolbarImages.Redo = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.Redo")));
-            this.kryptonManager1.ToolkitImages.ToolbarImages.Save = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.Save")));
-            this.kryptonManager1.ToolkitImages.ToolbarImages.SaveAll = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.SaveAll")));
-            this.kryptonManager1.ToolkitImages.ToolbarImages.SaveAs = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.SaveAs")));
-            this.kryptonManager1.ToolkitImages.ToolbarImages.Undo = ((System.Drawing.Image)(resources.GetObject("kryptonManager1.ToolkitImages.ToolbarImages.Undo")));
             // 
             // bgwDownloadDocumentation
             // 
@@ -2252,7 +2245,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1463, 636);
+            this.ClientSize = new System.Drawing.Size(1467, 622);
             this.Controls.Add(this.kryptonPanelFill);
             this.Controls.Add(this.kryptonPanelTopBorder);
             this.Controls.Add(this.kryptonPanelTop);
@@ -2264,6 +2257,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Krypton Explorer";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelFill)).EndInit();
             this.kryptonPanelFill.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator)).EndInit();

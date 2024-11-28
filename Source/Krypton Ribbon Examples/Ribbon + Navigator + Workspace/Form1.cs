@@ -160,7 +160,7 @@ namespace RibbonAndNavigatorAndWorkspace
             navigatorOutlook.DismissPopups();
 
             // Update each workspace cell
-            KryptonWorkspaceCell cell = kryptonWorkspace.FirstCell();
+            KryptonWorkspaceCell? cell = kryptonWorkspace.FirstCell();
             while (cell != null)
             {
                 UpdateCell(cell);
