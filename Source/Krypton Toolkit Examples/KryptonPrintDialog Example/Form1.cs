@@ -1,4 +1,9 @@
-﻿using System;
+﻿// *****************************************************************************
+// BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2021 - 2024. All rights reserved.
+// *****************************************************************************
+
+using System;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
@@ -21,14 +26,13 @@ namespace KryptonFontDialog_Example_2019
 
         private void PaletteProfessional_CheckedChanged(object sender, EventArgs e) => kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
 
- 
+
         private void ButtonShowFontDialog_Click(object sender, EventArgs e)
         {
             //PrintDialog;
             var docToPrint = new System.Drawing.Printing.PrintDocument();
             docToPrint.PrintPage += DocToPrint_PrintPage;
-            var kfd = new KryptonPrintDialog 
-            {
+            var kfd = new KryptonPrintDialog {
                 ShowHelp = chkShowHelp.Checked,
                 AllowCurrentPage = chkAllowCurrentPage.Checked,
                 AllowPrintToFile = chkAllowPrintToFile.Checked,

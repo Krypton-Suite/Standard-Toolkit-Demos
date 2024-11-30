@@ -19,7 +19,7 @@ using Krypton.Toolkit;
 
 namespace CustomControlUsingRenderers
 {
-    public class MyUserControl : UserControl, 
+    public class MyUserControl : UserControl,
                                  IContentValues
     {
         private VisualOrientation _orientation;
@@ -40,7 +40,7 @@ namespace CustomControlUsingRenderers
             SetStyle(ControlStyles.AllPaintingInWmPaint |
                      ControlStyles.OptimizedDoubleBuffer |
                      ControlStyles.ResizeRedraw, true);
-                    
+
             // Cache the current global palette setting
             _palette = KryptonManager.CurrentGlobalPalette;
 
@@ -167,7 +167,7 @@ namespace CustomControlUsingRenderers
 
                 // Ask the renderer to work out how the Content values will be laid out and
                 // return a memento object that we cache for use when actually performing painting
-                _mementoContent = renderer.RenderStandardContent.LayoutContent(viewContext, innerRect,  _paletteContent, 
+                _mementoContent = renderer.RenderStandardContent.LayoutContent(viewContext, innerRect, _paletteContent,
                     this, Orientation, buttonState);
             }
 
@@ -240,8 +240,8 @@ namespace CustomControlUsingRenderers
                 if (_paletteContent.GetContentDraw(buttonState) == InheritBool.True)
                 {
                     // Last of all we draw the content over the top of the border and background
-                    renderer.RenderStandardContent.DrawContent(renderContext, innerRect, 
-                        _paletteContent, _mementoContent, 
+                    renderer.RenderStandardContent.DrawContent(renderContext, innerRect,
+                        _paletteContent, _mementoContent,
                         Orientation, buttonState, true);
                 }
             }
@@ -251,12 +251,12 @@ namespace CustomControlUsingRenderers
 
         // Find the correct state when getting button values
         private PaletteState GetButtonState() =>
-            !Enabled 
-                ? PaletteState.Disabled 
-                : _mouseOver 
-                    ? _mouseDown 
-                        ? PaletteState.Pressed 
-                        : PaletteState.Tracking 
+            !Enabled
+                ? PaletteState.Disabled
+                : _mouseOver
+                    ? _mouseDown
+                        ? PaletteState.Pressed
+                        : PaletteState.Tracking
                     : PaletteState.Normal;
 
         private GraphicsPath CreateRectGraphicsPath(Rectangle rect)

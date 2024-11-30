@@ -11,9 +11,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonCheckButtonExamples
@@ -28,7 +29,7 @@ namespace KryptonCheckButtonExamples
 
         private void checkButton_Enter(object sender, EventArgs e) =>
             // Setup the property grid to edit this button
-            propertyGrid.SelectedObject = new KryptonCheckButtonProxy(sender as KryptonCheckButton);
+            propertyGrid.SelectedObject = new KryptonCheckButtonProxy((KryptonCheckButton)sender);
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
     }

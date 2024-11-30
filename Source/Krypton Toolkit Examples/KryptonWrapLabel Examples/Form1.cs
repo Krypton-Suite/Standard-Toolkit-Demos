@@ -37,10 +37,8 @@ namespace KryptonWrapLabelExamples
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
 
-        private void klwlblTest_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
+        private void klwlblTest_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) =>
             KryptonMessageBox.Show(@"Hello world!", @"Test", KryptonMessageBoxButtons.OK,
                 KryptonMessageBoxIcon.Information);
-        }
     }
 }

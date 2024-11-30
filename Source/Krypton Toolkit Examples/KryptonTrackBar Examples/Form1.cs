@@ -1,4 +1,9 @@
-﻿using System;
+﻿// *****************************************************************************
+// BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2020 - 2024. All rights reserved.
+// *****************************************************************************
+
+using System;
 using System.ComponentModel;
 using System.Windows.Forms;
 
@@ -16,7 +21,7 @@ namespace KryptonTrackBarExamples
 
         private void trackBar_Enter(object sender, EventArgs e) =>
             // Setup the property grid to edit this track bar control
-            propertyGrid.SelectedObject = new KryptonTrackBarProxy(sender as KryptonTrackBar);
+            propertyGrid.SelectedObject = new KryptonTrackBarProxy((KryptonTrackBar)sender);
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
     }

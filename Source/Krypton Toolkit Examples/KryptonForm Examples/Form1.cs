@@ -11,9 +11,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonFormExamples
@@ -77,10 +78,7 @@ namespace KryptonFormExamples
             propertyGrid.SelectedObject = new KryptonFormProxy(this);
         }
 
-        private void btnUseThemeWidths_Click(object sender, EventArgs e)
-        {
-            UseThemeFormChromeBorderWidth = btnUseThemeWidths.Checked;
-        }
+        private void btnUseThemeWidths_Click(object sender, EventArgs e) => UseThemeFormChromeBorderWidth = btnUseThemeWidths.Checked;
     }
 
     public class KryptonFormProxy
@@ -101,7 +99,7 @@ namespace KryptonFormExamples
         [Category("Appearance")]
         [Description("The extra text associated with the control.")]
         [DefaultValue("")]
-        public string TextExtra
+        public string? TextExtra
         {
             get => _form.TextExtra;
             set => _form.TextExtra = value;
@@ -109,8 +107,8 @@ namespace KryptonFormExamples
 
         [Category("Appearance")]
         [Description("The icon associated with the control.")]
-        [DefaultValue("")]
-        public Icon Icon
+        [DefaultValue(null)]
+        public Icon? Icon
         {
             get => _form.Icon;
             set => _form.Icon = value;
@@ -173,7 +171,7 @@ namespace KryptonFormExamples
 
         [Category("Visuals")]
         [Description("Overrides for defining common form appearance that other states can override.")]
-        public PaletteFormRedirect StateCommon => _form.StateCommon;
+        public PaletteFormRedirect StateCommon => _form.StateCommon!;
 
         [Category("Visuals")]
         [Description("Overrides for defining inactive form appearance.")]

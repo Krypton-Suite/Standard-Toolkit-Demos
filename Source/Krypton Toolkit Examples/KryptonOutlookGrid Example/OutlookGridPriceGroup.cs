@@ -1,4 +1,9 @@
-﻿using System;
+﻿// *****************************************************************************
+// BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2024 - 2024. All rights reserved.
+// *****************************************************************************
+
+using System;
 using System.Globalization;
 using System.Windows.Forms;
 
@@ -8,7 +13,6 @@ namespace KryptonOutlookGrid
 {
     public class OutlookGridPriceGroup : OutlookGridDefaultGroup
     {
-
         private int _priceCode;
         private string _currency;
         private object _val;
@@ -33,14 +37,7 @@ namespace KryptonOutlookGrid
         /// <summary>
         /// Gets or sets the displayed text.
         /// </summary>
-        public override string Text
-        {
-            get
-            {
-                return
-                $"{Column.DataGridViewColumn.HeaderText}: {GetPriceString(_priceCode)} ({(ItemCount == 1 ? OneItemText : ItemCount.ToString() + XxxItemsText)})";
-            }
-        }
+        public override string Text => $"{Column.DataGridViewColumn.HeaderText}: {GetPriceString(_priceCode)} ({(ItemCount == 1 ? OneItemText : ItemCount.ToString() + XxxItemsText)})";
 
         private int GetPriceCode(decimal price)
         {
@@ -94,21 +91,21 @@ namespace KryptonOutlookGrid
                 case 0:
                     return "Free";
                 case 100:
-                    return "Below 100 " + _currency;
+                    return $"Below 100 {_currency}";
                 case 200:
-                    return "Between 100 and 200 " + _currency;
+                    return $"Between 100 and 200 {_currency}";
                 case 300:
-                    return "Between 200 and 300 " + _currency;
+                    return $"Between 200 and 300 {_currency}";
                 case 600:
-                    return "Between 300 and 600 " + _currency;
+                    return $"Between 300 and 600 {_currency}";
                 case 1000:
-                    return "Between 600 and 1000 " + _currency;
+                    return $"Between 600 and 1000 {_currency}";
                 case 5000:
-                    return "Between 1000 and 5000 " + _currency;
+                    return $"Between 1000 and 5000 {_currency}";
                 case 10000:
-                    return "Between 5000 and 10000 " + _currency;
+                    return $"Between 5000 and 10000 {_currency}";
                 case 20000:
-                    return "Above 10000 " + _currency;
+                    return $"Above 10000 {_currency}";
                 case 999999:
                     return "No price";
                 default:
@@ -122,10 +119,7 @@ namespace KryptonOutlookGrid
         /// </summary>
         public override object? Value
         {
-            get
-            {
-                return _val;
-            }
+            get => _val;
             set
             {
                 if (object.ReferenceEquals(value, DBNull.Value) || value == null)
@@ -135,7 +129,7 @@ namespace KryptonOutlookGrid
                 }
                 else
                 {
-                    _priceCode = GetPriceCode(decimal.Parse(value.ToString()));
+                    _priceCode = GetPriceCode(decimal.Parse(value!.ToString()));
                     _val = _priceCode;
                 }
             }

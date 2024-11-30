@@ -34,7 +34,7 @@ namespace MDIApplication
         private void AddMDIChildWindow()
         {
             Form2 f = new Form2();
-            f.Text = "Child " + (_count++).ToString();
+            f.Text = $"Child {(_count++)}";
             f.MdiParent = this;
             f.Show();
         }

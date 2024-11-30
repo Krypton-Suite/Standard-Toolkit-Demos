@@ -13,6 +13,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+
 using Krypton.Navigator;
 using Krypton.Toolkit;
 using Krypton.Workspace;
@@ -23,7 +24,7 @@ namespace WorkspacePersistence
     {
         private int _count = 1;
         private byte[] _byteArray;
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -32,15 +33,15 @@ namespace WorkspacePersistence
         private void Form1_Load(object sender, EventArgs e)
         {
             // Create three cells that each contain two pages
-            KryptonWorkspaceCell cell1 = new KryptonWorkspaceCell();
-            KryptonWorkspaceCell cell2 = new KryptonWorkspaceCell();
-            KryptonWorkspaceCell cell3 = new KryptonWorkspaceCell();
+            var cell1 = new KryptonWorkspaceCell();
+            var cell2 = new KryptonWorkspaceCell();
+            var cell3 = new KryptonWorkspaceCell();
             cell1.Pages.AddRange(new KryptonPage[] { CreatePage(), CreatePage() });
             cell2.Pages.AddRange(new KryptonPage[] { CreatePage(), CreatePage() });
             cell3.Pages.AddRange(new KryptonPage[] { CreatePage(), CreatePage() });
 
             // Create a vertical sequence that contains two of the pages
-            KryptonWorkspaceSequence sequence = new KryptonWorkspaceSequence(Orientation.Vertical);
+            var sequence = new KryptonWorkspaceSequence(Orientation.Vertical);
             sequence.Children.AddRange(new KryptonWorkspaceCell[] { cell2, cell3 });
 
             // Remove starting contents and add a cell with a sequence
@@ -86,7 +87,7 @@ namespace WorkspacePersistence
         private void kryptonWorkspace_PageSaving(object sender, PageSavingEventArgs e)
         {
             // Get access to the text box inside the page
-            KryptonRichTextBox rtb = (KryptonRichTextBox)e.Page.Controls[0];
+            var rtb = (KryptonRichTextBox)e.Page.Controls[0];
 
             // Save the text in the textbox into the per-page storage
             e.XmlWriter.WriteCData(rtb.Text);
@@ -154,19 +155,20 @@ namespace WorkspacePersistence
         private KryptonPage CreatePage()
         {
             // Give each page a unique number
-            string pageNumber = (_count++).ToString();
+            var pageNumber = (_count++).ToString();
 
             // Create a new page and give it a name and image
-            KryptonPage page = new KryptonPage();
-            page.Text = "P" + pageNumber;
-            page.TextTitle = "P" + pageNumber + " Title";
-            page.TextDescription = "P" + pageNumber + " Description";
+            var page = new KryptonPage();
+            page.Text = $"P{pageNumber}";
+            page.TextTitle = $"P{pageNumber} Title";
+            page.TextDescription = $"P{pageNumber} Description";
             page.ImageSmall = (Bitmap)imageList.Images[_count % imageList.Images.Count];
             page.MinimumSize = new Size(200, 250);
 
             // Create a rich text box with some sample text inside
-            KryptonRichTextBox rtb = new KryptonRichTextBox();
-            rtb.Text = "This page (" + page.Text + ") contains a rich text box control as example content.\n\nTry saving the layout and then dragging the page headers in order to rearrange the workspace layout. Once altered you can use the load button to get back to the original state.";
+            var rtb = new KryptonRichTextBox();
+            rtb.Text =
+                $"This page ({page.Text}) contains a rich text box control as example content.\n\nTry saving the layout and then dragging the page headers in order to rearrange the workspace layout. Once altered you can use the load button to get back to the original state.";
             rtb.Dock = DockStyle.Fill;
             rtb.StateCommon.Border.Draw = InheritBool.False;
 

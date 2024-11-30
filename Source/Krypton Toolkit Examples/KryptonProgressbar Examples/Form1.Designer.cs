@@ -62,17 +62,19 @@ namespace KryptonScrollbarExamples
             this.kryptonPanel1.Controls.Add(this.kryptonLabel1);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(404, 319);
+            this.kryptonPanel1.Size = new System.Drawing.Size(553, 374);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // kryptonProgressBar2
             // 
             this.kryptonProgressBar2.Enabled = false;
-            this.kryptonProgressBar2.Location = new System.Drawing.Point(39, 203);
+            this.kryptonProgressBar2.Location = new System.Drawing.Point(52, 250);
+            this.kryptonProgressBar2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonProgressBar2.Name = "kryptonProgressBar2";
             this.kryptonProgressBar2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.kryptonProgressBar2.Size = new System.Drawing.Size(353, 23);
+            this.kryptonProgressBar2.Size = new System.Drawing.Size(471, 28);
             this.kryptonProgressBar2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.kryptonProgressBar2.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -85,47 +87,50 @@ namespace KryptonScrollbarExamples
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(39, 255);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonButton1.Location = new System.Drawing.Point(52, 314);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(353, 20);
+            this.kryptonButton1.Size = new System.Drawing.Size(471, 25);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.kryptonButton1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonButton1.StateCommon.Border.Rounding = 10F;
             this.kryptonButton1.TabIndex = 11;
+            this.kryptonButton1.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton1.Values.Text = "kryptonButton1";
             // 
             // kryptonThemeComboBox1
             // 
+            this.kryptonThemeComboBox1.DefaultPalette = Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.kryptonThemeComboBox1.DisplayMember = "Key";
             this.kryptonThemeComboBox1.DropDownWidth = 321;
             this.kryptonThemeComboBox1.IntegralHeight = false;
-            this.kryptonThemeComboBox1.Location = new System.Drawing.Point(161, 3);
-            this.kryptonThemeComboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonThemeComboBox1.Location = new System.Drawing.Point(215, 4);
+            this.kryptonThemeComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonThemeComboBox1.Name = "kryptonThemeComboBox1";
-            this.kryptonThemeComboBox1.Size = new System.Drawing.Size(241, 21);
+            this.kryptonThemeComboBox1.Size = new System.Drawing.Size(321, 26);
             this.kryptonThemeComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonThemeComboBox1.TabIndex = 10;
             this.kryptonThemeComboBox1.ValueMember = "Value";
             // 
             // kryptonProgressBar1
             // 
-            this.kryptonProgressBar1.Location = new System.Drawing.Point(10, 10);
-            this.kryptonProgressBar1.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonProgressBar1.Location = new System.Drawing.Point(13, 12);
+            this.kryptonProgressBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonProgressBar1.Name = "kryptonProgressBar1";
             this.kryptonProgressBar1.Orientation = Krypton.Toolkit.VisualOrientation.Left;
-            this.kryptonProgressBar1.Size = new System.Drawing.Size(24, 266);
+            this.kryptonProgressBar1.Size = new System.Drawing.Size(32, 327);
             this.kryptonProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.kryptonProgressBar1.TabIndex = 9;
             this.kryptonProgressBar1.Values.Text = "";
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(39, 159);
+            this.progressBar1.Location = new System.Drawing.Point(52, 196);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(353, 23);
+            this.progressBar1.Size = new System.Drawing.Size(471, 28);
             this.progressBar1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.progressBar1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -138,9 +143,10 @@ namespace KryptonScrollbarExamples
             // 
             // pbVertical
             // 
-            this.pbVertical.Location = new System.Drawing.Point(39, 130);
+            this.pbVertical.Location = new System.Drawing.Point(52, 160);
+            this.pbVertical.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbVertical.Name = "pbVertical";
-            this.pbVertical.Size = new System.Drawing.Size(353, 23);
+            this.pbVertical.Size = new System.Drawing.Size(471, 28);
             this.pbVertical.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.pbVertical.TabIndex = 7;
             this.pbVertical.Value = 56;
@@ -148,9 +154,10 @@ namespace KryptonScrollbarExamples
             // 
             // pbHorizontal
             // 
-            this.pbHorizontal.Location = new System.Drawing.Point(39, 79);
+            this.pbHorizontal.Location = new System.Drawing.Point(52, 97);
+            this.pbHorizontal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbHorizontal.Name = "pbHorizontal";
-            this.pbHorizontal.Size = new System.Drawing.Size(353, 45);
+            this.pbHorizontal.Size = new System.Drawing.Size(471, 55);
             this.pbHorizontal.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.pbHorizontal.StateCommon.Back.Draw = Krypton.Toolkit.InheritBool.True;
             this.pbHorizontal.TabIndex = 4;
@@ -165,7 +172,8 @@ namespace KryptonScrollbarExamples
             0,
             0,
             0});
-            this.knudHorizontal.Location = new System.Drawing.Point(161, 39);
+            this.knudHorizontal.Location = new System.Drawing.Point(215, 48);
+            this.knudHorizontal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.knudHorizontal.Maximum = new decimal(new int[] {
             100,
             0,
@@ -177,7 +185,7 @@ namespace KryptonScrollbarExamples
             0,
             0});
             this.knudHorizontal.Name = "knudHorizontal";
-            this.knudHorizontal.Size = new System.Drawing.Size(120, 22);
+            this.knudHorizontal.Size = new System.Drawing.Size(160, 26);
             this.knudHorizontal.TabIndex = 3;
             this.knudHorizontal.Value = new decimal(new int[] {
             0,
@@ -189,27 +197,35 @@ namespace KryptonScrollbarExamples
             // kryptonLabel1
             // 
             this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
-            this.kryptonLabel1.Location = new System.Drawing.Point(39, 39);
+            this.kryptonLabel1.Location = new System.Drawing.Point(52, 48);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(46, 20);
+            this.kryptonLabel1.Size = new System.Drawing.Size(56, 24);
             this.kryptonLabel1.TabIndex = 2;
             this.kryptonLabel1.Values.Text = "Value:";
+            // 
+            // kryptonManager1
+            // 
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
             // 
             // statusStrip1
             // 
             this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.kryptonProgressBarToolStripItem1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 295);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 345);
             this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.statusStrip1.Size = new System.Drawing.Size(404, 24);
+            this.statusStrip1.Size = new System.Drawing.Size(553, 29);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // kryptonProgressBarToolStripItem1
             // 
             this.kryptonProgressBarToolStripItem1.Name = "kryptonProgressBarToolStripItem1";
+            this.kryptonProgressBarToolStripItem1.Size = new System.Drawing.Size(133, 27);
             this.kryptonProgressBarToolStripItem1.StateCommon.Back.Color1 = System.Drawing.Color.Green;
             this.kryptonProgressBarToolStripItem1.StateDisabled.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.OneNote;
             this.kryptonProgressBarToolStripItem1.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.OneNote;
@@ -219,12 +235,13 @@ namespace KryptonScrollbarExamples
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(404, 319);
+            this.ClientSize = new System.Drawing.Size(553, 374);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

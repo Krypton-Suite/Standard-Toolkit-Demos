@@ -11,14 +11,11 @@
 #endregion
 
 using System;
-using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using Krypton.Toolkit;
+
 using Krypton.Navigator;
+using Krypton.Toolkit;
 using Krypton.Workspace;
 
 namespace WorkspaceCellLayout
@@ -73,13 +70,13 @@ namespace WorkspaceCellLayout
             kryptonWorkspace.Root.Children.Clear();
 
             // Create a horizontal sequence with two cells
-            KryptonWorkspaceSequence sequence2 = new KryptonWorkspaceSequence(Orientation.Horizontal);
+            var sequence2 = new KryptonWorkspaceSequence(Orientation.Horizontal);
             sequence2.Children.Add(CreateCell());
             sequence2.Children.Add(CreateCell());
             sequence2.Children.Add(CreateCell());
 
             // Create a vertical sequence with two cells and the horizontal sequence
-            KryptonWorkspaceSequence sequence1 = new KryptonWorkspaceSequence(Orientation.Vertical);
+            var sequence1 = new KryptonWorkspaceSequence(Orientation.Vertical);
             sequence1.Children.Add(CreateCell(2, "25*,25*"));
             sequence1.Children.Add(CreateCell(2, "25*,25*"));
             sequence1.Children.Add(sequence2);
@@ -149,7 +146,7 @@ namespace WorkspaceCellLayout
         private KryptonWorkspaceCell CreateCell(int numPages, string starSize)
         {
             // Create new cell instance
-            KryptonWorkspaceCell cell = new KryptonWorkspaceCell();
+            var cell = new KryptonWorkspaceCell();
 
             // Do we need to set the star sizing value?
             if (!string.IsNullOrEmpty(starSize))
@@ -158,7 +155,7 @@ namespace WorkspaceCellLayout
             }
 
             // Add requested number of pages
-            for(int i=0; i<numPages; i++)
+            for (var i = 0; i < numPages; i++)
             {
                 cell.Pages.Add(CreatePage());
             }
@@ -169,19 +166,20 @@ namespace WorkspaceCellLayout
         private KryptonPage CreatePage()
         {
             // Give each page a unique number
-            string pageNumber = (_count++).ToString();
+            var pageNumber = (_count++).ToString();
 
             // Create a new page and give it a name and image
-            KryptonPage page = new KryptonPage();
-            page.Text = "P" + pageNumber;
-            page.TextTitle = "P" + pageNumber + " Title";
-            page.TextDescription = "P" + pageNumber + " Description";
+            var page = new KryptonPage();
+            page.Text = $"P{pageNumber}";
+            page.TextTitle = $"P{pageNumber} Title";
+            page.TextDescription = $"P{pageNumber} Description";
             page.ImageSmall = (Bitmap)imageList.Images[_count % imageList.Images.Count];
             page.MinimumSize = new Size(200, 250);
 
             // Create a rich text box with some sample text inside
-            KryptonRichTextBox rtb = new KryptonRichTextBox();
-            rtb.Text = "This page (" + page.Text + ") contains a rich text box control as example content. Your application could place anything you like here such as data entry controls, charts, data grids etc.\n\nTry dragging the page headers in order to rearrange the workspace layout.";
+            var rtb = new KryptonRichTextBox();
+            rtb.Text =
+                $"This page ({page.Text}) contains a rich text box control as example content. Your application could place anything you like here such as data entry controls, charts, data grids etc.\n\nTry dragging the page headers in order to rearrange the workspace layout.";
             rtb.Dock = DockStyle.Fill;
             rtb.StateCommon.Border.Draw = InheritBool.False;
 

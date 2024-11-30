@@ -9,15 +9,14 @@
  *  
  */
 #endregion
+
 using System;
-using System.Text;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Diagnostics;
-using Krypton.Toolkit;
+
 using Krypton.Navigator;
+using Krypton.Toolkit;
 
 namespace NavigatorPlayground
 {
@@ -47,12 +46,12 @@ namespace NavigatorPlayground
         private void kryptonButtonAdd_Click(object sender, EventArgs e)
         {
             // Create a new krypton page
-            KryptonPage newPage = new KryptonPage();
+            var newPage = new KryptonPage();
 
             // Populate with text and image
-            newPage.Text = "Page " + _count.ToString();
-            newPage.TextTitle = "Page " + _count.ToString() + " Title";
-            newPage.TextDescription = "Page " + _count.ToString() + " Description";
+            newPage.Text = $"Page {_count}";
+            newPage.TextTitle = $"Page {_count} Title";
+            newPage.TextDescription = $"Page {_count} Description";
             newPage.ImageSmall = (Bitmap)imageList1.Images[_count % imageList1.Images.Count];
             _count++;
 
@@ -136,8 +135,8 @@ namespace NavigatorPlayground
         [DefaultValue(typeof(PaletteMode), "Global")]
         public PaletteMode PaletteMode
         {
-            get { return _navigator.PaletteMode; }
-            set { _navigator.PaletteMode = value; }
+            get => _navigator.PaletteMode;
+            set => _navigator.PaletteMode = value;
         }
 
         [Category("Layout")]
@@ -145,8 +144,8 @@ namespace NavigatorPlayground
         [DefaultValue(false)]
         public bool AutoSize
         {
-            get { return _navigator.AutoSize; }
-            set { _navigator.AutoSize = value; }
+            get => _navigator.AutoSize;
+            set => _navigator.AutoSize = value;
         }
 
         [Category("Layout")]
@@ -154,8 +153,8 @@ namespace NavigatorPlayground
         [DefaultValue(typeof(AutoSizeMode), "GrowOnly")]
         public AutoSizeMode AutoSizeMode
         {
-            get { return _navigator.AutoSizeMode; }
-            set { _navigator.AutoSizeMode = value; }
+            get => _navigator.AutoSizeMode;
+            set => _navigator.AutoSizeMode = value;
         }
 
         [Category("Behavior")]
@@ -163,107 +162,69 @@ namespace NavigatorPlayground
         [DefaultValue(true)]
         public bool Enabled
         {
-            get { return _navigator.Enabled; }
-            set { _navigator.Enabled = value; }
+            get => _navigator.Enabled;
+            set => _navigator.Enabled = value;
         }
 
         [Category("Visuals")]
         [Description("Collection of pages in the navigator control.")]
-        public KryptonPageCollection Pages
-        {
-            get { return _navigator.Pages; }
-        }
+        public KryptonPageCollection Pages => _navigator.Pages;
 
         [Category("Visuals (Modes)")]
         [Description("Overrides for defining bar settings.")]
-        public NavigatorBar Bar
-        {
-            get { return _navigator.Bar; }
-        }
+        public NavigatorBar Bar => _navigator.Bar;
+
         [Category("Visuals (Modes)")]
         [Description("Button specifications and fixed button logic.")]
-        public NavigatorButton Button
-        {
-            get { return _navigator.Button; }
-        }
+        public NavigatorButton Button => _navigator.Button;
 
         [Category("Visuals (Modes)")]
         [Description("Overrides for defining group settings.")]
-        public NavigatorGroup Group
-        {
-            get { return _navigator.Group; }
-        }
+        public NavigatorGroup Group => _navigator.Group;
 
         [Category("Visuals (Modes)")]
         [Description("Overrides for defining header settings.")]
-        public NavigatorHeader Header
-        {
-            get { return _navigator.Header; }
-        }
+        public NavigatorHeader Header => _navigator.Header;
 
         [Category("Visuals (Modes)")]
         [Description("Overrides for defining panel settings.")]
-        public NavigatorPanel Panel
-        {
-            get { return _navigator.Panel; }
-        }
+        public NavigatorPanel Panel => _navigator.Panel;
 
         [Category("Visuals")]
         [Description("Overrides for defining common navigator appearance.")]
-        public PaletteNavigatorRedirect StateCommon
-        {
-            get { return _navigator.StateCommon; }
-        }
+        public PaletteNavigatorRedirect StateCommon => _navigator.StateCommon;
 
         [Category("Visuals")]
         [Description("Overrides for defining disabled navigator appearance.")]
-        public PaletteNavigator StateDisabled
-        {
-            get { return _navigator.StateDisabled; }
-        }
+        public PaletteNavigator StateDisabled => _navigator.StateDisabled;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal navigator appearance.")]
-        public PaletteNavigator StateNormal
-        {
-            get { return _navigator.StateNormal; }
-        }
+        public PaletteNavigator StateNormal => _navigator.StateNormal;
 
         [Category("Visuals")]
         [Description("Overrides for defining tracking navigator appearance.")]
-        public PaletteNavigatorOther StateTracking
-        {
-            get { return _navigator.StateTracking; }
-        }
+        public PaletteNavigatorOther StateTracking => _navigator.StateTracking;
 
         [Category("Visuals")]
         [Description("Overrides for defining pressed navigator appearance.")]
-        public PaletteNavigatorOther StatePressed
-        {
-            get { return _navigator.StatePressed; }
-        }
+        public PaletteNavigatorOther StatePressed => _navigator.StatePressed;
 
         [Category("Visuals")]
         [Description("Overrides for defining selected navigator appearance.")]
-        public PaletteNavigatorOther StateSelected
-        {
-            get { return _navigator.StateSelected; }
-        }
+        public PaletteNavigatorOther StateSelected => _navigator.StateSelected;
 
         [Category("Visuals")]
         [Description("Overrides for defining focus navigator appearance.")]
-        public PaletteNavigatorOtherRedirect OverrideFocus
-        {
-            get { return _navigator.OverrideFocus; }
-        }
+        public PaletteNavigatorOtherRedirect OverrideFocus => _navigator.OverrideFocus;
 
         [Category("Visuals")]
         [Description("Display mode of the control instance.")]
         [DefaultValue(typeof(NavigatorMode), "Bar - CheckButton - Group - Outside")]
         public NavigatorMode NavigatorMode
         {
-            get { return _navigator.NavigatorMode; }
-            set { _navigator.NavigatorMode = value; }
+            get => _navigator.NavigatorMode;
+            set => _navigator.NavigatorMode = value;
         }
 
         [Category("Visuals")]
@@ -271,8 +232,8 @@ namespace NavigatorPlayground
         [DefaultValue(typeof(PaletteBackStyle), "ControlClient")]
         public PaletteBackStyle PageBackStyle
         {
-            get { return _navigator.PageBackStyle; }
-            set { _navigator.PageBackStyle = value; }
+            get => _navigator.PageBackStyle;
+            set => _navigator.PageBackStyle = value;
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
 //  © Component Factory Pty Ltd, 2006-2016, All rights reserved.
-//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2021. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2024. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
 //  Version 5.550.0  www.ComponentFactory.com
 // *****************************************************************************
 
@@ -39,8 +39,7 @@ namespace KryptonTreeViewExamples
 
         private KryptonTreeNode CreateNewItem()
         {
-            KryptonTreeNode item = new KryptonTreeNode
-            {
+            KryptonTreeNode item = new KryptonTreeNode {
                 Text = $@"Item {_next++}",
                 ImageIndex = _rand.Next(imageList.Images.Count - 1)
             };
@@ -86,7 +85,7 @@ namespace KryptonTreeViewExamples
                 }
             }
         }
-        
+
         private void buttonClear_Click(object? sender, EventArgs e) => kryptonTreeView.Nodes.Clear();
 
         private void kryptonCheckSet_CheckedButtonChanged(object? sender, EventArgs e)

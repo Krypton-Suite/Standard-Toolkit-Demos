@@ -75,7 +75,7 @@
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(1067, 554);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1071, 540);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // kryptonGroupBox3
@@ -111,7 +111,7 @@
             this.kryptonDomainUpDown3.Location = new System.Drawing.Point(439, 5);
             this.kryptonDomainUpDown3.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonDomainUpDown3.Name = "kryptonDomainUpDown3";
-            this.kryptonDomainUpDown3.Size = new System.Drawing.Size(399, 30);
+            this.kryptonDomainUpDown3.Size = new System.Drawing.Size(399, 20);
             this.kryptonDomainUpDown3.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Yi Baiti", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonDomainUpDown3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 10, 0, 0);
             this.kryptonDomainUpDown3.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
@@ -376,7 +376,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1071, 540);
             this.Controls.Add(this.kryptonPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);

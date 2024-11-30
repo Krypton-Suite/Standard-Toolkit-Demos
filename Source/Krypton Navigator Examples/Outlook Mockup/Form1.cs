@@ -9,14 +9,12 @@
  *  
  */
 #endregion
+
 using System;
-using System.Text;
-using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
-using Krypton.Toolkit;
+
 using Krypton.Navigator;
+using Krypton.Toolkit;
 
 namespace OutlookMockup
 {
@@ -91,7 +89,7 @@ namespace OutlookMockup
                 kryptonNavigatorMain.NavigatorMode = NavigatorMode.OutlookMini;
 
                 // Discover the new width required to display the mini mode
-                int newWidth = kryptonNavigatorMain.PreferredSize.Width;
+                var newWidth = kryptonNavigatorMain.PreferredSize.Width;
 
                 // Make the header group fixed just as the new height
                 kryptonSplitContainerMain.Panel1MinSize = newWidth;
@@ -139,7 +137,7 @@ namespace OutlookMockup
                 treeViewMailFavs.SelectedNode = null;
 
             // Cast event source to the correct type
-            TreeView tv = (TreeView)sender;
+            var tv = (TreeView)sender;
 
             // Update the mail heading entries
             if (tv.SelectedNode != null)
@@ -162,7 +160,7 @@ namespace OutlookMockup
 
         private void radioNotes_CheckedChanged(object sender, EventArgs e)
         {
-            int index = 0;
+            var index = 0;
 
             // Find index of note names
             if (radioFamily.Checked)
@@ -174,10 +172,10 @@ namespace OutlookMockup
             listViewNotes.Items.Clear();
 
             // Get the set of strings that contain the note names
-            string[] group = (string[])_notes[index];
+            var group = (string[])_notes[index];
 
             // Add each mail entry as an item
-            foreach (string entry in group)
+            foreach (var entry in group)
                 listViewNotes.Items.Add(new ListViewItem(entry, 0));
         }
 

@@ -9,6 +9,7 @@
  *  
  */
 #endregion
+
 using System.Windows.Forms;
 
 namespace DockingCustomized

@@ -11,9 +11,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonNumericUpDownExamples
@@ -28,7 +29,7 @@ namespace KryptonNumericUpDownExamples
 
         private void nud_Enter(object sender, EventArgs e) =>
             // Setup the property grid to edit this numeric up-down control
-            propertyGrid.SelectedObject = new KryptonNumericUpDownProxy(sender as KryptonNumericUpDown);
+            propertyGrid.SelectedObject = new KryptonNumericUpDownProxy((KryptonNumericUpDown)sender);
 
         private void buttonOffice2010Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
 

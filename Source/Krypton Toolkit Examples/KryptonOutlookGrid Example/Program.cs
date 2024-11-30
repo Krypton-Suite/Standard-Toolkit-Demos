@@ -1,3 +1,8 @@
+// *****************************************************************************
+// BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2024 - 2024. All rights reserved.
+// *****************************************************************************
+
 using System;
 using System.Windows.Forms;
 
@@ -9,12 +14,10 @@ namespace KryptonOutlookGrid
         ///  The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
-        {
+        static void Main() =>
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             //ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
-        }
     }
 }

@@ -29,286 +29,295 @@ namespace KryptonOpenFileDialog_Example_2019
         /// </summary>
         private void InitializeComponent()
         {
-            buttonFileOpenDialog = new Krypton.Toolkit.KryptonButton();
-            kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
-            kryptonThemeComboBox1 = new Krypton.Toolkit.KryptonThemeComboBox();
-            kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
-            kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
-            chkRestoreDirectory = new Krypton.Toolkit.KryptonCheckBox();
-            chkReadOnlyChecked = new Krypton.Toolkit.KryptonCheckBox();
-            chkMultiselect = new Krypton.Toolkit.KryptonCheckBox();
-            chkDereferenceLinks = new Krypton.Toolkit.KryptonCheckBox();
-            chkCheckPathExists = new Krypton.Toolkit.KryptonCheckBox();
-            chkCheckFileExists = new Krypton.Toolkit.KryptonCheckBox();
-            chkAddExtension = new Krypton.Toolkit.KryptonCheckBox();
-            kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
-            kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
-            kryptonNumericUpDown1 = new Krypton.Toolkit.KryptonNumericUpDown();
-            kryptonButton1 = new Krypton.Toolkit.KryptonButton();
-            kryptonCheckBox1 = new Krypton.Toolkit.KryptonCheckBox();
-            kryptonListBox1 = new Krypton.Toolkit.KryptonListBox();
-            kryptonComboBox1 = new Krypton.Toolkit.KryptonComboBox();
-            kryptonCheckBox2 = new Krypton.Toolkit.KryptonCheckBox();
-            ((System.ComponentModel.ISupportInitialize)kryptonPanel1).BeginInit();
-            kryptonPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)kryptonThemeComboBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)kryptonGroupBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)kryptonGroupBox2.Panel).BeginInit();
-            kryptonGroupBox2.Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)kryptonGroupBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)kryptonGroupBox1.Panel).BeginInit();
-            kryptonGroupBox1.Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)kryptonComboBox1).BeginInit();
-            SuspendLayout();
+            this.buttonFileOpenDialog = new Krypton.Toolkit.KryptonButton();
+            this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonThemeComboBox1 = new Krypton.Toolkit.KryptonThemeComboBox();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
+            this.chkRestoreDirectory = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkReadOnlyChecked = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkMultiselect = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkDereferenceLinks = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkCheckPathExists = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkCheckFileExists = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkAddExtension = new Krypton.Toolkit.KryptonCheckBox();
+            this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
+            this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonNumericUpDown1 = new Krypton.Toolkit.KryptonNumericUpDown();
+            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
+            this.kryptonCheckBox1 = new Krypton.Toolkit.KryptonCheckBox();
+            this.kryptonListBox1 = new Krypton.Toolkit.KryptonListBox();
+            this.kryptonComboBox1 = new Krypton.Toolkit.KryptonComboBox();
+            this.kryptonCheckBox2 = new Krypton.Toolkit.KryptonCheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
+            this.kryptonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).BeginInit();
+            this.kryptonGroupBox2.Panel.SuspendLayout();
+            this.kryptonGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
+            this.kryptonGroupBox1.Panel.SuspendLayout();
+            this.kryptonGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // buttonFileOpenDialog
             // 
-            buttonFileOpenDialog.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
-            buttonFileOpenDialog.Location = new System.Drawing.Point(396, 505);
-            buttonFileOpenDialog.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            buttonFileOpenDialog.Name = "buttonFileOpenDialog";
-            buttonFileOpenDialog.Size = new System.Drawing.Size(460, 92);
-            buttonFileOpenDialog.TabIndex = 19;
-            buttonFileOpenDialog.Values.Text = "File Open Dialog";
-            buttonFileOpenDialog.Click += ButtonShowFileDialog_Click;
+            this.buttonFileOpenDialog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFileOpenDialog.Location = new System.Drawing.Point(284, 325);
+            this.buttonFileOpenDialog.Name = "buttonFileOpenDialog";
+            this.buttonFileOpenDialog.Size = new System.Drawing.Size(307, 59);
+            this.buttonFileOpenDialog.TabIndex = 19;
+            this.buttonFileOpenDialog.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.buttonFileOpenDialog.Values.Text = "File Open Dialog";
             // 
             // kryptonPanel1
             // 
-            kryptonPanel1.Controls.Add(kryptonThemeComboBox1);
-            kryptonPanel1.Controls.Add(kryptonLabel1);
-            kryptonPanel1.Controls.Add(kryptonGroupBox2);
-            kryptonPanel1.Controls.Add(kryptonGroupBox1);
-            kryptonPanel1.Controls.Add(buttonFileOpenDialog);
-            kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            kryptonPanel1.Location = new System.Drawing.Point(0, 0);
-            kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            kryptonPanel1.Name = "kryptonPanel1";
-            kryptonPanel1.Size = new System.Drawing.Size(891, 641);
-            kryptonPanel1.TabIndex = 20;
+            this.kryptonPanel1.Controls.Add(this.kryptonThemeComboBox1);
+            this.kryptonPanel1.Controls.Add(this.kryptonLabel1);
+            this.kryptonPanel1.Controls.Add(this.kryptonGroupBox2);
+            this.kryptonPanel1.Controls.Add(this.kryptonGroupBox1);
+            this.kryptonPanel1.Controls.Add(this.buttonFileOpenDialog);
+            this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel1.Name = "kryptonPanel1";
+            this.kryptonPanel1.Size = new System.Drawing.Size(614, 412);
+            this.kryptonPanel1.TabIndex = 20;
             // 
             // kryptonThemeComboBox1
             // 
-            kryptonThemeComboBox1.DisplayMember = "30";
-            kryptonThemeComboBox1.DropDownWidth = 339;
-            kryptonThemeComboBox1.IntegralHeight = false;
-            kryptonThemeComboBox1.Location = new System.Drawing.Point(18, 91);
-            kryptonThemeComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            kryptonThemeComboBox1.Name = "kryptonThemeComboBox1";
-            kryptonThemeComboBox1.Size = new System.Drawing.Size(508, 37);
-            kryptonThemeComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            kryptonThemeComboBox1.TabIndex = 25;
-            kryptonThemeComboBox1.ValueMember = "30";
+            this.kryptonThemeComboBox1.DefaultPalette = Krypton.Toolkit.PaletteMode.Microsoft365Blue;
+            this.kryptonThemeComboBox1.DisplayMember = "30";
+            this.kryptonThemeComboBox1.DropDownWidth = 339;
+            this.kryptonThemeComboBox1.IntegralHeight = false;
+            this.kryptonThemeComboBox1.Location = new System.Drawing.Point(12, 58);
+            this.kryptonThemeComboBox1.Name = "kryptonThemeComboBox1";
+            this.kryptonThemeComboBox1.Size = new System.Drawing.Size(339, 26);
+            this.kryptonThemeComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonThemeComboBox1.TabIndex = 25;
+            this.kryptonThemeComboBox1.ValueMember = "30";
             // 
             // kryptonLabel1
             // 
-            kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
-            kryptonLabel1.Location = new System.Drawing.Point(18, 44);
-            kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            kryptonLabel1.Name = "kryptonLabel1";
-            kryptonLabel1.Size = new System.Drawing.Size(104, 37);
-            kryptonLabel1.TabIndex = 24;
-            kryptonLabel1.Target = kryptonThemeComboBox1;
-            kryptonLabel1.Values.Text = "&Themes:";
+            this.kryptonLabel1.Location = new System.Drawing.Point(12, 28);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(68, 24);
+            this.kryptonLabel1.TabIndex = 24;
+            this.kryptonLabel1.Target = this.kryptonThemeComboBox1;
+            this.kryptonLabel1.Values.Text = "&Themes:";
             // 
             // kryptonGroupBox2
             // 
-            kryptonGroupBox2.Location = new System.Drawing.Point(558, 44);
-            kryptonGroupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            kryptonGroupBox2.Name = "kryptonGroupBox2";
+            this.kryptonGroupBox2.Location = new System.Drawing.Point(372, 28);
+            this.kryptonGroupBox2.Name = "kryptonGroupBox2";
             // 
+            // kryptonGroupBox2.Panel
             // 
-            // 
-            kryptonGroupBox2.Panel.Controls.Add(chkRestoreDirectory);
-            kryptonGroupBox2.Panel.Controls.Add(chkReadOnlyChecked);
-            kryptonGroupBox2.Panel.Controls.Add(chkMultiselect);
-            kryptonGroupBox2.Panel.Controls.Add(chkDereferenceLinks);
-            kryptonGroupBox2.Panel.Controls.Add(chkCheckPathExists);
-            kryptonGroupBox2.Panel.Controls.Add(chkCheckFileExists);
-            kryptonGroupBox2.Panel.Controls.Add(chkAddExtension);
-            kryptonGroupBox2.Size = new System.Drawing.Size(298, 452);
-            kryptonGroupBox2.TabIndex = 21;
-            kryptonGroupBox2.Values.Heading = "Options:";
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkRestoreDirectory);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkReadOnlyChecked);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkMultiselect);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkDereferenceLinks);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkCheckPathExists);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkCheckFileExists);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.chkAddExtension);
+            this.kryptonGroupBox2.Size = new System.Drawing.Size(199, 289);
+            this.kryptonGroupBox2.TabIndex = 21;
+            this.kryptonGroupBox2.Values.Heading = "Options:";
             // 
             // chkRestoreDirectory
             // 
-            chkRestoreDirectory.Checked = true;
-            chkRestoreDirectory.CheckState = System.Windows.Forms.CheckState.Checked;
-            chkRestoreDirectory.Location = new System.Drawing.Point(6, 281);
-            chkRestoreDirectory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            chkRestoreDirectory.Name = "chkRestoreDirectory";
-            chkRestoreDirectory.Size = new System.Drawing.Size(217, 37);
-            chkRestoreDirectory.TabIndex = 6;
-            chkRestoreDirectory.Values.Text = "Restore Directory";
+            this.chkRestoreDirectory.Checked = true;
+            this.chkRestoreDirectory.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkRestoreDirectory.Location = new System.Drawing.Point(4, 180);
+            this.chkRestoreDirectory.Name = "chkRestoreDirectory";
+            this.chkRestoreDirectory.Size = new System.Drawing.Size(143, 24);
+            this.chkRestoreDirectory.TabIndex = 6;
+            this.chkRestoreDirectory.Values.Text = "Restore Directory";
             // 
             // chkReadOnlyChecked
             // 
-            chkReadOnlyChecked.Location = new System.Drawing.Point(6, 234);
-            chkReadOnlyChecked.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            chkReadOnlyChecked.Name = "chkReadOnlyChecked";
-            chkReadOnlyChecked.Size = new System.Drawing.Size(240, 37);
-            chkReadOnlyChecked.TabIndex = 5;
-            chkReadOnlyChecked.Values.Text = "Read Only Checked";
+            this.chkReadOnlyChecked.Location = new System.Drawing.Point(4, 150);
+            this.chkReadOnlyChecked.Name = "chkReadOnlyChecked";
+            this.chkReadOnlyChecked.Size = new System.Drawing.Size(157, 24);
+            this.chkReadOnlyChecked.TabIndex = 5;
+            this.chkReadOnlyChecked.Values.Text = "Read Only Checked";
             // 
             // chkMultiselect
             // 
-            chkMultiselect.Location = new System.Drawing.Point(6, 188);
-            chkMultiselect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            chkMultiselect.Name = "chkMultiselect";
-            chkMultiselect.Size = new System.Drawing.Size(156, 37);
-            chkMultiselect.TabIndex = 4;
-            chkMultiselect.Values.Text = "Multi Select";
+            this.chkMultiselect.Location = new System.Drawing.Point(4, 120);
+            this.chkMultiselect.Name = "chkMultiselect";
+            this.chkMultiselect.Size = new System.Drawing.Size(105, 24);
+            this.chkMultiselect.TabIndex = 4;
+            this.chkMultiselect.Values.Text = "Multi Select";
             // 
             // chkDereferenceLinks
             // 
-            chkDereferenceLinks.Location = new System.Drawing.Point(6, 141);
-            chkDereferenceLinks.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            chkDereferenceLinks.Name = "chkDereferenceLinks";
-            chkDereferenceLinks.Size = new System.Drawing.Size(221, 37);
-            chkDereferenceLinks.TabIndex = 3;
-            chkDereferenceLinks.Values.Text = "Dereference Links";
+            this.chkDereferenceLinks.Location = new System.Drawing.Point(4, 90);
+            this.chkDereferenceLinks.Name = "chkDereferenceLinks";
+            this.chkDereferenceLinks.Size = new System.Drawing.Size(145, 24);
+            this.chkDereferenceLinks.TabIndex = 3;
+            this.chkDereferenceLinks.Values.Text = "Dereference Links";
             // 
             // chkCheckPathExists
             // 
-            chkCheckPathExists.Location = new System.Drawing.Point(4, 94);
-            chkCheckPathExists.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            chkCheckPathExists.Name = "chkCheckPathExists";
-            chkCheckPathExists.Size = new System.Drawing.Size(215, 37);
-            chkCheckPathExists.TabIndex = 2;
-            chkCheckPathExists.Values.Text = "Check Path Exists";
+            this.chkCheckPathExists.Location = new System.Drawing.Point(3, 60);
+            this.chkCheckPathExists.Name = "chkCheckPathExists";
+            this.chkCheckPathExists.Size = new System.Drawing.Size(142, 24);
+            this.chkCheckPathExists.TabIndex = 2;
+            this.chkCheckPathExists.Values.Text = "Check Path Exists";
             // 
             // chkCheckFileExists
             // 
-            chkCheckFileExists.Checked = true;
-            chkCheckFileExists.CheckState = System.Windows.Forms.CheckState.Checked;
-            chkCheckFileExists.Location = new System.Drawing.Point(6, 47);
-            chkCheckFileExists.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            chkCheckFileExists.Name = "chkCheckFileExists";
-            chkCheckFileExists.Size = new System.Drawing.Size(203, 37);
-            chkCheckFileExists.TabIndex = 1;
-            chkCheckFileExists.Values.Text = "Check File Exists";
+            this.chkCheckFileExists.Checked = true;
+            this.chkCheckFileExists.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkCheckFileExists.Location = new System.Drawing.Point(4, 30);
+            this.chkCheckFileExists.Name = "chkCheckFileExists";
+            this.chkCheckFileExists.Size = new System.Drawing.Size(134, 24);
+            this.chkCheckFileExists.TabIndex = 1;
+            this.chkCheckFileExists.Values.Text = "Check File Exists";
             // 
             // chkAddExtension
             // 
-            chkAddExtension.Location = new System.Drawing.Point(6, 0);
-            chkAddExtension.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            chkAddExtension.Name = "chkAddExtension";
-            chkAddExtension.Size = new System.Drawing.Size(183, 37);
-            chkAddExtension.TabIndex = 0;
-            chkAddExtension.Values.Text = "Add Extension";
+            this.chkAddExtension.Location = new System.Drawing.Point(4, 0);
+            this.chkAddExtension.Name = "chkAddExtension";
+            this.chkAddExtension.Size = new System.Drawing.Size(122, 24);
+            this.chkAddExtension.TabIndex = 0;
+            this.chkAddExtension.Values.Text = "Add Extension";
             // 
             // kryptonGroupBox1
             // 
-            kryptonGroupBox1.Location = new System.Drawing.Point(18, 239);
-            kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            kryptonGroupBox1.Name = "kryptonGroupBox1";
+            this.kryptonGroupBox1.Location = new System.Drawing.Point(12, 153);
+            this.kryptonGroupBox1.Name = "kryptonGroupBox1";
             // 
+            // kryptonGroupBox1.Panel
             // 
-            // 
-            kryptonGroupBox1.Panel.Controls.Add(kryptonTextBox1);
-            kryptonGroupBox1.Panel.Controls.Add(kryptonNumericUpDown1);
-            kryptonGroupBox1.Panel.Controls.Add(kryptonButton1);
-            kryptonGroupBox1.Panel.Controls.Add(kryptonCheckBox1);
-            kryptonGroupBox1.Panel.Controls.Add(kryptonListBox1);
-            kryptonGroupBox1.Panel.Controls.Add(kryptonComboBox1);
-            kryptonGroupBox1.Size = new System.Drawing.Size(522, 256);
-            kryptonGroupBox1.TabIndex = 20;
-            kryptonGroupBox1.Values.Heading = "Style to match:";
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonTextBox1);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonNumericUpDown1);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonButton1);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonCheckBox1);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonListBox1);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonComboBox1);
+            this.kryptonGroupBox1.Size = new System.Drawing.Size(348, 164);
+            this.kryptonGroupBox1.TabIndex = 20;
+            this.kryptonGroupBox1.Values.Heading = "Style to match:";
             // 
             // kryptonTextBox1
             // 
-            kryptonTextBox1.Location = new System.Drawing.Point(234, 45);
-            kryptonTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            kryptonTextBox1.Name = "kryptonTextBox1";
-            kryptonTextBox1.Size = new System.Drawing.Size(201, 39);
-            kryptonTextBox1.TabIndex = 6;
-            kryptonTextBox1.Text = "kryptonTextBox1";
+            this.kryptonTextBox1.Location = new System.Drawing.Point(156, 29);
+            this.kryptonTextBox1.Name = "kryptonTextBox1";
+            this.kryptonTextBox1.Size = new System.Drawing.Size(134, 27);
+            this.kryptonTextBox1.TabIndex = 6;
+            this.kryptonTextBox1.Text = "kryptonTextBox1";
             // 
             // kryptonNumericUpDown1
             // 
-            kryptonNumericUpDown1.Location = new System.Drawing.Point(234, 152);
-            kryptonNumericUpDown1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            kryptonNumericUpDown1.Name = "kryptonNumericUpDown1";
-            kryptonNumericUpDown1.Size = new System.Drawing.Size(135, 38);
-            kryptonNumericUpDown1.TabIndex = 5;
+            this.kryptonNumericUpDown1.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.kryptonNumericUpDown1.Location = new System.Drawing.Point(156, 97);
+            this.kryptonNumericUpDown1.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.kryptonNumericUpDown1.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.kryptonNumericUpDown1.Name = "kryptonNumericUpDown1";
+            this.kryptonNumericUpDown1.Size = new System.Drawing.Size(90, 26);
+            this.kryptonNumericUpDown1.TabIndex = 5;
+            this.kryptonNumericUpDown1.Value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             // 
             // kryptonButton1
             // 
-            kryptonButton1.Location = new System.Drawing.Point(234, 102);
-            kryptonButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            kryptonButton1.Name = "kryptonButton1";
-            kryptonButton1.Size = new System.Drawing.Size(135, 39);
-            kryptonButton1.TabIndex = 4;
-            kryptonButton1.Values.Text = "kryptonButton1";
+            this.kryptonButton1.Location = new System.Drawing.Point(156, 65);
+            this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.Size = new System.Drawing.Size(90, 25);
+            this.kryptonButton1.TabIndex = 4;
+            this.kryptonButton1.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.kryptonButton1.Values.Text = "kryptonButton1";
             // 
             // kryptonCheckBox1
             // 
-            kryptonCheckBox1.Location = new System.Drawing.Point(234, 6);
-            kryptonCheckBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            kryptonCheckBox1.Name = "kryptonCheckBox1";
-            kryptonCheckBox1.Size = new System.Drawing.Size(231, 37);
-            kryptonCheckBox1.TabIndex = 2;
-            kryptonCheckBox1.Values.Text = "kryptonCheckBox1";
+            this.kryptonCheckBox1.Location = new System.Drawing.Point(156, 4);
+            this.kryptonCheckBox1.Name = "kryptonCheckBox1";
+            this.kryptonCheckBox1.Size = new System.Drawing.Size(152, 24);
+            this.kryptonCheckBox1.TabIndex = 2;
+            this.kryptonCheckBox1.Values.Text = "kryptonCheckBox1";
             // 
             // kryptonListBox1
             // 
-            kryptonListBox1.Items.AddRange(new object[] { "Font 1", "Font 2", "Font 1Font 1Font 1Font 1" });
-            kryptonListBox1.Location = new System.Drawing.Point(6, 45);
-            kryptonListBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            kryptonListBox1.Name = "kryptonListBox1";
-            kryptonListBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            kryptonListBox1.Size = new System.Drawing.Size(180, 150);
-            kryptonListBox1.TabIndex = 1;
+            this.kryptonListBox1.Items.AddRange(new object[] {
+            "Font 1",
+            "Font 2",
+            "Font 1Font 1Font 1Font 1"});
+            this.kryptonListBox1.Location = new System.Drawing.Point(4, 29);
+            this.kryptonListBox1.Name = "kryptonListBox1";
+            this.kryptonListBox1.Size = new System.Drawing.Size(120, 96);
+            this.kryptonListBox1.TabIndex = 1;
             // 
             // kryptonComboBox1
             // 
-            kryptonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            kryptonComboBox1.DropDownWidth = 121;
-            kryptonComboBox1.IntegralHeight = false;
-            kryptonComboBox1.Items.AddRange(new object[] { "Microsoft Sans Serif" });
-            kryptonComboBox1.Location = new System.Drawing.Point(6, 6);
-            kryptonComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            kryptonComboBox1.Name = "kryptonComboBox1";
-            kryptonComboBox1.Size = new System.Drawing.Size(219, 37);
-            kryptonComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            kryptonComboBox1.TabIndex = 0;
-            kryptonComboBox1.Text = "Microsoft Sans Serif";
+            this.kryptonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.kryptonComboBox1.DropDownWidth = 121;
+            this.kryptonComboBox1.IntegralHeight = false;
+            this.kryptonComboBox1.Items.AddRange(new object[] {
+            "Microsoft Sans Serif"});
+            this.kryptonComboBox1.Location = new System.Drawing.Point(4, 4);
+            this.kryptonComboBox1.Name = "kryptonComboBox1";
+            this.kryptonComboBox1.Size = new System.Drawing.Size(146, 26);
+            this.kryptonComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonComboBox1.TabIndex = 0;
+            this.kryptonComboBox1.Text = "Microsoft Sans Serif";
             // 
             // kryptonCheckBox2
             // 
-            kryptonCheckBox2.Checked = true;
-            kryptonCheckBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            kryptonCheckBox2.Location = new System.Drawing.Point(4, 180);
-            kryptonCheckBox2.Name = "kryptonCheckBox2";
-            kryptonCheckBox2.Size = new System.Drawing.Size(143, 24);
-            kryptonCheckBox2.TabIndex = 6;
-            kryptonCheckBox2.Values.Text = "Restore Directory";
+            this.kryptonCheckBox2.Checked = true;
+            this.kryptonCheckBox2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.kryptonCheckBox2.Location = new System.Drawing.Point(4, 180);
+            this.kryptonCheckBox2.Name = "kryptonCheckBox2";
+            this.kryptonCheckBox2.Size = new System.Drawing.Size(143, 24);
+            this.kryptonCheckBox2.TabIndex = 6;
+            this.kryptonCheckBox2.Values.Text = "Restore Directory";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(891, 641);
-            Controls.Add(kryptonPanel1);
-            FormTitleAlign = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            Name = "Form1";
-            SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            Text = "KryptonOpenFileDialog Example";
-            Controls.SetChildIndex(kryptonPanel1, 0);
-            ((System.ComponentModel.ISupportInitialize)kryptonPanel1).EndInit();
-            kryptonPanel1.ResumeLayout(false);
-            kryptonPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)kryptonThemeComboBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)kryptonGroupBox2.Panel).EndInit();
-            kryptonGroupBox2.Panel.ResumeLayout(false);
-            kryptonGroupBox2.Panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)kryptonGroupBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)kryptonGroupBox1.Panel).EndInit();
-            kryptonGroupBox1.Panel.ResumeLayout(false);
-            kryptonGroupBox1.Panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)kryptonGroupBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)kryptonComboBox1).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(614, 412);
+            this.Controls.Add(this.kryptonPanel1);
+            this.FormTitleAlign = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.Name = "Form1";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.Text = "KryptonOpenFileDialog Example";
+            this.UseThemeFormChromeBorderWidth = false;
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
+            this.kryptonPanel1.ResumeLayout(false);
+            this.kryptonPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).EndInit();
+            this.kryptonGroupBox2.Panel.ResumeLayout(false);
+            this.kryptonGroupBox2.Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).EndInit();
+            this.kryptonGroupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
+            this.kryptonGroupBox1.Panel.ResumeLayout(false);
+            this.kryptonGroupBox1.Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).EndInit();
+            this.kryptonGroupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

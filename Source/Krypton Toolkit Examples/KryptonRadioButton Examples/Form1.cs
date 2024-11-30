@@ -11,9 +11,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonRadioButtonExamples
@@ -24,7 +25,7 @@ namespace KryptonRadioButtonExamples
 
         private void Form1_Load(object sender, EventArgs e) => propertyGrid.SelectedObject = new KryptonRadioButtonProxy(kryptonRadioButton12);
 
-        private void RadioButtonEnter(object sender, EventArgs e) => propertyGrid.SelectedObject = new KryptonRadioButtonProxy(sender as KryptonRadioButton);
+        private void RadioButtonEnter(object sender, EventArgs e) => propertyGrid.SelectedObject = new KryptonRadioButtonProxy((KryptonRadioButton)sender);
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
     }

@@ -31,26 +31,27 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
-            this.kryptonDockingManager = new Krypton.Docking.KryptonDockingManager();
             this.kryptonPanel = new Krypton.Toolkit.KryptonPanel();
             this.kryptonDockableWorkspace = new Krypton.Docking.KryptonDockableWorkspace();
             this.imageListSmall = new System.Windows.Forms.ImageList(this.components);
+            this.kryptonDockingManager = new Krypton.Docking.KryptonDockingManager();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.kryptonPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDockableWorkspace)).BeginInit();
             this.SuspendLayout();
             // 
-            // kryptonDockingManager
+            // kryptonManager
             // 
-            this.kryptonDockingManager.DefaultCloseRequest = Krypton.Docking.DockingCloseRequest.HidePage;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             // 
             // kryptonPanel
             // 
             this.kryptonPanel.Controls.Add(this.kryptonDockableWorkspace);
             this.kryptonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel.Name = "kryptonPanel";
-            this.kryptonPanel.Size = new System.Drawing.Size(749, 520);
+            this.kryptonPanel.Size = new System.Drawing.Size(1009, 605);
             this.kryptonPanel.TabIndex = 0;
             // 
             // kryptonDockableWorkspace
@@ -62,16 +63,16 @@
             this.kryptonDockableWorkspace.ContainerBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonDockableWorkspace.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonDockableWorkspace.Location = new System.Drawing.Point(0, 0);
+            this.kryptonDockableWorkspace.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonDockableWorkspace.Name = "kryptonDockableWorkspace";
             // 
             // 
             // 
-            this.kryptonDockableWorkspace.Root.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.kryptonDockableWorkspace.Root.UniqueName = "6C9A3354441646DC46BF0E62E96721F3";
             this.kryptonDockableWorkspace.Root.WorkspaceControl = this.kryptonDockableWorkspace;
             this.kryptonDockableWorkspace.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.LowProfile;
             this.kryptonDockableWorkspace.ShowMaximizeButton = false;
-            this.kryptonDockableWorkspace.Size = new System.Drawing.Size(749, 520);
+            this.kryptonDockableWorkspace.Size = new System.Drawing.Size(1009, 605);
             this.kryptonDockableWorkspace.SplitterWidth = 5;
             this.kryptonDockableWorkspace.TabIndex = 0;
             this.kryptonDockableWorkspace.TabStop = true;
@@ -87,11 +88,12 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(749, 520);
+            this.ClientSize = new System.Drawing.Size(1009, 605);
             this.Controls.Add(this.kryptonPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "External Drag To Docking";
             this.Load += new System.EventHandler(this.Form1_Load);

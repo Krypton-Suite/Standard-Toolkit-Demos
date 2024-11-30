@@ -11,9 +11,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonGroupBoxExamples
@@ -53,7 +54,7 @@ namespace KryptonGroupBoxExamples
             get => _groupBox.CaptionEdge;
             set => _groupBox.CaptionEdge = value;
         }
-        
+
         [Category("Visuals")]
         [Description("Orientation of the caption.")]
         public ButtonOrientation CaptionOrientation
@@ -61,7 +62,7 @@ namespace KryptonGroupBoxExamples
             get => _groupBox.CaptionOrientation;
             set => _groupBox.CaptionOrientation = value;
         }
-        
+
         [Category("Visuals")]
         [Description("The percentage the caption should overlap the group area.")]
         [TypeConverter(typeof(OpacityConverter))]
@@ -70,7 +71,7 @@ namespace KryptonGroupBoxExamples
             get => _groupBox.CaptionOverlap;
             set => _groupBox.CaptionOverlap = value;
         }
-        
+
         [Category("Visuals")]
         [Description("Caption style.")]
         public LabelStyle CaptionStyle
@@ -78,7 +79,7 @@ namespace KryptonGroupBoxExamples
             get => _groupBox.CaptionStyle;
             set => _groupBox.CaptionStyle = value;
         }
-        
+
         [Category("Visuals")]
         [Description("Caption visibility.")]
         public bool CaptionVisible
@@ -86,7 +87,7 @@ namespace KryptonGroupBoxExamples
             get => _groupBox.CaptionVisible;
             set => _groupBox.CaptionVisible = value;
         }
-        
+
         [Category("Visuals")]
         [Description("Background style.")]
         public PaletteBackStyle GroupBackStyle
@@ -94,7 +95,7 @@ namespace KryptonGroupBoxExamples
             get => _groupBox.GroupBackStyle;
             set => _groupBox.GroupBackStyle = value;
         }
-        
+
         [Description("Border style.")]
         [Category("Visuals")]
         public PaletteBorderStyle GroupBorderStyle
@@ -113,11 +114,11 @@ namespace KryptonGroupBoxExamples
 
         [Category("Visuals")]
         [Description("Overrides for defining disabled header group appearance.")]
-        public PaletteGroupBox StateDisabled => _groupBox.StateDisabled;
+        public PaletteGroupBox StateDisabled => _groupBox.StateDisabled!;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal header group appearance.")]
-        public PaletteGroupBox StateNormal => _groupBox.StateNormal;
+        public PaletteGroupBox StateNormal => _groupBox.StateNormal!;
 
         [Category("Visuals")]
         [Description("Caption values")]

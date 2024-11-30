@@ -1,4 +1,9 @@
-﻿using System;
+﻿// *****************************************************************************
+// BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2021 - 2024. All rights reserved.
+// *****************************************************************************
+
+using System;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
@@ -7,40 +12,7 @@ namespace KryptonFontDialog_Example_2019
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
-
-        private void Palette2010Blue_CheckedChanged(object sender, EventArgs e)
-        {
-            KryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Blue;
-        }
-
-        private void Palette2010Silver_CheckedChanged(object sender, EventArgs e)
-        {
-            KryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Silver;
-        }
-
-        private void Palette2010Black_CheckedChanged(object sender, EventArgs e)
-        {
-            KryptonManager.GlobalPaletteMode = PaletteModeManager.Office2010Black;
-        }
-
-        private void Palette2007Blue_CheckedChanged(object sender, EventArgs e)
-        {
-            KryptonManager.GlobalPaletteMode = PaletteModeManager.Office2007Blue;
-        }
-
-        private void PaletteSparkleOrange_CheckedChanged(object sender, EventArgs e)
-        {
-            KryptonManager.GlobalPaletteMode = PaletteModeManager.SparkleOrange;
-        }
-
-        private void PaletteProfessional_CheckedChanged(object sender, EventArgs e)
-        {
-            KryptonManager.GlobalPaletteMode = PaletteModeManager.ProfessionalSystem;
-        }
+        public Form1() => InitializeComponent();
 
         private void FolderBrowserDialog1_HelpRequest(object sender, EventArgs e)
         {

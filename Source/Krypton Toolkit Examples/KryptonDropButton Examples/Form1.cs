@@ -1,4 +1,9 @@
-﻿#region BSD License
+﻿// *****************************************************************************
+// BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2021 - 2024. All rights reserved.
+// *****************************************************************************
+
+#region BSD License
 /*
  * 
  * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
@@ -11,9 +16,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonDropButtonExamples
@@ -28,7 +34,7 @@ namespace KryptonDropButtonExamples
 
         private void dropButtonEnter(object sender, EventArgs e) =>
             // Setup the property grid to edit this drop down
-            propertyGrid.SelectedObject = new KryptonDropButtonProxy(sender as KryptonDropButton);
+            propertyGrid.SelectedObject = new KryptonDropButtonProxy((KryptonDropButton)sender);
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
@@ -66,7 +72,7 @@ namespace KryptonDropButtonExamples
 
         [Category("Behavior")]
         [Description("The shortcut menu to show when the user right-clicks the page.")]
-        public KryptonContextMenu KryptonContextMenu => _dropDown.KryptonContextMenu;
+        public KryptonContextMenu KryptonContextMenu => _dropDown.KryptonContextMenu!;
 
         [Category("Visuals")]
         [Description("Visual orientation of the control.")]

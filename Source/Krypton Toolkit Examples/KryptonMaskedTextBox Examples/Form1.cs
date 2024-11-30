@@ -37,7 +37,7 @@ namespace KryptonMaskedTextBoxExamples
 
         private void maskedTextBox1Blue_Enter(object sender, EventArgs e) =>
             // Setup the property grid to edit this masked text box
-            propertyGrid.SelectedObject = new KryptonMaskedTextBoxProxy(sender as KryptonMaskedTextBox);
+            propertyGrid.SelectedObject = new KryptonMaskedTextBoxProxy((KryptonMaskedTextBox)sender);
 
         private void buttonSpecAny1_Click(object sender, EventArgs e) => maskedTextBox2Blue.Text = string.Empty;
 

@@ -9,15 +9,13 @@
  *  
  */
 #endregion
+
 using System;
-using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Diagnostics;
-using Krypton.Toolkit;
+
 using Krypton.Navigator;
+using Krypton.Toolkit;
 
 namespace OneNoteTabs
 {
@@ -31,9 +29,9 @@ namespace OneNoteTabs
         private Color _hotEmbedTracking = Color.FromArgb(255, 231, 162);
 
         // 8 example titles for the tabs
-        private string[] _titleMain = new string[] { "Personal",    "Online", 
-                                                     "Books",       "Travel", 
-                                                     "Movies",      "Music", 
+        private string[] _titleMain = new string[] { "Personal",    "Online",
+                                                     "Books",       "Travel",
+                                                     "Movies",      "Music",
                                                      "Recipes",     "Shopping" };
 
         private string[] _titleEmbedded = new string[]{ "Financial information", "Credit card accounts",
@@ -109,7 +107,7 @@ namespace OneNoteTabs
         private void AddTopPage()
         {
             // Create a new krypton page to be added
-            KryptonPage page = new KryptonPage();
+            var page = new KryptonPage();
 
             // Set the page title
             page.Text = _titleMain[_count % _titleMain.Length];
@@ -149,7 +147,7 @@ namespace OneNoteTabs
         private void AddEmbeddedNavigator(KryptonPage page)
         {
             // Create a navigator to embed inside the page
-            KryptonNavigator nav = new KryptonNavigator();
+            var nav = new KryptonNavigator();
 
             // We want the navigator to fill the entire page area
             nav.Dock = DockStyle.Fill;
@@ -187,10 +185,10 @@ namespace OneNoteTabs
             nav.StatePressed.Tab.Back.Color1 = _hotEmbedTracking;
 
             // Add a random number of pages
-            Random rand = new Random();
-            int numPages = 3 + rand.Next(5);
+            var rand = new Random();
+            var numPages = 3 + rand.Next(5);
 
-            for(int i=0; i<numPages; i++)
+            for (var i = 0; i < numPages; i++)
                 nav.Pages.Add(NewEmbeddedPage(_titleEmbedded[rand.Next(_titleEmbedded.Length - 1)]));
 
             page.Controls.Add(nav);
@@ -198,7 +196,7 @@ namespace OneNoteTabs
 
         private KryptonPage NewEmbeddedPage(string title)
         {
-            KryptonPage page = new KryptonPage();
+            var page = new KryptonPage();
             page.Text = title;
             page.ImageSmall = null;
             return page;

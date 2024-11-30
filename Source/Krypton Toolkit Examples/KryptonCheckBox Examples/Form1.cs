@@ -11,9 +11,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonCheckBoxExamples
@@ -24,7 +25,7 @@ namespace KryptonCheckBoxExamples
 
         private void Form1_Load(object sender, EventArgs e) => propertyGrid.SelectedObject = new KryptonCheckBoxProxy(kryptonCheckBox13);
 
-        private void CheckButtonEnter(object sender, EventArgs e) => propertyGrid.SelectedObject = new KryptonCheckBoxProxy(sender as KryptonCheckBox);
+        private void CheckButtonEnter(object sender, EventArgs e) => propertyGrid.SelectedObject = new KryptonCheckBoxProxy((KryptonCheckBox)sender);
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
@@ -80,8 +81,8 @@ namespace KryptonCheckBoxExamples
         public CheckBoxImages Images => _checkBox.Images;
 
         [Category("Visuals")]
-		[Description("Label style.")]
-		public LabelStyle LabelStyle
+        [Description("Label style.")]
+        public LabelStyle LabelStyle
         {
             get => _checkBox.LabelStyle;
             set => _checkBox.LabelStyle = value;

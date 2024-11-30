@@ -58,19 +58,22 @@ namespace KryptonOutlookGrid
             this.kryptonPanel1.Controls.Add(this.kbtnClose);
             this.kryptonPanel1.Controls.Add(this.kryptonBorderEdge1);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, 422);
+            this.kryptonPanel1.Location = new System.Drawing.Point(0, 533);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
-            this.kryptonPanel1.Size = new System.Drawing.Size(822, 50);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1132, 62);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // kbtnClose
             // 
             this.kbtnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.kbtnClose.Location = new System.Drawing.Point(716, 13);
+            this.kbtnClose.Location = new System.Drawing.Point(955, 16);
+            this.kbtnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kbtnClose.Name = "kbtnClose";
-            this.kbtnClose.Size = new System.Drawing.Size(90, 25);
+            this.kbtnClose.Size = new System.Drawing.Size(120, 31);
             this.kbtnClose.TabIndex = 1;
+            this.kbtnClose.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kbtnClose.Values.Text = "Close";
             this.kbtnClose.Click += new System.EventHandler(this.kbtnClose_Click);
             // 
@@ -79,8 +82,9 @@ namespace KryptonOutlookGrid
             this.kryptonBorderEdge1.BorderStyle = Krypton.Toolkit.PaletteBorderStyle.HeaderSecondary;
             this.kryptonBorderEdge1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonBorderEdge1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonBorderEdge1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonBorderEdge1.Name = "kryptonBorderEdge1";
-            this.kryptonBorderEdge1.Size = new System.Drawing.Size(822, 1);
+            this.kryptonBorderEdge1.Size = new System.Drawing.Size(1132, 1);
             this.kryptonBorderEdge1.Text = "kryptonBorderEdge1";
             // 
             // kryptonPanel2
@@ -88,8 +92,9 @@ namespace KryptonOutlookGrid
             this.kryptonPanel2.Controls.Add(this.kryptonHeaderGroup1);
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(822, 422);
+            this.kryptonPanel2.Size = new System.Drawing.Size(1132, 533);
             this.kryptonPanel2.TabIndex = 1;
             // 
             // kryptonHeaderGroup1
@@ -98,14 +103,15 @@ namespace KryptonOutlookGrid
             this.kryptonHeaderGroup1.ButtonSpecs.Add(this.bsaSaveConfiguration);
             this.kryptonHeaderGroup1.ButtonSpecs.Add(this.bsaToggleAllNodes);
             this.kryptonHeaderGroup1.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup1.Location = new System.Drawing.Point(13, 13);
+            this.kryptonHeaderGroup1.Location = new System.Drawing.Point(17, 16);
+            this.kryptonHeaderGroup1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonHeaderGroup1.Name = "kryptonHeaderGroup1";
             // 
             // kryptonHeaderGroup1.Panel
             // 
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.kogExample);
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.kryptonOutlookGridGroupBox1);
-            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(793, 383);
+            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(1057, 471);
             this.kryptonHeaderGroup1.TabIndex = 0;
             this.kryptonHeaderGroup1.ValuesPrimary.Heading = "Outlook Grid Example";
             this.kryptonHeaderGroup1.ValuesPrimary.Image = null;
@@ -134,14 +140,18 @@ namespace KryptonOutlookGrid
             // kogExample
             // 
             this.kogExample.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.kogExample.ColumnHeadersHeight = 36;
             this.kogExample.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kogExample.FillMode = GridFillMode.GroupsOnly;
+            this.kogExample.FillMode = Krypton.Toolkit.GridFillMode.GroupsOnly;
             this.kogExample.GroupCollection = outlookGridGroupCollection1;
-            this.kogExample.Location = new System.Drawing.Point(0, 46);
+            this.kogExample.Location = new System.Drawing.Point(0, 57);
+            this.kogExample.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kogExample.Name = "kogExample";
             this.kogExample.PreviousSelectedGroupRow = -1;
+            this.kogExample.RightToLeftLayout = Krypton.Toolkit.RightToLeftLayout.LeftToRight;
+            this.kogExample.RowHeadersWidth = 51;
             this.kogExample.ShowLines = false;
-            this.kogExample.Size = new System.Drawing.Size(791, 305);
+            this.kogExample.Size = new System.Drawing.Size(1055, 376);
             this.kogExample.TabIndex = 1;
             this.kogExample.GroupImageClick += new System.EventHandler<Krypton.Toolkit.OutlookGridGroupImageEventArgs>(this.kogExample_GroupImageClick);
             this.kogExample.Resize += new System.EventHandler(this.kogExample_Resize);
@@ -151,22 +161,25 @@ namespace KryptonOutlookGrid
             this.kryptonOutlookGridGroupBox1.AllowDrop = true;
             this.kryptonOutlookGridGroupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonOutlookGridGroupBox1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonOutlookGridGroupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonOutlookGridGroupBox1.Name = "kryptonOutlookGridGroupBox1";
-            this.kryptonOutlookGridGroupBox1.Size = new System.Drawing.Size(791, 46);
+            this.kryptonOutlookGridGroupBox1.Size = new System.Drawing.Size(1055, 57);
             this.kryptonOutlookGridGroupBox1.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(822, 472);
+            this.ClientSize = new System.Drawing.Size(1132, 595);
             this.Controls.Add(this.kryptonPanel2);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Krypton Outlook Grid Example";
+            this.UseThemeFormChromeBorderWidth = false;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);

@@ -1,7 +1,11 @@
-﻿public class TypeConverter
+﻿// *****************************************************************************
+// BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2024 - 2024. All rights reserved.
+// *****************************************************************************
+
+public class TypeConverter
 {
-    public static string? ProcessType(string? fullQualifiedName)
-    {
+    public static string? ProcessType(string? fullQualifiedName) =>
         //Translate types here to accomodate code changes, namespaces and version
         //Select Case FullQualifiedName
         //    Case "JDHSoftware.Krypton.Toolkit.KryptonOutlookGrid.OutlookGridAlphabeticGroup, JDHSoftware.Krypton.Toolkit, Version=1.2.0.0, Culture=neutral, PublicKeyToken=e12f297423986ef5",
@@ -10,6 +14,5 @@
         //        FullQualifiedName = "TestMe, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null"
         //        Exit Select
         //End Select
-        return fullQualifiedName;
-    }
+        fullQualifiedName;
 }

@@ -9,15 +9,12 @@
  *  
  */
 #endregion
+
 using System;
-using System.Text;
-using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Diagnostics;
-using Krypton.Toolkit;
+
 using Krypton.Navigator;
+using Krypton.Toolkit;
 
 namespace UserPageCreation
 {
@@ -65,10 +62,10 @@ namespace UserPageCreation
         private void InsertNewPage()
         {
             // Then create a new page
-            KryptonPage newPage = new KryptonPage();
+            var newPage = new KryptonPage();
 
             // Define the name and image of the page
-            newPage.Text = "Page" + (_count++).ToString();
+            newPage.Text = $"Page{(_count++)}";
             newPage.ImageSmall = global::UserPageCreation.Properties.Resources.document;
 
             // Insert just at second to last index, just before the 'new page' page
@@ -87,8 +84,8 @@ namespace UserPageCreation
         {
             // Because the 'new page' item does not have any text we need to manually set the
             // displayed text for 'new page' in the context menu strip, otherwise it will be blank
-            KryptonContextMenuItems items = (KryptonContextMenuItems)e.KryptonContextMenu.Items[0];
-            KryptonContextMenuItem item = (KryptonContextMenuItem)items.Items[items.Items.Count - 1];
+            var items = (KryptonContextMenuItems)e.KryptonContextMenu.Items[0];
+            var item = (KryptonContextMenuItem)items.Items[items.Items.Count - 1];
             item.Text = "New Page";
         }
 

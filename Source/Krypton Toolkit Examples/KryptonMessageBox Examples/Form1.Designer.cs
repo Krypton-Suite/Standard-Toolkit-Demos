@@ -133,6 +133,7 @@
             // 
             this.kcmbIcons.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.kcmbIcons.DropDownWidth = 298;
+            this.kcmbIcons.IntegralHeight = false;
             this.kcmbIcons.Location = new System.Drawing.Point(14, 114);
             this.kcmbIcons.Name = "kcmbIcons";
             this.kcmbIcons.Size = new System.Drawing.Size(298, 26);
@@ -193,6 +194,10 @@
             this.kradWarning.TabIndex = 3;
             this.kradWarning.Values.Text = "&Warning";
             this.kradWarning.CheckedChanged += new System.EventHandler(this.icon_CheckedChanged);
+            // 
+            // kryptonManager
+            // 
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
             // 
             // kryptonGroupBox1
             // 
@@ -284,8 +289,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kbtnShow.Location = new System.Drawing.Point(55, 375);
             this.kbtnShow.Name = "kbtnShow";
-            this.kbtnShow.Size = new System.Drawing.Size(592, 57);
+            this.kbtnShow.Size = new System.Drawing.Size(596, 57);
             this.kbtnShow.TabIndex = 7;
+            this.kbtnShow.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kbtnShow.Values.Text = "Show";
             this.kbtnShow.Click += new System.EventHandler(this.kbtnShow_Click);
             // 
@@ -304,7 +310,7 @@
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(690, 447);
+            this.kryptonPanel1.Size = new System.Drawing.Size(694, 433);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // kbtnDummyText
@@ -313,6 +319,7 @@
             this.kbtnDummyText.Name = "kbtnDummyText";
             this.kbtnDummyText.Size = new System.Drawing.Size(148, 26);
             this.kbtnDummyText.TabIndex = 10;
+            this.kbtnDummyText.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kbtnDummyText.Values.Text = "Insert Dummy Text";
             this.kbtnDummyText.Click += new System.EventHandler(this.kbtnDummyText_Click);
             // 
@@ -327,11 +334,12 @@
             // kryptonThemeComboBox1
             // 
             this.kryptonThemeComboBox1.CueHint.Padding = new System.Windows.Forms.Padding(0);
+            this.kryptonThemeComboBox1.DefaultPalette = Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.kryptonThemeComboBox1.DropDownWidth = 340;
             this.kryptonThemeComboBox1.IntegralHeight = false;
             this.kryptonThemeComboBox1.Location = new System.Drawing.Point(322, 23);
             this.kryptonThemeComboBox1.Name = "kryptonThemeComboBox1";
-            this.kryptonThemeComboBox1.Size = new System.Drawing.Size(340, 25);
+            this.kryptonThemeComboBox1.Size = new System.Drawing.Size(340, 26);
             this.kryptonThemeComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonThemeComboBox1.TabIndex = 2;
             // 
@@ -365,7 +373,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 447);
+            this.ClientSize = new System.Drawing.Size(694, 433);
             this.Controls.Add(this.textBoxMessage);
             this.Controls.Add(this.textBoxCaption);
             this.Controls.Add(this.kryptonPanel1);

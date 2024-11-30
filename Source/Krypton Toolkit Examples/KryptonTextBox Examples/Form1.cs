@@ -29,7 +29,7 @@ namespace KryptonTextBoxExamples
 
         private void kryptonTextBox1Blue_Enter(object sender, EventArgs e) =>
             // Setup the property grid to edit this text box
-            propertyGrid.SelectedObject = new KryptonTextBoxProxy(sender as KryptonTextBox);
+            propertyGrid.SelectedObject = new KryptonTextBoxProxy((KryptonTextBox)sender);
 
         private void buttonSpecAny1_Click(object sender, EventArgs e) => kryptonTextBox2Blue.Text = string.Empty;
 

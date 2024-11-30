@@ -58,15 +58,15 @@ namespace KryptonBorderEdgeExamples
 
         private void button_Enter(object sender, EventArgs e) =>
             // Setup the property grid to edit this button
-            propertyGrid.SelectedObject = new KryptonButtonProxy(sender as KryptonButton);
+            propertyGrid.SelectedObject = new KryptonButtonProxy((KryptonButton)sender);
 
         private void checkButton_Enter(object sender, EventArgs e) =>
             // Setup the property grid to edit this check button
-            propertyGrid.SelectedObject = new KryptonCheckButtonProxy(sender as KryptonCheckButton);
+            propertyGrid.SelectedObject = new KryptonCheckButtonProxy((KryptonCheckButton)sender);
 
         private void borderEdge_MouseDown(object sender, MouseEventArgs e) =>
             // Setup the property grid to edit this border edge
-            propertyGrid.SelectedObject = new KryptonBorderEdgeProxy(sender as KryptonBorderEdge);
+            propertyGrid.SelectedObject = new KryptonBorderEdgeProxy((KryptonBorderEdge)sender);
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
     }

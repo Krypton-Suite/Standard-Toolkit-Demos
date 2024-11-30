@@ -12,10 +12,7 @@ namespace KryptonListViewExamples
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void ViewTypeChanged(object sender, System.EventArgs e)
         {
@@ -54,7 +51,7 @@ namespace KryptonListViewExamples
             }
             catch (Exception exception)
             {
-                KryptonMessageBox.Show(this, exception.Message, @"Not Supported", 
+                KryptonMessageBox.Show(this, exception.Message, @"Not Supported",
                     KryptonMessageBoxButtons.OK, KryptonMessageBoxIcon.Warning);
             }
         }

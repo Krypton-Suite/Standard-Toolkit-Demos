@@ -11,6 +11,7 @@
 #endregion
 
 using System;
+
 using Krypton.Toolkit;
 
 namespace MDIApplication

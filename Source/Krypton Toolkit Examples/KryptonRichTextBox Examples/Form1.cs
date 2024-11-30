@@ -11,9 +11,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonRichTextBoxExamples
@@ -27,14 +28,14 @@ namespace KryptonRichTextBoxExamples
             // Load the RTF into the controls
             kryptonRichTextBox3Blue.Rtf = Properties.Resources.Document;
             kryptonRichTextBox6System.Rtf = Properties.Resources.Document;
-        
+
             // Setup the property grid to edit this rich text box
             propertyGrid.SelectedObject = new KryptonRichTextBoxProxy(kryptonRichTextBox1Blue);
         }
 
         private void kryptonRichTextBox1Blue_Enter(object sender, EventArgs e) =>
             // Setup the property grid to edit this rich text box
-            propertyGrid.SelectedObject = new KryptonRichTextBoxProxy(sender as KryptonRichTextBox);
+            propertyGrid.SelectedObject = new KryptonRichTextBoxProxy((KryptonRichTextBox)sender);
 
         private void buttonSpecAny1_Click(object sender, EventArgs e) => kryptonRichTextBox2Blue.Text = string.Empty;
 

@@ -9,6 +9,7 @@
  *  
  */
 #endregion
+
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -32,7 +33,7 @@ namespace MultiControlDocking
         private KryptonPage NewPage(string name, int image, Control content)
         {
             // Create new page with title and image
-            KryptonPage p = new KryptonPage
+            var p = new KryptonPage
             {
                 Text = name + _count.ToString(),
                 TextTitle = name + _count.ToString(),

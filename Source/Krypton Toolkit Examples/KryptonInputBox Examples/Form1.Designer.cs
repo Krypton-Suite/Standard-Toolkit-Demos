@@ -58,10 +58,10 @@ namespace KryptonInputBoxExamples
             this.kryptonPanel1.Controls.Add(this.kbtnShow);
             this.kryptonPanel1.Controls.Add(this.kryptonBorderEdge1);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, 272);
+            this.kryptonPanel1.Location = new System.Drawing.Point(0, 262);
             this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(653, 62);
+            this.kryptonPanel1.Size = new System.Drawing.Size(665, 62);
             this.kryptonPanel1.TabIndex = 1;
             // 
             // kbtnShow
@@ -71,6 +71,7 @@ namespace KryptonInputBoxExamples
             this.kbtnShow.Name = "kbtnShow";
             this.kbtnShow.Size = new System.Drawing.Size(120, 31);
             this.kbtnShow.TabIndex = 1;
+            this.kbtnShow.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kbtnShow.Values.Text = "&Show";
             this.kbtnShow.Click += new System.EventHandler(this.kbtnShow_Click);
             // 
@@ -80,7 +81,7 @@ namespace KryptonInputBoxExamples
             this.kryptonBorderEdge1.Location = new System.Drawing.Point(0, 0);
             this.kryptonBorderEdge1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonBorderEdge1.Name = "kryptonBorderEdge1";
-            this.kryptonBorderEdge1.Size = new System.Drawing.Size(653, 1);
+            this.kryptonBorderEdge1.Size = new System.Drawing.Size(665, 1);
             this.kryptonBorderEdge1.Text = "kryptonBorderEdge1";
             // 
             // kryptonPanel2
@@ -100,7 +101,7 @@ namespace KryptonInputBoxExamples
             this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(653, 272);
+            this.kryptonPanel2.Size = new System.Drawing.Size(665, 262);
             this.kryptonPanel2.TabIndex = 0;
             // 
             // kchkUsePasswordOption
@@ -119,6 +120,7 @@ namespace KryptonInputBoxExamples
             this.kbtnCueTypeface.Name = "kbtnCueTypeface";
             this.kbtnCueTypeface.Size = new System.Drawing.Size(120, 31);
             this.kbtnCueTypeface.TabIndex = 9;
+            this.kbtnCueTypeface.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kbtnCueTypeface.Values.Text = "Cue T&ypeface";
             this.kbtnCueTypeface.Click += new System.EventHandler(this.kbtnCueTypeface_Click);
             // 
@@ -172,7 +174,6 @@ namespace KryptonInputBoxExamples
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel4.Location = new System.Drawing.Point(84, 158);
             this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel4.Name = "kryptonLabel4";
@@ -182,7 +183,6 @@ namespace KryptonInputBoxExamples
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel3.Location = new System.Drawing.Point(17, 122);
             this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel3.Name = "kryptonLabel3";
@@ -192,7 +192,6 @@ namespace KryptonInputBoxExamples
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel2.Location = new System.Drawing.Point(89, 13);
             this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel2.Name = "kryptonLabel2";
@@ -202,7 +201,6 @@ namespace KryptonInputBoxExamples
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel1.Location = new System.Drawing.Point(92, 48);
             this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel1.Name = "kryptonLabel1";
@@ -212,13 +210,14 @@ namespace KryptonInputBoxExamples
             // 
             // kryptonManager1
             // 
+            this.kryptonManager1.GlobalApplyToolstrips = false;
             this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(653, 334);
+            this.ClientSize = new System.Drawing.Size(665, 324);
             this.Controls.Add(this.kryptonPanel2);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;

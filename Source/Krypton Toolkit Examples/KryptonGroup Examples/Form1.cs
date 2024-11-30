@@ -11,9 +11,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonGroupExamples
@@ -71,11 +72,11 @@ namespace KryptonGroupExamples
 
         [Category("Visuals")]
         [Description("Overrides for defining disabled group appearance.")]
-        public PaletteDouble StateDisabled => _group.StateDisabled;
+        public PaletteDouble StateDisabled => _group.StateDisabled!;
 
         [Category("Visuals")]
         [Description("Overrides for defining normal group appearance.")]
-        public PaletteDouble StateNormal => _group.StateNormal;
+        public PaletteDouble StateNormal => _group.StateNormal!;
 
         [Category("Visuals")]
         [Description("Palette applied to drawing.")]

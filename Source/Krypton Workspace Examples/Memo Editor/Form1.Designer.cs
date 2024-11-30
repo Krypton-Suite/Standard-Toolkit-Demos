@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemoEditorForm));
             this.kryptonRibbon = new Krypton.Ribbon.KryptonRibbon();
             this.appButtonNewMemo = new Krypton.Toolkit.KryptonContextMenuItem();
             this.appButtonOpenMemo = new Krypton.Toolkit.KryptonContextMenuItem();
@@ -107,10 +106,8 @@
             // 
             // kryptonRibbon
             // 
-            this.kryptonRibbon.HideRibbonSize = new System.Drawing.Size(300, 250);
             this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
-            this.kryptonRibbon.QATLocation = Krypton.Ribbon.QATLocation.Above;
             this.kryptonRibbon.RibbonFileAppButton.AppButtonMaxRecentSize = new System.Drawing.Size(250, 200);
             this.kryptonRibbon.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.appButtonNewMemo,
@@ -123,65 +120,56 @@
             this.appButtonCloseMemo,
             this.appButtonCloseAllMemo});
             this.kryptonRibbon.RibbonFileAppButton.AppButtonMinRecentSize = new System.Drawing.Size(150, 200);
-            this.kryptonRibbon.RibbonFileAppButton.AppButtonSpecs.AddRange(new Krypton.Ribbon.ButtonSpecAppMenu[] {
-            this.buttonSpecExit});
-            this.kryptonRibbon.RibbonFileAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
+            this.kryptonRibbon.RibbonFileAppButton.AppButtonSpecs.Add(this.buttonSpecExit);
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.ribbonTabMemo,
             this.ribbonTabAppearance});
-            this.kryptonRibbon.SelectedContext = null;
             this.kryptonRibbon.SelectedTab = this.ribbonTabMemo;
-            this.kryptonRibbon.Size = new System.Drawing.Size(584, 115);
+            this.kryptonRibbon.Size = new System.Drawing.Size(783, 136);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // appButtonNewMemo
             // 
-            this.appButtonNewMemo.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.appButtonNewMemo.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.appButtonNewMemo.Text = "&New";
             this.appButtonNewMemo.Click += new System.EventHandler(this.buttonNewMemo_Click);
             // 
             // appButtonOpenMemo
             // 
-            this.appButtonOpenMemo.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.appButtonOpenMemo.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.appButtonOpenMemo.Text = "&Open";
             this.appButtonOpenMemo.Click += new System.EventHandler(this.buttonOpenMemo_Click);
             // 
+            // appButtonSep1
+            // 
+            this.appButtonSep1.Text = "";
+            // 
             // appButtonSaveMemo
             // 
-            this.appButtonSaveMemo.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.appButtonSaveMemo.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.appButtonSaveMemo.Text = "&Save";
             this.appButtonSaveMemo.Click += new System.EventHandler(this.buttonSaveMemo_Click);
             // 
             // appButtonSaveAsMemo
             // 
-            this.appButtonSaveAsMemo.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.appButtonSaveAsMemo.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.appButtonSaveAsMemo.Text = "Save &As...";
             this.appButtonSaveAsMemo.Click += new System.EventHandler(this.buttonSaveAsMemo_Click);
             // 
             // appButtonSaveAllMemo
             // 
-            this.appButtonSaveAllMemo.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.appButtonSaveAllMemo.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.appButtonSaveAllMemo.Text = "Save A&ll";
             this.appButtonSaveAllMemo.Click += new System.EventHandler(this.buttonSaveAllMemo_Click);
             // 
+            // appButtonSep2
+            // 
+            this.appButtonSep2.Text = "";
+            // 
             // appButtonCloseMemo
             // 
-            this.appButtonCloseMemo.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.appButtonCloseMemo.Image = global::MemoEditor.Properties.Resources.close24;
-            this.appButtonCloseMemo.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.appButtonCloseMemo.Text = "&Close";
             this.appButtonCloseMemo.Click += new System.EventHandler(this.buttonCloseMemo_Click);
             // 
             // appButtonCloseAllMemo
             // 
-            this.appButtonCloseAllMemo.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.appButtonCloseAllMemo.Image = global::MemoEditor.Properties.Resources.closeAll24;
-            this.appButtonCloseAllMemo.ShortcutKeys = System.Windows.Forms.Keys.None;
             this.appButtonCloseAllMemo.Text = "Clos&e All";
             this.appButtonCloseAllMemo.Click += new System.EventHandler(this.buttonCloseAllMemo_Click);
             // 
@@ -214,16 +202,12 @@
             // 
             // kryptonRibbonGroupTriple1
             // 
-            this.kryptonRibbonGroupTriple1.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonNewMemo,
             this.buttonOpenMemo});
-            this.kryptonRibbonGroupTriple1.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
-            this.kryptonRibbonGroupTriple1.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // buttonNewMemo
             // 
-            this.buttonNewMemo.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonNewMemo.KeyTip = "N";
             this.buttonNewMemo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.buttonNewMemo.TextLine1 = "New";
@@ -231,7 +215,6 @@
             // 
             // buttonOpenMemo
             // 
-            this.buttonOpenMemo.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonOpenMemo.KeyTip = "O";
             this.buttonOpenMemo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.buttonOpenMemo.TextLine1 = "Open";
@@ -239,17 +222,13 @@
             // 
             // kryptonRibbonGroupTriple3
             // 
-            this.kryptonRibbonGroupTriple3.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonSaveMemo,
             this.buttonSaveAsMemo,
             this.buttonSaveAllMemo});
-            this.kryptonRibbonGroupTriple3.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
-            this.kryptonRibbonGroupTriple3.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // buttonSaveMemo
             // 
-            this.buttonSaveMemo.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonSaveMemo.KeyTip = "S";
             this.buttonSaveMemo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.buttonSaveMemo.TextLine1 = "Save";
@@ -257,7 +236,6 @@
             // 
             // buttonSaveAsMemo
             // 
-            this.buttonSaveAsMemo.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonSaveAsMemo.KeyTip = "A";
             this.buttonSaveAsMemo.TextLine1 = "Save";
             this.buttonSaveAsMemo.TextLine2 = "As";
@@ -265,7 +243,6 @@
             // 
             // buttonSaveAllMemo
             // 
-            this.buttonSaveAllMemo.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonSaveAllMemo.KeyTip = "L";
             this.buttonSaveAllMemo.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.S)));
@@ -275,23 +252,18 @@
             // 
             // kryptonRibbonGroupTriple4
             // 
-            this.kryptonRibbonGroupTriple4.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonCloseMemo,
             this.buttonCloseAllMemo});
-            this.kryptonRibbonGroupTriple4.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
-            this.kryptonRibbonGroupTriple4.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // buttonCloseMemo
             // 
-            this.buttonCloseMemo.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonCloseMemo.KeyTip = "C";
             this.buttonCloseMemo.TextLine1 = "Close";
             this.buttonCloseMemo.Click += new System.EventHandler(this.buttonCloseMemo_Click);
             // 
             // buttonCloseAllMemo
             // 
-            this.buttonCloseAllMemo.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonCloseAllMemo.KeyTip = "E";
             this.buttonCloseAllMemo.TextLine1 = "Close";
             this.buttonCloseAllMemo.TextLine2 = "All";
@@ -307,15 +279,12 @@
             // 
             // kryptonRibbonGroupTriple2
             // 
-            this.kryptonRibbonGroupTriple2.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonSingleGroupArrange});
-            this.kryptonRibbonGroupTriple2.MaximumSize = Krypton.Ribbon.GroupItemSize.Large;
             this.kryptonRibbonGroupTriple2.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
             // 
             // buttonSingleGroupArrange
             // 
-            this.buttonSingleGroupArrange.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonSingleGroupArrange.KeyTip = "T";
             this.buttonSingleGroupArrange.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.T)));
@@ -325,17 +294,14 @@
             // 
             // kryptonRibbonGroupTriple5
             // 
-            this.kryptonRibbonGroupTriple5.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple5.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonGridArrange,
             this.buttonVerticalArrange,
             this.buttonHorizontalArrange});
             this.kryptonRibbonGroupTriple5.MaximumSize = Krypton.Ribbon.GroupItemSize.Medium;
-            this.kryptonRibbonGroupTriple5.MinimumSize = Krypton.Ribbon.GroupItemSize.Small;
             // 
             // buttonGridArrange
             // 
-            this.buttonGridArrange.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonGridArrange.KeyTip = "G";
             this.buttonGridArrange.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.G)));
@@ -344,14 +310,12 @@
             // 
             // buttonVerticalArrange
             // 
-            this.buttonVerticalArrange.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonVerticalArrange.KeyTip = "V";
             this.buttonVerticalArrange.TextLine1 = "Vertical";
             this.buttonVerticalArrange.Click += new System.EventHandler(this.buttonVerticalArrange_Click);
             // 
             // buttonHorizontalArrange
             // 
-            this.buttonHorizontalArrange.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonHorizontalArrange.KeyTip = "H";
             this.buttonHorizontalArrange.TextLine1 = "Horizontal";
             this.buttonHorizontalArrange.Click += new System.EventHandler(this.buttonHorizontalArrange_Click);
@@ -365,7 +329,6 @@
             // 
             // kryptonRibbonGroupTriple6
             // 
-            this.kryptonRibbonGroupTriple6.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple6.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonReadMe,
             this.buttonShortcuts,
@@ -375,21 +338,18 @@
             // 
             // buttonReadMe
             // 
-            this.buttonReadMe.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonReadMe.ImageLarge = null;
             this.buttonReadMe.TextLine1 = "ReadMe";
             this.buttonReadMe.Click += new System.EventHandler(this.buttonReadMe_Click);
             // 
             // buttonShortcuts
             // 
-            this.buttonShortcuts.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonShortcuts.ImageLarge = null;
             this.buttonShortcuts.TextLine1 = "Shortcuts";
             this.buttonShortcuts.Click += new System.EventHandler(this.buttonShortcuts_Click);
             // 
             // buttonPersistence
             // 
-            this.buttonPersistence.ButtonType = Krypton.Ribbon.GroupButtonType.Push;
             this.buttonPersistence.KeyTip = "P";
             this.buttonPersistence.TextLine1 = "Persistence";
             this.buttonPersistence.Click += new System.EventHandler(this.buttonPersistence_Click);
@@ -415,7 +375,6 @@
             // 
             // kryptonRibbonGroupTriple12
             // 
-            this.kryptonRibbonGroupTriple12.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple12.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.button2010Blue,
             this.button2010Silver,
@@ -447,7 +406,6 @@
             // 
             // kryptonRibbonGroupTriple7
             // 
-            this.kryptonRibbonGroupTriple7.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple7.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.button2007Blue,
             this.button2007Silver,
@@ -484,7 +442,6 @@
             // 
             // kryptonRibbonGroupTriple8
             // 
-            this.kryptonRibbonGroupTriple8.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple8.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonSparkleBlue,
             this.buttonSparkleOrange,
@@ -521,7 +478,6 @@
             // 
             // kryptonRibbonGroupTriple9
             // 
-            this.kryptonRibbonGroupTriple9.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple9.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonSystem,
             this.button2003});
@@ -554,7 +510,6 @@
             // 
             // kryptonRibbonGroupTriple10
             // 
-            this.kryptonRibbonGroupTriple10.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple10.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonTabs,
             this.buttonRibbonTabs,
@@ -590,7 +545,6 @@
             // 
             // kryptonRibbonGroupTriple11
             // 
-            this.kryptonRibbonGroupTriple11.ItemAlignment = Krypton.Ribbon.RibbonItemAlignment.Near;
             this.kryptonRibbonGroupTriple11.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.buttonHeader,
             this.buttonHeaderButtons,
@@ -629,10 +583,11 @@
             // 
             this.kryptonPanel1.Controls.Add(this.kryptonWorkspace);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, 115);
+            this.kryptonPanel1.Location = new System.Drawing.Point(0, 136);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(5);
-            this.kryptonPanel1.Size = new System.Drawing.Size(584, 349);
+            this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.kryptonPanel1.Size = new System.Drawing.Size(783, 421);
             this.kryptonPanel1.TabIndex = 1;
             // 
             // kryptonWorkspace
@@ -643,16 +598,16 @@
             | Krypton.Workspace.CompactFlags.AtLeastOneVisibleCell)));
             this.kryptonWorkspace.ContainerBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonWorkspace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonWorkspace.Location = new System.Drawing.Point(5, 5);
+            this.kryptonWorkspace.Location = new System.Drawing.Point(7, 6);
+            this.kryptonWorkspace.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonWorkspace.Name = "kryptonWorkspace";
             // 
             // 
             // 
-            this.kryptonWorkspace.Root.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.kryptonWorkspace.Root.UniqueName = "95EF19B665334EE77CBA364F49E3EB38";
             this.kryptonWorkspace.Root.WorkspaceControl = this.kryptonWorkspace;
             this.kryptonWorkspace.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.HighProfile;
-            this.kryptonWorkspace.Size = new System.Drawing.Size(574, 339);
+            this.kryptonWorkspace.Size = new System.Drawing.Size(769, 409);
             this.kryptonWorkspace.SplitterWidth = 5;
             this.kryptonWorkspace.TabIndex = 1;
             this.kryptonWorkspace.TabStop = true;
@@ -680,12 +635,14 @@
             // 
             // MemoEditorForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 464);
+            this.ClientSize = new System.Drawing.Size(783, 557);
+            this.CloseBox = false;
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.kryptonRibbon);
-            this.MinimumSize = new System.Drawing.Size(489, 414);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(646, 499);
             this.Name = "MemoEditorForm";
             this.Text = "Memo Editor";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MemoEditorForm_FormClosing);

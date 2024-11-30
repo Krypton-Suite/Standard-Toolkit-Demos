@@ -172,10 +172,10 @@ namespace RibbonAndNavigatorAndWorkspace
         {
             Close();
         }
-        
+
         private void UpdateCell(KryptonWorkspaceCell cell)
         {
-            NavigatorMode newMode = NavigatorMode.BarTabGroup;
+            var newMode = NavigatorMode.BarTabGroup;
 
             if (checkSetDocMode.CheckedButton == buttonTabs)
             {

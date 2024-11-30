@@ -135,6 +135,7 @@ namespace ThreePaneApplication
             // menuStrip1
             // 
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
@@ -142,7 +143,7 @@ namespace ThreePaneApplication
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(443, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(455, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -160,7 +161,7 @@ namespace ThreePaneApplication
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // newToolStripMenuItem
@@ -169,7 +170,7 @@ namespace ThreePaneApplication
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.newToolStripMenuItem.Text = "&New";
             // 
             // openToolStripMenuItem
@@ -178,13 +179,13 @@ namespace ThreePaneApplication
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(178, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -192,19 +193,19 @@ namespace ThreePaneApplication
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.saveToolStripMenuItem.Text = "&Save";
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(178, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -212,7 +213,7 @@ namespace ThreePaneApplication
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.printToolStripMenuItem.Text = "&Print";
             // 
             // printPreviewToolStripMenuItem
@@ -220,18 +221,18 @@ namespace ThreePaneApplication
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(178, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // editToolStripMenuItem
@@ -246,27 +247,27 @@ namespace ThreePaneApplication
             this.toolStripSeparator4,
             this.selectAllToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
             this.editToolStripMenuItem.Text = "&Edit";
             // 
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.undoToolStripMenuItem.Text = "&Undo";
             // 
             // redoToolStripMenuItem
             // 
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
             this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.redoToolStripMenuItem.Text = "&Redo";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(141, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(176, 6);
             // 
             // cutToolStripMenuItem
             // 
@@ -274,7 +275,7 @@ namespace ThreePaneApplication
             this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.cutToolStripMenuItem.Text = "Cu&t";
             // 
             // copyToolStripMenuItem
@@ -283,7 +284,7 @@ namespace ThreePaneApplication
             this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.copyToolStripMenuItem.Text = "&Copy";
             // 
             // pasteToolStripMenuItem
@@ -292,18 +293,18 @@ namespace ThreePaneApplication
             this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.pasteToolStripMenuItem.Text = "&Paste";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(141, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(176, 6);
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.selectAllToolStripMenuItem.Text = "Select &All";
             // 
             // toolsToolStripMenuItem
@@ -312,19 +313,19 @@ namespace ThreePaneApplication
             this.customizeToolStripMenuItem,
             this.optionsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.toolsToolStripMenuItem.Text = "&Tools";
             // 
             // customizeToolStripMenuItem
             // 
             this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.customizeToolStripMenuItem.Text = "&Customize";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.optionsToolStripMenuItem.Text = "&Options";
             // 
             // helpToolStripMenuItem
@@ -336,42 +337,43 @@ namespace ThreePaneApplication
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // contentsToolStripMenuItem
             // 
             this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
-            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.contentsToolStripMenuItem.Text = "&Contents";
             // 
             // indexToolStripMenuItem
             // 
             this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            this.indexToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.indexToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.indexToolStripMenuItem.Text = "&Index";
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.searchToolStripMenuItem.Text = "&Search";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(119, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(147, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
             // toolStrip1
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripButton,
             this.openToolStripButton,
@@ -383,9 +385,9 @@ namespace ThreePaneApplication
             this.pasteToolStripButton,
             this.toolStripSeparator7,
             this.helpToolStripButton});
-            this.toolStrip1.Location = new System.Drawing.Point(3, 0);
+            this.toolStrip1.Location = new System.Drawing.Point(4, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(208, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(257, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -395,7 +397,7 @@ namespace ThreePaneApplication
             this.newToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripButton.Image")));
             this.newToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripButton.Name = "newToolStripButton";
-            this.newToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.newToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.newToolStripButton.Text = "&New";
             // 
             // openToolStripButton
@@ -404,7 +406,7 @@ namespace ThreePaneApplication
             this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
             this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripButton.Name = "openToolStripButton";
-            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.openToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.openToolStripButton.Text = "&Open";
             // 
             // saveToolStripButton
@@ -413,7 +415,7 @@ namespace ThreePaneApplication
             this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
             this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.saveToolStripButton.Text = "&Save";
             // 
             // printToolStripButton
@@ -422,13 +424,13 @@ namespace ThreePaneApplication
             this.printToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripButton.Image")));
             this.printToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripButton.Name = "printToolStripButton";
-            this.printToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.printToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.printToolStripButton.Text = "&Print";
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 27);
             // 
             // cutToolStripButton
             // 
@@ -436,7 +438,7 @@ namespace ThreePaneApplication
             this.cutToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripButton.Image")));
             this.cutToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripButton.Name = "cutToolStripButton";
-            this.cutToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.cutToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.cutToolStripButton.Text = "C&ut";
             // 
             // copyToolStripButton
@@ -445,7 +447,7 @@ namespace ThreePaneApplication
             this.copyToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripButton.Image")));
             this.copyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripButton.Name = "copyToolStripButton";
-            this.copyToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.copyToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.copyToolStripButton.Text = "&Copy";
             // 
             // pasteToolStripButton
@@ -454,13 +456,13 @@ namespace ThreePaneApplication
             this.pasteToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripButton.Image")));
             this.pasteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripButton.Name = "pasteToolStripButton";
-            this.pasteToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.pasteToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.pasteToolStripButton.Text = "&Paste";
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 27);
             // 
             // helpToolStripButton
             // 
@@ -468,7 +470,7 @@ namespace ThreePaneApplication
             this.helpToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripButton.Image")));
             this.helpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.helpToolStripButton.Name = "helpToolStripButton";
-            this.helpToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.helpToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.helpToolStripButton.Text = "He&lp";
             // 
             // toolStripContainer1
@@ -477,11 +479,11 @@ namespace ThreePaneApplication
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.kryptonPanelMain);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(443, 400);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(455, 378);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 24);
+            this.toolStripContainer1.Location = new System.Drawing.Point(0, 28);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(443, 425);
+            this.toolStripContainer1.Size = new System.Drawing.Size(455, 405);
             this.toolStripContainer1.TabIndex = 1;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -496,15 +498,13 @@ namespace ThreePaneApplication
             this.kryptonPanelMain.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanelMain.Name = "kryptonPanelMain";
             this.kryptonPanelMain.Padding = new System.Windows.Forms.Padding(4);
-            this.kryptonPanelMain.Size = new System.Drawing.Size(443, 400);
+            this.kryptonPanelMain.Size = new System.Drawing.Size(455, 378);
             this.kryptonPanelMain.TabIndex = 0;
             // 
             // kryptonSplitContainerMain
             // 
             this.kryptonSplitContainerMain.Cursor = System.Windows.Forms.Cursors.Default;
             this.kryptonSplitContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonSplitContainerMain.IsInitialized = true;
-            this.kryptonSplitContainerMain.IsInitializing = false;
             this.kryptonSplitContainerMain.Location = new System.Drawing.Point(4, 4);
             this.kryptonSplitContainerMain.Name = "kryptonSplitContainerMain";
             // 
@@ -515,18 +515,16 @@ namespace ThreePaneApplication
             // kryptonSplitContainerMain.Panel2
             // 
             this.kryptonSplitContainerMain.Panel2.Controls.Add(this.kryptonSplitContainerDetails);
-            this.kryptonSplitContainerMain.Size = new System.Drawing.Size(435, 392);
+            this.kryptonSplitContainerMain.Size = new System.Drawing.Size(447, 370);
             this.kryptonSplitContainerMain.SplitterDistance = 127;
             this.kryptonSplitContainerMain.TabIndex = 0;
             // 
             // kryptonHeaderGroupNavigation
             // 
             this.kryptonHeaderGroupNavigation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonHeaderGroupNavigation.IsInitialized = true;
-            this.kryptonHeaderGroupNavigation.IsInitializing = false;
             this.kryptonHeaderGroupNavigation.Location = new System.Drawing.Point(0, 0);
             this.kryptonHeaderGroupNavigation.Name = "kryptonHeaderGroupNavigation";
-            this.kryptonHeaderGroupNavigation.Size = new System.Drawing.Size(127, 392);
+            this.kryptonHeaderGroupNavigation.Size = new System.Drawing.Size(127, 370);
             this.kryptonHeaderGroupNavigation.TabIndex = 0;
             this.kryptonHeaderGroupNavigation.ValuesPrimary.Image = null;
             // 
@@ -534,8 +532,6 @@ namespace ThreePaneApplication
             // 
             this.kryptonSplitContainerDetails.Cursor = System.Windows.Forms.Cursors.Default;
             this.kryptonSplitContainerDetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonSplitContainerDetails.IsInitialized = true;
-            this.kryptonSplitContainerDetails.IsInitializing = false;
             this.kryptonSplitContainerDetails.Location = new System.Drawing.Point(0, 0);
             this.kryptonSplitContainerDetails.Name = "kryptonSplitContainerDetails";
             this.kryptonSplitContainerDetails.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -547,19 +543,17 @@ namespace ThreePaneApplication
             // kryptonSplitContainerDetails.Panel2
             // 
             this.kryptonSplitContainerDetails.Panel2.Controls.Add(this.kryptonButtonGroup);
-            this.kryptonSplitContainerDetails.Size = new System.Drawing.Size(303, 392);
-            this.kryptonSplitContainerDetails.SplitterDistance = 171;
+            this.kryptonSplitContainerDetails.Size = new System.Drawing.Size(315, 370);
+            this.kryptonSplitContainerDetails.SplitterDistance = 160;
             this.kryptonSplitContainerDetails.TabIndex = 0;
             // 
             // kryptonHeaderGroupDetails
             // 
             this.kryptonHeaderGroupDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonHeaderGroupDetails.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroupDetails.IsInitialized = true;
-            this.kryptonHeaderGroupDetails.IsInitializing = false;
             this.kryptonHeaderGroupDetails.Location = new System.Drawing.Point(0, 0);
             this.kryptonHeaderGroupDetails.Name = "kryptonHeaderGroupDetails";
-            this.kryptonHeaderGroupDetails.Size = new System.Drawing.Size(303, 171);
+            this.kryptonHeaderGroupDetails.Size = new System.Drawing.Size(315, 160);
             this.kryptonHeaderGroupDetails.StateNormal.HeaderPrimary.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.kryptonHeaderGroupDetails.TabIndex = 0;
             this.kryptonHeaderGroupDetails.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("kryptonHeaderGroupDetails.ValuesPrimary.Image")));
@@ -569,16 +563,13 @@ namespace ThreePaneApplication
             this.kryptonButtonGroup.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonButtonGroup.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlAlternate;
             this.kryptonButtonGroup.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlAlternate;
-            this.kryptonButtonGroup.IsInitialized = true;
-            this.kryptonButtonGroup.IsInitializing = false;
             this.kryptonButtonGroup.Location = new System.Drawing.Point(0, 0);
             this.kryptonButtonGroup.Name = "kryptonButtonGroup";
             // 
             // kryptonButtonGroup.Panel
             // 
             this.kryptonButtonGroup.Panel.Controls.Add(this.kryptonGroup1);
-            this.kryptonButtonGroup.Panel.Padding = new System.Windows.Forms.Padding(5);
-            this.kryptonButtonGroup.Size = new System.Drawing.Size(303, 216);
+            this.kryptonButtonGroup.Size = new System.Drawing.Size(315, 205);
             this.kryptonButtonGroup.StateCommon.Back.Color1 = System.Drawing.SystemColors.AppWorkspace;
             this.kryptonButtonGroup.StateCommon.Back.ColorAngle = 45F;
             this.kryptonButtonGroup.StateCommon.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
@@ -587,9 +578,7 @@ namespace ThreePaneApplication
             // kryptonGroup1
             // 
             this.kryptonGroup1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonGroup1.IsInitialized = true;
-            this.kryptonGroup1.IsInitializing = false;
-            this.kryptonGroup1.Location = new System.Drawing.Point(5, 5);
+            this.kryptonGroup1.Location = new System.Drawing.Point(0, 0);
             this.kryptonGroup1.Name = "kryptonGroup1";
             // 
             // kryptonGroup1.Panel
@@ -607,14 +596,14 @@ namespace ThreePaneApplication
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2007Silver);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2007Blue);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2013White);
-            this.kryptonGroup1.Size = new System.Drawing.Size(291, 204);
+            this.kryptonGroup1.Size = new System.Drawing.Size(313, 203);
             this.kryptonGroup1.TabIndex = 0;
             // 
             // kryptonOffice2010Black
             // 
             this.kryptonOffice2010Black.Location = new System.Drawing.Point(13, 66);
             this.kryptonOffice2010Black.Name = "kryptonOffice2010Black";
-            this.kryptonOffice2010Black.Size = new System.Drawing.Size(125, 20);
+            this.kryptonOffice2010Black.Size = new System.Drawing.Size(151, 24);
             this.kryptonOffice2010Black.TabIndex = 2;
             this.kryptonOffice2010Black.Values.Text = "Office 2010 - Black";
             this.kryptonOffice2010Black.CheckedChanged += new System.EventHandler(this.kryptonOffice2010Black_CheckedChanged);
@@ -623,7 +612,7 @@ namespace ThreePaneApplication
             // 
             this.kryptonSparkleOrange.Location = new System.Drawing.Point(13, 131);
             this.kryptonSparkleOrange.Name = "kryptonSparkleOrange";
-            this.kryptonSparkleOrange.Size = new System.Drawing.Size(115, 20);
+            this.kryptonSparkleOrange.Size = new System.Drawing.Size(139, 24);
             this.kryptonSparkleOrange.TabIndex = 7;
             this.kryptonSparkleOrange.Values.Text = "Sparkle - Orange";
             this.kryptonSparkleOrange.CheckedChanged += new System.EventHandler(this.kryptonSparkleOrange_CheckedChanged);
@@ -633,7 +622,7 @@ namespace ThreePaneApplication
             this.kryptonOffice2010Blue.Checked = true;
             this.kryptonOffice2010Blue.Location = new System.Drawing.Point(13, 16);
             this.kryptonOffice2010Blue.Name = "kryptonOffice2010Blue";
-            this.kryptonOffice2010Blue.Size = new System.Drawing.Size(120, 20);
+            this.kryptonOffice2010Blue.Size = new System.Drawing.Size(145, 24);
             this.kryptonOffice2010Blue.TabIndex = 0;
             this.kryptonOffice2010Blue.Values.Text = "Office 2010 - Blue";
             this.kryptonOffice2010Blue.CheckedChanged += new System.EventHandler(this.kryptonOffice2010Blue_CheckedChanged);
@@ -642,7 +631,7 @@ namespace ThreePaneApplication
             // 
             this.kryptonOffice2010Silver.Location = new System.Drawing.Point(13, 41);
             this.kryptonOffice2010Silver.Name = "kryptonOffice2010Silver";
-            this.kryptonOffice2010Silver.Size = new System.Drawing.Size(126, 20);
+            this.kryptonOffice2010Silver.Size = new System.Drawing.Size(153, 24);
             this.kryptonOffice2010Silver.TabIndex = 1;
             this.kryptonOffice2010Silver.Values.Text = "Office 2010 - Silver";
             this.kryptonOffice2010Silver.CheckedChanged += new System.EventHandler(this.kryptonOffice2010Silver_CheckedChanged);
@@ -651,7 +640,7 @@ namespace ThreePaneApplication
             // 
             this.kryptonSparklePurple.Location = new System.Drawing.Point(13, 154);
             this.kryptonSparklePurple.Name = "kryptonSparklePurple";
-            this.kryptonSparklePurple.Size = new System.Drawing.Size(109, 20);
+            this.kryptonSparklePurple.Size = new System.Drawing.Size(132, 24);
             this.kryptonSparklePurple.TabIndex = 8;
             this.kryptonSparklePurple.Values.Text = "Sparkle - Purple";
             this.kryptonSparklePurple.CheckedChanged += new System.EventHandler(this.kryptonSparklePurple_CheckedChanged);
@@ -660,7 +649,7 @@ namespace ThreePaneApplication
             // 
             this.kryptonSparkleBlue.Location = new System.Drawing.Point(13, 109);
             this.kryptonSparkleBlue.Name = "kryptonSparkleBlue";
-            this.kryptonSparkleBlue.Size = new System.Drawing.Size(98, 20);
+            this.kryptonSparkleBlue.Size = new System.Drawing.Size(118, 24);
             this.kryptonSparkleBlue.TabIndex = 6;
             this.kryptonSparkleBlue.Values.Text = "Sparkle - Blue";
             this.kryptonSparkleBlue.CheckedChanged += new System.EventHandler(this.kryptonSparkleBlue_CheckedChanged);
@@ -669,7 +658,7 @@ namespace ThreePaneApplication
             // 
             this.kryptonCustom.Location = new System.Drawing.Point(147, 130);
             this.kryptonCustom.Name = "kryptonCustom";
-            this.kryptonCustom.Size = new System.Drawing.Size(64, 20);
+            this.kryptonCustom.Size = new System.Drawing.Size(76, 24);
             this.kryptonCustom.TabIndex = 11;
             this.kryptonCustom.Values.Text = "Custom";
             this.kryptonCustom.CheckedChanged += new System.EventHandler(this.kryptonCustom_CheckedChanged);
@@ -678,7 +667,7 @@ namespace ThreePaneApplication
             // 
             this.kryptonSystem.Location = new System.Drawing.Point(147, 107);
             this.kryptonSystem.Name = "kryptonSystem";
-            this.kryptonSystem.Size = new System.Drawing.Size(62, 20);
+            this.kryptonSystem.Size = new System.Drawing.Size(72, 24);
             this.kryptonSystem.TabIndex = 10;
             this.kryptonSystem.Values.Text = "System";
             this.kryptonSystem.CheckedChanged += new System.EventHandler(this.kryptonSystem_CheckedChanged);
@@ -687,7 +676,7 @@ namespace ThreePaneApplication
             // 
             this.kryptonOffice2003.Location = new System.Drawing.Point(147, 85);
             this.kryptonOffice2003.Name = "kryptonOffice2003";
-            this.kryptonOffice2003.Size = new System.Drawing.Size(85, 20);
+            this.kryptonOffice2003.Size = new System.Drawing.Size(101, 24);
             this.kryptonOffice2003.TabIndex = 9;
             this.kryptonOffice2003.Values.Text = "Office 2003";
             this.kryptonOffice2003.CheckedChanged += new System.EventHandler(this.kryptonOffice2003_CheckedChanged);
@@ -696,7 +685,7 @@ namespace ThreePaneApplication
             // 
             this.kryptonOffice2007Black.Location = new System.Drawing.Point(147, 66);
             this.kryptonOffice2007Black.Name = "kryptonOffice2007Black";
-            this.kryptonOffice2007Black.Size = new System.Drawing.Size(125, 20);
+            this.kryptonOffice2007Black.Size = new System.Drawing.Size(151, 24);
             this.kryptonOffice2007Black.TabIndex = 5;
             this.kryptonOffice2007Black.Values.Text = "Office 2007 - Black";
             this.kryptonOffice2007Black.CheckedChanged += new System.EventHandler(this.kryptonOffice2007Black_CheckedChanged);
@@ -705,7 +694,7 @@ namespace ThreePaneApplication
             // 
             this.kryptonOffice2007Silver.Location = new System.Drawing.Point(147, 41);
             this.kryptonOffice2007Silver.Name = "kryptonOffice2007Silver";
-            this.kryptonOffice2007Silver.Size = new System.Drawing.Size(126, 20);
+            this.kryptonOffice2007Silver.Size = new System.Drawing.Size(153, 24);
             this.kryptonOffice2007Silver.TabIndex = 4;
             this.kryptonOffice2007Silver.Values.Text = "Office 2007 - Silver";
             this.kryptonOffice2007Silver.CheckedChanged += new System.EventHandler(this.kryptonOffice2007Silver_CheckedChanged);
@@ -714,7 +703,7 @@ namespace ThreePaneApplication
             // 
             this.kryptonOffice2007Blue.Location = new System.Drawing.Point(147, 16);
             this.kryptonOffice2007Blue.Name = "kryptonOffice2007Blue";
-            this.kryptonOffice2007Blue.Size = new System.Drawing.Size(120, 20);
+            this.kryptonOffice2007Blue.Size = new System.Drawing.Size(145, 24);
             this.kryptonOffice2007Blue.TabIndex = 3;
             this.kryptonOffice2007Blue.Values.Text = "Office 2007 - Blue";
             this.kryptonOffice2007Blue.CheckedChanged += new System.EventHandler(this.kryptonOffice2007Blue_CheckedChanged);
@@ -723,7 +712,7 @@ namespace ThreePaneApplication
             // 
             this.kryptonOffice2013White.Location = new System.Drawing.Point(12, 85);
             this.kryptonOffice2013White.Name = "kryptonOffice2013White";
-            this.kryptonOffice2013White.Size = new System.Drawing.Size(129, 20);
+            this.kryptonOffice2013White.Size = new System.Drawing.Size(156, 24);
             this.kryptonOffice2013White.TabIndex = 4;
             this.kryptonOffice2013White.Values.Text = "Office 2013 - White";
             this.kryptonOffice2013White.CheckedChanged += new System.EventHandler(this.kryptonOffice2013White_CheckedChanged);
@@ -734,7 +723,6 @@ namespace ThreePaneApplication
             // 
             // kryptonPaletteCustom
             // 
-            this.kryptonPaletteCustom.UseThemeFormChromeBorderWidth = Krypton.Toolkit.InheritBool.False;
             this.kryptonPaletteCustom.BasePaletteType = Krypton.Toolkit.BasePaletteType.Professional;
             this.kryptonPaletteCustom.ButtonStyles.ButtonButtonSpec.StateDisabled.Border.Draw = Krypton.Toolkit.InheritBool.False;
             this.kryptonPaletteCustom.ButtonStyles.ButtonButtonSpec.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -839,6 +827,7 @@ namespace ThreePaneApplication
             this.kryptonPaletteCustom.PanelStyles.PanelAlternate.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(212)))), ((int)(((byte)(192)))));
             this.kryptonPaletteCustom.PanelStyles.PanelClient.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(237)))), ((int)(((byte)(227)))));
             this.kryptonPaletteCustom.PanelStyles.PanelCommon.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.kryptonPaletteCustom.ThemeName = "PaletteBase";
             this.kryptonPaletteCustom.ToolMenuStatus.Button.ButtonCheckedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
             this.kryptonPaletteCustom.ToolMenuStatus.Button.ButtonCheckedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
             this.kryptonPaletteCustom.ToolMenuStatus.Button.ButtonCheckedGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
@@ -900,14 +889,16 @@ namespace ThreePaneApplication
             this.kryptonPaletteCustom.ToolMenuStatus.ToolStrip.ToolStripPanelGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.kryptonPaletteCustom.ToolMenuStatus.ToolStrip.ToolStripText = System.Drawing.Color.WhiteSmoke;
             this.kryptonPaletteCustom.ToolMenuStatus.UseRoundedEdges = Krypton.Toolkit.InheritBool.False;
+            this.kryptonPaletteCustom.UseThemeFormChromeBorderWidth = Krypton.Toolkit.InheritBool.False;
             // 
             // statusStrip1
             // 
             this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 449);
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 433);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.statusStrip1.Size = new System.Drawing.Size(443, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(455, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -929,9 +920,9 @@ namespace ThreePaneApplication
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(443, 471);
+            this.ClientSize = new System.Drawing.Size(455, 455);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.statusStrip1);

@@ -11,9 +11,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonPanelExamples
@@ -28,7 +29,7 @@ namespace KryptonPanelExamples
 
         private void kryptonPanel_MouseDown(object sender, MouseEventArgs e) =>
             // Setup the property grid to edit this panel
-            propertyGrid.SelectedObject = new KryptonPanelProxy(sender as KryptonPanel);
+            propertyGrid.SelectedObject = new KryptonPanelProxy((KryptonPanel)sender);
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
