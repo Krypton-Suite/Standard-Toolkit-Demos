@@ -76,9 +76,6 @@ namespace KryptonFontDialog_Example_2019
             // 
             // groupBoxPalette
             // 
-            this.groupBoxPalette.CaptionStyle = Krypton.Toolkit.LabelStyle.GroupBoxCaption;
-            this.groupBoxPalette.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlGroupBox;
-            this.groupBoxPalette.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlGroupBox;
             this.groupBoxPalette.Location = new System.Drawing.Point(12, 12);
             this.groupBoxPalette.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxPalette.Name = "groupBoxPalette";
@@ -163,6 +160,7 @@ namespace KryptonFontDialog_Example_2019
             this.buttonShowFontDialog.Name = "buttonShowFontDialog";
             this.buttonShowFontDialog.Size = new System.Drawing.Size(307, 59);
             this.buttonShowFontDialog.TabIndex = 19;
+            this.buttonShowFontDialog.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonShowFontDialog.Values.Text = "Show ColorDialog";
             this.buttonShowFontDialog.Click += new System.EventHandler(this.ButtonShowFontDialog_Click);
             // 
@@ -176,14 +174,11 @@ namespace KryptonFontDialog_Example_2019
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(595, 410);
+            this.kryptonPanel1.Size = new System.Drawing.Size(599, 396);
             this.kryptonPanel1.TabIndex = 20;
             // 
             // kryptonGroupBox2
             // 
-            this.kryptonGroupBox2.CaptionStyle = Krypton.Toolkit.LabelStyle.GroupBoxCaption;
-            this.kryptonGroupBox2.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlGroupBox;
-            this.kryptonGroupBox2.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlGroupBox;
             this.kryptonGroupBox2.Location = new System.Drawing.Point(372, 28);
             this.kryptonGroupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonGroupBox2.Name = "kryptonGroupBox2";
@@ -268,9 +263,6 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonGroupBox1
             // 
-            this.kryptonGroupBox1.CaptionStyle = Krypton.Toolkit.LabelStyle.GroupBoxCaption;
-            this.kryptonGroupBox1.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlGroupBox;
-            this.kryptonGroupBox1.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlGroupBox;
             this.kryptonGroupBox1.Location = new System.Drawing.Point(12, 153);
             this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonGroupBox1.Name = "kryptonGroupBox1";
@@ -291,7 +283,6 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel1.Location = new System.Drawing.Point(288, 97);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Orientation = Krypton.Toolkit.VisualOrientation.Left;
@@ -314,7 +305,6 @@ namespace KryptonFontDialog_Example_2019
             this.kryptonTrackBar1.ToolTipValues.Heading = "";
             this.kryptonTrackBar1.ToolTipValues.ShowIntervalDelay = 250;
             this.kryptonTrackBar1.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Top;
-            this.kryptonTrackBar1.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonTrackBar1.TrackBarSize = Krypton.Toolkit.PaletteTrackBarSize.Large;
             this.kryptonTrackBar1.VolumeControl = true;
             this.kryptonTrackBar1.ValueChanged += new System.EventHandler(this.kryptonTrackBar1_ValueChanged);
@@ -330,11 +320,31 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonNumericUpDown1
             // 
+            this.kryptonNumericUpDown1.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.kryptonNumericUpDown1.Location = new System.Drawing.Point(156, 97);
             this.kryptonNumericUpDown1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonNumericUpDown1.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.kryptonNumericUpDown1.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.kryptonNumericUpDown1.Name = "kryptonNumericUpDown1";
             this.kryptonNumericUpDown1.Size = new System.Drawing.Size(91, 26);
             this.kryptonNumericUpDown1.TabIndex = 5;
+            this.kryptonNumericUpDown1.Value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             // 
             // kryptonButton1
             // 
@@ -343,6 +353,7 @@ namespace KryptonFontDialog_Example_2019
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.Size = new System.Drawing.Size(91, 25);
             this.kryptonButton1.TabIndex = 4;
+            this.kryptonButton1.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton1.Values.Text = "kryptonButton1";
             // 
             // kryptonCheckBox1
@@ -376,16 +387,20 @@ namespace KryptonFontDialog_Example_2019
             this.kryptonComboBox1.Location = new System.Drawing.Point(4, 4);
             this.kryptonComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonComboBox1.Name = "kryptonComboBox1";
-            this.kryptonComboBox1.Size = new System.Drawing.Size(147, 25);
+            this.kryptonComboBox1.Size = new System.Drawing.Size(147, 26);
             this.kryptonComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonComboBox1.TabIndex = 0;
             this.kryptonComboBox1.Text = "Microsoft Sans Serif";
+            // 
+            // kryptonManager
+            // 
+            this.kryptonManager.GlobalApplyToolstrips = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(595, 410);
+            this.ClientSize = new System.Drawing.Size(599, 396);
             this.Controls.Add(this.kryptonPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;

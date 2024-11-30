@@ -9,6 +9,7 @@
  *  
  */
 #endregion
+
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -32,18 +33,13 @@ namespace ExternalDragToDocking
         private bool _dragging;
         private TreeNode _dragNode;
         private Rectangle _dragRect;
-        private Form1 _form1;
 
-        public Form1 Form1
-        {
-            get => _form1;
-            set => _form1 = value;
-        }
+        public Form1 Form1 { get; set; }
 
         protected override void OnMouseDown(MouseEventArgs e)
         {
             // Find the tree node under the mouse point
-            Point pt = new Point(e.X, e.Y);
+            var pt = new Point(e.X, e.Y);
             TreeNode nodeDown = GetNodeAt(pt);
 
             // If there is a node under the mouse
@@ -75,7 +71,7 @@ namespace ExternalDragToDocking
 
         protected override void OnMouseMove(MouseEventArgs e)
         {
-            Point pt = new Point(e.X, e.Y);
+            var pt = new Point(e.X, e.Y);
 
             // Do we need to check for a drag operation?
             if ((_dragNode != null) && !_dragging)
@@ -83,7 +79,7 @@ namespace ExternalDragToDocking
                 KryptonPage dragPage = null;
 
                 // Create the correct type of krypton page for the selected node
-                switch(_dragNode.Name)
+                switch (_dragNode.Name)
                 {
                     case "Document":
                         dragPage = Form1.NewDocument();
@@ -102,8 +98,8 @@ namespace ExternalDragToDocking
                     _dragging = true;
 
                     // Add a floating window to the docking manager which contains the new drag page
-                    KryptonDockingFloatingWindow fw = Form1.DockingManager.AddFloatingWindow(@"Floating", 
-                                                                                             new[] { dragPage }, 
+                    KryptonDockingFloatingWindow fw = Form1.DockingManager.AddFloatingWindow(@"Floating",
+                                                                                             new[] { dragPage },
                                                                                              new Point(MousePosition.X - pt.X, MousePosition.Y - pt.Y));
 
                     // DoEvents spins the message loop so that the window gets fully created and shown

@@ -9,15 +9,11 @@
  *  
  */
 #endregion
+
 using System;
-using System.Text;
-using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Diagnostics;
+
 using Krypton.Toolkit;
-using Krypton.Navigator;
 
 namespace TabBorderStyles
 {
@@ -31,11 +27,11 @@ namespace TabBorderStyles
         private void tabBorderStyles_CheckedChanged(object sender, EventArgs e)
         {
             // Cast to correct type
-            RadioButton rb = (RadioButton)sender;
+            var rb = (RadioButton)sender;
 
             if (rb.Checked)
             {
-                TabBorderStyle enumVal = (TabBorderStyle)Enum.Parse(typeof(TabBorderStyle), rb.Tag.ToString());
+                var enumVal = (TabBorderStyle)Enum.Parse(typeof(TabBorderStyle), rb.Tag.ToString());
                 kryptonNavigator.Bar.TabBorderStyle = enumVal;
             }
         }
@@ -43,11 +39,11 @@ namespace TabBorderStyles
         private void tabStyles_CheckedChanged(object sender, EventArgs e)
         {
             // Cast to correct type
-            RadioButton rb = (RadioButton)sender;
+            var rb = (RadioButton)sender;
 
             if (rb.Checked)
             {
-                TabStyle enumVal = (TabStyle)Enum.Parse(typeof(TabStyle), rb.Tag.ToString());
+                var enumVal = (TabStyle)Enum.Parse(typeof(TabStyle), rb.Tag.ToString());
                 kryptonNavigator.Bar.TabStyle = enumVal;
             }
         }

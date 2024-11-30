@@ -11,9 +11,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonHeaderExamples
@@ -28,7 +29,7 @@ namespace KryptonHeaderExamples
 
         private void header_MouseDown(object sender, MouseEventArgs e) =>
             // Setup the property grid to edit this header
-            propertyGrid.SelectedObject = new KryptonHeaderProxy(sender as KryptonHeader);
+            propertyGrid.SelectedObject = new KryptonHeaderProxy((KryptonHeader)sender);
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
     }

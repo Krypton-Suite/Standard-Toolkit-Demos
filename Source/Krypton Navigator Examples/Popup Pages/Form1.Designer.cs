@@ -89,9 +89,11 @@ namespace PopupPages
             this.groupBoxModes.Controls.Add(this.radioBarRibbonTabOnly);
             this.groupBoxModes.Controls.Add(this.radioBarCheckButtonGroupOnly);
             this.groupBoxModes.Controls.Add(this.radioBarTabOnly);
-            this.groupBoxModes.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxModes.Location = new System.Drawing.Point(16, 15);
+            this.groupBoxModes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxModes.Name = "groupBoxModes";
-            this.groupBoxModes.Size = new System.Drawing.Size(205, 166);
+            this.groupBoxModes.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxModes.Size = new System.Drawing.Size(273, 204);
             this.groupBoxModes.TabIndex = 0;
             this.groupBoxModes.TabStop = false;
             this.groupBoxModes.Text = "Modes";
@@ -99,9 +101,10 @@ namespace PopupPages
             // radioOutlookMini
             // 
             this.radioOutlookMini.AutoSize = true;
-            this.radioOutlookMini.Location = new System.Drawing.Point(18, 139);
+            this.radioOutlookMini.Location = new System.Drawing.Point(24, 171);
+            this.radioOutlookMini.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioOutlookMini.Name = "radioOutlookMini";
-            this.radioOutlookMini.Size = new System.Drawing.Size(90, 17);
+            this.radioOutlookMini.Size = new System.Drawing.Size(108, 20);
             this.radioOutlookMini.TabIndex = 5;
             this.radioOutlookMini.TabStop = true;
             this.radioOutlookMini.Text = "Outlook - Mini";
@@ -111,9 +114,10 @@ namespace PopupPages
             // radioHeaderBarCheckButtonOnly
             // 
             this.radioHeaderBarCheckButtonOnly.AutoSize = true;
-            this.radioHeaderBarCheckButtonOnly.Location = new System.Drawing.Point(18, 116);
+            this.radioHeaderBarCheckButtonOnly.Location = new System.Drawing.Point(24, 143);
+            this.radioHeaderBarCheckButtonOnly.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioHeaderBarCheckButtonOnly.Name = "radioHeaderBarCheckButtonOnly";
-            this.radioHeaderBarCheckButtonOnly.Size = new System.Drawing.Size(177, 17);
+            this.radioHeaderBarCheckButtonOnly.Size = new System.Drawing.Size(217, 20);
             this.radioHeaderBarCheckButtonOnly.TabIndex = 4;
             this.radioHeaderBarCheckButtonOnly.TabStop = true;
             this.radioHeaderBarCheckButtonOnly.Text = "HeaderBar - CheckButton - Only";
@@ -123,9 +127,10 @@ namespace PopupPages
             // radioBarCheckButtonOnly
             // 
             this.radioBarCheckButtonOnly.AutoSize = true;
-            this.radioBarCheckButtonOnly.Location = new System.Drawing.Point(18, 93);
+            this.radioBarCheckButtonOnly.Location = new System.Drawing.Point(24, 114);
+            this.radioBarCheckButtonOnly.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioBarCheckButtonOnly.Name = "radioBarCheckButtonOnly";
-            this.radioBarCheckButtonOnly.Size = new System.Drawing.Size(145, 17);
+            this.radioBarCheckButtonOnly.Size = new System.Drawing.Size(174, 20);
             this.radioBarCheckButtonOnly.TabIndex = 3;
             this.radioBarCheckButtonOnly.TabStop = true;
             this.radioBarCheckButtonOnly.Text = "Bar - CheckButton -  Only";
@@ -135,9 +140,10 @@ namespace PopupPages
             // radioBarRibbonTabOnly
             // 
             this.radioBarRibbonTabOnly.AutoSize = true;
-            this.radioBarRibbonTabOnly.Location = new System.Drawing.Point(18, 47);
+            this.radioBarRibbonTabOnly.Location = new System.Drawing.Point(24, 58);
+            this.radioBarRibbonTabOnly.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioBarRibbonTabOnly.Name = "radioBarRibbonTabOnly";
-            this.radioBarRibbonTabOnly.Size = new System.Drawing.Size(133, 17);
+            this.radioBarRibbonTabOnly.Size = new System.Drawing.Size(165, 20);
             this.radioBarRibbonTabOnly.TabIndex = 1;
             this.radioBarRibbonTabOnly.TabStop = true;
             this.radioBarRibbonTabOnly.Text = "Bar - RibbonTab - Only";
@@ -147,9 +153,10 @@ namespace PopupPages
             // radioBarCheckButtonGroupOnly
             // 
             this.radioBarCheckButtonGroupOnly.AutoSize = true;
-            this.radioBarCheckButtonGroupOnly.Location = new System.Drawing.Point(18, 70);
+            this.radioBarCheckButtonGroupOnly.Location = new System.Drawing.Point(24, 86);
+            this.radioBarCheckButtonGroupOnly.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioBarCheckButtonGroupOnly.Name = "radioBarCheckButtonGroupOnly";
-            this.radioBarCheckButtonGroupOnly.Size = new System.Drawing.Size(180, 17);
+            this.radioBarCheckButtonGroupOnly.Size = new System.Drawing.Size(218, 20);
             this.radioBarCheckButtonGroupOnly.TabIndex = 2;
             this.radioBarCheckButtonGroupOnly.TabStop = true;
             this.radioBarCheckButtonGroupOnly.Text = "Bar - CheckButton - Group - Only";
@@ -159,9 +166,10 @@ namespace PopupPages
             // radioBarTabOnly
             // 
             this.radioBarTabOnly.AutoSize = true;
-            this.radioBarTabOnly.Location = new System.Drawing.Point(18, 24);
+            this.radioBarTabOnly.Location = new System.Drawing.Point(24, 30);
+            this.radioBarTabOnly.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioBarTabOnly.Name = "radioBarTabOnly";
-            this.radioBarTabOnly.Size = new System.Drawing.Size(99, 17);
+            this.radioBarTabOnly.Size = new System.Drawing.Size(121, 20);
             this.radioBarTabOnly.TabIndex = 0;
             this.radioBarTabOnly.TabStop = true;
             this.radioBarTabOnly.Text = "Bar - Tab - Only";
@@ -174,9 +182,11 @@ namespace PopupPages
             this.groupBoxBarOrientation.Controls.Add(this.radioOrientationLeft);
             this.groupBoxBarOrientation.Controls.Add(this.radioOrientationBottom);
             this.groupBoxBarOrientation.Controls.Add(this.radioOrientationTop);
-            this.groupBoxBarOrientation.Location = new System.Drawing.Point(12, 184);
+            this.groupBoxBarOrientation.Location = new System.Drawing.Point(16, 226);
+            this.groupBoxBarOrientation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxBarOrientation.Name = "groupBoxBarOrientation";
-            this.groupBoxBarOrientation.Size = new System.Drawing.Size(205, 120);
+            this.groupBoxBarOrientation.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxBarOrientation.Size = new System.Drawing.Size(273, 148);
             this.groupBoxBarOrientation.TabIndex = 1;
             this.groupBoxBarOrientation.TabStop = false;
             this.groupBoxBarOrientation.Text = "Bar Orientation";
@@ -184,9 +194,10 @@ namespace PopupPages
             // radioOrientationRight
             // 
             this.radioOrientationRight.AutoSize = true;
-            this.radioOrientationRight.Location = new System.Drawing.Point(18, 93);
+            this.radioOrientationRight.Location = new System.Drawing.Point(24, 114);
+            this.radioOrientationRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioOrientationRight.Name = "radioOrientationRight";
-            this.radioOrientationRight.Size = new System.Drawing.Size(50, 17);
+            this.radioOrientationRight.Size = new System.Drawing.Size(59, 20);
             this.radioOrientationRight.TabIndex = 3;
             this.radioOrientationRight.TabStop = true;
             this.radioOrientationRight.Text = "Right";
@@ -196,9 +207,10 @@ namespace PopupPages
             // radioOrientationLeft
             // 
             this.radioOrientationLeft.AutoSize = true;
-            this.radioOrientationLeft.Location = new System.Drawing.Point(18, 70);
+            this.radioOrientationLeft.Location = new System.Drawing.Point(24, 86);
+            this.radioOrientationLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioOrientationLeft.Name = "radioOrientationLeft";
-            this.radioOrientationLeft.Size = new System.Drawing.Size(43, 17);
+            this.radioOrientationLeft.Size = new System.Drawing.Size(49, 20);
             this.radioOrientationLeft.TabIndex = 2;
             this.radioOrientationLeft.TabStop = true;
             this.radioOrientationLeft.Text = "Left";
@@ -208,9 +220,10 @@ namespace PopupPages
             // radioOrientationBottom
             // 
             this.radioOrientationBottom.AutoSize = true;
-            this.radioOrientationBottom.Location = new System.Drawing.Point(18, 47);
+            this.radioOrientationBottom.Location = new System.Drawing.Point(24, 58);
+            this.radioOrientationBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioOrientationBottom.Name = "radioOrientationBottom";
-            this.radioOrientationBottom.Size = new System.Drawing.Size(58, 17);
+            this.radioOrientationBottom.Size = new System.Drawing.Size(70, 20);
             this.radioOrientationBottom.TabIndex = 1;
             this.radioOrientationBottom.TabStop = true;
             this.radioOrientationBottom.Text = "Bottom";
@@ -220,9 +233,10 @@ namespace PopupPages
             // radioOrientationTop
             // 
             this.radioOrientationTop.AutoSize = true;
-            this.radioOrientationTop.Location = new System.Drawing.Point(18, 24);
+            this.radioOrientationTop.Location = new System.Drawing.Point(24, 30);
+            this.radioOrientationTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioOrientationTop.Name = "radioOrientationTop";
-            this.radioOrientationTop.Size = new System.Drawing.Size(44, 17);
+            this.radioOrientationTop.Size = new System.Drawing.Size(53, 20);
             this.radioOrientationTop.TabIndex = 0;
             this.radioOrientationTop.TabStop = true;
             this.radioOrientationTop.Text = "Top";
@@ -244,29 +258,23 @@ namespace PopupPages
             this.kryptonNavigator.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
             this.kryptonNavigator.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
             this.kryptonNavigator.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonNavigator.ControlKryptonFormFeatures = false;
             this.kryptonNavigator.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonNavigator.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.kryptonNavigator.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
-            this.kryptonNavigator.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonNavigator.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonNavigator.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
-            this.kryptonNavigator.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
-            this.kryptonNavigator.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
-            this.kryptonNavigator.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
             this.kryptonNavigator.Location = new System.Drawing.Point(0, 0);
+            this.kryptonNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonNavigator.Name = "kryptonNavigator";
             this.kryptonNavigator.NavigatorMode = Krypton.Navigator.NavigatorMode.HeaderBarCheckButtonOnly;
+            this.kryptonNavigator.Owner = null;
             this.kryptonNavigator.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.kryptonNavigator.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2,
             this.kryptonPage3});
-            this.kryptonNavigator.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonNavigator.PopupPages.AllowPopupPages = Krypton.Navigator.PopupPageAllow.OnlyCompatibleModes;
             this.kryptonNavigator.PopupPages.Element = Krypton.Navigator.PopupPageElement.Item;
             this.kryptonNavigator.PopupPages.Position = Krypton.Navigator.PopupPagePosition.ModeAppropriate;
             this.kryptonNavigator.SelectedIndex = 2;
-            this.kryptonNavigator.Size = new System.Drawing.Size(325, 32);
+            this.kryptonNavigator.Size = new System.Drawing.Size(435, 36);
             this.kryptonNavigator.TabIndex = 0;
             this.kryptonNavigator.Text = "kryptonNavigator1";
             // 
@@ -280,10 +288,11 @@ namespace PopupPages
             this.kryptonPage1.Flags = 65534;
             this.kryptonPage1.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage1.ImageSmall")));
             this.kryptonPage1.LastVisibleSet = true;
-            this.kryptonPage1.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPage1.MinimumSize = new System.Drawing.Size(67, 62);
             this.kryptonPage1.Name = "kryptonPage1";
-            this.kryptonPage1.Padding = new System.Windows.Forms.Padding(15);
-            this.kryptonPage1.Size = new System.Drawing.Size(323, 87);
+            this.kryptonPage1.Padding = new System.Windows.Forms.Padding(20, 18, 20, 18);
+            this.kryptonPage1.Size = new System.Drawing.Size(431, 107);
             this.kryptonPage1.Text = "First";
             this.kryptonPage1.TextDescription = "First";
             this.kryptonPage1.TextTitle = "First";
@@ -293,8 +302,9 @@ namespace PopupPages
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(0, 0);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(100, 28);
             this.button3.TabIndex = 3;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
@@ -302,8 +312,9 @@ namespace PopupPages
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(0, 0);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(100, 28);
             this.button4.TabIndex = 2;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
@@ -311,8 +322,9 @@ namespace PopupPages
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
@@ -320,8 +332,9 @@ namespace PopupPages
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -333,10 +346,11 @@ namespace PopupPages
             this.kryptonPage2.Flags = 65534;
             this.kryptonPage2.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage2.ImageSmall")));
             this.kryptonPage2.LastVisibleSet = true;
-            this.kryptonPage2.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPage2.MinimumSize = new System.Drawing.Size(67, 62);
             this.kryptonPage2.Name = "kryptonPage2";
-            this.kryptonPage2.Padding = new System.Windows.Forms.Padding(15);
-            this.kryptonPage2.Size = new System.Drawing.Size(323, 117);
+            this.kryptonPage2.Padding = new System.Windows.Forms.Padding(20, 18, 20, 18);
+            this.kryptonPage2.Size = new System.Drawing.Size(431, 144);
             this.kryptonPage2.Text = "Second";
             this.kryptonPage2.TextDescription = "Second";
             this.kryptonPage2.TextTitle = "Second";
@@ -346,6 +360,7 @@ namespace PopupPages
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
             this.listBox1.Items.AddRange(new object[] {
             "alpha",
             "beta",
@@ -356,8 +371,9 @@ namespace PopupPages
             "ohmn",
             "pi"});
             this.listBox1.Location = new System.Drawing.Point(0, 0);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 82);
+            this.listBox1.Size = new System.Drawing.Size(159, 100);
             this.listBox1.TabIndex = 0;
             // 
             // kryptonPage3
@@ -368,10 +384,11 @@ namespace PopupPages
             this.kryptonPage3.Flags = 65534;
             this.kryptonPage3.ImageSmall = ((System.Drawing.Bitmap)(resources.GetObject("kryptonPage3.ImageSmall")));
             this.kryptonPage3.LastVisibleSet = true;
-            this.kryptonPage3.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPage3.MinimumSize = new System.Drawing.Size(67, 62);
             this.kryptonPage3.Name = "kryptonPage3";
-            this.kryptonPage3.Padding = new System.Windows.Forms.Padding(15);
-            this.kryptonPage3.Size = new System.Drawing.Size(323, 83);
+            this.kryptonPage3.Padding = new System.Windows.Forms.Padding(20, 18, 20, 18);
+            this.kryptonPage3.Size = new System.Drawing.Size(431, 102);
             this.kryptonPage3.Text = "Third";
             this.kryptonPage3.TextDescription = "Third";
             this.kryptonPage3.TextTitle = "Third";
@@ -381,16 +398,18 @@ namespace PopupPages
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Progress";
             // 
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(0, 0);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(100, 23);
+            this.progressBar1.Size = new System.Drawing.Size(133, 28);
             this.progressBar1.TabIndex = 0;
             this.progressBar1.Value = 75;
             // 
@@ -405,9 +424,11 @@ namespace PopupPages
             this.groupBoxPopupPageProperties.Controls.Add(this.numericGap);
             this.groupBoxPopupPageProperties.Controls.Add(this.labelBorder);
             this.groupBoxPopupPageProperties.Controls.Add(this.numericBorder);
-            this.groupBoxPopupPageProperties.Location = new System.Drawing.Point(562, 12);
+            this.groupBoxPopupPageProperties.Location = new System.Drawing.Point(751, 15);
+            this.groupBoxPopupPageProperties.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxPopupPageProperties.Name = "groupBoxPopupPageProperties";
-            this.groupBoxPopupPageProperties.Size = new System.Drawing.Size(207, 141);
+            this.groupBoxPopupPageProperties.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxPopupPageProperties.Size = new System.Drawing.Size(276, 174);
             this.groupBoxPopupPageProperties.TabIndex = 3;
             this.groupBoxPopupPageProperties.TabStop = false;
             this.groupBoxPopupPageProperties.Text = "Popup Page Properties";
@@ -430,9 +451,10 @@ namespace PopupPages
             "NearTop",
             "NearBottom",
             "NearMatch"});
-            this.comboBoxPosition.Location = new System.Drawing.Point(68, 107);
+            this.comboBoxPosition.Location = new System.Drawing.Point(91, 132);
+            this.comboBoxPosition.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxPosition.Name = "comboBoxPosition";
-            this.comboBoxPosition.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxPosition.Size = new System.Drawing.Size(160, 24);
             this.comboBoxPosition.TabIndex = 4;
             this.comboBoxPosition.SelectedIndexChanged += new System.EventHandler(this.comboBoxPosition_SelectedIndexChanged);
             // 
@@ -443,61 +465,68 @@ namespace PopupPages
             this.comboBoxElement.Items.AddRange(new object[] {
             "Item",
             "Navigator"});
-            this.comboBoxElement.Location = new System.Drawing.Point(68, 80);
+            this.comboBoxElement.Location = new System.Drawing.Point(91, 98);
+            this.comboBoxElement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxElement.Name = "comboBoxElement";
-            this.comboBoxElement.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxElement.Size = new System.Drawing.Size(160, 24);
             this.comboBoxElement.TabIndex = 3;
             this.comboBoxElement.SelectedIndexChanged += new System.EventHandler(this.comboBoxElement_SelectedIndexChanged);
             // 
             // labelPosition
             // 
             this.labelPosition.AutoSize = true;
-            this.labelPosition.Location = new System.Drawing.Point(17, 110);
+            this.labelPosition.Location = new System.Drawing.Point(23, 135);
+            this.labelPosition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPosition.Name = "labelPosition";
-            this.labelPosition.Size = new System.Drawing.Size(44, 13);
+            this.labelPosition.Size = new System.Drawing.Size(55, 16);
             this.labelPosition.TabIndex = 6;
             this.labelPosition.Text = "Position";
             // 
             // labelElement
             // 
             this.labelElement.AutoSize = true;
-            this.labelElement.Location = new System.Drawing.Point(16, 83);
+            this.labelElement.Location = new System.Drawing.Point(21, 102);
+            this.labelElement.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelElement.Name = "labelElement";
-            this.labelElement.Size = new System.Drawing.Size(45, 13);
+            this.labelElement.Size = new System.Drawing.Size(56, 16);
             this.labelElement.TabIndex = 5;
             this.labelElement.Text = "Element";
             // 
             // labelGap
             // 
             this.labelGap.AutoSize = true;
-            this.labelGap.Location = new System.Drawing.Point(34, 56);
+            this.labelGap.Location = new System.Drawing.Point(45, 69);
+            this.labelGap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGap.Name = "labelGap";
-            this.labelGap.Size = new System.Drawing.Size(27, 13);
+            this.labelGap.Size = new System.Drawing.Size(33, 16);
             this.labelGap.TabIndex = 4;
             this.labelGap.Text = "Gap";
             // 
             // numericGap
             // 
-            this.numericGap.Location = new System.Drawing.Point(68, 54);
+            this.numericGap.Location = new System.Drawing.Point(91, 66);
+            this.numericGap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericGap.Name = "numericGap";
-            this.numericGap.Size = new System.Drawing.Size(50, 20);
+            this.numericGap.Size = new System.Drawing.Size(67, 22);
             this.numericGap.TabIndex = 2;
             this.numericGap.ValueChanged += new System.EventHandler(this.numericGap_ValueChanged);
             // 
             // labelBorder
             // 
             this.labelBorder.AutoSize = true;
-            this.labelBorder.Location = new System.Drawing.Point(23, 30);
+            this.labelBorder.Location = new System.Drawing.Point(31, 37);
+            this.labelBorder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelBorder.Name = "labelBorder";
-            this.labelBorder.Size = new System.Drawing.Size(38, 13);
+            this.labelBorder.Size = new System.Drawing.Size(48, 16);
             this.labelBorder.TabIndex = 2;
             this.labelBorder.Text = "Border";
             // 
             // numericBorder
             // 
-            this.numericBorder.Location = new System.Drawing.Point(68, 28);
+            this.numericBorder.Location = new System.Drawing.Point(91, 34);
+            this.numericBorder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericBorder.Name = "numericBorder";
-            this.numericBorder.Size = new System.Drawing.Size(50, 20);
+            this.numericBorder.Size = new System.Drawing.Size(67, 22);
             this.numericBorder.TabIndex = 1;
             this.numericBorder.ValueChanged += new System.EventHandler(this.numericBorder_ValueChanged);
             // 
@@ -507,17 +536,19 @@ namespace PopupPages
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelHost.Controls.Add(this.kryptonNavigator);
-            this.panelHost.Location = new System.Drawing.Point(227, 19);
+            this.panelHost.Location = new System.Drawing.Point(303, 23);
+            this.panelHost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelHost.Name = "panelHost";
-            this.panelHost.Size = new System.Drawing.Size(325, 285);
+            this.panelHost.Size = new System.Drawing.Size(435, 344);
             this.panelHost.TabIndex = 6;
             // 
             // buttonClose
             // 
             this.buttonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonClose.Location = new System.Drawing.Point(694, 281);
+            this.buttonClose.Location = new System.Drawing.Point(927, 339);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(75, 23);
+            this.buttonClose.Size = new System.Drawing.Size(100, 28);
             this.buttonClose.TabIndex = 4;
             this.buttonClose.Text = "Close";
             this.buttonClose.UseVisualStyleBackColor = true;
@@ -529,16 +560,17 @@ namespace PopupPages
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(781, 319);
+            this.ClientSize = new System.Drawing.Size(1045, 379);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.panelHost);
             this.Controls.Add(this.groupBoxPopupPageProperties);
             this.Controls.Add(this.groupBoxBarOrientation);
             this.Controls.Add(this.groupBoxModes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(789, 353);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(1046, 424);
             this.Name = "Form1";
             this.Text = "Popup Pages";
             this.Load += new System.EventHandler(this.Form1_Load);

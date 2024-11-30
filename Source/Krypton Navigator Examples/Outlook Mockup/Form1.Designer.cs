@@ -227,7 +227,8 @@ namespace OutlookMockup
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
@@ -235,7 +236,7 @@ namespace OutlookMockup
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(712, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(716, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -253,7 +254,7 @@ namespace OutlookMockup
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // newToolStripMenuItem
@@ -262,7 +263,7 @@ namespace OutlookMockup
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.newToolStripMenuItem.Text = "&New";
             // 
             // openToolStripMenuItem
@@ -271,13 +272,13 @@ namespace OutlookMockup
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(178, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -285,19 +286,19 @@ namespace OutlookMockup
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.saveToolStripMenuItem.Text = "&Save";
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(178, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -305,7 +306,7 @@ namespace OutlookMockup
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.printToolStripMenuItem.Text = "&Print";
             // 
             // printPreviewToolStripMenuItem
@@ -313,18 +314,18 @@ namespace OutlookMockup
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(178, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // editToolStripMenuItem
@@ -339,27 +340,27 @@ namespace OutlookMockup
             this.toolStripSeparator4,
             this.selectAllToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
             this.editToolStripMenuItem.Text = "&Edit";
             // 
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.undoToolStripMenuItem.Text = "&Undo";
             // 
             // redoToolStripMenuItem
             // 
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
             this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.redoToolStripMenuItem.Text = "&Redo";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(141, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(176, 6);
             // 
             // cutToolStripMenuItem
             // 
@@ -367,7 +368,7 @@ namespace OutlookMockup
             this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.cutToolStripMenuItem.Text = "Cu&t";
             // 
             // copyToolStripMenuItem
@@ -376,7 +377,7 @@ namespace OutlookMockup
             this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.copyToolStripMenuItem.Text = "&Copy";
             // 
             // pasteToolStripMenuItem
@@ -385,18 +386,18 @@ namespace OutlookMockup
             this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.pasteToolStripMenuItem.Text = "&Paste";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(141, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(176, 6);
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.selectAllToolStripMenuItem.Text = "Select &All";
             // 
             // toolsToolStripMenuItem
@@ -405,19 +406,19 @@ namespace OutlookMockup
             this.customizeToolStripMenuItem,
             this.optionsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.toolsToolStripMenuItem.Text = "&Tools";
             // 
             // customizeToolStripMenuItem
             // 
             this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.customizeToolStripMenuItem.Text = "&Customize";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.optionsToolStripMenuItem.Text = "&Options";
             // 
             // helpToolStripMenuItem
@@ -429,42 +430,43 @@ namespace OutlookMockup
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // contentsToolStripMenuItem
             // 
             this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
-            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.contentsToolStripMenuItem.Text = "&Contents";
             // 
             // indexToolStripMenuItem
             // 
             this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            this.indexToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.indexToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.indexToolStripMenuItem.Text = "&Index";
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.searchToolStripMenuItem.Text = "&Search";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(119, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(147, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
             // toolStrip1
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripButton,
             this.openToolStripButton,
@@ -476,9 +478,9 @@ namespace OutlookMockup
             this.pasteToolStripButton,
             this.toolStripSeparator7,
             this.helpToolStripButton});
-            this.toolStrip1.Location = new System.Drawing.Point(3, 0);
+            this.toolStrip1.Location = new System.Drawing.Point(4, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(208, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(257, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -488,7 +490,7 @@ namespace OutlookMockup
             this.newToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripButton.Image")));
             this.newToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripButton.Name = "newToolStripButton";
-            this.newToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.newToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.newToolStripButton.Text = "&New";
             // 
             // openToolStripButton
@@ -497,7 +499,7 @@ namespace OutlookMockup
             this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
             this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripButton.Name = "openToolStripButton";
-            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.openToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.openToolStripButton.Text = "&Open";
             // 
             // saveToolStripButton
@@ -506,7 +508,7 @@ namespace OutlookMockup
             this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
             this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.saveToolStripButton.Text = "&Save";
             // 
             // printToolStripButton
@@ -515,13 +517,13 @@ namespace OutlookMockup
             this.printToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripButton.Image")));
             this.printToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripButton.Name = "printToolStripButton";
-            this.printToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.printToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.printToolStripButton.Text = "&Print";
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 27);
             // 
             // cutToolStripButton
             // 
@@ -529,7 +531,7 @@ namespace OutlookMockup
             this.cutToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripButton.Image")));
             this.cutToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripButton.Name = "cutToolStripButton";
-            this.cutToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.cutToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.cutToolStripButton.Text = "C&ut";
             // 
             // copyToolStripButton
@@ -538,7 +540,7 @@ namespace OutlookMockup
             this.copyToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripButton.Image")));
             this.copyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripButton.Name = "copyToolStripButton";
-            this.copyToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.copyToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.copyToolStripButton.Text = "&Copy";
             // 
             // pasteToolStripButton
@@ -547,13 +549,13 @@ namespace OutlookMockup
             this.pasteToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripButton.Image")));
             this.pasteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripButton.Name = "pasteToolStripButton";
-            this.pasteToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.pasteToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.pasteToolStripButton.Text = "&Paste";
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 27);
             // 
             // helpToolStripButton
             // 
@@ -561,7 +563,7 @@ namespace OutlookMockup
             this.helpToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripButton.Image")));
             this.helpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.helpToolStripButton.Name = "helpToolStripButton";
-            this.helpToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.helpToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.helpToolStripButton.Text = "He&lp";
             // 
             // toolStripContainer1
@@ -570,11 +572,11 @@ namespace OutlookMockup
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.kryptonPanelMain);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(712, 450);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(716, 430);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 24);
+            this.toolStripContainer1.Location = new System.Drawing.Point(0, 28);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(712, 475);
+            this.toolStripContainer1.Size = new System.Drawing.Size(716, 457);
             this.toolStripContainer1.TabIndex = 1;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -589,7 +591,7 @@ namespace OutlookMockup
             this.kryptonPanelMain.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanelMain.Name = "kryptonPanelMain";
             this.kryptonPanelMain.Padding = new System.Windows.Forms.Padding(4);
-            this.kryptonPanelMain.Size = new System.Drawing.Size(712, 450);
+            this.kryptonPanelMain.Size = new System.Drawing.Size(716, 430);
             this.kryptonPanelMain.TabIndex = 0;
             // 
             // kryptonSplitContainerMain
@@ -599,29 +601,22 @@ namespace OutlookMockup
             this.kryptonSplitContainerMain.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.kryptonSplitContainerMain.Location = new System.Drawing.Point(4, 4);
             this.kryptonSplitContainerMain.Name = "kryptonSplitContainerMain";
-            this.kryptonSplitContainerMain.Orientation = System.Windows.Forms.Orientation.Vertical;
             // 
             // kryptonSplitContainerMain.Panel1
             // 
             this.kryptonSplitContainerMain.Panel1.Controls.Add(this.kryptonNavigatorMain);
-            this.kryptonSplitContainerMain.Panel1MinSize = 25;
             // 
             // kryptonSplitContainerMain.Panel2
             // 
             this.kryptonSplitContainerMain.Panel2.Controls.Add(this.kryptonSplitContainerDetails);
-            this.kryptonSplitContainerMain.Panel2MinSize = 25;
-            this.kryptonSplitContainerMain.Size = new System.Drawing.Size(704, 442);
+            this.kryptonSplitContainerMain.Size = new System.Drawing.Size(708, 422);
             this.kryptonSplitContainerMain.SplitterDistance = 183;
-            this.kryptonSplitContainerMain.SplitterIncrement = 1;
-            this.kryptonSplitContainerMain.SplitterWidth = 5;
             this.kryptonSplitContainerMain.TabIndex = 0;
             // 
             // kryptonNavigatorMain
             // 
-            this.kryptonNavigatorMain.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonNavigatorMain.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
-            this.kryptonNavigatorMain.Button.ButtonSpecs.AddRange(new Krypton.Navigator.ButtonSpecNavigator[] {
-            this.buttonSpecExpandCollapse});
+            this.kryptonNavigatorMain.Button.ButtonSpecs.Add(this.buttonSpecExpandCollapse);
             this.kryptonNavigatorMain.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
             this.kryptonNavigatorMain.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonNavigatorMain.Button.ContextButtonAction = Krypton.Navigator.ContextButtonAction.SelectPage;
@@ -632,9 +627,8 @@ namespace OutlookMockup
             this.kryptonNavigatorMain.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
             this.kryptonNavigatorMain.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
             this.kryptonNavigatorMain.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonNavigatorMain.ControlKryptonFormFeatures = false;
             this.kryptonNavigatorMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonNavigatorMain.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.kryptonNavigatorMain.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
             this.kryptonNavigatorMain.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonNavigatorMain.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonNavigatorMain.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
@@ -647,18 +641,15 @@ namespace OutlookMockup
             this.kryptonNavigatorMain.Location = new System.Drawing.Point(0, 0);
             this.kryptonNavigatorMain.Name = "kryptonNavigatorMain";
             this.kryptonNavigatorMain.NavigatorMode = Krypton.Navigator.NavigatorMode.OutlookFull;
+            this.kryptonNavigatorMain.Owner = null;
             this.kryptonNavigatorMain.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.kryptonNavigatorMain.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPageMail,
             this.kryptonPageCalendar,
             this.kryptonPageNotes});
-            this.kryptonNavigatorMain.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonNavigatorMain.SelectedIndex = 0;
-            this.kryptonNavigatorMain.Size = new System.Drawing.Size(183, 442);
+            this.kryptonNavigatorMain.Size = new System.Drawing.Size(183, 422);
             this.kryptonNavigatorMain.StateCommon.CheckButton.Content.AdjacentGap = 5;
-            this.kryptonNavigatorMain.StateCommon.CheckButton.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonNavigatorMain.StateCommon.CheckButton.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonNavigatorMain.StateCommon.CheckButton.Content.Padding = new System.Windows.Forms.Padding(-1);
             this.kryptonNavigatorMain.TabIndex = 0;
             this.kryptonNavigatorMain.Text = "kryptonNavigator1";
             this.kryptonNavigatorMain.SelectedPageChanged += new System.EventHandler(this.kryptonNavigatorMain_SelectedPageChanged);
@@ -686,7 +677,7 @@ namespace OutlookMockup
             this.kryptonPageMail.LastVisibleSet = true;
             this.kryptonPageMail.MinimumSize = new System.Drawing.Size(180, 230);
             this.kryptonPageMail.Name = "kryptonPageMail";
-            this.kryptonPageMail.Size = new System.Drawing.Size(181, 293);
+            this.kryptonPageMail.Size = new System.Drawing.Size(181, 258);
             this.kryptonPageMail.Text = "Mail";
             this.kryptonPageMail.TextTitle = "Mail";
             this.kryptonPageMail.ToolTipTitle = "Page ToolTip";
@@ -699,7 +690,7 @@ namespace OutlookMockup
             this.treeViewMailFolders.HideSelection = false;
             this.treeViewMailFolders.ImageIndex = 0;
             this.treeViewMailFolders.ImageList = this.imageListSmall;
-            this.treeViewMailFolders.Location = new System.Drawing.Point(0, 87);
+            this.treeViewMailFolders.Location = new System.Drawing.Point(0, 103);
             this.treeViewMailFolders.Name = "treeViewMailFolders";
             treeNode1.Name = "nodeDeletedItems";
             treeNode1.Tag = "0";
@@ -732,7 +723,7 @@ namespace OutlookMockup
             treeNode7,
             treeNode8});
             this.treeViewMailFolders.SelectedImageIndex = 0;
-            this.treeViewMailFolders.Size = new System.Drawing.Size(181, 206);
+            this.treeViewMailFolders.Size = new System.Drawing.Size(181, 155);
             this.treeViewMailFolders.TabIndex = 1;
             this.treeViewMailFolders.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewMail_AfterSelect);
             // 
@@ -748,27 +739,19 @@ namespace OutlookMockup
             // 
             this.panelFoldersSep.BackColor = System.Drawing.SystemColors.Window;
             this.panelFoldersSep.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelFoldersSep.Location = new System.Drawing.Point(0, 82);
+            this.panelFoldersSep.Location = new System.Drawing.Point(0, 98);
             this.panelFoldersSep.Name = "panelFoldersSep";
             this.panelFoldersSep.Size = new System.Drawing.Size(181, 5);
             this.panelFoldersSep.TabIndex = 5;
             // 
             // kryptonHeaderFolders
             // 
-            this.kryptonHeaderFolders.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonHeaderFolders.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonHeaderFolders.HeaderStyle = Krypton.Toolkit.HeaderStyle.Secondary;
-            this.kryptonHeaderFolders.Location = new System.Drawing.Point(0, 62);
+            this.kryptonHeaderFolders.Location = new System.Drawing.Point(0, 70);
             this.kryptonHeaderFolders.Name = "kryptonHeaderFolders";
-            this.kryptonHeaderFolders.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonHeaderFolders.Size = new System.Drawing.Size(181, 20);
-            this.kryptonHeaderFolders.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonHeaderFolders.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kryptonHeaderFolders.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonHeaderFolders.Size = new System.Drawing.Size(181, 28);
             this.kryptonHeaderFolders.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)));
-            this.kryptonHeaderFolders.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
-            this.kryptonHeaderFolders.StateCommon.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonHeaderFolders.StateCommon.ButtonPadding = new System.Windows.Forms.Padding(-1);
             this.kryptonHeaderFolders.TabIndex = 2;
             this.kryptonHeaderFolders.Values.Description = "";
             this.kryptonHeaderFolders.Values.Heading = "Mail Folders";
@@ -781,7 +764,7 @@ namespace OutlookMockup
             this.treeViewMailFavs.HideSelection = false;
             this.treeViewMailFavs.ImageIndex = 0;
             this.treeViewMailFavs.ImageList = this.imageListSmall;
-            this.treeViewMailFavs.Location = new System.Drawing.Point(0, 24);
+            this.treeViewMailFavs.Location = new System.Drawing.Point(0, 32);
             this.treeViewMailFavs.Name = "treeViewMailFavs";
             treeNode9.Name = "nodeDrafts";
             treeNode9.Tag = "1";
@@ -801,27 +784,19 @@ namespace OutlookMockup
             // 
             this.panelFavoriteSep.BackColor = System.Drawing.SystemColors.Window;
             this.panelFavoriteSep.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelFavoriteSep.Location = new System.Drawing.Point(0, 19);
+            this.panelFavoriteSep.Location = new System.Drawing.Point(0, 27);
             this.panelFavoriteSep.Name = "panelFavoriteSep";
             this.panelFavoriteSep.Size = new System.Drawing.Size(181, 5);
             this.panelFavoriteSep.TabIndex = 4;
             // 
             // kryptonHeaderFavorites
             // 
-            this.kryptonHeaderFavorites.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonHeaderFavorites.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonHeaderFavorites.HeaderStyle = Krypton.Toolkit.HeaderStyle.Secondary;
             this.kryptonHeaderFavorites.Location = new System.Drawing.Point(0, 0);
             this.kryptonHeaderFavorites.Name = "kryptonHeaderFavorites";
-            this.kryptonHeaderFavorites.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonHeaderFavorites.Size = new System.Drawing.Size(181, 19);
-            this.kryptonHeaderFavorites.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonHeaderFavorites.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kryptonHeaderFavorites.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
+            this.kryptonHeaderFavorites.Size = new System.Drawing.Size(181, 27);
             this.kryptonHeaderFavorites.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
-            this.kryptonHeaderFavorites.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
-            this.kryptonHeaderFavorites.StateCommon.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonHeaderFavorites.StateCommon.ButtonPadding = new System.Windows.Forms.Padding(-1);
             this.kryptonHeaderFavorites.TabIndex = 1;
             this.kryptonHeaderFavorites.Values.Description = "";
             this.kryptonHeaderFavorites.Values.Heading = "Favorite Folders";
@@ -875,22 +850,18 @@ namespace OutlookMockup
             // 
             // radioFriends
             // 
-            this.radioFriends.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioFriends.Location = new System.Drawing.Point(23, 73);
             this.radioFriends.Name = "radioFriends";
-            this.radioFriends.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioFriends.Size = new System.Drawing.Size(61, 18);
+            this.radioFriends.Size = new System.Drawing.Size(77, 26);
             this.radioFriends.TabIndex = 8;
             this.radioFriends.Values.Text = "Friends";
             this.radioFriends.CheckedChanged += new System.EventHandler(this.radioNotes_CheckedChanged);
             // 
             // radioFamily
             // 
-            this.radioFamily.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioFamily.Location = new System.Drawing.Point(23, 48);
             this.radioFamily.Name = "radioFamily";
-            this.radioFamily.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioFamily.Size = new System.Drawing.Size(57, 18);
+            this.radioFamily.Size = new System.Drawing.Size(71, 26);
             this.radioFamily.TabIndex = 7;
             this.radioFamily.Values.Text = "Family";
             this.radioFamily.CheckedChanged += new System.EventHandler(this.radioNotes_CheckedChanged);
@@ -898,11 +869,9 @@ namespace OutlookMockup
             // radioProject
             // 
             this.radioProject.Checked = true;
-            this.radioProject.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioProject.Location = new System.Drawing.Point(23, 23);
             this.radioProject.Name = "radioProject";
-            this.radioProject.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioProject.Size = new System.Drawing.Size(58, 18);
+            this.radioProject.Size = new System.Drawing.Size(75, 26);
             this.radioProject.TabIndex = 6;
             this.radioProject.Values.Text = "Project";
             this.radioProject.CheckedChanged += new System.EventHandler(this.radioNotes_CheckedChanged);
@@ -911,7 +880,6 @@ namespace OutlookMockup
             // 
             this.kryptonSplitContainerDetails.Cursor = System.Windows.Forms.Cursors.Default;
             this.kryptonSplitContainerDetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonSplitContainerDetails.FixedPanel = System.Windows.Forms.FixedPanel.None;
             this.kryptonSplitContainerDetails.Location = new System.Drawing.Point(0, 0);
             this.kryptonSplitContainerDetails.Name = "kryptonSplitContainerDetails";
             this.kryptonSplitContainerDetails.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -919,21 +887,16 @@ namespace OutlookMockup
             // kryptonSplitContainerDetails.Panel1
             // 
             this.kryptonSplitContainerDetails.Panel1.Controls.Add(this.kryptonNavigatorDetails);
-            this.kryptonSplitContainerDetails.Panel1MinSize = 25;
             // 
             // kryptonSplitContainerDetails.Panel2
             // 
             this.kryptonSplitContainerDetails.Panel2.Controls.Add(this.kryptonButtonGroup);
-            this.kryptonSplitContainerDetails.Panel2MinSize = 25;
-            this.kryptonSplitContainerDetails.Size = new System.Drawing.Size(516, 442);
-            this.kryptonSplitContainerDetails.SplitterDistance = 233;
-            this.kryptonSplitContainerDetails.SplitterIncrement = 1;
-            this.kryptonSplitContainerDetails.SplitterWidth = 5;
+            this.kryptonSplitContainerDetails.Size = new System.Drawing.Size(520, 422);
+            this.kryptonSplitContainerDetails.SplitterDistance = 221;
             this.kryptonSplitContainerDetails.TabIndex = 0;
             // 
             // kryptonNavigatorDetails
             // 
-            this.kryptonNavigatorDetails.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonNavigatorDetails.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
             this.kryptonNavigatorDetails.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
             this.kryptonNavigatorDetails.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
@@ -945,9 +908,8 @@ namespace OutlookMockup
             this.kryptonNavigatorDetails.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
             this.kryptonNavigatorDetails.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
             this.kryptonNavigatorDetails.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonNavigatorDetails.ControlKryptonFormFeatures = false;
             this.kryptonNavigatorDetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonNavigatorDetails.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.kryptonNavigatorDetails.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
             this.kryptonNavigatorDetails.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonNavigatorDetails.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonNavigatorDetails.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
@@ -958,23 +920,15 @@ namespace OutlookMockup
             this.kryptonNavigatorDetails.Location = new System.Drawing.Point(0, 0);
             this.kryptonNavigatorDetails.Name = "kryptonNavigatorDetails";
             this.kryptonNavigatorDetails.NavigatorMode = Krypton.Navigator.NavigatorMode.HeaderGroup;
+            this.kryptonNavigatorDetails.Owner = null;
             this.kryptonNavigatorDetails.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.kryptonNavigatorDetails.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPageMailDetails,
             this.kryptonPageCalendarDetails,
             this.kryptonPageNotesDetails});
-            this.kryptonNavigatorDetails.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonNavigatorDetails.SelectedIndex = 0;
-            this.kryptonNavigatorDetails.Size = new System.Drawing.Size(516, 233);
-            this.kryptonNavigatorDetails.StateCommon.HeaderGroup.HeaderPrimary.ButtonPadding = new System.Windows.Forms.Padding(-1);
-            this.kryptonNavigatorDetails.StateCommon.HeaderGroup.HeaderPrimary.Content.Draw = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonNavigatorDetails.StateCommon.HeaderGroup.HeaderPrimary.Content.DrawFocus = Krypton.Toolkit.InheritBool.Inherit;
-            this.kryptonNavigatorDetails.StateCommon.HeaderGroup.HeaderPrimary.Content.Image.Effect = Krypton.Toolkit.PaletteImageEffect.Inherit;
+            this.kryptonNavigatorDetails.Size = new System.Drawing.Size(520, 221);
             this.kryptonNavigatorDetails.StateCommon.HeaderGroup.HeaderPrimary.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.kryptonNavigatorDetails.StateCommon.HeaderGroup.HeaderPrimary.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
-            this.kryptonNavigatorDetails.StateCommon.HeaderGroup.HeaderPrimary.Content.Padding = new System.Windows.Forms.Padding(-1);
-            this.kryptonNavigatorDetails.StateCommon.HeaderGroup.HeaderPrimary.HeaderPadding = new System.Windows.Forms.Padding(-1);
-            this.kryptonNavigatorDetails.StateCommon.HeaderGroup.OverlayHeaders = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonNavigatorDetails.TabIndex = 0;
             this.kryptonNavigatorDetails.Text = "kryptonNavigator1";
             // 
@@ -988,7 +942,7 @@ namespace OutlookMockup
             this.kryptonPageMailDetails.LastVisibleSet = true;
             this.kryptonPageMailDetails.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPageMailDetails.Name = "kryptonPageMailDetails";
-            this.kryptonPageMailDetails.Size = new System.Drawing.Size(514, 202);
+            this.kryptonPageMailDetails.Size = new System.Drawing.Size(518, 181);
             this.kryptonPageMailDetails.Text = "Mail";
             this.kryptonPageMailDetails.TextTitle = "Mail";
             this.kryptonPageMailDetails.ToolTipTitle = "Page ToolTip";
@@ -999,6 +953,8 @@ namespace OutlookMockup
             this.kryptonDataGridView1.AllowUserToAddRows = false;
             this.kryptonDataGridView1.AllowUserToDeleteRows = false;
             this.kryptonDataGridView1.AllowUserToResizeRows = false;
+            this.kryptonDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.kryptonDataGridView1.ColumnHeadersHeight = 36;
             this.kryptonDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgName,
             this.dgSubject,
@@ -1013,16 +969,12 @@ namespace OutlookMockup
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
             this.kryptonDataGridView1.ReadOnly = true;
             this.kryptonDataGridView1.RowHeadersVisible = false;
+            this.kryptonDataGridView1.RowHeadersWidth = 51;
             this.kryptonDataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.kryptonDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(514, 202);
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(518, 181);
             this.kryptonDataGridView1.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.kryptonDataGridView1.StateCommon.DataCell.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.kryptonDataGridView1.StateCommon.DataCell.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
-            this.kryptonDataGridView1.StateCommon.DataCell.Border.Draw = Krypton.Toolkit.InheritBool.Inherit;
             this.kryptonDataGridView1.StateCommon.DataCell.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
-            this.kryptonDataGridView1.StateCommon.DataCell.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
-            this.kryptonDataGridView1.StateCommon.DataCell.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.kryptonDataGridView1.TabIndex = 0;
             // 
             // dgName
@@ -1032,6 +984,7 @@ namespace OutlookMockup
             this.dgName.MinimumWidth = 100;
             this.dgName.Name = "dgName";
             this.dgName.ReadOnly = true;
+            this.dgName.Width = 125;
             // 
             // dgSubject
             // 
@@ -1051,6 +1004,7 @@ namespace OutlookMockup
             this.dgReceived.MinimumWidth = 100;
             this.dgReceived.Name = "dgReceived";
             this.dgReceived.ReadOnly = true;
+            this.dgReceived.Width = 125;
             // 
             // dgSize
             // 
@@ -1130,7 +1084,6 @@ namespace OutlookMockup
             // 
             // kryptonButtonGroup
             // 
-            this.kryptonButtonGroup.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonButtonGroup.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonButtonGroup.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonButtonGroup.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlAlternate;
@@ -1141,12 +1094,11 @@ namespace OutlookMockup
             // 
             this.kryptonButtonGroup.Panel.Controls.Add(this.kryptonGroupInner);
             this.kryptonButtonGroup.Panel.Padding = new System.Windows.Forms.Padding(5);
-            this.kryptonButtonGroup.Size = new System.Drawing.Size(516, 204);
+            this.kryptonButtonGroup.Size = new System.Drawing.Size(520, 196);
             this.kryptonButtonGroup.TabIndex = 0;
             // 
             // kryptonGroupInner
             // 
-            this.kryptonGroupInner.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonGroupInner.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonGroupInner.Location = new System.Drawing.Point(5, 5);
             this.kryptonGroupInner.Name = "kryptonGroupInner";
@@ -1162,27 +1114,23 @@ namespace OutlookMockup
             this.kryptonGroupInner.Panel.Controls.Add(this.radioOffice2007Black);
             this.kryptonGroupInner.Panel.Controls.Add(this.radioOffice2007Silver);
             this.kryptonGroupInner.Panel.Controls.Add(this.radioOffice2007Blue);
-            this.kryptonGroupInner.Size = new System.Drawing.Size(504, 192);
+            this.kryptonGroupInner.Size = new System.Drawing.Size(508, 184);
             this.kryptonGroupInner.TabIndex = 0;
             // 
             // radioOffice2010Black
             // 
-            this.radioOffice2010Black.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioOffice2010Black.Location = new System.Drawing.Point(17, 68);
             this.radioOffice2010Black.Name = "radioOffice2010Black";
-            this.radioOffice2010Black.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioOffice2010Black.Size = new System.Drawing.Size(119, 18);
+            this.radioOffice2010Black.Size = new System.Drawing.Size(155, 26);
             this.radioOffice2010Black.TabIndex = 2;
             this.radioOffice2010Black.Values.Text = "Office 2010 - Black";
             this.radioOffice2010Black.CheckedChanged += new System.EventHandler(this.radioOffice2010Black_CheckedChanged);
             // 
             // radioOffice2010Silver
             // 
-            this.radioOffice2010Silver.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioOffice2010Silver.Location = new System.Drawing.Point(17, 45);
             this.radioOffice2010Silver.Name = "radioOffice2010Silver";
-            this.radioOffice2010Silver.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioOffice2010Silver.Size = new System.Drawing.Size(119, 18);
+            this.radioOffice2010Silver.Size = new System.Drawing.Size(157, 26);
             this.radioOffice2010Silver.TabIndex = 1;
             this.radioOffice2010Silver.Values.Text = "Office 2010 - Silver";
             this.radioOffice2010Silver.CheckedChanged += new System.EventHandler(this.radioOffice2010Silver_CheckedChanged);
@@ -1190,77 +1138,63 @@ namespace OutlookMockup
             // radioOffice2010Blue
             // 
             this.radioOffice2010Blue.Checked = true;
-            this.radioOffice2010Blue.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioOffice2010Blue.Location = new System.Drawing.Point(17, 20);
             this.radioOffice2010Blue.Name = "radioOffice2010Blue";
-            this.radioOffice2010Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioOffice2010Blue.Size = new System.Drawing.Size(114, 18);
+            this.radioOffice2010Blue.Size = new System.Drawing.Size(149, 26);
             this.radioOffice2010Blue.TabIndex = 0;
             this.radioOffice2010Blue.Values.Text = "Office 2010 - Blue";
             this.radioOffice2010Blue.CheckedChanged += new System.EventHandler(this.radioOffice2010Blue_CheckedChanged);
             // 
             // radioSparkle
             // 
-            this.radioSparkle.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioSparkle.Location = new System.Drawing.Point(288, 44);
             this.radioSparkle.Name = "radioSparkle";
-            this.radioSparkle.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioSparkle.Size = new System.Drawing.Size(62, 18);
+            this.radioSparkle.Size = new System.Drawing.Size(78, 26);
             this.radioSparkle.TabIndex = 7;
             this.radioSparkle.Values.Text = "Sparkle";
             this.radioSparkle.CheckedChanged += new System.EventHandler(this.radioSparkle_CheckedChanged);
             // 
             // radioSystem
             // 
-            this.radioSystem.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioSystem.Location = new System.Drawing.Point(288, 68);
             this.radioSystem.Name = "radioSystem";
-            this.radioSystem.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioSystem.Size = new System.Drawing.Size(61, 18);
+            this.radioSystem.Size = new System.Drawing.Size(76, 26);
             this.radioSystem.TabIndex = 8;
             this.radioSystem.Values.Text = "System";
             this.radioSystem.CheckedChanged += new System.EventHandler(this.radioSystem_CheckedChanged);
             // 
             // radioOffice2003
             // 
-            this.radioOffice2003.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioOffice2003.Location = new System.Drawing.Point(288, 20);
             this.radioOffice2003.Name = "radioOffice2003";
-            this.radioOffice2003.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioOffice2003.Size = new System.Drawing.Size(81, 18);
+            this.radioOffice2003.Size = new System.Drawing.Size(105, 26);
             this.radioOffice2003.TabIndex = 6;
             this.radioOffice2003.Values.Text = "Office 2003";
             this.radioOffice2003.CheckedChanged += new System.EventHandler(this.radioOffice2003_CheckedChanged);
             // 
             // radioOffice2007Black
             // 
-            this.radioOffice2007Black.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioOffice2007Black.Location = new System.Drawing.Point(153, 68);
             this.radioOffice2007Black.Name = "radioOffice2007Black";
-            this.radioOffice2007Black.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioOffice2007Black.Size = new System.Drawing.Size(119, 18);
+            this.radioOffice2007Black.Size = new System.Drawing.Size(155, 26);
             this.radioOffice2007Black.TabIndex = 5;
             this.radioOffice2007Black.Values.Text = "Office 2007 - Black";
             this.radioOffice2007Black.CheckedChanged += new System.EventHandler(this.radioOffice2007Black_CheckedChanged);
             // 
             // radioOffice2007Silver
             // 
-            this.radioOffice2007Silver.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioOffice2007Silver.Location = new System.Drawing.Point(153, 45);
             this.radioOffice2007Silver.Name = "radioOffice2007Silver";
-            this.radioOffice2007Silver.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioOffice2007Silver.Size = new System.Drawing.Size(119, 18);
+            this.radioOffice2007Silver.Size = new System.Drawing.Size(157, 26);
             this.radioOffice2007Silver.TabIndex = 4;
             this.radioOffice2007Silver.Values.Text = "Office 2007 - Silver";
             this.radioOffice2007Silver.CheckedChanged += new System.EventHandler(this.radioOffice2007Silver_CheckedChanged);
             // 
             // radioOffice2007Blue
             // 
-            this.radioOffice2007Blue.CheckPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.radioOffice2007Blue.Location = new System.Drawing.Point(153, 20);
             this.radioOffice2007Blue.Name = "radioOffice2007Blue";
-            this.radioOffice2007Blue.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.radioOffice2007Blue.Size = new System.Drawing.Size(114, 18);
+            this.radioOffice2007Blue.Size = new System.Drawing.Size(149, 26);
             this.radioOffice2007Blue.TabIndex = 3;
             this.radioOffice2007Blue.Values.Text = "Office 2007 - Blue";
             this.radioOffice2007Blue.CheckedChanged += new System.EventHandler(this.radioOffice2007Blue_CheckedChanged);
@@ -1484,9 +1418,9 @@ namespace OutlookMockup
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(712, 499);
+            this.ClientSize = new System.Drawing.Size(716, 485);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

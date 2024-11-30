@@ -12,6 +12,7 @@
 
 using System;
 using System.Windows.Forms;
+
 using Krypton.Toolkit;
 
 namespace KryptonMonthCalendarExamples
@@ -19,7 +20,6 @@ namespace KryptonMonthCalendarExamples
     public partial class Form1 : Form
     {
         public Form1() => InitializeComponent();
-
 
         private void rbOffice2010Blue_CheckedChanged(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
 

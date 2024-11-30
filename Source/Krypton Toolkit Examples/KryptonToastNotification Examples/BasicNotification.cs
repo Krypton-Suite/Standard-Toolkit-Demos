@@ -1,4 +1,9 @@
-﻿using System;
+﻿// *****************************************************************************
+// BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2024 - 2024. All rights reserved.
+// *****************************************************************************
+
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -25,11 +30,8 @@ namespace KryptonToastNotificationExamples
         private string _notificationContentText;
 
         #endregion
-        
-        public BasicNotification()
-        {
-            InitializeComponent();
-        }
+
+        public BasicNotification() => InitializeComponent();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -66,26 +68,15 @@ namespace KryptonToastNotificationExamples
             kcmbToastTitleAlignment.SelectedIndex = 4;
         }
 
-        private void ktxtToastTitle_TextChanged(object sender, EventArgs e)
-        {
-            _notificationTitleText = ktxtToastTitle.Text;
-        }
+        private void ktxtToastTitle_TextChanged(object sender, EventArgs e) => _notificationTitleText = ktxtToastTitle.Text;
 
-        private void ktxtToastContent_TextChanged(object sender, EventArgs e)
-        {
-            _notificationContentText = ktxtToastContent.Text;
-        }
+        private void ktxtToastContent_TextChanged(object sender, EventArgs e) => _notificationContentText = ktxtToastContent.Text;
 
-        private void kcmbToastIcon_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        private void kcmbToastIcon_SelectedIndexChanged(object sender, EventArgs e) =>
             _notificationIcon =
                 (KryptonToastNotificationIcon)Enum.Parse(typeof(KryptonToastNotificationIcon), kcmbToastIcon.Text);
-        }
 
-        private void kcmbToastTitleAlignment_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            _titleAlignment = (ContentAlignment)Enum.Parse(typeof(ContentAlignment), kcmbToastTitleAlignment.Text);
-        }
+        private void kcmbToastTitleAlignment_SelectedIndexChanged(object sender, EventArgs e) => _titleAlignment = (ContentAlignment)Enum.Parse(typeof(ContentAlignment), kcmbToastTitleAlignment.Text);
 
         private void kbtnContentFont_Click(object sender, EventArgs e)
         {
@@ -107,10 +98,7 @@ namespace KryptonToastNotificationExamples
             }
         }
 
-        private void knudCountdownSeconds_ValueChanged(object sender, EventArgs e)
-        {
-            _countDownSeconds = (int)knudCountdownSeconds.Value;
-        }
+        private void knudCountdownSeconds_ValueChanged(object sender, EventArgs e) => _countDownSeconds = (int)knudCountdownSeconds.Value;
 
         private void kbtnShow_Click(object sender, EventArgs e)
         {
@@ -142,24 +130,12 @@ namespace KryptonToastNotificationExamples
             }
         }
 
-        private void kchkUseFade_CheckedChanged(object sender, EventArgs e)
-        {
-            _useFade = kchkUseFade.Checked;
-        }
+        private void kchkUseFade_CheckedChanged(object sender, EventArgs e) => _useFade = kchkUseFade.Checked;
 
-        private void kchkTopMost_CheckedChanged(object sender, EventArgs e)
-        {
-            _topMost = kchkTopMost.Checked;
-        }
+        private void kchkTopMost_CheckedChanged(object sender, EventArgs e) => _topMost = kchkTopMost.Checked;
 
-        private void kchkShowCloseBox_CheckedChanged(object sender, EventArgs e)
-        {
-            _showCloseBox = kchkShowCloseBox.Checked;
-        }
+        private void kchkShowCloseBox_CheckedChanged(object sender, EventArgs e) => _showCloseBox = kchkShowCloseBox.Checked;
 
-        private void kchkReportLocation_CheckedChanged(object sender, EventArgs e)
-        {
-            _reportLocation = kchkReportLocation.Checked;
-        }
+        private void kchkReportLocation_CheckedChanged(object sender, EventArgs e) => _reportLocation = kchkReportLocation.Checked;
     }
 }

@@ -25,7 +25,7 @@ namespace MDIRibbon
 
         protected override void Dispose(bool disposing)
         {
-            if (disposing) 
+            if (disposing)
             {
                 // Remember to unhook from static event, otherwise 
                 // this object cannot be garbage collected later on
@@ -34,7 +34,7 @@ namespace MDIRibbon
                 components?.Dispose();
             }
             base.Dispose(disposing);
-        }       
+        }
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -141,7 +141,7 @@ namespace MDIRibbon
 
         private void UpdateRadioButtons()
         {
-            switch(kryptonManager.GlobalPaletteMode)
+            switch (kryptonManager.GlobalPaletteMode)
             {
                 case PaletteMode.ProfessionalSystem:
                     radioSystem.Checked = true;

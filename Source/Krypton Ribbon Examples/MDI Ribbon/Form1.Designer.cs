@@ -62,7 +62,7 @@ namespace MDIRibbon
             this.ribbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome});
             this.ribbon.SelectedTab = this.tabHome;
-            this.ribbon.Size = new System.Drawing.Size(931, 136);
+            this.ribbon.Size = new System.Drawing.Size(935, 136);
             this.ribbon.TabIndex = 0;
             // 
             // buttonSpecHelp
@@ -185,7 +185,7 @@ namespace MDIRibbon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(931, 625);
+            this.ClientSize = new System.Drawing.Size(935, 611);
             this.CloseBox = false;
             this.Controls.Add(this.ribbon);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

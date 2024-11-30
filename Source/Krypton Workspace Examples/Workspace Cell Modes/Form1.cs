@@ -11,14 +11,11 @@
 #endregion
 
 using System;
-using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using Krypton.Toolkit;
+
 using Krypton.Navigator;
+using Krypton.Toolkit;
 using Krypton.Workspace;
 
 namespace WorkspaceCellModes
@@ -36,15 +33,15 @@ namespace WorkspaceCellModes
         private void Form1_Load(object sender, EventArgs e)
         {
             // Create three cells that each contain two pages
-            KryptonWorkspaceCell cell1 = new KryptonWorkspaceCell();
-            KryptonWorkspaceCell cell2 = new KryptonWorkspaceCell();
-            KryptonWorkspaceCell cell3 = new KryptonWorkspaceCell();
+            var cell1 = new KryptonWorkspaceCell();
+            var cell2 = new KryptonWorkspaceCell();
+            var cell3 = new KryptonWorkspaceCell();
             cell1.Pages.AddRange(new KryptonPage[] { CreatePage(), CreatePage() });
             cell2.Pages.AddRange(new KryptonPage[] { CreatePage(), CreatePage() });
             cell3.Pages.AddRange(new KryptonPage[] { CreatePage(), CreatePage() });
 
             // Create a vertical sequence that contains two of the pages
-            KryptonWorkspaceSequence sequence = new KryptonWorkspaceSequence(Orientation.Vertical);
+            var sequence = new KryptonWorkspaceSequence(Orientation.Vertical);
             sequence.Children.AddRange(new KryptonWorkspaceCell[] { cell2, cell3 });
 
             // Remove starting contents and add a cell with a sequence
@@ -157,22 +154,23 @@ namespace WorkspaceCellModes
         private KryptonPage CreatePage()
         {
             // Give each page a unique number
-            string pageNumber = (_count++).ToString();
+            var pageNumber = (_count++).ToString();
 
             // Create a new page and give it a name and image
-            KryptonPage page = new KryptonPage();
-            page.Text = "P" + pageNumber;
-            page.TextTitle = "P" + pageNumber + " Title";
-            page.TextDescription = "P" + pageNumber + " Description";
+            var page = new KryptonPage();
+            page.Text = $"P{pageNumber}";
+            page.TextTitle = $"P{pageNumber} Title";
+            page.TextDescription = $"P{pageNumber} Description";
             page.ImageSmall = (Bitmap)imageList.Images[_count % imageList.Images.Count];
             page.MinimumSize = new Size(200, 250);
 
             // Create a rich text box with some sample text inside
-            KryptonRichTextBox rtb = new KryptonRichTextBox();
-            rtb.Text = "This page (" + page.Text + ") contains a rich text box control as example content. Your application could place anything you like here such as data entry controls, charts, data grids etc.\n\nTry dragging the page headers in order to rearrange the workspace layout.";
+            var rtb = new KryptonRichTextBox();
+            rtb.Text =
+                $"This page ({page.Text}) contains a rich text box control as example content. Your application could place anything you like here such as data entry controls, charts, data grids etc.\n\nTry dragging the page headers in order to rearrange the workspace layout.";
             rtb.Dock = DockStyle.Fill;
             rtb.StateCommon.Border.Draw = InheritBool.False;
-            
+
             // Add rich text box as the contents of the page
             page.Padding = new Padding(5);
             page.Controls.Add(rtb);

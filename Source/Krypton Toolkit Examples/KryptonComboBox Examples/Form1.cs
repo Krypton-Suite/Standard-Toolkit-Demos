@@ -11,9 +11,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonComboBoxExamples
@@ -28,7 +29,7 @@ namespace KryptonComboBoxExamples
 
         private void kryptonComboBox1Blue_Enter(object sender, EventArgs e) =>
             // Setup the property grid to edit this combo box
-            propertyGrid.SelectedObject = new KryptonComboBoxProxy(sender as KryptonComboBox);
+            propertyGrid.SelectedObject = new KryptonComboBoxProxy((KryptonComboBox)sender);
 
         private void buttonSpecAny1_Click(object sender, EventArgs e)
         {
@@ -65,7 +66,7 @@ namespace KryptonComboBoxExamples
         private void kryptonComboBox1Blue_DoubleClick(object sender, EventArgs e) => InvokeDoubleClick();
 
         private void InvokeDoubleClick() =>
-            KryptonMessageBox.Show("You've invoked the double click event.", "Double Click", 
+            KryptonMessageBox.Show("You've invoked the double click event.", "Double Click",
                 KryptonMessageBoxButtons.OK,
                 KryptonMessageBoxIcon.Information);
 

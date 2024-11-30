@@ -12,6 +12,7 @@
 
 using System;
 using System.Windows.Forms;
+
 using Krypton.Toolkit;
 
 namespace KryptonCheckedListBoxExamples
@@ -41,8 +42,8 @@ namespace KryptonCheckedListBoxExamples
         private object CreateNewItem()
         {
             KryptonListItem item = new KryptonListItem();
-            item.ShortText = "Item " + (_next++).ToString();
-            item.LongText = "(" + _rand.Next(Int32.MaxValue).ToString() + ")";
+            item.ShortText = $"Item {(_next++)}";
+            item.LongText = $"({_rand.Next(Int32.MaxValue)})";
             item.Image = imageList.Images[_rand.Next(imageList.Images.Count - 1)];
             return item;
         }

@@ -9,6 +9,7 @@
  *  
  */
 #endregion
+
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -42,12 +43,12 @@ namespace BasicEvents
         private void kryptonButtonAdd_Click(object sender, EventArgs e)
         {
             // Create a new krypton page
-            KryptonPage newPage = new KryptonPage();
+            var newPage = new KryptonPage();
 
             // Populate with text and image
-            newPage.Text = "Page " + _count.ToString();
-            newPage.TextTitle = "Page " + _count.ToString() + " Title";
-            newPage.TextDescription = "Page " + _count.ToString() + " Description";
+            newPage.Text = $"Page {_count}";
+            newPage.TextTitle = $"Page {_count} Title";
+            newPage.TextDescription = $"Page {_count} Description";
             newPage.ImageSmall = (Bitmap)imageList1.Images[_count % imageList1.Images.Count];
             _count++;
 
@@ -108,22 +109,22 @@ namespace BasicEvents
 
         private void kryptonNavigator1_Deselected(object sender, KryptonPageEventArgs e)
         {
-            AddOutput("Deselected \t\t '" + e.Item.Text + "'");
+            AddOutput($"Deselected \t\t '{e.Item.Text}'");
         }
 
         private void kryptonNavigator1_Deselecting(object sender, KryptonPageCancelEventArgs e)
         {
-            AddOutput("Deselecting \t\t '" + e.Item.Text + "'");
+            AddOutput($"Deselecting \t\t '{e.Item.Text}'");
         }
 
         private void kryptonNavigator1_Selected(object sender, KryptonPageEventArgs e)
         {
-            AddOutput("Selected \t\t '" + e.Item.Text + "'");
+            AddOutput($"Selected \t\t '{e.Item.Text}'");
         }
 
         private void kryptonNavigator1_Selecting(object sender, KryptonPageCancelEventArgs e)
         {
-            AddOutput("Selecting \t\t '" + e.Item.Text + "'");
+            AddOutput($"Selecting \t\t '{e.Item.Text}'");
         }
 
         private void kryptonNavigator1_SelectedPageChanged(object sender, EventArgs e)
@@ -131,7 +132,7 @@ namespace BasicEvents
             if (kryptonNavigator1.SelectedPage == null)
                 AddOutput("SelectedPageChanged \t (null)");
             else
-                AddOutput("SelectedPageChanged \t '" + kryptonNavigator1.SelectedPage.Text + "'");
+                AddOutput($"SelectedPageChanged \t '{kryptonNavigator1.SelectedPage.Text}'");
 
             UpdateButtonState();
         }

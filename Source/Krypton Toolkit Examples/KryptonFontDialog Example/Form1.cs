@@ -1,4 +1,9 @@
-﻿using System;
+﻿// *****************************************************************************
+// BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2021 - 2024. All rights reserved.
+// *****************************************************************************
+
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -47,7 +52,7 @@ namespace KryptonFontDialog_Example_2019
                 DisplayIsPrinterFontDescription = true,
                 DisplayExtendedColorsButton = chklShowExtendedColours.Checked,
                 ShowIcon = chkShowIcon.Checked
-           };
+            };
             kfd.Color = Color.DarkOliveGreen;
             if (kfd.ShowDialog(this) == DialogResult.OK)
             {

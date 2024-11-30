@@ -10,16 +10,12 @@
  */
 #endregion
 
-using System;
-using System.Text;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using Krypton.Toolkit;
+
 using Krypton.Navigator;
-using Krypton.Workspace;
+using Krypton.Toolkit;
 
 namespace AdvancedPageDragAndDrop
 {
@@ -74,8 +70,8 @@ namespace AdvancedPageDragAndDrop
             public override bool IsMatch(Point screenPt, PageDragEndData dragEndData)
             {
                 // Cannot drag back to ourself
-                if ((dragEndData.Source != null) && 
-                    (dragEndData.Source is PageDragTreeView) && 
+                if ((dragEndData.Source != null) &&
+                    (dragEndData.Source is PageDragTreeView) &&
                     (dragEndData.Source == _treeView))
                 {
                     return false;
@@ -98,7 +94,7 @@ namespace AdvancedPageDragAndDrop
                 foreach (KryptonPage page in data.Pages)
                 {
                     // Create node and populate with page details
-                    TreeNode node = new TreeNode();
+                    var node = new TreeNode();
                     node.Text = page.Text;
                     node.ImageIndex = int.Parse((string)page.Tag);
                     node.SelectedImageIndex = node.ImageIndex;
@@ -149,8 +145,8 @@ namespace AdvancedPageDragAndDrop
         [DefaultValue(true)]
         public bool RemovePages
         {
-            get { return _movePages; }
-            set { _movePages = value; }
+            get => _movePages;
+            set => _movePages = value;
         }
 
         /// <summary>
@@ -160,8 +156,8 @@ namespace AdvancedPageDragAndDrop
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public IDragPageNotify DragPageNotify
         {
-            get { return _dragPageNotify; }
-            set { _dragPageNotify = value; }
+            get => _dragPageNotify;
+            set => _dragPageNotify = value;
         }
 
         /// <summary>
@@ -171,7 +167,7 @@ namespace AdvancedPageDragAndDrop
         /// <returns>List of drag targets.</returns>
         public DragTargetList GenerateDragTargets(PageDragEndData dragEndData)
         {
-            DragTargetList targets = new DragTargetList();
+            var targets = new DragTargetList();
 
             // Generate target for the entire navigator client area
             targets.Add(new DragTargetTreeViewTransfer(RectangleToScreen(ClientRectangle), this));
@@ -188,7 +184,7 @@ namespace AdvancedPageDragAndDrop
         protected override void OnMouseDown(MouseEventArgs e)
         {
             // Grab the node under the mouse
-            Point pt = new Point(e.X, e.Y);
+            var pt = new Point(e.X, e.Y);
             TreeNode nodeDown = GetNodeAt(pt);
 
             // Try and ensure the node is selected on the mouse down
@@ -217,7 +213,7 @@ namespace AdvancedPageDragAndDrop
         /// <param name="e">A MouseEventArgs that contains the event data.</param>
         protected override void OnMouseMove(MouseEventArgs e)
         {
-            Point pt = new Point(e.X, e.Y);
+            var pt = new Point(e.X, e.Y);
 
             // Are we monitoring for drag operations?
             if (_dragNode != null)
@@ -269,14 +265,14 @@ namespace AdvancedPageDragAndDrop
                 // Create a page that will be dragged
                 _dragPage = new KryptonPage();
                 _dragPage.Text = _dragNode.Text;
-                _dragPage.TextTitle = _dragNode.Text + " Title";
-                _dragPage.TextDescription = _dragNode.Text + " Description";
+                _dragPage.TextTitle = $"{_dragNode.Text} Title";
+                _dragPage.TextDescription = $"{_dragNode.Text} Description";
                 _dragPage.ImageSmall = (Bitmap)ImageList.Images[int.Parse((string)_dragNode.Tag)];
                 _dragPage.Tag = _dragNode.Tag;
 
                 // Create a rich text box with some sample text inside
-                KryptonRichTextBox rtb = new KryptonRichTextBox();
-                rtb.Text = "This page (" + _dragPage.Text + ") contains a rich text box control as example content.";
+                var rtb = new KryptonRichTextBox();
+                rtb.Text = $"This page ({_dragPage.Text}) contains a rich text box control as example content.";
                 rtb.Dock = DockStyle.Fill;
                 rtb.StateCommon.Border.Draw = InheritBool.False;
 
@@ -285,7 +281,7 @@ namespace AdvancedPageDragAndDrop
                 _dragPage.Controls.Add(rtb);
 
                 // Give the notify interface a chance to reject the attempt to drag
-                PageDragCancelEventArgs de = new PageDragCancelEventArgs(PointToScreen(pt), Point.Empty, this, new KryptonPage[] { _dragPage });
+                var de = new PageDragCancelEventArgs(PointToScreen(pt), Point.Empty, this, new KryptonPage[] { _dragPage });
                 DragPageNotify.PageDragStart(this, null, de);
 
                 if (de.Cancel)

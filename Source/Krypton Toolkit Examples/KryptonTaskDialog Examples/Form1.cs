@@ -13,6 +13,7 @@
 using System;
 using System.Text;
 using System.Windows.Forms;
+
 using Krypton.Toolkit;
 
 namespace KryptonTaskDialogExamples
@@ -99,7 +100,7 @@ namespace KryptonTaskDialogExamples
 
         private void buttonFill_Click(object sender, EventArgs e)
         {
-            var s  = "The quick brown fox jumps over the lazy dog";
+            var s = "The quick brown fox jumps over the lazy dog";
             var e1 = new Random().Next(50, 400);
             var sb = new StringBuilder().Append(s);
             for (var i = 0; i < e1; ++i)
@@ -108,7 +109,7 @@ namespace KryptonTaskDialogExamples
                 if (i % 10 == 0)
                 {
                     var e2 = new Random().Next(1, 10);
-                    for (var j=0; j < e2; ++j)
+                    for (var j = 0; j < e2; ++j)
                     {
                         sb.AppendFormat(". {0}", s);
                     }

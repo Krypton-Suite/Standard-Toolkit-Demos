@@ -11,9 +11,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonSplitContainerExamples
@@ -53,7 +54,7 @@ namespace KryptonSplitContainerExamples
             KryptonPanel panel = (KryptonPanel)label.Parent;
 
             // Setup the property grid to edit this panels parent split container
-            propertyGrid.SelectedObject = new KryptonSplitContainerProxy(panel.Parent.Parent.Parent as KryptonSplitContainer);
+            propertyGrid.SelectedObject = new KryptonSplitContainerProxy((KryptonSplitContainer)panel.Parent.Parent.Parent);
         }
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
@@ -63,7 +64,9 @@ namespace KryptonSplitContainerExamples
     {
         private KryptonSplitContainer _splitContainer;
 
+#pragma warning disable IDE0290 // Use primary constructor
         public KryptonSplitContainerProxy(KryptonSplitContainer splitContainer) => _splitContainer = splitContainer;
+#pragma warning restore IDE0290 // Use primary constructor
 
         [Category("Visuals")]
         [Description("Container background style.")]
@@ -97,11 +100,11 @@ namespace KryptonSplitContainerExamples
 
         [Category("Visuals")]
         [Description("Overrides for defining hot tracking separator appearance.")]
-        public PaletteSeparatorPadding StateTracking => _splitContainer.StateTracking;
+        public PaletteSeparatorPadding StateTracking => _splitContainer.StateTracking!;
 
         [Category("Visuals")]
         [Description("Overrides for defining pressed separator appearance.")]
-        public PaletteSeparatorPadding StatePressed => _splitContainer.StatePressed;
+        public PaletteSeparatorPadding StatePressed => _splitContainer.StatePressed!;
 
         [Category("Layout")]
         [Description("Determines the minimum distance of pixels of the splitter from the left or top edge of Panel1.")]

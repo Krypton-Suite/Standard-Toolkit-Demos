@@ -49,11 +49,12 @@ namespace KryptonDataGridViewExamples
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(600, 450);
+            this.kryptonPanel1.Size = new System.Drawing.Size(602, 443);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // kryptonDataGridView1
             // 
+            this.kryptonDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.kryptonDataGridView1.ColumnHeadersHeight = 36;
             this.kryptonDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -76,7 +77,6 @@ namespace KryptonDataGridViewExamples
             // 
             // Button
             // 
-            this.Button.ButtonStyle = Krypton.Toolkit.ButtonStyle.Standalone;
             this.Button.HeaderText = "Button";
             this.Button.MinimumWidth = 6;
             this.Button.Name = "Button";
@@ -102,7 +102,7 @@ namespace KryptonDataGridViewExamples
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 450);
+            this.ClientSize = new System.Drawing.Size(602, 443);
             this.Controls.Add(this.kryptonPanel1);
             this.MaximumSize = new System.Drawing.Size(800, 700);
             this.Name = "Form2";

@@ -1,3 +1,8 @@
+// *****************************************************************************
+// BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2021 - 2024. All rights reserved.
+// *****************************************************************************
+
 using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
@@ -8,10 +13,7 @@ namespace KryptonAboutBoxExample
 {
     public partial class Form1 : KryptonForm
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void kbtnShow_Click(object sender, System.EventArgs e)
         {

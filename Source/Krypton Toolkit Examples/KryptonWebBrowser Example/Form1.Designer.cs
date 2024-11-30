@@ -64,11 +64,11 @@ namespace KryptonWebBrowserExample
             this.webBrowser1.ContextMenuStrip = this.contextMenuStrip1;
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.webBrowser1.IsWebBrowserContextMenuEnabled = false;
-            this.webBrowser1.Location = new System.Drawing.Point(2, 227);
-            this.webBrowser1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(15, 16);
+            this.webBrowser1.Location = new System.Drawing.Point(3, 271);
+            this.webBrowser1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(360, 189);
+            this.webBrowser1.Size = new System.Drawing.Size(481, 227);
             this.webBrowser1.TabIndex = 0;
             // 
             // contextMenuStrip1
@@ -79,18 +79,18 @@ namespace KryptonWebBrowserExample
             this.toolStripMenuItem1,
             this.toolStripMenuItem2});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(212, 52);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(211, 24);
             this.toolStripMenuItem1.Text = "toolStripMenuItem1";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(211, 24);
             this.toolStripMenuItem2.Text = "toolStripMenuItem2";
             // 
             // webBrowser2
@@ -98,11 +98,11 @@ namespace KryptonWebBrowserExample
             this.webBrowser2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.webBrowser2.IsWebBrowserContextMenuEnabled = false;
             this.webBrowser2.KryptonContextMenu = this.kryptonContextMenu1;
-            this.webBrowser2.Location = new System.Drawing.Point(366, 227);
-            this.webBrowser2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.webBrowser2.MinimumSize = new System.Drawing.Size(15, 16);
+            this.webBrowser2.Location = new System.Drawing.Point(490, 271);
+            this.webBrowser2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.webBrowser2.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser2.Name = "webBrowser2";
-            this.webBrowser2.Size = new System.Drawing.Size(360, 189);
+            this.webBrowser2.Size = new System.Drawing.Size(482, 227);
             this.webBrowser2.TabIndex = 1;
             // 
             // kryptonContextMenu1
@@ -115,29 +115,24 @@ namespace KryptonWebBrowserExample
             // kryptonContextMenuHeading1
             // 
             this.kryptonContextMenuHeading1.ExtraText = "";
+            this.kryptonContextMenuHeading1.Text = "";
             // 
             // kryptonContextMenuCheckButton1
             // 
-            this.kryptonContextMenuCheckButton1.ButtonStyle = Krypton.Toolkit.ButtonStyle.Standalone;
             this.kryptonContextMenuCheckButton1.Text = "CheckButton";
             // 
             // kryptonContextMenuCheckButton2
             // 
-            this.kryptonContextMenuCheckButton2.ButtonStyle = Krypton.Toolkit.ButtonStyle.Standalone;
             this.kryptonContextMenuCheckButton2.Text = "CheckButton";
             // 
             // kcmbTheme
             // 
-            this.kcmbTheme.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.kcmbTheme.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.kcmbTheme.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.kcmbTheme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.kcmbTheme.DropDownWidth = 218;
             this.kcmbTheme.IntegralHeight = false;
-            this.kcmbTheme.Location = new System.Drawing.Point(2, 2);
-            this.kcmbTheme.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kcmbTheme.Location = new System.Drawing.Point(3, 2);
+            this.kcmbTheme.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kcmbTheme.Name = "kcmbTheme";
-            this.kcmbTheme.Size = new System.Drawing.Size(164, 21);
+            this.kcmbTheme.Size = new System.Drawing.Size(219, 26);
             this.kcmbTheme.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kcmbTheme.TabIndex = 2;
             this.kcmbTheme.Text = "kryptonComboBox1";
@@ -160,13 +155,13 @@ namespace KryptonWebBrowserExample
             this.tableLayoutPanel1.Controls.Add(this.richTextBox1, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(728, 418);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(975, 500);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // kryptonPanel2
@@ -175,40 +170,37 @@ namespace KryptonWebBrowserExample
             this.kryptonPanel2.Controls.Add(this.kryptonLabel1);
             this.kryptonPanel2.Controls.Add(this.kcmbTheme);
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel2.Location = new System.Drawing.Point(2, 2);
-            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonPanel2.Location = new System.Drawing.Point(3, 2);
+            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(724, 28);
+            this.kryptonPanel2.Size = new System.Drawing.Size(969, 35);
             this.kryptonPanel2.TabIndex = 3;
             // 
             // kryptonLabel1
             // 
             this.kryptonLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel1.Location = new System.Drawing.Point(277, 2);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonLabel1.Location = new System.Drawing.Point(369, 2);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(191, 20);
+            this.kryptonLabel1.Size = new System.Drawing.Size(237, 24);
             this.kryptonLabel1.TabIndex = 3;
             this.kryptonLabel1.Values.Text = "Left = Winform | Right = Krypton";
             // 
             // kryptonRichTextBox1
             // 
-            this.kryptonRichTextBox1.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
-            this.buttonSpecAny1,
-            this.buttonSpecAny2});
+            this.kryptonRichTextBox1.ButtonSpecs.Add(this.buttonSpecAny1);
+            this.kryptonRichTextBox1.ButtonSpecs.Add(this.buttonSpecAny2);
             this.kryptonRichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonRichTextBox1.KryptonContextMenu = this.kryptonContextMenu1;
-            this.kryptonRichTextBox1.Location = new System.Drawing.Point(366, 34);
-            this.kryptonRichTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonRichTextBox1.Location = new System.Drawing.Point(490, 41);
+            this.kryptonRichTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonRichTextBox1.Name = "kryptonRichTextBox1";
-            this.kryptonRichTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
-            this.kryptonRichTextBox1.Size = new System.Drawing.Size(360, 189);
+            this.kryptonRichTextBox1.Size = new System.Drawing.Size(482, 226);
             this.kryptonRichTextBox1.TabIndex = 4;
             this.kryptonRichTextBox1.Text = "kryptonRichTextBox1";
             this.kryptonRichTextBox1.ToolTipValues.EnableToolTips = true;
             this.kryptonRichTextBox1.ToolTipValues.Heading = "Right click in each area";
-            this.kryptonRichTextBox1.ToolTipValues.Image = null;
             this.kryptonRichTextBox1.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.Relative;
             // 
             // buttonSpecAny1
@@ -227,10 +219,10 @@ namespace KryptonWebBrowserExample
             // 
             this.richTextBox1.ContextMenuStrip = this.contextMenuStrip1;
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(2, 34);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox1.Location = new System.Drawing.Point(3, 41);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(360, 189);
+            this.richTextBox1.Size = new System.Drawing.Size(481, 226);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "Winform Rich Text Box";
             // 
@@ -239,19 +231,19 @@ namespace KryptonWebBrowserExample
             this.kryptonPanel1.Controls.Add(this.tableLayoutPanel1);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(728, 418);
+            this.kryptonPanel1.Size = new System.Drawing.Size(975, 500);
             this.kryptonPanel1.TabIndex = 3;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 418);
+            this.ClientSize = new System.Drawing.Size(975, 500);
             this.Controls.Add(this.kryptonPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Comparison between Winform and Krypton controls";
             this.contextMenuStrip1.ResumeLayout(false);

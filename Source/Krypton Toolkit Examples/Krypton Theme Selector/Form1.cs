@@ -1,3 +1,8 @@
+// *****************************************************************************
+// BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2022 - 2024. All rights reserved.
+// *****************************************************************************
+
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
@@ -10,7 +15,7 @@ namespace KryptonThemeSelector
 
         private void kbtnUseListBox_Click(object sender, System.EventArgs e)
         {
-            KryptonThemeBrowserData themeBrowserData = new KryptonThemeBrowserData() {
+            var themeBrowserData = new KryptonThemeBrowserData() {
                 ShowImportButton = true,
                 ShowSilentOption = true,
                 StartIndex = 0,

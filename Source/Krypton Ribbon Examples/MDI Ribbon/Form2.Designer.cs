@@ -51,7 +51,7 @@ namespace MDIRibbon
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(572, 159);
+            this.kryptonPanel1.Size = new System.Drawing.Size(576, 145);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // radio2010Black
@@ -147,7 +147,7 @@ namespace MDIRibbon
             // 
             // radioOffice2003
             // 
-            this.radioOffice2003.Location = new System.Drawing.Point(20, 127);
+            this.radioOffice2003.Location = new System.Drawing.Point(20, 119);
             this.radioOffice2003.Margin = new System.Windows.Forms.Padding(4);
             this.radioOffice2003.Name = "radioOffice2003";
             this.radioOffice2003.Size = new System.Drawing.Size(101, 24);
@@ -157,7 +157,7 @@ namespace MDIRibbon
             // 
             // radioSystem
             // 
-            this.radioSystem.Location = new System.Drawing.Point(200, 127);
+            this.radioSystem.Location = new System.Drawing.Point(200, 119);
             this.radioSystem.Margin = new System.Windows.Forms.Padding(4);
             this.radioSystem.Name = "radioSystem";
             this.radioSystem.Size = new System.Drawing.Size(72, 24);
@@ -172,7 +172,7 @@ namespace MDIRibbon
             // Form2
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(572, 159);
+            this.ClientSize = new System.Drawing.Size(576, 145);
             this.Controls.Add(this.kryptonPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);

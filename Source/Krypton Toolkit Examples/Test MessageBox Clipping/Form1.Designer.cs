@@ -76,7 +76,7 @@
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(711, 471);
+            this.kryptonPanel1.Size = new System.Drawing.Size(715, 457);
             this.kryptonPanel1.TabIndex = 0;
             this.toolTip1.SetToolTip(this.kryptonPanel1, "sadsdafdffg");
             // 
@@ -86,6 +86,7 @@
             this.btnLongContentsNoOwner.Name = "btnLongContentsNoOwner";
             this.btnLongContentsNoOwner.Size = new System.Drawing.Size(190, 25);
             this.btnLongContentsNoOwner.TabIndex = 8;
+            this.btnLongContentsNoOwner.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnLongContentsNoOwner.Values.Text = "Long Contents - No Owner";
             this.btnLongContentsNoOwner.Click += new System.EventHandler(this.btnLongContentsNoOwner_Click);
             // 
@@ -95,6 +96,7 @@
             this.btnLongTitleNoOwner.Name = "btnLongTitleNoOwner";
             this.btnLongTitleNoOwner.Size = new System.Drawing.Size(190, 25);
             this.btnLongTitleNoOwner.TabIndex = 7;
+            this.btnLongTitleNoOwner.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnLongTitleNoOwner.Values.Text = "Long Title - No Owner";
             this.btnLongTitleNoOwner.Click += new System.EventHandler(this.btnLongTitleNoOwner_Click);
             // 
@@ -104,6 +106,7 @@
             this.btnLongContents.Name = "btnLongContents";
             this.btnLongContents.Size = new System.Drawing.Size(121, 25);
             this.btnLongContents.TabIndex = 6;
+            this.btnLongContents.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnLongContents.Values.Text = "Long Contents";
             this.btnLongContents.Click += new System.EventHandler(this.btnLongContents_Click);
             // 
@@ -113,6 +116,7 @@
             this.btnLongTitle.Name = "btnLongTitle";
             this.btnLongTitle.Size = new System.Drawing.Size(121, 25);
             this.btnLongTitle.TabIndex = 5;
+            this.btnLongTitle.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnLongTitle.Values.Text = "Long Title";
             this.btnLongTitle.Click += new System.EventHandler(this.btnLongTitle_Click);
             // 
@@ -122,6 +126,7 @@
             this.btnStackTrace.Name = "btnStackTrace";
             this.btnStackTrace.Size = new System.Drawing.Size(219, 25);
             this.btnStackTrace.TabIndex = 4;
+            this.btnStackTrace.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnStackTrace.Values.Text = "Exception Stack Trace";
             this.btnStackTrace.Click += new System.EventHandler(this.btnStackTrace_Click);
             // 
@@ -131,6 +136,7 @@
             this.btnCarriageReturns.Name = "btnCarriageReturns";
             this.btnCarriageReturns.Size = new System.Drawing.Size(133, 25);
             this.btnCarriageReturns.TabIndex = 3;
+            this.btnCarriageReturns.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnCarriageReturns.Values.Text = "Carriage Returns";
             this.btnCarriageReturns.Click += new System.EventHandler(this.btnCarriageReturns_Click);
             // 
@@ -140,15 +146,14 @@
             this.btnSingleLines.Name = "btnSingleLines";
             this.btnSingleLines.Size = new System.Drawing.Size(121, 25);
             this.btnSingleLines.TabIndex = 2;
+            this.btnSingleLines.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.btnSingleLines.Values.Text = "Single Lines";
             this.btnSingleLines.Click += new System.EventHandler(this.btnSingleLines_Click);
             // 
             // kryptonGroup1
             // 
             this.kryptonGroup1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonGroup1.IsInitialized = true;
-            this.kryptonGroup1.IsInitializing = false;
-            this.kryptonGroup1.Location = new System.Drawing.Point(0, 384);
+            this.kryptonGroup1.Location = new System.Drawing.Point(0, 370);
             this.kryptonGroup1.Name = "kryptonGroup1";
             // 
             // kryptonGroup1.Panel
@@ -166,14 +171,14 @@
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2007Black);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2007Silver);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2007Blue);
-            this.kryptonGroup1.Size = new System.Drawing.Size(711, 87);
+            this.kryptonGroup1.Size = new System.Drawing.Size(715, 87);
             this.kryptonGroup1.TabIndex = 1;
             // 
             // kryptonOffice2010Black
             // 
             this.kryptonOffice2010Black.Location = new System.Drawing.Point(7, 60);
             this.kryptonOffice2010Black.Name = "kryptonOffice2010Black";
-            this.kryptonOffice2010Black.Size = new System.Drawing.Size(125, 20);
+            this.kryptonOffice2010Black.Size = new System.Drawing.Size(151, 24);
             this.kryptonOffice2010Black.TabIndex = 2;
             this.kryptonOffice2010Black.Values.Text = "Office 2010 - Black";
             this.kryptonOffice2010Black.CheckedChanged += new System.EventHandler(this.kryptonOffice2010Black_CheckedChanged);
@@ -182,7 +187,7 @@
             // 
             this.kryptonSparkleOrange.Location = new System.Drawing.Point(294, 35);
             this.kryptonSparkleOrange.Name = "kryptonSparkleOrange";
-            this.kryptonSparkleOrange.Size = new System.Drawing.Size(115, 20);
+            this.kryptonSparkleOrange.Size = new System.Drawing.Size(139, 24);
             this.kryptonSparkleOrange.TabIndex = 7;
             this.kryptonSparkleOrange.Values.Text = "Sparkle - Orange";
             this.kryptonSparkleOrange.CheckedChanged += new System.EventHandler(this.kryptonSparkleOrange_CheckedChanged);
@@ -192,7 +197,7 @@
             this.kryptonOffice2010Blue.Checked = true;
             this.kryptonOffice2010Blue.Location = new System.Drawing.Point(7, 10);
             this.kryptonOffice2010Blue.Name = "kryptonOffice2010Blue";
-            this.kryptonOffice2010Blue.Size = new System.Drawing.Size(120, 20);
+            this.kryptonOffice2010Blue.Size = new System.Drawing.Size(145, 24);
             this.kryptonOffice2010Blue.TabIndex = 0;
             this.kryptonOffice2010Blue.Values.Text = "Office 2010 - Blue";
             // 
@@ -200,7 +205,7 @@
             // 
             this.kryptonOffice2010Silver.Location = new System.Drawing.Point(7, 35);
             this.kryptonOffice2010Silver.Name = "kryptonOffice2010Silver";
-            this.kryptonOffice2010Silver.Size = new System.Drawing.Size(126, 20);
+            this.kryptonOffice2010Silver.Size = new System.Drawing.Size(153, 24);
             this.kryptonOffice2010Silver.TabIndex = 1;
             this.kryptonOffice2010Silver.Values.Text = "Office 2010 - Silver";
             this.kryptonOffice2010Silver.CheckedChanged += new System.EventHandler(this.kryptonOffice2010Silver_CheckedChanged);
@@ -209,7 +214,7 @@
             // 
             this.kryptonOffice2013White.Location = new System.Drawing.Point(531, 10);
             this.kryptonOffice2013White.Name = "kryptonOffice2013White";
-            this.kryptonOffice2013White.Size = new System.Drawing.Size(129, 20);
+            this.kryptonOffice2013White.Size = new System.Drawing.Size(156, 24);
             this.kryptonOffice2013White.TabIndex = 22;
             this.kryptonOffice2013White.Values.Text = "Office 2013 - White";
             this.kryptonOffice2013White.CheckedChanged += new System.EventHandler(this.kryptonOffice2013White_CheckedChanged);
@@ -218,7 +223,7 @@
             // 
             this.kryptonSparklePurple.Location = new System.Drawing.Point(294, 60);
             this.kryptonSparklePurple.Name = "kryptonSparklePurple";
-            this.kryptonSparklePurple.Size = new System.Drawing.Size(109, 20);
+            this.kryptonSparklePurple.Size = new System.Drawing.Size(132, 24);
             this.kryptonSparklePurple.TabIndex = 8;
             this.kryptonSparklePurple.Values.Text = "Sparkle - Purple";
             this.kryptonSparklePurple.CheckedChanged += new System.EventHandler(this.kryptonSparklePurple_CheckedChanged);
@@ -227,7 +232,7 @@
             // 
             this.kryptonSparkleBlue.Location = new System.Drawing.Point(294, 10);
             this.kryptonSparkleBlue.Name = "kryptonSparkleBlue";
-            this.kryptonSparkleBlue.Size = new System.Drawing.Size(98, 20);
+            this.kryptonSparkleBlue.Size = new System.Drawing.Size(118, 24);
             this.kryptonSparkleBlue.TabIndex = 6;
             this.kryptonSparkleBlue.Values.Text = "Sparkle - Blue";
             this.kryptonSparkleBlue.CheckedChanged += new System.EventHandler(this.kryptonSparkleBlue_CheckedChanged);
@@ -236,7 +241,7 @@
             // 
             this.kryptonCustom.Location = new System.Drawing.Point(428, 60);
             this.kryptonCustom.Name = "kryptonCustom";
-            this.kryptonCustom.Size = new System.Drawing.Size(64, 20);
+            this.kryptonCustom.Size = new System.Drawing.Size(76, 24);
             this.kryptonCustom.TabIndex = 11;
             this.kryptonCustom.Values.Text = "Custom";
             this.kryptonCustom.CheckedChanged += new System.EventHandler(this.kryptonCustom_CheckedChanged);
@@ -245,7 +250,7 @@
             // 
             this.kryptonSystem.Location = new System.Drawing.Point(428, 35);
             this.kryptonSystem.Name = "kryptonSystem";
-            this.kryptonSystem.Size = new System.Drawing.Size(62, 20);
+            this.kryptonSystem.Size = new System.Drawing.Size(72, 24);
             this.kryptonSystem.TabIndex = 10;
             this.kryptonSystem.Values.Text = "System";
             this.kryptonSystem.CheckedChanged += new System.EventHandler(this.kryptonSystem_CheckedChanged);
@@ -254,7 +259,7 @@
             // 
             this.kryptonOffice2003.Location = new System.Drawing.Point(428, 10);
             this.kryptonOffice2003.Name = "kryptonOffice2003";
-            this.kryptonOffice2003.Size = new System.Drawing.Size(85, 20);
+            this.kryptonOffice2003.Size = new System.Drawing.Size(101, 24);
             this.kryptonOffice2003.TabIndex = 9;
             this.kryptonOffice2003.Values.Text = "Office 2003";
             this.kryptonOffice2003.CheckedChanged += new System.EventHandler(this.kryptonOffice2003_CheckedChanged);
@@ -263,7 +268,7 @@
             // 
             this.kryptonOffice2007Black.Location = new System.Drawing.Point(141, 60);
             this.kryptonOffice2007Black.Name = "kryptonOffice2007Black";
-            this.kryptonOffice2007Black.Size = new System.Drawing.Size(125, 20);
+            this.kryptonOffice2007Black.Size = new System.Drawing.Size(151, 24);
             this.kryptonOffice2007Black.TabIndex = 5;
             this.kryptonOffice2007Black.Values.Text = "Office 2007 - Black";
             this.kryptonOffice2007Black.CheckedChanged += new System.EventHandler(this.kryptonOffice2007Black_CheckedChanged);
@@ -272,7 +277,7 @@
             // 
             this.kryptonOffice2007Silver.Location = new System.Drawing.Point(141, 35);
             this.kryptonOffice2007Silver.Name = "kryptonOffice2007Silver";
-            this.kryptonOffice2007Silver.Size = new System.Drawing.Size(126, 20);
+            this.kryptonOffice2007Silver.Size = new System.Drawing.Size(153, 24);
             this.kryptonOffice2007Silver.TabIndex = 4;
             this.kryptonOffice2007Silver.Values.Text = "Office 2007 - Silver";
             this.kryptonOffice2007Silver.CheckedChanged += new System.EventHandler(this.kryptonOffice2007Silver_CheckedChanged);
@@ -281,7 +286,7 @@
             // 
             this.kryptonOffice2007Blue.Location = new System.Drawing.Point(141, 10);
             this.kryptonOffice2007Blue.Name = "kryptonOffice2007Blue";
-            this.kryptonOffice2007Blue.Size = new System.Drawing.Size(120, 20);
+            this.kryptonOffice2007Blue.Size = new System.Drawing.Size(145, 24);
             this.kryptonOffice2007Blue.TabIndex = 3;
             this.kryptonOffice2007Blue.Values.Text = "Office 2007 - Blue";
             this.kryptonOffice2007Blue.CheckedChanged += new System.EventHandler(this.kryptonOffice2007Blue_CheckedChanged);
@@ -292,7 +297,6 @@
             // 
             // kryptonPaletteCustom
             // 
-            this.kryptonPaletteCustom.UseThemeFormChromeBorderWidth = Krypton.Toolkit.InheritBool.False;
             this.kryptonPaletteCustom.BasePaletteType = Krypton.Toolkit.BasePaletteType.Professional;
             this.kryptonPaletteCustom.ButtonStyles.ButtonButtonSpec.StateDisabled.Border.Draw = Krypton.Toolkit.InheritBool.False;
             this.kryptonPaletteCustom.ButtonStyles.ButtonButtonSpec.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -397,6 +401,7 @@
             this.kryptonPaletteCustom.PanelStyles.PanelAlternate.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(212)))), ((int)(((byte)(192)))));
             this.kryptonPaletteCustom.PanelStyles.PanelClient.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(237)))), ((int)(((byte)(227)))));
             this.kryptonPaletteCustom.PanelStyles.PanelCommon.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.kryptonPaletteCustom.ThemeName = "PaletteBase";
             this.kryptonPaletteCustom.ToolMenuStatus.Button.ButtonCheckedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
             this.kryptonPaletteCustom.ToolMenuStatus.Button.ButtonCheckedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
             this.kryptonPaletteCustom.ToolMenuStatus.Button.ButtonCheckedGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
@@ -458,6 +463,7 @@
             this.kryptonPaletteCustom.ToolMenuStatus.ToolStrip.ToolStripPanelGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.kryptonPaletteCustom.ToolMenuStatus.ToolStrip.ToolStripText = System.Drawing.Color.WhiteSmoke;
             this.kryptonPaletteCustom.ToolMenuStatus.UseRoundedEdges = Krypton.Toolkit.InheritBool.False;
+            this.kryptonPaletteCustom.UseThemeFormChromeBorderWidth = Krypton.Toolkit.InheritBool.False;
             // 
             // toolTip1
             // 
@@ -465,9 +471,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 471);
+            this.ClientSize = new System.Drawing.Size(715, 457);
             this.Controls.Add(this.kryptonPanel1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

@@ -331,7 +331,7 @@ namespace KryptonGalleryExamples
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(550, 361);
+            this.ClientSize = new System.Drawing.Size(554, 361);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.groupBoxSections);
             this.Controls.Add(this.groupBoxSize);

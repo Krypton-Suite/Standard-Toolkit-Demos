@@ -42,39 +42,42 @@ namespace MDIRibbon
             this.kryptonPanel1.Controls.Add(this.buttonOK);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(260, 91);
+            this.kryptonPanel1.Size = new System.Drawing.Size(351, 98);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // labelMessage
             // 
-            this.labelMessage.Location = new System.Drawing.Point(15, 13);
+            this.labelMessage.Location = new System.Drawing.Point(20, 16);
+            this.labelMessage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelMessage.Name = "labelMessage";
-            this.labelMessage.Size = new System.Drawing.Size(236, 20);
+            this.labelMessage.Size = new System.Drawing.Size(294, 24);
             this.labelMessage.TabIndex = 1;
             this.labelMessage.Values.Text = "This is where you would show some help!";
             // 
             // buttonOK
             // 
-            this.buttonOK.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonOK.Location = new System.Drawing.Point(89, 48);
+            this.buttonOK.Location = new System.Drawing.Point(119, 59);
+            this.buttonOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.buttonOK.Size = new System.Drawing.Size(67, 25);
+            this.buttonOK.Size = new System.Drawing.Size(89, 31);
             this.buttonOK.TabIndex = 0;
+            this.buttonOK.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonOK.Values.Text = "OK";
             // 
             // Form3
             // 
             this.AcceptButton = this.buttonOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonOK;
-            this.ClientSize = new System.Drawing.Size(260, 91);
+            this.ClientSize = new System.Drawing.Size(351, 98);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form3";

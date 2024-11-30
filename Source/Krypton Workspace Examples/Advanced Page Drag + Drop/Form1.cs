@@ -85,7 +85,7 @@ namespace AdvancedPageDragAndDrop
 
         private KryptonWorkspaceCell CreateCell(string title, int imageIndex)
         {
-            KryptonWorkspaceCell cell = new KryptonWorkspaceCell();
+            var cell = new KryptonWorkspaceCell();
             cell.Pages.Add(CreatePage(title, imageIndex));
             return cell;
         }
@@ -93,7 +93,7 @@ namespace AdvancedPageDragAndDrop
         private KryptonWorkspaceCell CreateCell(string title1, int imageIndex1,
                                                 string title2, int imageIndex2)
         {
-            KryptonWorkspaceCell cell = new KryptonWorkspaceCell();
+            var cell = new KryptonWorkspaceCell();
             cell.Pages.Add(CreatePage(title1, imageIndex1));
             cell.Pages.Add(CreatePage(title2, imageIndex2));
             return cell;
@@ -102,16 +102,16 @@ namespace AdvancedPageDragAndDrop
         private KryptonPage CreatePage(string title, int imageIndex)
         {
             // Create a new page and give it a name and image
-            KryptonPage page = new KryptonPage();
+            var page = new KryptonPage();
             page.Text = title;
-            page.TextTitle = title + " Title";
-            page.TextDescription = title + " Description";
+            page.TextTitle = $"{title} Title";
+            page.TextDescription = $"{title} Description";
             page.ImageSmall = (Bitmap)imageList.Images[imageIndex];
             page.Tag = imageIndex.ToString();
 
             // Create a rich text box with some sample text inside
-            KryptonRichTextBox rtb = new KryptonRichTextBox();
-            rtb.Text = "This page (" + page.Text + ") contains a rich text box control as example content.";
+            var rtb = new KryptonRichTextBox();
+            rtb.Text = $"This page ({page.Text}) contains a rich text box control as example content.";
             rtb.Dock = DockStyle.Fill;
             rtb.StateCommon.Border.Draw = InheritBool.False;
 

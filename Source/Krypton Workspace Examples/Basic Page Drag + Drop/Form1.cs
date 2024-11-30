@@ -11,14 +11,11 @@
 #endregion
 
 using System;
-using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using Krypton.Toolkit;
+
 using Krypton.Navigator;
+using Krypton.Toolkit;
 using Krypton.Workspace;
 
 namespace BasicPageDragAndDrop
@@ -37,7 +34,7 @@ namespace BasicPageDragAndDrop
         {
             _dm = new DragManager();
             _dm.StateCommon.Feedback = PaletteDragFeedback.Rounded;
-            
+
             // Both navigators and workspaces are drag targets
             _dm.DragTargetProviders.Add(kryptonNavigator1);
             _dm.DragTargetProviders.Add(kryptonNavigator2);
@@ -117,7 +114,7 @@ namespace BasicPageDragAndDrop
         private KryptonWorkspaceCell CreateCell(int numPages, string starSize)
         {
             // Create new cell instance
-            KryptonWorkspaceCell cell = new KryptonWorkspaceCell();
+            var cell = new KryptonWorkspaceCell();
 
             // Do we need to set the star sizing value?
             if (!string.IsNullOrEmpty(starSize))
@@ -126,7 +123,7 @@ namespace BasicPageDragAndDrop
             }
 
             // Add requested number of pages
-            for (int i = 0; i < numPages; i++)
+            for (var i = 0; i < numPages; i++)
             {
                 cell.Pages.Add(CreatePage());
             }
@@ -137,18 +134,19 @@ namespace BasicPageDragAndDrop
         private KryptonPage CreatePage()
         {
             // Give each page a unique number
-            string pageNumber = (_count++).ToString();
+            var pageNumber = (_count++).ToString();
 
             // Create a new page and give it a name and image
-            KryptonPage page = new KryptonPage();
-            page.Text = "P" + pageNumber;
-            page.TextTitle = "P" + pageNumber + " Title";
-            page.TextDescription = "P" + pageNumber + " Description";
+            var page = new KryptonPage();
+            page.Text = $"P{pageNumber}";
+            page.TextTitle = $"P{pageNumber} Title";
+            page.TextDescription = $"P{pageNumber} Description";
             page.ImageSmall = (Bitmap)imageList.Images[_count % imageList.Images.Count];
 
             // Create a rich text box with some sample text inside
-            KryptonRichTextBox rtb = new KryptonRichTextBox();
-            rtb.Text = "This page (" + page.Text + ") contains a rich text box control as example content. Your application could place anything you like here such as data entry controls, charts, data grids etc.";
+            var rtb = new KryptonRichTextBox();
+            rtb.Text =
+                $"This page ({page.Text}) contains a rich text box control as example content. Your application could place anything you like here such as data entry controls, charts, data grids etc.";
             rtb.Dock = DockStyle.Fill;
             rtb.StateCommon.Border.Draw = InheritBool.False;
 

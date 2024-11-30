@@ -1,7 +1,13 @@
-﻿using System;
+﻿// *****************************************************************************
+// BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2024 - 2024. All rights reserved.
+// *****************************************************************************
+
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
+using System.Linq;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -14,10 +20,7 @@ namespace KryptonOutlookGrid
         private bool _expand = true;
         private static Random _random = new Random();
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         DateTime GetRandomDate(DateTime dtStart, DateTime dtEnd)
         {
@@ -29,7 +32,6 @@ namespace KryptonOutlookGrid
         private void LoadData()
         {
             //Setup Rows
-            OutlookGridRow row = new OutlookGridRow();
             List<OutlookGridRow> l = new List<OutlookGridRow>();
             kogExample.SuspendLayout();
             kogExample.ClearInternalRows();
@@ -52,7 +54,7 @@ namespace KryptonOutlookGrid
             {
                 try
                 {
-                    row = new OutlookGridRow();
+                    var row = new OutlookGridRow();
                     row.CreateCells(kogExample, new object[] {
                         customer["CustomerID"]!.InnerText,
                         customer["CustomerName"]!.InnerText,
@@ -70,13 +72,10 @@ namespace KryptonOutlookGrid
                         //Sub row
                         OutlookGridRow row2 = new OutlookGridRow();
                         row2.CreateCells(kogExample, new object[] {
-                            customer["CustomerID"]!.InnerText + " 2",
-                            customer["CustomerName"]!.InnerText + " 2",
-                            customer["Address"]!.InnerText + "2",
-                            customer["City"]!.InnerText + " 2",
+                            $"{customer["CustomerID"]!.InnerText} 2", $"{customer["CustomerName"]!.InnerText} 2",
+                            $"{customer["Address"]!.InnerText}2", $"{customer["City"]!.InnerText} 2",
                             new TextAndImage(customer["Country"]!.InnerText,GetFlag(customer["Country"]!.InnerText)),
-                            DateTime.Now,
-                            customer["ProductName"]!.InnerText + " 2",
+                            DateTime.Now, $"{customer["ProductName"]!.InnerText} 2",
                             (double)random.Next(1000),
                             (double)random.Next(101) /100,
                             tokensList[random.Next(5)]
@@ -89,11 +88,9 @@ namespace KryptonOutlookGrid
                 }
                 catch (Exception ex)
                 {
-                    KryptonMessageBox.Show("Gasp...Something went wrong ! " + ex.Message, "Error", KryptonMessageBoxButtons.OK, KryptonMessageBoxIcon.Error);
+                    KryptonMessageBox.Show($"Gasp...Something went wrong ! {ex.Message}", "Error", KryptonMessageBoxButtons.OK, KryptonMessageBoxIcon.Error);
                 }
             }
-
-
 
             kogExample.ResumeLayout();
             kogExample.AssignRows(l);
@@ -168,12 +165,8 @@ namespace KryptonOutlookGrid
 
         private void kogExample_Resize(object sender, EventArgs e)
         {
-            int preferredTotalWidth = 0;
+            int preferredTotalWidth = kogExample.Columns.Cast<DataGridViewColumn>().Sum(c => Math.Min(c.GetPreferredWidth(DataGridViewAutoSizeColumnMode.DisplayedCells, true), 250));
             //Calculate the total preferred width
-            foreach (DataGridViewColumn c in kogExample.Columns)
-            {
-                preferredTotalWidth += Math.Min(c.GetPreferredWidth(DataGridViewAutoSizeColumnMode.DisplayedCells, true), 250);
-            }
 
             if (kogExample.Width > preferredTotalWidth)
             {
@@ -190,10 +183,8 @@ namespace KryptonOutlookGrid
             }
         }
 
-        private void kogExample_GroupImageClick(object sender, OutlookGridGroupImageEventArgs e)
-        {
-            KryptonMessageBox.Show("Group Image clicked for group row : " + e.Row.Group!.Text);
-        }
+        private void kogExample_GroupImageClick(object sender, OutlookGridGroupImageEventArgs e) => KryptonMessageBox.Show(
+            $"Group Image clicked for group row : {e.Row.Group!.Text}");
 
         private void bsaLoadConfiguration_Click(object sender, EventArgs e)
         {
@@ -202,10 +193,8 @@ namespace KryptonOutlookGrid
             LoadData();
         }
 
-        private void bsaSaveConfiguration_Click(object sender, EventArgs e)
-        {
-            kogExample.PersistConfiguration(Application.StartupPath + "/grid.xml", StaticInfos._GRIDCONFIG_VERSION.ToString());
-        }
+        private void bsaSaveConfiguration_Click(object sender, EventArgs e) => kogExample.PersistConfiguration(
+            $"{Application.StartupPath}/grid.xml", StaticInfos._GRIDCONFIG_VERSION.ToString());
 
         private void bsaToggleAllNodes_Click(object sender, EventArgs e)
         {

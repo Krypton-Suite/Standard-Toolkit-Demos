@@ -11,15 +11,10 @@
 #endregion
 
 using System;
-using System.IO;
-using System.Text;
-using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
-using Microsoft.Win32;
-using Krypton.Toolkit;
+
 using Krypton.Navigator;
+using Krypton.Toolkit;
 using Krypton.Workspace;
 
 namespace CellMaximizeAndRestore

@@ -347,7 +347,7 @@ namespace KryptonThemePlayground
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(471, 629);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(389, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(350, 27);
             this.toolStrip1.TabIndex = 26;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -469,14 +469,14 @@ namespace KryptonThemePlayground
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(1667, 670);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1671, 656);
             this.kryptonPanel1.TabIndex = 29;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1667, 670);
+            this.ClientSize = new System.Drawing.Size(1671, 656);
             this.Controls.Add(this.kryptonColorButton1);
             this.Controls.Add(this.kpg);
             this.Controls.Add(this.kryptonThemeComboBox1);

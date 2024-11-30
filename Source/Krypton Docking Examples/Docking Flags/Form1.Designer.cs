@@ -45,9 +45,10 @@
             this.kryptonPanel.Controls.Add(this.kryptonDockableWorkspace);
             this.kryptonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel.Name = "kryptonPanel";
-            this.kryptonPanel.Padding = new System.Windows.Forms.Padding(3);
-            this.kryptonPanel.Size = new System.Drawing.Size(684, 564);
+            this.kryptonPanel.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPanel.Size = new System.Drawing.Size(916, 680);
             this.kryptonPanel.TabIndex = 0;
             // 
             // kryptonDockableWorkspace
@@ -58,24 +59,20 @@
             | Krypton.Workspace.CompactFlags.PromoteLeafs)));
             this.kryptonDockableWorkspace.ContainerBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonDockableWorkspace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonDockableWorkspace.Location = new System.Drawing.Point(3, 3);
+            this.kryptonDockableWorkspace.Location = new System.Drawing.Point(4, 4);
+            this.kryptonDockableWorkspace.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonDockableWorkspace.Name = "kryptonDockableWorkspace";
             // 
             // 
             // 
-            this.kryptonDockableWorkspace.Root.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.kryptonDockableWorkspace.Root.UniqueName = "D3A631E8871B4E59D3A631E8871B4E59";
             this.kryptonDockableWorkspace.Root.WorkspaceControl = this.kryptonDockableWorkspace;
             this.kryptonDockableWorkspace.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.LowProfile;
             this.kryptonDockableWorkspace.ShowMaximizeButton = false;
-            this.kryptonDockableWorkspace.Size = new System.Drawing.Size(678, 558);
+            this.kryptonDockableWorkspace.Size = new System.Drawing.Size(908, 672);
             this.kryptonDockableWorkspace.SplitterWidth = 5;
             this.kryptonDockableWorkspace.TabIndex = 0;
             this.kryptonDockableWorkspace.TabStop = true;
-            // 
-            // kryptonDockingManager
-            // 
-            this.kryptonDockingManager.DefaultCloseRequest = Krypton.Docking.DockingCloseRequest.HidePage;
             // 
             // imageListSmall
             // 
@@ -85,13 +82,18 @@
             this.imageListSmall.Images.SetKeyName(1, "preferences.png");
             this.imageListSmall.Images.SetKeyName(2, "information2.png");
             // 
+            // kryptonManager
+            // 
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 564);
+            this.ClientSize = new System.Drawing.Size(916, 680);
             this.Controls.Add(this.kryptonPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Docking Flags";
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -202,7 +202,7 @@ namespace KryptonMessageBoxExamples
 
             // Use the sender parameter to identify the context of the Help request.
             // The parameter must be cast to the Control type to get the Tag property.
-            Control senderControl = sender as Control;
+            Control senderControl = (Control)sender;
 
             helpLabel.Text = $@"Help information shown in response to user action on the '{(string?)senderControl!.Tag}' message.";
 

@@ -11,17 +11,16 @@
 #endregion
 
 using System;
-using System.IO;
-using System.Text;
-using System.Drawing;
-using System.Windows.Forms;
-using System.ComponentModel;
 using System.Collections.Generic;
-using Microsoft.Win32;
-using Krypton.Toolkit;
-using Krypton.Ribbon;
+using System.IO;
+using System.Windows.Forms;
+
 using Krypton.Navigator;
+using Krypton.Ribbon;
+using Krypton.Toolkit;
 using Krypton.Workspace;
+
+using Microsoft.Win32;
 
 namespace MemoEditor
 {
@@ -46,7 +45,7 @@ namespace MemoEditor
 
             _paletteButtons = new KryptonRibbonGroupButton[]{button2010Blue, button2010Silver, button2010Black,
                                                              button2007Blue, button2007Silver, button2007Black,
-                                                             buttonSparkleBlue, buttonSparkleOrange, buttonSparklePurple, 
+                                                             buttonSparkleBlue, buttonSparkleOrange, buttonSparklePurple,
                                                              buttonSystem, button2003};
 
             _groupingButtons = new KryptonRibbonGroupButton[]{buttonTabs, buttonRibbonTabs, buttonButtons,
@@ -66,13 +65,13 @@ namespace MemoEditor
                 try
                 {
                     // Look for each of the maximum number of entries
-                    for (int i = 1; i <= _maxRecentDocs; i++)
+                    for (var i = 1; i <= _maxRecentDocs; i++)
                     {
                         // If we managed to get an entry
-                        string filename = memoEditorSettings.GetValue(i.ToString()) as string;
+                        var filename = memoEditorSettings.GetValue(i.ToString()) as string;
                         if (!string.IsNullOrEmpty(filename))
                         {
-                            KryptonRibbonRecentDoc recentDoc = new KryptonRibbonRecentDoc();
+                            var recentDoc = new KryptonRibbonRecentDoc();
                             recentDoc.Click += new EventHandler(buttonRecentFile_Clicked);
                             recentDoc.Text = filename;
 
@@ -91,7 +90,7 @@ namespace MemoEditor
                     //    kryptonManager.GlobalPaletteMode = (PaletteModeManager)Enum.Parse(typeof(PaletteModeManager), globalPalette);
 
                     // Restore the cell mode selected previously
-                    string cellMode = memoEditorSettings.GetValue("CellMode") as string;
+                    var cellMode = memoEditorSettings.GetValue("CellMode") as string;
                     if (!string.IsNullOrEmpty(cellMode))
                     {
                         _cellMode = (NavigatorMode)Enum.Parse(typeof(NavigatorMode), cellMode);
@@ -129,7 +128,7 @@ namespace MemoEditor
             while (cell != null)
             {
                 // Close each page within the cell (unless it returns the operation has been cancelled)
-                for (int i = cell.Pages.Count - 1; i >= 0; i--)
+                for (var i = cell.Pages.Count - 1; i >= 0; i--)
                 {
                     if (CloseMemoPage(cell.Pages[i]))
                     {
@@ -160,13 +159,13 @@ namespace MemoEditor
             if (memoEditorSettings != null)
             {
                 // Clear out the existing recent docs contents
-                for (int i = 1; i <= _maxRecentDocs; i++)
+                for (var i = 1; i <= _maxRecentDocs; i++)
                 {
                     memoEditorSettings.SetValue(i.ToString(), string.Empty, RegistryValueKind.String);
                 }
 
                 // Set the value for each existing entry
-                for (int i = 0; i < kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Count; i++)
+                for (var i = 0; i < kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Count; i++)
                 {
                     memoEditorSettings.SetValue((i + 1).ToString(), kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs[i].Text, RegistryValueKind.String);
                 }
@@ -191,19 +190,19 @@ namespace MemoEditor
             if (openFileDialog.ShowDialog(this) == DialogResult.OK)
             {
                 // Get the list of open filenames
-                List<String> filenames = GetOpenFilenames();
+                var filenames = GetOpenFilenames();
 
                 // Try and open each file selected in the open dialog box
-                foreach (string file in openFileDialog.FileNames)
+                foreach (var file in openFileDialog.FileNames)
                 {
                     // Only interested in files that are not already loaded
                     if (filenames.BinarySearch(file) < 0)
                     {
                         // Load the file contents and add as a new tab
-                        FileInfo fileInfo = new FileInfo(file);
+                        var fileInfo = new FileInfo(file);
                         if (fileInfo.Exists)
                         {
-                            using (StreamReader reader = new StreamReader(file))
+                            using (var reader = new StreamReader(file))
                                 AddNewMemo(fileInfo.Name, fileInfo.FullName, reader.ReadToEnd());
                         }
                     }
@@ -264,7 +263,7 @@ namespace MemoEditor
             while (cell != null)
             {
                 // Close each page within the cell (unless it returns the operation has been cancelled)
-                for (int i = cell.Pages.Count - 1; i >= 0; i--)
+                for (var i = cell.Pages.Count - 1; i >= 0; i--)
                 {
                     if (CloseMemoPage(cell.Pages[i]))
                     {
@@ -368,7 +367,7 @@ namespace MemoEditor
         private void buttonPalette_Clicked(object sender, EventArgs e)
         {
             // The tag property of the button is the enum string value of the palette we want
-            KryptonRibbonGroupButton button = (KryptonRibbonGroupButton)sender;
+            var button = (KryptonRibbonGroupButton)sender;
             kryptonManager.GlobalPaletteMode = ThemeManager.GetThemeManagerMode((string)button.Tag);
             UpdateButtonsFromPalette();
         }
@@ -376,7 +375,7 @@ namespace MemoEditor
         private void buttonGrouping_Click(object sender, EventArgs e)
         {
             // Cache the new mode setting
-            KryptonRibbonGroupButton button = (KryptonRibbonGroupButton)sender;
+            var button = (KryptonRibbonGroupButton)sender;
             _cellMode = (NavigatorMode)Enum.Parse(typeof(NavigatorMode), (string)button.Tag);
             UpdateCellsFromGrouping();
             UpdateButtonsFromGrouping();
@@ -385,7 +384,7 @@ namespace MemoEditor
         private void buttonRecentFile_Clicked(object sender, EventArgs e)
         {
             // Always remove the selected entry, we only put it back if we find it is valid
-            KryptonRibbonRecentDoc recentDoc = (KryptonRibbonRecentDoc)sender;
+            var recentDoc = (KryptonRibbonRecentDoc)sender;
             kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Remove(recentDoc);
 
             // Get the existing page that contains the selected filename
@@ -403,10 +402,10 @@ namespace MemoEditor
             }
 
             // If we get here then we need to try and load the document
-            FileInfo fileInfo = new FileInfo(recentDoc.Text);
+            var fileInfo = new FileInfo(recentDoc.Text);
             if (fileInfo.Exists)
             {
-                using (StreamReader reader = new StreamReader(fileInfo.FullName))
+                using (var reader = new StreamReader(fileInfo.FullName))
                 {
                     // Make this the top most 'recent doc' entry
                     kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Insert(0, recentDoc);
@@ -478,16 +477,16 @@ namespace MemoEditor
         private void kryptonRichTextBox_TextChanged(object sender, EventArgs e)
         {
             // Find the page from the sender reference
-            KryptonRichTextBox rtb = (KryptonRichTextBox)sender;
-            KryptonPage page = (KryptonPage)rtb.Tag;
+            var rtb = (KryptonRichTextBox)sender;
+            var page = (KryptonPage)rtb.Tag;
 
             // If the page is not already marked as modified
             if (!page.Text.EndsWith("*"))
             {
                 // Mark as modified by adding a star to end of text name
-                page.Text = page.Text + "*";
-                page.TextTitle = page.TextTitle + "*";
-                page.TextDescription = page.TextDescription + "*";
+                page.Text = $"{page.Text}*";
+                page.TextTitle = $"{page.TextTitle}*";
+                page.TextDescription = $"{page.TextDescription}*";
 
                 // Change in page requires we update button/form state
                 UpdateApplicationTitle();
@@ -500,17 +499,17 @@ namespace MemoEditor
         private KryptonPage CreateNewMemo()
         {
             // Create what we hope is a unique name for the new memo
-            string name = "Untitled" + (_count++).ToString();
+            var name = $"Untitled{(_count++)}";
             return CreateNewMemo(name, name, string.Empty, false);
         }
 
-        private KryptonPage CreateNewMemo(string text, 
-                                          string description, 
+        private KryptonPage CreateNewMemo(string text,
+                                          string description,
                                           string memo,
                                           bool loaded)
         {
             // Define page name and images
-            KryptonPage page = new KryptonPage();
+            var page = new KryptonPage();
             page.Text = text;
             page.TextTitle = description;
             page.TextDescription = description;
@@ -525,14 +524,14 @@ namespace MemoEditor
             page.Tag = loaded;
 
             // Create a close button for the page
-            ButtonSpecAny bsa = new ButtonSpecAny();
+            var bsa = new ButtonSpecAny();
             bsa.Tag = page;
             bsa.Type = PaletteButtonSpecStyle.Close;
             bsa.Click += new EventHandler(OnClosePage);
             page.ButtonSpecs.Add(bsa);
 
             // We use the rich text box as the memo editor
-            KryptonRichTextBox rtb = new KryptonRichTextBox();
+            var rtb = new KryptonRichTextBox();
             rtb.StateCommon.Border.Draw = InheritBool.False;
             rtb.Dock = DockStyle.Fill;
             rtb.Text = memo;
@@ -550,7 +549,7 @@ namespace MemoEditor
         private void OnClosePage(object sender, EventArgs e)
         {
             // Find the page this button is contained within
-            ButtonSpecAny bsa = (ButtonSpecAny)sender;
+            var bsa = (ButtonSpecAny)sender;
 
             // Close the page
             CloseMemoPage((KryptonPage)bsa.Tag);
@@ -608,13 +607,13 @@ namespace MemoEditor
                     if (page.Text.EndsWith("*"))
                     {
                         // Get access to the contained rich text box
-                        KryptonRichTextBox rtb = (KryptonRichTextBox)page.Controls[0];
+                        var rtb = (KryptonRichTextBox)page.Controls[0];
 
                         // Write out the contents to the file
-                        FileInfo fileInfo = new FileInfo(page.TextDescription.TrimEnd('*'));
-                        using (FileStream fileStream = new FileStream(fileInfo.FullName, FileMode.Create, FileAccess.Write))
-                            using (StreamWriter streamWriter = new StreamWriter(fileStream))
-                              streamWriter.Write(rtb.Text);
+                        var fileInfo = new FileInfo(page.TextDescription.TrimEnd('*'));
+                        using (var fileStream = new FileStream(fileInfo.FullName, FileMode.Create, FileAccess.Write))
+                        using (var streamWriter = new StreamWriter(fileStream))
+                            streamWriter.Write(rtb.Text);
 
                         // Remove the dirty flag on the file
                         page.Text = page.Text.TrimEnd('*');
@@ -634,7 +633,7 @@ namespace MemoEditor
             if (page != null)
             {
                 // Set the directory/filename into the dialog box
-                FileInfo extractInfo = new FileInfo(page.TextDescription.TrimEnd('*'));
+                var extractInfo = new FileInfo(page.TextDescription.TrimEnd('*'));
                 saveFileDialog.FileName = extractInfo.Name;
                 if (string.IsNullOrEmpty(extractInfo.DirectoryName))
                 {
@@ -645,13 +644,13 @@ namespace MemoEditor
                 if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
                 {
                     // Get access to the contained rich text box
-                    KryptonRichTextBox rtb = (KryptonRichTextBox)page.Controls[0];
+                    var rtb = (KryptonRichTextBox)page.Controls[0];
 
                     // Write out the contents to the file
-                    FileInfo fileInfo = new FileInfo(saveFileDialog.FileName);
+                    var fileInfo = new FileInfo(saveFileDialog.FileName);
                     using (FileStream fileStream = fileInfo.OpenWrite())
-                        using (StreamWriter streamWriter = new StreamWriter(fileStream))
-                           streamWriter.Write(rtb.Text);
+                    using (var streamWriter = new StreamWriter(fileStream))
+                        streamWriter.Write(rtb.Text);
 
                     // Remove the dirty flag on the file
                     page.Text = fileInfo.Name;
@@ -678,7 +677,7 @@ namespace MemoEditor
                 // If the page is dirty then we need to ask if it should be saved
                 if (page.Text.EndsWith("*"))
                 {
-                    switch(MessageBox.Show("Do you want to save changes to '" + page.Text.TrimEnd('*') + "' ?", 
+                    switch (MessageBox.Show($"Do you want to save changes to '{page.Text.TrimEnd('*')}' ?",
                                            "Memo Editor", MessageBoxButtons.YesNoCancel))
                     {
                         case DialogResult.Cancel:
@@ -707,7 +706,7 @@ namespace MemoEditor
 
         private List<string> GetOpenFilenames()
         {
-            List<String> filenames = new List<string>();
+            var filenames = new List<string>();
 
             // Scan all cells
             KryptonWorkspaceCell cell = kryptonWorkspace.FirstCell();
@@ -755,7 +754,7 @@ namespace MemoEditor
         {
             // Search for an existing entry for that filename
             KryptonRibbonRecentDoc recentDoc = null;
-            foreach(KryptonRibbonRecentDoc entry in kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs)
+            foreach (KryptonRibbonRecentDoc entry in kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs)
             {
                 if (entry.Text.Equals(filename))
                 {
@@ -779,7 +778,7 @@ namespace MemoEditor
             // Restrict list to just 9 entries
             if (kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Count > _maxRecentDocs)
             {
-                for (int i = kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Count; i > _maxRecentDocs; i--)
+                for (var i = kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Count; i > _maxRecentDocs; i--)
                 {
                     kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.RemoveAt(kryptonRibbon.RibbonFileAppButton.AppButtonRecentDocs.Count - 1);
                 }
@@ -799,7 +798,7 @@ namespace MemoEditor
         private void UpdateButtonsFromGrouping()
         {
             // Get the string representation of the cell mode
-            string cellMode = _cellMode.ToString();
+            var cellMode = _cellMode.ToString();
 
             // Check the palette button that matches the cell mode
             foreach (KryptonRibbonGroupButton button in _groupingButtons)
@@ -811,10 +810,10 @@ namespace MemoEditor
         private void UpdateButtonsFromPalette()
         {
             // Get the string representation of the global palette
-            string mode = kryptonManager.GlobalPaletteMode.ToString();
+            var mode = kryptonManager.GlobalPaletteMode.ToString();
 
             // Check the palette button that matches the global palette
-            foreach(KryptonRibbonGroupButton button in _paletteButtons)
+            foreach (KryptonRibbonGroupButton button in _paletteButtons)
             {
                 button.Checked = (button.Tag.ToString().Equals(mode));
             }
@@ -823,12 +822,12 @@ namespace MemoEditor
         private void UpdateApplicationTitle()
         {
             // Always prefix with application name
-            string title = "Memo Editor";
+            var title = "Memo Editor";
 
             // If we have an active page then append that memo name
             if (kryptonWorkspace.ActivePage != null)
             {
-                title += " - " + kryptonWorkspace.ActivePage.TextDescription;
+                title += $" - {kryptonWorkspace.ActivePage.TextDescription}";
             }
 
             Text = title;
@@ -836,12 +835,12 @@ namespace MemoEditor
 
         private void UpdateOptions()
         {
-            bool activePage = (kryptonWorkspace.ActivePage != null);
+            var activePage = (kryptonWorkspace.ActivePage != null);
             appButtonSaveMemo.Enabled = buttonSaveMemo.Enabled = activePage;
             appButtonSaveAsMemo.Enabled = buttonSaveAsMemo.Enabled = activePage;
             appButtonSaveAllMemo.Enabled = buttonSaveAllMemo.Enabled = activePage;
             appButtonCloseMemo.Enabled = buttonCloseMemo.Enabled = activePage;
-            appButtonCloseAllMemo.Enabled = buttonCloseAllMemo.Enabled = activePage;            
+            appButtonCloseAllMemo.Enabled = buttonCloseAllMemo.Enabled = activePage;
         }
         #endregion
     }

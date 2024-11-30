@@ -1,6 +1,6 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2021. All rights reserved.
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2024. All rights reserved.
 // *****************************************************************************
 
 using System;
@@ -208,8 +208,8 @@ namespace TestMessageBoxClipping
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.StackTrace, "ex.Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                KryptonMessageBox.Show(ex.StackTrace, "ex.Message", KryptonMessageBoxButtons.OK, KryptonMessageBoxIcon.Stop);
+                MessageBox.Show(this, ex.StackTrace, "ex.Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                KryptonMessageBox.Show(this, ex.StackTrace, "ex.Message", KryptonMessageBoxButtons.OK, KryptonMessageBoxIcon.Stop);
             }
         }
     }

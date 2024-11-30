@@ -28,6 +28,7 @@ namespace ExpandingPages
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -125,8 +126,8 @@ namespace ExpandingPages
             this.kryptonCheckButton2 = new Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton1 = new Krypton.Toolkit.KryptonCheckButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager();
-            this.kryptonPalettes = new Krypton.Toolkit.KryptonCheckSet();
+            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonPalettes = new Krypton.Toolkit.KryptonCheckSet(this.components);
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -162,15 +163,16 @@ namespace ExpandingPages
             // menuStrip1
             // 
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
             this.toolsToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 27);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(606, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(812, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -188,7 +190,7 @@ namespace ExpandingPages
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // newToolStripMenuItem
@@ -197,7 +199,7 @@ namespace ExpandingPages
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.newToolStripMenuItem.Text = "&New";
             // 
             // openToolStripMenuItem
@@ -206,13 +208,13 @@ namespace ExpandingPages
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(178, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -220,19 +222,19 @@ namespace ExpandingPages
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.saveToolStripMenuItem.Text = "&Save";
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(178, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -240,7 +242,7 @@ namespace ExpandingPages
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.printToolStripMenuItem.Text = "&Print";
             // 
             // printPreviewToolStripMenuItem
@@ -248,18 +250,18 @@ namespace ExpandingPages
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(178, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // editToolStripMenuItem
@@ -274,27 +276,27 @@ namespace ExpandingPages
             this.toolStripSeparator4,
             this.selectAllToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
             this.editToolStripMenuItem.Text = "&Edit";
             // 
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.undoToolStripMenuItem.Text = "&Undo";
             // 
             // redoToolStripMenuItem
             // 
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
             this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.redoToolStripMenuItem.Text = "&Redo";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(141, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(176, 6);
             // 
             // cutToolStripMenuItem
             // 
@@ -302,7 +304,7 @@ namespace ExpandingPages
             this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.cutToolStripMenuItem.Text = "Cu&t";
             // 
             // copyToolStripMenuItem
@@ -311,7 +313,7 @@ namespace ExpandingPages
             this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.copyToolStripMenuItem.Text = "&Copy";
             // 
             // pasteToolStripMenuItem
@@ -320,18 +322,18 @@ namespace ExpandingPages
             this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.pasteToolStripMenuItem.Text = "&Paste";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(141, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(176, 6);
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.selectAllToolStripMenuItem.Text = "Select &All";
             // 
             // toolsToolStripMenuItem
@@ -340,19 +342,19 @@ namespace ExpandingPages
             this.customizeToolStripMenuItem,
             this.optionsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.toolsToolStripMenuItem.Text = "&Tools";
             // 
             // customizeToolStripMenuItem
             // 
             this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.customizeToolStripMenuItem.Text = "&Customize";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.optionsToolStripMenuItem.Text = "&Options";
             // 
             // helpToolStripMenuItem
@@ -364,42 +366,43 @@ namespace ExpandingPages
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // contentsToolStripMenuItem
             // 
             this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
-            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.contentsToolStripMenuItem.Text = "&Contents";
             // 
             // indexToolStripMenuItem
             // 
             this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            this.indexToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.indexToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.indexToolStripMenuItem.Text = "&Index";
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.searchToolStripMenuItem.Text = "&Search";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(119, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(147, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
             // toolStrip1
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripButton,
             this.openToolStripButton,
@@ -411,9 +414,9 @@ namespace ExpandingPages
             this.pasteToolStripButton,
             this.toolStripSeparator7,
             this.helpToolStripButton});
-            this.toolStrip1.Location = new System.Drawing.Point(3, 24);
+            this.toolStrip1.Location = new System.Drawing.Point(4, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(208, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(257, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -423,7 +426,7 @@ namespace ExpandingPages
             this.newToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripButton.Image")));
             this.newToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripButton.Name = "newToolStripButton";
-            this.newToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.newToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.newToolStripButton.Text = "&New";
             // 
             // openToolStripButton
@@ -432,7 +435,7 @@ namespace ExpandingPages
             this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
             this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripButton.Name = "openToolStripButton";
-            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.openToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.openToolStripButton.Text = "&Open";
             // 
             // saveToolStripButton
@@ -441,7 +444,7 @@ namespace ExpandingPages
             this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
             this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.saveToolStripButton.Text = "&Save";
             // 
             // printToolStripButton
@@ -450,13 +453,13 @@ namespace ExpandingPages
             this.printToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripButton.Image")));
             this.printToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripButton.Name = "printToolStripButton";
-            this.printToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.printToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.printToolStripButton.Text = "&Print";
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 27);
             // 
             // cutToolStripButton
             // 
@@ -464,7 +467,7 @@ namespace ExpandingPages
             this.cutToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripButton.Image")));
             this.cutToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripButton.Name = "cutToolStripButton";
-            this.cutToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.cutToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.cutToolStripButton.Text = "C&ut";
             // 
             // copyToolStripButton
@@ -473,7 +476,7 @@ namespace ExpandingPages
             this.copyToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripButton.Image")));
             this.copyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripButton.Name = "copyToolStripButton";
-            this.copyToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.copyToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.copyToolStripButton.Text = "&Copy";
             // 
             // pasteToolStripButton
@@ -482,13 +485,13 @@ namespace ExpandingPages
             this.pasteToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripButton.Image")));
             this.pasteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripButton.Name = "pasteToolStripButton";
-            this.pasteToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.pasteToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.pasteToolStripButton.Text = "&Paste";
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 27);
             // 
             // helpToolStripButton
             // 
@@ -496,7 +499,7 @@ namespace ExpandingPages
             this.helpToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripButton.Image")));
             this.helpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.helpToolStripButton.Name = "helpToolStripButton";
-            this.helpToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.helpToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.helpToolStripButton.Text = "He&lp";
             // 
             // toolStripContainer1
@@ -505,11 +508,13 @@ namespace ExpandingPages
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.kryptonPanel1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(606, 403);
+            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(812, 492);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
+            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(606, 452);
+            this.toolStripContainer1.Size = new System.Drawing.Size(812, 547);
             this.toolStripContainer1.TabIndex = 2;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -527,23 +532,24 @@ namespace ExpandingPages
             this.kryptonPanel1.Controls.Add(this.navigatorLeft);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(5);
-            this.kryptonPanel1.Size = new System.Drawing.Size(606, 403);
+            this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.kryptonPanel1.Size = new System.Drawing.Size(812, 492);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // pageButtons
             // 
-            this.pageButtons.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pageButtons.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pageButtons.Location = new System.Drawing.Point(174, 129);
+            this.pageButtons.Location = new System.Drawing.Point(225, 155);
+            this.pageButtons.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pageButtons.Name = "pageButtons";
             // 
             // pageButtons.Panel
             // 
             this.pageButtons.Panel.Controls.Add(this.richTextBox2);
-            this.pageButtons.Panel.Padding = new System.Windows.Forms.Padding(5);
-            this.pageButtons.Size = new System.Drawing.Size(427, 269);
+            this.pageButtons.Panel.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pageButtons.Size = new System.Drawing.Size(580, 331);
             this.pageButtons.TabIndex = 4;
             // 
             // richTextBox2
@@ -551,27 +557,24 @@ namespace ExpandingPages
             this.richTextBox2.AutoSize = true;
             this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.Location = new System.Drawing.Point(5, 5);
+            this.richTextBox2.Location = new System.Drawing.Point(7, 6);
+            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
-            this.richTextBox2.Size = new System.Drawing.Size(415, 257);
-            this.richTextBox2.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.richTextBox2.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.richTextBox2.Size = new System.Drawing.Size(564, 317);
             this.richTextBox2.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.False;
             this.richTextBox2.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.richTextBox2.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
-            this.richTextBox2.StateCommon.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.richTextBox2.TabIndex = 0;
             this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
             // 
             // kryptonPanel3
             // 
             this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonPanel3.Location = new System.Drawing.Point(174, 124);
+            this.kryptonPanel3.Location = new System.Drawing.Point(225, 149);
+            this.kryptonPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel3.Name = "kryptonPanel3";
-            this.kryptonPanel3.Size = new System.Drawing.Size(427, 5);
+            this.kryptonPanel3.Size = new System.Drawing.Size(580, 6);
             this.kryptonPanel3.TabIndex = 3;
             // 
             // navigatorTop
@@ -579,8 +582,7 @@ namespace ExpandingPages
             this.navigatorTop.AutoSize = true;
             this.navigatorTop.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.navigatorTop.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
-            this.navigatorTop.Button.ButtonSpecs.AddRange(new Krypton.Navigator.ButtonSpecNavigator[] {
-            this.buttonTopArrow});
+            this.navigatorTop.Button.ButtonSpecs.Add(this.buttonTopArrow);
             this.navigatorTop.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
             this.navigatorTop.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.navigatorTop.Button.ContextButtonAction = Krypton.Navigator.ContextButtonAction.SelectPage;
@@ -591,30 +593,24 @@ namespace ExpandingPages
             this.navigatorTop.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
             this.navigatorTop.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
             this.navigatorTop.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.navigatorTop.ControlKryptonFormFeatures = false;
             this.navigatorTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.navigatorTop.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.navigatorTop.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
-            this.navigatorTop.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
-            this.navigatorTop.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
-            this.navigatorTop.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
-            this.navigatorTop.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
-            this.navigatorTop.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
-            this.navigatorTop.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
-            this.navigatorTop.Location = new System.Drawing.Point(174, 5);
+            this.navigatorTop.Location = new System.Drawing.Point(225, 6);
+            this.navigatorTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navigatorTop.Name = "navigatorTop";
             this.navigatorTop.NavigatorMode = Krypton.Navigator.NavigatorMode.HeaderBarCheckButtonGroup;
+            this.navigatorTop.Owner = null;
             this.navigatorTop.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.navigatorTop.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.pageEntryForm,
             this.kryptonPage4,
             this.pageProgressBars,
             this.pageColors});
-            this.navigatorTop.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.navigatorTop.PopupPages.AllowPopupPages = Krypton.Navigator.PopupPageAllow.OnlyCompatibleModes;
             this.navigatorTop.PopupPages.Element = Krypton.Navigator.PopupPageElement.Navigator;
             this.navigatorTop.PopupPages.Position = Krypton.Navigator.PopupPagePosition.BelowMatch;
             this.navigatorTop.SelectedIndex = 0;
-            this.navigatorTop.Size = new System.Drawing.Size(427, 119);
+            this.navigatorTop.Size = new System.Drawing.Size(580, 143);
             this.navigatorTop.TabIndex = 2;
             this.navigatorTop.Text = "kryptonNavigator2";
             // 
@@ -638,95 +634,84 @@ namespace ExpandingPages
             this.pageEntryForm.Controls.Add(this.kryptonLabel1);
             this.pageEntryForm.Flags = 65534;
             this.pageEntryForm.LastVisibleSet = true;
-            this.pageEntryForm.MinimumSize = new System.Drawing.Size(50, 85);
+            this.pageEntryForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pageEntryForm.MinimumSize = new System.Drawing.Size(67, 105);
             this.pageEntryForm.Name = "pageEntryForm";
-            this.pageEntryForm.Padding = new System.Windows.Forms.Padding(15);
-            this.pageEntryForm.Size = new System.Drawing.Size(425, 86);
+            this.pageEntryForm.Padding = new System.Windows.Forms.Padding(20, 18, 20, 18);
+            this.pageEntryForm.Size = new System.Drawing.Size(578, 106);
             this.pageEntryForm.Text = "Entry Form";
             this.pageEntryForm.ToolTipTitle = "Page ToolTip";
             this.pageEntryForm.UniqueName = "7F2D1092960E4B537F2D1092960E4B53";
             // 
             // textBox3
             // 
-            this.textBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.textBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.textBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.textBox3.Location = new System.Drawing.Point(217, 39);
+            this.textBox3.Location = new System.Drawing.Point(289, 48);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
+            this.textBox3.Size = new System.Drawing.Size(133, 27);
             this.textBox3.TabIndex = 7;
             this.textBox3.Text = "Dead";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // textBox4
             // 
-            this.textBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.textBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.textBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.textBox4.Location = new System.Drawing.Point(217, 15);
+            this.textBox4.Location = new System.Drawing.Point(289, 18);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
+            this.textBox4.Size = new System.Drawing.Size(133, 27);
             this.textBox4.TabIndex = 6;
             this.textBox4.Text = "Prime Minister";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(170, 40);
+            this.kryptonLabel3.Location = new System.Drawing.Point(227, 49);
+            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(44, 20);
+            this.kryptonLabel3.Size = new System.Drawing.Size(53, 26);
             this.kryptonLabel3.TabIndex = 5;
             this.kryptonLabel3.Values.Text = "Status";
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(161, 15);
+            this.kryptonLabel4.Location = new System.Drawing.Point(215, 18);
+            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(54, 20);
+            this.kryptonLabel4.Size = new System.Drawing.Size(66, 26);
             this.kryptonLabel4.TabIndex = 4;
             this.kryptonLabel4.Values.Text = "Position";
             // 
             // textBox2
             // 
-            this.textBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.textBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.textBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.textBox2.Location = new System.Drawing.Point(53, 39);
+            this.textBox2.Location = new System.Drawing.Point(71, 48);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
+            this.textBox2.Size = new System.Drawing.Size(133, 27);
             this.textBox2.TabIndex = 3;
             this.textBox2.Text = "Chruchill";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // textBox1
             // 
-            this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.textBox1.Location = new System.Drawing.Point(53, 15);
+            this.textBox1.Location = new System.Drawing.Point(71, 18);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.Size = new System.Drawing.Size(133, 27);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "Winston";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(18, 40);
+            this.kryptonLabel2.Location = new System.Drawing.Point(24, 49);
+            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(32, 20);
+            this.kryptonLabel2.Size = new System.Drawing.Size(38, 26);
             this.kryptonLabel2.TabIndex = 1;
             this.kryptonLabel2.Values.Text = "Last";
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(17, 15);
+            this.kryptonLabel1.Location = new System.Drawing.Point(23, 18);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(33, 20);
+            this.kryptonLabel1.Size = new System.Drawing.Size(40, 26);
             this.kryptonLabel1.TabIndex = 0;
             this.kryptonLabel1.Values.Text = "First";
             // 
@@ -743,82 +728,91 @@ namespace ExpandingPages
             this.kryptonPage4.Controls.Add(this.button1);
             this.kryptonPage4.Flags = 65534;
             this.kryptonPage4.LastVisibleSet = true;
-            this.kryptonPage4.MinimumSize = new System.Drawing.Size(50, 85);
+            this.kryptonPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPage4.MinimumSize = new System.Drawing.Size(67, 105);
             this.kryptonPage4.Name = "kryptonPage4";
-            this.kryptonPage4.Padding = new System.Windows.Forms.Padding(15);
-            this.kryptonPage4.Size = new System.Drawing.Size(364, 86);
+            this.kryptonPage4.Padding = new System.Windows.Forms.Padding(20, 18, 20, 18);
+            this.kryptonPage4.Size = new System.Drawing.Size(485, 106);
             this.kryptonPage4.Text = "Buttons";
             this.kryptonPage4.ToolTipTitle = "Page ToolTip";
             this.kryptonPage4.UniqueName = "DD2472F0D7BA4602DD2472F0D7BA4602";
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(258, 43);
+            this.button7.Location = new System.Drawing.Point(344, 53);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.Size = new System.Drawing.Size(100, 28);
             this.button7.TabIndex = 7;
             this.button7.Text = "button7";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(258, 15);
+            this.button8.Location = new System.Drawing.Point(344, 18);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.Size = new System.Drawing.Size(100, 28);
             this.button8.TabIndex = 6;
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(177, 43);
+            this.button5.Location = new System.Drawing.Point(236, 53);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(100, 28);
             this.button5.TabIndex = 5;
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(177, 15);
+            this.button6.Location = new System.Drawing.Point(236, 18);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(100, 28);
             this.button6.TabIndex = 4;
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(96, 43);
+            this.button3.Location = new System.Drawing.Point(128, 53);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(100, 28);
             this.button3.TabIndex = 3;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(96, 15);
+            this.button4.Location = new System.Drawing.Point(128, 18);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(100, 28);
             this.button4.TabIndex = 2;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(15, 43);
+            this.button2.Location = new System.Drawing.Point(20, 53);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(15, 15);
+            this.button1.Location = new System.Drawing.Point(20, 18);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -834,59 +828,66 @@ namespace ExpandingPages
             this.pageProgressBars.Controls.Add(this.progressBar1);
             this.pageProgressBars.Flags = 65534;
             this.pageProgressBars.LastVisibleSet = true;
-            this.pageProgressBars.MinimumSize = new System.Drawing.Size(50, 85);
+            this.pageProgressBars.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pageProgressBars.MinimumSize = new System.Drawing.Size(67, 105);
             this.pageProgressBars.Name = "pageProgressBars";
-            this.pageProgressBars.Padding = new System.Windows.Forms.Padding(15);
-            this.pageProgressBars.Size = new System.Drawing.Size(364, 86);
+            this.pageProgressBars.Padding = new System.Windows.Forms.Padding(20, 18, 20, 18);
+            this.pageProgressBars.Size = new System.Drawing.Size(485, 106);
             this.pageProgressBars.Text = "Progress Bars";
             this.pageProgressBars.ToolTipTitle = "Page ToolTip";
             this.pageProgressBars.UniqueName = "74F866C9CBEC40D974F866C9CBEC40D9";
             // 
             // progressBar5
             // 
-            this.progressBar5.Location = new System.Drawing.Point(227, 43);
+            this.progressBar5.Location = new System.Drawing.Point(303, 53);
+            this.progressBar5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar5.Name = "progressBar5";
-            this.progressBar5.Size = new System.Drawing.Size(100, 23);
+            this.progressBar5.Size = new System.Drawing.Size(133, 28);
             this.progressBar5.TabIndex = 5;
             this.progressBar5.Value = 10;
             // 
             // progressBar6
             // 
-            this.progressBar6.Location = new System.Drawing.Point(227, 15);
+            this.progressBar6.Location = new System.Drawing.Point(303, 18);
+            this.progressBar6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar6.Name = "progressBar6";
-            this.progressBar6.Size = new System.Drawing.Size(100, 23);
+            this.progressBar6.Size = new System.Drawing.Size(133, 28);
             this.progressBar6.TabIndex = 4;
             this.progressBar6.Value = 60;
             // 
             // progressBar3
             // 
-            this.progressBar3.Location = new System.Drawing.Point(121, 43);
+            this.progressBar3.Location = new System.Drawing.Point(161, 53);
+            this.progressBar3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(100, 23);
+            this.progressBar3.Size = new System.Drawing.Size(133, 28);
             this.progressBar3.TabIndex = 3;
             this.progressBar3.Value = 30;
             // 
             // progressBar4
             // 
-            this.progressBar4.Location = new System.Drawing.Point(121, 15);
+            this.progressBar4.Location = new System.Drawing.Point(161, 18);
+            this.progressBar4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(100, 23);
+            this.progressBar4.Size = new System.Drawing.Size(133, 28);
             this.progressBar4.TabIndex = 2;
             this.progressBar4.Value = 90;
             // 
             // progressBar2
             // 
-            this.progressBar2.Location = new System.Drawing.Point(15, 43);
+            this.progressBar2.Location = new System.Drawing.Point(20, 53);
+            this.progressBar2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(100, 23);
+            this.progressBar2.Size = new System.Drawing.Size(133, 28);
             this.progressBar2.TabIndex = 1;
             this.progressBar2.Value = 70;
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(15, 15);
+            this.progressBar1.Location = new System.Drawing.Point(20, 18);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(100, 23);
+            this.progressBar1.Size = new System.Drawing.Size(133, 28);
             this.progressBar1.TabIndex = 0;
             this.progressBar1.Value = 20;
             // 
@@ -901,10 +902,11 @@ namespace ExpandingPages
             this.pageColors.Controls.Add(this.panel1);
             this.pageColors.Flags = 65534;
             this.pageColors.LastVisibleSet = true;
-            this.pageColors.MinimumSize = new System.Drawing.Size(50, 85);
+            this.pageColors.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pageColors.MinimumSize = new System.Drawing.Size(67, 105);
             this.pageColors.Name = "pageColors";
-            this.pageColors.Padding = new System.Windows.Forms.Padding(15);
-            this.pageColors.Size = new System.Drawing.Size(364, 86);
+            this.pageColors.Padding = new System.Windows.Forms.Padding(20, 18, 20, 18);
+            this.pageColors.Size = new System.Drawing.Size(485, 106);
             this.pageColors.Text = "Colors";
             this.pageColors.ToolTipTitle = "Page ToolTip";
             this.pageColors.UniqueName = "9A2BCC004A1B461D9A2BCC004A1B461D";
@@ -912,57 +914,64 @@ namespace ExpandingPages
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel5.Location = new System.Drawing.Point(227, 43);
+            this.panel5.Location = new System.Drawing.Point(303, 53);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(100, 22);
+            this.panel5.Size = new System.Drawing.Size(133, 27);
             this.panel5.TabIndex = 3;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Blue;
-            this.panel3.Location = new System.Drawing.Point(121, 43);
+            this.panel3.Location = new System.Drawing.Point(161, 53);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(100, 22);
+            this.panel3.Size = new System.Drawing.Size(133, 27);
             this.panel3.TabIndex = 3;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Fuchsia;
-            this.panel6.Location = new System.Drawing.Point(227, 15);
+            this.panel6.Location = new System.Drawing.Point(303, 18);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(100, 22);
+            this.panel6.Size = new System.Drawing.Size(133, 27);
             this.panel6.TabIndex = 2;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.panel2.Location = new System.Drawing.Point(15, 43);
+            this.panel2.Location = new System.Drawing.Point(20, 53);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(100, 22);
+            this.panel2.Size = new System.Drawing.Size(133, 27);
             this.panel2.TabIndex = 1;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Yellow;
-            this.panel4.Location = new System.Drawing.Point(121, 15);
+            this.panel4.Location = new System.Drawing.Point(161, 18);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(100, 22);
+            this.panel4.Size = new System.Drawing.Size(133, 27);
             this.panel4.TabIndex = 2;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
-            this.panel1.Location = new System.Drawing.Point(15, 15);
+            this.panel1.Location = new System.Drawing.Point(20, 18);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(100, 22);
+            this.panel1.Size = new System.Drawing.Size(133, 27);
             this.panel1.TabIndex = 0;
             // 
             // kryptonPanel2
             // 
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.kryptonPanel2.Location = new System.Drawing.Point(169, 5);
+            this.kryptonPanel2.Location = new System.Drawing.Point(218, 6);
+            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(5, 393);
+            this.kryptonPanel2.Size = new System.Drawing.Size(7, 480);
             this.kryptonPanel2.TabIndex = 1;
             // 
             // navigatorLeft
@@ -970,8 +979,7 @@ namespace ExpandingPages
             this.navigatorLeft.AutoSize = true;
             this.navigatorLeft.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.navigatorLeft.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.None;
-            this.navigatorLeft.Button.ButtonSpecs.AddRange(new Krypton.Navigator.ButtonSpecNavigator[] {
-            this.buttonLeft});
+            this.navigatorLeft.Button.ButtonSpecs.Add(this.buttonLeft);
             this.navigatorLeft.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
             this.navigatorLeft.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.navigatorLeft.Button.ContextButtonAction = Krypton.Navigator.ContextButtonAction.SelectPage;
@@ -982,28 +990,28 @@ namespace ExpandingPages
             this.navigatorLeft.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
             this.navigatorLeft.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
             this.navigatorLeft.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.navigatorLeft.ControlKryptonFormFeatures = false;
             this.navigatorLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.navigatorLeft.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.navigatorLeft.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
             this.navigatorLeft.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Left;
             this.navigatorLeft.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
             this.navigatorLeft.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
             this.navigatorLeft.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
             this.navigatorLeft.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
             this.navigatorLeft.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
-            this.navigatorLeft.Location = new System.Drawing.Point(5, 5);
+            this.navigatorLeft.Location = new System.Drawing.Point(7, 6);
+            this.navigatorLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navigatorLeft.Name = "navigatorLeft";
             this.navigatorLeft.NavigatorMode = Krypton.Navigator.NavigatorMode.HeaderBarCheckButtonGroup;
+            this.navigatorLeft.Owner = null;
             this.navigatorLeft.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.navigatorLeft.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.pageRichTextBox,
             this.pageListBox});
-            this.navigatorLeft.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.navigatorLeft.PopupPages.AllowPopupPages = Krypton.Navigator.PopupPageAllow.OnlyCompatibleModes;
             this.navigatorLeft.PopupPages.Element = Krypton.Navigator.PopupPageElement.Navigator;
             this.navigatorLeft.PopupPages.Position = Krypton.Navigator.PopupPagePosition.FarMatch;
             this.navigatorLeft.SelectedIndex = 1;
-            this.navigatorLeft.Size = new System.Drawing.Size(164, 393);
+            this.navigatorLeft.Size = new System.Drawing.Size(211, 480);
             this.navigatorLeft.TabIndex = 0;
             this.navigatorLeft.Text = "kryptonNavigator1";
             // 
@@ -1021,10 +1029,11 @@ namespace ExpandingPages
             this.pageRichTextBox.Controls.Add(this.richTextBox1);
             this.pageRichTextBox.Flags = 65534;
             this.pageRichTextBox.LastVisibleSet = true;
-            this.pageRichTextBox.MinimumSize = new System.Drawing.Size(130, 50);
+            this.pageRichTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pageRichTextBox.MinimumSize = new System.Drawing.Size(173, 62);
             this.pageRichTextBox.Name = "pageRichTextBox";
-            this.pageRichTextBox.Padding = new System.Windows.Forms.Padding(5);
-            this.pageRichTextBox.Size = new System.Drawing.Size(131, 296);
+            this.pageRichTextBox.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pageRichTextBox.Size = new System.Drawing.Size(175, 364);
             this.pageRichTextBox.Text = "Notebook";
             this.pageRichTextBox.ToolTipTitle = "Page ToolTip";
             this.pageRichTextBox.UniqueName = "8C64EF9E7C89449E8C64EF9E7C89449E";
@@ -1032,18 +1041,14 @@ namespace ExpandingPages
             // richTextBox1
             // 
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(5, 5);
+            this.richTextBox1.Location = new System.Drawing.Point(7, 6);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Both;
-            this.richTextBox1.Size = new System.Drawing.Size(121, 286);
-            this.richTextBox1.StateCommon.Border.ColorAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
-            this.richTextBox1.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Inherit;
+            this.richTextBox1.Size = new System.Drawing.Size(161, 352);
             this.richTextBox1.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.False;
             this.richTextBox1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.richTextBox1.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.Inherit;
-            this.richTextBox1.StateCommon.Border.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Inherit;
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "Plenty of room here to enter some notes. Help yourself!";
             // 
@@ -1061,138 +1066,132 @@ namespace ExpandingPages
             this.pageListBox.Controls.Add(this.kryptonCheckButton1);
             this.pageListBox.Flags = 65534;
             this.pageListBox.LastVisibleSet = true;
-            this.pageListBox.MinimumSize = new System.Drawing.Size(130, 50);
+            this.pageListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pageListBox.MinimumSize = new System.Drawing.Size(173, 62);
             this.pageListBox.Name = "pageListBox";
-            this.pageListBox.Padding = new System.Windows.Forms.Padding(5);
-            this.pageListBox.Size = new System.Drawing.Size(131, 391);
+            this.pageListBox.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pageListBox.Size = new System.Drawing.Size(174, 478);
             this.pageListBox.Text = "Palettes";
             this.pageListBox.ToolTipTitle = "Page ToolTip";
             this.pageListBox.UniqueName = "DC2FDC906EBE4062DC2FDC906EBE4062";
             // 
             // kryptonCheckButton7
             // 
-            this.kryptonCheckButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton7.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
-            this.kryptonCheckButton7.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.kryptonCheckButton7.Location = new System.Drawing.Point(16, 78);
+            this.kryptonCheckButton7.Location = new System.Drawing.Point(21, 96);
+            this.kryptonCheckButton7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonCheckButton7.Name = "kryptonCheckButton7";
-            this.kryptonCheckButton7.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonCheckButton7.Size = new System.Drawing.Size(100, 25);
+            this.kryptonCheckButton7.Size = new System.Drawing.Size(133, 31);
             this.kryptonCheckButton7.TabIndex = 8;
+            this.kryptonCheckButton7.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonCheckButton7.Values.Text = "2010 Black";
             this.kryptonCheckButton7.Click += new System.EventHandler(this.kryptonPaletteButtons_Click);
             // 
             // kryptonCheckButton8
             // 
-            this.kryptonCheckButton8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton8.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
-            this.kryptonCheckButton8.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.kryptonCheckButton8.Location = new System.Drawing.Point(16, 45);
+            this.kryptonCheckButton8.Location = new System.Drawing.Point(21, 55);
+            this.kryptonCheckButton8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonCheckButton8.Name = "kryptonCheckButton8";
-            this.kryptonCheckButton8.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonCheckButton8.Size = new System.Drawing.Size(100, 25);
+            this.kryptonCheckButton8.Size = new System.Drawing.Size(133, 31);
             this.kryptonCheckButton8.TabIndex = 7;
+            this.kryptonCheckButton8.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonCheckButton8.Values.Text = "2010 Silver";
             this.kryptonCheckButton8.Click += new System.EventHandler(this.kryptonPaletteButtons_Click);
             // 
             // kryptonCheckButton9
             // 
-            this.kryptonCheckButton9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton9.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
             this.kryptonCheckButton9.Checked = true;
-            this.kryptonCheckButton9.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.kryptonCheckButton9.Location = new System.Drawing.Point(16, 12);
+            this.kryptonCheckButton9.Location = new System.Drawing.Point(21, 15);
+            this.kryptonCheckButton9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonCheckButton9.Name = "kryptonCheckButton9";
-            this.kryptonCheckButton9.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonCheckButton9.Size = new System.Drawing.Size(100, 25);
+            this.kryptonCheckButton9.Size = new System.Drawing.Size(133, 31);
             this.kryptonCheckButton9.TabIndex = 6;
+            this.kryptonCheckButton9.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonCheckButton9.Values.Text = "2010 Blue";
             this.kryptonCheckButton9.Click += new System.EventHandler(this.kryptonPaletteButtons_Click);
             // 
             // kryptonCheckButton6
             // 
-            this.kryptonCheckButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton6.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
-            this.kryptonCheckButton6.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.kryptonCheckButton6.Location = new System.Drawing.Point(16, 243);
+            this.kryptonCheckButton6.Location = new System.Drawing.Point(21, 299);
+            this.kryptonCheckButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonCheckButton6.Name = "kryptonCheckButton6";
-            this.kryptonCheckButton6.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonCheckButton6.Size = new System.Drawing.Size(100, 25);
+            this.kryptonCheckButton6.Size = new System.Drawing.Size(133, 31);
             this.kryptonCheckButton6.TabIndex = 4;
+            this.kryptonCheckButton6.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonCheckButton6.Values.Text = "Sparkle";
             // 
             // kryptonCheckButton5
             // 
-            this.kryptonCheckButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton5.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
-            this.kryptonCheckButton5.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.kryptonCheckButton5.Location = new System.Drawing.Point(16, 210);
+            this.kryptonCheckButton5.Location = new System.Drawing.Point(21, 258);
+            this.kryptonCheckButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonCheckButton5.Name = "kryptonCheckButton5";
-            this.kryptonCheckButton5.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonCheckButton5.Size = new System.Drawing.Size(100, 25);
+            this.kryptonCheckButton5.Size = new System.Drawing.Size(133, 31);
             this.kryptonCheckButton5.TabIndex = 3;
+            this.kryptonCheckButton5.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonCheckButton5.Values.Text = "2003";
             this.kryptonCheckButton5.Click += new System.EventHandler(this.kryptonPaletteButtons_Click);
             // 
             // kryptonCheckButton4
             // 
-            this.kryptonCheckButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton4.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
-            this.kryptonCheckButton4.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.kryptonCheckButton4.Location = new System.Drawing.Point(16, 276);
+            this.kryptonCheckButton4.Location = new System.Drawing.Point(21, 340);
+            this.kryptonCheckButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonCheckButton4.Name = "kryptonCheckButton4";
-            this.kryptonCheckButton4.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonCheckButton4.Size = new System.Drawing.Size(100, 25);
+            this.kryptonCheckButton4.Size = new System.Drawing.Size(133, 31);
             this.kryptonCheckButton4.TabIndex = 5;
+            this.kryptonCheckButton4.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonCheckButton4.Values.Text = "System";
             this.kryptonCheckButton4.Click += new System.EventHandler(this.kryptonPaletteButtons_Click);
             // 
             // kryptonCheckButton3
             // 
-            this.kryptonCheckButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton3.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
-            this.kryptonCheckButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.kryptonCheckButton3.Location = new System.Drawing.Point(16, 177);
+            this.kryptonCheckButton3.Location = new System.Drawing.Point(21, 218);
+            this.kryptonCheckButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonCheckButton3.Name = "kryptonCheckButton3";
-            this.kryptonCheckButton3.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonCheckButton3.Size = new System.Drawing.Size(100, 25);
+            this.kryptonCheckButton3.Size = new System.Drawing.Size(133, 31);
             this.kryptonCheckButton3.TabIndex = 2;
+            this.kryptonCheckButton3.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonCheckButton3.Values.Text = "2007 Black";
             this.kryptonCheckButton3.Click += new System.EventHandler(this.kryptonPaletteButtons_Click);
             // 
             // kryptonCheckButton2
             // 
-            this.kryptonCheckButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton2.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
-            this.kryptonCheckButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.kryptonCheckButton2.Location = new System.Drawing.Point(16, 144);
+            this.kryptonCheckButton2.Location = new System.Drawing.Point(21, 177);
+            this.kryptonCheckButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonCheckButton2.Name = "kryptonCheckButton2";
-            this.kryptonCheckButton2.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonCheckButton2.Size = new System.Drawing.Size(100, 25);
+            this.kryptonCheckButton2.Size = new System.Drawing.Size(133, 31);
             this.kryptonCheckButton2.TabIndex = 1;
+            this.kryptonCheckButton2.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonCheckButton2.Values.Text = "2007 Silver";
             this.kryptonCheckButton2.Click += new System.EventHandler(this.kryptonPaletteButtons_Click);
             // 
             // kryptonCheckButton1
             // 
-            this.kryptonCheckButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonCheckButton1.ButtonStyle = Krypton.Toolkit.ButtonStyle.Cluster;
-            this.kryptonCheckButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.kryptonCheckButton1.Location = new System.Drawing.Point(16, 111);
+            this.kryptonCheckButton1.Location = new System.Drawing.Point(21, 137);
+            this.kryptonCheckButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonCheckButton1.Name = "kryptonCheckButton1";
-            this.kryptonCheckButton1.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonCheckButton1.Size = new System.Drawing.Size(100, 25);
+            this.kryptonCheckButton1.Size = new System.Drawing.Size(133, 31);
             this.kryptonCheckButton1.TabIndex = 0;
+            this.kryptonCheckButton1.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonCheckButton1.Values.Text = "2007 Blue";
             this.kryptonCheckButton1.Click += new System.EventHandler(this.kryptonPaletteButtons_Click);
             // 
             // statusStrip1
             // 
-            this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 452);
+            this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 547);
             this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.statusStrip1.Size = new System.Drawing.Size(606, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(812, 22);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -1216,14 +1215,15 @@ namespace ExpandingPages
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(606, 474);
+            this.ClientSize = new System.Drawing.Size(812, 569);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.statusStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(541, 313);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(715, 374);
             this.Name = "Form1";
             this.Text = "Expanding Pages";
             this.menuStrip1.ResumeLayout(false);

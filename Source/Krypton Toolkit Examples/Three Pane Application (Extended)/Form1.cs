@@ -13,6 +13,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+
 using Krypton.Toolkit;
 
 namespace ThreePaneApplication
@@ -24,19 +25,19 @@ namespace ThreePaneApplication
         private void Form1_Load(object sender, EventArgs e)
         {
             // Appointments
-            dataTable.Rows.Add("Julius Ceaser", "End of career review for roman work", "Leadership skills are exceptional.\nGood work surpressing the Gauls.\nTends to make political enemies.\nSticky end predicted.", "Appointments", "Staff reviews", true);
+            dataTable.Rows.Add("Julius Ceaser", "End of career review for roman work", "Leadership skills are exceptional.\nGood work suppressing the Gauls.\nTends to make political enemies.\nSticky end predicted.", "Appointments", "Staff reviews", true);
             dataTable.Rows.Add("Winston Churchhill", "End of war review for military campaign", "Very popular with the common people.\nTends towards being stubborn.\nEasy going after two whiskys.\nReward with box of good cigars.\nToo old for new projects.", "Appointments", "Staff reviews", false);
             dataTable.Rows.Add("Ghengis Khan", "End of year appraisal", "Good with animals.\nTends towards violent outbursts.\nCould do better.", "Appointments", "Staff reviews", false);
-            dataTable.Rows.Add("Steve Jobs", "Interview for positon as junior tester", "Enjoys working with shiny objects.\nPrefers working in white rooms.\nEasily distracted by noises.\nRejected", "Appointments", "Job interviews", true);
+            dataTable.Rows.Add("Steve Jobs", "Interview for position as junior tester", "Enjoys working with shiny objects.\nPrefers working in white rooms.\nEasily distracted by noises.\nRejected", "Appointments", "Job interviews", true);
             dataTable.Rows.Add("Larry Ellison", "Interview for marketing position", "Likes large marketing budgets.\nSpends all budget on new plane.\nLast heard he was in Hawaii.\nRejected", "Appointments", "Job interviews", false);
             dataTable.Rows.Add("Project Orcas", "Milestone review of work completed", "Project currently on target.\nNeed to improve average.\nMust order new project mugs.", "Appointments", "Project meetings", true);
-            dataTable.Rows.Add("Project Zebra", "Kick off meeing for Mac OS work", "Project in stealth mode.\nEnsure official name is more sexy.", "Appointments", "Project meetings", true);
+            dataTable.Rows.Add("Project Zebra", "Kick off meeting for Mac OS work", "Project in stealth mode.\nEnsure official name is more sexy.", "Appointments", "Project meetings", true);
 
             // Employees
             dataTable.Rows.Add("Holly Hunter", "Secretary", "New member of staff.\nVery quick typist.\nJust one task at a time.", "Employees", "Administration", false);
             dataTable.Rows.Add("Paula Abdul", "Meet and greet", "Good singing voice.\nKeep away from accounts.", "Employees", "Administration", true);
             dataTable.Rows.Add("Zak Wolfson", "Junior developer", "Good degree from MIT.\nIrrational need to use Linux.\nGood when closely supervised.", "Employees", "Programmers", false);
-            dataTable.Rows.Add("Simon Cowell", "Senior architect", "Poor understanding of concepts.\nPoor mentoring of junior staff.\nLooks good on televison.\nFire at first opportunity.", "Employees", "Programmers", true);
+            dataTable.Rows.Add("Simon Cowell", "Senior architect", "Poor understanding of concepts.\nPoor mentoring of junior staff.\nLooks good on television.\nFire at first opportunity.", "Employees", "Programmers", true);
             dataTable.Rows.Add("Peter Andre", "President", "Always appears at press conferences.\nPicture of cover of accounts.\nDrives a nice car.\nComplete egomaniac.", "Employees", "Managers", false);
 
             // Use the filtered view of the data table
@@ -437,11 +438,11 @@ namespace ThreePaneApplication
                 if ((node.Text == "Appointments") ||
                     (node.Text == "Employees"))
                 {
-                    dataTable.DefaultView.RowFilter = "Department = '" + node.Text + "'";
+                    dataTable.DefaultView.RowFilter = $"Department = '{node.Text}'";
                 }
                 else
                 {
-                    dataTable.DefaultView.RowFilter = "Category = '" + node.Text + "'";
+                    dataTable.DefaultView.RowFilter = $"Category = '{node.Text}'";
                 }
             }
         }

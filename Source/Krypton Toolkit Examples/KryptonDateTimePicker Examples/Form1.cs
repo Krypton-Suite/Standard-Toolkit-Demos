@@ -11,9 +11,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonDateTimePickerExamples
@@ -32,7 +33,7 @@ namespace KryptonDateTimePickerExamples
 
         private void dtp_Enter(object sender, EventArgs e) =>
             // Setup the property grid to edit this date time picker control
-            propertyGrid.SelectedObject = new KryptonDateTimePickerProxy(sender as KryptonDateTimePicker);
+            propertyGrid.SelectedObject = new KryptonDateTimePickerProxy((KryptonDateTimePicker)sender);
 
         private void rbOffice2010Blue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BaseRenderMode = RendererMode.Microsoft365;
 
@@ -178,7 +179,7 @@ namespace KryptonDateTimePickerExamples
         /// </summary>
         [Category("Visuals - MonthCalendar")]
         [Description("Indicates which annual dates should be boldface.")]
-        public DateTime[] CalendarAnnuallyBoldedDates
+        public DateTime[]? CalendarAnnuallyBoldedDates
         {
             get => _dateTimePicker.CalendarAnnuallyBoldedDates;
             set => _dateTimePicker.CalendarAnnuallyBoldedDates = value;
@@ -189,7 +190,7 @@ namespace KryptonDateTimePickerExamples
         /// </summary>
         [Category("Visuals - MonthCalendar")]
         [Description("Indicates which monthly dates should be boldface.")]
-        public DateTime[] CalendarMonthlyBoldedDates
+        public DateTime[]? CalendarMonthlyBoldedDates
         {
             get => _dateTimePicker.CalendarMonthlyBoldedDates;
             set => _dateTimePicker.CalendarMonthlyBoldedDates = value;
@@ -200,7 +201,7 @@ namespace KryptonDateTimePickerExamples
         /// </summary>
         [Category("Visuals - MonthCalendar")]
         [Description("Indicates which dates should be boldface.")]
-        public DateTime[] CalendarBoldedDates
+        public DateTime[]? CalendarBoldedDates
         {
             get => _dateTimePicker.CalendarBoldedDates;
             set => _dateTimePicker.CalendarBoldedDates = value;
@@ -223,14 +224,14 @@ namespace KryptonDateTimePickerExamples
         [Category("Appearance")]
         [Description("Property for the date/time that can be null.")]
         [RefreshProperties(RefreshProperties.All)]
-        public object ValueNullable
+        public object? ValueNullable
         {
             get => _dateTimePicker.ValueNullable;
             set => _dateTimePicker.ValueNullable = value;
         }
 
         /// <summary>
-        /// Gets or sets the date/time value assigned to the control..
+        /// Gets or sets the date/time value assigned to the control.
         /// </summary>
         [Category("Appearance")]
         [Description("Property for the date/time.")]
@@ -403,7 +404,7 @@ namespace KryptonDateTimePickerExamples
         [DefaultValue(null)]
         public KryptonCustomPaletteBase Palette
         {
-            get => _dateTimePicker.LocalCustomPalette;
+            get => _dateTimePicker.LocalCustomPalette!;
             set => _dateTimePicker.LocalCustomPalette = value;
         }
 

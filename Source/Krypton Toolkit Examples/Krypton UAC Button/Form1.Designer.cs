@@ -31,8 +31,8 @@ namespace KryptonUACButton
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
-            this.kbtnTest = new Krypton.Toolkit.KryptonButton();
             this.kchkShowUACShield = new Krypton.Toolkit.KryptonCheckBox();
+            this.kbtnTest = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -43,35 +43,40 @@ namespace KryptonUACButton
             this.kryptonPanel1.Controls.Add(this.kbtnTest);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(340, 46);
+            this.kryptonPanel1.Size = new System.Drawing.Size(457, 44);
             this.kryptonPanel1.TabIndex = 0;
-            // 
-            // kbtnTest
-            // 
-            this.kbtnTest.Location = new System.Drawing.Point(13, 13);
-            this.kbtnTest.Name = "kbtnTest";
-            this.kbtnTest.Size = new System.Drawing.Size(194, 25);
-            this.kbtnTest.TabIndex = 0;
-            this.kbtnTest.Values.Text = "Some Text";
-            this.kbtnTest.Click += new System.EventHandler(this.kbtnTest_Click);
             // 
             // kchkShowUACShield
             // 
-            this.kchkShowUACShield.Location = new System.Drawing.Point(214, 13);
+            this.kchkShowUACShield.Location = new System.Drawing.Point(285, 16);
+            this.kchkShowUACShield.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kchkShowUACShield.Name = "kchkShowUACShield";
-            this.kchkShowUACShield.Size = new System.Drawing.Size(117, 20);
+            this.kchkShowUACShield.Size = new System.Drawing.Size(142, 24);
             this.kchkShowUACShield.TabIndex = 1;
             this.kchkShowUACShield.Values.Text = "&Show UAC Shield";
             this.kchkShowUACShield.CheckedChanged += new System.EventHandler(this.kchkShowUACShield_CheckedChanged);
             // 
+            // kbtnTest
+            // 
+            this.kbtnTest.Location = new System.Drawing.Point(17, 10);
+            this.kbtnTest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kbtnTest.Name = "kbtnTest";
+            this.kbtnTest.Size = new System.Drawing.Size(259, 31);
+            this.kbtnTest.TabIndex = 0;
+            this.kbtnTest.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.kbtnTest.Values.Text = "Some Text";
+            this.kbtnTest.Click += new System.EventHandler(this.kbtnTest_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(340, 46);
+            this.ClientSize = new System.Drawing.Size(457, 44);
             this.Controls.Add(this.kryptonPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";

@@ -147,7 +147,7 @@ namespace KeyTipsAndKeyboardAccess
             this.panelFill.Location = new System.Drawing.Point(0, 136);
             this.panelFill.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panelFill.Name = "panelFill";
-            this.panelFill.Size = new System.Drawing.Size(645, 526);
+            this.panelFill.Size = new System.Drawing.Size(649, 512);
             this.panelFill.TabIndex = 1;
             // 
             // groupKeyboardInfo
@@ -248,16 +248,17 @@ namespace KeyTipsAndKeyboardAccess
             this.buttonOffice365Black.Name = "buttonOffice365Black";
             this.buttonOffice365Black.Size = new System.Drawing.Size(171, 31);
             this.buttonOffice365Black.TabIndex = 12;
+            this.buttonOffice365Black.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonOffice365Black.Values.Text = "Office 365 Black";
             // 
             // buttonOffice2010Black
             // 
-            this.buttonOffice2010Black.Checked = true;
             this.buttonOffice2010Black.Location = new System.Drawing.Point(32, 114);
             this.buttonOffice2010Black.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.buttonOffice2010Black.Name = "buttonOffice2010Black";
             this.buttonOffice2010Black.Size = new System.Drawing.Size(171, 31);
             this.buttonOffice2010Black.TabIndex = 3;
+            this.buttonOffice2010Black.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonOffice2010Black.Values.Text = "Office 2010 Black";
             // 
             // buttonOffice2010Silver
@@ -267,6 +268,7 @@ namespace KeyTipsAndKeyboardAccess
             this.buttonOffice2010Silver.Name = "buttonOffice2010Silver";
             this.buttonOffice2010Silver.Size = new System.Drawing.Size(171, 31);
             this.buttonOffice2010Silver.TabIndex = 2;
+            this.buttonOffice2010Silver.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonOffice2010Silver.Values.Text = "Office 2010 Silver";
             // 
             // buttonOffice2010Blue
@@ -276,6 +278,7 @@ namespace KeyTipsAndKeyboardAccess
             this.buttonOffice2010Blue.Name = "buttonOffice2010Blue";
             this.buttonOffice2010Blue.Size = new System.Drawing.Size(171, 31);
             this.buttonOffice2010Blue.TabIndex = 1;
+            this.buttonOffice2010Blue.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonOffice2010Blue.Values.Text = "Office 2010 Blue";
             // 
             // buttonSparkleOrange
@@ -285,6 +288,7 @@ namespace KeyTipsAndKeyboardAccess
             this.buttonSparkleOrange.Name = "buttonSparkleOrange";
             this.buttonSparkleOrange.Size = new System.Drawing.Size(171, 31);
             this.buttonSparkleOrange.TabIndex = 9;
+            this.buttonSparkleOrange.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonSparkleOrange.Values.Text = "Sparkle - Orange";
             // 
             // buttonSparklePurple
@@ -294,6 +298,7 @@ namespace KeyTipsAndKeyboardAccess
             this.buttonSparklePurple.Name = "buttonSparklePurple";
             this.buttonSparklePurple.Size = new System.Drawing.Size(171, 31);
             this.buttonSparklePurple.TabIndex = 10;
+            this.buttonSparklePurple.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonSparklePurple.Values.Text = "Sparkle - Purple";
             // 
             // buttonSparkleBlue
@@ -303,6 +308,7 @@ namespace KeyTipsAndKeyboardAccess
             this.buttonSparkleBlue.Name = "buttonSparkleBlue";
             this.buttonSparkleBlue.Size = new System.Drawing.Size(171, 31);
             this.buttonSparkleBlue.TabIndex = 8;
+            this.buttonSparkleBlue.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonSparkleBlue.Values.Text = "Sparkle - Blue";
             // 
             // buttonProfessionalSystem
@@ -312,6 +318,7 @@ namespace KeyTipsAndKeyboardAccess
             this.buttonProfessionalSystem.Name = "buttonProfessionalSystem";
             this.buttonProfessionalSystem.Size = new System.Drawing.Size(171, 31);
             this.buttonProfessionalSystem.TabIndex = 11;
+            this.buttonProfessionalSystem.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonProfessionalSystem.Values.Text = "System";
             // 
             // buttonProfessional2003
@@ -321,6 +328,7 @@ namespace KeyTipsAndKeyboardAccess
             this.buttonProfessional2003.Name = "buttonProfessional2003";
             this.buttonProfessional2003.Size = new System.Drawing.Size(171, 31);
             this.buttonProfessional2003.TabIndex = 7;
+            this.buttonProfessional2003.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonProfessional2003.Values.Text = "Office 2003";
             // 
             // buttonOffice2007Black
@@ -330,6 +338,7 @@ namespace KeyTipsAndKeyboardAccess
             this.buttonOffice2007Black.Name = "buttonOffice2007Black";
             this.buttonOffice2007Black.Size = new System.Drawing.Size(171, 31);
             this.buttonOffice2007Black.TabIndex = 6;
+            this.buttonOffice2007Black.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonOffice2007Black.Values.Text = "Office 2007 Black";
             // 
             // buttonOffice2007Silver
@@ -340,6 +349,7 @@ namespace KeyTipsAndKeyboardAccess
             this.buttonOffice2007Silver.Name = "buttonOffice2007Silver";
             this.buttonOffice2007Silver.Size = new System.Drawing.Size(171, 31);
             this.buttonOffice2007Silver.TabIndex = 5;
+            this.buttonOffice2007Silver.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonOffice2007Silver.Values.Text = "Office 2007 Silver";
             // 
             // buttonOffice2007Blue
@@ -349,6 +359,7 @@ namespace KeyTipsAndKeyboardAccess
             this.buttonOffice2007Blue.Name = "buttonOffice2007Blue";
             this.buttonOffice2007Blue.Size = new System.Drawing.Size(171, 31);
             this.buttonOffice2007Blue.TabIndex = 4;
+            this.buttonOffice2007Blue.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonOffice2007Blue.Values.Text = "Office 2007 Blue";
             // 
             // labelGlobalPalettes
@@ -391,7 +402,7 @@ namespace KeyTipsAndKeyboardAccess
             this.kryptonRibbonTab3,
             this.kryptonRibbonTab4});
             this.kryptonRibbon.SelectedTab = this.tabHome;
-            this.kryptonRibbon.Size = new System.Drawing.Size(645, 136);
+            this.kryptonRibbon.Size = new System.Drawing.Size(649, 136);
             this.kryptonRibbon.StateTracking.RibbonGroupArea.BackColor1 = System.Drawing.Color.Lime;
             this.kryptonRibbon.StateTracking.RibbonGroupArea.BackColor2 = System.Drawing.Color.Lime;
             this.kryptonRibbon.StateTracking.RibbonGroupArea.BackColor3 = System.Drawing.Color.Lime;
@@ -890,7 +901,8 @@ namespace KeyTipsAndKeyboardAccess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 662);
+            this.ClientSize = new System.Drawing.Size(649, 648);
+            this.CloseBox = false;
             this.Controls.Add(this.panelFill);
             this.Controls.Add(this.kryptonRibbon);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

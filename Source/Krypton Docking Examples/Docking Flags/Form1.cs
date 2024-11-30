@@ -9,6 +9,7 @@
  *  
  */
 #endregion
+
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -31,9 +32,9 @@ namespace DockingFlags
         private KryptonPage NewDocument()
         {
             // Create new page with title and image
-            KryptonPage p = new KryptonPage
+            var p = new KryptonPage
             {
-                Text = "Document " + _count.ToString()
+                Text = $"Document {_count}"
             };
             p.TextTitle = p.Text;
             p.TextDescription = p.Text;
@@ -41,7 +42,7 @@ namespace DockingFlags
             p.ImageSmall = (Bitmap)imageListSmall.Images[0];
 
             // Add the control for display inside the page
-            ContentDocument contentDoc = new ContentDocument
+            var contentDoc = new ContentDocument
             {
                 Dock = DockStyle.Fill
             };
@@ -54,9 +55,9 @@ namespace DockingFlags
         private KryptonPage NewFlags()
         {
             // Create new page with title and image
-            KryptonPage p = new KryptonPage
+            var p = new KryptonPage
             {
-                Text = "Flags " + _count.ToString()
+                Text = $"Flags {_count}"
             };
             p.TextTitle = p.Text;
             p.TextDescription = p.Text;
@@ -64,7 +65,7 @@ namespace DockingFlags
             p.ImageSmall = (Bitmap)imageListSmall.Images[1];
 
             // Add the control for display inside the page
-            ContentFlags contentFlags = new ContentFlags(p)
+            var contentFlags = new ContentFlags(p)
             {
                 Dock = DockStyle.Fill
             };

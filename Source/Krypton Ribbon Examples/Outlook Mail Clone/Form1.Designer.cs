@@ -29,7 +29,6 @@ namespace OutlookMailClone
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelFill = new Krypton.Toolkit.KryptonPanel();
             this.tableLayout = new System.Windows.Forms.TableLayoutPanel();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
@@ -453,10 +452,10 @@ namespace OutlookMailClone
             // 
             this.panelFill.Controls.Add(this.tableLayout);
             this.panelFill.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFill.Location = new System.Drawing.Point(0, 115);
+            this.panelFill.Location = new System.Drawing.Point(0, 136);
             this.panelFill.Name = "panelFill";
             this.panelFill.Padding = new System.Windows.Forms.Padding(7);
-            this.panelFill.Size = new System.Drawing.Size(865, 427);
+            this.panelFill.Size = new System.Drawing.Size(869, 392);
             this.panelFill.TabIndex = 0;
             // 
             // tableLayout
@@ -485,7 +484,7 @@ namespace OutlookMailClone
             this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 200F));
-            this.tableLayout.Size = new System.Drawing.Size(851, 413);
+            this.tableLayout.Size = new System.Drawing.Size(855, 378);
             this.tableLayout.TabIndex = 0;
             // 
             // kryptonLabel1
@@ -493,7 +492,7 @@ namespace OutlookMailClone
             this.kryptonLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonLabel1.Location = new System.Drawing.Point(3, 65);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(53, 24);
+            this.kryptonLabel1.Size = new System.Drawing.Size(65, 24);
             this.kryptonLabel1.TabIndex = 2;
             this.kryptonLabel1.Values.Text = "Subject:";
             // 
@@ -503,6 +502,7 @@ namespace OutlookMailClone
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.Size = new System.Drawing.Size(50, 25);
             this.kryptonButton2.TabIndex = 1;
+            this.kryptonButton2.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton2.Values.Text = "Cc...";
             // 
             // richTextBoxMessage
@@ -514,7 +514,7 @@ namespace OutlookMailClone
             this.richTextBoxMessage.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBoxMessage.Location = new System.Drawing.Point(3, 95);
             this.richTextBoxMessage.Name = "richTextBoxMessage";
-            this.richTextBoxMessage.Size = new System.Drawing.Size(845, 315);
+            this.richTextBoxMessage.Size = new System.Drawing.Size(849, 280);
             this.richTextBoxMessage.TabIndex = 6;
             this.richTextBoxMessage.Text = "";
             // 
@@ -523,10 +523,10 @@ namespace OutlookMailClone
             this.richTextBoxSubject.AutoSize = true;
             this.richTextBoxSubject.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxSubject.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxSubject.Location = new System.Drawing.Point(62, 65);
+            this.richTextBoxSubject.Location = new System.Drawing.Point(74, 65);
             this.richTextBoxSubject.Multiline = false;
             this.richTextBoxSubject.Name = "richTextBoxSubject";
-            this.richTextBoxSubject.Size = new System.Drawing.Size(786, 24);
+            this.richTextBoxSubject.Size = new System.Drawing.Size(778, 24);
             this.richTextBoxSubject.TabIndex = 5;
             this.richTextBoxSubject.Text = "Outlook Mail Clone";
             // 
@@ -535,10 +535,10 @@ namespace OutlookMailClone
             this.richTextBoxCc.AutoSize = true;
             this.richTextBoxCc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxCc.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxCc.Location = new System.Drawing.Point(62, 34);
+            this.richTextBoxCc.Location = new System.Drawing.Point(74, 34);
             this.richTextBoxCc.Multiline = false;
             this.richTextBoxCc.Name = "richTextBoxCc";
-            this.richTextBoxCc.Size = new System.Drawing.Size(786, 25);
+            this.richTextBoxCc.Size = new System.Drawing.Size(778, 25);
             this.richTextBoxCc.TabIndex = 4;
             this.richTextBoxCc.Text = "";
             // 
@@ -547,10 +547,10 @@ namespace OutlookMailClone
             this.richTextBoxTo.AutoSize = true;
             this.richTextBoxTo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxTo.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxTo.Location = new System.Drawing.Point(62, 3);
+            this.richTextBoxTo.Location = new System.Drawing.Point(74, 3);
             this.richTextBoxTo.Multiline = false;
             this.richTextBoxTo.Name = "richTextBoxTo";
-            this.richTextBoxTo.Size = new System.Drawing.Size(786, 25);
+            this.richTextBoxTo.Size = new System.Drawing.Size(778, 25);
             this.richTextBoxTo.TabIndex = 3;
             this.richTextBoxTo.Text = "friend@megacorp.com";
             // 
@@ -560,6 +560,7 @@ namespace OutlookMailClone
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.Size = new System.Drawing.Size(50, 25);
             this.kryptonButton1.TabIndex = 0;
+            this.kryptonButton1.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton1.Values.Text = "To...";
             // 
             // cmsPaste
@@ -572,6 +573,7 @@ namespace OutlookMailClone
             this.cmsPasteItems.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.pasteToolStripMenuItem,
             this.pasteSpecialToolStripMenuItem});
+            this.cmsPasteItems.Text = "";
             // 
             // pasteToolStripMenuItem
             // 
@@ -598,9 +600,14 @@ namespace OutlookMailClone
             this.deleteToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.QATDeleteSmall;
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Text = "";
+            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // cmsBusinessCards
             // 
@@ -611,6 +618,7 @@ namespace OutlookMailClone
             // 
             this.cmsBusinessCardsItems.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.otherBusinessCardsToolStripMenuItem});
+            this.cmsBusinessCardsItems.Text = "";
             // 
             // otherBusinessCardsToolStripMenuItem
             // 
@@ -625,6 +633,7 @@ namespace OutlookMailClone
             // 
             this.cmsSignaturesItems.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.signaturesToolStripMenuItem});
+            this.cmsSignaturesItems.Text = "";
             // 
             // signaturesToolStripMenuItem
             // 
@@ -649,6 +658,7 @@ namespace OutlookMailClone
             this.clearFlagToolStripMenuItem1,
             this.kryptonContextMenuSeparator1,
             this.flagForRecipientsToolStripMenuItem1});
+            this.cmsFollowUpItems.Text = "";
             // 
             // todayToolStripMenuItem1
             // 
@@ -680,6 +690,10 @@ namespace OutlookMailClone
             this.customToolStripMenuItem1.Image = global::OutlookMailClone.Properties.Resources.OptionsToday;
             this.customToolStripMenuItem1.Text = "Custom...";
             // 
+            // kryptonContextMenuSeparator2
+            // 
+            this.kryptonContextMenuSeparator2.Text = "";
+            // 
             // addReminderToolStripMenuItem1
             // 
             this.addReminderToolStripMenuItem1.Image = global::OutlookMailClone.Properties.Resources.OptionsReminder;
@@ -689,9 +703,21 @@ namespace OutlookMailClone
             // 
             this.clearFlagToolStripMenuItem1.Text = "Clear Flag";
             // 
+            // kryptonContextMenuSeparator1
+            // 
+            this.kryptonContextMenuSeparator1.Text = "";
+            // 
             // flagForRecipientsToolStripMenuItem1
             // 
             this.flagForRecipientsToolStripMenuItem1.Text = "Flag For Recipients...";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Text = "";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Text = "";
             // 
             // cmsSpelling
             // 
@@ -710,6 +736,7 @@ namespace OutlookMailClone
             this.wordCountToolStripMenuItem,
             this.clearFlagToolStripMenuItem,
             this.flagForRecipientsToolStripMenuItem});
+            this.cmsSpellingItems.Text = "";
             // 
             // spellingGrammerToolStripMenuItem
             // 
@@ -754,6 +781,14 @@ namespace OutlookMailClone
             // 
             this.flagForRecipientsToolStripMenuItem.Text = "Flag for Recipients...";
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Text = "";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Text = "";
+            // 
             // cmsFormPublish
             // 
             this.cmsFormPublish.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
@@ -764,6 +799,7 @@ namespace OutlookMailClone
             this.cmsFormPublishItems.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.publishFormToolStripMenuItem,
             this.publishFormAsToolStripMenuItem});
+            this.cmsFormPublishItems.Text = "";
             // 
             // publishFormToolStripMenuItem
             // 
@@ -787,6 +823,7 @@ namespace OutlookMailClone
             this.convertTextToTableToolStripMenuItem,
             this.excelSpreadsheetToolStripMenuItem,
             this.quickTablesToolStripMenuItem});
+            this.cmsTableItems.Text = "";
             // 
             // insertTableToolStripMenuItem
             // 
@@ -822,6 +859,7 @@ namespace OutlookMailClone
             this.cmsTextBoxItems.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.drawTextBoxToolStripMenuItem,
             this.saveSelectionToTextBoxGalleryToolStripMenuItem});
+            this.cmsTextBoxItems.Text = "";
             // 
             // drawTextBoxToolStripMenuItem
             // 
@@ -841,6 +879,7 @@ namespace OutlookMailClone
             // 
             this.cmsDropCapItems.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.dropCapOptionsToolStripMenuItem});
+            this.cmsDropCapItems.Text = "";
             // 
             // dropCapOptionsToolStripMenuItem
             // 
@@ -857,6 +896,7 @@ namespace OutlookMailClone
             this.cmsEquationItems.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.insertNewEquationToolStripMenuItem,
             this.saveTextTToolStripMenuItem});
+            this.cmsEquationItems.Text = "";
             // 
             // insertNewEquationToolStripMenuItem
             // 
@@ -876,6 +916,7 @@ namespace OutlookMailClone
             // 
             this.cmsQuickPartsItems.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.saveSelectionToQuickPartsGalleryToolStripMenuItem});
+            this.cmsQuickPartsItems.Text = "";
             // 
             // saveSelectionToQuickPartsGalleryToolStripMenuItem
             // 
@@ -890,6 +931,7 @@ namespace OutlookMailClone
             // 
             this.cmsSymbolItems.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.moreSymbolsToolStripMenuItem});
+            this.cmsSymbolItems.Text = "";
             // 
             // moreSymbolsToolStripMenuItem
             // 
@@ -905,6 +947,7 @@ namespace OutlookMailClone
             // 
             this.cmsShapesItems.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.newDrawingCanvasToolStripMenuItem});
+            this.cmsShapesItems.Text = "";
             // 
             // newDrawingCanvasToolStripMenuItem
             // 
@@ -923,6 +966,7 @@ namespace OutlookMailClone
             this.moreThemesOnMicrosoftOfficeToolStripMenuItem,
             this.browseForThemesToolStripMenuItem,
             this.saveCurrentThemeToolStripMenuItem});
+            this.cmsThemesItems.Text = "";
             // 
             // resetToThemeFromTemplateToolStripMenuItem
             // 
@@ -954,10 +998,15 @@ namespace OutlookMailClone
             this.kryptonContextMenuSeparator3,
             this.moreColorsToolStripMenuItem,
             this.fillEffectsToolStripMenuItem});
+            this.cmsPageColorItems.Text = "";
             // 
             // noColorToolStripMenuItem
             // 
             this.noColorToolStripMenuItem.Text = "No Color";
+            // 
+            // kryptonContextMenuSeparator3
+            // 
+            this.kryptonContextMenuSeparator3.Text = "";
             // 
             // moreColorsToolStripMenuItem
             // 
@@ -966,6 +1015,10 @@ namespace OutlookMailClone
             // fillEffectsToolStripMenuItem
             // 
             this.fillEffectsToolStripMenuItem.Text = "Fill Effects...";
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Text = "";
             // 
             // cmsUseVotingButtons
             // 
@@ -980,6 +1033,7 @@ namespace OutlookMailClone
             this.yesNoMaybeToolStripMenuItem,
             this.kryptonContextMenuSeparator10,
             this.customToolStripMenuItem2});
+            this.cmsUseVotingButtonsItems.Text = "";
             // 
             // approveRejectToolStripMenuItem
             // 
@@ -993,9 +1047,17 @@ namespace OutlookMailClone
             // 
             this.yesNoMaybeToolStripMenuItem.Text = "Yes; No; Maybe";
             // 
+            // kryptonContextMenuSeparator10
+            // 
+            this.kryptonContextMenuSeparator10.Text = "";
+            // 
             // customToolStripMenuItem2
             // 
             this.customToolStripMenuItem2.Text = "Custom...";
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Text = "";
             // 
             // cmsSaveSentItem
             // 
@@ -1009,11 +1071,16 @@ namespace OutlookMailClone
             this.kryptonContextMenuSeparator4,
             this.useDefaultFolderToolStripMenuItem,
             this.dotNotSaveToolStripMenuItem});
+            this.cmsSaveSentItemItems.Text = "";
             // 
             // otherFolderToolStripMenuItem
             // 
             this.otherFolderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.OtherFolderSmall;
             this.otherFolderToolStripMenuItem.Text = "Other Folder...";
+            // 
+            // kryptonContextMenuSeparator4
+            // 
+            this.kryptonContextMenuSeparator4.Text = "";
             // 
             // useDefaultFolderToolStripMenuItem
             // 
@@ -1024,6 +1091,10 @@ namespace OutlookMailClone
             // dotNotSaveToolStripMenuItem
             // 
             this.dotNotSaveToolStripMenuItem.Text = "Dot Not Save";
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.Text = "";
             // 
             // cmsChangeCase
             // 
@@ -1038,6 +1109,7 @@ namespace OutlookMailClone
             this.uPPERCASEToolStripMenuItem,
             this.capitalizeEachWordToolStripMenuItem,
             this.tOGGLECASEToolStripMenuItem});
+            this.cmsChangeCaseItems.Text = "";
             // 
             // sentenceCaseToolStripMenuItem
             // 
@@ -1071,6 +1143,7 @@ namespace OutlookMailClone
             this.spacingToolStripMenuItem,
             this.doubleSpacingToolStripMenuItem,
             this.paragraphToolStripMenuItem});
+            this.cmsSpacingItems.Text = "";
             // 
             // singleSpacingToolStripMenuItem
             // 
@@ -1120,6 +1193,7 @@ namespace OutlookMailClone
             this.drawTableToolStripMenuItem1,
             this.viewGridlinesToolStripMenuItem,
             this.bordersAndShadingToolStripMenuItem});
+            this.cmsBottomBorderItems.Text = "";
             // 
             // bottomBorderToolStripMenuItem
             // 
@@ -1141,6 +1215,10 @@ namespace OutlookMailClone
             this.rightBorderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.RightBorder;
             this.rightBorderToolStripMenuItem.Text = "Right Border";
             // 
+            // kryptonContextMenuSeparator6
+            // 
+            this.kryptonContextMenuSeparator6.Text = "";
+            // 
             // noBorderToolStripMenuItem
             // 
             this.noBorderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.NoBorder;
@@ -1160,6 +1238,10 @@ namespace OutlookMailClone
             // 
             this.insideBordersToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.InsideBorder;
             this.insideBordersToolStripMenuItem.Text = "Inside Borders";
+            // 
+            // kryptonContextMenuSeparator7
+            // 
+            this.kryptonContextMenuSeparator7.Text = "";
             // 
             // insideHorizontalBorderToolStripMenuItem
             // 
@@ -1181,10 +1263,18 @@ namespace OutlookMailClone
             this.diagonalUpBorderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.DiagonalUpBorder;
             this.diagonalUpBorderToolStripMenuItem.Text = "Diagonal Up Border";
             // 
+            // kryptonContextMenuSeparator8
+            // 
+            this.kryptonContextMenuSeparator8.Text = "";
+            // 
             // horizontalLineToolStripMenuItem
             // 
             this.horizontalLineToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.HorizontalLineSmall;
             this.horizontalLineToolStripMenuItem.Text = "Horizontal Line";
+            // 
+            // kryptonContextMenuSeparator9
+            // 
+            this.kryptonContextMenuSeparator9.Text = "";
             // 
             // drawTableToolStripMenuItem1
             // 
@@ -1201,6 +1291,22 @@ namespace OutlookMailClone
             this.bordersAndShadingToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.BordersAndShading;
             this.bordersAndShadingToolStripMenuItem.Text = "Borders and Shading...";
             // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.Text = "";
+            // 
+            // toolStripMenuItem10
+            // 
+            this.toolStripMenuItem10.Text = "";
+            // 
+            // toolStripMenuItem11
+            // 
+            this.toolStripMenuItem11.Text = "";
+            // 
+            // toolStripMenuItem12
+            // 
+            this.toolStripMenuItem12.Text = "";
+            // 
             // cmsChangeStyles
             // 
             this.cmsChangeStyles.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
@@ -1214,6 +1320,7 @@ namespace OutlookMailClone
             this.fontsToolStripMenuItem,
             this.kryptonContextMenuSeparator5,
             this.setAsDefaultToolStripMenuItem});
+            this.cmsChangeStylesItems.Text = "";
             // 
             // styleSetToolStripMenuItem
             // 
@@ -1230,9 +1337,17 @@ namespace OutlookMailClone
             this.fontsToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.FontsSmall;
             this.fontsToolStripMenuItem.Text = "Fonts";
             // 
+            // kryptonContextMenuSeparator5
+            // 
+            this.kryptonContextMenuSeparator5.Text = "";
+            // 
             // setAsDefaultToolStripMenuItem
             // 
             this.setAsDefaultToolStripMenuItem.Text = "Set as Default";
+            // 
+            // toolStripMenuItem13
+            // 
+            this.toolStripMenuItem13.Text = "";
             // 
             // cmsQuickStyles
             // 
@@ -1245,6 +1360,7 @@ namespace OutlookMailClone
             this.saveSelectionAsNewStyleToolStripMenuItem,
             this.clearFormattingToolStripMenuItem,
             this.applyStylesToolStripMenuItem});
+            this.cmsQuickStylesItems.Text = "";
             // 
             // saveSelectionAsNewStyleToolStripMenuItem
             // 
@@ -1270,6 +1386,7 @@ namespace OutlookMailClone
             this.cmsFindItems.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.findToolStripMenuItem,
             this.goToToolStripMenuItem});
+            this.cmsFindItems.Text = "";
             // 
             // findToolStripMenuItem
             // 
@@ -1291,6 +1408,7 @@ namespace OutlookMailClone
             this.selectAllToolStripMenuItem,
             this.selectObjectsToolStripMenuItem,
             this.selectTextWithSimilarFormattingToolStripMenuItem});
+            this.cmsSelectItems.Text = "";
             // 
             // selectAllToolStripMenuItem
             // 
@@ -1350,7 +1468,7 @@ namespace OutlookMailClone
             this.tabFormatText,
             this.tabDeveloper});
             this.kryptonRibbon.SelectedTab = this.tabOptions;
-            this.kryptonRibbon.Size = new System.Drawing.Size(865, 115);
+            this.kryptonRibbon.Size = new System.Drawing.Size(869, 136);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // buttonSpecHelp
@@ -1400,6 +1518,10 @@ namespace OutlookMailClone
             this.kryptonContextMenuItem2.Image = global::OutlookMailClone.Properties.Resources.AppMenuSendMessage;
             this.kryptonContextMenuItem2.Text = "S&end";
             // 
+            // kryptonContextMenuSeparator11
+            // 
+            this.kryptonContextMenuSeparator11.Text = "";
+            // 
             // kryptonContextMenuItem3
             // 
             this.kryptonContextMenuItem3.Image = global::OutlookMailClone.Properties.Resources.AppMenuSave;
@@ -1420,6 +1542,7 @@ namespace OutlookMailClone
             this.kryptonContextMenuHeading1,
             this.kryptonContextMenuItem10});
             this.kryptonContextMenuItems1.StandardStyle = false;
+            this.kryptonContextMenuItems1.Text = "";
             // 
             // kryptonContextMenuHeading1
             // 
@@ -1442,6 +1565,10 @@ namespace OutlookMailClone
             this.kryptonContextMenuItem6.Image = global::OutlookMailClone.Properties.Resources.AppMenuMove;
             this.kryptonContextMenuItem6.Text = "&Move";
             // 
+            // kryptonContextMenuSeparator13
+            // 
+            this.kryptonContextMenuSeparator13.Text = "";
+            // 
             // kryptonContextMenuItem7
             // 
             this.kryptonContextMenuItem7.Image = global::OutlookMailClone.Properties.Resources.AppMenuPrint;
@@ -1462,6 +1589,7 @@ namespace OutlookMailClone
             this.kryptonContextMenuItem13,
             this.kryptonContextMenuItem14});
             this.kryptonContextMenuItems2.StandardStyle = false;
+            this.kryptonContextMenuItems2.Text = "";
             // 
             // kryptonContextMenuHeading2
             // 
@@ -1492,6 +1620,10 @@ namespace OutlookMailClone
             this.kryptonContextMenuItem14.Image = global::OutlookMailClone.Properties.Resources.AppMenuPrintStyles;
             this.kryptonContextMenuItem14.Text = "Define Print &Styles";
             // 
+            // kryptonContextMenuSeparator15
+            // 
+            this.kryptonContextMenuSeparator15.Text = "";
+            // 
             // kryptonContextMenuItems3
             // 
             this.kryptonContextMenuItems3.ImageColumn = false;
@@ -1499,6 +1631,7 @@ namespace OutlookMailClone
             this.kryptonContextMenuHeading3,
             this.kryptonContextMenuItem15});
             this.kryptonContextMenuItems3.StandardStyle = false;
+            this.kryptonContextMenuItems3.Text = "";
             // 
             // kryptonContextMenuHeading3
             // 
@@ -1509,6 +1642,10 @@ namespace OutlookMailClone
             // 
             this.kryptonContextMenuItem15.Image = global::OutlookMailClone.Properties.Resources.AppMenuMemoStyle;
             this.kryptonContextMenuItem15.Text = "Memo Style";
+            // 
+            // kryptonContextMenuSeparator12
+            // 
+            this.kryptonContextMenuSeparator12.Text = "";
             // 
             // kryptonContextMenuItem8
             // 
@@ -2315,11 +2452,12 @@ namespace OutlookMailClone
             // 
             // kryptonRibbonGroupThemeComboBox1
             // 
+            this.kryptonRibbonGroupThemeComboBox1.DefaultPalette = Krypton.Toolkit.PaletteMode.Office2007Black;
             this.kryptonRibbonGroupThemeComboBox1.DisplayMember = "Key";
             this.kryptonRibbonGroupThemeComboBox1.DropDownHeight = 300;
             this.kryptonRibbonGroupThemeComboBox1.DropDownWidth = 350;
             this.kryptonRibbonGroupThemeComboBox1.FormattingEnabled = false;
-            this.kryptonRibbonGroupThemeComboBox1.ItemHeight = 15;
+            this.kryptonRibbonGroupThemeComboBox1.ItemHeight = 20;
             this.kryptonRibbonGroupThemeComboBox1.ValueMember = "Value";
             // 
             // groupFields
@@ -2379,6 +2517,7 @@ namespace OutlookMailClone
             this.formatPlainText.KeyTip = "L";
             this.formatPlainText.TextLine1 = "Plain";
             this.formatPlainText.TextLine2 = "Text";
+            this.formatPlainText.Click += new System.EventHandler(this.formatPlainText_Click);
             // 
             // formatHTML
             // 
@@ -2388,6 +2527,7 @@ namespace OutlookMailClone
             this.formatHTML.ImageSmall = global::OutlookMailClone.Properties.Resources.HTMLSmall;
             this.formatHTML.KeyTip = "H";
             this.formatHTML.TextLine1 = "HTML";
+            this.formatHTML.Click += new System.EventHandler(this.formatHTML_Click);
             // 
             // formatRichText
             // 
@@ -2397,6 +2537,7 @@ namespace OutlookMailClone
             this.formatRichText.KeyTip = "R";
             this.formatRichText.TextLine1 = "Rich";
             this.formatRichText.TextLine2 = "Text";
+            this.formatRichText.Click += new System.EventHandler(this.formatRichText_Click);
             // 
             // groupTracking
             // 
@@ -2999,15 +3140,19 @@ namespace OutlookMailClone
             this.addReminderToolStripMenuItem.Image = global::OutlookMailClone.Properties.Resources.OptionsReminder;
             this.addReminderToolStripMenuItem.Text = "Add Reminder...";
             // 
+            // kryptonManager1
+            // 
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Black;
+            // 
             // kryptonRibbonGroupCustomControl1
             // 
             this.kryptonRibbonGroupCustomControl1.CustomControl = null;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 542);
+            this.ClientSize = new System.Drawing.Size(869, 528);
             this.Controls.Add(this.panelFill);
             this.Controls.Add(this.kryptonRibbon);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

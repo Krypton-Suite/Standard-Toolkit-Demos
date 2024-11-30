@@ -11,9 +11,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonLinkLabelExamples
@@ -28,7 +29,7 @@ namespace KryptonLinkLabelExamples
 
         private void kryptonLabel_MouseDown(object sender, MouseEventArgs e) =>
             // Setup the property grid to edit this label
-            propertyGrid.SelectedObject = new KryptonLinkLabelProxy(sender as KryptonLinkLabel);
+            propertyGrid.SelectedObject = new KryptonLinkLabelProxy((KryptonLinkLabel)sender);
 
         private void buttonClose_Click(object sender, EventArgs e) => Close();
     }

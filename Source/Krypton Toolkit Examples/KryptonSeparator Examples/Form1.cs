@@ -11,9 +11,10 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
+
 using Krypton.Toolkit;
 
 namespace KryptonSeparatorExamples
@@ -24,7 +25,7 @@ namespace KryptonSeparatorExamples
 
         private void Form1_Load(object sender, EventArgs e) => propertyGrid.SelectedObject = new KryptonSeparatorProxy(kryptonSeparator1);
 
-        private void separator_MouseDown(object sender, MouseEventArgs e) => propertyGrid.SelectedObject = new KryptonSeparatorProxy(sender as KryptonSeparator);
+        private void separator_MouseDown(object sender, MouseEventArgs e) => propertyGrid.SelectedObject = new KryptonSeparatorProxy((KryptonSeparator)sender);
 
         private void separator_MoveRect(object sender, SplitterMoveRectMenuArgs e)
         {
@@ -34,33 +35,27 @@ namespace KryptonSeparatorExamples
                                        e.MoveRect.Width + 100,
                                        e.MoveRect.Height + 100);
 
-            Output("MoveRect " + e.MoveRect.ToString());
+            Output($"MoveRect {e.MoveRect}");
         }
 
         private void separator_Moving(object sender, SplitterCancelEventArgs e) =>
-            Output("Moving" +
-                   " SplitX:" + e.SplitX.ToString() +
-                   " SplitY:" + e.SplitY.ToString() +
-                   " MouseX:" + e.MouseCursorX.ToString() +
-                   " MouseY:" + e.MouseCursorY.ToString());
+            Output($"Moving SplitX:{e.SplitX} SplitY:{e.SplitY} MouseX:{e.MouseCursorX} MouseY:{e.MouseCursorY}");
 
         private void separator_Moved(object sender, SplitterEventArgs e) =>
-            Output("Moved" +
-                   " SplitX:" + e.SplitX.ToString() +
-                   " SplitY:" + e.SplitY.ToString());
+            Output($"Moved SplitX:{e.SplitX} SplitY:{e.SplitY}");
 
         private void separator_NotMoved(object sender, EventArgs e) => Output("Not Moved");
 
         private void Output(string str)
         {
             string newText = richTextBox1.Text;
-            
+
             if (newText.Length > 10000)
             {
                 newText = string.Empty;
             }
 
-            richTextBox1.Text = str + "\n" + newText;
+            richTextBox1.Text = $"{str}\n{newText}";
         }
 
         private void office2010Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
@@ -121,11 +116,11 @@ namespace KryptonSeparatorExamples
 
         [Category("Visuals")]
         [Description("Overrides for defining hot tracking separator appearance.")]
-        public PaletteSeparatorPadding StateTracking => _separator.StateTracking;
+        public PaletteSeparatorPadding StateTracking => _separator.StateTracking!;
 
         [Category("Visuals")]
         [Description("Overrides for defining pressed separator appearance.")]
-        public PaletteSeparatorPadding StatePressed => _separator.StatePressed;
+        public PaletteSeparatorPadding StatePressed => _separator.StatePressed!;
 
         [Category("Layout")]
         [Description("Determines the increment used for moving.")]

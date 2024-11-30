@@ -1,4 +1,9 @@
-﻿using System;
+﻿// *****************************************************************************
+// BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2021 - 2024. All rights reserved.
+// *****************************************************************************
+
+using System;
 using System.Globalization;
 using System.Windows.Forms;
 
@@ -14,7 +19,6 @@ namespace KryptonFontDialog_Example_2019
         {
             InitializeComponent();
             Icon = Resources.Krypton;
-
         }
 
         private void Palette2010Blue_CheckedChanged(object sender, EventArgs e) => kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
@@ -32,8 +36,7 @@ namespace KryptonFontDialog_Example_2019
         private int[] customColors;
         private void ButtonShowFontDialog_Click(object sender, EventArgs e)
         {
-            var kfd = new Krypton.Toolkit.KryptonColorDialog 
-            {
+            var kfd = new Krypton.Toolkit.KryptonColorDialog {
                 AllowFullOpen = chkAllowFullOpen.Checked,
                 ShowHelp = chkShowHelp.Checked,
                 AnyColor = chkAnyColor.Checked,
@@ -56,10 +59,7 @@ namespace KryptonFontDialog_Example_2019
         {
         }
 
-        private void kryptonTrackBar1_ValueChanged(object sender, EventArgs e)
-        {
-            kryptonLabel1.Text = kryptonTrackBar1.Value.ToString(CultureInfo.InvariantCulture);
-            //kryptonTrackBar1.ToolTipManager
-        }
+        private void kryptonTrackBar1_ValueChanged(object sender, EventArgs e) => kryptonLabel1.Text = kryptonTrackBar1.Value.ToString(CultureInfo.InvariantCulture);
+        //kryptonTrackBar1.ToolTipManager
     }
 }
