@@ -28,7 +28,7 @@ namespace KryptonExplorer
     {
         #region Variables
 
-        private Version _currentVersion = new(90, DateTime.Now.Year-2000, DateTime.Now.Month, DateTime.Now.DayOfYear);
+        private Version _currentVersion = new(95, DateTime.Now.Year-2000, DateTime.Now.Month, DateTime.Now.DayOfYear);
 
         private Settings _settings = new();
 
@@ -44,7 +44,20 @@ namespace KryptonExplorer
             kryptonNavigatorToolkit.SelectedIndex = 0;
         }
 
-        #region Links
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            FileVersionInfo fvi =
+                FileVersionInfo.GetVersionInfo(
+                    $@"{Path.GetDirectoryName(Application.ExecutablePath)}\Krypton.Toolkit.dll");
+
+            kcmbTheme.SelectedIndex = _settings.ThemeSelectedIndex;
+
+            //tsslBuildDate.Text = $"Build Date: {GeneralToolkitUtilities.GetLinkerTimestampUtc(Assembly.GetExecutingAssembly())} ";
+
+            tsslBuildDate.Text = $@"Build Date: {_settings.BuildDate.ToShortDateString()}";
+
+            tslVersion.Text = $@"Krypton Explorer Version: {_currentVersion} - Toolkit Version: {fvi.FileVersion}";
+        }
 
         private void linkKryptonBorderEdge_LinkClicked(object sender, EventArgs e) =>
             LaunchApplication(@"Krypton Border Edge Examples");
@@ -148,145 +161,61 @@ namespace KryptonExplorer
         private void linkKryptonDateTimePicker_LinkClicked(object sender, EventArgs e) =>
             LaunchApplication(@"Krypton DateTimePicker Examples");
 
-        private void linkKryptonMonthCalendar_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Krypton Month Calendar Examples");
-        }
+        private void linkKryptonMonthCalendar_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Month Calendar Examples");
 
-        private void linkKryptonInputBox_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Krypton InputBox Examples");
-        }
+        private void linkKryptonInputBox_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton InputBox Examples");
 
-        private void linkKryptonMessageBox_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Krypton MessageBox Examples");
-        }
+        private void linkKryptonMessageBox_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton MessageBox Examples");
 
-        private void linkKryptonTaskDialog_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Krypton TaskDialog Examples");
-        }
+        private void linkKryptonTaskDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton TaskDialog Examples");
 
-        private void linkKryptonTreeView_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Krypton TreeView Examples");
-        }
+        private void linkKryptonTreeView_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton TreeView Examples");
 
-        private void linkInputForm_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Input Form Examples");
-        }
+        private void linkInputForm_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Input Form Examples");
 
-        private void linkThreePaneApplicationBasic_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Three Pane Application Basic");
-        }
+        private void linkThreePaneApplicationBasic_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Three Pane Application Basic");
 
-        private void linkThreePaneApplicationExtended_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Three Pane Application Extended");
-        }
+        private void linkThreePaneApplicationExtended_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Three Pane Application Extended");
 
-        private void linkMDIApplication_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"MDI Application");
-        }
+        private void linkMDIApplication_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"MDI Application");
 
-        private void linkCustomControlUsingPalettes_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Custom Control Using Palettes");
-        }
+        private void linkCustomControlUsingPalettes_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Custom Control Using Palettes");
 
-        private void linkCustomControlUsingRenderers_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Custom Control Using Renderers");
-        }
+        private void linkCustomControlUsingRenderers_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Custom Control Using Renderers");
 
-        private void linkExpandingSplitters_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Expanding Header Groups Splitters Examples");
-        }
+        private void linkExpandingSplitters_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Expanding Header Groups Splitters Examples");
 
-        private void linkExpandingDockStyle_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Expanding Header Groups DockStyle Examples");
-        }
+        private void linkExpandingDockStyle_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Expanding Header Groups DockStyle Examples");
 
-        private void linkExpandingHeaderStack_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Expanding Header Groups Stack Examples");
-        }
+        private void linkExpandingHeaderStack_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Expanding Header Groups Stack Examples");
 
-        private void linkChildControlStack_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Child Control Stack");
-        }
+        private void linkChildControlStack_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Child Control Stack");
 
-        private void linkLabelButtonSpecPlayground_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Button Spec Playground");
-        }
+        private void linkLabelButtonSpecPlayground_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Button Spec Playground");
 
-        private void linkNavigatorModes_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Navigator Modes");
-        }
+        private void linkNavigatorModes_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Navigator Modes");
 
-        private void linkNavigatorPalettes_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Navigator Palettes");
-        }
+        private void linkNavigatorPalettes_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Navigator Palettes");
 
-        private void linkOrientationAndAlignment_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Orientation Plus Alignment");
-        }
+        private void linkOrientationAndAlignment_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Orientation Plus Alignment");
 
-        private void linkSinglelineAndMultiline_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Singleline Plus Multiline");
-        }
+        private void linkSinglelineAndMultiline_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Singleline Plus Multiline");
 
-        private void linkTabBorderStyles_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Tab Border Styles");
-        }
+        private void linkTabBorderStyles_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Tab Border Styles");
 
-        private void linkNavigatorPopupPages_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Popup Pages");
-        }
+        private void linkNavigatorPopupPages_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Popup Pages");
 
-        private void linkNavigatorPerTabButtons_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Per Tab Buttons");
-        }
+        private void linkNavigatorPerTabButtons_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Per Tab Buttons");
 
-        private void linkNavigatorTooltips_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Navigator Tool Tips");
-        }
+        private void linkNavigatorTooltips_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Navigator Tool Tips");
 
-        private void linkNavigatorContextMenus_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Navigator Context Menus");
-        }
+        private void linkNavigatorContextMenus_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Navigator Context Menus");
 
-        private void linkNavigatorPlayground_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Navigator Playground");
-        }
+        private void linkNavigatorPlayground_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Navigator Playground");
 
-        private void linkContextualTabs_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Contextual Tabs");
-        }
+        private void linkContextualTabs_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Contextual Tabs");
 
-        private void linkKeyTipsTabs_LinkClicked(object sender, EventArgs e)
-        {
-            LaunchApplication(@"Key Tips And Keyboard Access");
-        }
+        private void linkKeyTipsTabs_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Key Tips And Keyboard Access");
 
         private void labelAutoShrinkingGroups_LinkClicked(object sender, EventArgs e) =>
             LaunchApplication(@"Auto Shrinking Groups");
@@ -372,32 +301,7 @@ namespace KryptonExplorer
         private void linkDockingCustomized_LinkClicked(object sender, EventArgs e) =>
             LaunchApplication(@"Docking Customized");
 
-        private void linkPaletteDesigner_LinkClicked(object sender, EventArgs e) => LaunchPaletteDesignerApplication();
-
-        private void linkPaletteUpgradeTool_LinkClicked(object sender, EventArgs e) =>
-            LaunchPaletteUpgradeToolApplication();
-
-        #endregion
-
         private void kryptonButtonClose_Click(object sender, EventArgs e) => Close();
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            FileVersionInfo fvi =
-                FileVersionInfo.GetVersionInfo(
-                    $@"{Path.GetDirectoryName(Application.ExecutablePath)}\Krypton.Toolkit.dll");
-
-            kcmbTheme.SelectedIndex = _settings.ThemeSelectedIndex;
-
-            //tsslBuildDate.Text = $"Build Date: {GeneralToolkitUtilities.GetLinkerTimestampUtc(Assembly.GetExecutingAssembly())} ";
-
-            tsslBuildDate.Text = $@"Build Date: {_settings.BuildDate.ToShortDateString()}";
-
-            tslVersion.Text = $@"Krypton Explorer Version: {_currentVersion} - Toolkit Version: {fvi.FileVersion}";
-        }
-
-        private void kbtnOpenApplicationPath_Click(object sender, EventArgs e) =>
-            GlobalToolkitUtilities.LaunchProcess(Application.ExecutablePath); //@"explorer.exe", @"\{Application.ExecutablePath}");
 
         private void kllKryptonScrollBars_LinkClicked(object sender, EventArgs e) =>
             LaunchApplication(@"Krypton Scrollbar Examples");
@@ -480,58 +384,6 @@ namespace KryptonExplorer
             }
         }
 
-        private void kcmbTheme_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            _settings.ThemeSelectedIndex = kcmbTheme.SelectedIndex;
-
-            _settings.Save();
-        }
-
-        private void kbtnRestoreTheme_Click(object sender, EventArgs e)
-        {
-            kcmbTheme.SelectedIndex = 33;
-
-            _settings.HelpFileLocation = @"";
-
-            _settings.Save();
-        }
-
-        private void kbtnKryptonToolkitPackage_Click(object sender, EventArgs e) =>
-            Process.Start(@"https://www.nuget.org/profiles/Krypton_Suite");
-
-        private void kbtnViewLatestReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/Documents/Help/Changelog.md");
-
-        private void kbtnViewLatestCanaryReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/canary/Documents/Help/Changelog.md");
-
-        private void kbtnViewLatestNightlyReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/alpha/Documents/Help/Changelog.md");
-
-        private void kbtnDownloadLatestDocumentation_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog sfd = new()
-            {
-                Title = @"Download documentation installer to:",
-                Filter = @"Windows Executables|*.exe",
-                FileName = @"Standard Toolkit Documentation Installer"
-            };
-
-            if (sfd.ShowDialog() == DialogResult.OK)
-            {
-                WebClient client = new();
-
-                _documentationDownloadLocation = Path.GetFullPath(sfd.FileName);
-
-                tspbDownloadStatus.Visible = true;
-
-                client.DownloadFile(@"https://tinyurl.com/mvksw89c", _documentationDownloadLocation);
-
-                tspbDownloadStatus.Text = $@"Downloading: {Path.GetFileName(_documentationDownloadLocation)}";
-
-                client.DownloadProgressChanged += DownloadProgressChanged;
-
-                client.DownloadFileCompleted += DownloadFileCompleted;
-            }
-        }
-
         private void DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
         {
             try
@@ -557,6 +409,44 @@ namespace KryptonExplorer
 
             tspbDownloadStatus.Value = (int)e.BytesReceived / 100;
         }
+
+        private void kllPropertyGrid_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Property Grid Example");
+
+        private void kllblIntegratedToolbar_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Integrated Toolbar Example");
+
+        private void kllProgressBar_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton ProgressBar Examples");
+
+        private void kllKryptonThemeSelector_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Theme Selector");
+
+        private void linkKryptonColorDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Color Dialog Example");
+
+        private void linkKryptonFolderBrowser_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"KryptonFolderBrowserDialog Example");
+
+        private void linkKryptonFontDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Font Dialog Example");
+
+        private void linkKryptonListView_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton ListView Examples");
+
+        private void linkKryptonOpenFileDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"KryptonOpenFileDialog Example");
+
+        private void linkKryptonPrintDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Print Dialog Example");
+
+        private void linkKryptonSaveFileDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"KryptonSaveFileDialog Example");
+
+        private void linkKryptonStringCollector_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton String Collection Editor Examples");
+
+        private void linkKryptonTableLayout_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton TableLayoutPanel Examples");
+
+        private void klblKryptonAboutToolkit_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton About Toolkit Example");
+
+        private void linkKryptonCommandLinkButton_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Command Link Button Examples");
+
+        private void linkPaletteDesigner_LinkClicked(object sender, EventArgs e) => LaunchPaletteDesignerApplication();
+
+        private void linkPaletteUpgradeTool_LinkClicked(object sender, EventArgs e) =>
+            LaunchPaletteUpgradeToolApplication();
+
+        private void kbtnOpenApplicationPath_Click(object sender, EventArgs e) =>
+            GlobalToolkitUtilities.LaunchProcess(Application.ExecutablePath); //@"explorer.exe", @"\{Application.ExecutablePath}");
 
         private async void bgwDownloadDocumentation_DoWork(object sender, DoWorkEventArgs e)
         {
@@ -624,60 +514,58 @@ namespace KryptonExplorer
             }
         }
 
-        private void kllPropertyGrid_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Property Grid Example");
-
-        private void kllblIntegratedToolbar_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Integrated Toolbar Example");
-
-        private void kllProgressBar_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton ProgressBar Examples");
-
-        private void kllKryptonThemeSelector_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Theme Selector");
-
-
-        private void linkKryptonColorDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Color Dialog Example");
-
-        private void linkKryptonFolderBrowser_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"KryptonFolderBrowserDialog Example");
-
-        private void linkKryptonFontDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Font Dialog Example");
-
-        private void linkKryptonListView_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton ListView Examples");
-
-        private void linkKryptonOpenFileDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"KryptonOpenFileDialog Example");
-
-        private void linkKryptonPrintDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Print Dialog Example");
-
-        private void linkKryptonSaveFileDialog_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"KryptonSaveFileDialog Example");
-
-        private void linkKryptonStringCollector_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton String Collection Editor Examples");
-
-        private void linkKryptonTableLayout_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton TableLayoutPanel Examples");
-
-        private void klblKryptonAboutToolkit_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton About Toolkit Example");
-
-        private void linkKryptonCommandLinkButton_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Command Link Button Examples");
-
-        private void linkWorkspaceMemoEditor_LinkClicked(object sender, EventArgs e)
+        private void kcmbTheme_SelectedIndexChanged(object sender, EventArgs e)
         {
+            _settings.ThemeSelectedIndex = kcmbTheme.SelectedIndex;
 
+            _settings.Save();
         }
 
-        private void linkNavigatorModes_LinkClicked_1(object sender, EventArgs e)
+        private void kbtnRestoreTheme_Click(object sender, EventArgs e)
         {
+            kcmbTheme.SelectedIndex = 33;
 
+            _settings.HelpFileLocation = @"";
+
+            _settings.Save();
         }
 
-        private void linkDateTimePicker_LinkClicked(object sender, EventArgs e)
+        private void kbtnKryptonToolkitPackage_Click(object sender, EventArgs e) =>
+            Process.Start(@"https://www.nuget.org/profiles/Krypton_Suite");
+
+        private void kbtnViewLatestReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/Documents/Changelog/Changelog.md");
+
+        private void kbtnViewLatestCanaryReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/canary/Documents/Changelog/Changelog.md");
+
+        private void kbtnViewLatestNightlyReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/alpha/Documents/Changelog/Changelog.md");
+
+        private void kbtnDownloadLatestDocumentation_Click(object sender, EventArgs e)
         {
+            SaveFileDialog sfd = new()
+            {
+                Title = @"Download documentation installer to:",
+                Filter = @"Windows Executables|*.exe",
+                FileName = @"Standard Toolkit Documentation Installer"
+            };
 
-        }
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                WebClient client = new();
 
-        private void linkExpandingHeaderGroupsSplitters_LinkClicked(object sender, EventArgs e)
-        {
+                _documentationDownloadLocation = Path.GetFullPath(sfd.FileName);
 
-        }
+                tspbDownloadStatus.Visible = true;
 
-        private void linkExpandingHeaderGroupsDockStyle_LinkClicked(object sender, EventArgs e)
-        {
+                client.DownloadFile(@"https://tinyurl.com/mvksw89c", _documentationDownloadLocation);
 
+                tspbDownloadStatus.Text = $@"Downloading: {Path.GetFileName(_documentationDownloadLocation)}";
+
+                client.DownloadProgressChanged += DownloadProgressChanged;
+
+                client.DownloadFileCompleted += DownloadFileCompleted;
+            }
         }
     }
+
+
 }
