@@ -79,8 +79,8 @@ namespace DockingCustomized
 
             // Add initial docking pages
             kryptonDockingManager.AddToWorkspace("Workspace", new[] { NewDocument(), NewDocument() });
-            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Right, new[] { NewPropertyGrid(), NewInput(), /*NewPropertyGrid(), */NewInput() });
-            //kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Bottom, new[] { NewInput(), NewPropertyGrid(), NewInput(), NewPropertyGrid() });
+            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Right, new[] { NewPropertyGrid(), NewInput(), NewPropertyGrid(), NewInput() });
+            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Bottom, new[] { NewInput(), NewPropertyGrid(), NewInput(), NewPropertyGrid() });
 
             UpdateModeButtons();
         }
