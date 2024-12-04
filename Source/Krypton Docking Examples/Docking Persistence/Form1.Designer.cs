@@ -88,11 +88,10 @@
             this.kryptonRibbon.RibbonFileAppButton.AppButtonImage = null;
             this.kryptonRibbon.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
-            this.kryptonRibbon.RibbonFileAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabPersistence});
             this.kryptonRibbon.SelectedTab = this.tabPersistence;
-            this.kryptonRibbon.Size = new System.Drawing.Size(1049, 136);
+            this.kryptonRibbon.Size = new System.Drawing.Size(1053, 136);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // kryptonContextMenuItem1
@@ -266,10 +265,10 @@
             this.kryptonPanel.Controls.Add(this.kryptonDockableWorkspace);
             this.kryptonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel.Location = new System.Drawing.Point(0, 136);
-            this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel.Name = "kryptonPanel";
-            this.kryptonPanel.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonPanel.Size = new System.Drawing.Size(1049, 544);
+            this.kryptonPanel.Padding = new System.Windows.Forms.Padding(4);
+            this.kryptonPanel.Size = new System.Drawing.Size(1053, 530);
             this.kryptonPanel.TabIndex = 1;
             // 
             // kryptonDockableWorkspace
@@ -281,7 +280,7 @@
             this.kryptonDockableWorkspace.ContainerBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonDockableWorkspace.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonDockableWorkspace.Location = new System.Drawing.Point(4, 4);
-            this.kryptonDockableWorkspace.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonDockableWorkspace.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonDockableWorkspace.Name = "kryptonDockableWorkspace";
             // 
             // 
@@ -290,7 +289,7 @@
             this.kryptonDockableWorkspace.Root.WorkspaceControl = this.kryptonDockableWorkspace;
             this.kryptonDockableWorkspace.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.LowProfile;
             this.kryptonDockableWorkspace.ShowMaximizeButton = false;
-            this.kryptonDockableWorkspace.Size = new System.Drawing.Size(1041, 536);
+            this.kryptonDockableWorkspace.Size = new System.Drawing.Size(1045, 522);
             this.kryptonDockableWorkspace.SplitterWidth = 5;
             this.kryptonDockableWorkspace.TabIndex = 0;
             this.kryptonDockableWorkspace.TabStop = true;
@@ -316,12 +315,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1049, 680);
+            this.ClientSize = new System.Drawing.Size(1053, 666);
             this.CloseBox = false;
             this.Controls.Add(this.kryptonPanel);
             this.Controls.Add(this.kryptonRibbon);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "Docking Persistence";

@@ -247,5 +247,10 @@ namespace DockingCustomized
         }
 
         private Color RandomColor() => Color.FromArgb(_random.Next(255), _random.Next(255), _random.Next(255));
+
+        private void kryptonContextMenuItem1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
