@@ -237,10 +237,6 @@ namespace KryptonColorButtonExamples
         public ColorButtonValues Values => _colorButton.Values;
 
         [Category("Visuals")]
-        [Description("Image value overrides.")]
-        public DropDownButtonImages Images => _colorButton.Images;
-
-        [Category("Visuals")]
         [Description("Overrides for defining common button appearance that other states can override.")]
         public PaletteTripleRedirect StateCommon => _colorButton.StateCommon;
 

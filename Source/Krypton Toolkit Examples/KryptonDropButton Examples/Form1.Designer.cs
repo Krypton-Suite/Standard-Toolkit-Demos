@@ -33,13 +33,14 @@ namespace KryptonDropButtonExamples
             this.groupProperties = new System.Windows.Forms.GroupBox();
             this.propertyGrid = new System.Windows.Forms.PropertyGrid();
             this.groupSplitter = new System.Windows.Forms.GroupBox();
-            this.splitterArrowLeft = new Krypton.Toolkit.KryptonDropButton();
+            this.kryptonDropButton2 = new Krypton.Toolkit.KryptonDropButton();
             this.kcmDropDown = new Krypton.Toolkit.KryptonContextMenu();
             this.kryptonContextMenuHeading1 = new Krypton.Toolkit.KryptonContextMenuHeading();
             this.kryptonContextMenuItems1 = new Krypton.Toolkit.KryptonContextMenuItems();
             this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonContextMenuItem2 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonContextMenuItem3 = new Krypton.Toolkit.KryptonContextMenuItem();
+            this.splitterArrowLeft = new Krypton.Toolkit.KryptonDropButton();
             this.splitterArrowRight = new Krypton.Toolkit.KryptonDropButton();
             this.splitterArrowUp = new Krypton.Toolkit.KryptonDropButton();
             this.splitterArrowDown = new Krypton.Toolkit.KryptonDropButton();
@@ -57,17 +58,16 @@ namespace KryptonDropButtonExamples
             this.dropPosLeft = new Krypton.Toolkit.KryptonDropButton();
             this.dropPosRight = new Krypton.Toolkit.KryptonDropButton();
             this.groupCustom = new System.Windows.Forms.GroupBox();
-            this.kryptonDropButton1 = new Krypton.Toolkit.KryptonDropButton();
+            this.kryptonDropButton3 = new Krypton.Toolkit.KryptonDropButton();
             this.kcmCustom = new Krypton.Toolkit.KryptonContextMenu();
             this.kryptonContextMenuHeading5 = new Krypton.Toolkit.KryptonContextMenuHeading();
             this.kryptonContextMenuItems5 = new Krypton.Toolkit.KryptonContextMenuItems();
             this.kryptonContextMenuItem13 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonContextMenuItem14 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonContextMenuItem15 = new Krypton.Toolkit.KryptonContextMenuItem();
+            this.kryptonDropButton1 = new Krypton.Toolkit.KryptonDropButton();
             this.dropCustom = new Krypton.Toolkit.KryptonDropButton();
             this.splitterCustom = new Krypton.Toolkit.KryptonDropButton();
-            this.kryptonDropButton2 = new Krypton.Toolkit.KryptonDropButton();
-            this.kryptonDropButton3 = new Krypton.Toolkit.KryptonDropButton();
             this.groupProperties.SuspendLayout();
             this.groupSplitter.SuspendLayout();
             this.groupDropDown.SuspendLayout();
@@ -124,20 +124,21 @@ namespace KryptonDropButtonExamples
             this.groupSplitter.TabStop = false;
             this.groupSplitter.Text = "Splitter";
             // 
-            // splitterArrowLeft
+            // kryptonDropButton2
             // 
-            this.splitterArrowLeft.DropDownOrientation = Krypton.Toolkit.VisualOrientation.Left;
-            this.splitterArrowLeft.KryptonContextMenu = this.kcmDropDown;
-            this.splitterArrowLeft.Location = new System.Drawing.Point(154, 92);
-            this.splitterArrowLeft.Name = "splitterArrowLeft";
-            this.splitterArrowLeft.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.splitterArrowLeft.Size = new System.Drawing.Size(115, 25);
-            this.splitterArrowLeft.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.splitterArrowLeft.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.splitterArrowLeft.TabIndex = 6;
-            this.splitterArrowLeft.Values.Image = ((System.Drawing.Image)(resources.GetObject("splitterArrowLeft.Values.Image")));
-            this.splitterArrowLeft.Values.Text = "Arrow Left";
-            this.splitterArrowLeft.Enter += new System.EventHandler(this.dropButtonEnter);
+            this.kryptonDropButton2.DropDownOrientation = Krypton.Toolkit.VisualOrientation.Right;
+            this.kryptonDropButton2.Enabled = false;
+            this.kryptonDropButton2.KryptonContextMenu = this.kcmDropDown;
+            this.kryptonDropButton2.Location = new System.Drawing.Point(151, 154);
+            this.kryptonDropButton2.Name = "kryptonDropButton2";
+            this.kryptonDropButton2.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
+            this.kryptonDropButton2.Size = new System.Drawing.Size(137, 31);
+            this.kryptonDropButton2.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonDropButton2.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonDropButton2.TabIndex = 8;
+            this.kryptonDropButton2.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.kryptonDropButton2.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonDropButton2.Values.Image")));
+            this.kryptonDropButton2.Values.Text = "Arrow Right";
             // 
             // kcmDropDown
             // 
@@ -149,6 +150,7 @@ namespace KryptonDropButtonExamples
             // kryptonContextMenuHeading1
             // 
             this.kryptonContextMenuHeading1.ExtraText = "";
+            this.kryptonContextMenuHeading1.Text = "";
             // 
             // kryptonContextMenuItems1
             // 
@@ -156,6 +158,7 @@ namespace KryptonDropButtonExamples
             this.kryptonContextMenuItem1,
             this.kryptonContextMenuItem2,
             this.kryptonContextMenuItem3});
+            this.kryptonContextMenuItems1.Text = "";
             // 
             // kryptonContextMenuItem1
             // 
@@ -173,17 +176,34 @@ namespace KryptonDropButtonExamples
             this.kryptonContextMenuItem3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.kryptonContextMenuItem3.Text = "Menu Item 3";
             // 
+            // splitterArrowLeft
+            // 
+            this.splitterArrowLeft.DropDownOrientation = Krypton.Toolkit.VisualOrientation.Left;
+            this.splitterArrowLeft.KryptonContextMenu = this.kcmDropDown;
+            this.splitterArrowLeft.Location = new System.Drawing.Point(151, 92);
+            this.splitterArrowLeft.Name = "splitterArrowLeft";
+            this.splitterArrowLeft.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
+            this.splitterArrowLeft.Size = new System.Drawing.Size(137, 31);
+            this.splitterArrowLeft.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.splitterArrowLeft.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.splitterArrowLeft.TabIndex = 6;
+            this.splitterArrowLeft.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.splitterArrowLeft.Values.Image = ((System.Drawing.Image)(resources.GetObject("splitterArrowLeft.Values.Image")));
+            this.splitterArrowLeft.Values.Text = "Arrow Left";
+            this.splitterArrowLeft.Enter += new System.EventHandler(this.dropButtonEnter);
+            // 
             // splitterArrowRight
             // 
             this.splitterArrowRight.DropDownOrientation = Krypton.Toolkit.VisualOrientation.Right;
             this.splitterArrowRight.KryptonContextMenu = this.kcmDropDown;
-            this.splitterArrowRight.Location = new System.Drawing.Point(154, 30);
+            this.splitterArrowRight.Location = new System.Drawing.Point(151, 30);
             this.splitterArrowRight.Name = "splitterArrowRight";
             this.splitterArrowRight.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.splitterArrowRight.Size = new System.Drawing.Size(115, 25);
+            this.splitterArrowRight.Size = new System.Drawing.Size(137, 31);
             this.splitterArrowRight.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.splitterArrowRight.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.splitterArrowRight.TabIndex = 4;
+            this.splitterArrowRight.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.splitterArrowRight.Values.Image = ((System.Drawing.Image)(resources.GetObject("splitterArrowRight.Values.Image")));
             this.splitterArrowRight.Values.Text = "Arrow Right";
             this.splitterArrowRight.Enter += new System.EventHandler(this.dropButtonEnter);
@@ -192,13 +212,14 @@ namespace KryptonDropButtonExamples
             // 
             this.splitterArrowUp.DropDownOrientation = Krypton.Toolkit.VisualOrientation.Top;
             this.splitterArrowUp.KryptonContextMenu = this.kcmDropDown;
-            this.splitterArrowUp.Location = new System.Drawing.Point(154, 123);
+            this.splitterArrowUp.Location = new System.Drawing.Point(151, 123);
             this.splitterArrowUp.Name = "splitterArrowUp";
             this.splitterArrowUp.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.splitterArrowUp.Size = new System.Drawing.Size(115, 25);
+            this.splitterArrowUp.Size = new System.Drawing.Size(137, 31);
             this.splitterArrowUp.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.splitterArrowUp.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.splitterArrowUp.TabIndex = 7;
+            this.splitterArrowUp.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.splitterArrowUp.Values.Image = ((System.Drawing.Image)(resources.GetObject("splitterArrowUp.Values.Image")));
             this.splitterArrowUp.Values.Text = "Arrow Up";
             this.splitterArrowUp.Enter += new System.EventHandler(this.dropButtonEnter);
@@ -206,13 +227,14 @@ namespace KryptonDropButtonExamples
             // splitterArrowDown
             // 
             this.splitterArrowDown.KryptonContextMenu = this.kcmDropDown;
-            this.splitterArrowDown.Location = new System.Drawing.Point(154, 61);
+            this.splitterArrowDown.Location = new System.Drawing.Point(151, 61);
             this.splitterArrowDown.Name = "splitterArrowDown";
             this.splitterArrowDown.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.splitterArrowDown.Size = new System.Drawing.Size(115, 25);
+            this.splitterArrowDown.Size = new System.Drawing.Size(137, 31);
             this.splitterArrowDown.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.splitterArrowDown.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.splitterArrowDown.TabIndex = 5;
+            this.splitterArrowDown.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.splitterArrowDown.Values.Image = ((System.Drawing.Image)(resources.GetObject("splitterArrowDown.Values.Image")));
             this.splitterArrowDown.Values.Text = "Arrow Down";
             this.splitterArrowDown.Enter += new System.EventHandler(this.dropButtonEnter);
@@ -221,11 +243,12 @@ namespace KryptonDropButtonExamples
             // 
             this.splitterPosBottom.DropDownPosition = Krypton.Toolkit.VisualOrientation.Bottom;
             this.splitterPosBottom.KryptonContextMenu = this.kcmDropDown;
-            this.splitterPosBottom.Location = new System.Drawing.Point(25, 136);
+            this.splitterPosBottom.Location = new System.Drawing.Point(13, 138);
             this.splitterPosBottom.Name = "splitterPosBottom";
             this.splitterPosBottom.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.splitterPosBottom.Size = new System.Drawing.Size(104, 38);
+            this.splitterPosBottom.Size = new System.Drawing.Size(130, 48);
             this.splitterPosBottom.TabIndex = 3;
+            this.splitterPosBottom.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.splitterPosBottom.Values.Text = "Position Bottom";
             this.splitterPosBottom.Enter += new System.EventHandler(this.dropButtonEnter);
             // 
@@ -233,11 +256,12 @@ namespace KryptonDropButtonExamples
             // 
             this.splitterPosTop.DropDownPosition = Krypton.Toolkit.VisualOrientation.Top;
             this.splitterPosTop.KryptonContextMenu = this.kcmDropDown;
-            this.splitterPosTop.Location = new System.Drawing.Point(25, 92);
+            this.splitterPosTop.Location = new System.Drawing.Point(13, 89);
             this.splitterPosTop.Name = "splitterPosTop";
             this.splitterPosTop.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.splitterPosTop.Size = new System.Drawing.Size(104, 38);
+            this.splitterPosTop.Size = new System.Drawing.Size(130, 46);
             this.splitterPosTop.TabIndex = 2;
+            this.splitterPosTop.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.splitterPosTop.Values.Text = "Position Top";
             this.splitterPosTop.Enter += new System.EventHandler(this.dropButtonEnter);
             // 
@@ -245,22 +269,24 @@ namespace KryptonDropButtonExamples
             // 
             this.splitterPosLeft.DropDownPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.splitterPosLeft.KryptonContextMenu = this.kcmDropDown;
-            this.splitterPosLeft.Location = new System.Drawing.Point(25, 61);
+            this.splitterPosLeft.Location = new System.Drawing.Point(13, 59);
             this.splitterPosLeft.Name = "splitterPosLeft";
             this.splitterPosLeft.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.splitterPosLeft.Size = new System.Drawing.Size(104, 25);
+            this.splitterPosLeft.Size = new System.Drawing.Size(130, 25);
             this.splitterPosLeft.TabIndex = 1;
+            this.splitterPosLeft.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.splitterPosLeft.Values.Text = "Position Left";
             this.splitterPosLeft.Enter += new System.EventHandler(this.dropButtonEnter);
             // 
             // splitterPosRight
             // 
             this.splitterPosRight.KryptonContextMenu = this.kcmDropDown;
-            this.splitterPosRight.Location = new System.Drawing.Point(25, 30);
+            this.splitterPosRight.Location = new System.Drawing.Point(13, 30);
             this.splitterPosRight.Name = "splitterPosRight";
             this.splitterPosRight.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.splitterPosRight.Size = new System.Drawing.Size(104, 25);
+            this.splitterPosRight.Size = new System.Drawing.Size(130, 25);
             this.splitterPosRight.TabIndex = 0;
+            this.splitterPosRight.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.splitterPosRight.Values.Text = "Position Right";
             this.splitterPosRight.Enter += new System.EventHandler(this.dropButtonEnter);
             // 
@@ -285,14 +311,15 @@ namespace KryptonDropButtonExamples
             // 
             this.dropArrowLeft.DropDownOrientation = Krypton.Toolkit.VisualOrientation.Left;
             this.dropArrowLeft.KryptonContextMenu = this.kcmDropDown;
-            this.dropArrowLeft.Location = new System.Drawing.Point(154, 92);
+            this.dropArrowLeft.Location = new System.Drawing.Point(150, 110);
             this.dropArrowLeft.Name = "dropArrowLeft";
             this.dropArrowLeft.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.dropArrowLeft.Size = new System.Drawing.Size(115, 25);
+            this.dropArrowLeft.Size = new System.Drawing.Size(138, 32);
             this.dropArrowLeft.Splitter = false;
             this.dropArrowLeft.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.dropArrowLeft.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.dropArrowLeft.TabIndex = 6;
+            this.dropArrowLeft.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.dropArrowLeft.Values.Image = ((System.Drawing.Image)(resources.GetObject("dropArrowLeft.Values.Image")));
             this.dropArrowLeft.Values.Text = "Arrow Left";
             this.dropArrowLeft.Enter += new System.EventHandler(this.dropButtonEnter);
@@ -301,14 +328,15 @@ namespace KryptonDropButtonExamples
             // 
             this.dropArrowRight.DropDownOrientation = Krypton.Toolkit.VisualOrientation.Right;
             this.dropArrowRight.KryptonContextMenu = this.kcmDropDown;
-            this.dropArrowRight.Location = new System.Drawing.Point(154, 30);
+            this.dropArrowRight.Location = new System.Drawing.Point(150, 30);
             this.dropArrowRight.Name = "dropArrowRight";
             this.dropArrowRight.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.dropArrowRight.Size = new System.Drawing.Size(115, 25);
+            this.dropArrowRight.Size = new System.Drawing.Size(138, 32);
             this.dropArrowRight.Splitter = false;
             this.dropArrowRight.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.dropArrowRight.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.dropArrowRight.TabIndex = 4;
+            this.dropArrowRight.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.dropArrowRight.Values.Image = ((System.Drawing.Image)(resources.GetObject("dropArrowRight.Values.Image")));
             this.dropArrowRight.Values.Text = "Arrow Right";
             this.dropArrowRight.Enter += new System.EventHandler(this.dropButtonEnter);
@@ -317,14 +345,15 @@ namespace KryptonDropButtonExamples
             // 
             this.dropArrowUp.DropDownOrientation = Krypton.Toolkit.VisualOrientation.Top;
             this.dropArrowUp.KryptonContextMenu = this.kcmDropDown;
-            this.dropArrowUp.Location = new System.Drawing.Point(154, 123);
+            this.dropArrowUp.Location = new System.Drawing.Point(149, 150);
             this.dropArrowUp.Name = "dropArrowUp";
             this.dropArrowUp.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.dropArrowUp.Size = new System.Drawing.Size(115, 25);
+            this.dropArrowUp.Size = new System.Drawing.Size(138, 32);
             this.dropArrowUp.Splitter = false;
             this.dropArrowUp.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.dropArrowUp.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.dropArrowUp.TabIndex = 7;
+            this.dropArrowUp.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.dropArrowUp.Values.Image = ((System.Drawing.Image)(resources.GetObject("dropArrowUp.Values.Image")));
             this.dropArrowUp.Values.Text = "Arrow Up";
             this.dropArrowUp.Enter += new System.EventHandler(this.dropButtonEnter);
@@ -332,14 +361,15 @@ namespace KryptonDropButtonExamples
             // dropArrowDown
             // 
             this.dropArrowDown.KryptonContextMenu = this.kcmDropDown;
-            this.dropArrowDown.Location = new System.Drawing.Point(154, 61);
+            this.dropArrowDown.Location = new System.Drawing.Point(150, 70);
             this.dropArrowDown.Name = "dropArrowDown";
             this.dropArrowDown.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.dropArrowDown.Size = new System.Drawing.Size(115, 25);
+            this.dropArrowDown.Size = new System.Drawing.Size(138, 32);
             this.dropArrowDown.Splitter = false;
             this.dropArrowDown.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.dropArrowDown.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.dropArrowDown.TabIndex = 5;
+            this.dropArrowDown.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.dropArrowDown.Values.Image = ((System.Drawing.Image)(resources.GetObject("dropArrowDown.Values.Image")));
             this.dropArrowDown.Values.Text = "Arrow Down";
             this.dropArrowDown.Enter += new System.EventHandler(this.dropButtonEnter);
@@ -348,12 +378,13 @@ namespace KryptonDropButtonExamples
             // 
             this.dropPosBottom.DropDownPosition = Krypton.Toolkit.VisualOrientation.Bottom;
             this.dropPosBottom.KryptonContextMenu = this.kcmDropDown;
-            this.dropPosBottom.Location = new System.Drawing.Point(25, 136);
+            this.dropPosBottom.Location = new System.Drawing.Point(11, 138);
             this.dropPosBottom.Name = "dropPosBottom";
             this.dropPosBottom.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
-            this.dropPosBottom.Size = new System.Drawing.Size(104, 38);
+            this.dropPosBottom.Size = new System.Drawing.Size(132, 44);
             this.dropPosBottom.Splitter = false;
             this.dropPosBottom.TabIndex = 3;
+            this.dropPosBottom.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.dropPosBottom.Values.Text = "Position Bottom";
             this.dropPosBottom.Enter += new System.EventHandler(this.dropButtonEnter);
             // 
@@ -361,12 +392,13 @@ namespace KryptonDropButtonExamples
             // 
             this.dropPosTop.DropDownPosition = Krypton.Toolkit.VisualOrientation.Top;
             this.dropPosTop.KryptonContextMenu = this.kcmDropDown;
-            this.dropPosTop.Location = new System.Drawing.Point(25, 92);
+            this.dropPosTop.Location = new System.Drawing.Point(11, 89);
             this.dropPosTop.Name = "dropPosTop";
             this.dropPosTop.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
-            this.dropPosTop.Size = new System.Drawing.Size(104, 38);
+            this.dropPosTop.Size = new System.Drawing.Size(132, 43);
             this.dropPosTop.Splitter = false;
             this.dropPosTop.TabIndex = 2;
+            this.dropPosTop.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.dropPosTop.Values.Text = "Position Top";
             this.dropPosTop.Enter += new System.EventHandler(this.dropButtonEnter);
             // 
@@ -374,24 +406,26 @@ namespace KryptonDropButtonExamples
             // 
             this.dropPosLeft.DropDownPosition = Krypton.Toolkit.VisualOrientation.Left;
             this.dropPosLeft.KryptonContextMenu = this.kcmDropDown;
-            this.dropPosLeft.Location = new System.Drawing.Point(25, 61);
+            this.dropPosLeft.Location = new System.Drawing.Point(11, 59);
             this.dropPosLeft.Name = "dropPosLeft";
             this.dropPosLeft.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
-            this.dropPosLeft.Size = new System.Drawing.Size(104, 25);
+            this.dropPosLeft.Size = new System.Drawing.Size(132, 25);
             this.dropPosLeft.Splitter = false;
             this.dropPosLeft.TabIndex = 1;
+            this.dropPosLeft.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.dropPosLeft.Values.Text = "Position Left";
             this.dropPosLeft.Enter += new System.EventHandler(this.dropButtonEnter);
             // 
             // dropPosRight
             // 
             this.dropPosRight.KryptonContextMenu = this.kcmDropDown;
-            this.dropPosRight.Location = new System.Drawing.Point(25, 30);
+            this.dropPosRight.Location = new System.Drawing.Point(11, 30);
             this.dropPosRight.Name = "dropPosRight";
             this.dropPosRight.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
-            this.dropPosRight.Size = new System.Drawing.Size(104, 25);
+            this.dropPosRight.Size = new System.Drawing.Size(132, 25);
             this.dropPosRight.Splitter = false;
             this.dropPosRight.TabIndex = 0;
+            this.dropPosRight.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.dropPosRight.Values.Text = "Position Right";
             this.dropPosRight.Enter += new System.EventHandler(this.dropButtonEnter);
             // 
@@ -408,48 +442,50 @@ namespace KryptonDropButtonExamples
             this.groupCustom.TabStop = false;
             this.groupCustom.Text = "Custom";
             // 
-            // kryptonDropButton1
+            // kryptonDropButton3
             // 
-            this.kryptonDropButton1.Enabled = false;
-            this.kryptonDropButton1.Images.Common = ((System.Drawing.Image)(resources.GetObject("kryptonDropButton1.Images.Common")));
-            this.kryptonDropButton1.KryptonContextMenu = this.kcmCustom;
-            this.kryptonDropButton1.Location = new System.Drawing.Point(12, 60);
-            this.kryptonDropButton1.Name = "kryptonDropButton1";
-            this.kryptonDropButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.kryptonDropButton1.OverrideDefault.Border.Color1 = System.Drawing.Color.Green;
-            this.kryptonDropButton1.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonDropButton3.DropDownPosition = Krypton.Toolkit.VisualOrientation.Bottom;
+            this.kryptonDropButton3.Enabled = false;
+            this.kryptonDropButton3.KryptonContextMenu = this.kcmCustom;
+            this.kryptonDropButton3.Location = new System.Drawing.Point(167, 60);
+            this.kryptonDropButton3.Name = "kryptonDropButton3";
+            this.kryptonDropButton3.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.kryptonDropButton3.OverrideDefault.Border.Color1 = System.Drawing.Color.Green;
+            this.kryptonDropButton3.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDropButton1.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.kryptonDropButton1.Size = new System.Drawing.Size(135, 30);
-            this.kryptonDropButton1.StateCommon.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
-            this.kryptonDropButton1.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
-            this.kryptonDropButton1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonDropButton3.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.kryptonDropButton3.Size = new System.Drawing.Size(115, 52);
+            this.kryptonDropButton3.Splitter = false;
+            this.kryptonDropButton3.StateCommon.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.kryptonDropButton3.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.kryptonDropButton3.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDropButton1.StateCommon.Border.Rounding = 4F;
-            this.kryptonDropButton1.StateCommon.Border.Width = 2;
-            this.kryptonDropButton1.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.kryptonDropButton1.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
-            this.kryptonDropButton1.StateNormal.Border.Color1 = System.Drawing.Color.Green;
-            this.kryptonDropButton1.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonDropButton3.StateCommon.Border.Rounding = 4F;
+            this.kryptonDropButton3.StateCommon.Border.Width = 2;
+            this.kryptonDropButton3.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.kryptonDropButton3.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.kryptonDropButton3.StateNormal.Border.Color1 = System.Drawing.Color.Green;
+            this.kryptonDropButton3.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDropButton1.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.kryptonDropButton1.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.kryptonDropButton1.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.kryptonDropButton1.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonDropButton3.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.kryptonDropButton3.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.kryptonDropButton3.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.kryptonDropButton3.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDropButton1.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.kryptonDropButton1.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.kryptonDropButton1.StateTracking.Border.Color1 = System.Drawing.Color.Navy;
-            this.kryptonDropButton1.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonDropButton3.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.kryptonDropButton3.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.kryptonDropButton3.StateTracking.Border.Color1 = System.Drawing.Color.Navy;
+            this.kryptonDropButton3.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDropButton1.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.kryptonDropButton1.TabIndex = 2;
-            this.kryptonDropButton1.Values.Text = "Disabled Split";
+            this.kryptonDropButton3.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.kryptonDropButton3.TabIndex = 3;
+            this.kryptonDropButton3.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.kryptonDropButton3.Values.Text = "Disabled Drop";
             // 
             // kcmCustom
             // 
@@ -491,6 +527,7 @@ namespace KryptonDropButtonExamples
             // kryptonContextMenuHeading5
             // 
             this.kryptonContextMenuHeading5.ExtraText = "";
+            this.kryptonContextMenuHeading5.Text = "";
             // 
             // kryptonContextMenuItems5
             // 
@@ -498,6 +535,7 @@ namespace KryptonDropButtonExamples
             this.kryptonContextMenuItem13,
             this.kryptonContextMenuItem14,
             this.kryptonContextMenuItem15});
+            this.kryptonContextMenuItems5.Text = "";
             // 
             // kryptonContextMenuItem13
             // 
@@ -515,12 +553,52 @@ namespace KryptonDropButtonExamples
             this.kryptonContextMenuItem15.CheckState = System.Windows.Forms.CheckState.Checked;
             this.kryptonContextMenuItem15.Text = "Menu Item 3";
             // 
+            // kryptonDropButton1
+            // 
+            this.kryptonDropButton1.Enabled = false;
+            this.kryptonDropButton1.KryptonContextMenu = this.kcmCustom;
+            this.kryptonDropButton1.Location = new System.Drawing.Point(12, 60);
+            this.kryptonDropButton1.Name = "kryptonDropButton1";
+            this.kryptonDropButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.kryptonDropButton1.OverrideDefault.Border.Color1 = System.Drawing.Color.Green;
+            this.kryptonDropButton1.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonDropButton1.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.kryptonDropButton1.Size = new System.Drawing.Size(135, 30);
+            this.kryptonDropButton1.StateCommon.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.kryptonDropButton1.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.kryptonDropButton1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonDropButton1.StateCommon.Border.Rounding = 4F;
+            this.kryptonDropButton1.StateCommon.Border.Width = 2;
+            this.kryptonDropButton1.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.kryptonDropButton1.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.kryptonDropButton1.StateNormal.Border.Color1 = System.Drawing.Color.Green;
+            this.kryptonDropButton1.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonDropButton1.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.kryptonDropButton1.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.kryptonDropButton1.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.kryptonDropButton1.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonDropButton1.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.kryptonDropButton1.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.kryptonDropButton1.StateTracking.Border.Color1 = System.Drawing.Color.Navy;
+            this.kryptonDropButton1.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonDropButton1.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.kryptonDropButton1.TabIndex = 2;
+            this.kryptonDropButton1.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.kryptonDropButton1.Values.Text = "Disabled Split";
+            // 
             // dropCustom
             // 
             this.dropCustom.DropDownPosition = Krypton.Toolkit.VisualOrientation.Bottom;
-            this.dropCustom.Images.Normal = ((System.Drawing.Image)(resources.GetObject("dropCustom.Images.Normal")));
-            this.dropCustom.Images.Pressed = ((System.Drawing.Image)(resources.GetObject("dropCustom.Images.Pressed")));
-            this.dropCustom.Images.Tracking = ((System.Drawing.Image)(resources.GetObject("dropCustom.Images.Tracking")));
             this.dropCustom.KryptonContextMenu = this.kcmCustom;
             this.dropCustom.Location = new System.Drawing.Point(167, 13);
             this.dropCustom.Name = "dropCustom";
@@ -559,14 +637,12 @@ namespace KryptonDropButtonExamples
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.dropCustom.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dropCustom.TabIndex = 1;
+            this.dropCustom.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.dropCustom.Values.Text = "Custom Drop";
             this.dropCustom.Enter += new System.EventHandler(this.dropButtonEnter);
             // 
             // splitterCustom
             // 
-            this.splitterCustom.Images.Normal = ((System.Drawing.Image)(resources.GetObject("splitterCustom.Images.Normal")));
-            this.splitterCustom.Images.Pressed = ((System.Drawing.Image)(resources.GetObject("splitterCustom.Images.Pressed")));
-            this.splitterCustom.Images.Tracking = ((System.Drawing.Image)(resources.GetObject("splitterCustom.Images.Tracking")));
             this.splitterCustom.KryptonContextMenu = this.kcmCustom;
             this.splitterCustom.Location = new System.Drawing.Point(12, 24);
             this.splitterCustom.Name = "splitterCustom";
@@ -604,68 +680,9 @@ namespace KryptonDropButtonExamples
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.splitterCustom.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.splitterCustom.TabIndex = 0;
+            this.splitterCustom.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.splitterCustom.Values.Text = "Custom Split";
             this.splitterCustom.Enter += new System.EventHandler(this.dropButtonEnter);
-            // 
-            // kryptonDropButton2
-            // 
-            this.kryptonDropButton2.DropDownOrientation = Krypton.Toolkit.VisualOrientation.Right;
-            this.kryptonDropButton2.Enabled = false;
-            this.kryptonDropButton2.KryptonContextMenu = this.kcmDropDown;
-            this.kryptonDropButton2.Location = new System.Drawing.Point(154, 152);
-            this.kryptonDropButton2.Name = "kryptonDropButton2";
-            this.kryptonDropButton2.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonDropButton2.Size = new System.Drawing.Size(115, 25);
-            this.kryptonDropButton2.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonDropButton2.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonDropButton2.TabIndex = 8;
-            this.kryptonDropButton2.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonDropButton2.Values.Image")));
-            this.kryptonDropButton2.Values.Text = "Arrow Right";
-            // 
-            // kryptonDropButton3
-            // 
-            this.kryptonDropButton3.DropDownPosition = Krypton.Toolkit.VisualOrientation.Bottom;
-            this.kryptonDropButton3.Enabled = false;
-            this.kryptonDropButton3.Images.Common = ((System.Drawing.Image)(resources.GetObject("kryptonDropButton3.Images.Normal")));
-            this.kryptonDropButton3.KryptonContextMenu = this.kcmCustom;
-            this.kryptonDropButton3.Location = new System.Drawing.Point(167, 60);
-            this.kryptonDropButton3.Name = "kryptonDropButton3";
-            this.kryptonDropButton3.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.kryptonDropButton3.OverrideDefault.Border.Color1 = System.Drawing.Color.Green;
-            this.kryptonDropButton3.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDropButton3.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.kryptonDropButton3.Size = new System.Drawing.Size(115, 52);
-            this.kryptonDropButton3.Splitter = false;
-            this.kryptonDropButton3.StateCommon.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
-            this.kryptonDropButton3.StateCommon.Border.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
-            this.kryptonDropButton3.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDropButton3.StateCommon.Border.Rounding = 4F;
-            this.kryptonDropButton3.StateCommon.Border.Width = 2;
-            this.kryptonDropButton3.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.kryptonDropButton3.StateNormal.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
-            this.kryptonDropButton3.StateNormal.Border.Color1 = System.Drawing.Color.Green;
-            this.kryptonDropButton3.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDropButton3.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.kryptonDropButton3.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.kryptonDropButton3.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.kryptonDropButton3.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDropButton3.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.kryptonDropButton3.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.kryptonDropButton3.StateTracking.Border.Color1 = System.Drawing.Color.Navy;
-            this.kryptonDropButton3.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDropButton3.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.kryptonDropButton3.TabIndex = 3;
-            this.kryptonDropButton3.Values.Text = "Disabled Drop";
             // 
             // Form1
             // 
