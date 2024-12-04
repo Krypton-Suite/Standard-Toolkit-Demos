@@ -119,10 +119,6 @@ namespace KryptonDropButtonExamples
         public ButtonValues Values => _dropDown.Values;
 
         [Category("Visuals")]
-        [Description("Image value overrides.")]
-        public DropDownButtonImages Images => _dropDown.Images;
-
-        [Category("Visuals")]
         [Description("Overrides for defining common button appearance that other states can override.")]
         public PaletteTripleRedirect StateCommon => _dropDown.StateCommon;
 
