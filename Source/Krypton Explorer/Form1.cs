@@ -301,8 +301,6 @@ namespace KryptonExplorer
         private void linkDockingCustomized_LinkClicked(object sender, EventArgs e) =>
             LaunchApplication(@"Docking Customized");
 
-        private void kryptonButtonClose_Click(object sender, EventArgs e) => Close();
-
         private void kllKryptonScrollBars_LinkClicked(object sender, EventArgs e) =>
             LaunchApplication(@"Krypton Scrollbar Examples");
 

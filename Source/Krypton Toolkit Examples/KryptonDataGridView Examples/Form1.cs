@@ -39,20 +39,6 @@ namespace KryptonDataGridViewExamples
             propertyGrid.SelectedObject = new KryptonDataGridViewProxy(kryptonDataGridView1);
         }
 
-        private void rbOffice2010Blue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteType = BasePaletteType.Office2010;
-
-        private void rbOffice2007Blue_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteType = BasePaletteType.Office2007;
-
-        private void rbOffice2007Silver_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteType = BasePaletteType.Office2007;
-
-        private void rbOffice2007Black_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteType = BasePaletteType.Office2007;
-
-        private void rbOffice2003_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteType = BasePaletteType.Professional;
-
-        private void rbSystem_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteType = BasePaletteType.Professional;
-
-        private void rbSparkle_CheckedChanged(object sender, EventArgs e) => kryptonPalette.BasePaletteType = BasePaletteType.Sparkle;
-
         private void rbStyleList_CheckedChanged(object sender, EventArgs e) => kryptonDataGridView1.GridStyles.Style = DataGridViewStyle.List;
 
         private void rbStyleSheet_CheckedChanged(object sender, EventArgs e) => kryptonDataGridView1.GridStyles.Style = DataGridViewStyle.Sheet;

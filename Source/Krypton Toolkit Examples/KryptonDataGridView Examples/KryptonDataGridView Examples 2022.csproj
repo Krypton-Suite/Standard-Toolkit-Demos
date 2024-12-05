@@ -15,7 +15,6 @@
     <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
     <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
     <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
-
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Krypton.ico" />
