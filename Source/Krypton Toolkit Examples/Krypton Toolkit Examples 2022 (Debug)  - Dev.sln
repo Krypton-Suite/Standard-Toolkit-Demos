@@ -170,8 +170,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonToastNotification Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonOutlookGrid Example 2022", "KryptonOutlookGrid Example\KryptonOutlookGrid Example 2022.csproj", "{AA43132C-A762-4FD4-8C9C-9196B4DFBB52}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonMessageBoxDep Examples 2022", "KryptonMessageBoxDep Examples\KryptonMessageBoxDep Examples 2022.csproj", "{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Canary|Any CPU = Canary|Any CPU
@@ -981,16 +979,6 @@ Global
 		{AA43132C-A762-4FD4-8C9C-9196B4DFBB52}.Nightly|Any CPU.Build.0 = Release|Any CPU
 		{AA43132C-A762-4FD4-8C9C-9196B4DFBB52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA43132C-A762-4FD4-8C9C-9196B4DFBB52}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Canary|Any CPU.ActiveCfg = Release|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Canary|Any CPU.Build.0 = Release|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Installer|Any CPU.ActiveCfg = Release|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Installer|Any CPU.Build.0 = Release|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Nightly|Any CPU.ActiveCfg = Release|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Nightly|Any CPU.Build.0 = Release|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
