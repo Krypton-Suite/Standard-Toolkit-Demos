@@ -15,6 +15,9 @@
         <Nullable>enable</Nullable>
         <WarningLevel>6</WarningLevel>
         <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+
     </PropertyGroup>
     <ItemGroup>
         <None Remove="Krypton.ico" />

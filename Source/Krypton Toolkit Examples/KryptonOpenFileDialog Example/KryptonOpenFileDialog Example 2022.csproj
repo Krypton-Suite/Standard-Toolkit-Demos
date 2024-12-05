@@ -10,6 +10,9 @@
         <Nullable>enable</Nullable>
         <WarningLevel>6</WarningLevel>
         <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+
     </PropertyGroup>
 <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
