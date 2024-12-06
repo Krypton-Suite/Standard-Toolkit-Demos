@@ -15,6 +15,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Net;
+
 //using System.Net.Http;
 using System.Windows.Forms;
 
@@ -27,13 +28,8 @@ namespace KryptonExplorer
     public partial class Form1 : KryptonForm
     {
         #region Variables
-
-        private Version _currentVersion = new(95, DateTime.Now.Year-2000, DateTime.Now.Month, DateTime.Now.DayOfYear);
-
         private Settings _settings = new();
-
         private string _documentationDownloadLocation;
-
         #endregion
 
         public Form1()
@@ -52,11 +48,12 @@ namespace KryptonExplorer
 
             kcmbTheme.SelectedIndex = _settings.ThemeSelectedIndex;
 
-            //tsslBuildDate.Text = $"Build Date: {GeneralToolkitUtilities.GetLinkerTimestampUtc(Assembly.GetExecutingAssembly())} ";
+            DateTime dateBuilt = File.GetCreationTime(GetType().Assembly.Location);
+            tsslBuildDate.Text = $@"Build Date: {dateBuilt.ToShortDateString()}";
 
-            tsslBuildDate.Text = $@"Build Date: {_settings.BuildDate.ToShortDateString()}";
+            Version currentVersion = new(95, dateBuilt.Year - 2000, dateBuilt.Month, dateBuilt.DayOfYear);
 
-            tslVersion.Text = $@"Krypton Explorer Version: {_currentVersion} - Toolkit Version: {fvi.FileVersion}";
+            tslVersion.Text = $@"Krypton Explorer Version: {currentVersion} - Toolkit Version: {fvi.FileVersion}";
         }
 
         private void linkKryptonBorderEdge_LinkClicked(object sender, EventArgs e) =>
@@ -267,7 +264,7 @@ namespace KryptonExplorer
             LaunchApplication(@"Workspace Cell Layout");
 
         private void linkWorkspacePersistence_LinkClicked(object sender, EventArgs e) =>
-            LaunchApplication(@"WorkspacePersistence");
+            LaunchApplication(@"Workspace Persistence");
 
         private void linkCellMaximizeAndRestore_LinkClicked(object sender, EventArgs e) =>
             LaunchApplication(@"Cell Maximize And Restore");
@@ -563,7 +560,8 @@ namespace KryptonExplorer
                 client.DownloadFileCompleted += DownloadFileCompleted;
             }
         }
+
+        private void kryptonWorkspaceRibbonNavigator_LinkClicked(object sender, EventArgs e)
+            => LaunchApplication(@"Ribbon And Navigator And Workspace");
     }
-
-
 }
