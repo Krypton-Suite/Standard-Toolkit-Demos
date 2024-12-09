@@ -44,7 +44,6 @@ namespace KryptonButtonExamples
             this.button4Custom = new Krypton.Toolkit.KryptonButton();
             this.propertyGrid = new System.Windows.Forms.PropertyGrid();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.buttonClose = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button6System = new Krypton.Toolkit.KryptonButton();
             this.button4System = new Krypton.Toolkit.KryptonButton();
@@ -93,6 +92,7 @@ namespace KryptonButtonExamples
             this.button2Sparkle.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.button2Sparkle.Size = new System.Drawing.Size(40, 28);
             this.button2Sparkle.TabIndex = 1;
+            this.button2Sparkle.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button2Sparkle.Values.Text = "Text";
             this.button2Sparkle.Enter += new System.EventHandler(this.button_Enter);
             // 
@@ -104,6 +104,7 @@ namespace KryptonButtonExamples
             this.button3Sparkle.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.button3Sparkle.Size = new System.Drawing.Size(57, 30);
             this.button3Sparkle.TabIndex = 2;
+            this.button3Sparkle.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button3Sparkle.Values.Image = ((System.Drawing.Image)(resources.GetObject("button3Sparkle.Values.Image")));
             this.button3Sparkle.Values.Text = "Text";
             this.button3Sparkle.Enter += new System.EventHandler(this.button_Enter);
@@ -116,6 +117,7 @@ namespace KryptonButtonExamples
             this.button1Sparkle.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.button1Sparkle.Size = new System.Drawing.Size(40, 38);
             this.button1Sparkle.TabIndex = 0;
+            this.button1Sparkle.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button1Sparkle.Values.Image = ((System.Drawing.Image)(resources.GetObject("button1Sparkle.Values.Image")));
             this.button1Sparkle.Values.Text = "";
             this.button1Sparkle.Enter += new System.EventHandler(this.button_Enter);
@@ -139,12 +141,14 @@ namespace KryptonButtonExamples
             // button6Sparkle
             // 
             this.button6Sparkle.AutoSize = true;
+            this.button6Sparkle.ButtonOrientation = Krypton.Toolkit.VisualOrientation.Left;
             this.button6Sparkle.Location = new System.Drawing.Point(80, 27);
             this.button6Sparkle.Name = "button6Sparkle";
             this.button6Sparkle.Orientation = Krypton.Toolkit.VisualOrientation.Left;
             this.button6Sparkle.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.button6Sparkle.Size = new System.Drawing.Size(31, 122);
             this.button6Sparkle.TabIndex = 3;
+            this.button6Sparkle.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button6Sparkle.Values.ExtraText = "Left";
             this.button6Sparkle.Values.Image = ((System.Drawing.Image)(resources.GetObject("button6Sparkle.Values.Image")));
             this.button6Sparkle.Values.Text = "Direction";
@@ -164,6 +168,7 @@ namespace KryptonButtonExamples
             this.button4Sparkle.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button4Sparkle.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.button4Sparkle.TabIndex = 4;
+            this.button4Sparkle.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button4Sparkle.Values.ExtraText = "ExtraText";
             this.button4Sparkle.Values.Image = ((System.Drawing.Image)(resources.GetObject("button4Sparkle.Values.Image")));
             this.button4Sparkle.Values.Text = "Text";
@@ -183,6 +188,7 @@ namespace KryptonButtonExamples
             this.button5Sparkle.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Sparkle.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Sparkle.TabIndex = 5;
+            this.button5Sparkle.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button5Sparkle.Values.ExtraText = "ExtraText";
             this.button5Sparkle.Values.Image = ((System.Drawing.Image)(resources.GetObject("button5Sparkle.Values.Image")));
             this.button5Sparkle.Values.Text = "Text";
@@ -217,6 +223,7 @@ namespace KryptonButtonExamples
             this.button1Custom.StateCommon.Content.Padding = new System.Windows.Forms.Padding(2);
             this.button1Custom.StatePressed.Content.Padding = new System.Windows.Forms.Padding(4, 4, 0, 0);
             this.button1Custom.TabIndex = 0;
+            this.button1Custom.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button1Custom.Values.ImageStates.ImageCheckedNormal = null;
             this.button1Custom.Values.ImageStates.ImageCheckedPressed = null;
             this.button1Custom.Values.ImageStates.ImageCheckedTracking = null;
@@ -250,11 +257,11 @@ namespace KryptonButtonExamples
             this.button5Custom.StateNormal.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Custom.StateNormal.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Custom.StateNormal.Content.LongText.Color1 = System.Drawing.Color.Black;
-            this.button5Custom.StateNormal.Content.LongText.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button5Custom.StateNormal.Content.LongText.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.button5Custom.StateNormal.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Custom.StateNormal.Content.LongText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.button5Custom.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.Black;
-            this.button5Custom.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5Custom.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.button5Custom.StateNormal.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.ClearTypeGridFit;
             this.button5Custom.StateNormal.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Custom.StateNormal.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
@@ -270,11 +277,11 @@ namespace KryptonButtonExamples
             this.button5Custom.StatePressed.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Custom.StatePressed.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Custom.StatePressed.Content.LongText.Color1 = System.Drawing.Color.Black;
-            this.button5Custom.StatePressed.Content.LongText.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button5Custom.StatePressed.Content.LongText.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.button5Custom.StatePressed.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Custom.StatePressed.Content.LongText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.button5Custom.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.Black;
-            this.button5Custom.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5Custom.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.button5Custom.StatePressed.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.ClearTypeGridFit;
             this.button5Custom.StatePressed.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Custom.StatePressed.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
@@ -290,15 +297,16 @@ namespace KryptonButtonExamples
             this.button5Custom.StateTracking.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Custom.StateTracking.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Custom.StateTracking.Content.LongText.Color1 = System.Drawing.Color.Black;
-            this.button5Custom.StateTracking.Content.LongText.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button5Custom.StateTracking.Content.LongText.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.button5Custom.StateTracking.Content.LongText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Custom.StateTracking.Content.LongText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.button5Custom.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.Black;
-            this.button5Custom.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5Custom.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.button5Custom.StateTracking.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.ClearTypeGridFit;
             this.button5Custom.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Custom.StateTracking.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.button5Custom.TabIndex = 2;
+            this.button5Custom.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button5Custom.Values.ExtraText = "ExtraText";
             this.button5Custom.Values.Text = "Text";
             this.button5Custom.Enter += new System.EventHandler(this.button_Enter);
@@ -324,7 +332,7 @@ namespace KryptonButtonExamples
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.button2Custom.StateNormal.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.button2Custom.StateNormal.Border.Rounding = 5F;
-            this.button2Custom.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.button2Custom.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.button2Custom.StatePressed.Back.Color1 = System.Drawing.Color.Turquoise;
             this.button2Custom.StatePressed.Back.Color2 = System.Drawing.Color.Turquoise;
             this.button2Custom.StatePressed.Back.ColorAngle = 75F;
@@ -335,7 +343,7 @@ namespace KryptonButtonExamples
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.button2Custom.StatePressed.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.button2Custom.StatePressed.Border.Rounding = 5F;
-            this.button2Custom.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.button2Custom.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.button2Custom.StateTracking.Back.Color1 = System.Drawing.Color.Aquamarine;
             this.button2Custom.StateTracking.Back.Color2 = System.Drawing.Color.Turquoise;
             this.button2Custom.StateTracking.Back.ColorAngle = 75F;
@@ -346,8 +354,9 @@ namespace KryptonButtonExamples
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.button2Custom.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.button2Custom.StateTracking.Border.Rounding = 5F;
-            this.button2Custom.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.button2Custom.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.button2Custom.TabIndex = 4;
+            this.button2Custom.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button2Custom.Values.Text = "Text";
             this.button2Custom.Enter += new System.EventHandler(this.button_Enter);
             // 
@@ -374,7 +383,7 @@ namespace KryptonButtonExamples
             this.button3Custom.StateNormal.Border.Rounding = 6F;
             this.button3Custom.StateNormal.Border.Width = 3;
             this.button3Custom.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.Black;
-            this.button3Custom.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3Custom.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
             this.button3Custom.StateNormal.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.button3Custom.StatePressed.Back.Color1 = System.Drawing.Color.Black;
             this.button3Custom.StatePressed.Back.Color2 = System.Drawing.Color.Gray;
@@ -391,7 +400,7 @@ namespace KryptonButtonExamples
             this.button3Custom.StatePressed.Border.Rounding = 6F;
             this.button3Custom.StatePressed.Border.Width = 3;
             this.button3Custom.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.button3Custom.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3Custom.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
             this.button3Custom.StatePressed.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.button3Custom.StateTracking.Back.Color1 = System.Drawing.Color.DimGray;
             this.button3Custom.StateTracking.Back.Color2 = System.Drawing.Color.DarkGray;
@@ -408,9 +417,10 @@ namespace KryptonButtonExamples
             this.button3Custom.StateTracking.Border.Rounding = 6F;
             this.button3Custom.StateTracking.Border.Width = 3;
             this.button3Custom.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.button3Custom.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3Custom.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
             this.button3Custom.StateTracking.Content.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.button3Custom.TabIndex = 1;
+            this.button3Custom.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button3Custom.Values.Image = ((System.Drawing.Image)(resources.GetObject("button3Custom.Values.Image")));
             this.button3Custom.Values.Text = "Text";
             this.button3Custom.Enter += new System.EventHandler(this.button_Enter);
@@ -449,6 +459,7 @@ namespace KryptonButtonExamples
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.button4Custom.StateTracking.Border.Rounding = 3F;
             this.button4Custom.TabIndex = 3;
+            this.button4Custom.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button4Custom.Values.ExtraText = "ExtraText";
             this.button4Custom.Values.Image = ((System.Drawing.Image)(resources.GetObject("button4Custom.Values.Image")));
             this.button4Custom.Values.Text = "Text";
@@ -456,12 +467,10 @@ namespace KryptonButtonExamples
             // 
             // propertyGrid
             // 
-            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.propertyGrid.Location = new System.Drawing.Point(6, 19);
+            this.propertyGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.propertyGrid.Location = new System.Drawing.Point(3, 20);
             this.propertyGrid.Name = "propertyGrid";
-            this.propertyGrid.Size = new System.Drawing.Size(289, 418);
+            this.propertyGrid.Size = new System.Drawing.Size(295, 567);
             this.propertyGrid.TabIndex = 0;
             this.propertyGrid.ToolbarVisible = false;
             // 
@@ -470,21 +479,10 @@ namespace KryptonButtonExamples
             this.groupBox4.Controls.Add(this.propertyGrid);
             this.groupBox4.Location = new System.Drawing.Point(472, 12);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(301, 443);
+            this.groupBox4.Size = new System.Drawing.Size(301, 590);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Properties for Selected KryptonButton";
-            // 
-            // buttonClose
-            // 
-            this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonClose.Location = new System.Drawing.Point(696, 461);
-            this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(75, 23);
-            this.buttonClose.TabIndex = 6;
-            this.buttonClose.Text = "&Close";
-            this.buttonClose.UseVisualStyleBackColor = true;
-            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // groupBox2
             // 
@@ -504,12 +502,14 @@ namespace KryptonButtonExamples
             // button6System
             // 
             this.button6System.AutoSize = true;
+            this.button6System.ButtonOrientation = Krypton.Toolkit.VisualOrientation.Left;
             this.button6System.Location = new System.Drawing.Point(80, 27);
             this.button6System.Name = "button6System";
             this.button6System.Orientation = Krypton.Toolkit.VisualOrientation.Left;
             this.button6System.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.button6System.Size = new System.Drawing.Size(31, 124);
             this.button6System.TabIndex = 3;
+            this.button6System.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button6System.Values.ExtraText = "Left";
             this.button6System.Values.Image = ((System.Drawing.Image)(resources.GetObject("button6System.Values.Image")));
             this.button6System.Values.Text = "Direction";
@@ -529,6 +529,7 @@ namespace KryptonButtonExamples
             this.button4System.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button4System.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.button4System.TabIndex = 4;
+            this.button4System.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button4System.Values.ExtraText = "ExtraText";
             this.button4System.Values.Image = ((System.Drawing.Image)(resources.GetObject("button4System.Values.Image")));
             this.button4System.Values.Text = "Text";
@@ -552,6 +553,7 @@ namespace KryptonButtonExamples
             this.button5System.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5System.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5System.TabIndex = 5;
+            this.button5System.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button5System.Values.ExtraText = "ExtraText";
             this.button5System.Values.Image = ((System.Drawing.Image)(resources.GetObject("button5System.Values.Image")));
             this.button5System.Values.Text = "Text";
@@ -565,6 +567,7 @@ namespace KryptonButtonExamples
             this.button1System.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.button1System.Size = new System.Drawing.Size(40, 38);
             this.button1System.TabIndex = 0;
+            this.button1System.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button1System.Values.Image = ((System.Drawing.Image)(resources.GetObject("button1System.Values.Image")));
             this.button1System.Values.Text = "";
             this.button1System.Enter += new System.EventHandler(this.button_Enter);
@@ -577,6 +580,7 @@ namespace KryptonButtonExamples
             this.button2System.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.button2System.Size = new System.Drawing.Size(42, 28);
             this.button2System.TabIndex = 1;
+            this.button2System.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button2System.Values.Text = "Text";
             this.button2System.Enter += new System.EventHandler(this.button_Enter);
             // 
@@ -588,6 +592,7 @@ namespace KryptonButtonExamples
             this.button3System.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.button3System.Size = new System.Drawing.Size(59, 30);
             this.button3System.TabIndex = 2;
+            this.button3System.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button3System.Values.Image = ((System.Drawing.Image)(resources.GetObject("button3System.Values.Image")));
             this.button3System.Values.Text = "Text";
             this.button3System.Enter += new System.EventHandler(this.button_Enter);
@@ -610,12 +615,14 @@ namespace KryptonButtonExamples
             // button6Green
             // 
             this.button6Green.AutoSize = true;
+            this.button6Green.ButtonOrientation = Krypton.Toolkit.VisualOrientation.Right;
             this.button6Green.Location = new System.Drawing.Point(80, 27);
             this.button6Green.Name = "button6Green";
             this.button6Green.Orientation = Krypton.Toolkit.VisualOrientation.Right;
             this.button6Green.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             this.button6Green.Size = new System.Drawing.Size(31, 133);
             this.button6Green.TabIndex = 3;
+            this.button6Green.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button6Green.Values.ExtraText = "Right";
             this.button6Green.Values.Image = ((System.Drawing.Image)(resources.GetObject("button6Green.Values.Image")));
             this.button6Green.Values.Text = "Direction";
@@ -635,6 +642,7 @@ namespace KryptonButtonExamples
             this.button4Green.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button4Green.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.button4Green.TabIndex = 4;
+            this.button4Green.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button4Green.Values.ExtraText = "ExtraText";
             this.button4Green.Values.Image = ((System.Drawing.Image)(resources.GetObject("button4Green.Values.Image")));
             this.button4Green.Values.Text = "Text";
@@ -654,6 +662,7 @@ namespace KryptonButtonExamples
             this.button5Green.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Green.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Green.TabIndex = 5;
+            this.button5Green.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button5Green.Values.ExtraText = "ExtraText";
             this.button5Green.Values.Image = ((System.Drawing.Image)(resources.GetObject("button5Green.Values.Image")));
             this.button5Green.Values.Text = "Text";
@@ -667,6 +676,7 @@ namespace KryptonButtonExamples
             this.button1Green.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             this.button1Green.Size = new System.Drawing.Size(42, 40);
             this.button1Green.TabIndex = 0;
+            this.button1Green.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button1Green.Values.Image = ((System.Drawing.Image)(resources.GetObject("button1Green.Values.Image")));
             this.button1Green.Values.Text = "";
             this.button1Green.Enter += new System.EventHandler(this.button_Enter);
@@ -679,6 +689,7 @@ namespace KryptonButtonExamples
             this.button2Green.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             this.button2Green.Size = new System.Drawing.Size(40, 28);
             this.button2Green.TabIndex = 1;
+            this.button2Green.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button2Green.Values.Text = "Text";
             this.button2Green.Enter += new System.EventHandler(this.button_Enter);
             // 
@@ -690,6 +701,7 @@ namespace KryptonButtonExamples
             this.button3Green.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             this.button3Green.Size = new System.Drawing.Size(57, 30);
             this.button3Green.TabIndex = 2;
+            this.button3Green.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button3Green.Values.Image = ((System.Drawing.Image)(resources.GetObject("button3Green.Values.Image")));
             this.button3Green.Values.Text = "Text";
             this.button3Green.Enter += new System.EventHandler(this.button_Enter);
@@ -712,12 +724,14 @@ namespace KryptonButtonExamples
             // button6Red
             // 
             this.button6Red.AutoSize = true;
+            this.button6Red.ButtonOrientation = Krypton.Toolkit.VisualOrientation.Right;
             this.button6Red.Location = new System.Drawing.Point(80, 27);
             this.button6Red.Name = "button6Red";
             this.button6Red.Orientation = Krypton.Toolkit.VisualOrientation.Right;
             this.button6Red.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
             this.button6Red.Size = new System.Drawing.Size(31, 133);
             this.button6Red.TabIndex = 3;
+            this.button6Red.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button6Red.Values.ExtraText = "Right";
             this.button6Red.Values.Image = ((System.Drawing.Image)(resources.GetObject("button6Red.Values.Image")));
             this.button6Red.Values.Text = "Direction";
@@ -737,6 +751,7 @@ namespace KryptonButtonExamples
             this.button4Red.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button4Red.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.button4Red.TabIndex = 4;
+            this.button4Red.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button4Red.Values.ExtraText = "ExtraText";
             this.button4Red.Values.Image = ((System.Drawing.Image)(resources.GetObject("button4Red.Values.Image")));
             this.button4Red.Values.Text = "Text";
@@ -756,6 +771,7 @@ namespace KryptonButtonExamples
             this.button5Red.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Red.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.button5Red.TabIndex = 5;
+            this.button5Red.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button5Red.Values.ExtraText = "ExtraText";
             this.button5Red.Values.Image = ((System.Drawing.Image)(resources.GetObject("button5Red.Values.Image")));
             this.button5Red.Values.Text = "Text";
@@ -769,6 +785,7 @@ namespace KryptonButtonExamples
             this.button1Red.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
             this.button1Red.Size = new System.Drawing.Size(42, 40);
             this.button1Red.TabIndex = 0;
+            this.button1Red.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button1Red.Values.Image = ((System.Drawing.Image)(resources.GetObject("button1Red.Values.Image")));
             this.button1Red.Values.Text = "";
             this.button1Red.Enter += new System.EventHandler(this.button_Enter);
@@ -781,6 +798,7 @@ namespace KryptonButtonExamples
             this.button2Red.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
             this.button2Red.Size = new System.Drawing.Size(40, 28);
             this.button2Red.TabIndex = 1;
+            this.button2Red.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button2Red.Values.Text = "Text";
             this.button2Red.Enter += new System.EventHandler(this.button_Enter);
             // 
@@ -792,6 +810,7 @@ namespace KryptonButtonExamples
             this.button3Red.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
             this.button3Red.Size = new System.Drawing.Size(57, 30);
             this.button3Red.TabIndex = 2;
+            this.button3Red.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.button3Red.Values.Image = ((System.Drawing.Image)(resources.GetObject("button3Red.Values.Image")));
             this.button3Red.Values.Text = "Text";
             this.button3Red.Enter += new System.EventHandler(this.button_Enter);
@@ -809,13 +828,13 @@ namespace KryptonButtonExamples
             this.kryptonPanel1.Location = new System.Drawing.Point(12, 461);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Black;
-            this.kryptonPanel1.Size = new System.Drawing.Size(454, 172);
+            this.kryptonPanel1.Size = new System.Drawing.Size(454, 141);
             this.kryptonPanel1.TabIndex = 7;
             // 
             // kryptonButton7
             // 
             this.kryptonButton7.AutoSize = true;
-            this.kryptonButton7.Location = new System.Drawing.Point(357, 3);
+            this.kryptonButton7.Location = new System.Drawing.Point(357, 7);
             this.kryptonButton7.Name = "kryptonButton7";
             this.kryptonButton7.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
             this.kryptonButton7.Size = new System.Drawing.Size(75, 68);
@@ -831,14 +850,16 @@ namespace KryptonButtonExamples
             this.kryptonButton7.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonButton7.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonButton7.TabIndex = 6;
+            this.kryptonButton7.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton7.Values.ExtraText = "ExtraText";
             this.kryptonButton7.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton7.Values.Image")));
             this.kryptonButton7.Values.Text = "Text";
+            this.kryptonButton7.Enter += new System.EventHandler(this.button_Enter);
             // 
             // kryptonButton5
             // 
             this.kryptonButton5.AutoSize = true;
-            this.kryptonButton5.Location = new System.Drawing.Point(248, 3);
+            this.kryptonButton5.Location = new System.Drawing.Point(248, 7);
             this.kryptonButton5.Name = "kryptonButton5";
             this.kryptonButton5.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonButton5.Size = new System.Drawing.Size(79, 67);
@@ -855,14 +876,16 @@ namespace KryptonButtonExamples
             this.kryptonButton5.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonButton5.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonButton5.TabIndex = 8;
+            this.kryptonButton5.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton5.Values.ExtraText = "ExtraText";
             this.kryptonButton5.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton5.Values.Image")));
             this.kryptonButton5.Values.Text = "Text";
+            this.kryptonButton5.Enter += new System.EventHandler(this.button_Enter);
             // 
             // kryptonButton8
             // 
             this.kryptonButton8.AutoSize = true;
-            this.kryptonButton8.Location = new System.Drawing.Point(339, 76);
+            this.kryptonButton8.Location = new System.Drawing.Point(339, 80);
             this.kryptonButton8.Name = "kryptonButton8";
             this.kryptonButton8.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
             this.kryptonButton8.Size = new System.Drawing.Size(98, 52);
@@ -880,14 +903,16 @@ namespace KryptonButtonExamples
             this.kryptonButton8.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonButton8.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonButton8.TabIndex = 7;
+            this.kryptonButton8.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton8.Values.ExtraText = "ExtraText";
             this.kryptonButton8.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton8.Values.Image")));
             this.kryptonButton8.Values.Text = "Text";
+            this.kryptonButton8.Enter += new System.EventHandler(this.button_Enter);
             // 
             // kryptonButton6
             // 
             this.kryptonButton6.AutoSize = true;
-            this.kryptonButton6.Location = new System.Drawing.Point(230, 76);
+            this.kryptonButton6.Location = new System.Drawing.Point(230, 80);
             this.kryptonButton6.Name = "kryptonButton6";
             this.kryptonButton6.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonButton6.Size = new System.Drawing.Size(96, 54);
@@ -903,14 +928,16 @@ namespace KryptonButtonExamples
             this.kryptonButton6.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonButton6.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonButton6.TabIndex = 9;
+            this.kryptonButton6.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton6.Values.ExtraText = "ExtraText";
             this.kryptonButton6.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton6.Values.Image")));
             this.kryptonButton6.Values.Text = "Text";
+            this.kryptonButton6.Enter += new System.EventHandler(this.button_Enter);
             // 
             // kryptonButton3
             // 
             this.kryptonButton3.AutoSize = true;
-            this.kryptonButton3.Location = new System.Drawing.Point(142, 3);
+            this.kryptonButton3.Location = new System.Drawing.Point(142, 7);
             this.kryptonButton3.Name = "kryptonButton3";
             this.kryptonButton3.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             this.kryptonButton3.Size = new System.Drawing.Size(75, 66);
@@ -927,14 +954,16 @@ namespace KryptonButtonExamples
             this.kryptonButton3.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonButton3.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonButton3.TabIndex = 6;
+            this.kryptonButton3.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton3.Values.ExtraText = "ExtraText";
             this.kryptonButton3.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton3.Values.Image")));
             this.kryptonButton3.Values.Text = "Text";
+            this.kryptonButton3.Enter += new System.EventHandler(this.button_Enter);
             // 
             // kryptonButton1
             // 
             this.kryptonButton1.AutoSize = true;
-            this.kryptonButton1.Location = new System.Drawing.Point(38, 3);
+            this.kryptonButton1.Location = new System.Drawing.Point(38, 7);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.kryptonButton1.Size = new System.Drawing.Size(73, 66);
@@ -954,14 +983,16 @@ namespace KryptonButtonExamples
             this.kryptonButton1.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonButton1.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonButton1.TabIndex = 6;
+            this.kryptonButton1.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton1.Values.ExtraText = "ExtraText";
             this.kryptonButton1.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton1.Values.Image")));
             this.kryptonButton1.Values.Text = "Text";
+            this.kryptonButton1.Enter += new System.EventHandler(this.button_Enter);
             // 
             // kryptonButton4
             // 
             this.kryptonButton4.AutoSize = true;
-            this.kryptonButton4.Location = new System.Drawing.Point(124, 76);
+            this.kryptonButton4.Location = new System.Drawing.Point(124, 80);
             this.kryptonButton4.Name = "kryptonButton4";
             this.kryptonButton4.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             this.kryptonButton4.Size = new System.Drawing.Size(92, 52);
@@ -977,14 +1008,16 @@ namespace KryptonButtonExamples
             this.kryptonButton4.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonButton4.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonButton4.TabIndex = 7;
+            this.kryptonButton4.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton4.Values.ExtraText = "ExtraText";
             this.kryptonButton4.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton4.Values.Image")));
             this.kryptonButton4.Values.Text = "Text";
+            this.kryptonButton4.Enter += new System.EventHandler(this.button_Enter);
             // 
             // kryptonButton2
             // 
             this.kryptonButton2.AutoSize = true;
-            this.kryptonButton2.Location = new System.Drawing.Point(20, 76);
+            this.kryptonButton2.Location = new System.Drawing.Point(20, 80);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.kryptonButton2.Size = new System.Drawing.Size(92, 52);
@@ -1000,24 +1033,25 @@ namespace KryptonButtonExamples
             this.kryptonButton2.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonButton2.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.kryptonButton2.TabIndex = 7;
+            this.kryptonButton2.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton2.Values.ExtraText = "ExtraText";
             this.kryptonButton2.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton2.Values.Image")));
             this.kryptonButton2.Values.Text = "Text";
+            this.kryptonButton2.Enter += new System.EventHandler(this.button_Enter);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(778, 645);
+            this.ClientSize = new System.Drawing.Size(778, 617);
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
-            this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -1044,8 +1078,6 @@ namespace KryptonButtonExamples
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.PropertyGrid propertyGrid;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox3;
