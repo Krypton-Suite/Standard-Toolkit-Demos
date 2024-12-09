@@ -72,6 +72,7 @@
             this.kryptonDockingManager.GlobalLoading += new System.EventHandler<Krypton.Docking.DockGlobalLoadingEventArgs>(this.kryptonDockingManager_GlobalLoading);
             this.kryptonDockingManager.PageSaving += new System.EventHandler<Krypton.Docking.DockPageSavingEventArgs>(this.kryptonDockingManager_PageSaving);
             this.kryptonDockingManager.PageLoading += new System.EventHandler<Krypton.Docking.DockPageLoadingEventArgs>(this.kryptonDockingManager_PageLoading);
+            this.kryptonDockingManager.RecreateLoadingPage += new System.EventHandler<Krypton.Workspace.RecreateLoadingPageEventArgs>(this.kryptonDockingManager_RecreateLoadingPage);
             // 
             // imageListSmall
             // 
@@ -83,7 +84,6 @@
             // 
             // kryptonRibbon
             // 
-            this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
             this.kryptonRibbon.RibbonFileAppButton.AppButtonImage = null;
             this.kryptonRibbon.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
@@ -91,13 +91,12 @@
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabPersistence});
             this.kryptonRibbon.SelectedTab = this.tabPersistence;
-            this.kryptonRibbon.Size = new System.Drawing.Size(1053, 136);
+            this.kryptonRibbon.Size = new System.Drawing.Size(1057, 136);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // kryptonContextMenuItem1
             // 
             this.kryptonContextMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("kryptonContextMenuItem1.Image")));
-            this.kryptonContextMenuItem1.Text = "E&xit";
             this.kryptonContextMenuItem1.Click += new System.EventHandler(this.kryptonContextMenuItem1_Click);
             // 
             // tabPersistence
@@ -268,13 +267,12 @@
             this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel.Name = "kryptonPanel";
             this.kryptonPanel.Padding = new System.Windows.Forms.Padding(4);
-            this.kryptonPanel.Size = new System.Drawing.Size(1053, 530);
+            this.kryptonPanel.Size = new System.Drawing.Size(1057, 516);
             this.kryptonPanel.TabIndex = 1;
             // 
             // kryptonDockableWorkspace
             // 
             this.kryptonDockableWorkspace.ActivePage = null;
-            this.kryptonDockableWorkspace.AutoHiddenHost = false;
             this.kryptonDockableWorkspace.CompactFlags = ((Krypton.Workspace.CompactFlags)(((Krypton.Workspace.CompactFlags.RemoveEmptyCells | Krypton.Workspace.CompactFlags.RemoveEmptySequences) 
             | Krypton.Workspace.CompactFlags.PromoteLeafs)));
             this.kryptonDockableWorkspace.ContainerBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
@@ -286,10 +284,9 @@
             // 
             // 
             this.kryptonDockableWorkspace.Root.UniqueName = "5462F66039D342065462F66039D34206";
-            this.kryptonDockableWorkspace.Root.WorkspaceControl = this.kryptonDockableWorkspace;
             this.kryptonDockableWorkspace.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.LowProfile;
             this.kryptonDockableWorkspace.ShowMaximizeButton = false;
-            this.kryptonDockableWorkspace.Size = new System.Drawing.Size(1045, 522);
+            this.kryptonDockableWorkspace.Size = new System.Drawing.Size(1049, 508);
             this.kryptonDockableWorkspace.SplitterWidth = 5;
             this.kryptonDockableWorkspace.TabIndex = 0;
             this.kryptonDockableWorkspace.TabStop = true;
@@ -315,7 +312,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1053, 666);
+            this.ClientSize = new System.Drawing.Size(1057, 652);
             this.CloseBox = false;
             this.Controls.Add(this.kryptonPanel);
             this.Controls.Add(this.kryptonRibbon);
