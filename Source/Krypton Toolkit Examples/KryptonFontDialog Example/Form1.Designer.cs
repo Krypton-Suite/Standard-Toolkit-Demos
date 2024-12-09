@@ -410,7 +410,6 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalApplyToolstrips = false;
             this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             // 
             // Form1

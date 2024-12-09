@@ -137,7 +137,7 @@ namespace ChildControlStack
             this.toolStripMenuItem1});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(326, 28);
+            this.menuStrip.Size = new System.Drawing.Size(330, 28);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip";
             // 
@@ -202,11 +202,11 @@ namespace ChildControlStack
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.kryptonPanelMain);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(326, 245);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(330, 221);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 28);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(326, 272);
+            this.toolStripContainer1.Size = new System.Drawing.Size(330, 248);
             this.toolStripContainer1.TabIndex = 4;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -221,14 +221,13 @@ namespace ChildControlStack
             this.kryptonPanelMain.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanelMain.Name = "kryptonPanelMain";
             this.kryptonPanelMain.Padding = new System.Windows.Forms.Padding(5);
-            this.kryptonPanelMain.Size = new System.Drawing.Size(326, 245);
+            this.kryptonPanelMain.Size = new System.Drawing.Size(330, 221);
             this.kryptonPanelMain.TabIndex = 0;
             // 
             // kryptonGroupMain
             // 
             this.kryptonGroupMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonGroupMain.Location = new System.Drawing.Point(5, 5);
-            this.kryptonGroupMain.Name = "kryptonGroupMain";
             // 
             // kryptonGroupMain.Panel
             // 
@@ -243,7 +242,7 @@ namespace ChildControlStack
             this.kryptonGroupMain.Panel.Controls.Add(this.kryptonCheckButton2);
             this.kryptonGroupMain.Panel.Controls.Add(this.kryptonBorderEdge1);
             this.kryptonGroupMain.Panel.Controls.Add(this.kryptonCheckButton1);
-            this.kryptonGroupMain.Size = new System.Drawing.Size(316, 235);
+            this.kryptonGroupMain.Size = new System.Drawing.Size(320, 211);
             this.kryptonGroupMain.TabIndex = 0;
             // 
             // textBoxFiller
@@ -252,7 +251,7 @@ namespace ChildControlStack
             this.textBoxFiller.Location = new System.Drawing.Point(0, 36);
             this.textBoxFiller.Multiline = true;
             this.textBoxFiller.Name = "textBoxFiller";
-            this.textBoxFiller.Size = new System.Drawing.Size(314, 93);
+            this.textBoxFiller.Size = new System.Drawing.Size(318, 73);
             this.textBoxFiller.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.False;
             this.textBoxFiller.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -265,7 +264,7 @@ namespace ChildControlStack
             this.kryptonBorderEdge5.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonBorderEdge5.Location = new System.Drawing.Point(0, 35);
             this.kryptonBorderEdge5.Name = "kryptonBorderEdge5";
-            this.kryptonBorderEdge5.Size = new System.Drawing.Size(314, 1);
+            this.kryptonBorderEdge5.Size = new System.Drawing.Size(318, 1);
             this.kryptonBorderEdge5.Text = "kryptonBorderEdge5";
             // 
             // kryptonHeader
@@ -273,7 +272,7 @@ namespace ChildControlStack
             this.kryptonHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonHeader.Location = new System.Drawing.Point(0, 0);
             this.kryptonHeader.Name = "kryptonHeader";
-            this.kryptonHeader.Size = new System.Drawing.Size(314, 35);
+            this.kryptonHeader.Size = new System.Drawing.Size(318, 35);
             this.kryptonHeader.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
             this.kryptonHeader.TabIndex = 5;
             this.kryptonHeader.Values.Description = "";
@@ -283,17 +282,17 @@ namespace ChildControlStack
             // kryptonBorderEdge4
             // 
             this.kryptonBorderEdge4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonBorderEdge4.Location = new System.Drawing.Point(0, 129);
+            this.kryptonBorderEdge4.Location = new System.Drawing.Point(0, 109);
             this.kryptonBorderEdge4.Name = "kryptonBorderEdge4";
-            this.kryptonBorderEdge4.Size = new System.Drawing.Size(314, 1);
+            this.kryptonBorderEdge4.Size = new System.Drawing.Size(318, 1);
             this.kryptonBorderEdge4.Text = "kryptonBorderEdge4";
             // 
             // kryptonCheckButton4
             // 
             this.kryptonCheckButton4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonCheckButton4.Location = new System.Drawing.Point(0, 130);
+            this.kryptonCheckButton4.Location = new System.Drawing.Point(0, 110);
             this.kryptonCheckButton4.Name = "kryptonCheckButton4";
-            this.kryptonCheckButton4.Size = new System.Drawing.Size(314, 25);
+            this.kryptonCheckButton4.Size = new System.Drawing.Size(318, 24);
             this.kryptonCheckButton4.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
             this.kryptonCheckButton4.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonCheckButton4.StateCommon.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Center;
@@ -309,17 +308,17 @@ namespace ChildControlStack
             // kryptonBorderEdge3
             // 
             this.kryptonBorderEdge3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonBorderEdge3.Location = new System.Drawing.Point(0, 155);
+            this.kryptonBorderEdge3.Location = new System.Drawing.Point(0, 134);
             this.kryptonBorderEdge3.Name = "kryptonBorderEdge3";
-            this.kryptonBorderEdge3.Size = new System.Drawing.Size(314, 1);
+            this.kryptonBorderEdge3.Size = new System.Drawing.Size(318, 1);
             this.kryptonBorderEdge3.Text = "kryptonBorderEdge3";
             // 
             // kryptonCheckButton3
             // 
             this.kryptonCheckButton3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonCheckButton3.Location = new System.Drawing.Point(0, 156);
+            this.kryptonCheckButton3.Location = new System.Drawing.Point(0, 135);
             this.kryptonCheckButton3.Name = "kryptonCheckButton3";
-            this.kryptonCheckButton3.Size = new System.Drawing.Size(314, 25);
+            this.kryptonCheckButton3.Size = new System.Drawing.Size(318, 24);
             this.kryptonCheckButton3.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
             this.kryptonCheckButton3.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonCheckButton3.StateCommon.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Center;
@@ -335,18 +334,18 @@ namespace ChildControlStack
             // kryptonBorderEdge2
             // 
             this.kryptonBorderEdge2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonBorderEdge2.Location = new System.Drawing.Point(0, 181);
+            this.kryptonBorderEdge2.Location = new System.Drawing.Point(0, 159);
             this.kryptonBorderEdge2.Name = "kryptonBorderEdge2";
-            this.kryptonBorderEdge2.Size = new System.Drawing.Size(314, 1);
+            this.kryptonBorderEdge2.Size = new System.Drawing.Size(318, 1);
             this.kryptonBorderEdge2.Text = "kryptonBorderEdge2";
             // 
             // kryptonCheckButton2
             // 
             this.kryptonCheckButton2.Checked = true;
             this.kryptonCheckButton2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonCheckButton2.Location = new System.Drawing.Point(0, 182);
+            this.kryptonCheckButton2.Location = new System.Drawing.Point(0, 160);
             this.kryptonCheckButton2.Name = "kryptonCheckButton2";
-            this.kryptonCheckButton2.Size = new System.Drawing.Size(314, 25);
+            this.kryptonCheckButton2.Size = new System.Drawing.Size(318, 24);
             this.kryptonCheckButton2.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
             this.kryptonCheckButton2.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonCheckButton2.StateCommon.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Center;
@@ -362,17 +361,17 @@ namespace ChildControlStack
             // kryptonBorderEdge1
             // 
             this.kryptonBorderEdge1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonBorderEdge1.Location = new System.Drawing.Point(0, 207);
+            this.kryptonBorderEdge1.Location = new System.Drawing.Point(0, 184);
             this.kryptonBorderEdge1.Name = "kryptonBorderEdge1";
-            this.kryptonBorderEdge1.Size = new System.Drawing.Size(314, 1);
+            this.kryptonBorderEdge1.Size = new System.Drawing.Size(318, 1);
             this.kryptonBorderEdge1.Text = "kryptonBorderEdge1";
             // 
             // kryptonCheckButton1
             // 
             this.kryptonCheckButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonCheckButton1.Location = new System.Drawing.Point(0, 208);
+            this.kryptonCheckButton1.Location = new System.Drawing.Point(0, 185);
             this.kryptonCheckButton1.Name = "kryptonCheckButton1";
-            this.kryptonCheckButton1.Size = new System.Drawing.Size(314, 25);
+            this.kryptonCheckButton1.Size = new System.Drawing.Size(318, 24);
             this.kryptonCheckButton1.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.None;
             this.kryptonCheckButton1.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonCheckButton1.StateCommon.Content.Image.ImageV = Krypton.Toolkit.PaletteRelativeAlign.Center;
@@ -396,21 +395,19 @@ namespace ChildControlStack
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalApplyToolstrips = false;
             this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(326, 300);
+            this.ClientSize = new System.Drawing.Size(330, 276);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.menuStrip);
-            this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(257, 348);
+            this.MinimumSize = new System.Drawing.Size(257, 330);
             this.Name = "Form1";
             this.Text = "Child Control Stack";
             this.Load += new System.EventHandler(this.Form1_Load);

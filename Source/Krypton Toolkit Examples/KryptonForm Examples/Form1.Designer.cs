@@ -646,7 +646,6 @@ namespace KryptonFormExamples
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalApplyToolstrips = false;
             this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             // 
             // buttonSpecAny2

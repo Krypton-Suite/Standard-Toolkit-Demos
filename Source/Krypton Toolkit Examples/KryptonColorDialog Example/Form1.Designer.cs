@@ -394,7 +394,6 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalApplyToolstrips = false;
             // 
             // Form1
             // 
