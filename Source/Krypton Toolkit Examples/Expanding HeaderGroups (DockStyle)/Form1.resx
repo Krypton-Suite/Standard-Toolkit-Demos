@@ -165,7 +165,7 @@ You do not need to write a single line of code to create this setup
   <data name="header2.ValuesPrimary.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACj0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsMAAALDAE/QCLIAAACj0lE
         QVQ4T4XMa0iTYRjG8aW+ts1To9CWztZKNrYwnKcpTXGattyk1dTeNnVZHmbZJjYnQbV0pC7xEKYGKZWG
         QYmrCJXoQEXkByUsgyCUPlhaigppK6yrVS+IZev35YaH//XQ/lSWl+5ToEk2WooV76vLMnBMJ51MiQgp
         1mbT3KnEtZJcub3r/HE8vF6Hvg4rOm16mHRJyE2NMlLJyshdqWt/3kZLPloq8lFRlIrDaSJcsOah1pQO
@@ -183,7 +183,7 @@ You do not need to write a single line of code to create this setup
   <data name="header1.ValuesPrimary.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsOAAALDgFAvuFBAAACx0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsMAAALDAE/QCLIAAACx0lE
         QVQ4T8WSW0iTYRjHPyi6COomkCJdHvKwufnZt4M7eNjm/LapbLrN0+dhfpM2dR6aNk/pXK6DFhG2edaQ
         TCwsiElERIh1YUUgXWnmvZdeJ7l/H2tQN11GP3h54Xme38PzPrzEP0Nv0PfZWfbwYvL5g3R++uVY+O/Q
         tDKedTg2GaYGJ44Rhy5HfWRhfgrmEjVqqyzfmbr6H3FnTuH0yeOf+LwL8THtNwUq2frs9ARmZ6YgSOOh

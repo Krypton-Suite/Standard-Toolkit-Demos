@@ -143,7 +143,7 @@ namespace ThreePaneApplication
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(455, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(459, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -161,7 +161,7 @@ namespace ThreePaneApplication
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // newToolStripMenuItem
@@ -247,7 +247,7 @@ namespace ThreePaneApplication
             this.toolStripSeparator4,
             this.selectAllToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 26);
             this.editToolStripMenuItem.Text = "&Edit";
             // 
             // undoToolStripMenuItem
@@ -313,7 +313,7 @@ namespace ThreePaneApplication
             this.customizeToolStripMenuItem,
             this.optionsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 26);
             this.toolsToolStripMenuItem.Text = "&Tools";
             // 
             // customizeToolStripMenuItem
@@ -337,7 +337,7 @@ namespace ThreePaneApplication
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // contentsToolStripMenuItem
@@ -479,11 +479,11 @@ namespace ThreePaneApplication
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.kryptonPanelMain);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(455, 378);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(459, 347);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 28);
+            this.toolStripContainer1.Location = new System.Drawing.Point(0, 30);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(455, 405);
+            this.toolStripContainer1.Size = new System.Drawing.Size(459, 374);
             this.toolStripContainer1.TabIndex = 1;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -498,7 +498,7 @@ namespace ThreePaneApplication
             this.kryptonPanelMain.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanelMain.Name = "kryptonPanelMain";
             this.kryptonPanelMain.Padding = new System.Windows.Forms.Padding(4);
-            this.kryptonPanelMain.Size = new System.Drawing.Size(455, 378);
+            this.kryptonPanelMain.Size = new System.Drawing.Size(459, 347);
             this.kryptonPanelMain.TabIndex = 0;
             // 
             // kryptonSplitContainerMain
@@ -506,7 +506,6 @@ namespace ThreePaneApplication
             this.kryptonSplitContainerMain.Cursor = System.Windows.Forms.Cursors.Default;
             this.kryptonSplitContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonSplitContainerMain.Location = new System.Drawing.Point(4, 4);
-            this.kryptonSplitContainerMain.Name = "kryptonSplitContainerMain";
             // 
             // kryptonSplitContainerMain.Panel1
             // 
@@ -515,7 +514,7 @@ namespace ThreePaneApplication
             // kryptonSplitContainerMain.Panel2
             // 
             this.kryptonSplitContainerMain.Panel2.Controls.Add(this.kryptonSplitContainerDetails);
-            this.kryptonSplitContainerMain.Size = new System.Drawing.Size(447, 370);
+            this.kryptonSplitContainerMain.Size = new System.Drawing.Size(451, 339);
             this.kryptonSplitContainerMain.SplitterDistance = 127;
             this.kryptonSplitContainerMain.TabIndex = 0;
             // 
@@ -523,8 +522,7 @@ namespace ThreePaneApplication
             // 
             this.kryptonHeaderGroupNavigation.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonHeaderGroupNavigation.Location = new System.Drawing.Point(0, 0);
-            this.kryptonHeaderGroupNavigation.Name = "kryptonHeaderGroupNavigation";
-            this.kryptonHeaderGroupNavigation.Size = new System.Drawing.Size(127, 370);
+            this.kryptonHeaderGroupNavigation.Size = new System.Drawing.Size(127, 339);
             this.kryptonHeaderGroupNavigation.TabIndex = 0;
             this.kryptonHeaderGroupNavigation.ValuesPrimary.Image = null;
             // 
@@ -533,7 +531,6 @@ namespace ThreePaneApplication
             this.kryptonSplitContainerDetails.Cursor = System.Windows.Forms.Cursors.Default;
             this.kryptonSplitContainerDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonSplitContainerDetails.Location = new System.Drawing.Point(0, 0);
-            this.kryptonSplitContainerDetails.Name = "kryptonSplitContainerDetails";
             this.kryptonSplitContainerDetails.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // kryptonSplitContainerDetails.Panel1
@@ -543,8 +540,8 @@ namespace ThreePaneApplication
             // kryptonSplitContainerDetails.Panel2
             // 
             this.kryptonSplitContainerDetails.Panel2.Controls.Add(this.kryptonButtonGroup);
-            this.kryptonSplitContainerDetails.Size = new System.Drawing.Size(315, 370);
-            this.kryptonSplitContainerDetails.SplitterDistance = 160;
+            this.kryptonSplitContainerDetails.Size = new System.Drawing.Size(319, 339);
+            this.kryptonSplitContainerDetails.SplitterDistance = 146;
             this.kryptonSplitContainerDetails.TabIndex = 0;
             // 
             // kryptonHeaderGroupDetails
@@ -552,8 +549,7 @@ namespace ThreePaneApplication
             this.kryptonHeaderGroupDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonHeaderGroupDetails.HeaderVisibleSecondary = false;
             this.kryptonHeaderGroupDetails.Location = new System.Drawing.Point(0, 0);
-            this.kryptonHeaderGroupDetails.Name = "kryptonHeaderGroupDetails";
-            this.kryptonHeaderGroupDetails.Size = new System.Drawing.Size(315, 160);
+            this.kryptonHeaderGroupDetails.Size = new System.Drawing.Size(319, 146);
             this.kryptonHeaderGroupDetails.StateNormal.HeaderPrimary.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.kryptonHeaderGroupDetails.TabIndex = 0;
             this.kryptonHeaderGroupDetails.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("kryptonHeaderGroupDetails.ValuesPrimary.Image")));
@@ -564,12 +560,11 @@ namespace ThreePaneApplication
             this.kryptonButtonGroup.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlAlternate;
             this.kryptonButtonGroup.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlAlternate;
             this.kryptonButtonGroup.Location = new System.Drawing.Point(0, 0);
-            this.kryptonButtonGroup.Name = "kryptonButtonGroup";
             // 
             // kryptonButtonGroup.Panel
             // 
             this.kryptonButtonGroup.Panel.Controls.Add(this.kryptonGroup1);
-            this.kryptonButtonGroup.Size = new System.Drawing.Size(315, 205);
+            this.kryptonButtonGroup.Size = new System.Drawing.Size(319, 188);
             this.kryptonButtonGroup.StateCommon.Back.Color1 = System.Drawing.SystemColors.AppWorkspace;
             this.kryptonButtonGroup.StateCommon.Back.ColorAngle = 45F;
             this.kryptonButtonGroup.StateCommon.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
@@ -579,7 +574,6 @@ namespace ThreePaneApplication
             // 
             this.kryptonGroup1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonGroup1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonGroup1.Name = "kryptonGroup1";
             // 
             // kryptonGroup1.Panel
             // 
@@ -596,12 +590,12 @@ namespace ThreePaneApplication
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2007Silver);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2007Blue);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonOffice2013White);
-            this.kryptonGroup1.Size = new System.Drawing.Size(313, 203);
+            this.kryptonGroup1.Size = new System.Drawing.Size(317, 186);
             this.kryptonGroup1.TabIndex = 0;
             // 
             // kryptonOffice2010Black
             // 
-            this.kryptonOffice2010Black.Location = new System.Drawing.Point(13, 66);
+            this.kryptonOffice2010Black.Location = new System.Drawing.Point(13, 62);
             this.kryptonOffice2010Black.Name = "kryptonOffice2010Black";
             this.kryptonOffice2010Black.Size = new System.Drawing.Size(151, 24);
             this.kryptonOffice2010Black.TabIndex = 2;
@@ -610,7 +604,7 @@ namespace ThreePaneApplication
             // 
             // kryptonSparkleOrange
             // 
-            this.kryptonSparkleOrange.Location = new System.Drawing.Point(13, 131);
+            this.kryptonSparkleOrange.Location = new System.Drawing.Point(13, 123);
             this.kryptonSparkleOrange.Name = "kryptonSparkleOrange";
             this.kryptonSparkleOrange.Size = new System.Drawing.Size(139, 24);
             this.kryptonSparkleOrange.TabIndex = 7;
@@ -620,7 +614,7 @@ namespace ThreePaneApplication
             // kryptonOffice2010Blue
             // 
             this.kryptonOffice2010Blue.Checked = true;
-            this.kryptonOffice2010Blue.Location = new System.Drawing.Point(13, 16);
+            this.kryptonOffice2010Blue.Location = new System.Drawing.Point(13, 15);
             this.kryptonOffice2010Blue.Name = "kryptonOffice2010Blue";
             this.kryptonOffice2010Blue.Size = new System.Drawing.Size(145, 24);
             this.kryptonOffice2010Blue.TabIndex = 0;
@@ -629,7 +623,7 @@ namespace ThreePaneApplication
             // 
             // kryptonOffice2010Silver
             // 
-            this.kryptonOffice2010Silver.Location = new System.Drawing.Point(13, 41);
+            this.kryptonOffice2010Silver.Location = new System.Drawing.Point(13, 39);
             this.kryptonOffice2010Silver.Name = "kryptonOffice2010Silver";
             this.kryptonOffice2010Silver.Size = new System.Drawing.Size(153, 24);
             this.kryptonOffice2010Silver.TabIndex = 1;
@@ -638,7 +632,7 @@ namespace ThreePaneApplication
             // 
             // kryptonSparklePurple
             // 
-            this.kryptonSparklePurple.Location = new System.Drawing.Point(13, 154);
+            this.kryptonSparklePurple.Location = new System.Drawing.Point(13, 145);
             this.kryptonSparklePurple.Name = "kryptonSparklePurple";
             this.kryptonSparklePurple.Size = new System.Drawing.Size(132, 24);
             this.kryptonSparklePurple.TabIndex = 8;
@@ -647,7 +641,7 @@ namespace ThreePaneApplication
             // 
             // kryptonSparkleBlue
             // 
-            this.kryptonSparkleBlue.Location = new System.Drawing.Point(13, 109);
+            this.kryptonSparkleBlue.Location = new System.Drawing.Point(13, 103);
             this.kryptonSparkleBlue.Name = "kryptonSparkleBlue";
             this.kryptonSparkleBlue.Size = new System.Drawing.Size(118, 24);
             this.kryptonSparkleBlue.TabIndex = 6;
@@ -656,7 +650,7 @@ namespace ThreePaneApplication
             // 
             // kryptonCustom
             // 
-            this.kryptonCustom.Location = new System.Drawing.Point(147, 130);
+            this.kryptonCustom.Location = new System.Drawing.Point(147, 122);
             this.kryptonCustom.Name = "kryptonCustom";
             this.kryptonCustom.Size = new System.Drawing.Size(76, 24);
             this.kryptonCustom.TabIndex = 11;
@@ -665,7 +659,7 @@ namespace ThreePaneApplication
             // 
             // kryptonSystem
             // 
-            this.kryptonSystem.Location = new System.Drawing.Point(147, 107);
+            this.kryptonSystem.Location = new System.Drawing.Point(147, 101);
             this.kryptonSystem.Name = "kryptonSystem";
             this.kryptonSystem.Size = new System.Drawing.Size(72, 24);
             this.kryptonSystem.TabIndex = 10;
@@ -674,7 +668,7 @@ namespace ThreePaneApplication
             // 
             // kryptonOffice2003
             // 
-            this.kryptonOffice2003.Location = new System.Drawing.Point(147, 85);
+            this.kryptonOffice2003.Location = new System.Drawing.Point(147, 80);
             this.kryptonOffice2003.Name = "kryptonOffice2003";
             this.kryptonOffice2003.Size = new System.Drawing.Size(101, 24);
             this.kryptonOffice2003.TabIndex = 9;
@@ -683,7 +677,7 @@ namespace ThreePaneApplication
             // 
             // kryptonOffice2007Black
             // 
-            this.kryptonOffice2007Black.Location = new System.Drawing.Point(147, 66);
+            this.kryptonOffice2007Black.Location = new System.Drawing.Point(147, 62);
             this.kryptonOffice2007Black.Name = "kryptonOffice2007Black";
             this.kryptonOffice2007Black.Size = new System.Drawing.Size(151, 24);
             this.kryptonOffice2007Black.TabIndex = 5;
@@ -692,7 +686,7 @@ namespace ThreePaneApplication
             // 
             // kryptonOffice2007Silver
             // 
-            this.kryptonOffice2007Silver.Location = new System.Drawing.Point(147, 41);
+            this.kryptonOffice2007Silver.Location = new System.Drawing.Point(147, 39);
             this.kryptonOffice2007Silver.Name = "kryptonOffice2007Silver";
             this.kryptonOffice2007Silver.Size = new System.Drawing.Size(153, 24);
             this.kryptonOffice2007Silver.TabIndex = 4;
@@ -701,7 +695,7 @@ namespace ThreePaneApplication
             // 
             // kryptonOffice2007Blue
             // 
-            this.kryptonOffice2007Blue.Location = new System.Drawing.Point(147, 16);
+            this.kryptonOffice2007Blue.Location = new System.Drawing.Point(147, 15);
             this.kryptonOffice2007Blue.Name = "kryptonOffice2007Blue";
             this.kryptonOffice2007Blue.Size = new System.Drawing.Size(145, 24);
             this.kryptonOffice2007Blue.TabIndex = 3;
@@ -710,7 +704,7 @@ namespace ThreePaneApplication
             // 
             // kryptonOffice2013White
             // 
-            this.kryptonOffice2013White.Location = new System.Drawing.Point(12, 85);
+            this.kryptonOffice2013White.Location = new System.Drawing.Point(12, 80);
             this.kryptonOffice2013White.Name = "kryptonOffice2013White";
             this.kryptonOffice2013White.Size = new System.Drawing.Size(156, 24);
             this.kryptonOffice2013White.TabIndex = 4;
@@ -723,7 +717,6 @@ namespace ThreePaneApplication
             // 
             // kryptonPaletteCustom
             // 
-            this.kryptonPaletteCustom.BasePaletteType = Krypton.Toolkit.BasePaletteType.Professional;
             this.kryptonPaletteCustom.ButtonStyles.ButtonButtonSpec.StateDisabled.Border.Draw = Krypton.Toolkit.InheritBool.False;
             this.kryptonPaletteCustom.ButtonStyles.ButtonButtonSpec.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -827,7 +820,6 @@ namespace ThreePaneApplication
             this.kryptonPaletteCustom.PanelStyles.PanelAlternate.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(212)))), ((int)(((byte)(192)))));
             this.kryptonPaletteCustom.PanelStyles.PanelClient.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(237)))), ((int)(((byte)(227)))));
             this.kryptonPaletteCustom.PanelStyles.PanelCommon.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
-            this.kryptonPaletteCustom.ThemeName = "PaletteBase";
             this.kryptonPaletteCustom.ToolMenuStatus.Button.ButtonCheckedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
             this.kryptonPaletteCustom.ToolMenuStatus.Button.ButtonCheckedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
             this.kryptonPaletteCustom.ToolMenuStatus.Button.ButtonCheckedGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
@@ -895,10 +887,10 @@ namespace ThreePaneApplication
             // 
             this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 433);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 404);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.statusStrip1.Size = new System.Drawing.Size(455, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(459, 24);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -920,16 +912,15 @@ namespace ThreePaneApplication
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(455, 455);
+            this.ClientSize = new System.Drawing.Size(459, 428);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.statusStrip1);
-            this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(459, 509);
+            this.MinimumSize = new System.Drawing.Size(459, 482);
             this.Name = "Form1";
             this.Text = "Three Pane Application (Basic)";
             this.menuStrip1.ResumeLayout(false);

@@ -98,7 +98,7 @@ namespace ExpandingHeaderGroupsDockStyle
             this.fileToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(363, 28);
+            this.menuStrip.Size = new System.Drawing.Size(373, 28);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -219,11 +219,11 @@ namespace ExpandingHeaderGroupsDockStyle
             // toolStripContainer.ContentPanel
             // 
             this.toolStripContainer.ContentPanel.Controls.Add(this.kryptonPanel1);
-            this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(363, 331);
+            this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(373, 272);
             this.toolStripContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer.Location = new System.Drawing.Point(0, 28);
             this.toolStripContainer.Name = "toolStripContainer";
-            this.toolStripContainer.Size = new System.Drawing.Size(363, 358);
+            this.toolStripContainer.Size = new System.Drawing.Size(373, 299);
             this.toolStripContainer.TabIndex = 1;
             this.toolStripContainer.Text = "toolStripContainer1";
             // 
@@ -242,20 +242,19 @@ namespace ExpandingHeaderGroupsDockStyle
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(5);
-            this.kryptonPanel1.Size = new System.Drawing.Size(363, 331);
+            this.kryptonPanel1.Size = new System.Drawing.Size(373, 272);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // groupFiller
             // 
             this.groupFiller.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupFiller.Location = new System.Drawing.Point(5, 219);
-            this.groupFiller.Name = "groupFiller";
+            this.groupFiller.Location = new System.Drawing.Point(5, 214);
             // 
             // groupFiller.Panel
             // 
             this.groupFiller.Panel.Controls.Add(this.textBoxMainFill);
             this.groupFiller.Panel.Padding = new System.Windows.Forms.Padding(5);
-            this.groupFiller.Size = new System.Drawing.Size(353, 107);
+            this.groupFiller.Size = new System.Drawing.Size(363, 53);
             this.groupFiller.TabIndex = 2;
             // 
             // textBoxMainFill
@@ -264,7 +263,7 @@ namespace ExpandingHeaderGroupsDockStyle
             this.textBoxMainFill.Location = new System.Drawing.Point(5, 5);
             this.textBoxMainFill.Multiline = true;
             this.textBoxMainFill.Name = "textBoxMainFill";
-            this.textBoxMainFill.Size = new System.Drawing.Size(341, 95);
+            this.textBoxMainFill.Size = new System.Drawing.Size(351, 41);
             this.textBoxMainFill.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.False;
             this.textBoxMainFill.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -275,9 +274,9 @@ namespace ExpandingHeaderGroupsDockStyle
             // header2Border
             // 
             this.header2Border.Dock = System.Windows.Forms.DockStyle.Top;
-            this.header2Border.Location = new System.Drawing.Point(5, 214);
+            this.header2Border.Location = new System.Drawing.Point(5, 209);
             this.header2Border.Name = "header2Border";
-            this.header2Border.Size = new System.Drawing.Size(353, 5);
+            this.header2Border.Size = new System.Drawing.Size(363, 5);
             this.header2Border.TabIndex = 3;
             // 
             // header2
@@ -287,8 +286,7 @@ namespace ExpandingHeaderGroupsDockStyle
             this.header2.Dock = System.Windows.Forms.DockStyle.Top;
             this.header2.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.header2.HeaderVisibleSecondary = false;
-            this.header2.Location = new System.Drawing.Point(5, 99);
-            this.header2.Name = "header2";
+            this.header2.Location = new System.Drawing.Point(5, 97);
             // 
             // header2.Panel
             // 
@@ -300,8 +298,8 @@ namespace ExpandingHeaderGroupsDockStyle
             this.header2.Panel.Controls.Add(this.textBoxFirstName);
             this.header2.Panel.Controls.Add(this.labelLastName);
             this.header2.Panel.Controls.Add(this.labelFirstName);
-            this.header2.Panel.Padding = new System.Windows.Forms.Padding(10);
-            this.header2.Size = new System.Drawing.Size(353, 115);
+            this.header2.Panel.Padding = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.header2.Size = new System.Drawing.Size(363, 112);
             this.header2.TabIndex = 1;
             this.header2.ValuesPrimary.Heading = "User Details";
             this.header2.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("header2.ValuesPrimary.Image")));
@@ -313,7 +311,7 @@ namespace ExpandingHeaderGroupsDockStyle
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(240, 38);
+            this.textBox3.Location = new System.Drawing.Point(240, 36);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(94, 27);
             this.textBox3.TabIndex = 3;
@@ -321,7 +319,7 @@ namespace ExpandingHeaderGroupsDockStyle
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(240, 11);
+            this.textBox2.Location = new System.Drawing.Point(240, 10);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(94, 27);
             this.textBox2.TabIndex = 1;
@@ -329,7 +327,7 @@ namespace ExpandingHeaderGroupsDockStyle
             // 
             // labelPosition
             // 
-            this.labelPosition.Location = new System.Drawing.Point(186, 37);
+            this.labelPosition.Location = new System.Drawing.Point(186, 35);
             this.labelPosition.Name = "labelPosition";
             this.labelPosition.Size = new System.Drawing.Size(66, 24);
             this.labelPosition.TabIndex = 4;
@@ -337,7 +335,7 @@ namespace ExpandingHeaderGroupsDockStyle
             // 
             // labelAge
             // 
-            this.labelAge.Location = new System.Drawing.Point(185, 12);
+            this.labelAge.Location = new System.Drawing.Point(185, 11);
             this.labelAge.Name = "labelAge";
             this.labelAge.Size = new System.Drawing.Size(39, 24);
             this.labelAge.TabIndex = 3;
@@ -345,7 +343,7 @@ namespace ExpandingHeaderGroupsDockStyle
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(82, 38);
+            this.textBox1.Location = new System.Drawing.Point(82, 36);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(89, 27);
             this.textBox1.TabIndex = 2;
@@ -353,7 +351,7 @@ namespace ExpandingHeaderGroupsDockStyle
             // 
             // textBoxFirstName
             // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(82, 11);
+            this.textBoxFirstName.Location = new System.Drawing.Point(82, 10);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(89, 27);
             this.textBoxFirstName.TabIndex = 0;
@@ -361,7 +359,7 @@ namespace ExpandingHeaderGroupsDockStyle
             // 
             // labelLastName
             // 
-            this.labelLastName.Location = new System.Drawing.Point(10, 37);
+            this.labelLastName.Location = new System.Drawing.Point(10, 35);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(83, 24);
             this.labelLastName.TabIndex = 2;
@@ -369,7 +367,7 @@ namespace ExpandingHeaderGroupsDockStyle
             // 
             // labelFirstName
             // 
-            this.labelFirstName.Location = new System.Drawing.Point(10, 12);
+            this.labelFirstName.Location = new System.Drawing.Point(10, 11);
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(85, 24);
             this.labelFirstName.TabIndex = 1;
@@ -378,9 +376,9 @@ namespace ExpandingHeaderGroupsDockStyle
             // header1Border
             // 
             this.header1Border.Dock = System.Windows.Forms.DockStyle.Top;
-            this.header1Border.Location = new System.Drawing.Point(5, 94);
+            this.header1Border.Location = new System.Drawing.Point(5, 92);
             this.header1Border.Name = "header1Border";
-            this.header1Border.Size = new System.Drawing.Size(353, 5);
+            this.header1Border.Size = new System.Drawing.Size(363, 5);
             this.header1Border.TabIndex = 1;
             // 
             // header1
@@ -391,7 +389,6 @@ namespace ExpandingHeaderGroupsDockStyle
             this.header1.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.header1.HeaderVisibleSecondary = false;
             this.header1.Location = new System.Drawing.Point(5, 5);
-            this.header1.Name = "header1";
             // 
             // header1.Panel
             // 
@@ -399,8 +396,8 @@ namespace ExpandingHeaderGroupsDockStyle
             this.header1.Panel.Controls.Add(this.textBoxFind);
             this.header1.Panel.Controls.Add(this.kryptonButtonNext);
             this.header1.Panel.Controls.Add(this.labelFind);
-            this.header1.Panel.Padding = new System.Windows.Forms.Padding(10);
-            this.header1.Size = new System.Drawing.Size(353, 89);
+            this.header1.Panel.Padding = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.header1.Size = new System.Drawing.Size(363, 87);
             this.header1.TabIndex = 0;
             this.header1.ValuesPrimary.Heading = "Find";
             this.header1.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("header1.ValuesPrimary.Image")));
@@ -414,7 +411,7 @@ namespace ExpandingHeaderGroupsDockStyle
             // 
             this.kryptonButtonPrevious.AutoSize = true;
             this.kryptonButtonPrevious.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.kryptonButtonPrevious.Location = new System.Drawing.Point(232, 11);
+            this.kryptonButtonPrevious.Location = new System.Drawing.Point(232, 10);
             this.kryptonButtonPrevious.Name = "kryptonButtonPrevious";
             this.kryptonButtonPrevious.Size = new System.Drawing.Size(56, 28);
             this.kryptonButtonPrevious.TabIndex = 1;
@@ -423,7 +420,7 @@ namespace ExpandingHeaderGroupsDockStyle
             // 
             // textBoxFind
             // 
-            this.textBoxFind.Location = new System.Drawing.Point(47, 11);
+            this.textBoxFind.Location = new System.Drawing.Point(47, 10);
             this.textBoxFind.Name = "textBoxFind";
             this.textBoxFind.Size = new System.Drawing.Size(171, 27);
             this.textBoxFind.TabIndex = 0;
@@ -433,7 +430,7 @@ namespace ExpandingHeaderGroupsDockStyle
             // 
             this.kryptonButtonNext.AutoSize = true;
             this.kryptonButtonNext.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.kryptonButtonNext.Location = new System.Drawing.Point(287, 11);
+            this.kryptonButtonNext.Location = new System.Drawing.Point(287, 10);
             this.kryptonButtonNext.Name = "kryptonButtonNext";
             this.kryptonButtonNext.Size = new System.Drawing.Size(58, 28);
             this.kryptonButtonNext.TabIndex = 2;
@@ -442,7 +439,7 @@ namespace ExpandingHeaderGroupsDockStyle
             // 
             // labelFind
             // 
-            this.labelFind.Location = new System.Drawing.Point(10, 12);
+            this.labelFind.Location = new System.Drawing.Point(10, 11);
             this.labelFind.Name = "labelFind";
             this.labelFind.Size = new System.Drawing.Size(40, 24);
             this.labelFind.TabIndex = 0;
@@ -450,29 +447,27 @@ namespace ExpandingHeaderGroupsDockStyle
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalApplyToolstrips = false;
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             // 
             // statusStrip1
             // 
             this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 386);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 327);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.statusStrip1.Size = new System.Drawing.Size(363, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(373, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(363, 408);
+            this.ClientSize = new System.Drawing.Size(373, 349);
             this.Controls.Add(this.toolStripContainer);
             this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.statusStrip1);
-            this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
             this.MaximizeBox = false;

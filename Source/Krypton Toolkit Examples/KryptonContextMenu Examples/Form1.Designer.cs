@@ -1382,7 +1382,6 @@ namespace KryptonContextMenuExamples
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalApplyToolstrips = false;
             // 
             // kcmControls
             // 

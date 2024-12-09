@@ -85,11 +85,12 @@ namespace InputForm
             // menuStrip1
             // 
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(311, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(414, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -103,7 +104,7 @@ namespace InputForm
             this.toolStripMenuItem1,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // office2010MenuItem
@@ -112,7 +113,7 @@ namespace InputForm
             this.office2010MenuItem.CheckOnClick = true;
             this.office2010MenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.office2010MenuItem.Name = "office2010MenuItem";
-            this.office2010MenuItem.Size = new System.Drawing.Size(167, 22);
+            this.office2010MenuItem.Size = new System.Drawing.Size(211, 26);
             this.office2010MenuItem.Text = "Office 2010 - Blue";
             this.office2010MenuItem.Click += new System.EventHandler(this.office2010_Click);
             // 
@@ -120,14 +121,14 @@ namespace InputForm
             // 
             this.office2007MenuItem.CheckOnClick = true;
             this.office2007MenuItem.Name = "office2007MenuItem";
-            this.office2007MenuItem.Size = new System.Drawing.Size(167, 22);
+            this.office2007MenuItem.Size = new System.Drawing.Size(211, 26);
             this.office2007MenuItem.Text = "Office 2007 - Blue";
             this.office2007MenuItem.Click += new System.EventHandler(this.office2007_Click);
             // 
             // sparkleMenuItem
             // 
             this.sparkleMenuItem.Name = "sparkleMenuItem";
-            this.sparkleMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.sparkleMenuItem.Size = new System.Drawing.Size(211, 26);
             this.sparkleMenuItem.Text = "Sparkle - Blue";
             this.sparkleMenuItem.Click += new System.EventHandler(this.sparkle_Click);
             // 
@@ -135,19 +136,19 @@ namespace InputForm
             // 
             this.systemMenuItem.CheckOnClick = true;
             this.systemMenuItem.Name = "systemMenuItem";
-            this.systemMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.systemMenuItem.Size = new System.Drawing.Size(211, 26);
             this.systemMenuItem.Text = "System";
             this.systemMenuItem.Click += new System.EventHandler(this.system_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(164, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(208, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -155,14 +156,15 @@ namespace InputForm
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripOffice2010,
             this.toolStripOffice2007,
             this.toolStripSparkle,
             this.toolStripSystem});
-            this.toolStrip1.Location = new System.Drawing.Point(3, 0);
+            this.toolStrip1.Location = new System.Drawing.Point(4, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(180, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(225, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -175,7 +177,7 @@ namespace InputForm
             this.toolStripOffice2010.Image = ((System.Drawing.Image)(resources.GetObject("toolStripOffice2010.Image")));
             this.toolStripOffice2010.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripOffice2010.Name = "toolStripOffice2010";
-            this.toolStripOffice2010.Size = new System.Drawing.Size(35, 22);
+            this.toolStripOffice2010.Size = new System.Drawing.Size(45, 24);
             this.toolStripOffice2010.Text = "2010";
             this.toolStripOffice2010.Click += new System.EventHandler(this.office2010_Click);
             // 
@@ -186,7 +188,7 @@ namespace InputForm
             this.toolStripOffice2007.Image = ((System.Drawing.Image)(resources.GetObject("toolStripOffice2007.Image")));
             this.toolStripOffice2007.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripOffice2007.Name = "toolStripOffice2007";
-            this.toolStripOffice2007.Size = new System.Drawing.Size(35, 22);
+            this.toolStripOffice2007.Size = new System.Drawing.Size(45, 24);
             this.toolStripOffice2007.Text = "2007";
             this.toolStripOffice2007.Click += new System.EventHandler(this.office2007_Click);
             // 
@@ -196,7 +198,7 @@ namespace InputForm
             this.toolStripSparkle.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSparkle.Image")));
             this.toolStripSparkle.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSparkle.Name = "toolStripSparkle";
-            this.toolStripSparkle.Size = new System.Drawing.Size(49, 22);
+            this.toolStripSparkle.Size = new System.Drawing.Size(62, 24);
             this.toolStripSparkle.Text = "Sparkle";
             this.toolStripSparkle.Click += new System.EventHandler(this.sparkle_Click);
             // 
@@ -207,7 +209,7 @@ namespace InputForm
             this.toolStripSystem.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSystem.Image")));
             this.toolStripSystem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSystem.Name = "toolStripSystem";
-            this.toolStripSystem.Size = new System.Drawing.Size(49, 22);
+            this.toolStripSystem.Size = new System.Drawing.Size(60, 24);
             this.toolStripSystem.Text = "System";
             this.toolStripSystem.Click += new System.EventHandler(this.system_Click);
             // 
@@ -217,11 +219,13 @@ namespace InputForm
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.kryptonPanel1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(311, 370);
+            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(414, 442);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 24);
+            this.toolStripContainer1.Location = new System.Drawing.Point(0, 30);
+            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(311, 395);
+            this.toolStripContainer1.Size = new System.Drawing.Size(414, 469);
             this.toolStripContainer1.TabIndex = 2;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -234,9 +238,10 @@ namespace InputForm
             this.kryptonPanel1.Controls.Add(this.tableLayoutPanel1);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(10, 14, 10, 10);
-            this.kryptonPanel1.Size = new System.Drawing.Size(311, 370);
+            this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(13, 17, 13, 12);
+            this.kryptonPanel1.Size = new System.Drawing.Size(414, 442);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -263,7 +268,8 @@ namespace InputForm
             this.tableLayoutPanel1.Controls.Add(this.checkBoxEmployed, 1, 7);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 1, 8);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 14);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(13, 17);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 9;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -274,16 +280,17 @@ namespace InputForm
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(291, 346);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(388, 413);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // labelName
             // 
             this.labelName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelName.Location = new System.Drawing.Point(3, 3);
+            this.labelName.Location = new System.Drawing.Point(4, 4);
+            this.labelName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(68, 23);
+            this.labelName.Size = new System.Drawing.Size(83, 27);
             this.labelName.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.labelName.TabIndex = 4;
             this.labelName.Values.Text = "Name";
@@ -291,9 +298,10 @@ namespace InputForm
             // labelAddress
             // 
             this.labelAddress.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelAddress.Location = new System.Drawing.Point(3, 32);
+            this.labelAddress.Location = new System.Drawing.Point(4, 39);
+            this.labelAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(68, 96);
+            this.labelAddress.Size = new System.Drawing.Size(83, 118);
             this.labelAddress.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.labelAddress.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.labelAddress.TabIndex = 5;
@@ -301,9 +309,10 @@ namespace InputForm
             // 
             // labelTelephone
             // 
-            this.labelTelephone.Location = new System.Drawing.Point(3, 134);
+            this.labelTelephone.Location = new System.Drawing.Point(4, 165);
+            this.labelTelephone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelTelephone.Name = "labelTelephone";
-            this.labelTelephone.Size = new System.Drawing.Size(68, 20);
+            this.labelTelephone.Size = new System.Drawing.Size(83, 24);
             this.labelTelephone.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.labelTelephone.TabIndex = 6;
             this.labelTelephone.Values.Text = "Telephone";
@@ -311,9 +320,10 @@ namespace InputForm
             // labelStatus
             // 
             this.labelStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelStatus.Location = new System.Drawing.Point(3, 163);
+            this.labelStatus.Location = new System.Drawing.Point(4, 200);
+            this.labelStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(68, 21);
+            this.labelStatus.Size = new System.Drawing.Size(83, 26);
             this.labelStatus.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.labelStatus.TabIndex = 7;
             this.labelStatus.Values.Text = "Status";
@@ -321,9 +331,10 @@ namespace InputForm
             // labelAge
             // 
             this.labelAge.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelAge.Location = new System.Drawing.Point(3, 190);
+            this.labelAge.Location = new System.Drawing.Point(4, 234);
+            this.labelAge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelAge.Name = "labelAge";
-            this.labelAge.Size = new System.Drawing.Size(68, 22);
+            this.labelAge.Size = new System.Drawing.Size(83, 26);
             this.labelAge.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.labelAge.TabIndex = 13;
             this.labelAge.Values.Text = "Age";
@@ -331,9 +342,10 @@ namespace InputForm
             // labelDOB
             // 
             this.labelDOB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelDOB.Location = new System.Drawing.Point(3, 218);
+            this.labelDOB.Location = new System.Drawing.Point(4, 268);
+            this.labelDOB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelDOB.Name = "labelDOB";
-            this.labelDOB.Size = new System.Drawing.Size(68, 21);
+            this.labelDOB.Size = new System.Drawing.Size(83, 25);
             this.labelDOB.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.labelDOB.TabIndex = 15;
             this.labelDOB.Values.Text = "D.O.B";
@@ -341,9 +353,10 @@ namespace InputForm
             // labelGender
             // 
             this.labelGender.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelGender.Location = new System.Drawing.Point(3, 245);
+            this.labelGender.Location = new System.Drawing.Point(4, 301);
+            this.labelGender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelGender.Name = "labelGender";
-            this.labelGender.Size = new System.Drawing.Size(68, 20);
+            this.labelGender.Size = new System.Drawing.Size(83, 24);
             this.labelGender.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.labelGender.TabIndex = 8;
             this.labelGender.Values.Text = "Gender";
@@ -351,9 +364,10 @@ namespace InputForm
             // labelEmployed
             // 
             this.labelEmployed.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelEmployed.Location = new System.Drawing.Point(3, 271);
+            this.labelEmployed.Location = new System.Drawing.Point(4, 333);
+            this.labelEmployed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelEmployed.Name = "labelEmployed";
-            this.labelEmployed.Size = new System.Drawing.Size(68, 20);
+            this.labelEmployed.Size = new System.Drawing.Size(83, 24);
             this.labelEmployed.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.labelEmployed.TabIndex = 9;
             this.labelEmployed.Values.Text = "Employed";
@@ -362,18 +376,20 @@ namespace InputForm
             // 
             this.textBoxName.AlwaysActive = false;
             this.textBoxName.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.textBoxName.Location = new System.Drawing.Point(77, 3);
+            this.textBoxName.Location = new System.Drawing.Point(95, 4);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(189, 23);
+            this.textBoxName.Size = new System.Drawing.Size(252, 27);
             this.textBoxName.TabIndex = 0;
             // 
             // richTextBoxAddress
             // 
             this.richTextBoxAddress.AlwaysActive = false;
             this.richTextBoxAddress.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.richTextBoxAddress.Location = new System.Drawing.Point(77, 32);
+            this.richTextBoxAddress.Location = new System.Drawing.Point(95, 39);
+            this.richTextBoxAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBoxAddress.Name = "richTextBoxAddress";
-            this.richTextBoxAddress.Size = new System.Drawing.Size(189, 96);
+            this.richTextBoxAddress.Size = new System.Drawing.Size(252, 118);
             this.richTextBoxAddress.TabIndex = 1;
             this.richTextBoxAddress.Text = "";
             // 
@@ -382,11 +398,12 @@ namespace InputForm
             this.maskedTextBoxTelephone.AlwaysActive = false;
             this.maskedTextBoxTelephone.ButtonSpecs.Add(this.clearTelephone);
             this.maskedTextBoxTelephone.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.maskedTextBoxTelephone.Location = new System.Drawing.Point(77, 134);
+            this.maskedTextBoxTelephone.Location = new System.Drawing.Point(95, 165);
+            this.maskedTextBoxTelephone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.maskedTextBoxTelephone.Mask = "(000) 000-000";
             this.maskedTextBoxTelephone.Name = "maskedTextBoxTelephone";
             this.maskedTextBoxTelephone.PromptChar = '?';
-            this.maskedTextBoxTelephone.Size = new System.Drawing.Size(130, 23);
+            this.maskedTextBoxTelephone.Size = new System.Drawing.Size(173, 27);
             this.maskedTextBoxTelephone.TabIndex = 2;
             this.maskedTextBoxTelephone.Text = "(   )    -";
             // 
@@ -408,9 +425,10 @@ namespace InputForm
             "Married",
             "Divorced",
             "Separated"});
-            this.comboStatus.Location = new System.Drawing.Point(77, 163);
+            this.comboStatus.Location = new System.Drawing.Point(95, 200);
+            this.comboStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboStatus.Name = "comboStatus";
-            this.comboStatus.Size = new System.Drawing.Size(130, 21);
+            this.comboStatus.Size = new System.Drawing.Size(173, 26);
             this.comboStatus.TabIndex = 3;
             // 
             // numericAge
@@ -422,7 +440,8 @@ namespace InputForm
             0,
             0});
             this.numericAge.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.numericAge.Location = new System.Drawing.Point(77, 190);
+            this.numericAge.Location = new System.Drawing.Point(95, 234);
+            this.numericAge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericAge.Maximum = new decimal(new int[] {
             120,
             0,
@@ -434,7 +453,7 @@ namespace InputForm
             0,
             0});
             this.numericAge.Name = "numericAge";
-            this.numericAge.Size = new System.Drawing.Size(61, 22);
+            this.numericAge.Size = new System.Drawing.Size(81, 26);
             this.numericAge.TabIndex = 4;
             this.numericAge.Value = new decimal(new int[] {
             21,
@@ -447,9 +466,10 @@ namespace InputForm
             this.dtpDOB.AlwaysActive = false;
             this.dtpDOB.CalendarTodayDate = new System.DateTime(2009, 8, 23, 0, 0, 0, 0);
             this.dtpDOB.InputControlStyle = Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.dtpDOB.Location = new System.Drawing.Point(77, 218);
+            this.dtpDOB.Location = new System.Drawing.Point(95, 268);
+            this.dtpDOB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpDOB.Name = "dtpDOB";
-            this.dtpDOB.Size = new System.Drawing.Size(186, 21);
+            this.dtpDOB.Size = new System.Drawing.Size(248, 25);
             this.dtpDOB.TabIndex = 5;
             // 
             // flowLayoutPanel2
@@ -457,33 +477,36 @@ namespace InputForm
             this.flowLayoutPanel2.AutoSize = true;
             this.flowLayoutPanel2.Controls.Add(this.radioButtonMale);
             this.flowLayoutPanel2.Controls.Add(this.radioButtonFemale);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(74, 242);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(91, 297);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(122, 26);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(145, 32);
             this.flowLayoutPanel2.TabIndex = 5;
             // 
             // radioButtonMale
             // 
-            this.radioButtonMale.Location = new System.Drawing.Point(3, 3);
+            this.radioButtonMale.Location = new System.Drawing.Point(4, 4);
+            this.radioButtonMale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButtonMale.Name = "radioButtonMale";
-            this.radioButtonMale.Size = new System.Drawing.Size(49, 20);
+            this.radioButtonMale.Size = new System.Drawing.Size(57, 24);
             this.radioButtonMale.TabIndex = 0;
             this.radioButtonMale.Values.Text = "Male";
             // 
             // radioButtonFemale
             // 
-            this.radioButtonFemale.Location = new System.Drawing.Point(58, 3);
+            this.radioButtonFemale.Location = new System.Drawing.Point(69, 4);
+            this.radioButtonFemale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButtonFemale.Name = "radioButtonFemale";
-            this.radioButtonFemale.Size = new System.Drawing.Size(61, 20);
+            this.radioButtonFemale.Size = new System.Drawing.Size(72, 24);
             this.radioButtonFemale.TabIndex = 1;
             this.radioButtonFemale.Values.Text = "Female";
             // 
             // checkBoxEmployed
             // 
-            this.checkBoxEmployed.Location = new System.Drawing.Point(77, 271);
+            this.checkBoxEmployed.Location = new System.Drawing.Point(95, 333);
+            this.checkBoxEmployed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxEmployed.Name = "checkBoxEmployed";
-            this.checkBoxEmployed.Size = new System.Drawing.Size(78, 20);
+            this.checkBoxEmployed.Size = new System.Drawing.Size(92, 24);
             this.checkBoxEmployed.TabIndex = 6;
             this.checkBoxEmployed.Values.Text = "Employed";
             // 
@@ -492,51 +515,56 @@ namespace InputForm
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.buttonOK);
             this.flowLayoutPanel1.Controls.Add(this.buttonCancel);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(74, 294);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(91, 361);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 13, 0, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(192, 44);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(256, 47);
             this.flowLayoutPanel1.TabIndex = 7;
             // 
             // buttonOK
             // 
             this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonOK.Location = new System.Drawing.Point(3, 16);
+            this.buttonOK.Location = new System.Drawing.Point(4, 12);
+            this.buttonOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(90, 25);
+            this.buttonOK.Size = new System.Drawing.Size(120, 31);
             this.buttonOK.TabIndex = 0;
+            this.buttonOK.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonOK.Values.Text = "OK";
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // buttonCancel
             // 
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(99, 16);
+            this.buttonCancel.Location = new System.Drawing.Point(132, 12);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(90, 25);
+            this.buttonCancel.Size = new System.Drawing.Size(120, 31);
             this.buttonCancel.TabIndex = 1;
+            this.buttonCancel.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonCancel.Values.Text = "Cancel";
             this.buttonCancel.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // kryptonManager1
             // 
-            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 419);
+            this.ClientSize = new System.Drawing.Size(414, 499);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(327, 458);
+            this.MaximumSize = new System.Drawing.Size(430, 553);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(327, 458);
+            this.MinimumSize = new System.Drawing.Size(430, 553);
             this.Name = "Form1";
             this.Text = "Input Form";
             this.menuStrip1.ResumeLayout(false);

@@ -79,7 +79,6 @@ namespace KryptonFontDialog_Example_2019
             // 
             this.groupBoxPalette.Location = new System.Drawing.Point(12, 12);
             this.groupBoxPalette.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxPalette.Name = "groupBoxPalette";
             // 
             // groupBoxPalette.Panel
             // 
@@ -175,14 +174,13 @@ namespace KryptonFontDialog_Example_2019
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(599, 396);
+            this.kryptonPanel1.Size = new System.Drawing.Size(603, 382);
             this.kryptonPanel1.TabIndex = 20;
             // 
             // kryptonGroupBox2
             // 
             this.kryptonGroupBox2.Location = new System.Drawing.Point(372, 28);
             this.kryptonGroupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonGroupBox2.Name = "kryptonGroupBox2";
             // 
             // kryptonGroupBox2.Panel
             // 
@@ -290,7 +288,6 @@ namespace KryptonFontDialog_Example_2019
             // 
             this.kryptonGroupBox1.Location = new System.Drawing.Point(12, 153);
             this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonGroupBox1.Name = "kryptonGroupBox1";
             // 
             // kryptonGroupBox1.Panel
             // 
@@ -410,14 +407,13 @@ namespace KryptonFontDialog_Example_2019
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalApplyToolstrips = false;
             this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 396);
+            this.ClientSize = new System.Drawing.Size(603, 382);
             this.Controls.Add(this.kryptonPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";

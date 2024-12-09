@@ -243,7 +243,6 @@ namespace KryptonLinkLabelExamples
             // 
             // kryptonManager1
             // 
-            this.kryptonManager1.GlobalApplyToolstrips = false;
             this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
             // 
             // Form1

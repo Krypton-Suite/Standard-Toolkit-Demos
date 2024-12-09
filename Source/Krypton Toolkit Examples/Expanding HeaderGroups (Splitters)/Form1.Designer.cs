@@ -395,7 +395,6 @@ namespace ExpandingHeaderGroupsSplitters
             // 
             // kryptonManager
             // 
-            this.kryptonManager.GlobalApplyToolstrips = false;
             this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
             // 
             // statusStrip1
