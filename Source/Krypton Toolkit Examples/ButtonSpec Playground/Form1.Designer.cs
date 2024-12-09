@@ -32,7 +32,6 @@ namespace ButtonSpecPlayground
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBoxProperties = new System.Windows.Forms.GroupBox();
             this.propertyGrid = new System.Windows.Forms.PropertyGrid();
-            this.buttonClose = new System.Windows.Forms.Button();
             this.kryptonHeaderGroup1 = new Krypton.Toolkit.KryptonHeaderGroup();
             this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
             this.kryptonButtonAdd = new Krypton.Toolkit.KryptonButton();
@@ -56,6 +55,7 @@ namespace ButtonSpecPlayground
             this.kryptonButtonTopS = new Krypton.Toolkit.KryptonButton();
             this.kryptonButtonRightS = new Krypton.Toolkit.KryptonButton();
             this.kryptonButtonLeftS = new Krypton.Toolkit.KryptonButton();
+            this.kryptonThemeComboBox1 = new Krypton.Toolkit.KryptonThemeComboBox();
             this.groupBoxProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).BeginInit();
@@ -66,12 +66,13 @@ namespace ButtonSpecPlayground
             this.groupBoxPrimary.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBoxSecondary.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxProperties
             // 
             this.groupBoxProperties.Controls.Add(this.propertyGrid);
-            this.groupBoxProperties.Location = new System.Drawing.Point(285, 12);
+            this.groupBoxProperties.Location = new System.Drawing.Point(304, 12);
             this.groupBoxProperties.Name = "groupBoxProperties";
             this.groupBoxProperties.Size = new System.Drawing.Size(294, 436);
             this.groupBoxProperties.TabIndex = 2;
@@ -89,24 +90,10 @@ namespace ButtonSpecPlayground
             this.propertyGrid.TabIndex = 0;
             this.propertyGrid.ToolbarVisible = false;
             // 
-            // buttonClose
-            // 
-            this.buttonClose.Location = new System.Drawing.Point(504, 454);
-            this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(75, 23);
-            this.buttonClose.TabIndex = 3;
-            this.buttonClose.Text = "Close";
-            this.buttonClose.UseVisualStyleBackColor = true;
-            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
-            // 
             // kryptonHeaderGroup1
             // 
-            this.kryptonHeaderGroup1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.kryptonHeaderGroup1.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonHeaderGroup1.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
             this.kryptonHeaderGroup1.Location = new System.Drawing.Point(11, 23);
-            this.kryptonHeaderGroup1.Name = "kryptonHeaderGroup1";
-            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(246, 165);
+            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(254, 165);
             this.kryptonHeaderGroup1.TabIndex = 0;
             // 
             // kryptonManager1
@@ -116,41 +103,35 @@ namespace ButtonSpecPlayground
             // kryptonButtonAdd
             // 
             this.kryptonButtonAdd.AutoSize = true;
-            this.kryptonButtonAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonButtonAdd.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButtonAdd.Location = new System.Drawing.Point(10, 25);
             this.kryptonButtonAdd.Name = "kryptonButtonAdd";
-            this.kryptonButtonAdd.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonButtonAdd.Size = new System.Drawing.Size(65, 27);
+            this.kryptonButtonAdd.Size = new System.Drawing.Size(65, 28);
             this.kryptonButtonAdd.TabIndex = 0;
+            this.kryptonButtonAdd.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButtonAdd.Values.Text = "Add";
             this.kryptonButtonAdd.Click += new System.EventHandler(this.kryptonButtonAdd_Click);
             // 
             // kryptonButtonRemove
             // 
             this.kryptonButtonRemove.AutoSize = true;
-            this.kryptonButtonRemove.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonButtonRemove.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButtonRemove.Enabled = false;
             this.kryptonButtonRemove.Location = new System.Drawing.Point(11, 56);
             this.kryptonButtonRemove.Name = "kryptonButtonRemove";
-            this.kryptonButtonRemove.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonButtonRemove.Size = new System.Drawing.Size(64, 27);
+            this.kryptonButtonRemove.Size = new System.Drawing.Size(67, 28);
             this.kryptonButtonRemove.TabIndex = 1;
+            this.kryptonButtonRemove.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButtonRemove.Values.Text = "Remove";
             this.kryptonButtonRemove.Click += new System.EventHandler(this.kryptonButtonRemove_Click);
             // 
             // kryptonButtonClear
             // 
             this.kryptonButtonClear.AutoSize = true;
-            this.kryptonButtonClear.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonButtonClear.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButtonClear.Enabled = false;
             this.kryptonButtonClear.Location = new System.Drawing.Point(11, 87);
             this.kryptonButtonClear.Name = "kryptonButtonClear";
-            this.kryptonButtonClear.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonButtonClear.Size = new System.Drawing.Size(64, 27);
+            this.kryptonButtonClear.Size = new System.Drawing.Size(64, 28);
             this.kryptonButtonClear.TabIndex = 2;
+            this.kryptonButtonClear.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButtonClear.Values.Text = "Clear";
             this.kryptonButtonClear.Click += new System.EventHandler(this.kryptonButtonClear_Click);
             // 
@@ -159,7 +140,7 @@ namespace ButtonSpecPlayground
             this.groupBoxExample.Controls.Add(this.kryptonHeaderGroup1);
             this.groupBoxExample.Location = new System.Drawing.Point(12, 12);
             this.groupBoxExample.Name = "groupBoxExample";
-            this.groupBoxExample.Size = new System.Drawing.Size(267, 198);
+            this.groupBoxExample.Size = new System.Drawing.Size(277, 198);
             this.groupBoxExample.TabIndex = 0;
             this.groupBoxExample.TabStop = false;
             this.groupBoxExample.Text = "Example HeaderGroup";
@@ -171,7 +152,7 @@ namespace ButtonSpecPlayground
             this.groupBoxButtonSpecs.Controls.Add(this.kryptonButtonRemove);
             this.groupBoxButtonSpecs.Location = new System.Drawing.Point(12, 216);
             this.groupBoxButtonSpecs.Name = "groupBoxButtonSpecs";
-            this.groupBoxButtonSpecs.Size = new System.Drawing.Size(85, 154);
+            this.groupBoxButtonSpecs.Size = new System.Drawing.Size(95, 154);
             this.groupBoxButtonSpecs.TabIndex = 1;
             this.groupBoxButtonSpecs.TabStop = false;
             this.groupBoxButtonSpecs.Text = "ButtonSpec";
@@ -181,16 +162,17 @@ namespace ButtonSpecPlayground
             this.groupBox1.Controls.Add(this.labelInstructions);
             this.groupBox1.Location = new System.Drawing.Point(11, 376);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(268, 72);
+            this.groupBox1.Size = new System.Drawing.Size(278, 72);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Instructions";
             // 
             // labelInstructions
             // 
-            this.labelInstructions.Location = new System.Drawing.Point(8, 20);
+            this.labelInstructions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelInstructions.Location = new System.Drawing.Point(3, 20);
             this.labelInstructions.Name = "labelInstructions";
-            this.labelInstructions.Size = new System.Drawing.Size(250, 50);
+            this.labelInstructions.Size = new System.Drawing.Size(272, 49);
             this.labelInstructions.TabIndex = 0;
             this.labelInstructions.Text = "Use the Add/Remove buttons to create/delete ButtonSpec instances.  Click the butt" +
     "on in order to display its properties in the property window.";
@@ -204,7 +186,7 @@ namespace ButtonSpecPlayground
             this.groupBoxPrimary.Controls.Add(this.kryptonButtonLeftP);
             this.groupBoxPrimary.Location = new System.Drawing.Point(103, 216);
             this.groupBoxPrimary.Name = "groupBoxPrimary";
-            this.groupBoxPrimary.Size = new System.Drawing.Size(85, 154);
+            this.groupBoxPrimary.Size = new System.Drawing.Size(95, 154);
             this.groupBoxPrimary.TabIndex = 3;
             this.groupBoxPrimary.TabStop = false;
             this.groupBoxPrimary.Text = "Primary";
@@ -212,13 +194,11 @@ namespace ButtonSpecPlayground
             // kryptonButtonBottomP
             // 
             this.kryptonButtonBottomP.AutoSize = true;
-            this.kryptonButtonBottomP.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonButtonBottomP.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButtonBottomP.Location = new System.Drawing.Point(11, 118);
             this.kryptonButtonBottomP.Name = "kryptonButtonBottomP";
-            this.kryptonButtonBottomP.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonButtonBottomP.Size = new System.Drawing.Size(64, 27);
+            this.kryptonButtonBottomP.Size = new System.Drawing.Size(64, 28);
             this.kryptonButtonBottomP.TabIndex = 5;
+            this.kryptonButtonBottomP.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButtonBottomP.Values.Text = "Bottom";
             this.kryptonButtonBottomP.Click += new System.EventHandler(this.kryptonButtonBottomP_Click);
             // 
@@ -237,77 +217,65 @@ namespace ButtonSpecPlayground
             // kryptonButton1
             // 
             this.kryptonButton1.AutoSize = true;
-            this.kryptonButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButton1.Location = new System.Drawing.Point(10, 28);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonButton1.Size = new System.Drawing.Size(65, 27);
+            this.kryptonButton1.Size = new System.Drawing.Size(65, 28);
             this.kryptonButton1.TabIndex = 0;
+            this.kryptonButton1.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton1.Values.Text = "Top";
             // 
             // kryptonButton2
             // 
             this.kryptonButton2.AutoSize = true;
-            this.kryptonButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButton2.Enabled = false;
             this.kryptonButton2.Location = new System.Drawing.Point(11, 90);
             this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonButton2.Size = new System.Drawing.Size(64, 27);
+            this.kryptonButton2.Size = new System.Drawing.Size(64, 28);
             this.kryptonButton2.TabIndex = 2;
+            this.kryptonButton2.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton2.Values.Text = "Right";
             // 
             // kryptonButton3
             // 
             this.kryptonButton3.AutoSize = true;
-            this.kryptonButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButton3.Enabled = false;
             this.kryptonButton3.Location = new System.Drawing.Point(11, 59);
             this.kryptonButton3.Name = "kryptonButton3";
-            this.kryptonButton3.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonButton3.Size = new System.Drawing.Size(64, 27);
+            this.kryptonButton3.Size = new System.Drawing.Size(64, 28);
             this.kryptonButton3.TabIndex = 1;
+            this.kryptonButton3.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton3.Values.Text = "Left";
             // 
             // kryptonButtonTopP
             // 
             this.kryptonButtonTopP.AutoSize = true;
-            this.kryptonButtonTopP.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonButtonTopP.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButtonTopP.Location = new System.Drawing.Point(10, 25);
             this.kryptonButtonTopP.Name = "kryptonButtonTopP";
-            this.kryptonButtonTopP.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonButtonTopP.Size = new System.Drawing.Size(65, 27);
+            this.kryptonButtonTopP.Size = new System.Drawing.Size(65, 28);
             this.kryptonButtonTopP.TabIndex = 0;
+            this.kryptonButtonTopP.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButtonTopP.Values.Text = "Top";
             this.kryptonButtonTopP.Click += new System.EventHandler(this.kryptonButtonTopP_Click);
             // 
             // kryptonButtonRightP
             // 
             this.kryptonButtonRightP.AutoSize = true;
-            this.kryptonButtonRightP.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonButtonRightP.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButtonRightP.Location = new System.Drawing.Point(11, 87);
             this.kryptonButtonRightP.Name = "kryptonButtonRightP";
-            this.kryptonButtonRightP.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonButtonRightP.Size = new System.Drawing.Size(64, 27);
+            this.kryptonButtonRightP.Size = new System.Drawing.Size(64, 28);
             this.kryptonButtonRightP.TabIndex = 2;
+            this.kryptonButtonRightP.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButtonRightP.Values.Text = "Right";
             this.kryptonButtonRightP.Click += new System.EventHandler(this.kryptonButtonRightP_Click);
             // 
             // kryptonButtonLeftP
             // 
             this.kryptonButtonLeftP.AutoSize = true;
-            this.kryptonButtonLeftP.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonButtonLeftP.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButtonLeftP.Location = new System.Drawing.Point(11, 56);
             this.kryptonButtonLeftP.Name = "kryptonButtonLeftP";
-            this.kryptonButtonLeftP.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonButtonLeftP.Size = new System.Drawing.Size(64, 27);
+            this.kryptonButtonLeftP.Size = new System.Drawing.Size(64, 28);
             this.kryptonButtonLeftP.TabIndex = 1;
+            this.kryptonButtonLeftP.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButtonLeftP.Values.Text = "Left";
             this.kryptonButtonLeftP.Click += new System.EventHandler(this.kryptonButtonLeftP_Click);
             // 
@@ -319,7 +287,7 @@ namespace ButtonSpecPlayground
             this.groupBoxSecondary.Controls.Add(this.kryptonButtonLeftS);
             this.groupBoxSecondary.Location = new System.Drawing.Point(194, 216);
             this.groupBoxSecondary.Name = "groupBoxSecondary";
-            this.groupBoxSecondary.Size = new System.Drawing.Size(85, 154);
+            this.groupBoxSecondary.Size = new System.Drawing.Size(95, 154);
             this.groupBoxSecondary.TabIndex = 5;
             this.groupBoxSecondary.TabStop = false;
             this.groupBoxSecondary.Text = "Secondary";
@@ -327,66 +295,69 @@ namespace ButtonSpecPlayground
             // kryptonButtonBottomS
             // 
             this.kryptonButtonBottomS.AutoSize = true;
-            this.kryptonButtonBottomS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonButtonBottomS.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButtonBottomS.Location = new System.Drawing.Point(11, 118);
             this.kryptonButtonBottomS.Name = "kryptonButtonBottomS";
-            this.kryptonButtonBottomS.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonButtonBottomS.Size = new System.Drawing.Size(64, 27);
+            this.kryptonButtonBottomS.Size = new System.Drawing.Size(64, 28);
             this.kryptonButtonBottomS.TabIndex = 6;
+            this.kryptonButtonBottomS.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButtonBottomS.Values.Text = "Bottom";
             this.kryptonButtonBottomS.Click += new System.EventHandler(this.kryptonButtonBottomS_Click);
             // 
             // kryptonButtonTopS
             // 
             this.kryptonButtonTopS.AutoSize = true;
-            this.kryptonButtonTopS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonButtonTopS.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButtonTopS.Location = new System.Drawing.Point(10, 25);
             this.kryptonButtonTopS.Name = "kryptonButtonTopS";
-            this.kryptonButtonTopS.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonButtonTopS.Size = new System.Drawing.Size(65, 27);
+            this.kryptonButtonTopS.Size = new System.Drawing.Size(65, 28);
             this.kryptonButtonTopS.TabIndex = 0;
+            this.kryptonButtonTopS.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButtonTopS.Values.Text = "Top";
             this.kryptonButtonTopS.Click += new System.EventHandler(this.kryptonButtonTopS_Click);
             // 
             // kryptonButtonRightS
             // 
             this.kryptonButtonRightS.AutoSize = true;
-            this.kryptonButtonRightS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonButtonRightS.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButtonRightS.Location = new System.Drawing.Point(11, 87);
             this.kryptonButtonRightS.Name = "kryptonButtonRightS";
-            this.kryptonButtonRightS.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonButtonRightS.Size = new System.Drawing.Size(64, 27);
+            this.kryptonButtonRightS.Size = new System.Drawing.Size(64, 28);
             this.kryptonButtonRightS.TabIndex = 2;
+            this.kryptonButtonRightS.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButtonRightS.Values.Text = "Right";
             this.kryptonButtonRightS.Click += new System.EventHandler(this.kryptonButtonRightS_Click);
             // 
             // kryptonButtonLeftS
             // 
             this.kryptonButtonLeftS.AutoSize = true;
-            this.kryptonButtonLeftS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.kryptonButtonLeftS.DialogResult = System.Windows.Forms.DialogResult.None;
             this.kryptonButtonLeftS.Location = new System.Drawing.Point(11, 56);
             this.kryptonButtonLeftS.Name = "kryptonButtonLeftS";
-            this.kryptonButtonLeftS.Orientation = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonButtonLeftS.Size = new System.Drawing.Size(64, 27);
+            this.kryptonButtonLeftS.Size = new System.Drawing.Size(64, 28);
             this.kryptonButtonLeftS.TabIndex = 1;
+            this.kryptonButtonLeftS.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButtonLeftS.Values.Text = "Left";
             this.kryptonButtonLeftS.Click += new System.EventHandler(this.kryptonButtonLeftS_Click);
             // 
+            // kryptonThemeComboBox1
+            // 
+            this.kryptonThemeComboBox1.DefaultPalette = Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.kryptonThemeComboBox1.DropDownWidth = 278;
+            this.kryptonThemeComboBox1.IntegralHeight = false;
+            this.kryptonThemeComboBox1.Location = new System.Drawing.Point(11, 455);
+            this.kryptonThemeComboBox1.Name = "kryptonThemeComboBox1";
+            this.kryptonThemeComboBox1.Size = new System.Drawing.Size(278, 26);
+            this.kryptonThemeComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonThemeComboBox1.TabIndex = 6;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(587, 485);
+            this.ClientSize = new System.Drawing.Size(630, 496);
+            this.Controls.Add(this.kryptonThemeComboBox1);
             this.Controls.Add(this.groupBoxSecondary);
             this.Controls.Add(this.groupBoxPrimary);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxButtonSpecs);
             this.Controls.Add(this.groupBoxExample);
-            this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.groupBoxProperties);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -409,6 +380,7 @@ namespace ButtonSpecPlayground
             this.groupBox2.PerformLayout();
             this.groupBoxSecondary.ResumeLayout(false);
             this.groupBoxSecondary.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -417,7 +389,6 @@ namespace ButtonSpecPlayground
 
         private System.Windows.Forms.GroupBox groupBoxProperties;
         private System.Windows.Forms.PropertyGrid propertyGrid;
-        private System.Windows.Forms.Button buttonClose;
         private Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup1;
         private Krypton.Toolkit.KryptonManager kryptonManager1;
         private Krypton.Toolkit.KryptonButton kryptonButtonAdd;
@@ -441,6 +412,7 @@ namespace ButtonSpecPlayground
         private Krypton.Toolkit.KryptonButton kryptonButtonTopS;
         private Krypton.Toolkit.KryptonButton kryptonButtonRightS;
         private Krypton.Toolkit.KryptonButton kryptonButtonLeftS;
+        private Krypton.Toolkit.KryptonThemeComboBox kryptonThemeComboBox1;
     }
 }
 

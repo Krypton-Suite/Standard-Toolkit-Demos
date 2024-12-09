@@ -19,9 +19,11 @@ namespace ButtonSpecPlayground
 {
     public partial class Form1 : Form
     {
-        public Form1() => InitializeComponent();
-
-        private void buttonClose_Click(object sender, EventArgs e) => Close();
+        public Form1()
+        {
+            InitializeComponent();
+            kryptonButtonAdd_Click(this, EventArgs.Empty);
+        }
 
         private void kryptonButtonAdd_Click(object sender, EventArgs e)
         {
