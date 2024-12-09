@@ -203,22 +203,6 @@ namespace RibbonAndNavigatorAndWorkspace
             }
 
             cell.NavigatorMode = newMode;
-
-            // Set mode specific properties
-            switch (newMode)
-            {
-                case NavigatorMode.BarRibbonTabGroup:
-                case NavigatorMode.BarRibbonTabOnly:
-                    cell.PageBackStyle = PaletteBackStyle.ControlRibbon;
-                    cell.Group.GroupBackStyle = PaletteBackStyle.ControlRibbon;
-                    cell.Group.GroupBorderStyle = PaletteBorderStyle.ControlRibbon;
-                    break;
-                default:
-                    cell.PageBackStyle = PaletteBackStyle.ControlClient;
-                    cell.Group.GroupBackStyle = PaletteBackStyle.ControlClient;
-                    cell.Group.GroupBorderStyle = PaletteBorderStyle.ControlClient;
-                    break;
-            }
         }
     }
 }
