@@ -58,12 +58,13 @@ namespace KryptonFolderBrowserDialog_Example_2019
             // buttonFileOpenDialog
             // 
             this.buttonFileOpenDialog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonFileOpenDialog.Location = new System.Drawing.Point(268, 309);
+            this.buttonFileOpenDialog.Location = new System.Drawing.Point(264, 327);
             this.buttonFileOpenDialog.Name = "buttonFileOpenDialog";
-            this.buttonFileOpenDialog.Size = new System.Drawing.Size(307, 59);
+            this.buttonFileOpenDialog.Size = new System.Drawing.Size(307, 54);
             this.buttonFileOpenDialog.TabIndex = 19;
             this.buttonFileOpenDialog.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonFileOpenDialog.Values.Text = "Folder Browser Dialog";
+            this.buttonFileOpenDialog.Click += new System.EventHandler(this.ButtonShowFileDialog_Click);
             // 
             // kryptonPanel1
             // 
@@ -75,7 +76,7 @@ namespace KryptonFolderBrowserDialog_Example_2019
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(598, 396);
+            this.kryptonPanel1.Size = new System.Drawing.Size(600, 389);
             this.kryptonPanel1.TabIndex = 20;
             // 
             // kryptonThemeComboBox1
@@ -103,7 +104,6 @@ namespace KryptonFolderBrowserDialog_Example_2019
             // kryptonGroupBox2
             // 
             this.kryptonGroupBox2.Location = new System.Drawing.Point(372, 28);
-            this.kryptonGroupBox2.Name = "kryptonGroupBox2";
             this.kryptonGroupBox2.Size = new System.Drawing.Size(199, 290);
             this.kryptonGroupBox2.TabIndex = 21;
             this.kryptonGroupBox2.Values.Heading = "Options:";
@@ -111,7 +111,6 @@ namespace KryptonFolderBrowserDialog_Example_2019
             // kryptonGroupBox1
             // 
             this.kryptonGroupBox1.Location = new System.Drawing.Point(12, 153);
-            this.kryptonGroupBox1.Name = "kryptonGroupBox1";
             // 
             // kryptonGroupBox1.Panel
             // 
@@ -164,7 +163,7 @@ namespace KryptonFolderBrowserDialog_Example_2019
             // 
             this.kryptonButton1.Location = new System.Drawing.Point(156, 66);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(90, 25);
+            this.kryptonButton1.Size = new System.Drawing.Size(134, 25);
             this.kryptonButton1.TabIndex = 4;
             this.kryptonButton1.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonButton1.Values.Text = "kryptonButton1";
@@ -217,7 +216,7 @@ namespace KryptonFolderBrowserDialog_Example_2019
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 396);
+            this.ClientSize = new System.Drawing.Size(600, 389);
             this.Controls.Add(this.kryptonPanel1);
             this.FormTitleAlign = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
             this.Name = "Form1";
