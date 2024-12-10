@@ -37,28 +37,6 @@ namespace KryptonRichTextBoxExamples
             // Setup the property grid to edit this rich text box
             propertyGrid.SelectedObject = new KryptonRichTextBoxProxy((KryptonRichTextBox)sender);
 
-        private void buttonSpecAny1_Click(object sender, EventArgs e) => kryptonRichTextBox2Blue.Text = string.Empty;
-
-        private void buttonSpecAny3_Click(object sender, EventArgs e) => kryptonRichTextBox5System.Text = string.Empty;
-
-        private void fixedText1_Click(object sender, EventArgs e)
-        {
-            kryptonRichTextBox9Custom.Text = "Fixed Text 1";
-            kryptonRichTextBox9Custom.RichTextBox.Focus();
-        }
-
-        private void fixedText2_Click(object sender, EventArgs e)
-        {
-            kryptonRichTextBox9Custom.Text = "Fixed Text 2";
-            kryptonRichTextBox9Custom.RichTextBox.Focus();
-        }
-
-        private void clear_Click(object sender, EventArgs e)
-        {
-            kryptonRichTextBox9Custom.Clear();
-            kryptonRichTextBox9Custom.RichTextBox.Focus();
-        }
-
         private void buttonClose_Click(object sender, EventArgs e) => Close();
     }
 
@@ -195,19 +173,6 @@ namespace KryptonRichTextBoxExamples
             get => _richTextBox.InputControlStyle;
             set => _richTextBox.InputControlStyle = value;
         }
-
-        [Category("Visuals")]
-        [Description("Should tooltips be displayed for button specs.")]
-        public bool AllowButtonSpecToolTips
-        {
-            get => _richTextBox.AllowButtonSpecToolTips;
-            set => _richTextBox.AllowButtonSpecToolTips = value;
-        }
-
-        [Category("Visuals")]
-        [Description("Collection of button specifications.")]
-        public KryptonRichTextBox.RichTextBoxButtonSpecCollection ButtonSpecs => _richTextBox.ButtonSpecs;
-
         [Category("Visuals")]
         [Description("Overrides for defining common textbox appearance that other states can override.")]
         public PaletteInputControlTripleRedirect StateCommon => _richTextBox.StateCommon;

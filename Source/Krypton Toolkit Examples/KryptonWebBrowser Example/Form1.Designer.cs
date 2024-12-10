@@ -189,8 +189,6 @@ namespace KryptonWebBrowserExample
             // 
             // kryptonRichTextBox1
             // 
-            this.kryptonRichTextBox1.ButtonSpecs.Add(this.buttonSpecAny1);
-            this.kryptonRichTextBox1.ButtonSpecs.Add(this.buttonSpecAny2);
             this.kryptonRichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonRichTextBox1.KryptonContextMenu = this.kryptonContextMenu1;
             this.kryptonRichTextBox1.Location = new System.Drawing.Point(490, 41);
