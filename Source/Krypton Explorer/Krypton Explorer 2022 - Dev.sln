@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{
 	ProjectSection(SolutionItems) = preProject
 		..\.editorconfig = ..\.editorconfig
 		..\..\Documents\Help\Changelog.md = ..\..\Documents\Help\Changelog.md
+		README.md = README.md
+		..\..\README.md = ..\..\README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{DE0923FE-D167-4DD0-88E4-1946B780E7DA}"
