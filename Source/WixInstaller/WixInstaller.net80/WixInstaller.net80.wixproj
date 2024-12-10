@@ -1,7 +1,7 @@
 ﻿<Project ToolsVersion="4.0">
   <Import Project="Sdk.props" Sdk="WixToolset.Sdk" Version="4.0.1" />
   <PropertyGroup>
-    <OutputName>Samples.v95.24.12.336-beta.Net80</OutputName>
+    <OutputName>Samples.v95.24.12.344-beta.Net80</OutputName>
     <ProjectGuid>{3634bdd0-9fc5-4744-8902-6dd127ad4321}</ProjectGuid>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>

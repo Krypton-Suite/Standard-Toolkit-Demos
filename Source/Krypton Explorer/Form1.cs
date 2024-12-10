@@ -331,9 +331,23 @@ namespace KryptonExplorer
             {
                 Cursor = Cursors.AppStarting;
 
-                if (File.Exists(@".\Palette Designer.exe"))
+                Cursor = Cursors.AppStarting;
+                var pathModifier = @"..\Krypton Toolkit Palette ";
+                pathModifier +=
+#if NET48
+                    @"net48";
+#elif NET6_0
+                @"net60";
+#elif NET8_0
+                @"net80";
+#elif NET9_0
+                @"net90";
+#elif NET10_0
+                @"net100";
+#endif
+                if (File.Exists(pathModifier + @"\Palette Designer.exe"))
                 {
-                    LaunchApplication(@"Palette Designer");
+                    LaunchApplication(pathModifier + @"\Palette Designer");
                 }
                 else
                 {
@@ -357,10 +371,22 @@ namespace KryptonExplorer
             try
             {
                 Cursor = Cursors.AppStarting;
-
-                if (File.Exists(@".\Palette Upgrade Tool.exe"))
+                var pathModifier = @"..\Krypton Toolkit Palette ";
+                pathModifier +=
+#if NET48
+                @"net48";
+#elif NET6_0
+                @"net60";
+#elif NET8_0
+                @"net80";
+#elif NET9_0
+                @"net90";
+#elif NET10_0
+                @"net100";
+#endif
+                if (File.Exists(pathModifier + @"\Palette Upgrade Tool.exe"))
                 {
-                    LaunchApplication(@"Palette Upgrade Tool");
+                    LaunchApplication(pathModifier + @"\Palette Upgrade Tool");
                 }
                 else
                 {
