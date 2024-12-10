@@ -2,7 +2,7 @@
 	<!-- do not change this ever !-->
 	<?define UpgradeCode = "38FC3474-F06B-4C57-8869-15B23AEBFB60" ?>
 
-	<?define Version = "90.24.2.52" ?>
+	<?define Version = "100.24.12.344" ?>
 	<!--"!(bind.FileVersion.Krypton.Toolkit.dll)" -->
 
 	<?define ProductName = "Krypton Toolkit Demo Net90 Apps"?>
@@ -58,7 +58,7 @@
 			<Directory Id="ProgramMenuDir" Name="Krypton Toolkit Demos" />
 		</StandardDirectory>
 		<StandardDirectory Id="CommonAppDataFolder">
-			<Directory Id="KryptonToolkitDemosDir" Name="Krypton Toolkit Demos Net80" />
+			<Directory Id="KryptonToolkitDemosDir" Name="Krypton Toolkit Demos Net90" />
 		</StandardDirectory>
 	</Package>
 
