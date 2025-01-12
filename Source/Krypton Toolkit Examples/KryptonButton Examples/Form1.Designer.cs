@@ -141,7 +141,6 @@ namespace KryptonButtonExamples
             // button6Sparkle
             // 
             this.button6Sparkle.AutoSize = true;
-            this.button6Sparkle.ButtonOrientation = Krypton.Toolkit.VisualOrientation.Left;
             this.button6Sparkle.Location = new System.Drawing.Point(80, 27);
             this.button6Sparkle.Name = "button6Sparkle";
             this.button6Sparkle.Orientation = Krypton.Toolkit.VisualOrientation.Left;
@@ -502,7 +501,6 @@ namespace KryptonButtonExamples
             // button6System
             // 
             this.button6System.AutoSize = true;
-            this.button6System.ButtonOrientation = Krypton.Toolkit.VisualOrientation.Left;
             this.button6System.Location = new System.Drawing.Point(80, 27);
             this.button6System.Name = "button6System";
             this.button6System.Orientation = Krypton.Toolkit.VisualOrientation.Left;
@@ -615,7 +613,6 @@ namespace KryptonButtonExamples
             // button6Green
             // 
             this.button6Green.AutoSize = true;
-            this.button6Green.ButtonOrientation = Krypton.Toolkit.VisualOrientation.Right;
             this.button6Green.Location = new System.Drawing.Point(80, 27);
             this.button6Green.Name = "button6Green";
             this.button6Green.Orientation = Krypton.Toolkit.VisualOrientation.Right;
@@ -724,7 +721,6 @@ namespace KryptonButtonExamples
             // button6Red
             // 
             this.button6Red.AutoSize = true;
-            this.button6Red.ButtonOrientation = Krypton.Toolkit.VisualOrientation.Right;
             this.button6Red.Location = new System.Drawing.Point(80, 27);
             this.button6Red.Name = "button6Red";
             this.button6Red.Orientation = Krypton.Toolkit.VisualOrientation.Right;

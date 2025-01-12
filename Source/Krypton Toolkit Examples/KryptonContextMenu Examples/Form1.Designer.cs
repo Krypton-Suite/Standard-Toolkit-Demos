@@ -1380,9 +1380,6 @@ namespace KryptonContextMenuExamples
             this.kryptonContextMenuCheckBox5.ToolTipValues.Heading = "Heading: Title";
             this.kryptonContextMenuCheckBox5.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.TitlePanel;
             // 
-            // kryptonManager
-            // 
-            // 
             // kcmControls
             // 
             this.kcmControls.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
@@ -1673,16 +1670,17 @@ namespace KryptonContextMenuExamples
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 38);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 10);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(207, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(57, 6);
             // 
             // Form1
             // 

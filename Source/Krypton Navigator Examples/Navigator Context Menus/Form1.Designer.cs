@@ -166,7 +166,6 @@ namespace NavigatorContextMenus
             this.kcmDollar1,
             this.kcmDollar2,
             this.kcmDollar3});
-            this.kcmItemsDollar.Text = "";
             // 
             // kcmDollar1
             // 
@@ -226,7 +225,6 @@ namespace NavigatorContextMenus
             this.kcmEuro3,
             this.kcmEuro4,
             this.kcmEuro5});
-            this.kcmItemsEuro.Text = "";
             // 
             // kcmEuro1
             // 
@@ -237,10 +235,6 @@ namespace NavigatorContextMenus
             // 
             this.kcmEuro2.Image = ((System.Drawing.Image)(resources.GetObject("kcmEuro2.Image")));
             this.kcmEuro2.Text = "Euro 2";
-            // 
-            // kcmSeparatorEuro
-            // 
-            this.kcmSeparatorEuro.Text = "";
             // 
             // kcmEuro3
             // 
@@ -299,7 +293,6 @@ namespace NavigatorContextMenus
             this.kcmItemsYen.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kcmYen1,
             this.kcmYen2});
-            this.kcmItemsYen.Text = "";
             // 
             // kcmYen1
             // 
@@ -311,10 +304,6 @@ namespace NavigatorContextMenus
             this.kcmYen2.Image = ((System.Drawing.Image)(resources.GetObject("kcmYen2.Image")));
             this.kcmYen2.Text = "Yen 2";
             // 
-            // kcmSeparatorYen
-            // 
-            this.kcmSeparatorYen.Text = "";
-            // 
             // kcmHeadingYenMore
             // 
             this.kcmHeadingYenMore.ExtraText = "";
@@ -325,7 +314,6 @@ namespace NavigatorContextMenus
             this.kcmItemsYenMore.Items.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kcmYen3,
             this.kcmYen4});
-            this.kcmItemsYenMore.Text = "";
             // 
             // kcmYen3
             // 
@@ -381,7 +369,6 @@ namespace NavigatorContextMenus
             this.kcmPound4,
             this.kcmPound5,
             this.kcmPound6});
-            this.kcmItemsPound.Text = "";
             // 
             // kcmPound1
             // 
@@ -401,7 +388,6 @@ namespace NavigatorContextMenus
             // kcmSeparatorPound
             // 
             this.kcmSeparatorPound.Horizontal = false;
-            this.kcmSeparatorPound.Text = "";
             // 
             // kcmPound4
             // 
@@ -436,7 +422,6 @@ namespace NavigatorContextMenus
             this.kcmPrevious,
             this.kcmNext,
             this.kcmLast});
-            this.kcmItemsNavigator.Text = "";
             // 
             // kcmFirst
             // 
