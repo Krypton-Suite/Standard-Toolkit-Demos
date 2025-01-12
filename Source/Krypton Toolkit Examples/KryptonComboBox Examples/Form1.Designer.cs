@@ -87,7 +87,7 @@ namespace KryptonComboBoxExamples
             this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.propertyGrid.Location = new System.Drawing.Point(6, 19);
+            this.propertyGrid.Location = new System.Drawing.Point(9, 19);
             this.propertyGrid.Name = "propertyGrid";
             this.propertyGrid.Size = new System.Drawing.Size(310, 365);
             this.propertyGrid.TabIndex = 0;
@@ -122,7 +122,7 @@ namespace KryptonComboBoxExamples
             this.kryptonComboBox3Blue.Location = new System.Drawing.Point(16, 88);
             this.kryptonComboBox3Blue.Name = "kryptonComboBox3Blue";
             this.kryptonComboBox3Blue.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonComboBox3Blue.Size = new System.Drawing.Size(169, 27);
+            this.kryptonComboBox3Blue.Size = new System.Drawing.Size(169, 28);
             this.kryptonComboBox3Blue.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -149,7 +149,7 @@ namespace KryptonComboBoxExamples
             this.kryptonComboBox2Blue.Location = new System.Drawing.Point(16, 57);
             this.kryptonComboBox2Blue.Name = "kryptonComboBox2Blue";
             this.kryptonComboBox2Blue.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonComboBox2Blue.Size = new System.Drawing.Size(169, 27);
+            this.kryptonComboBox2Blue.Size = new System.Drawing.Size(169, 28);
             this.kryptonComboBox2Blue.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -186,7 +186,7 @@ namespace KryptonComboBoxExamples
             this.kryptonComboBox1Blue.Location = new System.Drawing.Point(16, 27);
             this.kryptonComboBox1Blue.Name = "kryptonComboBox1Blue";
             this.kryptonComboBox1Blue.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonComboBox1Blue.Size = new System.Drawing.Size(169, 27);
+            this.kryptonComboBox1Blue.Size = new System.Drawing.Size(169, 28);
             this.kryptonComboBox1Blue.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -224,7 +224,7 @@ namespace KryptonComboBoxExamples
             this.kryptonComboBox6System.Location = new System.Drawing.Point(16, 90);
             this.kryptonComboBox6System.Name = "kryptonComboBox6System";
             this.kryptonComboBox6System.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonComboBox6System.Size = new System.Drawing.Size(169, 29);
+            this.kryptonComboBox6System.Size = new System.Drawing.Size(169, 30);
             this.kryptonComboBox6System.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -251,7 +251,7 @@ namespace KryptonComboBoxExamples
             this.kryptonComboBox5System.Location = new System.Drawing.Point(16, 58);
             this.kryptonComboBox5System.Name = "kryptonComboBox5System";
             this.kryptonComboBox5System.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonComboBox5System.Size = new System.Drawing.Size(169, 29);
+            this.kryptonComboBox5System.Size = new System.Drawing.Size(169, 30);
             this.kryptonComboBox5System.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -286,7 +286,7 @@ namespace KryptonComboBoxExamples
             this.kryptonComboBox4System.Location = new System.Drawing.Point(16, 27);
             this.kryptonComboBox4System.Name = "kryptonComboBox4System";
             this.kryptonComboBox4System.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonComboBox4System.Size = new System.Drawing.Size(169, 29);
+            this.kryptonComboBox4System.Size = new System.Drawing.Size(169, 30);
             this.kryptonComboBox4System.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -327,10 +327,10 @@ namespace KryptonComboBoxExamples
             "four",
             "five",
             "six"});
-            this.kryptonComboBox8Custom.Location = new System.Drawing.Point(16, 69);
+            this.kryptonComboBox8Custom.Location = new System.Drawing.Point(9, 69);
             this.kryptonComboBox8Custom.Name = "kryptonComboBox8Custom";
             this.kryptonComboBox8Custom.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonComboBox8Custom.Size = new System.Drawing.Size(179, 27);
+            this.kryptonComboBox8Custom.Size = new System.Drawing.Size(182, 28);
             this.kryptonComboBox8Custom.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -370,7 +370,7 @@ namespace KryptonComboBoxExamples
             this.kryptonComboBox7Custom.Location = new System.Drawing.Point(16, 30);
             this.kryptonComboBox7Custom.Name = "kryptonComboBox7Custom";
             this.kryptonComboBox7Custom.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Black;
-            this.kryptonComboBox7Custom.Size = new System.Drawing.Size(169, 31);
+            this.kryptonComboBox7Custom.Size = new System.Drawing.Size(169, 32);
             this.kryptonComboBox7Custom.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
