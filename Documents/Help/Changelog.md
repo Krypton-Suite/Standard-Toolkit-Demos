@@ -2,6 +2,8 @@
 
 
 ## 2025-11-xx - Build 2511 - November
+* Removed Krypton OutLookGrid example
+* Implemented Krypton ToggleSwitch example
 * Resolved [#238](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/238), Restore Applications page in Explorer app
 * Resolved [#231](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/231), `Explorer` launch of "Workspace Persistence" causes an exception to be displayed
 * Resolved [#2301](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/230), `Explorer` launch of Workspace example does nothing
