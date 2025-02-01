@@ -232,7 +232,7 @@ There are 2 set of solutions in these projects:
 ## KryptonToastNotification
 ![KryptonToastNotification Examples](KryptonToastNotification%20Examples/ToastNotificationExample.gif)
 ## KryptonToggleSwitch
-![KryptonToggleSwitch Examples](KryptonToggleSwitch%20Examples/KryptonToggleSwitchExample.png)
+![KryptonToggleSwitch Examples](KryptonToggleSwitch%20Examples/KryptonToggleSwitchExample.gif)
 ## KryptonTrackBar
 ![KryptonTrackBar Examples](KryptonTrackBar%20Examples/example.png)
 ## KryptonTreeView
