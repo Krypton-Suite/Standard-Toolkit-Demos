@@ -1,12 +1,12 @@
 // *****************************************************************************
 // BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2023 - 2024. All rights reserved.
+// By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege 2023 - 2025. All rights reserved.
 // *****************************************************************************
 
 using System;
 using System.Windows.Forms;
 
-namespace KryptonScrollbarExamples
+namespace KryptonProgressBarExamples
 {
     internal static class Program
     {
