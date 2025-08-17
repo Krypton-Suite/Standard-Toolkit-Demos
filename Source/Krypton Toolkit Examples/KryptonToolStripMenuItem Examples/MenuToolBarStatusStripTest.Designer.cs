@@ -118,7 +118,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(820, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(832, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -145,7 +145,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newToolStripMenuItem.Text = "&New";
             // 
             // openToolStripMenuItem
@@ -154,13 +154,13 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -168,19 +168,19 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -188,7 +188,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printToolStripMenuItem.Text = "&Print";
             // 
             // printPreviewToolStripMenuItem
@@ -196,18 +196,18 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -419,11 +419,11 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.kryptonProgressBarToolStripItem1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 382);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 346);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.ProgressBars = null;
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.statusStrip1.Size = new System.Drawing.Size(820, 24);
+            this.statusStrip1.Size = new System.Drawing.Size(832, 24);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -448,11 +448,11 @@
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.kryptonPanel1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(820, 333);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(832, 297);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 24);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(820, 358);
+            this.toolStripContainer1.Size = new System.Drawing.Size(832, 322);
             this.toolStripContainer1.TabIndex = 2;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -466,7 +466,7 @@
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(820, 333);
+            this.kryptonPanel1.Size = new System.Drawing.Size(832, 297);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // kryptonThemeListBox1
@@ -477,7 +477,7 @@
             this.kryptonThemeListBox1.Location = new System.Drawing.Point(0, 0);
             this.kryptonThemeListBox1.Margin = new System.Windows.Forms.Padding(5);
             this.kryptonThemeListBox1.Name = "kryptonThemeListBox1";
-            this.kryptonThemeListBox1.Size = new System.Drawing.Size(820, 333);
+            this.kryptonThemeListBox1.Size = new System.Drawing.Size(832, 297);
             this.kryptonThemeListBox1.TabIndex = 0;
             // 
             // kryptonContextMenu1
@@ -520,7 +520,7 @@
             this.toolStripThemeHost});
             this.toolStrip1.Location = new System.Drawing.Point(3, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(622, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(653, 25);
             this.toolStrip1.TabIndex = 0;
             // 
             // newToolStripButton
@@ -654,12 +654,12 @@
             // 
             this.toolStripThemeHost.AccessibleName = "toolStripThemeHost";
             this.toolStripThemeHost.AutoSize = false;
-            this.toolStripThemeHost.DefaultPalette = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.toolStripThemeHost.DefaultPalette = Krypton.Toolkit.PaletteMode.Microsoft365Blue;
             this.toolStripThemeHost.DropDownWidth = 300;
             // 
             // toolStripThemeHost
             // 
-            this.toolStripThemeHost.KryptonThemeComboBoxControl.DefaultPalette = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.toolStripThemeHost.KryptonThemeComboBoxControl.DefaultPalette = Krypton.Toolkit.PaletteMode.Microsoft365Blue;
             this.toolStripThemeHost.KryptonThemeComboBoxControl.DropDownWidth = 300;
             this.toolStripThemeHost.KryptonThemeComboBoxControl.Location = new System.Drawing.Point(449, 1);
             this.toolStripThemeHost.KryptonThemeComboBoxControl.Name = "toolStripThemeHost";
@@ -667,16 +667,17 @@
             this.toolStripThemeHost.KryptonThemeComboBoxControl.TabIndex = 1;
             this.toolStripThemeHost.Name = "toolStripThemeHost";
             this.toolStripThemeHost.Size = new System.Drawing.Size(170, 22);
-            this.toolStripThemeHost.Text = "Professional - System";
+            this.toolStripThemeHost.Text = "Microsoft 365 - Blue";
             // 
             // MenuToolBarStatusStripTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(820, 406);
+            this.ClientSize = new System.Drawing.Size(832, 370);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.FormTitleAlign = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MenuToolBarStatusStripTest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
