@@ -2,6 +2,7 @@
 
 
 ## 2025-11-xx - Build 2511 - November
+* Resolved [#249](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/249) 'KryptonProgressBar' demo updated with more options.
 * Removed Krypton OutLookGrid example
 * Implemented Krypton ToggleSwitch example
 * Resolved [#244](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/244) KryptonVerticalScrollBar demo scrollbar dimensions incorrect.

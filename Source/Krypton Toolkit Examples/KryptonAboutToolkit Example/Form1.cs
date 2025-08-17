@@ -12,13 +12,13 @@ namespace KryptonAboutToolkitExample
 {
     public partial class Form1 : KryptonForm
     {
-        private ToolkitType _toolkitType;
+        private ToolkitSupportType _toolkitType;
 
         public Form1()
         {
             InitializeComponent();
 
-            _toolkitType = ToolkitType.Stable;
+            _toolkitType = ToolkitSupportType.Stable;
         }
 
         private void kbtnCancel_Click(object sender, EventArgs e) => Close();
@@ -69,7 +69,7 @@ namespace KryptonAboutToolkitExample
 
             data.ShowVersionInformationButton = kcbShowVersionInformationButton.Checked;
 
-            data.ToolkitType = _toolkitType;
+            data.ToolkitSupportType = _toolkitType;
 
             data.DiscordLinkArea = new LinkArea((int)knumLinkAreaDiscordStart.Value, (int)knumLinkAreaDiscordEnd.Value);
 
@@ -88,17 +88,17 @@ namespace KryptonAboutToolkitExample
         {
             if (krbCanary.Checked)
             {
-                _toolkitType = ToolkitType.Canary;
+                _toolkitType = ToolkitSupportType.Canary;
             }
 
             if (krbNightly.Checked)
             {
-                _toolkitType = ToolkitType.Nightly;
+                _toolkitType = ToolkitSupportType.Nightly;
             }
 
             if (krbStable.Checked)
             {
-                _toolkitType = ToolkitType.Stable;
+                _toolkitType = ToolkitSupportType.Stable;
             }
         }
     }
