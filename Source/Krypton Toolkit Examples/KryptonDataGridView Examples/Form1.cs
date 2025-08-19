@@ -1,12 +1,12 @@
 ﻿#region BSD License
 /*
- * 
+ *
  * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
- *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
- * 
- *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
- *  
+ * © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
+ *
+ * New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
+ * Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege et al. 2017 - 2025. All rights reserved.
+ *
  */
 #endregion
 
@@ -26,14 +26,44 @@ namespace KryptonDataGridViewExamples
         private void Form1_Load(object sender, EventArgs e)
         {
             kryptonDataGridView1.BorderStyle = BorderStyle.Fixed3D;
-            // Create some simple test data for display
-            DateTime dt = DateTime.Now.Date;
-            dtTestData.Rows.Add(dt, "Mr", "Mark", "(55) 5555-5555", "Single", 36, "Press!", true);
-            dtTestData.Rows.Add(dt, "Mrs", "Mary", "(01) 2345-6789", "Married", 21, "Press!", false);
-            dtTestData.Rows.Add(dt, "Miss", "Mandy", "(03) 5555-1111", "Single", 44, "Press!", false);
-            dtTestData.Rows.Add(dt, "Ms", "Mercy", "(99) 2211-2211", "Single", 25, "Press!", true);
-            dtTestData.Rows.Add(dt, "Mr", "Micheal\r\nSingle\r\nMarried", "(07) 0070-0700", "Divorced", 35, "Press!", false);
-            dtTestData.Rows.Add(dt, "Mrs", "Marge has a really long name normally, and this should wrap", "(10) 2311-2311", "Married", 80, "Press!", true);
+            foreach (DataGridViewColumn column in kryptonDataGridView1.Columns)
+            {
+                column.SortMode = DataGridViewColumnSortMode.Automatic;
+            }
+            // Create richer test data for display
+            dtTestData.Rows.Clear();
+
+            var rand = new Random();
+            var titles = new[] { "Mr", "Mrs", "Miss", "Ms" };
+            var statuses = new[] { "Single", "Married", "Divorced", "Separated" };
+            var firstNames = new[] { "Mark", "Mary", "Mandy", "Mercy", "Michael", "Marge", "Alex", "Jordan", "Taylor", "Sam", "Chris", "Pat", "Morgan", "Jamie", "Robin", "Avery", "Casey", "Drew", "Elliot", "Harper", "Riley", "Quinn", "Skyler", "Cameron", "Logan", "Parker", "Reese", "Rowan", "Sage", "Dakota" };
+            var lastNames = new[] { "Smith", "Johnson", "Williams", "Brown", "Jones", "Miller", "Davis", "Wilson", "Moore", "Taylor", "Anderson", "Thomas", "Jackson", "White", "Harris", "Martin", "Thompson", "Garcia", "Martinez", "Robinson", "Clark", "Rodriguez", "Lewis", "Lee", "Walker", "Hall", "Allen", "Young", "King", "Wright" };
+
+            for (int i = 0; i < 500; i++)
+            {
+                DateTime date = DateTime.Now.Date.AddDays(rand.Next(-365, 366));
+                string title = titles[rand.Next(titles.Length)];
+                string first = firstNames[rand.Next(firstNames.Length)];
+                string last = lastNames[rand.Next(lastNames.Length)];
+                string name = $"{first} {last}";
+
+                // Add some multi-line and long-text variations
+                if (i % 50 == 0)
+                {
+                    name = $"{first}\r\nSingle\r\nMarried";
+                }
+                else if (i % 33 == 0)
+                {
+                    name = $"{first} has a really long name normally, and this should wrap around the cell to demonstrate multiline behavior";
+                }
+
+                string phone = $"({rand.Next(1, 100):00}) {rand.Next(0, 10000):0000}-{rand.Next(0, 10000):0000}";
+                string status = statuses[rand.Next(statuses.Length)];
+                int age = rand.Next(18, 90);
+                bool flag = rand.Next(2) == 0;
+
+                dtTestData.Rows.Add(date, title, name, phone, status, age, "Press!", flag);
+            }
 
             // Show selected data grid properties in the property grid
             propertyGrid.SelectedObject = new KryptonDataGridViewProxy(kryptonDataGridView1);
@@ -81,7 +111,48 @@ namespace KryptonDataGridViewExamples
 
         private void kryptonDataGridView1_CellToolTipTextNeeded(object sender, DataGridViewCellToolTipTextNeededEventArgs e)
         {
+            // intentionally empty
+        }
 
+        private void kryptonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0 || kryptonDataGridView1.Columns[e.ColumnIndex] != colButton)
+            {
+                return;
+            }
+
+            var row = kryptonDataGridView1.Rows[e.RowIndex];
+
+            static string Format(object? value) => value is null or DBNull ? string.Empty : Convert.ToString(value);
+
+            string dateText = row.Cells[colDateTime.Index].Value is DateTime dt ? dt.ToShortDateString() : Format(row.Cells[colDateTime.Index].Value);
+            string title = Format(row.Cells[colComboBox.Index].Value);
+            string name = Format(row.Cells[colTextBox.Index].Value);
+            string phone = Format(row.Cells[colMaskedTextBox.Index].Value);
+            string status = Format(row.Cells[colDomainUpDown.Index].Value);
+            string ageText = Format(row.Cells[colNumericUpDown.Index].Value);
+            string flagText = row.Cells[colCheckBox.Index].Value is bool b ? (b ? "Yes" : "No") : (string.IsNullOrWhiteSpace(Format(row.Cells[colCheckBox.Index].Value)) ? "No" : Format(row.Cells[colCheckBox.Index].Value));
+
+            string mainInstruction = string.IsNullOrWhiteSpace(name)
+                ? "Person Details"
+                : $"{title} {name}".Trim();
+
+            string content =
+                $"Date: {dateText}\r\n" +
+                $"Phone: {phone}\r\n" +
+                $"Status: {status}\r\n" +
+                $"Age: {ageText}\r\n" +
+                $"Subscribed: {flagText}";
+
+            using (var dialog = new KryptonTaskDialog())
+            {
+                dialog.WindowTitle = "Info Card";
+                dialog.MainInstruction = mainInstruction;
+                dialog.Content = content;
+                dialog.Icon = KryptonMessageBoxIcon.Information;
+                dialog.CommonButtons = TaskDialogButtons.OK;
+                dialog.ShowDialog(this);
+            }
         }
     }
 
