@@ -111,24 +111,19 @@ namespace KryptonDataGridViewExamples
 
         private void kryptonDataGridView1_CellToolTipTextNeeded(object sender, DataGridViewCellToolTipTextNeededEventArgs e)
         {
-
+            // intentionally empty
         }
 
         private void kryptonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex < 0)
-            {
-                return;
-            }
-
-            if (kryptonDataGridView1.Columns[e.ColumnIndex] != colButton)
+            if (e.RowIndex < 0 || kryptonDataGridView1.Columns[e.ColumnIndex] != colButton)
             {
                 return;
             }
 
             var row = kryptonDataGridView1.Rows[e.RowIndex];
 
-            string Format(object value) => value == null || value is DBNull ? string.Empty : Convert.ToString(value);
+            static string Format(object? value) => value is null or DBNull ? string.Empty : Convert.ToString(value);
 
             string dateText = row.Cells[colDateTime.Index].Value is DateTime dt ? dt.ToShortDateString() : Format(row.Cells[colDateTime.Index].Value);
             string title = Format(row.Cells[colComboBox.Index].Value);
