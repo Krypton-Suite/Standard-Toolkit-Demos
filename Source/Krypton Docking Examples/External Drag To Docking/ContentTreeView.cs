@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege et al. 2017 - 2025. All rights reserved. 
  *  
  */
 #endregion
@@ -13,6 +13,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.ComponentModel;
 
 using Krypton.Docking;
 using Krypton.Navigator;
@@ -30,11 +31,17 @@ namespace ExternalDragToDocking
 
     public class DraggableTreeView : TreeView
     {
+        private Form1 _form1;
         private bool _dragging;
         private TreeNode _dragNode;
         private Rectangle _dragRect;
 
-        public Form1 Form1 { get; set; }
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public Form1 Form1
+        {
+            get => _form1;
+            set => _form1 = value;
+        }
 
         protected override void OnMouseDown(MouseEventArgs e)
         {
