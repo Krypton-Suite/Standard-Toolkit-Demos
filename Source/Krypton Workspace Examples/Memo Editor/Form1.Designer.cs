@@ -138,10 +138,6 @@
             this.appButtonOpenMemo.Text = "&Open";
             this.appButtonOpenMemo.Click += new System.EventHandler(this.buttonOpenMemo_Click);
             // 
-            // appButtonSep1
-            // 
-            this.appButtonSep1.Text = "";
-            // 
             // appButtonSaveMemo
             // 
             this.appButtonSaveMemo.Text = "&Save";
@@ -156,10 +152,6 @@
             // 
             this.appButtonSaveAllMemo.Text = "Save A&ll";
             this.appButtonSaveAllMemo.Click += new System.EventHandler(this.buttonSaveAllMemo_Click);
-            // 
-            // appButtonSep2
-            // 
-            this.appButtonSep2.Text = "";
             // 
             // appButtonCloseMemo
             // 

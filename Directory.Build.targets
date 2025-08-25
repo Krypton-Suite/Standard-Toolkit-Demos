@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETCoreApp'">
+    <ApplicationManifest>$(MSBuildThisFileDirectory)app.core.manifest</ApplicationManifest>
+  </PropertyGroup>
+</Project>

@@ -158,7 +158,6 @@ namespace KryptonDropButtonExamples
             this.kryptonContextMenuItem1,
             this.kryptonContextMenuItem2,
             this.kryptonContextMenuItem3});
-            this.kryptonContextMenuItems1.Text = "";
             // 
             // kryptonContextMenuItem1
             // 
@@ -535,7 +534,6 @@ namespace KryptonDropButtonExamples
             this.kryptonContextMenuItem13,
             this.kryptonContextMenuItem14,
             this.kryptonContextMenuItem15});
-            this.kryptonContextMenuItems5.Text = "";
             // 
             // kryptonContextMenuItem13
             // 

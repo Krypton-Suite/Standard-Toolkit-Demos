@@ -133,10 +133,6 @@ namespace ApplicationMenu
             this.kryptonContextMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("kryptonContextMenuItem4.Image")));
             this.kryptonContextMenuItem4.Text = "Save &As";
             // 
-            // kryptonContextMenuSeparator1
-            // 
-            this.kryptonContextMenuSeparator1.Text = "";
-            // 
             // kryptonContextMenuItem5
             // 
             this.kryptonContextMenuItem5.Image = ((System.Drawing.Image)(resources.GetObject("kryptonContextMenuItem5.Image")));
