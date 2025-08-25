@@ -1,6 +1,6 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2021 - 2024. All rights reserved.
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege 2021 - 2025. All rights reserved.
 // *****************************************************************************
 
 using System;
@@ -33,7 +33,7 @@ namespace KryptonFontDialog_Example_2019
 
         private void PaletteProfessional_CheckedChanged(object sender, EventArgs e) => kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
 
-        private int[] customColors;
+        private int[] customColors = Array.Empty<int>();
         private void ButtonShowFontDialog_Click(object sender, EventArgs e)
         {
             var kfd = new Krypton.Toolkit.KryptonColorDialog {

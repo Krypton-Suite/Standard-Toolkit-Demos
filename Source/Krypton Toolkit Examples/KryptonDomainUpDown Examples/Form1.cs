@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege et al. 2017 - 2025. All rights reserved.
  *  
  */
 #endregion
@@ -27,9 +27,9 @@ namespace KryptonDomainUpDownExamples
             // Setup the property grid to edit this domain upo-down control
             propertyGrid.SelectedObject = new KryptonDomainUpDownProxy(dud1);
 
-        private void dud_Enter(object sender, EventArgs e) =>
+        private void dud_Enter(object? sender, EventArgs e) =>
             // Setup the property grid to edit this domain upo-down control
-            propertyGrid.SelectedObject = new KryptonDomainUpDownProxy(sender as KryptonDomainUpDown);
+            propertyGrid.SelectedObject = new KryptonDomainUpDownProxy((KryptonDomainUpDown)sender!);
 
         private void buttonOffice2010Blue_Click(object sender, EventArgs e) => kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
 

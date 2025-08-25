@@ -1,6 +1,6 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2024. All rights reserved.
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege 2017 - 2025. All rights reserved.
 // *****************************************************************************
 
 using System;
@@ -20,7 +20,7 @@ namespace TestMessageBoxClipping
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2024. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege et al. 2017 - 2025. All rights reserved. (https://github.com/Krypton-Suite/Standard-Toolkit)
 //  Version 4.7.0.0  www.ComponentFactory.com
 // *****************************************************************************
 ";
@@ -156,8 +156,8 @@ namespace TestMessageBoxClipping
             {
                 MessageBox.Show(this, ex.StackTrace, ex.Message);
                 KryptonMessageBox.Show(this, ex.StackTrace, ex.Message);
-                KryptonTaskDialog.Show(ex.Message, "MinInstruction", ex.StackTrace, KryptonMessageBoxIcon.Stop,
-                    TaskDialogButtons.Close, null);
+                KryptonTaskDialog.Show(ex.Message, "MinInstruction", ex.StackTrace!, KryptonMessageBoxIcon.Stop,
+                    TaskDialogButtons.Close, true);
             }
         }
 

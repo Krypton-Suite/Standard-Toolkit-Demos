@@ -1,6 +1,6 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2024. All rights reserved.
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege 2017 - 2025. All rights reserved.
 // *****************************************************************************
 
 using System;
@@ -21,7 +21,7 @@ namespace TestMessageBoxClipping
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             KryptonMessageBox.Show("Test without an owner,\nand before KyptonManager has Loaded");
-            KryptonMessageBox.Show(text: null, "Test without no Text");
+            KryptonMessageBox.Show(text: string.Empty, "Test without no Text");
             Application.Run(new Form1());
         }
     }

@@ -1,12 +1,12 @@
 ﻿#region BSD License
 /*
- * 
+ *
  * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
- * 
+ *
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
- *  
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege et al. 2017 - 2025. All rights reserved.
+ *
  */
 #endregion
 
@@ -182,7 +182,7 @@ namespace KryptonMessageBoxExamples
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="hlpEvent"></param>
-        private void Form1_HelpRequested(object sender, HelpEventArgs hlpEvent)
+        private void Form1_HelpRequested(object? sender, HelpEventArgs hlpEvent)
         {
             // Create a custom Help window in response to the HelpRequested event.
             using var helpForm = new Form {
@@ -200,11 +200,14 @@ namespace KryptonMessageBoxExamples
             helpForm.Controls.Add(helpLabel);
             helpLabel.Dock = DockStyle.Fill;
 
-            // Use the sender parameter to identify the context of the Help request.
-            // The parameter must be cast to the Control type to get the Tag property.
-            Control senderControl = (Control)sender;
+            if (sender != null)
+            {
+                // Use the sender parameter to identify the context of the Help request.
+                // The parameter must be cast to the Control type to get the Tag property.
+                Control senderControl = (Control)sender;
 
-            helpLabel.Text = $@"Help information shown in response to user action on the '{(string?)senderControl!.Tag}' message.";
+                helpLabel.Text = $@"Help information shown in response to user action on the '{(string?)senderControl!.Tag}' message.";
+            }
 
             // Set the Help form to be owned by the main form. This helps
             // to ensure that the Help form is disposed of.
