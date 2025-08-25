@@ -2,6 +2,7 @@
 
 
 ## 2025-11-xx - Build 2511 - November
+* Resolved [#254](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/254) Change csproj files to use V95 NuGet packages
 * Resolved [#244](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/244) KryptonVerticalScrollBar demo scrollbar dimensions incorrect.
 * Resolved [#231](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/231), `Explorer` launch of "Workspace Persistence" causes an exception to be displayed
 * Resolved [#2301](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/230), `Explorer` launch of Workspace example does nothing

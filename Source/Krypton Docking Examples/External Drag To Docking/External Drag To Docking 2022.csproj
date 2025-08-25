@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
     <PropertyGroup>
         <TargetFrameworks>net48;net8.0-windows;net9.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
@@ -10,9 +10,6 @@
         <UseWindowsForms>true</UseWindowsForms>
         <PlatformTarget>AnyCPU</PlatformTarget>
         <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
-    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
-    <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
-
     </PropertyGroup>
     <ItemGroup>
         <Content Include="Krypton.ico" />
@@ -20,8 +17,8 @@
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
-                <PackageReference Include="Krypton.Toolkit.Canary" Version="90.23.12.352-beta" />
-                <PackageReference Include="Krypton.Docking.Canary" Version="90.23.12.352-beta" />
+                <PackageReference Include="Krypton.Docking" Version="95.25.8.235" />
+                <PackageReference Include="Krypton.Toolkit" Version="95.25.8.235" />
             </ItemGroup>
         </When>
         <Otherwise>
