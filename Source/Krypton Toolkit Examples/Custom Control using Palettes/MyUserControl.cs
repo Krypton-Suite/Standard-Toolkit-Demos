@@ -5,7 +5,7 @@
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege et al. 2017 - 2025. All rights reserved.
  *  
  */
 #endregion
@@ -156,7 +156,7 @@ namespace CustomControlUsingPalettes
                     // Draw the text in about the center of the control
                     using (var textBrush = new SolidBrush(textColor))
                     {
-                        e.Graphics.DrawString("Click me!", textFont, textBrush, Width / 2.0f - 10, Height / 2.0f - 5);
+                        e.Graphics.DrawString("Click me!", textFont ?? Font, textBrush, Width / 2.0f - 10, Height / 2.0f - 5);
                     }
                 }
 
@@ -206,7 +206,7 @@ namespace CustomControlUsingPalettes
             return fishPath;
         }
 
-        private void OnGlobalPaletteChanged(object sender, EventArgs e)
+        private void OnGlobalPaletteChanged(object? sender, EventArgs e)
         {
             // Unhook events from old palette
             if (_palette != null)
@@ -227,7 +227,7 @@ namespace CustomControlUsingPalettes
             Invalidate();
         }
 
-        private void OnPalettePaint(object sender, PaletteLayoutEventArgs e) =>
+        private void OnPalettePaint(object? sender, PaletteLayoutEventArgs e) =>
             // Palette indicates we might need to repaint, so lets do it
             Invalidate();
     }

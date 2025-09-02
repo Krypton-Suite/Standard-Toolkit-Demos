@@ -357,3 +357,4 @@ Source/Krypton Toolkit Examples/Temp.txt
 *.wixpdb
 Source/Krypton Ribbon Examples/Temp.txt
 /Binaries/Krypton Demos
+/Binaries/BuildLogs

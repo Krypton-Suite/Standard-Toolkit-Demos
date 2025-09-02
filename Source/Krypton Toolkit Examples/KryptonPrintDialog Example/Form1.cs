@@ -1,6 +1,6 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
-//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2021 - 2024. All rights reserved.
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege 2021 - 2025. All rights reserved.
 // *****************************************************************************
 
 using System;
@@ -62,7 +62,7 @@ namespace KryptonFontDialog_Example_2019
                 ("Arial", 35, System.Drawing.FontStyle.Regular);
 
             // Draw the content.
-            e.Graphics.DrawString(text, printFont,
+            e?.Graphics?.DrawString(text, printFont,
                 System.Drawing.Brushes.Black, 10, 10);
         }
     }

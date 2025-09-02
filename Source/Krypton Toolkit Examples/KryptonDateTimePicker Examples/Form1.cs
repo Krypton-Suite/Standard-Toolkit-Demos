@@ -1,12 +1,12 @@
 ﻿#region BSD License
 /*
- * 
+ *
  * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
- * 
+ *
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
- *  
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege et al. 2017 - 2025. All rights reserved.
+ *
  */
 #endregion
 
@@ -87,7 +87,7 @@ namespace KryptonDateTimePickerExamples
         }
 
         /// <summary>
-        /// Gets or sets the number of columns and rows of months displayed. 
+        /// Gets or sets the number of columns and rows of months displayed.
         /// </summary>
         [Category("Visuals - MonthCalendar")]
         [Description("Specifies the number of rows and columns of months displayed.")]
@@ -98,7 +98,7 @@ namespace KryptonDateTimePickerExamples
         }
 
         /// <summary>
-        /// Gets or sets the label text for todays text. 
+        /// Gets or sets the label text for todays text.
         /// </summary>
         [Category("Visuals - MonthCalendar")]
         [Description("Text used as label for todays date.")]
@@ -186,7 +186,7 @@ namespace KryptonDateTimePickerExamples
         }
 
         /// <summary>
-        /// Gets or sets the array of DateTime objects that determine which monthly days to bold. 
+        /// Gets or sets the array of DateTime objects that determine which monthly days to bold.
         /// </summary>
         [Category("Visuals - MonthCalendar")]
         [Description("Indicates which monthly dates should be boldface.")]
@@ -334,7 +334,7 @@ namespace KryptonDateTimePickerExamples
         [RefreshProperties(RefreshProperties.Repaint)]
         public string CustomFormat
         {
-            get => _dateTimePicker.CustomFormat;
+            get => _dateTimePicker.CustomFormat ?? string.Empty;
             set => _dateTimePicker.CustomFormat = value;
         }
 

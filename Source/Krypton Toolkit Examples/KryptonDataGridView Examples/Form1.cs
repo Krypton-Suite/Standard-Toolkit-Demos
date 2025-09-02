@@ -123,7 +123,7 @@ namespace KryptonDataGridViewExamples
 
             var row = kryptonDataGridView1.Rows[e.RowIndex];
 
-            static string Format(object? value) => value is null or DBNull ? string.Empty : Convert.ToString(value);
+            static string Format(object? value) => value is null or DBNull ? string.Empty : (Convert.ToString(value) ?? string.Empty);
 
             string dateText = row.Cells[colDateTime.Index].Value is DateTime dt ? dt.ToShortDateString() : Format(row.Cells[colDateTime.Index].Value);
             string title = Format(row.Cells[colComboBox.Index].Value);
