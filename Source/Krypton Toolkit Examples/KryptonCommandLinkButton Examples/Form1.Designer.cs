@@ -136,7 +136,7 @@
             // kryptonCommandLinkButton4
             // 
             this.kryptonCommandLinkButton4.ButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorMini;
-            this.kryptonCommandLinkButton4.CommandLinkImageValues.Image = ((System.Drawing.Image)(resources.GetObject("kryptonCommandLinkButton4.CommandLinkImageValues.Image")));
+            this.kryptonCommandLinkButton4.CommandLinkTextValues.Image = ((System.Drawing.Image)(resources.GetObject("kryptonCommandLinkButton4.CommandLinkImageValues.Image")));
             this.kryptonCommandLinkButton4.CommandLinkTextValues.Description = " Demo the Shortcut display and rounded borders";
             this.kryptonCommandLinkButton4.CommandLinkTextValues.Heading = "&Disabled Navigator Mini style";
             this.kryptonCommandLinkButton4.Enabled = false;
