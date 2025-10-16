@@ -1,0 +1,85 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - '**'
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build Demos
+    runs-on: windows-latest
+    
+    strategy:
+      matrix:
+        configuration: [Debug, Release]
+      fail-fast: false
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup .NET 8.0
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      
+      - name: Setup .NET 9.0
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+      
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+        with:
+          vs-version: '[17.0,18.0)'
+      
+      - name: Display MSBuild version
+        run: msbuild -version
+      
+      - name: Restore NuGet packages
+        run: dotnet restore "Source/Krypton Explorer/Krypton Explorer 2022 - Nuget.sln"
+      
+      - name: Build Krypton Explorer (NuGet)
+        run: msbuild "Source/Krypton Explorer/Krypton Explorer 2022 - Nuget.sln" /m /nologo /v:minimal /p:Configuration=${{ matrix.configuration }} /restore
+      
+      - name: Build Docking Examples (NuGet)
+        run: msbuild "Source/Krypton Docking Examples/Krypton Docking Examples 2022 (${{ matrix.configuration }})  - Nuget.sln" /m /nologo /v:minimal /p:Configuration=${{ matrix.configuration }} /restore
+      
+      - name: Build Navigator Examples (NuGet)
+        run: msbuild "Source/Krypton Navigator Examples/Krypton Navigator Examples 2022 (${{ matrix.configuration }})  - Nuget.sln" /m /nologo /v:minimal /p:Configuration=${{ matrix.configuration }} /restore
+      
+      - name: Build Ribbon Examples (NuGet)
+        run: msbuild "Source/Krypton Ribbon Examples/Krypton Ribbon Examples 2022 (${{ matrix.configuration }})  - Nuget.sln" /m /nologo /v:minimal /p:Configuration=${{ matrix.configuration }} /restore
+      
+      - name: Build Toolkit Examples (NuGet)
+        run: msbuild "Source/Krypton Toolkit Examples/Krypton Toolkit Examples 2022 (${{ matrix.configuration }})  - Nuget.sln" /m /nologo /v:minimal /p:Configuration=${{ matrix.configuration }} /restore
+      
+      - name: Build Workspace Examples (NuGet)
+        run: msbuild "Source/Krypton Workspace Examples/Krypton Workspace Examples 2022 (${{ matrix.configuration }})  - Nuget.sln" /m /nologo /v:minimal /p:Configuration=${{ matrix.configuration }} /restore
+      
+      - name: Upload build artifacts
+        if: matrix.configuration == 'Release'
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output-${{ matrix.configuration }}
+          path: |
+            Binaries/Krypton Demos/**/*.exe
+            Binaries/Krypton Demos/**/*.dll
+            !Binaries/Krypton Demos/**/*.pdb
+          retention-days: 7
+      
+      - name: Upload build logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-logs-${{ matrix.configuration }}-${{ github.run_number }}
+          path: Binaries/BuildLogs/
+          retention-days: 14
+

@@ -1,7 +1,8 @@
 # <img src="https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png?raw=true"> Standard Toolkit Demos - ChangeLog
 
 
-## 2025-11-xx - Build 2511 - November
+## 2025-11-11 - Build 2511 - November
+* Implemented [#258](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/258), Implement workflow files
 * Implemented [#251](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/251) 'KDataGridView' demo updated; new demo `KryptonToolStripMenuItem`.
 * Resolved [#249](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/249) 'KryptonProgressBar' demo updated with more options.
 * Removed Krypton OutLookGrid example

@@ -1,0 +1,369 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      create_release:
+        description: 'Create GitHub Release'
+        required: true
+        type: boolean
+        default: true
+
+jobs:
+  build-and-release:
+    name: Build and Create Release
+    runs-on: windows-latest
+    
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup .NET 8.0
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      
+      - name: Setup .NET 9.0
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+      
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+        with:
+          vs-version: '[17.0,18.0)'
+      
+      - name: Display build environment
+        run: |
+          dotnet --info
+          msbuild -version
+      
+      # Build all demo solutions in Release configuration
+      - name: Build all demo solutions (Release)
+        run: |
+          Write-Host "Building all NuGet solutions in Release configuration..."
+          
+          $solutions = @(
+            "Source/Krypton Explorer/Krypton Explorer 2022 - Nuget.sln",
+            "Source/Krypton Docking Examples/Krypton Docking Examples 2022 (Release)  - Nuget.sln",
+            "Source/Krypton Navigator Examples/Krypton Navigator Examples 2022 (Release)  - Nuget.sln",
+            "Source/Krypton Ribbon Examples/Krypton Ribbon Examples 2022 (Release)  - Nuget.sln",
+            "Source/Krypton Toolkit Examples/Krypton Toolkit Examples 2022 (Release)  - Nuget.sln",
+            "Source/Krypton Workspace Examples/Krypton Workspace Examples 2022 (Release)  - Nuget.sln"
+          )
+          
+          $failedBuilds = @()
+          
+          foreach ($sln in $solutions) {
+            Write-Host ""
+            Write-Host "========================================" -ForegroundColor Cyan
+            Write-Host "Building: $sln" -ForegroundColor Cyan
+            Write-Host "========================================" -ForegroundColor Cyan
+            
+            msbuild $sln /m /nologo /v:minimal /p:Configuration=Release /restore
+            
+            if ($LASTEXITCODE -ne 0) {
+              Write-Host "FAILED: $sln" -ForegroundColor Red
+              $failedBuilds += $sln
+            } else {
+              Write-Host "SUCCESS: $sln" -ForegroundColor Green
+            }
+          }
+          
+          if ($failedBuilds.Count -gt 0) {
+            Write-Host ""
+            Write-Host "========================================" -ForegroundColor Red
+            Write-Host "Build failures:" -ForegroundColor Red
+            $failedBuilds | ForEach-Object { Write-Host "  - $_" -ForegroundColor Red }
+            Write-Host "========================================" -ForegroundColor Red
+            exit 1
+          }
+          
+          Write-Host ""
+          Write-Host "All solutions built successfully!" -ForegroundColor Green
+        shell: pwsh
+      
+      - name: Verify build outputs
+        run: |
+          Write-Host "Checking build outputs..."
+          $paths = @(
+            "Binaries/Krypton Demos/Release/net48",
+            "Binaries/Krypton Demos/Release/net8.0-windows",
+            "Binaries/Krypton Demos/Release/net9.0-windows"
+          )
+          
+          foreach ($path in $paths) {
+            if (Test-Path $path) {
+              Write-Host "✓ Found: $path" -ForegroundColor Green
+              $fileCount = (Get-ChildItem -Path $path -Recurse -File).Count
+              Write-Host "  Files: $fileCount" -ForegroundColor Gray
+            } else {
+              Write-Host "✗ Missing: $path" -ForegroundColor Red
+              exit 1
+            }
+          }
+        shell: pwsh
+      
+      # Generate version in format: MAJOR.YY.MM.BUILD (e.g., 100.25.10.289)
+      - name: Generate version number
+        id: get_version
+        run: |
+          $major = "100"
+          $year = (Get-Date).ToString("yy")
+          $month = (Get-Date).ToString("MM")
+          
+          if ("${{ github.ref_type }}" -eq "tag") {
+            # Extract build number from tag (e.g., v100.25.10.289 -> 289)
+            $tagVersion = "${{ github.ref_name }}".TrimStart("v")
+            $parts = $tagVersion.Split(".")
+            if ($parts.Count -eq 4) {
+              $major = $parts[0]
+              $year = $parts[1]
+              $month = $parts[2]
+              $build = $parts[3]
+              $version = "$major.$year.$month.$build"
+            } else {
+              # Fallback: use tag as-is
+              $version = $tagVersion
+              $build = "0"
+            }
+            $releaseTag = "${{ github.ref_name }}"
+            $isPrerelease = "false"
+            $prereleaseSuffix = ""
+            Write-Host "Version from tag: $version"
+          } else {
+            # For master/nightly: use day of year as build number
+            $dayOfYear = (Get-Date).DayOfYear
+            $build = $dayOfYear.ToString()
+            $version = "$major.$year.$month.$build"
+            $releaseTag = "nightly-$(Get-Date -Format 'yyyy-MM-dd')"
+            $isPrerelease = "true"
+            $prereleaseSuffix = "-beta"
+            Write-Host "Version (nightly): $version"
+          }
+          
+          # Version info for display (e.g., v100.25.10.289 or v100.25.10.289-beta)
+          $displayVersion = "v$version$prereleaseSuffix"
+          
+          Write-Host "Generated version: $version"
+          Write-Host "Display version: $displayVersion"
+          Write-Host "Release tag: $releaseTag"
+          Write-Host "Build number: $build"
+          Write-Host "Prerelease: $isPrerelease"
+          
+          echo "version=$version" >> $env:GITHUB_OUTPUT
+          echo "display_version=$displayVersion" >> $env:GITHUB_OUTPUT
+          echo "release_tag=$releaseTag" >> $env:GITHUB_OUTPUT
+          echo "is_prerelease=$isPrerelease" >> $env:GITHUB_OUTPUT
+          echo "prerelease_suffix=$prereleaseSuffix" >> $env:GITHUB_OUTPUT
+          echo "major=$major" >> $env:GITHUB_OUTPUT
+          echo "year=$year" >> $env:GITHUB_OUTPUT
+          echo "month=$month" >> $env:GITHUB_OUTPUT
+          echo "build=$build" >> $env:GITHUB_OUTPUT
+        shell: pwsh
+      
+      # Update version in WiX Product.wxs files
+      - name: Update WiX installer versions
+        run: |
+          $version = "${{ steps.get_version.outputs.version }}"
+          $prereleaseSuffix = "${{ steps.get_version.outputs.prerelease_suffix }}"
+          
+          Write-Host "Updating WiX installer versions to: $version"
+          
+          $productFiles = @(
+            "Source/WixInstaller/WixInstaller.net48/Product.wxs",
+            "Source/WixInstaller/WixInstaller.net80/Product.wxs",
+            "Source/WixInstaller/WixInstaller.net90/Product.wxs",
+            "Source/WixInstaller/WixInstaller.net100/Product.wxs"
+          )
+          
+          foreach ($file in $productFiles) {
+            if (Test-Path $file) {
+              Write-Host "Updating: $file"
+              $content = Get-Content $file -Raw
+              $content = $content -replace '(<\?define Version = ")[^"]+(")', "`${1}$version`$2"
+              Set-Content $file -Value $content -NoNewline
+              Write-Host "  ✓ Version updated to: $version"
+            } else {
+              Write-Host "  ⚠ File not found: $file"
+            }
+          }
+          
+          # Update OutputName in .wixproj files
+          $wixprojFiles = @(
+            @{Path="Source/WixInstaller/WixInstaller.net48/WixInstaller.net48.wixproj"; Target="Net48"},
+            @{Path="Source/WixInstaller/WixInstaller.net80/WixInstaller.net80.wixproj"; Target="Net80"},
+            @{Path="Source/WixInstaller/WixInstaller.net90/WixInstaller.net90.wixproj"; Target="Net90"},
+            @{Path="Source/WixInstaller/WixInstaller.net100/WixInstaller.net100.wixproj"; Target="Net100"}
+          )
+          
+          foreach ($proj in $wixprojFiles) {
+            $file = $proj.Path
+            $target = $proj.Target
+            if (Test-Path $file) {
+              Write-Host "Updating: $file"
+              $content = Get-Content $file -Raw
+              $newOutputName = "Samples.v$version$prereleaseSuffix.$target"
+              $content = $content -replace '(<OutputName>)[^<]+(</OutputName>)', "`${1}$newOutputName`$2"
+              Set-Content $file -Value $content -NoNewline
+              Write-Host "  ✓ OutputName updated to: $newOutputName"
+            } else {
+              Write-Host "  ⚠ File not found: $file"
+            }
+          }
+          
+          Write-Host ""
+          Write-Host "Version update complete!"
+        shell: pwsh
+      
+      # Install WiX Toolset
+      - name: Setup WiX Toolset
+        run: |
+          Write-Host "Installing WiX Toolset..."
+          dotnet tool install --global wix --version 4.0.6
+          wix --version
+        shell: pwsh
+      
+      # Build installers
+      - name: Build WiX Installer (NET 4.8)
+        run: |
+          Write-Host "Restoring NuGet packages for WiX installer..."
+          nuget restore "Source/WixInstaller/WixInstaller.net48/packages.config" -PackagesDirectory "Source/WixInstaller/packages"
+          
+          Write-Host "Building WiX installer for .NET 4.8..."
+          msbuild "Source/WixInstaller/WixInstaller.net48/WixInstaller.net48.wixproj" /p:Configuration=Release /p:Platform=x86 /v:minimal
+        shell: pwsh
+      
+      - name: Build WiX Installer (NET 8.0)
+        run: |
+          Write-Host "Restoring NuGet packages for WiX installer..."
+          nuget restore "Source/WixInstaller/WixInstaller.net80/packages.config" -PackagesDirectory "Source/WixInstaller/packages"
+          
+          Write-Host "Building WiX installer for .NET 8.0..."
+          msbuild "Source/WixInstaller/WixInstaller.net80/WixInstaller.net80.wixproj" /p:Configuration=Release /p:Platform=x86 /v:minimal
+        shell: pwsh
+      
+      - name: Build WiX Installer (NET 9.0)
+        run: |
+          Write-Host "Restoring NuGet packages for WiX installer..."
+          nuget restore "Source/WixInstaller/WixInstaller.net90/packages.config" -PackagesDirectory "Source/WixInstaller/packages"
+          
+          Write-Host "Building WiX installer for .NET 9.0..."
+          msbuild "Source/WixInstaller/WixInstaller.net90/WixInstaller.net90.wixproj" /p:Configuration=Release /p:Platform=x86 /v:minimal
+        shell: pwsh
+      
+      - name: Build WiX Installer (NET 10.0)
+        run: |
+          Write-Host "Restoring NuGet packages for WiX installer..."
+          nuget restore "Source/WixInstaller/WixInstaller.net100/packages.config" -PackagesDirectory "Source/WixInstaller/packages"
+          
+          Write-Host "Building WiX installer for .NET 10.0..."
+          msbuild "Source/WixInstaller/WixInstaller.net100/WixInstaller.net100.wixproj" /p:Configuration=Release /p:Platform=x86 /v:minimal
+        shell: pwsh
+      
+      - name: List installer outputs
+        run: |
+          Write-Host "Searching for MSI files..."
+          Write-Host "Expected version: ${{ steps.get_version.outputs.display_version }}"
+          Write-Host ""
+          
+          $msiFiles = Get-ChildItem -Path "Source/WixInstaller" -Recurse -Filter "*.msi"
+          
+          if ($msiFiles.Count -eq 0) {
+            Write-Host "⚠ WARNING: No MSI files found!" -ForegroundColor Yellow
+            exit 1
+          }
+          
+          foreach ($file in $msiFiles) {
+            Write-Host "✓ Found: $($file.Name)" -ForegroundColor Green
+            Write-Host "  Path: $($file.FullName)" -ForegroundColor Gray
+            Write-Host "  Size: $([math]::Round($file.Length / 1MB, 2)) MB" -ForegroundColor Gray
+            Write-Host ""
+          }
+          
+          Write-Host "Total MSI files: $($msiFiles.Count)" -ForegroundColor Cyan
+        shell: pwsh
+      
+      # Upload artifacts
+      - name: Upload Release Binaries
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-binaries
+          path: |
+            Binaries/Krypton Demos/Release/**/*.exe
+            Binaries/Krypton Demos/Release/**/*.dll
+            !Binaries/Krypton Demos/Release/**/*.pdb
+          retention-days: 30
+      
+      - name: Upload Installers
+        uses: actions/upload-artifact@v4
+        with:
+          name: installers
+          path: |
+            Source/WixInstaller/**/bin/x86/Release/*.msi
+          retention-days: 90
+      
+      # Create GitHub Release
+      - name: Create GitHub Release
+        if: |
+          github.event_name == 'push' && 
+          (github.ref_type == 'tag' || github.ref == 'refs/heads/master') &&
+          (github.event_name != 'workflow_dispatch' || inputs.create_release == true)
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.get_version.outputs.release_tag }}
+          name: ${{ github.ref_type == 'tag' && format('Release {0}', steps.get_version.outputs.display_version) || format('Nightly Build {0}', steps.get_version.outputs.display_version) }}
+          draft: false
+          prerelease: ${{ steps.get_version.outputs.is_prerelease }}
+          files: |
+            Source/WixInstaller/**/bin/x86/Release/*.msi
+          body: |
+            # Krypton Standard Toolkit Demos ${{ steps.get_version.outputs.display_version }}
+            
+            ## 📦 Installers
+            
+            This release includes MSI installers for multiple .NET versions:
+            
+            - **NET 4.8** - For .NET Framework 4.8 applications
+            - **NET 8.0** - For .NET 8.0 Windows applications
+            - **NET 9.0** - For .NET 9.0 Windows applications
+            - **NET 10.0** - For .NET 10.0 Windows applications
+            
+            ## 📋 What's Included
+            
+            - Krypton Explorer - Browse all toolkit components
+            - Docking Examples - Demonstrates docking functionality
+            - Navigator Examples - Shows navigator control capabilities
+            - Ribbon Examples - Complete ribbon interface demos
+            - Toolkit Examples - Comprehensive component examples
+            - Workspace Examples - Workspace control demonstrations
+            
+            ## 🚀 Installation
+            
+            1. Download the appropriate MSI installer for your .NET version
+            2. Run the installer and follow the installation wizard
+            3. Launch the Krypton Explorer to explore all demos
+            
+            ## 📝 Notes
+            
+            - Requires the corresponding .NET runtime to be installed
+            - All demos are fully functional examples of the Krypton Toolkit
+            - Source code available in the repository
+            
+            ---
+            
+            **Full Changelog**: https://github.com/${{ github.repository }}/commits/${{ github.ref_name }}
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
