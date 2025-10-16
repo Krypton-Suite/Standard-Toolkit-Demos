@@ -47,6 +47,50 @@ jobs:
         run: |
           dotnet --info
           msbuild -version
+          nuget help | Select-Object -First 3
+      
+      - name: Configure NuGet
+        run: |
+          Write-Host "Configuring NuGet sources..." -ForegroundColor Cyan
+          
+          # Ensure nuget.org is configured (for Krypton.*.Canary beta packages)
+          nuget sources list
+          
+          # Add nuget.org if not present (usually pre-configured)
+          nuget sources Add -Name "nuget.org" -Source "https://api.nuget.org/v3/index.json" -ErrorAction SilentlyContinue
+          
+          Write-Host "NuGet configuration complete!" -ForegroundColor Green
+        shell: pwsh
+      
+      # Restore NuGet packages for all solutions
+      - name: Restore NuGet packages
+        run: |
+          Write-Host "Restoring NuGet packages for all solutions..." -ForegroundColor Cyan
+          Write-Host ""
+          
+          $solutions = @(
+            "Source/Krypton Explorer/Krypton Explorer 2022 - Nuget.sln",
+            "Source/Krypton Docking Examples/Krypton Docking Examples 2022 (Release)  - Nuget.sln",
+            "Source/Krypton Navigator Examples/Krypton Navigator Examples 2022 (Release)  - Nuget.sln",
+            "Source/Krypton Ribbon Examples/Krypton Ribbon Examples 2022 (Release)  - Nuget.sln",
+            "Source/Krypton Toolkit Examples/Krypton Toolkit Examples 2022 (Release)  - Nuget.sln",
+            "Source/Krypton Workspace Examples/Krypton Workspace Examples 2022 (Release)  - Nuget.sln"
+          )
+          
+          foreach ($sln in $solutions) {
+            Write-Host "Restoring: $sln" -ForegroundColor Gray
+            nuget restore $sln -NonInteractive
+            
+            if ($LASTEXITCODE -ne 0) {
+              Write-Host "  WARNING: NuGet restore had issues for $sln" -ForegroundColor Yellow
+            } else {
+              Write-Host "  ✓ Restored successfully" -ForegroundColor Green
+            }
+          }
+          
+          Write-Host ""
+          Write-Host "NuGet package restore complete!" -ForegroundColor Green
+        shell: pwsh
       
       # Build all demo solutions in Release configuration
       - name: Build all demo solutions (Release)

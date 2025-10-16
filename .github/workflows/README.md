@@ -97,6 +97,15 @@ All installer versions follow the format: **`MAJOR.YY.MM.BUILD`**
 - .NET 9.0
 - .NET Framework 4.8 (pre-installed on Windows runners)
 
+### NuGet Packages
+- **Krypton.Toolkit.Canary** (beta/pre-release)
+- **Krypton.Navigator.Canary** (beta/pre-release)
+- **Krypton.Ribbon.Canary** (beta/pre-release)
+- **Krypton.Docking.Canary** (beta/pre-release)
+- **Krypton.Workspace.Canary** (beta/pre-release)
+
+**Note:** These are beta packages from NuGet.org. The workflows automatically restore them before building.
+
 ### WiX Toolset
 - WiX 4.0.6 (installed via dotnet tool during release workflow)
 

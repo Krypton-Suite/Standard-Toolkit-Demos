@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFrameworks>net48;net8.0-windows;net9.0-windows</TargetFrameworks>
         <UseWindowsForms>true</UseWindowsForms>
@@ -20,7 +20,7 @@
     </ItemGroup>
 
     <Choose>
-        <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
+        <When Condition="'$(SolutionName.Contains('Nuget'))'">
             <ItemGroup>
                 <PackageReference Include="Krypton.Toolkit.Canary" Version="100.25.8.234-beta" />
             </ItemGroup>

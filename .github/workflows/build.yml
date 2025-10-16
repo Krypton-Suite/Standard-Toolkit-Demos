@@ -40,11 +40,31 @@ jobs:
         with:
           vs-version: '[17.0,18.0)'
       
-      - name: Display MSBuild version
-        run: msbuild -version
+      - name: Display build environment
+        run: |
+          msbuild -version
+          nuget help | Select-Object -First 3
       
-      - name: Restore NuGet packages
-        run: dotnet restore "Source/Krypton Explorer/Krypton Explorer 2022 - Nuget.sln"
+      - name: Configure NuGet
+        run: |
+          Write-Host "Configuring NuGet..." -ForegroundColor Cyan
+          nuget sources list
+          Write-Host "NuGet ready!" -ForegroundColor Green
+        shell: pwsh
+      
+      - name: Restore NuGet packages for all solutions
+        run: |
+          Write-Host "Restoring NuGet packages..." -ForegroundColor Cyan
+          
+          nuget restore "Source/Krypton Explorer/Krypton Explorer 2022 - Nuget.sln" -NonInteractive
+          nuget restore "Source/Krypton Docking Examples/Krypton Docking Examples 2022 (${{ matrix.configuration }})  - Nuget.sln" -NonInteractive
+          nuget restore "Source/Krypton Navigator Examples/Krypton Navigator Examples 2022 (${{ matrix.configuration }})  - Nuget.sln" -NonInteractive
+          nuget restore "Source/Krypton Ribbon Examples/Krypton Ribbon Examples 2022 (${{ matrix.configuration }})  - Nuget.sln" -NonInteractive
+          nuget restore "Source/Krypton Toolkit Examples/Krypton Toolkit Examples 2022 (${{ matrix.configuration }})  - Nuget.sln" -NonInteractive
+          nuget restore "Source/Krypton Workspace Examples/Krypton Workspace Examples 2022 (${{ matrix.configuration }})  - Nuget.sln" -NonInteractive
+          
+          Write-Host "NuGet restore complete!" -ForegroundColor Green
+        shell: pwsh
       
       - name: Build Krypton Explorer (NuGet)
         run: msbuild "Source/Krypton Explorer/Krypton Explorer 2022 - Nuget.sln" /m /nologo /v:minimal /p:Configuration=${{ matrix.configuration }} /restore
