@@ -19,7 +19,7 @@
         <ApplicationIcon>Krypton.ico</ApplicationIcon>
     </PropertyGroup>
     <Choose>
-        <When Condition="'$(SolutionName.Contains('Nuget'))'">
+        <When Condition="$([System.String]::Copy('$(SolutionName)').IndexOf('Nuget')) &gt;= 0">
             <ItemGroup>
                 <PackageReference Include="Krypton.Toolkit.Canary" Version="100.25.8.234-beta" />
             </ItemGroup>
