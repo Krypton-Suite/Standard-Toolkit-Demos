@@ -45,7 +45,7 @@
     </None>
   </ItemGroup>
   <Choose>
-    <When Condition="$([System.String]::Copy('$(SolutionName)').IndexOf('Nuget')) &gt;= 0">
+    <When Condition="'$(UseNuGetPackages)' == 'true'">
       <ItemGroup>
         <PackageReference Include="Krypton.Toolkit.Canary" Version="100.25.8.234-beta" />
         <PackageReference Include="Krypton.Navigator.Canary" Version="100.25.8.234-beta" />

@@ -114,7 +114,7 @@ jobs:
             Write-Host "Building: $sln" -ForegroundColor Cyan
             Write-Host "========================================" -ForegroundColor Cyan
             
-            msbuild $sln /m /nologo /v:minimal /p:Configuration=Release /restore
+            msbuild $sln /m /nologo /v:minimal /p:Configuration=Release /p:UseNuGetPackages=true /restore
             
             if ($LASTEXITCODE -ne 0) {
               Write-Host "FAILED: $sln" -ForegroundColor Red
