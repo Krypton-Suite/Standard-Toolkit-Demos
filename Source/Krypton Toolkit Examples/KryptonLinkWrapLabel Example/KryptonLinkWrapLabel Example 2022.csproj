@@ -23,18 +23,11 @@
         <Content Include="Krypton.ico" />
     </ItemGroup>
 
-    <Choose>
-        <When Condition="'$(UseNuGetPackages)' == 'true'">
+    
             <ItemGroup>
                 <PackageReference Include="Krypton.Toolkit.Canary" Version="65.22.3.89-beta" />
             </ItemGroup>
-        </When>
-        <Otherwise>
-            <ItemGroup>
-                <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2022.csproj" />
-            </ItemGroup>
-        </Otherwise>
-    </Choose>
+        
     <PropertyGroup>
         <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
     </PropertyGroup>>
