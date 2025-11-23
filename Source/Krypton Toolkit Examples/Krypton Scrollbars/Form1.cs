@@ -1,0 +1,29 @@
+﻿// *****************************************************************************
+// BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2021 - 2024. All rights reserved.
+// *****************************************************************************
+
+using System;
+
+using Krypton.Toolkit;
+
+namespace KryptonScrollBars
+{
+    public partial class Form1 : KryptonForm
+    {
+        public Form1() => InitializeComponent();
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ksbVertical_Scroll(object sender, System.Windows.Forms.ScrollEventArgs e) => knudVertical.Value = ksbVertical.Value;
+
+        private void ksbHorizontal_Scroll(object sender, System.Windows.Forms.ScrollEventArgs e) => knudHorizontal.Value = ksbHorizontal.Value;
+
+        private void knudVertical_ValueChanged(object sender, EventArgs e) => ksbVertical.Value = (int)knudVertical.Value;
+
+        private void knudHorizontal_ValueChanged(object sender, EventArgs e) => ksbHorizontal.Value = (int)knudHorizontal.Value;
+    }
+}
