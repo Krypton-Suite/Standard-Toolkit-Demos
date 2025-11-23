@@ -9,6 +9,7 @@
  *  
  */
 #endregion
+
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -53,7 +54,7 @@ namespace DockingCustomized
         private KryptonPage NewPage(string name, int image, Control content)
         {
             // Create new page with title and image
-            KryptonPage p = new KryptonPage
+            var p = new KryptonPage
             {
                 Text = name + _count.ToString(),
                 TextTitle = name + _count.ToString(),
@@ -113,10 +114,10 @@ namespace DockingCustomized
         private void kryptonDockingManager_ShowPageContextMenu(object sender, ContextPageEventArgs e)
         {
             // Create a set of custom menu items
-            KryptonContextMenuItems customItems = new KryptonContextMenuItems();
-            KryptonContextMenuSeparator customSeparator = new KryptonContextMenuSeparator();
-            KryptonContextMenuItem customItem1 = new KryptonContextMenuItem("Custom Item 1", OnCustomMenuItem);
-            KryptonContextMenuItem customItem2 = new KryptonContextMenuItem("Custom Item 2", OnCustomMenuItem);
+            var customItems = new KryptonContextMenuItems();
+            var customSeparator = new KryptonContextMenuSeparator();
+            var customItem1 = new KryptonContextMenuItem("Custom Item 1", OnCustomMenuItem);
+            var customItem2 = new KryptonContextMenuItem("Custom Item 2", OnCustomMenuItem);
             customItem1.Tag = e.Page;
             customItem2.Tag = e.Page;
             customItems.Items.AddRange(new KryptonContextMenuItemBase[] { customSeparator, customItem1, customItem2 });
@@ -128,10 +129,10 @@ namespace DockingCustomized
         private void kryptonDockingManager_ShowWorkspacePageContextMenu(object sender, ContextPageEventArgs e)
         {
             // Create a set of custom menu items
-            KryptonContextMenuItems customItems = new KryptonContextMenuItems();
-            KryptonContextMenuSeparator customSeparator = new KryptonContextMenuSeparator();
-            KryptonContextMenuItem customItem1 = new KryptonContextMenuItem("Custom Item 3", OnCustomMenuItem);
-            KryptonContextMenuItem customItem2 = new KryptonContextMenuItem("Custom Item 4", OnCustomMenuItem);
+            var customItems = new KryptonContextMenuItems();
+            var customSeparator = new KryptonContextMenuSeparator();
+            var customItem1 = new KryptonContextMenuItem("Custom Item 3", OnCustomMenuItem);
+            var customItem2 = new KryptonContextMenuItem("Custom Item 4", OnCustomMenuItem);
             customItem1.Tag = e.Page;
             customItem2.Tag = e.Page;
             customItems.Items.AddRange(new KryptonContextMenuItemBase[] { customSeparator, customItem1, customItem2 });
@@ -142,9 +143,9 @@ namespace DockingCustomized
 
         private void OnCustomMenuItem(object sender, EventArgs e)
         {
-            KryptonContextMenuItem menuItem = (KryptonContextMenuItem)sender;
-            KryptonPage page = (KryptonPage)menuItem.Tag;
-            MessageBox.Show("Clicked menu option '" + menuItem.Text + "' for the page '" + page.Text + "'.", "Page Context Menu");
+            var menuItem = (KryptonContextMenuItem)sender;
+            var page = (KryptonPage)menuItem.Tag;
+            MessageBox.Show($"Clicked menu option '{menuItem.Text}' for the page '{page.Text}'.", "Page Context Menu");
         }
 
         private void colorsRandom_Click(object sender, EventArgs e)
@@ -188,7 +189,7 @@ namespace DockingCustomized
             foreach (KryptonPage page in kryptonDockingManager.Pages)
             {
                 // Create a button spec and make it a random style so we get a random image
-                ButtonSpecAny bs = new ButtonSpecAny
+                var bs = new ButtonSpecAny
                 {
                     Type = _buttonSpecStyles[_random.Next(_buttonSpecStyles.Length)]
                 };
@@ -207,7 +208,7 @@ namespace DockingCustomized
         private void kryptonRibbonModeButton_Click(object sender, EventArgs e)
         {
             // Extract the navigator mode from the tag field of the ribbon button
-            KryptonRibbonGroupButton button = (KryptonRibbonGroupButton)sender;
+            var button = (KryptonRibbonGroupButton)sender;
             _mode = (NavigatorMode)Enum.Parse(typeof(NavigatorMode), (string)button.Tag);
 
             UpdateModeButtons();
@@ -246,5 +247,10 @@ namespace DockingCustomized
         }
 
         private Color RandomColor() => Color.FromArgb(_random.Next(255), _random.Next(255), _random.Next(255));
+
+        private void kryptonContextMenuItem1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

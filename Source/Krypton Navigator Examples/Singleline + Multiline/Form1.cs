@@ -9,15 +9,13 @@
  *  
  */
 #endregion
+
 using System;
-using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Diagnostics;
-using Krypton.Toolkit;
+
 using Krypton.Navigator;
+using Krypton.Toolkit;
 
 namespace SinglelinePlusMultiline
 {
@@ -273,8 +271,8 @@ namespace SinglelinePlusMultiline
 
         private void buttonAddPage_Click(object sender, EventArgs e)
         {
-            KryptonPage newPage = new KryptonPage();
-            newPage.Text = "Page " + _newPage.ToString();
+            var newPage = new KryptonPage();
+            newPage.Text = $"Page {_newPage}";
             newPage.ImageSmall = (Bitmap)imageList1.Images[_newPage++ % imageList1.Images.Count];
             kryptonNavigator1.Pages.Add(newPage);
         }

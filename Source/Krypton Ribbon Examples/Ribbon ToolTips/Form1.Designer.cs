@@ -61,10 +61,10 @@ namespace RibbonToolTips
             this.kryptonRibbonGroupLines1 = new Krypton.Ribbon.KryptonRibbonGroupLines();
             this.kryptonRibbonGroupNumericUpDown1 = new Krypton.Ribbon.KryptonRibbonGroupNumericUpDown();
             this.kryptonRibbonGroupComboBox1 = new Krypton.Ribbon.KryptonRibbonGroupComboBox();
+            this.kryptonRibbonTab1 = new Krypton.Ribbon.KryptonRibbonTab();
             this.kryptonPanel = new Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel = new Krypton.Toolkit.KryptonLabel();
             this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
-            this.kryptonRibbonTab1 = new Krypton.Ribbon.KryptonRibbonTab();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).BeginInit();
             this.cmsPaste.SuspendLayout();
             this.cmsBusinessCards.SuspendLayout();
@@ -92,7 +92,7 @@ namespace RibbonToolTips
             this.tabHome,
             this.kryptonRibbonTab1});
             this.kryptonRibbon1.SelectedTab = this.tabHome;
-            this.kryptonRibbon1.Size = new System.Drawing.Size(1009, 136);
+            this.kryptonRibbon1.Size = new System.Drawing.Size(1013, 136);
             this.kryptonRibbon1.StateContextTracking.RibbonGroupArea.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.kryptonRibbon1.StateContextTracking.RibbonGroupArea.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.kryptonRibbon1.StateContextTracking.RibbonGroupArea.BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -380,7 +380,7 @@ namespace RibbonToolTips
             // 
             this.kryptonRibbonGroupComboBox1.DropDownWidth = 121;
             this.kryptonRibbonGroupComboBox1.FormattingEnabled = false;
-            this.kryptonRibbonGroupComboBox1.ItemHeight = 19;
+            this.kryptonRibbonGroupComboBox1.ItemHeight = 20;
             this.kryptonRibbonGroupComboBox1.Text = "kryptonRibbonGroupComboBox1";
             this.kryptonRibbonGroupComboBox1.ToolTipValues.EnableToolTips = true;
             // 
@@ -391,7 +391,7 @@ namespace RibbonToolTips
             this.kryptonPanel.Location = new System.Drawing.Point(0, 136);
             this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel.Name = "kryptonPanel";
-            this.kryptonPanel.Size = new System.Drawing.Size(1009, 242);
+            this.kryptonPanel.Size = new System.Drawing.Size(1013, 228);
             this.kryptonPanel.TabIndex = 1;
             // 
             // kryptonLabel
@@ -411,7 +411,7 @@ namespace RibbonToolTips
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1009, 378);
+            this.ClientSize = new System.Drawing.Size(1013, 364);
             this.CloseBox = false;
             this.Controls.Add(this.kryptonPanel);
             this.Controls.Add(this.kryptonRibbon1);

@@ -168,9 +168,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonCommandLinkButton Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonToastNotification Examples 2022", "KryptonToastNotification Examples\KryptonToastNotification Examples 2022.csproj", "{0D4A161D-ED1D-4C79-8AEF-2FAE5F9D2EF2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonOutlookGrid Example 2022", "KryptonOutlookGrid Example\KryptonOutlookGrid Example 2022.csproj", "{AA43132C-A762-4FD4-8C9C-9196B4DFBB52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonToggleSwitch Examples 2022", "KryptonToggleSwitch Examples\KryptonToggleSwitch Examples 2022.csproj", "{0542E034-0C88-4FC2-B6CF-F138A9DA7C74}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonMessageBoxDep Examples 2022", "KryptonMessageBoxDep Examples\KryptonMessageBoxDep Examples 2022.csproj", "{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonToolStripMenuItem Examples 2022", "KryptonToolStripMenuItem Examples\KryptonToolStripMenuItem Examples 2022.csproj", "{FAFAB2BD-5CAF-37C3-ED6E-BC3CA3406CAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -971,26 +971,26 @@ Global
 		{0D4A161D-ED1D-4C79-8AEF-2FAE5F9D2EF2}.Nightly|Any CPU.Build.0 = Release|Any CPU
 		{0D4A161D-ED1D-4C79-8AEF-2FAE5F9D2EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D4A161D-ED1D-4C79-8AEF-2FAE5F9D2EF2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA43132C-A762-4FD4-8C9C-9196B4DFBB52}.Canary|Any CPU.ActiveCfg = Release|Any CPU
-		{AA43132C-A762-4FD4-8C9C-9196B4DFBB52}.Canary|Any CPU.Build.0 = Release|Any CPU
-		{AA43132C-A762-4FD4-8C9C-9196B4DFBB52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA43132C-A762-4FD4-8C9C-9196B4DFBB52}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA43132C-A762-4FD4-8C9C-9196B4DFBB52}.Installer|Any CPU.ActiveCfg = Release|Any CPU
-		{AA43132C-A762-4FD4-8C9C-9196B4DFBB52}.Installer|Any CPU.Build.0 = Release|Any CPU
-		{AA43132C-A762-4FD4-8C9C-9196B4DFBB52}.Nightly|Any CPU.ActiveCfg = Release|Any CPU
-		{AA43132C-A762-4FD4-8C9C-9196B4DFBB52}.Nightly|Any CPU.Build.0 = Release|Any CPU
-		{AA43132C-A762-4FD4-8C9C-9196B4DFBB52}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA43132C-A762-4FD4-8C9C-9196B4DFBB52}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Canary|Any CPU.ActiveCfg = Release|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Canary|Any CPU.Build.0 = Release|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Installer|Any CPU.ActiveCfg = Release|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Installer|Any CPU.Build.0 = Release|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Nightly|Any CPU.ActiveCfg = Release|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Nightly|Any CPU.Build.0 = Release|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C54A4B4-7D10-4BE8-ABD3-E71F52A1B0CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0542E034-0C88-4FC2-B6CF-F138A9DA7C74}.Canary|Any CPU.ActiveCfg = Release|Any CPU
+		{0542E034-0C88-4FC2-B6CF-F138A9DA7C74}.Canary|Any CPU.Build.0 = Release|Any CPU
+		{0542E034-0C88-4FC2-B6CF-F138A9DA7C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0542E034-0C88-4FC2-B6CF-F138A9DA7C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0542E034-0C88-4FC2-B6CF-F138A9DA7C74}.Installer|Any CPU.ActiveCfg = Debug|Any CPU
+		{0542E034-0C88-4FC2-B6CF-F138A9DA7C74}.Installer|Any CPU.Build.0 = Debug|Any CPU
+		{0542E034-0C88-4FC2-B6CF-F138A9DA7C74}.Nightly|Any CPU.ActiveCfg = Release|Any CPU
+		{0542E034-0C88-4FC2-B6CF-F138A9DA7C74}.Nightly|Any CPU.Build.0 = Release|Any CPU
+		{0542E034-0C88-4FC2-B6CF-F138A9DA7C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0542E034-0C88-4FC2-B6CF-F138A9DA7C74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAFAB2BD-5CAF-37C3-ED6E-BC3CA3406CAF}.Canary|Any CPU.ActiveCfg = Release|Any CPU
+		{FAFAB2BD-5CAF-37C3-ED6E-BC3CA3406CAF}.Canary|Any CPU.Build.0 = Release|Any CPU
+		{FAFAB2BD-5CAF-37C3-ED6E-BC3CA3406CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAFAB2BD-5CAF-37C3-ED6E-BC3CA3406CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAFAB2BD-5CAF-37C3-ED6E-BC3CA3406CAF}.Installer|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAFAB2BD-5CAF-37C3-ED6E-BC3CA3406CAF}.Installer|Any CPU.Build.0 = Debug|Any CPU
+		{FAFAB2BD-5CAF-37C3-ED6E-BC3CA3406CAF}.Nightly|Any CPU.ActiveCfg = Release|Any CPU
+		{FAFAB2BD-5CAF-37C3-ED6E-BC3CA3406CAF}.Nightly|Any CPU.Build.0 = Release|Any CPU
+		{FAFAB2BD-5CAF-37C3-ED6E-BC3CA3406CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAFAB2BD-5CAF-37C3-ED6E-BC3CA3406CAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

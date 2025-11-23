@@ -38,26 +38,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.kryptonPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDockableNavigator)).BeginInit();
-            this.kryptonDockableNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
-            // kryptonDockingManager
+            // kryptonManager
             // 
-            this.kryptonDockingManager.DefaultCloseRequest = Krypton.Docking.DockingCloseRequest.HidePage;
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2010Blue;
             // 
             // kryptonPanel
             // 
             this.kryptonPanel.Controls.Add(this.kryptonDockableNavigator);
             this.kryptonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel.Name = "kryptonPanel";
-            this.kryptonPanel.Padding = new System.Windows.Forms.Padding(3);
-            this.kryptonPanel.Size = new System.Drawing.Size(397, 284);
+            this.kryptonPanel.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPanel.Size = new System.Drawing.Size(533, 336);
             this.kryptonPanel.TabIndex = 0;
             // 
             // kryptonDockableNavigator
             // 
-            this.kryptonDockableNavigator.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.kryptonDockableNavigator.Button.ButtonDisplayLogic = Krypton.Navigator.ButtonDisplayLogic.Context;
             this.kryptonDockableNavigator.Button.CloseButtonAction = Krypton.Navigator.CloseButtonAction.RemovePageAndDispose;
             this.kryptonDockableNavigator.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
@@ -69,21 +68,15 @@
             this.kryptonDockableNavigator.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
             this.kryptonDockableNavigator.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
             this.kryptonDockableNavigator.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonDockableNavigator.ControlKryptonFormFeatures = false;
             this.kryptonDockableNavigator.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonDockableNavigator.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.kryptonDockableNavigator.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
-            this.kryptonDockableNavigator.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonDockableNavigator.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
-            this.kryptonDockableNavigator.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
-            this.kryptonDockableNavigator.Header.HeaderStyleBar = Krypton.Toolkit.HeaderStyle.Secondary;
-            this.kryptonDockableNavigator.Header.HeaderStylePrimary = Krypton.Toolkit.HeaderStyle.Primary;
-            this.kryptonDockableNavigator.Header.HeaderStyleSecondary = Krypton.Toolkit.HeaderStyle.Secondary;
-            this.kryptonDockableNavigator.Location = new System.Drawing.Point(3, 3);
+            this.kryptonDockableNavigator.Location = new System.Drawing.Point(4, 4);
+            this.kryptonDockableNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonDockableNavigator.Name = "kryptonDockableNavigator";
             this.kryptonDockableNavigator.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
+            this.kryptonDockableNavigator.Owner = null;
             this.kryptonDockableNavigator.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.kryptonDockableNavigator.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
-            this.kryptonDockableNavigator.Size = new System.Drawing.Size(391, 278);
+            this.kryptonDockableNavigator.Size = new System.Drawing.Size(525, 328);
             this.kryptonDockableNavigator.TabIndex = 0;
             // 
             // imageListSmall
@@ -96,18 +89,18 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(397, 284);
+            this.ClientSize = new System.Drawing.Size(533, 336);
             this.Controls.Add(this.kryptonPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Navigator + FloatingWindows";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).EndInit();
             this.kryptonPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDockableNavigator)).EndInit();
-            this.kryptonDockableNavigator.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

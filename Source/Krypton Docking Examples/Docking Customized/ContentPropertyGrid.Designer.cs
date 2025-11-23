@@ -51,7 +51,6 @@
             this.Controls.Add(this.kryptonPanel);
             this.Name = "ContentPropertyGrid";
             this.Size = new System.Drawing.Size(243, 161);
-            this.Load += new System.EventHandler(this.ContentPropertyGrid_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).EndInit();
             this.kryptonPanel.ResumeLayout(false);
             this.ResumeLayout(false);

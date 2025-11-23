@@ -9,14 +9,10 @@
  *  
  */
 #endregion
+
 using System;
-using System.Text;
-using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Diagnostics;
-using Krypton.Toolkit;
+
 using Krypton.Navigator;
 
 namespace NavigatorContextMenus
@@ -56,7 +52,7 @@ namespace NavigatorContextMenus
         {
             // Move the selected page to the previous place in the page list
             KryptonPage kp = kryptonNavigator1.SelectedPage;
-            int index = kryptonNavigator1.SelectedIndex;
+            var index = kryptonNavigator1.SelectedIndex;
             kryptonNavigator1.Pages.Remove(kp);
             kryptonNavigator1.Pages.Insert(index - 1, kp);
             kryptonNavigator1.SelectedPage = kp;
@@ -66,7 +62,7 @@ namespace NavigatorContextMenus
         {
             // Move the selected page to the next place in the list
             KryptonPage kp = kryptonNavigator1.SelectedPage;
-            int index = kryptonNavigator1.SelectedIndex;
+            var index = kryptonNavigator1.SelectedIndex;
             kryptonNavigator1.Pages.Remove(kp);
             kryptonNavigator1.Pages.Insert(index + 1, kp);
             kryptonNavigator1.SelectedPage = kp;
@@ -76,7 +72,7 @@ namespace NavigatorContextMenus
         {
             // Move the selected page to the end of the page list
             KryptonPage kp = kryptonNavigator1.SelectedPage;
-            int index = kryptonNavigator1.SelectedIndex;
+            var index = kryptonNavigator1.SelectedIndex;
             kryptonNavigator1.Pages.Remove(kp);
             kryptonNavigator1.Pages.Add(kp);
             kryptonNavigator1.SelectedPage = kp;

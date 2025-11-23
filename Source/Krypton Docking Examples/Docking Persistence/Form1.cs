@@ -9,6 +9,7 @@
  *  
  */
 #endregion
+
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -16,6 +17,8 @@ using System.Windows.Forms;
 using Krypton.Docking;
 using Krypton.Navigator;
 using Krypton.Toolkit;
+
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace DockingPersistence
 {
@@ -48,11 +51,12 @@ namespace DockingPersistence
         private KryptonPage NewPage(string name, int image, Control content)
         {
             // Create new page with title and image
-            KryptonPage p = new KryptonPage
+            var count = _count.ToString();
+            var p = new KryptonPage
             {
-                Text = name + _count.ToString(),
-                TextTitle = name + _count.ToString(),
-                TextDescription = name + _count.ToString()
+                Text = name + count,
+                TextTitle = name + count,
+                TextDescription = name + count
             };
             p.UniqueName = p.Text;
             p.ImageSmall = (Bitmap)imageListSmall.Images[image];
@@ -128,7 +132,6 @@ namespace DockingPersistence
             }
         }
 
-
         private void buttonHideAll_Click(object sender, EventArgs e)
         {
             kryptonDockingManager.HideAllPages();
@@ -174,6 +177,16 @@ namespace DockingPersistence
         private void kryptonContextMenuItem1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void kryptonDockingManager_RecreateLoadingPage(object sender, Krypton.Workspace.RecreateLoadingPageEventArgs e)
+        {
+            e.Page = NewDocument();
+            e.Page.Text = e.UniqueName;
+            e.Page.TextTitle = e.UniqueName;
+            e.Page.TextDescription = e.UniqueName;
+            e.Page.Name = e.UniqueName;
+            e.Page.UniqueName = e.UniqueName;
         }
     }
 }

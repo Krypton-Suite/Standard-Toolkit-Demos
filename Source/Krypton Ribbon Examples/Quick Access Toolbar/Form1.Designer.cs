@@ -84,7 +84,7 @@ namespace QuickAccessToolbar
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome});
             this.kryptonRibbon.SelectedTab = this.tabHome;
-            this.kryptonRibbon.Size = new System.Drawing.Size(512, 136);
+            this.kryptonRibbon.Size = new System.Drawing.Size(516, 136);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // kryptonContextMenuItem1
@@ -110,7 +110,7 @@ namespace QuickAccessToolbar
             this.panelFill.Location = new System.Drawing.Point(0, 136);
             this.panelFill.Margin = new System.Windows.Forms.Padding(4);
             this.panelFill.Name = "panelFill";
-            this.panelFill.Size = new System.Drawing.Size(512, 382);
+            this.panelFill.Size = new System.Drawing.Size(516, 368);
             this.panelFill.TabIndex = 1;
             // 
             // kryptonGroup2
@@ -136,6 +136,7 @@ namespace QuickAccessToolbar
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(120, 31);
             this.buttonClear.TabIndex = 4;
+            this.buttonClear.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonClear.Values.Text = "Clear";
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
@@ -146,6 +147,7 @@ namespace QuickAccessToolbar
             this.buttonRemove.Name = "buttonRemove";
             this.buttonRemove.Size = new System.Drawing.Size(120, 31);
             this.buttonRemove.TabIndex = 3;
+            this.buttonRemove.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonRemove.Values.Text = "Remove";
             this.buttonRemove.Click += new System.EventHandler(this.buttonRemove_Click);
             // 
@@ -156,6 +158,7 @@ namespace QuickAccessToolbar
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(120, 31);
             this.buttonAdd.TabIndex = 2;
+            this.buttonAdd.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.buttonAdd.Values.Text = "Add";
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
@@ -191,6 +194,7 @@ namespace QuickAccessToolbar
             this.checkButtonDisallowUserChanges.Name = "checkButtonDisallowUserChanges";
             this.checkButtonDisallowUserChanges.Size = new System.Drawing.Size(187, 31);
             this.checkButtonDisallowUserChanges.TabIndex = 3;
+            this.checkButtonDisallowUserChanges.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.checkButtonDisallowUserChanges.Values.Text = "Disallow User Changes";
             // 
             // checkButtonAllowUserChanges
@@ -201,6 +205,7 @@ namespace QuickAccessToolbar
             this.checkButtonAllowUserChanges.Name = "checkButtonAllowUserChanges";
             this.checkButtonAllowUserChanges.Size = new System.Drawing.Size(187, 31);
             this.checkButtonAllowUserChanges.TabIndex = 2;
+            this.checkButtonAllowUserChanges.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.checkButtonAllowUserChanges.Values.Text = "Allow User Changes";
             // 
             // labelQATUserChange
@@ -236,6 +241,7 @@ namespace QuickAccessToolbar
             this.checkButtonHidden.Name = "checkButtonHidden";
             this.checkButtonHidden.Size = new System.Drawing.Size(120, 31);
             this.checkButtonHidden.TabIndex = 4;
+            this.checkButtonHidden.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.checkButtonHidden.Values.Text = "Hidden";
             // 
             // checkButtonBelow
@@ -245,6 +251,7 @@ namespace QuickAccessToolbar
             this.checkButtonBelow.Name = "checkButtonBelow";
             this.checkButtonBelow.Size = new System.Drawing.Size(120, 31);
             this.checkButtonBelow.TabIndex = 3;
+            this.checkButtonBelow.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.checkButtonBelow.Values.Text = "Below";
             // 
             // checkButtonAbove
@@ -255,6 +262,7 @@ namespace QuickAccessToolbar
             this.checkButtonAbove.Name = "checkButtonAbove";
             this.checkButtonAbove.Size = new System.Drawing.Size(120, 31);
             this.checkButtonAbove.TabIndex = 2;
+            this.checkButtonAbove.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.checkButtonAbove.Values.Text = "Above";
             // 
             // labelQATLocation
@@ -288,6 +296,7 @@ namespace QuickAccessToolbar
             this.kryptonCheckButton1.Name = "kryptonCheckButton1";
             this.kryptonCheckButton1.Size = new System.Drawing.Size(90, 25);
             this.kryptonCheckButton1.TabIndex = 4;
+            this.kryptonCheckButton1.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonCheckButton1.Values.Text = "Hidden";
             // 
             // kryptonCheckButton2
@@ -296,6 +305,7 @@ namespace QuickAccessToolbar
             this.kryptonCheckButton2.Name = "kryptonCheckButton2";
             this.kryptonCheckButton2.Size = new System.Drawing.Size(90, 25);
             this.kryptonCheckButton2.TabIndex = 3;
+            this.kryptonCheckButton2.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonCheckButton2.Values.Text = "Below";
             // 
             // kryptonCheckButton3
@@ -305,6 +315,7 @@ namespace QuickAccessToolbar
             this.kryptonCheckButton3.Name = "kryptonCheckButton3";
             this.kryptonCheckButton3.Size = new System.Drawing.Size(90, 25);
             this.kryptonCheckButton3.TabIndex = 2;
+            this.kryptonCheckButton3.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.kryptonCheckButton3.Values.Text = "Above";
             // 
             // kryptonLabel1
@@ -320,7 +331,8 @@ namespace QuickAccessToolbar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 518);
+            this.ClientSize = new System.Drawing.Size(516, 504);
+            this.CloseBox = false;
             this.Controls.Add(this.panelFill);
             this.Controls.Add(this.kryptonRibbon);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

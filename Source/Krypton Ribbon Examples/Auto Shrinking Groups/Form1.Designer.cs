@@ -28,6 +28,7 @@ namespace AutoShrinkingGroups
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kryptonRibbon = new Krypton.Ribbon.KryptonRibbon();
             this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
@@ -144,7 +145,7 @@ namespace AutoShrinkingGroups
             this.groupShrinkInfo = new Krypton.Toolkit.KryptonGroup();
             this.labelAutoShrinkage = new Krypton.Toolkit.KryptonLabel();
             this.labelAutoInstructions = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonManager = new Krypton.Toolkit.KryptonManager();
+            this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelFill)).BeginInit();
             this.panelFill.SuspendLayout();
@@ -167,7 +168,7 @@ namespace AutoShrinkingGroups
             this.kryptonRibbonTab2,
             this.kryptonRibbonTab3});
             this.kryptonRibbon.SelectedTab = this.kryptonRibbonTab1;
-            this.kryptonRibbon.Size = new System.Drawing.Size(780, 136);
+            this.kryptonRibbon.Size = new System.Drawing.Size(784, 136);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // kryptonContextMenuItem1
@@ -551,7 +552,7 @@ namespace AutoShrinkingGroups
             this.panelFill.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFill.Location = new System.Drawing.Point(0, 136);
             this.panelFill.Name = "panelFill";
-            this.panelFill.Size = new System.Drawing.Size(780, 267);
+            this.panelFill.Size = new System.Drawing.Size(784, 253);
             this.panelFill.TabIndex = 1;
             // 
             // groupShrinkInfo
@@ -564,23 +565,25 @@ namespace AutoShrinkingGroups
             // 
             this.groupShrinkInfo.Panel.Controls.Add(this.labelAutoShrinkage);
             this.groupShrinkInfo.Panel.Controls.Add(this.labelAutoInstructions);
-            this.groupShrinkInfo.Size = new System.Drawing.Size(279, 217);
+            this.groupShrinkInfo.Size = new System.Drawing.Size(483, 217);
             this.groupShrinkInfo.TabIndex = 9;
             // 
             // labelAutoShrinkage
             // 
+            this.labelAutoShrinkage.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelAutoShrinkage.LabelStyle = Krypton.Toolkit.LabelStyle.TitlePanel;
-            this.labelAutoShrinkage.Location = new System.Drawing.Point(4, 4);
+            this.labelAutoShrinkage.Location = new System.Drawing.Point(0, 0);
             this.labelAutoShrinkage.Name = "labelAutoShrinkage";
-            this.labelAutoShrinkage.Size = new System.Drawing.Size(324, 35);
+            this.labelAutoShrinkage.Size = new System.Drawing.Size(481, 35);
             this.labelAutoShrinkage.TabIndex = 1;
             this.labelAutoShrinkage.Values.Text = "Automatic Shrinking Groups";
             // 
             // labelAutoInstructions
             // 
-            this.labelAutoInstructions.Location = new System.Drawing.Point(4, 37);
+            this.labelAutoInstructions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelAutoInstructions.Location = new System.Drawing.Point(0, 0);
             this.labelAutoInstructions.Name = "labelAutoInstructions";
-            this.labelAutoInstructions.Size = new System.Drawing.Size(345, 184);
+            this.labelAutoInstructions.Size = new System.Drawing.Size(481, 215);
             this.labelAutoInstructions.TabIndex = 2;
             this.labelAutoInstructions.Values.Text = resources.GetString("labelAutoInstructions.Values.Text");
             // 
@@ -592,7 +595,8 @@ namespace AutoShrinkingGroups
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(780, 403);
+            this.ClientSize = new System.Drawing.Size(784, 389);
+            this.CloseBox = false;
             this.Controls.Add(this.panelFill);
             this.Controls.Add(this.kryptonRibbon);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

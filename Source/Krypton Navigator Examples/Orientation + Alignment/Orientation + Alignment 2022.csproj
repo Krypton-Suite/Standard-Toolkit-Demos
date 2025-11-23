@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
     <PropertyGroup>
-        <TargetFrameworks>net462;net47;net471;net472;net48;net481;net8.0-windows;net9.0-windows</TargetFrameworks>
+        <TargetFrameworks>net48;net8.0-windows;net9.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
         <RootNamespace>OrientationPlusAlignment</RootNamespace>
         <AssemblyName>Orientation Plus Alignment</AssemblyName>
@@ -10,6 +10,9 @@
         <UseWindowsForms>true</UseWindowsForms>
         <PlatformTarget>AnyCPU</PlatformTarget>
         <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+
     </PropertyGroup>
     <ItemGroup>
         <Content Include="Krypton.ico" />
@@ -17,8 +20,8 @@
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
-                <PackageReference Include="Krypton.Toolkit.Canary" Version="90.23.12.352-beta" />
-                <PackageReference Include="Krypton.Navigator.Canary" Version="90.23.12.352-beta" />
+                <PackageReference Include="Krypton.Toolkit.Canary" Version="100.25.8.234-beta" />
+                <PackageReference Include="Krypton.Navigator.Canary" Version="100.25.8.234-beta" />
             </ItemGroup>
         </When>
         <Otherwise>

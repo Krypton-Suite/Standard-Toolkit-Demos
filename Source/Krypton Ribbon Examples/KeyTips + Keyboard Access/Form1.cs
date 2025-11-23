@@ -84,43 +84,43 @@ namespace KeyTipsAndKeyboardAccess
 
         private void OnDialogBoxLauncherClick(object sender, EventArgs e)
         {
-            KryptonRibbonGroup group = (KryptonRibbonGroup)sender;
+            var group = (KryptonRibbonGroup)sender;
 
             MessageBox.Show(this,
-                            "You selected the '" + group.TextLine1 + "' group dialog box launcher.",
+                $"You selected the '{group.TextLine1}' group dialog box launcher.",
                             "Dialog Box Launcher");
         }
 
         private void OnQATButtonClick(object sender, EventArgs e)
         {
-            KryptonRibbonQATButton button = (KryptonRibbonQATButton)sender;
+            var button = (KryptonRibbonQATButton)sender;
 
             MessageBox.Show(this,
-                            "You selected the '" + button.Text + "' quick access toolbar button.",
+                $"You selected the '{button.Text}' quick access toolbar button.",
                             "QAT Button");
         }
 
         private void OnGroupButtonClick(object sender, EventArgs e)
         {
-            KryptonRibbonGroupButton button = (KryptonRibbonGroupButton)sender;
+            var button = (KryptonRibbonGroupButton)sender;
 
             var text = button.TextLine1;
             if (!string.IsNullOrEmpty(button.TextLine2))
             {
-                text += " " + button.TextLine2;
+                text += $" {button.TextLine2}";
             }
 
             MessageBox.Show(this,
-                            "You selected the '" + text + "' button.",
+                $"You selected the '{text}' button.",
                             "Button");
         }
 
         private void OnGroupClusterButtonClick(object sender, EventArgs e)
         {
-            KryptonRibbonGroupClusterButton button = (KryptonRibbonGroupClusterButton)sender;
+            var button = (KryptonRibbonGroupClusterButton)sender;
 
             MessageBox.Show(this,
-                            "You selected the '" + button.TextLine + "' button.",
+                $"You selected the '{button.TextLine}' button.",
                             "Button");
         }
 
@@ -128,6 +128,5 @@ namespace KeyTipsAndKeyboardAccess
         {
             Close();
         }
-
     }
 }

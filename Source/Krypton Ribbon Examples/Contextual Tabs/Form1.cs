@@ -44,9 +44,9 @@ namespace ContextualTabs
         {
             // Let user change the color definition
             using var kcd = new KryptonColorDialog();
-            
+
             kcd.AllowFullOpen = true;
-            
+
             if (kcd.ShowDialog() == DialogResult.OK)
             {
                 // Update the Displayed color feedback
@@ -66,7 +66,7 @@ namespace ContextualTabs
             kryptonRibbon.RibbonContexts.Add(newContext);
 
             // Create a new ribbon page that specifies the new context name
-            KryptonRibbonTab newTab = new KryptonRibbonTab
+            var newTab = new KryptonRibbonTab
             {
                 ContextName = newContext.ContextName
             };

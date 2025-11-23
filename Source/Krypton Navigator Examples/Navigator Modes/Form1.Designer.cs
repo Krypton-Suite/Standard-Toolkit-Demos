@@ -109,7 +109,7 @@ namespace NavigatorModes
             this.groupBox1.Controls.Add(this.radioBarCheckButtonGroupOutside);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(243, 455);
+            this.groupBox1.Size = new System.Drawing.Size(287, 455);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Modes";
@@ -119,7 +119,7 @@ namespace NavigatorModes
             this.radioHeaderGroupTab.AutoSize = true;
             this.radioHeaderGroupTab.Location = new System.Drawing.Point(16, 377);
             this.radioHeaderGroupTab.Name = "radioHeaderGroupTab";
-            this.radioHeaderGroupTab.Size = new System.Drawing.Size(117, 17);
+            this.radioHeaderGroupTab.Size = new System.Drawing.Size(146, 21);
             this.radioHeaderGroupTab.TabIndex = 16;
             this.radioHeaderGroupTab.TabStop = true;
             this.radioHeaderGroupTab.Text = "HeaderGroup - Tab";
@@ -131,7 +131,7 @@ namespace NavigatorModes
             this.radioOutlookMini.AutoSize = true;
             this.radioOutlookMini.Location = new System.Drawing.Point(16, 333);
             this.radioOutlookMini.Name = "radioOutlookMini";
-            this.radioOutlookMini.Size = new System.Drawing.Size(90, 17);
+            this.radioOutlookMini.Size = new System.Drawing.Size(112, 21);
             this.radioOutlookMini.TabIndex = 14;
             this.radioOutlookMini.TabStop = true;
             this.radioOutlookMini.Text = "Outlook - Mini";
@@ -143,7 +143,7 @@ namespace NavigatorModes
             this.radioBarRibbonTabOnly.AutoSize = true;
             this.radioBarRibbonTabOnly.Location = new System.Drawing.Point(16, 91);
             this.radioBarRibbonTabOnly.Name = "radioBarRibbonTabOnly";
-            this.radioBarRibbonTabOnly.Size = new System.Drawing.Size(134, 17);
+            this.radioBarRibbonTabOnly.Size = new System.Drawing.Size(169, 21);
             this.radioBarRibbonTabOnly.TabIndex = 3;
             this.radioBarRibbonTabOnly.TabStop = true;
             this.radioBarRibbonTabOnly.Text = "Bar - RibbonTab - Only";
@@ -155,7 +155,7 @@ namespace NavigatorModes
             this.radioBarRibbonTabGroup.AutoSize = true;
             this.radioBarRibbonTabGroup.Location = new System.Drawing.Point(16, 69);
             this.radioBarRibbonTabGroup.Name = "radioBarRibbonTabGroup";
-            this.radioBarRibbonTabGroup.Size = new System.Drawing.Size(141, 17);
+            this.radioBarRibbonTabGroup.Size = new System.Drawing.Size(179, 21);
             this.radioBarRibbonTabGroup.TabIndex = 2;
             this.radioBarRibbonTabGroup.TabStop = true;
             this.radioBarRibbonTabGroup.Text = "Bar - RibbonTab - Group";
@@ -167,7 +167,7 @@ namespace NavigatorModes
             this.radioBarTabGroup.AutoSize = true;
             this.radioBarTabGroup.Location = new System.Drawing.Point(16, 25);
             this.radioBarTabGroup.Name = "radioBarTabGroup";
-            this.radioBarTabGroup.Size = new System.Drawing.Size(108, 17);
+            this.radioBarTabGroup.Size = new System.Drawing.Size(136, 21);
             this.radioBarTabGroup.TabIndex = 0;
             this.radioBarTabGroup.TabStop = true;
             this.radioBarTabGroup.Text = "Bar - Tab - Group";
@@ -179,7 +179,7 @@ namespace NavigatorModes
             this.radioBarTabOnly.AutoSize = true;
             this.radioBarTabOnly.Location = new System.Drawing.Point(16, 47);
             this.radioBarTabOnly.Name = "radioBarTabOnly";
-            this.radioBarTabOnly.Size = new System.Drawing.Size(101, 17);
+            this.radioBarTabOnly.Size = new System.Drawing.Size(126, 21);
             this.radioBarTabOnly.TabIndex = 1;
             this.radioBarTabOnly.TabStop = true;
             this.radioBarTabOnly.Text = "Bar - Tab - Only";
@@ -191,7 +191,7 @@ namespace NavigatorModes
             this.radioHeaderBarCheckButtonOnly.AutoSize = true;
             this.radioHeaderBarCheckButtonOnly.Location = new System.Drawing.Point(16, 245);
             this.radioHeaderBarCheckButtonOnly.Name = "radioHeaderBarCheckButtonOnly";
-            this.radioHeaderBarCheckButtonOnly.Size = new System.Drawing.Size(179, 17);
+            this.radioHeaderBarCheckButtonOnly.Size = new System.Drawing.Size(226, 21);
             this.radioHeaderBarCheckButtonOnly.TabIndex = 10;
             this.radioHeaderBarCheckButtonOnly.TabStop = true;
             this.radioHeaderBarCheckButtonOnly.Text = "HeaderBar - CheckButton - Only";
@@ -203,7 +203,7 @@ namespace NavigatorModes
             this.radioHeaderBarCheckButtonHeaderGroup.AutoSize = true;
             this.radioHeaderBarCheckButtonHeaderGroup.Location = new System.Drawing.Point(16, 223);
             this.radioHeaderBarCheckButtonHeaderGroup.Name = "radioHeaderBarCheckButtonHeaderGroup";
-            this.radioHeaderBarCheckButtonHeaderGroup.Size = new System.Drawing.Size(221, 17);
+            this.radioHeaderBarCheckButtonHeaderGroup.Size = new System.Drawing.Size(279, 21);
             this.radioHeaderBarCheckButtonHeaderGroup.TabIndex = 9;
             this.radioHeaderBarCheckButtonHeaderGroup.TabStop = true;
             this.radioHeaderBarCheckButtonHeaderGroup.Text = "HeaderBar - CheckButton - HeaderGroup";
@@ -215,7 +215,7 @@ namespace NavigatorModes
             this.radioHeaderBarCheckButtonGroup.AutoSize = true;
             this.radioHeaderBarCheckButtonGroup.Location = new System.Drawing.Point(16, 201);
             this.radioHeaderBarCheckButtonGroup.Name = "radioHeaderBarCheckButtonGroup";
-            this.radioHeaderBarCheckButtonGroup.Size = new System.Drawing.Size(186, 17);
+            this.radioHeaderBarCheckButtonGroup.Size = new System.Drawing.Size(236, 21);
             this.radioHeaderBarCheckButtonGroup.TabIndex = 8;
             this.radioHeaderBarCheckButtonGroup.TabStop = true;
             this.radioHeaderBarCheckButtonGroup.Text = "HeaderBar - CheckButton - Group";
@@ -227,7 +227,7 @@ namespace NavigatorModes
             this.radioStackCheckButtonHeaderGroup.AutoSize = true;
             this.radioStackCheckButtonHeaderGroup.Location = new System.Drawing.Point(16, 289);
             this.radioStackCheckButtonHeaderGroup.Name = "radioStackCheckButtonHeaderGroup";
-            this.radioStackCheckButtonHeaderGroup.Size = new System.Drawing.Size(196, 17);
+            this.radioStackCheckButtonHeaderGroup.Size = new System.Drawing.Size(250, 21);
             this.radioStackCheckButtonHeaderGroup.TabIndex = 12;
             this.radioStackCheckButtonHeaderGroup.TabStop = true;
             this.radioStackCheckButtonHeaderGroup.Text = "Stack - CheckButton - HeaderGroup";
@@ -239,7 +239,7 @@ namespace NavigatorModes
             this.radioStackCheckButtonGroup.AutoSize = true;
             this.radioStackCheckButtonGroup.Location = new System.Drawing.Point(16, 267);
             this.radioStackCheckButtonGroup.Name = "radioStackCheckButtonGroup";
-            this.radioStackCheckButtonGroup.Size = new System.Drawing.Size(161, 17);
+            this.radioStackCheckButtonGroup.Size = new System.Drawing.Size(207, 21);
             this.radioStackCheckButtonGroup.TabIndex = 11;
             this.radioStackCheckButtonGroup.TabStop = true;
             this.radioStackCheckButtonGroup.Text = "Stack - CheckButton - Group";
@@ -251,7 +251,7 @@ namespace NavigatorModes
             this.radioOutlookFull.AutoSize = true;
             this.radioOutlookFull.Location = new System.Drawing.Point(16, 311);
             this.radioOutlookFull.Name = "radioOutlookFull";
-            this.radioOutlookFull.Size = new System.Drawing.Size(88, 17);
+            this.radioOutlookFull.Size = new System.Drawing.Size(109, 21);
             this.radioOutlookFull.TabIndex = 13;
             this.radioOutlookFull.TabStop = true;
             this.radioOutlookFull.Text = "Outlook - Full";
@@ -263,7 +263,7 @@ namespace NavigatorModes
             this.radioPanel.AutoSize = true;
             this.radioPanel.Location = new System.Drawing.Point(16, 421);
             this.radioPanel.Name = "radioPanel";
-            this.radioPanel.Size = new System.Drawing.Size(51, 17);
+            this.radioPanel.Size = new System.Drawing.Size(61, 21);
             this.radioPanel.TabIndex = 18;
             this.radioPanel.TabStop = true;
             this.radioPanel.Text = "Panel";
@@ -275,7 +275,7 @@ namespace NavigatorModes
             this.radioGroup.AutoSize = true;
             this.radioGroup.Location = new System.Drawing.Point(16, 399);
             this.radioGroup.Name = "radioGroup";
-            this.radioGroup.Size = new System.Drawing.Size(54, 17);
+            this.radioGroup.Size = new System.Drawing.Size(67, 21);
             this.radioGroup.TabIndex = 17;
             this.radioGroup.TabStop = true;
             this.radioGroup.Text = "Group";
@@ -287,7 +287,7 @@ namespace NavigatorModes
             this.radioHeaderGroup.AutoSize = true;
             this.radioHeaderGroup.Location = new System.Drawing.Point(16, 355);
             this.radioHeaderGroup.Name = "radioHeaderGroup";
-            this.radioHeaderGroup.Size = new System.Drawing.Size(89, 17);
+            this.radioHeaderGroup.Size = new System.Drawing.Size(110, 21);
             this.radioHeaderGroup.TabIndex = 15;
             this.radioHeaderGroup.TabStop = true;
             this.radioHeaderGroup.Text = "HeaderGroup";
@@ -299,7 +299,7 @@ namespace NavigatorModes
             this.radioBarCheckButtonOnly.AutoSize = true;
             this.radioBarCheckButtonOnly.Location = new System.Drawing.Point(16, 179);
             this.radioBarCheckButtonOnly.Name = "radioBarCheckButtonOnly";
-            this.radioBarCheckButtonOnly.Size = new System.Drawing.Size(144, 17);
+            this.radioBarCheckButtonOnly.Size = new System.Drawing.Size(183, 21);
             this.radioBarCheckButtonOnly.TabIndex = 7;
             this.radioBarCheckButtonOnly.TabStop = true;
             this.radioBarCheckButtonOnly.Text = "Bar - CheckButton - Only";
@@ -311,7 +311,7 @@ namespace NavigatorModes
             this.radioBarCheckButtonGroupOnly.AutoSize = true;
             this.radioBarCheckButtonGroupOnly.Location = new System.Drawing.Point(16, 157);
             this.radioBarCheckButtonGroupOnly.Name = "radioBarCheckButtonGroupOnly";
-            this.radioBarCheckButtonGroupOnly.Size = new System.Drawing.Size(183, 17);
+            this.radioBarCheckButtonGroupOnly.Size = new System.Drawing.Size(234, 21);
             this.radioBarCheckButtonGroupOnly.TabIndex = 6;
             this.radioBarCheckButtonGroupOnly.TabStop = true;
             this.radioBarCheckButtonGroupOnly.Text = "Bar - CheckButton - Group - Only";
@@ -323,7 +323,7 @@ namespace NavigatorModes
             this.radioBarCheckButtonGroupInside.AutoSize = true;
             this.radioBarCheckButtonGroupInside.Location = new System.Drawing.Point(16, 135);
             this.radioBarCheckButtonGroupInside.Name = "radioBarCheckButtonGroupInside";
-            this.radioBarCheckButtonGroupInside.Size = new System.Drawing.Size(190, 17);
+            this.radioBarCheckButtonGroupInside.Size = new System.Drawing.Size(241, 21);
             this.radioBarCheckButtonGroupInside.TabIndex = 5;
             this.radioBarCheckButtonGroupInside.TabStop = true;
             this.radioBarCheckButtonGroupInside.Text = "Bar - CheckButton - Group - Inside";
@@ -335,7 +335,7 @@ namespace NavigatorModes
             this.radioBarCheckButtonGroupOutside.AutoSize = true;
             this.radioBarCheckButtonGroupOutside.Location = new System.Drawing.Point(16, 113);
             this.radioBarCheckButtonGroupOutside.Name = "radioBarCheckButtonGroupOutside";
-            this.radioBarCheckButtonGroupOutside.Size = new System.Drawing.Size(198, 17);
+            this.radioBarCheckButtonGroupOutside.Size = new System.Drawing.Size(252, 21);
             this.radioBarCheckButtonGroupOutside.TabIndex = 4;
             this.radioBarCheckButtonGroupOutside.TabStop = true;
             this.radioBarCheckButtonGroupOutside.Text = "Bar - CheckButton - Group - Outside";
@@ -356,9 +356,8 @@ namespace NavigatorModes
             this.kryptonNavigator1.Button.NextButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
             this.kryptonNavigator1.Button.PreviousButtonAction = Krypton.Navigator.DirectionButtonAction.ModeAppropriateAction;
             this.kryptonNavigator1.Button.PreviousButtonDisplay = Krypton.Navigator.ButtonDisplay.Logic;
+            this.kryptonNavigator1.ControlKryptonFormFeatures = false;
             this.kryptonNavigator1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonNavigator1.Group.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.kryptonNavigator1.Group.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
             this.kryptonNavigator1.Header.HeaderPositionBar = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonNavigator1.Header.HeaderPositionPrimary = Krypton.Toolkit.VisualOrientation.Top;
             this.kryptonNavigator1.Header.HeaderPositionSecondary = Krypton.Toolkit.VisualOrientation.Bottom;
@@ -371,17 +370,17 @@ namespace NavigatorModes
             this.kryptonNavigator1.Location = new System.Drawing.Point(0, 0);
             this.kryptonNavigator1.Name = "kryptonNavigator1";
             this.kryptonNavigator1.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
+            this.kryptonNavigator1.Owner = null;
             this.kryptonNavigator1.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.kryptonNavigator1.Pages.AddRange(new Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2,
             this.kryptonPage3,
             this.kryptonPage4});
-            this.kryptonNavigator1.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonNavigator1.PopupPages.AllowPopupPages = Krypton.Navigator.PopupPageAllow.OnlyCompatibleModes;
             this.kryptonNavigator1.PopupPages.Element = Krypton.Navigator.PopupPageElement.Item;
             this.kryptonNavigator1.PopupPages.Position = Krypton.Navigator.PopupPagePosition.ModeAppropriate;
-            this.kryptonNavigator1.SelectedIndex = 0;
+            this.kryptonNavigator1.SelectedIndex = 3;
             this.kryptonNavigator1.Size = new System.Drawing.Size(329, 265);
             this.kryptonNavigator1.Stack.BorderEdgeStyle = Krypton.Toolkit.PaletteBorderStyle.ControlClient;
             this.kryptonNavigator1.Stack.CheckButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorStack;
@@ -409,7 +408,7 @@ namespace NavigatorModes
             this.kryptonPage1.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage1.Name = "kryptonPage1";
             this.kryptonPage1.Padding = new System.Windows.Forms.Padding(15);
-            this.kryptonPage1.Size = new System.Drawing.Size(327, 238);
+            this.kryptonPage1.Size = new System.Drawing.Size(327, 234);
             this.kryptonPage1.Text = "Page 1";
             this.kryptonPage1.TextDescription = "Page 1 Description";
             this.kryptonPage1.TextTitle = "Page 1 Title";
@@ -479,7 +478,7 @@ namespace NavigatorModes
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(20, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.Size = new System.Drawing.Size(85, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Page 2 Label";
             // 
@@ -489,7 +488,7 @@ namespace NavigatorModes
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(20, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
+            this.label1.Size = new System.Drawing.Size(85, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Page 2 Label";
             // 
@@ -499,7 +498,7 @@ namespace NavigatorModes
             this.labelPage2.BackColor = System.Drawing.Color.Transparent;
             this.labelPage2.Location = new System.Drawing.Point(20, 20);
             this.labelPage2.Name = "labelPage2";
-            this.labelPage2.Size = new System.Drawing.Size(68, 13);
+            this.labelPage2.Size = new System.Drawing.Size(85, 17);
             this.labelPage2.TabIndex = 0;
             this.labelPage2.Text = "Page 2 Label";
             // 
@@ -533,7 +532,7 @@ namespace NavigatorModes
             "Four"});
             this.comboBox1.Location = new System.Drawing.Point(20, 47);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(129, 21);
+            this.comboBox1.Size = new System.Drawing.Size(129, 25);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.Text = "Page 4 ComboBox";
             // 
@@ -547,7 +546,7 @@ namespace NavigatorModes
             "Four"});
             this.comboBoxPage3.Location = new System.Drawing.Point(20, 20);
             this.comboBoxPage3.Name = "comboBoxPage3";
-            this.comboBoxPage3.Size = new System.Drawing.Size(129, 21);
+            this.comboBoxPage3.Size = new System.Drawing.Size(129, 25);
             this.comboBoxPage3.TabIndex = 0;
             this.comboBoxPage3.Text = "Page 4 ComboBox";
             // 
@@ -564,7 +563,7 @@ namespace NavigatorModes
             this.kryptonPage4.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage4.Name = "kryptonPage4";
             this.kryptonPage4.Padding = new System.Windows.Forms.Padding(20);
-            this.kryptonPage4.Size = new System.Drawing.Size(327, 238);
+            this.kryptonPage4.Size = new System.Drawing.Size(327, 234);
             this.kryptonPage4.Text = "Page 4";
             this.kryptonPage4.TextDescription = "Page 4 Description";
             this.kryptonPage4.TextTitle = "Page 4 Title";
@@ -593,7 +592,7 @@ namespace NavigatorModes
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new System.Drawing.Point(520, 473);
+            this.buttonClose.Location = new System.Drawing.Point(557, 473);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 23);
             this.buttonClose.TabIndex = 2;
@@ -604,7 +603,7 @@ namespace NavigatorModes
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.textBoxDescription);
-            this.groupBox2.Location = new System.Drawing.Point(266, 290);
+            this.groupBox2.Location = new System.Drawing.Point(304, 290);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(5);
             this.groupBox2.Size = new System.Drawing.Size(329, 177);
@@ -617,16 +616,16 @@ namespace NavigatorModes
             this.textBoxDescription.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxDescription.Location = new System.Drawing.Point(5, 19);
+            this.textBoxDescription.Location = new System.Drawing.Point(5, 22);
             this.textBoxDescription.Name = "textBoxDescription";
-            this.textBoxDescription.Size = new System.Drawing.Size(319, 153);
+            this.textBoxDescription.Size = new System.Drawing.Size(319, 150);
             this.textBoxDescription.TabIndex = 0;
             this.textBoxDescription.Text = "";
             // 
             // panelWithNav
             // 
             this.panelWithNav.Controls.Add(this.kryptonNavigator1);
-            this.panelWithNav.Location = new System.Drawing.Point(266, 13);
+            this.panelWithNav.Location = new System.Drawing.Point(304, 13);
             this.panelWithNav.Name = "panelWithNav";
             this.panelWithNav.Size = new System.Drawing.Size(329, 265);
             this.panelWithNav.TabIndex = 4;
@@ -637,9 +636,9 @@ namespace NavigatorModes
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(607, 508);
+            this.ClientSize = new System.Drawing.Size(661, 508);
             this.Controls.Add(this.panelWithNav);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.buttonClose);

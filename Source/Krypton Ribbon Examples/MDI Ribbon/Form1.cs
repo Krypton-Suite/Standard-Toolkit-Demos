@@ -75,15 +75,15 @@ namespace MDIRibbon
 
         private void buttonSpecHelp_Click(object sender, EventArgs e)
         {
-            Form3 f = new Form3();
+            var f = new Form3();
             f.ShowDialog();
         }
 
         private void AddMDIChildWindow()
         {
-            Form2 f = new Form2
+            var f = new Form2
             {
-                Text = "Child " + (_count++).ToString(),
+                Text = $"Child {(_count++)}",
                 MdiParent = this
             };
             f.Show();

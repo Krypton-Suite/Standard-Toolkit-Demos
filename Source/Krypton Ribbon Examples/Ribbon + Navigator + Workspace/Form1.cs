@@ -160,7 +160,7 @@ namespace RibbonAndNavigatorAndWorkspace
             navigatorOutlook.DismissPopups();
 
             // Update each workspace cell
-            KryptonWorkspaceCell cell = kryptonWorkspace.FirstCell();
+            KryptonWorkspaceCell? cell = kryptonWorkspace.FirstCell();
             while (cell != null)
             {
                 UpdateCell(cell);
@@ -172,10 +172,10 @@ namespace RibbonAndNavigatorAndWorkspace
         {
             Close();
         }
-        
+
         private void UpdateCell(KryptonWorkspaceCell cell)
         {
-            NavigatorMode newMode = NavigatorMode.BarTabGroup;
+            var newMode = NavigatorMode.BarTabGroup;
 
             if (checkSetDocMode.CheckedButton == buttonTabs)
             {
@@ -203,22 +203,6 @@ namespace RibbonAndNavigatorAndWorkspace
             }
 
             cell.NavigatorMode = newMode;
-
-            // Set mode specific properties
-            switch (newMode)
-            {
-                case NavigatorMode.BarRibbonTabGroup:
-                case NavigatorMode.BarRibbonTabOnly:
-                    cell.PageBackStyle = PaletteBackStyle.ControlRibbon;
-                    cell.Group.GroupBackStyle = PaletteBackStyle.ControlRibbon;
-                    cell.Group.GroupBorderStyle = PaletteBorderStyle.ControlRibbon;
-                    break;
-                default:
-                    cell.PageBackStyle = PaletteBackStyle.ControlClient;
-                    cell.Group.GroupBackStyle = PaletteBackStyle.ControlClient;
-                    cell.Group.GroupBorderStyle = PaletteBorderStyle.ControlClient;
-                    break;
-            }
         }
     }
 }

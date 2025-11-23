@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework' and $([System.String]::Copy('$(TargetFrameworkVersion)').StartsWith('v4.'))">
+    <ApplicationManifest>$(MSBuildThisFileDirectory)app.net4x.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETCoreApp' or ! ('$(TargetFrameworkIdentifier)' == '.NETFramework' and $([System.String]::Copy('$(TargetFrameworkVersion)').StartsWith('v4.'))) ">
+    <ApplicationManifest>$(MSBuildThisFileDirectory)app.core.manifest</ApplicationManifest>
+  </PropertyGroup>
+</Project>

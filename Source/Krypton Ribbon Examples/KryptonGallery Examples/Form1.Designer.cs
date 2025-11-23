@@ -62,7 +62,6 @@ namespace KryptonGalleryExamples
             // 
             this.kryptonGallery1.AutoSize = true;
             this.kryptonGallery1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.kryptonGallery1.ButtonStyle = Krypton.Toolkit.ButtonStyle.LowProfile;
             this.kryptonGallery1.DropButtonRanges.AddRange(new Krypton.Ribbon.KryptonGalleryRange[] {
             this.kryptonGalleryRange1,
             this.kryptonGalleryRange2,
@@ -70,7 +69,6 @@ namespace KryptonGalleryExamples
             this.kryptonGallery1.ImageList = this.imageListMedium;
             this.kryptonGallery1.Location = new System.Drawing.Point(178, 20);
             this.kryptonGallery1.Name = "kryptonGallery1";
-            this.kryptonGallery1.Padding = new System.Windows.Forms.Padding(3);
             this.kryptonGallery1.PreferredItemSize = new System.Drawing.Size(4, 1);
             this.kryptonGallery1.Size = new System.Drawing.Size(174, 46);
             this.kryptonGallery1.TabIndex = 4;
@@ -174,7 +172,7 @@ namespace KryptonGalleryExamples
             this.radioLargeList.AutoSize = true;
             this.radioLargeList.Location = new System.Drawing.Point(15, 72);
             this.radioLargeList.Name = "radioLargeList";
-            this.radioLargeList.Size = new System.Drawing.Size(104, 17);
+            this.radioLargeList.Size = new System.Drawing.Size(129, 21);
             this.radioLargeList.TabIndex = 2;
             this.radioLargeList.Text = "Large Image List";
             this.radioLargeList.UseVisualStyleBackColor = true;
@@ -186,7 +184,7 @@ namespace KryptonGalleryExamples
             this.radioMediumList.Checked = true;
             this.radioMediumList.Location = new System.Drawing.Point(15, 49);
             this.radioMediumList.Name = "radioMediumList";
-            this.radioMediumList.Size = new System.Drawing.Size(113, 17);
+            this.radioMediumList.Size = new System.Drawing.Size(142, 21);
             this.radioMediumList.TabIndex = 1;
             this.radioMediumList.TabStop = true;
             this.radioMediumList.Text = "Medium Image List";
@@ -198,7 +196,7 @@ namespace KryptonGalleryExamples
             this.radioSmallList.AutoSize = true;
             this.radioSmallList.Location = new System.Drawing.Point(15, 26);
             this.radioSmallList.Name = "radioSmallList";
-            this.radioSmallList.Size = new System.Drawing.Size(101, 17);
+            this.radioSmallList.Size = new System.Drawing.Size(126, 21);
             this.radioSmallList.TabIndex = 0;
             this.radioSmallList.Text = "Small Image List";
             this.radioSmallList.UseVisualStyleBackColor = true;
@@ -231,7 +229,7 @@ namespace KryptonGalleryExamples
             0,
             0});
             this.numericHeight.Name = "numericHeight";
-            this.numericHeight.Size = new System.Drawing.Size(42, 21);
+            this.numericHeight.Size = new System.Drawing.Size(42, 24);
             this.numericHeight.TabIndex = 3;
             this.numericHeight.Value = new decimal(new int[] {
             1,
@@ -245,7 +243,7 @@ namespace KryptonGalleryExamples
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(9, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.Size = new System.Drawing.Size(95, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Height (Items)";
             // 
@@ -254,7 +252,7 @@ namespace KryptonGalleryExamples
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.Size = new System.Drawing.Size(93, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Width (Items)";
             // 
@@ -272,7 +270,7 @@ namespace KryptonGalleryExamples
             0,
             0});
             this.numericWidth.Name = "numericWidth";
-            this.numericWidth.Size = new System.Drawing.Size(42, 21);
+            this.numericWidth.Size = new System.Drawing.Size(42, 24);
             this.numericWidth.TabIndex = 1;
             this.numericWidth.Value = new decimal(new int[] {
             4,
@@ -297,7 +295,7 @@ namespace KryptonGalleryExamples
             this.checkBoxAddCustomItems.AutoSize = true;
             this.checkBoxAddCustomItems.Location = new System.Drawing.Point(15, 54);
             this.checkBoxAddCustomItems.Name = "checkBoxAddCustomItems";
-            this.checkBoxAddCustomItems.Size = new System.Drawing.Size(114, 17);
+            this.checkBoxAddCustomItems.Size = new System.Drawing.Size(144, 21);
             this.checkBoxAddCustomItems.TabIndex = 1;
             this.checkBoxAddCustomItems.Text = "Add Custom Items";
             this.checkBoxAddCustomItems.UseVisualStyleBackColor = true;
@@ -309,7 +307,7 @@ namespace KryptonGalleryExamples
             this.checkBoxGroupImages.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxGroupImages.Location = new System.Drawing.Point(15, 31);
             this.checkBoxGroupImages.Name = "checkBoxGroupImages";
-            this.checkBoxGroupImages.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxGroupImages.Size = new System.Drawing.Size(116, 21);
             this.checkBoxGroupImages.TabIndex = 0;
             this.checkBoxGroupImages.Text = "Group Images";
             this.checkBoxGroupImages.UseVisualStyleBackColor = true;
@@ -327,13 +325,13 @@ namespace KryptonGalleryExamples
             // 
             // kryptonManager1
             // 
-            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Black;
+            this.kryptonManager1.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.SparklePurpleLightMode;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 366);
+            this.ClientSize = new System.Drawing.Size(554, 361);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.groupBoxSections);
             this.Controls.Add(this.groupBoxSize);
@@ -342,10 +340,9 @@ namespace KryptonGalleryExamples
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Krypton Gallery Examples";
+            this.TransparencyKey = System.Drawing.Color.Violet;
             this.groupBoxImages.ResumeLayout(false);
             this.groupBoxImages.PerformLayout();
             this.groupBoxSize.ResumeLayout(false);

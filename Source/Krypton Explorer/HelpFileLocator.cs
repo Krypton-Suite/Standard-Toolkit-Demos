@@ -24,7 +24,7 @@ namespace KryptonExplorer
 
         private void kcmdBrowseForFile_Execute(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog()
+            var ofd = new OpenFileDialog()
             {
                 Title = @"Browse for Help File:",
                 Filter = @"Compiled HTML Help Files|*.chm"

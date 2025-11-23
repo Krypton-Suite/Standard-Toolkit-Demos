@@ -62,7 +62,7 @@ namespace MDIRibbon
             this.ribbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.tabHome});
             this.ribbon.SelectedTab = this.tabHome;
-            this.ribbon.Size = new System.Drawing.Size(927, 136);
+            this.ribbon.Size = new System.Drawing.Size(935, 136);
             this.ribbon.TabIndex = 0;
             // 
             // buttonSpecHelp
@@ -185,14 +185,16 @@ namespace MDIRibbon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(927, 639);
+            this.ClientSize = new System.Drawing.Size(935, 611);
+            this.CloseBox = false;
             this.Controls.Add(this.ribbon);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(461, 420);
             this.Name = "Form1";
             this.Text = "MDI Ribbon";
+            this.TransparencyKey = System.Drawing.Color.Empty;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             this.ResumeLayout(false);

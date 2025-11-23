@@ -109,7 +109,7 @@ namespace ApplicationMenu
             this.kryptonRibbon1.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.kryptonRibbonTab1});
             this.kryptonRibbon1.SelectedTab = this.kryptonRibbonTab1;
-            this.kryptonRibbon1.Size = new System.Drawing.Size(527, 136);
+            this.kryptonRibbon1.Size = new System.Drawing.Size(531, 136);
             this.kryptonRibbon1.TabIndex = 0;
             this.kryptonRibbon1.AppButtonMenuOpening += new System.ComponentModel.CancelEventHandler(this.kryptonRibbon1_AppButtonMenuOpening);
             // 
@@ -327,7 +327,7 @@ namespace ApplicationMenu
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 136);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(527, 318);
+            this.kryptonPanel1.Size = new System.Drawing.Size(531, 304);
             this.kryptonPanel1.TabIndex = 1;
             // 
             // kryptonGroup1
@@ -347,7 +347,7 @@ namespace ApplicationMenu
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonLabel1);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonLabel2);
             this.kryptonGroup1.Panel.Controls.Add(this.textBoxMinWidth);
-            this.kryptonGroup1.Size = new System.Drawing.Size(330, 217);
+            this.kryptonGroup1.Size = new System.Drawing.Size(480, 217);
             this.kryptonGroup1.TabIndex = 7;
             // 
             // kryptonLabel5
@@ -372,7 +372,7 @@ namespace ApplicationMenu
             // 
             this.checkBoxShowRecentDocs.Checked = true;
             this.checkBoxShowRecentDocs.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxShowRecentDocs.Location = new System.Drawing.Point(163, 126);
+            this.checkBoxShowRecentDocs.Location = new System.Drawing.Point(219, 133);
             this.checkBoxShowRecentDocs.Name = "checkBoxShowRecentDocs";
             this.checkBoxShowRecentDocs.Size = new System.Drawing.Size(186, 24);
             this.checkBoxShowRecentDocs.TabIndex = 0;
@@ -380,7 +380,7 @@ namespace ApplicationMenu
             // 
             // textBoxMinHeight
             // 
-            this.textBoxMinHeight.Location = new System.Drawing.Point(163, 98);
+            this.textBoxMinHeight.Location = new System.Drawing.Point(219, 100);
             this.textBoxMinHeight.Name = "textBoxMinHeight";
             this.textBoxMinHeight.Size = new System.Drawing.Size(50, 27);
             this.textBoxMinHeight.TabIndex = 6;
@@ -388,7 +388,7 @@ namespace ApplicationMenu
             // 
             // textBoxDocsTitle
             // 
-            this.textBoxDocsTitle.Location = new System.Drawing.Point(163, 50);
+            this.textBoxDocsTitle.Location = new System.Drawing.Point(219, 50);
             this.textBoxDocsTitle.Name = "textBoxDocsTitle";
             this.textBoxDocsTitle.Size = new System.Drawing.Size(141, 27);
             this.textBoxDocsTitle.TabIndex = 1;
@@ -420,7 +420,7 @@ namespace ApplicationMenu
             // 
             // textBoxMinWidth
             // 
-            this.textBoxMinWidth.Location = new System.Drawing.Point(163, 74);
+            this.textBoxMinWidth.Location = new System.Drawing.Point(219, 75);
             this.textBoxMinWidth.Name = "textBoxMinWidth";
             this.textBoxMinWidth.Size = new System.Drawing.Size(50, 27);
             this.textBoxMinWidth.TabIndex = 3;
@@ -444,7 +444,8 @@ namespace ApplicationMenu
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ButtonSpecs.Add(this.buttonSpecAny1);
             this.ButtonSpecs.Add(this.buttonSpecAny2);
-            this.ClientSize = new System.Drawing.Size(527, 454);
+            this.ClientSize = new System.Drawing.Size(531, 440);
+            this.CloseBox = false;
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.kryptonRibbon1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

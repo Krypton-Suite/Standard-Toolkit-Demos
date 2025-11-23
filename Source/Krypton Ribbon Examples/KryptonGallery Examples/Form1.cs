@@ -74,17 +74,17 @@ namespace KryptonGalleryExamples
         {
             if (checkBoxAddCustomItems.Checked)
             {
-                KryptonContextMenuHeading h = new KryptonContextMenuHeading
+                var h = new KryptonContextMenuHeading
                 {
                     Text = "Customize Drop Menu"
                 };
 
-                KryptonContextMenuItems items1 = new KryptonContextMenuItems();
-                KryptonContextMenuItem item1 = new KryptonContextMenuItem
+                var items1 = new KryptonContextMenuItems();
+                var item1 = new KryptonContextMenuItem
                 {
                     Text = "Custom Entry 1"
                 };
-                KryptonContextMenuItem item2 = new KryptonContextMenuItem
+                var item2 = new KryptonContextMenuItem
                 {
                     Text = "Custom Entry 2",
                     Checked = true
@@ -92,12 +92,12 @@ namespace KryptonGalleryExamples
                 items1.Items.Add(item1);
                 items1.Items.Add(item2);
 
-                KryptonContextMenuItems items2 = new KryptonContextMenuItems();
-                KryptonContextMenuItem item3 = new KryptonContextMenuItem
+                var items2 = new KryptonContextMenuItems();
+                var item3 = new KryptonContextMenuItem
                 {
                     Text = "Custom Entry 3"
                 };
-                KryptonContextMenuItem item4 = new KryptonContextMenuItem
+                var item4 = new KryptonContextMenuItem
                 {
                     Text = "Custom Entry 4",
                     CheckState = CheckState.Indeterminate

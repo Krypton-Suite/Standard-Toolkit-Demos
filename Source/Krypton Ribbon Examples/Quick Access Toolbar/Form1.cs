@@ -82,7 +82,7 @@ namespace QuickAccessToolbar
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            KryptonRibbonQATButton qatButton = new KryptonRibbonQATButton
+            var qatButton = new KryptonRibbonQATButton
             {
                 Text = _names[_count],
                 Image = _images[_count]
@@ -108,7 +108,7 @@ namespace QuickAccessToolbar
             kryptonRibbon.QATButtons.Clear();
             UpdateButtons();
         }
-        
+
         private void UpdateButtons()
         {
             var enable = (kryptonRibbon.QATButtons.Count > 0);

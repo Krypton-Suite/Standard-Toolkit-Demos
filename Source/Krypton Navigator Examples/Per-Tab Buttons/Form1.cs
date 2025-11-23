@@ -9,6 +9,7 @@
  *  
  */
 #endregion
+
 using System;
 using System.Windows.Forms;
 
@@ -111,7 +112,7 @@ namespace PerTabButtons
         {
             if (kryptonNavigator.SelectedPage != null)
             {
-                ButtonSpecAny bsa = new ButtonSpecAny();
+                var bsa = new ButtonSpecAny();
                 bsa.Type = PaletteButtonSpecStyle.Context;
                 bsa.Style = PaletteButtonStyle.Standalone;
                 bsa.KryptonContextMenu = kryptonContextMenu;
@@ -125,7 +126,7 @@ namespace PerTabButtons
         {
             if (kryptonNavigator.SelectedPage != null)
             {
-                ButtonSpecAny bsa = new ButtonSpecAny();
+                var bsa = new ButtonSpecAny();
                 bsa.Style = PaletteButtonStyle.Standalone;
                 bsa.Text = DateTime.Now.Millisecond.ToString();
                 bsa.Tag = kryptonNavigator.SelectedPage;
@@ -137,7 +138,7 @@ namespace PerTabButtons
         {
             if (kryptonNavigator.SelectedPage != null)
             {
-                ButtonSpecAny bsa = new ButtonSpecAny();
+                var bsa = new ButtonSpecAny();
                 bsa.Style = PaletteButtonStyle.Alternate;
                 bsa.Type = PaletteButtonSpecStyle.ArrowRight;
                 bsa.Tag = kryptonNavigator.SelectedPage;

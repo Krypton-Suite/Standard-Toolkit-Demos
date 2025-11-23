@@ -30,6 +30,8 @@ namespace RibbonControls
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonRibbon = new Krypton.Ribbon.KryptonRibbon();
             this.kryptonContextMenuItem1 = new Krypton.Toolkit.KryptonContextMenuItem();
             this.ribbonTab = new Krypton.Ribbon.KryptonRibbonTab();
@@ -42,31 +44,26 @@ namespace RibbonControls
             this.textBox1 = new Krypton.Ribbon.KryptonRibbonGroupTextBox();
             this.textBox2 = new Krypton.Ribbon.KryptonRibbonGroupTextBox();
             this.textBox3 = new Krypton.Ribbon.KryptonRibbonGroupTextBox();
-            this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
             this.kryptonRibbonGroupTriple1 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.kryptonRibbonGroup5 = new Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupTriple6 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.maskedTextBox1 = new Krypton.Ribbon.KryptonRibbonGroupMaskedTextBox();
             this.maskedTextBox2 = new Krypton.Ribbon.KryptonRibbonGroupMaskedTextBox();
             this.maskedTextBox3 = new Krypton.Ribbon.KryptonRibbonGroupMaskedTextBox();
-            this.buttonSpecAny3 = new Krypton.Toolkit.ButtonSpecAny();
             this.kryptonRibbonGroup7 = new Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupTriple7 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.dateTimePicker1 = new Krypton.Ribbon.KryptonRibbonGroupDateTimePicker();
             this.dateTimePicker2 = new Krypton.Ribbon.KryptonRibbonGroupDateTimePicker();
             this.dateTimePicker3 = new Krypton.Ribbon.KryptonRibbonGroupDateTimePicker();
-            this.buttonSpecAny5 = new Krypton.Toolkit.ButtonSpecAny();
             this.kryptonRibbonGroup4 = new Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupTriple4 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.comboBox1 = new Krypton.Ribbon.KryptonRibbonGroupComboBox();
             this.comboBox2 = new Krypton.Ribbon.KryptonRibbonGroupComboBox();
             this.comboBox3 = new Krypton.Ribbon.KryptonRibbonGroupComboBox();
-            this.buttonSpecAny2 = new Krypton.Toolkit.ButtonSpecAny();
             this.kryptonRibbonGroup6 = new Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupLines1 = new Krypton.Ribbon.KryptonRibbonGroupLines();
             this.numericUpDown1 = new Krypton.Ribbon.KryptonRibbonGroupNumericUpDown();
             this.numericUpDown2 = new Krypton.Ribbon.KryptonRibbonGroupNumericUpDown();
-            this.buttonSpecAny4 = new Krypton.Toolkit.ButtonSpecAny();
             this.kryptonRibbonGroup2 = new Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupTriple3 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.richTextBox1 = new Krypton.Ribbon.KryptonRibbonGroupRichTextBox();
@@ -83,24 +80,41 @@ namespace RibbonControls
             this.kryptonRibbonGroupLines3 = new Krypton.Ribbon.KryptonRibbonGroupLines();
             this.miscCmbTheme = new Krypton.Ribbon.KryptonRibbonGroupThemeComboBox();
             this.kryptonRibbonGroupColorButton1 = new Krypton.Ribbon.KryptonRibbonGroupColorButton();
-            this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
+            this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
+            this.buttonSpecAny3 = new Krypton.Toolkit.ButtonSpecAny();
+            this.buttonSpecAny5 = new Krypton.Toolkit.ButtonSpecAny();
+            this.buttonSpecAny2 = new Krypton.Toolkit.ButtonSpecAny();
+            this.buttonSpecAny4 = new Krypton.Toolkit.ButtonSpecAny();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
+            this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon)).BeginInit();
             this.SuspendLayout();
             // 
+            // kryptonManager
+            // 
+            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Black;
+            // 
+            // kryptonPanel1
+            // 
+            this.kryptonPanel1.Controls.Add(this.kryptonRibbon);
+            this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel1.Name = "kryptonPanel1";
+            this.kryptonPanel1.Size = new System.Drawing.Size(1710, 305);
+            this.kryptonPanel1.TabIndex = 1;
+            // 
             // kryptonRibbon
             // 
-            this.kryptonRibbon.InDesignHelperMode = true;
             this.kryptonRibbon.Name = "kryptonRibbon";
             this.kryptonRibbon.RibbonFileAppButton.AppButtonMenuItems.AddRange(new Krypton.Toolkit.KryptonContextMenuItemBase[] {
             this.kryptonContextMenuItem1});
             this.kryptonRibbon.RibbonFileAppButton.AppButtonShowRecentDocs = false;
-            this.kryptonRibbon.RibbonFileAppButton.AppButtonToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.kryptonRibbon.RibbonFileAppButton.FormCloseBoxVisible = true;
             this.kryptonRibbon.RibbonFileAppButton.IgnoreDoubleClickClose = true;
             this.kryptonRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
             this.ribbonTab});
             this.kryptonRibbon.SelectedTab = this.ribbonTab;
-            this.kryptonRibbon.Size = new System.Drawing.Size(1682, 136);
+            this.kryptonRibbon.Size = new System.Drawing.Size(1710, 171);
             this.kryptonRibbon.TabIndex = 0;
             // 
             // kryptonContextMenuItem1
@@ -176,15 +190,8 @@ namespace RibbonControls
             // 
             // textBox3
             // 
-            this.textBox3.ButtonSpecs.Add(this.buttonSpecAny1);
             this.textBox3.KeyTip = "T3";
             this.textBox3.Text = "Plus ButtonSpec";
-            // 
-            // buttonSpecAny1
-            // 
-            this.buttonSpecAny1.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
-            this.buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
-            this.buttonSpecAny1.UniqueName = "F5915CE07E32464DF5915CE07E32464D";
             // 
             // kryptonRibbonGroupTriple1
             // 
@@ -210,7 +217,7 @@ namespace RibbonControls
             // 
             this.maskedTextBox1.Mask = "00/00/0000";
             this.maskedTextBox1.PromptChar = '_';
-            this.maskedTextBox1.Text = "00/00/0000";
+            this.maskedTextBox1.Text = "00-00-0000";
             // 
             // maskedTextBox2
             // 
@@ -220,16 +227,9 @@ namespace RibbonControls
             // 
             // maskedTextBox3
             // 
-            this.maskedTextBox3.ButtonSpecs.Add(this.buttonSpecAny3);
             this.maskedTextBox3.Mask = "00/00/0000";
             this.maskedTextBox3.PromptChar = '-';
-            this.maskedTextBox3.Text = "  /  /";
-            // 
-            // buttonSpecAny3
-            // 
-            this.buttonSpecAny3.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
-            this.buttonSpecAny3.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
-            this.buttonSpecAny3.UniqueName = "7D57C7BA2BC2411E7D57C7BA2BC2411E";
+            this.maskedTextBox3.Text = "  -  -";
             // 
             // kryptonRibbonGroup7
             // 
@@ -263,18 +263,11 @@ namespace RibbonControls
             // 
             // dateTimePicker3
             // 
-            this.dateTimePicker3.ButtonSpecs.Add(this.buttonSpecAny5);
             this.dateTimePicker3.CustomFormat = "ss.fff";
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker3.MaximumSize = new System.Drawing.Size(110, 0);
             this.dateTimePicker3.MinimumSize = new System.Drawing.Size(110, 0);
             this.dateTimePicker3.ShowUpDown = true;
-            // 
-            // buttonSpecAny5
-            // 
-            this.buttonSpecAny5.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
-            this.buttonSpecAny5.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
-            this.buttonSpecAny5.UniqueName = "EF28ACF080BA46F8EF28ACF080BA46F8";
             // 
             // kryptonRibbonGroup4
             // 
@@ -326,7 +319,6 @@ namespace RibbonControls
             // 
             // comboBox3
             // 
-            this.comboBox3.ButtonSpecs.Add(this.buttonSpecAny2);
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.DropDownWidth = 103;
             this.comboBox3.FormattingEnabled = false;
@@ -340,12 +332,6 @@ namespace RibbonControls
             "Windows Vista"});
             this.comboBox3.KeyTip = "C3";
             this.comboBox3.Text = "Windows 95";
-            // 
-            // buttonSpecAny2
-            // 
-            this.buttonSpecAny2.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
-            this.buttonSpecAny2.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
-            this.buttonSpecAny2.UniqueName = "62AE2B46B4464BC562AE2B46B4464BC5";
             // 
             // kryptonRibbonGroup6
             // 
@@ -385,7 +371,6 @@ namespace RibbonControls
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.ButtonSpecs.Add(this.buttonSpecAny4);
             this.numericUpDown2.DecimalPlaces = 2;
             this.numericUpDown2.Increment = new decimal(new int[] {
             33,
@@ -400,12 +385,6 @@ namespace RibbonControls
             0,
             0,
             0});
-            // 
-            // buttonSpecAny4
-            // 
-            this.buttonSpecAny4.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
-            this.buttonSpecAny4.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
-            this.buttonSpecAny4.UniqueName = "08C840ABEE6B446808C840ABEE6B4468";
             // 
             // kryptonRibbonGroup2
             // 
@@ -500,7 +479,7 @@ namespace RibbonControls
             // 
             // miscCmbTheme
             // 
-            this.miscCmbTheme.DefaultPalette = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.miscCmbTheme.DefaultPalette = Krypton.Toolkit.PaletteMode.Office2007Black;
             this.miscCmbTheme.DisplayMember = "Key";
             this.miscCmbTheme.DropDownWidth = 300;
             this.miscCmbTheme.FormattingEnabled = false;
@@ -514,24 +493,54 @@ namespace RibbonControls
             // 
             this.kryptonRibbonGroupColorButton1.RecentColors = new System.Drawing.Color[0];
             // 
-            // kryptonManager
+            // buttonSpecAny1
             // 
-            this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.buttonSpecAny1.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
+            this.buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
+            this.buttonSpecAny1.UniqueName = "F5915CE07E32464DF5915CE07E32464D";
+            // 
+            // buttonSpecAny3
+            // 
+            this.buttonSpecAny3.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
+            this.buttonSpecAny3.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
+            this.buttonSpecAny3.UniqueName = "7D57C7BA2BC2411E7D57C7BA2BC2411E";
+            // 
+            // buttonSpecAny5
+            // 
+            this.buttonSpecAny5.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
+            this.buttonSpecAny5.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
+            this.buttonSpecAny5.UniqueName = "EF28ACF080BA46F8EF28ACF080BA46F8";
+            // 
+            // buttonSpecAny2
+            // 
+            this.buttonSpecAny2.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
+            this.buttonSpecAny2.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
+            this.buttonSpecAny2.UniqueName = "62AE2B46B4464BC562AE2B46B4464BC5";
+            // 
+            // buttonSpecAny4
+            // 
+            this.buttonSpecAny4.Style = Krypton.Toolkit.PaletteButtonStyle.Standalone;
+            this.buttonSpecAny4.Type = Krypton.Toolkit.PaletteButtonSpecStyle.Close;
+            this.buttonSpecAny4.UniqueName = "08C840ABEE6B446808C840ABEE6B4468";
             // 
             // Form1
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1682, 231);
-            this.Controls.Add(this.kryptonRibbon);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1710, 305);
+            this.Controls.Add(this.kryptonPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(327, 275);
             this.Name = "Form1";
             this.Text = "Ribbon Controls";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
+            this.kryptonPanel1.ResumeLayout(false);
+            this.kryptonPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -591,6 +600,7 @@ namespace RibbonControls
         private Krypton.Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines3;
         private Krypton.Ribbon.KryptonRibbonGroupColorButton kryptonRibbonGroupColorButton1;
         private Krypton.Ribbon.KryptonRibbonGroupThemeComboBox miscCmbTheme;
+        private Krypton.Toolkit.KryptonPanel kryptonPanel1;
     }
 }
 

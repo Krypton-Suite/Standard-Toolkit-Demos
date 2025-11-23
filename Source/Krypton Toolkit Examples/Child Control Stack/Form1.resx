@@ -124,7 +124,7 @@
   <data name="toolOffice2010.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
         YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
         0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
         bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
@@ -139,7 +139,7 @@
   <data name="toolOffice2007.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
         YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
         0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
         bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
@@ -162,7 +162,7 @@ Each KryptonCheckButton has been defined to not show its border as the KryptonBo
   <data name="kryptonCheckButton4.Values.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsPAAALDwGS+QOlAAADF0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAADF0lE
         QVQ4T4WTW0zSURzHceux2VZbrz4010rdGkJemJG6bFmaZaampSJqiqMoMpNJKqLczAsUppA5CHRixCg1
         xWtamjVvaXZRQ02zq1vqzDa+/SPeMvu8/HbOvt/fOed7ziH9D65MujkoJKKTsv/gGtWXfs0+GRS0yV7/
         B5UW6HyaeTZVrTPiYc8g9ngHrIZFxfV6B4Ysewef2O+QrU9phWZrMpu7ejSaid7BUXQ8ewGtsQnNj/ph
@@ -182,7 +182,7 @@ Each KryptonCheckButton has been defined to not show its border as the KryptonBo
   <data name="kryptonCheckButton3.Values.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsPAAALDwGS+QOlAAACnUlE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAACnUlE
         QVQ4T8VTWU9TQRi9/4VH33zRoEJIXIDqE31iKxasSsBAS6PEBCjUFCIoBYVQE9wSiJEWkAKVBkEkQKGE
         brSldF9oid2X1ELp8d4LGP8BX3Iy8yVzznfmTIa4+BKLxXV9fX3ynp6edYFAYCbhFQqFYRIJEimyT3V0
         dCRaW1vDfD7f19D4xPyovn699sFDeXVNbR0hEok8kUgEsVgMyWQSqVSKXuPxOKLRKI1QKIRAIICDgwPY
@@ -200,7 +200,7 @@ Each KryptonCheckButton has been defined to not show its border as the KryptonBo
   <data name="kryptonCheckButton2.Values.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsPAAALDwGS+QOlAAADE0lE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAADE0lE
         QVQ4T4WRa0hTYRjHjb5IRSAEFWERGUUFmX6Yl0jTnHTVEDVkGguNvMR0SnnXKBTKzNucmpaJmoplWiLa
         XMvuXqKl5i037zrdzjxnHjWV/p2dc/pQfegHL+/7cM7v/z4Pr4UZD5FoY2x8QsZViYRITElVSmOuEfFJ
         KaoISSRT31RFRMbo45JvKEMiIvXR8ckNossSASv+JjNHNppXXIaGFhWKy2vwQvEaDypr0dTahrLHzM7U
@@ -220,7 +220,7 @@ Each KryptonCheckButton has been defined to not show its border as the KryptonBo
   <data name="kryptonCheckButton1.Values.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsPAAALDwGS+QOlAAAC3ElE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsNAAALDQHtB8AsAAAC3ElE
         QVQ4T62QW0iTcRjG/10YFF0U0UUQ0UV3Qhok3UkRBWGWOEEzh6XkidQ0NVMRRUVXTt3BeUrnFM1TeVjL
         aR6mmLmZp2lpDi2Pc2lTU+dh6dPb3J23PvDwfR//5/e87/9jh6piiZ9dkThoIyfDZ1qYxu0Sv/IuF6V7
         pYl53CDxS4874jT3S5Ic15PW+EEVZvsn6ec7AWxjb3cOy8Z+TE00QtsnRXc7D4210aguCUBZvvfq60zX

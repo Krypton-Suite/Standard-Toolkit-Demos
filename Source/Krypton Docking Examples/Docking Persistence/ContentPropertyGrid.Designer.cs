@@ -15,7 +15,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
+            this.propertyGrid1 = new Krypton.Toolkit.KryptonPropertyGrid();
             this.kryptonPanel = new Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.kryptonPanel.SuspendLayout();
@@ -51,16 +51,14 @@
             this.Controls.Add(this.kryptonPanel);
             this.Name = "ContentPropertyGrid";
             this.Size = new System.Drawing.Size(243, 161);
-            this.Load += new System.EventHandler(this.ContentPropertyGrid_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).EndInit();
             this.kryptonPanel.ResumeLayout(false);
             this.ResumeLayout(false);
-
         }
 
         #endregion
 
-        private System.Windows.Forms.PropertyGrid propertyGrid1;
+        private Krypton.Toolkit.KryptonPropertyGrid propertyGrid1;
         private Krypton.Toolkit.KryptonPanel kryptonPanel;
     }
 }
