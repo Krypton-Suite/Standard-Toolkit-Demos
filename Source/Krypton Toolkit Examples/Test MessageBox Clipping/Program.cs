@@ -8,21 +8,20 @@ using System.Windows.Forms;
 
 using Krypton.Toolkit;
 
-namespace TestMessageBoxClipping
+namespace TestMessageBoxClipping;
+
+internal static class Program
 {
-    internal static class Program
+    /// <summary>
+    /// The main entry point for the application.
+    /// </summary>
+    [STAThread]
+    private static void Main()
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        private static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            KryptonMessageBox.Show("Test without an owner,\nand before KyptonManager has Loaded");
-            KryptonMessageBox.Show(text: string.Empty, "Test without no Text");
-            Application.Run(new Form1());
-        }
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+        KryptonMessageBox.Show("Test without an owner,\nand before KyptonManager has Loaded");
+        KryptonMessageBox.Show(text: string.Empty, "Test without no Text");
+        Application.Run(new Form1());
     }
 }

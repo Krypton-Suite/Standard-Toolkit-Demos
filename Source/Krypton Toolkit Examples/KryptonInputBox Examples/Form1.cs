@@ -16,49 +16,48 @@ using System.Windows.Forms;
 
 using Krypton.Toolkit;
 
-namespace KryptonInputBoxExamples
+namespace KryptonInputBoxExamples;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
+    private Font _cueTypeface;
+
+    public Form1()
     {
-        private Font _cueTypeface;
+        InitializeComponent();
 
-        public Form1()
+        _cueTypeface = new Font("Microsoft Sans Serif", 8f);
+    }
+
+    private void kbtnCueTypeface_Click(object sender, EventArgs e)
+    {
+        var cueTypeface = new KryptonFontDialog();
+
+        if (cueTypeface.ShowDialog() == DialogResult.OK)
         {
-            InitializeComponent();
-
-            _cueTypeface = new Font("Microsoft Sans Serif", 8f);
+            _cueTypeface = cueTypeface.Font;
         }
+    }
 
-        private void kbtnCueTypeface_Click(object sender, EventArgs e)
-        {
-            var cueTypeface = new KryptonFontDialog();
+    private void kbtnShow_Click(object sender, EventArgs e)
+    {
+        KryptonInputBoxData data = new KryptonInputBoxData() {
+            Caption = ktxtCaptionText.Text,
+            CueColor = kcbCueTextColour.SelectedColor,
+            CueText = ktxtCueText.Text,
+            CueTypeface = _cueTypeface,
+            DefaultResponse = ktxtDefaultResponseText.Text,
+            Owner = this,
+            Prompt = ktxtPromptText.Text,
+            UsePasswordOption = kchkUsePasswordOption.Checked
+        };
 
-            if (cueTypeface.ShowDialog() == DialogResult.OK)
-            {
-                _cueTypeface = cueTypeface.Font;
-            }
-        }
+        var res = KryptonInputBox.Show(data);
+        KryptonMessageBox.Show(this, res, @"Result was :");
+    }
 
-        private void kbtnShow_Click(object sender, EventArgs e)
-        {
-            KryptonInputBoxData data = new KryptonInputBoxData() {
-                Caption = ktxtCaptionText.Text,
-                CueColor = kcbCueTextColour.SelectedColor,
-                CueText = ktxtCueText.Text,
-                CueTypeface = _cueTypeface,
-                DefaultResponse = ktxtDefaultResponseText.Text,
-                Owner = this,
-                Prompt = ktxtPromptText.Text,
-                UsePasswordOption = kchkUsePasswordOption.Checked
-            };
+    private void Form1_Load(object sender, EventArgs e)
+    {
 
-            var res = KryptonInputBox.Show(data);
-            KryptonMessageBox.Show(this, res, @"Result was :");
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

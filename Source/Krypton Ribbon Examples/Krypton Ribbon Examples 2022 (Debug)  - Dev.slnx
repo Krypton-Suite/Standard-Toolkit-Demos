@@ -1,0 +1,77 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Canary" />
+    <BuildType Name="Debug" />
+    <BuildType Name="Installer" />
+    <BuildType Name="Nightly" />
+    <BuildType Name="Release" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path="../.editorconfig" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Navigator/Krypton.Navigator 2022.csproj" />
+  <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Ribbon/Krypton.Ribbon 2022.csproj" />
+  <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Toolkit/Krypton.Toolkit 2022.csproj" />
+  <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Workspace/Krypton.Workspace 2022.csproj" />
+  <Project Path="Application Menu/Application Menu 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Auto Shrinking Groups/Auto Shrinking Groups 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Contextual Tabs/Contextual Tabs 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KeyTips + Keyboard Access/KeyTips + Keyboard Access 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonGallery Examples/KryptonGallery Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="MDI Ribbon/MDI Ribbon 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Outlook Mail Clone/Outlook Mail Clone 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Quick Access Toolbar/Quick Access Toolbar 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Ribbon + Navigator + Workspace/Ribbon + Navigator + Workspace 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Ribbon Controls/Ribbon Controls 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Ribbon Gallery/Ribbon Gallery 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Ribbon ToolTips/Ribbon ToolTips 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+</Solution>

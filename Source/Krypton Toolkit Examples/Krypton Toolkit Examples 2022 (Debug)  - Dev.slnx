@@ -1,0 +1,421 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Canary" />
+    <BuildType Name="Debug" />
+    <BuildType Name="Installer" />
+    <BuildType Name="Nightly" />
+    <BuildType Name="Release" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path="../../Documents/Help/Changelog.md" />
+    <File Path=".editorconfig" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Toolkit/Krypton.Toolkit 2022.csproj" />
+  <Project Path="ButtonSpec Playground/ButtonSpec Playground 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Child Control Stack/Child Control Stack 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Custom Control using Palettes/Custom Control using Palettes 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Custom Control using Renderers/Custom Control using Renderers 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Expanding HeaderGroups (DockStyle)/Expanding HeaderGroups (DockStyle) 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Expanding HeaderGroups (Splitters)/Expanding HeaderGroups (Splitters) 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Expanding HeaderGroups (Stack)/Expanding HeaderGroups (Stack) 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Input Form/Input Form 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="IntegratedToolbarExample/IntegratedToolbarExample 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Krypton Scrollbars/Krypton Scrollbars 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Krypton Theme Playground/Krypton Theme Playground 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Krypton Theme Selector/Krypton Theme Selector 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Krypton UAC Button/Krypton UAC Button 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonAboutBox Example/KryptonAboutBox Example 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonAboutToolkit Example/KryptonAboutToolkit Example 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonBorderEdge Examples/KryptonBorderEdge Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonBreadCrumb Examples/KryptonBreadCrumb Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonButton Examples/KryptonButton Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonCheckBox Examples/KryptonCheckBox Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonCheckButton Examples/KryptonCheckButton Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonCheckedListBox Examples/KryptonCheckedListBox Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonCheckSet Examples/KryptonCheckSet Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonColorButton Examples/KryptonColorButton Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonColorDialog Example/KryptonColorDialog Example 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonComboBox Examples/KryptonComboBox Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonCommand Examples/KryptonCommand Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonCommandLinkButton Examples/KryptonCommandLinkButton Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonContextMenu Examples/KryptonContextMenu Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonDataGridView Examples/KryptonDataGridView Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonDateTimePicker Examples/KryptonDateTimePicker Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonDomainUpDown Examples/KryptonDomainUpDown Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonDropButton Examples/KryptonDropButton Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonFolderBrowserDialog Example/KryptonFolderBrowserDialog Example 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonFontDialog Example/KryptonFontDialog Example 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonForm Examples/KryptonForm Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonGroup Examples/KryptonGroup Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonGroupBox Examples/KryptonGroupBox Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonHeader Examples/KryptonHeader Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonHeaderGroup Examples/KryptonHeaderGroup Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonHelpIcon Examples/KryptonHelpIcon Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonInputBox Examples/KryptonInputBox Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonLabel Examples/KryptonLabel Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonLinkLabel Examples/KryptonLinkLabel Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonListBox Examples/KryptonListBox Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonListView Examples/KryptonListView Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonMaskedTextBox Examples/KryptonMaskedTextBox Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonMenuAndToolStrip Examples/KryptonMenuAndToolStrip Examples.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonMessageBox Examples/KryptonMessageBox Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonMonthCalendar Examples/KryptonMonthCalendar Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonNumericUpDown Examples/KryptonNumericUpDown Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonOpenFileDialog Example/KryptonOpenFileDialog Example 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonPalette Examples/KryptonPalette Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonPanel Examples/KryptonPanel Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonPrintDialog Example/KryptonPrintDialog Example 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonProgressbar Examples/KryptonProgressbar Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonPropertyGridExample/KryptonPropertyGridExample 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonRadioButton Examples/KryptonRadioButton Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonRichTextBox Examples/KryptonRichTextBox Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonSaveFileDialog Example/KryptonSaveFileDialog Example 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonScrollbar Examples/KryptonScrollbar Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonSeparator Examples/KryptonSeparator Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonSplitContainer Examples/KryptonSplitContainer Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonStringCollectionEditor Examples 2022/KryptonStringCollectionEditor Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonTableLayoutPanel Examples/KryptonTableLayoutPanel Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonTaskDialog Examples/KryptonTaskDialog Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+    <BuildType Solution="Release|*" Project="Debug" />
+  </Project>
+  <Project Path="KryptonTextBox Examples/KryptonTextBox Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonToastNotification Examples/KryptonToastNotification Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonToggleSwitch Examples/KryptonToggleSwitch Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonToolStripMenuItem Examples/KryptonToolStripMenuItem Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonTrackBar Examples/KryptonTrackBar Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonTreeView Examples/KryptonTreeView Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonWebBrowser Example/KryptonWebBrowser Example 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonWrapLabel Examples/KryptonWrapLabel Examples 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="MDI Application/MDI Application 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="SystemThemedForms/SystemThemedForms 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Test Clip Base/Test Clip Base 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Test Combo Domain Numeric/Test Combo Domain Numeric 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Test MessageBox Clipping/Test MessageBox Clipping 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Test Text Clipping/Test Text Clipping 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Three Pane Application (Basic)/Three Pane Application (Basic) 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Three Pane Application (Extended)/Three Pane Application (Extended) 2022.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+</Solution>

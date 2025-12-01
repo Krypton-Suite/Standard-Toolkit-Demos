@@ -5,25 +5,24 @@
 
 using Krypton.Toolkit;
 
-namespace KryptonDataGridViewExamples
+namespace KryptonDataGridViewExamples;
+
+public partial class Form2 : KryptonForm
 {
-    public partial class Form2 : KryptonForm
+    public Form2()
     {
-        public Form2()
+        InitializeComponent();
+        kryptonDataGridView1.Rows.Add(@"1", @"Test Btn", true);
+
+        var resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+
+        var iconSpec1 = new Krypton.Toolkit.IconSpec
         {
-            InitializeComponent();
-            kryptonDataGridView1.Rows.Add(@"1", @"Test Btn", true);
+            Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Right,
+            Icon = resources.GetObject("iconSpec1.Icon") as System.Drawing.Image
+        };
 
-            var resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+        Button.IconSpecs.Add(iconSpec1);
 
-            var iconSpec1 = new Krypton.Toolkit.IconSpec
-            {
-                Alignment = Krypton.Toolkit.IconSpec.IconAlignment.Right,
-                Icon = resources.GetObject("iconSpec1.Icon") as System.Drawing.Image
-            };
-
-            Button.IconSpecs.Add(iconSpec1);
-
-        }
     }
 }

@@ -5,10 +5,9 @@
 
 using System.Windows.Forms;
 
-namespace KryptonButtonExamples
+namespace KryptonButtonExamples;
+
+public partial class Form2 : Form
 {
-    public partial class Form2 : Form
-    {
-        public Form2() => InitializeComponent();
-    }
+    public Form2() => InitializeComponent();
 }

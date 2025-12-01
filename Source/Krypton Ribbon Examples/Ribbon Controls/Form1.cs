@@ -18,94 +18,93 @@ using Krypton.Toolkit;
 
 using RibbonControls.Properties;
 
-namespace RibbonControls
+namespace RibbonControls;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
+    public Form1()
     {
-        public Form1()
+        InitializeComponent();
+    }
+
+    private static LinkLabel CreateLinkLabel(string text)
+    {
+        var ll = new LinkLabel
         {
-            InitializeComponent();
-        }
+            BackColor = Color.Transparent,
+            Text = text
+        };
+        return ll;
+    }
 
-        private static LinkLabel CreateLinkLabel(string text)
+    private static NumericUpDown CreateNumericUpDown(decimal value)
+    {
+        var nud = new NumericUpDown
         {
-            var ll = new LinkLabel
-            {
-                BackColor = Color.Transparent,
-                Text = text
-            };
-            return ll;
-        }
+            Value = value
+        };
+        return nud;
+    }
 
-        private static NumericUpDown CreateNumericUpDown(decimal value)
+    private static ProgressBar CreateProgressBar(int value)
+    {
+        var pb = new ProgressBar
         {
-            var nud = new NumericUpDown
-            {
-                Value = value
-            };
-            return nud;
-        }
+            Value = value
+        };
+        return pb;
+    }
 
-        private static ProgressBar CreateProgressBar(int value)
-        {
-            var pb = new ProgressBar
-            {
-                Value = value
-            };
-            return pb;
-        }
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        // Load the rich text box with RTF
+        richTextBox1.RichTextBox.Rtf = @"{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\colortbl ;\red0\green0\blue255;\red0\green128\blue0;\red255\green0\blue0;}{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\cf1\f0\fs20 RichTextBox\cf0  with \cf2 Multiline\cf0  set to \cf3 True\cf0 .\par}";
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // Load the rich text box with RTF
-            richTextBox1.RichTextBox.Rtf = @"{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\colortbl ;\red0\green0\blue255;\red0\green128\blue0;\red255\green0\blue0;}{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\cf1\f0\fs20 RichTextBox\cf0  with \cf2 Multiline\cf0  set to \cf3 True\cf0 .\par}";
+        // Hook into the button spec buttons
+        textBox3.ButtonSpecs[0].Click += OnTextBox3Clear!;
+        comboBox3.ButtonSpecs[0].Click += OnComboBox3Clear!;
+        dateTimePicker3.ButtonSpecs[0].Click += OnDateTimePicker3Clear!;
+        maskedTextBox3.ButtonSpecs[0].Click += OnMaskedTextBox3Clear!;
+        numericUpDown2.ButtonSpecs[0].Click += OnNumericUpDown2Clear!;
 
-            // Hook into the button spec buttons
-            textBox3.ButtonSpecs[0].Click += OnTextBox3Clear!;
-            comboBox3.ButtonSpecs[0].Click += OnComboBox3Clear!;
-            dateTimePicker3.ButtonSpecs[0].Click += OnDateTimePicker3Clear!;
-            maskedTextBox3.ButtonSpecs[0].Click += OnMaskedTextBox3Clear!;
-            numericUpDown2.ButtonSpecs[0].Click += OnNumericUpDown2Clear!;
+        // Create and associate various controls
+        custom9.CustomControl = CreateLinkLabel("LinkLabel Control");
+        custom10.CustomControl = CreateNumericUpDown(50);
+        custom11.CustomControl = CreateProgressBar(75);
+    }
 
-            // Create and associate various controls
-            custom9.CustomControl = CreateLinkLabel("LinkLabel Control");
-            custom10.CustomControl = CreateNumericUpDown(50);
-            custom11.CustomControl = CreateProgressBar(75);
-        }
+    private void OnTextBox3Clear(object sender, EventArgs e)
+    {
+        textBox3.Text = string.Empty;
+    }
 
-        private void OnTextBox3Clear(object sender, EventArgs e)
-        {
-            textBox3.Text = string.Empty;
-        }
+    private void OnComboBox3Clear(object sender, EventArgs e)
+    {
+        comboBox3.Text = "Windows Vista";
+    }
 
-        private void OnComboBox3Clear(object sender, EventArgs e)
-        {
-            comboBox3.Text = "Windows Vista";
-        }
+    private void OnMaskedTextBox3Clear(object sender, EventArgs e)
+    {
+        maskedTextBox3.Text = string.Empty;
+    }
 
-        private void OnMaskedTextBox3Clear(object sender, EventArgs e)
-        {
-            maskedTextBox3.Text = string.Empty;
-        }
+    private void OnDateTimePicker3Clear(object sender, EventArgs e)
+    {
+        dateTimePicker3.Value = DateTime.Now;
+    }
 
-        private void OnDateTimePicker3Clear(object sender, EventArgs e)
-        {
-            dateTimePicker3.Value = DateTime.Now;
-        }
+    private void OnNumericUpDown2Clear(object sender, EventArgs e)
+    {
+        numericUpDown2.Value = numericUpDown2.Minimum;
+    }
 
-        private void OnNumericUpDown2Clear(object sender, EventArgs e)
-        {
-            numericUpDown2.Value = numericUpDown2.Minimum;
-        }
+    private void appMenu_Click(object sender, EventArgs e)
+    {
+        Close();
+    }
 
-        private void appMenu_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Settings.Default.Save();
-        }
+    private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+    {
+        Settings.Default.Save();
     }
 }

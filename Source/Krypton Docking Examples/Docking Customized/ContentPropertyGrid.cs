@@ -12,26 +12,25 @@
 
 using System.Windows.Forms;
 
-namespace DockingCustomized
-{
-    public partial class ContentPropertyGrid : UserControl
-    {
-        public ContentPropertyGrid()
-        {
-            InitializeComponent();
-        }
+namespace DockingCustomized;
 
-        /// <summary> 
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
+public partial class ContentPropertyGrid : UserControl
+{
+    public ContentPropertyGrid()
+    {
+        InitializeComponent();
+    }
+
+    /// <summary> 
+    /// Clean up any resources being used.
+    /// </summary>
+    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing)
         {
-            if (disposing)
-            {
-                components?.Dispose();
-            }
-            base.Dispose(disposing);
+            components?.Dispose();
         }
+        base.Dispose(disposing);
     }
 }

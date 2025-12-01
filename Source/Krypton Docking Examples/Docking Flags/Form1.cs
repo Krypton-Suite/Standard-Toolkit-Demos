@@ -18,74 +18,73 @@ using Krypton.Docking;
 using Krypton.Navigator;
 using Krypton.Toolkit;
 
-namespace DockingFlags
+namespace DockingFlags;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
+    private int _count = 1;
+
+    public Form1()
     {
-        private int _count = 1;
+        InitializeComponent();
+    }
 
-        public Form1()
+    private KryptonPage NewDocument()
+    {
+        // Create new page with title and image
+        var p = new KryptonPage
         {
-            InitializeComponent();
-        }
+            Text = $"Document {_count}"
+        };
+        p.TextTitle = p.Text;
+        p.TextDescription = p.Text;
+        p.UniqueName = p.Text;
+        p.ImageSmall = (Bitmap)imageListSmall.Images[0];
 
-        private KryptonPage NewDocument()
+        // Add the control for display inside the page
+        var contentDoc = new ContentDocument
         {
-            // Create new page with title and image
-            var p = new KryptonPage
-            {
-                Text = $"Document {_count}"
-            };
-            p.TextTitle = p.Text;
-            p.TextDescription = p.Text;
-            p.UniqueName = p.Text;
-            p.ImageSmall = (Bitmap)imageListSmall.Images[0];
+            Dock = DockStyle.Fill
+        };
+        p.Controls.Add(contentDoc);
 
-            // Add the control for display inside the page
-            var contentDoc = new ContentDocument
-            {
-                Dock = DockStyle.Fill
-            };
-            p.Controls.Add(contentDoc);
+        _count++;
+        return p;
+    }
 
-            _count++;
-            return p;
-        }
-
-        private KryptonPage NewFlags()
+    private KryptonPage NewFlags()
+    {
+        // Create new page with title and image
+        var p = new KryptonPage
         {
-            // Create new page with title and image
-            var p = new KryptonPage
-            {
-                Text = $"Flags {_count}"
-            };
-            p.TextTitle = p.Text;
-            p.TextDescription = p.Text;
-            p.UniqueName = p.Text;
-            p.ImageSmall = (Bitmap)imageListSmall.Images[1];
+            Text = $"Flags {_count}"
+        };
+        p.TextTitle = p.Text;
+        p.TextDescription = p.Text;
+        p.UniqueName = p.Text;
+        p.ImageSmall = (Bitmap)imageListSmall.Images[1];
 
-            // Add the control for display inside the page
-            var contentFlags = new ContentFlags(p)
-            {
-                Dock = DockStyle.Fill
-            };
-            p.Controls.Add(contentFlags);
-
-            _count++;
-            return p;
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
+        // Add the control for display inside the page
+        var contentFlags = new ContentFlags(p)
         {
-            // Setup docking functionality
-            KryptonDockingWorkspace w = kryptonDockingManager.ManageWorkspace(kryptonDockableWorkspace);
-            kryptonDockingManager.ManageControl(kryptonPanel, w);
-            kryptonDockingManager.ManageFloating(this);
+            Dock = DockStyle.Fill
+        };
+        p.Controls.Add(contentFlags);
 
-            // Add docking pages
-            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Left, new[] { NewFlags(), NewFlags() });
-            kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Bottom, new[] { NewDocument() });
-            kryptonDockingManager.AddToWorkspace("Workspace", new[] { NewFlags(), NewFlags() });
-        }
+        _count++;
+        return p;
+    }
+
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        // Setup docking functionality
+        KryptonDockingWorkspace w = kryptonDockingManager.ManageWorkspace(kryptonDockableWorkspace);
+        kryptonDockingManager.ManageControl(kryptonPanel, w);
+        kryptonDockingManager.ManageFloating(this);
+
+        // Add docking pages
+        kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Left, new[] { NewFlags(), NewFlags() });
+        kryptonDockingManager.AddDockspace(@"Control", DockingEdge.Bottom, new[] { NewDocument() });
+        kryptonDockingManager.AddToWorkspace("Workspace", new[] { NewFlags(), NewFlags() });
     }
 }

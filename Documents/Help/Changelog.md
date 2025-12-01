@@ -1,5 +1,11 @@
 # <img src="https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png?raw=true"> Standard Toolkit Demos - ChangeLog
 
+## 2026-11-xx - Build 2611 - November 2026
+
+* Implemented Krypton MenuStrip and ToolStrip examples
+* Implemented [#247](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/247), Use `filescoped` namespaces
+* Implemented [#243](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/243), Support the new `slnx` format
+
 
 ## 2025-11-24 - Build 2511 - November
 * Implemented [#251](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/251) 'KDataGridView' demo updated; new demo `KryptonToolStripMenuItem`.

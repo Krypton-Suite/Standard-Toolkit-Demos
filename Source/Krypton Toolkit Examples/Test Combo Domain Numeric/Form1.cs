@@ -5,10 +5,9 @@
 
 using Krypton.Toolkit;
 
-namespace TestComboDomainNumeric
+namespace TestComboDomainNumeric;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
-    {
-        public Form1() => InitializeComponent();
-    }
+    public Form1() => InitializeComponent();
 }

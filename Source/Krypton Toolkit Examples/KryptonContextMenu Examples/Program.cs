@@ -13,20 +13,19 @@
 using System;
 using System.Windows.Forms;
 
-namespace KryptonContextMenuExamples
+namespace KryptonContextMenuExamples;
+
+internal static class Program
 {
-    internal static class Program
+    /// <summary>
+    /// The main entry point for the application.
+    /// </summary>
+    [STAThread]
+    private static void Main()
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        private static void Main()
-        {
-            Application.EnableVisualStyles();
-            //Application.SetHighDpiMode(HighDpiMode.SystemAware);
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-        }
+        Application.EnableVisualStyles();
+        //Application.SetHighDpiMode(HighDpiMode.SystemAware);
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.Run(new Form1());
     }
 }

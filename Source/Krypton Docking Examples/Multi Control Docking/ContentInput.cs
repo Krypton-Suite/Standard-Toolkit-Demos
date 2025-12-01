@@ -12,25 +12,24 @@
 
 using System.Windows.Forms;
 
-namespace MultiControlDocking
-{
-    public partial class ContentInput : UserControl
-    {
-        public ContentInput()
-        {
-            InitializeComponent();
-        }
+namespace MultiControlDocking;
 
-        private void kryptonPanel_MouseDown(object sender, MouseEventArgs e)
+public partial class ContentInput : UserControl
+{
+    public ContentInput()
+    {
+        InitializeComponent();
+    }
+
+    private void kryptonPanel_MouseDown(object sender, MouseEventArgs e)
+    {
+        // Only interested in left mouse down
+        if (e.Button == MouseButtons.Left)
         {
-            // Only interested in left mouse down
-            if (e.Button == MouseButtons.Left)
+            // If the content does not have the focus then give it focus now
+            if (!ContainsFocus)
             {
-                // If the content does not have the focus then give it focus now
-                if (!ContainsFocus)
-                {
-                    kryptonPanel.SelectNextControl(this, true, true, true, false);
-                }
+                kryptonPanel.SelectNextControl(this, true, true, true, false);
             }
         }
     }

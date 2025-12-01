@@ -16,106 +16,105 @@ using System.Windows.Forms;
 using Krypton.Ribbon;
 using Krypton.Toolkit;
 
-namespace KryptonGalleryExamples
+namespace KryptonGalleryExamples;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
+    public Form1()
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+    }
 
-        private void radioSmallList_CheckedChanged(object sender, EventArgs e)
+    private void radioSmallList_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioSmallList.Checked)
         {
-            if (radioSmallList.Checked)
+            kryptonGallery1.ImageList = imageListSmall;
+        }
+    }
+
+    private void radioMediumList_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioMediumList.Checked)
+        {
+            kryptonGallery1.ImageList = imageListMedium;
+        }
+    }
+
+    private void radioLargeList_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioLargeList.Checked)
+        {
+            kryptonGallery1.ImageList = imageListLarge;
+        }
+    }
+
+    private void numericWidth_ValueChanged(object sender, EventArgs e)
+    {
+        kryptonGallery1.PreferredItemSize = kryptonGallery1.PreferredItemSize with { Width = Convert.ToInt32(numericWidth.Value) };
+    }
+
+    private void numericHeight_ValueChanged(object sender, EventArgs e)
+    {
+        kryptonGallery1.PreferredItemSize = kryptonGallery1.PreferredItemSize with { Height = Convert.ToInt32(numericHeight.Value) };
+    }
+
+    private void checkBoxGroupImages_CheckedChanged(object sender, EventArgs e)
+    {
+        kryptonGallery1.DropButtonRanges.Clear();
+        if (checkBoxGroupImages.Checked)
+        {
+            kryptonGallery1.DropButtonRanges.Add(kryptonGalleryRange1);
+            kryptonGallery1.DropButtonRanges.Add(kryptonGalleryRange2);
+            kryptonGallery1.DropButtonRanges.Add(kryptonGalleryRange3);
+        }
+    }
+
+    private void kryptonGallery1_GalleryDropMenu(object sender, GalleryDropMenuEventArgs e)
+    {
+        if (checkBoxAddCustomItems.Checked)
+        {
+            var h = new KryptonContextMenuHeading
             {
-                kryptonGallery1.ImageList = imageListSmall;
-            }
-        }
+                Text = "Customize Drop Menu"
+            };
 
-        private void radioMediumList_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioMediumList.Checked)
+            var items1 = new KryptonContextMenuItems();
+            var item1 = new KryptonContextMenuItem
             {
-                kryptonGallery1.ImageList = imageListMedium;
-            }
-        }
-
-        private void radioLargeList_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioLargeList.Checked)
+                Text = "Custom Entry 1"
+            };
+            var item2 = new KryptonContextMenuItem
             {
-                kryptonGallery1.ImageList = imageListLarge;
-            }
-        }
+                Text = "Custom Entry 2",
+                Checked = true
+            };
+            items1.Items.Add(item1);
+            items1.Items.Add(item2);
 
-        private void numericWidth_ValueChanged(object sender, EventArgs e)
-        {
-            kryptonGallery1.PreferredItemSize = kryptonGallery1.PreferredItemSize with { Width = Convert.ToInt32(numericWidth.Value) };
-        }
-
-        private void numericHeight_ValueChanged(object sender, EventArgs e)
-        {
-            kryptonGallery1.PreferredItemSize = kryptonGallery1.PreferredItemSize with { Height = Convert.ToInt32(numericHeight.Value) };
-        }
-
-        private void checkBoxGroupImages_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonGallery1.DropButtonRanges.Clear();
-            if (checkBoxGroupImages.Checked)
+            var items2 = new KryptonContextMenuItems();
+            var item3 = new KryptonContextMenuItem
             {
-                kryptonGallery1.DropButtonRanges.Add(kryptonGalleryRange1);
-                kryptonGallery1.DropButtonRanges.Add(kryptonGalleryRange2);
-                kryptonGallery1.DropButtonRanges.Add(kryptonGalleryRange3);
-            }
-        }
-
-        private void kryptonGallery1_GalleryDropMenu(object sender, GalleryDropMenuEventArgs e)
-        {
-            if (checkBoxAddCustomItems.Checked)
+                Text = "Custom Entry 3"
+            };
+            var item4 = new KryptonContextMenuItem
             {
-                var h = new KryptonContextMenuHeading
-                {
-                    Text = "Customize Drop Menu"
-                };
+                Text = "Custom Entry 4",
+                CheckState = CheckState.Indeterminate
+            };
+            items2.Items.Add(item3);
+            items2.Items.Add(item4);
 
-                var items1 = new KryptonContextMenuItems();
-                var item1 = new KryptonContextMenuItem
-                {
-                    Text = "Custom Entry 1"
-                };
-                var item2 = new KryptonContextMenuItem
-                {
-                    Text = "Custom Entry 2",
-                    Checked = true
-                };
-                items1.Items.Add(item1);
-                items1.Items.Add(item2);
-
-                var items2 = new KryptonContextMenuItems();
-                var item3 = new KryptonContextMenuItem
-                {
-                    Text = "Custom Entry 3"
-                };
-                var item4 = new KryptonContextMenuItem
-                {
-                    Text = "Custom Entry 4",
-                    CheckState = CheckState.Indeterminate
-                };
-                items2.Items.Add(item3);
-                items2.Items.Add(item4);
-
-                e.KryptonContextMenu.Items.Insert(0, new KryptonContextMenuSeparator());
-                e.KryptonContextMenu.Items.Insert(0, items1);
-                e.KryptonContextMenu.Items.Insert(0, h);
-                e.KryptonContextMenu.Items.Add(new KryptonContextMenuSeparator());
-                e.KryptonContextMenu.Items.Add(items2);
-            }
+            e.KryptonContextMenu.Items.Insert(0, new KryptonContextMenuSeparator());
+            e.KryptonContextMenu.Items.Insert(0, items1);
+            e.KryptonContextMenu.Items.Insert(0, h);
+            e.KryptonContextMenu.Items.Add(new KryptonContextMenuSeparator());
+            e.KryptonContextMenu.Items.Add(items2);
         }
+    }
 
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+    private void buttonClose_Click(object sender, EventArgs e)
+    {
+        Close();
     }
 }

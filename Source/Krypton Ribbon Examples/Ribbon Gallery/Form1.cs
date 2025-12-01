@@ -16,88 +16,87 @@ using System.Windows.Forms;
 using Krypton.Ribbon;
 using Krypton.Toolkit;
 
-namespace RibbonGallery
+namespace RibbonGallery;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
+    public Form1()
     {
-        public Form1()
+        InitializeComponent();
+    }
+
+    private void galleryCustom_GalleryDropMenu(object sender, GalleryDropMenuEventArgs e)
+    {
+        var h = new KryptonContextMenuHeading
         {
-            InitializeComponent();
-        }
+            Text = "Customize Drop Menu"
+        };
 
-        private void galleryCustom_GalleryDropMenu(object sender, GalleryDropMenuEventArgs e)
+        var items1 = new KryptonContextMenuItems();
+        var item1 = new KryptonContextMenuItem
         {
-            var h = new KryptonContextMenuHeading
-            {
-                Text = "Customize Drop Menu"
-            };
-
-            var items1 = new KryptonContextMenuItems();
-            var item1 = new KryptonContextMenuItem
-            {
-                Text = "Custom Entry 1"
-            };
-            var item2 = new KryptonContextMenuItem
-            {
-                Text = "Custom Entry 2",
-                Checked = true
-            };
-            items1.Items.Add(item1);
-            items1.Items.Add(item2);
-
-            var items2 = new KryptonContextMenuItems();
-            var item3 = new KryptonContextMenuItem
-            {
-                Text = "Custom Entry 3"
-            };
-            var item4 = new KryptonContextMenuItem
-            {
-                Text = "Custom Entry 4",
-                CheckState = CheckState.Indeterminate
-            };
-            items2.Items.Add(item3);
-            items2.Items.Add(item4);
-
-            e.KryptonContextMenu.Items.Insert(0, new KryptonContextMenuSeparator());
-            e.KryptonContextMenu.Items.Insert(0, items1);
-            e.KryptonContextMenu.Items.Insert(0, h);
-            e.KryptonContextMenu.Items.Add(new KryptonContextMenuSeparator());
-            e.KryptonContextMenu.Items.Add(items2);
-        }
-
-        private void kryptonRibbonGroupButton1_Click(object sender, EventArgs e)
+            Text = "Custom Entry 1"
+        };
+        var item2 = new KryptonContextMenuItem
         {
-            if (kryptonRibbonGroupButton1.Checked)
-            {
-                kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
-                kryptonRibbonGroupButton2.Checked = false;
-                kryptonRibbonGroupButton3.Checked = false;
-            }
-        }
+            Text = "Custom Entry 2",
+            Checked = true
+        };
+        items1.Items.Add(item1);
+        items1.Items.Add(item2);
 
-        private void kryptonRibbonGroupButton2_Click(object sender, EventArgs e)
+        var items2 = new KryptonContextMenuItems();
+        var item3 = new KryptonContextMenuItem
         {
-            if (kryptonRibbonGroupButton2.Checked)
-            {
-                kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Silver;
-                kryptonRibbonGroupButton1.Checked = false;
-                kryptonRibbonGroupButton3.Checked = false;
-            }
-        }
+            Text = "Custom Entry 3"
+        };
+        var item4 = new KryptonContextMenuItem
+        {
+            Text = "Custom Entry 4",
+            CheckState = CheckState.Indeterminate
+        };
+        items2.Items.Add(item3);
+        items2.Items.Add(item4);
 
-        private void kryptonRibbonGroupButton3_Click(object sender, EventArgs e)
-        {
-            if (kryptonRibbonGroupButton3.Checked)
-            {
-                kryptonManager1.GlobalPaletteMode = PaletteMode.SparkleOrange;
-                kryptonRibbonGroupButton1.Checked = false;
-                kryptonRibbonGroupButton2.Checked = false;
-            }
-        }
+        e.KryptonContextMenu.Items.Insert(0, new KryptonContextMenuSeparator());
+        e.KryptonContextMenu.Items.Insert(0, items1);
+        e.KryptonContextMenu.Items.Insert(0, h);
+        e.KryptonContextMenu.Items.Add(new KryptonContextMenuSeparator());
+        e.KryptonContextMenu.Items.Add(items2);
+    }
 
-        private void kryptonContextMenuItem1_Click(object sender, EventArgs e)
+    private void kryptonRibbonGroupButton1_Click(object sender, EventArgs e)
+    {
+        if (kryptonRibbonGroupButton1.Checked)
         {
-            Close();
+            kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
+            kryptonRibbonGroupButton2.Checked = false;
+            kryptonRibbonGroupButton3.Checked = false;
         }
+    }
+
+    private void kryptonRibbonGroupButton2_Click(object sender, EventArgs e)
+    {
+        if (kryptonRibbonGroupButton2.Checked)
+        {
+            kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Silver;
+            kryptonRibbonGroupButton1.Checked = false;
+            kryptonRibbonGroupButton3.Checked = false;
+        }
+    }
+
+    private void kryptonRibbonGroupButton3_Click(object sender, EventArgs e)
+    {
+        if (kryptonRibbonGroupButton3.Checked)
+        {
+            kryptonManager1.GlobalPaletteMode = PaletteMode.SparkleOrange;
+            kryptonRibbonGroupButton1.Checked = false;
+            kryptonRibbonGroupButton2.Checked = false;
+        }
+    }
+
+    private void kryptonContextMenuItem1_Click(object sender, EventArgs e)
+    {
+        Close();
     }
 }

@@ -7,21 +7,20 @@
 using System;
 using System.Windows.Forms;
 
-namespace KryptonPropertyGridExample
+namespace KryptonPropertyGridExample;
+
+internal static class Program
 {
-    internal static class Program
+    /// <summary>
+    /// The main entry point for the application.
+    /// </summary>
+    [STAThread]
+    private static void Main()
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        private static void Main()
-        {
-            Application.EnableVisualStyles();
-            // See https://github.com/Krypton-Suite/Standard-Toolkit/issues/1109#issuecomment-1695481549:
-            // Setting the following to `true` will generate "Jagged Text" in the control
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-        }
+        Application.EnableVisualStyles();
+        // See https://github.com/Krypton-Suite/Standard-Toolkit/issues/1109#issuecomment-1695481549:
+        // Setting the following to `true` will generate "Jagged Text" in the control
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.Run(new Form1());
     }
 }

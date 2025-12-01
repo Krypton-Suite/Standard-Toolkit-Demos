@@ -13,17 +13,16 @@
 using System;
 using System.Windows.Forms;
 
-namespace KryptonCheckSetExamples
+namespace KryptonCheckSetExamples;
+
+public partial class Form1 : Form
 {
-    public partial class Form1 : Form
+    public Form1() => InitializeComponent();
+
+    private void buttonClose_Click(object sender, EventArgs e) => Close();
+
+    private void betaOffice_Click(object sender, EventArgs e)
     {
-        public Form1() => InitializeComponent();
 
-        private void buttonClose_Click(object sender, EventArgs e) => Close();
-
-        private void betaOffice_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

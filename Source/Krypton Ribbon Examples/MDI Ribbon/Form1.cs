@@ -15,83 +15,82 @@ using System.Windows.Forms;
 
 using Krypton.Toolkit;
 
-namespace MDIRibbon
+namespace MDIRibbon;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
+    private int _count = 1;
+
+    public Form1()
     {
-        private int _count = 1;
+        InitializeComponent();
+    }
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        // Start by creating three MDI child windows
+        AddMDIChildWindow();
+        AddMDIChildWindow();
+        AddMDIChildWindow();
+    }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // Start by creating three MDI child windows
-            AddMDIChildWindow();
-            AddMDIChildWindow();
-            AddMDIChildWindow();
-        }
+    private void buttonNewWindow_Click(object sender, EventArgs e)
+    {
+        // Add another MDI child window
+        AddMDIChildWindow();
+    }
 
-        private void buttonNewWindow_Click(object sender, EventArgs e)
+    private void buttonCloseWindow_Click(object sender, EventArgs e)
+    {
+        // Close just the active child
+        if (ActiveMdiChild != null)
         {
-            // Add another MDI child window
-            AddMDIChildWindow();
+            ActiveMdiChild.Close();
         }
+    }
 
-        private void buttonCloseWindow_Click(object sender, EventArgs e)
+    private void buttonCloseAllWindows_Click(object sender, EventArgs e)
+    {
+        // Keep closing active children until all gone
+        while (ActiveMdiChild != null)
         {
-            // Close just the active child
-            if (ActiveMdiChild != null)
-            {
-                ActiveMdiChild.Close();
-            }
+            ActiveMdiChild.Close();
         }
+    }
 
-        private void buttonCloseAllWindows_Click(object sender, EventArgs e)
-        {
-            // Keep closing active children until all gone
-            while (ActiveMdiChild != null)
-            {
-                ActiveMdiChild.Close();
-            }
-        }
+    private void buttonCascade_Click(object sender, EventArgs e)
+    {
+        LayoutMdi(MdiLayout.Cascade);
+    }
 
-        private void buttonCascade_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.Cascade);
-        }
+    private void buttonTileHorizontal_Click(object sender, EventArgs e)
+    {
+        LayoutMdi(MdiLayout.TileHorizontal);
+    }
 
-        private void buttonTileHorizontal_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.TileHorizontal);
-        }
+    private void buttonTileVertical_Click(object sender, EventArgs e)
+    {
+        LayoutMdi(MdiLayout.TileVertical);
+    }
 
-        private void buttonTileVertical_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.TileVertical);
-        }
+    private void buttonSpecHelp_Click(object sender, EventArgs e)
+    {
+        var f = new Form3();
+        f.ShowDialog();
+    }
 
-        private void buttonSpecHelp_Click(object sender, EventArgs e)
+    private void AddMDIChildWindow()
+    {
+        var f = new Form2
         {
-            var f = new Form3();
-            f.ShowDialog();
-        }
+            Text = $"Child {(_count++)}",
+            MdiParent = this
+        };
+        f.Show();
+    }
 
-        private void AddMDIChildWindow()
-        {
-            var f = new Form2
-            {
-                Text = $"Child {(_count++)}",
-                MdiParent = this
-            };
-            f.Show();
-        }
-
-        private void appMenu_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+    private void appMenu_Click(object sender, EventArgs e)
+    {
+        Close();
     }
 }

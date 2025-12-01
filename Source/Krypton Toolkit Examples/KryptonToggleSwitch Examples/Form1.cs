@@ -11,30 +11,29 @@ using Krypton.Toolkit;
 
 using KryptonToggleSwitchExamples.Properties;
 
-namespace KryptonToggleSwitchExamples
+namespace KryptonToggleSwitchExamples;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
+    public Form1()
     {
-        public Form1()
+        InitializeComponent();
+
+        using (var ms = new System.IO.MemoryStream(Resources.Krypton))
         {
-            InitializeComponent();
-
-            using (var ms = new System.IO.MemoryStream(Resources.Krypton))
-            {
-                Icon = new Icon(ms);
-            }
+            Icon = new Icon(ms);
         }
+    }
 
-        private void ktsTest_CheckedChanged(object sender, EventArgs e) => kryptonWrapLabel1.Text = $@"Is toggle switch checked: {ktsTest.Checked}";
+    private void ktsTest_CheckedChanged(object sender, EventArgs e) => kryptonWrapLabel1.Text = $@"Is toggle switch checked: {ktsTest.Checked}";
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            kryptonWrapLabel1.Text = $@"Is toggle switch checked: {ktsTest.Checked}";
-        }
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        kryptonWrapLabel1.Text = $@"Is toggle switch checked: {ktsTest.Checked}";
+    }
 
-        private void kbtnClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+    private void kbtnClose_Click(object sender, EventArgs e)
+    {
+        Application.Exit();
     }
 }

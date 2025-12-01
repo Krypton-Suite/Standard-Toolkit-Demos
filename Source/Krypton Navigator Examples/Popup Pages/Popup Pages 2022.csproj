@@ -13,6 +13,7 @@
         <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
     <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
     <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+		<LangVersion>latest</LangVersion>
 
     </PropertyGroup>
     <ItemGroup>

@@ -11,39 +11,38 @@ using System.Windows.Forms;
 
 using Krypton.Toolkit;
 
-namespace KryptonExplorer
+namespace KryptonExplorer;
+
+public partial class HelpFileLocator : KryptonForm
 {
-    public partial class HelpFileLocator : KryptonForm
+    private Properties.Settings _settings = new();
+
+    public HelpFileLocator()
     {
-        private Properties.Settings _settings = new();
+        InitializeComponent();
+    }
 
-        public HelpFileLocator()
+    private void kcmdBrowseForFile_Execute(object sender, EventArgs e)
+    {
+        var ofd = new OpenFileDialog()
         {
-            InitializeComponent();
+            Title = @"Browse for Help File:",
+            Filter = @"Compiled HTML Help Files|*.chm"
+        };
+
+        if (ofd.ShowDialog() == DialogResult.OK)
+        {
+            ktxtHelpFilePath.Text = Path.GetFullPath(ofd.FileName);
         }
+    }
 
-        private void kcmdBrowseForFile_Execute(object sender, EventArgs e)
+    private void kbtnOk_Click(object sender, EventArgs e)
+    {
+        if (!string.IsNullOrEmpty(ktxtHelpFilePath.Text))
         {
-            var ofd = new OpenFileDialog()
-            {
-                Title = @"Browse for Help File:",
-                Filter = @"Compiled HTML Help Files|*.chm"
-            };
+            _settings.HelpFileLocation = ktxtHelpFilePath.Text;
 
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                ktxtHelpFilePath.Text = Path.GetFullPath(ofd.FileName);
-            }
-        }
-
-        private void kbtnOk_Click(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrEmpty(ktxtHelpFilePath.Text))
-            {
-                _settings.HelpFileLocation = ktxtHelpFilePath.Text;
-
-                _settings.Save();
-            }
+            _settings.Save();
         }
     }
 }

@@ -15,30 +15,29 @@ using System.Windows.Forms;
 
 using Krypton.Toolkit;
 
-namespace KryptonWrapLabelExamples
+namespace KryptonWrapLabelExamples;
+
+public partial class Form1 : Form
 {
-    public partial class Form1 : Form
+    public Form1() => InitializeComponent();
+
+    private void Form1_Load(object sender, EventArgs e) => propertyGrid.SelectedObject = kryptonWrapLabel;
+
+    private void buttonNormal_Click(object sender, EventArgs e)
     {
-        public Form1() => InitializeComponent();
-
-        private void Form1_Load(object sender, EventArgs e) => propertyGrid.SelectedObject = kryptonWrapLabel;
-
-        private void buttonNormal_Click(object sender, EventArgs e)
-        {
-            kryptonWrapLabel.LabelStyle = LabelStyle.NormalControl;
-            propertyGrid.SelectedObject = kryptonWrapLabel;
-        }
-
-        private void buttonTitle_Click(object sender, EventArgs e)
-        {
-            kryptonWrapLabel.LabelStyle = LabelStyle.TitleControl;
-            propertyGrid.SelectedObject = kryptonWrapLabel;
-        }
-
-        private void buttonClose_Click(object sender, EventArgs e) => Close();
-
-        private void klwlblTest_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) =>
-            KryptonMessageBox.Show(@"Hello world!", @"Test", KryptonMessageBoxButtons.OK,
-                KryptonMessageBoxIcon.Information);
+        kryptonWrapLabel.LabelStyle = LabelStyle.NormalControl;
+        propertyGrid.SelectedObject = kryptonWrapLabel;
     }
+
+    private void buttonTitle_Click(object sender, EventArgs e)
+    {
+        kryptonWrapLabel.LabelStyle = LabelStyle.TitleControl;
+        propertyGrid.SelectedObject = kryptonWrapLabel;
+    }
+
+    private void buttonClose_Click(object sender, EventArgs e) => Close();
+
+    private void klwlblTest_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) =>
+        KryptonMessageBox.Show(@"Hello world!", @"Test", KryptonMessageBoxButtons.OK,
+            KryptonMessageBoxIcon.Information);
 }

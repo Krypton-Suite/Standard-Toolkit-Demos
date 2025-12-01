@@ -14,18 +14,17 @@ using System;
 
 using Krypton.Toolkit;
 
-namespace AutoShrinkingGroups
-{
-    public partial class Form1 : KryptonForm
-    {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+namespace AutoShrinkingGroups;
 
-        private void appMenu_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+public partial class Form1 : KryptonForm
+{
+    public Form1()
+    {
+        InitializeComponent();
+    }
+
+    private void appMenu_Click(object sender, EventArgs e)
+    {
+        Close();
     }
 }

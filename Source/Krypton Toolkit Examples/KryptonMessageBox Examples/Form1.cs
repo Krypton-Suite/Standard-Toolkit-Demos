@@ -16,12 +16,12 @@ using System.Windows.Forms;
 
 using Krypton.Toolkit;
 
-namespace KryptonMessageBoxExamples
+namespace KryptonMessageBoxExamples;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
-    {
-        private const string SEED_TEXT =
-            @"// *****************************************************************************
+    private const string SEED_TEXT =
+        @"// *****************************************************************************
 // BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
 //  © Component Factory Pty Ltd, 2006-2016, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
@@ -33,208 +33,207 @@ namespace KryptonMessageBoxExamples
 // *****************************************************************************
 ";
 
-        private MessageBoxIcon _mbIcon = MessageBoxIcon.Warning;
-        private KryptonMessageBoxIcon _kmbIcon = KryptonMessageBoxIcon.Warning;
-        private KryptonMessageBoxButtons _mbButtons = KryptonMessageBoxButtons.OKCancel;
-        private MessageBoxOptions _options = 0;
+    private MessageBoxIcon _mbIcon = MessageBoxIcon.Warning;
+    private KryptonMessageBoxIcon _kmbIcon = KryptonMessageBoxIcon.Warning;
+    private KryptonMessageBoxButtons _mbButtons = KryptonMessageBoxButtons.OKCancel;
+    private MessageBoxOptions _options = 0;
 
-        public Form1()
+    public Form1()
+    {
+        InitializeComponent();
+
+        // Handle the HelpRequested event for the following message.
+        HelpRequested += Form1_HelpRequested;   // https://github.com/Krypton-Suite/Standard-Toolkit/issues/868
+    }
+
+    private void icon_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioButtonNone.Checked)
         {
-            InitializeComponent();
-
-            // Handle the HelpRequested event for the following message.
-            HelpRequested += Form1_HelpRequested;   // https://github.com/Krypton-Suite/Standard-Toolkit/issues/868
+            _mbIcon = MessageBoxIcon.None;
+            _kmbIcon = KryptonMessageBoxIcon.None;
         }
-
-        private void icon_CheckedChanged(object sender, EventArgs e)
+        else if (kradError.Checked)
         {
-            if (radioButtonNone.Checked)
-            {
-                _mbIcon = MessageBoxIcon.None;
-                _kmbIcon = KryptonMessageBoxIcon.None;
-            }
-            else if (kradError.Checked)
-            {
-                _mbIcon = MessageBoxIcon.Error;
-                _kmbIcon = KryptonMessageBoxIcon.Error;
-            }
-            else if (kradQuestion.Checked)
-            {
-                _mbIcon = MessageBoxIcon.Question;
-                _kmbIcon = KryptonMessageBoxIcon.Question;
-            }
-            else if (kradWarning.Checked)
-            {
-                _mbIcon = MessageBoxIcon.Warning;
-                _kmbIcon = KryptonMessageBoxIcon.Warning;
-            }
-            else if (kradInformation.Checked)
-            {
-                _mbIcon = MessageBoxIcon.Information;
-                _kmbIcon = KryptonMessageBoxIcon.Information;
-            }
-            else if (rbShield.Checked)
-            {
-                _mbIcon = MessageBoxIcon.None;
-                _kmbIcon = KryptonMessageBoxIcon.Shield;
-            }
-            else if (!kradWinLogo.Checked)
-            {
-                _mbIcon = MessageBoxIcon.None;
-                _kmbIcon = KryptonMessageBoxIcon.WindowsLogo;
-            }
+            _mbIcon = MessageBoxIcon.Error;
+            _kmbIcon = KryptonMessageBoxIcon.Error;
         }
-
-        private void buttons_CheckedChanged(object sender, EventArgs e)
+        else if (kradQuestion.Checked)
         {
-            if (kradOK.Checked)
-            {
-                _mbButtons = KryptonMessageBoxButtons.OK;
-            }
-            else if (kradOKCancel.Checked)
-            {
-                _mbButtons = KryptonMessageBoxButtons.OKCancel;
-            }
-            else if (kradRetryCancel.Checked)
-            {
-                _mbButtons = KryptonMessageBoxButtons.RetryCancel;
-            }
-            else if (kradAbortRetryIgnore.Checked)
-            {
-                _mbButtons = KryptonMessageBoxButtons.AbortRetryIgnore;
-            }
-            else if (kradYesNo.Checked)
-            {
-                _mbButtons = KryptonMessageBoxButtons.YesNo;
-            }
-            else if (kradYesNoCancel.Checked)
-            {
-                _mbButtons = KryptonMessageBoxButtons.YesNoCancel;
-            }
-            else if (kradCancelTryContinue.Checked)
-            {
-                _mbButtons = KryptonMessageBoxButtons.CancelTryContinue;
-            }
+            _mbIcon = MessageBoxIcon.Question;
+            _kmbIcon = KryptonMessageBoxIcon.Question;
         }
-
-        private void ChkRightAlign_CheckedChanged(object sender, EventArgs e)
+        else if (kradWarning.Checked)
         {
-            if (kchkRightAlign.Checked)
-            {
-                _options |= MessageBoxOptions.RightAlign;
-            }
-            else
-            {
-                _options &= ~MessageBoxOptions.RightAlign;
-            }
+            _mbIcon = MessageBoxIcon.Warning;
+            _kmbIcon = KryptonMessageBoxIcon.Warning;
         }
-
-        private void ChkRtlReading_CheckedChanged(object sender, EventArgs e)
+        else if (kradInformation.Checked)
         {
-            if (kchkRtlReading.Checked)
-            {
-                _options |= MessageBoxOptions.RtlReading;
-            }
-            else
-            {
-                _options &= ~MessageBoxOptions.RtlReading;
-            }
+            _mbIcon = MessageBoxIcon.Information;
+            _kmbIcon = KryptonMessageBoxIcon.Information;
         }
-
-        private void kbtnShow_Click(object sender, EventArgs e)
+        else if (rbShield.Checked)
         {
-            if (!kradWinLogo.Checked
-                && !rbShield.Checked
+            _mbIcon = MessageBoxIcon.None;
+            _kmbIcon = KryptonMessageBoxIcon.Shield;
+        }
+        else if (!kradWinLogo.Checked)
+        {
+            _mbIcon = MessageBoxIcon.None;
+            _kmbIcon = KryptonMessageBoxIcon.WindowsLogo;
+        }
+    }
+
+    private void buttons_CheckedChanged(object sender, EventArgs e)
+    {
+        if (kradOK.Checked)
+        {
+            _mbButtons = KryptonMessageBoxButtons.OK;
+        }
+        else if (kradOKCancel.Checked)
+        {
+            _mbButtons = KryptonMessageBoxButtons.OKCancel;
+        }
+        else if (kradRetryCancel.Checked)
+        {
+            _mbButtons = KryptonMessageBoxButtons.RetryCancel;
+        }
+        else if (kradAbortRetryIgnore.Checked)
+        {
+            _mbButtons = KryptonMessageBoxButtons.AbortRetryIgnore;
+        }
+        else if (kradYesNo.Checked)
+        {
+            _mbButtons = KryptonMessageBoxButtons.YesNo;
+        }
+        else if (kradYesNoCancel.Checked)
+        {
+            _mbButtons = KryptonMessageBoxButtons.YesNoCancel;
+        }
+        else if (kradCancelTryContinue.Checked)
+        {
+            _mbButtons = KryptonMessageBoxButtons.CancelTryContinue;
+        }
+    }
+
+    private void ChkRightAlign_CheckedChanged(object sender, EventArgs e)
+    {
+        if (kchkRightAlign.Checked)
+        {
+            _options |= MessageBoxOptions.RightAlign;
+        }
+        else
+        {
+            _options &= ~MessageBoxOptions.RightAlign;
+        }
+    }
+
+    private void ChkRtlReading_CheckedChanged(object sender, EventArgs e)
+    {
+        if (kchkRtlReading.Checked)
+        {
+            _options |= MessageBoxOptions.RtlReading;
+        }
+        else
+        {
+            _options &= ~MessageBoxOptions.RtlReading;
+        }
+    }
+
+    private void kbtnShow_Click(object sender, EventArgs e)
+    {
+        if (!kradWinLogo.Checked
+            && !rbShield.Checked
 #if NET6_0_OR_GREATER
 #else
-                && !kradCancelTryContinue.Checked
+            && !kradCancelTryContinue.Checked
 #endif
-               )
-            {
-                if (chkShowHelp.Checked)
-                {
-                    MessageBox.Show(textBoxMessage.Text, textBoxCaption.Text,
-                        (MessageBoxButtons)_mbButtons,
-                        _mbIcon, MessageBoxDefaultButton.Button1,
-                        _options,
-                        chkShowHelp.Checked);
-                }
-                else
-                {
-                    MessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text,
-                        (MessageBoxButtons)_mbButtons,
-                        _mbIcon, MessageBoxDefaultButton.Button1,
-                        _options);
-                }
-            }
-
-            var res = KryptonMessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text,
-                        _mbButtons,
-                        displayHelpButton: chkShowHelp.Checked,
-                        _kmbIcon, KryptonMessageBoxDefaultButton.Button1,
-                        options: _options);
-
-            textBoxMessage.Text = $@"Krypton DialogResult = {res}";
-        }
-
-        /// <summary>
-        /// Based on code from https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.messagebox.show?view=windowsdesktop-7.0#system-windows-forms-messagebox-show(system-string-system-string-system-windows-forms-messageboxbuttons-system-windows-forms-messageboxicon-system-windows-forms-messageboxdefaultbutton-system-windows-forms-messageboxoptions-system-boolean)
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="hlpEvent"></param>
-        private void Form1_HelpRequested(object? sender, HelpEventArgs hlpEvent)
+           )
         {
-            // Create a custom Help window in response to the HelpRequested event.
-            using var helpForm = new Form {
-                // Set up the form position, size, and title caption.
-                StartPosition = FormStartPosition.Manual,
-                Size = new Size(200, 400),
-                DesktopLocation = new Point(DesktopBounds.X + Size.Width, DesktopBounds.Top),
-                Text = @"Help Form"
-            };
-
-            // Create a label to contain the Help text.
-            Label helpLabel = new Label();
-
-            // Add the label to the form and set its text.
-            helpForm.Controls.Add(helpLabel);
-            helpLabel.Dock = DockStyle.Fill;
-
-            if (sender != null)
+            if (chkShowHelp.Checked)
             {
-                // Use the sender parameter to identify the context of the Help request.
-                // The parameter must be cast to the Control type to get the Tag property.
-                Control senderControl = (Control)sender;
-
-                helpLabel.Text = $@"Help information shown in response to user action on the '{(string?)senderControl!.Tag}' message.";
+                MessageBox.Show(textBoxMessage.Text, textBoxCaption.Text,
+                    (MessageBoxButtons)_mbButtons,
+                    _mbIcon, MessageBoxDefaultButton.Button1,
+                    _options,
+                    chkShowHelp.Checked);
             }
-
-            // Set the Help form to be owned by the main form. This helps
-            // to ensure that the Help form is disposed of.
-            AddOwnedForm(helpForm);
-
-            // Show the custom Help window.
-            helpForm.Show();
-
-            // Indicate that the HelpRequested event is handled.
-            hlpEvent.Handled = true;
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            foreach (string value in Enum.GetNames(typeof(KryptonMessageBoxIcon)))
+            else
             {
-                kcmbIcons.Items.Add(value);
+                MessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text,
+                    (MessageBoxButtons)_mbButtons,
+                    _mbIcon, MessageBoxDefaultButton.Button1,
+                    _options);
             }
         }
 
-        private void kcmbIcons_SelectedIndexChanged(object sender, EventArgs e) => _kmbIcon = (KryptonMessageBoxIcon)Enum.Parse(typeof(KryptonMessageBoxIcon), kcmbIcons.Text);
+        var res = KryptonMessageBox.Show(this, textBoxMessage.Text, textBoxCaption.Text,
+                    _mbButtons,
+                    displayHelpButton: chkShowHelp.Checked,
+                    _kmbIcon, KryptonMessageBoxDefaultButton.Button1,
+                    options: _options);
 
-        private void kbtnDummyText_Click(object sender, EventArgs e)
+        textBoxMessage.Text = $@"Krypton DialogResult = {res}";
+    }
+
+    /// <summary>
+    /// Based on code from https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.messagebox.show?view=windowsdesktop-7.0#system-windows-forms-messagebox-show(system-string-system-string-system-windows-forms-messageboxbuttons-system-windows-forms-messageboxicon-system-windows-forms-messageboxdefaultbutton-system-windows-forms-messageboxoptions-system-boolean)
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="hlpEvent"></param>
+    private void Form1_HelpRequested(object? sender, HelpEventArgs hlpEvent)
+    {
+        // Create a custom Help window in response to the HelpRequested event.
+        using var helpForm = new Form {
+            // Set up the form position, size, and title caption.
+            StartPosition = FormStartPosition.Manual,
+            Size = new Size(200, 400),
+            DesktopLocation = new Point(DesktopBounds.X + Size.Width, DesktopBounds.Top),
+            Text = @"Help Form"
+        };
+
+        // Create a label to contain the Help text.
+        Label helpLabel = new Label();
+
+        // Add the label to the form and set its text.
+        helpForm.Controls.Add(helpLabel);
+        helpLabel.Dock = DockStyle.Fill;
+
+        if (sender != null)
         {
-            textBoxMessage.Text = string.Empty;
+            // Use the sender parameter to identify the context of the Help request.
+            // The parameter must be cast to the Control type to get the Tag property.
+            Control senderControl = (Control)sender;
 
-            textBoxMessage.Text = SEED_TEXT;
+            helpLabel.Text = $@"Help information shown in response to user action on the '{(string?)senderControl!.Tag}' message.";
         }
+
+        // Set the Help form to be owned by the main form. This helps
+        // to ensure that the Help form is disposed of.
+        AddOwnedForm(helpForm);
+
+        // Show the custom Help window.
+        helpForm.Show();
+
+        // Indicate that the HelpRequested event is handled.
+        hlpEvent.Handled = true;
+    }
+
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        foreach (string value in Enum.GetNames(typeof(KryptonMessageBoxIcon)))
+        {
+            kcmbIcons.Items.Add(value);
+        }
+    }
+
+    private void kcmbIcons_SelectedIndexChanged(object sender, EventArgs e) => _kmbIcon = (KryptonMessageBoxIcon)Enum.Parse(typeof(KryptonMessageBoxIcon), kcmbIcons.Text);
+
+    private void kbtnDummyText_Click(object sender, EventArgs e)
+    {
+        textBoxMessage.Text = string.Empty;
+
+        textBoxMessage.Text = SEED_TEXT;
     }
 }

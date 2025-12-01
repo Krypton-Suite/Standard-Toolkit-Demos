@@ -13,18 +13,17 @@
 using System;
 using System.Windows.Forms;
 
-namespace StandardDocking
-{
-    public partial class ContentDocument : UserControl
-    {
-        public ContentDocument()
-        {
-            InitializeComponent();
-        }
+namespace StandardDocking;
 
-        private void ContentDocument_Load(object sender, EventArgs e)
-        {
-            Console.WriteLine("ContentDocument_Load");
-        }
+public partial class ContentDocument : UserControl
+{
+    public ContentDocument()
+    {
+        InitializeComponent();
+    }
+
+    private void ContentDocument_Load(object sender, EventArgs e)
+    {
+        Console.WriteLine("ContentDocument_Load");
     }
 }

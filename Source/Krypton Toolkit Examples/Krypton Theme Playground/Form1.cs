@@ -7,17 +7,16 @@ using System;
 
 using Krypton.Toolkit;
 
-namespace KryptonThemePlayground
+namespace KryptonThemePlayground;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
+    public Form1() => InitializeComponent();
+
+    private void Form1_Load(object sender, EventArgs e)
     {
-        public Form1() => InitializeComponent();
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonCheckedListBox1_SelectedIndexChanged(object sender, EventArgs e) => kpg.SelectedObject = kryptonCheckedListBox1;
     }
+
+    private void kryptonCheckedListBox1_SelectedIndexChanged(object sender, EventArgs e) => kpg.SelectedObject = kryptonCheckedListBox1;
 }

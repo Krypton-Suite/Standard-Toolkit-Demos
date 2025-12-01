@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31825.309
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11222.15 d18.0
 MinimumVisualStudioVersion = 14.0.25123.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonButton Examples 2022", "KryptonButton Examples\KryptonButton Examples 2022.csproj", "{B50563E6-3123-49FC-816D-F873A0BCB789}"
 EndProject
@@ -144,6 +144,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonListView Examples 2022", "KryptonListView Examples\KryptonListView Examples 2022.csproj", "{7280F80E-BFA2-4EBC-842D-D9B7EAA864A5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton Theme Selector 2022", "Krypton Theme Selector\Krypton Theme Selector 2022.csproj", "{D0610E53-93C4-41AE-9787-E537ECC86307}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonMenuAndToolStrip Examples", "KryptonMenuAndToolStrip Examples\KryptonMenuAndToolStrip Examples.csproj", "{857524F9-590E-77C8-254E-84BA7CC8B30D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -423,6 +425,10 @@ Global
 		{D0610E53-93C4-41AE-9787-E537ECC86307}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0610E53-93C4-41AE-9787-E537ECC86307}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0610E53-93C4-41AE-9787-E537ECC86307}.Release|Any CPU.Build.0 = Release|Any CPU
+		{857524F9-590E-77C8-254E-84BA7CC8B30D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{857524F9-590E-77C8-254E-84BA7CC8B30D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{857524F9-590E-77C8-254E-84BA7CC8B30D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{857524F9-590E-77C8-254E-84BA7CC8B30D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

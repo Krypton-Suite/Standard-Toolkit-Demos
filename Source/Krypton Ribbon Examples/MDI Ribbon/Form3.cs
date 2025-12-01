@@ -12,13 +12,12 @@
 
 using Krypton.Toolkit;
 
-namespace MDIRibbon
+namespace MDIRibbon;
+
+public partial class Form3 : KryptonForm
 {
-    public partial class Form3 : KryptonForm
+    public Form3()
     {
-        public Form3()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
 }

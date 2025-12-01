@@ -12,10 +12,14 @@
         <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
     <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
     <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+		<LangVersion>latest</LangVersion>
 
     </PropertyGroup>
     <ItemGroup>
         <Content Include="Krypton.ico" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Docking Persistence\Docking Persistence 2022.csproj" />
     </ItemGroup>
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">

@@ -46,6 +46,7 @@
 	* [KryptonListBox](#kryptonlistbox)
 	* [KryptonListView](#kryptonlistview)
 	* [KryptonMaskedTextBox](#kryptonmaskedtextbox)
+	* [KryptonMenuAndToolStrip](#kryptonmenuandtoolstrip)
 	* [KryptonMessageBox](#kryptonmessagebox)
 	* [KryptonMonthCalendar](#kryptonmonthcalendar)
 	* [KryptonNumericUpDown](#kryptonnumericupdown)
@@ -190,6 +191,8 @@ There are 2 set of solutions in these projects:
 ![KryptonListView Examples](KryptonListView%20Examples/example.png)
 ## KryptonMaskedTextBox
 ![KryptonMaskedTextBox Examples](KryptonMaskedTextBox%20Examples/example.png)
+## KryptonMenuAndToolStrip
+![KryptonMenuAndToolStrip Examples](KryptonMenuAndToolStrip%20Examples/example.gif)
 ## [KryptonMessageBox
 ![KryptonMessageBox Examples](KryptonMessageBox%20Examples/example.png)
 ![KryptonMessageBox Examples](KryptonMessageBox%20Examples/KryptonMessageBoxWrapLabelExample.gif)

@@ -12,13 +12,12 @@
 
 using System.Windows.Forms;
 
-namespace DockingFlags
+namespace DockingFlags;
+
+public partial class ContentDocument : UserControl
 {
-    public partial class ContentDocument : UserControl
+    public ContentDocument()
     {
-        public ContentDocument()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
 }

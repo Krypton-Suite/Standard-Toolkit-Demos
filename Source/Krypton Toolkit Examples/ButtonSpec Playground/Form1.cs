@@ -15,91 +15,90 @@ using System.Windows.Forms;
 
 using Krypton.Toolkit;
 
-namespace ButtonSpecPlayground
+namespace ButtonSpecPlayground;
+
+public partial class Form1 : Form
 {
-    public partial class Form1 : Form
+    public Form1()
     {
-        public Form1()
+        InitializeComponent();
+        kryptonButtonAdd_Click(this, EventArgs.Empty);
+    }
+
+    private void kryptonButtonAdd_Click(object sender, EventArgs e)
+    {
+        // Create a new button spec entry
+        var spec = new ButtonSpecHeaderGroup();
+        spec.Type = PaletteButtonSpecStyle.Close;
+
+        // Need to know when button is selected
+        spec.Click += OnButtonSelected!;
+
+        // Add to end of the collection of button specs
+        kryptonHeaderGroup1.ButtonSpecs.Add(spec);
+
+        // Make it the selected button spec
+        propertyGrid.SelectedObject = spec;
+
+        UpdateActionButtons();
+    }
+
+    private void kryptonButtonRemove_Click(object sender, EventArgs e)
+    {
+        // Get access to the selected button spec
+        if (propertyGrid.SelectedObject is ButtonSpecHeaderGroup spec)
         {
-            InitializeComponent();
-            kryptonButtonAdd_Click(this, EventArgs.Empty);
-        }
-
-        private void kryptonButtonAdd_Click(object sender, EventArgs e)
-        {
-            // Create a new button spec entry
-            var spec = new ButtonSpecHeaderGroup();
-            spec.Type = PaletteButtonSpecStyle.Close;
-
-            // Need to know when button is selected
-            spec.Click += OnButtonSelected!;
-
-            // Add to end of the collection of button specs
-            kryptonHeaderGroup1.ButtonSpecs.Add(spec);
-
-            // Make it the selected button spec
-            propertyGrid.SelectedObject = spec;
-
-            UpdateActionButtons();
-        }
-
-        private void kryptonButtonRemove_Click(object sender, EventArgs e)
-        {
-            // Get access to the selected button spec
-            if (propertyGrid.SelectedObject is ButtonSpecHeaderGroup spec)
-            {
-                // Remove just the selected button spec
-                kryptonHeaderGroup1.ButtonSpecs.Remove(spec);
-
-                // Nothing selected in the property grid
-                propertyGrid.SelectedObject = null;
-
-                UpdateActionButtons();
-            }
-        }
-
-        private void kryptonButtonClear_Click(object sender, EventArgs e)
-        {
-            // Remove all the button specifications
-            kryptonHeaderGroup1.ButtonSpecs.Clear();
+            // Remove just the selected button spec
+            kryptonHeaderGroup1.ButtonSpecs.Remove(spec);
 
             // Nothing selected in the property grid
             propertyGrid.SelectedObject = null;
 
             UpdateActionButtons();
         }
+    }
 
-        private void kryptonButtonTopP_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionPrimary = VisualOrientation.Top;
+    private void kryptonButtonClear_Click(object sender, EventArgs e)
+    {
+        // Remove all the button specifications
+        kryptonHeaderGroup1.ButtonSpecs.Clear();
 
-        private void kryptonButtonLeftP_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionPrimary = VisualOrientation.Left;
+        // Nothing selected in the property grid
+        propertyGrid.SelectedObject = null;
 
-        private void kryptonButtonRightP_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionPrimary = VisualOrientation.Right;
+        UpdateActionButtons();
+    }
 
-        private void kryptonButtonBottomP_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionPrimary = VisualOrientation.Bottom;
+    private void kryptonButtonTopP_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionPrimary = VisualOrientation.Top;
 
-        private void kryptonButtonTopS_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionSecondary = VisualOrientation.Top;
+    private void kryptonButtonLeftP_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionPrimary = VisualOrientation.Left;
 
-        private void kryptonButtonLeftS_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionSecondary = VisualOrientation.Left;
+    private void kryptonButtonRightP_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionPrimary = VisualOrientation.Right;
 
-        private void kryptonButtonRightS_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionSecondary = VisualOrientation.Right;
+    private void kryptonButtonBottomP_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionPrimary = VisualOrientation.Bottom;
 
-        private void kryptonButtonBottomS_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionSecondary = VisualOrientation.Bottom;
+    private void kryptonButtonTopS_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionSecondary = VisualOrientation.Top;
 
-        private void OnButtonSelected(object sender, EventArgs e)
-        {
-            // Cast to correct type
-            var spec = (ButtonSpecHeaderGroup)sender;
+    private void kryptonButtonLeftS_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionSecondary = VisualOrientation.Left;
 
-            // Make it the selected button spec
-            propertyGrid.SelectedObject = spec;
+    private void kryptonButtonRightS_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionSecondary = VisualOrientation.Right;
 
-            UpdateActionButtons();
-        }
+    private void kryptonButtonBottomS_Click(object sender, EventArgs e) => kryptonHeaderGroup1.HeaderPositionSecondary = VisualOrientation.Bottom;
 
-        private void UpdateActionButtons()
-        {
-            kryptonButtonRemove.Enabled = (propertyGrid.SelectedObject != null);
-            kryptonButtonClear.Enabled = (kryptonHeaderGroup1.ButtonSpecs.Count > 0);
-        }
+    private void OnButtonSelected(object sender, EventArgs e)
+    {
+        // Cast to correct type
+        var spec = (ButtonSpecHeaderGroup)sender;
+
+        // Make it the selected button spec
+        propertyGrid.SelectedObject = spec;
+
+        UpdateActionButtons();
+    }
+
+    private void UpdateActionButtons()
+    {
+        kryptonButtonRemove.Enabled = (propertyGrid.SelectedObject != null);
+        kryptonButtonClear.Enabled = (kryptonHeaderGroup1.ButtonSpecs.Count > 0);
     }
 }

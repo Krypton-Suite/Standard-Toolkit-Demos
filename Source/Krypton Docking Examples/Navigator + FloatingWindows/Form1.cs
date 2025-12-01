@@ -18,57 +18,56 @@ using Krypton.Docking;
 using Krypton.Navigator;
 using Krypton.Toolkit;
 
-namespace NavigatorAndFloatingWindows
+namespace NavigatorAndFloatingWindows;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
+    public Form1()
     {
-        public Form1()
+        InitializeComponent();
+    }
+
+    private int _count = 1;
+    private KryptonPage NewPage(string name, int image, Control content)
+    {
+        // Create new page with title and image
+        var p = new KryptonPage
         {
-            InitializeComponent();
-        }
+            Text = name + _count.ToString(),
+            TextTitle = name + _count.ToString(),
+            TextDescription = name + _count.ToString()
+        };
+        p.UniqueName = p.Text;
+        p.ImageSmall = (Bitmap)imageListSmall.Images[image];
 
-        private int _count = 1;
-        private KryptonPage NewPage(string name, int image, Control content)
-        {
-            // Create new page with title and image
-            var p = new KryptonPage
-            {
-                Text = name + _count.ToString(),
-                TextTitle = name + _count.ToString(),
-                TextDescription = name + _count.ToString()
-            };
-            p.UniqueName = p.Text;
-            p.ImageSmall = (Bitmap)imageListSmall.Images[image];
+        // Add the control for display inside the page
+        content.Dock = DockStyle.Fill;
+        p.Controls.Add(content);
 
-            // Add the control for display inside the page
-            content.Dock = DockStyle.Fill;
-            p.Controls.Add(content);
+        _count++;
+        return p;
+    }
 
-            _count++;
-            return p;
-        }
+    private KryptonPage NewDocument()
+    {
+        KryptonPage page = NewPage("Document ", 0, new ContentDocument());
 
-        private KryptonPage NewDocument()
-        {
-            KryptonPage page = NewPage("Document ", 0, new ContentDocument());
+        // Do not allow the document pages to be closed or made auto hidden/docked
+        page.ClearFlags(KryptonPageFlags.DockingAllowAutoHidden |
+                        KryptonPageFlags.DockingAllowDocked |
+                        KryptonPageFlags.DockingAllowClose);
 
-            // Do not allow the document pages to be closed or made auto hidden/docked
-            page.ClearFlags(KryptonPageFlags.DockingAllowAutoHidden |
-                            KryptonPageFlags.DockingAllowDocked |
-                            KryptonPageFlags.DockingAllowClose);
+        return page;
+    }
 
-            return page;
-        }
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        // Setup docking functionality
+        KryptonDockingNavigator n = kryptonDockingManager.ManageNavigator(kryptonDockableNavigator);
+        kryptonDockingManager.ManageFloating(this);
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // Setup docking functionality
-            KryptonDockingNavigator n = kryptonDockingManager.ManageNavigator(kryptonDockableNavigator);
-            kryptonDockingManager.ManageFloating(this);
-
-            // Add initial floating window and navigator documents
-            kryptonDockingManager.AddFloatingWindow(@"Floating", new[] { NewDocument(), NewDocument() });
-            kryptonDockingManager.AddToNavigator(@"Navigator", new[] { NewDocument(), NewDocument(), NewDocument() });
-        }
+        // Add initial floating window and navigator documents
+        kryptonDockingManager.AddFloatingWindow(@"Floating", new[] { NewDocument(), NewDocument() });
+        kryptonDockingManager.AddToNavigator(@"Navigator", new[] { NewDocument(), NewDocument(), NewDocument() });
     }
 }
