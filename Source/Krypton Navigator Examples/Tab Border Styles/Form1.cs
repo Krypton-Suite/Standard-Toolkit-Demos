@@ -15,42 +15,41 @@ using System.Windows.Forms;
 
 using Krypton.Toolkit;
 
-namespace TabBorderStyles
+namespace TabBorderStyles;
+
+public partial class Form1 : Form
 {
-    public partial class Form1 : Form
+    public Form1()
     {
-        public Form1()
+        InitializeComponent();
+    }
+
+    private void tabBorderStyles_CheckedChanged(object sender, EventArgs e)
+    {
+        // Cast to correct type
+        var rb = (RadioButton)sender;
+
+        if (rb.Checked)
         {
-            InitializeComponent();
+            var enumVal = (TabBorderStyle)Enum.Parse(typeof(TabBorderStyle), rb.Tag.ToString());
+            kryptonNavigator.Bar.TabBorderStyle = enumVal;
         }
+    }
 
-        private void tabBorderStyles_CheckedChanged(object sender, EventArgs e)
+    private void tabStyles_CheckedChanged(object sender, EventArgs e)
+    {
+        // Cast to correct type
+        var rb = (RadioButton)sender;
+
+        if (rb.Checked)
         {
-            // Cast to correct type
-            var rb = (RadioButton)sender;
-
-            if (rb.Checked)
-            {
-                var enumVal = (TabBorderStyle)Enum.Parse(typeof(TabBorderStyle), rb.Tag.ToString());
-                kryptonNavigator.Bar.TabBorderStyle = enumVal;
-            }
+            var enumVal = (TabStyle)Enum.Parse(typeof(TabStyle), rb.Tag.ToString());
+            kryptonNavigator.Bar.TabStyle = enumVal;
         }
+    }
 
-        private void tabStyles_CheckedChanged(object sender, EventArgs e)
-        {
-            // Cast to correct type
-            var rb = (RadioButton)sender;
-
-            if (rb.Checked)
-            {
-                var enumVal = (TabStyle)Enum.Parse(typeof(TabStyle), rb.Tag.ToString());
-                kryptonNavigator.Bar.TabStyle = enumVal;
-            }
-        }
-
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+    private void buttonClose_Click(object sender, EventArgs e)
+    {
+        Close();
     }
 }

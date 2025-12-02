@@ -14,18 +14,17 @@ using System;
 
 using Krypton.Toolkit;
 
-namespace RibbonToolTips
-{
-    public partial class Form1 : KryptonForm
-    {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+namespace RibbonToolTips;
 
-        private void appMenu_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+public partial class Form1 : KryptonForm
+{
+    public Form1()
+    {
+        InitializeComponent();
+    }
+
+    private void appMenu_Click(object sender, EventArgs e)
+    {
+        Close();
     }
 }

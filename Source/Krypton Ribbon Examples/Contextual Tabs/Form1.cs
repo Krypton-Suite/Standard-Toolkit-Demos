@@ -16,165 +16,164 @@ using System.Windows.Forms;
 using Krypton.Ribbon;
 using Krypton.Toolkit;
 
-namespace ContextualTabs
+namespace ContextualTabs;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
+    public Form1()
     {
-        public Form1()
+        InitializeComponent();
+    }
+
+    private void buttonSelectedApply_Click(object sender, EventArgs e)
+    {
+        // Update ribbon with new context value
+        kryptonRibbon.SelectedContext = textBoxSelectedContexts.Text;
+    }
+
+    private void textBoxSelectedContexts_KeyDown(object sender, KeyEventArgs e)
+    {
+        // Pressing enter in text box is same as pressing the apply button
+        if (e.KeyCode == Keys.Enter)
         {
-            InitializeComponent();
+            buttonSelectedApply_Click(buttonSelectedApply, EventArgs.Empty);
+        }
+    }
+
+    private void buttonEditColor_Click(object sender, EventArgs e)
+    {
+        // Let user change the color definition
+        using var kcd = new KryptonColorDialog();
+
+        kcd.AllowFullOpen = true;
+
+        if (kcd.ShowDialog() == DialogResult.OK)
+        {
+            // Update the Displayed color feedback
+            panelContextColor.StateCommon.Color1 = kcd.Color;
+        }
+    }
+
+    private void buttonAddContext_Click(object sender, EventArgs e)
+    {
+        // Create a new context that uses the information specified
+        var newContext = new KryptonRibbonContext
+        {
+            ContextName = textBoxContextName.Text,
+            ContextTitle = textBoxContextTitle.Text,
+            ContextColor = panelContextColor.StateCommon.Color1
+        };
+        kryptonRibbon.RibbonContexts.Add(newContext);
+
+        // Create a new ribbon page that specifies the new context name
+        var newTab = new KryptonRibbonTab
+        {
+            ContextName = newContext.ContextName
+        };
+        kryptonRibbon.RibbonTabs.Add(newTab);
+
+        // Update the selected context name on the form and control so it shows
+        var newSelectedContext = textBoxSelectedContexts.Text;
+        if (newSelectedContext.Length > 0)
+        {
+            newSelectedContext += ",";
         }
 
-        private void buttonSelectedApply_Click(object sender, EventArgs e)
+        newSelectedContext += newContext.ContextName;
+        textBoxSelectedContexts.Text = newSelectedContext;
+        kryptonRibbon.SelectedContext = newSelectedContext;
+    }
+
+    private void radioOffice2010Blue_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioOffice2010Blue.Checked)
         {
-            // Update ribbon with new context value
-            kryptonRibbon.SelectedContext = textBoxSelectedContexts.Text;
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
         }
+    }
 
-        private void textBoxSelectedContexts_KeyDown(object sender, KeyEventArgs e)
+    private void radioOffice2010Silver_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioOffice2010Silver.Checked)
         {
-            // Pressing enter in text box is same as pressing the apply button
-            if (e.KeyCode == Keys.Enter)
-            {
-                buttonSelectedApply_Click(buttonSelectedApply, EventArgs.Empty);
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
         }
+    }
 
-        private void buttonEditColor_Click(object sender, EventArgs e)
+    private void radioOffice2010Black_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioOffice2010Black.Checked)
         {
-            // Let user change the color definition
-            using var kcd = new KryptonColorDialog();
-
-            kcd.AllowFullOpen = true;
-
-            if (kcd.ShowDialog() == DialogResult.OK)
-            {
-                // Update the Displayed color feedback
-                panelContextColor.StateCommon.Color1 = kcd.Color;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
         }
+    }
 
-        private void buttonAddContext_Click(object sender, EventArgs e)
+    private void radioOffice2007Blue_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioOffice2007Blue.Checked)
         {
-            // Create a new context that uses the information specified
-            var newContext = new KryptonRibbonContext
-            {
-                ContextName = textBoxContextName.Text,
-                ContextTitle = textBoxContextTitle.Text,
-                ContextColor = panelContextColor.StateCommon.Color1
-            };
-            kryptonRibbon.RibbonContexts.Add(newContext);
-
-            // Create a new ribbon page that specifies the new context name
-            var newTab = new KryptonRibbonTab
-            {
-                ContextName = newContext.ContextName
-            };
-            kryptonRibbon.RibbonTabs.Add(newTab);
-
-            // Update the selected context name on the form and control so it shows
-            var newSelectedContext = textBoxSelectedContexts.Text;
-            if (newSelectedContext.Length > 0)
-            {
-                newSelectedContext += ",";
-            }
-
-            newSelectedContext += newContext.ContextName;
-            textBoxSelectedContexts.Text = newSelectedContext;
-            kryptonRibbon.SelectedContext = newSelectedContext;
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
         }
+    }
 
-        private void radioOffice2010Blue_CheckedChanged(object sender, EventArgs e)
+    private void radioOffice2007Silver_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioOffice2007Silver.Checked)
         {
-            if (radioOffice2010Blue.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
         }
+    }
 
-        private void radioOffice2010Silver_CheckedChanged(object sender, EventArgs e)
+    private void radioOffice2007Black_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioOffice2007Black.Checked)
         {
-            if (radioOffice2010Silver.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
         }
+    }
 
-        private void radioOffice2010Black_CheckedChanged(object sender, EventArgs e)
+    private void radioOffice2003_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioOffice2003.Checked)
         {
-            if (radioOffice2010Black.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
         }
+    }
 
-        private void radioOffice2007Blue_CheckedChanged(object sender, EventArgs e)
+    private void radioSparkleBlue_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioSparkleBlue.Checked)
         {
-            if (radioOffice2007Blue.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
         }
+    }
 
-        private void radioOffice2007Silver_CheckedChanged(object sender, EventArgs e)
+    private void radioSparkleOrange_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioSparkleOrange.Checked)
         {
-            if (radioOffice2007Silver.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.SparkleOrange;
         }
+    }
 
-        private void radioOffice2007Black_CheckedChanged(object sender, EventArgs e)
+    private void radioSparklePurple_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioSparklePurple.Checked)
         {
-            if (radioOffice2007Black.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.SparklePurple;
         }
+    }
 
-        private void radioOffice2003_CheckedChanged(object sender, EventArgs e)
+    private void radioSystem_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioSystem.Checked)
         {
-            if (radioOffice2003.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
         }
+    }
 
-        private void radioSparkleBlue_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioSparkleBlue.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
-            }
-        }
-
-        private void radioSparkleOrange_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioSparkleOrange.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleOrange;
-            }
-        }
-
-        private void radioSparklePurple_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioSparklePurple.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.SparklePurple;
-            }
-        }
-
-        private void radioSystem_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioSystem.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
-            }
-        }
-
-        private void appMenu_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+    private void appMenu_Click(object sender, EventArgs e)
+    {
+        Close();
     }
 }

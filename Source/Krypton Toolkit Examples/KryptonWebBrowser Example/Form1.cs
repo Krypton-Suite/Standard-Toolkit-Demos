@@ -5,20 +5,19 @@
 
 using Krypton.Toolkit;
 
-namespace KryptonWebBrowserExample
+namespace KryptonWebBrowserExample;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
+    public Form1()
     {
-        public Form1()
-        {
-            InitializeComponent();
-            webBrowser1.DocumentText = @"<div contenteditable=""true"">Standard Form WebBrowser.<br/> This is in Editable mode</div>";
-            webBrowser2.DocumentText = @"<div contenteditable=""true"">Krypton WebBrowser.<br/> This is in Editable mode with a Krypton context menu</div>";
+        InitializeComponent();
+        webBrowser1.DocumentText = @"<div contenteditable=""true"">Standard Form WebBrowser.<br/> This is in Editable mode</div>";
+        webBrowser2.DocumentText = @"<div contenteditable=""true"">Krypton WebBrowser.<br/> This is in Editable mode with a Krypton context menu</div>";
 
-            kcmbTheme.Text = ThemeManager.ReturnPaletteModeAsString(kryptonManager1.GlobalPaletteMode);
-        }
-
-        private void KcmbTheme_SelectedValueChanged(object sender, System.EventArgs e) =>
-            ThemeManager.ApplyTheme(kcmbTheme.Text, kryptonManager1);
+        kcmbTheme.Text = ThemeManager.ReturnPaletteModeAsString(kryptonManager1.GlobalPaletteMode);
     }
+
+    private void KcmbTheme_SelectedValueChanged(object sender, System.EventArgs e) =>
+        ThemeManager.ApplyTheme(kcmbTheme.Text, kryptonManager1);
 }

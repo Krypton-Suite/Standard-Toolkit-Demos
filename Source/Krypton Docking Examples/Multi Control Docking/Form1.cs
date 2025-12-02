@@ -17,52 +17,51 @@ using System.Windows.Forms;
 using Krypton.Docking;
 using Krypton.Navigator;
 
-namespace MultiControlDocking
+namespace MultiControlDocking;
+
+public partial class Form1 : Form
 {
-    public partial class Form1 : Form
+    private int _count = 1;
+
+    public Form1()
     {
-        private int _count = 1;
+        InitializeComponent();
+    }
 
-        public Form1()
+    private KryptonPage NewInput() => NewPage(@"Input ", 1, new ContentInput());
+
+    private KryptonPage NewPage(string name, int image, Control content)
+    {
+        // Create new page with title and image
+        var p = new KryptonPage
         {
-            InitializeComponent();
-        }
+            Text = name + _count.ToString(),
+            TextTitle = name + _count.ToString(),
+            TextDescription = name + _count.ToString(),
+            ImageSmall = (Bitmap)imageListSmall.Images[image]
+        };
 
-        private KryptonPage NewInput() => NewPage(@"Input ", 1, new ContentInput());
+        // Add the control for display inside the page
+        content.Dock = DockStyle.Fill;
+        p.Controls.Add(content);
+        p.MinimumSize = content.MinimumSize;
 
-        private KryptonPage NewPage(string name, int image, Control content)
-        {
-            // Create new page with title and image
-            var p = new KryptonPage
-            {
-                Text = name + _count.ToString(),
-                TextTitle = name + _count.ToString(),
-                TextDescription = name + _count.ToString(),
-                ImageSmall = (Bitmap)imageListSmall.Images[image]
-            };
+        _count++;
+        return p;
+    }
 
-            // Add the control for display inside the page
-            content.Dock = DockStyle.Fill;
-            p.Controls.Add(content);
-            p.MinimumSize = content.MinimumSize;
-
-            _count++;
-            return p;
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // Add docking to the two panels and allow floating windows
-            kryptonDockingManager.ManageControl(@"Control1", kryptonPanel2);
-            kryptonDockingManager.ManageControl(@"Control2", kryptonPanel3);
-            kryptonDockingManager.ManageFloating(this);
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        // Add docking to the two panels and allow floating windows
+        kryptonDockingManager.ManageControl(@"Control1", kryptonPanel2);
+        kryptonDockingManager.ManageControl(@"Control2", kryptonPanel3);
+        kryptonDockingManager.ManageFloating(this);
 
 
-            // Add docking pages
-            kryptonDockingManager.AddDockspace(@"Control1", DockingEdge.Left, new[] { NewInput(), NewInput() });
-            kryptonDockingManager.AddDockspace(@"Control1", DockingEdge.Bottom, new[] { NewInput(), NewInput() });
-            kryptonDockingManager.AddDockspace(@"Control2", DockingEdge.Bottom, new[] { NewInput(), NewInput() });
-            kryptonDockingManager.AddAutoHiddenGroup(@"Control2", DockingEdge.Right, new[] { NewInput(), NewInput() });
-        }
+        // Add docking pages
+        kryptonDockingManager.AddDockspace(@"Control1", DockingEdge.Left, new[] { NewInput(), NewInput() });
+        kryptonDockingManager.AddDockspace(@"Control1", DockingEdge.Bottom, new[] { NewInput(), NewInput() });
+        kryptonDockingManager.AddDockspace(@"Control2", DockingEdge.Bottom, new[] { NewInput(), NewInput() });
+        kryptonDockingManager.AddAutoHiddenGroup(@"Control2", DockingEdge.Right, new[] { NewInput(), NewInput() });
     }
 }

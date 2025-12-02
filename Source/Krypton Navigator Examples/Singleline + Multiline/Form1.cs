@@ -17,274 +17,273 @@ using System.Windows.Forms;
 using Krypton.Navigator;
 using Krypton.Toolkit;
 
-namespace SinglelinePlusMultiline
+namespace SinglelinePlusMultiline;
+
+public partial class Form1 : Form
 {
-    public partial class Form1 : Form
+    int _newPage = 7;
+
+    public Form1()
     {
-        int _newPage = 7;
+        InitializeComponent();
+    }
 
-        public Form1()
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        UpdateControlsFromNavigator();
+    }
+
+    private void UpdateControlsFromNavigator()
+    {
+        // We only show the next/prev buttons when in singleline/expandline modes
+        if ((kryptonNavigator1.Bar.BarMultiline == BarMultiline.Singleline) ||
+            (kryptonNavigator1.Bar.BarMultiline == BarMultiline.Expandline))
+            kryptonNavigator1.Button.ButtonDisplayLogic = ButtonDisplayLogic.NextPrevious;
+        else
+            kryptonNavigator1.Button.ButtonDisplayLogic = ButtonDisplayLogic.Context;
+
+        // Update BarMultiline setting
+        radioSingleline.Checked = (kryptonNavigator1.Bar.BarMultiline == BarMultiline.Singleline);
+        radioMultiline.Checked = (kryptonNavigator1.Bar.BarMultiline == BarMultiline.Multiline);
+        radioExactline.Checked = (kryptonNavigator1.Bar.BarMultiline == BarMultiline.Exactline);
+        radioShrinkline.Checked = (kryptonNavigator1.Bar.BarMultiline == BarMultiline.Shrinkline);
+        radioExpandline.Checked = (kryptonNavigator1.Bar.BarMultiline == BarMultiline.Expandline);
+
+        // Update Mode
+        radioModeTabs.Checked = (kryptonNavigator1.NavigatorMode == NavigatorMode.BarTabGroup);
+        radioModeRibbonTabs.Checked = (kryptonNavigator1.NavigatorMode == NavigatorMode.BarRibbonTabGroup);
+        radioModesCheckButton.Checked = (kryptonNavigator1.NavigatorMode == NavigatorMode.BarCheckButtonGroupOutside);
+
+        // Update Bar Orientation
+        radioOrientationTop.Checked = (kryptonNavigator1.Bar.BarOrientation == VisualOrientation.Top);
+        radioOrientationBottom.Checked = (kryptonNavigator1.Bar.BarOrientation == VisualOrientation.Bottom);
+        radioOrientationLeft.Checked = (kryptonNavigator1.Bar.BarOrientation == VisualOrientation.Left);
+        radioOrientationRight.Checked = (kryptonNavigator1.Bar.BarOrientation == VisualOrientation.Right);
+
+        // Update Item Orientation
+        radioItemAuto.Checked = (kryptonNavigator1.Bar.ItemOrientation == ButtonOrientation.Auto);
+        radioItemFixedTop.Checked = (kryptonNavigator1.Bar.ItemOrientation == ButtonOrientation.FixedTop);
+        radioItemFixedBottom.Checked = (kryptonNavigator1.Bar.ItemOrientation == ButtonOrientation.FixedBottom);
+        radioItemFixedLeft.Checked = (kryptonNavigator1.Bar.ItemOrientation == ButtonOrientation.FixedLeft);
+        radioItemFixedRight.Checked = (kryptonNavigator1.Bar.ItemOrientation == ButtonOrientation.FixedRight);
+
+        // Update Item Alignment
+        radioItemNear.Checked = (kryptonNavigator1.Bar.ItemAlignment == RelativePositionAlign.Near);
+        radioItemCenter.Checked = (kryptonNavigator1.Bar.ItemAlignment == RelativePositionAlign.Center);
+        radioItemFar.Checked = (kryptonNavigator1.Bar.ItemAlignment == RelativePositionAlign.Far);
+
+        // Set mode specific properties
+        switch (kryptonNavigator1.NavigatorMode)
         {
-            InitializeComponent();
+            case NavigatorMode.BarRibbonTabGroup:
+            case NavigatorMode.BarRibbonTabOnly:
+                kryptonNavigator1.PageBackStyle = PaletteBackStyle.ControlRibbon;
+                kryptonNavigator1.Group.GroupBackStyle = PaletteBackStyle.ControlRibbon;
+                kryptonNavigator1.Group.GroupBorderStyle = PaletteBorderStyle.ControlRibbon;
+                break;
+            default:
+                kryptonNavigator1.PageBackStyle = PaletteBackStyle.ControlClient;
+                kryptonNavigator1.Group.GroupBackStyle = PaletteBackStyle.ControlClient;
+                kryptonNavigator1.Group.GroupBorderStyle = PaletteBorderStyle.ControlClient;
+                break;
         }
+    }
 
-        private void Form1_Load(object sender, EventArgs e)
+    private void radioSingleline_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioSingleline.Checked)
         {
+            kryptonNavigator1.Bar.BarMultiline = BarMultiline.Singleline;
             UpdateControlsFromNavigator();
         }
+    }
 
-        private void UpdateControlsFromNavigator()
+    private void radioMultiline_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioMultiline.Checked)
         {
-            // We only show the next/prev buttons when in singleline/expandline modes
-            if ((kryptonNavigator1.Bar.BarMultiline == BarMultiline.Singleline) ||
-                (kryptonNavigator1.Bar.BarMultiline == BarMultiline.Expandline))
-                kryptonNavigator1.Button.ButtonDisplayLogic = ButtonDisplayLogic.NextPrevious;
-            else
-                kryptonNavigator1.Button.ButtonDisplayLogic = ButtonDisplayLogic.Context;
-
-            // Update BarMultiline setting
-            radioSingleline.Checked = (kryptonNavigator1.Bar.BarMultiline == BarMultiline.Singleline);
-            radioMultiline.Checked = (kryptonNavigator1.Bar.BarMultiline == BarMultiline.Multiline);
-            radioExactline.Checked = (kryptonNavigator1.Bar.BarMultiline == BarMultiline.Exactline);
-            radioShrinkline.Checked = (kryptonNavigator1.Bar.BarMultiline == BarMultiline.Shrinkline);
-            radioExpandline.Checked = (kryptonNavigator1.Bar.BarMultiline == BarMultiline.Expandline);
-
-            // Update Mode
-            radioModeTabs.Checked = (kryptonNavigator1.NavigatorMode == NavigatorMode.BarTabGroup);
-            radioModeRibbonTabs.Checked = (kryptonNavigator1.NavigatorMode == NavigatorMode.BarRibbonTabGroup);
-            radioModesCheckButton.Checked = (kryptonNavigator1.NavigatorMode == NavigatorMode.BarCheckButtonGroupOutside);
-
-            // Update Bar Orientation
-            radioOrientationTop.Checked = (kryptonNavigator1.Bar.BarOrientation == VisualOrientation.Top);
-            radioOrientationBottom.Checked = (kryptonNavigator1.Bar.BarOrientation == VisualOrientation.Bottom);
-            radioOrientationLeft.Checked = (kryptonNavigator1.Bar.BarOrientation == VisualOrientation.Left);
-            radioOrientationRight.Checked = (kryptonNavigator1.Bar.BarOrientation == VisualOrientation.Right);
-
-            // Update Item Orientation
-            radioItemAuto.Checked = (kryptonNavigator1.Bar.ItemOrientation == ButtonOrientation.Auto);
-            radioItemFixedTop.Checked = (kryptonNavigator1.Bar.ItemOrientation == ButtonOrientation.FixedTop);
-            radioItemFixedBottom.Checked = (kryptonNavigator1.Bar.ItemOrientation == ButtonOrientation.FixedBottom);
-            radioItemFixedLeft.Checked = (kryptonNavigator1.Bar.ItemOrientation == ButtonOrientation.FixedLeft);
-            radioItemFixedRight.Checked = (kryptonNavigator1.Bar.ItemOrientation == ButtonOrientation.FixedRight);
-
-            // Update Item Alignment
-            radioItemNear.Checked = (kryptonNavigator1.Bar.ItemAlignment == RelativePositionAlign.Near);
-            radioItemCenter.Checked = (kryptonNavigator1.Bar.ItemAlignment == RelativePositionAlign.Center);
-            radioItemFar.Checked = (kryptonNavigator1.Bar.ItemAlignment == RelativePositionAlign.Far);
-
-            // Set mode specific properties
-            switch (kryptonNavigator1.NavigatorMode)
-            {
-                case NavigatorMode.BarRibbonTabGroup:
-                case NavigatorMode.BarRibbonTabOnly:
-                    kryptonNavigator1.PageBackStyle = PaletteBackStyle.ControlRibbon;
-                    kryptonNavigator1.Group.GroupBackStyle = PaletteBackStyle.ControlRibbon;
-                    kryptonNavigator1.Group.GroupBorderStyle = PaletteBorderStyle.ControlRibbon;
-                    break;
-                default:
-                    kryptonNavigator1.PageBackStyle = PaletteBackStyle.ControlClient;
-                    kryptonNavigator1.Group.GroupBackStyle = PaletteBackStyle.ControlClient;
-                    kryptonNavigator1.Group.GroupBorderStyle = PaletteBorderStyle.ControlClient;
-                    break;
-            }
+            kryptonNavigator1.Bar.BarMultiline = BarMultiline.Multiline;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioSingleline_CheckedChanged(object sender, EventArgs e)
+    private void radioExactline_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioExactline.Checked)
         {
-            if (radioSingleline.Checked)
-            {
-                kryptonNavigator1.Bar.BarMultiline = BarMultiline.Singleline;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.Bar.BarMultiline = BarMultiline.Exactline;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioMultiline_CheckedChanged(object sender, EventArgs e)
+    private void radioShrinkline_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioShrinkline.Checked)
         {
-            if (radioMultiline.Checked)
-            {
-                kryptonNavigator1.Bar.BarMultiline = BarMultiline.Multiline;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.Bar.BarMultiline = BarMultiline.Shrinkline;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioExactline_CheckedChanged(object sender, EventArgs e)
+    private void radioExpandline_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioExpandline.Checked)
         {
-            if (radioExactline.Checked)
-            {
-                kryptonNavigator1.Bar.BarMultiline = BarMultiline.Exactline;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.Bar.BarMultiline = BarMultiline.Expandline;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioShrinkline_CheckedChanged(object sender, EventArgs e)
+    private void radioModeTabs_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioModeTabs.Checked)
         {
-            if (radioShrinkline.Checked)
-            {
-                kryptonNavigator1.Bar.BarMultiline = BarMultiline.Shrinkline;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.NavigatorMode = NavigatorMode.BarTabGroup;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioExpandline_CheckedChanged(object sender, EventArgs e)
+    private void radioModeRibbonTabs_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioModeRibbonTabs.Checked)
         {
-            if (radioExpandline.Checked)
-            {
-                kryptonNavigator1.Bar.BarMultiline = BarMultiline.Expandline;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.NavigatorMode = NavigatorMode.BarRibbonTabGroup;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioModeTabs_CheckedChanged(object sender, EventArgs e)
+    private void radioModesCheckButton_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioModesCheckButton.Checked)
         {
-            if (radioModeTabs.Checked)
-            {
-                kryptonNavigator1.NavigatorMode = NavigatorMode.BarTabGroup;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.NavigatorMode = NavigatorMode.BarCheckButtonGroupOutside;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioModeRibbonTabs_CheckedChanged(object sender, EventArgs e)
+    private void radioOrientationTop_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioOrientationTop.Checked)
         {
-            if (radioModeRibbonTabs.Checked)
-            {
-                kryptonNavigator1.NavigatorMode = NavigatorMode.BarRibbonTabGroup;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.Bar.BarOrientation = VisualOrientation.Top;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioModesCheckButton_CheckedChanged(object sender, EventArgs e)
+    private void radioOrientationBottom_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioOrientationBottom.Checked)
         {
-            if (radioModesCheckButton.Checked)
-            {
-                kryptonNavigator1.NavigatorMode = NavigatorMode.BarCheckButtonGroupOutside;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.Bar.BarOrientation = VisualOrientation.Bottom;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioOrientationTop_CheckedChanged(object sender, EventArgs e)
+    private void radioOrientationLeft_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioOrientationLeft.Checked)
         {
-            if (radioOrientationTop.Checked)
-            {
-                kryptonNavigator1.Bar.BarOrientation = VisualOrientation.Top;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.Bar.BarOrientation = VisualOrientation.Left;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioOrientationBottom_CheckedChanged(object sender, EventArgs e)
+    private void radioOrientationRight_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioOrientationRight.Checked)
         {
-            if (radioOrientationBottom.Checked)
-            {
-                kryptonNavigator1.Bar.BarOrientation = VisualOrientation.Bottom;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.Bar.BarOrientation = VisualOrientation.Right;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioOrientationLeft_CheckedChanged(object sender, EventArgs e)
+    private void radioItemAuto_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioItemAuto.Checked)
         {
-            if (radioOrientationLeft.Checked)
-            {
-                kryptonNavigator1.Bar.BarOrientation = VisualOrientation.Left;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.Bar.ItemOrientation = ButtonOrientation.Auto;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioOrientationRight_CheckedChanged(object sender, EventArgs e)
+    private void radioItemFixedTop_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioItemFixedTop.Checked)
         {
-            if (radioOrientationRight.Checked)
-            {
-                kryptonNavigator1.Bar.BarOrientation = VisualOrientation.Right;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.Bar.ItemOrientation = ButtonOrientation.FixedTop;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioItemAuto_CheckedChanged(object sender, EventArgs e)
+    private void radioItemFixedBottom_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioItemFixedBottom.Checked)
         {
-            if (radioItemAuto.Checked)
-            {
-                kryptonNavigator1.Bar.ItemOrientation = ButtonOrientation.Auto;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.Bar.ItemOrientation = ButtonOrientation.FixedBottom;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioItemFixedTop_CheckedChanged(object sender, EventArgs e)
+    private void radioItemFixedLeft_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioItemFixedLeft.Checked)
         {
-            if (radioItemFixedTop.Checked)
-            {
-                kryptonNavigator1.Bar.ItemOrientation = ButtonOrientation.FixedTop;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.Bar.ItemOrientation = ButtonOrientation.FixedLeft;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioItemFixedBottom_CheckedChanged(object sender, EventArgs e)
+    private void radioItemFixedRight_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioItemFixedRight.Checked)
         {
-            if (radioItemFixedBottom.Checked)
-            {
-                kryptonNavigator1.Bar.ItemOrientation = ButtonOrientation.FixedBottom;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.Bar.ItemOrientation = ButtonOrientation.FixedRight;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioItemFixedLeft_CheckedChanged(object sender, EventArgs e)
+    private void radioItemNear_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioItemNear.Checked)
         {
-            if (radioItemFixedLeft.Checked)
-            {
-                kryptonNavigator1.Bar.ItemOrientation = ButtonOrientation.FixedLeft;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.Bar.ItemAlignment = RelativePositionAlign.Near;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioItemFixedRight_CheckedChanged(object sender, EventArgs e)
+    private void radioItemCenter_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioItemCenter.Checked)
         {
-            if (radioItemFixedRight.Checked)
-            {
-                kryptonNavigator1.Bar.ItemOrientation = ButtonOrientation.FixedRight;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.Bar.ItemAlignment = RelativePositionAlign.Center;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioItemNear_CheckedChanged(object sender, EventArgs e)
+    private void radioItemFar_CheckedChanged(object sender, EventArgs e)
+    {
+        if (radioItemFar.Checked)
         {
-            if (radioItemNear.Checked)
-            {
-                kryptonNavigator1.Bar.ItemAlignment = RelativePositionAlign.Near;
-                UpdateControlsFromNavigator();
-            }
+            kryptonNavigator1.Bar.ItemAlignment = RelativePositionAlign.Far;
+            UpdateControlsFromNavigator();
         }
+    }
 
-        private void radioItemCenter_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioItemCenter.Checked)
-            {
-                kryptonNavigator1.Bar.ItemAlignment = RelativePositionAlign.Center;
-                UpdateControlsFromNavigator();
-            }
-        }
+    private void buttonAddPage_Click(object sender, EventArgs e)
+    {
+        var newPage = new KryptonPage();
+        newPage.Text = $"Page {_newPage}";
+        newPage.ImageSmall = (Bitmap)imageList1.Images[_newPage++ % imageList1.Images.Count];
+        kryptonNavigator1.Pages.Add(newPage);
+    }
 
-        private void radioItemFar_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioItemFar.Checked)
-            {
-                kryptonNavigator1.Bar.ItemAlignment = RelativePositionAlign.Far;
-                UpdateControlsFromNavigator();
-            }
-        }
+    private void buttonClearAllPages_Click(object sender, EventArgs e)
+    {
+        kryptonNavigator1.Pages.Clear();
+    }
 
-        private void buttonAddPage_Click(object sender, EventArgs e)
-        {
-            var newPage = new KryptonPage();
-            newPage.Text = $"Page {_newPage}";
-            newPage.ImageSmall = (Bitmap)imageList1.Images[_newPage++ % imageList1.Images.Count];
-            kryptonNavigator1.Pages.Add(newPage);
-        }
-
-        private void buttonClearAllPages_Click(object sender, EventArgs e)
-        {
-            kryptonNavigator1.Pages.Clear();
-        }
-
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+    private void buttonClose_Click(object sender, EventArgs e)
+    {
+        Close();
     }
 }

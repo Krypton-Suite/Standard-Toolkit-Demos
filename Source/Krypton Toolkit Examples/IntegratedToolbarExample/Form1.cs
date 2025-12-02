@@ -1,9 +1,8 @@
 using Krypton.Toolkit;
 
-namespace IntegratedToolbarExample
+namespace IntegratedToolbarExample;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
-    {
-        public Form1() => InitializeComponent();
-    }
+    public Form1() => InitializeComponent();
 }

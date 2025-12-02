@@ -15,69 +15,68 @@ using System.Windows.Forms;
 
 using Krypton.Navigator;
 
-namespace NavigatorToolTips
+namespace NavigatorToolTips;
+
+public partial class Form1 : Form
 {
-    public partial class Form1 : Form
+    private MapKryptonPageTextConverter _textConv = new MapKryptonPageTextConverter();
+    private MapKryptonPageImageConverter _imageConv = new MapKryptonPageImageConverter();
+
+    public Form1()
     {
-        private MapKryptonPageTextConverter _textConv = new MapKryptonPageTextConverter();
-        private MapKryptonPageImageConverter _imageConv = new MapKryptonPageImageConverter();
+        InitializeComponent();
+    }
 
-        public Form1()
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        new MapKryptonPageImageConverter();
+
+        // Populate the text/extra text mapping combo boxes
+        foreach (MapKryptonPageText value in Enum.GetValues(typeof(MapKryptonPageText)))
         {
-            InitializeComponent();
+            comboMapText.Items.Add(_textConv.ConvertToInvariantString(value));
+            comboMapExtraText.Items.Add(_textConv.ConvertToInvariantString(value));
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            new MapKryptonPageImageConverter();
+        // Populate the image mapping combo box
+        foreach (MapKryptonPageImage value in Enum.GetValues(typeof(MapKryptonPageImage)))
+            comboMapImage.Items.Add(_imageConv.ConvertToInvariantString(value));
 
-            // Populate the text/extra text mapping combo boxes
-            foreach (MapKryptonPageText value in Enum.GetValues(typeof(MapKryptonPageText)))
-            {
-                comboMapText.Items.Add(_textConv.ConvertToInvariantString(value));
-                comboMapExtraText.Items.Add(_textConv.ConvertToInvariantString(value));
-            }
+        // Update with current navigator settings
+        checkAllowPageTooltips.Checked = kryptonNavigator.ToolTips.AllowPageToolTips;
+        checkAllowButtonSpecTooltips.Checked = kryptonNavigator.ToolTips.AllowButtonSpecToolTips;
+        comboMapText.Text = _textConv.ConvertToInvariantString(kryptonNavigator.ToolTips.MapText);
+        comboMapExtraText.Text = _textConv.ConvertToInvariantString(kryptonNavigator.ToolTips.MapExtraText);
+        comboMapImage.Text = _imageConv.ConvertToInvariantString(kryptonNavigator.ToolTips.MapImage);
+    }
 
-            // Populate the image mapping combo box
-            foreach (MapKryptonPageImage value in Enum.GetValues(typeof(MapKryptonPageImage)))
-                comboMapImage.Items.Add(_imageConv.ConvertToInvariantString(value));
+    private void checkAllowPageTooltips_CheckedChanged(object sender, EventArgs e)
+    {
+        kryptonNavigator.ToolTips.AllowPageToolTips = checkAllowPageTooltips.Checked;
+    }
 
-            // Update with current navigator settings
-            checkAllowPageTooltips.Checked = kryptonNavigator.ToolTips.AllowPageToolTips;
-            checkAllowButtonSpecTooltips.Checked = kryptonNavigator.ToolTips.AllowButtonSpecToolTips;
-            comboMapText.Text = _textConv.ConvertToInvariantString(kryptonNavigator.ToolTips.MapText);
-            comboMapExtraText.Text = _textConv.ConvertToInvariantString(kryptonNavigator.ToolTips.MapExtraText);
-            comboMapImage.Text = _imageConv.ConvertToInvariantString(kryptonNavigator.ToolTips.MapImage);
-        }
+    private void checkAllowButtonSpecTooltips_CheckedChanged(object sender, EventArgs e)
+    {
+        kryptonNavigator.ToolTips.AllowButtonSpecToolTips = checkAllowButtonSpecTooltips.Checked;
+    }
 
-        private void checkAllowPageTooltips_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonNavigator.ToolTips.AllowPageToolTips = checkAllowPageTooltips.Checked;
-        }
+    private void comboMapText_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        kryptonNavigator.ToolTips.MapText = (MapKryptonPageText)_textConv.ConvertFromInvariantString(comboMapText.Text);
+    }
 
-        private void checkAllowButtonSpecTooltips_CheckedChanged(object sender, EventArgs e)
-        {
-            kryptonNavigator.ToolTips.AllowButtonSpecToolTips = checkAllowButtonSpecTooltips.Checked;
-        }
+    private void comboMapExtraText_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        kryptonNavigator.ToolTips.MapExtraText = (MapKryptonPageText)_textConv.ConvertFromInvariantString(comboMapExtraText.Text);
+    }
 
-        private void comboMapText_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            kryptonNavigator.ToolTips.MapText = (MapKryptonPageText)_textConv.ConvertFromInvariantString(comboMapText.Text);
-        }
+    private void comboMapImage_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        kryptonNavigator.ToolTips.MapImage = (MapKryptonPageImage)_imageConv.ConvertFromInvariantString(comboMapImage.Text);
+    }
 
-        private void comboMapExtraText_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            kryptonNavigator.ToolTips.MapExtraText = (MapKryptonPageText)_textConv.ConvertFromInvariantString(comboMapExtraText.Text);
-        }
-
-        private void comboMapImage_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            kryptonNavigator.ToolTips.MapImage = (MapKryptonPageImage)_imageConv.ConvertFromInvariantString(comboMapImage.Text);
-        }
-
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+    private void buttonClose_Click(object sender, EventArgs e)
+    {
+        Close();
     }
 }

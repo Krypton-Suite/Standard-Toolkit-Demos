@@ -14,61 +14,60 @@ using System;
 
 using Krypton.Toolkit;
 
-namespace OutlookMailClone
+namespace OutlookMailClone;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
+    public Form1()
     {
-        public Form1()
-        {
-            InitializeComponent();
-            KryptonManager.Strings.RibbonStrings.RecentDocuments = "Create New Outlook Item";
-        }
+        InitializeComponent();
+        KryptonManager.Strings.RibbonStrings.RecentDocuments = "Create New Outlook Item";
+    }
 
-        private void formatPlainText_Click(object sender, EventArgs e)
+    private void formatPlainText_Click(object sender, EventArgs e)
+    {
+        // If it has become checked, then ensure other options are no
+        // longer in the checked state. If we are clicked to make unchecked
+        // then override that behavior by forcing outself back to checked.
+        if (formatPlainText.Checked)
         {
-            // If it has become checked, then ensure other options are no
-            // longer in the checked state. If we are clicked to make unchecked
-            // then override that behavior by forcing outself back to checked.
-            if (formatPlainText.Checked)
-            {
-                formatHTML.Checked = false;
-                formatRichText.Checked = false;
-            }
-            else
-                formatPlainText.Checked = true;
+            formatHTML.Checked = false;
+            formatRichText.Checked = false;
         }
+        else
+            formatPlainText.Checked = true;
+    }
 
-        private void formatHTML_Click(object sender, EventArgs e)
+    private void formatHTML_Click(object sender, EventArgs e)
+    {
+        // If it has become checked, then ensure other options are no
+        // longer in the checked state. If we are clicked to make unchecked
+        // then override that behavior by forcing outself back to checked.
+        if (formatHTML.Checked)
         {
-            // If it has become checked, then ensure other options are no
-            // longer in the checked state. If we are clicked to make unchecked
-            // then override that behavior by forcing outself back to checked.
-            if (formatHTML.Checked)
-            {
-                formatPlainText.Checked = false;
-                formatRichText.Checked = false;
-            }
-            else
-                formatHTML.Checked = true;
+            formatPlainText.Checked = false;
+            formatRichText.Checked = false;
         }
+        else
+            formatHTML.Checked = true;
+    }
 
-        private void formatRichText_Click(object sender, EventArgs e)
+    private void formatRichText_Click(object sender, EventArgs e)
+    {
+        // If it has become checked, then ensure other options are no
+        // longer in the checked state. If we are clicked to make unchecked
+        // then override that behavior by forcing outself back to checked.
+        if (formatRichText.Checked)
         {
-            // If it has become checked, then ensure other options are no
-            // longer in the checked state. If we are clicked to make unchecked
-            // then override that behavior by forcing outself back to checked.
-            if (formatRichText.Checked)
-            {
-                formatPlainText.Checked = false;
-                formatHTML.Checked = false;
-            }
-            else
-                formatRichText.Checked = true;
+            formatPlainText.Checked = false;
+            formatHTML.Checked = false;
         }
+        else
+            formatRichText.Checked = true;
+    }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+    private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Close();
     }
 }

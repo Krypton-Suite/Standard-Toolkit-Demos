@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="Basic Events/Basic Events 2022.csproj" />
+  <Project Path="Expanding Pages/Expanding Pages 2022.csproj" />
+  <Project Path="Navigator Context Menus/Navigator Context Menus 2022.csproj" />
+  <Project Path="Navigator Modes/Navigator Modes 2022.csproj" />
+  <Project Path="Navigator Palettes/Navigator Palettes 2022.csproj" />
+  <Project Path="Navigator Playground/Navigator Playground 2022.csproj" />
+  <Project Path="Navigator Tooltips/Navigator ToolTips 2022.csproj" />
+  <Project Path="OneNote Tabs/OneNote Tabs 2022.csproj" />
+  <Project Path="Orientation + Alignment/Orientation + Alignment 2022.csproj" />
+  <Project Path="Outlook Mockup/Outlook Mockup 2022.csproj" />
+  <Project Path="Per-Tab Buttons/Per-Tab Buttons 2022.csproj" />
+  <Project Path="Popup Pages/Popup Pages 2022.csproj" />
+  <Project Path="Singleline + Multiline/Singleline + Multiline 2022.csproj" />
+  <Project Path="Tab Border Styles/Tab Border Styles 2022.csproj" />
+  <Project Path="User Page Creation/User Page Creation 2022.csproj" />
+</Solution>

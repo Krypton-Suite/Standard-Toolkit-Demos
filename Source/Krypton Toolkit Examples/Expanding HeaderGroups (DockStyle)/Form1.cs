@@ -14,60 +14,59 @@ using System;
 
 using Krypton.Toolkit;
 
-namespace ExpandingHeaderGroupsDockStyle
+namespace ExpandingHeaderGroupsDockStyle;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
+    public Form1() => InitializeComponent();
+
+    private void toolOffice2010_Click(object sender, EventArgs e)
     {
-        public Form1() => InitializeComponent();
-
-        private void toolOffice2010_Click(object sender, EventArgs e)
+        if (!toolOffice2010.Checked)
         {
-            if (!toolOffice2010.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
-                toolOffice2010.Checked = menuOffice2010.Checked = true;
-                toolOffice2007.Checked = menuOffice2007.Checked = false;
-                toolSparkle.Checked = menuSparkle.Checked = false;
-                toolSystem.Checked = menuSystem.Checked = false;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
+            toolOffice2010.Checked = menuOffice2010.Checked = true;
+            toolOffice2007.Checked = menuOffice2007.Checked = false;
+            toolSparkle.Checked = menuSparkle.Checked = false;
+            toolSystem.Checked = menuSystem.Checked = false;
         }
-
-        private void toolOffice2007_Click(object sender, EventArgs e)
-        {
-            if (!toolOffice2007.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
-                toolOffice2010.Checked = menuOffice2010.Checked = false;
-                toolOffice2007.Checked = menuOffice2007.Checked = true;
-                toolSparkle.Checked = menuSparkle.Checked = false;
-                toolSystem.Checked = menuSystem.Checked = false;
-            }
-        }
-
-        private void toolSparkle_Click(object sender, EventArgs e)
-        {
-            if (!toolSparkle.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
-                toolOffice2010.Checked = menuOffice2010.Checked = false;
-                toolOffice2007.Checked = menuOffice2007.Checked = false;
-                toolSparkle.Checked = menuSparkle.Checked = true;
-                toolSystem.Checked = menuSystem.Checked = false;
-            }
-        }
-
-        private void toolSystem_Click(object sender, EventArgs e)
-        {
-            if (!toolSystem.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
-                toolOffice2010.Checked = menuOffice2010.Checked = false;
-                toolOffice2007.Checked = menuOffice2007.Checked = false;
-                toolSparkle.Checked = menuSparkle.Checked = false;
-                toolSystem.Checked = menuSystem.Checked = true;
-            }
-        }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e) => Close();
     }
+
+    private void toolOffice2007_Click(object sender, EventArgs e)
+    {
+        if (!toolOffice2007.Checked)
+        {
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
+            toolOffice2010.Checked = menuOffice2010.Checked = false;
+            toolOffice2007.Checked = menuOffice2007.Checked = true;
+            toolSparkle.Checked = menuSparkle.Checked = false;
+            toolSystem.Checked = menuSystem.Checked = false;
+        }
+    }
+
+    private void toolSparkle_Click(object sender, EventArgs e)
+    {
+        if (!toolSparkle.Checked)
+        {
+            kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
+            toolOffice2010.Checked = menuOffice2010.Checked = false;
+            toolOffice2007.Checked = menuOffice2007.Checked = false;
+            toolSparkle.Checked = menuSparkle.Checked = true;
+            toolSystem.Checked = menuSystem.Checked = false;
+        }
+    }
+
+    private void toolSystem_Click(object sender, EventArgs e)
+    {
+        if (!toolSystem.Checked)
+        {
+            kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
+            toolOffice2010.Checked = menuOffice2010.Checked = false;
+            toolOffice2007.Checked = menuOffice2007.Checked = false;
+            toolSparkle.Checked = menuSparkle.Checked = false;
+            toolSystem.Checked = menuSystem.Checked = true;
+        }
+    }
+
+    private void exitToolStripMenuItem_Click(object sender, EventArgs e) => Close();
 }

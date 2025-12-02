@@ -14,114 +14,113 @@ using System;
 
 using Krypton.Toolkit;
 
-namespace ThreePaneApplication
+namespace ThreePaneApplication;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
+    public Form1() => InitializeComponent();
+
+    private void kryptonOffice2010Blue_CheckedChanged(object sender, EventArgs e)
     {
-        public Form1() => InitializeComponent();
-
-        private void kryptonOffice2010Blue_CheckedChanged(object sender, EventArgs e)
+        if (kryptonOffice2010Blue.Checked)
         {
-            if (kryptonOffice2010Blue.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
         }
+    }
 
-        private void kryptonOffice2010Silver_CheckedChanged(object sender, EventArgs e)
+    private void kryptonOffice2010Silver_CheckedChanged(object sender, EventArgs e)
+    {
+        if (kryptonOffice2010Silver.Checked)
         {
-            if (kryptonOffice2010Silver.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
         }
+    }
 
-        private void kryptonOffice2010Black_CheckedChanged(object sender, EventArgs e)
+    private void kryptonOffice2010Black_CheckedChanged(object sender, EventArgs e)
+    {
+        if (kryptonOffice2010Black.Checked)
         {
-            if (kryptonOffice2010Black.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Black;
         }
+    }
 
-        private void kryptonOffice2007Blue_CheckedChanged(object sender, EventArgs e)
+    private void kryptonOffice2007Blue_CheckedChanged(object sender, EventArgs e)
+    {
+        if (kryptonOffice2007Blue.Checked)
         {
-            if (kryptonOffice2007Blue.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Blue;
         }
+    }
 
-        private void kryptonOffice2007Silver_CheckedChanged(object sender, EventArgs e)
+    private void kryptonOffice2007Silver_CheckedChanged(object sender, EventArgs e)
+    {
+        if (kryptonOffice2007Silver.Checked)
         {
-            if (kryptonOffice2007Silver.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Silver;
         }
+    }
 
-        private void kryptonOffice2007Black_CheckedChanged(object sender, EventArgs e)
+    private void kryptonOffice2007Black_CheckedChanged(object sender, EventArgs e)
+    {
+        if (kryptonOffice2007Black.Checked)
         {
-            if (kryptonOffice2007Black.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2007Black;
         }
+    }
 
-        private void kryptonOffice2003_CheckedChanged(object sender, EventArgs e)
+    private void kryptonOffice2003_CheckedChanged(object sender, EventArgs e)
+    {
+        if (kryptonOffice2003.Checked)
         {
-            if (kryptonOffice2003.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalOffice2003;
         }
+    }
 
-        private void kryptonSystem_CheckedChanged(object sender, EventArgs e)
+    private void kryptonSystem_CheckedChanged(object sender, EventArgs e)
+    {
+        if (kryptonSystem.Checked)
         {
-            if (kryptonSystem.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
         }
+    }
 
-        private void kryptonSparkleBlue_CheckedChanged(object sender, EventArgs e)
+    private void kryptonSparkleBlue_CheckedChanged(object sender, EventArgs e)
+    {
+        if (kryptonSparkleBlue.Checked)
         {
-            if (kryptonSparkleBlue.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.SparkleBlue;
         }
+    }
 
-        private void kryptonSparkleOrange_CheckedChanged(object sender, EventArgs e)
+    private void kryptonSparkleOrange_CheckedChanged(object sender, EventArgs e)
+    {
+        if (kryptonSparkleOrange.Checked)
         {
-            if (kryptonSparkleOrange.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.SparkleOrange;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.SparkleOrange;
         }
+    }
 
-        private void kryptonSparklePurple_CheckedChanged(object sender, EventArgs e)
+    private void kryptonSparklePurple_CheckedChanged(object sender, EventArgs e)
+    {
+        if (kryptonSparklePurple.Checked)
         {
-            if (kryptonSparklePurple.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.SparklePurple;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.SparklePurple;
         }
+    }
 
-        private void kryptonCustom_CheckedChanged(object sender, EventArgs e)
+    private void kryptonCustom_CheckedChanged(object sender, EventArgs e)
+    {
+        if (kryptonCustom.Checked)
         {
-            if (kryptonCustom.Checked)
-            {
-                kryptonManager.GlobalCustomPalette = kryptonPaletteCustom;
-            }
+            kryptonManager.GlobalCustomPalette = kryptonPaletteCustom;
         }
+    }
 
-        private void kryptonOffice2013White_CheckedChanged(object sender, EventArgs e)
+    private void kryptonOffice2013White_CheckedChanged(object sender, EventArgs e)
+    {
+        if (kryptonOffice2013White.Checked)
         {
-            if (kryptonOffice2013White.Checked)
-            {
-                kryptonManager.GlobalPaletteMode = PaletteMode.Office2013White;
-            }
+            kryptonManager.GlobalPaletteMode = PaletteMode.Office2013White;
         }
     }
 }

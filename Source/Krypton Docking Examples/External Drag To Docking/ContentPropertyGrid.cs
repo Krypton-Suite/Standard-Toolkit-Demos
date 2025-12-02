@@ -16,46 +16,45 @@ using System.Windows.Forms;
 
 using Krypton.Toolkit;
 
-namespace ExternalDragToDocking
+namespace ExternalDragToDocking;
+
+public partial class ContentPropertyGrid : UserControl
 {
-    public partial class ContentPropertyGrid : UserControl
+    public ContentPropertyGrid()
     {
-        public ContentPropertyGrid()
+        InitializeComponent();
+    }
+
+    /// <summary> 
+    /// Clean up any resources being used.
+    /// </summary>
+    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    protected override void Dispose(bool disposing)
+    {
+        // Unhook from events so this control can be garbage collected
+        KryptonManager.GlobalPaletteChanged -= OnGlobalPaletteChanged;
+
+        if (disposing)
         {
-            InitializeComponent();
+            components?.Dispose();
         }
+        base.Dispose(disposing);
+    }
 
-        /// <summary> 
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            // Unhook from events so this control can be garbage collected
-            KryptonManager.GlobalPaletteChanged -= OnGlobalPaletteChanged;
+    private void ContentPropertyGrid_Load(object sender, EventArgs e)
+    {
+        // Hook into global palette changes
+        KryptonManager.GlobalPaletteChanged += OnGlobalPaletteChanged;
 
-            if (disposing)
-            {
-                components?.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+        // Set correct initial font for the property grid
+        OnGlobalPaletteChanged(null, EventArgs.Empty);
+    }
 
-        private void ContentPropertyGrid_Load(object sender, EventArgs e)
-        {
-            // Hook into global palette changes
-            KryptonManager.GlobalPaletteChanged += OnGlobalPaletteChanged;
-
-            // Set correct initial font for the property grid
-            OnGlobalPaletteChanged(null, EventArgs.Empty);
-        }
-
-        private void OnGlobalPaletteChanged(object sender, EventArgs e)
-        {
-            // Use the current font from the global palette
-            var palette = KryptonManager.CurrentGlobalPalette;
-            Font font = palette.GetContentShortTextFont(PaletteContentStyle.LabelNormalControl, PaletteState.Normal);
-            propertyGrid1.Font = font;
-        }
+    private void OnGlobalPaletteChanged(object sender, EventArgs e)
+    {
+        // Use the current font from the global palette
+        var palette = KryptonManager.CurrentGlobalPalette;
+        Font font = palette.GetContentShortTextFont(PaletteContentStyle.LabelNormalControl, PaletteState.Normal);
+        propertyGrid1.Font = font;
     }
 }

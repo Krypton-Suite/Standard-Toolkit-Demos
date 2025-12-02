@@ -12,27 +12,26 @@
 
 using System.Windows.Forms;
 
-namespace DockingPersistence
+namespace DockingPersistence;
+
+public partial class ContentPropertyGrid : UserControl
 {
-    public partial class ContentPropertyGrid : UserControl
+    public ContentPropertyGrid()
     {
-        public ContentPropertyGrid()
-        {
-            InitializeComponent();
-        }
-
-        /// <summary> 
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                components?.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
+        InitializeComponent();
     }
+
+    /// <summary> 
+    /// Clean up any resources being used.
+    /// </summary>
+    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing)
+        {
+            components?.Dispose();
+        }
+        base.Dispose(disposing);
+    }
+
 }

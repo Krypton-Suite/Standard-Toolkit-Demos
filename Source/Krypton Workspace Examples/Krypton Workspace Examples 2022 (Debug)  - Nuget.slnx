@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="Advanced Page Drag + Drop/Advanced Page Drag + Drop 2022.csproj" />
+  <Project Path="Basic Page Drag + Drop/Basic Page Drag + Drop 2022.csproj" />
+  <Project Path="Cell Maximize + Restore/Cell Maximize + Restore 2022.csproj" />
+  <Project Path="Memo Editor/Memo Editor 2022.csproj" />
+  <Project Path="Workspace Cell Layout/Workspace Cell Layout 2022.csproj" />
+  <Project Path="Workspace Cell Modes/Workspace Cell Modes 2022.csproj" />
+  <Project Path="Workspace Persistence/Workspace Persistence 2022.csproj" />
+</Solution>

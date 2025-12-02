@@ -15,28 +15,27 @@ using System.Windows.Forms;
 
 using Krypton.Toolkit;
 
-namespace KryptonCommandExamples
+namespace KryptonCommandExamples;
+
+public partial class Form1 : Form
 {
-    public partial class Form1 : Form
+    public Form1() => InitializeComponent();
+
+    private void buttonAttach_Click(object sender, EventArgs e) => AssignCommand(kryptonCommand);
+
+    private void buttonUnattach_Click(object sender, EventArgs e) => AssignCommand(null!);
+
+    private void AssignCommand(KryptonCommand? command)
     {
-        public Form1() => InitializeComponent();
-
-        private void buttonAttach_Click(object sender, EventArgs e) => AssignCommand(kryptonCommand);
-
-        private void buttonUnattach_Click(object sender, EventArgs e) => AssignCommand(null!);
-
-        private void AssignCommand(KryptonCommand? command)
-        {
-            buttonSpecAny1.KryptonCommand = command;
-            kryptonButton1.KryptonCommand = command;
-            kryptonCheckButton1.KryptonCommand = command;
-            kryptonDropButton1.KryptonCommand = command;
-            kryptonColorButton1.KryptonCommand = command;
-            kryptonLabel1.KryptonCommand = command;
-            kryptonLinkLabel1.KryptonCommand = command;
-            kryptonCheckBox1.KryptonCommand = command;
-        }
-
-        private void buttonClose_Click(object sender, EventArgs e) => Close();
+        buttonSpecAny1.KryptonCommand = command;
+        kryptonButton1.KryptonCommand = command;
+        kryptonCheckButton1.KryptonCommand = command;
+        kryptonDropButton1.KryptonCommand = command;
+        kryptonColorButton1.KryptonCommand = command;
+        kryptonLabel1.KryptonCommand = command;
+        kryptonLinkLabel1.KryptonCommand = command;
+        kryptonCheckBox1.KryptonCommand = command;
     }
+
+    private void buttonClose_Click(object sender, EventArgs e) => Close();
 }

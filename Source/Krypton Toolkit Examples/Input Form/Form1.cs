@@ -14,73 +14,72 @@ using System;
 
 using Krypton.Toolkit;
 
-namespace InputForm
+namespace InputForm;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
+    public Form1() => InitializeComponent();
+
+    private void office2010_Click(object sender, EventArgs e)
     {
-        public Form1() => InitializeComponent();
+        kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
+        toolStripOffice2010.Checked = true;
+        toolStripOffice2007.Checked = false;
+        toolStripSystem.Checked = false;
+        toolStripSparkle.Checked = false;
+        office2010MenuItem.Checked = true;
+        office2007MenuItem.Checked = false;
+        systemMenuItem.Checked = false;
+        sparkleMenuItem.Checked = false;
+    }
 
-        private void office2010_Click(object sender, EventArgs e)
-        {
-            kryptonManager1.GlobalPaletteMode = PaletteMode.Office2010Blue;
-            toolStripOffice2010.Checked = true;
-            toolStripOffice2007.Checked = false;
-            toolStripSystem.Checked = false;
-            toolStripSparkle.Checked = false;
-            office2010MenuItem.Checked = true;
-            office2007MenuItem.Checked = false;
-            systemMenuItem.Checked = false;
-            sparkleMenuItem.Checked = false;
-        }
+    private void office2007_Click(object sender, EventArgs e)
+    {
+        kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Blue;
+        toolStripOffice2010.Checked = false;
+        toolStripOffice2007.Checked = true;
+        toolStripSystem.Checked = false;
+        toolStripSparkle.Checked = false;
+        office2010MenuItem.Checked = false;
+        office2007MenuItem.Checked = true;
+        systemMenuItem.Checked = false;
+        sparkleMenuItem.Checked = false;
+    }
 
-        private void office2007_Click(object sender, EventArgs e)
-        {
-            kryptonManager1.GlobalPaletteMode = PaletteMode.Office2007Blue;
-            toolStripOffice2010.Checked = false;
-            toolStripOffice2007.Checked = true;
-            toolStripSystem.Checked = false;
-            toolStripSparkle.Checked = false;
-            office2010MenuItem.Checked = false;
-            office2007MenuItem.Checked = true;
-            systemMenuItem.Checked = false;
-            sparkleMenuItem.Checked = false;
-        }
+    private void sparkle_Click(object sender, EventArgs e)
+    {
+        kryptonManager1.GlobalPaletteMode = PaletteMode.SparkleBlue;
+        toolStripOffice2010.Checked = false;
+        toolStripOffice2007.Checked = false;
+        toolStripSystem.Checked = false;
+        toolStripSparkle.Checked = true;
+        office2010MenuItem.Checked = false;
+        office2007MenuItem.Checked = false;
+        systemMenuItem.Checked = false;
+        sparkleMenuItem.Checked = true;
+    }
 
-        private void sparkle_Click(object sender, EventArgs e)
-        {
-            kryptonManager1.GlobalPaletteMode = PaletteMode.SparkleBlue;
-            toolStripOffice2010.Checked = false;
-            toolStripOffice2007.Checked = false;
-            toolStripSystem.Checked = false;
-            toolStripSparkle.Checked = true;
-            office2010MenuItem.Checked = false;
-            office2007MenuItem.Checked = false;
-            systemMenuItem.Checked = false;
-            sparkleMenuItem.Checked = true;
-        }
+    private void system_Click(object sender, EventArgs e)
+    {
+        kryptonManager1.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
+        toolStripOffice2010.Checked = false;
+        toolStripOffice2007.Checked = false;
+        toolStripSystem.Checked = true;
+        toolStripSparkle.Checked = false;
+        office2010MenuItem.Checked = false;
+        office2007MenuItem.Checked = false;
+        systemMenuItem.Checked = true;
+        sparkleMenuItem.Checked = false;
+    }
 
-        private void system_Click(object sender, EventArgs e)
-        {
-            kryptonManager1.GlobalPaletteMode = PaletteMode.ProfessionalSystem;
-            toolStripOffice2010.Checked = false;
-            toolStripOffice2007.Checked = false;
-            toolStripSystem.Checked = true;
-            toolStripSparkle.Checked = false;
-            office2010MenuItem.Checked = false;
-            office2007MenuItem.Checked = false;
-            systemMenuItem.Checked = true;
-            sparkleMenuItem.Checked = false;
-        }
+    private void clearTelephone_Click(object sender, EventArgs e) => maskedTextBoxTelephone.Text = string.Empty;
 
-        private void clearTelephone_Click(object sender, EventArgs e) => maskedTextBoxTelephone.Text = string.Empty;
+    private void exitToolStripMenuItem_Click(object sender, EventArgs e) => Close();
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e) => Close();
+    private void buttonOK_Click(object sender, EventArgs e)
+    {
+        KryptonInputBoxData data = new KryptonInputBoxData() { Caption = textBoxName.Text };
 
-        private void buttonOK_Click(object sender, EventArgs e)
-        {
-            KryptonInputBoxData data = new KryptonInputBoxData() { Caption = textBoxName.Text };
-
-            KryptonInputBox.Show(data);
-        }
+        KryptonInputBox.Show(data);
     }
 }

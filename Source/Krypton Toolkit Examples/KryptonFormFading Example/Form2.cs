@@ -5,10 +5,9 @@
 
 using Krypton.Toolkit;
 
-namespace KryptonFormFadingExample
+namespace KryptonFormFadingExample;
+
+public partial class Form2 : KryptonForm
 {
-    public partial class Form2 : KryptonForm
-    {
-        public Form2() => InitializeComponent();
-    }
+    public Form2() => InitializeComponent();
 }

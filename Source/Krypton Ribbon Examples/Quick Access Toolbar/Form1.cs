@@ -16,109 +16,108 @@ using System.Drawing;
 using Krypton.Ribbon;
 using Krypton.Toolkit;
 
-namespace QuickAccessToolbar
+namespace QuickAccessToolbar;
+
+public partial class Form1 : KryptonForm
 {
-    public partial class Form1 : KryptonForm
+    private int _count;
+
+    private readonly Image[] _images = new Image[]{  global::QuickAccessToolbar.Properties.Resources.flag_australia,
+                                            global::QuickAccessToolbar.Properties.Resources.flag_cameroon,
+                                            global::QuickAccessToolbar.Properties.Resources.flag_canada,
+                                            global::QuickAccessToolbar.Properties.Resources.flag_czech_republic,
+                                            global::QuickAccessToolbar.Properties.Resources.flag_egypt,
+                                            global::QuickAccessToolbar.Properties.Resources.flag_france,
+                                            global::QuickAccessToolbar.Properties.Resources.flag_hong_kong,
+                                            global::QuickAccessToolbar.Properties.Resources.flag_italy,
+                                            global::QuickAccessToolbar.Properties.Resources.flag_lithuania,
+                                            global::QuickAccessToolbar.Properties.Resources.flag_new_zealand,
+                                            global::QuickAccessToolbar.Properties.Resources.flag_peru,
+                                            global::QuickAccessToolbar.Properties.Resources.flag_wales  };
+
+    private readonly string[] _names = new string[]{ "Australia", "Cameroon", "Canada",
+                                            "Czech Republic", "Egypt", "France",
+                                            "Hong Kong", "Italy", "Lithuania",
+                                            "New Zealand", "Peru", "Wales" };
+
+    public Form1()
     {
-        private int _count;
+        InitializeComponent();
+    }
 
-        private readonly Image[] _images = new Image[]{  global::QuickAccessToolbar.Properties.Resources.flag_australia,
-                                                global::QuickAccessToolbar.Properties.Resources.flag_cameroon,
-                                                global::QuickAccessToolbar.Properties.Resources.flag_canada,
-                                                global::QuickAccessToolbar.Properties.Resources.flag_czech_republic,
-                                                global::QuickAccessToolbar.Properties.Resources.flag_egypt,
-                                                global::QuickAccessToolbar.Properties.Resources.flag_france,
-                                                global::QuickAccessToolbar.Properties.Resources.flag_hong_kong,
-                                                global::QuickAccessToolbar.Properties.Resources.flag_italy,
-                                                global::QuickAccessToolbar.Properties.Resources.flag_lithuania,
-                                                global::QuickAccessToolbar.Properties.Resources.flag_new_zealand,
-                                                global::QuickAccessToolbar.Properties.Resources.flag_peru,
-                                                global::QuickAccessToolbar.Properties.Resources.flag_wales  };
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        buttonAdd_Click(this, EventArgs.Empty);
+        buttonAdd_Click(this, EventArgs.Empty);
+        buttonAdd_Click(this, EventArgs.Empty);
+    }
 
-        private readonly string[] _names = new string[]{ "Australia", "Cameroon", "Canada",
-                                                "Czech Republic", "Egypt", "France",
-                                                "Hong Kong", "Italy", "Lithuania",
-                                                "New Zealand", "Peru", "Wales" };
-
-        public Form1()
+    private void checkSetQATPosition_CheckedButtonChanged(object sender, EventArgs e)
+    {
+        if (checkSetQATPosition.CheckedButton == checkButtonAbove)
         {
-            InitializeComponent();
+            kryptonRibbon.QATLocation = QATLocation.Above;
+        }
+        else if (checkSetQATPosition.CheckedButton == checkButtonBelow)
+        {
+            kryptonRibbon.QATLocation = QATLocation.Below;
+        }
+        else if (checkSetQATPosition.CheckedButton == checkButtonHidden)
+        {
+            kryptonRibbon.QATLocation = QATLocation.Hidden;
+        }
+    }
+
+    private void checkSetQATUserChange_CheckedButtonChanged(object sender, EventArgs e)
+    {
+        if (checkSetQATUserChange.CheckedButton == checkButtonAllowUserChanges)
+        {
+            kryptonRibbon.QATUserChange = true;
+        }
+        else if (checkSetQATUserChange.CheckedButton == checkButtonDisallowUserChanges)
+        {
+            kryptonRibbon.QATUserChange = false;
+        }
+    }
+
+    private void buttonAdd_Click(object sender, EventArgs e)
+    {
+        var qatButton = new KryptonRibbonQATButton
+        {
+            Text = _names[_count],
+            Image = _images[_count]
+        };
+        _count = (++_count % 12);
+        kryptonRibbon.QATButtons.Add(qatButton);
+
+        UpdateButtons();
+    }
+
+    private void buttonRemove_Click(object sender, EventArgs e)
+    {
+        if (kryptonRibbon.QATButtons.Count > 0)
+        {
+            kryptonRibbon.QATButtons.RemoveAt(0);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            buttonAdd_Click(this, EventArgs.Empty);
-            buttonAdd_Click(this, EventArgs.Empty);
-            buttonAdd_Click(this, EventArgs.Empty);
-        }
+        UpdateButtons();
+    }
 
-        private void checkSetQATPosition_CheckedButtonChanged(object sender, EventArgs e)
-        {
-            if (checkSetQATPosition.CheckedButton == checkButtonAbove)
-            {
-                kryptonRibbon.QATLocation = QATLocation.Above;
-            }
-            else if (checkSetQATPosition.CheckedButton == checkButtonBelow)
-            {
-                kryptonRibbon.QATLocation = QATLocation.Below;
-            }
-            else if (checkSetQATPosition.CheckedButton == checkButtonHidden)
-            {
-                kryptonRibbon.QATLocation = QATLocation.Hidden;
-            }
-        }
+    private void buttonClear_Click(object sender, EventArgs e)
+    {
+        kryptonRibbon.QATButtons.Clear();
+        UpdateButtons();
+    }
 
-        private void checkSetQATUserChange_CheckedButtonChanged(object sender, EventArgs e)
-        {
-            if (checkSetQATUserChange.CheckedButton == checkButtonAllowUserChanges)
-            {
-                kryptonRibbon.QATUserChange = true;
-            }
-            else if (checkSetQATUserChange.CheckedButton == checkButtonDisallowUserChanges)
-            {
-                kryptonRibbon.QATUserChange = false;
-            }
-        }
+    private void UpdateButtons()
+    {
+        var enable = (kryptonRibbon.QATButtons.Count > 0);
+        buttonRemove.Enabled = enable;
+        buttonClear.Enabled = enable;
+    }
 
-        private void buttonAdd_Click(object sender, EventArgs e)
-        {
-            var qatButton = new KryptonRibbonQATButton
-            {
-                Text = _names[_count],
-                Image = _images[_count]
-            };
-            _count = (++_count % 12);
-            kryptonRibbon.QATButtons.Add(qatButton);
-
-            UpdateButtons();
-        }
-
-        private void buttonRemove_Click(object sender, EventArgs e)
-        {
-            if (kryptonRibbon.QATButtons.Count > 0)
-            {
-                kryptonRibbon.QATButtons.RemoveAt(0);
-            }
-
-            UpdateButtons();
-        }
-
-        private void buttonClear_Click(object sender, EventArgs e)
-        {
-            kryptonRibbon.QATButtons.Clear();
-            UpdateButtons();
-        }
-
-        private void UpdateButtons()
-        {
-            var enable = (kryptonRibbon.QATButtons.Count > 0);
-            buttonRemove.Enabled = enable;
-            buttonClear.Enabled = enable;
-        }
-
-        private void appMenu_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+    private void appMenu_Click(object sender, EventArgs e)
+    {
+        Close();
     }
 }
