@@ -257,6 +257,11 @@
     <BuildType Solution="Installer|*" Project="Release" />
     <BuildType Solution="Nightly|*" Project="Release" />
   </Project>
+  <Project Path="KryptonNotifyIcon Example/KryptonNotifyIcon Example.csproj" Id="e9189882-362a-4c4d-8a5c-b50b61985155">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
   <Project Path="KryptonNumericUpDown Examples/KryptonNumericUpDown Examples 2022.csproj">
     <BuildType Solution="Canary|*" Project="Release" />
     <BuildType Solution="Installer|*" Project="Release" />
@@ -310,6 +315,11 @@
   <Project Path="KryptonScrollbar Examples/KryptonScrollbar Examples 2022.csproj">
     <BuildType Solution="Canary|*" Project="Release" />
     <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonSearchBox Examples/KryptonSearchBox Examples.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
     <BuildType Solution="Nightly|*" Project="Release" />
   </Project>
   <Project Path="KryptonSeparator Examples/KryptonSeparator Examples 2022.csproj">

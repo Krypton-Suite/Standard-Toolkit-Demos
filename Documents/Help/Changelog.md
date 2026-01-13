@@ -2,6 +2,10 @@
 
 ## 2026-11-xx - Build 2611 - November 2026
 
+* Implemented Bug Reporting Dialog example
+* Implemented Krypton ExceptionDialog example
+* Implemented Krypton SearchBox example
+* Implemented Krypton ErrorProvider example
 * Implemented Krypton MenuStrip and ToolStrip examples
 * Implemented [#247](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/247), Use `filescoped` namespaces
 * Implemented [#243](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/243), Support the new `slnx` format

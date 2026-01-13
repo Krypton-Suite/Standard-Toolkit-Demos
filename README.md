@@ -13,6 +13,8 @@ There are 2 sets of solutions in these projects:
 
 # [Ribbon Examples](Source/Krypton%20Ribbon%20Examples/README.md)
 
+# [Utilities Examples](Source/Krypton%20Utilities%20Examples/README.md)
+
 ## [Krypton Explorer](Source/Krypton%20Explorer/README.md)
 This allows the launching of the compiled examples.
 
