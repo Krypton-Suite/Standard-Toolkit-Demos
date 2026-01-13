@@ -10,7 +10,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace KryptonNotifyIconExample
+namespace KryptonTouchScreenExample
 {
     internal static class Program
     {

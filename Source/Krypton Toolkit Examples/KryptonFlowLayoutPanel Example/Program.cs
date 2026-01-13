@@ -1,6 +1,6 @@
 #region BSD License
 /*
- *
+ * 
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
  *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2026 - 2026. All rights reserved.
  *
@@ -10,7 +10,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace KryptonNotifyIconExample
+namespace KryptonFlowLayoutPanelExample
 {
     internal static class Program
     {
@@ -20,8 +20,6 @@ namespace KryptonNotifyIconExample
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
