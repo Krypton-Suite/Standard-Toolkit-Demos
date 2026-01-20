@@ -244,6 +244,11 @@
     <BuildType Solution="Installer|*" Project="Release" />
     <BuildType Solution="Nightly|*" Project="Release" />
   </Project>
+  <Project Path="KryptonJumpList Example/KryptonJumpList Example.csproj" Id="b32d0b7d-ee14-487d-913a-5eccbae53cef">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
   <Project Path="KryptonLabel Examples/KryptonLabel Examples 2022.csproj">
     <BuildType Solution="Canary|*" Project="Release" />
     <BuildType Solution="Installer|*" Project="Release" />
@@ -312,6 +317,11 @@
   <Project Path="KryptonPrintDialog Example/KryptonPrintDialog Example 2022.csproj">
     <BuildType Solution="Canary|*" Project="Release" />
     <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonPrintPreviewDialog Example/KryptonPrintPreviewDialog Example.csproj" Id="c3667981-e7e7-4e2f-8079-4f60960d2c9c">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
     <BuildType Solution="Nightly|*" Project="Release" />
   </Project>
   <Project Path="KryptonProgressbar Examples/KryptonProgressbar Examples 2022.csproj">
