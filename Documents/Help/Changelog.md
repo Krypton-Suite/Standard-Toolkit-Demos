@@ -9,6 +9,8 @@
 * Implemented Krypton MenuStrip and ToolStrip examples
 * Implemented [#247](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/247), Use `filescoped` namespaces
 * Implemented [#243](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/243), Support the new `slnx` format
+* Centralized `TargetFrameworks` property in `Directory.Build.props` for all projects
+* Added support for .NET 11
 
 
 ## 2025-11-24 - Build 2511 - November

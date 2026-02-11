@@ -1,8 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFrameworks>net48;net8.0-windows;net9.0-windows</TargetFrameworks>
         <RootNamespace>KryptonWebBrowserExample</RootNamespace>
         <AssemblyName>Krypton WebBrowser Example</AssemblyName>
         <UseWindowsForms>true</UseWindowsForms>

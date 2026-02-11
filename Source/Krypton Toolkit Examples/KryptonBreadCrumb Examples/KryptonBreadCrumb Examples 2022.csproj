@@ -1,6 +1,5 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
     <PropertyGroup>
-        <TargetFrameworks>net48;net8.0-windows;net9.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
         <RootNamespace>KryptonBreadCrumbExamples</RootNamespace>
         <AssemblyName>Krypton Bread Crumb Examples</AssemblyName>
