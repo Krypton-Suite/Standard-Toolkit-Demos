@@ -5,6 +5,7 @@
 	* [Child Control Stack](#child-control-stack)
 	* [Custom Control using Palettes](#custom-control-using-palettes)
 	* [Custom Control using Renderers](#custom-control-using-renderers)
+	* [Error Provider](#error-provider)
 	* [Expanding HeaderGroups (DockStyle)](#expanding-headergroups-dockstyle)
 	* [Expanding HeaderGroups (Splitters)](#expanding-headergroups-splitters)
 	* [Expanding HeaderGroups (Stack)](#expanding-headergroups-stack)
@@ -13,7 +14,7 @@
 	* [Krypton Scrollbars](#krypton-scrollbars)
 	* [Krypton Theme Selector](#krypton-theme-selector)
 	* [KryptonBorderEdge Examples](#kryptonborderedge-examples)
-	* [[KryptonBreadCrumb Examples](#kryptonbreadcrumb-examples)
+	* [KryptonBreadCrumb Examples](#kryptonbreadcrumb-examples)
 	* [KryptonButton Examples](#kryptonbutton-examples)
 	* [Krypton UAC Button](#krypton-uac-button)
 	* [KryptonAboutToolkit Example](#krypton-about-toolkit-example)
@@ -100,6 +101,8 @@ There are 2 set of solutions in these projects:
 ![Custom Control using Palettes](Custom%20Control%20using%20Palettes/example.png)
 ## Custom Control using Renderers
 ![Custom Control using Renderers](Custom%20Control%20using%20Renderers/example.png)
+## Error Provider
+![Error Provider](KryptonErrorProvider%20Example/KryptonErrorProviderExample.gif)
 ## Expanding HeaderGroups (DockStyle)
 ![Expanding HeaderGroups (DockStyle)](Expanding%20HeaderGroups%20(DockStyle)/example.png)
 ## Expanding HeaderGroups (Splitters)

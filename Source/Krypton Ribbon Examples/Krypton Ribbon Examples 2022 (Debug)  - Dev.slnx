@@ -74,4 +74,9 @@
     <BuildType Solution="Installer|*" Project="Release" />
     <BuildType Solution="Nightly|*" Project="Release" />
   </Project>
+  <Project Path="RibbonMerging Example/RibbonMerging Example.csproj" Id="d613cf8b-0535-4697-a8b1-1a8ec1af1e70">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
 </Solution>

@@ -1,6 +1,5 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net48;net8.0-windows;net9.0-windows</TargetFrameworks>
         <UseWindowsForms>true</UseWindowsForms>
         <OutputType>WinExe</OutputType>
         <RootNamespace>KryptonListViewExamples</RootNamespace>

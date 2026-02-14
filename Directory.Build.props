@@ -1,5 +1,6 @@
 <Project>
   <PropertyGroup>
     <GenerateResourceWarnOnBinaryFormatterUse>false</GenerateResourceWarnOnBinaryFormatterUse>
+    <TargetFrameworks>net48;net481;net8.0-windows;net9.0-windows;net10.0-windows;net11.0-windows</TargetFrameworks>
   </PropertyGroup>
 </Project>
