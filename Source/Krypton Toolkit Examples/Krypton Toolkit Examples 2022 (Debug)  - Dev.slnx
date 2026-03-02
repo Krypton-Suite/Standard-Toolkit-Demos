@@ -379,6 +379,21 @@
     <BuildType Solution="Installer|*" Project="Release" />
     <BuildType Solution="Nightly|*" Project="Release" />
   </Project>
+  <Project Path="KryptonTaskbarOverlayIcon Example/KryptonTaskbarOverlayIcon Example.csproj" Id="b6f8021e-7033-4e93-ae31-f3d66bce3b3d">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonTaskbarProgressBar Example/KryptonTaskbarProgressBar Example.csproj" Id="13817a1f-722b-483c-8931-238e360232ac">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonTaskbarThumbnailButtons Example/KryptonTaskbarThumbnailButtons Example.csproj" Id="ae5a75bb-d2ef-47aa-8a57-6dd44f9fff87">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
   <Project Path="KryptonTaskDialog Examples/KryptonTaskDialog Examples 2022.csproj">
     <BuildType Solution="Canary|*" Project="Release" />
     <BuildType Solution="Installer|*" Project="Release" />

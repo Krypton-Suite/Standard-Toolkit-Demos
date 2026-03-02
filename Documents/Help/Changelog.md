@@ -1,7 +1,10 @@
-# <img src="https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png?raw=true"> Standard Toolkit Demos - ChangeLog
+# ![Krypton](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/blob/master/Krypton.png?raw=true) Standard Toolkit Demos - ChangeLog
 
 ## 2026-11-xx - Build 2611 - November 2026
 
+* Implemented taskbar progressbar example
+* Implemented taskbar overlay icon example
+* Implemented taskbar thumbnail buttons example
 * Implemented Bug Reporting Dialog example
 * Implemented Krypton ExceptionDialog example
 * Implemented Krypton SearchBox example
@@ -12,8 +15,8 @@
 * Centralized `TargetFrameworks` property in `Directory.Build.props` for all projects
 * Added support for .NET 11
 
-
 ## 2025-11-24 - Build 2511 - November
+
 * Implemented [#251](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/251) 'KDataGridView' demo updated; new demo `KryptonToolStripMenuItem`.
 * Resolved [#249](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/249) 'KryptonProgressBar' demo updated with more options.
 * Removed Krypton OutLookGrid example
@@ -26,6 +29,7 @@
 * Resolved [#214](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/214), KryptonDateTimePicker is not launchable from the explorer
 
 ## 2024-11-xx - Build 2411 - November
+
 * Resolved [#165](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/165), Need V90 (nee V85 -> V80) installer created
 * Resolved [#199](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/199), ListView example Theme combo box does not work
 * Resolved [#196](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/196), Demo apps are broken due to **[Breaking Changes]** due to them usage, not fixed
@@ -39,6 +43,7 @@
 * Add support for .NET 9
 
 ## 2023-11-14 - Build 2311 - November 2023
+
 * Relayout in alphabetical order the Components view in the Launch Explorer
 * Add missing Examples to launcher
 * Addition of new example for Progress Bars
@@ -63,9 +68,11 @@
 * Add .NET 8 support
 
 ## 2022-11-21 - Build 2211 - November 2022
+
 * Add support for .NET 7
 * Removed support for .NET 5
 * API tweaks
 
 ## 2022-01-05 - Build 2201 - January 2022
+
 * Added double click functionality to combo box, list box, list view, tree view etc demos

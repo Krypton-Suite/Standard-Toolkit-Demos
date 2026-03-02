@@ -1,4 +1,4 @@
-﻿// *****************************************************************************
+// *****************************************************************************
 // BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
 //  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2024 - 2024. All rights reserved.
 // *****************************************************************************
@@ -9,6 +9,7 @@ using System.Drawing;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
+using Krypton.Utilities;
 
 namespace KryptonToastNotificationExamples;
 
@@ -126,11 +127,11 @@ public partial class UserInputNotification : KryptonForm
 
     /// <summary>Gets or sets the notification icon.</summary>
     /// <value>The notification icon.</value>
-    private KryptonToastNotificationIcon? _notificationIcon;
+    private KryptonToastIcon? _notificationIcon;
 
     /// <summary>Gets or sets the type of the notification input area.</summary>
     /// <value>The type of the notification input area.</value>
-    private KryptonToastNotificationInputAreaType? _notificationInputAreaType;
+    private KryptonToastInputAreaType? _notificationInputAreaType;
 
     /// <summary>Gets or sets the toast notification cue text.</summary>
     /// <value>The toast notification cue text.</value>
@@ -200,14 +201,14 @@ public partial class UserInputNotification : KryptonForm
 
         kcmbDropDownStyle.SelectedIndex = 0;
 
-        foreach (var icon in Enum.GetValues(typeof(KryptonToastNotificationIcon)))
+        foreach (var icon in Enum.GetValues(typeof(KryptonToastIcon)))
         {
             kcmbToastIcon.Items.Add(icon);
         }
 
         kcmbToastIcon.SelectedIndex = 0;
 
-        foreach (var value in Enum.GetValues(typeof(KryptonToastNotificationInputAreaType)))
+        foreach (var value in Enum.GetValues(typeof(KryptonToastInputAreaType)))
         {
             kcmbNotificationInputStyle.Items.Add(value);
         }
@@ -263,11 +264,11 @@ public partial class UserInputNotification : KryptonForm
 
     private void kcmbToastIcon_SelectedIndexChanged(object sender, EventArgs e) =>
         _notificationIcon =
-            (KryptonToastNotificationIcon)Enum.Parse(typeof(KryptonToastNotificationIcon), kcmbToastIcon.Text);
+            (KryptonToastIcon)Enum.Parse(typeof(KryptonToastIcon), kcmbToastIcon.Text);
 
     private void kcmbNotificationInputStyle_SelectedIndexChanged(object sender, EventArgs e) =>
         _notificationInputAreaType =
-            (KryptonToastNotificationInputAreaType)Enum.Parse(typeof(KryptonToastNotificationInputAreaType),
+            (KryptonToastInputAreaType)Enum.Parse(typeof(KryptonToastInputAreaType),
                 kcmbNotificationInputStyle.Text);
 
     private void kcmbDropDownStyle_SelectedIndexChanged(object sender, EventArgs e)
@@ -366,15 +367,15 @@ public partial class UserInputNotification : KryptonForm
 
     private void kbtnShow_Click(object sender, EventArgs e)
     {
-        KryptonUserInputToastNotificationData notificationData = new KryptonUserInputToastNotificationData() { };
+        KryptonUserInputToastData notificationData = new KryptonUserInputToastData() { };
 
         if (kchkShowWithProgressBar.Checked)
         {
-            KryptonToastNotification.ShowNotificationWithProgressBar(notificationData);
+            KryptonToast.ShowNotificationWithProgressBar(notificationData);
         }
         else
         {
-            KryptonToastNotification.ShowNotification(notificationData);
+            KryptonToast.ShowNotification(notificationData);
         }
     }
 

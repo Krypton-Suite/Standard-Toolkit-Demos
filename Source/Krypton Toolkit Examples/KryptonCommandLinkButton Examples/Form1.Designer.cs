@@ -1,4 +1,4 @@
-﻿namespace KryptonCommandLinkButtonExamples;
+namespace KryptonCommandLinkButtonExamples;
 
 partial class Form1
 {
@@ -33,12 +33,12 @@ partial class Form1
         this.kbtOk = new Krypton.Toolkit.KryptonButton();
         this.kryptonBorderEdge1 = new Krypton.Toolkit.KryptonBorderEdge();
         this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
-        this.kryptonCommandLinkButton5 = new Krypton.Toolkit.KryptonCommandLinkButton();
-        this.kryptonCommandLinkButton4 = new Krypton.Toolkit.KryptonCommandLinkButton();
-        this.kryptonCommandLinkButton3 = new Krypton.Toolkit.KryptonCommandLinkButton();
-        this.kryptonCommandLinkButton2 = new Krypton.Toolkit.KryptonCommandLinkButton();
+        this.kryptonCommandLinkButton5 = new Krypton.Toolkit.InternalKryptonCommandLinkButton();
+        this.kryptonCommandLinkButton4 = new Krypton.Toolkit.InternalKryptonCommandLinkButton();
+        this.kryptonCommandLinkButton3 = new Krypton.Toolkit.InternalKryptonCommandLinkButton();
+        this.kryptonCommandLinkButton2 = new Krypton.Toolkit.InternalKryptonCommandLinkButton();
         this.kryptonAlternateCommandLinkButton1 = new Krypton.Toolkit.KryptonAlternateCommandLinkButton();
-        this.kryptonCommandLinkButton1 = new Krypton.Toolkit.KryptonCommandLinkButton();
+        this.kryptonCommandLinkButton1 = new Krypton.Toolkit.InternalKryptonCommandLinkButton();
         this.kpgButtons = new Krypton.Toolkit.KryptonPropertyGrid();
         ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
         this.kryptonPanel1.SuspendLayout();
@@ -292,11 +292,11 @@ partial class Form1
     private Krypton.Toolkit.KryptonBorderEdge kryptonBorderEdge1;
     private Krypton.Toolkit.KryptonPanel kryptonPanel2;
     private Krypton.Toolkit.KryptonPropertyGrid kpgButtons;
-    private Krypton.Toolkit.KryptonCommandLinkButton kryptonCommandLinkButton5;
-    private Krypton.Toolkit.KryptonCommandLinkButton kryptonCommandLinkButton4;
-    private Krypton.Toolkit.KryptonCommandLinkButton kryptonCommandLinkButton3;
-    private Krypton.Toolkit.KryptonCommandLinkButton kryptonCommandLinkButton2;
+    private Krypton.Toolkit.InternalKryptonCommandLinkButton kryptonCommandLinkButton5;
+    private Krypton.Toolkit.InternalKryptonCommandLinkButton kryptonCommandLinkButton4;
+    private Krypton.Toolkit.InternalKryptonCommandLinkButton kryptonCommandLinkButton3;
+    private Krypton.Toolkit.InternalKryptonCommandLinkButton kryptonCommandLinkButton2;
     private Krypton.Toolkit.KryptonAlternateCommandLinkButton kryptonAlternateCommandLinkButton1;
-    private Krypton.Toolkit.KryptonCommandLinkButton kryptonCommandLinkButton1;
+    private Krypton.Toolkit.InternalKryptonCommandLinkButton kryptonCommandLinkButton1;
     private Krypton.Toolkit.KryptonButton kbtOk;
 }

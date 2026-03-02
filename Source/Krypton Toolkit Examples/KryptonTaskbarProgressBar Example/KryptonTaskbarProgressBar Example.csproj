@@ -1,10 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <RootNamespace>KryptonToastNotificationExamples</RootNamespace>
-        <AssemblyName>Krypton Toast Notification Examples</AssemblyName>
-        <ApplicationIcon>Krypton.ico</ApplicationIcon>
+        <RootNamespace>KryptonTaskbarThumbnailProgressBarExample</RootNamespace>
+        <AssemblyName>Krypton Taskbar Thumbnail ProgressBar Example</AssemblyName>
         <UseApplicationTrust>false</UseApplicationTrust>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <UseWindowsForms>true</UseWindowsForms>
@@ -14,16 +13,11 @@
         <Nullable>enable</Nullable>
         <WarningLevel>6</WarningLevel>
         <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
-    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
-    <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+        <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+        <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
 
     </PropertyGroup>
-    <ItemGroup>
-        <None Remove="Krypton.ico" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="Krypton.ico" />
-    </ItemGroup>
+
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>
@@ -33,12 +27,12 @@
         <Otherwise>
             <ItemGroup>
                 <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2022.csproj" />
-                <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Utilities\Krypton.Utilities.csproj" />
             </ItemGroup>
         </Otherwise>
     </Choose>
     <PropertyGroup>
         <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
     </PropertyGroup>
 
 </Project>
