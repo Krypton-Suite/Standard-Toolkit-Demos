@@ -8,8 +8,10 @@
 * Implemented Bug Reporting Dialog example
 * Implemented Krypton ExceptionDialog example
 * Implemented Krypton SearchBox example
+* Implemented Krypton WebView2 example
 * Implemented Krypton ErrorProvider example
 * Implemented Krypton MenuStrip and ToolStrip examples
+* Updated the landing page with screenshots for the new utility controls
 * Implemented [#247](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/247), Use `filescoped` namespaces
 * Implemented [#243](https://github.com/Krypton-Suite/Standard-Toolkit-Demos/issues/243), Support the new `slnx` format
 * Centralized `TargetFrameworks` property in `Directory.Build.props` for all projects
