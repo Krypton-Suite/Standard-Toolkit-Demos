@@ -2,7 +2,7 @@
 /*
  *
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2026 - 2026. All rights reserved.
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege, et al. 2026 - 2026. All rights reserved.
  *
  */
 #endregion
@@ -12,6 +12,8 @@ using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
@@ -40,18 +42,22 @@ public partial class Form1 : KryptonForm
     {
         try
         {
+            if (!HasWebView2Implementation())
+            {
+                ShowWebView2Unavailable("WebView2 support is not available in the referenced Krypton.Toolkit.Utilities build.");
+                return;
+            }
+
             // Initialize the WebView2 control
-            await kryptonWebView21.EnsureCoreWebView2Async();
+            await EnsureCoreWebView2Async();
 
             // Navigate to a test page
-            kryptonWebView21.CoreWebView2?.Navigate("https://www.microsoft.com");
+            NavigateWebView("https://www.microsoft.com");
         }
         catch (Exception ex)
         {
             // If WebView2 fails to initialize, show a message
-            kryptonWebView21.Visible = false;
-            kryptonLabel1.Text = $"WebView2 initialization failed: {ex.Message}\n\nPlease ensure WebView2 Runtime is installed.";
-            kryptonLabel1.Visible = true;
+            ShowWebView2Unavailable($"WebView2 initialization failed: {ex.Message}\n\nPlease ensure WebView2 Runtime is installed.");
         }
     }
 
@@ -78,7 +84,7 @@ public partial class Form1 : KryptonForm
                     url = "https://" + url;
                 }
 
-                kryptonWebView21.CoreWebView2?.Navigate(url);
+                NavigateWebView(url);
             }
         }
         catch (Exception ex)
@@ -99,7 +105,7 @@ public partial class Form1 : KryptonForm
     {
         try
         {
-            kryptonWebView21.CoreWebView2?.GoBack();
+            InvokeCoreWebView2Method("GoBack");
         }
         catch (Exception ex)
         {
@@ -119,7 +125,7 @@ public partial class Form1 : KryptonForm
     {
         try
         {
-            kryptonWebView21.CoreWebView2?.GoForward();
+            InvokeCoreWebView2Method("GoForward");
         }
         catch (Exception ex)
         {
@@ -139,7 +145,7 @@ public partial class Form1 : KryptonForm
     {
         try
         {
-            kryptonWebView21.CoreWebView2?.Reload();
+            InvokeCoreWebView2Method("Reload");
         }
         catch (Exception ex)
         {
@@ -160,9 +166,43 @@ public partial class Form1 : KryptonForm
     private void kryptonWebView21_NavigationCompleted(object sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs e)
     {
         // Update the address bar with the current URL
-        if (e.IsSuccess && kryptonWebView21.CoreWebView2 != null)
+        if (e.IsSuccess && GetCoreWebView2() is { } coreWebView)
         {
-            kryptonTextBox1.Text = kryptonWebView21.CoreWebView2.Source;
+            kryptonTextBox1.Text = coreWebView.GetType().GetProperty("Source")?.GetValue(coreWebView)?.ToString() ?? kryptonTextBox1.Text;
         }
+    }
+
+    private bool HasWebView2Implementation() =>
+        kryptonWebView21.GetType().GetMethod("EnsureCoreWebView2Async", Type.EmptyTypes) != null;
+
+    private async Task EnsureCoreWebView2Async()
+    {
+        var ensureMethod = kryptonWebView21.GetType().GetMethod("EnsureCoreWebView2Async", Type.EmptyTypes);
+        if (ensureMethod?.Invoke(kryptonWebView21, null) is Task ensureTask)
+        {
+            await ensureTask.ConfigureAwait(true);
+        }
+    }
+
+    private object? GetCoreWebView2() =>
+        kryptonWebView21.GetType().GetProperty("CoreWebView2", BindingFlags.Public | BindingFlags.Instance)?.GetValue(kryptonWebView21);
+
+    private void NavigateWebView(string url)
+    {
+        var coreWebView = GetCoreWebView2();
+        coreWebView?.GetType().GetMethod("Navigate", new[] { typeof(string) })?.Invoke(coreWebView, new object[] { url });
+    }
+
+    private void InvokeCoreWebView2Method(string methodName)
+    {
+        var coreWebView = GetCoreWebView2();
+        coreWebView?.GetType().GetMethod(methodName, Type.EmptyTypes)?.Invoke(coreWebView, null);
+    }
+
+    private void ShowWebView2Unavailable(string message)
+    {
+        kryptonWebView21.Visible = false;
+        kryptonLabel1.Text = message;
+        kryptonLabel1.Visible = true;
     }
 }

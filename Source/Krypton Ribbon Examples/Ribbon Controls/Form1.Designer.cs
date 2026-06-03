@@ -92,7 +92,7 @@ partial class Form1
         // 
         // kryptonManager
         // 
-        this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.Office2007Black;
+        this.kryptonManager.GlobalPaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
         // 
         // kryptonPanel1
         // 
@@ -190,6 +190,7 @@ partial class Form1
         // 
         // textBox3
         // 
+        this.textBox3.ButtonSpecs.Add(this.buttonSpecAny1);
         this.textBox3.KeyTip = "T3";
         this.textBox3.Text = "Plus ButtonSpec";
         // 
@@ -227,6 +228,7 @@ partial class Form1
         // 
         // maskedTextBox3
         // 
+        this.maskedTextBox3.ButtonSpecs.Add(this.buttonSpecAny3);
         this.maskedTextBox3.Mask = "00/00/0000";
         this.maskedTextBox3.PromptChar = '-';
         this.maskedTextBox3.Text = "  -  -";
@@ -263,6 +265,7 @@ partial class Form1
         // 
         // dateTimePicker3
         // 
+        this.dateTimePicker3.ButtonSpecs.Add(this.buttonSpecAny5);
         this.dateTimePicker3.CustomFormat = "ss.fff";
         this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
         this.dateTimePicker3.MaximumSize = new System.Drawing.Size(110, 0);
@@ -319,6 +322,7 @@ partial class Form1
         // 
         // comboBox3
         // 
+        this.comboBox3.ButtonSpecs.Add(this.buttonSpecAny2);
         this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
         this.comboBox3.DropDownWidth = 103;
         this.comboBox3.FormattingEnabled = false;
@@ -371,6 +375,7 @@ partial class Form1
         // 
         // numericUpDown2
         // 
+        this.numericUpDown2.ButtonSpecs.Add(this.buttonSpecAny4);
         this.numericUpDown2.DecimalPlaces = 2;
         this.numericUpDown2.Increment = new decimal(new int[] {
         33,
@@ -479,7 +484,7 @@ partial class Form1
         // 
         // miscCmbTheme
         // 
-        this.miscCmbTheme.DefaultPalette = Krypton.Toolkit.PaletteMode.Office2007Black;
+        this.miscCmbTheme.DefaultPalette = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
         this.miscCmbTheme.DisplayMember = "Key";
         this.miscCmbTheme.DropDownWidth = 300;
         this.miscCmbTheme.FormattingEnabled = false;
@@ -602,4 +607,3 @@ partial class Form1
     private Krypton.Ribbon.KryptonRibbonGroupThemeComboBox miscCmbTheme;
     private Krypton.Toolkit.KryptonPanel kryptonPanel1;
 }
-
