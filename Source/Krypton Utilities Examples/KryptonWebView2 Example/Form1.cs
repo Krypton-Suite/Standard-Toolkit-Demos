@@ -173,16 +173,25 @@ public partial class Form1 : KryptonForm
     }
 
     private bool HasWebView2Implementation() =>
-        kryptonWebView21.GetType().GetMethod("EnsureCoreWebView2Async", Type.EmptyTypes) != null;
+        GetEnsureCoreWebView2AsyncMethod() != null;
 
     private async Task EnsureCoreWebView2Async()
     {
-        var ensureMethod = kryptonWebView21.GetType().GetMethod("EnsureCoreWebView2Async", Type.EmptyTypes);
-        if (ensureMethod?.Invoke(kryptonWebView21, null) is Task ensureTask)
+        var ensureMethod = GetEnsureCoreWebView2AsyncMethod();
+        var parameters = ensureMethod?.GetParameters();
+        var arguments = parameters?.Length > 0 ? new object?[parameters.Length] : null;
+        if (ensureMethod?.Invoke(kryptonWebView21, arguments) is Task ensureTask)
         {
             await ensureTask.ConfigureAwait(true);
         }
     }
+
+    private MethodInfo? GetEnsureCoreWebView2AsyncMethod() =>
+        kryptonWebView21.GetType()
+            .GetMethods(BindingFlags.Public | BindingFlags.Instance)
+            .Where(method => method.Name == "EnsureCoreWebView2Async" && typeof(Task).IsAssignableFrom(method.ReturnType))
+            .OrderBy(method => method.GetParameters().Length)
+            .FirstOrDefault();
 
     private object? GetCoreWebView2() =>
         kryptonWebView21.GetType().GetProperty("CoreWebView2", BindingFlags.Public | BindingFlags.Instance)?.GetValue(kryptonWebView21);
