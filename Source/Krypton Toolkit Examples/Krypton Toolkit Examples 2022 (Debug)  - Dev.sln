@@ -172,7 +172,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonToggleSwitch Example
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonToolStripMenuItem Examples 2022", "KryptonToolStripMenuItem Examples\KryptonToolStripMenuItem Examples 2022.csproj", "{FAFAB2BD-5CAF-37C3-ED6E-BC3CA3406CAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krypton.Utilities", "..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Utilities\Krypton.Utilities.csproj", "{1A9C1474-05D2-719D-7F4C-8E23DF620B35}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krypton.Toolkit.Utilities", "..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit.Utilities\Krypton.Toolkit.Utilities.csproj", "{1A9C1474-05D2-719D-7F4C-8E23DF620B35}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonErrorProvider Example", "KryptonErrorProvider Example\KryptonErrorProvider Example.csproj", "{6F22898B-7641-47AD-8880-59D550EA1362}"
 EndProject

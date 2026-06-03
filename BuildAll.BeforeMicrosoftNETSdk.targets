@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup Condition="'$(BuildAllIsolatedOutput)' == 'true' And '$(BuildAllOutputRoot)' != ''">
+    <OutputPath>$(BuildAllOutputRoot)$(MSBuildProjectName)\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+</Project>

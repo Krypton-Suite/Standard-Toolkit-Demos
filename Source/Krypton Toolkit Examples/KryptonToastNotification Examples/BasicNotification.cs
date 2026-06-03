@@ -8,7 +8,7 @@ using System.Drawing;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
-using Krypton.Utilities;
+using Krypton.Toolkit.Utilities;
 
 namespace KryptonToastNotificationExamples;
 
@@ -23,12 +23,12 @@ public partial class BasicNotification : KryptonForm
     private ContentAlignment _titleAlignment;
     private Color _borderColor1;
     private Color _borderColor2;
-    private Font _contentFont;
-    private Font _titleFont;
+    private Font? _contentFont;
+    private Font? _titleFont;
     private int _countDownSeconds;
     private KryptonToastIcon _notificationIcon;
-    private string _notificationTitleText;
-    private string _notificationContentText;
+    private string? _notificationTitleText;
+    private string? _notificationContentText;
 
     #endregion
 
@@ -56,14 +56,14 @@ public partial class BasicNotification : KryptonForm
 
         foreach (var value in Enum.GetValues(typeof(KryptonToastIcon)))
         {
-            kcmbToastIcon.Items.Add(value.ToString());
+            kcmbToastIcon.Items.Add(value);
         }
 
         kcmbToastIcon.SelectedIndex = 8;
 
         foreach (var value in Enum.GetValues(typeof(ContentAlignment)))
         {
-            kcmbToastTitleAlignment.Items.Add(value.ToString());
+            kcmbToastTitleAlignment.Items.Add(value);
         }
 
         kcmbToastTitleAlignment.SelectedIndex = 4;

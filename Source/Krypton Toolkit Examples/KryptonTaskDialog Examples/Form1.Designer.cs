@@ -38,12 +38,12 @@ partial class Form1
         this.textBoxContent = new System.Windows.Forms.TextBox();
         this.buttonShowTaskDialog = new System.Windows.Forms.Button();
         this.kryptonTaskDialog = new Krypton.Toolkit.KryptonTaskDialog();
-        this.kryptonTaskDialogCommand4 = new Krypton.Toolkit.KryptonTaskDialogCommand();
-        this.kryptonTaskDialogCommand5 = new Krypton.Toolkit.KryptonTaskDialogCommand();
-        this.kryptonTaskDialogCommand6 = new Krypton.Toolkit.KryptonTaskDialogCommand();
-        this.kryptonTaskDialogCommand1 = new Krypton.Toolkit.KryptonTaskDialogCommand();
-        this.kryptonTaskDialogCommand2 = new Krypton.Toolkit.KryptonTaskDialogCommand();
-        this.kryptonTaskDialogCommand3 = new Krypton.Toolkit.KryptonTaskDialogCommand();
+        this.kryptonTaskDialogCommandLinkButton1 = new Krypton.Toolkit.InternalKryptonCommandLinkButton();
+        this.kryptonTaskDialogCommandLinkButton2 = new Krypton.Toolkit.InternalKryptonCommandLinkButton();
+        this.kryptonTaskDialogCommandLinkButton3 = new Krypton.Toolkit.InternalKryptonCommandLinkButton();
+        this.kryptonTaskDialogRadioButton1 = new Krypton.Toolkit.KryptonRadioButton();
+        this.kryptonTaskDialogRadioButton2 = new Krypton.Toolkit.KryptonRadioButton();
+        this.kryptonTaskDialogRadioButton3 = new Krypton.Toolkit.KryptonRadioButton();
         this.kryptonManager = new Krypton.Toolkit.KryptonManager(this.components);
         this.checkBoxOK = new System.Windows.Forms.CheckBox();
         this.checkBoxYes = new System.Windows.Forms.CheckBox();
@@ -147,59 +147,83 @@ partial class Form1
         // 
         // kryptonTaskDialog
         // 
-        this.kryptonTaskDialog.CheckboxText = null;
-        this.kryptonTaskDialog.CommandButtons.AddRange(new Krypton.Toolkit.KryptonTaskDialogCommand[] {
-        this.kryptonTaskDialogCommand4,
-        this.kryptonTaskDialogCommand5,
-        this.kryptonTaskDialogCommand6});
-        this.kryptonTaskDialog.CommonButtons = Krypton.Toolkit.TaskDialogButtons.OK;
-        this.kryptonTaskDialog.Content = null;
-        this.kryptonTaskDialog.DefaultButton = Krypton.Toolkit.TaskDialogButtons.None;
-        this.kryptonTaskDialog.DefaultRadioButton = null;
-        this.kryptonTaskDialog.FooterHyperlink = null;
-        this.kryptonTaskDialog.FooterIcon = Krypton.Toolkit.KryptonMessageBoxIcon.None;
-        this.kryptonTaskDialog.FooterText = null;
-        this.kryptonTaskDialog.Icon = Krypton.Toolkit.KryptonMessageBoxIcon.None;
-        this.kryptonTaskDialog.MainInstruction = null;
-        this.kryptonTaskDialog.RadioButtons.AddRange(new Krypton.Toolkit.KryptonTaskDialogCommand[] {
-        this.kryptonTaskDialogCommand1,
-        this.kryptonTaskDialogCommand2,
-        this.kryptonTaskDialogCommand3});
-        this.kryptonTaskDialog.TextExtra = "Ctrl+C to copy";
-        this.kryptonTaskDialog.WindowTitle = null;
-        // 
-        // kryptonTaskDialogCommand4
-        // 
-        this.kryptonTaskDialogCommand4.DialogResult = System.Windows.Forms.DialogResult.OK;
-        this.kryptonTaskDialogCommand4.Image = global::KryptonTaskDialogExamples.Properties.Resources.arrow_right_green;
-        this.kryptonTaskDialogCommand4.Text = "Command One";
-        // 
-        // kryptonTaskDialogCommand5
-        // 
-        this.kryptonTaskDialogCommand5.DialogResult = System.Windows.Forms.DialogResult.OK;
-        this.kryptonTaskDialogCommand5.Image = global::KryptonTaskDialogExamples.Properties.Resources.arrow_right_green;
-        this.kryptonTaskDialogCommand5.Text = "Command Two";
-        // 
-        // kryptonTaskDialogCommand6
-        // 
-        this.kryptonTaskDialogCommand6.DialogResult = System.Windows.Forms.DialogResult.OK;
-        this.kryptonTaskDialogCommand6.Image = global::KryptonTaskDialogExamples.Properties.Resources.arrow_right_green;
-        this.kryptonTaskDialogCommand6.Text = "Command Three";
-        // 
-        // kryptonTaskDialogCommand1
-        // 
-        this.kryptonTaskDialogCommand1.DialogResult = System.Windows.Forms.DialogResult.OK;
-        this.kryptonTaskDialogCommand1.Text = "First button";
-        // 
-        // kryptonTaskDialogCommand2
-        // 
-        this.kryptonTaskDialogCommand2.DialogResult = System.Windows.Forms.DialogResult.OK;
-        this.kryptonTaskDialogCommand2.Text = "Second option";
-        // 
-        // kryptonTaskDialogCommand3
-        // 
-        this.kryptonTaskDialogCommand3.DialogResult = System.Windows.Forms.DialogResult.OK;
-        this.kryptonTaskDialogCommand3.Text = "Third option";
+        this.kryptonTaskDialog.CheckBox.Checked = false;
+        this.kryptonTaskDialog.CheckBox.Text = string.Empty;
+        this.kryptonTaskDialog.CheckBox.Visible = false;
+        this.kryptonTaskDialog.CommandLinkButtons.Buttons.Add(this.kryptonTaskDialogCommandLinkButton1);
+        this.kryptonTaskDialog.CommandLinkButtons.Buttons.Add(this.kryptonTaskDialogCommandLinkButton2);
+        this.kryptonTaskDialog.CommandLinkButtons.Buttons.Add(this.kryptonTaskDialogCommandLinkButton3);
+        this.kryptonTaskDialog.CommandLinkButtons.Visible = false;
+        this.kryptonTaskDialog.Content.Text = string.Empty;
+        this.kryptonTaskDialog.Content.Visible = true;
+        this.kryptonTaskDialog.Dialog.Form.Text = string.Empty;
+        this.kryptonTaskDialog.FooterBar.CommonButtons.AcceptButton = Krypton.Toolkit.KryptonTaskDialogCommonButtonTypes.OK;
+        this.kryptonTaskDialog.FooterBar.CommonButtons.Buttons = Krypton.Toolkit.KryptonTaskDialogCommonButtonTypes.OK;
+        this.kryptonTaskDialog.FooterBar.CommonButtons.CancelButton = Krypton.Toolkit.KryptonTaskDialogCommonButtonTypes.None;
+        this.kryptonTaskDialog.FooterBar.Footer.EnableExpanderControls = false;
+        this.kryptonTaskDialog.FooterBar.Footer.FootNoteText = string.Empty;
+        this.kryptonTaskDialog.FooterBar.Footer.IconType = Krypton.Toolkit.KryptonTaskDialogIconType.None;
+        this.kryptonTaskDialog.FreeWheeler1.Visible = false;
+        this.kryptonTaskDialog.Heading.IconType = Krypton.Toolkit.KryptonTaskDialogIconType.None;
+        this.kryptonTaskDialog.Heading.Text = string.Empty;
+        this.kryptonTaskDialog.Heading.Visible = true;
+        //
+        // kryptonTaskDialogCommandLinkButton1
+        //
+        this.kryptonTaskDialogCommandLinkButton1.CommandLinkTextValues.Description = "First command link button";
+        this.kryptonTaskDialogCommandLinkButton1.CommandLinkTextValues.UseDefaultImage = false;
+        this.kryptonTaskDialogCommandLinkButton1.CommandLinkTextValues.Image = global::KryptonTaskDialogExamples.Properties.Resources.arrow_right_green;
+        this.kryptonTaskDialogCommandLinkButton1.DialogResult = System.Windows.Forms.DialogResult.OK;
+        this.kryptonTaskDialogCommandLinkButton1.Name = "kryptonTaskDialogCommandLinkButton1";
+        this.kryptonTaskDialogCommandLinkButton1.Text = "Command One";
+        //
+        // kryptonTaskDialogCommandLinkButton2
+        //
+        this.kryptonTaskDialogCommandLinkButton2.CommandLinkTextValues.Description = "Second command link button";
+        this.kryptonTaskDialogCommandLinkButton2.CommandLinkTextValues.UseDefaultImage = false;
+        this.kryptonTaskDialogCommandLinkButton2.CommandLinkTextValues.Image = global::KryptonTaskDialogExamples.Properties.Resources.arrow_right_green;
+        this.kryptonTaskDialogCommandLinkButton2.DialogResult = System.Windows.Forms.DialogResult.OK;
+        this.kryptonTaskDialogCommandLinkButton2.Name = "kryptonTaskDialogCommandLinkButton2";
+        this.kryptonTaskDialogCommandLinkButton2.Text = "Command Two";
+        //
+        // kryptonTaskDialogCommandLinkButton3
+        //
+        this.kryptonTaskDialogCommandLinkButton3.CommandLinkTextValues.Description = "Third command link button";
+        this.kryptonTaskDialogCommandLinkButton3.CommandLinkTextValues.UseDefaultImage = false;
+        this.kryptonTaskDialogCommandLinkButton3.CommandLinkTextValues.Image = global::KryptonTaskDialogExamples.Properties.Resources.arrow_right_green;
+        this.kryptonTaskDialogCommandLinkButton3.DialogResult = System.Windows.Forms.DialogResult.OK;
+        this.kryptonTaskDialogCommandLinkButton3.Name = "kryptonTaskDialogCommandLinkButton3";
+        this.kryptonTaskDialogCommandLinkButton3.Text = "Command Three";
+        //
+        // kryptonTaskDialogRadioButton1
+        //
+        this.kryptonTaskDialogRadioButton1.AutoSize = true;
+        this.kryptonTaskDialogRadioButton1.Location = new System.Drawing.Point(0, 0);
+        this.kryptonTaskDialogRadioButton1.Name = "kryptonTaskDialogRadioButton1";
+        this.kryptonTaskDialogRadioButton1.Size = new System.Drawing.Size(83, 17);
+        this.kryptonTaskDialogRadioButton1.TabIndex = 0;
+        this.kryptonTaskDialogRadioButton1.Text = "First button";
+        this.kryptonTaskDialogRadioButton1.Values.Text = "First button";
+        //
+        // kryptonTaskDialogRadioButton2
+        //
+        this.kryptonTaskDialogRadioButton2.AutoSize = true;
+        this.kryptonTaskDialogRadioButton2.Location = new System.Drawing.Point(0, 0);
+        this.kryptonTaskDialogRadioButton2.Name = "kryptonTaskDialogRadioButton2";
+        this.kryptonTaskDialogRadioButton2.Size = new System.Drawing.Size(93, 17);
+        this.kryptonTaskDialogRadioButton2.TabIndex = 1;
+        this.kryptonTaskDialogRadioButton2.Text = "Second option";
+        this.kryptonTaskDialogRadioButton2.Values.Text = "Second option";
+        //
+        // kryptonTaskDialogRadioButton3
+        //
+        this.kryptonTaskDialogRadioButton3.AutoSize = true;
+        this.kryptonTaskDialogRadioButton3.Location = new System.Drawing.Point(0, 0);
+        this.kryptonTaskDialogRadioButton3.Name = "kryptonTaskDialogRadioButton3";
+        this.kryptonTaskDialogRadioButton3.Size = new System.Drawing.Size(77, 17);
+        this.kryptonTaskDialogRadioButton3.TabIndex = 2;
+        this.kryptonTaskDialogRadioButton3.Text = "Third option";
+        this.kryptonTaskDialogRadioButton3.Values.Text = "Third option";
         // 
         // kryptonManager
         // 
@@ -623,12 +647,12 @@ partial class Form1
     private System.Windows.Forms.GroupBox groupBox1;
     private System.Windows.Forms.CheckBox checkBoxCommandButtons;
     private System.Windows.Forms.CheckBox checkBoxRadioButtons;
-    private Krypton.Toolkit.KryptonTaskDialogCommand kryptonTaskDialogCommand1;
-    private Krypton.Toolkit.KryptonTaskDialogCommand kryptonTaskDialogCommand2;
-    private Krypton.Toolkit.KryptonTaskDialogCommand kryptonTaskDialogCommand3;
-    private Krypton.Toolkit.KryptonTaskDialogCommand kryptonTaskDialogCommand4;
-    private Krypton.Toolkit.KryptonTaskDialogCommand kryptonTaskDialogCommand5;
-    private Krypton.Toolkit.KryptonTaskDialogCommand kryptonTaskDialogCommand6;
+    private Krypton.Toolkit.InternalKryptonCommandLinkButton kryptonTaskDialogCommandLinkButton1;
+    private Krypton.Toolkit.InternalKryptonCommandLinkButton kryptonTaskDialogCommandLinkButton2;
+    private Krypton.Toolkit.InternalKryptonCommandLinkButton kryptonTaskDialogCommandLinkButton3;
+    private Krypton.Toolkit.KryptonRadioButton kryptonTaskDialogRadioButton1;
+    private Krypton.Toolkit.KryptonRadioButton kryptonTaskDialogRadioButton2;
+    private Krypton.Toolkit.KryptonRadioButton kryptonTaskDialogRadioButton3;
     private System.Windows.Forms.GroupBox groupBoxPalette;
     private System.Windows.Forms.RadioButton paletteSparkleOrange;
     private System.Windows.Forms.RadioButton palette2010Black;
@@ -636,6 +660,5 @@ partial class Form1
     private System.Windows.Forms.RadioButton paletteProfessional;
     private System.Windows.Forms.RadioButton palette2007Blue;
     private System.Windows.Forms.RadioButton palette2010Blue;
-private System.Windows.Forms.Button buttonFill;
+    private System.Windows.Forms.Button buttonFill;
 }
-

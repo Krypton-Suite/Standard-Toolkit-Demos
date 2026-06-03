@@ -5,4 +5,9 @@
   <PropertyGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETCoreApp' or ! ('$(TargetFrameworkIdentifier)' == '.NETFramework' and $([System.String]::Copy('$(TargetFrameworkVersion)').StartsWith('v4.'))) ">
     <ApplicationManifest>$(MSBuildThisFileDirectory)app.core.manifest</ApplicationManifest>
   </PropertyGroup>
+  <Target Name="EnsureBuildAllIsolatedOutputDirectory"
+          BeforeTargets="GenerateBuildDependencyFile;GenerateBuildRuntimeConfigurationFiles;CopyFilesToOutputDirectory"
+          Condition="'$(BuildAllIsolatedOutput)' == 'true' And '$(BuildAllOutputRoot)' != ''">
+    <MakeDir Directories="$(OutputPath)" />
+  </Target>
 </Project>

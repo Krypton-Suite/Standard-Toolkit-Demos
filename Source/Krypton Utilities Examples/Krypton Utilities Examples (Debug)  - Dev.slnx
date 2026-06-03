@@ -11,7 +11,7 @@
     <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Navigator/Krypton.Navigator 2022.csproj" />
     <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Ribbon/Krypton.Ribbon 2022.csproj" />
     <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Toolkit/Krypton.Toolkit 2022.csproj" />
-    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Utilities/Krypton.Utilities.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Toolkit.Utilities/Krypton.Toolkit.Utilities.csproj" />
     <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Workspace/Krypton.Workspace 2022.csproj" />
   </Folder>
   <Folder Name="/Solution Items/">

@@ -156,8 +156,17 @@ public partial class Form1 : KryptonForm
         {
             MessageBox.Show(this, ex.StackTrace, ex.Message);
             KryptonMessageBox.Show(this, ex.StackTrace, ex.Message);
-            KryptonTaskDialog.Show(ex.Message, "MinInstruction", ex.StackTrace!, KryptonMessageBoxIcon.Stop,
-                TaskDialogButtons.Close, true);
+
+            using KryptonTaskDialog taskDialog = new();
+            taskDialog.Dialog.Form.Text = ex.Message;
+            taskDialog.Heading.Text = "MinInstruction";
+            taskDialog.Heading.IconType = KryptonTaskDialogIconType.ShieldError;
+            taskDialog.Heading.Visible = true;
+            taskDialog.Content.Text = ex.StackTrace ?? string.Empty;
+            taskDialog.Content.Visible = true;
+            taskDialog.FooterBar.CommonButtons.Buttons = KryptonTaskDialogCommonButtonTypes.Cancel;
+            taskDialog.FooterBar.CommonButtons.CancelButton = KryptonTaskDialogCommonButtonTypes.Cancel;
+            taskDialog.ShowDialog(this);
         }
     }
 

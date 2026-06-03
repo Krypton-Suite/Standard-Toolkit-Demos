@@ -35,8 +35,8 @@ partial class Form1
         this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
         this.knudVertical = new Krypton.Toolkit.KryptonNumericUpDown();
         this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
-        this.ksbHorizontal = new Krypton.Toolkit.KryptonScrollBar();
-        this.ksbVertical = new Krypton.Toolkit.KryptonScrollBar();
+        this.ksbHorizontal = new Krypton.Toolkit.KryptonHScrollBar();
+        this.ksbVertical = new Krypton.Toolkit.KryptonVScrollBar();
         ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
         this.kryptonPanel1.SuspendLayout();
         this.SuspendLayout();
@@ -141,9 +141,6 @@ partial class Form1
         this.ksbHorizontal.Location = new System.Drawing.Point(49, 15);
         this.ksbHorizontal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
         this.ksbHorizontal.Name = "ksbHorizontal";
-        this.ksbHorizontal.Opacity = 1D;
-        this.ksbHorizontal.Orientation = Krypton.Toolkit.ScrollBarOrientation.Horizontal;
-        this.ksbHorizontal.ScrollBarWidth = 336;
         this.ksbHorizontal.Size = new System.Drawing.Size(336, 23);
         this.ksbHorizontal.TabIndex = 2;
         this.ksbHorizontal.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ksbHorizontal_Scroll);
@@ -155,8 +152,6 @@ partial class Form1
         this.ksbVertical.Location = new System.Drawing.Point(16, 15);
         this.ksbVertical.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
         this.ksbVertical.Name = "ksbVertical";
-        this.ksbVertical.Opacity = 1D;
-        this.ksbVertical.ScrollBarWidth = 25;
         this.ksbVertical.Size = new System.Drawing.Size(25, 246);
         this.ksbVertical.TabIndex = 1;
         this.ksbVertical.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ksbVertical_Scroll);
@@ -190,7 +185,6 @@ partial class Form1
     private Krypton.Toolkit.KryptonLabel kryptonLabel2;
     private Krypton.Toolkit.KryptonNumericUpDown knudVertical;
     private Krypton.Toolkit.KryptonLabel kryptonLabel1;
-    private Krypton.Toolkit.KryptonScrollBar ksbHorizontal;
-    private Krypton.Toolkit.KryptonScrollBar ksbVertical;
+    private Krypton.Toolkit.KryptonHScrollBar ksbHorizontal;
+    private Krypton.Toolkit.KryptonVScrollBar ksbVertical;
 }
-

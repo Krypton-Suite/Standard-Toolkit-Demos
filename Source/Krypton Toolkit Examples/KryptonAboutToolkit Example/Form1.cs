@@ -7,6 +7,7 @@ using System;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
+using Krypton.Toolkit.Utilities;
 
 namespace KryptonAboutToolkitExample;
 

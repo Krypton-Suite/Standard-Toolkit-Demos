@@ -100,7 +100,7 @@ partial class Form1
         btnImportCustomPalette = new System.Windows.Forms.Button();
         btnExport = new System.Windows.Forms.Button();
         button1 = new Krypton.Toolkit.KryptonButton();
-        kryptonIntegratedToolbarCopyCommand1 = new Krypton.Toolkit.KryptonIntegratedToolbarCopyCommand();
+        kryptonIntegratedToolbarCopyCommand1 = new Krypton.Toolkit.KryptonCommand();
         groupBox4.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)groupBox1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)groupBox1.Panel).BeginInit();
@@ -208,7 +208,6 @@ partial class Form1
         this.kryptonThemeComboBox1.DisplayMember = "Key";
         this.kryptonThemeComboBox1.DropDownWidth = 293;
         this.kryptonThemeComboBox1.IntegralHeight = false;
-        this.kryptonThemeComboBox1.KryptonCustomPalette = this.kryptonPaletteCustom;
         this.kryptonThemeComboBox1.Location = new System.Drawing.Point(9, 518);
         this.kryptonThemeComboBox1.Name = "kryptonThemeComboBox1";
         this.kryptonThemeComboBox1.Size = new System.Drawing.Size(293, 25);
@@ -963,6 +962,7 @@ partial class Form1
         // 
         // kryptonIntegratedToolbarCopyCommand1
         // 
+        kryptonIntegratedToolbarCopyCommand1.CommandType = Krypton.Toolkit.KryptonCommandType.IntegratedToolBarCopyCommand;
         kryptonIntegratedToolbarCopyCommand1.Text = "Copy";
         // 
         // Form1
@@ -1092,6 +1092,5 @@ partial class Form1
     private Krypton.Toolkit.KryptonButton button1;
     private Krypton.Toolkit.KryptonProgressBar kryptonProgressBar1;
     private Krypton.Toolkit.KryptonCheckBox kryptonCheckBox1;
-    private Krypton.Toolkit.KryptonIntegratedToolbarCopyCommand kryptonIntegratedToolbarCopyCommand1;
+    private Krypton.Toolkit.KryptonCommand kryptonIntegratedToolbarCopyCommand1;
 }
-

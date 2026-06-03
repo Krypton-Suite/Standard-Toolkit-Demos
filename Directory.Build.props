@@ -1,6 +1,12 @@
 <Project>
   <PropertyGroup>
     <GenerateResourceWarnOnBinaryFormatterUse>false</GenerateResourceWarnOnBinaryFormatterUse>
-    <TargetFrameworks>net48;net481;net8.0-windows;net9.0-windows;net10.0-windows;net11.0-windows</TargetFrameworks>
+    <BeforeMicrosoftNETSdkTargets Condition="'$(BeforeMicrosoftNETSdkTargets)' == ''">$(MSBuildThisFileDirectory)BuildAll.BeforeMicrosoftNETSdk.targets</BeforeMicrosoftNETSdkTargets>
+    <ExcludeVs2022UnsupportedTargetFrameworks Condition="'$(ExcludeVs2022UnsupportedTargetFrameworks)' == '' And '$(CI)' != 'true' And '$(MSBuildRuntimeType)' == 'Full' And $([System.String]::Copy('$(VisualStudioVersion)').StartsWith('17.'))">true</ExcludeVs2022UnsupportedTargetFrameworks>
+    <ExcludeNet11 Condition="'$(ExcludeNet11)' == '' And '$(CI)' != 'true' And '$(MSBuildRuntimeType)' == 'Full' And $([System.String]::Copy('$(VisualStudioVersion)').StartsWith('18.'))">true</ExcludeNet11>
+
+    <TargetFrameworks Condition="'$(ExcludeVs2022UnsupportedTargetFrameworks)' == 'true'">net48;net481;net8.0-windows;net9.0-windows</TargetFrameworks>
+    <TargetFrameworks Condition="'$(ExcludeVs2022UnsupportedTargetFrameworks)' != 'true' And '$(ExcludeNet11)' == 'true'">net48;net481;net8.0-windows;net9.0-windows;net10.0-windows</TargetFrameworks>
+    <TargetFrameworks Condition="'$(ExcludeVs2022UnsupportedTargetFrameworks)' != 'true' And '$(ExcludeNet11)' != 'true'">net48;net481;net8.0-windows;net9.0-windows;net10.0-windows;net11.0-windows</TargetFrameworks>
   </PropertyGroup>
 </Project>

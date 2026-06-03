@@ -1,16 +1,17 @@
 ﻿#region BSD License
 /*
- * 
+ *
  * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
- * 
+ *
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
- *  
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege, et al. 2017 - 2026. All rights reserved.
+ *
  */
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -34,6 +35,7 @@ public class DraggableTreeView : TreeView
     private TreeNode _dragNode;
     private Rectangle _dragRect;
 
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
     public Form1 Form1 { get; set; }
 
     protected override void OnMouseDown(MouseEventArgs e)

@@ -5,7 +5,7 @@
  * © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
  *
  * New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- * Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege et al. 2017 - 2025. All rights reserved.
+ * Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege et al. 2017 - 2026. All rights reserved.
  *
  */
 #endregion
@@ -146,11 +146,14 @@ public partial class Form1 : Form
 
         using (var dialog = new KryptonTaskDialog())
         {
-            dialog.WindowTitle = "Info Card";
-            dialog.MainInstruction = mainInstruction;
-            dialog.Content = content;
-            dialog.Icon = KryptonMessageBoxIcon.Information;
-            dialog.CommonButtons = TaskDialogButtons.OK;
+            dialog.Dialog.Form.Text = "Info Card";
+            dialog.Heading.Text = mainInstruction;
+            dialog.Heading.IconType = KryptonTaskDialogIconType.ShieldInformation;
+            dialog.Heading.Visible = true;
+            dialog.Content.Text = content;
+            dialog.Content.Visible = true;
+            dialog.FooterBar.CommonButtons.Buttons = KryptonTaskDialogCommonButtonTypes.OK;
+            dialog.FooterBar.CommonButtons.AcceptButton = KryptonTaskDialogCommonButtonTypes.OK;
             dialog.ShowDialog(this);
         }
     }
