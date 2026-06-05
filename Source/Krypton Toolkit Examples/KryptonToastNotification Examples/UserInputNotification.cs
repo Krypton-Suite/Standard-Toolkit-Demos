@@ -1,4 +1,4 @@
-﻿// *****************************************************************************
+// *****************************************************************************
 // BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
 //  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2024 - 2024. All rights reserved.
 // *****************************************************************************
@@ -9,6 +9,7 @@ using System.Drawing;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
+using Krypton.Toolkit.Utilities;
 
 namespace KryptonToastNotificationExamples;
 
@@ -108,73 +109,25 @@ public partial class UserInputNotification : KryptonForm
     /// <value>The notification title.</value>
     private string? _notificationTitle;
 
-    /// <summary>Gets or sets the custom image.</summary>
-    /// <value>The custom image.</value>
-    private Bitmap? _customImage;
-
-    /// <summary>Gets or sets the notification location.</summary>
-    /// <value>The notification location.</value>
-    private Point? _notificationLocation;
-
-    /// <summary>Gets or sets the application icon.</summary>
-    /// <value>The application icon.</value>
-    private Icon _applicationIcon;
-
     /// <summary>Gets or sets the toast host.</summary>
     /// <value>The toast host.</value>
     private IWin32Window? _toastHost;
 
     /// <summary>Gets or sets the notification icon.</summary>
     /// <value>The notification icon.</value>
-    private KryptonToastNotificationIcon? _notificationIcon;
+    private KryptonToastIcon? _notificationIcon;
 
     /// <summary>Gets or sets the type of the notification input area.</summary>
     /// <value>The type of the notification input area.</value>
-    private KryptonToastNotificationInputAreaType? _notificationInputAreaType;
+    private KryptonToastInputAreaType? _notificationInputAreaType;
 
     /// <summary>Gets or sets the toast notification cue text.</summary>
     /// <value>The toast notification cue text.</value>
     private string? _toastNotificationCueText;
 
-    /// <summary>Gets or sets the optional CheckBox text.</summary>
-    /// <value>The optional CheckBox text.</value>
-    private string? _optionalCheckBoxText;
-
-    /// <summary>Gets or sets the user input list.</summary>
-    /// <value>The user input list.</value>
-    private ArrayList _userInputList;
-
-    /// <summary>Gets or sets the index of the selected user input.</summary>
-    /// <value>The index of the selected user input.</value>
-    private int? _selectedIndex;
-
-    /// <summary>Gets or sets the date time format.</summary>
-    /// <value>The date time format.</value>
-    private DateTimePickerFormat? _dateTimeFormat;
-
-    /// <summary>Gets or sets the custom date time format.</summary>
-    /// <value>The custom date time format.</value>
-    private string? _customDateTimeFormat;
-
     /// <summary>Gets or sets the color of the toast notification cue.</summary>
     /// <value>The color of the toast notification cue.</value>
     private Color? _toastNotificationCueColor;
-
-    /// <summary>Gets or sets the initial numeric up down value.</summary>
-    /// <value>The initial numeric up down value.</value>
-    private int? _initialNumericUpDownValue;
-
-    /// <summary>Gets or sets the maximum numeric up down value.</summary>
-    /// <value>The maximum numeric up down value.</value>
-    private int? _maximumNumericUpDownValue;
-
-    /// <summary>Gets or sets the minimum numeric up down value.</summary>
-    /// <value>The minimum numeric up down value.</value>
-    private int? _minimumNumericUpDownValue;
-
-    /// <summary>Gets or sets the drop-down style.</summary>
-    /// <value>The drop-down style.</value>
-    private ComboBoxStyle? _dropDownStyle;
 
     #endregion
 
@@ -200,14 +153,14 @@ public partial class UserInputNotification : KryptonForm
 
         kcmbDropDownStyle.SelectedIndex = 0;
 
-        foreach (var icon in Enum.GetValues(typeof(KryptonToastNotificationIcon)))
+        foreach (var icon in Enum.GetValues(typeof(KryptonToastIcon)))
         {
             kcmbToastIcon.Items.Add(icon);
         }
 
         kcmbToastIcon.SelectedIndex = 0;
 
-        foreach (var value in Enum.GetValues(typeof(KryptonToastNotificationInputAreaType)))
+        foreach (var value in Enum.GetValues(typeof(KryptonToastInputAreaType)))
         {
             kcmbNotificationInputStyle.Items.Add(value);
         }
@@ -243,17 +196,32 @@ public partial class UserInputNotification : KryptonForm
 
         kdtpMinimumDate.Value = DateTime.MinValue;
 
-        knudXAxis.Maximum = Screen.PrimaryScreen.WorkingArea.Height;
+        Rectangle workingArea = GetPrimaryWorkingArea();
 
-        knudYAxis.Maximum = Screen.PrimaryScreen.WorkingArea.Width;
+        knudXAxis.Maximum = workingArea.Width;
+
+        knudYAxis.Maximum = workingArea.Height;
+
+        _topMost = kchkTopMost.Checked;
+        _showCloseBox = kchkShowCloseBox.Checked;
+        _useFade = kchkUseFade.Checked;
+        _reportToastLocation = kchkReportLocation.Checked;
+        _notificationContent = ktxtToastContent.Text;
+        _notificationTitle = ktxtToastTitle.Text;
+        _toastNotificationCueText = ktxtInputCueText.Text;
+        _toastNotificationCueColor = kcolCueColor.SelectedColor;
+        _borderColor1 = kcbtnBorderColor1.SelectedColor;
+        _borderColor2 = kcbtnBorderColor2.SelectedColor;
+        _countDownSeconds = Convert.ToInt32(knudCountdownSeconds.Value);
+        _countDownTimerInterval = Convert.ToInt32(knudCountDownInterval.Value);
+        _maximumDateTimeValue = kdtpMaximumDate.Value;
+        _minimumDateTimeValue = kdtpMinimumDate.Value;
+        _initialDateTimeValue = kdtpInitialDate.Value;
     }
 
-    private ArrayList CreateUserInputList()
-    {
-        _userInputList = [.. krtxtItemList.Lines];
+    private ArrayList CreateUserInputList() => [.. krtxtItemList.Lines];
 
-        return _userInputList;
-    }
+    private static Rectangle GetPrimaryWorkingArea() => Screen.PrimaryScreen?.WorkingArea ?? Screen.FromPoint(Point.Empty).WorkingArea;
 
     private Point GetLocation() => new Point(Convert.ToInt32(knudXAxis.Value), Convert.ToInt32(knudYAxis.Value));
 
@@ -263,17 +231,15 @@ public partial class UserInputNotification : KryptonForm
 
     private void kcmbToastIcon_SelectedIndexChanged(object sender, EventArgs e) =>
         _notificationIcon =
-            (KryptonToastNotificationIcon)Enum.Parse(typeof(KryptonToastNotificationIcon), kcmbToastIcon.Text);
+            (KryptonToastIcon)Enum.Parse(typeof(KryptonToastIcon), kcmbToastIcon.Text);
 
     private void kcmbNotificationInputStyle_SelectedIndexChanged(object sender, EventArgs e) =>
         _notificationInputAreaType =
-            (KryptonToastNotificationInputAreaType)Enum.Parse(typeof(KryptonToastNotificationInputAreaType),
+            (KryptonToastInputAreaType)Enum.Parse(typeof(KryptonToastInputAreaType),
                 kcmbNotificationInputStyle.Text);
 
     private void kcmbDropDownStyle_SelectedIndexChanged(object sender, EventArgs e)
     {
-        _dropDownStyle = (ComboBoxStyle)Enum.Parse(typeof(ComboBoxStyle), kcmbDropDownStyle.Text);
-
         _userInputComboBoxStyle = (ComboBoxStyle)Enum.Parse(typeof(ComboBoxStyle), kcmbDropDownStyle.Text);
     }
 
@@ -366,15 +332,48 @@ public partial class UserInputNotification : KryptonForm
 
     private void kbtnShow_Click(object sender, EventArgs e)
     {
-        KryptonUserInputToastNotificationData notificationData = new KryptonUserInputToastNotificationData() { };
+        KryptonUserInputToastData notificationData = new KryptonUserInputToastData()
+        {
+            UseFade = _useFade,
+            TopMost = _topMost,
+            ShowCloseBox = _showCloseBox,
+            ShowDoNotShowAgainOption = _showDoNotShowAgainOption,
+            UseDoNotShowAgainOptionThreeState = _useDoNotShowAgainOptionThreeState,
+            DoNotShowAgainOptionChecked = _isDoNotShowAgainOptionChecked,
+            ReportToastLocation = _reportToastLocation,
+            UseRtlReading = _useRtlReading,
+            DoNotShowAgainOptionCheckState = _doNotShowAgainOptionCheckState,
+            FocusOnUserInputArea = _focusOnUserInputArea,
+            NotificationTitleAlignment = _notificationTitleAlignment,
+            UserInputComboBoxStyle = _userInputComboBoxStyle,
+            BorderColor1 = _borderColor1,
+            BorderColor2 = _borderColor2,
+            MinimumDateTimeValue = _minimumDateTimeValue,
+            MaximumDateTimeValue = _maximumDateTimeValue,
+            InitialDateTimeValue = _initialDateTimeValue,
+            NotificationContentFont = _notificationContentFont,
+            NotificationTitleFont = _notificationTitleFont,
+            CountDownSeconds = _countDownSeconds,
+            CountDownTimerInterval = _countDownTimerInterval,
+            NotificationContent = _notificationContent,
+            NotificationTitle = _notificationTitle,
+            NotificationLocation = kchkUseDefaultLocation.Checked ? null : GetLocation(),
+            ApplicationIcon = Icon ?? SystemIcons.Application,
+            ToastHost = _toastHost,
+            NotificationIcon = _notificationIcon,
+            NotificationInputAreaType = _notificationInputAreaType,
+            ToastNotificationCueText = _toastNotificationCueText,
+            UserInputList = CreateUserInputList(),
+            ToastNotificationCueColor = _toastNotificationCueColor
+        };
 
         if (kchkShowWithProgressBar.Checked)
         {
-            KryptonToastNotification.ShowNotificationWithProgressBar(notificationData);
+            KryptonToast.ShowNotificationWithProgressBar(notificationData);
         }
         else
         {
-            KryptonToastNotification.ShowNotification(notificationData);
+            KryptonToast.ShowNotification(notificationData);
         }
     }
 
@@ -382,9 +381,11 @@ public partial class UserInputNotification : KryptonForm
     {
         if (kchkUseDefaultLocation.Checked)
         {
-            knudXAxis.Value = Screen.PrimaryScreen.WorkingArea.Height - 5;
+            Rectangle workingArea = GetPrimaryWorkingArea();
 
-            knudYAxis.Value = Screen.PrimaryScreen.WorkingArea.Width - 5;
+            knudXAxis.Value = workingArea.Width - 5;
+
+            knudYAxis.Value = workingArea.Height - 5;
         }
     }
 }

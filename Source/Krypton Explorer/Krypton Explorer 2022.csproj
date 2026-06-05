@@ -16,7 +16,7 @@
   <ItemGroup>
     <Content Include="Krypton.ico" />
   </ItemGroup>
-  <ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net48' Or '$(TargetFramework)' == 'net481'">
     <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>

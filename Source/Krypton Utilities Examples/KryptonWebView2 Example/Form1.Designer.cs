@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonWebView21 = new Krypton.Utilities.KryptonWebView2();
+            this.kryptonWebView21 = new Krypton.Toolkit.Utilities.KryptonWebView2();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
             this.kbtnRefresh = new Krypton.Toolkit.KryptonButton();
@@ -59,16 +59,11 @@
             // 
             // kryptonWebView21
             // 
-            this.kryptonWebView21.AllowExternalDrop = true;
-            this.kryptonWebView21.CreationProperties = null;
-            this.kryptonWebView21.DefaultBackgroundColor = System.Drawing.Color.White;
             this.kryptonWebView21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonWebView21.Location = new System.Drawing.Point(0, 60);
             this.kryptonWebView21.Name = "kryptonWebView21";
             this.kryptonWebView21.Size = new System.Drawing.Size(1000, 640);
             this.kryptonWebView21.TabIndex = 2;
-            this.kryptonWebView21.ZoomFactor = 1D;
-            this.kryptonWebView21.NavigationCompleted += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs>(this.kryptonWebView21_NavigationCompleted);
             // 
             // kryptonLabel1
             // 
@@ -171,7 +166,7 @@
         #endregion
 
         private Krypton.Toolkit.KryptonPanel kryptonPanel1;
-        private Krypton.Utilities.KryptonWebView2 kryptonWebView21;
+        private Krypton.Toolkit.Utilities.KryptonWebView2 kryptonWebView21;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private Krypton.Toolkit.KryptonPanel kryptonPanel2;
         private Krypton.Toolkit.KryptonButton kbtnRefresh;

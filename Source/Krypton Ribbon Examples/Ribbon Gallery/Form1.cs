@@ -58,11 +58,14 @@ public partial class Form1 : KryptonForm
         items2.Items.Add(item3);
         items2.Items.Add(item4);
 
-        e.KryptonContextMenu.Items.Insert(0, new KryptonContextMenuSeparator());
-        e.KryptonContextMenu.Items.Insert(0, items1);
-        e.KryptonContextMenu.Items.Insert(0, h);
-        e.KryptonContextMenu.Items.Add(new KryptonContextMenuSeparator());
-        e.KryptonContextMenu.Items.Add(items2);
+        if (e.KryptonContextMenu is { } contextMenu)
+        {
+            contextMenu.Items.Insert(0, new KryptonContextMenuSeparator());
+            contextMenu.Items.Insert(0, items1);
+            contextMenu.Items.Insert(0, h);
+            contextMenu.Items.Add(new KryptonContextMenuSeparator());
+            contextMenu.Items.Add(items2);
+        }
     }
 
     private void kryptonRibbonGroupButton1_Click(object sender, EventArgs e)

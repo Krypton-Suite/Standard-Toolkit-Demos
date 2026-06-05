@@ -2,7 +2,7 @@
 /*
  *
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2026 - 2026. All rights reserved.
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege, et al. 2026 - 2026. All rights reserved.
  *
  */
 #endregion
@@ -15,7 +15,7 @@ using System.Linq;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
-using Krypton.Utilities;
+using Krypton.Toolkit.Utilities;
 
 namespace KryptonSearchBoxExample;
 
@@ -286,7 +286,13 @@ public partial class Form1 : KryptonForm
         public string GetShortText() => Name;
         public string GetLongText() => $"{Color} - {Season}";
         public Image? GetImage(PaletteState state) => null;
-        public Color GetImageTransparentColor(PaletteState state) => throw new NotImplementedException();
+        public Color GetImageTransparentColor(PaletteState state) => System.Drawing.Color.Empty;
+        public Image? GetOverlayImage(PaletteState state) => null;
+        public Color GetOverlayImageTransparentColor(PaletteState state) => System.Drawing.Color.Empty;
+        public OverlayImagePosition GetOverlayImagePosition(PaletteState state) => OverlayImagePosition.TopRight;
+        public OverlayImageScaleMode GetOverlayImageScaleMode(PaletteState state) => OverlayImageScaleMode.None;
+        public float GetOverlayImageScaleFactor(PaletteState state) => 0.5f;
+        public Size GetOverlayImageFixedSize(PaletteState state) => new(16, 16);
     }
 
     private void InitializeListBox()

@@ -1,4 +1,4 @@
-﻿// *****************************************************************************
+// *****************************************************************************
 // BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit)
 //  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2024 - 2024. All rights reserved.
 // *****************************************************************************
@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
+using Krypton.Toolkit.Utilities;
 
 namespace KryptonToastNotificationExamples;
 
@@ -22,12 +23,12 @@ public partial class BasicNotification : KryptonForm
     private ContentAlignment _titleAlignment;
     private Color _borderColor1;
     private Color _borderColor2;
-    private Font _contentFont;
-    private Font _titleFont;
+    private Font? _contentFont;
+    private Font? _titleFont;
     private int _countDownSeconds;
-    private KryptonToastNotificationIcon _notificationIcon;
-    private string _notificationTitleText;
-    private string _notificationContentText;
+    private KryptonToastIcon _notificationIcon;
+    private string? _notificationTitleText;
+    private string? _notificationContentText;
 
     #endregion
 
@@ -46,23 +47,23 @@ public partial class BasicNotification : KryptonForm
         _contentFont = null;
         _titleFont = null;
         _countDownSeconds = 60;
-        _notificationIcon = KryptonToastNotificationIcon.Information;
+        _notificationIcon = KryptonToastIcon.Information;
         _notificationTitleText = ktxtToastTitle.Text;
         _notificationContentText = ktxtToastContent.Text;
 
         kcbBorderColor1.SelectedColor = Color.Empty;
         kcbBorderColor2.SelectedColor = Color.Empty;
 
-        foreach (var value in Enum.GetValues(typeof(KryptonToastNotificationIcon)))
+        foreach (var value in Enum.GetValues(typeof(KryptonToastIcon)))
         {
-            kcmbToastIcon.Items.Add(value.ToString());
+            kcmbToastIcon.Items.Add(value);
         }
 
         kcmbToastIcon.SelectedIndex = 8;
 
         foreach (var value in Enum.GetValues(typeof(ContentAlignment)))
         {
-            kcmbToastTitleAlignment.Items.Add(value.ToString());
+            kcmbToastTitleAlignment.Items.Add(value);
         }
 
         kcmbToastTitleAlignment.SelectedIndex = 4;
@@ -74,7 +75,7 @@ public partial class BasicNotification : KryptonForm
 
     private void kcmbToastIcon_SelectedIndexChanged(object sender, EventArgs e) =>
         _notificationIcon =
-            (KryptonToastNotificationIcon)Enum.Parse(typeof(KryptonToastNotificationIcon), kcmbToastIcon.Text);
+            (KryptonToastIcon)Enum.Parse(typeof(KryptonToastIcon), kcmbToastIcon.Text);
 
     private void kcmbToastTitleAlignment_SelectedIndexChanged(object sender, EventArgs e) => _titleAlignment = (ContentAlignment)Enum.Parse(typeof(ContentAlignment), kcmbToastTitleAlignment.Text);
 
@@ -102,7 +103,7 @@ public partial class BasicNotification : KryptonForm
 
     private void kbtnShow_Click(object sender, EventArgs e)
     {
-        KryptonBasicToastNotificationData notificationData = new KryptonBasicToastNotificationData() {
+        KryptonBasicToastData notificationData = new KryptonBasicToastData() {
             CountDownSeconds = _countDownSeconds,
             CustomImage = null,
             NotificationContent = _notificationContentText,
@@ -122,11 +123,11 @@ public partial class BasicNotification : KryptonForm
 
         if (kchkShowProgressBar.Checked)
         {
-            KryptonToastNotification.ShowBasicProgressBarNotification(notificationData);
+            KryptonToast.ShowBasicProgressBarNotification(notificationData);
         }
         else
         {
-            KryptonToastNotification.ShowBasicNotification(notificationData);
+            KryptonToast.ShowBasicNotification(notificationData);
         }
     }
 

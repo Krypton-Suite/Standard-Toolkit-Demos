@@ -1,12 +1,12 @@
 ﻿#region BSD License
 /*
- * 
+ *
  * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
- * 
+ *
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
- *  
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege et al. 2017 - 2026. All rights reserved.
+ *
  */
 #endregion
 
@@ -28,6 +28,16 @@ public partial class Form1 : Form
         comboBoxFooterIcon.Text = "Warning";
     }
 
+    private static KryptonTaskDialogIconType ParseTaskDialogIcon(string text) =>
+        text switch
+        {
+            "Error" => KryptonTaskDialogIconType.ShieldError,
+            "Question" => KryptonTaskDialogIconType.ShieldHelp,
+            "Warning" => KryptonTaskDialogIconType.ShieldWarning,
+            "Information" => KryptonTaskDialogIconType.ShieldInformation,
+            _ => KryptonTaskDialogIconType.None
+        };
+
     private void palette2010Blue_CheckedChanged(object sender, EventArgs e) => kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Blue;
 
     private void palette2010Silver_CheckedChanged(object sender, EventArgs e) => kryptonManager.GlobalPaletteMode = PaletteMode.Office2010Silver;
@@ -42,59 +52,78 @@ public partial class Form1 : Form
 
     private void buttonShowTaskDialog_Click(object sender, EventArgs e)
     {
-        TaskDialogButtons commonButtons = TaskDialogButtons.None;
+        KryptonTaskDialogCommonButtonTypes commonButtons = KryptonTaskDialogCommonButtonTypes.None;
         if (checkBoxOK.Checked)
         {
-            commonButtons |= TaskDialogButtons.OK;
+            commonButtons |= KryptonTaskDialogCommonButtonTypes.OK;
         }
 
         if (checkBoxYes.Checked)
         {
-            commonButtons |= TaskDialogButtons.Yes;
+            commonButtons |= KryptonTaskDialogCommonButtonTypes.Yes;
         }
 
         if (checkBoxNo.Checked)
         {
-            commonButtons |= TaskDialogButtons.No;
+            commonButtons |= KryptonTaskDialogCommonButtonTypes.No;
         }
 
         if (checkBoxCancel.Checked)
         {
-            commonButtons |= TaskDialogButtons.Cancel;
+            commonButtons |= KryptonTaskDialogCommonButtonTypes.Cancel;
         }
 
         if (checkBoxClose.Checked)
         {
-            commonButtons |= TaskDialogButtons.Close;
+            commonButtons |= KryptonTaskDialogCommonButtonTypes.Cancel;
         }
 
         if (checkBoxRetry.Checked)
         {
-            commonButtons |= TaskDialogButtons.Retry;
+            commonButtons |= KryptonTaskDialogCommonButtonTypes.Retry;
         }
 
-        kryptonTaskDialog.RadioButtons.Clear();
-        if (checkBoxRadioButtons.Checked)
-        {
-            kryptonTaskDialog.RadioButtons.AddRange(new KryptonTaskDialogCommand[] { kryptonTaskDialogCommand1, kryptonTaskDialogCommand2, kryptonTaskDialogCommand3 });
-        }
-
-        kryptonTaskDialog.CommandButtons.Clear();
+        kryptonTaskDialog.CommandLinkButtons.Buttons.Clear();
         if (checkBoxCommandButtons.Checked)
         {
-            kryptonTaskDialog.CommandButtons.AddRange(new KryptonTaskDialogCommand[] { kryptonTaskDialogCommand4, kryptonTaskDialogCommand5, kryptonTaskDialogCommand6 });
+            kryptonTaskDialog.CommandLinkButtons.Buttons.Add(kryptonTaskDialogCommandLinkButton1);
+            kryptonTaskDialog.CommandLinkButtons.Buttons.Add(kryptonTaskDialogCommandLinkButton2);
+            kryptonTaskDialog.CommandLinkButtons.Buttons.Add(kryptonTaskDialogCommandLinkButton3);
         }
 
-        kryptonTaskDialog.WindowTitle = textBoxCaption.Text;
-        kryptonTaskDialog.MainInstruction = textBoxMainInstructions.Text;
-        kryptonTaskDialog.Content = textBoxContent.Text;
-        kryptonTaskDialog.Icon = (KryptonMessageBoxIcon)Enum.Parse(typeof(KryptonMessageBoxIcon), comboBoxIcon.Text);
-        kryptonTaskDialog.CommonButtons = commonButtons;
-        kryptonTaskDialog.CheckboxText = textBoxCheckBoxText.Text;
-        kryptonTaskDialog.CheckboxState = checkBoxInitialState.Checked;
-        kryptonTaskDialog.FooterText = textBoxFooterText.Text;
-        kryptonTaskDialog.FooterHyperlink = textBoxFooterHyperlink.Text;
-        kryptonTaskDialog.FooterIcon = (KryptonMessageBoxIcon)Enum.Parse(typeof(KryptonMessageBoxIcon), comboBoxFooterIcon.Text);
+        kryptonTaskDialog.CommandLinkButtons.Visible = checkBoxCommandButtons.Checked;
+
+        kryptonTaskDialog.FreeWheeler1.FlowLayoutPanel.Controls.Clear();
+        if (checkBoxRadioButtons.Checked)
+        {
+            kryptonTaskDialog.FreeWheeler1.FlowLayoutPanel.Controls.Add(kryptonTaskDialogRadioButton1);
+            kryptonTaskDialog.FreeWheeler1.FlowLayoutPanel.Controls.Add(kryptonTaskDialogRadioButton2);
+            kryptonTaskDialog.FreeWheeler1.FlowLayoutPanel.Controls.Add(kryptonTaskDialogRadioButton3);
+            kryptonTaskDialog.FreeWheeler1.ElementHeight = 36;
+        }
+
+        kryptonTaskDialog.FreeWheeler1.Visible = checkBoxRadioButtons.Checked;
+
+        kryptonTaskDialog.Dialog.Form.Text = textBoxCaption.Text;
+        kryptonTaskDialog.Heading.Text = textBoxMainInstructions.Text;
+        kryptonTaskDialog.Heading.IconType = ParseTaskDialogIcon(comboBoxIcon.Text);
+        kryptonTaskDialog.Heading.Visible = true;
+        kryptonTaskDialog.Content.Text = textBoxContent.Text;
+        kryptonTaskDialog.Content.Visible = true;
+        kryptonTaskDialog.CheckBox.Text = textBoxCheckBoxText.Text;
+        kryptonTaskDialog.CheckBox.Checked = checkBoxInitialState.Checked;
+        kryptonTaskDialog.CheckBox.Visible = !string.IsNullOrWhiteSpace(textBoxCheckBoxText.Text);
+        kryptonTaskDialog.FooterBar.Footer.FootNoteText = textBoxFooterText.Text;
+        kryptonTaskDialog.FooterBar.Footer.IconType = ParseTaskDialogIcon(comboBoxFooterIcon.Text);
+        kryptonTaskDialog.FooterBar.Footer.EnableExpanderControls = false;
+        kryptonTaskDialog.FooterBar.CommonButtons.Buttons = commonButtons;
+        kryptonTaskDialog.FooterBar.CommonButtons.AcceptButton = commonButtons.HasFlag(KryptonTaskDialogCommonButtonTypes.OK)
+            ? KryptonTaskDialogCommonButtonTypes.OK
+            : KryptonTaskDialogCommonButtonTypes.None;
+        kryptonTaskDialog.FooterBar.CommonButtons.CancelButton = commonButtons.HasFlag(KryptonTaskDialogCommonButtonTypes.Cancel)
+            ? KryptonTaskDialogCommonButtonTypes.Cancel
+            : KryptonTaskDialogCommonButtonTypes.None;
+        kryptonTaskDialog.FooterBar.Visible = true;
         kryptonTaskDialog.ShowDialog(this);
     }
 

@@ -35,10 +35,8 @@ public partial class Form1 : KryptonForm
         {
             kryptonPaletteCustom.Import();
 
-            //kryptonThemeComboBox1..Manager.GlobalCustomPalette = kryptonPaletteCustom;
+            ApplyCustomPalette();
             propertyGrid.SelectedObject = kryptonPaletteCustom;
-
-            //kryptonThemeComboBox1.Manager.GlobalPaletteMode = PaletteMode.Custom;
         }
         catch (Exception exc)
         {
@@ -84,15 +82,16 @@ public partial class Form1 : KryptonForm
             }
             kryptonPaletteCustom.ImportWithUpgrade(File.OpenRead(paletteFileName));
 
-            //kryptonThemeComboBox1.Manager.GlobalCustomPalette = kryptonPaletteCustom;
-            propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components);
-            //kryptonThemeComboBox1.Manager.GlobalPaletteMode = PaletteMode.Custom;
+            ApplyCustomPalette();
+            propertyGrid.SelectedObject = kryptonPaletteCustom;
         }
         catch (Exception exc)
         {
             KryptonMessageBox.Show(this, exc.ToString());
         }
     }
+
+    private void ApplyCustomPalette() => ThemeManager.ApplyTheme(kryptonPaletteCustom, new KryptonManager());
 
     private void Form1_OnShown(object sender, EventArgs e) =>
         propertyGrid.SelectedObject = new KryptonCustomPaletteBase(components);

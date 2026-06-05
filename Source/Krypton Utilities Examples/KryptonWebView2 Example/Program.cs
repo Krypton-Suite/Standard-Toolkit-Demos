@@ -2,15 +2,13 @@
 /*
  *
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2026 - 2026. All rights reserved.
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege, et al. 2026 - 2026. All rights reserved.
  *
  */
 #endregion
 
 using System;
 using System.Windows.Forms;
-
-using KryptonWebView2_Example;
 
 namespace KryptonWebView2Example;
 

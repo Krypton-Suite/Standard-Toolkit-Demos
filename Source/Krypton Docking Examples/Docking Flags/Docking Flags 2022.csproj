@@ -17,9 +17,6 @@
     <ItemGroup>
         <Content Include="Krypton.ico" />
     </ItemGroup>
-    <ItemGroup>
-      <ProjectReference Include="..\Docking Persistence\Docking Persistence 2022.csproj" />
-    </ItemGroup>
     <Choose>
         <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
             <ItemGroup>

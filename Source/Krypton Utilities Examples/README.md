@@ -2,7 +2,7 @@
   * [Krypton Bug Reporting Dialog Example](#krypton-bug-reporting-dialog-example)
   * [Krypton Exception Dialog Example](#krypton-exception-dialog-example)
   * [Krypton Search Box Example](#krypton-search-box-example)
-  * [Krypton WebView2 Browser Example](#krypton-webview2-browser-example)
+  * [Krypton WebView2 Example](#krypton-webview2-example)
 	
 # Utilities Examples
 There are 2 set of solutions in these projects:
@@ -22,5 +22,5 @@ There are 2 set of solutions in these projects:
 # Krypton Search Box Example
 ![Krypton Search Box Example](KryptonSearchBox%20Example/KryptonSearchBoxExample.png)
 
-# Krypton WebView2 Browser Example
-![Krypton WebView2 Browser Example](KryptonWebView2Browser%20Example/KryptonWebView2BrowserExample.png)
+# Krypton WebView2 Example
+![Krypton WebView2 Example](KryptonWebView2%20Example/KryptonWebView2Example.png)

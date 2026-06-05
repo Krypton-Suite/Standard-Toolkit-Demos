@@ -1,12 +1,12 @@
 ﻿#region BSD License
 /*
- * 
+ *
  * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
  *  © Component Factory Pty Ltd, 2006 - 2016, (Version 4.5.0.0) All rights reserved.
- * 
+ *
  *  New BSD 3-Clause License (https://github.com/Krypton-Suite/Standard-Toolkit/blob/master/LICENSE)
- *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), et al. 2017 - 2024. All rights reserved. 
- *  
+ *  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV), tobitege et al. 2017 - 2026. All rights reserved.
+ *
  */
 #endregion
 
@@ -14,11 +14,10 @@ using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
-using System.Net;
 using System.Net.Http;
-
-
-//using System.Net.Http;
+using System.Reflection;
+using System.Runtime.Versioning;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
@@ -30,9 +29,64 @@ namespace KryptonExplorer;
 public partial class Main : KryptonForm
 {
     #region Variables
+    private const string DocumentationDownloadUrl = @"https://tinyurl.com/mvksw89c";
+    private static readonly HttpClient DocumentationHttpClient = new();
+
     private Settings _settings = new();
     private string _documentationDownloadLocation;
     #endregion
+
+    private static string GetTargetFrameworkFolder()
+    {
+        TargetFrameworkAttribute targetFramework =
+            Assembly.GetExecutingAssembly().GetCustomAttribute<TargetFrameworkAttribute>();
+
+        if (targetFramework is null)
+        {
+            return $@"net{Environment.Version.Major}{Environment.Version.Minor}";
+        }
+
+        FrameworkName frameworkName = new(targetFramework.FrameworkName);
+        Version version = frameworkName.Version;
+
+        if (frameworkName.Identifier == @".NETFramework" && version.Build > 0)
+        {
+            return $@"net{version.Major}{version.Minor}{version.Build}";
+        }
+
+        return $@"net{version.Major}{version.Minor}";
+    }
+
+    private static async Task DownloadFileAsync(string address, string downloadLocation, Action<int> reportProgress = null)
+    {
+        using HttpResponseMessage response =
+            await DocumentationHttpClient.GetAsync(address, HttpCompletionOption.ResponseHeadersRead);
+
+        response.EnsureSuccessStatusCode();
+
+        long? totalBytes = response.Content.Headers.ContentLength;
+
+        using Stream contentStream = await response.Content.ReadAsStreamAsync();
+        using FileStream fileStream = File.Create(downloadLocation);
+
+        byte[] buffer = new byte[81920];
+        long totalBytesRead = 0;
+        int bytesRead;
+
+        while ((bytesRead = await contentStream.ReadAsync(buffer, 0, buffer.Length)) > 0)
+        {
+            await fileStream.WriteAsync(buffer, 0, bytesRead);
+
+            totalBytesRead += bytesRead;
+
+            if (totalBytes.HasValue && totalBytes.Value > 0)
+            {
+                reportProgress?.Invoke((int)(totalBytesRead * 100 / totalBytes.Value));
+            }
+        }
+
+        reportProgress?.Invoke(100);
+    }
 
     public Main()
     {
@@ -334,19 +388,7 @@ public partial class Main : KryptonForm
             Cursor = Cursors.AppStarting;
 
             Cursor = Cursors.AppStarting;
-            var pathModifier = @"..\Krypton Toolkit Palette ";
-            pathModifier +=
-#if NET48
-                @"net48";
-#elif NET6_0
-            @"net60";
-#elif NET8_0
-            @"net80";
-#elif NET9_0
-            @"net90";
-#elif NET10_0
-            @"net100";
-#endif
+            var pathModifier = $@"..\Krypton Toolkit Palette {GetTargetFrameworkFolder()}";
             if (File.Exists(pathModifier + @"\Palette Designer.exe"))
             {
                 LaunchApplication(pathModifier + @"\Palette Designer");
@@ -373,19 +415,7 @@ public partial class Main : KryptonForm
         try
         {
             Cursor = Cursors.AppStarting;
-            var pathModifier = @"..\Krypton Toolkit Palette ";
-            pathModifier +=
-#if NET48
-            @"net48";
-#elif NET6_0
-            @"net60";
-#elif NET8_0
-            @"net80";
-#elif NET9_0
-            @"net90";
-#elif NET10_0
-            @"net100";
-#endif
+            var pathModifier = $@"..\Krypton Toolkit Palette {GetTargetFrameworkFolder()}";
             if (File.Exists(pathModifier + @"\Palette Upgrade Tool.exe"))
             {
                 LaunchApplication(pathModifier + @"\Palette Upgrade Tool");
@@ -407,7 +437,7 @@ public partial class Main : KryptonForm
         }
     }
 
-    private void DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
+    private void ShowDocumentationDownloadCompleted()
     {
         try
         {
@@ -424,13 +454,6 @@ public partial class Main : KryptonForm
         {
             KryptonMessageBox.Show($"Error: {exception}");
         }
-    }
-
-    private void DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
-    {
-        tspbDownloadStatus.Maximum = (int)e.TotalBytesToReceive / 100;
-
-        tspbDownloadStatus.Value = (int)e.BytesReceived / 100;
     }
 
     private void kllPropertyGrid_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Property Grid Example");
@@ -471,24 +494,16 @@ public partial class Main : KryptonForm
     private void kbtnOpenApplicationPath_Click(object sender, EventArgs e) =>
         GlobalToolkitUtilities.LaunchProcess(Application.ExecutablePath); //@"explorer.exe", @"\{Application.ExecutablePath}");
 
-    private async void bgwDownloadDocumentation_DoWork(object sender, DoWorkEventArgs e)
+    private void bgwDownloadDocumentation_DoWork(object sender, DoWorkEventArgs e)
     {
-        //HttpClient client = new();
-
-        WebClient client = new();
-
         tspbDownloadStatus.Text = $@"Downloading: {Path.GetFileName(_documentationDownloadLocation)}";
 
         if (!string.IsNullOrEmpty(_documentationDownloadLocation))
         {
-            //var downladContent = await client.GetStreamAsync(@"https://tinyurl.com/mvksw89c");
-
-            //using (var fs = File.Create(_documentationDownladLocation))
-            //{
-            //    downladContent.CopyTo(fs);
-            //}
-
-            client.DownloadFile(@"https://tinyurl.com/mvksw89c", _documentationDownloadLocation);
+            DownloadFileAsync(DocumentationDownloadUrl, _documentationDownloadLocation,
+                    progress => bgwDownloadDocumentation.ReportProgress(progress))
+                .GetAwaiter()
+                .GetResult();
         }
     }
 
@@ -562,7 +577,7 @@ public partial class Main : KryptonForm
 
     private void kbtnViewLatestNightlyReleaseNotes_Click(object sender, EventArgs e) => Process.Start(@"https://github.com/Krypton-Suite/Standard-Toolkit/blob/alpha/Documents/Changelog/Changelog.md");
 
-    private void kbtnDownloadLatestDocumentation_Click(object sender, EventArgs e)
+    private async void kbtnDownloadLatestDocumentation_Click(object sender, EventArgs e)
     {
         SaveFileDialog sfd = new()
         {
@@ -573,19 +588,26 @@ public partial class Main : KryptonForm
 
         if (sfd.ShowDialog() == DialogResult.OK)
         {
-            WebClient client = new();
-
             _documentationDownloadLocation = Path.GetFullPath(sfd.FileName);
 
             tspbDownloadStatus.Visible = true;
-
-            client.DownloadFile(@"https://tinyurl.com/mvksw89c", _documentationDownloadLocation);
+            tspbDownloadStatus.Value = 0;
+            tspbDownloadStatus.Maximum = 100;
 
             tspbDownloadStatus.Text = $@"Downloading: {Path.GetFileName(_documentationDownloadLocation)}";
 
-            client.DownloadProgressChanged += DownloadProgressChanged;
+            try
+            {
+                await DownloadFileAsync(DocumentationDownloadUrl, _documentationDownloadLocation,
+                    progress => tspbDownloadStatus.Value = Math.Min(progress, tspbDownloadStatus.Maximum));
 
-            client.DownloadFileCompleted += DownloadFileCompleted;
+                ShowDocumentationDownloadCompleted();
+            }
+            catch (Exception exception)
+            {
+                KryptonMessageBox.Show(this, $@"Error: {exception}", @"Unexpected Error", KryptonMessageBoxButtons.OK,
+                    KryptonMessageBoxIcon.Error);
+            }
         }
     }
 

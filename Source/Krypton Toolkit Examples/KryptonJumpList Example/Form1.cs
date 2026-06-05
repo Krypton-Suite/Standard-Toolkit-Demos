@@ -8,6 +8,7 @@
 #endregion
 
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
@@ -32,13 +33,13 @@ namespace KryptonJumpListExample
         private void JumpListTest_HandleCreated(object? sender, EventArgs e)
         {
             // Now that handle exists, set up the jump list configuration
-            if (JumpListValues == null || JumpList == null)
+            if (JumpList == null)
             {
                 return;
             }
 
             // Set AppID for proper Windows integration
-            JumpListValues.AppId = "Krypton.Toolkit.TestForm.JumpListDemo";
+            JumpList.AppId = "Krypton.Toolkit.TestForm.JumpListDemo";
 
             // Setup user tasks
             SetupUserTasks();
@@ -47,42 +48,38 @@ namespace KryptonJumpListExample
             SetupCustomCategories();
 
             // Configure known categories
-            JumpListValues.ShowRecentCategory = true;
-            JumpListValues.ShowFrequentCategory = false;
+            JumpList.ShowRecentCategory = true;
+            JumpList.ShowFrequentCategory = false;
         }
 
         private void JumpListTest_Shown(object? sender, EventArgs e)
         {
-            // Enable and refresh jump list when form is shown
-            if (JumpListValues == null || JumpList == null || !IsHandleCreated || IsDisposed)
+            // Refresh jump list when form is shown
+            if (JumpList == null || !IsHandleCreated || IsDisposed)
             {
                 return;
             }
 
             // Ensure AppId is set before enabling
-            if (string.IsNullOrEmpty(JumpListValues.AppId))
+            if (string.IsNullOrEmpty(JumpList.AppId))
             {
-                JumpListValues.AppId = "Krypton.Toolkit.TestForm.JumpListDemo";
+                JumpList.AppId = "Krypton.Toolkit.TestForm.JumpListDemo";
             }
 
-            // Enable the jump list (this will trigger refresh via property changed event)
-            // But wait a moment for Windows to be ready
+            // Wait a moment for Windows to be ready then trigger a jump list update
             System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer { Interval = 100 };
             timer.Tick += (s, args) =>
             {
                 timer.Stop();
                 timer.Dispose();
 
-                if (JumpListValues != null && JumpList != null && IsHandleCreated && !IsDisposed)
+                if (JumpList != null && IsHandleCreated && !IsDisposed)
                 {
-                    // Set enabled (triggers refresh)
-                    JumpListValues.Enabled = true;
-
                     // Force PropertyGrid refresh
                     propertyGrid.Refresh();
 
-                    // Also explicitly refresh to ensure it updates
-                    JumpList.Refresh();
+                    // Trigger a jump list update by touching a property
+                    JumpList.ShowRecentCategory = JumpList.ShowRecentCategory;
 
                     UpdateStatus("Jump list initialized. Right-click the taskbar icon to see it!");
                 }
@@ -92,30 +89,22 @@ namespace KryptonJumpListExample
 
         private void SetupUserTasks()
         {
-            var userTasks = JumpListValues.UserTasks;
+            var userTasks = JumpList.UserTasks;
 
             // Task 1: New Document
-            var newDoc = new KryptonJumpListItem("New Document", Application.ExecutablePath, "/new");
-            newDoc.Description = "Create a new document";
-            newDoc.IconPath = Application.ExecutablePath;
+            var newDoc = new JumpListItem { Title = "New Document", Path = Application.ExecutablePath, Arguments = "/new", Description = "Create a new document", IconPath = Application.ExecutablePath };
             userTasks.Add(newDoc);
 
             // Task 2: Open File
-            var openFile = new KryptonJumpListItem("Open File", Application.ExecutablePath, "/open");
-            openFile.Description = "Open an existing file";
-            openFile.IconPath = Application.ExecutablePath;
+            var openFile = new JumpListItem { Title = "Open File", Path = Application.ExecutablePath, Arguments = "/open", Description = "Open an existing file", IconPath = Application.ExecutablePath };
             userTasks.Add(openFile);
 
             // Task 3: Settings
-            var settings = new KryptonJumpListItem("Settings", Application.ExecutablePath, "/settings");
-            settings.Description = "Open application settings";
-            settings.IconPath = Application.ExecutablePath;
+            var settings = new JumpListItem { Title = "Settings", Path = Application.ExecutablePath, Arguments = "/settings", Description = "Open application settings", IconPath = Application.ExecutablePath };
             userTasks.Add(settings);
 
             // Task 4: Help
-            var help = new KryptonJumpListItem("Help", Application.ExecutablePath, "/help");
-            help.Description = "View help documentation";
-            help.IconPath = Application.ExecutablePath;
+            var help = new JumpListItem { Title = "Help", Path = Application.ExecutablePath, Arguments = "/help", Description = "View help documentation", IconPath = Application.ExecutablePath };
             userTasks.Add(help);
         }
 
@@ -127,51 +116,40 @@ namespace KryptonJumpListExample
             }
 
             // Category 1: Recent Projects
-            var recentProjects = new KryptonJumpListItems();
-            recentProjects.Add(new KryptonJumpListItem("Project Alpha", Application.ExecutablePath, "/project:alpha") {
-                Description = "Open Project Alpha",
-                IconPath = Application.ExecutablePath
-            });
-            recentProjects.Add(new KryptonJumpListItem("Project Beta", Application.ExecutablePath, "/project:beta") {
-                Description = "Open Project Beta",
-                IconPath = Application.ExecutablePath
-            });
-            recentProjects.Add(new KryptonJumpListItem("Project Gamma", Application.ExecutablePath, "/project:gamma") {
-                Description = "Open Project Gamma",
-                IconPath = Application.ExecutablePath
-            });
+            var recentProjects = new List<JumpListItem>
+            {
+                new JumpListItem { Title = "Project Alpha", Path = Application.ExecutablePath, Arguments = "/project:alpha", Description = "Open Project Alpha", IconPath = Application.ExecutablePath },
+                new JumpListItem { Title = "Project Beta", Path = Application.ExecutablePath, Arguments = "/project:beta", Description = "Open Project Beta", IconPath = Application.ExecutablePath },
+                new JumpListItem { Title = "Project Gamma", Path = Application.ExecutablePath, Arguments = "/project:gamma", Description = "Open Project Gamma", IconPath = Application.ExecutablePath }
+            };
 
-            JumpList.AddCustomCategory("Recent Projects", recentProjects);
+            JumpList.AddCategory("Recent Projects", recentProjects);
 
             // Category 2: Quick Actions
-            var quickActions = new KryptonJumpListItems();
-            quickActions.Add(new KryptonJumpListItem("Export Data", Application.ExecutablePath, "/export") {
-                Description = "Export data to file",
-                IconPath = Application.ExecutablePath
-            });
-            quickActions.Add(new KryptonJumpListItem("Import Data", Application.ExecutablePath, "/import") {
-                Description = "Import data from file",
-                IconPath = Application.ExecutablePath
-            });
+            var quickActions = new List<JumpListItem>
+            {
+                new JumpListItem { Title = "Export Data", Path = Application.ExecutablePath, Arguments = "/export", Description = "Export data to file", IconPath = Application.ExecutablePath },
+                new JumpListItem { Title = "Import Data", Path = Application.ExecutablePath, Arguments = "/import", Description = "Import data from file", IconPath = Application.ExecutablePath }
+            };
 
-            JumpList.AddCustomCategory("Quick Actions", quickActions);
+            JumpList.AddCategory("Quick Actions", quickActions);
         }
 
         private void SetupExamples()
         {
             // Example 1: Enable/Disable
-            lblExample1.Text = "Example 1: Enable or disable the jump list";
-            btnEnableJumpList.Text = "Enable";
-            btnDisableJumpList.Text = "Disable";
+            lblExample1.Text = "Example 1: Configure the jump list AppId";
+            btnEnableJumpList.Text = "Set AppId";
+            btnDisableJumpList.Text = "Clear AppId";
             btnEnableJumpList.Click += (s, e) =>
             {
-                JumpListValues.Enabled = true;
-                UpdateStatus("Jump list enabled");
+                JumpList.AppId = "Krypton.Toolkit.TestForm.JumpListDemo";
+                UpdateStatus("Jump list AppId set");
             };
             btnDisableJumpList.Click += (s, e) =>
             {
-                JumpListValues.Enabled = false;
-                UpdateStatus("Jump list disabled");
+                JumpList.AppId = string.Empty;
+                UpdateStatus("Jump list AppId cleared");
             };
 
             // Example 2: Add/Remove User Tasks
@@ -187,22 +165,23 @@ namespace KryptonJumpListExample
             btnToggleFrequent.Text = "Toggle Frequent";
             btnToggleRecent.Click += (s, e) =>
             {
-                JumpListValues.ShowRecentCategory = !JumpListValues.ShowRecentCategory;
-                UpdateStatus($"Recent category: {(JumpListValues.ShowRecentCategory ? "Enabled" : "Disabled")}");
+                JumpList.ShowRecentCategory = !JumpList.ShowRecentCategory;
+                UpdateStatus($"Recent category: {(JumpList.ShowRecentCategory ? "Enabled" : "Disabled")}");
             };
             btnToggleFrequent.Click += (s, e) =>
             {
-                JumpListValues.ShowFrequentCategory = !JumpListValues.ShowFrequentCategory;
-                UpdateStatus($"Frequent category: {(JumpListValues.ShowFrequentCategory ? "Enabled" : "Disabled")}");
+                JumpList.ShowFrequentCategory = !JumpList.ShowFrequentCategory;
+                UpdateStatus($"Frequent category: {(JumpList.ShowFrequentCategory ? "Enabled" : "Disabled")}");
             };
 
             // Example 4: Refresh Jump List
-            lblExample4.Text = "Example 4: Manually refresh the jump list";
+            lblExample4.Text = "Example 4: Trigger a jump list refresh";
             btnRefresh.Text = "Refresh Jump List";
             btnRefresh.Click += (s, e) =>
             {
-                JumpList?.Refresh();
-                UpdateStatus("Jump list refreshed");
+                // Trigger refresh by toggling a property value
+                JumpList.ShowRecentCategory = JumpList.ShowRecentCategory;
+                UpdateStatus("Jump list refresh triggered");
             };
 
             // Example 5: Clear Jump List
@@ -210,7 +189,7 @@ namespace KryptonJumpListExample
             btnClear.Text = "Clear Jump List";
             btnClear.Click += (s, e) =>
             {
-                JumpList?.Clear();
+                JumpList.Reset();
                 UpdateStatus("Jump list cleared");
             };
 
@@ -222,8 +201,8 @@ namespace KryptonJumpListExample
 
         private void SetupPropertyGrid()
         {
-            propertyGrid.SelectedObject = JumpListValues;
-            lblPropertyGrid.Text = "Property Grid: Configure JumpListValues properties";
+            propertyGrid.SelectedObject = JumpList;
+            lblPropertyGrid.Text = "Property Grid: Configure JumpList properties";
         }
 
         private void CheckCommandLineArguments()
@@ -281,23 +260,25 @@ namespace KryptonJumpListExample
 
         private void BtnAddTask_Click(object? sender, EventArgs e)
         {
-            var taskNumber = JumpListValues.UserTasks.Count + 1;
-            var newTask = new KryptonJumpListItem($"Dynamic Task {taskNumber}", Application.ExecutablePath, $"/task{taskNumber}") {
+            var taskNumber = JumpList.UserTasks.Count + 1;
+            var newTask = new JumpListItem
+            {
+                Title = $"Dynamic Task {taskNumber}",
+                Path = Application.ExecutablePath,
+                Arguments = $"/task{taskNumber}",
                 Description = $"This is dynamically added task #{taskNumber}",
                 IconPath = Application.ExecutablePath
             };
-            JumpListValues.UserTasks.Add(newTask);
-            JumpList?.Refresh();
+            JumpList.UserTasks.Add(newTask);
             UpdateStatus($"Added task: {newTask.Title}");
         }
 
         private void BtnRemoveTask_Click(object? sender, EventArgs e)
         {
-            if (JumpListValues.UserTasks.Count > 0)
+            if (JumpList.UserTasks.Count > 0)
             {
-                var removedTask = JumpListValues.UserTasks[JumpListValues.UserTasks.Count - 1];
-                JumpListValues.UserTasks.RemoveAt(JumpListValues.UserTasks.Count - 1);
-                JumpList?.Refresh();
+                var removedTask = JumpList.UserTasks[JumpList.UserTasks.Count - 1];
+                JumpList.UserTasks.RemoveAt(JumpList.UserTasks.Count - 1);
                 UpdateStatus($"Removed task: {removedTask.Title}");
             }
             else
@@ -313,22 +294,29 @@ namespace KryptonJumpListExample
                 return;
             }
 
-            var categoryNumber = JumpListValues.UserTasks.Count + 1;
+            var categoryNumber = JumpList.Categories.Count + 1;
             var categoryName = $"Dynamic Category {categoryNumber}";
-            var categoryItems = new KryptonJumpListItems();
+            var categoryItems = new List<JumpListItem>
+            {
+                new JumpListItem
+                {
+                    Title = "Item 1",
+                    Path = Application.ExecutablePath,
+                    Arguments = $"/category{categoryNumber}/item1",
+                    Description = "First item in dynamic category",
+                    IconPath = Application.ExecutablePath
+                },
+                new JumpListItem
+                {
+                    Title = "Item 2",
+                    Path = Application.ExecutablePath,
+                    Arguments = $"/category{categoryNumber}/item2",
+                    Description = "Second item in dynamic category",
+                    IconPath = Application.ExecutablePath
+                }
+            };
 
-            categoryItems.Add(new KryptonJumpListItem($"Item 1", Application.ExecutablePath, $"/category{categoryNumber}/item1") {
-                Description = "First item in dynamic category",
-                IconPath = Application.ExecutablePath
-            });
-
-            categoryItems.Add(new KryptonJumpListItem($"Item 2", Application.ExecutablePath, $"/category{categoryNumber}/item2") {
-                Description = "Second item in dynamic category",
-                IconPath = Application.ExecutablePath
-            });
-
-            JumpList.AddCustomCategory(categoryName, categoryItems);
-            JumpList.Refresh();
+            JumpList.AddCategory(categoryName, categoryItems);
             UpdateStatus($"Added category: {categoryName}");
         }
 

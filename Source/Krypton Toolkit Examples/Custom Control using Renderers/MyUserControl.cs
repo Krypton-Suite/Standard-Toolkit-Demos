@@ -1,4 +1,4 @@
-﻿#region BSD License
+#region BSD License
 /*
  *
  * Original BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
@@ -11,6 +11,7 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -62,6 +63,11 @@ public class MyUserControl : UserControl,
         _paletteContent = new PaletteContentInheritRedirect(_paletteRedirect);
     }
 
+    [Category("Visuals")]
+    [Description("Determines the visual orientation of the control.")]
+    [DefaultValue(typeof(VisualOrientation), "Top")]
+    [RefreshProperties(RefreshProperties.All)]
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
     public VisualOrientation Orientation
     {
         get => _orientation;
@@ -303,6 +309,18 @@ public class MyUserControl : UserControl,
     public string GetLongText() => @"Click me!";
 
     public string GetShortText() => string.Empty;
+
+    public Image? GetOverlayImage(PaletteState state) => null;
+
+    public Color GetOverlayImageTransparentColor(PaletteState state) => Color.Empty;
+
+    public OverlayImagePosition GetOverlayImagePosition(PaletteState state) => OverlayImagePosition.BottomRight;
+
+    public OverlayImageScaleMode GetOverlayImageScaleMode(PaletteState state) => OverlayImageScaleMode.None;
+
+    public float GetOverlayImageScaleFactor(PaletteState state) => 1.0f;
+
+    public Size GetOverlayImageFixedSize(PaletteState state) => Size.Empty;
 
     #endregion
 }
