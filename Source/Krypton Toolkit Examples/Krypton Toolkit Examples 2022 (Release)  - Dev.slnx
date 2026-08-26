@@ -1,4 +1,4 @@
-<Solution>
+﻿<Solution>
   <Folder Name="/Solution Items/">
     <File Path=".editorconfig" />
     <File Path="README.md" />
@@ -46,6 +46,7 @@
   <Project Path="KryptonListView Examples/KryptonListView Examples 2022.csproj" />
   <Project Path="KryptonMaskedTextBox Examples/KryptonMaskedTextBox Examples 2022.csproj" />
   <Project Path="KryptonMenuAndToolStrip Examples/KryptonMenuAndToolStrip Examples.csproj" />
+  <Project Path="KryptonMenuBar Examples/KryptonMenuBar Examples.csproj" />
   <Project Path="KryptonMessageBox Examples/KryptonMessageBox Examples 2022.csproj" />
   <Project Path="KryptonMonthCalendar Examples/KryptonMonthCalendar Examples 2022.csproj" />
   <Project Path="KryptonNumericUpDown Examples/KryptonNumericUpDown Examples 2022.csproj" />

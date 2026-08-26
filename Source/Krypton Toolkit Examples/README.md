@@ -48,6 +48,7 @@
 	* [KryptonListView](#kryptonlistview)
 	* [KryptonMaskedTextBox](#kryptonmaskedtextbox)
 	* [KryptonMenuAndToolStrip](#kryptonmenuandtoolstrip)
+	* [KryptonMenuBar](#kryptonmenubar)
 	* [KryptonMessageBox](#kryptonmessagebox)
 	* [KryptonMonthCalendar](#kryptonmonthcalendar)
 	* [KryptonNumericUpDown](#kryptonnumericupdown)
@@ -196,6 +197,8 @@ There are 2 set of solutions in these projects:
 ![KryptonMaskedTextBox Examples](KryptonMaskedTextBox%20Examples/example.png)
 ## KryptonMenuAndToolStrip
 ![KryptonMenuAndToolStrip Examples](KryptonMenuAndToolStrip%20Examples/example.gif)
+## KryptonMenuBar
+Native `KryptonMenuBar` (not a ToolStrip subclass) compared with `KryptonMenuStrip` and WinForms `MenuStrip`. Assign to `KryptonForm.MenuBar` for shortcuts and Alt activation. See issue [#4242](https://github.com/Krypton-Suite/Standard-Toolkit/issues/4242).
 ## [KryptonMessageBox
 ![KryptonMessageBox Examples](KryptonMessageBox%20Examples/example.png)
 ![KryptonMessageBox Examples](KryptonMessageBox%20Examples/KryptonMessageBoxWrapLabelExample.gif)

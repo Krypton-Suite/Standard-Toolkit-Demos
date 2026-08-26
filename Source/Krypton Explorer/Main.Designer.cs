@@ -80,6 +80,7 @@ partial class Main
         this.linkKryptonDropButton = new Krypton.Toolkit.KryptonLinkLabel();
         this.linkKryptonMaskedTextBox = new Krypton.Toolkit.KryptonLinkLabel();
         this.linkKryptonContextMenu = new Krypton.Toolkit.KryptonLinkLabel();
+        this.linkKryptonMenuBar = new Krypton.Toolkit.KryptonLinkLabel();
         this.linkKryptonRichTextBox = new Krypton.Toolkit.KryptonLinkLabel();
         this.linkKryptonComboBox = new Krypton.Toolkit.KryptonLinkLabel();
         this.linkKryptonTextBox = new Krypton.Toolkit.KryptonLinkLabel();
@@ -481,6 +482,7 @@ partial class Main
         this.kryptonPage1.Controls.Add(this.linkKryptonDropButton);
         this.kryptonPage1.Controls.Add(this.linkKryptonMaskedTextBox);
         this.kryptonPage1.Controls.Add(this.linkKryptonContextMenu);
+        this.kryptonPage1.Controls.Add(this.linkKryptonMenuBar);
         this.kryptonPage1.Controls.Add(this.linkKryptonRichTextBox);
         this.kryptonPage1.Controls.Add(this.linkKryptonComboBox);
         this.kryptonPage1.Controls.Add(this.linkKryptonTextBox);
@@ -993,6 +995,19 @@ partial class Main
         this.linkKryptonContextMenu.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
         this.linkKryptonContextMenu.Values.Text = "KryptonContextMenu";
         this.linkKryptonContextMenu.LinkClicked += new System.EventHandler(this.linkKryptonContextMenu_LinkClicked);
+        //
+        // linkKryptonMenuBar
+        //
+        this.linkKryptonMenuBar.Location = new System.Drawing.Point(201, 276);
+        this.linkKryptonMenuBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+        this.linkKryptonMenuBar.Name = "linkKryptonMenuBar";
+        this.linkKryptonMenuBar.Size = new System.Drawing.Size(140, 20);
+        this.linkKryptonMenuBar.StateCommon.AdjacentGap = 5;
+        this.linkKryptonMenuBar.TabIndex = 50;
+        this.linkKryptonMenuBar.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonContextMenu.Values.Image")));
+        this.linkKryptonMenuBar.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
+        this.linkKryptonMenuBar.Values.Text = "KryptonMenuBar";
+        this.linkKryptonMenuBar.LinkClicked += new System.EventHandler(this.linkKryptonMenuBar_LinkClicked);
         // 
         // linkKryptonRichTextBox
         // 
@@ -2424,6 +2439,7 @@ partial class Main
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonRichTextBox;
     private Krypton.Toolkit.KryptonLinkLabel linkMDIApplication;
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonContextMenu;
+    private Krypton.Toolkit.KryptonLinkLabel linkKryptonMenuBar;
     private Krypton.Toolkit.KryptonLinkLabel linkApplicationMenu;
     private Krypton.Toolkit.KryptonLinkLabel linkNavigatorContextMenus;
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonMaskedTextBox;

@@ -147,6 +147,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krypton Theme Selector 2022
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonMenuAndToolStrip Examples", "KryptonMenuAndToolStrip Examples\KryptonMenuAndToolStrip Examples.csproj", "{857524F9-590E-77C8-254E-84BA7CC8B30D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonMenuBar Examples", "KryptonMenuBar Examples\KryptonMenuBar Examples.csproj", "{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}"
+EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -429,6 +432,10 @@ Global
 		{857524F9-590E-77C8-254E-84BA7CC8B30D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{857524F9-590E-77C8-254E-84BA7CC8B30D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{857524F9-590E-77C8-254E-84BA7CC8B30D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

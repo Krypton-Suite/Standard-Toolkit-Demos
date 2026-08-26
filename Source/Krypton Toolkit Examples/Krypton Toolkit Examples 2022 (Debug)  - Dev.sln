@@ -178,6 +178,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonErrorProvider Exampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonButtonBadge Examples", "KryptonButtonBadge Examples\KryptonButtonBadge Examples.csproj", "{5E96B3B7-7B3A-40F7-B974-FB6497B7C3E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonMenuBar Examples", "KryptonMenuBar Examples\KryptonMenuBar Examples.csproj", "{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}"
+EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Canary|Any CPU = Canary|Any CPU
@@ -1027,6 +1030,16 @@ Global
 		{5E96B3B7-7B3A-40F7-B974-FB6497B7C3E1}.Nightly|Any CPU.Build.0 = Release|Any CPU
 		{5E96B3B7-7B3A-40F7-B974-FB6497B7C3E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E96B3B7-7B3A-40F7-B974-FB6497B7C3E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Canary|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Canary|Any CPU.Build.0 = Release|Any CPU
+		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Installer|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Installer|Any CPU.Build.0 = Debug|Any CPU
+		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Nightly|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Nightly|Any CPU.Build.0 = Release|Any CPU
+		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

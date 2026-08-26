@@ -136,6 +136,9 @@ public partial class Main : KryptonForm
     private void linkKryptonContextMenu_LinkClicked(object sender, EventArgs e) =>
         LaunchApplication(@"Krypton Context Menu Examples");
 
+    private void linkKryptonMenuBar_LinkClicked(object sender, EventArgs e) =>
+        LaunchApplication(@"Krypton MenuBar Examples");
+
     private void linkKryptonDataGridView_LinkClicked(object sender, EventArgs e) =>
         LaunchApplication(@"Krypton Data GridView Examples");
 
