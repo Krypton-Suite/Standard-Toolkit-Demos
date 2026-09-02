@@ -15,12 +15,418 @@ using System.IO;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
+using Krypton.Toolkit.Utilities;
 
 namespace KryptonPaletteExamples;
 
 public partial class Form1 : KryptonForm
 {
-    public Form1() => InitializeComponent();
+    private KryptonPaletteFileComboBox? _paletteFileCombo;
+    private KryptonPaletteFileTreeView? _paletteFileTree;
+
+    public Form1()
+    {
+        InitializeComponent();
+        AppendPaletteBinaryExport();
+    }
+
+    private void AppendPaletteBinaryExport()
+    {
+        ClientSize = new System.Drawing.Size(ClientSize.Width, ClientSize.Height + 410);
+
+        var instructions = new KryptonWrapLabel
+        {
+            Location = new System.Drawing.Point(12, 610),
+            Size = new System.Drawing.Size(490, 130),
+            Text = @"#2117: Import/Export dialogs default to .kpalx (KryptonPalette XML). Use Export native .kpal for a single theme; Export .kpal pack stores several named themes. Pack folder to .kpal stores a directory tree as path-named themes. Upgrade .xml to .kpalx rewrites a legacy .xml beside the source (UpgradeXmlToKpalx). Upgrade folder .xml to .kpalx converts a directory (UpgradeXmlToKpalxFromDirectory). Convert XML to .kpalx writes a chosen destination."
+        };
+
+        var btnKpalx = new KryptonButton
+        {
+            Location = new System.Drawing.Point(512, 610),
+            Size = new System.Drawing.Size(114, 43),
+            Name = @"btnExportKpalx"
+        };
+        btnKpalx.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
+        btnKpalx.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
+        btnKpalx.Values.Text = @"Export" + Environment.NewLine + @".kpalx XML";
+        btnKpalx.Click += (_, _) => ExportPaletteFormat(KryptonPaletteFileFormat.Xml, @"custom.kpalx");
+
+        var btnNative = new KryptonButton
+        {
+            Location = new System.Drawing.Point(632, 610),
+            Size = new System.Drawing.Size(114, 43),
+            Name = @"btnExportPaletteBinary"
+        };
+        btnNative.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
+        btnNative.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
+        btnNative.Values.Text = @"Export native" + Environment.NewLine + @".kpal";
+        btnNative.Click += (_, _) => ExportPaletteFormat(KryptonPaletteFileFormat.PaletteBinary, @"custom.kpal");
+
+        var btnConvert = new KryptonButton
+        {
+            Location = new System.Drawing.Point(512, 658),
+            Size = new System.Drawing.Size(114, 43),
+            Name = @"btnConvertPaletteFile"
+        };
+        btnConvert.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
+        btnConvert.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
+        btnConvert.Values.Text = @"Convert XML" + Environment.NewLine + @"to .kpalx";
+        btnConvert.Click += (_, _) => ConvertPaletteFile();
+
+        var btnUpgradeXml = new KryptonButton
+        {
+            Location = new System.Drawing.Point(632, 658),
+            Size = new System.Drawing.Size(114, 43),
+            Name = @"btnUpgradeXmlPaletteFile"
+        };
+        btnUpgradeXml.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
+        btnUpgradeXml.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
+        btnUpgradeXml.Values.Text = @"Upgrade .xml" + Environment.NewLine + @"to .kpalx";
+        btnUpgradeXml.Click += (_, _) => UpgradeXmlPaletteFile();
+
+        var btnExportPack = new KryptonButton
+        {
+            Location = new System.Drawing.Point(512, 706),
+            Size = new System.Drawing.Size(114, 43),
+            Name = @"btnExportPalettePack"
+        };
+        btnExportPack.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
+        btnExportPack.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
+        btnExportPack.Values.Text = @"Export" + Environment.NewLine + @".kpal pack";
+        btnExportPack.Click += (_, _) => ExportPalettePack();
+
+        var btnImportPack = new KryptonButton
+        {
+            Location = new System.Drawing.Point(632, 706),
+            Size = new System.Drawing.Size(114, 43),
+            Name = @"btnImportPalettePack"
+        };
+        btnImportPack.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
+        btnImportPack.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
+        btnImportPack.Values.Text = @"Import pack" + Environment.NewLine + @"theme";
+        btnImportPack.Click += (_, _) => ImportPalettePack();
+
+        var btnPackFolder = new KryptonButton
+        {
+            Location = new System.Drawing.Point(512, 754),
+            Size = new System.Drawing.Size(234, 43),
+            Name = @"btnPackFolder"
+        };
+        btnPackFolder.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
+        btnPackFolder.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
+        btnPackFolder.Values.Text = @"Pack folder" + Environment.NewLine + @"to .kpal";
+        btnPackFolder.Click += (_, _) => ExportPackFromFolder();
+
+        var btnUpgradeXmlFolder = new KryptonButton
+        {
+            Location = new System.Drawing.Point(512, 802),
+            Size = new System.Drawing.Size(234, 43),
+            Name = @"btnUpgradeXmlFolder"
+        };
+        btnUpgradeXmlFolder.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
+        btnUpgradeXmlFolder.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
+        btnUpgradeXmlFolder.Values.Text = @"Upgrade folder" + Environment.NewLine + @".xml to .kpalx";
+        btnUpgradeXmlFolder.Click += (_, _) => UpgradeXmlFolder();
+
+        _paletteFileCombo = new KryptonPaletteFileComboBox
+        {
+            Location = new System.Drawing.Point(12, 748),
+            Size = new System.Drawing.Size(490, 28),
+            Name = @"kryptonPaletteFileComboBox",
+            AutoApply = true,
+            SearchSubdirectories = true
+        };
+
+        _paletteFileTree = new KryptonPaletteFileTreeView
+        {
+            Location = new System.Drawing.Point(12, 784),
+            Size = new System.Drawing.Size(490, 160),
+            Name = @"kryptonPaletteFileTreeView",
+            AutoApply = true,
+            SearchSubdirectories = true
+        };
+
+        Controls.Add(instructions);
+        Controls.Add(btnKpalx);
+        Controls.Add(btnNative);
+        Controls.Add(btnConvert);
+        Controls.Add(btnUpgradeXml);
+        Controls.Add(btnExportPack);
+        Controls.Add(btnImportPack);
+        Controls.Add(btnPackFolder);
+        Controls.Add(btnUpgradeXmlFolder);
+        Controls.Add(_paletteFileCombo);
+        Controls.Add(_paletteFileTree);
+        instructions.BringToFront();
+        btnKpalx.BringToFront();
+        btnNative.BringToFront();
+        btnConvert.BringToFront();
+        btnUpgradeXml.BringToFront();
+        btnExportPack.BringToFront();
+        btnImportPack.BringToFront();
+        btnPackFolder.BringToFront();
+        btnUpgradeXmlFolder.BringToFront();
+        _paletteFileCombo.BringToFront();
+        _paletteFileTree.BringToFront();
+    }
+
+    private void ExportPalettePack()
+    {
+        using var dialog = new SaveFileDialog
+        {
+            Title = @"Save Palette Pack",
+            Filter = KryptonPaletteFile.DialogFilter,
+            DefaultExt = KryptonPaletteFile.BinaryExtension,
+            FileName = @"themes.kpal",
+            OverwritePrompt = true
+        };
+
+        if (dialog.ShowDialog(this) != DialogResult.OK)
+        {
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(kryptonPaletteCustom.GetPaletteName()))
+        {
+            kryptonPaletteCustom.SetPaletteName(@"Custom");
+        }
+
+        using var second = new KryptonCustomPaletteBase();
+        second.SetPaletteName(@"Second");
+        KryptonPaletteFile.ExportPack(dialog.FileName, new[] { kryptonPaletteCustom, second }, ignoreDefaults: true, packName: @"Example pack");
+        BindPaletteFileCombo(dialog.FileName);
+        KryptonMessageBox.Show(this, $@"Exported pack to {dialog.FileName}", @"Palette Pack");
+    }
+
+    private void ExportPackFromFolder()
+    {
+        using var folder = new FolderBrowserDialog
+        {
+            Description = @"Select a folder of palette files (subfolders are included).",
+            ShowNewFolderButton = false
+        };
+
+        if (folder.ShowDialog(this) != DialogResult.OK)
+        {
+            return;
+        }
+
+        using var dialog = new SaveFileDialog
+        {
+            Title = @"Save Folder Pack",
+            Filter = KryptonPaletteFile.DialogFilter,
+            DefaultExt = KryptonPaletteFile.BinaryExtension,
+            FileName = Path.GetFileName(folder.SelectedPath.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar)) + @".kpal",
+            OverwritePrompt = true
+        };
+
+        if (dialog.ShowDialog(this) != DialogResult.OK)
+        {
+            return;
+        }
+
+        try
+        {
+            var destination = KryptonPaletteFile.ExportPackFromDirectory(dialog.FileName, folder.SelectedPath);
+            BindPaletteFileCombo(destination);
+            var names = KryptonPaletteFile.GetThemeNames(destination);
+            KryptonMessageBox.Show(this, $@"Packed {names.Length} themes to {destination}", @"Palette Pack");
+        }
+        catch (Exception exc)
+        {
+            KryptonMessageBox.Show(this, exc.ToString());
+        }
+    }
+
+    private void ImportPalettePack()
+    {
+        using var dialog = new OpenFileDialog
+        {
+            Title = @"Load Palette Pack",
+            Filter = KryptonPaletteFile.DialogFilter,
+            DefaultExt = KryptonPaletteFile.BinaryExtension,
+            CheckFileExists = true
+        };
+
+        if (dialog.ShowDialog(this) != DialogResult.OK)
+        {
+            return;
+        }
+
+        try
+        {
+            var names = KryptonPaletteFile.GetThemeNames(dialog.FileName);
+            if (names.Length == 0)
+            {
+                return;
+            }
+
+            var themeName = names[0];
+            kryptonPaletteCustom.Import(dialog.FileName, themeName, silent: true);
+            ApplyCustomPalette();
+            propertyGrid.SelectedObject = kryptonPaletteCustom;
+            KryptonMessageBox.Show(this,
+                $@"Loaded '{themeName}'. Themes in this pack: {string.Join(@", ", names)}",
+                @"Palette Pack");
+        }
+        catch (Exception exc)
+        {
+            KryptonMessageBox.Show(this, exc.ToString());
+        }
+    }
+
+    private void ConvertPaletteFile()
+    {
+        using var open = new OpenFileDialog
+        {
+            Title = @"Convert Palette From",
+            Filter = KryptonPaletteFile.DialogFilter,
+            // ToDo V120 LTS: Default this open dialog to Extension (.kpalx) once .xml is retired.
+            DefaultExt = KryptonPaletteFile.XmlExtension,
+            CheckFileExists = true
+        };
+
+        if (open.ShowDialog(this) != DialogResult.OK)
+        {
+            return;
+        }
+
+        using var save = new SaveFileDialog
+        {
+            Title = @"Convert Palette To",
+            Filter = KryptonPaletteFile.DialogFilter,
+            DefaultExt = KryptonPaletteFile.Extension,
+            FileName = Path.GetFileNameWithoutExtension(open.FileName) + @"." + KryptonPaletteFile.Extension,
+            OverwritePrompt = true
+        };
+
+        if (save.ShowDialog(this) != DialogResult.OK)
+        {
+            return;
+        }
+
+        try
+        {
+            var destination = kryptonPaletteCustom.ConvertFile(open.FileName, save.FileName);
+            ApplyCustomPalette();
+            propertyGrid.SelectedObject = kryptonPaletteCustom;
+            BindPaletteFileCombo(destination);
+            KryptonMessageBox.Show(this, $@"Converted to {destination}", @"Palette Convert");
+        }
+        catch (Exception exc)
+        {
+            KryptonMessageBox.Show(this, exc.ToString());
+        }
+    }
+
+    private void UpgradeXmlPaletteFile()
+    {
+        using var open = new OpenFileDialog
+        {
+            Title = @"Upgrade legacy .xml palette",
+            Filter = @"XML palette files (*.xml)|*.xml|All files (*.*)|*.*",
+            DefaultExt = KryptonPaletteFile.XmlExtension,
+            CheckFileExists = true
+        };
+
+        if (open.ShowDialog(this) != DialogResult.OK)
+        {
+            return;
+        }
+
+        try
+        {
+            var destination = kryptonPaletteCustom.UpgradeXmlToKpalx(open.FileName);
+            ApplyCustomPalette();
+            propertyGrid.SelectedObject = kryptonPaletteCustom;
+            BindPaletteFileCombo(destination);
+            KryptonMessageBox.Show(this,
+                $@"Upgraded to {destination}. The source .xml was left in place.",
+                @"Palette Upgrade");
+        }
+        catch (Exception exc)
+        {
+            KryptonMessageBox.Show(this, exc.ToString());
+        }
+    }
+
+    private void UpgradeXmlFolder()
+    {
+        using var folder = new FolderBrowserDialog
+        {
+            Description = @"Select a folder of legacy .xml palettes (subfolders are included).",
+            ShowNewFolderButton = false
+        };
+
+        if (folder.ShowDialog(this) != DialogResult.OK || string.IsNullOrWhiteSpace(folder.SelectedPath))
+        {
+            return;
+        }
+
+        try
+        {
+            var result = KryptonPaletteFile.UpgradeXmlToKpalxFromDirectory(folder.SelectedPath, searchSubdirectories: true);
+            BindPaletteFileCombo(folder.SelectedPath);
+            var icon = result.ErrorCount > 0 ? KryptonMessageBoxIcon.Warning : KryptonMessageBoxIcon.Information;
+            KryptonMessageBox.Show(this, result.ToSummaryString(), @"Upgrade folder .xml to .kpalx",
+                KryptonMessageBoxButtons.OK, icon);
+        }
+        catch (Exception exc)
+        {
+            KryptonMessageBox.Show(this, exc.ToString());
+        }
+    }
+
+    private void ExportPaletteFormat(KryptonPaletteFileFormat format, string suggestedName)
+    {
+        using var dialog = new SaveFileDialog
+        {
+            Title = @"Save Palette As",
+            Filter = KryptonPaletteFile.DialogFilter,
+            DefaultExt = KryptonPaletteFile.Extension,
+            FileName = suggestedName,
+            OverwritePrompt = true
+        };
+
+        if (dialog.ShowDialog(this) != DialogResult.OK)
+        {
+            return;
+        }
+
+        kryptonPaletteCustom.Export(dialog.FileName, ignoreDefaults: true, silent: true, format);
+        BindPaletteFileCombo(dialog.FileName);
+        KryptonMessageBox.Show(this, $@"Exported {format} to {dialog.FileName}", @"Palette Export");
+    }
+
+    private void BindPaletteFileCombo(string palettePath)
+    {
+        if (_paletteFileCombo == null)
+        {
+            return;
+        }
+
+        var directory = Directory.Exists(palettePath)
+            ? palettePath
+            : Path.GetDirectoryName(palettePath);
+        if (string.IsNullOrWhiteSpace(directory))
+        {
+            return;
+        }
+
+        _paletteFileCombo.AutoApply = false;
+        _paletteFileCombo.SearchSubdirectories = true;
+        _paletteFileCombo.PaletteDirectory = directory;
+        _paletteFileCombo.AutoApply = true;
+
+        if (_paletteFileTree != null)
+        {
+            _paletteFileTree.AutoApply = false;
+            _paletteFileTree.SearchSubdirectories = true;
+            _paletteFileTree.PaletteDirectory = directory;
+            _paletteFileTree.AutoApply = true;
+        }
+    }
 
     private void btnExport_Click(object sender, EventArgs e)
     {
@@ -68,8 +474,8 @@ public partial class Form1 : KryptonForm
             using var kofd = new KryptonOpenFileDialog {
                 CheckFileExists = true,
                 CheckPathExists = true,
-                DefaultExt = @"xml",
-                Filter = @"Palette files (*.xml)|*.xml|All files (*.*)|(*.*)",
+                DefaultExt = KryptonPaletteFile.Extension,
+                Filter = KryptonPaletteFile.DialogFilter,
                 Title = @"Load Custom Palette"
             };
 

@@ -181,6 +181,9 @@ public partial class Main : KryptonForm
     private void linkKryptonPalette_LinkClicked(object sender, EventArgs e) =>
         LaunchApplication(@"Krypton Palette Examples");
 
+    private void linkKryptonPaletteAuthor_LinkClicked(object sender, EventArgs e) =>
+        LaunchApplication(@"Krypton Palette Author");
+
     private void linkKryptonPanel_LinkClicked(object sender, EventArgs e) =>
         LaunchApplication(@"Krypton Panel Examples");
 

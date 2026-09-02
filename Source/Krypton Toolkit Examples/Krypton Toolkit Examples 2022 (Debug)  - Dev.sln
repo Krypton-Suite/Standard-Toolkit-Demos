@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
 VisualStudioVersion = 18.3.11222.16
@@ -16,6 +16,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonSplitContainer Examples 2022", "KryptonSplitContainer Examples\KryptonSplitContainer Examples 2022.csproj", "{D68A2AEC-7B5A-4878-848D-80887F269D6C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonPanel Examples 2022", "KryptonPanel Examples\KryptonPanel Examples 2022.csproj", "{2C4CB46B-3790-4150-828B-F441C44445B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonPalette Author 2022", "KryptonPalette Author\KryptonPalette Author 2022.csproj", "{B7E41A92-3C8D-4F5A-9B16-8E0D2A4C7F11}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonPalette Examples 2022", "KryptonPalette Examples\KryptonPalette Examples 2022.csproj", "{5D7433EF-0FF4-435F-8DE2-FE22C5E3ECC5}"
 EndProject
@@ -270,6 +272,16 @@ Global
 		{5D7433EF-0FF4-435F-8DE2-FE22C5E3ECC5}.Nightly|Any CPU.Build.0 = Release|Any CPU
 		{5D7433EF-0FF4-435F-8DE2-FE22C5E3ECC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D7433EF-0FF4-435F-8DE2-FE22C5E3ECC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E41A92-3C8D-4F5A-9B16-8E0D2A4C7F11}.Canary|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E41A92-3C8D-4F5A-9B16-8E0D2A4C7F11}.Canary|Any CPU.Build.0 = Release|Any CPU
+		{B7E41A92-3C8D-4F5A-9B16-8E0D2A4C7F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E41A92-3C8D-4F5A-9B16-8E0D2A4C7F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E41A92-3C8D-4F5A-9B16-8E0D2A4C7F11}.Installer|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E41A92-3C8D-4F5A-9B16-8E0D2A4C7F11}.Installer|Any CPU.Build.0 = Release|Any CPU
+		{B7E41A92-3C8D-4F5A-9B16-8E0D2A4C7F11}.Nightly|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E41A92-3C8D-4F5A-9B16-8E0D2A4C7F11}.Nightly|Any CPU.Build.0 = Release|Any CPU
+		{B7E41A92-3C8D-4F5A-9B16-8E0D2A4C7F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E41A92-3C8D-4F5A-9B16-8E0D2A4C7F11}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7F71F7BA-FBBA-4758-A6C9-83110BF48166}.Canary|Any CPU.ActiveCfg = Release|Any CPU
 		{7F71F7BA-FBBA-4758-A6C9-83110BF48166}.Canary|Any CPU.Build.0 = Release|Any CPU
 		{7F71F7BA-FBBA-4758-A6C9-83110BF48166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

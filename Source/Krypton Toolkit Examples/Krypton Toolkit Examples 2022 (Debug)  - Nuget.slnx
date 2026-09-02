@@ -1,4 +1,4 @@
-﻿<Solution>
+<Solution>
   <Folder Name="/Solution Items/">
     <File Path="../../Documents/Help/Changelog.md" />
     <File Path=".editorconfig" />
@@ -57,6 +57,7 @@
   <Project Path="KryptonMonthCalendar Examples/KryptonMonthCalendar Examples 2022.csproj" />
   <Project Path="KryptonNumericUpDown Examples/KryptonNumericUpDown Examples 2022.csproj" />
   <Project Path="KryptonOpenFileDialog Example/KryptonOpenFileDialog Example 2022.csproj" />
+  <Project Path="KryptonPalette Author/KryptonPalette Author 2022.csproj" />
   <Project Path="KryptonPalette Examples/KryptonPalette Examples 2022.csproj" />
   <Project Path="KryptonPanel Examples/KryptonPanel Examples 2022.csproj" />
   <Project Path="KryptonPrintDialog Example/KryptonPrintDialog Example 2022.csproj" />
