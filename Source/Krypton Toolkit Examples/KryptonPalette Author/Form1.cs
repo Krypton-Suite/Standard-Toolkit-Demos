@@ -452,6 +452,20 @@ public partial class Form1 : KryptonForm
         }
     }
 
+    private void EditPack(object? sender, EventArgs e)
+    {
+        string? packPath = null;
+        if (!string.IsNullOrWhiteSpace(_currentPath)
+            && string.Equals(Path.GetExtension(_currentPath), @"." + KryptonPaletteFile.BinaryExtension, StringComparison.OrdinalIgnoreCase))
+        {
+            packPath = _currentPath;
+        }
+
+        KryptonPalettePackEditor.Show(this, packPath);
+        ReloadFolderTree();
+        SetStatus("Closed the pack editor.");
+    }
+
     private void PopulateFromSelectedTheme(object? sender, EventArgs e)
     {
         if (cboBaseTheme.SelectedItem is not string name
