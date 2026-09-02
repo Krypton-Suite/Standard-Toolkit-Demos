@@ -6,14 +6,16 @@
     <BuildType Name="Nightly" />
     <BuildType Name="Release" />
   </Configurations>
+  <Folder Name="/Referenced Projects/">
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Navigator/Krypton.Navigator 2022.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Toolkit/Krypton.Toolkit 2022.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Workspace/Krypton.Workspace 2022.csproj" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path="../../Documents/Help/Changelog.md" />
     <File Path=".editorconfig" />
     <File Path="README.md" />
   </Folder>
-  <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Navigator/Krypton.Navigator 2022.csproj" />
-  <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Toolkit/Krypton.Toolkit 2022.csproj" />
-  <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Workspace/Krypton.Workspace 2022.csproj" />
   <Project Path="ButtonSpec Playground/ButtonSpec Playground 2022.csproj">
     <BuildType Solution="Canary|*" Project="Release" />
     <BuildType Solution="Installer|*" Project="Release" />
@@ -75,11 +77,6 @@
     <BuildType Solution="Nightly|*" Project="Release" />
   </Project>
   <Project Path="Krypton UAC Button/Krypton UAC Button 2022.csproj">
-    <BuildType Solution="Canary|*" Project="Release" />
-    <BuildType Solution="Installer|*" Project="Release" />
-    <BuildType Solution="Nightly|*" Project="Release" />
-  </Project>
-  <Project Path="KryptonAboutBox Example/KryptonAboutBox Example 2022.csproj">
     <BuildType Solution="Canary|*" Project="Release" />
     <BuildType Solution="Installer|*" Project="Release" />
     <BuildType Solution="Nightly|*" Project="Release" />
@@ -150,11 +147,6 @@
     <BuildType Solution="Nightly|*" Project="Release" />
   </Project>
   <Project Path="KryptonCommand Examples/KryptonCommand Examples 2022.csproj">
-    <BuildType Solution="Canary|*" Project="Release" />
-    <BuildType Solution="Installer|*" Project="Release" />
-    <BuildType Solution="Nightly|*" Project="Release" />
-  </Project>
-  <Project Path="KryptonCommandLinkButton Examples/KryptonCommandLinkButton Examples 2022.csproj">
     <BuildType Solution="Canary|*" Project="Release" />
     <BuildType Solution="Installer|*" Project="Release" />
     <BuildType Solution="Nightly|*" Project="Release" />
@@ -354,11 +346,6 @@
     <BuildType Solution="Installer|*" Project="Release" />
     <BuildType Solution="Nightly|*" Project="Release" />
   </Project>
-  <Project Path="../Krypton Utilities Examples/KryptonSearchBox Example/KryptonSearchBox Example.csproj">
-    <BuildType Solution="Canary|*" Project="Release" />
-    <BuildType Solution="Installer|*" Project="Debug" />
-    <BuildType Solution="Nightly|*" Project="Release" />
-  </Project>
   <Project Path="KryptonSeparator Examples/KryptonSeparator Examples 2022.csproj">
     <BuildType Solution="Canary|*" Project="Release" />
     <BuildType Solution="Installer|*" Project="Release" />
@@ -448,6 +435,11 @@
   <Project Path="MDI Application/MDI Application 2022.csproj">
     <BuildType Solution="Canary|*" Project="Release" />
     <BuildType Solution="Installer|*" Project="Release" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Pulsing Boder Examples/Pulsing Boder Examples.csproj" Id="6a59e730-a095-4752-8c4a-9e004f3bc2e1">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
     <BuildType Solution="Nightly|*" Project="Release" />
   </Project>
   <Project Path="SystemThemedForms/SystemThemedForms 2022.csproj">

@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KryptonBrowserControlExample</RootNamespace>
+	  <ApplicationIcon>Krypton.ico</ApplicationIcon>
+	  <UseApplicationTrust>false</UseApplicationTrust>
+	  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	  <UseWindowsForms>true</UseWindowsForms>
+	  <PlatformTarget>AnyCPU</PlatformTarget>
+	  <NeutralLanguage>en</NeutralLanguage>
+	  <LangVersion>preview</LangVersion>
+	  <Nullable>enable</Nullable>
+	  <WarningLevel>6</WarningLevel>
+	  <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
+	  <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+	  <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+
+	  <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+	  <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+  </PropertyGroup>
+
+  <PropertyGroup>
+	  <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+	  <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <Choose>
+	  <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
+		  <ItemGroup>
+			  <PackageReference Include="Krypton.Standard.Toolkit.Canary" Version="100.25.8.234-beta" />
+		  </ItemGroup>
+	  </When>
+	  <Otherwise>
+		  <ItemGroup>
+			  <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2022.csproj" />
+
+			  <ProjectReference Include="..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit.Utilities\Krypton.Toolkit.Utilities.csproj" />
+		  </ItemGroup>
+	  </Otherwise>
+  </Choose>
+
+</Project>

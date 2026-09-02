@@ -1,23 +1,24 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+    
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <RootNamespace>MDIApplication</RootNamespace>
-        <AssemblyName>MDI Application</AssemblyName>
+        <RootNamespace>PulsingBorderExamples</RootNamespace>
+        <AssemblyName>Pulsing Border Examples</AssemblyName>
         <ApplicationIcon>Krypton.ico</ApplicationIcon>
         <UseApplicationTrust>false</UseApplicationTrust>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <UseWindowsForms>true</UseWindowsForms>
         <PlatformTarget>AnyCPU</PlatformTarget>
-        <NeutralLanguage>en</NeutralLanguage>        
+        <NeutralLanguage>en</NeutralLanguage>
         <LangVersion>preview</LangVersion>
         <Nullable>enable</Nullable>
         <WarningLevel>6</WarningLevel>
         <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
-    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+        <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
     <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
 
     </PropertyGroup>
-<ItemGroup>
+    <ItemGroup>
         <None Remove="Krypton.ico" />
     </ItemGroup>
     <ItemGroup>

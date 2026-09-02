@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/Libraries/">
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Docking/Krypton.Docking 2022.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Interop/Krypton.Interop.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Navigator.Utilities/Krypton.Navigator.Utilities.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Navigator/Krypton.Navigator 2022.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Ribbon/Krypton.Ribbon 2022.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Toolkit/Krypton.Toolkit 2022.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Workspace/Krypton.Workspace 2022.csproj" />
+  </Folder>
+  <Project Path="KryptonNavigatorFormIntegrator Example/KryptonNavigatorFormIntegrator Example.csproj" />
+  <Project Path="NavigatorTaskbarThumbnails Example/NavigatorTaskbarThumbnails Example.csproj" />
+</Solution>
