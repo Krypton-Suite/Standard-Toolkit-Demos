@@ -49,6 +49,7 @@ partial class Form1
         upgradeXmlToolStripMenuItem = new ToolStripMenuItem();
         upgradeXmlFolderToolStripMenuItem = new ToolStripMenuItem();
         packFolderToolStripMenuItem = new ToolStripMenuItem();
+        editPackToolStripMenuItem = new ToolStripMenuItem();
         toolStripSeparatorFile3 = new ToolStripSeparator();
         exitToolStripMenuItem = new ToolStripMenuItem();
         paletteToolStripMenuItem = new ToolStripMenuItem();
@@ -135,6 +136,7 @@ partial class Form1
             upgradeXmlToolStripMenuItem,
             upgradeXmlFolderToolStripMenuItem,
             packFolderToolStripMenuItem,
+            editPackToolStripMenuItem,
             toolStripSeparatorFile3,
             exitToolStripMenuItem
         });
@@ -191,6 +193,12 @@ partial class Form1
         packFolderToolStripMenuItem.Name = "packFolderToolStripMenuItem";
         packFolderToolStripMenuItem.Text = "Pack &folder to .kpal...";
         packFolderToolStripMenuItem.Click += PackFolder;
+        //
+        // editPackToolStripMenuItem
+        //
+        editPackToolStripMenuItem.Name = "editPackToolStripMenuItem";
+        editPackToolStripMenuItem.Text = "&Edit .kpal pack...";
+        editPackToolStripMenuItem.Click += EditPack;
         //
         // exitToolStripMenuItem
         //
