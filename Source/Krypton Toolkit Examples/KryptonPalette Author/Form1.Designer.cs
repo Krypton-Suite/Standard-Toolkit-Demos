@@ -345,7 +345,7 @@ partial class Form1
         lblInstructions.Location = new Point(0, 0);
         lblInstructions.Name = "lblInstructions";
         lblInstructions.Size = new Size(899, 56);
-        lblInstructions.Text = "Author a custom palette: populate from a builtin/extra theme or open a .kpalx / .kpal file. Edit values in the property grid. Save writes .kpalx (XML) by default; choose .kpal for the native binary container. File > Upgrade .xml to .kpalx rewrites a legacy .xml beside the source. File > Upgrade folder .xml to .kpalx converts a directory of palettes. Pack folder stores a directory tree as path-named themes in one .kpal. Double-click a tree node to load that file into the editor.";
+        lblInstructions.Text = "Author a custom palette: populate from a builtin/extra theme or open a .kpalx / .kpal file. Edit values in the property grid. Save writes .kpalx (XML) by default; choose .kpal for the native binary container. File > Upgrade .xml to .kpalx rewrites a legacy .xml beside the source. File > Upgrade folder .xml to .kpalx converts a directory of palettes. Pack folder stores a directory tree as path-named themes in one .kpal. File > Edit .kpal pack adds .kpalx files and removes named themes. Double-click a tree node to load that file into the editor.";
         //
         // splitWork
         //
@@ -613,6 +613,7 @@ partial class Form1
     private ToolStripMenuItem upgradeXmlToolStripMenuItem;
     private ToolStripMenuItem upgradeXmlFolderToolStripMenuItem;
     private ToolStripMenuItem packFolderToolStripMenuItem;
+    private ToolStripMenuItem editPackToolStripMenuItem;
     private ToolStripSeparator toolStripSeparatorFile3;
     private ToolStripMenuItem exitToolStripMenuItem;
     private ToolStripMenuItem paletteToolStripMenuItem;
