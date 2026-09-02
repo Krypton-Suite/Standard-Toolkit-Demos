@@ -214,11 +214,11 @@ Native `KryptonMenuBar` (not a ToolStrip subclass) compared with `KryptonMenuStr
 ## KryptonPalette
 ![KryptonPalette Examples](KryptonPalette%20Examples/example.gif)
 
-Issue #2117: Import/Export dialogs default to `.kpalx` (the same `KryptonPalette` XML as `.xml`). Use **Export .kpalx XML** / **Export native .kpal** on the example form; `*.xml` remains listed. **Convert XML to .kpalx** rewrites a legacy `.xml` via `KryptonPaletteFile.Convert`. **Export .kpal pack** stores several named themes in one binary file. **Pack folder to .kpal** stores a directory tree as path-named themes. `KryptonPaletteFileComboBox` / `KryptonPaletteFileTreeView` list exported files from that folder. `Import` sniffs the file so existing `.xml` palettes still load.
+Issue #2117: Import/Export dialogs default to `.kpalx` (the same `KryptonPalette` XML as `.xml`). Use **Export .kpalx XML** / **Export native .kpal** on the example form; `*.xml` remains listed. **Convert XML to .kpalx** rewrites a legacy `.xml` via `KryptonPaletteFile.Convert`. **Export .kpal pack** stores several named themes in one binary file. **Pack folder to .kpal** stores a directory tree as path-named themes. **Edit .kpal pack** adds `.kpalx` files and removes named themes. `KryptonPaletteFileComboBox` / `KryptonPaletteFileTreeView` list exported files from that folder. `Import` sniffs the file so existing `.xml` palettes still load.
 
 For a dedicated editor (new / open / save `.kpalx` / `.kpal` / `.xml`, property grid, live preview, thumbnails, pack folder), use **[Krypton Palette Author](#krypton-palette-author)**.
 ## Krypton Palette Author
-Author and maintain custom palette files. File menu: New, Open, Save, Save As, Convert, Pack folder to `.kpal`. Populate from a builtin or extra theme, set the palette name and optional thumbnail, edit values in the property grid, and preview Krypton controls. The left tree lists a working folder (including packs as path-named themes); double-click opens a theme into the editor.
+Author and maintain custom palette files. File menu: New, Open, Save, Save As, Convert, Pack folder to `.kpal`, Edit `.kpal` pack. Populate from a builtin or extra theme, set the palette name and optional thumbnail, edit values in the property grid, and preview Krypton controls. The left tree lists a working folder (including packs as path-named themes); double-click opens a theme into the editor.
 ## KryptonPanel
 ![KryptonPanel Examples](KryptonPanel%20Examples/example.png)
 ## KryptonPrintDialog
