@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
 VisualStudioVersion = 18.3.11222.16
@@ -94,6 +94,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonWrapLabel Examples 2022", "KryptonWrapLabel Examples\KryptonWrapLabel Examples 2022.csproj", "{C14445E6-AAFB-4C6C-AE51-945032D56800}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonGroupBox Examples 2022", "KryptonGroupBox Examples\KryptonGroupBox Examples 2022.csproj", "{A21C9D69-D60C-4C05-BEC2-76BB2BEC2054}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonRating Examples 2022", "KryptonRating Examples\KryptonRating Examples 2022.csproj", "{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonTrackBar Examples 2022", "KryptonTrackBar Examples\KryptonTrackBar Examples 2022.csproj", "{F2376A8F-C8B2-494F-8097-E2E208CB48FF}"
 EndProject
@@ -192,6 +194,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Canary|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Canary|Any CPU.Build.0 = Release|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Installer|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Installer|Any CPU.Build.0 = Debug|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Nightly|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Nightly|Any CPU.Build.0 = Release|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B50563E6-3123-49FC-816D-F873A0BCB789}.Canary|Any CPU.ActiveCfg = Release|Any CPU
 		{B50563E6-3123-49FC-816D-F873A0BCB789}.Canary|Any CPU.Build.0 = Release|Any CPU
 		{B50563E6-3123-49FC-816D-F873A0BCB789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

@@ -61,6 +61,7 @@
 	* [KryptonProgressBar](#kryptonprogressbar)
 	* [KryptonPropertyGrid](#kryptonpropertygrid)
 	* [KryptonRadioButton](#kryptonradiobutton)
+	* [KryptonRating](#kryptonrating)
 	* [KryptonRichTextBox](#kryptonrichtextbox)
 	* [KryptonSaveFileDialog](#kryptonsavefiledialog)
 	* [KryptonScrollBar](#kryptonscrollbar)
@@ -214,11 +215,11 @@ Native `KryptonMenuBar` (not a ToolStrip subclass) compared with `KryptonMenuStr
 ## KryptonPalette
 ![KryptonPalette Examples](KryptonPalette%20Examples/example.gif)
 
-Issue #2117: Import/Export dialogs default to `.kpalx` (the same `KryptonPalette` XML as `.xml`). Use **Export .kpalx XML** / **Export native .kpal** on the example form; `*.xml` remains listed. **Convert XML to .kpalx** rewrites a legacy `.xml` via `KryptonPaletteFile.Convert`. **Export .kpal pack** stores several named themes in one binary file. **Pack folder to .kpal** stores a directory tree as path-named themes. **Edit .kpal pack** adds `.kpalx` files and removes named themes. `KryptonPaletteFileComboBox` / `KryptonPaletteFileTreeView` list exported files from that folder. `Import` sniffs the file so existing `.xml` palettes still load.
+Issue #2117: Import/Export dialogs default to `.kthemex` (the same `KryptonPalette` XML as `.xml`). Use **Export .kthemex XML** / **Export native .ktheme** on the example form; `*.xml` remains listed. **Convert XML to .kthemex** rewrites a legacy `.xml` via `KryptonPaletteFile.Convert`. **Export .ktheme collection** stores several named themes in one binary file. **Collection folder to .ktheme** stores a directory tree as path-named themes. **Edit .ktheme collection** adds `.kthemex` files and removes named themes. `KryptonPaletteFileComboBox` / `KryptonPaletteFileTreeView` list exported files from that folder. `Import` sniffs the file so existing `.xml` palettes still load.
 
-For a dedicated editor (new / open / save `.kpalx` / `.kpal` / `.xml`, property grid, live preview, thumbnails, pack folder), use **[Krypton Palette Author](#krypton-palette-author)**.
+For a dedicated editor (new / open / save `.kthemex` / `.ktheme` / `.xml`, property grid, live preview, thumbnails, collection folder), use **[Krypton Palette Author](#krypton-palette-author)**.
 ## Krypton Palette Author
-Author and maintain custom palette files. File menu: New, Open, Save, Save As, Convert, Pack folder to `.kpal`, Edit `.kpal` pack. Populate from a builtin or extra theme, set the palette name and optional thumbnail, edit values in the property grid, and preview Krypton controls. The left tree lists a working folder (including packs as path-named themes); double-click opens a theme into the editor.
+Author and maintain custom palette files. File menu: New, Open, Save, Save As, Convert, Collection folder to `.ktheme`, Edit `.ktheme` collection. Populate from a builtin or extra theme, set the palette name and optional thumbnail, edit values in the property grid, and preview Krypton controls. The left tree lists a working folder (including collections as path-named themes); double-click opens a theme into the editor.
 ## KryptonPanel
 ![KryptonPanel Examples](KryptonPanel%20Examples/example.png)
 ## KryptonPrintDialog
@@ -229,6 +230,8 @@ Author and maintain custom palette files. File menu: New, Open, Save, Save As, C
 ![KryptonPropertyGridExample](KryptonPropertyGridExample/example.gif)
 ## KryptonRadioButton
 ![KryptonRadioButton Examples](KryptonRadioButton%20Examples/example.png)
+## KryptonRating
+Interactive star, heart, circle, or image ratings with Full, Half, and Exact precision, hover preview, keyboard input, and theme colours.
 ## KryptonRichTextBox
 ![KryptonRichTextBox Examples](KryptonRichTextBox%20Examples/example.png)
 ## KryptonSaveFileDialog

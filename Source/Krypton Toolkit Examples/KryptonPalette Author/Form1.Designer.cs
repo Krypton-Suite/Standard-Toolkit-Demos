@@ -49,7 +49,7 @@ partial class Form1
         upgradeXmlToolStripMenuItem = new ToolStripMenuItem();
         upgradeXmlFolderToolStripMenuItem = new ToolStripMenuItem();
         packFolderToolStripMenuItem = new ToolStripMenuItem();
-        editPackToolStripMenuItem = new ToolStripMenuItem();
+        editCollectionToolStripMenuItem = new ToolStripMenuItem();
         toolStripSeparatorFile3 = new ToolStripSeparator();
         exitToolStripMenuItem = new ToolStripMenuItem();
         paletteToolStripMenuItem = new ToolStripMenuItem();
@@ -136,7 +136,7 @@ partial class Form1
             upgradeXmlToolStripMenuItem,
             upgradeXmlFolderToolStripMenuItem,
             packFolderToolStripMenuItem,
-            editPackToolStripMenuItem,
+            editCollectionToolStripMenuItem,
             toolStripSeparatorFile3,
             exitToolStripMenuItem
         });
@@ -179,26 +179,26 @@ partial class Form1
         // upgradeXmlToolStripMenuItem
         //
         upgradeXmlToolStripMenuItem.Name = "upgradeXmlToolStripMenuItem";
-        upgradeXmlToolStripMenuItem.Text = "&Upgrade .xml to .kpalx...";
+        upgradeXmlToolStripMenuItem.Text = "&Upgrade .xml to .kthemex...";
         upgradeXmlToolStripMenuItem.Click += UpgradeXmlPaletteFile;
         //
         // upgradeXmlFolderToolStripMenuItem
         //
         upgradeXmlFolderToolStripMenuItem.Name = "upgradeXmlFolderToolStripMenuItem";
-        upgradeXmlFolderToolStripMenuItem.Text = "Upgrade &folder .xml to .kpalx...";
+        upgradeXmlFolderToolStripMenuItem.Text = "Upgrade &folder .xml to .kthemex...";
         upgradeXmlFolderToolStripMenuItem.Click += UpgradeXmlFolder;
         //
         // packFolderToolStripMenuItem
         //
         packFolderToolStripMenuItem.Name = "packFolderToolStripMenuItem";
-        packFolderToolStripMenuItem.Text = "Pack &folder to .kpal...";
+        packFolderToolStripMenuItem.Text = "Collection &folder to .ktheme...";
         packFolderToolStripMenuItem.Click += PackFolder;
         //
-        // editPackToolStripMenuItem
+        // editCollectionToolStripMenuItem
         //
-        editPackToolStripMenuItem.Name = "editPackToolStripMenuItem";
-        editPackToolStripMenuItem.Text = "&Edit .kpal pack...";
-        editPackToolStripMenuItem.Click += EditPack;
+        editCollectionToolStripMenuItem.Name = "editCollectionToolStripMenuItem";
+        editCollectionToolStripMenuItem.Text = "&Edit .ktheme collection...";
+        editCollectionToolStripMenuItem.Click += EditPack;
         //
         // exitToolStripMenuItem
         //
@@ -247,7 +247,7 @@ partial class Form1
         //
         statusLabel.Name = "statusLabel";
         statusLabel.Spring = true;
-        statusLabel.Text = "Ready. New, Open, or populate from a builtin theme, then save as .kpalx or .kpal.";
+        statusLabel.Text = "Ready. New, Open, or populate from a builtin theme, then save as .kthemex or .ktheme.";
         statusLabel.TextAlign = ContentAlignment.MiddleLeft;
         //
         // splitMain
@@ -345,7 +345,7 @@ partial class Form1
         lblInstructions.Location = new Point(0, 0);
         lblInstructions.Name = "lblInstructions";
         lblInstructions.Size = new Size(899, 56);
-        lblInstructions.Text = "Author a custom palette: populate from a builtin/extra theme or open a .kpalx / .kpal file. Edit values in the property grid. Save writes .kpalx (XML) by default; choose .kpal for the native binary container. File > Upgrade .xml to .kpalx rewrites a legacy .xml beside the source. File > Upgrade folder .xml to .kpalx converts a directory of palettes. Pack folder stores a directory tree as path-named themes in one .kpal. File > Edit .kpal pack adds .kpalx files and removes named themes. Double-click a tree node to load that file into the editor.";
+        lblInstructions.Text = "Author a custom palette: populate from a builtin/extra theme or open a .kthemex / .ktheme file. Edit values in the property grid. Save writes .kthemex (XML) by default; choose .ktheme for the native binary container. File > Upgrade .xml to .kthemex rewrites a legacy .xml beside the source. File > Upgrade folder .xml to .kthemex converts a directory of palettes. Collection folder stores a directory tree as path-named themes in one .ktheme. File > Edit .ktheme collection adds .kthemex files and removes named themes. Double-click a tree node to load that file into the editor.";
         //
         // splitWork
         //
@@ -613,7 +613,7 @@ partial class Form1
     private ToolStripMenuItem upgradeXmlToolStripMenuItem;
     private ToolStripMenuItem upgradeXmlFolderToolStripMenuItem;
     private ToolStripMenuItem packFolderToolStripMenuItem;
-    private ToolStripMenuItem editPackToolStripMenuItem;
+    private ToolStripMenuItem editCollectionToolStripMenuItem;
     private ToolStripSeparator toolStripSeparatorFile3;
     private ToolStripMenuItem exitToolStripMenuItem;
     private ToolStripMenuItem paletteToolStripMenuItem;

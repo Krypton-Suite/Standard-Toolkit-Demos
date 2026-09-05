@@ -38,19 +38,19 @@ public partial class Form1 : KryptonForm
         {
             Location = new System.Drawing.Point(12, 610),
             Size = new System.Drawing.Size(490, 130),
-            Text = @"#2117: Import/Export dialogs default to .kpalx (KryptonPalette XML). Use Export native .kpal for a single theme; Export .kpal pack stores several named themes. Pack folder to .kpal stores a directory tree as path-named themes. Edit .kpal pack adds .kpalx files and removes named themes. Upgrade .xml to .kpalx rewrites a legacy .xml beside the source (UpgradeXmlToKpalx). Upgrade folder .xml to .kpalx converts a directory (UpgradeXmlToKpalxFromDirectory). Convert XML to .kpalx writes a chosen destination."
+            Text = @"#2117: Import/Export dialogs default to .kthemex (KryptonPalette XML). Use Export native .ktheme for a single theme; Export .ktheme collection stores several named themes. Collection folder to .ktheme stores a directory tree as path-named themes. Edit .ktheme collection adds .kthemex files and removes named themes. Upgrade .xml to .kthemex rewrites a legacy .xml beside the source (UpgradeXmlToKthemex). Upgrade folder .xml to .kthemex converts a directory (UpgradeXmlToKthemexFromDirectory). Convert XML to .kthemex writes a chosen destination."
         };
 
-        var btnKpalx = new KryptonButton
+        var btnKthemex = new KryptonButton
         {
             Location = new System.Drawing.Point(512, 610),
             Size = new System.Drawing.Size(114, 43),
-            Name = @"btnExportKpalx"
+            Name = @"btnExportKthemex"
         };
-        btnKpalx.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
-        btnKpalx.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
-        btnKpalx.Values.Text = @"Export" + Environment.NewLine + @".kpalx XML";
-        btnKpalx.Click += (_, _) => ExportPaletteFormat(KryptonPaletteFileFormat.Xml, @"custom.kpalx");
+        btnKthemex.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
+        btnKthemex.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
+        btnKthemex.Values.Text = @"Export" + Environment.NewLine + @".kthemex XML";
+        btnKthemex.Click += (_, _) => ExportPaletteFormat(KryptonPaletteFileFormat.Xml, @"custom.kthemex");
 
         var btnNative = new KryptonButton
         {
@@ -60,8 +60,8 @@ public partial class Form1 : KryptonForm
         };
         btnNative.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
         btnNative.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
-        btnNative.Values.Text = @"Export native" + Environment.NewLine + @".kpal";
-        btnNative.Click += (_, _) => ExportPaletteFormat(KryptonPaletteFileFormat.PaletteBinary, @"custom.kpal");
+        btnNative.Values.Text = @"Export native" + Environment.NewLine + @".ktheme";
+        btnNative.Click += (_, _) => ExportPaletteFormat(KryptonPaletteFileFormat.PaletteBinary, @"custom.ktheme");
 
         var btnConvert = new KryptonButton
         {
@@ -71,7 +71,7 @@ public partial class Form1 : KryptonForm
         };
         btnConvert.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
         btnConvert.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
-        btnConvert.Values.Text = @"Convert XML" + Environment.NewLine + @"to .kpalx";
+        btnConvert.Values.Text = @"Convert XML" + Environment.NewLine + @"to .kthemex";
         btnConvert.Click += (_, _) => ConvertPaletteFile();
 
         var btnUpgradeXml = new KryptonButton
@@ -82,41 +82,41 @@ public partial class Form1 : KryptonForm
         };
         btnUpgradeXml.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
         btnUpgradeXml.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
-        btnUpgradeXml.Values.Text = @"Upgrade .xml" + Environment.NewLine + @"to .kpalx";
+        btnUpgradeXml.Values.Text = @"Upgrade .xml" + Environment.NewLine + @"to .kthemex";
         btnUpgradeXml.Click += (_, _) => UpgradeXmlPaletteFile();
 
-        var btnExportPack = new KryptonButton
+        var btnExportCollection = new KryptonButton
         {
             Location = new System.Drawing.Point(512, 706),
             Size = new System.Drawing.Size(114, 43),
-            Name = @"btnExportPalettePack"
+            Name = @"btnExportPaletteCollection"
         };
-        btnExportPack.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
-        btnExportPack.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
-        btnExportPack.Values.Text = @"Export" + Environment.NewLine + @".kpal pack";
-        btnExportPack.Click += (_, _) => ExportPalettePack();
+        btnExportCollection.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
+        btnExportCollection.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
+        btnExportCollection.Values.Text = @"Export" + Environment.NewLine + @".ktheme collection";
+        btnExportCollection.Click += (_, _) => ExportPaletteCollection();
 
-        var btnImportPack = new KryptonButton
+        var btnImportCollection = new KryptonButton
         {
             Location = new System.Drawing.Point(632, 706),
             Size = new System.Drawing.Size(114, 43),
-            Name = @"btnImportPalettePack"
+            Name = @"btnImportPaletteCollection"
         };
-        btnImportPack.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
-        btnImportPack.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
-        btnImportPack.Values.Text = @"Import pack" + Environment.NewLine + @"theme";
-        btnImportPack.Click += (_, _) => ImportPalettePack();
+        btnImportCollection.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
+        btnImportCollection.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
+        btnImportCollection.Values.Text = @"Import pack" + Environment.NewLine + @"theme";
+        btnImportCollection.Click += (_, _) => ImportPaletteCollection();
 
-        var btnPackFolder = new KryptonButton
+        var btnCollectionFolder = new KryptonButton
         {
             Location = new System.Drawing.Point(512, 754),
             Size = new System.Drawing.Size(234, 43),
-            Name = @"btnPackFolder"
+            Name = @"btnCollectionFolder"
         };
-        btnPackFolder.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
-        btnPackFolder.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
-        btnPackFolder.Values.Text = @"Pack folder" + Environment.NewLine + @"to .kpal";
-        btnPackFolder.Click += (_, _) => ExportPackFromFolder();
+        btnCollectionFolder.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
+        btnCollectionFolder.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
+        btnCollectionFolder.Values.Text = @"Collection folder" + Environment.NewLine + @"to .ktheme";
+        btnCollectionFolder.Click += (_, _) => ExportCollectionFromFolder();
 
         var btnUpgradeXmlFolder = new KryptonButton
         {
@@ -126,19 +126,19 @@ public partial class Form1 : KryptonForm
         };
         btnUpgradeXmlFolder.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
         btnUpgradeXmlFolder.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
-        btnUpgradeXmlFolder.Values.Text = @"Upgrade folder" + Environment.NewLine + @".xml to .kpalx";
+        btnUpgradeXmlFolder.Values.Text = @"Upgrade folder" + Environment.NewLine + @".xml to .kthemex";
         btnUpgradeXmlFolder.Click += (_, _) => UpgradeXmlFolder();
 
-        var btnEditPack = new KryptonButton
+        var btnEditCollection = new KryptonButton
         {
             Location = new System.Drawing.Point(512, 850),
             Size = new System.Drawing.Size(234, 43),
-            Name = @"btnEditPalettePack"
+            Name = @"btnEditPaletteCollection"
         };
-        btnEditPack.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
-        btnEditPack.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
-        btnEditPack.Values.Text = @"Edit .kpal pack" + Environment.NewLine + @"(add / remove)";
-        btnEditPack.Click += (_, _) => EditPalettePack();
+        btnEditCollection.StateCommon.Content.ShortText.MultiLine = InheritBool.True;
+        btnEditCollection.StateCommon.Content.ShortText.MultiLineH = PaletteRelativeAlign.Center;
+        btnEditCollection.Values.Text = @"Edit .ktheme collection" + Environment.NewLine + @"(add / remove)";
+        btnEditCollection.Click += (_, _) => EditPaletteCollection();
 
         _paletteFileCombo = new KryptonPaletteFileComboBox
         {
@@ -159,39 +159,39 @@ public partial class Form1 : KryptonForm
         };
 
         Controls.Add(instructions);
-        Controls.Add(btnKpalx);
+        Controls.Add(btnKthemex);
         Controls.Add(btnNative);
         Controls.Add(btnConvert);
         Controls.Add(btnUpgradeXml);
-        Controls.Add(btnExportPack);
-        Controls.Add(btnImportPack);
-        Controls.Add(btnPackFolder);
+        Controls.Add(btnExportCollection);
+        Controls.Add(btnImportCollection);
+        Controls.Add(btnCollectionFolder);
         Controls.Add(btnUpgradeXmlFolder);
-        Controls.Add(btnEditPack);
+        Controls.Add(btnEditCollection);
         Controls.Add(_paletteFileCombo);
         Controls.Add(_paletteFileTree);
         instructions.BringToFront();
-        btnKpalx.BringToFront();
+        btnKthemex.BringToFront();
         btnNative.BringToFront();
         btnConvert.BringToFront();
         btnUpgradeXml.BringToFront();
-        btnExportPack.BringToFront();
-        btnImportPack.BringToFront();
-        btnPackFolder.BringToFront();
+        btnExportCollection.BringToFront();
+        btnImportCollection.BringToFront();
+        btnCollectionFolder.BringToFront();
         btnUpgradeXmlFolder.BringToFront();
-        btnEditPack.BringToFront();
+        btnEditCollection.BringToFront();
         _paletteFileCombo.BringToFront();
         _paletteFileTree.BringToFront();
     }
 
-    private void ExportPalettePack()
+    private void ExportPaletteCollection()
     {
         using var dialog = new SaveFileDialog
         {
-            Title = @"Save Palette Pack",
+            Title = @"Save Palette Collection",
             Filter = KryptonPaletteFile.DialogFilter,
             DefaultExt = KryptonPaletteFile.BinaryExtension,
-            FileName = @"themes.kpal",
+            FileName = @"themes.ktheme",
             OverwritePrompt = true
         };
 
@@ -207,12 +207,12 @@ public partial class Form1 : KryptonForm
 
         using var second = new KryptonCustomPaletteBase();
         second.SetPaletteName(@"Second");
-        KryptonPaletteFile.ExportPack(dialog.FileName, new[] { kryptonPaletteCustom, second }, ignoreDefaults: true, packName: @"Example pack");
+        KryptonPaletteFile.ExportCollection(dialog.FileName, new[] { kryptonPaletteCustom, second }, ignoreDefaults: true, collectionName: @"Example pack");
         BindPaletteFileCombo(dialog.FileName);
-        KryptonMessageBox.Show(this, $@"Exported pack to {dialog.FileName}", @"Palette Pack");
+        KryptonMessageBox.Show(this, $@"Exported pack to {dialog.FileName}", @"Palette Collection");
     }
 
-    private void ExportPackFromFolder()
+    private void ExportCollectionFromFolder()
     {
         using var folder = new FolderBrowserDialog
         {
@@ -230,7 +230,7 @@ public partial class Form1 : KryptonForm
             Title = @"Save Folder Pack",
             Filter = KryptonPaletteFile.DialogFilter,
             DefaultExt = KryptonPaletteFile.BinaryExtension,
-            FileName = Path.GetFileName(folder.SelectedPath.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar)) + @".kpal",
+            FileName = Path.GetFileName(folder.SelectedPath.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar)) + @".ktheme",
             OverwritePrompt = true
         };
 
@@ -241,10 +241,10 @@ public partial class Form1 : KryptonForm
 
         try
         {
-            var destination = KryptonPaletteFile.ExportPackFromDirectory(dialog.FileName, folder.SelectedPath);
+            var destination = KryptonPaletteFile.ExportCollectionFromDirectory(dialog.FileName, folder.SelectedPath);
             BindPaletteFileCombo(destination);
             var names = KryptonPaletteFile.GetThemeNames(destination);
-            KryptonMessageBox.Show(this, $@"Packed {names.Length} themes to {destination}", @"Palette Pack");
+            KryptonMessageBox.Show(this, $@"Packed {names.Length} themes to {destination}", @"Palette Collection");
         }
         catch (Exception exc)
         {
@@ -252,11 +252,11 @@ public partial class Form1 : KryptonForm
         }
     }
 
-    private void ImportPalettePack()
+    private void ImportPaletteCollection()
     {
         using var dialog = new OpenFileDialog
         {
-            Title = @"Load Palette Pack",
+            Title = @"Load Palette Collection",
             Filter = KryptonPaletteFile.DialogFilter,
             DefaultExt = KryptonPaletteFile.BinaryExtension,
             CheckFileExists = true
@@ -281,7 +281,7 @@ public partial class Form1 : KryptonForm
             propertyGrid.SelectedObject = kryptonPaletteCustom;
             KryptonMessageBox.Show(this,
                 $@"Loaded '{themeName}'. Themes in this pack: {string.Join(@", ", names)}",
-                @"Palette Pack");
+                @"Palette Collection");
         }
         catch (Exception exc)
         {
@@ -295,7 +295,7 @@ public partial class Form1 : KryptonForm
         {
             Title = @"Convert Palette From",
             Filter = KryptonPaletteFile.DialogFilter,
-            // ToDo V120 LTS: Default this open dialog to Extension (.kpalx) once .xml is retired.
+            // ToDo V120 LTS: Default this open dialog to Extension (.kthemex) once .xml is retired.
             DefaultExt = KryptonPaletteFile.XmlExtension,
             CheckFileExists = true
         };
@@ -350,7 +350,7 @@ public partial class Form1 : KryptonForm
 
         try
         {
-            var destination = kryptonPaletteCustom.UpgradeXmlToKpalx(open.FileName);
+            var destination = kryptonPaletteCustom.UpgradeXmlToKthemex(open.FileName);
             ApplyCustomPalette();
             propertyGrid.SelectedObject = kryptonPaletteCustom;
             BindPaletteFileCombo(destination);
@@ -379,10 +379,10 @@ public partial class Form1 : KryptonForm
 
         try
         {
-            var result = KryptonPaletteFile.UpgradeXmlToKpalxFromDirectory(folder.SelectedPath, searchSubdirectories: true);
+            var result = KryptonPaletteFile.UpgradeXmlToKthemexFromDirectory(folder.SelectedPath, searchSubdirectories: true);
             BindPaletteFileCombo(folder.SelectedPath);
             var icon = result.ErrorCount > 0 ? KryptonMessageBoxIcon.Warning : KryptonMessageBoxIcon.Information;
-            KryptonMessageBox.Show(this, result.ToSummaryString(), @"Upgrade folder .xml to .kpalx",
+            KryptonMessageBox.Show(this, result.ToSummaryString(), @"Upgrade folder .xml to .kthemex",
                 KryptonMessageBoxButtons.OK, icon);
         }
         catch (Exception exc)
@@ -391,12 +391,12 @@ public partial class Form1 : KryptonForm
         }
     }
 
-    private void EditPalettePack()
+    private void EditPaletteCollection()
     {
         using var dialog = new OpenFileDialog
         {
-            Title = @"Edit Palette Pack",
-            Filter = @"Binary palette files (*.kpal)|*.kpal|All files (*.*)|*.*",
+            Title = @"Edit Palette Collection",
+            Filter = @"Krypton theme containers (*.ktheme)|*.ktheme|All files (*.*)|*.*",
             DefaultExt = KryptonPaletteFile.BinaryExtension,
             CheckFileExists = false
         };
@@ -406,7 +406,7 @@ public partial class Form1 : KryptonForm
             return;
         }
 
-        KryptonPalettePackEditor.Show(this, dialog.FileName);
+        KryptonPaletteCollectionEditor.Show(this, dialog.FileName);
         if (File.Exists(dialog.FileName))
         {
             BindPaletteFileCombo(dialog.FileName);

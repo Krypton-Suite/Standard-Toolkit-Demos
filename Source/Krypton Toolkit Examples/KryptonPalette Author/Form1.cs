@@ -133,12 +133,12 @@ public partial class Form1 : KryptonForm
     {
         try
         {
-            if (themeName == null && KryptonPaletteFile.IsPack(path))
+            if (themeName == null && KryptonPaletteFile.IsCollection(path))
             {
                 var names = KryptonPaletteFile.GetThemeNames(path);
                 if (names.Length == 0)
                 {
-                    throw new InvalidOperationException("The pack does not contain any named themes.");
+                    throw new InvalidOperationException("The collection does not contain any named themes.");
                 }
 
                 if (names.Length == 1)
@@ -147,7 +147,7 @@ public partial class Form1 : KryptonForm
                 }
                 else
                 {
-                    themeName = PromptPackTheme(path, names);
+                    themeName = PromptCollectionTheme(path, names);
                     if (themeName == null)
                     {
                         return;
@@ -182,11 +182,11 @@ public partial class Form1 : KryptonForm
         }
     }
 
-    private string? PromptPackTheme(string path, string[] names)
+    private string? PromptCollectionTheme(string path, string[] names)
     {
         using var prompt = new KryptonForm
         {
-            Text = @"Select pack theme",
+            Text = @"Select collection theme",
             StartPosition = FormStartPosition.CenterParent,
             FormBorderStyle = FormBorderStyle.FixedDialog,
             ClientSize = new Size(420, 140),
@@ -288,7 +288,7 @@ public partial class Form1 : KryptonForm
         {
             Title = @"Convert palette from",
             Filter = KryptonPaletteFile.DialogFilter,
-            // ToDo V120 LTS: Default this open dialog to Extension (.kpalx) once .xml is retired.
+            // ToDo V120 LTS: Default this open dialog to Extension (.kthemex) once .xml is retired.
             DefaultExt = KryptonPaletteFile.XmlExtension,
             CheckFileExists = true
         };
@@ -348,7 +348,7 @@ public partial class Form1 : KryptonForm
 
         try
         {
-            var destination = kryptonPalette.UpgradeXmlToKpalx(open.FileName);
+            var destination = kryptonPalette.UpgradeXmlToKthemex(open.FileName);
             _currentPath = destination;
             _dirty = false;
             RememberFolder(Path.GetDirectoryName(destination));
@@ -384,12 +384,12 @@ public partial class Form1 : KryptonForm
 
         try
         {
-            var result = KryptonPaletteFile.UpgradeXmlToKpalxFromDirectory(folder.SelectedPath, searchSubdirectories: true);
+            var result = KryptonPaletteFile.UpgradeXmlToKthemexFromDirectory(folder.SelectedPath, searchSubdirectories: true);
             RememberFolder(folder.SelectedPath);
             ReloadFolderTree();
-            SetStatus($"Converted {result.ConvertedCount} palette(s) to .kpalx ({result.SkippedCount} skipped, {result.ErrorCount} failed).");
+            SetStatus($"Converted {result.ConvertedCount} palette(s) to .kthemex ({result.SkippedCount} skipped, {result.ErrorCount} failed).");
             var icon = result.ErrorCount > 0 ? KryptonMessageBoxIcon.Warning : KryptonMessageBoxIcon.Information;
-            KryptonMessageBox.Show(this, result.ToSummaryString(), @"Upgrade folder .xml to .kpalx",
+            KryptonMessageBox.Show(this, result.ToSummaryString(), @"Upgrade folder .xml to .kthemex",
                 KryptonMessageBoxButtons.OK, icon);
         }
         catch (Exception ex)
@@ -403,7 +403,7 @@ public partial class Form1 : KryptonForm
     {
         using var folder = new FolderBrowserDialog
         {
-            Description = @"Select a folder of .kpalx / .kpal / .xml palettes (subfolders are included).",
+            Description = @"Select a folder of .kthemex / .ktheme / .xml palettes (subfolders are included).",
             ShowNewFolderButton = false
         };
         if (!string.IsNullOrWhiteSpace(txtFolder.Text) && Directory.Exists(txtFolder.Text))
@@ -419,10 +419,10 @@ public partial class Form1 : KryptonForm
         var sourceFolder = folder.SelectedPath ?? string.Empty;
         using var dialog = new SaveFileDialog
         {
-            Title = @"Save folder pack",
+            Title = @"Save folder collection",
             Filter = KryptonPaletteFile.DialogFilter,
             DefaultExt = KryptonPaletteFile.BinaryExtension,
-            FileName = Path.GetFileName(sourceFolder.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar)) + @".kpal",
+            FileName = Path.GetFileName(sourceFolder.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar)) + @".ktheme",
             OverwritePrompt = true
         };
         SetInitialDirectory(dialog);
@@ -433,12 +433,12 @@ public partial class Form1 : KryptonForm
 
         try
         {
-            var destination = KryptonPaletteFile.ExportPackFromDirectory(
+            var destination = KryptonPaletteFile.ExportCollectionFromDirectory(
                 dialog.FileName,
                 sourceFolder,
                 searchSubdirectories: true,
                 ignoreDefaults: false,
-                packName: Path.GetFileName(sourceFolder));
+                collectionName: Path.GetFileName(sourceFolder));
             RememberFolder(Path.GetDirectoryName(destination));
             ReloadFolderTree();
             var names = KryptonPaletteFile.GetThemeNames(destination);
@@ -447,23 +447,23 @@ public partial class Form1 : KryptonForm
         }
         catch (Exception ex)
         {
-            KryptonMessageBox.Show(this, ex.Message, @"Pack folder", KryptonMessageBoxButtons.OK, KryptonMessageBoxIcon.Error);
-            SetStatus("Pack folder failed.");
+            KryptonMessageBox.Show(this, ex.Message, @"Collection folder", KryptonMessageBoxButtons.OK, KryptonMessageBoxIcon.Error);
+            SetStatus("Collection folder failed.");
         }
     }
 
     private void EditPack(object? sender, EventArgs e)
     {
-        string? packPath = null;
+        string? collectionPath = null;
         if (!string.IsNullOrWhiteSpace(_currentPath)
             && string.Equals(Path.GetExtension(_currentPath), @"." + KryptonPaletteFile.BinaryExtension, StringComparison.OrdinalIgnoreCase))
         {
-            packPath = _currentPath;
+            collectionPath = _currentPath;
         }
 
-        KryptonPalettePackEditor.Show(this, packPath);
+        KryptonPaletteCollectionEditor.Show(this, collectionPath);
         ReloadFolderTree();
-        SetStatus("Closed the pack editor.");
+        SetStatus("Closed the collection editor.");
     }
 
     private void PopulateFromSelectedTheme(object? sender, EventArgs e)
