@@ -18,7 +18,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("Krypton Palette Author")]
 [assembly: AssemblyTitle("Krypton Palette Author")]
 [assembly: AssemblyCompany("Krypton Suite")]
-[assembly: AssemblyDescription("Author and maintain Krypton custom palette files (.kpalx / .kpal). Upgrade legacy .xml to .kpalx.")]
+[assembly: AssemblyDescription("Author and maintain Krypton custom palette files (.kthemex / .ktheme). Upgrade legacy .xml to .kthemex.")]
 [assembly: AssemblyConfiguration("Production")]
 [assembly: NeutralResourcesLanguage("en-US")]
 [assembly: ComVisible(false)]
