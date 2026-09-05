@@ -1,4 +1,4 @@
-<!-- Start Document Outline -->
+﻿<!-- Start Document Outline -->
 
 * [Toolkit Examples](#toolkit-examples)
 	* [ButtonSpec Playground](#buttonspec-playground)
@@ -197,6 +197,8 @@ There are 2 set of solutions in these projects:
 ![KryptonMaskedTextBox Examples](KryptonMaskedTextBox%20Examples/example.png)
 ## KryptonMenuAndToolStrip
 ![KryptonMenuAndToolStrip Examples](KryptonMenuAndToolStrip%20Examples/example.gif)
+
+Independent `SchemeBaseColors` slots for menu, tool, status, and menu-item text ([#1100](https://github.com/Krypton-Suite/Standard-Toolkit/issues/1100)). Use **Contrast demo** to paint each family a different colour, then change one picker at a time. Empty slots keep the historic ColorTable alias.
 ## KryptonMenuBar
 Native `KryptonMenuBar` (not a ToolStrip subclass) compared with `KryptonMenuStrip` and WinForms `MenuStrip`. Assign to `KryptonForm.MenuBar` for shortcuts and Alt activation. See issue [#4242](https://github.com/Krypton-Suite/Standard-Toolkit/issues/4242).
 ## [KryptonMessageBox
