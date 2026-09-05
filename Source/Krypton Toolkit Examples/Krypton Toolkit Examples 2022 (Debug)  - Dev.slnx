@@ -1,4 +1,4 @@
-<Solution>
+﻿<Solution>
   <Configurations>
     <BuildType Name="Canary" />
     <BuildType Name="Debug" />
@@ -431,6 +431,11 @@
     <BuildType Solution="Nightly|*" Project="Release" />
   </Project>
   <Project Path="KryptonTouchScreen Example/KryptonTouchScreen Example.csproj" Id="a038d30c-6c9d-46ef-aaca-1326573ab170">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonRating Examples/KryptonRating Examples 2022.csproj">
     <BuildType Solution="Canary|*" Project="Release" />
     <BuildType Solution="Installer|*" Project="Debug" />
     <BuildType Solution="Nightly|*" Project="Release" />

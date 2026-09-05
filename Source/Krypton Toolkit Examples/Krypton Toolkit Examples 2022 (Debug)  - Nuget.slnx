@@ -1,4 +1,4 @@
-<Solution>
+﻿<Solution>
   <Folder Name="/Solution Items/">
     <File Path="../../Documents/Help/Changelog.md" />
     <File Path=".editorconfig" />
@@ -75,6 +75,7 @@
     <BuildType Project="Debug" />
   </Project>
   <Project Path="KryptonTextBox Examples/KryptonTextBox Examples 2022.csproj" />
+  <Project Path="KryptonRating Examples/KryptonRating Examples 2022.csproj" />
   <Project Path="KryptonTrackBar Examples/KryptonTrackBar Examples 2022.csproj" />
   <Project Path="KryptonTreeView Examples/KryptonTreeView Examples 2022.csproj" />
   <Project Path="KryptonWebBrowser Example/KryptonWebBrowser Example 2022.csproj" />

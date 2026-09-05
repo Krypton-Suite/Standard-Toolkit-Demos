@@ -61,6 +61,7 @@
 	* [KryptonProgressBar](#kryptonprogressbar)
 	* [KryptonPropertyGrid](#kryptonpropertygrid)
 	* [KryptonRadioButton](#kryptonradiobutton)
+	* [KryptonRating](#kryptonrating)
 	* [KryptonRichTextBox](#kryptonrichtextbox)
 	* [KryptonSaveFileDialog](#kryptonsavefiledialog)
 	* [KryptonScrollBar](#kryptonscrollbar)
@@ -229,6 +230,8 @@ Author and maintain custom palette files. File menu: New, Open, Save, Save As, C
 ![KryptonPropertyGridExample](KryptonPropertyGridExample/example.gif)
 ## KryptonRadioButton
 ![KryptonRadioButton Examples](KryptonRadioButton%20Examples/example.png)
+## KryptonRating
+Interactive star, heart, circle, or image ratings with Full, Half, and Exact precision, hover preview, keyboard input, and theme colours.
 ## KryptonRichTextBox
 ![KryptonRichTextBox Examples](KryptonRichTextBox%20Examples/example.png)
 ## KryptonSaveFileDialog

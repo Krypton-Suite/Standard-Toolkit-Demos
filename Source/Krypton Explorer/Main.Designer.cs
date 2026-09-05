@@ -193,6 +193,7 @@ partial class Main
         this.tslVersion = new System.Windows.Forms.ToolStripStatusLabel();
         this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
         this.linkKryptonToggleSwitch = new Krypton.Toolkit.KryptonLinkLabel();
+        this.linkKryptonRating = new Krypton.Toolkit.KryptonLinkLabel();
         ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelFill)).BeginInit();
         this.kryptonPanelFill.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRight)).BeginInit();
@@ -444,6 +445,7 @@ partial class Main
         // kryptonPage1
         // 
         this.kryptonPage1.AutoHiddenSlideSize = new System.Drawing.Size(150, 150);
+        this.kryptonPage1.Controls.Add(this.linkKryptonRating);
         this.kryptonPage1.Controls.Add(this.linkKryptonToggleSwitch);
         this.kryptonPage1.Controls.Add(this.linkKryptonCommandLinkButton);
         this.kryptonPage1.Controls.Add(this.klblKryptonAboutToolkit);
@@ -2318,6 +2320,18 @@ partial class Main
         this.linkKryptonToggleSwitch.Values.Text = "KryptonToggleSwitch";
         this.linkKryptonToggleSwitch.LinkClicked += new System.EventHandler(this.linkKryptonToggleSwitch_LinkClicked);
         // 
+        // linkKryptonRating
+        // 
+        this.linkKryptonRating.Location = new System.Drawing.Point(802, 137);
+        this.linkKryptonRating.Margin = new System.Windows.Forms.Padding(2);
+        this.linkKryptonRating.Name = "linkKryptonRating";
+        this.linkKryptonRating.Size = new System.Drawing.Size(108, 20);
+        this.linkKryptonRating.TabIndex = 59;
+        this.linkKryptonRating.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonLinkLabel1.Values.Image")));
+        this.linkKryptonRating.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
+        this.linkKryptonRating.Values.Text = "KryptonRating";
+        this.linkKryptonRating.LinkClicked += new System.EventHandler(this.linkKryptonRating_LinkClicked);
+        // 
         // Form1
         // 
         this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2546,5 +2560,6 @@ partial class Main
     private System.Windows.Forms.ToolStripStatusLabel tslVersion;
     private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonToggleSwitch;
+    private Krypton.Toolkit.KryptonLinkLabel linkKryptonRating;
 }
 
