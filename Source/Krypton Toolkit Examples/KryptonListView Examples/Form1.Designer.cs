@@ -52,6 +52,7 @@ partial class Form1
         this.viewCheckBox = new Krypton.Toolkit.KryptonCheckBox();
         this.groupBox3 = new Krypton.Toolkit.KryptonGroupBox();
         this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
+        this.kbtnVirtualMode = new Krypton.Toolkit.KryptonButton();
         this.listKrypton = new Krypton.Toolkit.KryptonListView();
         this.imageList2 = new System.Windows.Forms.ImageList(this.components);
         this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -134,6 +135,7 @@ partial class Form1
         // groupBox3.Panel
         // 
         this.groupBox3.Panel.Controls.Add(this.kryptonTextBox1);
+        this.groupBox3.Panel.Controls.Add(this.kbtnVirtualMode);
         this.groupBox3.Panel.Controls.Add(this.listKrypton);
         this.groupBox3.Size = new System.Drawing.Size(465, 363);
         this.groupBox3.TabIndex = 1;
@@ -147,6 +149,16 @@ partial class Form1
         this.kryptonTextBox1.Size = new System.Drawing.Size(461, 27);
         this.kryptonTextBox1.TabIndex = 1;
         this.kryptonTextBox1.Text = "kryptonTextBox1";
+        // 
+        // kbtnVirtualMode
+        // 
+        this.kbtnVirtualMode.Dock = System.Windows.Forms.DockStyle.Top;
+        this.kbtnVirtualMode.Location = new System.Drawing.Point(0, 0);
+        this.kbtnVirtualMode.Name = "kbtnVirtualMode";
+        this.kbtnVirtualMode.Size = new System.Drawing.Size(461, 28);
+        this.kbtnVirtualMode.TabIndex = 2;
+        this.kbtnVirtualMode.Values.Text = "Virtual Mode (#3847)…";
+        this.kbtnVirtualMode.Click += new System.EventHandler(this.kbtnVirtualMode_Click);
         // 
         // listKrypton
         // 
@@ -364,6 +376,7 @@ partial class Form1
     private ImageList imageList2;
     private Krypton.Toolkit.KryptonCheckBox chkDisabled;
     private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+    private Krypton.Toolkit.KryptonButton kbtnVirtualMode;
     private Krypton.Toolkit.KryptonThemeComboBox kryptonThemeComboBox1;
 }
 

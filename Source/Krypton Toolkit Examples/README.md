@@ -1,4 +1,4 @@
-<!-- Start Document Outline -->
+﻿<!-- Start Document Outline -->
 
 * [Toolkit Examples](#toolkit-examples)
 	* [ButtonSpec Playground](#buttonspec-playground)
@@ -192,6 +192,7 @@ There are 2 set of solutions in these projects:
 - If you want a standard List then use `ListBox` or `CheckedListBox`
 - If you want a Details view then use a `DataGrid`
 - This implements LargIcons / Small Icons / Tiles with and without checkboxes as allowed
+- Virtual mode (#3847): `VirtualMode`, `VirtualListSize`, `RetrieveVirtualItem` — open **Virtual Mode (#3847)…** on the Krypton list
 ![KryptonListView Examples](KryptonListView%20Examples/example.png)
 ## KryptonMaskedTextBox
 ![KryptonMaskedTextBox Examples](KryptonMaskedTextBox%20Examples/example.png)

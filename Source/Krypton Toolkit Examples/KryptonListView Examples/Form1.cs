@@ -14,6 +14,12 @@ public partial class Form1 : KryptonForm
 {
     public Form1() => InitializeComponent();
 
+    private void kbtnVirtualMode_Click(object sender, EventArgs e)
+    {
+        using var form = new VirtualModeForm();
+        form.ShowDialog(this);
+    }
+
     private void ViewTypeChanged(object sender, System.EventArgs e)
     {
         RadioButton? rb = (RadioButton)sender;
