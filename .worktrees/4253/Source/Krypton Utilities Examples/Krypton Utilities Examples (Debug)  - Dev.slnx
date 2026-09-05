@@ -1,0 +1,42 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Canary" />
+    <BuildType Name="Debug" />
+    <BuildType Name="Installer" />
+    <BuildType Name="Nightly" />
+    <BuildType Name="Release" />
+  </Configurations>
+  <Folder Name="/Linked Projects/">
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Docking/Krypton.Docking 2022.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Navigator/Krypton.Navigator 2022.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Ribbon/Krypton.Ribbon 2022.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Toolkit/Krypton.Toolkit 2022.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Toolkit.Utilities/Krypton.Toolkit.Utilities.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Workspace/Krypton.Workspace 2022.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="../../Documents/Help/Changelog.md" />
+    <File Path="../.editorconfig" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="KryptonBugReportingDialog Example/KryptonBugReportingDialog Example.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonExceptionDialog Example/KryptonExceptionDialog Example.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonSearchBox Example/KryptonSearchBox Example.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="KryptonWebView2 Example/KryptonWebView2 Example.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+</Solution>

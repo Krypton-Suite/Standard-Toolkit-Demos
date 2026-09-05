@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="../.editorconfig" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="Docking Customized/Docking Customized 2022.csproj" />
+  <Project Path="Docking Flags/Docking Flags 2022.csproj" />
+  <Project Path="Docking Persistence/Docking Persistence 2022.csproj" />
+  <Project Path="External Drag To Docking/External Drag To Docking 2022.csproj" />
+  <Project Path="Multi Control Docking/Multi Control Docking 2022.csproj" />
+  <Project Path="Navigator + FloatingWindows/Navigator + FloatingWindows 2022.csproj" />
+  <Project Path="Standard Docking/Standard Docking 2022.csproj" />
+</Solution>

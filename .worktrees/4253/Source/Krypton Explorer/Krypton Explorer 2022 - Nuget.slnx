@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Release" />
+    <BuildType Name="ReleaseCS" />
+  </Configurations>
+  <Project Path="Krypton Explorer 2022.csproj">
+    <BuildType Solution="ReleaseCS|*" Project="Release" />
+  </Project>
+</Solution>

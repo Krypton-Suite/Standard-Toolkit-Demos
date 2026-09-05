@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Krypton.Standard.Toolkit.Nightly" Version="110.26.8.239-alpha" />
+    <PackageReference Include="Krypton.Standard.Toolkit.Nightly" Version="110.26.9.246-alpha" />
   </ItemGroup>
 
 </Project>
