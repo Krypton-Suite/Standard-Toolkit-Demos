@@ -49,6 +49,7 @@
   <Project Path="KryptonMessageBox Examples/KryptonMessageBox Examples 2022.csproj" />
   <Project Path="KryptonMonthCalendar Examples/KryptonMonthCalendar Examples 2022.csproj" />
   <Project Path="KryptonNumericUpDown Examples/KryptonNumericUpDown Examples 2022.csproj" />
+  <Project Path="KryptonPalette Author/KryptonPalette Author 2022.csproj" />
   <Project Path="KryptonPalette Examples/KryptonPalette Examples 2022.csproj" />
   <Project Path="KryptonPanel Examples/KryptonPanel Examples 2022.csproj" />
   <Project Path="KryptonPrintDialog Example/KryptonPrintDialog Example 2022.csproj" />
@@ -60,6 +61,7 @@
   <Project Path="KryptonTableLayoutPanel Examples/KryptonTableLayoutPanel Examples 2022.csproj" />
   <Project Path="KryptonTaskDialog Examples/KryptonTaskDialog Examples 2022.csproj" />
   <Project Path="KryptonTextBox Examples/KryptonTextBox Examples 2022.csproj" />
+  <Project Path="KryptonRating Examples/KryptonRating Examples 2022.csproj" />
   <Project Path="KryptonTrackBar Examples/KryptonTrackBar Examples 2022.csproj" />
   <Project Path="KryptonTreeView Examples/KryptonTreeView Examples 2022.csproj" />
   <Project Path="KryptonWebBrowser Example/KryptonWebBrowser Example 2022.csproj" />

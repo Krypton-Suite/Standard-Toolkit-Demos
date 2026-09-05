@@ -2,6 +2,7 @@
   * [Krypton Bug Reporting Dialog Example](#krypton-bug-reporting-dialog-example)
   * [Krypton Exception Dialog Example](#krypton-exception-dialog-example)
   * [Krypton Search Box Example](#krypton-search-box-example)
+  * [Krypton Tag Input Example](#krypton-tag-input-example)
   * [Krypton WebView2 Example](#krypton-webview2-example)
 	
 # Utilities Examples
@@ -21,6 +22,9 @@ There are 2 set of solutions in these projects:
 
 # Krypton Search Box Example
 ![Krypton Search Box Example](KryptonSearchBox%20Example/KryptonSearchBoxExample.png)
+
+# Krypton Tag Input Example
+Wrap-capable tag editor (`KryptonTagInputControl`) with themed chips, Enter/comma commit, suggestions, and category colours.
 
 # Krypton WebView2 Example
 ![Krypton WebView2 Example](KryptonWebView2%20Example/KryptonWebView2Example.png)

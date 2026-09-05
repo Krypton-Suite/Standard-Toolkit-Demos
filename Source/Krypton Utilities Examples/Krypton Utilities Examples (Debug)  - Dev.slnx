@@ -7,6 +7,7 @@
     <BuildType Name="Release" />
   </Configurations>
   <Folder Name="/Linked Projects/">
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Interop/Krypton.Interop.csproj" />
     <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Docking/Krypton.Docking 2022.csproj" />
     <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Navigator/Krypton.Navigator 2022.csproj" />
     <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Ribbon/Krypton.Ribbon 2022.csproj" />
@@ -30,6 +31,11 @@
     <BuildType Solution="Nightly|*" Project="Release" />
   </Project>
   <Project Path="KryptonSearchBox Example/KryptonSearchBox Example.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+  <Project Path="Krypton Tag Input Example/Krypton Tag Input Example.csproj">
     <BuildType Solution="Canary|*" Project="Release" />
     <BuildType Solution="Installer|*" Project="Debug" />
     <BuildType Solution="Nightly|*" Project="Release" />

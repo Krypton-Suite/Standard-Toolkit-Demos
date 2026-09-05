@@ -181,6 +181,9 @@ public partial class Main : KryptonForm
     private void linkKryptonPalette_LinkClicked(object sender, EventArgs e) =>
         LaunchApplication(@"Krypton Palette Examples");
 
+    private void linkKryptonPaletteAuthor_LinkClicked(object sender, EventArgs e) =>
+        LaunchApplication(@"Krypton Palette Author");
+
     private void linkKryptonPanel_LinkClicked(object sender, EventArgs e) =>
         LaunchApplication(@"Krypton Panel Examples");
 
@@ -618,4 +621,6 @@ public partial class Main : KryptonForm
         => LaunchApplication(@"Ribbon And Navigator And Workspace");
 
     private void linkKryptonToggleSwitch_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Toggle Switch Examples");
+
+    private void linkKryptonRating_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Rating Examples");
 }

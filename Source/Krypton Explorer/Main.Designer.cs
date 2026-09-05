@@ -95,6 +95,7 @@ partial class Main
         this.linkKryptonSplitContainer = new Krypton.Toolkit.KryptonLinkLabel();
         this.linkKryptonPanel = new Krypton.Toolkit.KryptonLinkLabel();
         this.linkKryptonPalette = new Krypton.Toolkit.KryptonLinkLabel();
+        this.linkKryptonPaletteAuthor = new Krypton.Toolkit.KryptonLinkLabel();
         this.linkKryptonButton = new Krypton.Toolkit.KryptonLinkLabel();
         this.linkKryptonLabel = new Krypton.Toolkit.KryptonLinkLabel();
         this.linkKryptonGroup = new Krypton.Toolkit.KryptonLinkLabel();
@@ -192,6 +193,7 @@ partial class Main
         this.tslVersion = new System.Windows.Forms.ToolStripStatusLabel();
         this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
         this.linkKryptonToggleSwitch = new Krypton.Toolkit.KryptonLinkLabel();
+        this.linkKryptonRating = new Krypton.Toolkit.KryptonLinkLabel();
         ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelFill)).BeginInit();
         this.kryptonPanelFill.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRight)).BeginInit();
@@ -443,6 +445,7 @@ partial class Main
         // kryptonPage1
         // 
         this.kryptonPage1.AutoHiddenSlideSize = new System.Drawing.Size(150, 150);
+        this.kryptonPage1.Controls.Add(this.linkKryptonRating);
         this.kryptonPage1.Controls.Add(this.linkKryptonToggleSwitch);
         this.kryptonPage1.Controls.Add(this.linkKryptonCommandLinkButton);
         this.kryptonPage1.Controls.Add(this.klblKryptonAboutToolkit);
@@ -496,6 +499,7 @@ partial class Main
         this.kryptonPage1.Controls.Add(this.linkKryptonLinkLabel);
         this.kryptonPage1.Controls.Add(this.linkKryptonSplitContainer);
         this.kryptonPage1.Controls.Add(this.linkKryptonPanel);
+        this.kryptonPage1.Controls.Add(this.linkKryptonPaletteAuthor);
         this.kryptonPage1.Controls.Add(this.linkKryptonPalette);
         this.kryptonPage1.Controls.Add(this.linkKryptonButton);
         this.kryptonPage1.Controls.Add(this.linkKryptonLabel);
@@ -1190,6 +1194,19 @@ partial class Main
         this.linkKryptonPalette.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
         this.linkKryptonPalette.Values.Text = "KryptonPalette";
         this.linkKryptonPalette.LinkClicked += new System.EventHandler(this.linkKryptonPalette_LinkClicked);
+        // 
+        // linkKryptonPaletteAuthor
+        // 
+        this.linkKryptonPaletteAuthor.Location = new System.Drawing.Point(607, 54);
+        this.linkKryptonPaletteAuthor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+        this.linkKryptonPaletteAuthor.Name = "linkKryptonPaletteAuthor";
+        this.linkKryptonPaletteAuthor.Size = new System.Drawing.Size(150, 20);
+        this.linkKryptonPaletteAuthor.StateCommon.AdjacentGap = 5;
+        this.linkKryptonPaletteAuthor.TabIndex = 59;
+        this.linkKryptonPaletteAuthor.Values.Image = ((System.Drawing.Image)(resources.GetObject("linkKryptonPalette.Values.Image")));
+        this.linkKryptonPaletteAuthor.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
+        this.linkKryptonPaletteAuthor.Values.Text = "Krypton Palette Author";
+        this.linkKryptonPaletteAuthor.LinkClicked += new System.EventHandler(this.linkKryptonPaletteAuthor_LinkClicked);
         // 
         // linkKryptonButton
         // 
@@ -2303,6 +2320,18 @@ partial class Main
         this.linkKryptonToggleSwitch.Values.Text = "KryptonToggleSwitch";
         this.linkKryptonToggleSwitch.LinkClicked += new System.EventHandler(this.linkKryptonToggleSwitch_LinkClicked);
         // 
+        // linkKryptonRating
+        // 
+        this.linkKryptonRating.Location = new System.Drawing.Point(802, 137);
+        this.linkKryptonRating.Margin = new System.Windows.Forms.Padding(2);
+        this.linkKryptonRating.Name = "linkKryptonRating";
+        this.linkKryptonRating.Size = new System.Drawing.Size(108, 20);
+        this.linkKryptonRating.TabIndex = 59;
+        this.linkKryptonRating.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonLinkLabel1.Values.Image")));
+        this.linkKryptonRating.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
+        this.linkKryptonRating.Values.Text = "KryptonRating";
+        this.linkKryptonRating.LinkClicked += new System.EventHandler(this.linkKryptonRating_LinkClicked);
+        // 
         // Form1
         // 
         this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2375,6 +2404,7 @@ partial class Main
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonSplitContainer;
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonPanel;
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonPalette;
+    private Krypton.Toolkit.KryptonLinkLabel linkKryptonPaletteAuthor;
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonLabel;
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonHeaderGroup;
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonHeader;
@@ -2530,5 +2560,6 @@ partial class Main
     private System.Windows.Forms.ToolStripStatusLabel tslVersion;
     private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonToggleSwitch;
+    private Krypton.Toolkit.KryptonLinkLabel linkKryptonRating;
 }
 

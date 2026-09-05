@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonSplitContainer Examp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonPanel Examples 2022", "KryptonPanel Examples\KryptonPanel Examples 2022.csproj", "{2C4CB46B-3790-4150-828B-F441C44445B6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonPalette Author 2022", "KryptonPalette Author\KryptonPalette Author 2022.csproj", "{B7E41A92-3C8D-4F5A-9B16-8E0D2A4C7F11}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonPalette Examples 2022", "KryptonPalette Examples\KryptonPalette Examples 2022.csproj", "{5D7433EF-0FF4-435F-8DE2-FE22C5E3ECC5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonCheckButton Examples 2022", "KryptonCheckButton Examples\KryptonCheckButton Examples 2022.csproj", "{7F71F7BA-FBBA-4758-A6C9-83110BF48166}"
@@ -93,6 +95,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonWrapLabel Examples 2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonGroupBox Examples 2022", "KryptonGroupBox Examples\KryptonGroupBox Examples 2022.csproj", "{A21C9D69-D60C-4C05-BEC2-76BB2BEC2054}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonRating Examples 2022", "KryptonRating Examples\KryptonRating Examples 2022.csproj", "{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonTrackBar Examples 2022", "KryptonTrackBar Examples\KryptonTrackBar Examples 2022.csproj", "{F2376A8F-C8B2-494F-8097-E2E208CB48FF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonMessageBox Examples 2022", "KryptonMessageBox Examples\KryptonMessageBox Examples 2022.csproj", "{FA2D1000-8067-4DE7-85FA-6666A446FE40}"
@@ -154,6 +158,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Canary|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Canary|Any CPU.Build.0 = Release|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Installer|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Installer|Any CPU.Build.0 = Debug|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Nightly|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Nightly|Any CPU.Build.0 = Release|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B50563E6-3123-49FC-816D-F873A0BCB789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B50563E6-3123-49FC-816D-F873A0BCB789}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B50563E6-3123-49FC-816D-F873A0BCB789}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -186,6 +200,10 @@ Global
 		{5D7433EF-0FF4-435F-8DE2-FE22C5E3ECC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D7433EF-0FF4-435F-8DE2-FE22C5E3ECC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D7433EF-0FF4-435F-8DE2-FE22C5E3ECC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E41A92-3C8D-4F5A-9B16-8E0D2A4C7F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E41A92-3C8D-4F5A-9B16-8E0D2A4C7F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E41A92-3C8D-4F5A-9B16-8E0D2A4C7F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E41A92-3C8D-4F5A-9B16-8E0D2A4C7F11}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7F71F7BA-FBBA-4758-A6C9-83110BF48166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7F71F7BA-FBBA-4758-A6C9-83110BF48166}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F71F7BA-FBBA-4758-A6C9-83110BF48166}.Release|Any CPU.ActiveCfg = Release|Any CPU

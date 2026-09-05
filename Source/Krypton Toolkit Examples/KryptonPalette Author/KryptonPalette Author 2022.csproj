@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <RootNamespace>KryptonPaletteAuthor</RootNamespace>
+        <AssemblyName>Krypton Palette Author</AssemblyName>
+        <ApplicationIcon>Krypton.ico</ApplicationIcon>
+        <UseApplicationTrust>false</UseApplicationTrust>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <UseWindowsForms>true</UseWindowsForms>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <NeutralLanguage>en</NeutralLanguage>
+        <LangVersion>preview</LangVersion>
+        <Nullable>enable</Nullable>
+        <WarningLevel>6</WarningLevel>
+        <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
+        <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+        <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Remove="Krypton.ico" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="Krypton.ico" />
+    </ItemGroup>
+    <PropertyGroup>
+        <!-- Main Demos clone is four levels up; a git worktree under .worktrees\ is six. -->
+        <KryptonToolkitRepo Condition="'$(KryptonToolkitRepo)' == '' And Exists('..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2022.csproj')">..\..\..\..\Standard-Toolkit</KryptonToolkitRepo>
+        <KryptonToolkitRepo Condition="'$(KryptonToolkitRepo)' == '' And Exists('..\..\..\..\..\..\Standard-Toolkit\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2022.csproj')">..\..\..\..\..\..\Standard-Toolkit</KryptonToolkitRepo>
+        <KryptonToolkitRepo Condition="'$(KryptonToolkitRepo)' == ''">..\..\..\..\Standard-Toolkit</KryptonToolkitRepo>
+    </PropertyGroup>
+    <Choose>
+        <When Condition="'$(SolutionName.Endswith(`Nuget`))'">
+            <ItemGroup>
+                <PackageReference Include="Krypton.Toolkit.Canary" Version="100.25.8.234-beta" />
+                <PackageReference Include="Krypton.Standard.Toolkit.Canary" Version="100.25.8.234-beta" />
+            </ItemGroup>
+        </When>
+        <Otherwise>
+            <ItemGroup>
+                <ProjectReference Include="$(KryptonToolkitRepo)\Source\Krypton Components\Krypton.Toolkit\Krypton.Toolkit 2022.csproj" />
+                <ProjectReference Include="$(KryptonToolkitRepo)\Source\Krypton Components\Krypton.Toolkit.Utilities\Krypton.Toolkit.Utilities.csproj" />
+                <ProjectReference Include="$(KryptonToolkitRepo)\Source\Krypton Components\Krypton.Themes\Krypton.Themes.csproj" />
+            </ItemGroup>
+        </Otherwise>
+    </Choose>
+    <PropertyGroup>
+        <OutputPath>..\..\..\Binaries\Krypton Demos\$(Configuration)\</OutputPath>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+    </PropertyGroup>
+</Project>
