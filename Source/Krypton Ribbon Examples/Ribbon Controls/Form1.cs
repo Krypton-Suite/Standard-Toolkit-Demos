@@ -74,6 +74,23 @@ public partial class Form1 : KryptonForm
         custom9.CustomControl = CreateLinkLabel("LinkLabel Control");
         custom10.CustomControl = CreateNumericUpDown(50);
         custom11.CustomControl = CreateProgressBar(75);
+
+        // Issue #2382: live RTL toggle. Setting both flags on the form is enough; the ribbon syncs.
+        var chkRtl = new KryptonCheckBox
+        {
+            Text = @"Right-to-left ribbon (RightToLeft + RightToLeftLayout) — File, QAT, tabs, and groups pack from the start edge; text stays readable.",
+            AutoSize = true,
+            Dock = DockStyle.Top,
+            Padding = new Padding(8, 6, 8, 6)
+        };
+        chkRtl.CheckedChanged += (_, _) =>
+        {
+            var rtl = chkRtl.Checked;
+            RightToLeft = rtl ? RightToLeft.Yes : RightToLeft.No;
+            RightToLeftLayout = rtl;
+        };
+        Controls.Add(chkRtl);
+        chkRtl.BringToFront();
     }
 
     private void OnTextBox3Clear(object sender, EventArgs e)
