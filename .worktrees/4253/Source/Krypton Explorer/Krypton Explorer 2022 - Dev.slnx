@@ -1,0 +1,408 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Release" />
+    <BuildType Name="ReleaseCS" />
+  </Configurations>
+  <Folder Name="/Documents/">
+    <File Path="../../Documents/Help/Changelog.md" />
+    <File Path="../../README.md" />
+    <File Path="../.editorconfig" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/Source/" />
+  <Folder Name="/Source/Krypton Docking Examples/">
+    <Project Path="../Krypton Docking Examples/Docking Customized/Docking Customized 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Docking Examples/Docking Flags/Docking Flags 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Docking Examples/Docking Persistence/Docking Persistence 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Docking Examples/External Drag To Docking/External Drag To Docking 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Docking Examples/Multi Control Docking/Multi Control Docking 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Docking Examples/Navigator + FloatingWindows/Navigator + FloatingWindows 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Docking Examples/Standard Docking/Standard Docking 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+  </Folder>
+  <Folder Name="/Source/Krypton Navigator Examples/">
+    <Project Path="../Krypton Navigator Examples/Basic Events/Basic Events 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Navigator Examples/Expanding Pages/Expanding Pages 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Navigator Examples/Navigator Context Menus/Navigator Context Menus 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Navigator Examples/Navigator Modes/Navigator Modes 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Navigator Examples/Navigator Palettes/Navigator Palettes 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Navigator Examples/Navigator Playground/Navigator Playground 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Navigator Examples/Navigator ToolTips/Navigator ToolTips 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Navigator Examples/OneNote Tabs/OneNote Tabs 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Navigator Examples/Orientation + Alignment/Orientation + Alignment 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Navigator Examples/Outlook Mockup/Outlook Mockup 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Navigator Examples/Per-Tab Buttons/Per-Tab Buttons 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Navigator Examples/Popup Pages/Popup Pages 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Navigator Examples/Singleline + Multiline/Singleline + Multiline 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Navigator Examples/Tab Border Styles/Tab Border Styles 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Navigator Examples/User Page Creation/User Page Creation 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+  </Folder>
+  <Folder Name="/Source/Krypton Ribbon Examples/">
+    <Project Path="../Krypton Ribbon Examples/Application Menu/Application Menu 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Ribbon Examples/Auto Shrinking Groups/Auto Shrinking Groups 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Ribbon Examples/Contextual Tabs/Contextual Tabs 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Ribbon Examples/KeyTips + Keyboard Access/KeyTips + Keyboard Access 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Ribbon Examples/KryptonGallery Examples/KryptonGallery Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Ribbon Examples/MDI Ribbon/MDI Ribbon 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Ribbon Examples/Outlook Mail Clone/Outlook Mail Clone 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Ribbon Examples/Quick Access Toolbar/Quick Access Toolbar 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Ribbon Examples/Ribbon + Navigator + Workspace/Ribbon + Navigator + Workspace 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Ribbon Examples/Ribbon Controls/Ribbon Controls 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Ribbon Examples/Ribbon Gallery/Ribbon Gallery 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Ribbon Examples/Ribbon ToolTips/Ribbon ToolTips 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+  </Folder>
+  <Folder Name="/Source/Krypton Toolkit Examples/">
+    <Project Path="../Krypton Toolkit Examples/ButtonSpec Playground/ButtonSpec Playground 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Child Control Stack/Child Control Stack 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Custom Control using Palettes/Custom Control using Palettes 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Custom Control using Renderers/Custom Control using Renderers 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Expanding HeaderGroups (DockStyle)/Expanding HeaderGroups (DockStyle) 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Expanding HeaderGroups (Splitters)/Expanding HeaderGroups (Splitters) 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Expanding HeaderGroups (Stack)/Expanding HeaderGroups (Stack) 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Input Form/Input Form 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/IntegratedToolbarExample/IntegratedToolbarExample 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Krypton Scrollbars/Krypton Scrollbars 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Krypton Theme Playground/Krypton Theme Playground 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Krypton Theme Selector/Krypton Theme Selector 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Krypton UAC Button/Krypton UAC Button 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonAboutBox Example/KryptonAboutBox Example 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonAboutToolkit Example/KryptonAboutToolkit Example 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonBorderEdge Examples/KryptonBorderEdge Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonBreadCrumb Examples/KryptonBreadCrumb Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonButton Examples/KryptonButton Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonCheckBox Examples/KryptonCheckBox Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonCheckButton Examples/KryptonCheckButton Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonCheckedListBox Examples/KryptonCheckedListBox Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonCheckSet Examples/KryptonCheckSet Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonColorButton Examples/KryptonColorButton Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonColorDialog Example/KryptonColorDialog Example 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonComboBox Examples/KryptonComboBox Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonCommand Examples/KryptonCommand Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonCommandLinkButton Examples/KryptonCommandLinkButton Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonContextMenu Examples/KryptonContextMenu Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonDataGridView Examples/KryptonDataGridView Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonDateTimePicker Examples/KryptonDateTimePicker Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonDomainUpDown Examples/KryptonDomainUpDown Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonDropButton Examples/KryptonDropButton Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonFolderBrowserDialog Example/KryptonFolderBrowserDialog Example 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonFontDialog Example/KryptonFontDialog Example 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonForm Examples/KryptonForm Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonFormFading Example/KryptonFormFading Example 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonGroup Examples/KryptonGroup Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonGroupBox Examples/KryptonGroupBox Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonHeader Examples/KryptonHeader Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonHeaderGroup Examples/KryptonHeaderGroup Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonHelpIcon Examples/KryptonHelpIcon Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonInputBox Examples/KryptonInputBox Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonLabel Examples/KryptonLabel Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonLinkLabel Examples/KryptonLinkLabel Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonListBox Examples/KryptonListBox Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonListView Examples/KryptonListView Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonMaskedTextBox Examples/KryptonMaskedTextBox Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonMessageBox Examples/KryptonMessageBox Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonMonthCalendar Examples/KryptonMonthCalendar Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonNumericUpDown Examples/KryptonNumericUpDown Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonOpenFileDialog Example/KryptonOpenFileDialog Example 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonPageSetupDialog Example/KryptonPageSetupDialog Example 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonPalette Examples/KryptonPalette Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonPanel Examples/KryptonPanel Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonPrintDialog Example/KryptonPrintDialog Example 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonProgressbar Examples/KryptonProgressbar Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonPropertyGridExample/KryptonPropertyGridExample 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonRadioButton Examples/KryptonRadioButton Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonRichTextBox Examples/KryptonRichTextBox Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonSaveFileDialog Example/KryptonSaveFileDialog Example 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonScrollbar Examples/KryptonScrollbar Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonSeparator Examples/KryptonSeparator Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonSplitContainer Examples/KryptonSplitContainer Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonStringCollectionEditor Examples 2022/KryptonStringCollectionEditor Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonTableLayoutPanel Examples/KryptonTableLayoutPanel Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonTaskDialog Examples/KryptonTaskDialog Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonTextBox Examples/KryptonTextBox Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonToastNotification Examples/KryptonToastNotification Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonToggleSwitch Examples/KryptonToggleSwitch Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonTrackBar Examples/KryptonTrackBar Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonTreeView Examples/KryptonTreeView Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonWebBrowser Example/KryptonWebBrowser Example 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonWrapLabel Examples/KryptonWrapLabel Examples 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/MDI Application/MDI Application 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/SystemThemedForms/SystemThemedForms 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Test Clip Base/Test Clip Base 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Test Combo Domain Numeric/Test Combo Domain Numeric 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Test MessageBox Clipping/Test MessageBox Clipping 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Test Text Clipping/Test Text Clipping 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Three Pane Application (Basic)/Three Pane Application (Basic) 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Toolkit Examples/Three Pane Application (Extended)/Three Pane Application (Extended) 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+  </Folder>
+  <Folder Name="/Source/Krypton Workspace Examples/">
+    <Project Path="../Krypton Workspace Examples/Advanced Page Drag + Drop/Advanced Page Drag + Drop 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Workspace Examples/Basic Page Drag + Drop/Basic Page Drag + Drop 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Workspace Examples/Cell Maximize + Restore/Cell Maximize + Restore 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Workspace Examples/Memo Editor/Memo Editor 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Workspace Examples/Workspace Cell Layout/Workspace Cell Layout 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Workspace Examples/Workspace Cell Modes/Workspace Cell Modes 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+    <Project Path="../Krypton Workspace Examples/Workspace Persistence/Workspace Persistence 2022.csproj">
+      <BuildType Solution="ReleaseCS|*" Project="Release" />
+    </Project>
+  </Folder>
+  <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Docking/Krypton.Docking 2022.csproj">
+    <BuildType Solution="ReleaseCS|*" Project="Release" />
+  </Project>
+  <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Navigator/Krypton.Navigator 2022.csproj">
+    <BuildType Solution="ReleaseCS|*" Project="Release" />
+  </Project>
+  <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Ribbon/Krypton.Ribbon 2022.csproj">
+    <BuildType Solution="ReleaseCS|*" Project="Release" />
+  </Project>
+  <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Toolkit/Krypton.Toolkit 2022.csproj">
+    <BuildType Solution="ReleaseCS|*" Project="Release" />
+  </Project>
+  <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Workspace/Krypton.Workspace 2022.csproj">
+    <BuildType Solution="ReleaseCS|*" Project="Release" />
+  </Project>
+  <Project Path="Krypton Explorer 2022.csproj">
+    <BuildType Solution="ReleaseCS|*" Project="Release" />
+  </Project>
+</Solution>

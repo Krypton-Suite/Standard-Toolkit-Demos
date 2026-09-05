@@ -1,0 +1,47 @@
+﻿<Project ToolsVersion="4.0">
+  <Import Project="Sdk.props" Sdk="WixToolset.Sdk" Version="4.0.1" />
+  <PropertyGroup>
+    <OutputName>Samples.v100.24.12.344-beta.Net90</OutputName>
+    <ProjectGuid>{196eea81-fd87-4a46-b370-33268766e2b6}</ProjectGuid>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DefineConstants>Debug</DefineConstants>
+    <OutputPath>..\..\..\Binaries\Installers\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <SuppressPdbOutput>True</SuppressPdbOutput>
+    <SuppressAllWarnings>False</SuppressAllWarnings>
+    <Pedantic>True</Pedantic>
+    <VerboseOutput>True</VerboseOutput>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="License.rtf" />
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WixInstaller.net90.wax" />
+  </ItemGroup>
+  <Import Project="Sdk.targets" Sdk="WixToolset.Sdk" Version="4.0.1" />
+  <Target Name="BeforeBuild">
+    <PropertyGroup>
+      <LinkerBaseInputPaths>..\..\..\Binaries\Krypton Demos\Release\net9.0-windows</LinkerBaseInputPaths>
+      <DefineConstants>BasePath90=..\..\..\Binaries\Krypton Demos\Release\net9.0-windows</DefineConstants>
+    </PropertyGroup>
+    <HeatDirectory OutputFile="BasePath90.wxs" DirectoryRefId="KryptonToolkitDemosDir" ComponentGroupName="BasePath90" SuppressCom="true" Directory="..\..\..\Binaries\Krypton Demos\Release\net9.0-windows" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="true" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.BasePath90" Transforms="..\RemovePdbs.xslt" />
+  </Target>
+  <Import Project="..\packages\WixToolset.Heat.4.0.6\build\WixToolset.Heat.targets" Condition="Exists('..\packages\WixToolset.Heat.4.0.6\build\WixToolset.Heat.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\WixToolset.Heat.4.0.6\build\WixToolset.Heat.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\WixToolset.Heat.4.0.6\build\WixToolset.Heat.targets'))" />
+    <Error Condition="!Exists('..\packages\WixToolset.Netfx.wixext.4.0.6\build\WixToolset.Netfx.wixext.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\WixToolset.Netfx.wixext.4.0.6\build\WixToolset.Netfx.wixext.targets'))" />
+    <Error Condition="!Exists('..\packages\WixToolset.UI.wixext.4.0.6\build\WixToolset.UI.wixext.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\WixToolset.UI.wixext.4.0.6\build\WixToolset.UI.wixext.targets'))" />
+    <Error Condition="!Exists('..\packages\WixToolset.Util.wixext.4.0.6\build\WixToolset.Util.wixext.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\WixToolset.Util.wixext.4.0.6\build\WixToolset.Util.wixext.targets'))" />
+  </Target>
+  <Import Project="..\packages\WixToolset.Netfx.wixext.4.0.6\build\WixToolset.Netfx.wixext.targets" Condition="Exists('..\packages\WixToolset.Netfx.wixext.4.0.6\build\WixToolset.Netfx.wixext.targets')" />
+  <Import Project="..\packages\WixToolset.UI.wixext.4.0.6\build\WixToolset.UI.wixext.targets" Condition="Exists('..\packages\WixToolset.UI.wixext.4.0.6\build\WixToolset.UI.wixext.targets')" />
+  <Import Project="..\packages\WixToolset.Util.wixext.4.0.6\build\WixToolset.Util.wixext.targets" Condition="Exists('..\packages\WixToolset.Util.wixext.4.0.6\build\WixToolset.Util.wixext.targets')" />
+</Project>
