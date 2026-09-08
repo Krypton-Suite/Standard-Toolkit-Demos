@@ -12,8 +12,11 @@
 
 using System;
 using System.Drawing;
+using System.Globalization;
+using System.IO;
 using System.Windows.Forms;
 
+using Krypton.Ribbon;
 using Krypton.Toolkit;
 
 using RibbonControls.Properties;
@@ -91,6 +94,149 @@ public partial class Form1 : KryptonForm
         };
         Controls.Add(chkRtl);
         chkRtl.BringToFront();
+
+        // Issue #4369: overlay this ribbon's captions via RibbonTranslations.xml (append; do not replace existing samples).
+        AddRibbonTranslationsSection();
+    }
+
+    private void AddRibbonTranslationsSection()
+    {
+        kryptonRibbon.TranslationId = @"ribbonControls";
+        kryptonRibbon.EnableAutoDiscoverTranslations = false;
+        ribbonTab.TranslationId = @"home";
+        kryptonRibbonGroup1.TranslationId = @"textBox";
+
+        var bar = new FlowLayoutPanel
+        {
+            Dock = DockStyle.Top,
+            AutoSize = true,
+            Padding = new Padding(8, 4, 8, 4),
+            WrapContents = true
+        };
+
+        var instructions = new KryptonLabel
+        {
+            AutoSize = true,
+            Text = @"Issue #4369 Ribbon translations: export/import this ribbon's captions (XML/JSON). Apply German writes RibbonTranslations.de.xml and Auto Discovers it. Chrome strings stay on KryptonManager."
+        };
+        bar.Controls.Add(instructions);
+        bar.Controls.Add(CreateTranslationsButton(@"Export XML…", OnExportRibbonTranslations));
+        bar.Controls.Add(CreateTranslationsButton(@"Import XML…", OnImportRibbonTranslations));
+        bar.Controls.Add(CreateTranslationsButton(@"Analyze…", OnAnalyzeRibbonTranslations));
+        bar.Controls.Add(CreateTranslationsButton(@"Apply German", OnApplyGermanRibbonTranslations));
+        bar.Controls.Add(CreateTranslationsButton(@"Reset English", OnResetEnglishRibbonTranslations));
+
+        Controls.Add(bar);
+        bar.BringToFront();
+    }
+
+    private static KryptonButton CreateTranslationsButton(string text, EventHandler onClick)
+    {
+        var button = new KryptonButton
+        {
+            Text = text,
+            AutoSize = true,
+            MinimumSize = new Size(110, 28)
+        };
+        button.Click += onClick;
+        return button;
+    }
+
+    private void OnExportRibbonTranslations(object sender, EventArgs e)
+    {
+        using var sfd = new SaveFileDialog
+        {
+            OverwritePrompt = true,
+            DefaultExt = @"xml",
+            FileName = @"RibbonTranslations",
+            Filter = @"Ribbon translations (*.xml)|*.xml|JSON (*.json)|*.json|All files (*.*)|(*.*)",
+            Title = @"Export Ribbon Translations"
+        };
+        if (sfd.ShowDialog(this) != DialogResult.OK)
+        {
+            return;
+        }
+
+        var options = new RibbonTranslationOptions { IncludeDefaults = true, IncludeChrome = false };
+        if (string.Equals(Path.GetExtension(sfd.FileName), @".json", StringComparison.OrdinalIgnoreCase))
+        {
+            kryptonRibbon.ExportTranslationsToJsonFile(sfd.FileName, options);
+        }
+        else
+        {
+            kryptonRibbon.ExportTranslationsToXmlFile(sfd.FileName, options);
+        }
+    }
+
+    private void OnImportRibbonTranslations(object sender, EventArgs e)
+    {
+        using var ofd = new OpenFileDialog
+        {
+            CheckFileExists = true,
+            FileName = @"RibbonTranslations",
+            Filter = @"Ribbon translations (*.xml;*.json)|*.xml;*.json|XML (*.xml)|*.xml|JSON (*.json)|*.json|All files (*.*)|(*.*)",
+            Title = @"Import Ribbon Translations"
+        };
+        if (ofd.ShowDialog(this) != DialogResult.OK)
+        {
+            return;
+        }
+
+        var options = new RibbonTranslationOptions { ResetFirst = true };
+        if (string.Equals(Path.GetExtension(ofd.FileName), @".json", StringComparison.OrdinalIgnoreCase))
+        {
+            kryptonRibbon.ImportTranslationsFromJsonFile(ofd.FileName, options);
+        }
+        else
+        {
+            kryptonRibbon.ImportTranslationsFromXmlFile(ofd.FileName, options);
+        }
+    }
+
+    private void OnAnalyzeRibbonTranslations(object sender, EventArgs e)
+    {
+        using var ofd = new OpenFileDialog
+        {
+            CheckFileExists = true,
+            Filter = @"Ribbon translations (*.xml;*.json)|*.xml;*.json|All files (*.*)|(*.*)",
+            Title = @"Analyze Ribbon Translations"
+        };
+        if (ofd.ShowDialog(this) != DialogResult.OK)
+        {
+            return;
+        }
+
+        var coverage = kryptonRibbon.AnalyzeTranslationsFromFile(ofd.FileName);
+        KryptonMessageBox.Show(this,
+            $@"Coverage: {coverage}. Missing={coverage.MissingInFile.Count}, Extra={coverage.ExtraInFile.Count}, Applied={coverage.Applied.Count}.",
+            @"Ribbon translations");
+    }
+
+    private void OnApplyGermanRibbonTranslations(object sender, EventArgs e)
+    {
+        var folder = Path.Combine(Path.GetTempPath(), @"KryptonRibbonControlsTranslations");
+        Directory.CreateDirectory(folder);
+
+        ribbonTab.Text = @"Start";
+        kryptonRibbonGroup1.TextLine1 = @"Textfeld";
+        kryptonRibbon.RibbonFileAppTab.FileAppTabText = @"Datei";
+
+        var filePath = Path.Combine(folder, @"RibbonTranslations.de.xml");
+        kryptonRibbon.ExportTranslationsToXmlFile(filePath, new RibbonTranslationOptions { IncludeDefaults = true });
+
+        OnResetEnglishRibbonTranslations(sender, e);
+
+        kryptonRibbon.TranslationsSearchPath = folder;
+        kryptonRibbon.EnableAutoDiscoverTranslations = true;
+        kryptonRibbon.TryAutoDiscoverTranslations(folder, new CultureInfo(@"de"));
+    }
+
+    private void OnResetEnglishRibbonTranslations(object sender, EventArgs e)
+    {
+        ribbonTab.Text = @"Home";
+        kryptonRibbonGroup1.TextLine1 = @"TextBox";
+        kryptonRibbon.RibbonFileAppTab.FileAppTabText = @"File";
+        kryptonRibbon.PerformNeedPaint(true);
     }
 
     private void OnTextBox3Clear(object sender, EventArgs e)

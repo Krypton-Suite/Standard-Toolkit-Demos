@@ -1,4 +1,4 @@
-# Standard-Toolkit-Ribbon Examples
+﻿# Standard-Toolkit-Ribbon Examples
 There are 2 set of solutions in these projects:
 - Dev
   - Direct linkage to the Toolkit projects and will build all TFM's in those
@@ -19,5 +19,6 @@ There are 2 set of solutions in these projects:
 ## [Quick Access Toolbar](Quick%20Access%20Toolbar/example.png)
 ## [Ribbon + Navigator + Workspace](Ribbon%20+%20Navigator%20+%20Workspace/example.png)
 ## [Ribbon Controls](Ribbon%20Controls/example.png)
+Ribbon captions can be exported and re-imported as `RibbonTranslations.xml` / JSON (#4369). Use the on-form Export / Import / Analyze / Apply German buttons; Auto Discovery loads `RibbonTranslations.de.xml`. Toolkit chrome strings remain on `KryptonManager` (`Translations.xml`).
 ## [Ribbon Gallery](Ribbon%20Gallery/example.png)
 ## [Ribbon ToolTips](Ribbon%20ToolTips/example.png)
