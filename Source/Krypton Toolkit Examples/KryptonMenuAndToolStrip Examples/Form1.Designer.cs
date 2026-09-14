@@ -71,10 +71,28 @@ partial class Form1
             this.pasteToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.kryptonStatusStrip1 = new Krypton.Toolkit.KryptonStatusStrip();
+            this.ksslReady = new System.Windows.Forms.ToolStripStatusLabel();
+            this.klblReadout = new Krypton.Toolkit.KryptonLabel();
+            this.klblTheme = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonThemeComboBox1 = new Krypton.Toolkit.KryptonThemeComboBox();
+            this.klblMenuSlot = new Krypton.Toolkit.KryptonLabel();
+            this.kcbtnMenuStrip = new Krypton.Toolkit.KryptonColorButton();
+            this.klblToolSlot = new Krypton.Toolkit.KryptonLabel();
+            this.kcbtnToolStrip = new Krypton.Toolkit.KryptonColorButton();
+            this.klblStatusSlot = new Krypton.Toolkit.KryptonLabel();
+            this.kcbtnStatusStrip = new Krypton.Toolkit.KryptonColorButton();
+            this.klblMenuItemSlot = new Krypton.Toolkit.KryptonLabel();
+            this.kcbtnMenuItem = new Krypton.Toolkit.KryptonColorButton();
+            this.kbtnContrast = new Krypton.Toolkit.KryptonButton();
+            this.kbtnReset = new Krypton.Toolkit.KryptonButton();
             this.kryptonMenuStrip1.SuspendLayout();
+            this.kryptonToolStripContainer1.ContentPanel.SuspendLayout();
             this.kryptonToolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.kryptonToolStripContainer1.SuspendLayout();
             this.kryptonToolStrip1.SuspendLayout();
+            this.kryptonStatusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonMenuStrip1
@@ -318,7 +336,20 @@ partial class Form1
             // 
             // kryptonToolStripContainer1.ContentPanel
             // 
-            this.kryptonToolStripContainer1.ContentPanel.Size = new System.Drawing.Size(800, 401);
+            this.kryptonToolStripContainer1.ContentPanel.Controls.Add(this.kbtnReset);
+            this.kryptonToolStripContainer1.ContentPanel.Controls.Add(this.kbtnContrast);
+            this.kryptonToolStripContainer1.ContentPanel.Controls.Add(this.kcbtnMenuItem);
+            this.kryptonToolStripContainer1.ContentPanel.Controls.Add(this.klblMenuItemSlot);
+            this.kryptonToolStripContainer1.ContentPanel.Controls.Add(this.kcbtnStatusStrip);
+            this.kryptonToolStripContainer1.ContentPanel.Controls.Add(this.klblStatusSlot);
+            this.kryptonToolStripContainer1.ContentPanel.Controls.Add(this.kcbtnToolStrip);
+            this.kryptonToolStripContainer1.ContentPanel.Controls.Add(this.klblToolSlot);
+            this.kryptonToolStripContainer1.ContentPanel.Controls.Add(this.kcbtnMenuStrip);
+            this.kryptonToolStripContainer1.ContentPanel.Controls.Add(this.klblMenuSlot);
+            this.kryptonToolStripContainer1.ContentPanel.Controls.Add(this.kryptonThemeComboBox1);
+            this.kryptonToolStripContainer1.ContentPanel.Controls.Add(this.klblTheme);
+            this.kryptonToolStripContainer1.ContentPanel.Controls.Add(this.klblReadout);
+            this.kryptonToolStripContainer1.ContentPanel.Size = new System.Drawing.Size(800, 379);
             this.kryptonToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonToolStripContainer1.Location = new System.Drawing.Point(0, 24);
             this.kryptonToolStripContainer1.Name = "kryptonToolStripContainer1";
@@ -432,24 +463,156 @@ partial class Form1
             this.helpToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.helpToolStripButton.Text = "He&lp";
             // 
+            // kryptonStatusStrip1
+            // 
+            this.kryptonStatusStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.kryptonStatusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ksslReady});
+            this.kryptonStatusStrip1.Location = new System.Drawing.Point(0, 428);
+            this.kryptonStatusStrip1.Name = "kryptonStatusStrip1";
+            this.kryptonStatusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.kryptonStatusStrip1.TabIndex = 2;
+            // 
+            // ksslReady
+            // 
+            this.ksslReady.Name = "ksslReady";
+            this.ksslReady.Size = new System.Drawing.Size(129, 17);
+            this.ksslReady.Text = "Krypton status strip text";
+            // 
+            // klblReadout
+            // 
+            this.klblReadout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                | System.Windows.Forms.AnchorStyles.Right)));
+            this.klblReadout.Location = new System.Drawing.Point(12, 12);
+            this.klblReadout.Name = "klblReadout";
+            this.klblReadout.Size = new System.Drawing.Size(776, 60);
+            this.klblReadout.StateCommon.ShortText.MultiLine = Krypton.Toolkit.InheritBool.True;
+            this.klblReadout.TabIndex = 0;
+            this.klblReadout.Values.Text = "Issue #1100: independent MenuStripText, ToolStripText, StatusStripText, and MenuItemText.";
+            // 
+            // klblTheme
+            // 
+            this.klblTheme.Location = new System.Drawing.Point(12, 80);
+            this.klblTheme.Name = "klblTheme";
+            this.klblTheme.Size = new System.Drawing.Size(50, 20);
+            this.klblTheme.TabIndex = 1;
+            this.klblTheme.Values.Text = "Theme";
+            // 
+            // kryptonThemeComboBox1
+            // 
+            this.kryptonThemeComboBox1.Location = new System.Drawing.Point(68, 76);
+            this.kryptonThemeComboBox1.Name = "kryptonThemeComboBox1";
+            this.kryptonThemeComboBox1.Size = new System.Drawing.Size(280, 21);
+            this.kryptonThemeComboBox1.TabIndex = 2;
+            // 
+            // klblMenuSlot
+            // 
+            this.klblMenuSlot.Location = new System.Drawing.Point(12, 116);
+            this.klblMenuSlot.Name = "klblMenuSlot";
+            this.klblMenuSlot.Size = new System.Drawing.Size(110, 20);
+            this.klblMenuSlot.TabIndex = 3;
+            this.klblMenuSlot.Values.Text = "MenuStripText";
+            // 
+            // kcbtnMenuStrip
+            // 
+            this.kcbtnMenuStrip.Location = new System.Drawing.Point(128, 112);
+            this.kcbtnMenuStrip.Name = "kcbtnMenuStrip";
+            this.kcbtnMenuStrip.SelectedColor = System.Drawing.Color.Empty;
+            this.kcbtnMenuStrip.Size = new System.Drawing.Size(220, 28);
+            this.kcbtnMenuStrip.TabIndex = 4;
+            this.kcbtnMenuStrip.Values.Text = "Menu strip";
+            // 
+            // klblToolSlot
+            // 
+            this.klblToolSlot.Location = new System.Drawing.Point(368, 116);
+            this.klblToolSlot.Name = "klblToolSlot";
+            this.klblToolSlot.Size = new System.Drawing.Size(100, 20);
+            this.klblToolSlot.TabIndex = 5;
+            this.klblToolSlot.Values.Text = "ToolStripText";
+            // 
+            // kcbtnToolStrip
+            // 
+            this.kcbtnToolStrip.Location = new System.Drawing.Point(474, 112);
+            this.kcbtnToolStrip.Name = "kcbtnToolStrip";
+            this.kcbtnToolStrip.SelectedColor = System.Drawing.Color.Empty;
+            this.kcbtnToolStrip.Size = new System.Drawing.Size(220, 28);
+            this.kcbtnToolStrip.TabIndex = 6;
+            this.kcbtnToolStrip.Values.Text = "Tool strip";
+            // 
+            // klblStatusSlot
+            // 
+            this.klblStatusSlot.Location = new System.Drawing.Point(12, 156);
+            this.klblStatusSlot.Name = "klblStatusSlot";
+            this.klblStatusSlot.Size = new System.Drawing.Size(110, 20);
+            this.klblStatusSlot.TabIndex = 7;
+            this.klblStatusSlot.Values.Text = "StatusStripText";
+            // 
+            // kcbtnStatusStrip
+            // 
+            this.kcbtnStatusStrip.Location = new System.Drawing.Point(128, 152);
+            this.kcbtnStatusStrip.Name = "kcbtnStatusStrip";
+            this.kcbtnStatusStrip.SelectedColor = System.Drawing.Color.Empty;
+            this.kcbtnStatusStrip.Size = new System.Drawing.Size(220, 28);
+            this.kcbtnStatusStrip.TabIndex = 8;
+            this.kcbtnStatusStrip.Values.Text = "Status strip";
+            // 
+            // klblMenuItemSlot
+            // 
+            this.klblMenuItemSlot.Location = new System.Drawing.Point(368, 156);
+            this.klblMenuItemSlot.Name = "klblMenuItemSlot";
+            this.klblMenuItemSlot.Size = new System.Drawing.Size(100, 20);
+            this.klblMenuItemSlot.TabIndex = 9;
+            this.klblMenuItemSlot.Values.Text = "MenuItemText";
+            // 
+            // kcbtnMenuItem
+            // 
+            this.kcbtnMenuItem.Location = new System.Drawing.Point(474, 152);
+            this.kcbtnMenuItem.Name = "kcbtnMenuItem";
+            this.kcbtnMenuItem.SelectedColor = System.Drawing.Color.Empty;
+            this.kcbtnMenuItem.Size = new System.Drawing.Size(220, 28);
+            this.kcbtnMenuItem.TabIndex = 10;
+            this.kcbtnMenuItem.Values.Text = "Menu / context items";
+            // 
+            // kbtnContrast
+            // 
+            this.kbtnContrast.Location = new System.Drawing.Point(12, 196);
+            this.kbtnContrast.Name = "kbtnContrast";
+            this.kbtnContrast.Size = new System.Drawing.Size(130, 28);
+            this.kbtnContrast.TabIndex = 11;
+            this.kbtnContrast.Values.Text = "Contrast demo";
+            // 
+            // kbtnReset
+            // 
+            this.kbtnReset.Location = new System.Drawing.Point(148, 196);
+            this.kbtnReset.Name = "kbtnReset";
+            this.kbtnReset.Size = new System.Drawing.Size(90, 28);
+            this.kbtnReset.TabIndex = 12;
+            this.kbtnReset.Values.Text = "Reset all";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.kryptonToolStripContainer1);
+            this.Controls.Add(this.kryptonStatusStrip1);
             this.Controls.Add(this.kryptonMenuStrip1);
             this.MainMenuStrip = this.kryptonMenuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Krypton MenuStrip + ToolStrip";
             this.kryptonMenuStrip1.ResumeLayout(false);
             this.kryptonMenuStrip1.PerformLayout();
+            this.kryptonToolStripContainer1.ContentPanel.ResumeLayout(false);
+            this.kryptonToolStripContainer1.ContentPanel.PerformLayout();
             this.kryptonToolStripContainer1.TopToolStripPanel.ResumeLayout(false);
             this.kryptonToolStripContainer1.TopToolStripPanel.PerformLayout();
             this.kryptonToolStripContainer1.ResumeLayout(false);
             this.kryptonToolStripContainer1.PerformLayout();
             this.kryptonToolStrip1.ResumeLayout(false);
             this.kryptonToolStrip1.PerformLayout();
+            this.kryptonStatusStrip1.ResumeLayout(false);
+            this.kryptonStatusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonThemeComboBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -499,4 +662,19 @@ partial class Form1
     private System.Windows.Forms.ToolStripButton pasteToolStripButton;
     private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
     private System.Windows.Forms.ToolStripButton helpToolStripButton;
+    private Krypton.Toolkit.KryptonStatusStrip kryptonStatusStrip1;
+    private System.Windows.Forms.ToolStripStatusLabel ksslReady;
+    private Krypton.Toolkit.KryptonLabel klblReadout;
+    private Krypton.Toolkit.KryptonLabel klblTheme;
+    private Krypton.Toolkit.KryptonThemeComboBox kryptonThemeComboBox1;
+    private Krypton.Toolkit.KryptonLabel klblMenuSlot;
+    private Krypton.Toolkit.KryptonColorButton kcbtnMenuStrip;
+    private Krypton.Toolkit.KryptonLabel klblToolSlot;
+    private Krypton.Toolkit.KryptonColorButton kcbtnToolStrip;
+    private Krypton.Toolkit.KryptonLabel klblStatusSlot;
+    private Krypton.Toolkit.KryptonColorButton kcbtnStatusStrip;
+    private Krypton.Toolkit.KryptonLabel klblMenuItemSlot;
+    private Krypton.Toolkit.KryptonColorButton kcbtnMenuItem;
+    private Krypton.Toolkit.KryptonButton kbtnContrast;
+    private Krypton.Toolkit.KryptonButton kbtnReset;
 }
