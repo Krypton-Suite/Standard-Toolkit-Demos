@@ -62,6 +62,7 @@
 	* [KryptonPropertyGrid](#kryptonpropertygrid)
 	* [KryptonRadioButton](#kryptonradiobutton)
 	* [KryptonRating](#kryptonrating)
+	* [KryptonTagInput](#kryptontaginput)
 	* [KryptonRichTextBox](#kryptonrichtextbox)
 	* [KryptonSaveFileDialog](#kryptonsavefiledialog)
 	* [KryptonScrollBar](#kryptonscrollbar)
@@ -233,6 +234,8 @@ Author and maintain custom palette files. File menu: New, Open, Save, Save As, C
 ![KryptonRadioButton Examples](KryptonRadioButton%20Examples/example.png)
 ## KryptonRating
 Interactive star, heart, circle, or image ratings with Full, Half, and Exact precision, hover preview, keyboard input, and theme colours.
+## KryptonTagInput
+Issue [#3927](https://github.com/Krypton-Suite/Standard-Toolkit/issues/3927): wrap-capable tag editor with themed chips, Enter/comma commit, Backspace-to-remove, suggestions, and optional category colours.
 ## KryptonRichTextBox
 ![KryptonRichTextBox Examples](KryptonRichTextBox%20Examples/example.png)
 ## KryptonSaveFileDialog

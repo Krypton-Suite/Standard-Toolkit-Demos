@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
 VisualStudioVersion = 18.0.11222.15 d18.0
@@ -97,6 +97,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonGroupBox Examples 20
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonRating Examples 2022", "KryptonRating Examples\KryptonRating Examples 2022.csproj", "{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krypton Tag Input Example", "Krypton Tag Input Example\Krypton Tag Input Example.csproj", "{A3F7C219-8E4B-4D61-9C52-7B1E6F0A3927}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonTrackBar Examples 2022", "KryptonTrackBar Examples\KryptonTrackBar Examples 2022.csproj", "{F2376A8F-C8B2-494F-8097-E2E208CB48FF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptonMessageBox Examples 2022", "KryptonMessageBox Examples\KryptonMessageBox Examples 2022.csproj", "{FA2D1000-8067-4DE7-85FA-6666A446FE40}"
@@ -168,6 +170,16 @@ Global
 		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Nightly|Any CPU.Build.0 = Release|Any CPU
 		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8E4A71B-9F2D-4A53-B6C1-0D8E5F4A3928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3F7C219-8E4B-4D61-9C52-7B1E6F0A3927}.Canary|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F7C219-8E4B-4D61-9C52-7B1E6F0A3927}.Canary|Any CPU.Build.0 = Release|Any CPU
+		{A3F7C219-8E4B-4D61-9C52-7B1E6F0A3927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F7C219-8E4B-4D61-9C52-7B1E6F0A3927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F7C219-8E4B-4D61-9C52-7B1E6F0A3927}.Installer|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F7C219-8E4B-4D61-9C52-7B1E6F0A3927}.Installer|Any CPU.Build.0 = Debug|Any CPU
+		{A3F7C219-8E4B-4D61-9C52-7B1E6F0A3927}.Nightly|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F7C219-8E4B-4D61-9C52-7B1E6F0A3927}.Nightly|Any CPU.Build.0 = Release|Any CPU
+		{A3F7C219-8E4B-4D61-9C52-7B1E6F0A3927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F7C219-8E4B-4D61-9C52-7B1E6F0A3927}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B50563E6-3123-49FC-816D-F873A0BCB789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B50563E6-3123-49FC-816D-F873A0BCB789}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B50563E6-3123-49FC-816D-F873A0BCB789}.Release|Any CPU.ActiveCfg = Release|Any CPU

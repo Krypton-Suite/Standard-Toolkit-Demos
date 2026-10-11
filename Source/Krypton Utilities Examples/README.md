@@ -1,6 +1,7 @@
 * [Utilities Examples](#utilities-examples)
   * [Krypton Bug Reporting Dialog Example](#krypton-bug-reporting-dialog-example)
   * [Krypton Exception Dialog Example](#krypton-exception-dialog-example)
+  * [Krypton Loading Circle Example](#krypton-loading-circle-example)
   * [Krypton Search Box Example](#krypton-search-box-example)
   * [Krypton Tag Input Example](#krypton-tag-input-example)
   * [Krypton WebView2 Example](#krypton-webview2-example)
@@ -19,6 +20,9 @@ There are 2 set of solutions in these projects:
 
 # Krypton Exception Dialog Example
 ![Krypton Exception Dialog Example](KryptonExceptionDialog%20Example/KryptonExceptionDialogExample.png)
+
+# Krypton Loading Circle Example
+Animated `KryptonLoadingCircle` spinner: palette-resolved spokes when `Color` is Empty, theme switching, Active/Enabled, style presets, and explicit colour override.
 
 # Krypton Search Box Example
 ![Krypton Search Box Example](KryptonSearchBox%20Example/KryptonSearchBoxExample.png)
