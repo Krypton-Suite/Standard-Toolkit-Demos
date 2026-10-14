@@ -24,6 +24,11 @@
     <BuildType Solution="Installer|*" Project="Release" />
     <BuildType Solution="Nightly|*" Project="Release" />
   </Project>
+  <Project Path="Compact Ribbon/Compact Ribbon.csproj" Id="a0256761-54b7-4daa-81d4-34c53412de2c">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
   <Project Path="Contextual Tabs/Contextual Tabs 2022.csproj">
     <BuildType Solution="Canary|*" Project="Release" />
     <BuildType Solution="Installer|*" Project="Release" />
