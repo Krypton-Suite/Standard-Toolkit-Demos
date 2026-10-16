@@ -74,6 +74,39 @@ public partial class Form1 : KryptonForm
             kryptonCheckSetPalettes.CheckedIndex = 1;
         }
 
+        // A real text box in the caption. KryptonSearchBox assigns to the same property.
+        KryptonTextBox captionTextBox = new KryptonTextBox
+        {
+            Width = 180
+        };
+        captionTextBox.CueHint.CueHintText = "Caption";
+        CaptionTextBoxEdge = FormCaptionTextBoxEdge.Right;
+        CaptionTextBox = captionTextBox;
+        KryptonButton captionButton = new KryptonButton
+        {
+            Text = "Caption",
+            AutoSize = true
+        };
+        AddCaptionControl(captionButton, FormCaptionTextBoxEdge.Left);
+        var swap = new System.Windows.Forms.ToolStripButton("Button edge: Left");
+        swap.Click += (_, __) =>
+        {
+            FormCaptionTextBoxEdge next = FormCaptionTextBoxEdge.Left;
+            if (TryGetCaptionControlEdge(captionButton, out FormCaptionTextBoxEdge current))
+            {
+                next = current == FormCaptionTextBoxEdge.Left
+                    ? FormCaptionTextBoxEdge.Center
+                    : current == FormCaptionTextBoxEdge.Center
+                        ? FormCaptionTextBoxEdge.Right
+                        : FormCaptionTextBoxEdge.Left;
+            }
+
+            SetCaptionControlEdge(captionButton, next);
+            swap.Text = "Button edge: " + next;
+        };
+        toolStrip1.Items.Add(swap);
+        toolStripStatusLabel1.Text = "Text box is on the right. The button has its own edge. The toolbar cycles that edge.";
+
         // Setup the property grid to edit this form
         propertyGrid.SelectedObject = new KryptonFormProxy(this);
     }
@@ -112,6 +145,15 @@ public class KryptonFormProxy
     {
         get => _form.Icon;
         set => _form.Icon = value;
+    }
+
+    [Category("Visuals")]
+    [Description("Edge of the caption used by the caption text box.")]
+    [DefaultValue(FormCaptionTextBoxEdge.Right)]
+    public FormCaptionTextBoxEdge CaptionTextBoxEdge
+    {
+        get => _form.CaptionTextBoxEdge;
+        set => _form.CaptionTextBoxEdge = value;
     }
 
     [Category("Visuals")]

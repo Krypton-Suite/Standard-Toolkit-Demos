@@ -171,6 +171,8 @@ There are 2 set of solutions in these projects:
 ![KryptonFontDialog Example](KryptonFontDialog%20Example/example.png)
 ## KryptonForm
 ![KryptonForm Examples](KryptonForm%20Examples/example.gif)
+
+The caption hosts several controls at once. `CaptionTextBox` is on the right. A button is added with `AddCaptionControl` on the left and keeps its own edge. The toolbar cycles that button through left, centre, and right. `KryptonSearchBox` assigns to `CaptionTextBox`.
 ## KryptonFormFading
 ![KryptonFormFading Example](KryptonFormFading%20Example/Example.gif)
 ## KryptonGroup
