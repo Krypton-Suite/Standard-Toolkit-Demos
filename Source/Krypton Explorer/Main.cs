@@ -623,4 +623,6 @@ public partial class Main : KryptonForm
     private void linkKryptonToggleSwitch_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Toggle Switch Examples");
 
     private void linkKryptonRating_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Rating Examples");
+
+    private void linkKryptonTagInput_LinkClicked(object sender, EventArgs e) => LaunchApplication(@"Krypton Tag Input Example");
 }

@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
 		<RootNamespace>KryptonTagInputExample</RootNamespace>
-		<AssemblyName>Krypton Tag Input Example</AssemblyName>
+		<AssemblyName>Krypton Tag Input Control Example</AssemblyName>
 		<ApplicationIcon>Krypton.ico</ApplicationIcon>
 		<UseApplicationTrust>false</UseApplicationTrust>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>

@@ -12,7 +12,6 @@ using System.Drawing;
 using System.Windows.Forms;
 
 using Krypton.Toolkit;
-using Krypton.Toolkit.Utilities;
 
 namespace KryptonTagInputExample;
 
@@ -42,11 +41,11 @@ public partial class Form1 : KryptonForm
         RefreshSummary();
     }
 
-    private void ktiTags_TagAdded(object? sender, KryptonTagEventArgs e) => RefreshSummary();
+    private void ktiTags_TagAdded(object? sender, Krypton.Toolkit.Utilities.KryptonTagEventArgs e) => RefreshSummary();
 
-    private void ktiTags_TagRemoved(object? sender, KryptonTagEventArgs e) => RefreshSummary();
+    private void ktiTags_TagRemoved(object? sender, Krypton.Toolkit.Utilities.KryptonTagEventArgs e) => RefreshSummary();
 
-    private void ktiTags_TagAdding(object? sender, KryptonTagCancelEventArgs e)
+    private void ktiTags_TagAdding(object? sender, Krypton.Toolkit.Utilities.KryptonTagCancelEventArgs e)
     {
         if (string.Equals(e.Tag, "reject", StringComparison.OrdinalIgnoreCase))
         {

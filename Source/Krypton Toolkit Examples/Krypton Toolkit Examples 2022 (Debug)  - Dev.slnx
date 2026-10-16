@@ -440,6 +440,11 @@
     <BuildType Solution="Installer|*" Project="Debug" />
     <BuildType Solution="Nightly|*" Project="Release" />
   </Project>
+  <Project Path="Krypton Tag Input Example/Krypton Tag Input Example.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
   <Project Path="KryptonTrackBar Examples/KryptonTrackBar Examples 2022.csproj">
     <BuildType Solution="Canary|*" Project="Release" />
     <BuildType Solution="Installer|*" Project="Release" />
