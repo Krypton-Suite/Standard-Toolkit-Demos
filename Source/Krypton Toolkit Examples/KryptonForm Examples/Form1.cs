@@ -19,7 +19,7 @@ using Krypton.Toolkit;
 
 namespace KryptonFormExamples;
 
-public partial class Form1 : KryptonForm
+public partial class Form1 : KryptonCaptionForm
 {
     public Form1()
     {
@@ -74,6 +74,53 @@ public partial class Form1 : KryptonForm
             kryptonCheckSetPalettes.CheckedIndex = 1;
         }
 
+        // CaptionTextBox for a single editor. Prefer KryptonFormCaptionItems for several controls.
+        KryptonTextBox captionTextBox = new KryptonTextBox
+        {
+            Width = 180
+        };
+        captionTextBox.CueHint.CueHintText = "Caption";
+        KryptonButton captionButton = new KryptonButton
+        {
+            Text = "Caption",
+            AutoSize = true
+        };
+        KryptonFormCaptionItems captionItems = new KryptonFormCaptionItems
+        {
+            OwnerForm = this
+        };
+        captionItems.Items.Add(new KryptonFormCaptionItem(captionButton, FormCaptionTextBoxEdge.Left));
+        captionItems.Items.Add(new KryptonFormCaptionItem(captionTextBox, FormCaptionTextBoxEdge.Right));
+        captionItems.Apply();
+        var swap = new System.Windows.Forms.ToolStripButton("Button edge: Left");
+        swap.Click += (_, __) =>
+        {
+            KryptonFormCaptionItem? buttonItem = null;
+            foreach (KryptonFormCaptionItem item in captionItems.Items)
+            {
+                if (ReferenceEquals(item.Control, captionButton))
+                {
+                    buttonItem = item;
+                    break;
+                }
+            }
+
+            if (buttonItem == null)
+            {
+                return;
+            }
+
+            FormCaptionTextBoxEdge next = buttonItem.Edge == FormCaptionTextBoxEdge.Left
+                ? FormCaptionTextBoxEdge.Center
+                : buttonItem.Edge == FormCaptionTextBoxEdge.Center
+                    ? FormCaptionTextBoxEdge.Right
+                    : FormCaptionTextBoxEdge.Left;
+            buttonItem.Edge = next;
+            swap.Text = "Button edge: " + next;
+        };
+        toolStrip1.Items.Add(swap);
+        toolStripStatusLabel1.Text = "KryptonFormCaptionItems hosts the button on the left and the text box on the right. The toolbar cycles the button edge.";
+
         // Setup the property grid to edit this form
         propertyGrid.SelectedObject = new KryptonFormProxy(this);
     }
@@ -83,9 +130,9 @@ public partial class Form1 : KryptonForm
 
 public class KryptonFormProxy
 {
-    private KryptonForm _form;
+    private KryptonCaptionForm _form;
 
-    public KryptonFormProxy(KryptonForm form) => _form = form;
+    public KryptonFormProxy(KryptonCaptionForm form) => _form = form;
 
     [Category("Appearance")]
     [Description("The text associated with the control.")]
@@ -112,6 +159,15 @@ public class KryptonFormProxy
     {
         get => _form.Icon;
         set => _form.Icon = value;
+    }
+
+    [Category("Visuals")]
+    [Description("Edge of the caption used by the caption text box.")]
+    [DefaultValue(FormCaptionTextBoxEdge.Right)]
+    public FormCaptionTextBoxEdge CaptionTextBoxEdge
+    {
+        get => _form.CaptionTextBoxEdge;
+        set => _form.CaptionTextBoxEdge = value;
     }
 
     [Category("Visuals")]
