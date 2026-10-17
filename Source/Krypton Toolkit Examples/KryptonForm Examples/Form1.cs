@@ -19,7 +19,7 @@ using Krypton.Toolkit;
 
 namespace KryptonFormExamples;
 
-public partial class Form1 : KryptonForm
+public partial class Form1 : KryptonCaptionForm
 {
     public Form1()
     {
@@ -130,9 +130,9 @@ public partial class Form1 : KryptonForm
 
 public class KryptonFormProxy
 {
-    private KryptonForm _form;
+    private KryptonCaptionForm _form;
 
-    public KryptonFormProxy(KryptonForm form) => _form = form;
+    public KryptonFormProxy(KryptonCaptionForm form) => _form = form;
 
     [Category("Appearance")]
     [Description("The text associated with the control.")]
