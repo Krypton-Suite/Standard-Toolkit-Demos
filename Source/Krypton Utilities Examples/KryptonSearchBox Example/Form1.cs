@@ -24,6 +24,8 @@ public partial class Form1 : KryptonForm
     private readonly List<string> _allItems = new List<string>();
     private DataTable? _dataTable;
     private readonly List<object> _richSuggestions = new List<object>();
+    private KryptonSearchBox? _ksbPerformance;
+    private KryptonLabel? _klblPerformance;
 
     public Form1()
     {
@@ -33,6 +35,7 @@ public partial class Form1 : KryptonForm
         InitializeListBox();
         InitializeDataGridView();
         InitializeSearchBoxes();
+        InitializePerformanceSearchBox();
     }
 
     private void InitializeDataGridView()
@@ -200,6 +203,58 @@ public partial class Form1 : KryptonForm
 
         ksbCustomFiltering.SetSearchSuggestions(_allItems);
         ksbCustomFiltering.SuggestionSelected += KsbCustomFiltering_SuggestionSelected;
+    }
+
+    /// <summary>
+    /// Issue #4580: large suggestion set to exercise typing / dropdown / selection performance.
+    /// </summary>
+    private void InitializePerformanceSearchBox()
+    {
+        const int count = 5000;
+        var largeSuggestions = new List<string>(count);
+        for (var i = 0; i < count; i++)
+        {
+            largeSuggestions.Add($"Item {i:D4} — performance suggestion");
+        }
+
+        _klblPerformance = new KryptonLabel
+        {
+            Location = new Point(30, 350),
+            Size = new Size(300, 20),
+            Name = "klblPerformance"
+        };
+        _klblPerformance.Values.Text = "Performance (#4580): 5,000 suggestions";
+
+        _ksbPerformance = new KryptonSearchBox
+        {
+            Location = new Point(30, 372),
+            Size = new Size(300, 23),
+            Name = "ksbPerformance"
+        };
+        _ksbPerformance.SearchBoxValues.PlaceholderText = @"Type to filter 5,000 items…";
+        _ksbPerformance.SearchBoxValues.EnableSuggestions = true;
+        _ksbPerformance.SearchBoxValues.SuggestionMaxCount = 10;
+        _ksbPerformance.SearchBoxValues.MinimumSearchLength = 1;
+        _ksbPerformance.SearchBoxValues.SuggestionUpdateDelay = 75;
+        _ksbPerformance.SearchBoxValues.SuggestionDisplayType = SearchSuggestionDisplayType.ListBox;
+        _ksbPerformance.SetSearchSuggestions(largeSuggestions);
+        _ksbPerformance.SuggestionSelected += (s, e) =>
+        {
+            if (_klblPerformance != null)
+            {
+                _klblPerformance.Values.Text = $"Selected: {e.Suggestion}";
+            }
+        };
+
+        // Make room below the existing sample boxes
+        ClientSize = new Size(ClientSize.Width, Math.Max(ClientSize.Height, 460));
+        kbtnTriggerSearch.Top = 420;
+        kryptonButton2.Top = 420;
+
+        kryptonPanel1.Controls.Add(_klblPerformance);
+        kryptonPanel1.Controls.Add(_ksbPerformance);
+        _klblPerformance.BringToFront();
+        _ksbPerformance.BringToFront();
     }
 
     private void InitializeRichSuggestions()
