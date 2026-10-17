@@ -172,7 +172,7 @@ There are 2 set of solutions in these projects:
 ## KryptonForm
 ![KryptonForm Examples](KryptonForm%20Examples/example.gif)
 
-The caption hosts several controls at once. `CaptionTextBox` is on the right. A button is added with `AddCaptionControl` on the left and keeps its own edge. The toolbar cycles that button through left, centre, and right. `KryptonSearchBox` assigns to `CaptionTextBox`.
+A `KryptonFormCaptionItems` component hosts a button on the left and a text box on the right. Each item has its own edge. The toolbar cycles the button through left, centre, and right. For a single text box only, assign `KryptonForm.CaptionTextBox` instead.
 ## KryptonFormFading
 ![KryptonFormFading Example](KryptonFormFading%20Example/Example.gif)
 ## KryptonGroup

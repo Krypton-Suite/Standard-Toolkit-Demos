@@ -74,38 +74,52 @@ public partial class Form1 : KryptonForm
             kryptonCheckSetPalettes.CheckedIndex = 1;
         }
 
-        // A real text box in the caption. KryptonSearchBox assigns to the same property.
+        // CaptionTextBox for a single editor. Prefer KryptonFormCaptionItems for several controls.
         KryptonTextBox captionTextBox = new KryptonTextBox
         {
             Width = 180
         };
         captionTextBox.CueHint.CueHintText = "Caption";
-        CaptionTextBoxEdge = FormCaptionTextBoxEdge.Right;
-        CaptionTextBox = captionTextBox;
         KryptonButton captionButton = new KryptonButton
         {
             Text = "Caption",
             AutoSize = true
         };
-        AddCaptionControl(captionButton, FormCaptionTextBoxEdge.Left);
+        KryptonFormCaptionItems captionItems = new KryptonFormCaptionItems
+        {
+            OwnerForm = this
+        };
+        captionItems.Items.Add(new KryptonFormCaptionItem(captionButton, FormCaptionTextBoxEdge.Left));
+        captionItems.Items.Add(new KryptonFormCaptionItem(captionTextBox, FormCaptionTextBoxEdge.Right));
+        captionItems.Apply();
         var swap = new System.Windows.Forms.ToolStripButton("Button edge: Left");
         swap.Click += (_, __) =>
         {
-            FormCaptionTextBoxEdge next = FormCaptionTextBoxEdge.Left;
-            if (TryGetCaptionControlEdge(captionButton, out FormCaptionTextBoxEdge current))
+            KryptonFormCaptionItem? buttonItem = null;
+            foreach (KryptonFormCaptionItem item in captionItems.Items)
             {
-                next = current == FormCaptionTextBoxEdge.Left
-                    ? FormCaptionTextBoxEdge.Center
-                    : current == FormCaptionTextBoxEdge.Center
-                        ? FormCaptionTextBoxEdge.Right
-                        : FormCaptionTextBoxEdge.Left;
+                if (ReferenceEquals(item.Control, captionButton))
+                {
+                    buttonItem = item;
+                    break;
+                }
             }
 
-            SetCaptionControlEdge(captionButton, next);
+            if (buttonItem == null)
+            {
+                return;
+            }
+
+            FormCaptionTextBoxEdge next = buttonItem.Edge == FormCaptionTextBoxEdge.Left
+                ? FormCaptionTextBoxEdge.Center
+                : buttonItem.Edge == FormCaptionTextBoxEdge.Center
+                    ? FormCaptionTextBoxEdge.Right
+                    : FormCaptionTextBoxEdge.Left;
+            buttonItem.Edge = next;
             swap.Text = "Button edge: " + next;
         };
         toolStrip1.Items.Add(swap);
-        toolStripStatusLabel1.Text = "Text box is on the right. The button has its own edge. The toolbar cycles that edge.";
+        toolStripStatusLabel1.Text = "KryptonFormCaptionItems hosts the button on the left and the text box on the right. The toolbar cycles the button edge.";
 
         // Setup the property grid to edit this form
         propertyGrid.SelectedObject = new KryptonFormProxy(this);
