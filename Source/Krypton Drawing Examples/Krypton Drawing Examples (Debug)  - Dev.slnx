@@ -1,0 +1,23 @@
+﻿<Solution>
+  <Configurations>
+    <BuildType Name="Canary" />
+    <BuildType Name="Debug" />
+    <BuildType Name="Installer" />
+    <BuildType Name="Nightly" />
+    <BuildType Name="Release" />
+  </Configurations>
+  <Folder Name="/Linked Projects/">
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Interop/Krypton.Interop.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Resources/Krypton.Resources.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Toolkit/Krypton.Toolkit 2022.csproj" />
+    <Project Path="../../../Standard-Toolkit/Source/Krypton Components/Krypton.Drawing/Krypton.Drawing.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="KryptonSVGPictureBox Example/KryptonSVGPictureBox Example.csproj">
+    <BuildType Solution="Canary|*" Project="Release" />
+    <BuildType Solution="Installer|*" Project="Debug" />
+    <BuildType Solution="Nightly|*" Project="Release" />
+  </Project>
+</Solution>
