@@ -192,6 +192,7 @@ partial class Main
         this.tspbDownloadStatus = new System.Windows.Forms.ToolStripProgressBar();
         this.tslVersion = new System.Windows.Forms.ToolStripStatusLabel();
         this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+        this.linkKryptonAnalogueGauge = new Krypton.Toolkit.KryptonLinkLabel();
         this.linkKryptonToggleSwitch = new Krypton.Toolkit.KryptonLinkLabel();
         this.linkKryptonRating = new Krypton.Toolkit.KryptonLinkLabel();
         this.linkKryptonTagInput = new Krypton.Toolkit.KryptonLinkLabel();
@@ -448,6 +449,7 @@ partial class Main
         this.kryptonPage1.AutoHiddenSlideSize = new System.Drawing.Size(150, 150);
         this.kryptonPage1.Controls.Add(this.linkKryptonTagInput);
         this.kryptonPage1.Controls.Add(this.linkKryptonRating);
+        this.kryptonPage1.Controls.Add(this.linkKryptonAnalogueGauge);
         this.kryptonPage1.Controls.Add(this.linkKryptonToggleSwitch);
         this.kryptonPage1.Controls.Add(this.linkKryptonCommandLinkButton);
         this.kryptonPage1.Controls.Add(this.klblKryptonAboutToolkit);
@@ -2310,6 +2312,18 @@ partial class Main
         this.toolStripStatusLabel1.Size = new System.Drawing.Size(10, 17);
         this.toolStripStatusLabel1.Text = ".";
         // 
+        // linkKryptonAnalogueGauge
+        // 
+        this.linkKryptonAnalogueGauge.Location = new System.Drawing.Point(802, 89);
+        this.linkKryptonAnalogueGauge.Margin = new System.Windows.Forms.Padding(2);
+        this.linkKryptonAnalogueGauge.Name = "linkKryptonAnalogueGauge";
+        this.linkKryptonAnalogueGauge.Size = new System.Drawing.Size(168, 20);
+        this.linkKryptonAnalogueGauge.TabIndex = 57;
+        this.linkKryptonAnalogueGauge.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonLinkLabel1.Values.Image")));
+        this.linkKryptonAnalogueGauge.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
+        this.linkKryptonAnalogueGauge.Values.Text = "KryptonAnalogueGauge";
+        this.linkKryptonAnalogueGauge.LinkClicked += new System.EventHandler(this.linkKryptonAnalogueGauge_LinkClicked);
+        // 
         // linkKryptonToggleSwitch
         // 
         this.linkKryptonToggleSwitch.Location = new System.Drawing.Point(802, 113);
@@ -2573,6 +2587,7 @@ partial class Main
     private System.Windows.Forms.ToolStripProgressBar tspbDownloadStatus;
     private System.Windows.Forms.ToolStripStatusLabel tslVersion;
     private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+    private Krypton.Toolkit.KryptonLinkLabel linkKryptonAnalogueGauge;
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonToggleSwitch;
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonRating;
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonTagInput;

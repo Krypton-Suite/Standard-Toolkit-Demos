@@ -18,6 +18,7 @@
 	* [KryptonButton Examples](#kryptonbutton-examples)
 	* [Krypton UAC Button](#krypton-uac-button)
 	* [KryptonAboutToolkit Example](#krypton-about-toolkit-example)
+	* [KryptonAnalogueGauge](#kryptonanaloguegauge)
 	* [KryptonCheckBox Examples](#kryptoncheckbox-examples)
 	* [KryptonCheckButton Examples](#kryptoncheckbutton-examples)
 	* [KryptonCheckedListBox Examples](#kryptoncheckedlistbox-examples)
@@ -125,6 +126,9 @@ There are 2 set of solutions in these projects:
 ## Krypton Theme Selector
 - Automatically filled ComboBox with events to change the theme when selection changes:
 ![Krypton Theme Selector](Krypton%20Theme%20Selector/Example.png)
+
+## KryptonAnalogueGauge
+![KryptonAnalogueGauge Examples](KryptonAnalogueGauge%20Examples/example.png)
 
 ## KryptonBorderEdge Examples
 ![KryptonBorderEdge Examples](KryptonBorderEdge%20Examples/example.png)

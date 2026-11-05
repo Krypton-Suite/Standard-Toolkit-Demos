@@ -1,4 +1,4 @@
-<Solution>
+﻿<Solution>
   <Configurations>
     <BuildType Name="Debug" />
     <BuildType Name="Release" />
@@ -327,6 +327,7 @@
     <Project Path="../Krypton Toolkit Examples/KryptonToggleSwitch Examples/KryptonToggleSwitch Examples 2022.csproj">
       <BuildType Solution="ReleaseCS|*" Project="Release" />
     </Project>
+    <Project Path="../Krypton Toolkit Examples/KryptonAnalogueGauge Examples/KryptonAnalogueGauge Examples 2022.csproj" />
     <Project Path="../Krypton Toolkit Examples/KryptonTrackBar Examples/KryptonTrackBar Examples 2022.csproj">
       <BuildType Solution="ReleaseCS|*" Project="Release" />
     </Project>
