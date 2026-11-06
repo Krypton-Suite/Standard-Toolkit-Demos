@@ -193,6 +193,7 @@ partial class Main
         this.tslVersion = new System.Windows.Forms.ToolStripStatusLabel();
         this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
         this.linkKryptonAnalogueGauge = new Krypton.Toolkit.KryptonLinkLabel();
+        this.linkKryptonEqualizer = new Krypton.Toolkit.KryptonLinkLabel();
         this.linkKryptonToggleSwitch = new Krypton.Toolkit.KryptonLinkLabel();
         this.linkKryptonRating = new Krypton.Toolkit.KryptonLinkLabel();
         this.linkKryptonTagInput = new Krypton.Toolkit.KryptonLinkLabel();
@@ -450,6 +451,7 @@ partial class Main
         this.kryptonPage1.Controls.Add(this.linkKryptonTagInput);
         this.kryptonPage1.Controls.Add(this.linkKryptonRating);
         this.kryptonPage1.Controls.Add(this.linkKryptonAnalogueGauge);
+        this.kryptonPage1.Controls.Add(this.linkKryptonEqualizer);
         this.kryptonPage1.Controls.Add(this.linkKryptonToggleSwitch);
         this.kryptonPage1.Controls.Add(this.linkKryptonCommandLinkButton);
         this.kryptonPage1.Controls.Add(this.klblKryptonAboutToolkit);
@@ -2324,6 +2326,18 @@ partial class Main
         this.linkKryptonAnalogueGauge.Values.Text = "KryptonAnalogueGauge";
         this.linkKryptonAnalogueGauge.LinkClicked += new System.EventHandler(this.linkKryptonAnalogueGauge_LinkClicked);
         // 
+        // linkKryptonEqualizer
+        // 
+        this.linkKryptonEqualizer.Location = new System.Drawing.Point(802, 65);
+        this.linkKryptonEqualizer.Margin = new System.Windows.Forms.Padding(2);
+        this.linkKryptonEqualizer.Name = "linkKryptonEqualizer";
+        this.linkKryptonEqualizer.Size = new System.Drawing.Size(130, 20);
+        this.linkKryptonEqualizer.TabIndex = 59;
+        this.linkKryptonEqualizer.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonLinkLabel1.Values.Image")));
+        this.linkKryptonEqualizer.Values.ImageTransparentColor = System.Drawing.Color.Magenta;
+        this.linkKryptonEqualizer.Values.Text = "KryptonEqualizer";
+        this.linkKryptonEqualizer.LinkClicked += new System.EventHandler(this.linkKryptonEqualizer_LinkClicked);
+        // 
         // linkKryptonToggleSwitch
         // 
         this.linkKryptonToggleSwitch.Location = new System.Drawing.Point(802, 113);
@@ -2588,6 +2602,7 @@ partial class Main
     private System.Windows.Forms.ToolStripStatusLabel tslVersion;
     private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonAnalogueGauge;
+    private Krypton.Toolkit.KryptonLinkLabel linkKryptonEqualizer;
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonToggleSwitch;
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonRating;
     private Krypton.Toolkit.KryptonLinkLabel linkKryptonTagInput;

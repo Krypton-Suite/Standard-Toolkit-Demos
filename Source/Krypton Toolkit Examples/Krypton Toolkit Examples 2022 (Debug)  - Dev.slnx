@@ -426,6 +426,7 @@
     <BuildType Solution="Nightly|*" Project="Release" />
   </Project>
   <Project Path="KryptonAnalogueGauge Examples/KryptonAnalogueGauge Examples 2022.csproj" />
+  <Project Path="Krypton Equalizer Examples/Krypton Equalizer Examples 2022.csproj" />
   <Project Path="KryptonToolStripMenuItem Examples/KryptonToolStripMenuItem Examples 2022.csproj">
     <BuildType Solution="Canary|*" Project="Release" />
     <BuildType Solution="Installer|*" Project="Debug" />

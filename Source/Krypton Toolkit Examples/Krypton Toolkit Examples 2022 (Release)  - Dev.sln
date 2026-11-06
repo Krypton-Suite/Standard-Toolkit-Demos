@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
 VisualStudioVersion = 18.0.11222.15 d18.0
@@ -156,6 +156,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryptonMenuBar Examples", "KryptonMenuBar Examples\KryptonMenuBar Examples.csproj", "{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}"
 EndProject
 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krypton Equalizer Examples 2022", "Krypton Equalizer Examples\Krypton Equalizer Examples 2022.csproj", "{B7E4C2A1-4660-4F21-9A8B-0D1E2F3A4B5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -466,6 +468,16 @@ Global
 		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8D4E2A1-3B5F-4C7E-9D01-2A3B4C5D6E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E4C2A1-4660-4F21-9A8B-0D1E2F3A4B5C}.Canary|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E4C2A1-4660-4F21-9A8B-0D1E2F3A4B5C}.Canary|Any CPU.Build.0 = Release|Any CPU
+		{B7E4C2A1-4660-4F21-9A8B-0D1E2F3A4B5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E4C2A1-4660-4F21-9A8B-0D1E2F3A4B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E4C2A1-4660-4F21-9A8B-0D1E2F3A4B5C}.Installer|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E4C2A1-4660-4F21-9A8B-0D1E2F3A4B5C}.Installer|Any CPU.Build.0 = Debug|Any CPU
+		{B7E4C2A1-4660-4F21-9A8B-0D1E2F3A4B5C}.Nightly|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E4C2A1-4660-4F21-9A8B-0D1E2F3A4B5C}.Nightly|Any CPU.Build.0 = Release|Any CPU
+		{B7E4C2A1-4660-4F21-9A8B-0D1E2F3A4B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E4C2A1-4660-4F21-9A8B-0D1E2F3A4B5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

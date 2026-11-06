@@ -328,6 +328,7 @@
       <BuildType Solution="ReleaseCS|*" Project="Release" />
     </Project>
     <Project Path="../Krypton Toolkit Examples/KryptonAnalogueGauge Examples/KryptonAnalogueGauge Examples 2022.csproj" />
+    <Project Path="../Krypton Toolkit Examples/Krypton Equalizer Examples/Krypton Equalizer Examples 2022.csproj" />
     <Project Path="../Krypton Toolkit Examples/KryptonTrackBar Examples/KryptonTrackBar Examples 2022.csproj">
       <BuildType Solution="ReleaseCS|*" Project="Release" />
     </Project>

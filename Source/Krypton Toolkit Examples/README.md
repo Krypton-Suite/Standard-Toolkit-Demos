@@ -19,6 +19,7 @@
 	* [Krypton UAC Button](#krypton-uac-button)
 	* [KryptonAboutToolkit Example](#krypton-about-toolkit-example)
 	* [KryptonAnalogueGauge](#kryptonanaloguegauge)
+	* [KryptonEqualizer](#kryptonequalizer)
 	* [KryptonCheckBox Examples](#kryptoncheckbox-examples)
 	* [KryptonCheckButton Examples](#kryptoncheckbutton-examples)
 	* [KryptonCheckedListBox Examples](#kryptoncheckedlistbox-examples)
@@ -129,6 +130,10 @@ There are 2 set of solutions in these projects:
 
 ## KryptonAnalogueGauge
 ![KryptonAnalogueGauge Examples](KryptonAnalogueGauge%20Examples/example.png)
+
+## KryptonEqualizer
+![KryptonEqualizer Examples](Krypton%20Equalizer%20Examples/example-light.png)
+![KryptonEqualizer Examples dark](Krypton%20Equalizer%20Examples/example-dark.png)
 
 ## KryptonBorderEdge Examples
 ![KryptonBorderEdge Examples](KryptonBorderEdge%20Examples/example.png)

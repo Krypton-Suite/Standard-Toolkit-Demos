@@ -1,4 +1,4 @@
-<Solution>
+﻿<Solution>
   <Folder Name="/Solution Items/">
     <File Path="../../Documents/Help/Changelog.md" />
     <File Path=".editorconfig" />
@@ -89,4 +89,5 @@
   <Project Path="Test Text Clipping/Test Text Clipping 2022.csproj" />
   <Project Path="Three Pane Application (Basic)/Three Pane Application (Basic) 2022.csproj" />
   <Project Path="Three Pane Application (Extended)/Three Pane Application (Extended) 2022.csproj" />
+    <Project Path="Krypton Equalizer Examples/Krypton Equalizer Examples 2022.csproj" />
 </Solution>
