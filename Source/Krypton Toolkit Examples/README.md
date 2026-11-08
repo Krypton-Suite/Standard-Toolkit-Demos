@@ -180,6 +180,8 @@ There are 2 set of solutions in these projects:
 ![KryptonFontDialog Example](KryptonFontDialog%20Example/example.png)
 ## KryptonForm
 ![KryptonForm Examples](KryptonForm%20Examples/example.gif)
+
+Issue [#4685](https://github.com/Krypton-Suite/Standard-Toolkit/issues/4685): toggle **Use Krypton Colors On Form**. Client `BackColor` follows `KryptonManager.PanelStyle` / form `PanelStyle` (form inherits the manager default until overridden) or `SystemColors.Control` when off. Set **GlobalPanelStyle** / **PanelStyle** in the property grid. MDI client colour uses separate **GlobalMdiPanelStyle** / **MdiPanelStyle** (default `PanelAlternate`; `AppWorkspace` when the flag is off).
 ## KryptonFormFading
 ![KryptonFormFading Example](KryptonFormFading%20Example/Example.gif)
 ## KryptonGroup

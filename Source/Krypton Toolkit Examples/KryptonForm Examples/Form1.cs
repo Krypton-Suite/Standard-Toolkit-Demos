@@ -79,6 +79,15 @@ public partial class Form1 : KryptonForm
     }
 
     private void btnUseThemeWidths_Click(object sender, EventArgs e) => UseThemeFormChromeBorderWidth = btnUseThemeWidths.Checked;
+
+    private void btnUseKryptonColorsOnForm_Click(object sender, EventArgs e)
+    {
+        // Issue #4685: sync Form/internal-panel BackColor to PanelStyle (on) or SystemColors.Control (off).
+        KryptonManager.UseKryptonColorsOnForm = btnUseKryptonColorsOnForm.Checked;
+        toolStripStatusLabel1.Text = KryptonManager.UseKryptonColorsOnForm
+            ? $"UseKryptonColorsOnForm: {PanelStyle}"
+            : "UseKryptonColorsOnForm: SystemColors.Control";
+    }
 }
 
 public class KryptonFormProxy
@@ -121,6 +130,51 @@ public class KryptonFormProxy
     {
         get => _form.UseThemeFormChromeBorderWidth;
         set => _form.UseThemeFormChromeBorderWidth = value;
+    }
+
+    [Category("Visuals")]
+    [Description("When true, form client BackColor tracks PanelStyle; when false, SystemColors.Control (issue #4685).")]
+    [DefaultValue(true)]
+    public bool UseKryptonColorsOnForm
+    {
+        get => KryptonManager.UseKryptonColorsOnForm;
+        set => KryptonManager.UseKryptonColorsOnForm = value;
+    }
+
+    [Category("Visuals")]
+    [Description("Global default client panel style for KryptonForm instances (issue #4685).")]
+    [DefaultValue(PaletteBackStyle.PanelClient)]
+    public PaletteBackStyle GlobalPanelStyle
+    {
+        get => KryptonManager.PanelStyle;
+        set => KryptonManager.PanelStyle = value;
+    }
+
+    [Category("Visuals")]
+    [Description("Form client panel style. Inherits GlobalPanelStyle until set; Reset clears the override (issue #4685).")]
+    [DefaultValue(PaletteBackStyle.PanelClient)]
+    public PaletteBackStyle PanelStyle
+    {
+        get => _form.PanelStyle;
+        set => _form.PanelStyle = value;
+    }
+
+    [Category("Visuals")]
+    [Description("Global default MDI client panel style for KryptonForm instances (issue #4685).")]
+    [DefaultValue(PaletteBackStyle.PanelAlternate)]
+    public PaletteBackStyle GlobalMdiPanelStyle
+    {
+        get => KryptonManager.MdiPanelStyle;
+        set => KryptonManager.MdiPanelStyle = value;
+    }
+
+    [Category("Visuals")]
+    [Description("Form MDI client panel style. Inherits GlobalMdiPanelStyle until set; Reset clears the override (issue #4685).")]
+    [DefaultValue(PaletteBackStyle.PanelAlternate)]
+    public PaletteBackStyle MdiPanelStyle
+    {
+        get => _form.MdiPanelStyle;
+        set => _form.MdiPanelStyle = value;
     }
 
     [Category("Visuals")]
