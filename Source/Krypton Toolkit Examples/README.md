@@ -238,7 +238,9 @@ Author and maintain custom palette files. File menu: New, Open, Save, Save As, C
 ## KryptonPrintDialog
 ![KryptonPrintDialog Example](KryptonPrintDialog%20Example/example.png)
 ## KryptonProgressBar
-![KryptonProgressBar Examples](KryptonProgressBar%20Examples/example.gif)
+![KryptonProgressBar Examples](KryptonProgressbar%20Examples/example.gif)
+![KryptonProgressBar scheme slots (Microsoft 365 Blue)](KryptonProgressbar%20Examples/example-light.png)
+![KryptonProgressBar scheme slots (Microsoft 365 Black Dark Mode)](KryptonProgressbar%20Examples/example-dark.png)
 ## KryptonPropertyGrid
 ![KryptonPropertyGridExample](KryptonPropertyGridExample/example.gif)
 ## KryptonRadioButton
