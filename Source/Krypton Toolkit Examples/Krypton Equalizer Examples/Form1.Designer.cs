@@ -31,6 +31,7 @@ partial class Form1
         this.keqBars = new Krypton.Gauges.KryptonEqualizer();
         this.keqSegments = new Krypton.Gauges.KryptonEqualizer();
         this.kchkSimulate = new Krypton.Toolkit.KryptonCheckBox();
+        this.kchkMusic = new Krypton.Toolkit.KryptonCheckBox();
         this.kchkCapture = new Krypton.Toolkit.KryptonCheckBox();
         this.kchkPeak = new Krypton.Toolkit.KryptonCheckBox();
         this.kbtnResetGains = new Krypton.Toolkit.KryptonButton();
@@ -44,7 +45,7 @@ partial class Form1
         this.klblInstructions.Name = "klblInstructions";
         this.klblInstructions.Size = new System.Drawing.Size(760, 40);
         this.klblInstructions.TabIndex = 0;
-        this.klblInstructions.Values.Text = "KryptonEqualizer (#4660): multi-band spectrum with interactive gain thumbs. Simulate levels or Capture the microphone (FFT). Capture updates levels only.";
+        this.klblInstructions.Values.Text = "KryptonEqualizer (#4660): multi-band spectrum with interactive gain thumbs. Play music (FFT), Simulate, or Capture. Levels update from audio; gains stay interactive.";
         //
         // keqBars
         //
@@ -66,17 +67,26 @@ partial class Form1
         //
         this.kchkSimulate.Location = new System.Drawing.Point(12, 280);
         this.kchkSimulate.Name = "kchkSimulate";
-        this.kchkSimulate.Size = new System.Drawing.Size(90, 20);
+        this.kchkSimulate.Size = new System.Drawing.Size(80, 20);
         this.kchkSimulate.TabIndex = 3;
         this.kchkSimulate.Values.Text = "Simulate";
         this.kchkSimulate.CheckedChanged += new System.EventHandler(this.kchkSimulate_CheckedChanged);
         //
+        // kchkMusic
+        //
+        this.kchkMusic.Location = new System.Drawing.Point(100, 280);
+        this.kchkMusic.Name = "kchkMusic";
+        this.kchkMusic.Size = new System.Drawing.Size(100, 20);
+        this.kchkMusic.TabIndex = 4;
+        this.kchkMusic.Values.Text = "Play music";
+        this.kchkMusic.CheckedChanged += new System.EventHandler(this.kchkMusic_CheckedChanged);
+        //
         // kchkCapture
         //
-        this.kchkCapture.Location = new System.Drawing.Point(120, 280);
+        this.kchkCapture.Location = new System.Drawing.Point(210, 280);
         this.kchkCapture.Name = "kchkCapture";
         this.kchkCapture.Size = new System.Drawing.Size(80, 20);
-        this.kchkCapture.TabIndex = 4;
+        this.kchkCapture.TabIndex = 5;
         this.kchkCapture.Values.Text = "Capture";
         this.kchkCapture.CheckedChanged += new System.EventHandler(this.kchkCapture_CheckedChanged);
         //
@@ -84,29 +94,29 @@ partial class Form1
         //
         this.kchkPeak.Checked = true;
         this.kchkPeak.CheckState = System.Windows.Forms.CheckState.Checked;
-        this.kchkPeak.Location = new System.Drawing.Point(220, 280);
+        this.kchkPeak.Location = new System.Drawing.Point(300, 280);
         this.kchkPeak.Name = "kchkPeak";
         this.kchkPeak.Size = new System.Drawing.Size(90, 20);
-        this.kchkPeak.TabIndex = 5;
+        this.kchkPeak.TabIndex = 6;
         this.kchkPeak.Values.Text = "Peak hold";
         this.kchkPeak.CheckedChanged += new System.EventHandler(this.kchkPeak_CheckedChanged);
         //
         // kbtnResetGains
         //
-        this.kbtnResetGains.Location = new System.Drawing.Point(330, 276);
+        this.kbtnResetGains.Location = new System.Drawing.Point(410, 276);
         this.kbtnResetGains.Name = "kbtnResetGains";
         this.kbtnResetGains.Size = new System.Drawing.Size(110, 28);
-        this.kbtnResetGains.TabIndex = 6;
+        this.kbtnResetGains.TabIndex = 7;
         this.kbtnResetGains.Values.Text = "Reset gains";
         this.kbtnResetGains.Click += new System.EventHandler(this.kbtnResetGains_Click);
         //
         // ktheme
         //
         this.ktheme.DropDownWidth = 220;
-        this.ktheme.Location = new System.Drawing.Point(460, 278);
+        this.ktheme.Location = new System.Drawing.Point(540, 278);
         this.ktheme.Name = "ktheme";
         this.ktheme.Size = new System.Drawing.Size(220, 22);
-        this.ktheme.TabIndex = 7;
+        this.ktheme.TabIndex = 8;
         //
         // klblStatus
         //
@@ -126,6 +136,7 @@ partial class Form1
         this.Controls.Add(this.kbtnResetGains);
         this.Controls.Add(this.kchkPeak);
         this.Controls.Add(this.kchkCapture);
+        this.Controls.Add(this.kchkMusic);
         this.Controls.Add(this.kchkSimulate);
         this.Controls.Add(this.keqSegments);
         this.Controls.Add(this.keqBars);
@@ -144,6 +155,7 @@ partial class Form1
     private Krypton.Gauges.KryptonEqualizer keqBars;
     private Krypton.Gauges.KryptonEqualizer keqSegments;
     private Krypton.Toolkit.KryptonCheckBox kchkSimulate;
+    private Krypton.Toolkit.KryptonCheckBox kchkMusic;
     private Krypton.Toolkit.KryptonCheckBox kchkCapture;
     private Krypton.Toolkit.KryptonCheckBox kchkPeak;
     private Krypton.Toolkit.KryptonButton kbtnResetGains;
