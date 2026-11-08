@@ -60,6 +60,7 @@ partial class Form1
         this.propertyGrid = new System.Windows.Forms.PropertyGrid();
         this.kryptonHeaderGroup2 = new Krypton.Toolkit.KryptonHeaderGroup();
         this.btnUseThemeWidths = new Krypton.Toolkit.KryptonCheckButton();
+        this.btnUseKryptonColorsOnForm = new Krypton.Toolkit.KryptonCheckButton();
         this.kryptonNone = new Krypton.Toolkit.KryptonCheckButton();
         this.kryptonFixedSingle = new Krypton.Toolkit.KryptonCheckButton();
         this.kryptonFixed3D = new Krypton.Toolkit.KryptonCheckButton();
@@ -383,6 +384,7 @@ partial class Form1
         // 
         // kryptonHeaderGroup2.Panel
         // 
+        this.kryptonHeaderGroup2.Panel.Controls.Add(this.btnUseKryptonColorsOnForm);
         this.kryptonHeaderGroup2.Panel.Controls.Add(this.btnUseThemeWidths);
         this.kryptonHeaderGroup2.Panel.Controls.Add(this.kryptonNone);
         this.kryptonHeaderGroup2.Panel.Controls.Add(this.kryptonFixedSingle);
@@ -407,6 +409,18 @@ partial class Form1
         this.btnUseThemeWidths.Values.DropDownArrowColor = System.Drawing.Color.Empty;
         this.btnUseThemeWidths.Values.Text = "Use Theme Border Widths";
         this.btnUseThemeWidths.Click += new System.EventHandler(this.btnUseThemeWidths_Click);
+        // 
+        // btnUseKryptonColorsOnForm
+        // 
+        this.btnUseKryptonColorsOnForm.AutoSize = true;
+        this.btnUseKryptonColorsOnForm.Checked = true;
+        this.btnUseKryptonColorsOnForm.Location = new System.Drawing.Point(3, 377);
+        this.btnUseKryptonColorsOnForm.Name = "btnUseKryptonColorsOnForm";
+        this.btnUseKryptonColorsOnForm.Size = new System.Drawing.Size(210, 29);
+        this.btnUseKryptonColorsOnForm.TabIndex = 13;
+        this.btnUseKryptonColorsOnForm.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+        this.btnUseKryptonColorsOnForm.Values.Text = "Use Krypton Colors On Form";
+        this.btnUseKryptonColorsOnForm.Click += new System.EventHandler(this.btnUseKryptonColorsOnForm_Click);
         // 
         // kryptonNone
         // 
@@ -791,5 +805,6 @@ partial class Form1
     private Krypton.Toolkit.ButtonSpecAny buttonSpecAny4;
     private Krypton.Toolkit.ButtonSpecAny leftButtonSpec;
     private Krypton.Toolkit.KryptonCheckButton btnUseThemeWidths;
+    private Krypton.Toolkit.KryptonCheckButton btnUseKryptonColorsOnForm;
 }
 
