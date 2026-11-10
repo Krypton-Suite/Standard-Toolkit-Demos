@@ -23,9 +23,23 @@ public partial class Form1 : Form
 {
     public Form1() => InitializeComponent();
 
-    private void Form1_Load(object sender, EventArgs e) =>
+    private void Form1_Load(object sender, EventArgs e)
+    {
         // Setup the property grid to edit this color button
         propertyGrid.SelectedObject = new KryptonColorButtonProxy(blueSplitter);
+        btnLivePreview.CustomColorPreviewShape = KryptonColorButtonCustomColorPreviewShape.Circle;
+        btnCommittedOnly.CustomColorPreviewShape = KryptonColorButtonCustomColorPreviewShape.Circle;
+        panelLivePreview.BackColor = btnLivePreview.SelectedColor;
+    }
+
+    private void btnLivePreview_ColorPreview(object sender, KryptonColorLivePreviewEventArgs e) =>
+        ApplyLivePreviewSwatch(e.Color);
+
+    private void btnLivePreview_SelectedColorChanged(object sender, ColorEventArgs e) =>
+        ApplyLivePreviewSwatch(e.Color);
+
+    private void ApplyLivePreviewSwatch(Color color) =>
+        panelLivePreview.BackColor = color.IsEmpty ? Color.White : color;
 
     private void colorButtonEnter(object? sender, EventArgs e) =>
         // Setup the property grid to edit this color button
@@ -146,6 +160,14 @@ public class KryptonColorButtonProxy
     {
         get => _colorButton.AutoRecentColors;
         set => _colorButton.AutoRecentColors = value;
+    }
+
+    [Category("Behavior")]
+    [Description("Preview a highlighted swatch before it is committed to SelectedColor.")]
+    public bool LivePreview
+    {
+        get => _colorButton.LivePreview;
+        set => _colorButton.LivePreview = value;
     }
 
     [Category("Behavior")]
