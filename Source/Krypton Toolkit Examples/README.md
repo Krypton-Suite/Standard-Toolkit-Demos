@@ -156,6 +156,8 @@ There are 2 set of solutions in these projects:
 ![KryptonCheckSet Examples](KryptonCheckSet%20Examples/example.png)
 ## KryptonColorButton Examples
 ![KryptonColorButton Examples](KryptonColorButton%20Examples/example.png)
+![KryptonColorButton live preview (Microsoft 365 Blue)](KryptonColorButton%20Examples/live-preview-light.png)
+![KryptonColorButton live preview (Microsoft 365 Black Dark Mode)](KryptonColorButton%20Examples/live-preview-dark.png)
 ## KryptonColorDialog
 ![KryptonColorDialog Example](KryptonColorDialog%20Example/example.png)
 ## KryptonComboBox

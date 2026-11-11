@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace KryptonColorButtonExamples;
 
@@ -62,18 +62,24 @@ partial class Form1
         this.kryptonColorButton3 = new Krypton.Toolkit.KryptonColorButton();
         this.kryptonColorButton4 = new Krypton.Toolkit.KryptonColorButton();
         this.kryptonColorButton5 = new Krypton.Toolkit.KryptonColorButton();
+        this.groupLivePreview = new System.Windows.Forms.GroupBox();
+        this.btnLivePreview = new Krypton.Toolkit.KryptonColorButton();
+        this.btnCommittedOnly = new Krypton.Toolkit.KryptonColorButton();
+        this.panelLivePreview = new System.Windows.Forms.Panel();
+        this.labelLivePreview = new System.Windows.Forms.Label();
         this.groupProperties.SuspendLayout();
         this.groupBlue.SuspendLayout();
         this.group2003.SuspendLayout();
         this.groupBox1.SuspendLayout();
         this.groupBox2.SuspendLayout();
         this.groupBox3.SuspendLayout();
+        this.groupLivePreview.SuspendLayout();
         this.SuspendLayout();
         // 
         // buttonClose
         // 
         this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-        this.buttonClose.Location = new System.Drawing.Point(463, 519);
+        this.buttonClose.Location = new System.Drawing.Point(463, 688);
         this.buttonClose.Name = "buttonClose";
         this.buttonClose.Size = new System.Drawing.Size(95, 52);
         this.buttonClose.TabIndex = 5;
@@ -602,11 +608,60 @@ partial class Form1
         this.kryptonColorButton5.Values.Text = "Click Override";
         this.kryptonColorButton5.Click += new System.EventHandler(this.KryptonColorButton5_Click);
         // 
+        // groupLivePreview
+        // 
+        this.groupLivePreview.Controls.Add(this.labelLivePreview);
+        this.groupLivePreview.Controls.Add(this.panelLivePreview);
+        this.groupLivePreview.Controls.Add(this.btnCommittedOnly);
+        this.groupLivePreview.Controls.Add(this.btnLivePreview);
+        this.groupLivePreview.Location = new System.Drawing.Point(12, 580);
+        this.groupLivePreview.Name = "groupLivePreview";
+        this.groupLivePreview.Size = new System.Drawing.Size(546, 96);
+        this.groupLivePreview.TabIndex = 7;
+        this.groupLivePreview.TabStop = false;
+        this.groupLivePreview.Text = "Live preview (optional)";
+        // 
+        // btnLivePreview
+        // 
+        this.btnLivePreview.Location = new System.Drawing.Point(16, 22);
+        this.btnLivePreview.LivePreview = true;
+        this.btnLivePreview.Name = "btnLivePreview";
+        this.btnLivePreview.Size = new System.Drawing.Size(160, 28);
+        this.btnLivePreview.TabIndex = 0;
+        this.btnLivePreview.Values.Text = "Live preview";
+        this.btnLivePreview.ColorPreview += new System.EventHandler<Krypton.Toolkit.KryptonColorLivePreviewEventArgs>(this.btnLivePreview_ColorPreview);
+        this.btnLivePreview.SelectedColorChanged += new System.EventHandler<Krypton.Toolkit.ColorEventArgs>(this.btnLivePreview_SelectedColorChanged);
+        // 
+        // btnCommittedOnly
+        // 
+        this.btnCommittedOnly.Location = new System.Drawing.Point(186, 22);
+        this.btnCommittedOnly.Name = "btnCommittedOnly";
+        this.btnCommittedOnly.Size = new System.Drawing.Size(160, 28);
+        this.btnCommittedOnly.TabIndex = 1;
+        this.btnCommittedOnly.Values.Text = "Committed only";
+        // 
+        // panelLivePreview
+        // 
+        this.panelLivePreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+        this.panelLivePreview.Location = new System.Drawing.Point(360, 18);
+        this.panelLivePreview.Name = "panelLivePreview";
+        this.panelLivePreview.Size = new System.Drawing.Size(64, 36);
+        this.panelLivePreview.TabIndex = 2;
+        // 
+        // labelLivePreview
+        // 
+        this.labelLivePreview.Location = new System.Drawing.Point(16, 58);
+        this.labelLivePreview.Name = "labelLivePreview";
+        this.labelLivePreview.Size = new System.Drawing.Size(510, 28);
+        this.labelLivePreview.TabIndex = 3;
+        this.labelLivePreview.Text = "Hover Live preview: the bar and the swatch follow, then return if you close without clicking.";
+        // 
         // Form1
         // 
         this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        this.ClientSize = new System.Drawing.Size(568, 576);
+        this.ClientSize = new System.Drawing.Size(568, 748);
+        this.Controls.Add(this.groupLivePreview);
         this.Controls.Add(this.kryptonColorButton5);
         this.Controls.Add(this.groupBox3);
         this.Controls.Add(this.groupBox2);
@@ -633,6 +688,7 @@ partial class Form1
         this.groupBox2.PerformLayout();
         this.groupBox3.ResumeLayout(false);
         this.groupBox3.PerformLayout();
+        this.groupLivePreview.ResumeLayout(false);
         this.ResumeLayout(false);
 
     }
@@ -670,5 +726,10 @@ partial class Form1
     private Krypton.Toolkit.KryptonColorButton kryptonColorButton3;
     private Krypton.Toolkit.KryptonColorButton kryptonColorButton4;
     private Krypton.Toolkit.KryptonColorButton kryptonColorButton5;
+    private System.Windows.Forms.GroupBox groupLivePreview;
+    private Krypton.Toolkit.KryptonColorButton btnLivePreview;
+    private Krypton.Toolkit.KryptonColorButton btnCommittedOnly;
+    private System.Windows.Forms.Panel panelLivePreview;
+    private System.Windows.Forms.Label labelLivePreview;
 }
 
